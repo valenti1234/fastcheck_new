@@ -1,0 +1,2081 @@
+{
+  "app": {
+    "name": "Duxiter Fast Check",
+    "login": "Log in",
+    "register": "Register",
+    "logout": "Log out",
+    "help": "Help",
+    "version": "Version"
+  },
+  "dashboard": {
+    "recentQueriesTitle": "Recent Queries",
+    "recentQueriesSubtitle": "History of evaluations performed"
+  },
+  "riskDonut": {
+    "title": "Risk Summary",
+    "subtitle": "Distribution by risk level",
+    "evaluations": "Evaluations",
+    "desc": {
+      "low": "No significant risks",
+      "medium": "Some significant risks",
+      "high": "Multiple significant risks",
+      "critical": "Severe risks detected"
+    }
+  },
+  "tenantUsage": {
+    "title": "User Credits",
+    "subtitle": "Usage for {{name}}",
+    "used": "Used",
+    "available": "Available",
+    "total": "Total",
+    "credits": "credits",
+    "progress": "Usage progress"
+  },
+  "dailyJobs": {
+    "title": "Daily Jobs",
+    "subtitle": "Evaluations created today",
+    "daily": "Daily",
+    "elements": "elements"
+  },
+  "bulkProgress": {
+    "title": "Bulk Evaluation in Progress",
+    "progress": "Progress",
+    "completed": "{{completed}} of {{total}} evaluations completed",
+    "failed": "{{count}} evaluations failed"
+  },
+  "resultsTable": {
+    "noResults": "No results found",
+    "noQueries": "No queries available",
+    "noResultsMessage": "No queries found matching \"{{searchTerm}}\".",
+    "noQueriesMessage": "No risk evaluation queries have been performed yet.",
+    "clearFilter": "Clear filter"
+  },
+  "consultationChart": {
+    "title": "Consultation History",
+    "subtitle": "Evolution of evaluations in the last 30 days",
+    "chartType": "Chart type",
+    "barChart": "Bar chart",
+    "lineChart": "Line chart",
+    "areaChart": "Area chart",
+    "cards": {
+      "totalConsultas": "Total Consultations",
+      "averagePerDay": "Daily Average",
+      "maxInDay": "Max in a Day"
+    },
+    "tooltip": {
+      "date": "Date",
+      "consultas": "Consultations"
+    },
+    "empty": {
+      "title": "No data available",
+      "subtitle": "There are no consultations to display in the chart"
+    }
+  },
+  "consultationHistory": {
+    "title": "Consultation History",
+    "subtitle": "View and analyze the complete history of consultations",
+    "cards": {
+      "totalConsultas": "Total Consultations",
+      "creditsUsed": "Credits Used",
+      "averageTime": "Average Time",
+      "individualConsultas": "Individual Consultations"
+    },
+    "filters": {
+      "title": "Filters",
+      "type": "Type",
+      "rut": "RUT",
+      "rutPlaceholder": "12345678-9",
+      "status": "Status",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "apply": "Apply Filters",
+      "clear": "Clear Filters",
+      "all": "All",
+      "period": "Period",
+      "start": "start",
+      "end": "end"
+    },
+    "type": {
+      "individual": "Individual",
+      "massive": "Massive"
+    },
+    "status": {
+      "success": "Success",
+      "clientError": "Client Error",
+      "serverError": "Server Error",
+      "unauthorized": "Unauthorized"
+    },
+    "exportPdf": "Export PDF",
+    "resultsTitle": "Consultations ({{total}} results)",
+    "loading": "Loading consultations...",
+    "errorTitle": "Error loading consultations",
+    "noResults": "No consultations found with the applied filters",
+    "table": {
+      "date": "Date",
+      "user": "User",
+      "type": "Type",
+      "ruts": "RUT(s)",
+      "rutsShort": "RUTs",
+      "status": "Status",
+      "time": "Time",
+      "credits": "Credits"
+    },
+    "pagination": {
+      "info": "Page {{currentPage}} of {{totalPages}} ({{total}} results)"
+    },
+    "pdf": {
+      "generatedAt": "Generated at",
+      "total": "Total consultations",
+      "appliedFilters": "Applied filters"
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "singleEvaluation": "Single Evaluation",
+    "bulkEvaluation": "Bulk Evaluation",
+    "consultas": "Queries",
+    "historicalConsultas": "Consultation History",
+    "alerts": "Alerts",
+    "monitoring": "Monitoring",
+    "users": "Users",
+    "settings": "Settings",
+    "lpalto": "High Impact Lists",
+    "lpmedio": "Medium Impact Lists",
+    "adminPanel": "Admin Panel",
+    "evaluationSettings": "Evaluation Settings",
+    "promptConfiguration": "AI Prompt Configuration",
+    "antiunionCases": "Anti-union Cases",
+    "environmentalSanctions": "Environmental Sanctions",
+    "snifaImport": "SNIFA Import",
+    "imposedSanctions": "Imposed Sanctions",
+    "ley21121": "Providers Convicted Law 21.121",
+    "ley20393": "Providers Convicted Law 20.393",
+    "tenants": "Tenants Management",
+    "adminUsers": "Users Management",
+    "billing": "Billing Management",
+    "monitoringStatus": "Monitoring Status",
+    "envConfiguration": "Server Configuration",
+    "database": "Database Management",
+    "equifaxMonitor": "Equifax Monitor",
+    "sheriffMonitor": "Sheriff Monitor",
+    "adminEvaluations": "Admin Evaluations",
+    "adminResults": "Admin Results"
+  },
+  "adminResults": {
+    "title": "Global Results (All Tenants)"
+  },
+  "ley21121": {
+    "title": "Providers Convicted - Law 21.121",
+    "addNew": "Add New",
+    "from": "From",
+    "to": "To",
+    "table": {
+      "headers": {
+        "rut": "RUT",
+        "company": "COMPANY NAME",
+        "caseRole": "CASE ROLE",
+        "dates": "DATES",
+        "duration": "DURATION",
+        "reason": "REASON",
+        "actions": "ACTIONS"
+      },
+      "empty": "No records available"
+    },
+    "dialog": {
+      "createTitle": "Add New Record",
+      "editTitle": "Edit Record"
+    },
+    "form": {
+      "labels": {
+        "rut": "RUT",
+        "company": "COMPANY NAME",
+        "caseRole": "CASE ROLE",
+        "startDate": "START DATE",
+        "endDate": "END DATE",
+        "duration": "DURATION",
+        "reason": "REASON"
+      },
+      "rut": {
+        "placeholder": "12.345.678-9",
+        "invalid": "Invalid RUT. Please check the format."
+      },
+      "duration": {
+        "placeholder": "E.g.: 3 years, 1 day"
+      }
+    },
+    "messages": {
+      "loadError": "Error loading records. Please try again.",
+      "createSuccess": "Record created successfully",
+      "updateSuccess": "Record updated successfully",
+      "saveError": "Error saving record. Please try again.",
+      "deleteConfirm": "Are you sure you want to delete this record?",
+      "deleteSuccess": "Record deleted successfully",
+      "deleteError": "Error deleting record. Please try again.",
+      "invalidDate": "Invalid date"
+    }
+  },
+  "ley20393": {
+    "title": "Providers Convicted - Law 20.393",
+    "addNew": "Add New",
+    "from": "From",
+    "to": "To",
+    "table": {
+      "headers": {
+        "rut": "RUT",
+        "company": "COMPANY NAME",
+        "caseRole": "CASE ROLE",
+        "dates": "DATES",
+        "duration": "DURATION",
+        "reason": "REASON",
+        "actions": "ACTIONS"
+      },
+      "empty": "No records available"
+    },
+    "dialog": {
+      "createTitle": "Add New Record",
+      "editTitle": "Edit Record"
+    },
+    "form": {
+      "labels": {
+        "rut": "RUT",
+        "company": "COMPANY NAME",
+        "caseRole": "CASE ROLE",
+        "startDate": "START DATE",
+        "endDate": "END DATE",
+        "duration": "DURATION",
+        "reason": "REASON"
+      },
+      "rut": {
+        "placeholder": "12.345.678-9",
+        "invalid": "Invalid RUT. Please check the format."
+      },
+      "duration": {
+        "placeholder": "E.g.: 3 years, 1 day"
+      }
+    },
+    "messages": {
+      "loadError": "Error loading records. Please try again.",
+      "createSuccess": "Record created successfully",
+      "updateSuccess": "Record updated successfully",
+      "saveError": "Error saving record. Please try again.",
+      "deleteConfirm": "Are you sure you want to delete this record?",
+      "deleteSuccess": "Record deleted successfully",
+      "deleteError": "Error deleting record. Please try again.",
+      "invalidDate": "Invalid date"
+    }
+  },
+  "landing": {
+    "ready": "Ready to start?",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "enterRut": "Enter RUT or upload file",
+    "enterRutDesc": "Enter a supplier's RUT manually or upload a file with multiple suppliers.",
+    "getResults": "Get results",
+    "getResultsDesc": "Our system processes the information and generates a comprehensive report with all records.",
+    "makeDecisions": "Make informed decisions",
+    "makeDecisionsDesc": "Use the results to assess risks and make strategic decisions about your suppliers."
+  },
+  "common": {
+    "previous": "Previous",
+    "next": "Next",
+    "delete": "Delete",
+    "search": "Search",
+    "noResults": "No results found",
+    "page": "Page",
+    "of": "of",
+    "filteredBy": "filtered by",
+    "logout": "Log out",
+    "view": "View",
+    "notAvailable": "Not available",
+    "unknown": "Unknown",
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save",
+    "close": "Close",
+    "loading": "Loading...",
+    "showingRange": "Showing {{start}} to {{end}} of {{total}} results",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "optional": "(Optional)"
+  },
+  "consultas": {
+    "title": "Queries",
+    "loading": "Loading queries...",
+    "searchPlaceholder": "Search by RUT or Company Name...",
+    "searchLabel": "Search:",
+    "noResultsTitle": "No queries found",
+    "noResultsDescription": "Make a new query to see results here.",
+    "razonSocial": "Company Name",
+    "fechaConsulta": "Query Date",
+    "resultado": "Result",
+    "resumenIA": "AI Summary",
+    "exito": "Success",
+    "fallo": "Failure",
+    "fechaCreacion": "Creation Date",
+    "nivelRiesgo": "Risk Level",
+    "tag": "Tag",
+    "acciones": "Actions",
+    "userNotes": "Note",
+    "viewDetail": "View Detail"
+  },
+  "antiunionCases": {
+    "title": "Anti-union Cases Management",
+    "uploadButton": "Upload PDF",
+    "stats": {
+      "totalCases": "Total Cases",
+      "dtCases": "DT Cases",
+      "particularCases": "Particular Cases",
+      "activeTribunals": "Active Courts"
+    },
+    "filters": {
+      "title": "Search Filters",
+      "rut": "RUT",
+      "companyName": "Company Name",
+      "tribunal": "Court",
+      "complaintType": "Complaint Type",
+      "all": "All",
+      "reset": "Reset"
+    },
+    "complaintType": {
+      "dt": "DT",
+      "particular": "Particular",
+      "unknown": "Unknown"
+    },
+    "table": {
+      "title": "Cases List ({{total}})",
+      "headers": {
+        "rut": "RUT",
+        "company": "Company",
+        "rit": "RIT",
+        "tribunal": "Court",
+        "date": "Date",
+        "type": "Type",
+        "fine": "Fine",
+        "actions": "Actions"
+      }
+    },
+    "actions": {
+      "deleteSelected": "Delete Selected ({{count}})",
+      "edit": "Edit"
+    },
+    "upload": {
+      "title": "Upload Anti-union Cases PDF",
+      "dragActive": "Drop the file here",
+      "dragHint": "Drag a PDF here or click to select",
+      "onlyPdf": "Only PDF files are allowed",
+      "progress": {
+        "uploadingFile": "Uploading file...",
+        "processingPdf": "Processing PDF...",
+        "completed": "Completed"
+      },
+      "savedCount": "{{count}} cases saved",
+      "skippedCount": "{{count}} duplicates skipped"
+    },
+    "viewDialog": {
+      "title": "Case Details"
+    },
+    "editDialog": {
+      "title": "Edit Case"
+    },
+    "deleteDialog": {
+      "title": "Confirm Deletion",
+      "message": "Are you sure you want to delete the case for {{company}}? This action cannot be undone."
+    },
+    "fields": {
+      "rut": "RUT",
+      "companyName": "Company Name",
+      "rit": "RIT",
+      "tribunal": "Court",
+      "date": "Date",
+      "complaintType": "Complaint Type",
+      "fine": "Fine",
+      "description": "Description",
+      "pdfFile": "PDF File"
+    },
+    "messages": {
+      "updateSuccess": "Case updated successfully",
+      "deleteSuccess": "Case deleted successfully",
+      "bulkDeleteSuccess": "{{count}} cases deleted"
+    },
+    "errors": {
+      "loadCases": "Error loading cases",
+      "uploadPdf": "Error uploading PDF",
+      "updateCase": "Error updating case",
+      "deleteCase": "Error deleting case",
+      "bulkDelete": "Error deleting selected cases"
+    }
+  },
+  "risk": {
+    "critical": "Critical",
+    "medium": "Medium",
+    "low": "Low",
+    "high": "High"
+  },
+  "alerting_legacy": {
+    "title": "Risk Alerts",
+    "loading": "Loading alerts...",
+    "errors": {
+      "invalidData": "Invalid data format",
+      "loadingData": "Error loading data"
+    },
+    "stats": {
+      "totalActive": "Total active alerts",
+      "showing": "Showing"
+    },
+    "filters": {
+      "toggleShow": "Show Filters",
+      "toggleHide": "Hide Filters",
+      "riskLevel": "Risk Level",
+      "priority": "Priority",
+      "dateRange": "Date Range",
+      "from": "From",
+      "to": "To",
+      "actions": "Actions",
+      "clearFilters": "Clear Filters",
+      "activeCount": "{{filtered}} of {{total}} alerts",
+      "activeSummary": {
+        "risk": "Risk",
+        "priority": "Priority",
+        "date": "Date",
+        "start": "Start",
+        "end": "End",
+        "search": "Search",
+        "clearAll": "Clear all"
+      }
+    },
+    "searchPlaceholder": "Search by RUT or Company Name...",
+    "riskLevels": {
+      "red": "Critical",
+      "orange": "High",
+      "yellow": "Medium",
+      "green": "Low"
+    },
+    "priorities": {
+      "urgent": "Urgent",
+      "high": "High",
+      "medium": "Medium"
+    },
+    "table": {
+      "rut": "RUT",
+      "razonSocial": "Company Name",
+      "detectionDate": "Detection Date",
+      "riskLevel": "Risk Level",
+      "priority": "Priority",
+      "actions": "Actions"
+    },
+    "actions": {
+      "viewDetail": "View Detail",
+      "removing": "Removing...",
+      "adding": "Adding...",
+      "removeMonitoring": "Remove Monitoring",
+      "addToMonitoring": "Add to Monitoring",
+      "discard": "Discard"
+    },
+    "empty": {
+      "noResultsSearch": "No alerts found matching the search.",
+      "noResults": "No active risk alerts.",
+      "clearSearch": "Clear search"
+    },
+    "pagination": {
+      "info": "Showing {{start}} to {{end}} of {{total}} alerts"
+    },
+    "monitoring": {
+      "alreadyMonitored": "This RUT is already being monitored",
+      "notFound": "RUT not found in the system",
+      "addError": "Error adding to monitoring",
+      "scheduleNotFound": "Monitoring schedule not found",
+      "removeError": "Error removing from monitoring"
+    },
+    "modal": {
+      "confirmDiscardTitle": "Confirm alert discard",
+      "confirmDiscardMessage": "Are you sure you want to discard this alert? This action cannot be undone.",
+      "cancel": "Cancel",
+      "discarding": "Discarding...",
+      "discard": "Discard"
+    }
+  },
+  "monitoring": {
+    "title": "Monitoring System",
+    "subtitle": "Manage scheduled automatic queries",
+    "superuserNote": "Superadmin view - Showing monitoring across all tenants",
+    "newButton": "New Monitoring",
+    "stats": {
+      "total": "Total Monitoring",
+      "active": "Active",
+      "running": "Running",
+      "errors": "With Errors"
+    },
+    "errors": {
+      "loadSchedules": "Error loading monitoring schedules",
+      "createSchedule": "Error creating monitoring schedule",
+      "updateSchedule": "Error updating monitoring schedule",
+      "deleteSchedule": "Error deleting monitoring schedule",
+      "executeMonitoring": "Error starting monitoring execution"
+    },
+    "messages": {
+      "createdSuccess": "Monitoring schedule created successfully",
+      "updatedSuccess": "Monitoring schedule updated successfully",
+      "deletedSuccess": "Monitoring schedule deleted successfully",
+      "executionStarted": "Monitoring execution started"
+    },
+    "confirm": {
+      "delete": "Are you sure you want to delete this monitoring schedule?"
+    },
+    "filters": {
+      "showInactive": "Show inactive monitoring"
+    },
+    "summary": {
+      "activeInactive": "Showing {{count}} of {{total}} monitoring (active and inactive)",
+      "activeOnly": "Showing {{count}} of {{total}} active monitoring"
+    },
+    "headers": {
+      "rutEmpresa": "RUT / Company",
+      "tenant": "Tenant",
+      "frecuencia": "Frequency",
+      "estado": "Status",
+      "ultimaEjecucion": "Last Execution",
+      "proximaEjecucion": "Next Execution",
+      "ejecuciones": "Executions",
+      "acciones": "Actions"
+    },
+    "empty": {
+      "title": "No monitoring configured",
+      "superuserDescription": "No monitoring found in any tenant.",
+      "userDescription": "Start by creating your first automatic monitoring."
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "lastExecuted": {
+      "never": "Never"
+    },
+    "actions": {
+      "viewDetails": "View details",
+      "executeNow": "Run now",
+      "edit": "Edit",
+      "pause": "Pause",
+      "activate": "Activate",
+      "delete": "Delete"
+    },
+    "create": {
+      "title": "Create New Monitoring",
+      "rutSelectHint": "RUT (Select from existing results)",
+      "searchPlaceholder": "Search RUT or company...",
+      "loadedTotal": "Total loaded: {{count}}",
+      "filteredCount": "Filtered: {{count}}",
+      "lastQuery": "Last query: {{date}}",
+      "noResults": "No results found",
+      "companyLabel": "Company Name (Optional)",
+      "companyPlaceholder": "Company name",
+      "frequencyLabel": "Frequency",
+      "minute": "Every minute",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    }
+  },
+  "monitoring.edit": {
+    "title": "Edit Monitoring",
+    "companyLabel": "Company Name (Optional)",
+    "companyPlaceholder": "Company name"
+  },
+  "alerting": {
+    "title": "Risk Alerts",
+    "loading": "Loading alerts...",
+    "showFilters": "Show Filters",
+    "hideFilters": "Hide Filters",
+    "stats": {
+      "totalActive": "Total active alerts",
+      "showing": "Showing"
+    },
+    "filters": {
+      "toggleShow": "Show Filters",
+      "toggleHide": "Hide Filters",
+      "riskLevel": "Risk Level",
+      "priority": "Priority",
+      "dateRange": "Date Range",
+      "from": "From",
+      "to": "To",
+      "actions": "Actions",
+      "clearFilters": "Clear Filters",
+      "activeCount": "{{filtered}} of {{total}} alerts",
+      "activeSummary": {
+        "risk": "Risk",
+        "priority": "Priority",
+        "date": "Date",
+        "start": "Start",
+        "end": "End",
+        "search": "Search",
+        "clearAll": "Clear all"
+      }
+    },
+    "searchPlaceholder": "Search by RUT or Company Name...",
+    "summary": {
+      "totalActive": "Total active alerts:",
+      "showingCount": "Showing:"
+    },
+    "chips": {
+      "risk": "Risk:",
+      "priority": "Priority:",
+      "date": "Date:",
+      "dateStart": "Start",
+      "dateEnd": "End",
+      "searchLabel": "Search:",
+      "clearAll": "Clear all"
+    },
+    "headers": {
+      "rut": "RUT",
+      "razonSocial": "Company Name",
+      "fechaDeteccion": "Detection Date",
+      "nivelRiesgo": "Risk Level",
+      "prioridad": "Priority",
+      "acciones": "Actions"
+    },
+    "actions": {
+      "viewDetail": "View Detail",
+      "removeMonitoring": "Remove Monitoring",
+      "addToMonitoring": "Add to Monitoring",
+      "addMonitoring": "Add to Monitoring",
+      "removing": "Removing...",
+      "adding": "Adding...",
+      "discard": "Discard"
+    },
+    "empty": {
+      "searchNone": "No alerts matching the search were found.",
+      "noneActive": "No active risk alerts.",
+      "clearSearch": "Clear search"
+    },
+    "pagination": {
+      "info": "Showing {{start}} to {{end}} of {{total}} alerts",
+      "showingRange": "Showing {{start}} to {{end}} of {{total}} alerts"
+    },
+    "riskLevels": {
+      "red": "Critical",
+      "orange": "High",
+      "yellow": "Medium",
+      "green": "Low"
+    },
+    "priorities": {
+      "urgent": "Urgent",
+      "high": "High",
+      "medium": "Medium"
+    },
+    "table": {
+      "rut": "RUT",
+      "razonSocial": "Company Name",
+      "detectionDate": "Detection Date",
+      "riskLevel": "Risk Level",
+      "priority": "Priority",
+      "actions": "Actions"
+    },
+    "detail": {
+      "title": "Risk Alert Detail",
+      "backToAlerts": "Back to Alerts",
+      "loading": "Loading alert...",
+      "alertNotFound": "Alert not found",
+      "investigateFastCheck": "Investigate in FastCheck",
+      "priorityActionsTitle": "Priority and Actions",
+      "priorityLabel": "Alert Priority",
+      "actionsLabel": "Available Actions",
+      "investigate": "Investigate",
+      "alreadyMonitored": "Already in Monitoring",
+      "aiAnalysisTitle": "AI Analysis",
+      "aiAnalysisGeneratedOn": "Analysis generated on:",
+      "detailedSummaryTitle": "Detailed Summary",
+      "errorLoadingData": "Error loading alert data"
+    },
+    "monitoring": {
+      "alreadyMonitored": "This RUT is already being monitored",
+      "notFound": "RUT not found in the system",
+      "addError": "Error adding to monitoring",
+      "scheduleNotFound": "Monitoring schedule not found",
+      "removeError": "Error removing from monitoring",
+      "rutUnavailable": "Cannot add to monitoring: RUT unavailable",
+      "addSuccess": "RUT added to monitoring successfully"
+    }
+  },
+  "environmentalSanctions": {
+    "title": "Environmental Sanctions",
+    "selectedCount": "{{count}} selected",
+    "buttons": {
+      "exportCsv": "Export CSV",
+      "uploadFile": "Upload File"
+    },
+    "stats": {
+      "totalSanctions": "Total Sanctions",
+      "totalFines": "Total Fines (UTA)",
+      "activeSanctions": "Active Sanctions",
+      "regions": "Regions"
+    },
+    "filters": {
+      "title": "Filters",
+      "procesoSancionId": "Sanction Process ID",
+      "expediente": "Case Number",
+      "estado": "State",
+      "todos": "All",
+      "enCurso": "In progress",
+      "finalizado": "Completed",
+      "archivado": "Archived",
+      "region": "Region",
+      "comuna": "Municipality",
+      "empresa": "Company"
+    },
+    "headers": {
+      "procesoId": "Process ID",
+      "expediente": "Case Number",
+      "empresa": "Company",
+      "estado": "State",
+      "region": "Region",
+      "multaUTA": "Fine (UTA)",
+      "fechaInicio": "Start Date",
+      "acciones": "Actions"
+    },
+    "tooltips": {
+      "viewDetails": "View Details",
+      "delete": "Delete"
+    },
+    "empty": {
+      "noResults": "No environmental sanctions found"
+    },
+    "upload": {
+      "title": "Upload Environmental Sanctions File",
+      "instructions": "Upload a CSV or XLSX file with environmental sanction data. The file must include the following columns (semicolon or comma separated):",
+      "columnsExample": "#, expediente, unidad_fiscalizable, razon_social, categoria, region, estado, detalle",
+      "columnsDescription": "Column descriptions:",
+      "desc": {
+        "id": "Sequential number (internal)",
+        "expediente": "Authority case number",
+        "unidadFiscalizableLabel": "Auditable Unit",
+        "unidadFiscalizable": "Name of the facility/auditable unit",
+        "razonSocialLabel": "Company Name",
+        "razonSocial": "Legal name of the company",
+        "categoriaLabel": "Category",
+        "categoria": "Economic category or industry",
+        "region": "Region name",
+        "estado": "Process state (In progress, Completed, Archived)",
+        "detalleLabel": "Detail",
+        "detalle": "Brief description of the case"
+      },
+      "clickToSelect": "Click to select a CSV/XLSX file",
+      "supportedFormats": "Supported formats: .csv, .xlsx, .xls"
+    },
+    "viewDialog": {
+      "title": "Environmental Sanction Details",
+      "fields": {
+        "procesoSancionId": "Sanction Process ID",
+        "expediente": "Case Number",
+        "empresa": "Company",
+        "estado": "State",
+        "tipo": "Type",
+        "region": "Region",
+        "comuna": "Municipality",
+        "multaTotalUTA": "Total Fine (UTA)",
+        "categoriaEconomica": "Economic Category",
+        "fechaInicio": "Start Date",
+        "fechaTermino": "End Date",
+        "latitud": "Latitude",
+        "longitud": "Longitude",
+        "linkSNIFA": "SNIFA Link"
+      }
+    },
+    "deleteDialog": {
+      "title": "Confirm Deletion",
+      "message": "Are you sure you want to delete this environmental sanction?"
+    },
+    "errors": {
+      "loadFailed": "Error loading environmental sanctions",
+      "deleteFailed": "Error deleting environmental sanction"
+    },
+    "messages": {
+      "deleteSuccess": "Environmental sanction deleted successfully"
+    }
+  },
+  "imposedSanctions": {
+    "title": "Imposed Sanctions",
+    "selectedCount": "{{count}} selected",
+    "headers": {
+      "numeroSancion": "Sanction Number",
+      "empresa": "Company",
+      "rut": "RUT",
+      "tipo": "Type",
+      "estado": "State",
+      "organismo": "Authority",
+      "montoMulta": "Fine Amount",
+      "fechaImposicion": "Imposition Date",
+      "acciones": "Actions"
+    },
+    "tooltips": {
+      "viewDetails": "View Details",
+      "delete": "Delete"
+    },
+    "empty": {
+      "noResults": "No imposed sanctions found"
+    },
+    "upload": {
+      "title": "Upload Imposed Sanctions File",
+      "dragActive": "Drop the file here",
+      "dragHint": "Drag a CSV, XLS or XLSX file here",
+      "clickToSelect": "or click to select a file",
+      "supportedFormats": "Supported formats: .csv, .xlsx, .xls"
+    },
+    "viewDialog": {
+      "title": "Imposed Sanction Details",
+      "fields": {
+        "numeroSancion": "Sanction Number",
+        "rut": "RUT",
+        "empresa": "Company",
+        "tipoSancion": "Sanction Type",
+        "estado": "State",
+        "organismo": "Authority",
+        "region": "Region",
+        "comuna": "Municipality",
+        "montoMulta": "Fine Amount",
+        "fechaImposicion": "Imposition Date",
+        "fechaVencimiento": "Due Date",
+        "descripcion": "Description",
+        "observaciones": "Observations"
+      }
+    },
+    "deleteDialog": {
+      "title": "Confirm Deletion",
+      "message": "Are you sure you want to delete this imposed sanction?"
+    }
+  },
+  "fastCheckConsolidado": {
+    "title": "Fast Check Consolidated"
+  },
+  "fastCheck": {
+    "title": "Fast Check",
+    "rutPlaceholder": "Enter RUT",
+    "noData": "No data found.",
+    "progress": {
+      "start": "Evaluation started",
+      "lookup": "Requesting RUT lookup",
+      "fetch": "Fetching results",
+      "listas": "Verifying Custom Lists",
+      "ready": "Ready",
+      "inProgress": "Evaluation in progress…"
+    },
+    "actions": {
+      "refresh": "Re-run evaluation",
+      "exportPdf": "Export PDF",
+      "exportJson": "Export JSON"
+    },
+    "exportPdf": {
+      "generating": "Generating..."
+    },
+    "export": {
+      "noData": "No data to export",
+      "success": "Data exported successfully",
+      "error": "Error exporting data"
+    },
+    "findings": {
+      "title": "Key Findings",
+      "noSummary": "No summary available",
+      "pepChileDetectedInPartners": "PEP Chile detected among partners",
+      "familiaresPepDetectedInPartners": "PEP relatives detected among partners",
+      "rutInAltoImpacto": "RUT in High Impact Own List ({{count}})",
+      "rutInMedianoImpacto": "RUT in Medium Impact Own List ({{count}})"
+    },
+    "notes": {
+      "title": "User Notes",
+      "none": "No notes for this company",
+      "addNote": "Add Note",
+      "lastUpdated": "Last updated:"
+    },
+    "pdf": {
+      "success": "PDF generated successfully",
+      "error": "Error generating PDF. Please try again.",
+      "pageXofY": "Page {{i}} of {{total}}",
+      "generatedOn": "Generated on {{date}}"
+    },
+    "qr": {
+      "scan": "Scan to access the report"
+    },
+      "listasPropias": {
+        "alertTitle": "Alert: RUT present in Own Lists",
+        "altoImpactoTitle": "🔴 Own List - High Impact",
+        "medioImpactoTitle": "🟡 Own List - Medium Impact",
+      "labels": {
+        "nombre": "Name",
+        "rut": "RUT",
+        "tipo": "Type",
+        "lista": "List",
+        "subLista": "Sub-List",
+        "fechaIncorporacion": "Incorporation Date",
+        "fechaRegistro": "Record Date",
+        "ultimaActualizacion": "Last Update"
+      },
+      "viewDetails": "View details",
+        "noteTitle": "Note:",
+        "noteMessage": "This RUT has been identified in the organization's own lists. Please review details and take appropriate actions according to internal policies."
+      }
+  },
+  "auditOverview": {
+    "title": "Audit as of today",
+    "subtitle": "Current Audit Summary",
+    "tabs": {
+      "all": "All",
+      "upcoming": "Upcoming",
+      "in_audit": "In audit",
+      "awaiting_report": "Awaiting report",
+      "completed": "Completed"
+    }
+  },
+  "envConfiguration": {
+    "noteTitle": "Important Note",
+    "noteMessage": "Changes to configuration parameters require restarting the server to apply. Parameters marked with * are mandatory for correct system operation."
+  },
+  "singleEvaluation": {
+    "title": "Single Evaluation",
+    "subtitle": "Evaluate a specific supplier by entering its RUT to get a detailed analysis.",
+    "reportLabel": "Single Evaluation",
+    "reportTitle": "Report",
+    "downloadMd": "Download MD",
+    "downloadPdf": "Download PDF",
+    "searchSupplierTitle": "Search Supplier",
+    "searchSupplierSubtitle": "Enter the RUT to start a new evaluation.",
+    "toast": {
+      "invalidRut": "Invalid RUT. Please verify and try again.",
+      "acceptTerms": "You must accept the terms and conditions and the privacy policy.",
+      "tenantError": "Tenant error. Please log in again.",
+      "searchingProvider": "Searching supplier information...",
+      "success": "Evaluation completed successfully",
+      "unknownError": "An unknown error occurred.",
+      "errorPrefix": "Error:"
+    },
+    "interpretationTitle": "Detailed Interpretation",
+    "warning": {
+      "remaining": "Evaluations remaining: {{count}}",
+      "planAlmostExhausted": "Your current plan is close to being exhausted. Consider upgrading to continue performing evaluations."
+    },
+    "rutLabel": "Supplier RUT",
+    "rutPlaceholder": "12.345.678-9",
+    "invalidRut": "Invalid RUT. Verify the format (e.g., 12.345.678-9).",
+    "nameLabel": "Supplier Name",
+    "namePlaceholder": "Example Company SpA",
+    "nameHelpText": "If you know the supplier's name, you can add it to make identification easier in the results.",
+    "acceptLabelPrefix": "I accept the",
+    "terms": "terms and conditions",
+    "and": "and the",
+    "privacy": "privacy policy",
+    "searching": "Searching Information...",
+    "generatingSummary": "Generating Summary...",
+    "submit": "Evaluate Supplier",
+    "info": {
+      "title": "Important information",
+      "creditUsage": "Single evaluation uses 1 credit from your current plan.",
+      "realTimeResults": "Results are displayed in real time once the request is processed.",
+      "confidentiality": "Supplier data is kept confidential and secure.",
+      "bulkPrefix": "To evaluate multiple suppliers, use the",
+      "bulkLinkText": "Bulk Evaluation"
+    }
+  },
+  "bulkEvaluation": {
+    "header": {
+      "label": "Report",
+      "title": "Bulk Evaluation"
+    },
+    "actions": {
+      "downloadTemplate": "Download Template"
+    },
+    "upload": {
+      "title": "Upload File",
+      "subtitle": "Upload a CSV or Excel file with suppliers to evaluate.",
+      "fileLabelSr": "Suppliers File",
+      "clickToUpload": "Click to upload",
+      "dragDrop": "or drag and drop",
+      "formatsHint": "CSV, XLSX, or XLS (max 10MB)",
+      "removeFile": "Remove"
+    },
+    "alerts": {
+      "insufficientTitle": "Insufficient Evaluations",
+      "insufficientMessage": "You need {{needed}} evaluations but only have {{available}} available. Please upgrade your plan or reduce the number of suppliers."
+    },
+    "terms": {
+      "acceptPrefix": "I accept the",
+      "terms": "terms and conditions",
+      "and": "and the",
+      "privacy": "privacy policy"
+    },
+    "submit": {
+      "processing": "Processing...",
+      "startEvaluationSuppliers": "Start Evaluation ({{count}} suppliers)",
+      "error": "Error starting bulk evaluation"
+    },
+    "preview": {
+      "title": "Preview",
+      "subtitle": "Suppliers and file errors detected.",
+      "loading": "Analyzing file...",
+      "errorsTitle": "{{count}} errors found",
+      "validSuppliers": "{{count}} Valid Suppliers",
+      "table": {
+        "rut": "RUT",
+        "name": "Name",
+        "na": "N/A"
+      },
+      "empty": {
+        "title": "No suppliers found",
+        "subtitle": "The file contains no valid RUTs or is empty."
+      }
+    },
+    "instructions": {
+      "title": "Instructions",
+      "subtitle": "Follow these steps for a successful upload.",
+      "steps": {
+        "1": "Download the template to ensure correct formatting.",
+        "2": "The 'rut' column is mandatory. Other columns like 'name' are optional.",
+        "3": "Save your file as CSV or XLSX.",
+        "4": "Upload the file and preview the data.",
+        "5": "Each valid supplier will consume a credit from your plan."
+      }
+    },
+    "toast": {
+      "started": "Bulk evaluation started. Results will update automatically.",
+      "completed": "Bulk evaluation completed",
+      "failed": "Bulk evaluation finished with errors"
+    },
+    "delete": {
+      "singleSuccess": "Evaluation deleted successfully",
+      "singleError": "Error while deleting evaluation",
+      "bulkSuccess": "{{count}} evaluations deleted successfully",
+      "bulkFailed": "{{count}} evaluations could not be deleted"
+    },
+    "auth": {
+      "error": "Authentication error. Please log in again."
+    },
+    "template": {
+      "filename": "supplier_template.xlsx"
+    },
+    "file": {
+      "errors": {
+        "missingRut": "The file must contain at least a 'rut' column",
+        "unsupportedFormat": "Unsupported file format. Please use CSV, XLSX, or XLS.",
+        "invalidRutEntry": "Row {{row}}: Invalid RUT - {{rut}}",
+        "duplicatesFound": "{{count}} duplicate RUTs were found and omitted",
+        "noValidRuts": "No valid RUTs found in the file.",
+        "processing": "Error processing the file. Please verify the format and try again."
+      }
+    }
+  },
+  "evaluationStatus": {
+    "header": {
+      "title": "Evaluation Status",
+      "subtitle": "Real-time tracking of bulk evaluations"
+    },
+    "actions": {
+      "deleteSelected": "Delete Selected ({{count}})",
+      "refresh": "Refresh",
+      "export": "Export"
+    },
+    "summary": {
+      "total": "Total",
+      "pending": "Pending",
+      "processing": "Processing",
+      "success": "Completed",
+      "error": "Errors"
+    },
+    "filter": {
+      "label": "Filter by status:",
+      "all": "All",
+      "pending": "Pending",
+      "processing": "Processing",
+      "success": "Completed",
+      "error": "Errors"
+    },
+    "table": {
+      "selectAllTitle": "Select all evaluations",
+      "rut": "RUT",
+      "name": "Name",
+      "status": "Status",
+      "progress": "Progress",
+      "started": "Started",
+      "completed": "Completed",
+      "actions": "Actions"
+    },
+    "row": {
+      "viewDetail": "View details",
+      "cancelTitle": "Cancel evaluation",
+      "cancel": "Cancel"
+    },
+    "empty": {
+      "message": "No evaluations match the selected filter."
+    },
+    "modal": {
+      "single": {
+        "title": "Confirm Deletion",
+        "message": "Are you sure you want to delete this evaluation? This action cannot be undone.",
+        "cancel": "Cancel",
+        "confirming": "Deleting...",
+        "confirm": "Delete"
+      },
+      "bulk": {
+        "title": "Confirm Bulk Deletion",
+        "message": "Are you sure you want to delete {{count}} selected evaluations? This action cannot be undone.",
+        "cancel": "Cancel",
+        "confirming": "Deleting...",
+        "confirm": "Delete {{count}} evaluations"
+      }
+    },
+    "statusTexts": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "success": "Completed",
+      "error": "Error"
+    },
+    "export": {
+      "columns": {
+        "rut": "RUT",
+        "name": "Name",
+        "status": "Status",
+        "startedAt": "Start Date",
+        "completedAt": "Completed Date",
+        "progress": "Progress (%)",
+        "error": "Error"
+      },
+      "sheetName": "Evaluations",
+      "fileNamePrefix": "bulk_evaluations_"
+    }
+  },
+  "lpaltoPage": {
+    "title": "Own Lists - High Impact",
+    "subtitle": "Manage entries for the High Impact Own List.",
+    "addRecord": "Add record",
+    "formatHint": "Expected CSV format: RUT;Name;PersonType;ListType;SubListName;IncorporationDate",
+    "downloadCsvTemplate": "Download CSV template",
+    "uploadCsvXls": "Upload CSV/XLS",
+    "uploading": "Uploading file...",
+    "uploadError": "Error uploading file.",
+    "uploadSuccess": "Upload successful: {{saved}} saved, {{duplicates}} duplicates.",
+    "searchPlaceholder": "Search by RUT or name",
+    "filterAllTypes": "All types",
+    "filterAllSubLists": "All sub-lists",
+    "headers": {
+      "rut": "RUT",
+      "nombre": "Name",
+      "tipoPersona": "Person Type",
+      "tipoLista": "List Type",
+      "nombreSubLista": "Sub-List Name",
+      "fechaIncorporacion": "Incorporation Date",
+      "acciones": "Actions"
+    },
+    "fetchError": "Error fetching entries.",
+    "fetchErrorGeneric": "Unexpected error fetching entries.",
+    "deleteError": "Error deleting record.",
+    "confirmDeleteMessage": "Are you sure you want to delete this record?",
+    "deleteSuccess": "Record deleted successfully.",
+    "edit": "Edit"
+  },
+  "lpaltoModal": {
+    "title": {
+      "add": "Add record",
+      "edit": "Edit record"
+    },
+    "fields": {
+      "rut": "RUT",
+      "nombre": "Name",
+      "tipoPersona": "Person Type",
+      "tipoLista": "List Type",
+      "nombreSubLista": "Sub-List Name",
+      "fechaIncorporacion": "Incorporation Date"
+    },
+    "options": {
+      "empresa": "Company",
+      "persona": "Person"
+    },
+    "errors": {
+      "createError": "Error creating record.",
+      "updateError": "Error updating record."
+    },
+    "messages": {
+      "createSuccess": "Record created successfully.",
+      "updateSuccess": "Record updated successfully."
+    },
+    "buttons": {
+      "create": "Create",
+      "update": "Update"
+    }
+  },
+  "lpmedioPage": {
+    "title": "Own Lists - Medium Impact",
+    "subtitle": "Manage entries in the Medium Impact Own List.",
+    "downloadCsvTemplate": "Download CSV template",
+    "uploadCsvXls": "Upload CSV/XLS",
+    "uploading": "Uploading file...",
+    "uploadError": "Error uploading file",
+    "uploadSuccess": "Processed: {{saved}} new, {{duplicates}} duplicates",
+    "addRecord": "Add Record",
+    "formatHint": "Expected format: columns RUT, Name, PersonType (Company | Person), ListType, SubListName, IncorporationDate (YYYY-MM-DD). First row must be header. CSV in UTF-8 with comma or semicolon separator. In Excel (XLS/XLSX) the first sheet is processed. RUT may include dots and/or dash. Duplicate records by RUT in your tenant will be ignored.",
+    "searchPlaceholder": "Search by RUT or name...",
+    "filterAllTypes": "All Types",
+    "filterAllSubLists": "All Sub-Lists",
+    "headers": {
+      "rut": "RUT",
+      "nombre": "Name",
+      "tipoPersona": "Person Type",
+      "tipoLista": "List Type",
+      "nombreSubLista": "Sub-List Name",
+      "fechaIncorporacion": "Incorporation Date",
+      "acciones": "Actions"
+    },
+    "fetchError": "Error fetching entries",
+    "fetchErrorGeneric": "Unexpected error fetching entries",
+    "deleteError": "Error deleting record",
+    "confirmDeleteMessage": "Are you sure you want to delete this record?",
+    "deleteSuccess": "Record deleted successfully",
+    "edit": "Edit"
+  },
+  "lpmedioModal": {
+    "title": {
+      "add": "Add record",
+      "edit": "Edit record"
+    },
+    "fields": {
+      "rut": "RUT",
+      "nombre": "Name",
+      "tipoPersona": "Person Type",
+      "tipoLista": "List Type",
+      "nombreSubLista": "Sub-List Name",
+      "fechaIncorporacion": "Incorporation Date"
+    },
+    "options": {
+      "empresa": "Company",
+      "persona": "Person"
+    },
+    "errors": {
+      "createError": "Error creating record.",
+      "updateError": "Error updating record."
+    },
+    "messages": {
+      "createSuccess": "Record created successfully",
+      "updateSuccess": "Record updated successfully"
+    },
+    "buttons": {
+      "create": "Create",
+      "update": "Update"
+    }
+  },
+  "helpPage": {
+    "title": "How to Use DuXiter",
+    "subtitle": {
+      "superAdmin": "Comprehensive guide for system administrators and general features",
+      "regular": "Comprehensive guide to leverage all platform features"
+    },
+    "superAdminBadge": "SuperAdmin Panel",
+    "generalFeaturesTitle": "General Features",
+    "superAdminFeaturesTitle": "SuperAdmin Features",
+    "stepsTitle": "Steps to follow:",
+    "adminBadgeLabel": "Admin",
+    "general": {
+      "evaluationIndividual": {
+        "name": "Single Evaluation",
+        "description": "Perform detailed evaluations of individual suppliers. Enter the company's RUT and get a complete analysis of its financial, legal, and commercial situation.",
+        "steps": {
+          "1": "Go to 'Single Evaluation' menu",
+          "2": "Enter the company's RUT to evaluate",
+          "3": "Review the generated report with all indicators",
+          "4": "Download or share the report as needed"
+        }
+      },
+      "evaluationMassive": {
+        "name": "Mass Evaluation",
+        "description": "Evaluate multiple suppliers simultaneously. Upload a file with company RUTs and get a comparative analysis.",
+        "steps": {
+          "1": "Access 'Mass Evaluation'",
+          "2": "Upload your CSV/Excel file with RUTs",
+          "3": "Wait while all companies are processed",
+          "4": "Get a consolidated report of all suppliers"
+        }
+      },
+      "companyLookup": {
+        "name": "Company Lookup",
+        "description": "Quickly access specific information about any company. View historical and current data organized clearly.",
+        "steps": {
+          "1": "Select 'Company Lookup'",
+          "2": "Search by RUT or company name",
+          "3": "Explore the different information sections",
+          "4": "Use filters for specific data"
+        }
+      }
+    },
+    "superAdmin": {
+      "tenantManagement": {
+        "name": "Tenant Management",
+        "description": "Manage organizations on the platform. Create, configure, and manage tenants with their respective limits and settings.",
+        "steps": {
+          "1": "Access 'Tenant Management' in the admin panel",
+          "2": "Create new tenants using the 'Add Tenant' button",
+          "3": "Configure credit and user limits per tenant",
+          "4": "Enable or disable tenants as needed",
+          "5": "Monitor usage and statistics for each tenant"
+        }
+      },
+      "userManagement": {
+        "name": "User Management",
+        "description": "Full control over all system users. Manage roles, permissions, and access globally.",
+        "steps": {
+          "1": "Go to 'User Management' in the admin panel",
+          "2": "View all system users organized by tenant",
+          "3": "Edit user information and change roles",
+          "4": "Reset passwords when necessary",
+          "5": "Enable or disable users individually"
+        }
+      },
+      "systemConfig": {
+        "name": "System Configuration",
+        "description": "Configure global system parameters, environment variables, and external service settings.",
+        "steps": {
+          "1": "Access 'Server Configuration'",
+          "2": "Modify system environment variables",
+          "3": "Configure external services (APIs, databases)",
+          "4": "Adjust performance parameters and limits",
+          "5": "Save changes and restart services if needed"
+        }
+      },
+      "databaseManagement": {
+        "name": "Database Management",
+        "description": "Advanced tools to manage the database, perform backups, and monitor performance.",
+        "steps": {
+          "1": "Enter 'Database Management'",
+          "2": "Monitor usage and performance statistics",
+          "3": "Perform full database backups",
+          "4": "Execute maintenance operations",
+          "5": "Review system logs and metrics"
+        }
+      },
+      "specialCasesManagement": {
+        "name": "Special Cases Management",
+        "description": "Manage specialized databases such as anti-union cases, environmental sanctions, and lists of convicted suppliers.",
+        "steps": {
+          "1": "Access specialized sections from the admin menu",
+          "2": "Upload CSV/Excel files with new records",
+          "3": "Validate and process information automatically",
+          "4": "Edit or delete existing records",
+          "5": "Export reports and statistics"
+        }
+      },
+      "monitoringBilling": {
+        "name": "Monitoring and Billing",
+        "description": "Monitor system usage and manage tenant billing based on credit consumption.",
+        "steps": {
+          "1": "Review 'Monitoring Status' for real-time metrics",
+          "2": "Access 'Billing Management' for financial reports",
+          "3": "Configure usage alerts and limits",
+          "4": "Generate consumption reports per tenant",
+          "5": "Adjust pricing and billing policies"
+        }
+      }
+    }
+  },
+  "superAdminUsers": {
+    "title": "SuperAdmin User Management",
+    "usersCount": "{{count}} users",
+    "search": {
+      "title": "User Search",
+      "placeholder": "Search by name, email or tenant..."
+    },
+    "table": {
+      "headers": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "tenant": "Tenant",
+        "status": "Status",
+        "createdAt": "Creation Date",
+        "actions": "Actions"
+      }
+    },
+    "labels": {
+      "noTenant": "No tenant",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "cancel": "Cancel",
+      "resetPassword": "Reset Password",
+      "saveChanges": "Save Changes"
+    },
+    "dialogs": {
+      "resetPassword": {
+        "title": "Reset Password - {{name}}"
+      },
+      "editUser": {
+        "title": "Edit User - {{name}}"
+      }
+    },
+    "forms": {
+      "password": {
+        "new": "New Password",
+        "confirm": "Confirm Password"
+      },
+      "user": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role"
+      },
+      "roleOptions": {
+        "user": "User",
+        "admin": "Admin",
+        "tenantAdmin": "Tenant Admin",
+        "superuser": "Superuser"
+      }
+    },
+    "messages": {
+      "loadingUsers": "Loading users...",
+      "accessDenied": "Access denied. Only superusers can access this page."
+    },
+    "errors": {
+      "loadUsers": "Error loading users",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "passwordReset": "Error resetting password",
+      "userUpdate": "Error updating user",
+      "statusToggle": "Error toggling user status"
+    },
+    "success": {
+      "passwordReset": "Password reset successfully",
+      "userUpdated": "User updated successfully",
+      "statusUpdated": "User status updated"
+    }
+  },
+  "superAdminBilling": {
+    "title": "Billing Management",
+    "subtitle": "Manage tenants' invoices and traffic reports",
+    "tabs": {
+      "invoices": "Invoices",
+      "traffic": "Traffic Reports",
+      "credits": "Credits",
+      "settings": "Settings"
+    },
+    "buttons": {
+      "generateBilling": "Generate Billing",
+      "generateReport": "Generate Report",
+      "addCredits": "Add Credits",
+      "editSettings": "Edit Settings",
+      "viewDetails": "View details",
+      "download": "Download",
+      "send": "Send",
+      "cancel": "Cancel",
+      "generateForAll": "Generate for All",
+      "downloadPdf": "Download PDF",
+      "sendInvoice": "Send Invoice",
+      "sendReport": "Send Report"
+    },
+    "stats": {
+      "invoices": {
+        "totalRevenue": "Total Revenue",
+        "totalInvoices": "Total Invoices",
+        "paid": "Paid",
+        "pending": "Pending",
+        "overdue": "Overdue",
+        "average": "Average"
+      },
+      "credits": {
+        "totalOperations": "Total Operations",
+        "creditsAdded": "Credits Added",
+        "creditsDeducted": "Credits Deducted",
+        "averageOperationValue": "Average per Operation"
+      }
+    },
+    "filters": {
+      "status": "Status",
+      "month": "Month",
+      "year": "Year",
+      "tenantId": "Tenant ID",
+      "placeholderTenant": "Filter by tenant",
+      "creditsTitle": "Credits Filters"
+    },
+    "status": {
+      "all": "All",
+      "pending": "Pending",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue"
+    },
+    "table": {
+      "invoices": {
+        "invoice": "Invoice",
+        "tenant": "Tenant",
+        "period": "Period",
+        "amount": "Amount",
+        "status": "Status",
+        "dueDate": "Due Date",
+        "actions": "Actions"
+      },
+      "traffic": {
+        "tenant": "Tenant",
+        "period": "Period",
+        "evaluations": "Evaluations",
+        "apiCalls": "API Calls",
+        "tokens": "Tokens",
+        "peakUsage": "Peak Usage",
+        "actions": "Actions"
+      },
+      "dailyStats": {
+        "date": "Date",
+        "evaluations": "Evaluations",
+        "apiCalls": "API Calls",
+        "tokens": "Tokens",
+        "storage": "Storage"
+      },
+      "creditsTenant": {
+        "tenant": "Tenant",
+        "operations": "Operations",
+        "creditsAdded": "Credits Added",
+        "creditsDeducted": "Credits Deducted",
+        "currentBalance": "Current Balance"
+      }
+    },
+    "sections": {
+      "tenantStats": "Tenant Statistics",
+      "operationTypeStats": "Operation Type Statistics",
+      "topTenantBalances": "Top 10 Tenant Balances",
+      "billingSettings": "Billing Settings",
+      "pricing": "Pricing",
+      "generalSettings": "General Settings"
+    },
+    "settings": {
+      "evaluationPrice": "Price per Evaluation",
+      "apiCallPrice": "Price per API Call",
+      "tokenPricePerThousand": "Price per 1000 Tokens",
+      "currency": "Currency",
+      "taxRatePercent": "Tax Rate (%)",
+      "daysUntilDue": "Days until Due"
+    },
+    "modals": {
+      "generateBillingTitle": "Generate Monthly Billing",
+      "generateBillingQuestion": "Do you want to generate billing for {{month}}/{{year}}?",
+      "generateTrafficTitle": "Generate Traffic Report",
+      "generateTrafficQuestion": "Do you want to generate the traffic report for {{month}}/{{year}}?",
+      "billingDetailTitlePrefix": "Invoice Detail",
+      "generalInfo": "General Information",
+      "serviceUsage": "Service Usage",
+      "storage": "Storage",
+      "costBreakdown": "Cost Breakdown",
+      "total": "Total",
+      "actions": "Actions",
+      "trafficReportTitle": "Traffic Report - {{tenantName}} ({{month}}/{{year}})",
+      "totalEvaluations": "Total Evaluations",
+      "averageDaily": "Daily Average",
+      "peakUsageWithDate": "Peak Usage ({{date}})",
+      "dailyStats": "Daily Statistics"
+    },
+    "opTypes": {
+      "evaluation": "Evaluations",
+      "api_call": "API Calls",
+      "credit_purchase": "Credit Purchase",
+      "credit_refund": "Credit Refund",
+      "operationsSuffix": "operations"
+    },
+    "pagination": {
+      "showing": "Showing {{from}} to {{to}} of {{total}} results",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "messages": {
+      "errorLoading": "Error loading data",
+      "errorGenerateBilling": "Error generating billing",
+      "errorGenerateTraffic": "Error generating traffic report",
+      "errorUpdateStatus": "Error updating status",
+      "errorSendInvoice": "Error sending invoice",
+      "errorDownloadInvoice": "Error downloading invoice",
+      "errorDownloadReport": "Error downloading report",
+      "errorSendReport": "Error sending report"
+    }
+  },
+  
+  "adminDashboard": {
+    "noData": "No data available",
+    "usage": {
+      "heavy": "Heavy Use (>50)",
+      "moderate": "Moderate Use (11-50)",
+      "light": "Light Use (1-10)",
+      "inactive": "Inactive (0)"
+    },
+    "overview": {
+      "totalTenants": "Total Tenants",
+      "activeTenants": "Active Tenants",
+      "totalEvaluations": "Total Evaluations",
+      "averagePerTenant": "Average per Tenant"
+    },
+    "system": {
+      "title": "System Status",
+      "server": "Server",
+      "database": "Database",
+      "cpu": "CPU",
+      "memory": "Memory",
+      "online": "Online",
+      "offline": "Offline",
+      "warning": "Warning",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "slow": "Slow",
+      "uptime": "Uptime",
+      "version": "Version",
+      "connectionsShort": "conn.",
+      "cpuUsageLabel": "CPU usage",
+      "memoryUsageLabel": "RAM usage",
+      "serverOnline": "Online",
+      "serverWarning": "Warning",
+      "serverOffline": "Offline",
+      "databaseConnected": "Connected",
+      "databaseSlow": "Slow",
+      "databaseDisconnected": "Disconnected"
+    },
+    "services": {
+      "title": "Service Status",
+      "sheriffApi": "Sheriff API",
+      "notifications": "Notifications",
+      "monitoring": "Monitoring",
+      "active": "Active",
+      "inactive": "Inactive",
+      "error": "Error"
+    },
+    "performance": {
+      "title": "Performance Details",
+      "activeRequests": "Active Requests",
+      "diskUsage": "Disk Usage",
+      "dbSize": "DB Size",
+      "systemVersion": "System Version",
+      "diskSpaceTitle": "Disk Space Details",
+      "diskTotal": "Total Space",
+      "diskUsed": "Used Space",
+      "diskFree": "Free Space",
+      "diskUsageLabel": "Disk Usage"
+    },
+    "charts": {
+      "usageDistributionTitle": "Usage Distribution",
+      "monthlyCreationTitle": "Tenant Creation (Last 6 Months)"
+    },
+    "topTenants": {
+      "title": "Top 5 Tenants by Usage",
+      "columns": {
+        "name": "Tenant Name",
+        "used": "Evaluations Used",
+        "remaining": "Evaluations Remaining",
+        "lastEvaluation": "Last Evaluation"
+      },
+      "never": "Never"
+    },
+    "additional": {
+      "recentActivity": "Recent Activity",
+      "recentActivityDesc": "{{count}} tenants performed evaluations in the last 30 days",
+      "totalCapacity": "Total Capacity",
+      "totalCapacityDesc": "{{count}} evaluations allocated in total",
+      "systemUsage": "System Usage",
+      "systemUsageDesc": "{{percent}}% of total capacity used"
+    },
+    "evaluationStats": {
+      "title": "Evaluation Statistics per Tenant",
+      "summary": {
+        "cached": "Cached Evaluations",
+        "ttlWeek": "TTL: 1 week",
+        "archived": "Archived Evaluations",
+        "permanent": "Permanent",
+        "total": "Total Evaluations",
+        "cacheArchive": "Cache + Archive"
+      },
+      "table": {
+        "name": "Tenant Name",
+        "cache": "Cache (Results)",
+        "archive": "Archive (Summaries)",
+        "total": "Total",
+        "distribution": "Distribution"
+      }
+    }
+  }
+  ,
+  "evaluationSettings": {
+    "title": "Evaluation Parameter Configuration",
+    "tabs": {
+      "compliance": "Compliance",
+      "legal": "Legal",
+      "capitalHumano": "Human Capital",
+      "financieroTributario": "Financial & Tax"
+    },
+    "riskOptions": {
+      "bajo": "Low",
+      "medio": "Medium",
+      "alto": "High",
+      "critico": "Critical"
+    },
+    "form": {
+      "label": "Label",
+      "risk": "Risk",
+      "sheriffLogKey": "Sheriff Log Key",
+      "isCritical": "Is Critical",
+      "condicion": "Condition",
+      "saveChanges": "Save Changes",
+      "loading": "Loading...",
+      "updateSuccess": "Parameters updated successfully",
+      "updateError": "Error updating parameters",
+      "loadError": "Error loading parameters"
+    },
+    "testCard": {
+      "title": "Test Criteria",
+      "rut": "RUT",
+      "enterRut": "Please enter a RUT",
+      "invalidRut": "Invalid RUT format",
+      "testing": "Testing...",
+      "testAll": "Test All Parameters",
+      "fetchError": "Error fetching data",
+      "notFound": "Not found",
+      "notAvailable": "N/A",
+      "resultsTitle": "Comparison Results",
+      "table": {
+        "parameter": "Parameter",
+        "rutValue": "RUT Value",
+        "parameterValue": "Parameter Value",
+        "condition": "Condition"
+      }
+    }
+  }
+  ,
+  "envConfiguration": {
+    "noteTitle": "Important Note",
+    "noteMessage": "Changes to configuration parameters will require restarting the server to take effect. Parameters marked with * are required for proper system operation.",
+    "header": {
+      "title": "Server Parameter Configuration",
+      "subtitle": "Manage server .env configuration parameters"
+    },
+    "loading": "Loading configuration...",
+    "buttons": {
+      "reset": "Reset",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "changes": {
+      "unsaved": "There are unsaved changes"
+    },
+    "toast": {
+      "saveSuccess": "Configuration saved successfully",
+      "resetSuccess": "Configuration reset",
+      "saveError": "Error saving configuration"
+    },
+    "errors": {
+      "loadConfig": "Error loading configuration",
+      "saveConfig": "Error saving configuration"
+    },
+    "categories": {
+      "apiKeys": "API Keys",
+      "database": "Database",
+      "server": "Server",
+      "apiUrls": "API URLs",
+      "openaiConfig": "OpenAI Configuration",
+      "riskCalculation": "Risk Calculation",
+      "sendgridConfig": "SendGrid Configuration",
+      "rabbitmqConfig": "RabbitMQ Configuration",
+      "contactInfo": "Contact Information"
+    },
+    "params": {
+      "openaiApiKey": { "description": "API key for OpenAI GPT" },
+      "sheriffApiToken": { "description": "Authentication token for Sheriff API" },
+      "sendgridApiKey": { "description": "API key for SendGrid (email sending)" },
+      "mongodbUri": { "description": "MongoDB connection URI" },
+      "port": { "description": "Server port" },
+      "rateLimitWindowMs": { "description": "Time window for rate limiting (ms)" },
+      "rateLimitMaxRequests": { "description": "Maximum requests per window" },
+      "apiUrl": { "description": "Base API URL" },
+      "sheriffApiUrl": { "description": "Sheriff API URL" },
+      "siiUrl": { "description": "SII service URL" },
+      "openaiModelSummary": { "description": "OpenAI model for summaries" },
+      "openaiModelAnalysis": { "description": "OpenAI model for analysis" },
+      "openaiTemperature": { "description": "Temperature for OpenAI (0.0-1.0)" },
+      "openaiMaxTokens": { "description": "Maximum tokens for OpenAI" },
+      "riskTotalParams": { "description": "Total number of risk parameters" },
+      "riskCriticalPercentage": { "description": "Threshold percentage for critical risk" },
+      "riskHighPercentage": { "description": "Threshold percentage for high risk" },
+      "riskMediumPercentage": { "description": "Threshold percentage for medium risk" },
+      "sendgridFromEmail": { "description": "Sender email for SendGrid" },
+      "sendgridFromName": { "description": "Sender name for SendGrid" },
+      "rabbitmqUrl": { "description": "RabbitMQ connection URL" },
+      "rabbitmqQueue": { "description": "RabbitMQ queue name" },
+      "supportEmail": { "description": "Support email" }
+    }
+  },
+  "promptConfiguration": {
+    "title": "Prompt Configuration",
+    "subtitle": "Manage AI prompts used for different analysis types",
+    "categories": {
+      "seekData": "Data Search",
+      "analyzeSheriffData": "Sheriff Data Analysis",
+      "analyzeEvaluationParameters": "Evaluation Parameters Analysis"
+    },
+    "form": {
+      "newTitle": "New Prompt",
+      "editTitle": "Edit Prompt",
+      "name": "Name",
+      "category": "Category",
+      "description": "Description",
+      "template": "Prompt Template",
+      "templatePlaceholder": "Write the prompt template here. You can use variables like {{data}}, {{sheriffData}}, {{parameters}}, etc.",
+      "activate": "Activate this prompt"
+    },
+    "table": {
+      "name": "Name",
+      "category": "Category",
+      "description": "Description",
+      "status": "Status",
+      "lastUpdate": "Last Update",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "newPrompt": "New Prompt",
+      "update": "Update",
+      "create": "Create",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "delete": "Delete",
+      "createFirst": "Create the first prompt"
+    },
+    "empty": {
+      "noPrompts": "No prompt configurations available"
+    },
+    "toast": {
+      "loadError": "Error loading prompt configurations",
+      "saveError": "Error saving prompt",
+      "createSuccess": "Prompt created successfully",
+      "updateSuccess": "Prompt updated successfully",
+      "deleteSuccess": "Prompt deleted successfully",
+      "deleteError": "Error deleting prompt",
+      "toggleSuccess": "Prompt status updated",
+      "toggleError": "Error changing prompt status"
+    },
+    "confirm": {
+      "delete": "Are you sure you want to delete this prompt?"
+    }
+  },
+  "superAdminMonitoring": {
+    "title": "Tenant Monitoring Status",
+    "subtitle": "Summary of monitoring status across all tenants",
+    "stats": {
+      "totalTenants": "Total Tenants",
+      "totalSchedules": "Total Schedules",
+      "activeSchedules": "Active Schedules",
+      "totalExecutions": "Total Executions",
+      "averagePerTenant": "Average per Tenant"
+    },
+    "sections": {
+      "tenantDetail": "Detail by Tenant"
+    },
+    "table": {
+      "columns": {
+        "tenant": "Tenant",
+        "status": "Status",
+        "schedules": "Schedules",
+        "executions": "Executions",
+        "frequencies": "Frequencies",
+        "lastExecution": "Last Execution",
+        "nextExecution": "Next Execution"
+      }
+    },
+    "messages": {
+      "noMonitoringConfigured": "No monitoring configured",
+      "noMonitoringFound": "No monitoring found in any tenant.",
+      "noData": "No data available"
+    },
+    "labels": {
+      "id": "ID",
+      "totals": "Totals",
+      "active": "Active",
+      "inactive": "Inactive",
+      "average": "Average",
+      "perSchedule": "/schedule"
+    },
+    "status": {
+      "noSchedules": "No Schedules",
+      "allActive": "All Active",
+      "allInactive": "All Inactive",
+      "activeCount": "{{active}}/{{total}} Active"
+    },
+    "frequency": {
+      "min": "Min",
+      "daily": "Daily",
+      "weekly": "Wk",
+      "monthly": "Mo"
+    },
+    "buttons": {
+      "retry": "Retry",
+      "refresh": "Refresh Data",
+      "refreshing": "Refreshing..."
+    },
+    "errors": {
+      "authMissing": "Authentication token not available",
+      "accessDenied": "Access denied: superuser privileges required",
+      "fetchFailed": "Failed to fetch monitoring statistics: {{status}} {{statusText}}",
+      "loadStats": "Error loading statistics"
+    },
+    "date": {
+      "never": "Never"
+    }
+  }
+,
+"databaseManagement": {
+  "header": {
+    "title": "Database Management",
+    "refresh": "Refresh",
+    "backup": "Backup"
+  },
+  "connection": {
+    "title": "Connection Status",
+    "status": {
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "error": "Error",
+      "running": "Running",
+      "completed": "Completed",
+      "failed": "Failed"
+    }
+  },
+  "stats": {
+    "totalCollections": "Total Collections",
+    "totalDocuments": "Total Documents",
+    "dbSize": "Database Size",
+    "totalIndexes": "Total Indexes"
+  },
+  "operations": {
+    "title": "Database Operations",
+    "subtitle": "Perform maintenance operations on the database",
+    "buttons": {
+      "backup": "Create Backup",
+      "cleanup": "Clean Database",
+      "reindex": "Reindex Collections"
+    }
+  },
+  "collections": {
+    "title": "Database Collections",
+    "columns": {
+      "name": "Collection Name",
+      "documents": "Documents",
+      "avgSize": "Average Size",
+      "totalSize": "Total Size",
+      "indexes": "Indexes",
+      "actions": "Actions"
+    },
+    "tooltips": {
+      "reindex": "Reindex",
+      "clean": "Clean"
+    }
+  },
+  "recent": {
+    "title": "Recent Operations",
+    "columns": {
+      "type": "Type",
+      "status": "Status",
+      "start": "Start",
+      "end": "End",
+      "message": "Message"
+    },
+    "type": {
+      "backup": "Backup",
+      "restore": "Restore",
+      "cleanup": "Cleanup",
+      "reindex": "Reindex"
+    },
+    "status": {
+      "running": "Running",
+      "completed": "Completed",
+      "failed": "Failed"
+    }
+  },
+  "dialogs": {
+    "backup": {
+      "title": "Confirm Backup",
+      "message": "Are you sure you want to create a full database backup? This operation may take a few minutes.",
+      "confirm": "Confirm Backup",
+      "cancel": "Cancel"
+    },
+    "cleanup": {
+      "title": "Confirm Cleanup",
+      "message": "Are you sure you want to clean {{target}}? This operation will remove obsolete data and cannot be undone.",
+      "confirm": "Confirm Cleanup",
+      "cancel": "Cancel",
+      "allDatabase": "the entire database",
+      "collection": "the collection \"{{name}}\""
+    }
+  },
+  "errors": {
+    "loadStats": "Error loading database statistics",
+    "loadOperations": "Error loading operations",
+    "backup": "Error during backup",
+    "cleanup": "Error during cleanup",
+    "reindex": "Error during reindexing"
+  }
+,
+"equifaxMonitor": {
+  "header": { "title": "Equifax Monitor" },
+  "form": {
+    "rut": "RUT",
+    "limit": "Limit",
+    "page": "Page",
+    "from": "From",
+    "to": "To",
+    "rutPlaceholder": "12.345.678-9",
+    "invalidRut": "Invalid RUT"
+  },
+  "buttons": { "consult": "Query", "prev": "Previous", "next": "Next" },
+  "pagination": { "summary": "Total: {{total}} · Page {{page}} of {{pages}}" },
+  "table": {
+    "columns": {
+      "date": "Date",
+      "rut": "RUT",
+      "status": "Status",
+      "code": "Code",
+      "timeMs": "Time (ms)",
+      "endpoint": "Endpoint",
+      "cache": "Cache",
+      "download": "Download",
+      "details": "Details"
+    }
+  },
+  "status": { "ok": "OK", "error": "ERROR" },
+  "cache": { "cached": "cached", "miss": "miss", "info": "Cache Info" },
+  "details": { "payload": "Payload", "data": "Data", "normalized": "Normalized Data", "error": "Error" },
+  "errors": {
+    "downloadJson": "Error downloading JSON",
+    "invalidRut": "Please enter a valid RUT",
+    "loadResponses": "Error loading Equifax responses"
+  },
+  "notifications": { "noRecentRecords": "No recent records" },
+  "actions": { "downloadJson": "Download JSON" }
+},
+
+"sheriffMonitor": {
+  "header": { "title": "Sheriff Monitor" },
+  "form": {
+    "rut": "RUT",
+    "limit": "Limit",
+    "page": "Page",
+    "from": "From",
+    "to": "To",
+    "rutPlaceholder": "12.345.678-9",
+    "invalidRut": "Invalid RUT"
+  },
+  "buttons": { "consult": "Query", "prev": "Previous", "next": "Next" },
+  "pagination": { "summary": "Total: {{total}} · Page {{page}} of {{pages}}" },
+  "table": {
+    "columns": {
+      "rut": "RUT",
+      "status": "Status",
+      "errorCalls": "Call Errors",
+      "download": "Download",
+      "detail": "Detail",
+      "date": "Date"
+    },
+    "link": { "viewJson": "View JSON" }
+  },
+  "status": { "ok": "OK", "withErrors": "With errors" },
+  "errors": { "loadLogs": "Error loading Sheriff logs" },
+  "actions": { "downloadJson": "Download JSON" }
+}
+}
+}

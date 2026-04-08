@@ -1,0 +1,977 @@
+{
+  "rut": "76253994-2",
+  "isMonitoringRequest": false,
+  "fetchedAt": "2025-06-12T10:28:20.348Z",
+  "loadRutData": {
+    "success": true,
+    "data": [
+      "76253994-2"
+    ]
+  },
+  "summaryData": {
+    "success": true,
+    "data": {
+      "rut": "76253994-2",
+      "corporationId": 774,
+      "fechaCarga": "10-06-2025",
+      "sii": {
+        "razonSocial": "INVERSIONES KAFFIR LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "11-12-2012",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Como recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas. \n\n\n\n\n\n\n\n\ncertifica(14444,'SITTRIB','TribTerc');\n\n\nmostrarPie()",
+        "situacionActual": "Situación no disponible",
+        "actividadEconomicaVigente": [
+          {
+            "activities": "VENTA AL POR MAYOR DE LIBROS",
+            "code": "464905",
+            "category": "Primera",
+            "ivaAffection": "Si",
+            "date": "11-11-2024"
+          },
+          {
+            "activities": "VENTA AL POR MENOR DE LIBROS EN COMERCIOS ESPECIALIZADOS",
+            "code": "476101",
+            "category": "Primera",
+            "ivaAffection": "Si",
+            "date": "11-11-2024"
+          },
+          {
+            "activities": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+            "code": "643000",
+            "category": "Primera",
+            "ivaAffection": "Si",
+            "date": "11-12-2012"
+          },
+          {
+            "activities": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "code": "681012",
+            "category": "Primera",
+            "ivaAffection": "Si",
+            "date": "30-03-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "document": "Factura Electronica",
+            "lastStampingYear": "2025"
+          },
+          {
+            "document": "Factura No Afecta O Exenta Electronica",
+            "lastStampingYear": "2024"
+          },
+          {
+            "document": "Guia Despacho Electronica",
+            "lastStampingYear": "2024"
+          },
+          {
+            "document": "Nota Credito Electronica",
+            "lastStampingYear": "2025"
+          },
+          {
+            "document": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "lastStampingYear": "2014"
+          }
+        ],
+        "activityCount": 4,
+        "documentCount": 5
+      },
+      "siiBusinessSize": {
+        "textSize": "Pequeña empresa",
+        "icon": "warehouse",
+        "annualSales": "2.400,01 a 5.000,00",
+        "dependentWorkers": 0
+      },
+      "deudaBancariaSummary": {
+        "date": "05/2025",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variation": {
+          "date": "11/2024",
+          "deudaDirectaComercial": 809785,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 809785,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 14445
+        }
+      },
+      "boletinComercialSummary": {
+        "casesInfocom": 0,
+        "casesBolcom": 0,
+        "casesDicom": 0,
+        "amountInfocom": 0,
+        "amountBolcom": 0,
+        "amountDicom": 0,
+        "variation": {
+          "casesInfocom": 0,
+          "casesBolcom": 0,
+          "casesDicom": 0,
+          "amountInfocom": 0,
+          "amountBolcom": 0,
+          "amountDicom": 0
+        },
+        "lastUpdate": "2025-06-11T02:56:23.395Z"
+      },
+      "judicialSummary": {
+        "civilActiveCases": 0,
+        "civilFiledCases": 0,
+        "civilConcludedCases": 0,
+        "cobranzaActiveCases": 0,
+        "cobranzaFiledCases": 0,
+        "cobranzaConcludedCases": 0,
+        "laboralActiveCases": 0,
+        "laboralFiledCases": 0,
+        "laboralConcludedCases": 0,
+        "currentCases": 0,
+        "archivedCases": 0,
+        "concludedCases": 0,
+        "allCases": 0,
+        "bankruptcyCases": 0
+      },
+      "boletinConcursalSummary": false,
+      "moraPrevisionalSummary": {
+        "totalCases": 0,
+        "employees": 0,
+        "variation": {
+          "totalCases": 0
+        }
+      },
+      "multaLaboralSummary": {
+        "totalFines": 0,
+        "totalFinesAmount": 0,
+        "paidFines": 0,
+        "finesPaidAmount": 0,
+        "outstandingFines": 0,
+        "outstandingFinesAmount": 0,
+        "variation": {
+          "totalFines": 0,
+          "totalFinesAmount": 0,
+          "paidFines": 0,
+          "finesPaidAmount": 0,
+          "outstandingFines": 0,
+          "outstandingFinesAmount": 0
+        }
+      },
+      "boletinLaboralSummary": {
+        "totalAmount": 0,
+        "variation": {
+          "totalAmount": 0
+        }
+      },
+      "boletinLaboralLastUpdate": "2025-06-11T02:56:22.025Z",
+      "creditScoring": {
+        "financesWeight": 0,
+        "maxFinancesWeight": 100,
+        "judicialWeight": 100,
+        "judicialBankruptcy": false,
+        "maxJudicialWeight": 100,
+        "laborCollectionWeight": 100,
+        "maxLaborCollectionWeight": 100,
+        "bulletinWeight": 100,
+        "maxBulletinWeight": 100,
+        "numberOfHelpers": 3,
+        "nameOfHelpers": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "classificationPercentage": 300,
+        "classificationLabel": "Risk free",
+        "financesWeighting": 0,
+        "judicialWeighting": 100,
+        "laborCollectionWeighting": 100,
+        "commertialBulletinWeighting": 100,
+        "maxJudicialWeighting": 100,
+        "maxCommertialBulletinWeighting": 100,
+        "maxFinancesWeighting": 100,
+        "maxLaborCollectionWeighting": 100
+      },
+      "vehiclesSummary": {
+        "totalAssessmentFrom": 0,
+        "vehiclesQuantity": 0
+      },
+      "propertiesSummary": {
+        "propertiesQuantity": 12,
+        "totalAppraisal": "585967120"
+      },
+      "cobranzaLaboralLastUpdate": "2025-06-11T02:56:19.797Z",
+      "timestampsSubHelpers": [
+        {
+          "subhelperId": 1,
+          "lastUpdate": "2025-03-25T21:27:09.503Z"
+        },
+        {
+          "subhelperId": 2,
+          "lastUpdate": "2025-06-11T02:56:24.713Z"
+        },
+        {
+          "subhelperId": 3,
+          "lastUpdate": "2025-06-11T02:56:24.069Z"
+        },
+        {
+          "subhelperId": 4,
+          "lastUpdate": "2025-06-11T02:56:19.782Z"
+        },
+        {
+          "subhelperId": 5,
+          "lastUpdate": "2025-06-11T02:56:21.176Z"
+        },
+        {
+          "subhelperId": 6,
+          "lastUpdate": "2025-06-11T02:56:20.672Z"
+        },
+        {
+          "subhelperId": 7,
+          "lastUpdate": "2025-06-11T02:56:20.600Z"
+        },
+        {
+          "subhelperId": 8,
+          "lastUpdate": "2025-06-11T02:56:34.258Z"
+        },
+        {
+          "subhelperId": 9,
+          "lastUpdate": "2025-06-11T02:56:19.797Z"
+        },
+        {
+          "subhelperId": 10,
+          "lastUpdate": "2025-06-11T02:56:23.395Z"
+        },
+        {
+          "subhelperId": 11,
+          "lastUpdate": "2025-06-11T02:56:25.570Z"
+        },
+        {
+          "subhelperId": 12,
+          "lastUpdate": "2025-06-11T02:56:24.116Z"
+        },
+        {
+          "subhelperId": 22,
+          "lastUpdate": "2025-03-25T21:27:08.310Z"
+        },
+        {
+          "subhelperId": 24,
+          "lastUpdate": "2025-03-25T21:27:11.847Z"
+        },
+        {
+          "subhelperId": 25,
+          "lastUpdate": "2025-03-25T21:27:09.416Z"
+        },
+        {
+          "subhelperId": 26,
+          "lastUpdate": "2025-06-11T02:56:24.812Z"
+        },
+        {
+          "subhelperId": 28,
+          "lastUpdate": "2025-06-11T02:56:22.025Z"
+        },
+        {
+          "subhelperId": 29,
+          "lastUpdate": "2025-06-11T02:56:21.259Z"
+        },
+        {
+          "subhelperId": 30,
+          "lastUpdate": "2025-06-11T02:56:26.434Z"
+        }
+      ],
+      "compliance": {
+        "id": 33766,
+        "scrappedRutId": 127310,
+        "userId": 2018,
+        "corporationId": 774,
+        "name": "INVERSIONES KAFFIR LIMITADA",
+        "secondName": null,
+        "surname": null,
+        "secondSurname": null,
+        "personType": "juridical",
+        "risk": "free",
+        "summary": [
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "PEP Chile",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Funcionarios Públicos",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Familiares PEP",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Listas Internacionales",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Penal",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 1,
+            "textCountResults": 1,
+            "table": "Socios y Sociedades",
+            "risk": null,
+            "useColor": false
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Noticias",
+            "risk": null,
+            "useColor": false
+          }
+        ],
+        "selectedRowsSocietaryMesh": [
+          "INVERSIONES KAFFIR LIMITADA - Diario Oficial - 76253994-2"
+        ],
+        "selectedRowsPepChile": [],
+        "selectedRowsPublicOfficial": [],
+        "selectedRowsPepChileFamily": [],
+        "selectedRowsBlacklist": [],
+        "selectedRowsPenal": [],
+        "selectedRowsNews": [],
+        "lastDataUpdate": null,
+        "createdAt": "2025-05-27T15:01:49.516Z",
+        "updatedAt": "2025-05-27T15:01:49.516Z"
+      },
+      "ratings": {
+        "activeTags": [],
+        "commentSection": {
+          "comments": [],
+          "pagination": {
+            "page": 1,
+            "limit": 0,
+            "total": 0
+          }
+        },
+        "globalRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalCumplimientoRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalRelacionRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalTransparenciaRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalFiabilidadRating": {
+          "value": 0,
+          "total": 0
+        }
+      }
+    }
+  },
+  "civilCasesData": {
+    "success": true,
+    "data": []
+  },
+  "laboralCasesData": {
+    "success": true,
+    "data": []
+  },
+  "cobranzaCasesData": {
+    "success": true,
+    "data": []
+  },
+  "moraPrevisionalCasesData": {
+    "success": true,
+    "data": []
+  },
+  "multaLaboralCasesData": {
+    "success": true,
+    "data": []
+  },
+  "mallaSocietariaData": {
+    "rut": "76253994-2",
+    "diarioOficial": [
+      {
+        "fecha": "2012-11-16T00:00:00.000Z",
+        "razonSocial": "INVERSIONES KAFFIR LIMITADA",
+        "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/11/16/563181_C_LTDA_20121116_firmado.pdf",
+        "seccion": "CONSTITUCIÓN",
+        "socios": [
+          {
+            "nombre": "DOLLY GEMA DEIK MORRISON",
+            "domicilio": "ISIDORA GOYENECHEA 3120, LAS CONDES",
+            "rut": "7431966-1"
+          },
+          {
+            "nombre": "EMILIO VALERIO DEIK MORRISON",
+            "domicilio": "ISIDORA GOYENECHEA 3120, LAS CONDES",
+            "rut": "7388346-6"
+          }
+        ],
+        "rut": "76253994-2"
+      }
+    ],
+    "empresaEnUnDia": [],
+    "participaciones": [
+      []
+    ]
+  },
+  "officialDiaryData": {
+    "success": true,
+    "data": [
+      {
+        "id": 695709,
+        "scrappedRutId": 127310,
+        "fecha": "2012-11-16T00:00:00.000Z",
+        "razonSocial": "INVERSIONES KAFFIR LIMITADA",
+        "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/11/16/563181_C_LTDA_20121116_firmado.pdf",
+        "seccion": "CONSTITUCIÓN",
+        "notified": true,
+        "socios": [
+          {
+            "nombre": "DOLLY GEMA DEIK MORRISON",
+            "domicilio": "ISIDORA GOYENECHEA 3120, LAS CONDES",
+            "rut": "7431966-1"
+          },
+          {
+            "nombre": "EMILIO VALERIO DEIK MORRISON",
+            "domicilio": "ISIDORA GOYENECHEA 3120, LAS CONDES",
+            "rut": "7388346-6"
+          }
+        ],
+        "rut": "76253994-2",
+        "createdAt": "2025-03-25T21:27:08.188Z",
+        "updatedAt": "2025-03-26T11:09:33.945Z"
+      }
+    ]
+  },
+  "commercialBulletinCasesData": {
+    "success": true,
+    "data": []
+  },
+  "creditScoringData": {
+    "success": true,
+    "data": {
+      "id": 401088,
+      "period": "2025-06",
+      "scrappedRutId": 127310,
+      "startOfActivities": true,
+      "financesPercentage": 0,
+      "financesNumerator": 0,
+      "financesDenominator": 0,
+      "financesWeighting": 0,
+      "judicialPercentage": 0,
+      "judicialNumerator": 0,
+      "judicialDenominator": 0,
+      "judicialBankruptcy": false,
+      "judicialWeighting": 100,
+      "pensionDefaultPercentage": 0,
+      "pensionDefaultCases": 0,
+      "laborFinesPercentage": 0,
+      "laborFinesAmount": 0,
+      "boletinLaboralPercentage": 0,
+      "boletinLaboralAmount": 0,
+      "laborCollectionWeighting": 100,
+      "commertialBulletinPercentage": 0,
+      "commertialBulletinAmount": 0,
+      "commertialBulletinWeighting": 100,
+      "numberOfHelpers": "3",
+      "classificationPercentage": 300,
+      "classificationLabel": "Risk free",
+      "nameOfHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxJudicialWeighting": 100,
+      "maxCommertialBulletinWeighting": 100,
+      "maxLaborCollectionWeighting": 100
+    }
+  },
+  "allCallsSucceeded": false,
+  "apiCallErrors": [
+    {
+      "step": "siiData",
+      "message": "Request failed with status code 404",
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/v1/helper/76253994-2/getSiiData</pre>\n</body>\n</html>\n",
+      "_id": "684aabc93870e00e64964ebe"
+    }
+  ],
+  "aiSummaryMarkdown": "# Resumen de la Empresa con RUT 76253994-2\n\n## Evaluación General\nLa empresa Inversiones Kaffir Limitada parece estar en una situación estable en términos financieros y legales.\n\n## Puntos Positivos\n- La empresa presenta actividades comerciales vigentes desde el año 2012.\n- No se registran deudas bancarias ni multas laborales.\n- La empresa tiene una clasificación de riesgo como \"Risk free\" según el credit scoring.\n\n## Puntos Negativos / Áreas de Preocupación\n- Se observa un error en la solicitud de datos al SII, lo que puede afectar la completitud de la información.\n- No se reportan casos activos en las áreas civiles, laborales, de cobranza, mora previsional, multas laborales ni boletín comercial, lo que podría indicar una falta de información detallada sobre posibles problemas legales.\n\n## Completitud de los Datos\nAunque la mayoría de las llamadas fueron exitosas, la solicitud de datos al SII presentó errores, lo que podría afectar la completitud de la información.\n\n## Documentos Asociados\nNo se menciona la presencia de documentos asociados para descargar, por lo que no se puede evaluar el estado de los mismos.\n\nEn resumen, la empresa Inversiones Kaffir Limitada muestra signos de estabilidad financiera y legal, pero la falta de información detallada en áreas clave podría requerir una revisión más exhaustiva para evaluar completamente su situación.",
+  "_id": "684aabc93870e00e64964ebd",
+  "associatedPdfs": "[0 PDFs]",
+  "createdAt": "2025-06-12T10:28:25.480Z",
+  "updatedAt": "2025-06-12T10:28:25.480Z",
+  "__v": 0
+}
+
+
+{
+  "rut": "77068676-8",
+  "isMonitoringRequest": false,
+  "fetchedAt": "2025-06-13T20:02:42.799Z",
+  "loadRutData": {
+    "success": true,
+    "data": [
+      "77068676-8"
+    ]
+  },
+  "summaryData": {
+    "success": true,
+    "data": {
+      "rut": "77068676-8",
+      "corporationId": 774,
+      "fechaCarga": "13-06-2025",
+      "sii": {
+        "razonSocial": "MAS RETORNABLES SPA",
+        "presentaActividades": "NO",
+        "inicioActividades": null,
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Término de giro persona jurídicaContribuyente persona jurídica con certificado de Término de Giro. Por tanto no posee documentos tributarios autorizados por el SII.De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.La situación se presenta a contar del  28-09-2023",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [],
+        "documentosTimbrados": [],
+        "activityCount": 0,
+        "documentCount": 0
+      },
+      "siiBusinessSize": {
+        "textSize": "Micro empresa",
+        "icon": "store",
+        "annualSales": "0,01 a 200,00",
+        "dependentWorkers": 0
+      },
+      "deudaBancariaSummary": {
+        "date": "03/2025",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variation": {
+          "date": "09/2024",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "boletinComercialSummary": {
+        "casesInfocom": 0,
+        "casesBolcom": 0,
+        "casesDicom": 0,
+        "amountInfocom": 0,
+        "amountBolcom": 0,
+        "amountDicom": 0,
+        "variation": {
+          "casesInfocom": 0,
+          "casesBolcom": 0,
+          "casesDicom": 0,
+          "amountInfocom": 0,
+          "amountBolcom": 0,
+          "amountDicom": 0
+        },
+        "lastUpdate": "2025-04-24T14:28:35.143Z"
+      },
+      "judicialSummary": {
+        "civilActiveCases": 0,
+        "civilFiledCases": 0,
+        "civilConcludedCases": 0,
+        "cobranzaActiveCases": 0,
+        "cobranzaFiledCases": 0,
+        "cobranzaConcludedCases": 0,
+        "laboralActiveCases": 0,
+        "laboralFiledCases": 0,
+        "laboralConcludedCases": 0,
+        "currentCases": 0,
+        "archivedCases": 0,
+        "concludedCases": 0,
+        "allCases": 0,
+        "bankruptcyCases": 0
+      },
+      "boletinConcursalSummary": false,
+      "moraPrevisionalSummary": {
+        "totalCases": 0,
+        "employees": 0,
+        "variation": {
+          "totalCases": 0
+        }
+      },
+      "multaLaboralSummary": {
+        "totalFines": 0,
+        "totalFinesAmount": 0,
+        "paidFines": 0,
+        "finesPaidAmount": 0,
+        "outstandingFines": 0,
+        "outstandingFinesAmount": 0,
+        "variation": {
+          "totalFines": 0,
+          "totalFinesAmount": 0,
+          "paidFines": 0,
+          "finesPaidAmount": 0,
+          "outstandingFines": 0,
+          "outstandingFinesAmount": 0
+        }
+      },
+      "boletinLaboralSummary": {
+        "totalAmount": 0,
+        "variation": {
+          "totalAmount": 0
+        }
+      },
+      "boletinLaboralLastUpdate": "2025-04-24T14:28:33.861Z",
+      "creditScoring": {
+        "id": 402615,
+        "period": "2025-06",
+        "scrappedRutId": 136807,
+        "startOfActivities": false,
+        "financesPercentage": 0,
+        "financesNumerator": 0,
+        "financesDenominator": 0,
+        "financesWeighting": 0,
+        "judicialPercentage": 0,
+        "judicialNumerator": 0,
+        "judicialDenominator": 0,
+        "judicialBankruptcy": false,
+        "judicialWeighting": 100,
+        "pensionDefaultPercentage": 0,
+        "pensionDefaultCases": 0,
+        "laborFinesPercentage": 0,
+        "laborFinesAmount": 0,
+        "boletinLaboralPercentage": 0,
+        "boletinLaboralAmount": 0,
+        "laborCollectionWeighting": 0,
+        "commertialBulletinPercentage": 0,
+        "commertialBulletinAmount": 0,
+        "commertialBulletinWeighting": 100,
+        "numberOfHelpers": "2",
+        "classificationPercentage": 200,
+        "classificationLabel": "Risk free",
+        "nameOfHelpers": [
+          "judicial",
+          "commertialBulletin"
+        ],
+        "maxJudicialWeighting": 100,
+        "maxCommertialBulletinWeighting": 100
+      },
+      "vehiclesSummary": {
+        "totalAssessmentFrom": 0,
+        "vehiclesQuantity": 0
+      },
+      "propertiesSummary": {
+        "propertiesQuantity": 0,
+        "totalAppraisal": "0"
+      },
+      "timestampsSubHelpers": [
+        {
+          "subhelperId": 1,
+          "lastUpdate": "2025-04-24T14:28:32.790Z"
+        },
+        {
+          "subhelperId": 3,
+          "lastUpdate": "2025-04-24T14:28:32.851Z"
+        },
+        {
+          "subhelperId": 10,
+          "lastUpdate": "2025-04-24T14:28:35.143Z"
+        },
+        {
+          "subhelperId": 22,
+          "lastUpdate": "2025-04-24T14:28:32.293Z"
+        },
+        {
+          "subhelperId": 24,
+          "lastUpdate": "2025-04-24T14:28:31.637Z"
+        },
+        {
+          "subhelperId": 25,
+          "lastUpdate": "2025-04-24T14:28:34.784Z"
+        },
+        {
+          "subhelperId": 26,
+          "lastUpdate": "2025-04-24T14:28:34.109Z"
+        },
+        {
+          "subhelperId": 28,
+          "lastUpdate": "2025-04-24T14:28:33.861Z"
+        },
+        {
+          "subhelperId": 30,
+          "lastUpdate": "2025-04-24T14:28:34.084Z"
+        }
+      ],
+      "compliance": {
+        "id": 22487,
+        "scrappedRutId": 136807,
+        "userId": 1981,
+        "corporationId": 774,
+        "name": "MAS RETORNABLES SPA",
+        "secondName": null,
+        "surname": null,
+        "secondSurname": null,
+        "personType": "juridical",
+        "risk": "free",
+        "summary": [
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "PEP Chile",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Funcionarios Públicos",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Familiares PEP",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Listas Internacionales",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Penal",
+            "risk": "free",
+            "useColor": true
+          },
+          {
+            "countResults": 1,
+            "textCountResults": 1,
+            "table": "Socios y Sociedades",
+            "risk": null,
+            "useColor": false
+          },
+          {
+            "countResults": 0,
+            "textCountResults": 0,
+            "table": "Noticias",
+            "risk": null,
+            "useColor": false
+          }
+        ],
+        "selectedRowsSocietaryMesh": [
+          "MAS RETORNABLES SPA - Empresa en un Día - 77068676-8"
+        ],
+        "selectedRowsPepChile": [],
+        "selectedRowsPublicOfficial": [],
+        "selectedRowsPepChileFamily": [],
+        "selectedRowsBlacklist": [],
+        "selectedRowsPenal": [],
+        "selectedRowsNews": [],
+        "lastDataUpdate": null,
+        "createdAt": "2025-04-24T14:28:34.558Z",
+        "updatedAt": "2025-04-24T14:28:34.558Z"
+      },
+      "ratings": {
+        "activeTags": [],
+        "commentSection": {
+          "comments": [],
+          "pagination": {
+            "page": 1,
+            "limit": 0,
+            "total": 0
+          }
+        },
+        "globalRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalCumplimientoRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalRelacionRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalTransparenciaRating": {
+          "value": 0,
+          "total": 0
+        },
+        "globalFiabilidadRating": {
+          "value": 0,
+          "total": 0
+        }
+      }
+    }
+  },
+  "civilCasesData": {
+    "success": true,
+    "data": []
+  },
+  "laboralCasesData": {
+    "success": true,
+    "data": []
+  },
+  "cobranzaCasesData": {
+    "success": true,
+    "data": []
+  },
+  "moraPrevisionalCasesData": {
+    "success": true,
+    "data": []
+  },
+  "multaLaboralCasesData": {
+    "success": true,
+    "data": []
+  },
+  "mallaSocietariaData": {
+    "rut": "77068676-8",
+    "diarioOficial": [],
+    "empresaEnUnDia": [
+      {
+        "fecha": "2019-09-11T00:00:00.000Z",
+        "actuacion": "CONSTITUCIÓN",
+        "numeroAtencion": "2514054",
+        "razonSocial": "MAS RETORNABLES SPA",
+        "cve": "AC4mdVAb0gaZ",
+        "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC4mdVAb0gaZ&codigo=A3-21-1D-7B-2E-9A-66-FF-3F-F3-B8-43-06-80-0D-E7",
+        "socios": [
+          {
+            "socio": "GABRIELA VICTORIA CASTILLO ANABALÓN",
+            "rut": "17.515.474-4",
+            "domicilio": "MATILDE SALAMANCA N°973 depto/local 803 comuna de PROVIDENCIA"
+          },
+          {
+            "socio": "KAREN VIVIANA CÁCERES CASTRO",
+            "rut": "15.030.204-8",
+            "domicilio": "EL ALICANTO N°574 depto/local CASA C comuna de LA REINA"
+          }
+        ],
+        "administradores": [
+          {
+            "administrador": "GABRIELA VICTORIA CASTILLO ANABALÓN",
+            "rut": "17.515.474-4"
+          },
+          {
+            "administrador": "KAREN VIVIANA CÁCERES CASTRO",
+            "rut": "15.030.204-8."
+          }
+        ]
+      }
+    ],
+    "participaciones": [
+      []
+    ]
+  },
+  "officialDiaryData": {
+    "success": true,
+    "data": []
+  },
+  "commercialBulletinCasesData": {
+    "success": true,
+    "data": []
+  },
+  "creditScoringData": {
+    "success": true,
+    "data": {
+      "id": 402615,
+      "period": "2025-06",
+      "scrappedRutId": 136807,
+      "startOfActivities": false,
+      "financesPercentage": 0,
+      "financesNumerator": 0,
+      "financesDenominator": 0,
+      "financesWeighting": 0,
+      "judicialPercentage": 0,
+      "judicialNumerator": 0,
+      "judicialDenominator": 0,
+      "judicialBankruptcy": false,
+      "judicialWeighting": 100,
+      "pensionDefaultPercentage": 0,
+      "pensionDefaultCases": 0,
+      "laborFinesPercentage": 0,
+      "laborFinesAmount": 0,
+      "boletinLaboralPercentage": 0,
+      "boletinLaboralAmount": 0,
+      "laborCollectionWeighting": 0,
+      "commertialBulletinPercentage": 0,
+      "commertialBulletinAmount": 0,
+      "commertialBulletinWeighting": 100,
+      "numberOfHelpers": "2",
+      "classificationPercentage": 200,
+      "classificationLabel": "Risk free",
+      "nameOfHelpers": [
+        "judicial",
+        "commertialBulletin"
+      ],
+      "maxJudicialWeighting": 100,
+      "maxCommertialBulletinWeighting": 100
+    }
+  },
+  "allCallsSucceeded": false,
+  "apiCallErrors": [
+    {
+      "step": "siiData",
+      "message": "Request failed with status code 404",
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/v1/helper/77068676-8/getSiiData</pre>\n</body>\n</html>\n",
+      "_id": "684c83eb63b281e88d95d866"
+    }
+  ],
+  "aiSummaryMarkdown": "# Resumen de Evaluación de Riesgos para la empresa \"MAS RETORNABLES SPA\" (RUT 77068676-8)\n\n## Resumen de Riesgos\n| Categoría              | Riesgo  |\n|------------------------|---------|\n| Historial Legal        | 🟡       |\n| Cumplimiento Normativo | 🟢       |\n| Salud Financiera       | 🟢       |\n\n## Evaluación General\nEl nivel de riesgo de la empresa es **bajo**, clasificado como \"Risk free\" según el sistema de clasificación. Se observan pocos riesgos significativos en las áreas evaluadas.\n\n## Puntos Positivos Clave\n- La empresa tiene un historial limpio en cuanto a cumplimiento normativo.\n- La salud financiera de la empresa es estable, con deudas bancarias y comerciales bajo control.\n\n## Puntos Negativos Clave\n- Existe un historial legal con observaciones sobre el término de giro de la persona jurídica, lo que puede generar desconfianza en transacciones futuras.\n- Se detectó un error en la solicitud de datos al SII, lo que puede indicar problemas en la obtención de información relevante.\n\n## Nivel de Riesgo y Justificación\nEl nivel de riesgo asignado es bajo debido a la buena situación de cumplimiento normativo y salud financiera de la empresa. Sin embargo, las observaciones legales y problemas en la obtención de datos pueden generar preocupaciones a futuro.",
+  "_id": "684c83eb63b281e88d95d865",
+  "associatedPdfs": "[0 PDFs]",
+  "createdAt": "2025-06-13T20:02:51.468Z",
+  "updatedAt": "2025-06-13T20:02:51.468Z",
+  "__v": 0

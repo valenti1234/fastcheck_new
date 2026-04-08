@@ -1,0 +1,108 @@
+{
+  "pathCount": 8,
+  "relationships": [
+    {
+      "source": "77304460",
+      "target": "5192839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-05-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77304460",
+      "target": "12637098",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-12-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77304460",
+      "target": "5192839",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2660472",
+        "cve": "2660472",
+        "shares_percent": 58.82,
+        "source": "DO",
+        "published_at": "2025-06-16",
+        "doc_extraction_id": "1789771",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/06/16/44175/05/2660472.pdf"
+      }
+    },
+    {
+      "source": "77304460",
+      "target": "12637098",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2660472",
+        "cve": "2660472",
+        "shares_percent": 0,
+        "source": "DO",
+        "published_at": "2025-06-16",
+        "doc_extraction_id": "1789771",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/06/16/44175/05/2660472.pdf"
+      }
+    },
+    {
+      "source": "76318661",
+      "target": "5192839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-08-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76318661",
+      "target": "5192839",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2691250",
+        "cve": "2691250",
+        "shares_percent": 70,
+        "source": "DO",
+        "published_at": "2025-08-27",
+        "doc_extraction_id": "1624742",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/08/27/44235/05/2691250.pdf"
+      }
+    },
+    {
+      "source": "76318661",
+      "target": "12637098",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-08-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76318661",
+      "target": "12637098",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2691250",
+        "cve": "2691250",
+        "shares_percent": 30,
+        "source": "DO",
+        "published_at": "2025-08-27",
+        "doc_extraction_id": "1624742",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/08/27/44235/05/2691250.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "5192839": "GRICELDA LOURDES BRAVO ALEUY",
+    "12637098": "PABLO MARDEL BRAVO",
+    "76318661": "PICK UP LOGISTIC LIMITADA",
+    "77304460": "ANDES IMPORTADORA Y EXPORTADORA LTDA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:5cf6aa5bbe655991b84c06f4752e7aba193805dca24224f626109a7651a516db",
+    "cached_at": "2026-04-04T14:52:35.410631"
+  }
+}

@@ -1,0 +1,708 @@
+{
+	"info": {
+		"_postman_id": "db3f9c3b-5e0b-4dc4-bdb8-665fab04b4b9",
+		"name": "Sheriff API v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31069565"
+	},
+	"item": [
+		{
+			"name": "🔒 Autenticación y Tokens",
+			"item": [
+				{
+					"name": "🔑 getToken (Obtener Token de Acceso)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = pm.response.json(); // Utiliza el método moderno para obtener el JSON",
+									"",
+									"if (response && response.data) {",
+									"    // La respuesta contiene el token en la propiedad 'data'",
+									"    pm.environment.set(\"bearer_token\", response.data);",
+									"    ",
+									"    // Opcional: Imprime el token en la Consola de Postman",
+									"    console.log(\"Token guardado automáticamente en 'bearer_token': \" + response.data);",
+									"} else {",
+									"    console.log(\"Error: No se pudo obtener el token de la respuesta. Verifica la estructura JSON.\");",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accessKey\": \"{{accessKey}}\",\n    \"accessSecret\": \"{{accessSecret}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{base_url}}/api/clients/v2/apiCredentials/getToken",
+							"protocol": "https",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"clients",
+								"v2",
+								"apiCredentials",
+								"getToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "👤 Plataforma",
+			"item": [
+				{
+					"name": "Perfil - Detalle",
+					"item": [
+						{
+							"name": "⚖️ Judiciales",
+							"item": [
+								{
+									"name": "civil (Causas Civiles)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/judicial/{{rut}}/civil",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"judicial",
+												"{{rut}}",
+												"civil"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "cobranza (Causas Cobranza)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/judicial/{{rut}}/cobranza",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"judicial",
+												"{{rut}}",
+												"cobranza"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "laboral (Causas Laborales)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/judicial/{{rut}}/laboral",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"judicial",
+												"{{rut}}",
+												"laboral"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "💼 Cobranza Laboral",
+							"item": [
+								{
+									"name": "multaLaboral (Multas Laborales)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/cobranzaLaboral/{{rut}}/multaLaboral",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"cobranzaLaboral",
+												"{{rut}}",
+												"multaLaboral"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "moraPrevisional (Mora Previsional)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/cobranzaLaboral/{{rut}}/moraPrevisional",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"cobranzaLaboral",
+												"{{rut}}",
+												"moraPrevisional"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "🛡️ Compliance",
+							"item": [
+								{
+									"name": "compliance (Detalle de Cumplimiento)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/compliance/{{rut}}",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"compliance",
+												"{{rut}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "🔗 Legal",
+							"item": [
+								{
+									"name": "mallaSocietaria (Malla Societaria)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/helper/legal/{{rut}}/mallaSocietaria",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"helper",
+												"legal",
+												"{{rut}}",
+												"mallaSocietaria"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "💯 Score",
+							"item": [
+								{
+									"name": "💳 creditScore (Puntaje Crediticio)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/creditScore/{{rut}}",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"creditScore",
+												"{{rut}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "📈 Uso y Plan",
+					"item": [
+						{
+							"name": "usage (Consumo de la Cuenta)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{bearer_token}}"
+									},
+									{
+										"key": "x-client-identifier",
+										"value": "SheriffSecureClient-v1"
+									}
+								],
+								"url": {
+									"raw": "https://{{base_url}}/api/clients/v2/usage",
+									"protocol": "https",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"clients",
+										"v2",
+										"usage"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "↩️ Webhooks/Callbacks (Asíncronos)",
+					"item": [
+						{
+							"name": "📋 Reportes (summaryByRut)",
+							"item": [
+								{
+									"name": "summaryByRut (PDF de Resumen por RUT)",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/pdf"
+											},
+											{
+												"key": "Content-Disposition",
+												"value": "attachment; filename={{rut}}.pdf"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/webhook/profile/{{rut}}/resumen?format=pdf",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"webhook",
+												"profile",
+												"{{rut}}",
+												"resumen"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "pdf"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "🛡️ Compliance (Asíncrono)",
+							"item": [
+								{
+									"name": "complianceByName (Cargar Perfil Compliance por Nombre)",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{bearer_token}}"
+											},
+											{
+												"key": "x-client-identifier",
+												"value": "SheriffSecureClient-v1"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"fullName\": \"Nombre Empresa\",\n    \"isMonitoring\": true,\n    \"isJuridicalPerson\": true,\n    \"searchErrors\": 0\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://{{base_url}}/api/clients/v2/webhook/compliance/cargarPerfil",
+											"protocol": "https",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"clients",
+												"v2",
+												"webhook",
+												"compliance",
+												"cargarPerfil"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "📄 resumen (Obtener Resumen del Perfil)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							},
+							{
+								"key": "x-client-identifier",
+								"value": "SheriffSecureClient-v1"
+							}
+						],
+						"url": {
+							"raw": "https://{{base_url}}/api/clients/v2/helper/resumen?rut={{rut}}",
+							"protocol": "https",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"clients",
+								"v2",
+								"helper",
+								"resumen"
+							],
+							"query": [
+								{
+									"key": "rut",
+									"value": "{{rut}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📜 loadedProfiles (Perfiles Cargados)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							},
+							{
+								"key": "x-client-identifier",
+								"value": "SheriffSecureClient-v1"
+							}
+						],
+						"url": {
+							"raw": "https://{{base_url}}/api/clients/v2/profiles",
+							"protocol": "https",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"clients",
+								"v2",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "➕ cargarRut (Cargar Perfil)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearer_token}}"
+							},
+							{
+								"key": "x-client-identifier",
+								"value": "SheriffSecureClient-v1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"rut\": \"{{rut}}\",\n  \"isMonitoring\": false,\n  \"includeEquifax\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{base_url}}/api/clients/v2/helper/cargarRut",
+							"protocol": "https",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"clients",
+								"v2",
+								"helper",
+								"cargarRut"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearer_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

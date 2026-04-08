@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fix Authentication</title>
+</head>
+<body>
+    <h1>Fixing Authentication</h1>
+    <div id="status">Checking authentication...</div>
+    
+    <script>
+        const statusDiv = document.getElementById('status');
+        
+        async function checkAndFixAuth() {
+            const token = localStorage.getItem('token');
+            
+            if (token) {
+                // Check if token is valid
+                try {
+                    const response = await fetch('http://localhost:4040/api/auth/me', {
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        const user = await response.json();
+                        statusDiv.innerHTML = `
+                            <p>✅ Already authenticated as: ${user.name} (${user.role})</p>
+                            <p>Redirecting to SuperAdmin page...</p>
+                        `;
+                        
+                        setTimeout(() => {
+                            window.location.href = 'http://localhost:4040/admin/users';
+                        }, 2000);
+                        return;
+                    }
+                } catch (error) {
+                    console.log('Token invalid, will re-login');
+                }
+            }
+            
+            // Need to login
+            statusDiv.innerHTML = 'Logging in as superadmin...';
+            
+            try {
+                const loginResponse = await fetch('http://localhost:4040/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: 'superadmin@gmail.com',
+                        password: 'superadmin123'
+                    })
+                });
+                
+                if (loginResponse.ok) {
+                    const data = await loginResponse.json();
+                    localStorage.setItem('token', data.token);
+                    
+                    statusDiv.innerHTML = `
+                        <p>✅ Login successful!</p>
+                        <p>User: ${data.user.name}</p>
+                        <p>Role: ${data.user.role}</p>
+                        <p>Redirecting to SuperAdmin page...</p>
+                    `;
+                    
+                    setTimeout(() => {
+                        window.location.href = 'http://localhost:4040/admin/users';
+                    }, 2000);
+                } else {
+                    const error = await loginResponse.json();
+                    statusDiv.innerHTML = `❌ Login failed: ${error.message}`;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `❌ Error: ${error.message}`;
+            }
+        }
+        
+        checkAndFixAuth();
+    </script>
+</body>
+</html>

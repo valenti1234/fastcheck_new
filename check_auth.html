@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Authentication</title>
+</head>
+<body>
+    <h1>Authentication Status</h1>
+    <div id="status"></div>
+    
+    <script>
+        const token = localStorage.getItem('token');
+        const statusDiv = document.getElementById('status');
+        
+        if (token) {
+            statusDiv.innerHTML = `
+                <p><strong>Token found:</strong> ${token.substring(0, 20)}...</p>
+                <p>Checking token validity...</p>
+            `;
+            
+            // Check token validity
+            fetch('http://localhost:4040/api/auth/me', {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                statusDiv.innerHTML += `
+                    <p><strong>User:</strong> ${data.name}</p>
+                    <p><strong>Email:</strong> ${data.email}</p>
+                    <p><strong>Role:</strong> ${data.role}</p>
+                    <p><strong>Status:</strong> Authenticated ✅</p>
+                `;
+                
+                if (data.role === 'superuser') {
+                    statusDiv.innerHTML += '<p><strong>Access to SuperAdmin:</strong> Granted ✅</p>';
+                } else {
+                    statusDiv.innerHTML += '<p><strong>Access to SuperAdmin:</strong> Denied ❌</p>';
+                }
+            })
+            .catch(error => {
+                statusDiv.innerHTML += `<p><strong>Error:</strong> ${error.message} ❌</p>`;
+            });
+        } else {
+            statusDiv.innerHTML = '<p><strong>No token found</strong> ❌</p>';
+        }
+    </script>
+</body>
+</html>

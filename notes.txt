@@ -1,0 +1,6 @@
+
+
+    12|dux_server  | Error in loadRutData call to /helper/loadRut: Request failed with status code 504
+12|dux_server  | Attempting summaryData call to https://prod.api.thesheriff.cl/api/v1/helper/77174601-2/summary
+12|dux_server  | Error in loadRutData call to /helper/loadRut: Request failed with status code 502
+12|dux_server  | Error in summaryData call to /helper/77174601-2/summary: Request failed with status code 502

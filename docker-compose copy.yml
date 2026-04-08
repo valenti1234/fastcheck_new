@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: duxiter-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: dux2
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - duxiter-network
+
+  rabbitmq:
+    image: rabbitmq:3.12-management
+    container_name: duxiter-rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"    # AMQP port
+      - "15672:15672"  # Management UI port
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: password123
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - duxiter-network
+
+volumes:
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local
+  rabbitmq_data:
+    driver: local
+
+networks:
+  duxiter-network:
+    driver: bridge

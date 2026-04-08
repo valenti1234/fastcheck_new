@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"userId":{"$numberInt":"1"}},"name":"userId_1","background":true},{"v":{"$numberInt":"2"},"key":{"tenantId":{"$numberInt":"1"}},"name":"tenantId_1","background":true}],"uuid":"11a9fdc82d1a41bf883ec0e0fac2e6db","collectionName":"downloadlogs","type":"collection"}

@@ -1,0 +1,2109 @@
+{
+  "app": {
+    "name": "Duxiter Fast Check",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "logout": "Se déconnecter",
+    "help": "Aide",
+    "version": "Version"
+  },
+  "dashboard": {
+    "recentQueriesTitle": "Consultations Récentes",
+    "recentQueriesSubtitle": "Historique des évaluations réalisées"
+  },
+  "riskDonut": {
+    "title": "Résumé des Risques",
+    "subtitle": "Répartition par niveau de risque",
+    "evaluations": "Évaluations",
+    "desc": {
+      "low": "Aucun risque significatif",
+      "medium": "Quelques risques significatifs",
+      "high": "Multiples risques significatifs",
+      "critical": "Risques sévères détectés"
+    }
+  },
+  "tenantUsage": {
+    "title": "Crédits Utilisateur",
+    "subtitle": "Utilisation pour {{name}}",
+    "used": "Utilisé",
+    "available": "Disponibles",
+    "total": "Total",
+    "credits": "crédits",
+    "progress": "Progression d'utilisation"
+  },
+  "dailyJobs": {
+    "title": "Tâches Quotidiennes",
+    "subtitle": "Évaluations créées aujourd'hui",
+    "daily": "Quotidien",
+    "elements": "éléments"
+  },
+  "bulkProgress": {
+    "title": "Évaluation en Masse en Cours",
+    "progress": "Progrès",
+    "completed": "{{completed}} sur {{total}} évaluations terminées",
+    "failed": "{{count}} évaluations échouées"
+  },
+  "resultsTable": {
+    "noResults": "Aucun résultat trouvé",
+    "noQueries": "Aucune requête disponible",
+    "noResultsMessage": "Aucune requête trouvée correspondant à \"{{searchTerm}}\".",
+    "noQueriesMessage": "Aucune requête d'évaluation des risques n'a encore été effectuée.",
+    "clearFilter": "Effacer le filtre"
+  },
+  "consultationChart": {
+    "title": "Historique des Consultations",
+    "subtitle": "Évolution des évaluations au cours des 30 derniers jours",
+    "chartType": "Type de graphique",
+    "barChart": "Graphique en barres",
+    "lineChart": "Graphique linéaire",
+    "areaChart": "Graphique en aires",
+    "cards": {
+      "totalConsultas": "Consultations Totales",
+      "averagePerDay": "Moyenne Quotidienne",
+      "maxInDay": "Max en une Journée"
+    },
+    "tooltip": {
+      "date": "Date",
+      "consultas": "Consultations"
+    },
+    "empty": {
+      "title": "Aucune donnée disponible",
+      "subtitle": "Aucune consultation à afficher dans le graphique"
+    }
+  },
+  "consultationHistory": {
+    "title": "Historique des Consultations",
+    "subtitle": "Visualisez et analysez l'historique complet des consultations réalisées",
+    "cards": {
+      "totalConsultas": "Total des Consultations",
+      "creditsUsed": "Crédits Utilisés",
+      "averageTime": "Temps Moyen",
+      "individualConsultas": "Consultations Individuelles"
+    },
+    "filters": {
+      "title": "Filtres",
+      "type": "Type",
+      "rut": "RUT",
+      "rutPlaceholder": "12345678-9",
+      "status": "Statut",
+      "startDate": "Date de Début",
+      "endDate": "Date de Fin",
+      "apply": "Appliquer les Filtres",
+      "clear": "Effacer les Filtres",
+      "all": "Tous",
+      "period": "Période",
+      "start": "début",
+      "end": "fin"
+    },
+    "type": {
+      "individual": "Individuelle",
+      "massive": "Massive"
+    },
+    "status": {
+      "success": "Succès",
+      "clientError": "Erreur Client",
+      "serverError": "Erreur Serveur",
+      "unauthorized": "Non Autorisé"
+    },
+    "exportPdf": "Exporter PDF",
+    "resultsTitle": "Consultations ({{total}} résultats)",
+    "loading": "Chargement des consultations...",
+    "errorTitle": "Erreur lors du chargement des consultations",
+    "noResults": "Aucune consultation trouvée avec les filtres appliqués",
+    "table": {
+      "date": "Date",
+      "user": "Utilisateur",
+      "type": "Type",
+      "ruts": "RUT(s)",
+      "rutsShort": "RUTs",
+      "status": "Statut",
+      "time": "Temps",
+      "credits": "Crédits"
+    },
+    "pagination": {
+      "info": "Page {{currentPage}} sur {{totalPages}} ({{total}} résultats)"
+    },
+    "pdf": {
+      "generatedAt": "Généré le",
+      "total": "Total des consultations",
+      "appliedFilters": "Filtres appliqués"
+    }
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "singleEvaluation": "Évaluation individuelle",
+    "bulkEvaluation": "Évaluation en masse",
+    "consultas": "Consultations",
+    "historicalConsultas": "Historique des consultations",
+    "alerts": "Alertes",
+    "monitoring": "Surveillance",
+    "users": "Utilisateurs",
+    "settings": "Paramètres",
+    "lpalto": "Listes à fort impact",
+    "lpmedio": "Listes à impact moyen",
+    "adminPanel": "Panneau d'administration",
+    "evaluationSettings": "Paramètres d'évaluation",
+    "promptConfiguration": "Configuration des prompts IA",
+    "antiunionCases": "Cas antisyndicaux",
+    "environmentalSanctions": "Sanctions environnementales",
+    "snifaImport": "Importation SNIFA",
+    "imposedSanctions": "Sanctions imposées",
+    "ley21121": "Fournisseurs condamnés Loi 21.121",
+    "ley20393": "Fournisseurs condamnés Loi 20.393",
+    "tenants": "Gestion des tenants",
+    "adminUsers": "Gestion des utilisateurs",
+    "billing": "Gestion de la facturation",
+    "monitoringStatus": "État de la surveillance",
+    "envConfiguration": "Configuration du serveur",
+    "database": "Gestion de base de données",
+    "equifaxMonitor": "Moniteur Equifax",
+    "sheriffMonitor": "Moniteur Sheriff",
+    "adminEvaluations": "Évaluations Admin",
+    "adminResults": "Résultats Admin"
+  },
+  "adminResults": {
+    "title": "Résultats Globaux (Tous les Tenants)"
+  },
+  "ley21121": {
+    "title": "Fournisseurs condamnés - Loi 21.121",
+    "addNew": "Ajouter",
+    "from": "De",
+    "to": "À",
+    "table": {
+      "headers": {
+        "rut": "RUT",
+        "company": "RAISON SOCIALE",
+        "caseRole": "RÔLE DE L'AFFAIRE",
+        "dates": "DATES",
+        "duration": "DURÉE",
+        "reason": "MOTIF",
+        "actions": "ACTIONS"
+      },
+      "empty": "Aucun enregistrement disponible"
+    },
+    "dialog": {
+      "createTitle": "Ajouter un nouvel enregistrement",
+      "editTitle": "Modifier l'enregistrement"
+    },
+    "form": {
+      "labels": {
+        "rut": "RUT",
+        "company": "RAISON SOCIALE",
+        "caseRole": "RÔLE DE L'AFFAIRE",
+        "startDate": "DATE DE DÉBUT",
+        "endDate": "DATE DE FIN",
+        "duration": "DURÉE",
+        "reason": "MOTIF"
+      },
+      "rut": {
+        "placeholder": "12.345.678-9",
+        "invalid": "RUT invalide. Vérifiez le format."
+      },
+      "duration": {
+        "placeholder": "Ex.: 3 ans, 1 jour"
+      }
+    },
+    "messages": {
+      "loadError": "Erreur lors du chargement des enregistrements. Veuillez réessayer.",
+      "createSuccess": "Enregistrement créé avec succès",
+      "updateSuccess": "Enregistrement mis à jour avec succès",
+      "saveError": "Erreur lors de l'enregistrement. Veuillez réessayer.",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cet enregistrement ?",
+      "deleteSuccess": "Enregistrement supprimé avec succès",
+      "deleteError": "Erreur lors de la suppression. Veuillez réessayer.",
+      "invalidDate": "Date invalide"
+    }
+  },
+  "ley20393": {
+    "title": "Fournisseurs condamnés - Loi 20.393",
+    "addNew": "Ajouter",
+    "from": "De",
+    "to": "À",
+    "table": {
+      "headers": {
+        "rut": "RUT",
+        "company": "RAISON SOCIALE",
+        "caseRole": "RÔLE DE L'AFFAIRE",
+        "dates": "DATES",
+        "duration": "DURÉE",
+        "reason": "MOTIF",
+        "actions": "ACTIONS"
+      },
+      "empty": "Aucun enregistrement disponible"
+    },
+    "dialog": {
+      "createTitle": "Ajouter un nouvel enregistrement",
+      "editTitle": "Modifier l'enregistrement"
+    },
+    "form": {
+      "labels": {
+        "rut": "RUT",
+        "company": "RAISON SOCIALE",
+        "caseRole": "RÔLE DE L'AFFAIRE",
+        "startDate": "DATE DE DÉBUT",
+        "endDate": "DATE DE FIN",
+        "duration": "DURÉE",
+        "reason": "MOTIF"
+      },
+      "rut": {
+        "placeholder": "12.345.678-9",
+        "invalid": "RUT invalide. Vérifiez le format."
+      },
+      "duration": {
+        "placeholder": "Ex.: 3 ans, 1 jour"
+      }
+    },
+    "messages": {
+      "loadError": "Erreur lors du chargement des enregistrements. Veuillez réessayer.",
+      "createSuccess": "Enregistrement créé avec succès",
+      "updateSuccess": "Enregistrement mis à jour avec succès",
+      "saveError": "Erreur lors de l'enregistrement. Veuillez réessayer.",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cet enregistrement ?",
+      "deleteSuccess": "Enregistrement supprimé avec succès",
+      "deleteError": "Erreur lors de la suppression. Veuillez réessayer.",
+      "invalidDate": "Date invalide"
+    }
+  },
+  "landing": {
+    "ready": "Prêt à démarrer ?",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "enterRut": "Entrez le RUT ou téléchargez un fichier",
+    "enterRutDesc": "Entrez manuellement le RUT d'un fournisseur ou téléchargez un fichier avec plusieurs fournisseurs.",
+    "getResults": "Obtenez des résultats",
+    "getResultsDesc": "Notre système traite l'information et génère un rapport complet avec tous les antécédents.",
+    "makeDecisions": "Prenez des décisions éclairées",
+    "makeDecisionsDesc": "Utilisez les résultats pour évaluer les risques et prendre des décisions stratégiques concernant vos fournisseurs."
+  },
+  "common": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "delete": "Supprimer",
+    "search": "Rechercher",
+    "noResults": "Aucun résultat trouvé",
+    "page": "Page",
+    "of": "de",
+    "filteredBy": "Filtré par",
+    "logout": "Se déconnecter",
+    "view": "Voir",
+    "notAvailable": "Non disponible",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "showingRange": "Affichage de {{from}} à {{to}} sur {{total}} résultats",
+    "clear": "Effacer",
+    "refresh": "Actualiser",
+    "optional": "Optionnel",
+    "create": "Créer",
+    "save": "Enregistrer"
+  },
+  "consultas": {
+    "title": "Consultations",
+    "loading": "Chargement des consultations...",
+    "searchPlaceholder": "Rechercher par RUT ou raison sociale...",
+    "searchLabel": "Recherche :",
+    "noResultsTitle": "Aucune consultation trouvée",
+    "noResultsDescription": "Effectuez une nouvelle consultation pour voir les résultats ici.",
+    "razonSocial": "Raison sociale",
+    "fechaConsulta": "Date de consultation",
+    "resultado": "Résultat",
+    "resumenIA": "Résumé IA",
+    "exito": "Succès",
+    "fallo": "Échec",
+    "fechaCreacion": "Date de création",
+    "nivelRiesgo": "Niveau de risque",
+    "tag": "Tag",
+    "acciones": "Actions",
+    "userNotes": "Note",
+    "viewDetail": "Voir le détail",
+    "showingRange": "Affichage de {{start}} à {{end}} sur {{total}} résultats",
+    "confirmDeleteTitle": "Confirmer la suppression",
+    "confirmDeleteMessage": "Êtes-vous sûr de vouloir supprimer cette consultation ? Cette action est irréversible.",
+    "deleting": "Suppression..."
+  }
+  ,
+  "antiunionCases": {
+    "title": "Gestion des Cas Antisyndicaux",
+    "uploadButton": "Téléverser PDF",
+    "stats": {
+      "totalCases": "Total des cas",
+      "dtCases": "Cas DT",
+      "particularCases": "Cas particuliers",
+      "activeTribunals": "Tribunaux actifs"
+    },
+    "filters": {
+      "title": "Filtres de recherche",
+      "rut": "RUT",
+      "companyName": "Raison sociale",
+      "tribunal": "Tribunal",
+      "complaintType": "Type de plainte",
+      "all": "Tous",
+      "reset": "Réinitialiser"
+    },
+    "complaintType": {
+      "dt": "DT",
+      "particular": "Particulier",
+      "unknown": "Inconnu"
+    },
+    "table": {
+      "title": "Liste des cas ({{total}})",
+      "headers": {
+        "rut": "RUT",
+        "company": "Entreprise",
+        "rit": "RIT",
+        "tribunal": "Tribunal",
+        "date": "Date",
+        "type": "Type",
+        "fine": "Amende",
+        "actions": "Actions"
+      }
+    },
+    "actions": {
+      "deleteSelected": "Supprimer sélectionnés ({{count}})",
+      "edit": "Éditer"
+    },
+    "upload": {
+      "title": "Téléverser le PDF des cas antisyndicaux",
+      "dragActive": "Déposez le fichier ici",
+      "dragHint": "Glissez un PDF ici ou cliquez pour sélectionner",
+      "onlyPdf": "Seuls les fichiers PDF sont autorisés",
+      "progress": {
+        "uploadingFile": "Téléversement du fichier...",
+        "processingPdf": "Traitement du PDF...",
+        "completed": "Terminé"
+      },
+      "savedCount": "{{count}} cas enregistrés",
+      "skippedCount": "{{count}} doublons ignorés"
+    },
+    "viewDialog": {
+      "title": "Détails du cas"
+    },
+    "editDialog": {
+      "title": "Éditer le cas"
+    },
+    "deleteDialog": {
+      "title": "Confirmer la suppression",
+      "message": "Êtes-vous sûr de vouloir supprimer le cas de {{company}} ? Cette action est irréversible."
+    },
+    "fields": {
+      "rut": "RUT",
+      "companyName": "Raison sociale",
+      "rit": "RIT",
+      "tribunal": "Tribunal",
+      "date": "Date",
+      "complaintType": "Type de plainte",
+      "fine": "Amende",
+      "description": "Description",
+      "pdfFile": "Fichier PDF"
+    },
+    "messages": {
+      "updateSuccess": "Cas mis à jour avec succès",
+      "deleteSuccess": "Cas supprimé avec succès",
+      "bulkDeleteSuccess": "{{count}} cas supprimés"
+    },
+    "errors": {
+      "loadCases": "Erreur lors du chargement des cas",
+      "uploadPdf": "Erreur lors du téléversement du PDF",
+      "updateCase": "Erreur lors de la mise à jour du cas",
+      "deleteCase": "Erreur lors de la suppression du cas",
+      "bulkDelete": "Erreur lors de la suppression des cas sélectionnés"
+    }
+  },
+  "helpPage": {
+    "title": "Comment utiliser DuXiter",
+    "subtitle": {
+      "superAdmin": "Guide complet pour les administrateurs système et les fonctionnalités générales",
+      "regular": "Guide complet pour tirer parti de toutes les fonctionnalités de la plateforme"
+    },
+    "superAdminBadge": "Panneau SuperAdmin",
+    "generalFeaturesTitle": "Fonctionnalités Générales",
+    "superAdminFeaturesTitle": "Fonctionnalités SuperAdmin",
+    "stepsTitle": "Étapes à suivre :",
+    "adminBadgeLabel": "Admin",
+    "general": {
+      "evaluationIndividual": {
+        "name": "Évaluation Individuelle",
+        "description": "Réalisez des évaluations détaillées de fournisseurs individuels. Entrez le RUT de l'entreprise et obtenez une analyse complète de sa situation financière, juridique et commerciale.",
+        "steps": {
+          "1": "Accédez au menu 'Évaluation Individuelle'",
+          "2": "Saisissez le RUT de l'entreprise à évaluer",
+          "3": "Examinez le rapport généré avec tous les indicateurs",
+          "4": "Téléchargez ou partagez le rapport selon les besoins"
+        }
+      },
+      "evaluationMassive": {
+        "name": "Évaluation de Masse",
+        "description": "Évaluez plusieurs fournisseurs simultanément. Téléversez un fichier contenant les RUT des entreprises et obtenez une analyse comparative.",
+        "steps": {
+          "1": "Accédez à 'Évaluation de Masse'",
+          "2": "Téléversez votre fichier CSV/Excel avec les RUT",
+          "3": "Patientez pendant le traitement de toutes les entreprises",
+          "4": "Obtenez un rapport consolidé de tous les fournisseurs"
+        }
+      },
+      "companyLookup": {
+        "name": "Consultation d'Entreprise",
+        "description": "Accédez rapidement à des informations spécifiques sur n'importe quelle entreprise. Consultez des données historiques et actuelles de manière organisée.",
+        "steps": {
+          "1": "Sélectionnez 'Consultation d'Entreprise'",
+          "2": "Recherchez par RUT ou par nom d'entreprise",
+          "3": "Explorez les différentes sections d'information",
+          "4": "Utilisez des filtres pour des données spécifiques"
+        }
+      }
+    },
+    "superAdmin": {
+      "tenantManagement": {
+        "name": "Gestion des Tenants",
+        "description": "Gérez les organisations sur la plateforme. Créez, configurez et administrez des tenants avec leurs limites et paramètres respectifs.",
+        "steps": {
+          "1": "Accédez à 'Gestion des Tenants' dans le panneau d'administration",
+          "2": "Créez de nouveaux tenants avec le bouton 'Ajouter Tenant'",
+          "3": "Configurez les limites de crédits et d'utilisateurs par tenant",
+          "4": "Activez ou désactivez des tenants selon les besoins",
+          "5": "Surveillez l'utilisation et les statistiques de chaque tenant"
+        }
+      },
+      "userManagement": {
+        "name": "Gestion des Utilisateurs",
+        "description": "Contrôle total de tous les utilisateurs du système. Gérez les rôles, les permissions et les accès globalement.",
+        "steps": {
+          "1": "Allez à 'Gestion des Utilisateurs' dans le panneau d'administration",
+          "2": "Affichez tous les utilisateurs du système organisés par tenant",
+          "3": "Modifiez les informations des utilisateurs et changez les rôles",
+          "4": "Réinitialisez les mots de passe si nécessaire",
+          "5": "Activez ou désactivez des utilisateurs individuellement"
+        }
+      },
+      "systemConfig": {
+        "name": "Configuration du Système",
+        "description": "Configurez les paramètres globaux du système, les variables d'environnement et les paramètres des services externes.",
+        "steps": {
+          "1": "Accédez à 'Configuration du Serveur'",
+          "2": "Modifiez les variables d'environnement du système",
+          "3": "Configurez des services externes (APIs, bases de données)",
+          "4": "Ajustez les paramètres de performance et les limites",
+          "5": "Enregistrez les modifications et redémarrez les services si nécessaire"
+        }
+      },
+      "databaseManagement": {
+        "name": "Gestion de Base de Données",
+        "description": "Outils avancés pour gérer la base de données, effectuer des sauvegardes et surveiller les performances.",
+        "steps": {
+          "1": "Entrez dans 'Gestion de Base de Données'",
+          "2": "Surveillez les statistiques d'utilisation et de performance",
+          "3": "Effectuez des sauvegardes complètes de la base de données",
+          "4": "Exécutez des opérations de maintenance",
+          "5": "Consultez les journaux et métriques du système"
+        }
+      },
+      "specialCasesManagement": {
+        "name": "Gestion des Cas Spéciaux",
+        "description": "Gérez des bases de données spécialisées telles que les cas antisyndicaux, les sanctions environnementales et les listes de fournisseurs condamnés.",
+        "steps": {
+          "1": "Accédez aux sections spécialisées via le menu admin",
+          "2": "Téléversez des fichiers CSV/Excel avec de nouveaux enregistrements",
+          "3": "Validez et traitez l'information automatiquement",
+          "4": "Modifiez ou supprimez des enregistrements existants",
+          "5": "Exportez des rapports et des statistiques"
+        }
+      },
+      "monitoringBilling": {
+        "name": "Surveillance et Facturation",
+        "description": "Surveillez l'utilisation du système et gérez la facturation des tenants basée sur la consommation de crédits.",
+        "steps": {
+          "1": "Consultez 'État de la Surveillance' pour des métriques en temps réel",
+          "2": "Accédez à 'Gestion de la Facturation' pour des rapports financiers",
+          "3": "Configurez des alertes d'utilisation et des limites",
+          "4": "Générez des rapports de consommation par tenant",
+          "5": "Ajustez les prix et les politiques de facturation"
+        }
+      }
+    }
+  },
+  "superAdminUsers": {
+    "title": "Gestion des Utilisateurs SuperAdmin",
+    "usersCount": "{{count}} utilisateurs",
+    "search": {
+      "title": "Recherche d'Utilisateurs",
+      "placeholder": "Rechercher par nom, e-mail ou tenant..."
+    },
+    "table": {
+      "headers": {
+        "name": "Nom",
+        "email": "Email",
+        "role": "Rôle",
+        "tenant": "Tenant",
+        "status": "Statut",
+        "createdAt": "Date de Création",
+        "actions": "Actions"
+      }
+    },
+    "labels": {
+      "noTenant": "Aucun tenant",
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "actions": {
+      "activate": "Activer",
+      "deactivate": "Désactiver",
+      "cancel": "Annuler",
+      "resetPassword": "Réinitialiser le Mot de Passe",
+      "saveChanges": "Enregistrer les Modifications"
+    },
+    "dialogs": {
+      "resetPassword": {
+        "title": "Réinitialiser le Mot de Passe - {{name}}"
+      },
+      "editUser": {
+        "title": "Modifier l'Utilisateur - {{name}}"
+      }
+    },
+    "forms": {
+      "password": {
+        "new": "Nouveau Mot de Passe",
+        "confirm": "Confirmer le Mot de Passe"
+      },
+      "user": {
+        "name": "Nom",
+        "email": "Email",
+        "role": "Rôle"
+      },
+      "roleOptions": {
+        "user": "Utilisateur",
+        "admin": "Admin",
+        "tenantAdmin": "Admin du Tenant",
+        "superuser": "Superutilisateur"
+      }
+    },
+    "messages": {
+      "loadingUsers": "Chargement des utilisateurs...",
+      "accessDenied": "Accès refusé. Seuls les superutilisateurs peuvent accéder à cette page."
+    },
+    "errors": {
+      "loadUsers": "Erreur lors du chargement des utilisateurs",
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit comporter au moins 6 caractères",
+      "passwordReset": "Erreur lors de la réinitialisation du mot de passe",
+      "userUpdate": "Erreur lors de la mise à jour de l'utilisateur",
+      "statusToggle": "Erreur lors du changement de statut de l'utilisateur"
+    },
+    "success": {
+      "passwordReset": "Mot de passe réinitialisé avec succès",
+      "userUpdated": "Utilisateur mis à jour avec succès",
+      "statusUpdated": "Statut de l'utilisateur mis à jour"
+    }
+  },
+  "superAdminBilling": {
+    "title": "Gestion de Facturation",
+    "subtitle": "Gérez les factures et rapports de trafic des tenants",
+    "tabs": {
+      "invoices": "Factures",
+      "traffic": "Rapports de Trafic",
+      "credits": "Crédits",
+      "settings": "Paramètres"
+    },
+    "buttons": {
+      "generateBilling": "Générer la Facturation",
+      "generateReport": "Générer le Rapport",
+      "addCredits": "Ajouter des Crédits",
+      "editSettings": "Modifier les Paramètres",
+      "viewDetails": "Voir les détails",
+      "download": "Télécharger",
+      "send": "Envoyer",
+      "cancel": "Annuler",
+      "generateForAll": "Générer pour Tous",
+      "downloadPdf": "Télécharger le PDF",
+      "sendInvoice": "Envoyer la Facture",
+      "sendReport": "Envoyer le Rapport"
+    },
+    "stats": {
+      "invoices": {
+        "totalRevenue": "Revenu Total",
+        "totalInvoices": "Total des Factures",
+        "paid": "Payées",
+        "pending": "En attente",
+        "overdue": "En retard",
+        "average": "Moyenne"
+      },
+      "credits": {
+        "totalOperations": "Total des Opérations",
+        "creditsAdded": "Crédits Ajoutés",
+        "creditsDeducted": "Crédits Déduits",
+        "averageOperationValue": "Moyenne par Opération"
+      }
+    },
+    "filters": {
+      "status": "Statut",
+      "month": "Mois",
+      "year": "Année",
+      "tenantId": "Tenant ID",
+      "placeholderTenant": "Filtrer par tenant",
+      "creditsTitle": "Filtres de Crédits"
+    },
+    "status": {
+      "all": "Tous",
+      "pending": "En attente",
+      "sent": "Envoyée",
+      "paid": "Payée",
+      "overdue": "En retard"
+    },
+    "table": {
+      "invoices": {
+        "invoice": "Facture",
+        "tenant": "Tenant",
+        "period": "Période",
+        "amount": "Montant",
+        "status": "Statut",
+        "dueDate": "Échéance",
+        "actions": "Actions"
+      },
+      "traffic": {
+        "tenant": "Tenant",
+        "period": "Période",
+        "evaluations": "Évaluations",
+        "apiCalls": "Appels API",
+        "tokens": "Jetons",
+        "peakUsage": "Pic d'Utilisation",
+        "actions": "Actions"
+      },
+      "dailyStats": {
+        "date": "Date",
+        "evaluations": "Évaluations",
+        "apiCalls": "Appels API",
+        "tokens": "Jetons",
+        "storage": "Stockage"
+      },
+      "creditsTenant": {
+        "tenant": "Tenant",
+        "operations": "Opérations",
+        "creditsAdded": "Crédits Ajoutés",
+        "creditsDeducted": "Crédits Déduits",
+        "currentBalance": "Solde Actuel"
+      }
+    },
+    "sections": {
+      "tenantStats": "Statistiques par Tenant",
+      "operationTypeStats": "Statistiques par Type d'Opération",
+      "topTenantBalances": "Top 10 Soldes des Tenants",
+      "billingSettings": "Paramètres de Facturation",
+      "pricing": "Tarification",
+      "generalSettings": "Paramètres Généraux"
+    },
+    "settings": {
+      "evaluationPrice": "Prix par Évaluation",
+      "apiCallPrice": "Prix par Appel API",
+      "tokenPricePerThousand": "Prix par 1000 Jetons",
+      "currency": "Devise",
+      "taxRatePercent": "Taux de Taxe (%)",
+      "daysUntilDue": "Jours jusqu'à l'Échéance"
+    },
+    "modals": {
+      "generateBillingTitle": "Générer la Facturation Mensuelle",
+      "generateBillingQuestion": "Souhaitez-vous générer la facturation pour {{month}}/{{year}} ?",
+      "generateTrafficTitle": "Générer le Rapport de Trafic",
+      "generateTrafficQuestion": "Souhaitez-vous générer le rapport de trafic pour {{month}}/{{year}} ?",
+      "billingDetailTitlePrefix": "Détail de la Facture",
+      "generalInfo": "Informations Générales",
+      "serviceUsage": "Utilisation du Service",
+      "storage": "Stockage",
+      "costBreakdown": "Ventilation des Coûts",
+      "total": "Total",
+      "actions": "Actions",
+      "trafficReportTitle": "Rapport de Trafic - {{tenantName}} ({{month}}/{{year}})",
+      "totalEvaluations": "Total des Évaluations",
+      "averageDaily": "Moyenne Quotidienne",
+      "peakUsageWithDate": "Pic d'Utilisation ({{date}})",
+      "dailyStats": "Statistiques Quotidiennes"
+    },
+    "opTypes": {
+      "evaluation": "Évaluations",
+      "api_call": "Appels API",
+      "credit_purchase": "Achat de Crédits",
+      "credit_refund": "Remboursement de Crédits",
+      "operationsSuffix": "opérations"
+    },
+    "pagination": {
+      "showing": "Affichage de {{from}} à {{to}} sur {{total}} résultats",
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "messages": {
+      "errorLoading": "Erreur lors du chargement des données",
+      "errorGenerateBilling": "Erreur lors de la génération de la facturation",
+      "errorGenerateTraffic": "Erreur lors de la génération du rapport de trafic",
+      "errorUpdateStatus": "Erreur lors de la mise à jour du statut",
+      "errorSendInvoice": "Erreur lors de l'envoi de la facture",
+      "errorDownloadInvoice": "Erreur lors du téléchargement de la facture",
+      "errorDownloadReport": "Erreur lors du téléchargement du rapport",
+      "errorSendReport": "Erreur lors de l'envoi du rapport"
+    }
+  },
+  "alerting_legacy": {
+    "title": "Alertes de Risque",
+    "loading": "Chargement des alertes...",
+    "errors": {
+      "invalidData": "Format de données invalide",
+      "loadingData": "Erreur lors du chargement des données"
+    },
+    "stats": {
+      "totalActive": "Total des alertes actives",
+      "showing": "Affichage"
+    },
+    "filters": {
+      "toggleShow": "Afficher les filtres",
+      "toggleHide": "Masquer les filtres",
+      "riskLevel": "Niveau de Risque",
+      "priority": "Priorité",
+      "dateRange": "Plage de Dates",
+      "from": "De",
+      "to": "À",
+      "actions": "Actions",
+      "clearFilters": "Effacer les filtres",
+      "activeCount": "{{filtered}} sur {{total}} alertes",
+      "activeSummary": {
+        "risk": "Risque",
+        "priority": "Priorité",
+        "date": "Date",
+        "start": "Début",
+        "end": "Fin",
+        "search": "Recherche",
+        "clearAll": "Tout effacer"
+      }
+    },
+    "searchPlaceholder": "Rechercher par RUT ou raison sociale...",
+    "riskLevels": {
+      "red": "Critique",
+      "orange": "Élevé",
+      "yellow": "Moyen",
+      "green": "Faible"
+    },
+    "priorities": {
+      "urgent": "Urgent",
+      "high": "Élevée",
+      "medium": "Moyenne"
+    },
+    "table": {
+      "rut": "RUT",
+      "razonSocial": "Raison sociale",
+      "detectionDate": "Date de détection",
+      "riskLevel": "Niveau de risque",
+      "priority": "Priorité",
+      "actions": "Actions"
+    },
+    "actions": {
+      "viewDetail": "Voir le détail",
+      "removing": "Suppression...",
+      "adding": "Ajout...",
+      "removeMonitoring": "Retirer de la surveillance",
+      "addToMonitoring": "Ajouter à la surveillance",
+      "discard": "Écarter"
+    },
+    "empty": {
+      "noResultsSearch": "Aucune alerte correspondant à la recherche.",
+      "noResults": "Aucune alerte de risque active.",
+      "clearSearch": "Effacer la recherche"
+    },
+    "pagination": {
+      "info": "Affichage de {{start}} à {{end}} sur {{total}} alertes"
+    },
+    "monitoring": {
+      "alreadyMonitored": "Ce RUT est déjà surveillé",
+      "notFound": "RUT introuvable dans le système",
+      "addError": "Erreur lors de l'ajout à la surveillance",
+      "scheduleNotFound": "Planification de surveillance introuvable",
+      "removeError": "Erreur lors du retrait de la surveillance"
+    },
+    "modal": {
+      "confirmDiscardTitle": "Confirmer le rejet de l'alerte",
+      "confirmDiscardMessage": "Êtes-vous sûr de vouloir écarter cette alerte ? Cette action est irréversible.",
+      "cancel": "Annuler",
+      "discarding": "Rejet en cours...",
+      "discard": "Écarter"
+    }
+  },
+  "risk": {
+    "critical": "Critique",
+    "medium": "Moyen",
+    "low": "Faible",
+    "high": "Élevé"
+  },
+  "monitoring": {
+    "title": "Système de surveillance",
+    "subtitle": "Gérer les requêtes automatiques programmées",
+    "superuserNote": "Vue superadmin - Affichage des surveillances de tous les tenants",
+    "newButton": "Nouvelle surveillance",
+    "stats": {
+      "total": "Total surveillances",
+      "active": "Actives",
+      "running": "En cours",
+      "errors": "Avec erreurs"
+    },
+    "filters": {
+      "showInactive": "Afficher les surveillances inactives"
+    },
+    "summary": {
+      "activeInactive": "Affichage de {{count}} sur {{total}} surveillances (actives et inactives)",
+      "activeOnly": "Affichage de {{count}} sur {{total}} surveillances actives"
+    },
+    "headers": {
+      "rutEmpresa": "RUT / Entreprise",
+      "tenant": "Tenant",
+      "frecuencia": "Fréquence",
+      "estado": "État",
+      "ultimaEjecucion": "Dernière exécution",
+      "proximaEjecucion": "Prochaine exécution",
+      "ejecuciones": "Exécutions",
+      "acciones": "Actions"
+    },
+    "empty": {
+      "title": "Aucune surveillance configurée",
+      "superuserDescription": "Aucune surveillance trouvée dans aucun tenant.",
+      "userDescription": "Commencez par créer votre première surveillance automatique."
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "lastExecuted": {
+      "never": "Jamais"
+    },
+    "actions": {
+      "viewDetails": "Voir les détails",
+      "executeNow": "Exécuter maintenant",
+      "edit": "Modifier",
+      "pause": "Mettre en pause",
+      "activate": "Activer",
+      "delete": "Supprimer"
+    },
+    "create": {
+      "title": "Créer une nouvelle surveillance",
+      "rutSelectHint": "RUT (Sélectionner parmi les résultats existants)",
+      "searchPlaceholder": "Rechercher RUT ou entreprise...",
+      "loadedTotal": "Total chargé : {{count}}",
+      "filteredCount": "Filtrés : {{count}}",
+      "lastQuery": "Dernière requête : {{date}}",
+      "noResults": "Aucun résultat trouvé",
+      "companyLabel": "Nom de l'entreprise (optionnel)",
+      "companyPlaceholder": "Nom de l'entreprise",
+      "frequencyLabel": "Fréquence",
+      "daily": "Quotidien",
+      "weekly": "Hebdomadaire",
+      "monthly": "Mensuel",
+      "minute": "Minute"
+    },
+    "errors": {
+      "loadSchedules": "Erreur lors du chargement des horaires de surveillance",
+      "createSchedule": "Erreur lors de la création de l'horaire de surveillance",
+      "updateSchedule": "Erreur lors de la mise à jour de l'horaire de surveillance",
+      "deleteSchedule": "Erreur lors de la suppression de l'horaire de surveillance",
+      "executeMonitoring": "Erreur lors de l'exécution de la surveillance"
+    },
+    "messages": {
+      "createdSuccess": "Horaire de surveillance créé avec succès",
+      "updatedSuccess": "Horaire de surveillance mis à jour avec succès",
+      "deletedSuccess": "Horaire de surveillance supprimé avec succès",
+      "executionStarted": "Exécution de la surveillance démarrée"
+    },
+    "confirm": {
+      "delete": "Êtes-vous sûr de vouloir supprimer cet horaire de surveillance ?"
+    },
+    "edit": {
+      "title": "Modifier l'horaire de surveillance",
+      "name": "Nom de l'horaire",
+      "frequency": "Fréquence",
+      "companies": "Entreprises à surveiller",
+      "selectCompanies": "Sélectionner les entreprises"
+    }
+  },
+  "alerting": {
+    "title": "Alertes de Risque",
+    "loading": "Chargement des alertes...",
+    "errors": {
+      "invalidData": "Format de données invalide",
+      "loadingData": "Erreur lors du chargement des données"
+    },
+    "stats": {
+      "totalActive": "Total des alertes actives",
+      "showing": "Affichage"
+    },
+    "filters": {
+      "toggleShow": "Afficher les filtres",
+      "toggleHide": "Masquer les filtres",
+      "riskLevel": "Niveau de Risque",
+      "priority": "Priorité",
+      "dateRange": "Plage de Dates",
+      "from": "De",
+      "to": "À",
+      "actions": "Actions",
+      "clearFilters": "Effacer les filtres",
+      "activeCount": "{{filtered}} sur {{total}} alertes",
+      "activeSummary": {
+        "risk": "Risque",
+        "priority": "Priorité",
+        "date": "Date",
+        "start": "Début",
+        "end": "Fin",
+        "search": "Recherche",
+        "clearAll": "Tout effacer"
+      }
+    },
+    "searchPlaceholder": "Rechercher par RUT ou raison sociale...",
+    "chips": {
+      "risk": "Risque :",
+      "priority": "Priorité :",
+      "date": "Date :",
+      "dateStart": "Début",
+      "dateEnd": "Fin",
+      "searchLabel": "Recherche :",
+      "clearAll": "Tout effacer"
+    },
+    "headers": {
+      "rut": "RUT",
+      "razonSocial": "Raison sociale",
+      "fechaDeteccion": "Date de détection",
+      "nivelRiesgo": "Niveau de risque",
+      "prioridad": "Priorité",
+      "acciones": "Actions"
+    },
+    "actions": {
+      "viewDetail": "Voir le détail",
+      "removeMonitoring": "Retirer de la surveillance",
+      "addToMonitoring": "Ajouter à la surveillance",
+      "addMonitoring": "Ajouter à la surveillance",
+      "removing": "Suppression...",
+      "adding": "Ajout...",
+      "discard": "Ignorer"
+    },
+    "empty": {
+      "searchNone": "Aucune alerte correspondant à la recherche.",
+      "noneActive": "Aucune alerte de risque active.",
+      "clearSearch": "Effacer la recherche"
+    },
+    "pagination": {
+      "showingRange": "Affichage de {{start}} à {{end}} sur {{total}} alertes",
+      "info": "Affichage de {{start}} à {{end}} sur {{total}} alertes"
+    },
+    "detail": {
+      "title": "Détail de l'alerte de risque",
+      "backToAlerts": "Retour aux alertes",
+      "loading": "Chargement de l'alerte...",
+      "alertNotFound": "Alerte introuvable",
+      "investigateFastCheck": "Enquêter dans FastCheck",
+      "priorityActionsTitle": "Priorité et Actions",
+      "priorityLabel": "Priorité de l'alerte",
+      "actionsLabel": "Actions disponibles",
+      "investigate": "Enquêter",
+      "alreadyMonitored": "Déjà en surveillance",
+      "aiAnalysisTitle": "Analyse IA",
+      "aiAnalysisGeneratedOn": "Analyse générée le :",
+      "detailedSummaryTitle": "Résumé détaillé",
+      "errorLoadingData": "Erreur lors du chargement des données de l'alerte"
+    },
+    "monitoring": {
+      "alreadyMonitored": "Ce RUT est déjà surveillé",
+      "notFound": "RUT introuvable dans le système",
+      "addError": "Erreur lors de l'ajout à la surveillance",
+      "scheduleNotFound": "Planification de surveillance introuvable",
+      "removeError": "Erreur lors du retrait de la surveillance",
+      "rutUnavailable": "Impossible d'ajouter à la surveillance : RUT indisponible",
+      "addSuccess": "RUT ajouté à la surveillance avec succès"
+    },
+    "modal": {
+      "confirmDiscardTitle": "Confirmer le rejet de l'alerte",
+      "confirmDiscardMessage": "Êtes-vous sûr de vouloir écarter cette alerte ? Cette action est irréversible.",
+      "cancel": "Annuler",
+      "discarding": "Rejet en cours...",
+      "discard": "Écarter"
+    },
+    "riskLevels": {
+      "red": "Critique",
+      "orange": "Élevé",
+      "yellow": "Moyen",
+      "green": "Faible"
+    },
+    "priorities": {
+      "urgent": "Urgent",
+      "high": "Élevée",
+      "medium": "Moyenne"
+    },
+    "table": {
+      "rut": "RUT",
+      "razonSocial": "Raison sociale",
+      "detectionDate": "Date de détection",
+      "riskLevel": "Niveau de risque",
+      "priority": "Priorité",
+      "actions": "Actions"
+    }
+  },
+  "environmentalSanctions": {
+    "title": "Sanctions environnementales",
+    "selectedCount": "{{count}} sélectionnées",
+    "buttons": {
+      "exportCsv": "Exporter CSV",
+      "uploadFile": "Importer fichier"
+    },
+    "stats": {
+      "totalSanctions": "Total des Sanctions",
+      "totalFines": "Total des Amendes (UTA)",
+      "activeSanctions": "Sanctions Actives",
+      "regions": "Régions"
+    },
+    "filters": {
+      "title": "Filtres",
+      "procesoSancionId": "ID du Processus de Sanction",
+      "expediente": "Numéro de Dossier",
+      "estado": "État",
+      "todos": "Tous",
+      "enCurso": "En cours",
+      "finalizado": "Terminé",
+      "archivado": "Archivé",
+      "region": "Région",
+      "comuna": "Commune",
+      "empresa": "Entreprise"
+    },
+    "headers": {
+      "procesoId": "Processus ID",
+      "expediente": "Dossier",
+      "empresa": "Entreprise",
+      "estado": "État",
+      "region": "Région",
+      "multaUTA": "Amende (UTA)",
+      "fechaInicio": "Date de début",
+      "acciones": "Actions"
+    },
+    "tooltips": {
+      "viewDetails": "Voir les détails",
+      "delete": "Supprimer"
+    },
+    "empty": {
+      "noResults": "Aucune sanction environnementale trouvée"
+    },
+    "upload": {
+      "title": "Téléverser un fichier de sanctions environnementales",
+      "instructions": "Importez un fichier CSV ou XLSX avec les données des sanctions environnementales. Le fichier doit inclure les colonnes suivantes (séparées par point-virgule ou virgule) :",
+      "columnsExample": "#, expediente, unidad_fiscalizable, razon_social, categoria, region, estado, detalle",
+      "columnsDescription": "Description des colonnes :",
+      "desc": {
+        "id": "Numéro séquentiel (interne)",
+        "expediente": "Numéro de dossier de l'autorité",
+        "unidadFiscalizableLabel": "Unité auditable",
+        "unidadFiscalizable": "Nom de l'installation / unité auditable",
+        "razonSocialLabel": "Raison sociale",
+        "razonSocial": "Nom légal de l'entreprise",
+        "categoriaLabel": "Catégorie",
+        "categoria": "Catégorie économique ou industrie",
+        "region": "Nom de la région",
+        "estado": "État du processus (En cours, Terminé, Archivé)",
+        "detalleLabel": "Détail",
+        "detalle": "Brève description du cas"
+      },
+      "clickToSelect": "Cliquez pour sélectionner un fichier CSV/XLSX",
+      "supportedFormats": "Formats pris en charge : .csv, .xlsx, .xls"
+    },
+    "viewDialog": {
+      "title": "Détails de la sanction environnementale",
+      "fields": {
+        "procesoSancionId": "Processus de sanction ID",
+        "expediente": "Dossier",
+        "empresa": "Entreprise",
+        "estado": "État",
+        "tipo": "Type",
+        "region": "Région",
+        "comuna": "Commune",
+        "multaTotalUTA": "Amende totale (UTA)",
+        "categoriaEconomica": "Catégorie économique",
+        "fechaInicio": "Date de début",
+        "fechaTermino": "Date de fin",
+        "latitud": "Latitude",
+        "longitud": "Longitude",
+        "linkSNIFA": "Lien SNIFA"
+      }
+    },
+    "deleteDialog": {
+      "title": "Confirmer la suppression",
+      "message": "Êtes-vous sûr de vouloir supprimer cette sanction environnementale ?"
+    },
+    "errors": {
+      "loadFailed": "Erreur lors du chargement des sanctions environnementales",
+      "deleteFailed": "Erreur lors de la suppression de la sanction environnementale"
+    },
+    "messages": {
+      "deleteSuccess": "Sanction environnementale supprimée avec succès"
+    }
+  },
+  "imposedSanctions": {
+    "title": "Sanctions imposées",
+    "selectedCount": "{{count}} sélectionnées",
+    "headers": {
+      "numeroSancion": "Numéro de sanction",
+      "empresa": "Entreprise",
+      "rut": "RUT",
+      "tipo": "Type",
+      "estado": "État",
+      "organismo": "Organisme",
+      "montoMulta": "Montant de l'amende",
+      "fechaImposicion": "Date d'imposition",
+      "acciones": "Actions"
+    },
+    "tooltips": {
+      "viewDetails": "Voir les détails",
+      "delete": "Supprimer"
+    },
+    "empty": {
+      "noResults": "Aucune sanction imposée trouvée"
+    },
+    "upload": {
+      "title": "Téléverser un fichier de sanctions imposées",
+      "dragActive": "Déposez le fichier ici",
+      "dragHint": "Glissez un fichier CSV, XLS ou XLSX ici",
+      "clickToSelect": "ou cliquez pour sélectionner un fichier",
+      "supportedFormats": "Formats pris en charge : .csv, .xlsx, .xls"
+    },
+    "viewDialog": {
+      "title": "Détails de la sanction imposée",
+      "fields": {
+        "numeroSancion": "Numéro de sanction",
+        "rut": "RUT",
+        "empresa": "Entreprise",
+        "tipoSancion": "Type de sanction",
+        "estado": "État",
+        "organismo": "Organisme",
+        "region": "Région",
+        "comuna": "Commune",
+        "montoMulta": "Montant de l'amende",
+        "fechaImposicion": "Date d'imposition",
+        "fechaVencimiento": "Date d'échéance",
+        "descripcion": "Description",
+        "observaciones": "Observations"
+      }
+    },
+    "deleteDialog": {
+      "title": "Confirmer la suppression",
+      "message": "Êtes-vous sûr de vouloir supprimer cette sanction imposée ?"
+    }
+  },
+  "fastCheckConsolidado": {
+    "title": "Fast Check Consolidé"
+  },
+  "fastCheck": {
+    "title": "Fast Check",
+    "rutPlaceholder": "Saisissez le RUT",
+    "noData": "Aucune donnée trouvée.",
+    "progress": {
+      "start": "Évaluation démarrée",
+      "lookup": "Demande de recherche du RUT",
+      "fetch": "Récupération des résultats",
+      "listas": "Vérification des listes personnalisées",
+      "ready": "Prêt",
+      "inProgress": "Évaluation en cours…"
+    },
+    "actions": {
+      "refresh": "Relancer l’évaluation",
+      "exportPdf": "Exporter PDF",
+      "exportJson": "Exporter JSON"
+    },
+    "exportPdf": {
+      "generating": "Génération..."
+    },
+    "export": {
+      "noData": "Aucune donnée à exporter",
+      "success": "Données exportées avec succès",
+      "error": "Erreur lors de l’exportation des données"
+    },
+    "findings": {
+      "title": "Principales conclusions",
+      "noSummary": "Aucun résumé disponible"
+    },
+    "notes": {
+      "title": "Notes de l’utilisateur",
+      "none": "Aucune note pour cette entreprise",
+      "addNote": "Ajouter une note",
+      "lastUpdated": "Dernière mise à jour :"
+    },
+    "pdf": {
+      "success": "PDF généré avec succès",
+      "error": "Erreur lors de la génération du PDF. Veuillez réessayer.",
+      "pageXofY": "Page {{i}} sur {{total}}",
+      "generatedOn": "Généré le {{date}}"
+    },
+    "qr": {
+      "scan": "Scannez pour accéder au rapport"
+    }
+  },
+  "auditOverview": {
+    "title": "Audit à ce jour",
+    "subtitle": "Résumé actuel de l'audit",
+    "tabs": {
+      "all": "Tous",
+      "upcoming": "À venir",
+      "in_audit": "En audit",
+      "awaiting_report": "En attente du rapport",
+      "completed": "Terminé"
+    }
+  },
+  "envConfiguration": {
+    "noteTitle": "Note importante",
+    "noteMessage": "Les modifications des paramètres de configuration nécessiteront un redémarrage du serveur pour être appliquées. Les paramètres marqués d'un * sont obligatoires pour le bon fonctionnement du système."
+  },
+  "singleEvaluation": {
+    "title": "Évaluation Individuelle",
+    "subtitle": "Évaluez un fournisseur spécifique en saisissant son RUT pour obtenir une analyse détaillée.",
+    "reportLabel": "Rapport",
+    "reportTitle": "Rapport",
+    "downloadMd": "Télécharger MD",
+    "downloadPdf": "Télécharger PDF",
+    "searchSupplierTitle": "Rechercher un Fournisseur",
+    "searchSupplierSubtitle": "Entrez le RUT pour démarrer une nouvelle évaluation.",
+    "toast": {
+      "invalidRut": "RUT invalide. Veuillez vérifier et réessayer.",
+      "acceptTerms": "Vous devez accepter les termes et conditions et la politique de confidentialité.",
+      "tenantError": "Erreur de tenant. Veuillez vous reconnecter.",
+      "searchingProvider": "Recherche d'informations sur le fournisseur...",
+      "success": "Évaluation terminée avec succès",
+      "unknownError": "Une erreur inconnue s'est produite.",
+      "errorPrefix": "Erreur :"
+    },
+    "interpretationTitle": "Interprétation détaillée",
+    "warning": {
+      "remaining": "Évaluations restantes : {{count}}",
+      "planAlmostExhausted": "Votre plan actuel est sur le point de s'épuiser. Envisagez une mise à niveau pour continuer à effectuer des évaluations."
+    },
+    "rutLabel": "RUT du fournisseur",
+    "rutPlaceholder": "12.345.678-9",
+    "invalidRut": "RUT invalide. Vérifiez le format (ex : 12.345.678-9).",
+    "nameLabel": "Nom du fournisseur",
+    "namePlaceholder": "Entreprise Exemple SpA",
+    "nameHelpText": "Si vous connaissez le nom du fournisseur, vous pouvez l'ajouter pour faciliter l'identification dans les résultats.",
+    "acceptLabelPrefix": "J'accepte les",
+    "terms": "termes et conditions",
+    "and": "et la",
+    "privacy": "politique de confidentialité",
+    "searching": "Recherche d'informations...",
+    "generatingSummary": "Génération du résumé...",
+    "submit": "Évaluer le fournisseur",
+    "info": {
+      "title": "Informations importantes",
+      "creditUsage": "L'évaluation individuelle utilise 1 crédit de votre plan actuel.",
+      "realTimeResults": "Les résultats s'affichent en temps réel une fois la demande traitée.",
+      "confidentiality": "Les données du fournisseur sont maintenues confidentielles et sécurisées.",
+      "bulkPrefix": "Pour évaluer plusieurs fournisseurs, utilisez l'option",
+      "bulkLinkText": "Évaluation de masse"
+    }
+  }
+  ,
+  "envConfiguration": {
+    "noteTitle": "Note importante",
+    "noteMessage": "Les modifications des paramètres de configuration nécessiteront un redémarrage du serveur pour être appliquées. Les paramètres marqués d'un * sont obligatoires pour le bon fonctionnement du système.",
+    "header": {
+      "title": "Configuration des Paramètres du Serveur",
+      "subtitle": "Gérez les paramètres de configuration du fichier .env du serveur"
+    },
+    "loading": "Chargement de la configuration...",
+    "buttons": {
+      "reset": "Réinitialiser",
+      "save": "Enregistrer les Modifications",
+      "saving": "Enregistrement..."
+    },
+    "changes": {
+      "unsaved": "Des changements non enregistrés existent"
+    },
+    "toast": {
+      "saveSuccess": "Configuration enregistrée avec succès",
+      "resetSuccess": "Configuration réinitialisée",
+      "saveError": "Erreur lors de l'enregistrement de la configuration"
+    },
+    "errors": {
+      "loadConfig": "Erreur lors du chargement de la configuration",
+      "saveConfig": "Erreur lors de l'enregistrement de la configuration"
+    },
+    "categories": {
+      "apiKeys": "Clés API",
+      "database": "Base de Données",
+      "server": "Serveur",
+      "apiUrls": "URLs d'API",
+      "openaiConfig": "Configuration OpenAI",
+      "riskCalculation": "Calcul du Risque",
+      "sendgridConfig": "Configuration SendGrid",
+      "rabbitmqConfig": "Configuration RabbitMQ",
+      "contactInfo": "Informations de Contact"
+    },
+    "params": {
+      "openaiApiKey": { "description": "Clé API pour OpenAI GPT" },
+      "sheriffApiToken": { "description": "Jeton d'authentification pour l'API Sheriff" },
+      "sendgridApiKey": { "description": "Clé API pour SendGrid (envoi d'emails)" },
+      "mongodbUri": { "description": "URI de connexion MongoDB" },
+      "port": { "description": "Port du serveur" },
+      "rateLimitWindowMs": { "description": "Fenêtre temporelle pour la limitation de débit (ms)" },
+      "rateLimitMaxRequests": { "description": "Nombre maximum de requêtes par fenêtre" },
+      "apiUrl": { "description": "URL de base de l'API" },
+      "sheriffApiUrl": { "description": "URL de l'API Sheriff" },
+      "siiUrl": { "description": "URL du service SII" },
+      "openaiModelSummary": { "description": "Modèle OpenAI pour les résumés" },
+      "openaiModelAnalysis": { "description": "Modèle OpenAI pour l'analyse" },
+      "openaiTemperature": { "description": "Température pour OpenAI (0.0-1.0)" },
+      "openaiMaxTokens": { "description": "Nombre maximum de tokens pour OpenAI" },
+      "riskTotalParams": { "description": "Nombre total de paramètres de risque" },
+      "riskCriticalPercentage": { "description": "Seuil en pourcentage pour risque critique" },
+      "riskHighPercentage": { "description": "Seuil en pourcentage pour risque élevé" },
+      "riskMediumPercentage": { "description": "Seuil en pourcentage pour risque moyen" },
+      "sendgridFromEmail": { "description": "Email expéditeur pour SendGrid" },
+      "sendgridFromName": { "description": "Nom de l'expéditeur pour SendGrid" },
+      "rabbitmqUrl": { "description": "URL de connexion RabbitMQ" },
+      "rabbitmqQueue": { "description": "Nom de la file RabbitMQ" },
+      "supportEmail": { "description": "Email de support" }
+    }
+  },
+  "bulkEvaluation": {
+    "header": {
+      "label": "Rapport",
+      "title": "Évaluation de masse"
+    },
+    "actions": {
+      "downloadTemplate": "Télécharger le modèle"
+    },
+    "upload": {
+      "title": "Téléverser un fichier",
+      "subtitle": "Téléversez un fichier CSV ou Excel avec les fournisseurs à évaluer.",
+      "fileLabelSr": "Fichier des fournisseurs",
+      "clickToUpload": "Cliquez pour téléverser",
+      "dragDrop": "ou glissez-déposez",
+      "formatsHint": "CSV, XLSX ou XLS (max 10 Mo)",
+      "removeFile": "Supprimer"
+    },
+    "alerts": {
+      "insufficientTitle": "Évaluations insuffisantes",
+      "insufficientMessage": "Vous avez besoin de {{needed}} évaluations mais n'avez que {{available}} disponibles. Veuillez mettre à niveau votre plan ou réduire le nombre de fournisseurs."
+    },
+    "terms": {
+      "acceptPrefix": "J'accepte les",
+      "terms": "termes et conditions",
+      "and": "et la",
+      "privacy": "politique de confidentialité"
+    },
+    "submit": {
+      "processing": "Traitement...",
+      "startEvaluationSuppliers": "Démarrer l'évaluation ({{count}} fournisseurs)",
+      "error": "Erreur lors du démarrage de l'évaluation de masse"
+    },
+    "preview": {
+      "title": "Prévisualisation",
+      "subtitle": "Fournisseurs et erreurs de fichier détectés.",
+      "loading": "Analyse du fichier...",
+      "errorsTitle": "{{count}} erreurs trouvées",
+      "validSuppliers": "{{count}} Fournisseurs valides",
+      "table": {
+        "rut": "RUT",
+        "name": "Nom",
+        "na": "N/A"
+      },
+      "empty": {
+        "title": "Aucun fournisseur trouvé",
+        "subtitle": "Le fichier ne contient pas de RUT valides ou est vide."
+      }
+    },
+    "instructions": {
+      "title": "Instructions",
+      "subtitle": "Suivez ces étapes pour un téléversement réussi.",
+      "steps": {
+        "1": "Téléchargez le modèle pour garantir le bon format.",
+        "2": "La colonne 'rut' est obligatoire. D'autres colonnes comme 'nom' sont facultatives.",
+        "3": "Enregistrez votre fichier au format CSV ou XLSX.",
+        "4": "Téléversez le fichier et prévisualisez les données.",
+        "5": "Chaque fournisseur valide consommera un crédit de votre plan."
+      }
+    },
+    "toast": {
+      "started": "Évaluation de masse démarrée. Les résultats seront mis à jour automatiquement.",
+      "completed": "Évaluation de masse terminée",
+      "failed": "Évaluation de masse terminée avec des erreurs"
+    },
+    "delete": {
+      "singleSuccess": "Évaluation supprimée avec succès",
+      "singleError": "Erreur lors de la suppression de l'évaluation",
+      "bulkSuccess": "{{count}} évaluations supprimées avec succès",
+      "bulkFailed": "{{count}} évaluations n'ont pas pu être supprimées"
+    },
+    "auth": {
+      "error": "Erreur d'authentification. Veuillez vous reconnecter."
+    },
+    "template": {
+      "filename": "modele_fournisseurs.xlsx"
+    },
+    "file": {
+      "errors": {
+        "missingRut": "Le fichier doit contenir au moins une colonne 'rut'",
+        "unsupportedFormat": "Format de fichier non pris en charge. Veuillez utiliser CSV, XLSX ou XLS.",
+        "invalidRutEntry": "Ligne {{row}} : RUT invalide - {{rut}}",
+        "duplicatesFound": "{{count}} RUT en double ont été trouvés et omis",
+        "noValidRuts": "Aucun RUT valide trouvé dans le fichier.",
+        "processing": "Erreur lors du traitement du fichier. Veuillez vérifier le format et réessayer."
+      }
+    }
+  },
+  "evaluationStatus": {
+    "header": {
+      "title": "Statut des évaluations",
+      "subtitle": "Suivi en temps réel des évaluations de masse"
+    },
+    "actions": {
+      "deleteSelected": "Supprimer la sélection ({{count}})",
+      "refresh": "Actualiser",
+      "export": "Exporter"
+    },
+    "summary": {
+      "total": "Total",
+      "pending": "En attente",
+      "processing": "En cours",
+      "success": "Terminées",
+      "error": "Erreurs"
+    },
+    "filter": {
+      "label": "Filtrer par statut :",
+      "all": "Tous",
+      "pending": "En attente",
+      "processing": "En cours",
+      "success": "Terminées",
+      "error": "Erreurs"
+    },
+    "table": {
+      "selectAllTitle": "Sélectionner toutes les évaluations",
+      "rut": "RUT",
+      "name": "Nom",
+      "status": "Statut",
+      "progress": "Progression",
+      "started": "Début",
+      "completed": "Terminé",
+      "actions": "Actions"
+    },
+    "row": {
+      "viewDetail": "Voir les détails",
+      "cancelTitle": "Annuler l'évaluation",
+      "cancel": "Annuler"
+    },
+    "empty": {
+      "message": "Aucune évaluation ne correspond au filtre sélectionné."
+    },
+    "modal": {
+      "single": {
+        "title": "Confirmer la suppression",
+        "message": "Êtes-vous sûr de vouloir supprimer cette évaluation ? Cette action est irréversible.",
+        "cancel": "Annuler",
+        "confirming": "Suppression...",
+        "confirm": "Supprimer"
+      },
+      "bulk": {
+        "title": "Confirmer la suppression en masse",
+        "message": "Êtes-vous sûr de vouloir supprimer {{count}} évaluations sélectionnées ? Cette action est irréversible.",
+        "cancel": "Annuler",
+        "confirming": "Suppression...",
+        "confirm": "Supprimer {{count}} évaluations"
+      }
+    },
+    "statusTexts": {
+      "pending": "En attente",
+      "processing": "En cours",
+      "success": "Terminé",
+      "error": "Erreur"
+    },
+    "export": {
+      "columns": {
+        "rut": "RUT",
+        "name": "Nom",
+        "status": "Statut",
+        "startedAt": "Date de début",
+        "completedAt": "Date de fin",
+        "progress": "Progression (%)",
+        "error": "Erreur"
+      },
+      "sheetName": "Évaluations",
+      "fileNamePrefix": "evaluations_de_masse_"
+    }
+  },
+  "common": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "delete": "Supprimer",
+    "search": "Rechercher",
+    "cancel": "Annuler",
+    "create": "Créer",
+    "save": "Enregistrer",
+    "notAvailable": "Non disponible",
+    "unknown": "Inconnu"
+  }
+  ,
+  "lpaltoPage": {
+    "title": "Listes Propriétaires - Impact Élevé",
+    "subtitle": "Gérer les entrées de la Liste Propriétaire à Impact Élevé.",
+    "addRecord": "Ajouter un enregistrement",
+    "formatHint": "Format CSV attendu : RUT;Nom;TypePersonne;TypeListe;NomSousListe;DateIncorporation",
+    "downloadCsvTemplate": "Télécharger le modèle CSV",
+    "uploadCsvXls": "Téléverser CSV/XLS",
+    "uploading": "Téléversement du fichier...",
+    "uploadError": "Erreur lors du téléversement du fichier.",
+    "uploadSuccess": "Téléversement réussi : {{saved}} enregistrés, {{duplicates}} doublons.",
+    "searchPlaceholder": "Rechercher par RUT ou nom",
+    "filterAllTypes": "Tous les types",
+    "filterAllSubLists": "Toutes les sous-listes",
+    "headers": {
+      "rut": "RUT",
+      "nombre": "Nom",
+      "tipoPersona": "Type de personne",
+      "tipoLista": "Type de liste",
+      "nombreSubLista": "Nom de la sous-liste",
+      "fechaIncorporacion": "Date d'incorporation",
+      "acciones": "Actions"
+    },
+    "fetchError": "Erreur lors de la récupération des entrées.",
+    "fetchErrorGeneric": "Erreur inattendue lors de la récupération des entrées.",
+    "deleteError": "Erreur lors de la suppression du registre.",
+    "confirmDeleteMessage": "Êtes-vous sûr de vouloir supprimer cet enregistrement ?",
+    "deleteSuccess": "Enregistrement supprimé avec succès.",
+    "edit": "Éditer"
+  },
+  "lpaltoModal": {
+    "title": {
+      "add": "Ajouter un enregistrement",
+      "edit": "Modifier l'enregistrement"
+    },
+    "fields": {
+      "rut": "RUT",
+      "nombre": "Nom",
+      "tipoPersona": "Type de personne",
+      "tipoLista": "Type de liste",
+      "nombreSubLista": "Nom de la sous-liste",
+      "fechaIncorporacion": "Date d'incorporation"
+    },
+    "options": {
+      "empresa": "Entreprise",
+      "persona": "Personne"
+    },
+    "errors": {
+      "createError": "Erreur lors de la création de l'enregistrement.",
+      "updateError": "Erreur lors de la mise à jour de l'enregistrement."
+    },
+    "messages": {
+      "createSuccess": "Enregistrement créé avec succès.",
+      "updateSuccess": "Enregistrement mis à jour avec succès."
+    },
+    "buttons": {
+      "create": "Créer",
+      "update": "Mettre à jour"
+    }
+  },
+  "lpmedioPage": {
+    "title": "Listes Propriétaires - Impact Moyen",
+    "subtitle": "Gérez les enregistrements des Listes Propriétaires d'Impact Moyen.",
+    "downloadCsvTemplate": "Télécharger le modèle CSV",
+    "uploadCsvXls": "Télécharger CSV/XLS",
+    "uploading": "Téléchargement du fichier...",
+    "uploadError": "Erreur lors du téléchargement du fichier",
+    "uploadSuccess": "Traitement : {{saved}} nouveaux, {{duplicates}} doublons",
+    "addRecord": "Ajouter un enregistrement",
+    "formatHint": "Format attendu : colonnes RUT, Nom, TypePersonne (Entreprise | Personne), TypeListe, NomSousListe, DateIncorporation (YYYY-MM-DD). La première ligne doit être l'en-tête. CSV en UTF-8 avec séparateur virgule ou point-virgule. Dans Excel (XLS/XLSX) la première feuille est traitée. Le RUT peut inclure des points et/ou un tiret. Les enregistrements en double par RUT dans votre tenant seront ignorés.",
+    "searchPlaceholder": "Rechercher par RUT ou nom...",
+    "filterAllTypes": "Tous les Types",
+    "filterAllSubLists": "Toutes les Sous-listes",
+    "headers": {
+      "rut": "RUT",
+      "nombre": "Nom",
+      "tipoPersona": "Type de personne",
+      "tipoLista": "Type de liste",
+      "nombreSubLista": "Nom de la sous-liste",
+      "fechaIncorporacion": "Date d'incorporation",
+      "acciones": "Actions"
+    },
+    "fetchError": "Erreur lors de la récupération des enregistrements",
+    "fetchErrorGeneric": "Erreur lors du chargement des enregistrements",
+    "deleteError": "Erreur lors de la suppression de l'enregistrement",
+    "confirmDeleteMessage": "Êtes-vous sûr de vouloir supprimer cet enregistrement ?",
+    "deleteSuccess": "Enregistrement supprimé avec succès",
+    "edit": "Modifier"
+  },
+  "lpmedioModal": {
+    "title": {
+      "add": "Ajouter un enregistrement",
+      "edit": "Modifier l'enregistrement"
+    },
+    "fields": {
+      "rut": "RUT",
+      "nombre": "Nom",
+      "tipoPersona": "Type de personne",
+      "tipoLista": "Type de liste",
+      "nombreSubLista": "Nom de la sous-liste",
+      "fechaIncorporacion": "Date d'incorporation"
+    },
+    "options": {
+      "empresa": "Entreprise",
+      "persona": "Personne"
+    },
+    "errors": {
+      "createError": "Erreur lors de la création de l'enregistrement.",
+      "updateError": "Erreur lors de la mise à jour de l'enregistrement."
+    },
+    "messages": {
+      "createSuccess": "Enregistrement créé avec succès",
+      "updateSuccess": "Enregistrement mis à jour avec succès"
+    },
+    "buttons": {
+      "create": "Créer",
+      "update": "Mettre à jour"
+    }
+  },
+  "fastCheck": {
+    "listasPropias": {
+      "alertTitle": "Alerte : RUT présent dans les Listes Propriétaires",
+      "altoImpactoTitle": "🔴 Liste Propriétaire - Impact Élevé",
+      "medioImpactoTitle": "🟡 Liste Propriétaire - Impact Moyen",
+      "labels": {
+        "nombre": "Nom",
+        "rut": "RUT",
+        "tipo": "Type",
+        "lista": "Liste",
+        "subLista": "Sous-liste",
+        "fechaIncorporacion": "Date d'incorporation",
+        "fechaRegistro": "Date d'enregistrement",
+        "ultimaActualizacion": "Dernière mise à jour"
+      },
+      "viewDetails": "Voir les détails",
+      "noteTitle": "Note :",
+      "noteMessage": "Ce RUT a été identifié dans les listes propriétaires de l'organisation. Veuillez vérifier les détails et prendre les mesures appropriées conformément aux politiques internes."
+    },
+    "findings": {
+      "pepChileDetectedInPartners": "PEP Chili détecté parmi les associés",
+      "familiaresPepDetectedInPartners": "Familiers PEP détectés parmi les associés",
+      "rutInAltoImpacto": "RUT dans la Liste Propriétaire à Impact Élevé ({{count}})",
+      "rutInMedianoImpacto": "RUT dans la Liste Propriétaire à Impact Moyen ({{count}})"
+    }
+  }
+  ,
+  "adminDashboard": {
+    "noData": "Aucune donnée disponible",
+    "usage": {
+      "heavy": "Utilisation intensive (>50)",
+      "moderate": "Utilisation modérée (11-50)",
+      "light": "Utilisation légère (1-10)",
+      "inactive": "Inactif (0)"
+    },
+    "overview": {
+      "totalTenants": "Total des Tenants",
+      "activeTenants": "Tenants Actifs",
+      "totalEvaluations": "Évaluations Totales",
+      "averagePerTenant": "Moyenne par Tenant"
+    },
+    "system": {
+      "title": "État du Système",
+      "server": "Serveur",
+      "database": "Base de données",
+      "cpu": "CPU",
+      "memory": "Mémoire",
+      "online": "En ligne",
+      "offline": "Hors ligne",
+      "warning": "Avertissement",
+      "connected": "Connecté",
+      "disconnected": "Déconnecté",
+      "slow": "Lent",
+      "uptime": "Uptime",
+      "version": "Version",
+      "connectionsShort": "conn.",
+      "cpuUsageLabel": "Utilisation du CPU",
+      "memoryUsageLabel": "RAM utilisée",
+      "serverOnline": "En ligne",
+      "serverWarning": "Avertissement",
+      "serverOffline": "Hors ligne",
+      "databaseConnected": "Connecté",
+      "databaseSlow": "Lent",
+      "databaseDisconnected": "Déconnecté"
+    },
+    "services": {
+      "title": "État des Services",
+      "sheriffApi": "Sheriff API",
+      "notifications": "Notifications",
+      "monitoring": "Surveillance",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "error": "Erreur"
+    },
+    "performance": {
+      "title": "Détails de Performance",
+      "activeRequests": "Requêtes Actives",
+      "diskUsage": "Utilisation du Disque",
+      "dbSize": "Taille BD",
+      "systemVersion": "Version du Système",
+      "diskSpaceTitle": "Détails de l'Espace Disque",
+      "diskTotal": "Espace Total",
+      "diskUsed": "Espace Utilisé",
+      "diskFree": "Espace Libre",
+      "diskUsageLabel": "Utilisation du Disque"
+    },
+    "charts": {
+      "usageDistributionTitle": "Répartition d'Utilisation",
+      "monthlyCreationTitle": "Création de Tenants (6 derniers mois)"
+    },
+    "topTenants": {
+      "title": "Top 5 Tenants par Utilisation",
+      "columns": {
+        "name": "Nom du Tenant",
+        "used": "Évaluations Utilisées",
+        "remaining": "Évaluations Restantes",
+        "lastEvaluation": "Dernière Évaluation"
+      },
+      "never": "Jamais"
+    },
+    "additional": {
+      "recentActivity": "Activité Récente",
+      "recentActivityDesc": "{{count}} tenants ont réalisé des évaluations au cours des 30 derniers jours",
+      "totalCapacity": "Capacité Totale",
+      "totalCapacityDesc": "{{count}} évaluations allouées au total",
+      "systemUsage": "Utilisation du Système",
+      "systemUsageDesc": "{{percent}}% de la capacité totale utilisée"
+    },
+    "evaluationStats": {
+      "title": "Statistiques d'Évaluations par Tenant",
+      "summary": {
+        "cached": "Évaluations en Cache",
+        "ttlWeek": "TTL : 1 semaine",
+        "archived": "Évaluations Archivées",
+        "permanent": "Permanentes",
+        "total": "Total des Évaluations",
+        "cacheArchive": "Cache + Archive"
+      },
+      "table": {
+        "name": "Nom du Tenant",
+        "cache": "Cache (Résultats)",
+        "archive": "Archive (Résumés)",
+        "total": "Total",
+        "distribution": "Répartition"
+      }
+    }
+  }
+  ,
+  "evaluationSettings": {
+    "title": "Configuration des Paramètres d'Évaluation",
+    "tabs": {
+      "compliance": "Conformité",
+      "legal": "Juridique",
+      "capitalHumano": "Capital Humain",
+      "financieroTributario": "Financier & Fiscal"
+    },
+    "riskOptions": {
+      "bajo": "Faible",
+      "medio": "Moyen",
+      "alto": "Élevé",
+      "critico": "Critique"
+    },
+    "form": {
+      "label": "Libellé",
+      "risk": "Risque",
+      "sheriffLogKey": "Clé du Sheriff Log",
+      "isCritical": "Est Critique",
+      "condicion": "Condition",
+      "saveChanges": "Enregistrer les Modifications",
+      "loading": "Chargement...",
+      "updateSuccess": "Paramètres mis à jour avec succès",
+      "updateError": "Erreur lors de la mise à jour des paramètres",
+      "loadError": "Erreur lors du chargement des paramètres"
+    },
+    "testCard": {
+      "title": "Critères de Test",
+      "rut": "RUT",
+      "enterRut": "Veuillez saisir un RUT",
+      "invalidRut": "Format de RUT invalide",
+      "testing": "Test en cours...",
+      "testAll": "Tester Tous les Paramètres",
+      "fetchError": "Erreur lors de la récupération des données",
+      "notFound": "Introuvable",
+      "notAvailable": "N/A",
+      "resultsTitle": "Résultats de Comparaison",
+      "table": {
+        "parameter": "Paramètre",
+        "rutValue": "Valeur du RUT",
+        "parameterValue": "Valeur du Paramètre",
+        "condition": "Condition"
+      }
+    }
+  }
+  ,
+  "promptConfiguration": {
+    "title": "Configuration des Prompts",
+    "subtitle": "Gérez les prompts IA utilisés pour différents types d'analyse",
+    "categories": {
+      "seekData": "Recherche de Données",
+      "analyzeSheriffData": "Analyse des Données Sheriff",
+      "analyzeEvaluationParameters": "Analyse des Paramètres d'Évaluation"
+    },
+    "form": {
+      "newTitle": "Nouveau Prompt",
+      "editTitle": "Modifier le Prompt",
+      "name": "Nom",
+      "category": "Catégorie",
+      "description": "Description",
+      "template": "Modèle de Prompt",
+      "templatePlaceholder": "Écrivez le modèle de prompt ici. Vous pouvez utiliser des variables comme {{data}}, {{sheriffData}}, {{parameters}}, etc.",
+      "activate": "Activer ce prompt"
+    },
+    "table": {
+      "name": "Nom",
+      "category": "Catégorie",
+      "description": "Description",
+      "status": "Statut",
+      "lastUpdate": "Dernière Mise à Jour",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "actions": {
+      "newPrompt": "Nouveau Prompt",
+      "update": "Mettre à jour",
+      "create": "Créer",
+      "cancel": "Annuler",
+      "edit": "Modifier",
+      "activate": "Activer",
+      "deactivate": "Désactiver",
+      "delete": "Supprimer",
+      "createFirst": "Créer le premier prompt"
+    },
+    "empty": {
+      "noPrompts": "Aucune configuration de prompt disponible"
+    },
+    "toast": {
+      "loadError": "Erreur lors du chargement des configurations de prompt",
+      "saveError": "Erreur lors de l'enregistrement du prompt",
+      "createSuccess": "Prompt créé avec succès",
+      "updateSuccess": "Prompt mis à jour avec succès",
+      "deleteSuccess": "Prompt supprimé avec succès",
+      "deleteError": "Erreur lors de la suppression du prompt",
+      "toggleSuccess": "Statut du prompt mis à jour",
+      "toggleError": "Erreur lors du changement de statut du prompt"
+    },
+    "confirm": {
+      "delete": "Êtes-vous sûr de vouloir supprimer ce prompt ?"
+    }
+  },
+  "superAdminMonitoring": {
+    "title": "Statut de Surveillance par Tenant",
+    "subtitle": "Résumé du statut de surveillance de tous les tenants",
+    "stats": {
+      "totalTenants": "Tenants Totaux",
+      "totalSchedules": "Planifications Totales",
+      "activeSchedules": "Planifications Actives",
+      "totalExecutions": "Exécutions Totales",
+      "averagePerTenant": "Moyenne par Tenant"
+    },
+    "sections": {
+      "tenantDetail": "Détail par Tenant"
+    },
+    "table": {
+      "columns": {
+        "tenant": "Tenant",
+        "status": "Statut",
+        "schedules": "Planifications",
+        "executions": "Exécutions",
+        "frequencies": "Fréquences",
+        "lastExecution": "Dernière Exécution",
+        "nextExecution": "Prochaine Exécution"
+      }
+    },
+    "messages": {
+      "noMonitoringConfigured": "Aucune surveillance configurée",
+      "noMonitoringFound": "Aucune surveillance trouvée dans aucun tenant.",
+      "noData": "Aucune donnée disponible"
+    },
+    "labels": {
+      "id": "ID",
+      "totals": "Totaux",
+      "active": "Actives",
+      "inactive": "Inactives",
+      "average": "Moyenne",
+      "perSchedule": "/planification"
+    },
+    "status": {
+      "noSchedules": "Sans Planifications",
+      "allActive": "Toutes Actives",
+      "allInactive": "Toutes Inactives",
+      "activeCount": "{{active}}/{{total}} Actives"
+    },
+    "frequency": {
+      "min": "Min",
+      "daily": "Quotidien",
+      "weekly": "Hebdo",
+      "monthly": "Mensuel"
+    },
+    "buttons": {
+      "retry": "Réessayer",
+      "refresh": "Actualiser les Données",
+      "refreshing": "Actualisation..."
+    },
+    "errors": {
+      "authMissing": "Jeton d'authentification non disponible",
+      "accessDenied": "Accès refusé : privilèges superutilisateur requis",
+      "fetchFailed": "Échec de la récupération des statistiques de surveillance : {{status}} {{statusText}}",
+      "loadStats": "Erreur lors du chargement des statistiques"
+    },
+    "date": {
+      "never": "Jamais"
+    }
+  }
+,
+"databaseManagement": {
+  "header": {
+    "title": "Gestion de base de données",
+    "refresh": "Actualiser",
+    "backup": "Sauvegarde"
+  },
+  "connection": {
+    "title": "État de la connexion",
+    "status": {
+      "connected": "Connecté",
+      "disconnected": "Déconnecté",
+      "error": "Erreur",
+      "running": "En cours",
+      "completed": "Terminé",
+      "failed": "Échec"
+    }
+  },
+  "stats": {
+    "totalCollections": "Total des collections",
+    "totalDocuments": "Total des documents",
+    "dbSize": "Taille de la base",
+    "totalIndexes": "Total des index"
+  },
+  "operations": {
+    "title": "Opérations de base de données",
+    "subtitle": "Effectuer des opérations de maintenance sur la base de données",
+    "buttons": {
+      "backup": "Créer une sauvegarde",
+      "cleanup": "Nettoyer la base de données",
+      "reindex": "Réindexer les collections"
+    }
+  },
+  "collections": {
+    "title": "Collections de la base de données",
+    "columns": {
+      "name": "Nom de la collection",
+      "documents": "Documents",
+      "avgSize": "Taille moyenne",
+      "totalSize": "Taille totale",
+      "indexes": "Index",
+      "actions": "Actions"
+    },
+    "tooltips": {
+      "reindex": "Réindexer",
+      "clean": "Nettoyer"
+    }
+  },
+  "recent": {
+    "title": "Opérations récentes",
+    "columns": {
+      "type": "Type",
+      "status": "Statut",
+      "start": "Début",
+      "end": "Fin",
+      "message": "Message"
+    },
+    "type": {
+      "backup": "Sauvegarde",
+      "restore": "Restauration",
+      "cleanup": "Nettoyage",
+      "reindex": "Réindexation"
+    },
+    "status": {
+      "running": "En cours",
+      "completed": "Terminé",
+      "failed": "Échec"
+    }
+  },
+  "dialogs": {
+    "backup": {
+      "title": "Confirmer la sauvegarde",
+      "message": "Êtes-vous sûr de vouloir créer une sauvegarde complète de la base de données ? Cette opération peut prendre quelques minutes.",
+      "confirm": "Confirmer la sauvegarde",
+      "cancel": "Annuler"
+    },
+    "cleanup": {
+      "title": "Confirmer le nettoyage",
+      "message": "Êtes-vous sûr de vouloir nettoyer {{target}} ? Cette opération supprimera les données obsolètes et ne peut pas être annulée.",
+      "confirm": "Confirmer le nettoyage",
+      "cancel": "Annuler",
+      "allDatabase": "toute la base de données",
+      "collection": "la collection \"{{name}}\""
+    }
+  },
+  "errors": {
+    "loadStats": "Erreur lors du chargement des statistiques de la base de données",
+    "loadOperations": "Erreur lors du chargement des opérations",
+    "backup": "Erreur lors de la sauvegarde",
+    "cleanup": "Erreur lors du nettoyage",
+    "reindex": "Erreur lors de la réindexation"
+  }
+,
+"equifaxMonitor": {
+  "header": { "title": "Moniteur Equifax" },
+  "form": {
+    "rut": "RUT",
+    "limit": "Limite",
+    "page": "Page",
+    "from": "De",
+    "to": "À",
+    "rutPlaceholder": "12.345.678-9",
+    "invalidRut": "RUT invalide"
+  },
+  "buttons": { "consult": "Consulter", "prev": "Précédent", "next": "Suivant" },
+  "pagination": { "summary": "Total : {{total}} · Page {{page}} sur {{pages}}" },
+  "table": {
+    "columns": {
+      "date": "Date",
+      "rut": "RUT",
+      "status": "Statut",
+      "code": "Code",
+      "timeMs": "Temps (ms)",
+      "endpoint": "Endpoint",
+      "cache": "Cache",
+      "download": "Télécharger",
+      "details": "Détails"
+    }
+  },
+  "status": { "ok": "OK", "error": "ERROR" },
+  "cache": { "cached": "cached", "miss": "miss", "info": "Informations de Cache" },
+  "details": { "payload": "Payload", "data": "Données", "normalized": "Données Normalisées", "error": "Erreur" },
+  "errors": {
+    "downloadJson": "Erreur lors du téléchargement du JSON",
+    "invalidRut": "Veuillez saisir un RUT valide",
+    "loadResponses": "Erreur lors du chargement des réponses Equifax"
+  },
+  "notifications": { "noRecentRecords": "Aucun enregistrement récent" },
+  "actions": { "downloadJson": "Télécharger le JSON" }
+},
+
+"sheriffMonitor": {
+  "header": { "title": "Moniteur Sheriff" },
+  "form": {
+    "rut": "RUT",
+    "limit": "Limite",
+    "page": "Page",
+    "from": "De",
+    "to": "À",
+    "rutPlaceholder": "12.345.678-9",
+    "invalidRut": "RUT invalide"
+  },
+  "buttons": { "consult": "Consulter", "prev": "Précédent", "next": "Suivant" },
+  "pagination": { "summary": "Total : {{total}} · Page {{page}} sur {{pages}}" },
+  "table": {
+    "columns": {
+      "rut": "RUT",
+      "status": "Statut",
+      "errorCalls": "Erreurs d'appels",
+      "download": "Télécharger",
+      "detail": "Détail",
+      "date": "Date"
+    },
+    "link": { "viewJson": "Voir JSON" }
+  },
+  "status": { "ok": "OK", "withErrors": "Avec erreurs" },
+  "errors": { "loadLogs": "Erreur lors du chargement des logs Sheriff" },
+  "actions": { "downloadJson": "Télécharger le JSON" }
+}
+}
+}

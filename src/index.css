@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose table {
+  @apply w-full my-4 border-collapse border border-gray-300;
+}
+.prose th, .prose td {
+  @apply border border-gray-300 px-4 py-2;
+}
+.prose th {
+  @apply bg-gray-100 font-semibold;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-white text-gray-900 transition-colors duration-200;
+}
+
+.dark body {
+  @apply bg-dark-primary text-dark-text-primary transition-colors duration-200;
+}
+
+/* Force dark mode styles */
+html.dark {
+  @apply bg-gray-900;
+}
+
+.dark .prose th, .dark .prose td {
+  @apply border-gray-600;
+}
+
+.dark .prose th {
+  @apply bg-gray-700;
+}
+
+/* AI Analysis Styles */
+.ai-analysis {
+  @apply space-y-4;
+}
+
+.ai-analysis h2 {
+  @apply text-xl font-bold mb-3 flex items-center gap-2;
+}
+
+.ai-analysis h3 {
+  @apply text-lg font-semibold mb-2 flex items-center gap-2;
+}
+
+.ai-analysis p {
+  @apply mb-2 leading-relaxed;
+}
+
+.ai-analysis ul {
+  @apply list-none space-y-1 ml-4;
+}
+
+.ai-analysis li {
+  @apply flex items-start gap-2;
+}
+
+/* Risk Level Colors */
+.risk-critical {
+  @apply text-red-600 bg-red-50 border-red-200 dark:text-red-400 dark:bg-red-900/20 dark:border-red-800;
+}
+
+.risk-significant {
+  @apply text-yellow-600 bg-yellow-50 border-yellow-200 dark:text-yellow-400 dark:bg-yellow-900/20 dark:border-yellow-800;
+}
+
+.risk-positive {
+  @apply text-green-600 bg-green-50 border-green-200 dark:text-green-400 dark:bg-green-900/20 dark:border-green-800;
+}
+
+.risk-info {
+  @apply text-blue-600 bg-blue-50 border-blue-200 dark:text-blue-400 dark:bg-blue-900/20 dark:border-blue-800;
+}
+
+/* AI Analysis Button */
+.ai-analysis-button {
+  @apply bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg;
+}
+
+.ai-analysis-button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* AI Analysis Content */
+.ai-analysis-content {
+  @apply bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700;
+}
+
+.ai-analysis-content .markdown-content {
+  @apply prose prose-sm max-w-none dark:prose-invert;
+}
+
+.ai-analysis-content .markdown-content h2 {
+  @apply text-lg font-bold text-gray-800 dark:text-gray-200 border-b border-gray-300 dark:border-gray-600 pb-2 mb-4;
+}
+
+.ai-analysis-content .markdown-content h3 {
+  @apply text-base font-semibold text-gray-700 dark:text-gray-300 mb-2;
+}
+
+.ai-analysis-content .markdown-content strong {
+  @apply font-semibold text-gray-800 dark:text-gray-200;
+}
+
+.ai-analysis-content .markdown-content ul {
+  @apply space-y-1;
+}
+
+.ai-analysis-content .markdown-content li {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+/* Loading Animation */
+.ai-loading {
+  @apply animate-pulse;
+}
+
+.ai-loading-text {
+  @apply text-purple-600 dark:text-purple-400 font-medium;
+}

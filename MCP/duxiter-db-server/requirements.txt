@@ -1,0 +1,9 @@
+fastapi>=0.104.1
+pymongo>=4.6.0
+uvicorn>=0.24.0
+python-dotenv>=1.0.0
+# Removed specific pydantic version to resolve dependency conflicts
+pydantic>=2.5.3
+requests>=2.31.0
+fastmcp>=0.1.0
+PyJWT

@@ -1,0 +1,279 @@
+  const prompt = `
+Eres un analista senior de riesgo financiero especializado en empresas de Latinoamérica (Chile).
+Analizarás el siguiente JSON, que contiene información estructurada sobre la situación financiera, judicial y laboral de una empresa.
+
+---
+
+### 🎯 Tarea
+Elabora un **análisis integral de riesgo financiero** en español (Chile) y en **formato Markdown**, con:
+- Maquetado profesional y estructurado
+- Tablas para datos cuantitativos
+- Emojis para resaltar niveles de riesgo
+- Explicaciones claras y concisas (máximo 20 líneas en total)
+- Foco SOLO en **riesgo económico y financiero**, no operativo ni reputacional.
+
+---
+
+### 🧩 Secciones requeridas en el resultado
+
+#### 🏢 Resumen de la Empresa
+Resume identificadores clave de la empresa (RUT, Nombre, Estado como "EN LIQUIDACIÓN", Fecha de Inicio de Actividades).
+
+#### 💣 Evaluación de Riesgo Financiero
+Muestra una tabla Markdown con estas columnas:
+| Categoría | Indicador | Valor | Evaluación de Riesgo | Emoji |
+|-----------|------------|-------|----------------------|-------|
+E incluye filas para:
+- Estado Legal (quiebra/liquidación)
+- Deudas en Boletín Comercial (número y monto total)
+- Deudas bancarias (directas/indirectas, vencidas vs vigentes)
+- Deudas laborales y previsionales
+- Multas laborales
+- Cobertura de activos (vehículos, propiedades)
+- Variación de tendencia de deuda
+- Clasificación y scoring crediticio
+
+Usa emojis como:
+- 🟢 Bajo  
+- 🟡 Medio  
+- 🟠 Alto  
+- 🔴 Crítico  
+
+#### 📊 Resumen de Indicadores Financieros Clave
+Otra tabla Markdown que resuma los campos numéricos clave:
+| Métrica | Valor (CLP) | Comentario |
+|--------|--------------|-----------|
+
+#### ⚖️ Evaluación Final
+Entrega:
+- Un párrafo breve (5–7 líneas) explicando la situación general
+- Un **nivel de riesgo** (Bajo / Medio / Alto / Crítico)
+- Un **puntaje de riesgo (0–100)** donde 100 = insolvente
+- 1–2 recomendaciones en viñetas para inversionistas o socios
+
+---
+
+### 📦 Datos
+Analiza el siguiente JSON:
+\`\`\`json
+${JSON.stringify(companyData, null, 2)}
+\`\`\`
+
+---
+
+### ⚙️ Formato de salida
+Devuelve el análisis en **Markdown** en español (Chile) (sin JSON adicional, sin comentarios extra).
+Incluye encabezados (##, ###), tablas y emojis exactamente como se describe.
+  `;
+
+
+
+
+
+  const prompt = `
+Eres un analista senior de riesgo financiero especializado en empresas de Latinoamérica (Chile).  
+Tu tarea es generar la **Sección 4) Principales Hallazgos** del reporte Fast Check, según las normas del documento técnico “Requerimiento Técnico – Principales Hallazgos (FastCheck v1)”.
+
+---
+
+### 🎯 Objetivo
+Construir la sección **4) Principales Hallazgos** directamente desde los datos del JSON proporcionado.  
+Debes listar **solo los parámetros con riesgo Alto o Crítico**, y para cada uno entregar un **detalle mínimo y factual** (conteos, montos, estados, fechas/períodos, instituciones) **proveniente de su fuente primaria**.
+
+---
+
+### ⚖️ Reglas de inclusión y severidad
+- Incluir solo parámetros con **riesgo calculado Alto o Crítico**.  
+- **Regla especial – Inicio de Actividades (SII):**
+  - No detectado ⇒ Riesgo Alto o Crítico (impacto Significativo o Severo).  
+  - Sí detectado ⇒ Riesgo Bajo (no se incluye).  
+- Para el resto de parámetros:
+  - No detectado ⇒ Riesgo Bajo (no se incluye).  
+  - Sí detectado ⇒ Riesgo Alto o Crítico (según impacto).
+
+---
+
+### 📋 Formato y salida esperada
+- Devuelve el resultado en **formato Markdown estructurado**, **sin comentarios adicionales ni JSON**.  
+- Ordena las secciones por dimensión:
+  1. Compliance  
+  2. Capital Humano  
+  3. Financiero/Tributario  
+  4. Legal  
+- Usa subtítulos “##” para cada dimensión.  
+- Bajo cada dimensión, incluye solo bullets para los parámetros con riesgo Alto o Crítico.
+- En cada bullet, escribe el detalle factual, según las estructuras del documento técnico.  
+- Usa formato CLP con separador de miles “.”; fechas en formato **DD/MM/AAAA o MM/AAAA**.  
+- Ejemplo de estilo:
+  - **Condenas Ley 21.121:** Inicio 03/05/2023; Término 12/09/2024.  
+  - **Multas Laborales:** 3 por CLP 2.340.000; pagadas 1 (CLP 780.000); pendientes 2 (CLP 1.560.000); última actualización 22/10/2025.  
+- Si no hay hallazgos relevantes, escribe:  
+  > *Sin hallazgos relevantes en esta dimensión.*
+
+---
+
+### 🧩 Dimensiones y parámetros esperados
+
+#### Compliance
+- Condenas Ley 21.121  
+- Condenas Ley 20.393  
+- Listas Internacionales  
+- Sanciones Medioambientales  
+- Procesos Sancionatorios Medioambientales  
+- Listas Propias Alto Impacto  
+- Listas Propias Mediano Impacto  
+- PEP Chile (Directo)  
+- PEP Chile Relacionados (Familiares)
+
+#### Capital Humano
+- Condenas por Prácticas Antisindicales  
+- Deuda Previsional Publicada  
+- Multas Laborales  
+- Deuda Previsional Presunta
+
+#### Financiero / Tributario
+- Protestos y Morosidades  
+- Término de Giro  
+- Difícil Fiscalización  
+- Inicio de Actividades (SII)
+
+#### Legal
+- Quiebra Judicial / Procedimientos Concursales  
+- Boletín Concursal  
+- Causas Civiles  
+- Causas Laborales  
+- Causas de Cobranza Laboral
+
+---
+
+### 📦 Datos a analizar
+\`\`\`json
+${JSON.stringify(companyData, null, 2)}
+\`\`\`
+
+---
+
+### ⚙️ Formato final de salida
+Devuelve el resultado **en Markdown en español (Chile)** siguiendo esta estructura:
+
+## Compliance
+- **Parámetro:** detalle factual …
+
+## Capital Humano
+- **Parámetro:** detalle factual …
+
+## Financiero / Tributario
+- **Parámetro:** detalle factual …
+
+## Legal
+- **Parámetro:** detalle factual …
+
+No incluyas ningún bloque de código, JSON ni explicaciones.
+`;
+
+
+const prompt = `
+Eres un analista senior de riesgo financiero especializado en empresas de Latinoamérica (Chile).  
+Tu tarea es generar la **Sección 4: Principales Hallazgos** del reporte Fast Check, siguiendo el documento técnico oficial “Requerimiento Técnico – Principales Hallazgos (FastCheck v1)”.
+
+---
+
+### 🎯 Objetivo
+Identificar y listar **solo los parámetros con riesgo Alto o Crítico**, mostrando un **detalle factual** (conteos, montos, estados, fechas, instituciones) basado en las fuentes primarias.  
+El resultado debe entregarse en formato **Markdown estructurado con tablas**.
+
+---
+
+### ⚙️ Formato de salida
+Devuelve el resultado **en español (Chile)**, con este formato:
+
+## 🧾 Resumen
+
+---
+
+## Compliance
+| Parámetro | Detalle factual | Nivel |
+|------------|-----------------|--------|
+| *Ejemplo:* Condenas Ley 21.121 | Sin registros activos al 24/10/2025 | — |
+| *Ejemplo:* Listas Internacionales | No aparece en sanciones internacionales | — |
+
+> Si no hay hallazgos relevantes, incluye una sola fila:
+> \`| Sin hallazgos relevantes en esta dimensión | — | — |\`
+
+---
+
+## Capital Humano
+| Parámetro | Detalle factual | Nivel |
+|------------|-----------------|--------|
+| *Ejemplo:* Deuda Previsional Presunta | 10 casos; 9 inactivas; 1 activa; última actualización 24/10/2025 | Alto 🟠 |
+
+---
+
+## Financiero / Tributario
+| Parámetro | Detalle factual | Nivel |
+|------------|-----------------|--------|
+| *Ejemplo:* Protestos y Morosidades | Sin protestos ni morosidades registradas | — |
+
+> Si no existen hallazgos relevantes, usar:
+> \`| Sin hallazgos relevantes en esta dimensión | — | — |\`
+
+---
+
+## Legal
+| Parámetro | Detalle factual | Nivel |
+|------------|-----------------|--------|
+| *Ejemplo:* Causas Laborales | 1 caso en tramitación; RIT O-412-2025; Juzgado de Letras del Trabajo de Los Ángeles; ingreso 13/10/2025 | Crítico 🔴 |
+| *Ejemplo:* Causas Cobranza Laboral | 2 casos activos; monto total CLP 2.300.000; última actualización 24/10/2025 | Alto 🟠 |
+
+---
+
+### 🧩 Dimensiones y parámetros esperados
+
+#### Compliance
+- Condenas Ley 21.121  
+- Condenas Ley 20.393  
+- Listas Internacionales  
+- Sanciones Medioambientales  
+- Procesos Sancionatorios Medioambientales  
+- Listas Propias Alto Impacto  
+- Listas Propias Mediano Impacto  
+- PEP Chile Directo  
+- PEP Chile Relacionados  
+
+#### Capital Humano
+- Condenas Prácticas Antisindicales  
+- Deuda Previsional Publicada  
+- Multas Laborales  
+- Deuda Previsional Presunta  
+
+#### Financiero / Tributario
+- Protestos y Morosidades  
+- Término de Giro  
+- Difícil Fiscalización  
+- Inicio de Actividades (SII)  
+
+#### Legal
+- Quiebra Judicial / Procedimientos Concursales  
+- Boletín Concursal  
+- Causas Civiles  
+- Causas Laborales  
+- Causas Cobranza Laboral  
+
+---
+
+### 🧮 Reglas
+- Solo incluir parámetros con riesgo **Alto o Crítico**.  
+- Si una dimensión no tiene hallazgos, mostrar una sola fila:
+  \`| Sin hallazgos relevantes en esta dimensión | — | — |\`
+- Incluir detalles concretos (fechas, montos, conteos, estados, instituciones).  
+- Formato monetario: CLP con punto como separador de miles.  
+- Fechas: DD/MM/AAAA.  
+- No incluir texto explicativo fuera de las tablas.
+
+---
+
+### 📦 Datos a analizar
+\`\`\`json
+${JSON.stringify(companyData, null, 2)}
+\`\`\`
+`;
