@@ -25,14 +25,26 @@ dist-ssr
 .env
 .token_cache.json
 
-# Ignore Equifax responses
 server/equifax_responses/
-# Python virtual environments (anywhere in the repo)
 **/venv/
 **/.venv/
 **/json_data/
 **/equifax_responses/
 
+rabbitmq_data/
+server/backups/
+server/uploads/
+
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+coverage/
+
+*.bson
+*.bson.gz
+*.jsonl.gz
+*.pid
 
 
 
