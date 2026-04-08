@@ -9,6 +9,7 @@ import { OpenAIService } from './OpenAIService';
 import { EquifaxResponse } from '../models/EquifaxResponse';
 import { eq } from 'lodash';
 import * as fs from 'fs';
+import path from 'path';
 import { Result } from '../models/Result';
 import { Logger } from 'winston';
 import { RiskDetailsFormatter } from '../helpers/RiskDetailsFormatter';
@@ -199,7 +200,14 @@ export class RiskCalculationService {
       res
     };
     //save res to json file in json_data folder with time and rut
-    fs.writeFileSync(`./json_data/riskCalculationResult_${Date.now()}_${rut}.json`, JSON.stringify(totalResult, null, 2));
+    try {
+      const jsonDataDir = path.resolve(process.cwd(), 'json_data');
+      fs.mkdirSync(jsonDataDir, { recursive: true });
+      const fileName = `riskCalculationResult_${Date.now()}_${rut}.json`;
+      fs.writeFileSync(path.join(jsonDataDir, fileName), JSON.stringify(totalResult, null, 2));
+    } catch (err) {
+      console.warn('[RiskCalculationService.calculateRisk] Failed to write json_data result file:', err);
+    }
     // console.warn(311, "call completed", res);
     return res;
 
