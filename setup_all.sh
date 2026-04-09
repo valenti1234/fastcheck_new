@@ -3,9 +3,16 @@ npm i --verbose
 npm run build
 cd server
 npm i --verbose
-./external_providers/dequienes/setup_venv.sh
-./external_providers/equifax/setup_venv.sh
-./external_providers/sheriff_v2/setup_venv.sh
+cd external_providers/dequienes
+./setup_venv.sh
+cd ..
+cd equifax
+./setup_venv.sh
+cd ..
+cd sheriff_v2
+./setup_venv.sh
+cd ..
+
 
 pm2 restart all
 
