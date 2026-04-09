@@ -757,7 +757,7 @@ export class RutController {
 
       //AV sheriffV2
       if (newSheriff && (newSheriff as any).compliance) {
-        console.warn(586, "-------------------- newSheriff", newSheriff?.compliance?.data);
+        console.warn(586, "-------------------- newSheriff", (newSheriff as any)?.compliance?.data);
         (filteredDetails as any).complianceSelectedRowsPepChile = (newSheriff as any)?.compliance?.data?.pepChile?.coincidencias || [];
         (filteredDetails as any).complianceSelectedRowsPublicOfficial = (newSheriff as any)?.compliance?.data?.funcionariosPublicos?.coincidencias || [];
         (filteredDetails as any).complianceSelectedRowsPepChileFamily = (newSheriff as any)?.compliance?.data?.familiaresPep?.coincidencias || [];

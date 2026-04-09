@@ -205,3 +205,27 @@ export const getSystemStatus = async (req: Request, res: Response): Promise<void
     });
   }
 };
+
+const getVmIpv4Addresses = (): string[] => {
+  const interfaces = os.networkInterfaces();
+  const results: string[] = [];
+
+  for (const infos of Object.values(interfaces)) {
+    if (!infos) continue;
+    for (const info of infos) {
+      if (info.family !== 'IPv4') continue;
+      if (info.internal) continue;
+      results.push(info.address);
+    }
+  }
+
+  return results;
+};
+
+export const getVmIp = async (req: Request, res: Response): Promise<void> => {
+  const override = (process.env.VM_IP || process.env.HOST_IP || '').trim();
+  const ips = override ? [override] : getVmIpv4Addresses();
+  const ip = ips[0] || null;
+
+  res.json({ ip, ips });
+};

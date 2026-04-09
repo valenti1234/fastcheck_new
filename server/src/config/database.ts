@@ -3,10 +3,13 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI || null;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 export const connectDB = async () => {
   try {
+    if (!MONGODB_URI) {
+      throw new Error('MONGODB_URI is not set');
+    }
     await mongoose.connect(MONGODB_URI);
     console.log('MongoDB connected successfully');
 

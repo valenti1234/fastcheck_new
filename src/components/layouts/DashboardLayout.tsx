@@ -33,10 +33,20 @@ import packageJson from '../../../package.json';
 import logger from '../../utils/logger';
 import LanguageSwitcher from '../common/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import { apiClient } from '../../services/api';
 
 interface DashboardLayoutProps {
   children: ReactNode;
 }
+
+const getLastTwoIpv4Blocks = (ip: string): string | null => {
+  const match = ip.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/);
+  if (!match) return null;
+  const third = Number(match[3]);
+  const fourth = Number(match[4]);
+  if (Number.isNaN(third) || Number.isNaN(fourth)) return null;
+  return `${third}.${fourth}`;
+};
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   const { user, logout } = useAuth();
@@ -45,6 +55,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const [vmIpSuffix, setVmIpSuffix] = useState<string | null>(null);
 
   // Force language from localStorage on mount to ensure immediate consistency
   useEffect(() => {
@@ -61,6 +72,26 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       document.documentElement.setAttribute('lang', i18n.resolvedLanguage || 'es');
     } catch { }
   }, [i18n.resolvedLanguage]);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const loadVmIp = async () => {
+      try {
+        const response = await apiClient.get<{ ip: string | null; ips?: string[] }>('/system/vm-ip');
+        const ip = response.data?.ip;
+        const suffix = ip ? getLastTwoIpv4Blocks(ip) : null;
+        if (isMounted) setVmIpSuffix(suffix);
+      } catch {
+        if (isMounted) setVmIpSuffix(null);
+      }
+    };
+
+    loadVmIp();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const handleLogout = async () => {
     try {
@@ -196,6 +227,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
 
             <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
               <span>v{packageJson.version}</span>
+              {vmIpSuffix && <span>IP {vmIpSuffix}</span>}
             </div>
           </div>
         </div>
@@ -266,6 +298,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
 
             <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
               <span>v{packageJson.version}</span>
+              {vmIpSuffix && <span>IP {vmIpSuffix}</span>}
             </div>
           </div>
         </div>

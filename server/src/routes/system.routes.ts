@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getSystemStatus } from '../controllers/system.controller';
+import { getSystemStatus, getVmIp } from '../controllers/system.controller';
 import { authenticate } from '../middleware/auth.middleware';
 import { requirePermission, Permission } from '../middleware/permissions.middleware';
 
@@ -87,5 +87,6 @@ const router = Router();
  *         description: Internal server error
  */
 router.get('/status', authenticate, requirePermission(Permission.ADMIN_DASHBOARD), getSystemStatus);
+router.get('/vm-ip', authenticate, getVmIp);
 
 export default router;
