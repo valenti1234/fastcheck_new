@@ -150,13 +150,51 @@ const swaggerOptions = {
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 ELKService.info('Swagger specification generated');
 
+const resolveDirWithFile = (candidates: string[], requiredFile: string): string | null => {
+  for (const candidate of candidates) {
+    try {
+      const filePath = path.join(candidate, requiredFile);
+      if (fs.existsSync(filePath)) return candidate;
+    } catch {
+      // ignore
+    }
+  }
+  return null;
+};
+
+const frontendDistDir = resolveDirWithFile(
+  [
+    path.resolve(__dirname, './frontend'),
+    path.resolve(__dirname, '../../dist'),
+    path.resolve(process.cwd(), 'dist'),
+    path.resolve(process.cwd(), '../dist'),
+  ],
+  'index.html'
+);
+
+const staticDir = resolveDirWithFile(
+  [
+    path.resolve(__dirname, './static'),
+    path.resolve(__dirname, '../static'),
+  ],
+  ''
+);
+
 // Serve static files for PDF reports
-app.use('/static', express.static(path.join(__dirname, '../static')));
-ELKService.info('Static files middleware enabled for /static');
+if (staticDir) {
+  app.use('/static', express.static(staticDir));
+  ELKService.info(`Static files middleware enabled for /static (${staticDir})`);
+} else {
+  ELKService.warn('Static files directory not found; /static will not be served');
+}
 
 // Serve frontend build files
-app.use(express.static(path.join(__dirname, '../../dist')));
-ELKService.info('Frontend static files middleware enabled for /dist');
+if (frontendDistDir) {
+  app.use(express.static(frontendDistDir));
+  ELKService.info(`Frontend static files middleware enabled (${frontendDistDir})`);
+} else {
+  ELKService.warn('Frontend dist directory not found; frontend will not be served');
+}
 
 // Routes
 app.use('/api', routes);
@@ -190,7 +228,11 @@ app.use('/api', (req, res) => {
 
 // Catch-all handler for React Router (must be after API routes)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../dist/index.html'));
+  if (!frontendDistDir) {
+    res.status(404).send('Frontend not available');
+    return;
+  }
+  res.sendFile(path.join(frontendDistDir, 'index.html'));
 });
 ELKService.info('Catch-all route registered for React Router');
 

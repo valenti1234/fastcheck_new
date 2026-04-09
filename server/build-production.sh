@@ -37,6 +37,16 @@ if [ ! -f "package.json" ]; then
     exit 1
 fi
 
+if [ -f "../package.json" ]; then
+    print_info "Build frontend..."
+    cd ..
+    npm ci
+    npm run build
+    cd server
+else
+    print_warning "package.json frontend non trovato, salto build frontend"
+fi
+
 # Verifica che esista tsconfig.json
 if [ ! -f "tsconfig.json" ]; then
     print_error "File tsconfig.json non trovato!"
@@ -77,6 +87,15 @@ print_info "Copia file statici..."
 if [ -d "static" ]; then
     cp -r static dist/
     print_info "File statici copiati in dist/static"
+fi
+
+if [ -d "../dist" ] && [ -f "../dist/index.html" ]; then
+    rm -rf dist/frontend
+    mkdir -p dist/frontend
+    cp -r ../dist/* dist/frontend/
+    print_info "Frontend copiato in dist/frontend"
+else
+    print_warning "Build frontend non trovato in ../dist, salto copia"
 fi
 
 # Crea file package.json per produzione (solo dipendenze runtime)
