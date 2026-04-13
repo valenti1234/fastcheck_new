@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import { TextEncoder, TextDecoder } from 'util';
 
 // Polyfills for Node.js environment
-global.TextEncoder = TextEncoder;
+global.TextEncoder = TextEncoder as any;
 global.TextDecoder = TextDecoder as any;
 
 // Load test environment variables
@@ -57,8 +57,13 @@ jest.mock('../services/notificationService', () => ({
 
 // Global test database setup
 let mongoServer: MongoMemoryServer;
+const shouldStartMongoMemoryServer = process.env.SKIP_MONGO_MEMORY_SERVER !== 'true';
 
 beforeAll(async () => {
+  if (!shouldStartMongoMemoryServer) {
+    return;
+  }
+
   // Start in-memory MongoDB instance
   mongoServer = await MongoMemoryServer.create();
   const mongoUri = mongoServer.getUri();
@@ -68,6 +73,10 @@ beforeAll(async () => {
 });
 
 beforeEach(async () => {
+  if (!shouldStartMongoMemoryServer || mongoose.connection.readyState !== 1) {
+    return;
+  }
+
   // Clear all collections before each test
   const collections = mongoose.connection.collections;
   for (const key in collections) {
@@ -77,6 +86,10 @@ beforeEach(async () => {
 });
 
 afterAll(async () => {
+  if (!shouldStartMongoMemoryServer || !mongoServer || mongoose.connection.readyState === 0) {
+    return;
+  }
+
   // Cleanup
   await mongoose.connection.dropDatabase();
   await mongoose.connection.close();

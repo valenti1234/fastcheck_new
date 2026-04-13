@@ -1,6 +1,5 @@
 import { ConsultaHistory, IConsultaHistory, IConsultaHistoryWithUser } from '../models/ConsultaHistory';
 import { AuthenticatedRequest } from '../types/auth';
-import { Request, Response } from 'express';
 import { EvaluationJob, EvaluationResult } from '../models/evaluation';
 
 export interface ConsultaLogData {
@@ -287,8 +286,21 @@ export class ConsultaHistoryService {
       ConsultaHistory.aggregate([
         { $match: query },
         {
+          $addFields: {
+            createdAtDate: {
+              $convert: {
+                input: '$createdAt',
+                to: 'date',
+                onError: null,
+                onNull: null
+              }
+            }
+          }
+        },
+        { $match: { createdAtDate: { $ne: null } } },
+        {
           $group: {
-            _id: { $dateToString: { format: '%Y-%m-%d', date: '$createdAt' } },
+            _id: { $dateToString: { format: '%Y-%m-%d', date: '$createdAtDate' } },
             count: { $sum: 1 }
           }
         },
