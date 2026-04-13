@@ -12,7 +12,7 @@ import colors from 'colors';
 
 // Configuration
 const CONFIG = {
-  baseUrl: process.env.API_BASE_URL || 'https://duxiter.azurianlab.com/api',
+  baseUrl: process.env.API_BASE_URL || 'https://fastcheck.duxiter.cl/api',
   testUser: {
     email: 'edeik@azurian.com',
     password: 'Emilio3465#'

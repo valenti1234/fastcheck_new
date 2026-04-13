@@ -17,7 +17,7 @@ const options: swaggerJsdoc.Options = {
     },
     servers: [
       {
-        url: 'https://duxiter.azurianlab.com',
+        url: 'https://fastcheck.duxiter.cl',
         description: 'Production server'
       },
       {

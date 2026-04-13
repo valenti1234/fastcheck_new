@@ -25,10 +25,11 @@ export class DbBackupService {
       return;
     }
 
-    const enabled = (process.env.DB_BACKUP_ENABLED || 'true').toLowerCase() === 'true';
+    const rawEnabled = process.env.DB_BACKUP_ENABLED;
+    const enabled = typeof rawEnabled === 'string' && rawEnabled.toLowerCase() === 'true';
     if (!enabled) {
       this.isInitialized = true;
-      ELKService.info('[DbBackupService] Disabled by DB_BACKUP_ENABLED');
+      ELKService.info('[DbBackupService] Disabled (DB_BACKUP_ENABLED not set to true)');
       return;
     }
 
@@ -141,4 +142,3 @@ export class DbBackupService {
     return { deletedCount };
   }
 }
-

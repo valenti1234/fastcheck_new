@@ -2228,7 +2228,7 @@ export class RiskCalculationService {
     //console.log(1239, "RiskCalculationService.buildDocMarkdown", socios, addministradores);
 
     //console.log("RiskCalculationService.buildDocMarkdown", riskSummary,allRules,logEntry);
-    let docMD = `![Duxiter Logo](https://duxiter.azurianlab.com/src/assets/dux_logo_small.png) \n## Resumen   evaluado el ${evaluacionFecha} \n\n`;
+    let docMD = `![Duxiter Logo](https://fastcheck.duxiter.cl/src/assets/dux_logo_small.png) \n## Resumen   evaluado el ${evaluacionFecha} \n\n`;
     docMD += `RUT: ${logEntry.rut}  Compania: ${logEntry.summaryData?.data?.sii?.razonSocial}\n\n`;
     docMD += `Fecha Constitucion: ${constitucionFecha}\n\n`;
     docMD += `Inicio Actividades: ${inicioActividades}\n\n`;
