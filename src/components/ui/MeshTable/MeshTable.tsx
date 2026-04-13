@@ -67,6 +67,15 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     const getName = (rut: string) => entityNames[rut] || entityNames[normalizeRut(rut)] || '';
     const rootIsPerson = !isSociedad(cleanMain);
 
+    if (rootIsPerson) {
+        return (
+            <div className="mt-4 mb-4">
+                <h3 className="text-lg font-bold dark:text-white mb-4">{title}</h3>
+                <p className="text-gray-500 dark:text-gray-400 italic text-sm py-4">No aplica para persona natural</p>
+            </div>
+        );
+    }
+
     const ownRels = relationships.filter((r: any) =>
         r.label === 'OWNED_BY' && !r.information_source?.match_type
     );
