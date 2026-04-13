@@ -178,15 +178,30 @@ const RuleDetailsModal: React.FC<RuleDetailsModalProps> = ({
 
       const colLower = sk.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       const isDateColumn = colLower.includes('fecha') || colLower.includes('vencimiento') ||
-        colLower.includes('publicacion') || colLower.includes('desde') || colLower.includes('hasta');
+        colLower.includes('publicacion') || colLower.includes('desde') || colLower.includes('hasta') ||
+        colLower.includes('periodo');
 
       if (isDateColumn) {
         const parseDate = (val: any): Date | null => {
           if (val == null) return null;
           const valStr = String(val).trim();
+          // DD-MM-YYYY o DD/MM/YYYY
           const match1 = valStr.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})/);
           if (match1) {
             const [, day, month, year] = match1;
+            return new Date(Number(year), Number(month) - 1, Number(day));
+          }
+          // YYYYMMDD
+          if (/^\d{8}$/.test(valStr)) {
+            const year = Number(valStr.slice(0, 4));
+            const month = Number(valStr.slice(4, 6)) - 1;
+            const day = Number(valStr.slice(6, 8));
+            return new Date(year, month, day);
+          }
+          // YYYY-MM-DD
+          const match2 = valStr.match(/^(\d{4})-(\d{2})-(\d{2})/);
+          if (match2) {
+            const [, year, month, day] = match2;
             return new Date(Number(year), Number(month) - 1, Number(day));
           }
           return null;
@@ -361,12 +376,12 @@ ${xmlRows.join('\n')}
 
     // Protestos y Morosidades
     if (tableTitle === 'Protestos y Morosidades') {
-   const montoTotal = d.reduce((sum, row) => {
-  const monto = row?.monto || row?.Monto || row?.unpaidAmount || 0;
-  const clean = String(monto).replace(/\$/g, '').replace(/\./g, '').replace(/,/g, '').trim();
-  const num = typeof monto === 'number' ? monto : Number.parseFloat(clean) || 0;
-  return sum + num;
-}, 0);
+      const montoTotal = d.reduce((sum, row) => {
+        const monto = row?.monto || row?.Monto || row?.unpaidAmount || 0;
+        const clean = String(monto).replace(/\$/g, '').replace(/\./g, '').replace(/,/g, '').trim();
+        const num = typeof monto === 'number' ? monto : Number.parseFloat(clean) || 0;
+        return sum + num;
+      }, 0);
 
       return (
         <div className="flex flex-wrap gap-2">

@@ -527,7 +527,15 @@ const FastCheck: React.FC = () => {
   const getTooltip = (category: string, label: string): string | undefined => {
     return tooltipMessages[category]?.[label];
   };
-
+  const normalizeDetails = (details: any) => {
+    if (!details) return [];
+    if (Array.isArray(details)) return details;
+    if (typeof details === 'object') {
+      if (Array.isArray(details.casos)) return details.casos;
+      return Object.values(details);
+    }
+    return [];
+  };
   const normalizeDetailsForExport = (): { columns: string[]; rows: Record<string, unknown>[] } => {
     let d: unknown = ruleDetailsContent;
     if (typeof d === 'string') {
@@ -4103,38 +4111,39 @@ const FastCheck: React.FC = () => {
                 titleTooltip="Evalúa el cumplimiento laboral y previsional del tercero crítico y su impacto en la operación."
                 title="Laboral y Capital Humano"
                 dataTitle={["Parámetro", "Impacto", "Detectado", "Riesgo", "Detalles"]}
-                data={(riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
+                data={(riskSummary.allRules?.capitalHumanoRules || []).map((rule) => {
                   let dataRisk = rule.risk;
                   let detectedValue = rule.detected;
-                  let detailsContent = rule.details;
+                  let detailsContent: any = rule.details;
 
                   // Fix para Deuda Previsional Presunta
                   if (rule.label === "Deuda Previsional Presunta") {
-                    const hasCases = (rule.details as any)?.casos?.length > 0;
-                    if (hasCases) {
-                      dataRisk = "alto";
-                      detectedValue = true;
-                    } else {
-                      dataRisk = "bajo";
-                      detectedValue = false;
-                    }
-                    detailsContent = (rule.details as any)?.casos ?? rule.details;
+                    const normalized = normalizeDetails(rule.details);
+                    const hasCases = normalized.length > 0;
+                    dataRisk = hasCases ? "alto" : "bajo";
+                    detectedValue = hasCases;
+                    detailsContent = normalized;
                   }
 
-                  // Fix para Término de Giro
-                  let dataToCheck = rule.details;
-                  if (rule.label === "Deuda Previsional Presunta" && (rule.details as any)?.casos) {
-                    dataToCheck = (rule.details as any)?.casos;
-                  }
+                  // Fix para dataToCheck
+                  let dataToCheck = rule.label === "Deuda Previsional Presunta" ? detailsContent : rule.details;
                   if (rule.label === "Término de Giro") {
                     dataToCheck = null;
                   }
 
-                  const hasDetails = ['Quiebra Judicial', 'Término de Giro', 'Contribuyente de difícil fiscalización'].includes(rule.label) ||
-                    Boolean(dataToCheck && (
-                      (Array.isArray(dataToCheck) && dataToCheck.length > 0) ||
-                      (typeof dataToCheck === 'object' && dataToCheck !== null && Object.keys(dataToCheck as any).length > 0)
-                    ));
+                  const hasDetails =
+                    [
+                      "Quiebra Judicial",
+                      "Término de Giro",
+                      "Contribuyente de difícil fiscalización",
+                    ].includes(rule.label) ||
+                    Boolean(
+                      dataToCheck &&
+                      ((Array.isArray(dataToCheck) && dataToCheck.length > 0) ||
+                        (typeof dataToCheck === "object" &&
+                          dataToCheck !== null &&
+                          Object.keys(dataToCheck as any).length > 0))
+                    );
 
                   return {
                     label: rule.label,
@@ -4142,24 +4151,30 @@ const FastCheck: React.FC = () => {
                     detected: detectedValue,
                     risk: dataRisk,
                     details: detailsContent,
-                    showDetails: hasDetails
+                    showDetails: hasDetails,
                   };
                 })}
                 getImpactColor={getImpactColor}
-                getTooltip={(label) => getTooltip("Laboral y Capital Humano", label) || `Información sobre ${label}`}
+                getTooltip={(label) =>
+                  getTooltip("Laboral y Capital Humano", label) ||
+                  `Información sobre ${label}`
+                }
                 onShowDetails={(title, details) => {
                   let processedDetails = details;
 
-                  if (title === 'Deuda Previsional Presunta') {
-                    // Manejar tanto array directo como objeto con propiedad casos
-                    const casos = Array.isArray(details) ? details : ((details as any)?.casos ?? []);
+                  if (title === "Deuda Previsional Presunta") {
+                    const casos = Array.isArray(details)
+                      ? details
+                      : (details as any)?.casos ?? [];
                     processedDetails = casos.map((row: any) => ({
-                      'RUT': row.rutAfiliado ?? '—',
-                      'Nombre': row.nombreAfiliado ?? '—',
-                      'Tipo Entidad': row.afp ?? '—',
-                      'Período': row.periodo ?? '—',
-                      'Fecha Carta': row.fecha ?? '—',
-                      'Estado': row.fechaDemanda ?? '—',
+                      RUT: row["Rut Afiliado"] ?? row.rutAfiliado ?? "—",
+                      Nombre: row["Nombre Afiliado"] ?? row.nombreAfiliado ?? "—",
+                      "Tipo Producto": row["Tipo Producto"] ?? row.tipoProducto ?? "—",
+                      "Tipo Entidad": row["Tipo entidad"] ?? row.afp ?? "—",
+                      Período: row["Periodo"] ?? row.periodo ?? "—",
+                      "Fecha Carta": row["Fecha carta"] ?? row.fecha ?? "—",
+                      Estado: row["Estado"] ?? row.estado ?? "—",
+                      ID: row["ID"] ?? row.id ?? "—",
                     }));
                   }
 
@@ -4216,17 +4231,30 @@ const FastCheck: React.FC = () => {
                 onShowDetails={(title, details) => {
                   let filteredDetails = details;
                   if (title === 'Protestos y Morosidades' && Array.isArray(details)) {
-                    const allowedCols = columnasPermitidas['Protestos y Morosidades'] ?? [];
+                    const keyMap: Record<string, string> = {
+                      vencimiento: 'vencimiento',
+                      expirationDate: 'vencimiento',
+                      monto: 'monto',
+                      unpaidAmount: 'monto',
+                      tipoDeuda: 'tipoDeuda',
+                      documentType: 'tipoDeuda',
+                      publicacion: 'publicacion',
+                    };
+                    const colOrder = ['vencimiento', 'monto', 'tipoDeuda', 'publicacion'];
                     filteredDetails = details.map((row: any) => {
                       const filtered: Record<string, any> = {};
-                      allowedCols.forEach(col => {
-                        if (row[col] !== undefined) filtered[col] = row[col];
+                      Object.keys(keyMap).forEach(srcKey => {
+                        if (row[srcKey] !== undefined) {
+                          filtered[keyMap[srcKey]] = row[srcKey];
+                        }
                       });
-                      // formateos...
                       return filtered;
                     });
-                    // ← AGREGA ESTO
-                    console.log('Keys después del filtro:', Object.keys(filteredDetails[0] ?? {}));
+                    setRuleDetailsTitle(title);
+                    setRuleDetailsContent(filteredDetails);
+                    setRuleDetailsColumnOrder(colOrder.filter(c => Object.keys(filteredDetails[0] ?? {}).includes(c)));
+                    setShowRuleDetailsModal(true);
+                    return;
                   }
                   setRuleDetailsTitle(title);
                   setRuleDetailsContent(filteredDetails);
