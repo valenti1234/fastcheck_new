@@ -134,6 +134,16 @@ async def prefixed_health():
     return {"status": "ok"}
 
 
+@api_v1.get("/docs", include_in_schema=False)
+async def prefixed_customer_docs():
+    return await customer_docs()
+
+
+@api_v1.get("/openapi.json", include_in_schema=False)
+async def prefixed_openapi():
+    return JSONResponse(app.openapi())
+
+
 api_v1.include_router(auth.router)
 api_v1.include_router(checks.router)
 api_v1.include_router(reports.router)
