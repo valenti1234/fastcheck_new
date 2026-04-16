@@ -96,7 +96,7 @@ async def customer_docs():
   </head>
   <body>
     <rapi-doc
-      spec-url="/openapi.json"
+      spec-url="openapi.json"
       render-style="read"
       show-header="false"
       allow-try="true"
