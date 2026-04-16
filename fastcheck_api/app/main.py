@@ -127,6 +127,13 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 
 
 api_v1 = APIRouter(prefix=settings.normalized_api_prefix)
+
+
+@api_v1.get("/health", include_in_schema=False)
+async def prefixed_health():
+    return {"status": "ok"}
+
+
 api_v1.include_router(auth.router)
 api_v1.include_router(checks.router)
 api_v1.include_router(reports.router)
