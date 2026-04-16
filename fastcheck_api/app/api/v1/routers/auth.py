@@ -7,7 +7,6 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from fastcheck_api.app.api.dependencies import CurrentUser, get_current_user
-from fastcheck_api.app.core.config import settings
 from fastcheck_api.app.core.mongodb import get_db
 from fastcheck_api.app.core.security import create_access_token
 from fastcheck_api.app.schemas.auth import LoginRequest, LoginResponse, UserOut
@@ -15,7 +14,6 @@ from fastcheck_api.app.services.auth_service import AuthService
 
 
 router = APIRouter(prefix="/auth", tags=["auth"])
-API_PREFIX = settings.normalized_api_prefix or "/api/v1"
 
 
 @router.post(
@@ -23,25 +21,6 @@ API_PREFIX = settings.normalized_api_prefix or "/api/v1"
     response_model=LoginResponse,
     summary="Login",
     description="Authenticate with email and password and receive a bearer JWT token compatible with the existing Node.js backend.",
-    openapi_extra={
-        "x-code-samples": [
-            {
-                "lang": "curl",
-                "label": "cURL",
-                "source": f"curl -X POST 'http://127.0.0.1:8181{API_PREFIX}/auth/login' \\\n  -H 'Content-Type: application/json' \\\n  -d '{{\"email\":\"user@example.com\",\"password\":\"********\"}}'",
-            },
-            {
-                "lang": "python",
-                "label": "httpx",
-                "source": f"import httpx\nresp = httpx.post('http://127.0.0.1:8181{API_PREFIX}/auth/login', json={{\n    'email': 'user@example.com',\n    'password': '********'\n}})\nprint(resp.json())",
-            },
-            {
-                "lang": "js",
-                "label": "fetch",
-                "source": f"const resp = await fetch('http://127.0.0.1:8181{API_PREFIX}/auth/login', {{\n  method: 'POST',\n  headers: {{ 'Content-Type': 'application/json' }},\n  body: JSON.stringify({{ email: 'user@example.com', password: '********' }})\n}});\nconsole.log(await resp.json());",
-            },
-        ]
-    },
 )
 async def login(payload: LoginRequest, db: Annotated[AsyncIOMotorDatabase, Depends(get_db)]):
     try:
@@ -81,20 +60,6 @@ async def me(
     "/refresh",
     summary="Refresh token",
     description="Issue a new JWT token using the current token's identity and tenant context.",
-    openapi_extra={
-        "x-code-samples": [
-            {
-                "lang": "curl",
-                "label": "cURL",
-                "source": f"curl -X POST 'http://127.0.0.1:8181{API_PREFIX}/auth/refresh' \\\n  -H 'Authorization: Bearer <jwt>'",
-            },
-            {
-                "lang": "python",
-                "label": "httpx",
-                "source": f"import httpx\nresp = httpx.post('http://127.0.0.1:8181{API_PREFIX}/auth/refresh', headers={{\n    'Authorization': 'Bearer <jwt>'\n}})\nprint(resp.json())",
-            },
-        ]
-    },
 )
 async def refresh(user: Annotated[CurrentUser, Depends(get_current_user)]):
     token = create_access_token(user_id=user.id, email=user.email, role=user.role, tenant_id=user.tenant)

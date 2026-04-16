@@ -7,7 +7,6 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from fastcheck_api.app.api.dependencies import CurrentUser, require_permission
-from fastcheck_api.app.core.config import settings
 from fastcheck_api.app.core.mongodb import get_db
 from fastcheck_api.app.schemas.checks import (
     CreateCheckRequest,
@@ -20,7 +19,6 @@ from fastcheck_api.app.services.check_service import CheckService, InsufficientC
 
 
 router = APIRouter(prefix="/checks", tags=["checks"])
-API_PREFIX = settings.normalized_api_prefix or "/api/v1"
 
 
 @router.get(
@@ -44,25 +42,6 @@ async def list_checks(
     status_code=status.HTTP_201_CREATED,
     summary="Create a check",
     description="Create a single evaluation job and enqueue processing in RabbitMQ using the existing queue and message format.",
-    openapi_extra={
-        "x-code-samples": [
-            {
-                "lang": "curl",
-                "label": "cURL",
-                "source": f"curl -X POST 'http://127.0.0.1:8181{API_PREFIX}/checks' \\\n  -H 'Authorization: Bearer <jwt>' \\\n  -H 'Content-Type: application/json' \\\n  -d '{{\"supplier\":{{\"rut\":\"12345678-9\",\"name\":\"ACME SpA\"}}}}'",
-            },
-            {
-                "lang": "python",
-                "label": "httpx",
-                "source": f"import httpx\nresp = httpx.post('http://127.0.0.1:8181{API_PREFIX}/checks',\n    headers={{'Authorization': 'Bearer <jwt>'}},\n    json={{'supplier': {{'rut': '12345678-9', 'name': 'ACME SpA'}}}})\nprint(resp.json())",
-            },
-            {
-                "lang": "js",
-                "label": "fetch",
-                "source": f"const resp = await fetch('http://127.0.0.1:8181{API_PREFIX}/checks', {{\n  method: 'POST',\n  headers: {{\n    'Authorization': 'Bearer <jwt>',\n    'Content-Type': 'application/json'\n  }},\n  body: JSON.stringify({{ supplier: {{ rut: '12345678-9', name: 'ACME SpA' }} }})\n}});\nconsole.log(await resp.json());",
-            },
-        ]
-    },
 )
 async def create_check(
     request: Request,
@@ -139,20 +118,6 @@ async def get_check(
     response_model=ListResultsResponse,
     summary="List check results",
     description="List evaluation results for a given job id (tenant-scoped).",
-    openapi_extra={
-        "x-code-samples": [
-            {
-                "lang": "curl",
-                "label": "cURL",
-                "source": f"curl 'http://127.0.0.1:8181{API_PREFIX}/checks/<job_id>/results?page=1&limit=10' \\\n  -H 'Authorization: Bearer <jwt>'",
-            },
-            {
-                "lang": "python",
-                "label": "httpx",
-                "source": f"import httpx\nresp = httpx.get('http://127.0.0.1:8181{API_PREFIX}/checks/<job_id>/results',\n    params={{'page': 1, 'limit': 10}},\n    headers={{'Authorization': 'Bearer <jwt>'}})\nprint(resp.json())",
-            },
-        ]
-    },
 )
 async def get_check_results(
     job_id: str,
