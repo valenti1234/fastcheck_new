@@ -1,0 +1,8 @@
+Important refinement:
+for authentication, authorization, tenant/account lookup, and user access control, you must reuse the existing MongoDB database `duxiter` and the current collections already used by the Node.js backend.
+
+Do not introduce new auth collections, user collections, or tenant collections unless absolutely unavoidable.
+First inspect the codebase and map the existing schema.
+Then adapt the FastAPI backend to that schema.
+
+Compatibility with the existing Mongo data model is more important than idealized redesign.

@@ -1,0 +1,16 @@
+The FastAPI backend must use FastAPI's automatic OpenAPI generation as the source of truth for API documentation.
+
+Requirements:
+- define request and response models properly with Pydantic
+- add endpoint summaries and descriptions
+- add tags for endpoint grouping
+- add example payloads where useful
+- expose the generated OpenAPI schema
+- keep Swagger/ReDoc available for internal use if helpful
+
+On top of the generated OpenAPI spec, provide a better user-facing documentation experience for customers, with:
+- polished API reference
+- quickstart guides
+- authentication guide
+- end-to-end examples
+- code samples in multiple languages

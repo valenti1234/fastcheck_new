@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi import APIRouter
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 
 from fastcheck_api.app.api.v1.routers import auth, checks, reports, usage
@@ -55,6 +56,13 @@ app = FastAPI(
     redoc_url="/internal/redoc",
     openapi_tags=tags_metadata,
     lifespan=lifespan,
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 app.add_middleware(RequestLoggingMiddleware)
 app.add_middleware(TenantContextMiddleware)

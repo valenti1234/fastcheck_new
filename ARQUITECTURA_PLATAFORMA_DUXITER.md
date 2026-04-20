@@ -2,7 +2,9 @@
 
 ## Resumen Ejecutivo
 
-Duxiter es una plataforma integral de evaluación y monitoreo empresarial construida con una arquitectura moderna, escalable y basada en la nube. La plataforma combina tecnologías de vanguardia incluyendo inteligencia artificial, APIs de terceros, y una arquitectura de microservicios para proporcionar evaluaciones de riesgo empresarial en tiempo real.
+Duxiter es una plataforma integral de evaluación y monitoreo empresarial construida con una arquitectura moderna, escalable y basada en la nube. La plataforma combina tecnologías de vanguardia incluyendo inteligencia artificial, APIs de terceros, y una arquitectura orientada a servicios para proporcionar evaluaciones de riesgo empresarial en tiempo real.
+
+En paralelo al backend histórico en Node.js, existe un backend adicional llamado **FastCheck API** implementado en **Python/FastAPI**. Este servicio está pensado como **API producto (SaaS)** para clientes, y corre en paralelo sin reemplazar el backend existente. La regla principal de compatibilidad es que **reutiliza la base de datos MongoDB existente `duxiter` y las colecciones actuales** para autenticación, usuarios, tenants y datos funcionales (sin esquemas paralelos).
 
 ## 1. Arquitectura General
 
@@ -11,12 +13,16 @@ Duxiter es una plataforma integral de evaluación y monitoreo empresarial constr
 - **Patrón**: Arquitectura de 3 capas (Presentación, Lógica de Negocio, Datos)
 - **Comunicación**: API RESTful con autenticación JWT
 - **Documentación API**: Swagger/OpenAPI 3.0
+- **Estrategia de backend en paralelo**:
+  - **Backend Node.js (legacy / interno)**: fuente de verdad funcional y persistencia.
+  - **FastCheck API (FastAPI / cliente)**: capa producto, minimalista, documentada y multi-tenant, adaptada al modelo de datos existente.
 
 ### 1.2 Modelo de Despliegue
 - **Infraestructura**: Contenedores Docker
 - **Proxy Reverso**: Nginx para balanceo de carga y enrutamiento
 - **Base de Datos**: MongoDB con replicación
 - **Cola de Mensajes**: RabbitMQ para procesamiento asíncrono
+- **FastCheck API (FastAPI)**: puede desplegarse sin Docker (venv), y enrutar por prefijo vía Nginx (por ejemplo `/client-api-v1/*`).
 
 ## 2. Stack Tecnológico
 
@@ -28,6 +34,13 @@ Duxiter es una plataforma integral de evaluación y monitoreo empresarial constr
 - **Enrutamiento**: React Router
 - **Testing**: Jest
 
+#### 2.1.1 Estructura frontend (alto nivel)
+- **Entrypoints**: `src/main.tsx`, `src/index.tsx`
+- **Rutas**: `src/routes/*` (enrutamiento de vistas)
+- **Contextos**: `src/contexts/*` (auth, tenant, tema)
+- **Servicios**: `src/services/*` (cliente API, servicios de dominio)
+- **Componentes**: `src/components/*` (layouts, componentes comunes y Fast Check UI)
+
 ### 2.2 Backend
 - **Runtime**: Node.js
 - **Framework**: Express.js con TypeScript
@@ -36,14 +49,25 @@ Duxiter es una plataforma integral de evaluación y monitoreo empresarial constr
 - **Seguridad**: Helmet, CORS, Rate Limiting
 - **Documentación**: Swagger UI
 
-### 2.3 Base de Datos
+### 2.3 FastCheck API (Python)
+- **Framework**: FastAPI
+- **Modelado**: Pydantic v2 (request/response como fuente de verdad para OpenAPI)
+- **MongoDB**: Motor/PyMongo (conexión al mismo `MONGODB_URI` y misma DB `duxiter`)
+- **Autenticación**: JWT compatible con el backend Node (mismo `VITE_JWT_SECRET` y payload)
+- **Procesamiento asíncrono**: RabbitMQ (publicación/consumo) con tolerancia a degradación (si RabbitMQ no está disponible, la API puede iniciar sin procesamiento async)
+- **Documentación**:
+  - OpenAPI JSON: `/openapi.json` y también `{FASTCHECK_API_PREFIX}/openapi.json`
+  - Swagger/ReDoc interno: `/internal/docs`, `/internal/redoc`
+  - RapiDoc (customer docs): `/docs` y también `{FASTCHECK_API_PREFIX}/docs`
+
+### 2.4 Base de Datos
 - **Motor**: MongoDB 7.0
 - **Características**:
   - Esquemas flexibles para datos empresariales complejos
   - Índices optimizados para consultas de rendimiento
   - Replicación para alta disponibilidad
 
-### 2.4 Servicios de Infraestructura
+### 2.5 Servicios de Infraestructura
 - **Cola de Mensajes**: RabbitMQ 3.12 con interfaz de gestión
 - **Proxy Reverso**: Nginx con compresión gzip y caché
 - **Contenedores**: Docker Compose para orquestación
@@ -80,6 +104,20 @@ Duxiter es una plataforma integral de evaluación y monitoreo empresarial constr
 - **Monitoreo**: `/api/monitoring/*`
 - **Notificaciones**: `/api/notifications/*`
 
+### 4.3 FastCheck API (cliente)
+La FastCheck API expone un subconjunto estable y orientado a clientes, manteniendo compatibilidad con el modelo persistente:
+- **Auth**: `POST {FASTCHECK_API_PREFIX}/auth/login`, `POST {FASTCHECK_API_PREFIX}/auth/refresh`, `GET {FASTCHECK_API_PREFIX}/auth/me`
+- **Checks**: `POST {FASTCHECK_API_PREFIX}/checks`, `GET {FASTCHECK_API_PREFIX}/checks`, `GET {FASTCHECK_API_PREFIX}/checks/{job_id}/results`
+- **Reports**: `GET {FASTCHECK_API_PREFIX}/reports/fast-check/{rut}`
+- **Usage**: `GET {FASTCHECK_API_PREFIX}/usage`, `GET {FASTCHECK_API_PREFIX}/usage/operations`
+
+El prefijo `{FASTCHECK_API_PREFIX}` es configurable vía `.env` (por ejemplo `/client-api-v1`).
+
+### 4.4 Integración con backend Node (adapter)
+FastCheck API puede delegar procesamiento complejo al backend existente mediante una capa de integración (adapter) para:
+- Ejecutar lookup/rut y lógica propietaria existente.
+- Reutilizar generación de resúmenes/reportes ya implementados.
+- Reducir duplicación de reglas de negocio en la capa producto.
 
 ## 5. Arquitectura Escalable
 
@@ -136,6 +174,7 @@ Servicios Docker:
 
 ### 7.2 Health Checks
 - **Endpoint de Salud**: `http://localhost/health`
+- **Health bajo prefijo**: `http://localhost{FASTCHECK_API_PREFIX}/health` (FastCheck API)
 - **Monitoreo de Servicios**: Estado de MongoDB y RabbitMQ
 - **Métricas de Rendimiento**: Tiempo de respuesta de APIs
 
@@ -153,7 +192,41 @@ Servicios Docker:
 - **RiskChangeNotifications**: Alertas de cambio de riesgo
 - **AIOperationLog**: Registro de operaciones de IA
 
-### 8.2 Flujo de Datos
+### 8.2 Compatibilidad de persistencia (FastCheck API)
+FastCheck API **no define esquemas paralelos**. Reutiliza colecciones existentes en `duxiter`:
+- **users** y **tenants** para auth, tenant lookup y control de acceso.
+- **evaluationjobs** y **evaluationresults** para checks/jobs/resultados.
+- **summaries** para reportes (FastCheck summary).
+- **creditoperations** para uso/consumo de créditos.
+- **consulta_history** para auditoría/trazabilidad.
+
+Las reglas de compatibilidad priorizan:
+- mismos nombres de campos,
+- mismos tipos de identificadores (ObjectId vs string),
+- misma semántica de roles/permissions derivada del `role` del usuario.
+
+### 8.3 Diagrama (alto nivel)
+
+```mermaid
+flowchart LR
+  U[Cliente Web] --> FE[Frontend React/Vite];
+  FE --> PX[Reverse Proxy];
+  PX --> BE1[Backend Node legacy];
+  PX --> BE2[FastCheck API];
+
+  BE1 --> DB[(MongoDB duxiter)];
+  BE2 --> DB;
+
+  BE2 --> MQ[(RabbitMQ)];
+  MQ --> W[Worker FastCheck];
+  W --> BE1;
+  W --> DB;
+```
+
+### 8.4 Flujo de Datos
+Notas de enrutamiento (fuera del diagrama, para evitar problemas de renderizado Mermaid):
+- Reverse Proxy enruta `/api/*` hacia el backend Node (legacy).
+- Reverse Proxy enruta `{FASTCHECK_API_PREFIX}/*` hacia FastCheck API (FastAPI).
 1. **Ingesta**: APIs externas → MongoDB
 2. **Procesamiento**: IA → Análisis → Resultados
 3. **Almacenamiento**: Resultados → Base de datos

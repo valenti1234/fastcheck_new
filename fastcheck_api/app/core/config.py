@@ -19,6 +19,11 @@ class Settings(BaseSettings):
     api_host: str = Field(default="127.0.0.1", validation_alias="FASTCHECK_API_HOST")
     api_port: int = Field(default=8080, validation_alias="FASTCHECK_API_PORT")
     api_prefix: str = Field(default="/api/v1", validation_alias="FASTCHECK_API_PREFIX")
+    cors_origins_raw: str = Field(
+        default="*",
+        validation_alias="FASTCHECK_CORS_ORIGINS",
+        description="Lista de orígenes separados por coma, por ejemplo: https://fastcheck.duxiter.cl,https://otro.com",
+    )
     log_level: str = Field(default="INFO", validation_alias="FASTCHECK_LOG_LEVEL")
 
     legacy_base_url: str = Field(default="http://localhost:4040/api", validation_alias="LEGACY_BASE_URL")
@@ -66,6 +71,14 @@ class Settings(BaseSettings):
         if len(prefix) > 1 and prefix.endswith("/"):
             prefix = prefix[:-1]
         return prefix
+
+    @property
+    def cors_origins(self) -> list[str]:
+        raw = (self.cors_origins_raw or "").strip()
+        if not raw or raw == "*":
+            return ["*"]
+        parts = [p.strip() for p in raw.split(",")]
+        return [p for p in parts if p]
 
 
 def get_settings() -> Settings:

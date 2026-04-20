@@ -1,0 +1,8 @@
+Before generating code, list the existing collections and inferred document structures found in the current codebase.
+Then explicitly mark each one as:
+- reused as-is
+- reused with adapter
+- not used by FastAPI
+- unavoidable new collection
+
+Do not continue to implementation until this mapping is complete.

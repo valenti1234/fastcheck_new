@@ -1,0 +1,357 @@
+You are a senior software architect and backend engineer.
+
+Your task is to design and bootstrap a NEW backend system for a product called "FastCheck".
+
+IMPORTANT CONTEXT:
+- There is an EXISTING backend written in Node.js + TypeScript.
+- That backend is already working in production and contains many more internal features than what clients need.
+- The existing backend MUST NOT be rewritten or replaced directly.
+- We want to build a NEW backend in Python using FastAPI.
+- This new backend will run IN PARALLEL and will be exposed to CLIENTS as a clean SaaS/API product.
+- The current ecosystem already uses MongoDB and RabbitMQ.
+- The existing MongoDB database name is: duxiter
+
+CRITICAL RULE:
+The new FastAPI backend must reuse the CURRENT database and CURRENT collections for EVERYTHING.
+
+That means:
+- authentication must use the current db and current collections
+- users must use the current db and current collections
+- tenants/accounts/companies must use the current db and current collections
+- checks must use the current db and current collections
+- reports must use the current db and current collections
+- permissions/roles must use the current db and current collections
+- audit/log structures must reuse current collections if they already exist
+- webhook-related persistence must reuse current structures if possible
+- usage tracking must reuse current structures if possible
+
+DO NOT create:
+- a new database
+- a parallel schema
+- a new auth model
+- a new user store
+- a new tenant store
+- new collections unless absolutely unavoidable and explicitly justified
+
+The priority is compatibility with the existing `duxiter` persistence model.
+
+==================================================
+PRIMARY GOAL
+==================================================
+
+Design and generate a production-ready FastAPI backend that:
+- runs in parallel to the current Node.js backend
+- reuses the CURRENT MongoDB database and CURRENT collections for all data access
+- exposes only the subset of features needed for clients
+- stays compatible with the current schema and data model
+- avoids any unnecessary persistence redesign
+
+==================================================
+MANDATORY FIRST STEP: ANALYZE EXISTING SCHEMA
+==================================================
+
+Before generating any implementation, you must FIRST inspect the current codebase and infer the real MongoDB usage.
+
+You must analyze:
+- MongoDB connection code
+- model definitions
+- repository classes
+- service classes
+- auth logic
+- login flow
+- token/session handling
+- user collections
+- tenant/account/company collections
+- permissions/roles structures
+- checks collections
+- reports collections
+- audit collections
+- webhook collections or equivalent
+- usage/metering collections or equivalent
+- RabbitMQ integration points
+
+Then provide an ANALYSIS SECTION with:
+
+1. Existing database detected
+2. Existing collections detected
+3. Existing auth collections and fields
+4. Existing user/account/company/tenant collections and fields
+5. Existing permission model
+6. Existing checks/reports collections and fields
+7. Existing audit/log collections and fields
+8. Existing webhook or callback-related persistence
+9. Existing usage/metering-related persistence
+10. Which existing collections will be reused by the FastAPI backend
+11. Which existing fields must be preserved for compatibility
+12. Which parts will be wrapped with adapters rather than redesigned
+
+DO NOT proceed to implementation until this mapping is complete.
+
+==================================================
+STRICT COMPATIBILITY RULES
+==================================================
+
+1. Reuse the existing MongoDB database called `duxiter`
+2. Reuse the existing collections for ALL business areas wherever they already exist
+3. Preserve existing field naming whenever possible
+4. Preserve existing document structures whenever possible
+5. Preserve existing identifiers and references
+6. Preserve current authentication compatibility
+7. Preserve current tenant/account/company compatibility
+8. Preserve current permission compatibility
+9. Preserve current check/report compatibility
+10. Do not create new collections unless absolutely unavoidable
+
+If a new collection is truly unavoidable:
+- explain exactly why
+- explain why no existing collection can be reused
+- keep it minimal
+- do not continue silently
+
+==================================================
+ARCHITECTURAL PRINCIPLES
+==================================================
+
+1. Parallel backend strategy
+- New FastAPI backend = CLIENT PRODUCT BACKEND
+- Existing Node.js backend = INTERNAL / LEGACY BACKEND
+- Both run in parallel
+
+2. Reuse-first strategy
+- The FastAPI backend must adapt itself to the CURRENT persistence model
+- Do not force the data layer to adapt to a new idealized design
+- Compatibility is more important than architectural purity
+
+3. Productization
+- The FastAPI backend should expose only the client-facing subset of functionality
+- It should be stable, documented, secure, and multi-tenant
+- But its persistence must remain aligned to the current system
+
+==================================================
+TECH STACK
+==================================================
+
+Use:
+- FastAPI
+- Pydantic v2
+- MongoDB (existing `duxiter` database)
+- RabbitMQ
+- Redis only if absolutely optional and isolated
+- Python typing throughout
+
+Important constraints:
+- Do NOT use PostgreSQL
+- Do NOT use SQLAlchemy
+- Do NOT use Docker
+- Do NOT generate a new persistence architecture
+- Do NOT generate greenfield Mongo models disconnected from the existing collections
+
+==================================================
+AUTHENTICATION AND AUTHORIZATION
+==================================================
+
+The new backend must use the CURRENT authentication and authorization data model already present in the codebase.
+
+You must inspect:
+- how users are stored
+- how passwords are stored
+- how tokens are generated or validated
+- how sessions or JWTs are currently handled
+- how roles/permissions are attached
+- how tenant/account/company membership is resolved
+
+Then:
+- reuse the same collections
+- reuse the same fields
+- preserve compatibility with existing users
+- preserve compatibility with current access control logic where possible
+
+Do NOT invent:
+- a new auth collection
+- a new users collection
+- a new tenants collection
+- a parallel RBAC model
+
+If API keys do not already exist, do not casually invent a new storage model unless necessary and justified.
+
+==================================================
+BUSINESS SCOPE
+==================================================
+
+The new FastAPI backend is a CLIENT-FACING PRODUCT API for FastCheck.
+
+It should expose only essential client-facing APIs such as:
+
+- login
+- token refresh
+- list checks
+- create check
+- get check result
+- get report
+- get usage
+- manage webhooks if current schema supports it or can be adapted cleanly
+
+But all of this must use current database structures and current collections.
+
+==================================================
+LEGACY INTEGRATION REQUIREMENTS
+==================================================
+
+The existing Node.js backend must be treated as the current internal source of truth for business behavior.
+
+The new FastAPI backend must:
+- reuse the same MongoDB database and collections
+- optionally call legacy services through an integration layer
+- avoid reimplementing every internal behavior immediately
+
+Create an integration layer such as:
+services/
+  legacy_service.py
+
+This layer should:
+- abstract interactions with the legacy backend
+- support gradual migration
+- avoid tight coupling in the API layer
+
+==================================================
+RABBITMQ / ASYNC REQUIREMENTS
+==================================================
+
+RabbitMQ is already part of the ecosystem and must be reused.
+
+Use it for asynchronous check processing.
+
+Suggested flow:
+- client submits a check
+- FastAPI writes using the existing MongoDB collections/patterns
+- FastAPI publishes a message to RabbitMQ
+- worker consumes the message
+- worker processes the check via legacy integration or compatible logic
+- worker writes results back using the current schema
+- optional webhook/callback behavior should reuse existing persistence patterns if available
+
+Do not invent a separate async persistence model.
+
+==================================================
+PROJECT STRUCTURE
+==================================================
+
+Generate a production-grade FastAPI structure such as:
+
+app/
+  main.py
+  core/
+    config.py
+    security.py
+    mongodb.py
+    logging.py
+  api/
+    dependencies.py
+    v1/
+      routers/
+        auth.py
+        checks.py
+        reports.py
+        usage.py
+        webhooks.py
+  services/
+    auth_service.py
+    check_service.py
+    report_service.py
+    usage_service.py
+    webhook_service.py
+    legacy_service.py
+    rabbitmq_service.py
+    audit_service.py
+  repositories/
+  middleware/
+    tenant_context.py
+    request_logging.py
+  schemas/
+  workers/
+    check_worker.py
+  utils/
+  tests/
+
+IMPORTANT:
+repositories, services, schemas, and models must be based on the EXISTING `duxiter` collections, not on invented collections.
+
+==================================================
+OUTPUT REQUIRED
+==================================================
+
+Generate the project as a real implementation starter.
+
+Required output:
+
+1. Analysis of the existing MongoDB schema usage from the current codebase
+2. Explicit collection mapping table:
+   - collection name
+   - purpose
+   - reused as-is / reused via adapter / not used
+3. Full proposed project structure
+4. Implementation of key files:
+   - app/main.py
+   - app/core/config.py
+   - app/core/mongodb.py
+   - app/core/security.py
+   - app/api/v1/routers/auth.py
+   - app/api/v1/routers/checks.py
+   - app/middleware/tenant_context.py
+   - app/services/auth_service.py
+   - app/services/check_service.py
+   - app/services/legacy_service.py
+   - app/services/rabbitmq_service.py
+   - app/workers/check_worker.py
+5. Pydantic schemas aligned with the current collection structures
+6. Auth flow aligned with current persistence
+7. RabbitMQ async publish/consume example
+8. Audit handling aligned with existing persistence
+9. README with local run instructions without Docker
+10. .env.example
+11. requirements.txt
+
+==================================================
+IMPLEMENTATION PREFERENCES
+==================================================
+
+- Keep code modular and production-minded
+- Prefer pragmatic compatibility over clean-slate redesign
+- Use strong typing
+- Use structured logging
+- Add centralized exception handling
+- Add a GET /health endpoint
+- Preserve naming alignment with the current codebase
+- Add TODO markers where legacy behavior must be completed
+- Avoid abstract theory; generate concrete starter code
+
+==================================================
+VERY IMPORTANT CONSTRAINTS
+==================================================
+
+DO NOT:
+- create a new MongoDB database
+- create new collections unless absolutely unavoidable
+- create a parallel auth system
+- create a parallel user model
+- create a parallel tenant/account model
+- redesign persistence from scratch
+- introduce SQL or PostgreSQL
+- introduce Docker
+- mirror every internal feature unnecessarily
+
+DO:
+- build a new FastAPI backend in parallel
+- reuse the existing `duxiter` database for everything
+- reuse the existing collections for everything wherever possible
+- adapt FastAPI code to the current persistence model
+- keep legacy integration abstract and replaceable
+- expose only the subset of features needed by clients
+
+==================================================
+FINAL INSTRUCTION
+==================================================
+
+Before generating code, explicitly confirm through analysis that the new FastAPI backend will use the EXISTING `duxiter` database and EXISTING collections for ALL areas of the system.
+
+Only after that, generate implementation code.
