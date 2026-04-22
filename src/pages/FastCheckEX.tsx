@@ -4741,19 +4741,19 @@ const FastCheck: React.FC = () => {
               })();
 
               // ── Normalizar capitalHumanoRules ───────────────────────────
-              const normalizedCapitalHumanoRules = (riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
-                if (rule.label === 'Deuda Previsional Presunta') {
-                  const casos = rule.details?.casos ?? [];
-                  const hasCases = Array.isArray(casos) && casos.length > 0;
-                  return {
-                    ...rule,
-                    risk: hasCases ? 'alto' : 'bajo',
-                    detected: hasCases,
-                    details: hasCases ? casos : [],
-                  };
-                }
-                return rule;
-              });
+          const normalizedCapitalHumanoRules = (riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
+    if (rule.label === 'Deuda Previsional Presunta') {
+        const casos = normalizeDetails(rule.details);
+        const hasCases = casos.length > 0;
+        return {
+            ...rule,
+            risk: hasCases ? 'alto' : 'bajo',
+            detected: hasCases,
+            details: hasCases ? casos : [],
+        };
+    }
+    return rule;
+});
 
               // ── Normalizar financieroTributarioRules ────────────────────
               const normalizedFinancieroRules = (riskSummary.allRules?.financieroTributarioRules || []).map(rule => {
