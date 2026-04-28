@@ -1,5 +1,11 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+const CONSULTA_HISTORY_TTL_SECONDS = (() => {
+  const fallback = 63072000;
+  const parsed = Number.parseInt(process.env.CONSULTA_HISTORY_TTL_SECONDS || '', 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+})();
+
 export interface IUserInfo {
   _id: string;
   name: string;
@@ -155,6 +161,6 @@ ConsultaHistorySchema.index({ tenantId: 1, responseStatus: 1, createdAt: -1 });
 ConsultaHistorySchema.index({ tenantId: 1, endpoint: 1, createdAt: -1 });
 
 // TTL index to automatically delete old records after 2 years (730 days)
-ConsultaHistorySchema.index({ createdAt: 1 }, { expireAfterSeconds: 63072000 });
+ConsultaHistorySchema.index({ createdAt: 1 }, { expireAfterSeconds: CONSULTA_HISTORY_TTL_SECONDS });
 
 export const ConsultaHistory = mongoose.model<IConsultaHistory>('ConsultaHistory', ConsultaHistorySchema);

@@ -362,6 +362,7 @@ const FastCheck: React.FC = () => {
     'Causas Civiles': ['Fecha de ingreso', 'Fecha', 'postura', 'Postura', 'estado', 'Estado', 'fase', 'Fase', 'etapa', 'Etapa', 'materia', 'Materia', 'rol', 'ROL', 'tribunal', 'Tribunal'],
     'Causas Laborales': ['fecha', 'Fecha', 'postura', 'Postura', 'estado', 'Estado', 'fase', 'Fase', 'etapa', 'Etapa', 'materia', 'Materia', 'rol', 'ROL', 'tribunal', 'Tribunal'],
     'Causas de Cobranza Laboral': ['fecha', 'Fecha', 'postura', 'Postura', 'estado', 'Estado', 'fase', 'Fase', 'etapa', 'Etapa', 'materia', 'Materia', 'rol', 'ROL', 'tribunal', 'Tribunal'],
+    'Causas Penales': ['nombre', 'Nombre', 'postura', 'Postura', 'rol', 'ROL', 'fecha', 'Fecha', 'infraccion', 'Infracción', 'estado', 'Estado', 'etapa', 'Etapa', 'materia', 'Materia', 'tribunal', 'Tribunal'],
     'Inicio de Actividades': ['activities', 'category', 'ivaAffection'],
     'PEP Chile': ['rut', 'name', 'count'],
     'Familiares PEP': ['rut', 'name', 'count']
@@ -2366,99 +2367,22 @@ const FastCheck: React.FC = () => {
 
       for (const section of normalSections) {
         const heading = section.querySelector('h2');
-        if (heading && heading.textContent?.trim() === 'Resumen') {
-          const headerDiv = section.querySelector('.flex.items-center.justify-between.mb-4');
-          const gridContainer = section.querySelector('.grid.grid-cols-\\[auto_auto\\]');
+        if (heading && heading.textContent?.trim().includes('Resumen')) {
+          pdf.addPage();
+          await addPageHeaderImage();
 
-          if (headerDiv && gridContainer) {
-            const headerImgData = await captureElementInIframe(headerDiv as HTMLElement);
-            const headerImg = new Image();
-            await new Promise((resolve) => {
-              headerImg.onload = resolve;
-              headerImg.src = headerImgData;
-            });
-            const headerImgWidth = contentWidth;
-            const headerImgHeight = (headerImg.height * headerImgWidth) / headerImg.width;
-
-            const resumenCards = gridContainer.querySelectorAll('.border.border-gray-500.rounded-lg.overflow-hidden');
-            let firstRowHeight = 0;
-
-            if (resumenCards.length > 0) {
-              const firstRowDiv = document.createElement('div');
-              firstRowDiv.className = 'grid grid-cols-[auto_auto] gap-4';
-              firstRowDiv.style.width = '100%';
-
-              const card1 = resumenCards[0].cloneNode(true) as HTMLElement;
-              firstRowDiv.appendChild(card1);
-
-              if (resumenCards.length > 1) {
-                const card2 = resumenCards[1].cloneNode(true) as HTMLElement;
-                firstRowDiv.appendChild(card2);
-              }
-
-              const firstRowImgData = await captureElementInIframe(firstRowDiv);
-              const firstRowImg = new Image();
-              await new Promise((resolve) => {
-                firstRowImg.onload = resolve;
-                firstRowImg.src = firstRowImgData;
-              });
-
-              firstRowHeight = (firstRowImg.height * contentWidth) / firstRowImg.width;
-            }
-
-            const minHeightNeeded = headerImgHeight + firstRowHeight + 20;
-            const spaceAvailable = pageHeight - margin - 25 - currentY;
-
-            if (minHeightNeeded > spaceAvailable) {
-              pdf.addPage();
-              await addPageHeaderImage();
-            }
-
-            pdf.addImage(headerImgData, 'JPEG', margin, currentY, headerImgWidth, headerImgHeight);
-            currentY += headerImgHeight + 5;
-          }
-
-          if (gridContainer) {
-            const resumenCards = gridContainer.querySelectorAll('.border.border-gray-300.rounded-lg.overflow-hidden');
-
-            for (let i = 0; i < resumenCards.length; i += 2) {
-              const rowDiv = document.createElement('div');
-              rowDiv.className = 'grid grid-cols-[auto_auto] gap-4';
-              rowDiv.style.width = '100%';
-
-              const card1 = resumenCards[i].cloneNode(true) as HTMLElement;
-              rowDiv.appendChild(card1);
-
-              if (i + 1 < resumenCards.length) {
-                const card2 = resumenCards[i + 1].cloneNode(true) as HTMLElement;
-                rowDiv.appendChild(card2);
-              }
-
-              const rowImgData = await captureElementInIframe(rowDiv);
-
-              const rowImg = new Image();
-              await new Promise((resolve) => {
-                rowImg.onload = resolve;
-                rowImg.src = rowImgData;
-              });
-
-              const rowImgWidth = contentWidth;
-              const rowImgHeight = (rowImg.height * rowImgWidth) / rowImg.width;
-
-              if (currentY + rowImgHeight > pageHeight - margin - 15) {
-                pdf.addPage();
-                await addPageHeaderImage();
-              }
-
-              pdf.addImage(rowImgData, 'JPEG', margin, currentY, rowImgWidth, rowImgHeight);
-              currentY += rowImgHeight + 6;
-            }
-          }
-
+          const imgData = await captureElementInIframe(section);
+          const tempImg = new Image();
+          await new Promise((resolve) => {
+            tempImg.onload = resolve;
+            tempImg.src = imgData;
+          });
+          const imgHeight = (tempImg.height * contentWidth) / tempImg.width;
+          pdf.addImage(imgData, 'JPEG', margin, currentY, contentWidth, imgHeight);
+          currentY += imgHeight + 5;
           continue;
         }
 
-        // ── MeshTable: guardar para el final del PDF ──────────────────────
         // ── MeshTable: guardar para el final del PDF ──────────────────────
         const meshEl = section.querySelector('[data-pdf="mesh-table"]') as HTMLElement | null;
 
@@ -2587,12 +2511,16 @@ const FastCheck: React.FC = () => {
         pdf.addPage();
         await addPageHeaderImage();
       }
+      // Círculo azul (bullet)
+      pdf.setFillColor(59, 130, 246);
+      pdf.circle(margin + 2, currentY - 1.5, 2.5, "F");
 
-      pdf.setFontSize(20);
+      // Texto del título
+      pdf.setFontSize(10);
       pdf.setFont("helvetica", "bold");
       pdf.setTextColor(59, 130, 246);
-      pdf.text("Detalles de hallazgos", margin, currentY);
-      currentY += 12;
+      pdf.text("Detalles de hallazgos", margin + 7, currentY);
+      currentY += 7;
 
       // ====== CONSTRUIR SECCIONES DESDE riskSummary ======
       const tableSections: Array<{
@@ -2836,7 +2764,7 @@ const FastCheck: React.FC = () => {
               pdf.addPage();
               await addPageHeaderImage();
             }
-            pdf.setFontSize(14);
+            pdf.setFontSize(10);
             pdf.setFont("helvetica", "bold");
             pdf.setTextColor(59, 130, 246);
             pdf.text(h3Title, margin, currentY);
@@ -2849,13 +2777,13 @@ const FastCheck: React.FC = () => {
             await addPageHeaderImage();
           }
 
-          pdf.setFontSize(11);
+          pdf.setFontSize(9);
           pdf.setFont("helvetica", "bold");
           pdf.setTextColor(59, 130, 246);
           pdf.text(h4Title, margin, currentY);
           currentY += 8;
 
-          pdf.setFontSize(10);
+          pdf.setFontSize(9);
           pdf.setFont("helvetica", "normal");
           pdf.setTextColor(55, 65, 81);
           pdf.text('Rut no presenta registros de Inicio de Actividades', margin, currentY);
@@ -2890,7 +2818,7 @@ const FastCheck: React.FC = () => {
               pdf.addPage();
               await addPageHeaderImage();
             }
-            pdf.setFontSize(14);
+            pdf.setFontSize(10);
             pdf.setFont("helvetica", "bold");
             pdf.setTextColor(59, 130, 246);
             pdf.text(h3Title, margin, currentY);
@@ -2903,13 +2831,13 @@ const FastCheck: React.FC = () => {
             await addPageHeaderImage();
           }
 
-          pdf.setFontSize(11);
+          pdf.setFontSize(9);
           pdf.setFont("helvetica", "bold");
           pdf.setTextColor(59, 130, 246);
           pdf.text(h4Title, margin, currentY);
           currentY += 8;
 
-          pdf.setFontSize(10);
+          pdf.setFontSize(9);
           pdf.setFont("helvetica", "normal");
           pdf.setTextColor(55, 65, 81);
           pdf.text("Tiene Quiebra Judicial en Tribunales", margin, currentY);
@@ -2956,7 +2884,7 @@ const FastCheck: React.FC = () => {
               pdf.addPage();
               await addPageHeaderImage();
             }
-            pdf.setFontSize(14);
+            pdf.setFontSize(10);
             pdf.setFont("helvetica", "bold");
             pdf.setTextColor(59, 130, 246);
             pdf.text(h3Title, margin, currentY);
@@ -2969,13 +2897,13 @@ const FastCheck: React.FC = () => {
             await addPageHeaderImage();
           }
 
-          pdf.setFontSize(11);
+          pdf.setFontSize(9);
           pdf.setFont("helvetica", "bold");
           pdf.setTextColor(59, 130, 246);
           pdf.text(h4Title, margin, currentY);
           currentY += 8;
 
-          pdf.setFontSize(10);
+          pdf.setFontSize(9);
           pdf.setFont("helvetica", "normal");
           pdf.setTextColor(55, 65, 81);
           pdf.text(specialCaseMessage, margin, currentY);
@@ -3001,7 +2929,7 @@ const FastCheck: React.FC = () => {
             pdf.addPage();
             await addPageHeaderImage();
           }
-          pdf.setFontSize(14);
+          pdf.setFontSize(10);
           pdf.setFont("helvetica", "bold");
           pdf.setTextColor(59, 130, 246);
           pdf.text(h3Title, margin, currentY);
@@ -3014,7 +2942,7 @@ const FastCheck: React.FC = () => {
           await addPageHeaderImage();
         }
 
-        pdf.setFontSize(11);
+        pdf.setFontSize(9);
         pdf.setFont("helvetica", "bold");
         pdf.setTextColor(59, 130, 246);
         pdf.text(h4Title, margin, currentY);
@@ -3099,7 +3027,7 @@ const FastCheck: React.FC = () => {
           };
 
           const drawTableHeader = async () => {
-            pdf.setFontSize(9);
+            pdf.setFontSize(8);
             pdf.setFont("helvetica", "bold");
             pdf.setTextColor(55, 65, 81);
 
@@ -3155,7 +3083,7 @@ const FastCheck: React.FC = () => {
 
           for (const row of normalizedData) {
             pdf.setFont("helvetica", "normal");
-            pdf.setFontSize(8);
+            pdf.setFontSize(7);
             pdf.setTextColor(17, 24, 39);
 
             let maxLines = 1;
@@ -3203,7 +3131,7 @@ const FastCheck: React.FC = () => {
               await drawTableHeader();
 
               pdf.setFont("helvetica", "normal");
-              pdf.setFontSize(8);
+              pdf.setFontSize(7);
               pdf.setTextColor(17, 24, 39);
             }
 
@@ -3255,11 +3183,19 @@ const FastCheck: React.FC = () => {
           await addPageHeaderImage();
         }
 
-        pdf.setFontSize(20);
+
+        // Círculo azul (bullet)
+        pdf.setFillColor(59, 130, 246);
+        pdf.circle(margin + 2, currentY - 1.5, 2.5, "F");
+
+        // Texto del título
+        pdf.setFontSize(11);
         pdf.setFont("helvetica", "bold");
         pdf.setTextColor(59, 130, 246);
-        pdf.text("Malla Relacional", margin, currentY);
-        currentY += 12;
+        pdf.text("Malla Relacional Detalles", margin + 7, currentY);
+        currentY += 7;
+
+
 
         // Capturar encabezado del MeshTable (sin tablas)
         const meshClone = deferredMeshEl.cloneNode(true) as HTMLElement;
@@ -3607,17 +3543,17 @@ const FastCheck: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
-            <div className="border-r pr-4">
+            <div className="border-r pr-2 flex flex-col items-start justify-end">
               <p className="font-bold dark:text-white">Razón Social:</p>
-              <p className="dark:text-gray-300">{companyData.razonSocial}</p>
+              <p className="text-xl dark:text-gray-300">{companyData.razonSocial}</p>
             </div>
-            <div className="border-r pr-4">
+            <div className="border-r pr-2 flex flex-col items-start justify-end">
               <p className="font-bold dark:text-white">Rut / ID:</p>
-              <p className="dark:text-gray-300">{companyData.rut}</p>
+              <p className="text-xl dark:text-gray-300">{companyData.rut}</p>
             </div>
-            <div className="border-r pr-4">
+            <div className="border-r pr-2 flex flex-col items-start justify-end">
               <p className="font-bold dark:text-white">Fecha Evaluación:</p>
-              <p className="dark:text-gray-300">{companyData.fechaEvaluacion}</p>
+              <p className="text-xl dark:text-gray-300">{companyData.fechaEvaluacion}</p>
             </div>
             <div className="flex flex-col items-center justify-center">
               <div className={`w-16 h-16 rounded-full ${getSemaphoreColor(calculateSemaphore(count))}`}></div>
@@ -4741,19 +4677,19 @@ const FastCheck: React.FC = () => {
               })();
 
               // ── Normalizar capitalHumanoRules ───────────────────────────
-          const normalizedCapitalHumanoRules = (riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
-    if (rule.label === 'Deuda Previsional Presunta') {
-        const casos = normalizeDetails(rule.details);
-        const hasCases = casos.length > 0;
-        return {
-            ...rule,
-            risk: hasCases ? 'alto' : 'bajo',
-            detected: hasCases,
-            details: hasCases ? casos : [],
-        };
-    }
-    return rule;
-});
+              const normalizedCapitalHumanoRules = (riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
+                if (rule.label === 'Deuda Previsional Presunta') {
+                  const casos = normalizeDetails(rule.details);
+                  const hasCases = casos.length > 0;
+                  return {
+                    ...rule,
+                    risk: hasCases ? 'alto' : 'bajo',
+                    detected: hasCases,
+                    details: hasCases ? casos : [],
+                  };
+                }
+                return rule;
+              });
 
               // ── Normalizar financieroTributarioRules ────────────────────
               const normalizedFinancieroRules = (riskSummary.allRules?.financieroTributarioRules || []).map(rule => {

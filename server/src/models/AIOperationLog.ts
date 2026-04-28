@@ -1,5 +1,11 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+const AI_OPERATION_LOG_TTL_SECONDS = (() => {
+  const fallback = 86400;
+  const parsed = Number.parseInt(process.env.AI_OPERATION_LOG_TTL_SECONDS || '', 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+})();
+
 export interface IAIOperationLog extends Document {
   rut?: string;
   tenantId?: string;
@@ -82,6 +88,6 @@ AIOperationLogSchema.index({ rut: 1, createdAt: -1 });
 AIOperationLogSchema.index({ success: 1, createdAt: -1 });
 
 // Add TTL index to automatically delete documents after 24 hours
-AIOperationLogSchema.index({ createdAt: 1 }, { expireAfterSeconds: 86400 }); // 24 hours = 86400 seconds
+AIOperationLogSchema.index({ createdAt: 1 }, { expireAfterSeconds: AI_OPERATION_LOG_TTL_SECONDS }); // 24 hours = 86400 seconds
 
 export const AIOperationLog = mongoose.model<IAIOperationLog>('AIOperationLog', AIOperationLogSchema);

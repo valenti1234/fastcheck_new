@@ -1,5 +1,11 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+const SHERIFF_API_CALL_LOG_TTL_SECONDS = (() => {
+  const fallback = 86400;
+  const parsed = Number.parseInt(process.env.SHERIFF_API_CALL_LOG_TTL_SECONDS || '', 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+})();
+
 export interface ISheriffApiCallLog extends Document {
   rut: string;
   logId: mongoose.Types.ObjectId; // Reference to the main SheriffDataLog
@@ -24,6 +30,6 @@ const SheriffApiCallLogSchema: Schema = new Schema({
 }, { timestamps: { createdAt: true, updatedAt: false } }); // Only track creation time
 
 // Add TTL index to automatically delete documents after 24 hours
-SheriffApiCallLogSchema.index({ createdAt: 1 }, { expireAfterSeconds: 86400 }); // 24 hours = 86400 seconds
+SheriffApiCallLogSchema.index({ createdAt: 1 }, { expireAfterSeconds: SHERIFF_API_CALL_LOG_TTL_SECONDS }); // 24 hours = 86400 seconds
 
 export const SheriffApiCallLog = mongoose.model<ISheriffApiCallLog>('SheriffApiCallLog', SheriffApiCallLogSchema);

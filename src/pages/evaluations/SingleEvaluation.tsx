@@ -34,13 +34,13 @@ interface AssociatedPdf {
 }
 
 interface SheriffLogAssociatedPdf { // Matches backend model structure for base64
-    sourcePath: string;
-    originalUrl: string;
-    documentTitle?: string;
-    contentBase64?: string;
-    contentType?: string;
-    downloadedAt?: Date;
-    error?: string;
+  sourcePath: string;
+  originalUrl: string;
+  documentTitle?: string;
+  contentBase64?: string;
+  contentType?: string;
+  downloadedAt?: Date;
+  error?: string;
 }
 
 
@@ -68,7 +68,7 @@ const formatJsonToMarkdown = (data: Record<string, any>): string => {
     markdown += `- **Razón Social**: ${sii.razonSocial || 'No disponible'}\n`;
     markdown += `- **Inicio Actividades**: ${sii.inicioActividades || 'No disponible'}\n`;
     markdown += `- **Situación Actual**: ${sii.situacionActual || 'No disponible'}\n`;
-    
+
     if (sii.actividadEconomicaVigente?.length > 0) {
       markdown += '\n#### Actividades Económicas\n';
       sii.actividadEconomicaVigente.forEach((act: any) => {
@@ -104,7 +104,7 @@ const formatJsonToMarkdown = (data: Record<string, any>): string => {
     markdown += '\n### Evaluación Crediticia\n';
     markdown += `- **Clasificación**: ${scoring.classificationLabel || 'No disponible'}\n`;
     markdown += `- **Porcentaje**: ${scoring.classificationPercentage ? scoring.classificationPercentage + '%' : 'No disponible'}\n`;
-    
+
     if (scoring.financesPercentage !== undefined) {
       markdown += `- **Finanzas**: ${scoring.financesPercentage}%\n`;
     }
@@ -114,10 +114,10 @@ const formatJsonToMarkdown = (data: Record<string, any>): string => {
   }
 
   // Legal Cases Summary
-  const hasLegalCases = data.civilCasesData?.data?.length > 0 || 
-                       data.laboralCasesData?.data?.length > 0 || 
-                       data.cobranzaCasesData?.data?.length > 0;
-  
+  const hasLegalCases = data.civilCasesData?.data?.length > 0 ||
+    data.laboralCasesData?.data?.length > 0 ||
+    data.cobranzaCasesData?.data?.length > 0;
+
   if (hasLegalCases) {
     markdown += '\n### Casos Legales\n';
     markdown += `- **Casos Civiles**: ${data.civilCasesData?.data?.length || 0}\n`;
@@ -129,13 +129,18 @@ const formatJsonToMarkdown = (data: Record<string, any>): string => {
 };
 
 const SingleEvaluation: React.FC = () => {
+
+
+
+
+
   const { t } = useTranslation();
   const [rut, setRut] = useState('');
   const [formattedRut, setFormattedRut] = useState('');
   const [name, setName] = useState(''); // Kept for potential future use or if form still needs it
   const [isValidRut, setIsValidRut] = useState<boolean | null>(null);
   // const [isSubmitting, setIsSubmitting] = useState(false); // Replaced by more granular loading states
-  
+
   const [isLoadingLookup, setIsLoadingLookup] = useState(false);
   const [isLoadingResume, setIsLoadingResume] = useState(false);
   const [markdownResult, setMarkdownResult] = useState<string | null>(null);
@@ -153,23 +158,21 @@ const SingleEvaluation: React.FC = () => {
   // Estado para el modal de créditos agotados
   const [showNoCreditsDialog, setShowNoCreditsDialog] = useState(false);
 
-  const { tenant } = useTenant();
+  const { tenant, loading: tenantLoading, updateTenant } = useTenant();
   const availableCredits = tenant?.creditBalance?.availableCredits || 0;
-  const navigate = useNavigate(); // Kept if navigation is needed post-operation
+  const navigate = useNavigate();
 
-  // Efecto para mostrar el modal si no hay créditos al iniciar
-  useEffect(() => {
-    if (availableCredits === 0) {
+useEffect(() => {
+    if (!tenantLoading && tenant && availableCredits === 0) {
       setShowNoCreditsDialog(true);
     }
-  }, [availableCredits]);
+}, [availableCredits, tenantLoading, tenant]);
 
   const handleCloseNoCreditsDialog = () => {
     setShowNoCreditsDialog(false);
   };
 
- useEffect(() => {
-    // Clear results when RUT changes after a submission
+  useEffect(() => {
     if (markdownResult || processError) {
       setMarkdownResult(null);
       setDownloadablePdfs([]);
@@ -182,12 +185,12 @@ const SingleEvaluation: React.FC = () => {
   const handleRutChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setRut(value);
-    
+
     // Format RUT as user types
     if (value) {
       const formatted = formatChileanRut(value);
       setFormattedRut(formatted);
-      
+
       // Validate RUT
       const isValid = validateChileanRut(value);
       setIsValidRut(isValid);
@@ -199,7 +202,7 @@ const SingleEvaluation: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!isValidRut) {
       toast.error(t('singleEvaluation.toast.invalidRut'));
       return;
@@ -214,15 +217,15 @@ const SingleEvaluation: React.FC = () => {
     }
 
     setIsLoadingLookup(true);
-    
+
     // Sanitize RUT for API: remove dots, keep hyphen
     const rutForApi = formattedRut.replace(/\./g, '');
-    
+
     try {
       // First check if we already have an evaluation in the database
       try {
         const checkResponse = await apiClient.get(`/rut/results/rut/${rutForApi}`);
-        
+
         if (checkResponse.data) {
           // Evaluation already exists, redirect to FastCheck
           logger.log('Evaluation already exists, redirecting to FastCheck');
@@ -237,19 +240,19 @@ const SingleEvaluation: React.FC = () => {
           logger.error('Error checking for existing evaluation:', error);
         }
       }
-      
+
       // Start a new evaluation and wait for it to complete
       setIsLoadingResume(true);
       toast.loading(t('singleEvaluation.searching'), { id: 'evaluation-toast' });
-      
+
       const response = await apiClient.post<RutResumeResponse>('/rut/lookup', {
         rut: rutForApi,
         isMonitoring: false
       });
-      logger.log(229,'Evaluation response:', response);
+      logger.log(229, 'Evaluation response:', response);
       // Evaluation completed successfully
       toast.success(t('singleEvaluation.toast.success'), { id: 'evaluation-toast' });
-      
+
       // Now navigate to FastCheck page with the RUT as a parameter
       navigate(`/fast-check-ex?rut=${rutForApi}`, { replace: true });
     } catch (error) {
@@ -261,47 +264,47 @@ const SingleEvaluation: React.FC = () => {
       setIsLoadingResume(false);
     }
   };
-  
+
   const createDataUrl = (base64: string, contentType: string): string => {
     return `data:${contentType};base64,${base64}`;
   };
 
   const handlePdfDownload = async () => {
     if (!markdownRef.current || !rawData?.riskAssessment?.summaryDocumentMD) return;
-    
+
     try {
       // Show loading state
       const loadingToast = document.createElement('div');
       loadingToast.className = 'fixed top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50';
       loadingToast.textContent = 'Generando PDF...';
       document.body.appendChild(loadingToast);
-      
+
       // Wait for next render cycle
       await new Promise(resolve => setTimeout(resolve, 100));
-      
+
       const canvas = await html2canvas(markdownRef.current, {
         scale: 2,
         logging: false,
         useCORS: true,
         allowTaint: true
       });
-      
+
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
         format: 'a4'
       });
-      
+
       const imgWidth = 210; // A4 width in mm
       const pageHeight = 297; // A4 height in mm
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       let heightLeft = imgHeight;
       let position = 0;
-      
+
       pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
       heightLeft -= pageHeight;
-      
+
       // Add new pages if content exceeds one page
       while (heightLeft > 0) {
         position = heightLeft - imgHeight;
@@ -309,9 +312,9 @@ const SingleEvaluation: React.FC = () => {
         pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
         heightLeft -= pageHeight;
       }
-      
+
       pdf.save(`reporte_${formattedRut}.pdf`);
-      
+
       // Remove loading toast
       document.body.removeChild(loadingToast);
     } catch (error) {
@@ -343,6 +346,7 @@ const SingleEvaluation: React.FC = () => {
           <div>
             <p className="text-sm text-gray-500 dark:text-gray-400">{t('singleEvaluation.reportLabel')}</p>
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">{t('singleEvaluation.title')}</h1>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">   <span>Creditos disponibles:</span>   {availableCredits}</h3>
           </div>
           <div className="mt-4 sm:mt-0 flex items-center space-x-2">
             <button
@@ -383,7 +387,7 @@ const SingleEvaluation: React.FC = () => {
         <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mb-8">
           <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-1">{t('singleEvaluation.searchSupplierTitle')}</h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">{t('singleEvaluation.searchSupplierSubtitle')}</p>
-          
+
           {tenant && tenant.usageStats.evaluationsRemaining <= 5 && (
             <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 dark:border-yellow-500 text-yellow-700 dark:text-yellow-300 p-4 mb-6" role="alert">
               <div className="flex">
@@ -408,13 +412,12 @@ const SingleEvaluation: React.FC = () => {
                     value={formattedRut}
                     onChange={handleRutChange}
                     placeholder={t('singleEvaluation.rutPlaceholder')}
-                    className={`w-full pl-3 pr-10 py-2 border rounded-md shadow-sm text-sm bg-white dark:bg-gray-700 ${
-                      isValidRut === false
+                    className={`w-full pl-3 pr-10 py-2 border rounded-md shadow-sm text-sm bg-white dark:bg-gray-700 ${isValidRut === false
                         ? 'border-red-500 text-red-900 dark:text-red-200 focus:ring-red-500 focus:border-red-500'
                         : isValidRut === true
-                        ? 'border-green-500 text-green-900 dark:text-green-200 focus:ring-green-500 focus:border-green-500'
-                        : 'border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-primary-500 focus:border-primary-500'
-                    }`}
+                          ? 'border-green-500 text-green-900 dark:text-green-200 focus:ring-green-500 focus:border-green-500'
+                          : 'border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-primary-500 focus:border-primary-500'
+                      }`}
                     required
                     disabled={isLoadingLookup || isLoadingResume}
                   />
@@ -492,7 +495,7 @@ const SingleEvaluation: React.FC = () => {
               <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg">
                 <div className="p-6 border-b border-gray-200 dark:border-gray-700">
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{t('singleEvaluation.reportTitle')}</h2>
-                  
+
                 </div>
                 <div className="p-6">
                   {processError && (
@@ -532,7 +535,7 @@ const SingleEvaluation: React.FC = () => {
               </div>
             )}
 
- 
+
 
             {rawData?.riskAssessment?.summaryDocumentMD && (
               <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
@@ -620,7 +623,7 @@ const SingleEvaluation: React.FC = () => {
                 )}
               </div>
             )}
-            
+
           </div>
         </div>
       </div>

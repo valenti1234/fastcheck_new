@@ -268,6 +268,49 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
 ELKService.info('Global error handling middleware registered');
 
 // Start server
+const getEnvFlag = (name: string): boolean => {
+  const rawExact = process.env[name];
+  const raw =
+    rawExact ??
+    Object.entries(process.env).find(([key]) => key.trim() === name)?.[1];
+
+  if (!raw) return false;
+
+  const normalized = raw.trim().toLowerCase();
+  return normalized === 'true' || normalized === '1' || normalized === 'yes' || normalized === 'on';
+};
+
+const rebuildMongoIndexes = async () => {
+  if (mongoose.connection.readyState !== 1) {
+    throw new Error('MongoDB is not connected');
+  }
+
+  const models = Object.values(mongoose.models);
+  ELKService.warn('REBUILD_MONGO_INDEX enabled: rebuilding MongoDB indexes', { models: models.length });
+
+  for (const model of models) {
+    try {
+      await model.collection.dropIndexes();
+    } catch (error) {
+      ELKService.warn('Failed to drop indexes for model', {
+        model: model.modelName,
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+
+    try {
+      await model.createIndexes();
+    } catch (error) {
+      ELKService.warn('Failed to create indexes for model', {
+        model: model.modelName,
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  }
+
+  ELKService.info('MongoDB indexes rebuild completed');
+};
+
 const startServer = async () => {
   ELKService.info('Starting server...');
   try {
@@ -281,6 +324,10 @@ const startServer = async () => {
 
     await connectDB();
     ELKService.info('MongoDB connected successfully');
+
+    if (getEnvFlag('REBUILD_MONGO_INDEX')) {
+      await rebuildMongoIndexes();
+    }
 
     // Initialize RabbitMQ and evaluation service (temporarily disabled for testing)
     try {

@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { getResults, deleteResult } from '../services/api';
+import { getResults, deleteResult, apiClient } from '../services/api';
 import { IResult as IResultBackend } from '../../server/src/models/Result';
+import { toast } from 'react-hot-toast';
 import logger from '../utils/logger';
 import { useTranslation } from 'react-i18next';
 import * as XLSX from 'xlsx';
-
+import { DocumentArrowDownIcon } from '@heroicons/react/24/outline';
 interface IResult extends IResultBackend {
   _id: string;
   createdAt: string;
@@ -16,6 +17,7 @@ interface IResult extends IResultBackend {
 }
 
 const Consultas: React.FC = () => {
+  const [loadingExportInfo, setLoadingExportInfo] = useState(false);
   const [allResults, setAllResults] = useState<IResult[]>([]);
   const [displayedResults, setDisplayedResults] = useState<IResult[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -152,6 +154,353 @@ const Consultas: React.FC = () => {
       if (!result.noteTags || !result.noteTags.some(tag => appliedTags.includes(tag))) return false;
     }
     return true;
+  };
+  const handleExportInfo = async () => {
+    setLoadingExportInfo(true);
+    try {
+      // Cargar todos los RUTs de todas las páginas
+      let allExportResults: IResult[] = [];
+      let currentExportPage = 1;
+      let exportTotalPages = totalPages;
+
+      while (currentExportPage <= exportTotalPages) {
+        toast.loading(`Cargando página ${currentExportPage}/${exportTotalPages}`, { id: 'export-info-progress' });
+        const response = await getResults({
+          page: currentExportPage,
+          limit: itemsPerPage,
+          search: cleanRutForApi(debouncedSearch),
+          sortField: undefined,
+          sortDirection: undefined
+        });
+        if (response?.data && Array.isArray(response.data)) {
+          allExportResults = [...allExportResults, ...(response.data as IResult[])];
+        }
+        exportTotalPages = response?.pagination?.totalPages || 1;
+        currentExportPage++;
+      }
+
+      // Filtrar con los filtros activos
+      const filteredResults = allExportResults.filter(r => checkRowVisibility(r));
+
+      // Extraer RUTs únicos
+      const uniqueRuts = Array.from(new Set(
+        filteredResults.map(r => r.rut || r.details?.rut || '').filter(Boolean)
+      ));
+
+      if (uniqueRuts.length === 0) {
+        toast.dismiss('export-info-progress');
+        toast.error('No hay RUTs para consultar');
+        setLoadingExportInfo(false);
+        return;
+      }
+
+      const riskToColor: Record<string, string> = {
+        critico: 'rojo', alto: 'naranjo', medio: 'amarillo', bajo: 'verde', no_disponible: 'gris',
+      };
+
+      const calculateSemaphore = (c: { critical: number; high: number; low: number }) => {
+        const total = c.critical + c.high + c.low;
+        if (c.critical >= 1) return 'red';
+        if (c.low === total && total > 0) return 'green';
+        if (total > 0 && c.high / total >= 0.5) return 'red';
+        if (total > 0 && c.high / total >= 0.3) return 'orange';
+        return 'yellow';
+      };
+
+      const semaphoreToColor: Record<string, string> = { red: 'rojo', orange: 'naranjo', yellow: 'amarillo', green: 'verde' };
+      const semaphoreToLabel: Record<string, string> = { red: 'CRÍTICO', orange: 'ALTO', yellow: 'MEDIO', green: 'BAJO' };
+
+      const allRuleLabelsOrdered: string[] = [];
+      const allRuleLabelsSet = new Set<string>();
+      const allRutResponses: Array<{ rutValue: string; data: any }> = [];
+
+      for (let i = 0; i < uniqueRuts.length; i++) {
+        const rutValue = uniqueRuts[i];
+        try {
+          toast.loading(`Consultando RUT ${i + 1}/${uniqueRuts.length}: ${rutValue}`, { id: 'export-info-progress' });
+
+          const response = await apiClient.get(`/rut/results/rut/${rutValue}`);
+          allRutResponses.push({ rutValue, data: response.data });
+
+          const allRulesData = response.data?.riskAssessment?.allRules || {};
+          for (const catKey of ['complianceRules', 'legalRules', 'capitalHumanoRules', 'financieroTributarioRules']) {
+            const rules: any[] = allRulesData[catKey] || [];
+            for (const rule of rules) {
+              if (!allRuleLabelsSet.has(rule.label)) {
+                allRuleLabelsSet.add(rule.label);
+                allRuleLabelsOrdered.push(rule.label);
+              }
+            }
+          }
+
+          if (!allRuleLabelsSet.has('Causas Penales')) {
+            allRuleLabelsSet.add('Causas Penales');
+            allRuleLabelsOrdered.push('Causas Penales');
+          }
+          if (!allRuleLabelsSet.has('Reputación Pública y Mediática')) {
+            allRuleLabelsSet.add('Reputación Pública y Mediática');
+            allRuleLabelsOrdered.push('Reputación Pública y Mediática');
+          }
+
+          if (i < uniqueRuts.length - 1) {
+            await new Promise(resolve => setTimeout(resolve, 300));
+          }
+        } catch (err) {
+          console.error(`Error RUT ${rutValue}:`, err);
+          allRutResponses.push({ rutValue, data: null });
+        }
+      }
+
+      toast.dismiss('export-info-progress');
+      toast.loading('Generando Excel...', { id: 'export-generating' });
+
+      const fixedHeaders = [
+        'Razón Social', 'RUT', 'Fecha Evaluación',
+        'Resultado Fast Check (color Semáforo)', 'Resultado Fast Check (Nivel de Riesgo)',
+        '# parámetros riesgo crítico', '# parámetros riesgo alto', '# parámetros sin riesgo',
+      ];
+
+      const subCols = ['Impacto', 'Detectado', 'Riesgo', 'Cant. Detalles'];
+
+      const headerRow1: string[] = [...fixedHeaders];
+      for (const label of allRuleLabelsOrdered) {
+        headerRow1.push(label, '', '', '');
+      }
+      headerRow1.push('Resumen de hallazgos', '# hallazgos detectados');
+
+      const headerRow2: string[] = fixedHeaders.map(() => '');
+      for (const _label of allRuleLabelsOrdered) {
+        headerRow2.push(...subCols);
+      }
+      headerRow2.push('', '');
+
+      const columnTotals: Record<string, { detected: number; totalDetails: number }> = {};
+      allRuleLabelsOrdered.forEach(l => { columnTotals[l] = { detected: 0, totalDetails: 0 }; });
+      let totalCritical = 0, totalHigh = 0, totalLow = 0;
+
+      const dataRows: any[][] = [];
+
+      for (const { rutValue, data: d } of allRutResponses) {
+        if (!d) {
+          const row: any[] = ['Error al consultar', rutValue, '', '', '', 0, 0, 0];
+          allRuleLabelsOrdered.forEach(() => { row.push('', '', '', ''); });
+          row.push('Error al consultar', '');
+          dataRows.push(row);
+          continue;
+        }
+
+        const razonSocial = d?.details?.razonSocial || 'N/A';
+        const fechaEval = d?.createdAt ? new Date(d.createdAt).toLocaleDateString('es-CL') : 'N/A';
+        const allRulesData = d?.riskAssessment?.allRules || {};
+
+        const ruleMap: Record<string, { detected: boolean; risk: string; impacto: string; detailCount: number; details: any }> = {};
+
+        for (const catKey of ['complianceRules', 'legalRules', 'capitalHumanoRules', 'financieroTributarioRules']) {
+          const rules: any[] = allRulesData[catKey] || [];
+          for (const rule of rules) {
+            let details = rule.details;
+            if (rule.label === 'Deuda Previsional Presunta' && details?.casos) {
+              details = details.casos;
+            }
+            const detailCount = Array.isArray(details) ? details.length
+              : (details && typeof details === 'object' && Object.keys(details).length > 0) ? 1
+                : 0;
+
+            ruleMap[rule.label] = {
+              detected: rule.detected || false,
+              risk: rule.risk || 'bajo',
+              impacto: rule.impacto || '',
+              detailCount,
+              details,
+            };
+          }
+        }
+
+        const todasCoincidencias =
+          d?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
+          d?.details?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
+          d?.logEntry?.filteredDetails?.compliance?.penal?.coincidencias || [];
+        const coincidenciasFiltradas = todasCoincidencias.filter((item: any) => {
+          const postura = item?.postura?.toLowerCase() || '';
+          return postura === 'demandado' || postura === 'querellado' || postura === 'denunciado';
+        });
+        ruleMap['Causas Penales'] = {
+          detected: coincidenciasFiltradas.length > 0,
+          risk: coincidenciasFiltradas.length > 0 ? 'critico' : 'bajo',
+          impacto: 'severo',
+          detailCount: coincidenciasFiltradas.length,
+          details: coincidenciasFiltradas,
+        };
+
+        const noticiasCoincidencias =
+          d?.sheriffLogData?.filteredDetails?.compliance?.noticias?.coincidencias ||
+          d?.details?.sheriffLogData?.filteredDetails?.compliance?.noticias?.coincidencias ||
+          d?.logEntry?.filteredDetails?.compliance?.noticias?.coincidencias || [];
+        ruleMap['Reputación Pública y Mediática'] = {
+          detected: noticiasCoincidencias.length > 0,
+          risk: noticiasCoincidencias.length > 0 ? 'alto' : 'bajo',
+          impacto: 'significativo',
+          detailCount: noticiasCoincidencias.length,
+          details: noticiasCoincidencias,
+        };
+
+        if (ruleMap['Deuda Previsional Presunta']?.detailCount > 0) {
+          ruleMap['Deuda Previsional Presunta'].risk = 'alto';
+          ruleMap['Deuda Previsional Presunta'].detected = true;
+        }
+
+        if (ruleMap['Inicio de Actividades']) {
+          const ia = ruleMap['Inicio de Actividades'];
+          ia.detected = !ia.detected;
+          ia.risk = ia.detected ? 'alto' : 'bajo';
+        }
+
+        let critical = 0, high = 0, low = 0;
+        for (const label of allRuleLabelsOrdered) {
+          const r = ruleMap[label];
+          if (!r || r.risk === 'no_disponible') continue;
+          if (r.risk === 'critico') critical++;
+          else if (r.risk === 'alto') high++;
+          else low++;
+        }
+
+        const semaphore = calculateSemaphore({ critical, high, low });
+        totalCritical += critical;
+        totalHigh += high;
+        totalLow += low;
+
+        const row: any[] = [
+          razonSocial, rutValue, fechaEval,
+          semaphoreToColor[semaphore] || '', semaphoreToLabel[semaphore] || '',
+          critical, high, low,
+        ];
+
+        for (const label of allRuleLabelsOrdered) {
+          const r = ruleMap[label];
+          if (r) {
+            const impactoCapitalized = r.impacto ? r.impacto.charAt(0).toUpperCase() + r.impacto.slice(1) : '';
+            row.push(
+              impactoCapitalized,
+              r.detected ? 'Sí' : 'No',
+              riskToColor[r.risk] || r.risk,
+              r.detailCount > 0 ? r.detailCount : '',
+            );
+
+            if (r.detected && r.risk !== 'bajo' && r.risk !== 'no_disponible') {
+              columnTotals[label].detected++;
+            }
+            columnTotals[label].totalDetails += r.detailCount;
+          } else {
+            row.push('', '', '', '');
+          }
+        }
+
+        const hallazgos: string[] = [];
+        for (const label of allRuleLabelsOrdered) {
+          const r = ruleMap[label];
+          if (!r || !r.detected || r.risk === 'bajo' || r.risk === 'no_disponible') continue;
+
+          const color = riskToColor[r.risk] || r.risk;
+          let detail = `${label} (${color})`;
+          if (r.detailCount > 0) detail += `: ${r.detailCount} hallazgo${r.detailCount > 1 ? 's' : ''}`;
+
+          if (['Multas Laborales', 'Deuda Previsional Publicada', 'Protestos y Morosidades', 'Condenas por Prácticas Antisindicales'].includes(label) && Array.isArray(r.details)) {
+            let monto = 0;
+            r.details.forEach((item: any) => {
+              const m = item?.monto || item?.Monto || item?.montoMulta || item?.['Monto Multa'] || item?.unpaidAmount || 0;
+              monto += typeof m === 'number' ? m : parseFloat(String(m).replace(/[^0-9.-]/g, '')) || 0;
+            });
+            if (monto > 0) detail += ` | Monto: $${Math.round(monto).toLocaleString('es-CL')}`;
+          }
+
+          if (['Causas Civiles', 'Causas Laborales', 'Causas de Cobranza Laboral'].includes(label) && Array.isArray(r.details)) {
+            let vigentes = 0, concluidas = 0;
+            r.details.forEach((item: any) => {
+              const estado = String(item?.estado || '').toLowerCase();
+              if (estado.includes('vigente')) vigentes++;
+              else if (estado.includes('concluida') || estado.includes('concluido')) concluidas++;
+            });
+            detail += ` | Vigentes: ${vigentes}, Concluidas: ${concluidas}`;
+          }
+
+          if (label === 'Causas Penales' && Array.isArray(r.details)) {
+            const posturas: Record<string, number> = {};
+            r.details.forEach((item: any) => {
+              const p = (item?.postura || '').toLowerCase().trim();
+              if (p) posturas[p] = (posturas[p] || 0) + 1;
+            });
+            const parts = Object.entries(posturas).map(([k, v]) => `${k}: ${v}`);
+            if (parts.length > 0) detail += ` | ${parts.join(', ')}`;
+          }
+
+          if (label === 'Deuda Previsional Presunta' && r.detailCount > 0) {
+            detail += ` | ${r.detailCount} afiliado${r.detailCount > 1 ? 's' : ''}`;
+          }
+
+          hallazgos.push(detail);
+        }
+
+        row.push(hallazgos.join('\n'), hallazgos.length > 0 ? hallazgos.length : '');
+        dataRows.push(row);
+      }
+
+      const totalsRow: any[] = [
+        'TOTALES', `${uniqueRuts.length} RUTs`, '', '', '',
+        totalCritical, totalHigh, totalLow,
+      ];
+      for (const label of allRuleLabelsOrdered) {
+        const ct = columnTotals[label];
+        totalsRow.push(
+          '',
+          ct.detected > 0 ? `${ct.detected} RUTs` : '',
+          '',
+          ct.totalDetails > 0 ? ct.totalDetails : '',
+        );
+      }
+      totalsRow.push('', '');
+
+      const wb = XLSX.utils.book_new();
+      const allRows = [headerRow1, headerRow2, ...dataRows, totalsRow];
+      const ws = XLSX.utils.aoa_to_sheet(allRows);
+
+      const merges: XLSX.Range[] = [];
+      let colIdx = fixedHeaders.length;
+      for (const _label of allRuleLabelsOrdered) {
+        merges.push({
+          s: { r: 0, c: colIdx },
+          e: { r: 0, c: colIdx + 3 },
+        });
+        colIdx += 4;
+      }
+      ws['!merges'] = merges;
+
+      const colWidths: { wch: number }[] = [
+        { wch: 40 }, { wch: 16 }, { wch: 16 },
+        { wch: 14 }, { wch: 14 },
+        { wch: 12 }, { wch: 12 }, { wch: 12 },
+      ];
+      for (const _label of allRuleLabelsOrdered) {
+        colWidths.push({ wch: 14 }, { wch: 12 }, { wch: 12 }, { wch: 14 });
+      }
+      colWidths.push({ wch: 80 }, { wch: 12 });
+      ws['!cols'] = colWidths;
+
+      XLSX.utils.book_append_sheet(wb, ws, 'Reporte');
+
+      const fileName = `Reporte_FastCheck_Consultas_${new Date().toISOString().slice(0, 10)}.xlsx`;
+      XLSX.writeFile(wb, fileName);
+
+      toast.dismiss('export-generating');
+      const conRiesgo = dataRows.filter(r => (r[5] as number) > 0).length;
+      toast.success(`Excel generado: ${uniqueRuts.length} RUTs, ${conRiesgo} con riesgo crítico`);
+    } catch (error) {
+      toast.dismiss('export-info-progress');
+      toast.dismiss('export-generating');
+      console.error('Error generating Excel:', error);
+      toast.error('Error al generar el Excel');
+    } finally {
+      setLoadingExportInfo(false);
+    }
   };
 
   useEffect(() => {
@@ -508,7 +857,7 @@ const Consultas: React.FC = () => {
     );
   }
 
- return (
+  return (
     <>
       <div className="max-w-7xl mx-auto p-6">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">{t('consultas.title')}</h1>
@@ -619,6 +968,14 @@ const Consultas: React.FC = () => {
                 className={`px-4 py-2 rounded-md text-white transition-colors ${isExporting ? 'bg-green-800 cursor-not-allowed' : 'bg-green-600 hover:bg-green-700'}`}
               >
                 {isExporting ? `Exportando ${exportProgress}%` : 'Exportar Excel'}
+              </button>
+              <button
+                onClick={handleExportInfo}
+                disabled={loadingExportInfo}
+                className={`px-4 py-2 rounded-md text-white transition-colors flex items-center gap-2 ${loadingExportInfo ? 'bg-blue-800 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'}`}
+              >
+                <DocumentArrowDownIcon className="h-5 w-5" />
+                {loadingExportInfo ? 'Exportando info RUTs...' : 'Exportar Excel Info RUTs'}
               </button>
             </div>
           </div>
