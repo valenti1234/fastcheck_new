@@ -17,11 +17,18 @@ class LegacyService:
     async def close(self) -> None:
         await self._client.aclose()
 
-    async def lookup_rut(self, *, rut: str, token: str) -> dict[str, Any]:
+    async def lookup_rut(
+        self,
+        *,
+        rut: str,
+        token: str,
+        is_monitoring: bool = False,
+        evaluation_type: str = "individual",
+    ) -> dict[str, Any]:
         resp = await self._client.post(
             "rut/lookup",
             headers={"Authorization": f"Bearer {token}"},
-            json={"rut": rut, "isMonitoring": False, "type": "masiva"},
+            json={"rut": rut, "isMonitoring": is_monitoring, "type": evaluation_type},
         )
         resp.raise_for_status()
         data = resp.json()

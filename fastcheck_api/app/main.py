@@ -8,7 +8,7 @@ from fastapi import APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 
-from fastcheck_api.app.api.v1.routers import auth, checks, reports, usage
+from fastcheck_api.app.api.v1.routers import auth, checks, reports, rut, usage
 from fastcheck_api.app.core.logging import configure_logging
 from fastcheck_api.app.core.mongodb import lifespan_db
 from fastcheck_api.app.services.legacy_service import legacy_service
@@ -24,6 +24,7 @@ tags_metadata = [
     {"name": "auth", "description": "Authentication and session management."},
     {"name": "checks", "description": "Create checks (evaluations) and retrieve job/results."},
     {"name": "reports", "description": "Fetch saved reports from existing persistence."},
+    {"name": "rut", "description": "Legacy-compatible RUT lookup endpoints."},
     {"name": "usage", "description": "Usage and credit balance information."},
 ]
 
@@ -156,5 +157,6 @@ async def prefixed_openapi():
 api_v1.include_router(auth.router)
 api_v1.include_router(checks.router)
 api_v1.include_router(reports.router)
+api_v1.include_router(rut.router)
 api_v1.include_router(usage.router)
 app.include_router(api_v1)
