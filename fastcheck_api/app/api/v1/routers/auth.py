@@ -38,8 +38,6 @@ async def login(payload: LoginRequest, db: Annotated[AsyncIOMotorDatabase, Depen
         raise
     except ValueError:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
-    except RuntimeError as e:
-        raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail=str(e))
 
 
 @router.get(

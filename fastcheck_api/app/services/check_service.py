@@ -24,7 +24,6 @@ class CheckService:
         user_id: str,
         rut: str,
         name: str | None,
-        enqueue: bool = True,
     ) -> dict[str, Any]:
         now = dt.datetime.now(dt.timezone.utc)
         tenant_oid = to_object_id(tenant_id)
@@ -77,10 +76,9 @@ class CheckService:
         insert = await db["evaluationjobs"].insert_one(job_doc)
         job_id = str(insert.inserted_id)
 
-        if enqueue:
-            await rabbitmq_service.publish_evaluation(
-                {"rut": rut, "name": name, "jobId": job_id, "tenantId": tenant_id, "userId": user_id}
-            )
+        await rabbitmq_service.publish_evaluation(
+            {"rut": rut, "name": name, "jobId": job_id, "tenantId": tenant_id, "userId": user_id}
+        )
 
         stored = await db["evaluationjobs"].find_one({"_id": insert.inserted_id})
         if not stored:

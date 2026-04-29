@@ -227,8 +227,6 @@ export class sheriffV2Service {
     //console.log(`[DEBUG] loadRutData response RUT: ${loadRutData?.data?.rut || 'No RUT in response'}`);
     if (summaryData == null) {
       console.error('loadRutData failed is null');
-      await logEntry.save();
-      return logEntry.toObject();
     }
     if(!summaryData.data) {
       summaryData.data = {};

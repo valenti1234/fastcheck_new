@@ -55,8 +55,3 @@ class ListResultsResponse(BaseModel):
     results: list[EvaluationResultOut]
     total: int = Field(description="Total results in this job.", examples=[1])
     pages: int = Field(description="Total pages for the current limit.", examples=[1])
-
-
-class LookupResponse(BaseModel):
-    job: EvaluationJobOut = Field(description="Created evaluation job.")
-    result: EvaluationResultOut = Field(description="Immediate evaluation result saved for this job.")
