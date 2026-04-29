@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from collections.abc import Mapping, Sequence
 from datetime import datetime
 from typing import Any
@@ -21,3 +22,10 @@ def jsonable(value: Any) -> Any:
     if isinstance(value, Sequence) and not isinstance(value, (str, bytes, bytearray)):
         return [jsonable(v) for v in value]
     return value
+
+
+def sanitize_rut(value: str) -> str:
+    digits = "".join(re.findall(r"\d", value or ""))
+    if len(digits) <= 1:
+        return digits
+    return f"{digits[:-1]}-{digits[-1]}"

@@ -8,7 +8,7 @@ from motor.motor_asyncio import AsyncIOMotorDatabase
 from pymongo import ReturnDocument
 
 from fastcheck_api.app.services.rabbitmq_service import rabbitmq_service
-from fastcheck_api.app.utils.mongo import jsonable, to_object_id
+from fastcheck_api.app.utils.mongo import jsonable, sanitize_rut, to_object_id
 
 
 class InsufficientCreditsError(Exception):
@@ -24,9 +24,11 @@ class CheckService:
         user_id: str,
         rut: str,
         name: str | None,
+        enqueue: bool = True,
     ) -> dict[str, Any]:
         now = dt.datetime.now(dt.timezone.utc)
         tenant_oid = to_object_id(tenant_id)
+        rut = sanitize_rut(rut)
 
         tenant_after = await db["tenants"].find_one_and_update(
             {"_id": tenant_oid, "creditBalance.availableCredits": {"$gte": 1}},
@@ -75,9 +77,10 @@ class CheckService:
         insert = await db["evaluationjobs"].insert_one(job_doc)
         job_id = str(insert.inserted_id)
 
-        await rabbitmq_service.publish_evaluation(
-            {"rut": rut, "name": name, "jobId": job_id, "tenantId": tenant_id, "userId": user_id}
-        )
+        if enqueue:
+            await rabbitmq_service.publish_evaluation(
+                {"rut": rut, "name": name, "jobId": job_id, "tenantId": tenant_id, "userId": user_id}
+            )
 
         stored = await db["evaluationjobs"].find_one({"_id": insert.inserted_id})
         if not stored:

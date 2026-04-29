@@ -14,6 +14,7 @@ from fastcheck_api.app.core.config import settings
 from fastcheck_api.app.core.logging import configure_logging
 from fastcheck_api.app.core.security import create_access_token
 from fastcheck_api.app.services.legacy_service import legacy_service
+from fastcheck_api.app.utils.mongo import sanitize_rut
 
 
 logger = logging.getLogger("fastcheck.worker")
@@ -48,7 +49,7 @@ async def _update_job_progress(db: Any, job_oid: ObjectId, tenant_id: str) -> No
 
 
 async def _process_payload(db: Any, payload: dict[str, Any]) -> None:
-    rut = str(payload.get("rut") or "")
+    rut = sanitize_rut(str(payload.get("rut") or ""))
     name = payload.get("name")
     tenant_id = str(payload.get("tenantId") or "")
     user_id = str(payload.get("userId") or "")

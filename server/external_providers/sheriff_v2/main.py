@@ -18,10 +18,10 @@ from typing import Dict, Any, Optional
 from datetime import datetime, timedelta
 
 import requests
-from fastapi import FastAPI, HTTPException, Header
+from fastapi import FastAPI, HTTPException, Header, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 from dotenv import load_dotenv
 
 # Configure logging
@@ -530,7 +530,25 @@ async def get_credit_score(rut: str):
     return execute_sheriff_get(path)
 
 @app.post("/queryRut")
-async def query_rut(payload: QueryRutRequest):
+async def query_rut(request: Request):
+    raw = await request.body()
+    if not raw:
+        raise HTTPException(status_code=400, detail="Missing JSON body")
+
+    try:
+        parsed = json.loads(raw.decode("utf-8"))
+    except Exception:
+        snippet = raw[:500].decode("utf-8", errors="replace")
+        raise HTTPException(status_code=400, detail=f"Invalid JSON body: {snippet}")
+
+    if not isinstance(parsed, dict):
+        raise HTTPException(status_code=400, detail="Body must be a JSON object")
+
+    try:
+        payload = QueryRutRequest(**parsed)
+    except ValidationError as e:
+        raise HTTPException(status_code=422, detail=e.errors())
+
     cargar_body = {
         "rut": payload.rut.strip(),
         "isMonitoring": False,

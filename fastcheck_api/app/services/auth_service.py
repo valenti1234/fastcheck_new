@@ -4,6 +4,7 @@ from bson import ObjectId
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from fastcheck_api.app.core.security import create_access_token, verify_password
+from fastcheck_api.app.services.legacy_service import legacy_service
 
 
 class AuthService:
@@ -35,6 +36,8 @@ class AuthService:
             role=str(user.get("role") or ""),
             tenant_id=tenant_id_str,
         )
+
+        await legacy_service.login_user(user_id=str(user["_id"]), email=email.lower(), password=password)
 
         return {
             "token": token,
