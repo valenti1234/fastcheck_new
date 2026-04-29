@@ -4,11 +4,15 @@ from dataclasses import dataclass
 from typing import Annotated, Any
 
 from bson import ObjectId
-from fastapi import Depends, Header, HTTPException, Request, status
+from fastapi import Depends, HTTPException, Request, status
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from fastcheck_api.app.core.mongodb import get_db
 from fastcheck_api.app.core.security import AuthError, decode_token
+
+
+_bearer_scheme = HTTPBearer(auto_error=False)
 
 
 @dataclass(frozen=True)
@@ -21,13 +25,13 @@ class CurrentUser:
 
 async def get_current_user(
     request: Request,
-    authorization: Annotated[str | None, Header()] = None,
+    credentials: Annotated[HTTPAuthorizationCredentials | None, Depends(_bearer_scheme)] = None,
     db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> CurrentUser:
-    if not authorization or not authorization.lower().startswith("bearer "):
+    if credentials is None or not credentials.credentials:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="No token provided")
 
-    token = authorization.split(" ", 1)[1].strip()
+    token = credentials.credentials
     try:
         payload = decode_token(token)
     except AuthError as e:
