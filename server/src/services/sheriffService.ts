@@ -228,12 +228,20 @@ export class SheriffService {
 
     if (loadRutData == null) {
       console.error('loadRutData failed is null');
+      await logEntry.save();
+      return logEntry.toObject();
     }
     //must wait at least 30 seconds before starting the next
     await new Promise(resolve => setTimeout(resolve, parseInt(process.env.SHERIFF_API_DELAY || '30000')));
     console.log(`[DEBUG] About to call summaryData with RUT: ${sanitizedRut}`);
     const summaryData = await makeApiCall('summaryData', 'get', `/helper/${sanitizedRut}/summary?complete=true`); //added complete true
     console.log(`[DEBUG] After summaryData call, sanitizedRut is still: ${sanitizedRut}`);
+
+    if (summaryData == null) {
+      console.error('summaryData failed is null');
+      await logEntry.save();
+      return logEntry.toObject();
+    }
 
     let societaryMeshExternal: any[] | null = null;
 
