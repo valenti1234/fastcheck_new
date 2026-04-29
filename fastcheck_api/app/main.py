@@ -106,9 +106,10 @@ async def customer_docs():
     <rapi-doc
       spec-url="openapi.json"
       render-style="read"
-      show-header="false"
+      show-header="true"
       allow-try="true"
       allow-authentication="true"
+      persist-auth="true"
       allow-server-selection="true"
       show-components="true"
       show-info="true"
