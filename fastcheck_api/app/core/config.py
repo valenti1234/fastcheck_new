@@ -29,6 +29,19 @@ class Settings(BaseSettings):
     legacy_base_url: str = Field(default="http://localhost:4040/api", validation_alias="LEGACY_BASE_URL")
     legacy_http_timeout_seconds: int = Field(default=30, validation_alias="LEGACY_HTTP_TIMEOUT_SECONDS")
 
+    sheriff_v2_base_url: str | None = Field(default=None, validation_alias="SHERIFF_V2_BASE_URL")
+    sheriff_v2_access_key: str | None = Field(default=None, validation_alias="SHERIFF_V2_ACCESS_KEY")
+    sheriff_v2_access_secret: str | None = Field(default=None, validation_alias="SHERIFF_V2_ACCESS_SECRET")
+    sheriff_v2_client_identifier: str = Field(
+        default="SheriffSecureClient-v1",
+        validation_alias="SHERIFF_V2_CLIENT_IDENTIFIER",
+    )
+    sheriff_v2_token_ttl_seconds: int = Field(default=600, validation_alias="SHERIFF_V2_TOKEN_TTL_SECONDS")
+
+    dequienes_base_url: str = Field(default="http://127.0.0.1:8023", validation_alias="DEQUIENES_BASE_URL")
+    dequienes_api_key: str | None = Field(default=None, validation_alias="DEQUIENES_API_KEY")
+    dequienes_http_timeout_seconds: int = Field(default=30, validation_alias="DEQUIENES_HTTP_TIMEOUT_SECONDS")
+
     rabbitmq_enabled: bool = Field(default=True, validation_alias="RABBITMQ_ENABLED")
     rabbitmq_queue: str = Field(default="evaluation_queue", validation_alias="RABBITMQ_QUEUE")
     rabbitmq_url: str | None = Field(default=None, validation_alias="RABBITMQ_URL")

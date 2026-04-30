@@ -8,10 +8,13 @@ from fastapi import APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 
-from fastcheck_api.app.api.v1.routers import auth, checks, reports, rut, usage
+#from fastcheck_api.app.api.v1.routers import auth, checks, reports, rut, usage
+from fastcheck_api.app.api.v1.routers import auth, checks, rut, usage
 from fastcheck_api.app.core.logging import configure_logging
 from fastcheck_api.app.core.mongodb import lifespan_db
 from fastcheck_api.app.services.legacy_service import legacy_service
+from fastcheck_api.app.services.dequienes_native_service import dequienes_native_service
+from fastcheck_api.app.services.sheriff_v2_native_service import sheriff_v2_native_service
 from fastcheck_api.app.services.rabbitmq_service import rabbitmq_service
 from fastcheck_api.app.middleware.request_logging import RequestLoggingMiddleware
 from fastcheck_api.app.middleware.tenant_context import TenantContextMiddleware
@@ -46,6 +49,8 @@ async def lifespan(app: FastAPI):
             except Exception:
                 logger.exception("RabbitMQ shutdown failed")
             await legacy_service.close()
+            await sheriff_v2_native_service.close()
+            await dequienes_native_service.aclose()
 
 
 app = FastAPI(
@@ -156,7 +161,7 @@ async def prefixed_openapi():
 
 api_v1.include_router(auth.router)
 api_v1.include_router(checks.router)
-api_v1.include_router(reports.router)
+#api_v1.include_router(reports.router)
 api_v1.include_router(rut.router)
 api_v1.include_router(usage.router)
 app.include_router(api_v1)

@@ -25,7 +25,23 @@ def jsonable(value: Any) -> Any:
 
 
 def sanitize_rut(value: str) -> str:
-    digits = "".join(re.findall(r"\d", value or ""))
-    if len(digits) <= 1:
-        return digits
-    return f"{digits[:-1]}-{digits[-1]}"
+    raw = (value or "").strip().replace(".", "").replace(" ", "").upper()
+    if not raw:
+        return ""
+
+    if "-" in raw:
+        base, dv = raw.split("-", 1)
+        base_digits = "".join(re.findall(r"\d", base))
+        dv_clean = "".join(re.findall(r"[0-9K]", dv))[:1]
+        if not base_digits:
+            return raw
+        base_digits = base_digits.lstrip("0") or "0"
+        return f"{base_digits}-{dv_clean}" if dv_clean else base_digits
+
+    cleaned = "".join(re.findall(r"[0-9K]", raw))
+    if len(cleaned) <= 1:
+        return cleaned
+    base_digits = "".join(re.findall(r"\d", cleaned[:-1]))
+    dv = cleaned[-1]
+    base_digits = base_digits.lstrip("0") or "0"
+    return f"{base_digits}-{dv}"
