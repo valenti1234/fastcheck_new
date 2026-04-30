@@ -21,7 +21,7 @@ class SheriffV2NativeService:
     def _base_url(self) -> str:
         base_url = (settings.sheriff_v2_base_url or "").strip()
         if not base_url:
-            raise RuntimeError("Missing SHERIFF_V2_BASE_URL")
+            raise RuntimeError("Missing BASE_URL")
         return base_url.rstrip("/")
 
     def _client_identifier(self) -> str:
