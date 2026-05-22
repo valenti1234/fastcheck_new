@@ -1926,26 +1926,14 @@ export class RiskCalculationService {
       dataSourceDesc: "Dettagli da filteredDetails.equifaxData.protestosMorosidadesPersonaNaturalList o fallback a debtsSummary.bed.commercialBed; normalizzazione date e rimozione campi"
     };
 
-    // console.warn(1773, "filteredDetails.equifaxData", logEntry?.filteredDetails?.equifaxData);
+   // console.warn(1773, "logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.bolcom?.commercialBolcom",  logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.bolcom?.commercialBolcom);
     // (rulObj as any).details = [];
-    (rulObj as any).details = logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.icom?.commercialIcom || [];
+    (rulObj as any).details = logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.bolcom?.commercialBolcom || [];
     if ((rulObj as any).details.length < 1) {
       //try with personal data list
       (rulObj as any).details = logEntry?.filteredDetails?.equifaxData?.protestosMorosidadesPersonaNaturalList || [];
     }
     //console.warn(1729,"details", (rulObj as any).details );
-
-    /*
-    if (logEntry.filteredDetails.equifaxData) {
-      if (logEntry.filteredDetails.equifaxData.protestosMorosidadesPersonaNaturalList) {
-        (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, logEntry.filteredDetails.equifaxData.protestosMorosidadesPersonaNaturalList || []);
-
-      } else {
-        (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, logEntry.filteredDetails.equifaxData.allData.commercialData.credit.debtsSummary.bed.commercialBed || []);
-      }
-    }
-      */
-
 
     if ((rulObj as any).details.length > 0) {
       rulObj.detected = true;
