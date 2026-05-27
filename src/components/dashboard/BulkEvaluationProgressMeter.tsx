@@ -62,18 +62,18 @@ const BulkEvaluationProgressMeter: React.FC = () => {
 
   if (!processingEvaluation) {
     return (
-      <div className="bg-gray-800 rounded-lg shadow p-6">
-        <h3 className="text-lg font-semibold text-gray-100 mb-4">{t('bulkProgress.title')}</h3>
+      <div className=" rounded-lg shadow p-6">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{t('bulkProgress.title')}</h3>
         <div className="space-y-4">
           <div className="relative pt-1">
             <div className="flex mb-2 items-center justify-between">
               <div>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-200 bg-blue-900">
+                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-100 bg-blue-500 ">
                   {t('bulkProgress.progress')}
                 </span>
               </div>
               <div className="text-right">
-                <span className="text-xs font-semibold inline-block text-blue-200">
+                <span className="text-sm text-gray-500 dark:text-gray-400">
                   0%
                 </span>
               </div>
@@ -84,7 +84,7 @@ const BulkEvaluationProgressMeter: React.FC = () => {
                 className="h-4 rounded-full bg-blue-500"
               ></div>
             </div>
-            <div className="text-sm text-gray-300">
+            <div className="text-sm text-gray-500 dark:text-gray-400">
               {t('bulkProgress.completed', { completed: 0, total: 0 })}
             </div>
           </div>

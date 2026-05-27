@@ -23,6 +23,8 @@ interface ResultsTableProps {
   totalServerResults?: number;
   hasActiveFilters?: boolean;
   totalResultsBeforeFilter?: number;
+  selectedRuts?: string[];
+  onSelectionChange?: (ruts: string[]) => void;
 }
 
 const ResultsTable: React.FC<ResultsTableProps> = ({
@@ -35,12 +37,14 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
   onSort: externalOnSort,
   totalServerResults = 0,
   hasActiveFilters = false,
-  totalResultsBeforeFilter = 0
+  totalResultsBeforeFilter = 0,
+  selectedRuts = [],
+  onSelectionChange,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [localSortField, setLocalSortField] = useState<string>('createdAt');
   const [localSortDirection, setLocalSortDirection] = useState<'asc' | 'desc'>('desc');
-  
+
   const { t, i18n } = useTranslation();
   const localeMap: Record<string, string> = { es: 'es-ES', en: 'en-US', pt: 'pt-PT', fr: 'fr-FR' };
   const resolvedLangKey = (i18n.resolvedLanguage ?? i18n.language ?? 'es');
@@ -49,7 +53,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
   // Ordenar localmente los resultados de la página actual
   const sortedResults = useMemo(() => {
     const resultsCopy = [...(results || [])];
-    
+
     return resultsCopy.sort((a, b) => {
       let aValue: any;
       let bValue: any;
@@ -92,7 +96,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
     const rut = (result.rut || result.details?.rut || '').toLowerCase();
     const razonSocial = (result.details?.razonSocial || '').toLowerCase();
     const matchesSearch = !searchTerm || rut.includes(searchLower) || razonSocial.includes(searchLower);
-    
+
     return {
       ...result,
       isVisible: matchesSearch
@@ -102,6 +106,32 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
   const visibleCount = resultsWithVisibility.filter(r => r.isVisible).length;
   const hiddenCount = resultsWithVisibility.length - visibleCount;
   const hasTableStructure = totalPages > 0;
+
+  const visibleRuts = resultsWithVisibility
+    .filter(r => r.isVisible)
+    .map(r => r.rut || r.details?.rut || '')
+    .filter(Boolean);
+
+  const allVisibleSelected = visibleRuts.length > 0 && visibleRuts.every(rut => selectedRuts.includes(rut));
+
+  const toggleAllVisible = () => {
+    if (!onSelectionChange) return;
+    if (allVisibleSelected) {
+      onSelectionChange(selectedRuts.filter(rut => !visibleRuts.includes(rut)));
+    } else {
+      const merged = Array.from(new Set([...selectedRuts, ...visibleRuts]));
+      onSelectionChange(merged);
+    }
+  };
+
+  const toggleOneRut = (rut: string) => {
+    if (!onSelectionChange) return;
+    if (selectedRuts.includes(rut)) {
+      onSelectionChange(selectedRuts.filter(r => r !== rut));
+    } else {
+      onSelectionChange([...selectedRuts, rut]);
+    }
+  };
 
   // Manejar ordenamiento local
   const handleLocalSort = (field: string) => {
@@ -240,18 +270,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
               <p className="text-sm text-gray-500 dark:text-gray-400">{t('dashboard.recentQueriesSubtitle', { defaultValue: 'Historial de evaluaciones realizadas' })}</p>
             </div>
           </div>
-      {/*     <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              placeholder={t('consultas.searchPlaceholder')}
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent sm:text-sm"
-            />
-          </div> */}
+
         </div>
         {hasTableStructure ? (
           <>
@@ -260,6 +279,14 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
                 <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
                   <thead className="bg-gray-50 dark:bg-gray-700/50">
                     <tr>
+                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
+                        <input
+                          type="checkbox"
+                          checked={allVisibleSelected}
+                          onChange={toggleAllVisible}
+                          className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                        />
+                      </th>
                       <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
                         <button
                           onClick={() => handleLocalSort('rut')}
@@ -336,54 +363,67 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
                   <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                     {resultsWithVisibility.length > 0 ? (
                       <>
-                        {resultsWithVisibility.map((result) => (
-                          <tr 
-                            key={result._id} 
-                            className={`hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors ${!result.isVisible ? 'hidden' : ''}`}
-                          >
-                            <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
-                              {result.rut || result.details?.rut}
-                            </td>
-                            <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                              <div className="flex items-center">
-                                <BuildingOfficeIcon className="h-4 w-4 text-gray-400 mr-2 flex-shrink-0" />
-                                <span className="truncate">{result.details?.razonSocial}</span>
-                              </div>
-                            </td>
-                            <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                              <div className="flex items-center gap-1 flex-wrap">
-                                {result?.noteTags?.map((noteTag: any, index: number) => 
-                                  <span key={index} className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">
-                                    {noteTag}
-                                  </span>
-                                )}
-                              </div>
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4 text-sm">
-                              <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${getRiskLevelClass(result.riskAssessment?.riskSummary?.semaphore || 'unknown')}`}>
-                                {getRiskLevelDisplayName(result.riskAssessment?.riskSummary?.semaphore || t('common.notAvailable'))}
-                              </span>
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500 dark:text-gray-400">
-                              <div className="flex items-center">
-                                <CalendarIcon className="h-4 w-4 text-gray-400 mr-2" />
-                                {new Date(result.createdAt).toLocaleDateString(dateLocale)}
-                              </div>
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4 text-sm font-medium">
-                              <Link
-                                to={`/consultas/${result._id}`}
-                                className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 dark:text-primary-400 dark:bg-primary-900/50 dark:hover:bg-primary-900/70 transition-colors"
-                              >
-                                <EyeIcon className="h-4 w-4 mr-1" />
-                                {t('consultas.viewDetail', { defaultValue: 'Ver Detalle' })}
-                              </Link>
-                            </td>
-                          </tr>
-                        ))}
+                        {resultsWithVisibility.map((result) => {
+                          const rutValue = result.rut || result.details?.rut || '';
+                          return (
+                            <tr
+                              key={result._id}
+                              className={`hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors ${!result.isVisible ? 'hidden' : ''}`}
+                            >
+                              <td className="whitespace-nowrap px-6 py-4">
+                                <input
+                                  type="checkbox"
+                                  checked={selectedRuts.includes(rutValue)}
+                                  onChange={() => toggleOneRut(rutValue)}
+                                  className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                                />
+                              </td>
+                              <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                {result.rut || result.details?.rut}
+                              </td>
+                              <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                                <div className="flex items-center">
+                                  <BuildingOfficeIcon className="h-4 w-4 text-gray-400 mr-2 flex-shrink-0" />
+                                  <span className="truncate">{result.details?.razonSocial}</span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                                <div className="flex items-center gap-1 flex-wrap">
+                                  {result?.noteTags?.map((noteTag: any, index: number) =>
+                                    <span key={index} className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">
+                                      {noteTag}
+                                    </span>
+                                  )}
+                                </div>
+                              </td>
+                              <td className="whitespace-nowrap px-6 py-4 text-sm">
+                                <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${getRiskLevelClass(result.riskAssessment?.riskSummary?.semaphore || 'unknown')}`}>
+                                  {getRiskLevelDisplayName(result.riskAssessment?.riskSummary?.semaphore || t('common.notAvailable'))}
+                                </span>
+                              </td>
+                              <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500 dark:text-gray-400">
+                                <div className="flex items-center">
+                                  <CalendarIcon className="h-4 w-4 text-gray-400 mr-2" />
+                                  {new Date(result.createdAt).toLocaleDateString(dateLocale)}
+                                </div>
+                              </td>
+                              <td className="whitespace-nowrap px-6 py-4 text-sm font-medium">
+                                <Link
+                                  to={`/consultas/${result._id}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 dark:text-primary-400 dark:bg-primary-900/50 dark:hover:bg-primary-900/70 transition-colors"
+                                >
+                                  <EyeIcon className="h-4 w-4 mr-1" />
+                                  {t('consultas.viewDetail', { defaultValue: 'Ver Detalle' })}
+                                </Link>
+                              </td>
+                            </tr>
+                          );
+                        })}
                         {visibleCount === 0 && (
                           <tr>
-                            <td colSpan={6} className="px-6 py-12 text-center">
+                            <td colSpan={7} className="px-6 py-12 text-center">
                               <div className="mx-auto max-w-md">
                                 <MagnifyingGlassIcon className="mx-auto h-12 w-12 text-gray-400" />
                                 <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -407,7 +447,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
                       </>
                     ) : (
                       <tr>
-                        <td colSpan={6} className="px-6 py-12 text-center">
+                        <td colSpan={7} className="px-6 py-12 text-center">
                           <div className="mx-auto max-w-md">
                             <MagnifyingGlassIcon className="mx-auto h-12 w-12 text-gray-400" />
                             <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
