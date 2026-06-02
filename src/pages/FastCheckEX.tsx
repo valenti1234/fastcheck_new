@@ -21,7 +21,7 @@ import { Dialog } from '@headlessui/react';
 import {
   Tooltip,
 } from '@mui/material';
-
+/* import MeshFlowChart from '../components/ui/MeshFlowChart/MeshFlowChart'; */
 import { ChevronDown, ChevronUp, Download, Edit3, Save, X, FileText } from 'lucide-react';
 import * as XLSX from 'xlsx';
 import { useTranslation } from 'react-i18next';
@@ -337,6 +337,14 @@ const FastCheck: React.FC = () => {
     unpaidAmount: 'Monto',
     documentType: 'Tipo de Deuda',
     totalUTA: 'Multa UTA',
+    libradorName: 'Librador',
+    localidadName: 'Localidad',
+    justificationDescription: 'Justificación',
+    boletinNumber: 'N° Boletín',
+    boletinPage: 'Página Boletín',
+
+
+
   };
 
   const [count, setCount] = useState<any>({
@@ -348,7 +356,7 @@ const FastCheck: React.FC = () => {
 
   const columnasPermitidas: Record<string, string[]> = {
     'Multas Laborales': ['motivo', 'Motivo', 'boletin', 'Boletín', 'fecha', 'Fecha', 'tipoInfraccion', 'Tipo Infracción', 'infraccion', 'Infracción', 'monto', 'Monto', 'resolucion', 'Resolución'],
-    'Protestos y Morosidades': ['vencimiento', 'Vencimiento', 'monto', 'Monto', 'tipoDeuda', 'Tipo de Deuda', 'publicacion', 'Publicación', 'expirationDate', 'unpaidAmount', 'documentType',],
+    'Protestos y Morosidades': ['vencimiento', 'Vencimiento', 'monto', 'Monto', 'tipoDeuda', 'Tipo de Deuda', 'publicacion', 'Publicación', 'expirationDate', 'unpaidAmount', 'documentType', 'libradorName', 'localidadName', 'justificationDescription', 'boletinNumber', 'boletinPage'],
     'Condenas por Prácticas Antisindicales': ['rit', 'RIT', 'tribunal', 'Tribunal', 'fechaEjecutoria', 'Fecha ejecutoria', 'hechosCondenados', 'Hechos condenados', 'tipoDenuncia', 'Tipo de Denuncia', 'montoMulta', 'Monto Multa'],
     'Proceso Sanciones Medioambientales': ['unidadFiscalizable', 'expediente', 'procesoSancionTipoNombre', 'Estado', 'fechaInicio', 'fechaTermino', 'confirmaPdC', 'multaTotalUTA', 'linkSNIFA', 'regionNombre', 'comunaNombre', 'linkSNIFA_UF', 'fechaActualizacion'],
     'Sanciones Medioambientales': ['Unidad Fiscalizable', 'Expediente', 'Tipo Sanción', 'Estado', 'Fecha', 'totalUTA', 'Región',],
@@ -385,12 +393,7 @@ const FastCheck: React.FC = () => {
       data?.details?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
       data?.logEntry?.filteredDetails?.compliance?.penal?.coincidencias ||
       [];
-/*
-    console.warn(
-      '[FastCheckEX] compliance.penal.coincidencias',
-      data?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias
-    );
-*/
+
     const coincidenciasFiltradas = todasCoincidencias.filter((item: any) => {
       const postura = item?.postura?.toLowerCase() || '';
       return postura === 'demandado' || postura === 'querellado' || postura === 'denunciado';
@@ -2305,6 +2308,21 @@ const FastCheck: React.FC = () => {
 
           await new Promise(resolve => setTimeout(resolve, 100));
 
+          iframeDoc.body.appendChild(clonedElement);
+
+          await new Promise(resolve => setTimeout(resolve, 100));
+
+
+          clonedElement.querySelectorAll('svg').forEach((svg) => {
+            const r = svg.getBoundingClientRect();
+            if (r.width > 0 && r.height > 0) {
+              svg.setAttribute('width', String(Math.ceil(r.width)));
+              svg.setAttribute('height', String(Math.ceil(r.height)));
+            }
+          });
+
+
+
           const canvas = await html2canvas(clonedElement, {
             scale: 2,
             useCORS: true,
@@ -4180,8 +4198,13 @@ const FastCheck: React.FC = () => {
                       tipoDeuda: 'tipoDeuda',
                       documentType: 'tipoDeuda',
                       publicacion: 'publicacion',
+                      libradorName: 'libradorName',
+                      localidadName: 'localidadName',
+                      justificationDescription: 'justificationDescription',
+                      boletinNumber: 'boletinNumber',
+                      boletinPage: 'boletinPage',
                     };
-                    const colOrder = ['vencimiento', 'monto', 'tipoDeuda', 'publicacion'];
+                    const colOrder = ['vencimiento', 'monto', 'tipoDeuda', 'publicacion', 'libradorName', 'localidadName', 'justificationDescription', 'boletinNumber', 'boletinPage'];
                     filteredDetails = details.map((row: any) => {
                       const filtered: Record<string, any> = {};
                       Object.keys(keyMap).forEach(srcKey => {
@@ -4225,11 +4248,6 @@ const FastCheck: React.FC = () => {
               <ChevronDown className="h-6 w-6 text-blue-500" />
             }
           </div>
-
-
-
-
-
           {expandedSections.informacion && (
             <div className="space-y-6">
               {/* Informazioni generali */}
@@ -4250,7 +4268,7 @@ const FastCheck: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold dark:text-white">Tamaño Empresa:</p>
-                  <p className="dark:text-gray-300">{companyGeneralInfo.tamanoEmpresa}</p>
+                  <p className="dark:text-gray-300">{data?.sheriffLogData?.filteredDetails?.sheriffV2Data?.resumen?.data?.identificacion?.tamanoEmpresaSii?.tamanoEmpresa}</p>
                 </div>
                 <div>
                   <p className="font-bold dark:text-white">Rango Ventas UF:</p>
@@ -4553,6 +4571,14 @@ const FastCheck: React.FC = () => {
             </div>
           )}
 
+     {/*      {!exportingPdf && (
+            <MeshFlowChart
+              title="Mapa de Empresas en las que Participa"
+              dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+              mainRut={companyData.rut}
+              height={460}
+            />
+          )} */}
           <MeshTable
             title="Malla Relacional"
             height={exportingPdf && "auto" /* : "35rem" */}
