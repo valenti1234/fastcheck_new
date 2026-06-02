@@ -386,6 +386,11 @@ const FastCheck: React.FC = () => {
       data?.logEntry?.filteredDetails?.compliance?.penal?.coincidencias ||
       [];
 
+    console.warn(
+      '[FastCheckEX] compliance.penal.coincidencias',
+      data?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias
+    );
+
     const coincidenciasFiltradas = todasCoincidencias.filter((item: any) => {
       const postura = item?.postura?.toLowerCase() || '';
       return postura === 'demandado' || postura === 'querellado' || postura === 'denunciado';

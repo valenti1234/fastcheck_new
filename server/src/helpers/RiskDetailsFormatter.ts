@@ -49,7 +49,6 @@ export class RiskDetailsFormatter {
         monto: item.fineAmount
       }));
     }
-
     /* ---------------------------------Compliance--------------------------------------------- */
     else if (label == "Procesos Sancionatorios Medioambientales") {
       if (!detailsData || detailsData.length === 0) {
@@ -72,7 +71,6 @@ export class RiskDetailsFormatter {
         Fecha: RiskDetailsFormatter.formatDateDDMMYYYY(item?.fechaImposicion)
       }));
     }
-
     else if (label == "Sanciones Medioambientales") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -94,7 +92,6 @@ export class RiskDetailsFormatter {
         Fecha: RiskDetailsFormatter.formatDateDDMMYYYY(item?.fechaInicio)
       }));
     }
-
     else if (label == "Condenas Ley 21.121") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -129,8 +126,6 @@ export class RiskDetailsFormatter {
         Hasta: item.Hasta || ""
       }));
     }
-
-
     else if (label == "Listas Internacionales") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -146,7 +141,6 @@ export class RiskDetailsFormatter {
         Lista: item.listasInternacionalesDetected ?? ""
       }));
     }
-
     else if (label == "Listas Propias Alto Impacto") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -166,7 +160,6 @@ export class RiskDetailsFormatter {
         "Fecha Incorporación": RiskDetailsFormatter.formatDateDDMMYYYY(item?.fechaIncorporacion)
       }));
     }
-
     else if (label == "Listas Propias Mediano Impacto") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -186,7 +179,6 @@ export class RiskDetailsFormatter {
         "Fecha Incorporación": RiskDetailsFormatter.formatDateDDMMYYYY(item?.fechaIncorporacion)
       }));
     }
-
     /* ---------------------------------Capital Humano--------------------------------------------- */
     else if (label == "Condenas por Prácticas Antisindicales") {
       if (!detailsData || detailsData.length === 0) {
@@ -209,7 +201,6 @@ export class RiskDetailsFormatter {
         "ID": item.id ?? ""
       }));
     }
-
     else if (label == "Deuda Previsional Presunta") {
 
       if (!detailsData || detailsData.length === 0) {
@@ -232,8 +223,6 @@ export class RiskDetailsFormatter {
         "ID": item.id ?? ""
       }));
     }
-
-
     else if (label == "Deuda Previsional Publicada") {
       if (!detailsData || detailsData.length === 0) {
         return [/*
@@ -257,7 +246,6 @@ export class RiskDetailsFormatter {
         }));
     }
     /* --------------------------------- Financiero - Tributario --------------------------------------------- */
-
     else if (label == "Protestos y Morosidades") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -275,8 +263,6 @@ export class RiskDetailsFormatter {
         Publicación: item.visibilityDate || "",
       }));
     }
-
-
     else if (label == "Término de Giro") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -298,8 +284,6 @@ export class RiskDetailsFormatter {
         };
       });
     }
-
-
     else if (label == "Contribuyente de difícil fiscalización") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -320,8 +304,6 @@ export class RiskDetailsFormatter {
         };
       });
     }
-
-
     else if (label == "Inicio de Actividades") {
       const hasActivities = Array.isArray(detailsData) && detailsData.length > 0;
       return [
@@ -332,9 +314,7 @@ export class RiskDetailsFormatter {
         }
       ];
     }
-
     /* --------------------------------- Legal --------------------------------------------- */
-
     else if (label == "Boletin Concursal") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -380,7 +360,6 @@ export class RiskDetailsFormatter {
           Tribunal: item.tribunal || ""
         }));
     }
-
     else if (label == "Causas Laborales") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -409,7 +388,6 @@ export class RiskDetailsFormatter {
           Tribunal: item.tribunal || ""
         }));
     }
-
     else if (label == "Causas de Cobranza Laboral") {
       if (!detailsData || detailsData.length === 0) {
         return [
@@ -439,8 +417,6 @@ export class RiskDetailsFormatter {
           Tribunal: item.tribunal || ""
         }));
     }
-
-
     else if (label == "Quiebra judicial") {
       const hasQuiebra =
         Array.isArray(detailsData) &&
@@ -455,13 +431,9 @@ export class RiskDetailsFormatter {
         }
       ];
     }
-
-
     else {
       console.warn(1432, `>>>>>>>>>>>>>> No format found for label: ${label}`);
       return detailsData;
     }
-
   }
-
 }

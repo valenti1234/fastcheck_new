@@ -1087,11 +1087,11 @@ export class RiskCalculationService {
     } else {
       (rulObj as any).details = [];
     }
-// consider only details where postura is different from "denunciante" or "querellante" or "Denuciante" or "Querellante"
-    (rulObj as any).details = (rulObj as any).details.filter((detail: any) => detail.postura.toLowerCase() !== "denunciante" && detail.postura.toLowerCase() !== "querellante");
+// consider only details where postura is different from "denunciante" or "querellante" or "victima"
+    (rulObj as any).details = (rulObj as any).details.filter((detail: any) => detail.postura.toLowerCase() !== "denunciante" && detail.postura.toLowerCase() !== "querellante" && detail.postura.toLowerCase() !== "victima");
     if ((rulObj as any).details.length > 0) {
       rulObj.detected = true;
-    //  console.warn(1093,"penales",(rulObj as any).details);
+      console.warn(1093,"penales",(rulObj as any).details);
       (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, (rulObj as any).details);
     }
   //  console.warn(1056,"casos",(rulObj as any).details);

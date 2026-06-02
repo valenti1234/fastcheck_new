@@ -1,0 +1,5257 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "71500500-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "71500500-K",
+      "esPersonaJuridica": true,
+      "fechaCarga": "02-06-2026",
+      "identificacion": {
+        "razonSocial": "UNIVERSIDAD MAYOR",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ENSEÑANZA SUPERIOR EN UNIVERSIDADES PRIVADAS",
+            "codigo": "853120",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2000"
+          },
+          {
+            "documento": "Boleta No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas - Entradas De Espectaculos",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2008"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Certificados De Donaciones",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Fact Exenta",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Guia Despacho",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2000"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 23,
+        "ultimaActualizacion": "30-05-2026 00:20:40",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 2095
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 3,
+        "casosBolcom": 1,
+        "MontoInfocom": 10926363,
+        "MontoBolcom": 2839260000,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 2850186363
+        },
+        "ultimaActualizacion": "02-06-2026 12:58:12"
+      },
+      "judicial": {
+        "casosCivilesActivos": 49,
+        "casosCivilesPresentados": 1587,
+        "casosCivilesConcluidos": 3030,
+        "cobranzaActivos": 12,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 28,
+        "laboralActivos": 50,
+        "laboralPresentados": 31,
+        "laboralConcluidos": 94,
+        "casosActuales": 111,
+        "casosArchivados": 1618,
+        "casosConcluidos": 3152,
+        "todosLosCasos": 4881,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 91,
+          "demandante": 1595,
+          "demandadoSolidario": 18,
+          "reclamante": 3,
+          "denunciado": 22
+        },
+        "ultimaActualizacionCiviles": "02-06-2026 12:58:09",
+        "ultimaActualizacionCobranza": "02-06-2026 12:58:07",
+        "ultimaActualizacionLaboral": "02-06-2026 12:58:07",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 11,
+          "empleados": 6,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 175,
+            "cambioAbsoluto": 7
+          },
+          "ultimaActualizacion": "02-06-2026 12:58:17"
+        },
+        "multaLaboral": {
+          "totalMultas": 16,
+          "montoTotalMultas": 80953314,
+          "multasPagadas": 16,
+          "montoMultasPagadas": 80953314,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "02-06-2026 12:58:08"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "02-06-2026 12:58:12"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "20-04-2011 21:00:00",
+              "razonSocial": "EMPRETEC SPA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/04/21/340047_M_SPA_20110421_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "CRISTIAN ASNOLDO CORTÉS PÓO",
+                  "rut": null,
+                  "domicilio": "AMÉRICO VESPUCIO SUR N 357, LAS CONDES"
+                },
+                {
+                  "socio": "ERICH REINALDO VILLASEÑOR MALDONADO",
+                  "rut": null,
+                  "domicilio": "CALLE SAN PASCUAL 397 DE LA COMUNA DE LAS CONDES REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76067925-9"
+            },
+            {
+              "fecha": "27-03-2012 21:00:00",
+              "razonSocial": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/03/28/472472_M_SA_20120328_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "CECUM SPA",
+                  "rut": "96940980-1",
+                  "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "COLEGIOS MAYORES S.A.",
+                  "rut": "96757700-6",
+                  "domicilio": "AV. BERNARDO OHIGGINS Nº 2240, SANTIAGO"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "11-12-2012 21:00:00",
+              "razonSocial": "INVERSALUD TEMUCO S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/12/12/576279_M_SA_20121212_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "ADMINISTRADORA CLÍNICAS REGIONALES DOS S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76137682-9"
+            },
+            {
+              "fecha": "03-06-2013 20:00:00",
+              "razonSocial": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2013/06/04/646522_M_SA_20130604_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "GENOMA MAYOR SPA",
+                  "rut": "76110146-3",
+                  "domicilio": "AV. AMÉRICO VESPUCIO SUR 357, LAS CONDES"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "22-01-2014 21:00:00",
+              "razonSocial": "INNOVA LEARNING CHILE S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/01/23/735616_M_SA_20140123_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "INVERSIONES RÍO PUELO S.A.",
+                  "rut": "96960840-5",
+                  "domicilio": "AV. LIBERTADOR BERNARDO OHIGGINS N 2240, 2 PISO, COMUNA Y CIUDAD SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES TRONADOR S.A.",
+                  "rut": "96960850-2",
+                  "domicilio": "AV. LIBERTADOR BERNARDO OHIGGINS Nº 2240, 2 PISO, COMUNA Y CIUDAD SANTIAGO"
+                }
+              ],
+              "rut": "76022086-8"
+            },
+            {
+              "fecha": "13-03-2014 21:00:00",
+              "razonSocial": "TV.UMAYOR SPA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/03/14/753059_C_SPA_20140314_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [],
+              "rut": null
+            },
+            {
+              "fecha": "22-01-2015 21:00:00",
+              "razonSocial": "EDICIONES MAYOR SPA.",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/01/23/868111_C_SPA_20150123_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "PATRICIO ALEJANDRO SOTO CARAMORI",
+                  "rut": null,
+                  "domicilio": "ARTURO MEDINA NÚMERO CUATRO MIL CIENTO UNO, COMUNA DE ÑUÑOA, SANTIAGO, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CRISTIAN ASNOLDO CORTÉS PÓO",
+                  "rut": null,
+                  "domicilio": "AMÉRICO VESPUCIO SUR N 357, LAS CONDES"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "27-03-2019 21:00:00",
+              "razonSocial": "EDICIONES UNIVERSIDAD MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/03/28/42316/05/1568110.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76459733-8"
+            },
+            {
+              "fecha": "13-01-2021 21:00:00",
+              "razonSocial": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/14/42854/05/1879637.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INGER MARCELA DAHL BRAVO",
+                  "rut": "10354886-1",
+                  "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "EMPRETEC SPA",
+                  "rut": "76067925-9",
+                  "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "CECUM SPA",
+                  "rut": "96940980-1",
+                  "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "76295340-4"
+            },
+            {
+              "fecha": "02-03-2022 21:00:00",
+              "razonSocial": "GENOMA MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/03/03/43193/05/2094581.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INGER MARCELA DAHL BRAVO",
+                  "rut": "10354886-1",
+                  "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "MARIO FELIPE HERANE TSCHORNE",
+                  "rut": "15385657-5",
+                  "domicilio": null
+                },
+                {
+                  "socio": "GENOMA MAYOR SPA",
+                  "rut": "76110146-3",
+                  "domicilio": "AV. AMÉRICO VESPUCIO SUR 357, LAS CONDES"
+                }
+              ],
+              "rut": "76110146-3"
+            },
+            {
+              "fecha": "11-08-2022 20:00:00",
+              "razonSocial": "CLÍNICAS UNIVERSIDAD MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/08/12/43326/05/2170983.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "RUBÉN FERNANDO COVARRUBIAS GIORDANO",
+                  "rut": "6866255-9",
+                  "domicilio": "LAS AÑAÑUCAS 433, LAS CONDES, SANTIAGO, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "PATRICIO ANDRÉS MANQUE MANQUE",
+                  "rut": "11506778-8",
+                  "domicilio": null
+                },
+                {
+                  "socio": "CENTRO FONOAUDIOLÓGICO CFUM SPA",
+                  "rut": "76910800-9",
+                  "domicilio": null
+                }
+              ],
+              "rut": "76910800-9"
+            },
+            {
+              "fecha": "14-04-2024 20:00:00",
+              "razonSocial": "CLÍNICAS UNIVERSIDAD MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480171.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76910800-9"
+            },
+            {
+              "fecha": "14-04-2024 20:00:00",
+              "razonSocial": "EDICIONES UNIVERSIDAD MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480172.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76459733-8"
+            },
+            {
+              "fecha": "14-04-2024 20:00:00",
+              "razonSocial": "GENOMA MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480191.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76110146-3"
+            },
+            {
+              "fecha": "14-04-2024 20:00:00",
+              "razonSocial": "CLÍNICA VETERINARIA MAYOR SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480196.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "HOSPITAL DOCENTE VETERINARIO UNIVERSIDAD MAYOR SPA",
+                  "rut": "76135347-0",
+                  "domicilio": null
+                }
+              ],
+              "rut": "96845650-4"
+            }
+          ],
+          "ultimaActualizacion": "02-06-2026 12:58:07"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 36028730,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 36241870,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 17067220,
+        "lineaCredito": 252220,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 37886820,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 38154140,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 16651860,
+          "lineaCredito": 231690
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 16,
+          "tasacionTotal": 109114857,
+          "ultimaActualizacion": "12-05-2026 20:00:34"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 21,
+          "tasacionTotal": "59423850795",
+          "ultimaActualizacion": "12-05-2026 20:00:34"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": 100,
+        "ponderacionJudicial": 76.07142857142857,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 6.25,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 182.32142857142856,
+        "etiquetaClasificacion": "High"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "UNIVERSIDAD MAYOR",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 19,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletin Comercial BOLCOM-INFOCOM",
+        "Boletin Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:563fa03f6cb8b88964b808c56ce0770865350c88d45c6e52427e9f2dde3e4ace",
+      "cached_at": "2026-06-02T13:19:44.483803"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 234,
+        "cantidad": 4666,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "14-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17738648-0",
+                "nombre": "IGNACIO VIVANCO SILVA (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16764079-6",
+                "nombre": "MARIELA ALEJANDRA VALDÉS PÉREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13729786-8",
+                "nombre": "MARÍA ADOLFINA DEL CARMEN VILLARROEL BUSTAMANTE (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19289402-6",
+                "nombre": "JAVIER IGNACIO FONTANES MEDINA (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "72201100-7",
+                "nombre": "GOBIERNO REGIONAL DE LA ARAUCANÍA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-409-2026",
+            "tribunal": "3º Juzgado Civil de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "21-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8666801-7",
+                "nombre": "MAXIMILIANO JOSÉ STONE MANDIOLA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76596744-9",
+                "nombre": "CHITA SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17563-2025",
+            "tribunal": "20º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Sentencia",
+            "fechaIngreso": "13-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17738648-0",
+                "nombre": "IGNACIO VIVANCO SILVA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18737431-6",
+                "nombre": "MARÍA FRANCISCA MUÑOZ BELTRÁN (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77569714-8",
+                "nombre": "GLOBAL FOODS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Juicio de arrendamiento",
+            "rol": "C-14336-2025",
+            "tribunal": "25º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "09-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10416989-9",
+                "nombre": "MARLYS YANETTE CASTILLO TRIVIÑOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19479823-7",
+                "nombre": "NICOLÁS GONZALO AGUAYO POZO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "20081345-6",
+                "nombre": "CAMILA PATRICIA TORRES SAGREDO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-5650-2024",
+            "tribunal": "1º Juzgado Civil de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "12-09-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "99231000-6",
+                "nombre": "HDI SEGUROS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12467279-1",
+                "nombre": "ENZO LEONARDO COPPA HURTADO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16549-2024",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "5 Conciliación y/o Recibe a prueba",
+            "fechaIngreso": "25-10-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13442721-3",
+                "nombre": "LUIS IGNACIO ARCE VIDAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17738648-0",
+                "nombre": "IGNACIO VIVANCO SILVA (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18238119-5",
+                "nombre": "GUSTAVO GUILLERMO OSVALDO HEUSER TRUJILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11947698-4",
+                "nombre": "GENOVEVA ALEJANDRA GUTIÉRREZ SEPÚLVEDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19304956-7",
+                "nombre": "RAÚL ELÍAS OPAZO FUENTES (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "20366740-K",
+                "nombre": "ROSARIO EDITH VÁSQUEZ BAEZA (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-5777-2023",
+            "tribunal": "2º Juzgado Civil de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "22-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "78178530-K",
+                "nombre": "ROLAND VORWERK Y COMPAÑÍA LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9356989-K",
+                "nombre": "ANGELA MARÍA MARGARITA ARTEAGA VIAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6929081-7",
+                "nombre": "CRISTIAN ANDRÉS BUZETA ROACH",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17628757-8",
+                "nombre": "EDUARDO ALBERTO CORTÉS TORO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-10457-2023",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "05-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17738648-0",
+                "nombre": "IGNACIO VIVANCO SILVA (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76185139-K",
+                "nombre": "COMERCIALIZADORA ROMULO LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18746831-0",
+                "nombre": "RAMÓN RICARDO GARCÍA PFAFF",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-9515-2023",
+            "tribunal": "14º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "25-04-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76051644-9",
+                "nombre": "INGENIERIA DE SISTEMAS OPEN GREED ROAD S.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17354348-4",
+                "nombre": "ARIEL ESTEBAN MONTOYA INOSTROZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-7006-2023",
+            "tribunal": "4º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "19-04-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76172969-1",
+                "nombre": "SANHUEZA Y ALCALDE DEPORTES LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16103279-4",
+                "nombre": "PABLO CIFUENTES FUENTES (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18114376-2",
+                "nombre": "JAVIER ARTURO BRITO DONOSO (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-6589-2023",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "09-01-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76240104-5",
+                "nombre": "ASESORIAS SIMPLICITY SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8322000-7",
+                "nombre": "RODRIGO JAVIER ATAL ACHELAT (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8322000-7",
+                "nombre": "RODRIGO JAVIER ATAL ACHELAT (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16606183-0",
+                "nombre": "GABRIEL ANDRÉS BONVALLET ACUÑA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-522-2023",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "04-01-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76926558-9",
+                "nombre": "SOCIEDAD AUDIOTEK Y COMPAÑIA LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7293567-5",
+                "nombre": "JOSÉ PATRICIO PEREIRA ESPÍNDOLA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-146-2023",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "06-11-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76029873-5",
+                "nombre": "COMERCIALIZADORA E IMPORTADORA PRO-GIFT LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-12721-2022",
+            "tribunal": "15º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "03-11-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "83732700-8",
+                "nombre": "INDUSTRIA METALURGICA ACONCAGUA LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8955662-7",
+                "nombre": "MIGUEL ANGEL HERRERA VEGA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-12646-2022",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "25-09-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76029873-5",
+                "nombre": "COMERCIALIZADORA E IMPORTADORA PRO-GIFT LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-10709-2022",
+            "tribunal": "15º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "29-08-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "85385800-5",
+                "nombre": "SOCIEDAD CADENAS INDUSTRIALES LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-9279-2022",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "03-08-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "85385800-5",
+                "nombre": "SOCIEDAD CADENAS INDUSTRIALES LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-7823-2022",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Presentación de la Medida Prejudicial ",
+            "fechaIngreso": "01-11-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17321711-0",
+                "nombre": "ANDRÉS JOSÉ OSUNA TRUJILLO",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13442721-3",
+                "nombre": "LUIS IGNACIO ARCE VIDAL",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13805322-9",
+                "nombre": "CRISTIAN PATRICIO GARRIDO HERNÁNDEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16861836-0",
+                "nombre": "ANDREA VERÓNICA LARA APABLAZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17190948-1",
+                "nombre": "VALERIA DENISSE VARGAS VERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17942085-6",
+                "nombre": "FELIPE HERNÁN CONTRERAS FRÍAS",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Medidas Prejudiciales - Preparatoria",
+            "rol": "C-16695-2020",
+            "tribunal": "5º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Término Probatorio",
+            "fechaIngreso": "29-09-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76958551-6",
+                "nombre": "CONSTRUCCION E INGENIERIA C-ING LTDA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15525472-6",
+                "nombre": "CRISTÓBAL NICOLÁS GONZÁLEZ MIRANDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13442721-3",
+                "nombre": "LUIS IGNACIO ARCE VIDAL",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-15040-2020",
+            "tribunal": "6º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "09-09-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11589741-1",
+                "nombre": "MIGUEL ANGEL ARAYA AEDO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "61955100-1",
+                "nombre": " SERVICIO DE SALUD ARAUCANIA NO RTE",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": " UNIVERSIDAD MAYOR ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14207315-3",
+                "nombre": "KARIN JUDITH GUTIÉRREZ CAMPOS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-715-2020",
+            "tribunal": "24º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "02-06-2026 12:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7bc1f292d71110d510ba11701cb9c2f55c023959afb44879f74b69eb3aaab236",
+        "cached_at": "2026-06-02T13:19:51.208489"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 40,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "30-01-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "96504160-5",
+                "nombre": "NUEVA MASVIDA S.A. (EX ISAPRE ÓPTIMA)",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11415851-8",
+                "nombre": "PATRICIA LORETO LOURDES MATELUNA FLETCHER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-3574-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "19-03-2024 21:00:00",
+            "monto": "12217723",
+            "litigantes": [
+              {
+                "rut": "15105879-5",
+                "nombre": "BENJAMÍN OMAR EMILIO CALIDONIO LIRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16750761-1",
+                "nombre": "JUAN PABLO LILLO GUTIÉRREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13042114-8",
+                "nombre": "PABLO ADRIÁN HERRERA ARRIAGADA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17321711-0",
+                "nombre": "ANDRÉS JOSÉ OSUNA TRUJILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10919748-3",
+                "nombre": "CRISTIAN PATRICIO MARAMBIO GUZMÁN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13615207-6",
+                "nombre": "XIMENA OLIVIA BRAVO CERDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1558-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "16-10-2023 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6105926-1",
+                "nombre": "JORGE ENRIQUE SILHI ZARZAR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15985535-K",
+                "nombre": "WALESKA SOLANGE MEDEL CASTILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-462-2023",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "29-09-2022 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15298252-6",
+                "nombre": "SERGIO MARCELO GODOY ABURTO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16048896-4",
+                "nombre": "PHILIPP ANDREAS HEMMELMANN RAIMIL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-456-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "14-09-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16477910-6",
+                "nombre": "MANUEL MARTÍN DE LA CASTILLEJA MENDOZA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9652918-K",
+                "nombre": "LUIS ALEJANDRO HERRERA CANALES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15040279-4",
+                "nombre": "ÁLVARO CRISTIAN GALLEGOS DÍAZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10945645-4",
+                "nombre": "LISSETE YENNY MENDOZA VIVALLO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16558160-1",
+                "nombre": "KAROL VALESKA FARIAS SEPULVEDA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-432-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "11-08-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "3639072-7",
+                "nombre": "OSVALDO BENITO MANUEL PIZARRO POBLETE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10893580-4",
+                "nombre": "LISSETTE IVONNE BETANCOURT SOTOMAYOR",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-374-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-07-2022 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17426762-6",
+                "nombre": "CHRISTIAN ANDRÉS ALEGRÍA BELLO",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "18954974-1",
+                "nombre": "JUAN IGNACIO GARRETÓN FERRER",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "18335906-1",
+                "nombre": "FELIPE ESTEBAN KUSCH PRADO",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15040279-4",
+                "nombre": "ÁLVARO CRISTIAN GALLEGOS DÍAZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17365649-1",
+                "nombre": "CRISTINA BELÉN MELO RIVAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16794312-8",
+                "nombre": "ROXANA MARYBEL MARÍN LAURIE",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-341-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-07-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15676575-9",
+                "nombre": "ALBERTO FERNANDO ORMEÑO RETAMAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17581131-1",
+                "nombre": "TAMARA BELÉN LÓPEZ FONSECA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-327-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-12-2021 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8465253-9",
+                "nombre": "CLAUDIO ARTURO BRAVO LÓPEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "8362445-0",
+                "nombre": "PAOLA ANDREA ARANEDA REYNOLDS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-518-2021",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "21-07-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9472983-1",
+                "nombre": "JAIME ENRIQUE GONZÁLEZ TAPIA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17696216-K",
+                "nombre": "FERNANDA ANDREA FLORES CORREA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15676575-9",
+                "nombre": "ALBERTO FERNANDO ORMEÑO RETAMAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3113-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "28-05-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16946767-6",
+                "nombre": "DANIELA FRANCISCA CÁCERES RODRÍGUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17413984-9",
+                "nombre": "CONSUELO PAZ MARTÍNEZ QUIÑONES",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16841168-5",
+                "nombre": "SEBASTIÁN ANDRÉS AVENDAÑO FARFÁN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17366512-1",
+                "nombre": "JUAN ENRIQUE DE LA JARA COLIÑIR",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16794482-5",
+                "nombre": "CAROLINA BEATRIZ LEAL HERRERA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "19034520-3",
+                "nombre": "PÍA DANIELA AROS VEGA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15879101-3",
+                "nombre": "WALESKA ALICIA RIVEROS GODOY",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-222-2021",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "19-05-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "7251815-2",
+                "nombre": "MARÍA SOLEDAD CAMPO HERRERA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12033522-7",
+                "nombre": "JUAN FERNANDO SILVA CORREA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6519469-4",
+                "nombre": "HUGO ENRIQUE CIFUENTES LILLO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17269455-1",
+                "nombre": "MARCO ANTONIO VÁSQUEZ BERMEJO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2098-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-10-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14213447-0",
+                "nombre": "CRISTIAN ABELARDO RODRÍGUEZ SANHUEZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13882219-2",
+                "nombre": "PAULA ANDREA DOMÍNGUEZ CORREA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17696216-K",
+                "nombre": "FERNANDA ANDREA FLORES CORREA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15676575-9",
+                "nombre": "ALBERTO FERNANDO ORMEÑO RETAMAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3197-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "30-09-2020 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA DEL CARMEN ARANDA PAREDES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15771796-0",
+                "nombre": "CHRISTIAN GABRIEL RAMÍREZ SALAZAR",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17696216-K",
+                "nombre": "FERNANDA ANDREA FLORES CORREA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15676575-9",
+                "nombre": "ALBERTO FERNANDO ORMEÑO RETAMAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3022-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "14-09-2020 00:00:00",
+            "monto": "41920",
+            "litigantes": [
+              {
+                "rut": "99512120-4",
+                "nombre": "SECURITAS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "12250178-7",
+                "nombre": "RAQUEL IRENE CUEVAS GÁLVEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "18443701-5",
+                "nombre": "FABRICIO NICOLÁS BRAVO LÓPEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15623791-4",
+                "nombre": "NORCA MUÑOZ ROMO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-223-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de San Miguel",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "19-01-2020 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16645510-3",
+                "nombre": "FABIOLA ALEJANDRA CARREÑO GOMEZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10410236-0",
+                "nombre": "RODRIGO ANDRÉS ALBORNOZ POLLMANN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16645510-3",
+                "nombre": "FABIOLA ALEJANDRA CARREÑO GÓMEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16191165-8",
+                "nombre": "TAGRID NADI SAFATLE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16998031-4",
+                "nombre": "MERCEDES LEIGH ARBIZU",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRES TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "11325890-K",
+                "nombre": "CLAUDIA VERÓNICA DEL CARMEN LOBOS VARELA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-257-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "08-01-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76178390-4",
+                "nombre": "CENTRAL DE RESTAURANTES ARAMARK MULTISERVICIOS LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR.  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "15901497-5",
+                "nombre": "ESTEBAN RICARDO PALMA LOHSE",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "25115190-3",
+                "nombre": "RUTH STELLA BAQUERO VARGAS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12875221-8",
+                "nombre": "LUIS ANGELO ARCOS DENTONE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16275810-1",
+                "nombre": "PALMIRA MASSIEL VALDIVIA BAEZA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18396893-9",
+                "nombre": "DIEGO FELIPE LIZAMA CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-101-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "30-10-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17345291-8",
+                "nombre": "FRANCISCA LEONORA ARANDA PAREDES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16998031-4",
+                "nombre": "MERCEDES LEIGH URBIZU",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10363956-5",
+                "nombre": "CARLOS RODOLFO ZAMORA VELÁSQUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRES TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "4771324-2",
+                "nombre": "RENÉ ARMANDO PRADO YÁÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4942-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "17-10-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14469745-6",
+                "nombre": "CLAUDIA ROSARIO CASTRO MÁRQUEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13962087-9",
+                "nombre": "JOSE FRANCISCO ACUÑA NARVAEZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "11500871-4",
+                "nombre": "MANUEL EDUARDO MORALES HENRÍQUEZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16794482-5",
+                "nombre": "CAROLINA BEATRIZ LEAL HERRERA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "6105926-1",
+                "nombre": "JORGE ENRIQUE SILHI ZARZAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-371-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "01-08-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9767848-0",
+                "nombre": "MANUEL ALEJANDRO MUÑOZ BOMBALA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10140349-1",
+                "nombre": "JIMENA MERCEDES VÁSQUEZ BRAVO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8798388-9",
+                "nombre": "SERGIO ANDRÉS TOLOZA VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3223-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "02-06-2026 12:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3db9e875ff1c0c3938955f02e64b50299407b820757c1ef66564c1d53528891f",
+        "cached_at": "2026-06-02T13:19:51.765285"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 9,
+        "cantidad": 175,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "03-04-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12037070-7",
+                "nombre": "MARIANELA DEL PILAR FICA BERRÍOS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10661028-2",
+                "nombre": "JORGE ALEJANDRO SALDOVAL QUILODRAN (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512120-4",
+                "nombre": "SECURITAS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1284-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "01-04-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16726764-5",
+                "nombre": "FRANCISCO IGNACIO ACUÑA GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16505999-9",
+                "nombre": "BÉLGICA PAULINA MARQUEZ AVENDAÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18994435-7",
+                "nombre": "JOSUE ABRAHAM MOSCOSO CAMPOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2432-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "31-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17365649-1",
+                "nombre": "CRISTINA BELÉN MELO RIVAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17426762-6",
+                "nombre": "CHRISTIAN ANDRÉS ALEGRÍA BELLO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10983330-4",
+                "nombre": "VEZNA MILENKA SABANDO FRANULIC",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1249-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "19-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17267073-3",
+                "nombre": "MARÍA JOSÉ CONTESSE STUVEN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13042114-8",
+                "nombre": "PABLO HERRERA ARRIAGADA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13615207-6",
+                "nombre": "XIMENA OLIVIA BRAVO CERDA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15105879-5",
+                "nombre": "BENJAMIN CALIDONIO LIRA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16750761-1",
+                "nombre": "JUAN PABLO LILLO GUTIÉRREZ",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1090-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15686440-4",
+                "nombre": "PABLO ANDRÉS ORTIZ ÁLVAREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15911998-K",
+                "nombre": "CRISTIAN ANDRÉS FUENTEALBA ARCE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17343893-1",
+                "nombre": "VANESSA DEL PILAR ISABEL SUAZO CHAVEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1112-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "02-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16750761-1",
+                "nombre": "JUAN PABLO LILLO GUTIÉRREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17365649-1",
+                "nombre": "CRISTINA BELÉN MELO RIVAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17426762-6",
+                "nombre": "CHRISTIAN ANDRÉS ALEGRÍA BELLO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13709371-5",
+                "nombre": "ANGÉLICA ANDREA ARAYA URBINA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-596-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "02-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14355182-2",
+                "nombre": "JORGE ALFREDO ZARZAR GHIGLIOTTO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "6105926-1",
+                "nombre": "JORGE ENRIQUE SILHI ZARZAR (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-113-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "20-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10933527-4",
+                "nombre": "ANA CAROLINA CARRASCO MENCARINI",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15759633-0",
+                "nombre": "GABRIELA ANDREA HORMAZÁBAL ÁLVAREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15298252-6",
+                "nombre": "SERGIO MARCELO GODOY ABURTO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-64-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17224240-5",
+                "nombre": "MARÍA ANDREA ROA ESTRADA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17915666-0",
+                "nombre": "ANA KAREN ESTEFANÍA PARADA FLORES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15086617-0",
+                "nombre": "PAULA DE LOS ANGELES JEREZ CARU",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-367-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16726491-3",
+                "nombre": "MÓNICA CECILIA VALDIVIESO ELISSETCHE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25240555-0",
+                "nombre": "JOSE ANGEL MARCOS LANDA ARIZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-305-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "27-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17696216-K",
+                "nombre": "FERNANDA ANDREA FLORES CORREA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18720979-K",
+                "nombre": "CARLOS GABRIEL OLIVA LOYOLA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1113-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9314097-4",
+                "nombre": "JUAN GENARO BRIONES CID (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18050212-2",
+                "nombre": "KRISTY ELIZETH PONCE OYARZO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-4141-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18119936-9",
+                "nombre": "STEVE DOUGLAS WOHLLK VERGARA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16207705-8",
+                "nombre": "PETER HANS SCHNEIDER CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "7289440-5",
+                "nombre": "IVÁN JILBERTO CÁCERES MAUNA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20406611-6",
+                "nombre": "VALERIA PAULINA BRAVO COLLAO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3964-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "19-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15342716-K",
+                "nombre": "ROMINA PAMELA MARDEL BRAVO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15342716-K",
+                "nombre": "ROMINA PAMELA MARDEL BRAVO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3649-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13901769-2",
+                "nombre": "GIULIANO TOGNARELLI ARANDA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17041697-K",
+                "nombre": "NANCY DANIELA FUENTES MORALES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3556-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "19-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17598842-4",
+                "nombre": "GONZALO ANDRÉS ARRIAGADA SILVA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12646378-2",
+                "nombre": "PAULA SUSANA VIZOSO LATUZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3241-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16083923-6",
+                "nombre": "WILLIAM HERNÁN GALLEGOS CERDA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76178390-4",
+                "nombre": "CENTRAL DE RESTAURANTES ARAMARK MULTISERVICIOS LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "26009714-8",
+                "nombre": "NELLY BETANCOURTH REYES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3238-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16015378-4",
+                "nombre": "MARÍA FRANCISCA GODOY SANTÍN",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18891596-5",
+                "nombre": "CAMILA ALBORNOZ MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19187888-4",
+                "nombre": "PAMELA CAROLINA SOTO LABLEE (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19562803-3",
+                "nombre": "TOMÁS ALONSO FIGUEROA FIGUEROA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19499093-6",
+                "nombre": "PAULETTE ALEJANDRA ALVARADO UBILLA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1915-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "28-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16750761-1",
+                "nombre": "JUAN PABLO LILLO GUTIERREZ (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO PROVIDENCIA",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-432-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "07-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17375010-2",
+                "nombre": "HÉCTOR IGNACIO SALAZAR SOLIS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17407190-K",
+                "nombre": "FRANCISCO JAVIER SANTIBAÑEZ PALMA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13933357-8",
+                "nombre": "CRISTINA CLAUDIA ANDREA ORTEGA CAURAPÁN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71500500-K",
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2150-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "02-06-2026 12:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:22051f0d7aba55c46093f958d126d2596993db0008e745d244bbe19ae8b3fb8f",
+        "cached_at": "2026-06-02T13:19:52.408859"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 16,
+        "casos": [
+          {
+            "enunciado": "Impedir la fiscalización a la empresa.",
+            "estado": "PAGADA",
+            "fecha": "15-09-2025 21:00:00",
+            "multa": "8601/25/011-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "29-08-2025 20:00:00",
+            "multa": "1764/25/033-2",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "Exceder la jornada ordinaria semanal de trabajo de 44 horas (Ley 40 horas).",
+            "estado": "PAGADA",
+            "fecha": "29-08-2025 20:00:00",
+            "multa": "1764/25/033-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-07-2025 20:00:00",
+            "multa": "1211/25/008-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4135380
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "18-07-2025 20:00:00",
+            "multa": "1211/25/008-2",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-07-2025 20:00:00",
+            "multa": "8109/25/083-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No otorgar permiso de a lo menos una hora para alimentar al menor de dos años.",
+            "estado": "PAGADA",
+            "fecha": "05-01-2025 21:00:00",
+            "multa": "1845/24/074-1",
+            "procedencia": "FISCALIZACION",
+            "um": "126",
+            "tipoUm": "UTM",
+            "montoClp": 8496054
+          },
+          {
+            "enunciado": "Exceder la jornada ordinaria semanal de trabajo de 44 horas (Ley 40 horas).",
+            "estado": "PAGADA",
+            "fecha": "22-11-2024 21:00:00",
+            "multa": "1845/24/074-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3997680
+          },
+          {
+            "enunciado": "Excluir de la limitación de la jornada ordinaria sin cumplir requisitos legales.",
+            "estado": "PAGADA",
+            "fecha": "22-11-2024 21:00:00",
+            "multa": "1845/24/074-3",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3997680
+          },
+          {
+            "enunciado": "No contar con comedores completamente separados y con mesas y sillas de material lavable.",
+            "estado": "PAGADA",
+            "fecha": "14-06-2024 20:00:00",
+            "multa": "1621/24/026-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3946200
+          },
+          {
+            "enunciado": "No otorgar beneficio de sala cuna a trabajadoras de una empresa/ centro o complejo comercial (industrial) (servicios).",
+            "estado": "PAGADA",
+            "fecha": "17-07-2023 20:00:00",
+            "multa": "3160/22/019-1",
+            "procedencia": "FISCALIZACION",
+            "um": "70",
+            "tipoUm": "UTM",
+            "montoClp": 4432820
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "28-01-2023 21:00:00",
+            "multa": "1302/22/007-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No denunciar al Organismo Administrador respectivo, (el accidente) (enfermedad que pueda ocasionar incapacidad para el trabajo o la muerte).",
+            "estado": "PAGADA",
+            "fecha": "28-03-2021 21:00:00",
+            "multa": "8210/20/026-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1544670
+          },
+          {
+            "enunciado": "No informar a los trabajadores acerca de los riesgos laborales.",
+            "estado": "PAGADA",
+            "fecha": "28-03-2021 21:00:00",
+            "multa": "8210/20/026-2",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1544670
+          },
+          {
+            "enunciado": "No contar con señalización visible y permanente las zonas de peligro.",
+            "estado": "PAGADA",
+            "fecha": "28-03-2021 21:00:00",
+            "multa": "8210/20/026-3",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1544670
+          },
+          {
+            "enunciado": "No proporcionar a los trabajadores, libres de todo costo y cualquiera sea la función que éstos desempeñen, los elementos de protección personal",
+            "estado": "PAGADA",
+            "fecha": "28-03-2021 21:00:00",
+            "multa": "8210/20/026-4",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1544670
+          }
+        ],
+        "ultimaActualizacion": "02-06-2026 12:58:09"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ee38d816ec6d08976acd31d1110c3747b1f7367c6b244ffdb7d494ece19a4b6e",
+        "cached_at": "2026-06-02T13:19:52.863950"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 44,
+        "cantidad": 871,
+        "casos": [
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ISABELLA EYLEEN STRANGER STRANGER ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15094956-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JACQUELINE DEL CARMEN BRITO VALIENTE ",
+            "periodo": "01/2026",
+            "rutAfiliado": "9530918-6",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RICARDO RAMIRES FERNANDEZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "24120606-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUCIANA DE ARAUJO GIL ",
+            "periodo": "01/2026",
+            "rutAfiliado": "24132083-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JACQUELINE DEL CARMEN BRITO VALIENTE ",
+            "periodo": "12/2025",
+            "rutAfiliado": "9530918-6",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JACQUELINE DEL CARMEN BRITO VALIENTE ",
+            "periodo": "11/2025",
+            "rutAfiliado": "9530918-6",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RICARDO RAMIRES FERNANDEZ ",
+            "periodo": "11/2025",
+            "rutAfiliado": "24120606-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUCIANA DE ARAUJO GIL ",
+            "periodo": "11/2025",
+            "rutAfiliado": "24132083-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RICARDO RAMIRES FERNANDEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "24120606-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUCIANA DE ARAUJO GIL ",
+            "periodo": "10/2025",
+            "rutAfiliado": "24132083-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JACQUELINE DEL CARMEN BRITO VALIENTE ",
+            "periodo": "10/2025",
+            "rutAfiliado": "9530918-6",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MIGUEL SATT MENDIZABAL ",
+            "periodo": "09/2025",
+            "rutAfiliado": "12639429-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JACQUELINE DEL CARMEN BRITO VALIENTE ",
+            "periodo": "09/2025",
+            "rutAfiliado": "9530918-6",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUCIANA DE ARAUJO GIL ",
+            "periodo": "09/2025",
+            "rutAfiliado": "24132083-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MIGUEL SATT MENDIZABAL ",
+            "periodo": "09/2025",
+            "rutAfiliado": "12639429-2",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RICARDO RAMIRES FERNANDEZ ",
+            "periodo": "08/2025",
+            "rutAfiliado": "24120606-8",
+            "tipoProducto": "Compensación expectativa de vida"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KAREM MOLINA OLAVE ",
+            "periodo": "08/2025",
+            "rutAfiliado": "9155763-0",
+            "tipoProducto": "Compensación expectativa de vida"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARMEN GLORIA MUÑOZ ALFARO ",
+            "periodo": "08/2025",
+            "rutAfiliado": "13488898-9",
+            "tipoProducto": "Compensación expectativa de vida"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAULINA MARTINEZ DE URQUIDI ",
+            "periodo": "08/2025",
+            "rutAfiliado": "9302874-0",
+            "tipoProducto": "Compensación expectativa de vida"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUCIANA DE ARAUJO GIL ",
+            "periodo": "08/2025",
+            "rutAfiliado": "24132083-9",
+            "tipoProducto": "Compensación expectativa de vida"
+          }
+        ],
+        "ultimaActualizacion": "02-06-2026 12:58:09"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6d451ebf3a598e0863535aef7d9e706381f9d131f274dae90fe2f41df8e63a59",
+        "cached_at": "2026-06-02T13:19:53.285593"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "71500500-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "UNIVERSIDAD MAYOR",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "UNIVERSIDAD MAYOR",
+            "rutSociedad": "71500500-K",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "VICTOR HUGO ESPINOSA AGUILAR",
+                "rut": "7779221-K",
+                "domicilio": "PASAJE TOLTN°8637 COMUNA DE LA CISTERNA",
+                "tipoDeParticipacion": "Alta dirección",
+                "cargo": "DIRECTOR",
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "RUBÉN FERNANDO COVARRUBIAS GIORDANO",
+                "rut": "6866255-9",
+                "domicilio": "LAS AÑAÑUCAS 433, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Alta dirección",
+                "cargo": "REPRESENTANTE LEGAL",
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [],
+            "participaciones": [
+              {
+                "razonSocial": "AGROTEC MAYOR SPA",
+                "rut": "76504899-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CECUM SPA",
+                "rut": "96940980-1",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CENTRO DE FORMACION TECNICA MAGNOS S A",
+                "rut": "76295340-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CLINICAS UNIVERSIDAD MAYOR SPA",
+                "rut": "76910800-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CLINICA VETERINARIA MAYOR SPA",
+                "rut": "96845650-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "EDICIONES UNIVERSIDAD MAYOR SPA",
+                "rut": "76459733-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "EMPRETEC SPA",
+                "rut": "76067925-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "GENOMA MAYOR SPA",
+                "rut": "76110146-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "GESTA MAYOR SPA",
+                "rut": "76317910-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "HIPERESPECTRAL  MAYOR SPA",
+                "rut": "76505245-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "HOSPITAL DOCENTE VETERINARIO UNIVERSIDAD MAYOR SPA",
+                "rut": "76135347-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INNOVA LEARNING CHILE S.A.",
+                "rut": "76022086-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSALUD TEMUCO S.A.",
+                "rut": "76137682-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SERVICIOS VETERINARIOS ANIMALES MAYORES UM SPA",
+                "rut": "77997515-0",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Querellante",
+            "rol": "Ordinaria-76-2026",
+            "fecha": "05/01/2026",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "MARÍA FRANCISCA MUÑOZ BELTRÁN",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PAMELA BEATRIZ TAPIA FERREIRA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIDAD RPA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Querellante",
+            "rol": "Ordinaria-9523-2025",
+            "fecha": "06/11/2025",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "MARÍA FRANCISCA MUÑOZ BELTRÁN",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RENZO JESÚS RAGNI HERNÁNDEZ",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Querellante",
+            "rol": "Ordinaria-5885-2024",
+            "fecha": "05/08/2024",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ANDRÉS JOSÉ OSUNA TRUJILLO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CATALINA PAZ BETANCOURT CASTILLO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "IGNACIO VIVANCO SILVA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PABLO ANDRÉS MARABOLÍ ULLOA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Querellante",
+            "rol": "Ordinaria-941-2021",
+            "fecha": "18/02/2021",
+            "infraccion": "EJERCICIO ILEGAL DE LA PROFESIÓN.ART. 213. INC. 1º.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALEXANDER GIANNINI PINTO CORIA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "fiscalia GENERICO TRIBUNAL 1230",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "INGER MARCELA DAHL BRAVO",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN CARLOS DÍAZ CONTRERAS",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "OSCAR ALEJANDRO GRAF CABRERA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PABLO ALFONSO SEVERINO ESTAY",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "11º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-418-2018",
+            "fecha": "15/01/2018",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ANGEL VALENCIA VASQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CIP SAN BDO TIJE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN CORTES POO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN CORTES POO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EDUARDO ALBERTO CORTÉS CORTÉS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "EDUARDO ALBERTO CORTES CORTES (2)",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "EDUARDO ALBERTO CORTES CORTES (3)",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ERICH REINALDO VILLASENOR MALDONADO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GONZALO ANTONIO CISTERNAS SOBARZO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE LUIS OYARZUN SILVA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCO ANTONIO NÚÑEZ NÚÑEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIA GABRIELA DIASPRO HUIGUERA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA PAZ MARTÍNEZ ALBORNOZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "11º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-9906-2017",
+            "fecha": "20/10/2017",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CATALINA PAZ BETANCOURT CASTILLO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLORIA ALEJANDRA ALBORNOZ ROMAN",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ESTEBAN CASTRO FERRARI",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LORENA ANDREA PARRA PARRA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "RPTE CLÍNICA ODONTOLÓGICA UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-8976-2015",
+            "fecha": "28/08/2015",
+            "infraccion": "Robo en lugar no habitado.",
+            "estado": "Concluida",
+            "etapa": "Impugnación",
+            "litigantes": [
+              {
+                "nombre": "CCP TEMUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CDP VILLARRICA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONTROL PENITENCIARIO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONTROL PENITENCIARIO 2",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FERNANDO CARTES SEPULVEDA",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO PEREZ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ITX GENCHI ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JONATHAN ENRIQUE INOSTROZA INOSTROZA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Privado libertad"
+              },
+              {
+                "nombre": "JORGE IGNACIO MANDIOLA DE LA FUENTE",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEILA YOHANNA GITTERMANN MONTENEGRO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAURICIO ENRIQUE MARDONES ESPINOZA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS SALINAS GAETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PDI TCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "REINALDO OSORIO ULLOA",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RPTE CLÍNICA ODONTOLÓGICA UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TERCERA COMISARIA DE PADRE LAS",
+                "sujeto": "Policía",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TIJECRSTEMUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Temuco",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-329-2015",
+            "fecha": "10/04/2015",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRA LORETTO ANABALÓN ZUNINO",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNANDEZ VASQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNÁNDEZ VÁSQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONTRALORIA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRS TEMUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL IGNACIO CASTRO GONZÁLEZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 225",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ITX GENCHI ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELO IVÁN LEAL CONTRERAS",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA PAZ DE JESÚS FIGUEROA ITURRA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "PABLO CÉSAR SILVA OYARZÚN",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "POLICIA DE INVESTIGACIONES CHI",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "REGISTRO CIVIL",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SEBASTIAN JESUS PROKURICA AGUIRRE",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TGR",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Panguipulli",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-15538-2014",
+            "fecha": "19/12/2014",
+            "infraccion": "Falsificación o uso malicioso de documentos privados. Arts. 197 y 198, Código Penal",
+            "estado": "Fallada o Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CARVAJAL BRAVO GABRIELA XIMENA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRESPO ZAMORA JENNIFFER ANIBETTE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FUENTES REBOLLEDO CARLOS ALBERTO",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "HERNANDEZ VASQUEZ CAROLINA ALEJANDRA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LOBOS STEPHANI JAIME",
+                "sujeto": "Defensor penal público",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VITAR GAETE FELIPE GUSTAVO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "-",
+            "tribunal": "Juzgado de Garantía de Rancagua",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-10483-2014",
+            "fecha": "25/10/2014",
+            "infraccion": "Hurto simple por un valor de media a menos de 4 utm.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CHARLES ANDRÉS DE LA HARPE PALMA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JONATHAN ALEJANDRO STAUB SANHUEZA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "JUAN PABLO GERLI GARCÍA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KURT IGNACIO STAUB ALARCÓN",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Temuco",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-10934-2014",
+            "fecha": "09/10/2014",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ANGELO IGNACIO GARRIGA GARRIGA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CALUDIO ENRIQUE VILLEGAS BUSSENIUS",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CARLA ALEJANDRA BASOALTO QUIROZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CLAUDIO ENRIQUE VILLEGAS BUSSENIUS",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DENISSE ZARELLA REYES ALEGRÍA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "DIEGO ANDRÉS GONZÁLEZ GAJARDO",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DIEGO GONZALEZ GAJARDO",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ESTEBAN EDUARDO ZAPATA ORTIZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "FRANCISCO JOSE DEL RIO BETANCOURT",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "GIOVANNI ANTONIO MALDONADO RECABARREN",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ISMELY VALDES MERA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ÍTALO KIEV ROJAS GAETE",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "JOSÉ ALONSO MEDEL BELLO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LORENA ANDREA PARRA PARRA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARINA SOLEDAD MARGARITA SÁNCHEZ HERRERA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAXIMILIAN HÉCTOR TAPIA GRAVERTT",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "NN",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "OLIVER ALEJANDRO PINTO HERNANDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "OSCAR RAMÍREZ VASQUEZ",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PILAR ARAGÓN DÍAZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-8160-2014",
+            "fecha": "05/08/2014",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNANDEZ VASQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GERARDO ALEXIS VALDES HENRIQUEZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "JOSÉ LEONARDO VEIZAGA GONZÁLEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Denunciante",
+            "rol": "Ordinaria-6044-2014",
+            "fecha": "13/06/2014",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNÁNDEZ VÁSQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ LEONARDO VEIZAGA GONZÁLEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RAMÓN PATRICIO GONZÁLEZ VILLAR",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-6044-2014",
+            "fecha": "13/06/2014",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNÁNDEZ VÁSQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ LEONARDO VEIZAGA GONZÁLEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RAMÓN PATRICIO GONZÁLEZ VILLAR",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-13732-2013",
+            "fecha": "04/10/2013",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNÁNDEZ VÁSQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CATALINA PAZ BETANCOURT CASTILLO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN ASNOLDO CORTÉS POO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1221",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE ALEJANDRO MORAGA TORRES",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RODRIGO ANDRÉS ALLENDE CÁRDENAS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VIVIANA PATRICIA VERGARA AYALA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Incompetencia",
+            "tribunal": "2º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-9656-2013",
+            "fecha": "28/08/2013",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNANDEZ VASQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FABIÁN EUGENIO ADOLFO VILLALOBOS MADINA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "JOSÉ LEONARDO VEIZAGA GONZÁLEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VALENTÍN SEBASTIÁN GONZÁLEZ ARAYA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Denunciante",
+            "rol": "Ordinaria-7243-2013",
+            "fecha": "27/08/2013",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ANTOLIN ALEJANDRO BARRA PINILLA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNANDEZ VASQUEZ",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "COLEGIO 5 PINOS",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GUSTAVO ADOLFO PROMIS BAEZA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS FERNANDO OLGUÍN AVILÉS",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA JOSÉ DE LOURDES CALDERÓN CASTILLO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO FISCALIA LOCAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SERGIO RODRIGO SOTO YÁÑEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de San Bernardo",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-8570-2013",
+            "fecha": "02/08/2013",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNÁNDEZ VÁSQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ LEONARDO VEIZAGA GONZÁLEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RODRIGO ANDRÉS ALLENDE CÁRDENAS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "UNIVERSIDAD MAYOR",
+            "postura": "Víctima",
+            "rol": "Ordinaria-14184-2013",
+            "fecha": "01/08/2013",
+            "infraccion": "EJERCICIO ILEGAL DE LA PROFESIÓN.ART. 213. INC. 1º.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNANDEZ VASQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ALEJANDRA HERNANDEZ VASQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIO ANGEL ASPE LETELIER",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1226",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MINISTERIO DE EDUCACION",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOLÁS ALEJANDRO PROTOPSALTIS ÁLVAREZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PDI EXTRANJERIA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VALESKA ANDREA PEREDO LAGOS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Rebelde"
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "7º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 19
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:7eaf53cc3c31d6dbb0b6be4eb83f7b871680c3b27ddee769fb723d0c82062498",
+      "cached_at": "2026-06-02T13:19:54.245496"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "71500500-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "20-04-2011 21:00:00",
+            "razonSocial": "EMPRETEC SPA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/04/21/340047_M_SPA_20110421_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "CRISTIAN ASNOLDO CORTÉS PÓO",
+                "rut": null,
+                "domicilio": "AMÉRICO VESPUCIO SUR N 357, LAS CONDES"
+              },
+              {
+                "nombre": "ERICH REINALDO VILLASEÑOR MALDONADO",
+                "rut": null,
+                "domicilio": "CALLE SAN PASCUAL 397 DE LA COMUNA DE LAS CONDES REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76067925-9"
+          },
+          {
+            "fecha": "27-03-2012 21:00:00",
+            "razonSocial": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/03/28/472472_M_SA_20120328_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "CECUM SPA",
+                "rut": "96940980-1",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "COLEGIOS MAYORES S.A.",
+                "rut": "96757700-6",
+                "domicilio": "AV. BERNARDO OHIGGINS Nº 2240, SANTIAGO"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "11-12-2012 21:00:00",
+            "razonSocial": "INVERSALUD TEMUCO S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/12/12/576279_M_SA_20121212_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "ADMINISTRADORA CLÍNICAS REGIONALES DOS S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76137682-9"
+          },
+          {
+            "fecha": "03-06-2013 20:00:00",
+            "razonSocial": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2013/06/04/646522_M_SA_20130604_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "GENOMA MAYOR SPA",
+                "rut": "76110146-3",
+                "domicilio": "AV. AMÉRICO VESPUCIO SUR 357, LAS CONDES"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "22-01-2014 21:00:00",
+            "razonSocial": "INNOVA LEARNING CHILE S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/01/23/735616_M_SA_20140123_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES RÍO PUELO S.A.",
+                "rut": "96960840-5",
+                "domicilio": "AV. LIBERTADOR BERNARDO OHIGGINS N 2240, 2 PISO, COMUNA Y CIUDAD SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES TRONADOR S.A.",
+                "rut": "96960850-2",
+                "domicilio": "AV. LIBERTADOR BERNARDO OHIGGINS Nº 2240, 2 PISO, COMUNA Y CIUDAD SANTIAGO"
+              }
+            ],
+            "rut": "76022086-8"
+          },
+          {
+            "fecha": "13-03-2014 21:00:00",
+            "razonSocial": "TV.UMAYOR SPA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/03/14/753059_C_SPA_20140314_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "22-01-2015 21:00:00",
+            "razonSocial": "EDICIONES MAYOR SPA.",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/01/23/868111_C_SPA_20150123_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PATRICIO ALEJANDRO SOTO CARAMORI",
+                "rut": null,
+                "domicilio": "ARTURO MEDINA NÚMERO CUATRO MIL CIENTO UNO, COMUNA DE ÑUÑOA, SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "CRISTIAN ASNOLDO CORTÉS PÓO",
+                "rut": null,
+                "domicilio": "AMÉRICO VESPUCIO SUR N 357, LAS CONDES"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "27-03-2019 21:00:00",
+            "razonSocial": "EDICIONES UNIVERSIDAD MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/03/28/42316/05/1568110.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76459733-8"
+          },
+          {
+            "fecha": "13-01-2021 21:00:00",
+            "razonSocial": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/14/42854/05/1879637.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "INGER MARCELA DAHL BRAVO",
+                "rut": "10354886-1",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "EMPRETEC SPA",
+                "rut": "76067925-9",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "CECUM SPA",
+                "rut": "96940980-1",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76295340-4"
+          },
+          {
+            "fecha": "02-03-2022 21:00:00",
+            "razonSocial": "GENOMA MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/03/03/43193/05/2094581.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "INGER MARCELA DAHL BRAVO",
+                "rut": "10354886-1",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "MARIO FELIPE HERANE TSCHORNE",
+                "rut": "15385657-5",
+                "domicilio": null
+              },
+              {
+                "nombre": "GENOMA MAYOR SPA",
+                "rut": "76110146-3",
+                "domicilio": "AV. AMÉRICO VESPUCIO SUR 357, LAS CONDES"
+              }
+            ],
+            "rut": "76110146-3"
+          },
+          {
+            "fecha": "11-08-2022 20:00:00",
+            "razonSocial": "CLÍNICAS UNIVERSIDAD MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/08/12/43326/05/2170983.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "RUBÉN FERNANDO COVARRUBIAS GIORDANO",
+                "rut": "6866255-9",
+                "domicilio": "LAS AÑAÑUCAS 433, LAS CONDES, SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS MANQUE MANQUE",
+                "rut": "11506778-8",
+                "domicilio": null
+              },
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "CENTRO FONOAUDIOLÓGICO CFUM SPA",
+                "rut": "76910800-9",
+                "domicilio": null
+              }
+            ],
+            "rut": "76910800-9"
+          },
+          {
+            "fecha": "14-04-2024 20:00:00",
+            "razonSocial": "CLÍNICAS UNIVERSIDAD MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480171.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76910800-9"
+          },
+          {
+            "fecha": "14-04-2024 20:00:00",
+            "razonSocial": "EDICIONES UNIVERSIDAD MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480172.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76459733-8"
+          },
+          {
+            "fecha": "14-04-2024 20:00:00",
+            "razonSocial": "GENOMA MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480191.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76110146-3"
+          },
+          {
+            "fecha": "14-04-2024 20:00:00",
+            "razonSocial": "CLÍNICA VETERINARIA MAYOR SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/04/15/43826/05/2480196.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD MAYOR",
+                "rut": "71500500-K",
+                "domicilio": "ESTA CIUDAD EN CALLE SAN PÍO X Nº 2422, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "HOSPITAL DOCENTE VETERINARIO UNIVERSIDAD MAYOR SPA",
+                "rut": "76135347-0",
+                "domicilio": null
+              }
+            ],
+            "rut": "96845650-4"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0968456504",
+            "society": "CLINICA VETERINARIA MAYOR SPA"
+          },
+          {
+            "rut": "0760679259",
+            "society": "EMPRETEC SPA"
+          },
+          {
+            "rut": "0760313696",
+            "society": "EN LIQUIDACION CONSORCIO DE DESARROLLO TECNOLOGICO APICOLA S A"
+          },
+          {
+            "rut": "0765048990",
+            "society": "AGROTEC MAYOR SPA"
+          },
+          {
+            "rut": "0764597338",
+            "society": "EDICIONES UNIVERSIDAD MAYOR SPA"
+          },
+          {
+            "rut": "0761353470",
+            "society": "HOSPITAL DOCENTE VETERINARIO UNIVERSIDAD MAYOR SPA"
+          },
+          {
+            "rut": "0769108009",
+            "society": "CLINICAS UNIVERSIDAD MAYOR SPA"
+          },
+          {
+            "rut": "0967745804",
+            "society": "INMOBILIARIA INVERSALUD SPA"
+          },
+          {
+            "rut": "0762953404",
+            "society": "CENTRO DE FORMACION TECNICA MAGNOS S A"
+          },
+          {
+            "rut": "0761101463",
+            "society": "GENOMA MAYOR SPA"
+          },
+          {
+            "rut": "0779975150",
+            "society": "SERVICIOS VETERINARIOS ANIMALES MAYORES UM SPA"
+          },
+          {
+            "rut": "0760220868",
+            "society": "INNOVA LEARNING CHILE S A"
+          },
+          {
+            "rut": "0765052459",
+            "society": "HIPERESPECTRAL MAYOR SPA"
+          },
+          {
+            "rut": "0969409801",
+            "society": "CECUM SPA"
+          },
+          {
+            "rut": "0651601312",
+            "society": "ANDES PACIFIC TECHNOLOGY ACCESS"
+          },
+          {
+            "rut": "0763179109",
+            "society": "GESTA MAYOR SPA"
+          },
+          {
+            "rut": "0708931004",
+            "society": "SOC ANONIMA DE DEPORTES CASCADA DE EL SALTO"
+          },
+          {
+            "rut": null,
+            "sociedad": "CENTRO DE FORMACIÓN TÉCNICA MAGNOS S.A"
+          },
+          {
+            "rut": "76137682-9",
+            "sociedad": "INVERSALUD TEMUCO S.A"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f048c2721c6e57d94fb9783f5f1a7ca342cbeb571eb096b12d92f7dd267c057e",
+        "cached_at": "2026-06-02T13:19:54.723418"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 53309090,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 23.92857142857143,
+      "numeradorJudicial": 67,
+      "denominadorJudicial": 280,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 76.07142857142857,
+      "porcentajeMoraPrevisional": 100,
+      "casosMoraPrevisional": 10,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 80953314,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 93.75,
+      "montoBoletinComercial": 5689446363,
+      "ponderacionBoletinComercial": 6.25,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 182.32142857142856,
+      "etiquetaClasificacion": "High",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5cc8c1a0f7d96e1233c7c11a48b5bb718cf6f9eb1be936d22d6f46c9e2c8bac3",
+      "cached_at": "2026-06-02T13:19:56.920766"
+    }
+  }
+}
