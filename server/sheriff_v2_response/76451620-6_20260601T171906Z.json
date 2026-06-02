@@ -1,0 +1,640 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76451620-6"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76451620-6",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "ASESORIAS INTEGRAL SERVICES LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "30-01-2006",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS PERSONALES N.C.P.",
+            "codigo": "960909",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "01-01-2023"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2014"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 6,
+        "ultimaActualizacion": "30-05-2026 01:26:21",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "600,01 a 2.400,00",
+          "cantidadTrabajadores": 3
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 01:26:20"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 2,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 2,
+        "todosLosCasos": 2,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "30-05-2026 01:26:19",
+        "ultimaActualizacionCobranza": "30-05-2026 01:26:19",
+        "ultimaActualizacionLaboral": "30-05-2026 01:26:19",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:26:29"
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:26:19"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:26:20"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "28-11-2023 21:00:00",
+              "razonSocial": "SIGUIENTE PASO LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/11/29/43713/05/2413757.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "IVAN ENRIQUE RUIZ DE LA JARA",
+                  "rut": "8358980-9",
+                  "domicilio": "PASADENA 7493, VITACURA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "MARIE MICHELLE RUBER AUBEL",
+                  "rut": "10374205-6",
+                  "domicilio": "LOS JARDINES 29 LINDEROS, COMUNA BUIN, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "MARIA ISABEL VEJAR RUBIO",
+                  "rut": "6474166-7",
+                  "domicilio": "AVENIDA PROVIDENCIA 2594 OFICINA 607, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76084438-1"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 01:26:19"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-05-2026 01:26:20"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 01:26:20"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ASESORIAS INTEGRAL SERVICES LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c723612adc7ab98db552cebe6fd1af1ab274da9f40bd567b92f2b466cc7f7167",
+      "cached_at": "2026-06-01T17:19:02.871639"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "15 Terminada ",
+            "fechaIngreso": "04-09-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76451620-6",
+                "nombre": " ASESORIAS INTEGRAL SERVICES LI MITADA",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10032550-0",
+                "nombre": "RICARDO ENRIQUE GARCÍA MATUS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-69349-2014",
+            "tribunal": "2º Juzgado Civil de San Miguel",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "15 Terminada ",
+            "fechaIngreso": "03-09-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10032550-0",
+                "nombre": "RICARDO ENRIQUE GARCÍA MATUS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76451620-6",
+                "nombre": " ASESORIAS INTEGRAL SERVICES LI MITADA",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-19726-2014",
+            "tribunal": "19º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:26:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:422ad909c50924ad9fdf43452554375d19bc0ed1dd2c68529bd48d28339cfaa2",
+        "cached_at": "2026-06-01T17:19:03.339012"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:26:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6a7daca987b8e9429470542db6f3a2512c90f931bcf10b9c88a80550928ab81b",
+        "cached_at": "2026-06-01T17:19:03.851320"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:26:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f42b64d6f4c2f808a7503a64491b1089f9512fb1ce6f036bd91ef4d000ad49f4",
+        "cached_at": "2026-06-01T17:19:04.173137"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:26:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2eb356bc7944aeafcf24910861e611668408062f84d629f9aa709c0138d4e1c7",
+        "cached_at": "2026-06-01T17:19:04.506710"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:26:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5ac2db999ba803a94a743e556edb63ab66a976a50e75d6348f410f1222b99be4",
+        "cached_at": "2026-06-01T17:19:04.823240"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76451620-6",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ASESORIAS INTEGRAL SERVICES LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ASESORIAS INTEGRAL SERVICES LIMITADA",
+            "rutSociedad": "76451620-6",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2005-12-29",
+            "socios": [
+              {
+                "nombre": "MARIA ISABEL VEJAR RUBIO",
+                "rut": "6474166-7",
+                "domicilio": "MAR CARIBE N° 8424, PEÑALOLEN, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "60.00"
+              },
+              {
+                "nombre": "RENE ARTURO SEPULVEDA BERRIOS",
+                "rut": "4108503-7",
+                "domicilio": "SAN FRANCISCO DE ASÍS CIENTO CINCUENTA, OFICINA SETECIENTOS TRES, VITACURA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "BUSTAMANTE SALAZAR GLADYS",
+                "rut": "6209926-7",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "SAYAKA FUJIO VEJAR",
+                "rut": "17083452-6",
+                "domicilio": "BRAGANZA 8220, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "20.00"
+              },
+              {
+                "nombre": "MUSASHI KAORU FUJIO VEJAR",
+                "rut": "15366629-6",
+                "domicilio": "SANTA ROSA N°575 DEPTO/LOCAL 63 VILLA EDIFICIO CENTRAL LAK COMUNA DE PUERTO VARAS REGION DE LOS LAGOS",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "20.00"
+              }
+            ],
+            "extractos": [],
+            "participaciones": [
+              {
+                "razonSocial": "SIGUIENTE PASO LIMITADA",
+                "rut": "76084438-1",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c57bc89f7112ff4f1ccd0bdb8526721d5219d6f6fbad8390a38ffbd3bf89064c",
+      "cached_at": "2026-06-01T17:19:05.404013"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76451620-6",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "28-11-2023 21:00:00",
+            "razonSocial": "SIGUIENTE PASO LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/11/29/43713/05/2413757.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "IVAN ENRIQUE RUIZ DE LA JARA",
+                "rut": "8358980-9",
+                "domicilio": "PASADENA 7493, VITACURA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "MARIE MICHELLE RUBER AUBEL",
+                "rut": "10374205-6",
+                "domicilio": "LOS JARDINES 29 LINDEROS, COMUNA BUIN, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "MARIA ISABEL VEJAR RUBIO",
+                "rut": "6474166-7",
+                "domicilio": "AVENIDA PROVIDENCIA 2594 OFICINA 607, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ASESORIAS INTEGRAL SERVICES LIMITADA",
+                "rut": "76451620-6",
+                "domicilio": "AVENIDA PROVIDENCIA 2594 OFICINA 607, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76084438-1"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76084438-1",
+            "sociedad": "SIGUIENTE PASO LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:465b139c2c56f9973bfb74e4a185d4bd5607b02aa6641c3ff454ae4f01eaae95",
+        "cached_at": "2026-06-01T17:19:05.729140"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:6d65f0c1cd376d376c004ee3e615def57cd1610739b0aada0da508ce6558ba36",
+      "cached_at": "2026-06-01T17:19:06.329750"
+    }
+  }
+}

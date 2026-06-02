@@ -1,0 +1,4188 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "81318700-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "81318700-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "POMPEYO CARRASCO SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MENOR DE VEHICULOS AUTOMOTORES NUEVOS O USADOS (INCLUYE C",
+            "codigo": "451002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "SERVICIO DE LAVADO DE VEHICULOS AUTOMOTORES",
+            "codigo": "452001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-08-2008"
+          },
+          {
+            "actividades": "MANTENIMIENTO Y REPARACION DE VEHICULOS AUTOMOTORES",
+            "codigo": "452002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-06-1996"
+          },
+          {
+            "actividades": "VENTA DE PARTES, PIEZAS Y ACCESORIOS PARA VEHICULOS AUTOMOTORES",
+            "codigo": "453000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "14-06-2007"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE APOYO AL TRANSPORTE N.C.P.",
+            "codigo": "522990",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "18-06-2020"
+          },
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-06-1996"
+          },
+          {
+            "actividades": "ALQUILER DE VEHICULOS AUTOMOTORES SIN CHOFER",
+            "codigo": "771000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-06-1996"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2008"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Rollos Maquinas Registradoras",
+            "ultimoAnioTimbrado": "1997"
+          },
+          {
+            "documento": "Facturas De Compras",
+            "ultimoAnioTimbrado": "1993"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "2008"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Facturas De Venta Exenta A Zona Franca",
+            "ultimoAnioTimbrado": "1995"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Guia Despacho",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2001"
+          },
+          {
+            "documento": "Libro Control De Timbraje",
+            "ultimoAnioTimbrado": "1994"
+          },
+          {
+            "documento": "Libro Control De Documentos",
+            "ultimoAnioTimbrado": "1996"
+          }
+        ],
+        "cantidadActividades": 7,
+        "cantidadDocumentos": 22,
+        "ultimaActualizacion": "12-05-2026 13:49:11",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 903
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:08:58"
+      },
+      "judicial": {
+        "casosCivilesActivos": 23,
+        "casosCivilesPresentados": 28,
+        "casosCivilesConcluidos": 9,
+        "cobranzaActivos": 14,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 7,
+        "laboralActivos": 34,
+        "laboralPresentados": 14,
+        "laboralConcluidos": 25,
+        "casosActuales": 71,
+        "casosArchivados": 42,
+        "casosConcluidos": 41,
+        "todosLosCasos": 154,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 59,
+          "demandante": 36,
+          "demandadoSolidario": 3,
+          "reclamante": 4,
+          "denunciado": 11
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:24:14",
+        "ultimaActualizacionCobranza": "28-05-2026 03:22:14",
+        "ultimaActualizacionLaboral": "28-05-2026 03:22:58",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 74,
+          "empleados": 26,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 117.65,
+            "cambioAbsoluto": 40
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 49,
+          "montoTotalMultas": 170097669,
+          "multasPagadas": 49,
+          "montoMultasPagadas": 170097669,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0.33,
+            "cambioAbsoluto": 555000
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:08:59"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "21-10-2015 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO Y COMPAÑÍA LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/10/22/957900_M_LTDA_20151022_firmada.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                  "rut": "88518500-2",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ SOCIEDAD ANÓNIMA",
+                  "rut": "93219000-1",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 911, ÑUÑOA"
+                }
+              ],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "06-12-2016 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO Y COMPAÑÍA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/07/41627/05/1146554.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                  "rut": "88518500-2",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ SOCIEDAD ANÓNIMA",
+                  "rut": "93219000-1",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 911, ÑUÑOA"
+                }
+              ],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "17-02-2017 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/02/18/41688/05/1184982.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "RENTAS E INVERSIONES POMPEYO CARRASCO E HIJOS LIMITADA",
+                  "rut": "76296001-K",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ S.A.",
+                  "rut": null,
+                  "domicilio": "AVENIDA IRARRÁZAVAL 985, COMUNA DE ÑUÑOA"
+                }
+              ],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "05-03-2017 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/03/06/41701/05/1190263.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "05-03-2017 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/03/06/41701/05/1190382.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "RENTAS E INVERSIONES POMPEYO CARRASCO E HIJOS LIMITADA",
+                  "rut": "76296001-K",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ S.A.",
+                  "rut": null,
+                  "domicilio": "AVENIDA IRARRÁZAVAL 985, COMUNA DE ÑUÑOA"
+                }
+              ],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "11-01-2018 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/12/41955/05/1334902.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "IVÁN POMPEYO CARRASCO POPOVIC",
+                  "rut": null,
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "MAURICIO JORGE CARRASCO POPOVIC",
+                  "rut": null,
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                  "rut": "88518500-2",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+                },
+                {
+                  "socio": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ SOCIEDAD ANÓNIMA",
+                  "rut": "93219000-1",
+                  "domicilio": "AVENIDA IRARRÁZAVAL N 911, ÑUÑOA"
+                }
+              ],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "01-12-2020 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/02/42820/05/1858453.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "81318700-0"
+            },
+            {
+              "fecha": "27-12-2020 21:00:00",
+              "razonSocial": "POMPEYO CARRASCO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/28/42840/05/1872560.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "POMPEYO CARRASCO SPA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "81318700-0"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:08:58"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 4279720,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 4924210,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 1534810,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 158170,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 4843620,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 5667050,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 506060,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 121530
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 21,
+          "tasacionTotal": 160667899,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 4,
+          "tasacionTotal": "4828754954",
+          "ultimaActualizacion": "30-05-2026 00:08:59"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 48.54368932038835,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 7.8125,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 256.35618932038835,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "POMPEYO CARRASCO SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:cfa16c2b8313c215a204f553d714c61ddc33106c5952e9865344c3ff6c1e6ead",
+      "cached_at": "2026-05-30T00:09:00.110444"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 60,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "14-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17313724-9",
+                "nombre": "CAMILA FERNANDA ORELLANA VALDEBENITO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10529105-1",
+                "nombre": "LUIS CARLOS AHUMADA CASTILLO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO S.P.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-9943-2025",
+            "tribunal": "6º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Contestación",
+            "fechaIngreso": "19-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15390784-6",
+                "nombre": "JUAN ISAAC REBOLLEDO CARIZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13931291-0",
+                "nombre": "CATALINA DE LAS NIEVES SILVA FUENTES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18884465-0",
+                "nombre": "CARLOS ANDRÉS FUENTES BASCUÑÁN",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15096684-1",
+                "nombre": "CAROLINA ANDREA ESQUIVEL LÓPEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-20433-2024",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Conciliación y/o Recibe a prueba",
+            "fechaIngreso": "18-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16420346-8",
+                "nombre": "NATALIA CRISTINA LEIVA PARDO (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10265587-7",
+                "nombre": "EDWIN ALBERT SHULTZ YURASZECK (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10545823-1",
+                "nombre": "IVÁN CARLOS REYES TOLEDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11363630-0",
+                "nombre": "MARÍA MARLENE PALMA GUZMÁN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-15035-2024",
+            "tribunal": "17º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Término Probatorio",
+            "fechaIngreso": "04-08-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9184624-1",
+                "nombre": "CAROL ADRIANA TEJEDA PEÑAILILLO (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17501018-1",
+                "nombre": "FRANCISCO JAVIER VISCONTE ARANA (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "99513410-1",
+                "nombre": "SMB FACTORING S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10265587-7",
+                "nombre": "EDWIN ALBERT SHULTZ YURASZECK (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6608-2021",
+            "tribunal": "4º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Término Probatorio",
+            "fechaIngreso": "02-08-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76381570-6",
+                "nombre": "INTERFACTOR S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16936856-2",
+                "nombre": "VALENTINA LÉNIZ ÁLVAREZ (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15117970-3",
+                "nombre": "OCTAVIO ANDRÉS PÉREZ DONOSO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15378303-9",
+                "nombre": "TOMÁS ALBERTO CORREA GÓMEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10265587-7",
+                "nombre": "EDWIN ALBERT SHULTZ YURASZECK (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15365271-6",
+                "nombre": "CÉSAR ALFREDO MACHIAVELLO VALDÉS (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6526-2021",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "27-07-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "99513410-1",
+                "nombre": "SMB FACTORING S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9184624-1",
+                "nombre": "CAROL ADRIANA TEJEDA PEÑAILILLO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17501018-1",
+                "nombre": "FRANCISCO JAVIER VISCONTE ARANA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-6346-2021",
+            "tribunal": "4º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "5 Sentencia",
+            "fechaIngreso": "12-07-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76083507-2",
+                "nombre": "CAPITAL EXPRESS SERVICIOS FINANCIEROS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15365271-6",
+                "nombre": "CÉSAR ALFREDO MACHIAVELLO VALDÉS (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10265587-7",
+                "nombre": "EDWIN ALBERT SHULTZ YURASZECK (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10701808-5",
+                "nombre": "LETICIA ELIZABETH RIOS ROA",
+                "sujeto": "PERI",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16196953-2",
+                "nombre": "CÉSAR ANTONIO ARAVENA MUÑOZ (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-5954-2021",
+            "tribunal": "11º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "13-10-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15810605-1",
+                "nombre": "FRANCISCO JAVIER CALABRANO ÁLVAREZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13366135-2",
+                "nombre": "DENNIS AXEL SAAVEDRA ESTAY",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13012592-1",
+                "nombre": "FRANCISCO JAVIER AGUILAR MIRANDA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-30677-2019",
+            "tribunal": "11º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "28-04-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15946778-3",
+                "nombre": "CARLA IVONNE AHUMADA AHUMADA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-3358-2019",
+            "tribunal": "Juzgado de Letras de Colina",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "28-04-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15946778-3",
+                "nombre": "CARLA IVONNE AHUMADA AHUMADA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-14567-2019",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "03-04-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10811725-7",
+                "nombre": "TERESA GONZÁLEZ RIVEROS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-1800-2019",
+            "tribunal": "1º Juzgado de Letras de San Bernardo",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "16-01-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8128247-1",
+                "nombre": "TERESA DEL CARMEN ESPINOZA DÍAZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16196953-2",
+                "nombre": "CÉSAR ANTONIO ARAVENA MUÑOZ (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2186-2019",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "6 Impugnación de Sentencia",
+            "fechaIngreso": "14-01-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19430229-0",
+                "nombre": "BENJAMÍN ANDRÉS ESCOBAR CARMONA (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13081218-K",
+                "nombre": "LUIS ADRIÁN MENARES HIDALGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9044082-9",
+                "nombre": "OLGA DEL CARMEN CHÁVEZ DEL VALLE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99147000-K",
+                "nombre": "BCI SEGUROS GENERALES S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13895800-0",
+                "nombre": "ALEJANDRA MARÍA ESTER ESPINOZA LEÓN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19430229-0",
+                "nombre": "BENJAMÍN ANDRÉS ESCOBAR CARMONA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10783958-5",
+                "nombre": "MANUEL ANTONIO IRIONDO DECOURT (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10265587-7",
+                "nombre": "EDWIN ALBERT SHULTZ YURASZECK (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16196953-2",
+                "nombre": "CÉSAR ANTONIO ARAVENA MUÑOZ (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-1598-2019",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Ingreso",
+            "fechaIngreso": "02-09-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12269969-2",
+                "nombre": "CARLOS MAURICIO ESPINOZA FLORES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11833927-4",
+                "nombre": "MARIO ENRIQUE GAZITÚA SWETT",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13081218-K",
+                "nombre": "LUIS ADRIÁN MENARES HIDALGO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13081218-K",
+                "nombre": "LUIS ADRIÁN MENARES HIDALGO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19430229-0",
+                "nombre": "BENJAMÍN ANDRÉS ESCOBAR CARMONA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16196953-2",
+                "nombre": "CÉSAR ANTONIO ARAVENA MUÑOZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10265587-7",
+                "nombre": "EDWIN ALBERT SHULTZ YURASZECK (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10783958-5",
+                "nombre": "MANUEL ANTONIO IRIONDO DECOURT (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-27385-2018",
+            "tribunal": "21º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "17-08-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "4154959-9",
+                "nombre": "VÍCTOR RENÉ VILLEGAS SOTO (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12050852-0",
+                "nombre": "PATRICIO EDGARDO RODRÍGUEZ JOFRÉ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-25825-2018",
+            "tribunal": "14º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "08-06-2018 20:00:00",
+            "litigantes": [
+              {
+                "rut": "'6442419-K'",
+                "nombre": "'EDUARDO CARLOS ZARHI HASBÚN'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'81318700-0'",
+                "nombre": "'POMPEYO CARRASCO Y CIA. LTDA.  .'",
+                "sujeto": "DTE.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'7435392-4'",
+                "nombre": "'HÉCTOR HUGO LARROSA GILIBERTO'",
+                "sujeto": "DDO.  ",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'16196953-2'",
+                "nombre": "'CÉSAR ANTONIO ARAVENA MUÑOZ'",
+                "sujeto": "AP.DTE",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'9948433-0'",
+                "nombre": "'SERGIO IGNACIO RIVAS AIROLA'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-91-2018",
+            "tribunal": "Juzgado de Letras y Gar. de Combarbalá",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "08-06-2018 20:00:00",
+            "litigantes": [
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.  .",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7435392-4",
+                "nombre": "HÉCTOR HUGO LARROSA GILIBERTO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16196953-2",
+                "nombre": "CÉSAR ANTONIO ARAVENA MUÑOZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-91-2018",
+            "tribunal": "Juzgado de Letras y Gar.de Combarbalá",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Excepciones ",
+            "fechaIngreso": "19-12-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "7435392-4",
+                "nombre": "HÉCTOR HUGO LARROSA GILIBERTO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16196953-2",
+                "nombre": "CÉSAR ANTONIO ARAVENA MUÑOZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9948433-0",
+                "nombre": "SERGIO IGNACIO RIVAS AIROLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.  .",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-36656-2017",
+            "tribunal": "20º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "21-09-2016 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": " POMPEYO CARRASCO Y CIA LTDA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10371204-1",
+                "nombre": "CRISTIAN ANDRIS ROJAS WALLIS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12291553-0",
+                "nombre": "MARIBEL LORENA VIERA PACHECO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Prep. not.protesto de ch,l y p.",
+            "rol": "C-23555-2016",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "07-09-2016 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12686856-1",
+                "nombre": "FERNANDO RODRIGO DANIEL VALDIVIESO RAGAZZONE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17519630-7",
+                "nombre": "CAROLINA IGNACIA FERNÁNDEZ ORELLANA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": " POMPEYO CARRASCO Y CIA LTDA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Prep. not.protesto de ch,l y p.",
+            "rol": "C-22428-2016",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2f4917b0200a2891df0d2723d0aa9d453d6d8a8c7ac4364acbd5726fbc97b924",
+        "cached_at": "2026-05-30T00:09:00.555783"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 21,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "19-09-2025 21:00:00",
+            "monto": "1498140",
+            "litigantes": [
+              {
+                "rut": "26422799-2",
+                "nombre": "CARLOS EDUARDO SOTO SOTO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19408827-2",
+                "nombre": "FRANCO OCTAVIO BENAVIDES PÉREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19606602-0",
+                "nombre": "ERNESTO VILCHES PEÑAILILLO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11893617-5",
+                "nombre": "CLAUDIO ANDRÉS PALAVECINO CÁCERES",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3995-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "14-09-2025 21:00:00",
+            "monto": "2005937",
+            "litigantes": [
+              {
+                "rut": "20556824-7",
+                "nombre": "JOSÉ IGNACIO MAURICIO SEPÚLVEDA BAEZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17339765-8",
+                "nombre": "NICOLÁS MATÍAS SEPÚLVEDA MONTECINOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15693631-6",
+                "nombre": "ISABEL RODRÍGUEZ TELLO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3926-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-02-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "96504160-5",
+                "nombre": "NUEVA MASVIDA S.A. (EX ISAPRE ÓPTIMA)",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11415851-8",
+                "nombre": "PATRICIA LORETO LOURDES MATELUNA FLETCHER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-7114-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "29-01-2025 21:00:00",
+            "monto": "2049038",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "26476697-4",
+                "nombre": "DAYANA DEL CARMEN MUNDARAY FEBRES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13092007-1",
+                "nombre": "LORENA DEL PILAR TORRES GARRIDO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-437-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "28-01-2025 21:00:00",
+            "monto": "19140362",
+            "litigantes": [
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76156999-6",
+                "nombre": "SERVICIOS INTEGRALES SUPPORT LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15216621-4",
+                "nombre": "ALEX ANDRÉS FERRADA CISTERNAS",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9960426-3",
+                "nombre": "JORGE ISAAC MOHOR ZAGMUTT",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14907451-1",
+                "nombre": "EVELYN PAOLA MORÁN MARTINI",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10435109-3",
+                "nombre": "PATRICIO ANTONIO PASTÉN FRIZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18229035-1",
+                "nombre": "ROSARIO FERNANDA ZULETA SEGURA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15590161-6",
+                "nombre": "VÍCTOR ALONSO SANHUEZA MUÑOZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13955615-1",
+                "nombre": "RODOLFO LUIS ARAVENA BELTRÁN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17697986-0",
+                "nombre": "RODRIGO ANTONIO TAPIA PETERSEN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15339065-7",
+                "nombre": "FELIPE EDUARDO ALVEAR MARAMBIO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18410115-7",
+                "nombre": "ARACELLY ALEXANDRA MUÑOZ COLLA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-420-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "11-02-2024 21:00:00",
+            "monto": "16640794",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16021084-2",
+                "nombre": "ÁLVARO ANTONIO CRUZ GONZÁLEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13922821-9",
+                "nombre": "SYLVIA ELENA ACHIARDI RODRÍGUEZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16520353-4",
+                "nombre": "ERICK EDUARDO MUÑOZ ARANDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13941301-6",
+                "nombre": "CARLOS ANDRÉS PERALTA PÉREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16724397-5",
+                "nombre": "CONSTANZA BELÉN RAMÍREZ TRONCOSO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16630362-1",
+                "nombre": "DAVID GERMÁN ARANEDA TAPIA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14052279-1",
+                "nombre": "CLAUDIA ANDREA GALLARDO CALDERÓN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-842-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "29-03-2023 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "16021084-2",
+                "nombre": "ÁLVARO ANTONIO CRUZ GONZÁLEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15848178-2",
+                "nombre": "TOMÁS DANIEL VILLEGAS BAZIGNAN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16428245-7",
+                "nombre": "GUILLERMO ERNESTO VERA ZAPATA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION COMUNAL MAIPU",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO DE MAIPU",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1320-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "14-02-2023 21:00:00",
+            "monto": "13723912",
+            "litigantes": [
+              {
+                "rut": "15483853-8",
+                "nombre": "SERGIO ALEXIS CÁRDENAS PAREDES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11893617-5",
+                "nombre": "CLAUDIO ANDRÉS PALAVECINO CÁCERES",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18767181-7",
+                "nombre": "SEBASTIÁN FELIPE SEREY GAGGERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "20164682-0",
+                "nombre": "FELIPE IGNACIO KUTHE ARMIJO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-131-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-06-2022 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "19183227-2",
+                "nombre": "VALERIA IGNACIA ZÚÑIGA ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17717490-4",
+                "nombre": "FRANCISCA MARYCARMEN ARAUNA URRUTIA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "19216567-9",
+                "nombre": "ISAMAR ANDREA SOTO FERNÁNDEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15317323-0",
+                "nombre": "PHILLIPS MATÍAS CONTRERAS MORALES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2534-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "21-04-2020 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "'81318700-0'",
+                "nombre": "'POMPEYO CARRASCO Y CIA. LTDA.  '",
+                "sujeto": "DDO.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'9343555-9'",
+                "nombre": "'CLAUDIA ANDREA CARVALLO CARRASCO'",
+                "sujeto": "AP.DDO",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'18274524-3'",
+                "nombre": "'RODRIGO ALBERTO VERDUGO MEDINA'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'10605218-2'",
+                "nombre": "'JAIME IGNACIO ANDRÉS ESPINOZA MUÑOZ'",
+                "sujeto": "DTE.  ",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'6442419-K'",
+                "nombre": "'EDUARDO CARLOS ZARHI HASBÚN'",
+                "sujeto": "AB.DDO",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'16421627-6'",
+                "nombre": "'WALTER ADOLFO VILLAVICENCIO MAZA'",
+                "sujeto": "AP.DDO",
+                "persona": "'N'"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1682-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "27-12-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendaño",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-48161-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "04-11-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12297186-4",
+                "nombre": "JUAN RODRIGO SEPULVEDA OSMAN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16421627-6",
+                "nombre": "WALTER ADOLFO VILLAVICENCIO MAZA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-481-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "28-10-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCIÓN PROVINCIAL DEL TRABAJO MAIPO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13882920-0",
+                "nombre": "RODRIGO ANTONIO CASTILLO SERRANO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12214848-3",
+                "nombre": "EDUARDO FLORES JOPIA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16421627-6",
+                "nombre": "WALTER ADOLFO VILLAVICENCIO MAZA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-313-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "02-08-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "7061933-4",
+                "nombre": "MARIO GARAY MARTÍNEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "7198859-7",
+                "nombre": "SERGIO MANUEL VILLAR ESCAMILLA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16421627-6",
+                "nombre": "WALTER ADOLFO VILLAVICENCIO MAZA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14535658-K",
+                "nombre": "FABIOLA MARIBEL VALDIVIESO ROMERO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3224-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "31-07-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-28744-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "24-01-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA. LTDA.  .",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12475414-3",
+                "nombre": "RODRIGO IVARAL CARRILLO CASTILLO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16021084-2",
+                "nombre": "ALVARO CRUZ GONZALEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "96981130-8",
+                "nombre": "ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE S.A.  ",
+                "sujeto": "T.EXC.",
+                "persona": "J"
+              },
+              {
+                "rut": "96501450-0",
+                "nombre": "ISAPRE CRUZ BLANCA S.A.  ",
+                "sujeto": "T.EXC.",
+                "persona": "J"
+              },
+              {
+                "rut": "16421627-6",
+                "nombre": "WALTER VILLAVICENCIO MAZA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "98000400-7",
+                "nombre": "A.F.P. PROVIDA S.A.  ",
+                "sujeto": "T.IND.",
+                "persona": "J"
+              },
+              {
+                "rut": "6442419-K",
+                "nombre": "EDUARDO ZARHI HASBUN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "11639504-5",
+                "nombre": "LUIS SEBASTIÁN ESCOBAR GARCÍA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15771102-4",
+                "nombre": "NICOLAS ORLANDO GUIÑEZ RAMIREZ",
+                "sujeto": "TERC. ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-18-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-03-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-16342-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "10-06-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "'76653040-0'",
+                "nombre": "'COMERCIALIZADORA MUNCHMEYER LTDA  '",
+                "sujeto": "DDO.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'9343555-9'",
+                "nombre": "'CLAUDIA CARVALLO CARRASCO'",
+                "sujeto": "AB.DDO",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'6442419-K'",
+                "nombre": "'EDUARDO ZARHI HASBUN'",
+                "sujeto": "AB.DDO",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'15466813-6'",
+                "nombre": "'MACARENA ALEJANDRA QUINTANILLA QUINTANILLA'",
+                "sujeto": "AB.DDO",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'81318700-0'",
+                "nombre": "'POMPEYO CARRASCO Y CIA LTDA.  '",
+                "sujeto": "DDO.SO",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'15744441-7'",
+                "nombre": "'OMAR ANTONIO TUDELA FARIAS'",
+                "sujeto": "DTE.  ",
+                "persona": "'N'"
+              },
+              {
+                "rut": "'8351932-0'",
+                "nombre": "'LEONARDO PONCE PINEDA'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1942-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-05-2015 21:00:00",
+            "monto": "894243",
+            "litigantes": [
+              {
+                "rut": "'76237243-6'",
+                "nombre": "'SOC.ADM.DE FDOS DE CESANTIA DE CHILE II S.A  '",
+                "sujeto": "DTE.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'81318700-0'",
+                "nombre": "'POMPEYO CARRASCO Y CIA LTDA  '",
+                "sujeto": "DDO.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'2415267-7'",
+                "nombre": "'MANUEL JESUS FIGUEROA SAAVEDRA'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-18788-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "28-10-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "'76762250-3'",
+                "nombre": "'Administradora de Fondos de Pensiones Modelo  '",
+                "sujeto": "DTE.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'81318700-0'",
+                "nombre": "'POMPEYO CARRASCO Y CIA  '",
+                "sujeto": "DDO.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'8352676-9'",
+                "nombre": "'Francisco José Tocornal Fuenzalida'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-59187-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0e9ab0a72693f4909818d44f422d62de71d7c6ee71814ffbb76a750995334062",
+        "cached_at": "2026-05-30T00:09:01.023168"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 4,
+        "cantidad": 73,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "27120976-2",
+                "nombre": "ANDREA CAROLINA GALAVIZ MORENO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19808673-8",
+                "nombre": "SOFÍA HERNÁNDEZ CHODOWIECKI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-566-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "04-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12357000-6",
+                "nombre": "VALERIA DEL CARMEN ESPINOZA HUERTA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10032245-5",
+                "nombre": "FRANCISCA SOFÍA SARRAZIN VALDOVINOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77770406-0",
+                "nombre": "POWER SECURITY LINE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-646-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16742944-0",
+                "nombre": "RAUL SEBASTIAN POZO TRITTINI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17022740-9",
+                "nombre": "FANNY VANESSA SOLAR GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8534847-7",
+                "nombre": "VICTOR HUGO SOLAR PAVEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19901730-6",
+                "nombre": "BENJAMÍN ALEJANDRO GONZÁLEZ YALPI",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-148-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18664241-4",
+                "nombre": "MANUEL IGNACIO MOLINA CABEZAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16507463-7",
+                "nombre": "JESSICA PAULINA MOREIRA GODOY (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6393-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "19-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "77770406-0",
+                "nombre": "POWER SECURITY LINE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77346124-4",
+                "nombre": "PSL SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "78084788-3",
+                "nombre": "GRUPO SANTIAGO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "92176000-0",
+                "nombre": "GERDAU AZA S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96543980-3",
+                "nombre": "COLEGIO INTERNACIONAL SEK AUSTRAL S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17292010-1",
+                "nombre": "PABLO JAVIER HUANEL GALLARDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17677189-5",
+                "nombre": "ÁLVARO JACOB ANANÍAS GUERRA GUTIÉRREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17929705-1",
+                "nombre": "FERNANDO ANDRÉS CISTERNA URRUTIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15755511-1",
+                "nombre": "EMELLY ROXANA NARVÁEZ VALDÉS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7519-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18639190-K",
+                "nombre": "IGNACIO JAVIER VARGAS AHUMADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10410236-0",
+                "nombre": "RODRIGO ANDRÉS ALBORNOZ POLLMANN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16860883-7",
+                "nombre": "JUAN ESTEBAN DEL RÍO CÉSPEDES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13916995-6",
+                "nombre": "SANDRA LEONOR VILCHES QUILODRAN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16645510-3",
+                "nombre": "FABIOLA ALEJANDRA CARREÑO GOMEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7486-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "30-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13092007-1",
+                "nombre": "LORENA DEL PILAR TORRES GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "26981203-6",
+                "nombre": "NAYLIFER ESTEFANIA GALICIA MORALES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2247-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "26-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18850327-6",
+                "nombre": "GONZALO FERNANDO DOREN AVALOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "27120976-2",
+                "nombre": "ANDREA CAROLINA GALAVIZ MORENO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4602-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "26-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16751861-3",
+                "nombre": "JOSÉ ANTONIO GARCÍA POZO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18850327-6",
+                "nombre": "GONZALO FERNANDO DOREN AVALOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4603-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "26-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18850327-6",
+                "nombre": "GONZALO FERNANDO DOREN AVALOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "26840811-8",
+                "nombre": "CÉSAR ADRIÁN NAVA SANCHEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4601-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA CARVALLO CARRASCO (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "JAVIER ANDRÉS CUEVAS OJEDA",
+                "sujeto": "RECDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-551-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "26-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25687302-8",
+                "nombre": "WENDDY YESHLEY TABARQUINO CACERES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18850327-6",
+                "nombre": "GONZALO FERNANDO DOREN AVALOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4605-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "27-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9090333-0",
+                "nombre": "JORGE MANUEL FLORES SEPULVEDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17602555-7",
+                "nombre": "CONSUELO MUHE MORALES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2498-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "13-04-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "26145382-7",
+                "nombre": "KEILA BETSAIDA MOLLETONES MENDOZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14166935-4",
+                "nombre": "PABLO HERNAN MEDEL FUENZALIDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1697-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "03-04-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17432754-8",
+                "nombre": "GIANITZA EDITH OLIVARES HENRÍQUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12049336-1",
+                "nombre": "LESLIE CAROLINA PINO ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16015388-1",
+                "nombre": "SEBASTIAN JARPA FERNANDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2346-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "06-03-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20207634-3",
+                "nombre": "OSCAR BASTIÁN SOTO AGUILERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16368053-K",
+                "nombre": "MARIA FERNANDA SANCHEZ VIEYRA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16658896-0",
+                "nombre": "PEDRO IGNACIO PEÑA SANCHEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1047-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "21-02-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12251673-3",
+                "nombre": "LUIS GUAJARDO GUERRERO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15622510-K",
+                "nombre": "MARÍA JOSÉ TORRES CEREY (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11654412-1",
+                "nombre": "CARLA ANDREA CASTILLO TORRES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "CARLOS MAURICIO ESPINOZA FLORES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1297-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-02-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12586118-0",
+                "nombre": "JUAN CARLOS DÍAZ ARCE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16907807-6",
+                "nombre": "ANDRES MADARIAGA ROMERO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-511-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19080440-2",
+                "nombre": "GIANFRANCO GERVASONI SICHEL",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18393224-1",
+                "nombre": "MARTÍN IGNACIO HERNÁNDEZ CERDA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-156-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16357796-8",
+                "nombre": "NICOLAS MATIAS GAJARDO MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18862279-8",
+                "nombre": "CONSTANZA JESÚS CORNEJO BERRÍOS (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16662387-1",
+                "nombre": "MAURICIO ESTEBAN ORTEGA BERRIOS (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15463756-7",
+                "nombre": "OSCAR ANTONIO RUIZ CÓRDOVA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81318700-0",
+                "nombre": "POMPEYO CARRASCO Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-340-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:54bebb5c076442631eb59473cc70601ae6bb277ccccb8b808e2d12259f536121",
+        "cached_at": "2026-05-30T00:09:01.578037"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 49,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "08-01-2026 21:00:00",
+            "multa": "1972/25/429-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-11-2025 21:00:00",
+            "multa": "4353/25/300-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "Efectuar deducciones (retenciones) (compensaciones) indebidas de las remuneraciones, por concepto del no pago de efectos de comercio.",
+            "estado": "PAGADA",
+            "fecha": "20-11-2025 21:00:00",
+            "multa": "8048/25/069-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4172520
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "17-10-2025 21:00:00",
+            "multa": "7729/25/058-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4155900
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "17-10-2025 21:00:00",
+            "multa": "7729/25/058-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4155900
+          },
+          {
+            "enunciado": "Efectuar deducciones (retenciones) (compensaciones) indebidas de las remuneraciones, por concepto del no pago de efectos de comercio.",
+            "estado": "PAGADA",
+            "fecha": "24-08-2025 20:00:00",
+            "multa": "8048/25/039-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "24-08-2025 20:00:00",
+            "multa": "8048/25/039-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-08-2025 20:00:00",
+            "multa": "1088/25/032-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "22-08-2025 20:00:00",
+            "multa": "1088/25/032-2",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-07-2025 20:00:00",
+            "multa": "1913/25/072-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-05-2025 20:00:00",
+            "multa": "4353/25/101-1",
+            "procedencia": "RECLAMO",
+            "um": "0.67",
+            "tipoUm": "IMM",
+            "montoClp": 335000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-05-2025 20:00:00",
+            "multa": "1984/25/080-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-04-2025 20:00:00",
+            "multa": "8109/25/025-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No pagar remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "04-04-2025 21:00:00",
+            "multa": "8511/25/009-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4098360
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-03-2025 21:00:00",
+            "multa": "4541/25/038-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-02-2025 21:00:00",
+            "multa": "4178/24/336-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-11-2024 21:00:00",
+            "multa": "8691/24/048-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "09-11-2024 21:00:00",
+            "multa": "1972/24/225-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-11-2024 21:00:00",
+            "multa": "4178/24/055-1",
+            "procedencia": "RECLAMO",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1998840
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "23-10-2024 21:00:00",
+            "multa": "7430/24/010-1",
+            "procedencia": "FISCALIZACION",
+            "um": "16.03",
+            "tipoUm": "IMM",
+            "montoClp": 8015000
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:24:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:aedbf021ed28c651f6c429ed530188decf2adf8ccb758d22e08a8264c78bbf2b",
+        "cached_at": "2026-05-30T00:09:02.113855"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 11,
+        "cantidad": 212,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JHOCHUAN ANDRES GONZALEZ CEPEDA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21872982-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Valeska Aracely Leyton Brenner ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15354546-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SANDRA ELIANA OLAVE MEDINA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12650496-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Carlos Eduardo Fuentes Martinez ",
+            "periodo": "02/2026",
+            "rutAfiliado": "17398681-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Jhochuan Andres Gonzalez Cepeda ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21872982-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Danilo Enrique Barros Vallejos ",
+            "periodo": "02/2026",
+            "rutAfiliado": "10789190-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MIGUEL CORNEJO DIAZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "17600885-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SANDRA ELIANA OLAVE MEDINA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "12650496-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Danilo Enrique Barros Vallejos ",
+            "periodo": "01/2026",
+            "rutAfiliado": "10789190-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Juan Antonio Silva Sanhueza ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15649902-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Jhochuan Andres Gonzalez Cepeda ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21872982-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Carlos Eduardo Fuentes Martinez ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17398681-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Valeska Aracely Leyton Brenner ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15354546-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MIGUEL CORNEJO DIAZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17600885-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JHOCHUAN ANDRES GONZALEZ CEPEDA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21872982-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JHOCHUAN ANDRES GONZALEZ CEPEDA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "21872982-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VALESKA ARACELY LEYTON BRENNER ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15354546-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROBINSON ISAAC CALFUL CALFUL ",
+            "periodo": "12/2025",
+            "rutAfiliado": "13289099-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SILVANA CONSUELO MALDONADO HERNANDEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "16590794-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MIGUEL CORNEJO DIAZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17600885-7",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:24:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:973062eaa34c9f3976c153b724cf5ab550bec2d5601213dc6977ab63b6d5fe68",
+        "cached_at": "2026-05-30T00:09:02.510769"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "81318700-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "POMPEYO CARRASCO SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "POMPEYO CARRASCO SPA",
+            "rutSociedad": "81318700-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1969-12-31",
+            "socios": [
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO E HIJOS LIMITADA",
+                "rut": "88518500-2",
+                "domicilio": "AVENIDA IRARRÁZAVAL N985, COMUNA DE ÑUÑOA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ S.A.",
+                "rut": "93219000-1",
+                "domicilio": "AVENIDA IRARRÁZAVAL 911",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARIA SOLEDAD CARRASCO POPOVIC",
+                "rut": "7381169-4",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, ÑUÑOA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MAURICIO JORGE CARRASCO POPOVIC",
+                "rut": "8401994-1",
+                "domicilio": "AVENIDA IRARRÁZAVAL N985, COMUNA DE ÑUÑOA",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "IVÁN POMPEYO CARRASCO POPOVIC",
+                "rut": "7126483-1",
+                "domicilio": "AVENIDA TRARRÁZAVAL N° 965, ÑUÑOA, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "CARLOS MAURICIO ESPINOZA FLORES",
+                "rut": "12269969-2",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-12-28",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/28/42840/05/1872560.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-12-02",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/02/42820/05/1858453.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-01-12",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/12/41955/05/1334902.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-03-06",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/03/06/41701/05/1190382.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-03-06",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/03/06/41701/05/1190263.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-02-18",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/02/18/41688/05/1184982.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-12-07",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/07/41627/05/1146554.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2015-10-22",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2015/10/22/957900_M_LTDA_20151022_firmada.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "POMPEYO CARRASCO SPA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-10056-2024",
+            "fecha": "23/12/2024",
+            "infraccion": "ESTAFAS Y OTRAS DEFRAUDACIONES CONTRA PARTICULARES",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRA MONSERRAT LOBOS CHAMORRO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CÉSAR ALFREDO MACHIAVELLO VALDÉS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EDUARDO CARLOS ZARHI HASBÚN",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1221",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NN NN NN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO SPA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "2º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:924a1d87f21400635e9e42404271a908db4f39ed7ce8286c5fff60072e974306",
+      "cached_at": "2026-05-30T00:09:03.240309"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "81318700-0",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "21-10-2015 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO Y COMPAÑÍA LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/10/22/957900_M_LTDA_20151022_firmada.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                "rut": "88518500-2",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ SOCIEDAD ANÓNIMA",
+                "rut": "93219000-1",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 911, ÑUÑOA"
+              }
+            ],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "06-12-2016 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO Y COMPAÑÍA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/07/41627/05/1146554.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                "rut": "88518500-2",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ SOCIEDAD ANÓNIMA",
+                "rut": "93219000-1",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 911, ÑUÑOA"
+              }
+            ],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "17-02-2017 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/02/18/41688/05/1184982.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO E HIJOS LIMITADA",
+                "rut": "76296001-K",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ S.A.",
+                "rut": null,
+                "domicilio": "AVENIDA IRARRÁZAVAL 985, COMUNA DE ÑUÑOA"
+              }
+            ],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "05-03-2017 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/03/06/41701/05/1190263.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "05-03-2017 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/03/06/41701/05/1190382.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO E HIJOS LIMITADA",
+                "rut": "76296001-K",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ S.A.",
+                "rut": null,
+                "domicilio": "AVENIDA IRARRÁZAVAL 985, COMUNA DE ÑUÑOA"
+              }
+            ],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "11-01-2018 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/12/41955/05/1334902.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "IVÁN POMPEYO CARRASCO POPOVIC",
+                "rut": null,
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "MAURICIO JORGE CARRASCO POPOVIC",
+                "rut": null,
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "RENTAS E INVERSIONES POMPEYO CARRASCO LIMITADA",
+                "rut": "88518500-2",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 985, COMUNA DE ÑUÑOA"
+              },
+              {
+                "nombre": "POMPEYO CARRASCO DISTRIBUIDORA AUTOMOTRIZ SOCIEDAD ANÓNIMA",
+                "rut": "93219000-1",
+                "domicilio": "AVENIDA IRARRÁZAVAL N 911, ÑUÑOA"
+              }
+            ],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "01-12-2020 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/02/42820/05/1858453.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "81318700-0"
+          },
+          {
+            "fecha": "27-12-2020 21:00:00",
+            "razonSocial": "POMPEYO CARRASCO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/28/42840/05/1872560.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "POMPEYO CARRASCO SPA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "81318700-0"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0969164701",
+            "society": "INGEFLOTA S A"
+          },
+          {
+            "rut": "81318700-0",
+            "sociedad": "POMPEYO CARRASCO Y COMPAÑÍA LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:48ba69474a813b5dfd35df22f8fc53cec80ab6f8843991ad404fbf6bcc020b02",
+        "cached_at": "2026-05-30T00:09:03.616431"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 4924210,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 51.45631067961165,
+      "numeradorJudicial": 53,
+      "denominadorJudicial": 103,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 48.54368932038835,
+      "porcentajeMoraPrevisional": 92.1875,
+      "casosMoraPrevisional": 64,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 170097669,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 7.8125,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 256.35618932038835,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:f4ddd3db2a650cf722a735fd647df0a9b059736f2445715839bb331f50bef3b3",
+      "cached_at": "2026-05-30T00:09:04.229339"
+    }
+  }
+}

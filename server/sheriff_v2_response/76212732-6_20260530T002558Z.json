@@ -1,0 +1,1291 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76212732-6"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76212732-6",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "ABBVIE PRODUCTOS FARMACEUTICOS LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "25-05-2012",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MAYOR DE PRODUCTOS FARMACEUTICOS Y MEDICINALES",
+            "codigo": "464907",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-05-2013"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR NO ESPECIALIZADA",
+            "codigo": "469000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "25-05-2012"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Nota De Debito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2021"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 17,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 67
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 0,
+        "laboralPresentados": 1,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 1,
+        "casosConcluidos": 2,
+        "todosLosCasos": 3,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:25:53",
+        "ultimaActualizacionCobranza": "30-05-2026 00:25:53",
+        "ultimaActualizacionLaboral": "30-05-2026 00:25:53",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 14,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 16.67,
+            "cambioAbsoluto": 2
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 1000000,
+          "multasPagadas": 1,
+          "montoMultasPagadas": 555000,
+          "multasPendientes": 1,
+          "montoMultasPendientes": 445000,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 80.18,
+            "cambioAbsoluto": 445000
+          },
+          "ultimaActualizacion": "30-05-2026 00:25:53"
+        },
+        "boletinLaboral": {
+          "montoTotal": 292944,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 292944
+          },
+          "ultimaActualizacion": "30-05-2026 00:25:54"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "11-05-2012 20:00:00",
+              "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/05/12/489126_C_LTDA_20120512_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "FERNANDO JOSÉ CASTRO DEL RÍO",
+                  "rut": null,
+                  "domicilio": "AV. ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "LEÓN HERNÁN LARRAIN ABASCAL",
+                  "rut": "6638774-7",
+                  "domicilio": "AVENIDA ANDRÉS BELLO N 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "ABBVIE FARMACÉUTICA, S.L.",
+                  "rut": null,
+                  "domicilio": "AVENIDA DE BURGOS, N 91, MADRID 28027, ESPAÑA"
+                },
+                {
+                  "socio": "WCA PHARMACEUTICALS INTERNATIONAL S.À R.L.",
+                  "rut": null,
+                  "domicilio": "BOULEVARD ROYAL 26, L-2449, LUXEMBURGO"
+                }
+              ],
+              "rut": "76212732-6"
+            },
+            {
+              "fecha": "03-10-2012 21:00:00",
+              "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/10/04/546432_M_LTDA_20121004_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "FERNANDO JOSÉ CASTRO DEL RÍO",
+                  "rut": null,
+                  "domicilio": "AV. ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "SEBASTIÁN VIVANCO SILVA",
+                  "rut": null,
+                  "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "76212732-6"
+            },
+            {
+              "fecha": "24-03-2020 21:00:00",
+              "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/03/25/42614/05/1743961.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ABBVIE SPAIN, S.L.",
+                  "rut": "59179320-9",
+                  "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+                },
+                {
+                  "socio": "ABBVIE INTERNATIONAL S.A.R.L.",
+                  "rut": "59179170-2",
+                  "domicilio": "MIRAFLORES N 222, PISO 28, COMUNA Y CIUDAD DE SANTIAGO"
+                }
+              ],
+              "rut": "76212732-6"
+            },
+            {
+              "fecha": "07-07-2021 20:00:00",
+              "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973678.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MARTÍN GUILLERMO MÜLLER OSSA",
+                  "rut": null,
+                  "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "ABBVIE SPAIN, S.L.",
+                  "rut": "59179320-9",
+                  "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+                },
+                {
+                  "socio": "JAIME MUNRO CABEZAS",
+                  "rut": null,
+                  "domicilio": "ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "ABBVIE INTERNATIONAL S.Á R.L.",
+                  "rut": null,
+                  "domicilio": "ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                }
+              ],
+              "rut": "76212732-6"
+            },
+            {
+              "fecha": "22-12-2022 21:00:00",
+              "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/12/23/43433/05/2240306.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ABBVIE SPAIN, S.L.",
+                  "rut": "59179320-9",
+                  "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+                },
+                {
+                  "socio": "ABBVIE CENTRAL FINANCE B.V.",
+                  "rut": "59302990-5",
+                  "domicilio": "ZUIDERZEELAAN CINCUENTA Y TRES, OCHO CERO UNO SIETE J V, ZWOLLE, PAÍSES BAJOS"
+                }
+              ],
+              "rut": "76212732-6"
+            },
+            {
+              "fecha": "29-03-2023 21:00:00",
+              "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/03/30/43515/05/2293431.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MARTÍN GUILLERMO MÜLLER OSSA",
+                  "rut": null,
+                  "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "ABBVIE SPAIN, S.L.",
+                  "rut": "59179320-9",
+                  "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+                },
+                {
+                  "socio": "ALLERGAN, INC.",
+                  "rut": null,
+                  "domicilio": "UNO N. WAUKEGAN ROAD, NORTH CHICAGO, ESTADO DE ILLINOIS, ESTADOS UNIDOS DE AMÉRICA"
+                },
+                {
+                  "socio": "ABBVIE CENTRAL FINANCE B.V.",
+                  "rut": "59302990-5",
+                  "domicilio": "ZUIDERZEELAAN CINCUENTA Y TRES, OCHO CERO UNO SIETE J V, ZWOLLE, PAÍSES BAJOS"
+                },
+                {
+                  "socio": "ALLERGAN HOLDINGS, INC.",
+                  "rut": null,
+                  "domicilio": "UNO N. WAUKEGAN ROAD, NORTH CHICAGO, ESTADO DE ILLINOIS, ESTADOS UNIDOS DE AMÉRICA"
+                }
+              ],
+              "rut": "76212732-6"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:25:53"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "01/2026",
+        "deudaDirectaComercial": 44017,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 3045226,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 528993,
+        "variacion": {
+          "periodo": "07/2025",
+          "deudaDirectaComercial": 44281,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 4302345,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 544444
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 57,
+          "tasacionTotal": 611230101,
+          "ultimaActualizacion": "30-05-2026 00:25:54"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:25:54"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ABBVIE PRODUCTOS FARMACEUTICOS LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:eff419cc82019c6ca76e22258f613196861db569bce21fd3f1b7c8f9bf58f36a",
+      "cached_at": "2026-05-30T00:25:55.079150"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "16-02-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13657395-0",
+                "nombre": "NICOLÁS JOSÉ MARÍA FIGUEROA ROZAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12797267-2",
+                "nombre": "MATIAS RUIZ-TAGLE MENDEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76326429-7",
+                "nombre": "QUANTUM RESEARCH LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76212732-6",
+                "nombre": "ABBVIE PRODUCTOS FARMACEUTICOS LIMITADA  ",
+                "sujeto": "TERC.I",
+                "persona": "J"
+              },
+              {
+                "rut": "16654053-4",
+                "nombre": "CINDY PAMELA THORSEN CATALÁN",
+                "sujeto": "AB.TER",
+                "persona": "N"
+              },
+              {
+                "rut": "18593507-8",
+                "nombre": "GONZALO VARELA DE FERARI",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-103-2022",
+            "tribunal": "24º Juzgado Civil de Santiago",
+            "sujeto": "TERC.I",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:25:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9864837532d1eb9ec7269f8aafe1b6803981cd0dd4d09986ff15a41767dfe6c9",
+        "cached_at": "2026-05-30T00:25:55.437924"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-01-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76212732-6",
+                "nombre": "ABBVIE PRODUCTOS FARMACEUTICOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-4750-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:25:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:42b4445261addbb3863c90eff46141dcd78a45c20a2bfa14d379204c3704bbd7",
+        "cached_at": "2026-05-30T00:25:55.798176"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "08-01-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15737321-8",
+                "nombre": "RODRIGO PALACIOS CALVANESE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "11817792-4",
+                "nombre": "ERNESTO PATRICIO ROJAS BRITO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13828747-5",
+                "nombre": "Verónica Acuña Rodríguez (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76212732-6",
+                "nombre": "ABBVIE PRODUCTOS FARMACEUTICOS LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-176-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:25:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4e2931c30f9dc6f0bea2893382d95e210bb114dbf03b8795c96e4267ad2f4d45",
+        "cached_at": "2026-05-30T00:25:56.156063"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "EN TRÁMITE DE COBRANZA",
+            "fecha": "18-12-2025 21:00:00",
+            "multa": "8228/25/225-1",
+            "procedencia": "RECLAMO",
+            "um": "0.89",
+            "tipoUm": "IMM",
+            "montoClp": 445000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-05-2024 20:00:00",
+            "multa": "1001/24/042-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:25:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1643ef032adbee737c0bce94dd47698ef9606ab6177b7011c4d1e47545b1128f",
+        "cached_at": "2026-05-30T00:25:56.499054"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 16,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEXIS MARTINEZ SAAVEDRA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15753013-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEXIS MARTINEZ SAAVEDRA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15753013-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAGDA VIANEY GUTIERREZ ARDILA ",
+            "periodo": "08/2025",
+            "rutAfiliado": "24772986-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LOUIS PHILIPPE GRANDY BEAUPUITS ",
+            "periodo": "08/2025",
+            "rutAfiliado": "16473992-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "28-07-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "05/2023",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-05-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "03/2023",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "28-04-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "02/2023",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-03-2023 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "01/2023",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2023 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "12/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "10/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "29-11-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "09/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "28-10-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "08/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "29-09-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "07/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-08-2022 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "06/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "05/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "29-06-2022 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARIA ALEJANDRA PALMA SEPULVEDA ",
+            "periodo": "04/2022",
+            "rutAfiliado": "17226336-4",
+            "tipoProducto": "Ahorro Voluntario"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:25:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:664c63fba1b1a69e96f598bb89725b62aeae2b9d0e16933f7c9378fa97c939b4",
+        "cached_at": "2026-05-30T00:25:56.858504"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76212732-6",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ABBVIE PRODUCTOS FARMACEUTICOS LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ABBVIE PRODUCTOS FARMACEUTICOS LIMITADA",
+            "rutSociedad": "76212732-6",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2012-05-11",
+            "socios": [
+              {
+                "nombre": "FERNANDO JOSÉ CASTRO DEL RÍO",
+                "rut": "12721738-6",
+                "domicilio": "AVDA. ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ABBVIE INTERNATIONAL S.A.R.L.",
+                "rut": "59179170-2",
+                "domicilio": "MIRAFLORES 222 PISO 28 COMUNA Y CIUDAD DE SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "1.01"
+              },
+              {
+                "nombre": "ABBVIE SPAIN, S.L.",
+                "rut": "59179320-9",
+                "domicilio": "MIRAFLORES 222 PISO 28 COMUNA Y CIUDAD DE SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.70"
+              },
+              {
+                "nombre": "ABBVIE CENTRAL FINANCE B.V.",
+                "rut": "59302990-5",
+                "domicilio": "AVENIDA ANDRÉS BELLO N2457 PISO 19",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.30"
+              },
+              {
+                "nombre": "LEÓN HERNÁN LARRAIN ABASCAL",
+                "rut": "6638774-7",
+                "domicilio": "AVENIDA NUEVA TAJAMAR 481, TORRE NORTE, PISO 21, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARTIN GUILLERMO MULLER OSSA",
+                "rut": "16359040-9",
+                "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JAIME FELIPE MUNRO CABEZAS",
+                "rut": "10354520-K",
+                "domicilio": "NUEVA TAJAMAR 481, TORRE NORTE, PISO 21, LAS CONDES",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ALLERGAN HOLDINGS INC",
+                "rut": "59063100-0",
+                "domicilio": "AV. ANDRÉS BELLO 2711, PISO 19, COMUNA DE LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "37.66"
+              },
+              {
+                "nombre": "ALLERGAN INC",
+                "rut": "59049640-5",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SEBASTIÁN VIVANCO SILVA",
+                "rut": null,
+                "domicilio": "AV. NUEVA TAJAMAR 481, TORRE NORTE, PISO 21, LAS CONDES",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ALLERGAN, INC.",
+                "rut": null,
+                "domicilio": "UNO N. WAUKEGAN ROAD NORTH CHICAGO ESTADO DE ILLINOIS ESTADOS UNIDOS DE AMÉRICA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.00"
+              },
+              {
+                "nombre": "ABBVIE FARMACÉUTICA, S.L.",
+                "rut": null,
+                "domicilio": "AVENIDA DE BURGOS N 91, MADRID 28027, ESPAÑA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.79"
+              },
+              {
+                "nombre": "WCA PHARMACEUTICALS INTERNATIONAL S.À R.L.",
+                "rut": null,
+                "domicilio": "BOULEVARD ROYAL 26, L-2449, LUXEMBURGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.20"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2023-03-30",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/03/30/43515/05/2293431.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-12-23",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/12/23/43433/05/2240306.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-07-08",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973678.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-03-25",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/03/25/42614/05/1743961.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2012-10-04",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2012/10/04/546432_M_LTDA_20121004_firmado.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2012-05-12",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2012/05/12/489126_C_LTDA_20120512_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:57ad1b23c2d2ea79e4675e3739d83f4d927ecb1d4bd7d160e170b539681ed4a5",
+      "cached_at": "2026-05-30T00:25:57.460872"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76212732-6",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "11-05-2012 20:00:00",
+            "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/05/12/489126_C_LTDA_20120512_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "FERNANDO JOSÉ CASTRO DEL RÍO",
+                "rut": null,
+                "domicilio": "AV. ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "LEÓN HERNÁN LARRAIN ABASCAL",
+                "rut": "6638774-7",
+                "domicilio": "AVENIDA ANDRÉS BELLO N 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "ABBVIE FARMACÉUTICA, S.L.",
+                "rut": null,
+                "domicilio": "AVENIDA DE BURGOS, N 91, MADRID 28027, ESPAÑA"
+              },
+              {
+                "nombre": "WCA PHARMACEUTICALS INTERNATIONAL S.À R.L.",
+                "rut": null,
+                "domicilio": "BOULEVARD ROYAL 26, L-2449, LUXEMBURGO"
+              }
+            ],
+            "rut": "76212732-6"
+          },
+          {
+            "fecha": "03-10-2012 21:00:00",
+            "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/10/04/546432_M_LTDA_20121004_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "FERNANDO JOSÉ CASTRO DEL RÍO",
+                "rut": null,
+                "domicilio": "AV. ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "SEBASTIÁN VIVANCO SILVA",
+                "rut": null,
+                "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76212732-6"
+          },
+          {
+            "fecha": "24-03-2020 21:00:00",
+            "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/03/25/42614/05/1743961.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ABBVIE SPAIN, S.L.",
+                "rut": "59179320-9",
+                "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+              },
+              {
+                "nombre": "ABBVIE INTERNATIONAL S.A.R.L.",
+                "rut": "59179170-2",
+                "domicilio": "MIRAFLORES N 222, PISO 28, COMUNA Y CIUDAD DE SANTIAGO"
+              }
+            ],
+            "rut": "76212732-6"
+          },
+          {
+            "fecha": "07-07-2021 20:00:00",
+            "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973678.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MARTÍN GUILLERMO MÜLLER OSSA",
+                "rut": null,
+                "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "ABBVIE SPAIN, S.L.",
+                "rut": "59179320-9",
+                "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+              },
+              {
+                "nombre": "JAIME MUNRO CABEZAS",
+                "rut": null,
+                "domicilio": "ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "ABBVIE INTERNATIONAL S.Á R.L.",
+                "rut": null,
+                "domicilio": "ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              }
+            ],
+            "rut": "76212732-6"
+          },
+          {
+            "fecha": "22-12-2022 21:00:00",
+            "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/12/23/43433/05/2240306.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ABBVIE SPAIN, S.L.",
+                "rut": "59179320-9",
+                "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+              },
+              {
+                "nombre": "ABBVIE CENTRAL FINANCE B.V.",
+                "rut": "59302990-5",
+                "domicilio": "ZUIDERZEELAAN CINCUENTA Y TRES, OCHO CERO UNO SIETE J V, ZWOLLE, PAÍSES BAJOS"
+              }
+            ],
+            "rut": "76212732-6"
+          },
+          {
+            "fecha": "29-03-2023 21:00:00",
+            "razonSocial": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/03/30/43515/05/2293431.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MARTÍN GUILLERMO MÜLLER OSSA",
+                "rut": null,
+                "domicilio": "AVENIDA ANDRÉS BELLO 2457, PISO 19, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "ABBVIE SPAIN, S.L.",
+                "rut": "59179320-9",
+                "domicilio": "AVENIDA DE BURGOS, NOVENTA Y UNO, DOS OCHO CERO CINCO CERO, MADRID, ESPAÑA"
+              },
+              {
+                "nombre": "ALLERGAN, INC.",
+                "rut": null,
+                "domicilio": "UNO N. WAUKEGAN ROAD, NORTH CHICAGO, ESTADO DE ILLINOIS, ESTADOS UNIDOS DE AMÉRICA"
+              },
+              {
+                "nombre": "ABBVIE CENTRAL FINANCE B.V.",
+                "rut": "59302990-5",
+                "domicilio": "ZUIDERZEELAAN CINCUENTA Y TRES, OCHO CERO UNO SIETE J V, ZWOLLE, PAÍSES BAJOS"
+              },
+              {
+                "nombre": "ALLERGAN HOLDINGS, INC.",
+                "rut": null,
+                "domicilio": "UNO N. WAUKEGAN ROAD, NORTH CHICAGO, ESTADO DE ILLINOIS, ESTADOS UNIDOS DE AMÉRICA"
+              }
+            ],
+            "rut": "76212732-6"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76212732-6",
+            "sociedad": "ABBVIE PRODUCTOS FARMACÉUTICOS LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a92447f2c11163e07b09cf10a27fecb361ac00dc74228621808e71d3d6e719d7",
+        "cached_at": "2026-05-30T00:25:57.814884"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 3529260,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 2,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 14,
+      "porcentajeMultasLaborales": 44.5,
+      "montoMultasLaborales": 1000000,
+      "porcentajeBoletinLaboral": 100,
+      "montoBoletinLaboral": 292944,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:274103ad41a129dee483f78bbf11d3c8c0345254a44400bd8016513542de6255",
+      "cached_at": "2026-05-30T00:25:58.432861"
+    }
+  }
+}

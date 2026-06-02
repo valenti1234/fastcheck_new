@@ -1,0 +1,53 @@
+{
+  "pathCount": 4,
+  "relationships": [
+    {
+      "source": "78175746",
+      "target": "14025886",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78175746",
+      "target": "14025886",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACbH26DJHcxS",
+        "source": "RES",
+        "published_at": "2025-10-03"
+      }
+    },
+    {
+      "source": "78175746",
+      "target": "28675446",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78175746",
+      "target": "28675446",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACbH26DJHcxS",
+        "source": "RES",
+        "published_at": "2025-10-03"
+      }
+    }
+  ],
+  "entityNames": {
+    "14025886": "FRANCISCO ANDRES CONTRERAS CACERES",
+    "28675446": "GABRIEL MEJORADO HERNANDEZ",
+    "78175746": "ABASTECEDORA CENTRO SUR SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:810d197f9998fd460e7048f2ae5ba416c30444ffce3abfadd4bc9b9ef135622d",
+    "retrieved_at": "2026-06-01T17:03:55.134901"
+  }
+}

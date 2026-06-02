@@ -1,0 +1,925 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96849240-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96849240-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "VIRTUAL S A",
+        "presentaActividades": "SI",
+        "inicioActividades": "31-08-1998",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "IMPRESION DE LIBROS",
+            "codigo": "181101",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "31-08-1998"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE IMPRESION N.C.P.",
+            "codigo": "181109",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "16-06-2020"
+          },
+          {
+            "actividades": "EDICION DE LIBROS",
+            "codigo": "581100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-09-1998"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2002"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "2009"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2002"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Guia Despacho",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2015"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 20,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "10.000,01 a 25.000,00",
+          "cantidadTrabajadores": 15
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 01:57:48"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 1,
+        "cobranzaConcluidos": 2,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 1,
+        "casosConcluidos": 2,
+        "todosLosCasos": 3,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 01:57:48",
+        "ultimaActualizacionCobranza": "30-05-2026 01:57:48",
+        "ultimaActualizacionLaboral": "30-05-2026 01:57:48",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 1,
+          "montoTotalMultas": 83450,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 1,
+          "montoMultasPendientes": 83450,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 83450
+          },
+          "ultimaActualizacion": "30-05-2026 01:57:48"
+        },
+        "boletinLaboral": {
+          "montoTotal": 82376,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 82376
+          },
+          "ultimaActualizacion": "30-05-2026 01:57:48"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "31-07-2019 20:00:00",
+              "razonSocial": "VIRTUAL S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/08/01/42418/05/1630628.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MANUEL EMILIO GAJARDO PACHECO",
+                  "rut": "15668521-6",
+                  "domicilio": null
+                }
+              ],
+              "rut": "96849240-3"
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 239170,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 294440,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 72530,
+        "lineaCredito": 53940,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 182630,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 201920,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 1730,
+          "leasingVigente": 82890,
+          "lineaCredito": 20980
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 3,
+          "tasacionTotal": 19508157,
+          "ultimaActualizacion": "09-04-2026 03:19:27"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 2,
+          "tasacionTotal": "104342529",
+          "ultimaActualizacion": "09-04-2026 03:19:26"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "VIRTUAL S A",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        null
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8c86733eff706b76f92af9b4bcced6350eb22e319ac9067edbd6e4d0196328d9",
+      "cached_at": "2026-05-30T01:57:49.989867"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:57:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e77c28e000095d903c3d57fdefb359f1fae1d6fa1d5200bcbad41adc16a3944d",
+        "cached_at": "2026-05-30T01:57:50.327650"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "19-11-2017 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96849240-3",
+                "nombre": "VIRTUAL S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-4928-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Ingreso",
+            "fechaIngreso": "07-06-2015 21:00:00",
+            "monto": "1035227",
+            "litigantes": [
+              {
+                "rut": "'76237243-6'",
+                "nombre": "'SOC.ADM.DE FDOS DE CESANTIA DE CHILE II S.A  '",
+                "sujeto": "DTE.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'96849240-3'",
+                "nombre": "'VIRTUAL S A  '",
+                "sujeto": "DDO.  ",
+                "persona": "'J'"
+              },
+              {
+                "rut": "'2415267-7'",
+                "nombre": "'MANUEL JESUS FIGUEROA SAAVEDRA'",
+                "sujeto": "AB.DTE",
+                "persona": "'N'"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-3046-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "07-03-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96981130-8",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96849240-3",
+                "nombre": "VIRTUAL S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-969-2013",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:57:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:455bdbcb502876c8209d0598d6da1ea0dd9051a867af6a6332c6f608d23a92b1",
+        "cached_at": "2026-05-30T01:57:50.684378"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:57:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0954e16a2ea9b5043a678a69baaede7f3aeb9e0c27e6e1aea004e7bc25881848",
+        "cached_at": "2026-05-30T01:57:51.145097"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "enunciado": "No registrar el contrato de trabajo, dentro del plazo legal, en el Registro Electrónico Laboral disponible en el sitio web de la Dirección del Trabajo.",
+            "estado": "EN TRÁMITE DE COBRANZA",
+            "fecha": "25-12-2025 21:00:00",
+            "multa": "3163/25/558-1",
+            "procedencia": "FISCALIZACION",
+            "um": "1.2",
+            "tipoUm": "UTM",
+            "montoClp": 83450
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:57:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e9ecad06a65abf70ef57bb097d416b3f1da05e72c9a0eb2163c5ff6204c83c97",
+        "cached_at": "2026-05-30T01:57:51.517839"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 41,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "02/2022",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2022 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "01/2022",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2022 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CHRISTIAN HERNAN PENA DIAZ ",
+            "periodo": "01/2022",
+            "rutAfiliado": "11844433-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "25-02-2022 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "12/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-01-2022 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "11/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2021 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "10/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-11-2021 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "09/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-10-2021 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "08/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2021 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "07/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-08-2021 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "06/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-07-2021 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "05/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-06-2021 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "04/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-05-2021 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "03/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2021 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "02/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2021 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "01/2021",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "26-02-2021 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "12/2020",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-01-2021 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "11/2020",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "10/2020",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-11-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "09/2020",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-10-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "JULIO CESAR CAMPODONICO SUSARTE ",
+            "periodo": "08/2020",
+            "rutAfiliado": "7727316-6",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:57:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a6eaaaa1b0399257618ce9bd7b510621f5e06d17eeaeb3e8a227886115686245",
+        "cached_at": "2026-05-30T01:57:51.878568"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96849240-3",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "VIRTUAL S A",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "VIRTUAL S A",
+            "rutSociedad": "96849240-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1998-06-17",
+            "socios": [
+              {
+                "nombre": "MANUEL EMILIO GAJARDO PACHECO",
+                "rut": "15668521-6",
+                "domicilio": "ROSA SALAS N°2783 VILLA CHORRILLOS COMUNA DE INDEPENDENCIA REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JULIO CÉSAR CAMPODÓNICO SUSARTE",
+                "rut": "7727316-6",
+                "domicilio": "AVENIDA DEPARTAMENTAL 999 BODEGA 7, SAN MIGUEL",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "49"
+              },
+              {
+                "nombre": "RENATO ARTURO CAMPODÓNICO SUSARTE",
+                "rut": "8608039-7",
+                "domicilio": "AMÉRICO VESPUCIO 2900 VITACURA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "51"
+              },
+              {
+                "nombre": "ANA MARÍA ALT YUNG",
+                "rut": "8422225-9",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-08-01",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/08/01/42418/05/1630628.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:dc8e6c5a7edaea9cc6082aa5744264665c1d0dd47dabb1a715cc25eb88f60aee",
+      "cached_at": "2026-05-30T01:57:52.524698"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96849240-3",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "31-07-2019 20:00:00",
+            "razonSocial": "VIRTUAL S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/08/01/42418/05/1630628.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MANUEL EMILIO GAJARDO PACHECO",
+                "rut": "15668521-6",
+                "domicilio": null
+              }
+            ],
+            "rut": "96849240-3"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "96849240-3",
+            "sociedad": "VIRTUAL S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4d1f1c79b15c46e1bec5e19e24900ca1681eff04b31d3e24d582db945500326d",
+        "cached_at": "2026-05-30T01:57:52.870615"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 366970,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 3,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 100,
+      "montoMultasLaborales": 83450,
+      "porcentajeBoletinLaboral": 100,
+      "montoBoletinLaboral": 82376,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:830a12dd54ed0c2b4c2b62594625f02c4da23908ac05efd1aa39f28ab67a588d",
+      "cached_at": "2026-05-30T01:57:53.464129"
+    }
+  }
+}

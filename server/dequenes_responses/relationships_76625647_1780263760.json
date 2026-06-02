@@ -1,0 +1,52 @@
+{
+  "pathCount": 4,
+  "relationships": [
+    {
+      "source": "76625647",
+      "target": "15338376",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76625647",
+      "target": "15338376",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACaTUz7aO1Wz",
+        "source": "RES",
+        "published_at": "2020-05-11"
+      }
+    },
+    {
+      "source": "76625647",
+      "target": "15338376",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACDc8PLXBXVu",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "53304668",
+      "target": "15338376",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-04-24",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "15338376": "SEBASTIAN IGNACIO SIEL BRUNET",
+    "53304668": "SIEL BRUNET SEBASTIAN IGNACIO Y OTRO",
+    "76625647": "DISEÑO Y ARQUITECTURA SEBASTIAN SIEL BRUNET  E.I.R.L."
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:dca64d3d938028cfbe5207c553aabc29f00cb9d8b56a4934c54a2b194d68a9de",
+    "cached_at": "2026-05-31T21:42:40.492687"
+  }
+}

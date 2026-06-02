@@ -1,0 +1,1006 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "12911588-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "12911588-2",
+      "esPersonaJuridica": false,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "JUAN ANDRES ALARCON AMAYO",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-03-2014",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Sin observaciones.",
+        "notas": "No hay notas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS INSTALACIONES PARA OBRAS DE CONSTRUCCION",
+            "codigo": "432900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-06-2020"
+          },
+          {
+            "actividades": "TERMINACION Y ACABADO DE EDIFICIOS",
+            "codigo": "433000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-03-2014"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "1998"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2000"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2016"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": "30-05-2026 00:16:45",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 3,
+        "casosBolcom": 0,
+        "MontoInfocom": 3563006,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 3563006
+        },
+        "ultimaActualizacion": "30-05-2026 00:16:41"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 4,
+        "casosCivilesConcluidos": 7,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 4,
+        "casosConcluidos": 7,
+        "todosLosCasos": 12,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 5
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:16:41",
+        "ultimaActualizacionCobranza": "30-05-2026 00:16:40",
+        "ultimaActualizacionLaboral": "30-05-2026 00:16:40",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:16:50"
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:17:08"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:16:41"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "ALARCON AMAYO LIMITADA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "SOLEDAD DEL CARMEN SOTO SOTO",
+                  "rut": "14425324-8",
+                  "domicilio": "EL TRIGAL N°8-B COMUNA DE REQUINOA REGION DEL LIBERTADOR GRAL. BERNARDO O HIGGINS",
+                  "acciones": null,
+                  "monto": "$100.000 PESOS",
+                  "porcentaje": "10%"
+                },
+                {
+                  "socio": "JUAN ANDRES ALARCON AMAYO",
+                  "rut": "12911588-2",
+                  "domicilio": "EL TRIGAL N°8-B COMUNA DE REQUINOA REGION DEL LIBERTADOR GRAL. BERNARDO O HIGGINS",
+                  "acciones": null,
+                  "monto": "$900.000 PESOS",
+                  "porcentaje": "90%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JUAN ANDRES ALARCON AMAYO",
+                  "rut": "12911588-2",
+                  "domicilio": "EL TRIGAL N°8-B COMUNA DE REQUINOA REGION DEL LIBERTADOR GRAL. BERNARDO O HIGGINS"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "A Y A INGENIERIA SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "SOLEDAD DEL CARMEN SOTO SOTO",
+                  "rut": "14425324-8",
+                  "domicilio": "EL TRIGAL N°8 BLOQUE B COMUNA DE REQUINOA REGION DEL LIBERTADOR GRAL. BERNARDO O HIGGINS",
+                  "acciones": "500",
+                  "monto": "$2.500.000 CLP",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "JUAN ANDRES ALARCON AMAYO",
+                  "rut": "12911588-2",
+                  "domicilio": "EL TRIGAL N°8 BLOQUE B COMUNA DE REQUINOA REGION DEL LIBERTADOR GRAL. BERNARDO O HIGGINS",
+                  "acciones": "500",
+                  "monto": "$2.500.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JUAN ANDRES ALARCON AMAYO",
+                  "rut": "12911588-2",
+                  "domicilio": "EL TRIGAL N°8 BLOQUE B COMUNA DE REQUINOA REGION DEL LIBERTADOR GRAL. BERNARDO O HIGGINS"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 2400,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 340,
+        "deudaDirectaVencida": 680,
+        "deudaDirectaVigente": 320,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 650,
+          "deudaDirectaVencida": 420,
+          "deudaDirectaVigente": 2340,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 1,
+          "tasacionTotal": 1076446,
+          "ultimaActualizacion": "30-05-2026 00:16:42"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 1,
+          "tasacionTotal": "62713214",
+          "ultimaActualizacion": "30-05-2026 00:16:42"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 8.556149732620327,
+        "maxPonderacionFinanciero": 100,
+        "ponderacionJudicial": 91.66666666666667,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 0,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 200.222816399287,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "JUAN",
+        "segundoNombre": "ANDRES",
+        "apellido": "ALARCON",
+        "segundoApellido": "AMAYO",
+        "tipoPersona": "natural",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 2,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:34a3aafe71b7ba32b5df8dc07f13408770c52468a210154a525fa1b99ded5e60",
+      "cached_at": "2026-06-01T17:03:01.987358"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 12,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Excepciones",
+            "fechaIngreso": "03-09-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17376613-0",
+                "nombre": "JAVIERA PAZ MORAGA BENÍTEZ (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17342843-K",
+                "nombre": "CAROLINA BEATRIZ CISTERNAS ELTIT (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "99500840-8",
+                "nombre": "CAT. ADMINISTRADORA DE TARJETAS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-12500-2025",
+            "tribunal": "29º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "11-11-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9610081-7",
+                "nombre": "NELSON MARCOS HERNANDEZ PINOCHET",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRIS ALARCSN AMAYO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76139506-8",
+                "nombre": " AUTOFIN S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-2933-2019",
+            "tribunal": "2º Juzgado Civil de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "06-05-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13927483-0",
+                "nombre": "LUIS ANDRÉS OLAVARRÍA NÚÑEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76502058-1",
+                "nombre": "INVERSIONES Y COMERCIAL SOL LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-829-2019",
+            "tribunal": "1º Juzgado de Letras de Rengo",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "29-04-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76502058-1",
+                "nombre": "INVERSIONES Y COMERCIAL SOL LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13927483-0",
+                "nombre": "LUIS ANDRÉS OLAVARRÍA NÚÑEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17652348-4",
+                "nombre": "FELIPE HERNÁN MURILLO VALDERRAMA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-911-2019",
+            "tribunal": "1º Juzgado de Letras de Rengo",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "14-04-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13927483-0",
+                "nombre": "LUIS ANDRÉS OLAVARRÍA NÚÑEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76502058-1",
+                "nombre": "INVERSIONES Y COMERCIAL SOL LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-3003-2019",
+            "tribunal": "1º Juzgado Civil de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "21-03-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "9610081-7",
+                "nombre": "NELSON MARCOS HERNÁNDEZ PINOCHET",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76139506-8",
+                "nombre": "AUTOFIN S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-547-2019",
+            "tribunal": "1º Juzgado de Letras de Rengo",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "07-03-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9610081-7",
+                "nombre": "NELSON MARCOS HERNÁNDEZ PINOCHET (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76139506-8",
+                "nombre": "AUTOFIN S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-8859-2019",
+            "tribunal": "27º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Terminada",
+            "fechaIngreso": "13-11-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10908808-0",
+                "nombre": "IVÁN ALEJANDRO SEPÚLVEDA ORTIZ (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76265724-4",
+                "nombre": "INVERSIONES LP S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-35611-2018",
+            "tribunal": "17º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "21-08-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRÉS ALARCÓN AMAYO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17463579-K",
+                "nombre": "ROXANA JACQUELINE ANGULO GÓMEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76411321-7",
+                "nombre": "COMPAÑIA GENERAL DE ELECTRICIDAD S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-1600-2018",
+            "tribunal": "1º Juzgado de Letras de Rengo",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "14-04-2015 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRIS ALARCSN AMAYO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12867744-5",
+                "nombre": "RICARDO ANTONIO LARENAS PEQA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6919-2015",
+            "tribunal": "2º Juzgado Civil de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "9 Terminada ",
+            "fechaIngreso": "19-05-2013 20:00:00",
+            "litigantes": [
+              {
+                "rut": "6994374-8",
+                "nombre": "JOSI ANTONIO CARDEMIL ARAYA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10373050-3",
+                "nombre": "LUIS EDMUNDO DMAZ GUAJARDO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRIS ALARCSN AMAYO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-4435-2013",
+            "tribunal": "2º Juzgado Civil de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "7 Apelación y/o consulta 1ra Instancia",
+            "fechaIngreso": "20-12-2011 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12911588-2",
+                "nombre": "JUAN ANDRES ALARCON AMAYO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10373050-3",
+                "nombre": "LUIS EDMUNDO DIAZ GUAJARDO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6994374-8",
+                "nombre": "JOSE ANTONIO CARDEMIL ARAYA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16962-2011",
+            "tribunal": "1º Juzgado Civil de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:16:40"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:462dc1a28ff6d63eeaf6e7b27f526236ebeaed418cf1ae43a74113d7afab2ac7",
+        "cached_at": "2026-06-01T17:03:02.331239"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:16:40"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:100e7f1e04eff5a5d3a9d729df8a231d05aa09769aeee254b112a12f8a136643",
+        "cached_at": "2026-06-01T17:03:02.694702"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:16:40"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:95349f0755ddbab86063b376214cdff11d2c8783fbf9b80229dfdc9245734cf6",
+        "cached_at": "2026-06-01T17:03:03.030198"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:16:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:74cf7e49a9ce1c52af5dde82c7677a8d3ccd44be4ebd725c42fb8c46a2db95e1",
+        "cached_at": "2026-06-01T17:03:03.363789"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:16:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7c0cdbbfc80b67234fb48d723bf563cffc40b053878754cc9a1668967b9543fc",
+        "cached_at": "2026-06-01T17:03:04.069632"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "12911588-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "JUAN ANDRES ALARCON AMAYO",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ALARCÒN AMAYO LIMITADA",
+            "rutSociedad": "76471894-1",
+            "nombreSocio": "JUAN ANDRES ALARCON AMAYO",
+            "rutSocio": "12911588-2",
+            "fecha": "2015-01-15",
+            "socios": [
+              {
+                "nombre": "JUAN ANDRES ALARCON AMAYO",
+                "rut": "12911588-2",
+                "domicilio": "EL TRIGAL N°8-B COMUNA DE REQUINOA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "90"
+              },
+              {
+                "nombre": "SOLEDAD DEL CARMEN SOTO SOTO",
+                "rut": "14425324-8",
+                "domicilio": "DOMICILIADA EN EL TRIGAL 8 B N°0, COMUNA DE REQUINOA, REGION DEL LIBERTADOR GRAL",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2015-01-16",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACixr7R9MdLQ&codigo=5C-3B-89-2A-F8-04-DF-10-DB-BA-F9-5C-72-68-AB-86"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "A Y A INGENIERIA SPA",
+            "rutSociedad": "77017828-2",
+            "nombreSocio": "JUAN ANDRES ALARCON AMAYO",
+            "rutSocio": "12911588-2",
+            "fecha": "2019-05-21",
+            "socios": [
+              {
+                "nombre": "JUAN ANDRES ALARCON AMAYO",
+                "rut": "12911588-2",
+                "domicilio": "EL TRIGAL N°8-B COMUNA DE REQUINOA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "SOLEDAD DEL CARMEN SOTO SOTO",
+                "rut": "14425324-8",
+                "domicilio": "DOMICILIADA EN EL TRIGAL 8 B N°0, COMUNA DE REQUINOA, REGION DEL LIBERTADOR GRAL",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2019-05-22",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACR5uKVz7aAt&codigo=C7-D6-31-3C-D3-71-DD-41-39-7F-DC-95-B4-AE-0D-C1"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 2
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d695bc470e1b6a269753b6c021c8243ea6f252a9a0bbb4317e406d03fe788e80",
+      "cached_at": "2026-06-01T17:03:05.116798"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "12911588-2",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4110b80f7796ab3bf6bab7dc37689f01efc6d178cd4e6a5e374a6292c915083e",
+        "cached_at": "2026-06-01T17:03:05.449099"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 91.44385026737967,
+      "numeradorFinanzas": 3420,
+      "denominadorFinanzas": 3740,
+      "ponderacionFinanzas": 8.556149732620327,
+      "porcentajeJudicial": 8.333333333333332,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 12,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 91.66666666666667,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 100,
+      "montoBoletinComercial": 3563006,
+      "ponderacionBoletinComercial": 0,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 200.222816399287,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0dbe8b113bc8ab40d314d9fda1dfad631752b2b01c50abadcee2536427a06510",
+      "cached_at": "2026-06-01T17:03:06.049247"
+    }
+  }
+}

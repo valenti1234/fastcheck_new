@@ -1,0 +1,63 @@
+{
+  "pathCount": 5,
+  "relationships": [
+    {
+      "source": "77631877",
+      "target": "16758984",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-09-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77631877",
+      "target": "16758984",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACcVOmiEazLb",
+        "source": "RES",
+        "published_at": "2022-09-01"
+      }
+    },
+    {
+      "source": "77086072",
+      "target": "16758984",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACFjbIlhPL3S",
+        "source": "RES",
+        "published_at": "2022-02-21"
+      }
+    },
+    {
+      "source": "76787618",
+      "target": "16758984",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACkSKD4vKluO",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "77086072",
+      "target": "16758984",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC5zPl8sRxII",
+        "source": "RES"
+      }
+    }
+  ],
+  "entityNames": {
+    "16758984": "LUIS ARTURO MADRID GUZMAN",
+    "76787618": "M Y M ASOCIADOS SPA",
+    "77086072": "INNOVA H2O SPA",
+    "77631877": "MADRID CONSTRUCCIONES SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:296c64302dad83b7902585813c3b306c2d0c76254ad6ff1f439b41e0d96c670b",
+    "cached_at": "2026-05-30T00:05:27.286926"
+  }
+}

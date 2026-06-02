@@ -1,0 +1,3186 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "80522900-4"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "80522900-4",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "KOVACS SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MAYOR DE VEHICULOS AUTOMOTORES",
+            "codigo": "451001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE VEHICULOS AUTOMOTORES NUEVOS O USADOS (INCLUYE C",
+            "codigo": "451002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "31-08-2006"
+          },
+          {
+            "actividades": "MANTENIMIENTO Y REPARACION DE VEHICULOS AUTOMOTORES",
+            "codigo": "452002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "31-08-2006"
+          },
+          {
+            "actividades": "VENTA DE PARTES, PIEZAS Y ACCESORIOS PARA VEHICULOS AUTOMOTORES",
+            "codigo": "453000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "31-08-2006"
+          },
+          {
+            "actividades": "SUMINISTRO INDUSTRIAL DE COMIDAS POR ENCARGO; CONCESION DE SERVICIOS D",
+            "codigo": "562900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-08-2001"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Liquidacion De Facturas",
+            "ultimoAnioTimbrado": "2003"
+          },
+          {
+            "documento": "Facturas De Compras",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Honorarios",
+            "ultimoAnioTimbrado": "1987"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "2009"
+          },
+          {
+            "documento": "Pagares",
+            "ultimoAnioTimbrado": "2010"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Otros Documentos",
+            "ultimoAnioTimbrado": "2000"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Fact Exenta",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Guia Despacho",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2014"
+          }
+        ],
+        "cantidadActividades": 5,
+        "cantidadDocumentos": 25,
+        "ultimaActualizacion": "14-05-2026 16:32:35",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 858
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "28-05-2026 19:14:18"
+      },
+      "judicial": {
+        "casosCivilesActivos": 9,
+        "casosCivilesPresentados": 23,
+        "casosCivilesConcluidos": 19,
+        "cobranzaActivos": 1,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 4,
+        "laboralActivos": 19,
+        "laboralPresentados": 8,
+        "laboralConcluidos": 10,
+        "casosActuales": 29,
+        "casosArchivados": 31,
+        "casosConcluidos": 33,
+        "todosLosCasos": 93,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 23,
+          "demandante": 19,
+          "demandadoSolidario": 5,
+          "reclamante": 4,
+          "denunciado": 9
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:24:27",
+        "ultimaActualizacionCobranza": "28-05-2026 03:22:10",
+        "ultimaActualizacionLaboral": "28-05-2026 03:22:33",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 59,
+          "empleados": 13,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 883.33,
+            "cambioAbsoluto": 53
+          },
+          "ultimaActualizacion": "28-05-2026 19:14:28"
+        },
+        "multaLaboral": {
+          "totalMultas": 26,
+          "montoTotalMultas": 64654006,
+          "multasPagadas": 26,
+          "montoMultasPagadas": 64654006,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "28-05-2026 19:14:21"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "28-05-2026 19:14:19"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "28-02-2019 21:00:00",
+              "razonSocial": "KOVACS SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/03/01/42293/05/1555249.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MYRIAM ELIZABETH MARIELA AMIGO ARANCIBIA",
+                  "rut": "18020953-0",
+                  "domicilio": "MIRAFLORES 169, SANTIAGO"
+                }
+              ],
+              "rut": "80522900-4"
+            },
+            {
+              "fecha": "06-07-2023 20:00:00",
+              "razonSocial": "KOVACS SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/07/07/43595/05/2340798.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "EDUARDO KOVACS AMENGUAL",
+                  "rut": null,
+                  "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "LIONEL KOVACS AMENGUAL",
+                  "rut": null,
+                  "domicilio": "SEMINARIO N 385, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "EDUARDO KOVACS BAUER",
+                  "rut": null,
+                  "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "MARÍA CECILIA KOVACS BAUER",
+                  "rut": null,
+                  "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "LIONEL KOVACS GUTIÉRREZ",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "VERÓNICA KOVACS GUTIÉRREZ",
+                  "rut": null,
+                  "domicilio": "CALLE DEL OFICIO NÚMERO 3.188, COMUNA DE LO BARNECHEA, SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES CKB LIMITADA",
+                  "rut": null,
+                  "domicilio": "SEMINARIO N 385, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES KG LIMITADA",
+                  "rut": null,
+                  "domicilio": "VICTORIA N 2558, VALPARAÍSO"
+                }
+              ],
+              "rut": "80522900-4"
+            }
+          ],
+          "ultimaActualizacion": "28-05-2026 19:14:18"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 6430880,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 11765010,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 26430,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 5529290,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 10657090,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 26490
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 525,
+          "tasacionTotal": 5490938475,
+          "ultimaActualizacion": "02-03-2026 20:45:05"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "02-03-2026 20:45:02"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 59.32203389830508,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0.8474576271186436,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 260.1694915254237,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "KOVACS SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletin Dicom"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ba0e5cf69a0e951f74138dc35dea70ec19c45ecc431b5af88dadee97d985106d",
+      "cached_at": "2026-05-30T00:12:24.176012"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 51,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Audiencia",
+            "fechaIngreso": "16-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11943833-0",
+                "nombre": "JULIO CÉSAR LEÓN ESCUDERO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11385468-5",
+                "nombre": "CARLOS SANDRO MUÑOZ CABRERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "KOVACS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Designación Árbitro",
+            "rol": "C-3729-2025",
+            "tribunal": "1º Juzgado de Letras de San Felipe",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación",
+            "fechaIngreso": "16-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "KOVACS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11943833-0",
+                "nombre": "JULIO CÉSAR LEÓN ESCUDERO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11385468-5",
+                "nombre": "CARLOS SANDRO MUÑOZ CABRERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Designación Árbitro",
+            "rol": "C-1767-2025",
+            "tribunal": "2º Juzgado de Letras de Los Andes",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "29-09-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSÉ LUIS GUERRERO BECAR (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96667560-8",
+                "nombre": "TANNER SERVICIOS FINANCIEROS S.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10712239-7",
+                "nombre": "CLAUDIA DANITZA AGUILERA ESTAY",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "KOVACS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17578-2024",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Término Probatorio",
+            "fechaIngreso": "03-03-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8863581-7",
+                "nombre": "CARLOS RAÚL REYES REYES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9768849-4",
+                "nombre": "HEINRICH ALBERT GROTH GODOY (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10739162-2",
+                "nombre": "RICARDO ANDRÉS IHNEN BECKER (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "KOVACS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-4036-2024",
+            "tribunal": "1º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Contestación",
+            "fechaIngreso": "04-09-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10739162-2",
+                "nombre": "RICARDO ANDRÉS IHNEN BECKER (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6280637-0",
+                "nombre": "LUIS ALFONSO MOYA SCOTT",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11695399-4",
+                "nombre": "MICHEL RAFAEL TOLEDO MIRANDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-15525-2023",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "7 Sentencia",
+            "fechaIngreso": "28-01-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76400244-K",
+                "nombre": "COMERCIAL SANTA SARA LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76390989-1",
+                "nombre": "NISSAN CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6739390-2",
+                "nombre": "SUSANA AMELIA BONTA MEDINA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12420319-8",
+                "nombre": "ROCÍO BEATRIZ GODOY CABELLO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20285555-5",
+                "nombre": "PABLO JAVIER ROJAS NAVARRO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19640242-K",
+                "nombre": "MARÍA FERNANDA CABEZÓN OTERO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19539542-K",
+                "nombre": "SOFÍA XIMENA SCHWERTER BETANCOUR (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19245446-8",
+                "nombre": "BENJAMÍN ANDRÉS GUTIÉRREZ PERLWITZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10562384-4",
+                "nombre": "FELIPE OSSA GUZMÁN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16563651-1",
+                "nombre": "ÁLVARO JOSÉ VIVES MARTENS (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13829641-5",
+                "nombre": "PATRICK GEORGE RABY BIGGS (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19635938-9",
+                "nombre": "TERESA ZÚÑIGA MARINOVIC (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16356133-6",
+                "nombre": "FELIPE ALEJANDRO DE MARINIS ACLE (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-1552-2023",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda",
+            "fechaIngreso": "26-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10258097-4",
+                "nombre": "IVÁN PATRICIO GUZMÁN CORNEJO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16667890-0",
+                "nombre": "MIGUEL ALEJANDRO TORO CERDA (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13025756-9",
+                "nombre": "VÍCTOR DAVID ARAYA OROZCO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15948745-8",
+                "nombre": "HÉCTOR RODRIGO CORTÉS MIRANDA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "KOVACS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18842223-3",
+                "nombre": "THIARA NOEMÍ ARIAS RETAMALES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76473685-0",
+                "nombre": "BUEN SABOR GIGANTES SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Sumario Revocatorias Concursales",
+            "rol": "C-1985-2022",
+            "tribunal": "Juzgado de Letras de La Calera",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "6 Término Probatorio",
+            "fechaIngreso": "06-09-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12042813-6",
+                "nombre": "PAOLA VIVIANA ULLOA LORCA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77151001-9",
+                "nombre": "LASTARRIA INVERSIONES Y PROPIEDADES SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12042813-6",
+                "nombre": "PAOLA VIVIANA ULLOA LORCA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7939827-6",
+                "nombre": "FERNANDO PATRICIO TORRES LEIVA (Poder Revocado)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19539542-K",
+                "nombre": "SOFÍA XIMENA SCHWERTER BETANCOUR (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16359496-K",
+                "nombre": "CRISTINA FÁTIMA SAFFIE KATTAN (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10739162-2",
+                "nombre": "RICARDO ANDRÉS IHNEN BECKER (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19605674-2",
+                "nombre": "PABLA ANDREA ROSALES LIMA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-7544-2021",
+            "tribunal": "27º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "14-08-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSÉ LUIS GUERRERO BECAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8267903-0",
+                "nombre": "FELIPE SEGUNDO FLORES SANTANDER",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15341455-6",
+                "nombre": "RODOLFO ANDRÉS VILCHES ZAMORA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15597751-5",
+                "nombre": "FERNANDO ANDRÉS DÍAZ ESPINOSA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-4450-2020",
+            "tribunal": "1º Juzgado Civil de San Miguel",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "06-07-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76335998-0",
+                "nombre": "JOEL BASILIO AREVALO ROJAS CONSTRUCTORA EIRL",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSÉ LUIS GUERRERO BECAR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2596-2020",
+            "tribunal": "3º Juzgado Civil de Viña del Mar",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada ",
+            "fechaIngreso": "06-07-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "4380235-6",
+                "nombre": "CARLOS ABELARDO ALCAIDE ROJAS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSÉ LUIS GUERRERO BECAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-1581-2020",
+            "tribunal": "4º Juzgado Civil de Valparaíso",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "12-09-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSÉ LUIS GUERRERO BECAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10653377-6",
+                "nombre": "ALEJANDRO MOISÉS DURÁN GONZÁLEZ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13544710-2",
+                "nombre": "CAROLINA ALEJANDRA SALINAS GARCÍA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-4572-2019",
+            "tribunal": "3º Juzgado Civil de Viña del Mar",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica ",
+            "fechaIngreso": "12-09-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6320466-8",
+                "nombre": "HUGO JAIME BOTTO OAKLEY",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "69061000-0",
+                "nombre": "ILUSTRE MUNICIPALIDAD DE VIÑA DEL MAR  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6510763-5",
+                "nombre": "PABLO STAIG ARAUJO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17664644-6",
+                "nombre": "ISABEL NATALIA GANGAS DÍAZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13363191-7",
+                "nombre": "RODRIGO FRANCISCO CRUZ ARAVENA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16921442-5",
+                "nombre": "HIAM MILADEHT AYLLACH DÍAZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-4573-2019",
+            "tribunal": "1º Juzgado Civil de Viña del Mar",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "12-09-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSÉ LUIS GUERRERO BECAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-4557-2019",
+            "tribunal": "2º Juzgado Civil de Viña del Mar",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "25-01-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11087628-9",
+                "nombre": "GLORIA NANCY TAPIA ROJAS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": " E KOVACS S A ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15572748-9",
+                "nombre": "MIGUEL ANGEL CORTÉS CORTÉS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "77661250-2",
+                "nombre": " EMPRESA CONSTRUCTORA COLCUN LT DA",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96716200-0",
+                "nombre": " INVERSIONES E INMOBILIARIA EL ROSAL S.A",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "19078313-8",
+                "nombre": "JOSE MIGUEL VALENZUELA PAEZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-635-2019",
+            "tribunal": "Juzgado de Letras de Colina",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Archivada Digital",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "05-10-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8822170-2",
+                "nombre": "OSVALDO TOMÁS MOYA PÉREZ (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "e. kOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76033661-0",
+                "nombre": "CONSTRUCTORAS AGUAS CLARA COMPAÑIA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-2591-2017",
+            "tribunal": "4º Juzgado Civil de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "12 Terminada ",
+            "fechaIngreso": "05-05-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14261330-1",
+                "nombre": "OSVALDO ANÍBAL VIDELA CÁCERES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "6248145-5",
+                "nombre": "JORGE JAIME SCHAULSOHN BRODSKY",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "e. kOVACS Y CIA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-9216-2017",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "14-02-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "5354463-0",
+                "nombre": "OCTAVIO EDUARDO CANALES GUEVARA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": " E.KOVACS Y COMPANIA LIMITADA ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7343982-5",
+                "nombre": "ALAN WILFREDO BUSTOS COFRÉ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-84-2017",
+            "tribunal": "4º Juzgado Civil de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Ejecución de Sentencia",
+            "fechaIngreso": "13-02-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13544710-2",
+                "nombre": "CAROLINA ALEJANDRA SALINAS GARCÍA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "e. kOVACS Y CIA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76039858-6",
+                "nombre": "Sociedad de Transportes Jaacs Limitada  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16895027-6",
+                "nombre": "CARLOS MATÍAS MUÑOZ LECERF",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17334901-7",
+                "nombre": "DIEGO ANTONIO GÓMEZ LÓPEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10376688-5",
+                "nombre": "JOSI LUIS GUERRERO BECAR",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16813295-6",
+                "nombre": "CAROLINA VIVIANA BUSTAMANTE ROSAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16772524-4",
+                "nombre": "PATRICIO MENESES ISHIHARA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-416-2017",
+            "tribunal": "2º Juzgado Civil de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Dúplica ",
+            "fechaIngreso": "10-01-2017 00:00:00",
+            "litigantes": [
+              {
+                "rut": "5354463-0",
+                "nombre": "OCTAVIO EDUARDO CANALES GUEVARA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "e. kOVACS Y CIA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7343982-5",
+                "nombre": "ALAN WILFREDO BUSTOS COFRÉ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-131-2017",
+            "tribunal": "1º Juzgado de Letras de San Felipe",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 19:14:18"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:54f96ab42872fba73ebadd87eae4abc1796c6596d33b3ef762e9f5a313830698",
+        "cached_at": "2026-05-30T00:12:24.672480"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "25-02-2024 21:00:00",
+            "monto": "11184089",
+            "litigantes": [
+              {
+                "rut": "17491091-K",
+                "nombre": "DIEGO ALEJANDRO CABRERA VERGARA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19359428-K",
+                "nombre": "MARIA LETICIA SALINAS SOTO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77145386-4",
+                "nombre": "AGUILAR Y ARREDONDO SPA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18152647-5",
+                "nombre": "JAVIERA ANDREA PLAZA MARÍN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17271913-9",
+                "nombre": "FELIPE MARTÍN NOGUEIRA FERRADA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18096997-7",
+                "nombre": "JOSÉ LUIS FERRADA PEÑA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18636757-K",
+                "nombre": "FRANCISCO JAVIER SAFFIRIO ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17596861-K",
+                "nombre": "PABLO MARCELO SAFFIRIO ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17408844-6",
+                "nombre": "MAX IGNACIO YURASZECK PÉREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13905608-6",
+                "nombre": "KARENN FRANCISZKA HOLENDERSKI GUERRERO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1102-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-07-2018 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E.KOVACS Y COMPANIA LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-44003-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "15-03-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E.KOVACS Y COMPANIA LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-1505-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "16-03-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADM. DE FONDOS DE CESANTIA DE CHILE II SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E KOVACS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-1862-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "04-11-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000400-7",
+                "nombre": "Administradora de Fondos de Pensiones Provida  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E.KOVACS S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-3217-2013",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 19:14:18"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3093814d5b733bd36cee4f9febb290bf363e5294398211100c5f4db850afe82e",
+        "cached_at": "2026-05-30T00:12:25.026028"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 37,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19726361-K",
+                "nombre": "JUAN FRANCISCO AQUILES CONEJERA JIMÉNEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13906632-4",
+                "nombre": "KAREN NORAMBUENA HIDALGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13290212-7",
+                "nombre": "RODRIGO ALEJANDRO CAMPOS POBLETE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-115-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION DEL TRABAJO",
+                "sujeto": "DNCTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17455047-6",
+                "nombre": "JORGE MARIO MOYA ROJAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18033585-4",
+                "nombre": "MAURICIO EDUARDO PÉREZ TAPIA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14131673-7",
+                "nombre": "MIGUEL ALEJANDRO DÍAZ JIMÉNEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13457865-3",
+                "nombre": "CAROLINA DEL PILAR PEREZ RODRIGUEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-124-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de San Felipe",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "14-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "5141099-8",
+                "nombre": "ENRIQUE LEON ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298554-6",
+                "nombre": "VALENTINA LEÓN BAGNARA (Poder Simple)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-1124-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "15-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10522398-6",
+                "nombre": "JUAN CARLOS VARGAS VERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1368-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16365786-4",
+                "nombre": "IGNACIO RODRIGO BASCUÑAN MUÑOZ (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13707295-5",
+                "nombre": "JORGE ALEJANDRO BURGOS CEA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3546-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19027083-1",
+                "nombre": "GABRIEL NICOLÁS SEPÚLVEDA TRIVIÑOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18957272-7",
+                "nombre": "JUAN PABLO ARTURO AGUIRRE HERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18993651-6",
+                "nombre": "CHRISTIAN ALEJANDRO MUÑOZ VÁSQUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-76-2025",
+            "tribunal": "2° Juzgado de Letras de Linares",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16717692-5",
+                "nombre": "GABRIELA DANIELA AMPUERO NAVARRO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19151615-K",
+                "nombre": "SANDRA KARINA VELOZO CARVAJAL",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1899-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "20-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "5141099-8",
+                "nombre": "ENRIQUE LEÓN ESPINOSA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25509256-1",
+                "nombre": "AIMARA SOFIA DE JESUS MOLINA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19560373-1",
+                "nombre": "GIOVANNA LORETO CARTE SUÁREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298554-6",
+                "nombre": "VALENTINA LEÓN BAGNARA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2391-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "21-03-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298554-6",
+                "nombre": "VALENITNA LEON BAGNARA (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "5141099-8",
+                "nombre": "ENRIQUE LEÓN ESPINOSA (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION DEL TRABAJO MAIPU",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-11-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de San Felipe",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-02-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16726433-6",
+                "nombre": "DIEGO ANTONIO ARRIAGADA ORTIZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18228433-5",
+                "nombre": "MATHIAS IGNACIO MERLIN CAMPOS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-38-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "27-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14161534-3",
+                "nombre": "MIGUEL ESTEBAN ESPINOZA NARANJO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "7061933-4",
+                "nombre": "MARIO GARAY MARTINEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-637-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "20-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "24982233-7",
+                "nombre": "AMARO ALBERTO GONZALEZ PADRON",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19560373-1",
+                "nombre": "GIOVANNA LORETO CARTE SUÁREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-475-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9471174-6",
+                "nombre": "JORGE ANDRÉS RODRÍGUEZ FLORES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8534847-7",
+                "nombre": "VICTOR HUGO SOLAR PAVEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17022740-9",
+                "nombre": "FANNY VANESSA SOLAR GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16742944-0",
+                "nombre": "RAUL SEBASTIAN POZO TRITTINI (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-259-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18467252-9",
+                "nombre": "SOL MOURE MORENO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17426762-6",
+                "nombre": "CHRISTIAN ANDRÉS ALEGRÍA BELLO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17365649-1",
+                "nombre": "CRISTINA BELÉN MELO RIVAS",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20126615-7",
+                "nombre": "MARÍA JACQUELINE CASTILLO SALAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "5141099-8",
+                "nombre": "ENRIQUE LEÓN ESPINOSA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298554-6",
+                "nombre": "VALENTINA LEÓN BAGNARA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17254097-K",
+                "nombre": "GONZALO MAURICIO SOTO LÓPEZ",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19958717-K",
+                "nombre": "JOAQUÍN IGNACIO DONOSO LAGOS",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19948579-2",
+                "nombre": "KATALINA IGNACIA BEATRIZ ROJO VENEGAS",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-29-2024",
+            "tribunal": "2º Juzgado de Letras de Quillota",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13661795-8",
+                "nombre": "ROBERTO ALEJANDRO RIVAS ZÚÑIGA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2936-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-09-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18916639-7",
+                "nombre": "LUIGGI JULIANO DEILA VARGAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18378322-K",
+                "nombre": "FELIPE ANDRÉS CELIS GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-673-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "28-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13720143-7",
+                "nombre": "CARLOS CHRISTIAN VALENZUELA NAKAMURA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13781829-9",
+                "nombre": "PABLO CÉSAR PIÑA PEREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17862085-1",
+                "nombre": "LEONARDO ELÍAS BARRA AGUILERA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-6167-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "04-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "5141099-8",
+                "nombre": "ENRIQUE LEON ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298554-6",
+                "nombre": "VALENTINA LEÓN BAGNARA (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE OSORNO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-180-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "28-04-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9043840-9",
+                "nombre": "GIOVANNI LEONARDO DEPAOLI URIBE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8955662-7",
+                "nombre": "MIGUEL ANGEL HERRERA VEGA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-26-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de San Felipe",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "16-03-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16099830-K",
+                "nombre": "TOMAS AYLWIN ARREGUI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19078078-3",
+                "nombre": "JOSÉ TOMÁS GOÑI PENI",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19078078-3",
+                "nombre": "JOSÉ TOMÁS GOÑI PENI (Poder Amplio)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18568136-K",
+                "nombre": "ESTEFANÍA VIRGINIA CASTRO CANDIA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10231124-8",
+                "nombre": "GABRIEL CACERES MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80522900-4",
+                "nombre": "E. KOVACS Y CIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "4040768-5",
+                "nombre": "VÍCTOR GUILLERMO L'HUILLIER ZAVALA",
+                "sujeto": "DNCDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9109470-3",
+                "nombre": "MÓNICA LUISA ALVARADO HUERTA",
+                "sujeto": "T.IND",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-196-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 19:14:18"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0e449f2f37685a62401f030c3ba5407c6cf2603ba31b86b60511bd97b62aaa49",
+        "cached_at": "2026-05-30T00:12:27.177063"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 26,
+        "casos": [
+          {
+            "enunciado": "No informar a los trabajadores acerca de los riesgos laborales.",
+            "estado": "PAGADA",
+            "fecha": "19-08-2025 20:00:00",
+            "multa": "6401/25/014-3",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2059410
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "19-08-2025 20:00:00",
+            "multa": "6401/25/014-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "19-08-2025 20:00:00",
+            "multa": "6401/25/014-2",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2059410
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "04-06-2025 20:00:00",
+            "multa": "1983/25/012-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4127100
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "04-06-2025 20:00:00",
+            "multa": "1983/25/012-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4127100
+          },
+          {
+            "enunciado": "Efectuar deducciones sobre el 15% de las remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "03-06-2025 20:00:00",
+            "multa": "1026/24/065-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2063550
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "11-11-2024 21:00:00",
+            "multa": "1779/24/056-3",
+            "procedencia": "FISCALIZACION",
+            "um": "3",
+            "tipoUm": "UTM",
+            "montoClp": 199884
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "03-09-2024 20:00:00",
+            "multa": "1779/24/056-4",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1990860
+          },
+          {
+            "enunciado": "No pagar remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "03-09-2024 20:00:00",
+            "multa": "1779/24/056-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1990860
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-09-2024 20:00:00",
+            "multa": "1779/24/056-2",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1990860
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-08-2024 20:00:00",
+            "multa": "8336/24/062-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3954060
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "18-08-2024 20:00:00",
+            "multa": "8336/24/062-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3954060
+          },
+          {
+            "enunciado": "No pactar modalidad de trabajo a distancia o teletrabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-08-2024 20:00:00",
+            "multa": "8336/24/062-3",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3954060
+          },
+          {
+            "enunciado": "No actualizar en el contrato de trabajo la remuneración.",
+            "estado": "PAGADA",
+            "fecha": "06-08-2024 20:00:00",
+            "multa": "0964/24/016-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1977030
+          },
+          {
+            "enunciado": "No otorgar descanso dominical y/o festivo.",
+            "estado": "PAGADA",
+            "fecha": "31-07-2024 20:00:00",
+            "multa": "3914/24/044-1",
+            "procedencia": "FISCALIZACION",
+            "um": "32",
+            "tipoUm": "UTM",
+            "montoClp": 2108832
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "14-07-2024 20:00:00",
+            "multa": "8025/24/192-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-02-2024 21:00:00",
+            "multa": "8025/24/003-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "29-01-2024 21:00:00",
+            "multa": "3920/23/015-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1939980
+          },
+          {
+            "enunciado": "No especificar en el contrato de trabajo la determinación precisa de la naturaleza de los servicios.",
+            "estado": "PAGADA",
+            "fecha": "16-01-2024 21:00:00",
+            "multa": "3920/23/063-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3879960
+          },
+          {
+            "enunciado": "No contar con señalización visible y permanente las zonas de peligro.",
+            "estado": "PAGADA",
+            "fecha": "24-09-2023 21:00:00",
+            "multa": "3914/23/066-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1903560
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:24:27"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:784813501d856aa54a8a2948a5acd3d4c8c39f25cdd5e6661d7c808ba3e7fbe5",
+        "cached_at": "2026-05-30T00:12:27.544512"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 7,
+        "cantidad": 138,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALBERTO DAVID NUNEZ ROCHA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "19042986-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO BURGOS VERA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "7142960-1",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANA GABRIELA SALAZAR MENDOZA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "25636098-5",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GABRIEL IGNACIO GONZALEZ VIVEROS ",
+            "periodo": "03/2026",
+            "rutAfiliado": "16999083-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROMINA SOFIA SAPAG QUIROZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "16660625-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO BURGOS VERA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "7142960-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KARIN MARCELA RIFFO OVIEDO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "10091700-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANDREA CAROLINA HERRAZ GOMEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "14484618-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GABRIEL IGNACIO GONZALEZ VIVEROS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "16999083-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO BURGOS VERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "7142960-1",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KARIN MARCELA RIFFO OVIEDO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "10091700-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO BURGOS VERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "7142960-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROMINA SOFIA SAPAG QUIROZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "16660625-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALBERTO DAVID NUNEZ ROCHA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19042986-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANA GABRIELA SALAZAR MENDOZA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "25636098-5",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROMINA SOFIA SAPAG QUIROZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "16660625-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR LUIS VALENZUELA RAMOS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "10274330-k",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALBERTO DAVID NUNEZ ROCHA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "19042986-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANA GABRIELA SALAZAR MENDOZA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "25636098-5",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KARIN MARCELA RIFFO OVIEDO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "10091700-9",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:24:27"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b31f59eab2b42e4bb3effba1f014a736a79725752f39f060ed0bb706bbd7be7b",
+        "cached_at": "2026-05-30T00:12:27.883400"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "80522900-4",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "KOVACS SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "KOVACS SPA",
+            "rutSociedad": "80522900-4",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1947-12-31",
+            "socios": [
+              {
+                "nombre": "EDUARDO EMERICH KOVACS AMENGUAL",
+                "rut": "5138743-0",
+                "domicilio": "COLÓN 3111, VALPARAÍSO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "62.5014"
+              },
+              {
+                "nombre": "LIONEL RICARDO TADEO KOVACS AMENGUAL",
+                "rut": "5307212-7",
+                "domicilio": "VICTORIA N° 2558, VALPARAÍSO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "14.4286"
+              },
+              {
+                "nombre": "EDUARDO KOVACS BAUER",
+                "rut": "12221580-6",
+                "domicilio": "SEMINARIO N°385, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "2.00"
+              },
+              {
+                "nombre": "VERONICA OLGA KOVACS GUTIERREZ",
+                "rut": "9908213-5",
+                "domicilio": "AVENIDA VICUÑA MACKENNA NÚMERO 1420, COMUNA DE ÑUÑOA, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "LIONEL EUGENIO KOVACS GUTIERREZ",
+                "rut": "12021182-K",
+                "domicilio": "CALLE VICTORIA NÚMERO 2558, COMUNA Y CIUDAD DE VALPARAÍSO, QUINTA REGIÓN",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARIA CECILIA KOVACS BAUER",
+                "rut": "10753135-1",
+                "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES KG LIMITADA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES KG LIMITADA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "3.952"
+              },
+              {
+                "nombre": "INVERSIONES CKB LIMITADA",
+                "rut": "76180308-5",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "5.00"
+              },
+              {
+                "nombre": "EDUARDO KOVACS BAUER SPA",
+                "rut": "76154147-1",
+                "domicilio": "CALLE SEMINARIO 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "12.118"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2023-07-07",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/07/07/43595/05/2340798.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-03-01",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/03/01/42293/05/1555249.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-08-18",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/08/18/41536/05/1100726.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "INVERSIONES FIRST STARTER SPA",
+                "rut": "77275074-9",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:f55cffefac98033d102944fd48dd039f8f5811337d7264c6a6fdd6c4fd577063",
+      "cached_at": "2026-05-30T00:12:30.644414"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "80522900-4",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "28-02-2019 21:00:00",
+            "razonSocial": "KOVACS SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/03/01/42293/05/1555249.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MYRIAM ELIZABETH MARIELA AMIGO ARANCIBIA",
+                "rut": "18020953-0",
+                "domicilio": "MIRAFLORES 169, SANTIAGO"
+              }
+            ],
+            "rut": "80522900-4"
+          },
+          {
+            "fecha": "06-07-2023 20:00:00",
+            "razonSocial": "KOVACS SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/07/07/43595/05/2340798.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "EDUARDO KOVACS AMENGUAL",
+                "rut": null,
+                "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "LIONEL KOVACS AMENGUAL",
+                "rut": null,
+                "domicilio": "SEMINARIO N 385, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "EDUARDO KOVACS BAUER",
+                "rut": null,
+                "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "MARÍA CECILIA KOVACS BAUER",
+                "rut": null,
+                "domicilio": "CALLE SEMINARIO N 385, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "LIONEL KOVACS GUTIÉRREZ",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "VERÓNICA KOVACS GUTIÉRREZ",
+                "rut": null,
+                "domicilio": "CALLE DEL OFICIO NÚMERO 3.188, COMUNA DE LO BARNECHEA, SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES CKB LIMITADA",
+                "rut": null,
+                "domicilio": "SEMINARIO N 385, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES KG LIMITADA",
+                "rut": null,
+                "domicilio": "VICTORIA N 2558, VALPARAÍSO"
+              }
+            ],
+            "rut": "80522900-4"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0772750749",
+            "society": "INVERSIONES FIRST STARTER SPA"
+          },
+          {
+            "rut": "80522900-4",
+            "sociedad": "KOVACS SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b92ca1d71fee5045b7fad94316fa2e348683b91ebe6bee5188438546dcf21dee",
+        "cached_at": "2026-05-30T00:12:31.001159"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 11765010,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 40.67796610169492,
+      "numeradorJudicial": 24,
+      "denominadorJudicial": 59,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 59.32203389830508,
+      "porcentajeMoraPrevisional": 99.15254237288136,
+      "casosMoraPrevisional": 59,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 64654006,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0.8474576271186436,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 260.1694915254237,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c9270ea55193d107de4fd91add35a94b2bada3882724551d246e5e4521ef1838",
+      "cached_at": "2026-05-30T00:12:31.670229"
+    }
+  }
+}

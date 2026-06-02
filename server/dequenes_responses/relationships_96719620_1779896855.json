@@ -1,0 +1,262 @@
+{
+  "pathCount": 23,
+  "relationships": [
+    {
+      "source": "96719620",
+      "target": "14674562",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-08-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96719620",
+      "target": "11662189",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-08-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96719620",
+      "target": "17021722",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-11-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96719620",
+      "target": "15320354",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96719620",
+      "target": "10623878",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-11-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96719620",
+      "target": "11946551",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-08-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96719620",
+      "target": "59177870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "78886470",
+      "target": "14674562",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-03-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78886470",
+      "target": "14674562",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5941161",
+        "doh_extraction_id": "830695",
+        "shares_percent": 40,
+        "source": "DOH",
+        "doh_id": "5941161",
+        "published_at": "2000-03-14",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2000/03/14/do-20000314.pdf"
+      }
+    },
+    {
+      "source": "96624630",
+      "target": "17021722",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-07-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "83157200",
+      "target": "17021722",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-07-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78977700",
+      "target": "17021722",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-01-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77509977",
+      "target": "17021722",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-12-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96842640",
+      "target": "15320354",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96834040",
+      "target": "15320354",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76014531",
+      "target": "15320354",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-03-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76014531",
+      "target": "15320354",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6874381",
+        "doh_extraction_id": "532479",
+        "shares_percent": 33.33,
+        "source": "DOH",
+        "doh_id": "6874381",
+        "published_at": "2008-04-17",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2008/04/17/do-20080417.pdf"
+      }
+    },
+    {
+      "source": "76706231",
+      "target": "10623878",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-10-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76706231",
+      "target": "10623878",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2390538",
+        "cve": "2390538",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2023-10-13",
+        "doc_extraction_id": "1907917",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/10/13/43675/05/2390538.pdf"
+      }
+    },
+    {
+      "source": "59177870",
+      "target": "11947423",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-03-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "83157200",
+      "target": "59177870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1889700",
+        "cve": "1889700",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2021-02-01",
+        "doc_extraction_id": "1814569",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2021/02/01/42869/05/1889700.pdf"
+      }
+    },
+    {
+      "source": "77509977",
+      "target": "59177870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2055547",
+        "cve": "2055547",
+        "shares_percent": 99.99914,
+        "source": "DO",
+        "published_at": "2021-12-13",
+        "doc_extraction_id": "1584954",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2021/12/13/43126/05/2055547.pdf"
+      }
+    },
+    {
+      "source": "83157200",
+      "target": "59177870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    }
+  ],
+  "entityNames": {
+    "10623878": "OLIVIER EDUARDO LOYER PONCE",
+    "11662189": "LORENA DEL PILAR BENAVIDES ESPINOZA",
+    "11946551": "LEYLA BEATRIZ CARRASCO SILVA",
+    "11947423": "HUGO SEBASTIAN PRIETO ROJAS",
+    "14674562": "FELIPE JULIO GARCIA AEDO",
+    "15320354": "CRISTIAN ALBERTO VILCHES RIUMALLO",
+    "17021722": "DAVID PATRICIO ROJAS CACERES",
+    "59177870": "TYCO INTERNATIONAL HOLDINGS S.A.R.L.",
+    "76014531": "ASESORIA Y GESTION ALONSO DE CORDOVA S A",
+    "76706231": "SOCIEDAD DE PROFESIONALES D2A CONSULTORIA Y SERVICIOS LIMITADA",
+    "77509977": "SENSORMATIC CHILE SPA.",
+    "78886470": "SOC COMERCIAL CUBAK LIMITADA",
+    "78977700": "WESTFIRE SUDAMERICA SPA",
+    "83157200": "TYCO SERVICES S A",
+    "96624630": "JOHNSON CONTROLS CHILE S.A",
+    "96719620": "ADT SECURITY SERVICES S A",
+    "96834040": "SIMPLEX S A",
+    "96842640": "SIMPLEX S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:fa0741859601f967ffc8217aa6f2cfd0c500ed4d2ef340c0cdc2dc44f86f8737",
+    "cached_at": "2026-05-27T15:47:35.129744"
+  }
+}

@@ -1,0 +1,1099 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76308071-4"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76308071-4",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "CONSTRUCTORA VASA LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "19-07-2013",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "CONSTRUCCION DE EDIFICIOS PARA USO RESIDENCIAL",
+            "codigo": "410010",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-07-2013"
+          },
+          {
+            "actividades": "CONSTRUCCION DE EDIFICIOS PARA USO NO RESIDENCIAL",
+            "codigo": "410020",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "03-05-2021"
+          },
+          {
+            "actividades": "CONSTRUCCION DE CARRETERAS Y LINEAS DE FERROCARRIL",
+            "codigo": "421000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-07-2013"
+          },
+          {
+            "actividades": "INSTALACIONES ELECTRICAS",
+            "codigo": "432100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-07-2013"
+          },
+          {
+            "actividades": "TERMINACION Y ACABADO DE EDIFICIOS",
+            "codigo": "433000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-07-2013"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2025"
+          }
+        ],
+        "cantidadActividades": 5,
+        "cantidadDocumentos": 7,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "100.000,01 a 200.000,00",
+          "cantidadTrabajadores": 78
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "31-05-2026 21:31:45"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 4,
+        "casosActuales": 0,
+        "casosArchivados": 1,
+        "casosConcluidos": 4,
+        "todosLosCasos": 5,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "31-05-2026 21:31:44",
+        "ultimaActualizacionCobranza": "31-05-2026 21:31:45",
+        "ultimaActualizacionLaboral": "31-05-2026 21:31:44",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 1003220,
+          "multasPagadas": 2,
+          "montoMultasPagadas": 1003220,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:31:45"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "03-12-2015 21:00:00",
+              "razonSocial": "CONSTRUCTORA VASA SPA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/12/04/973886_M_SPA_20151204_firmada.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "SORAYA IVETTE JADUE JADUE",
+                  "rut": "15384642-1",
+                  "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+                }
+              ],
+              "rut": "76308071-4"
+            },
+            {
+              "fecha": "09-02-2016 21:00:00",
+              "razonSocial": "CONSTRUCTORA VASA SPA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/02/10/996318_M_SPA_20160210.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "SORAYA IVETTE JADUE JADUE",
+                  "rut": "15384642-1",
+                  "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+                },
+                {
+                  "socio": "MARTIN VARELA VENEGAS",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76308071-4"
+            },
+            {
+              "fecha": "25-12-2020 21:00:00",
+              "razonSocial": "CONSTRUCTORA VASA SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/26/42839/05/1871947.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "SORAYA IVETTE JADUE JADUE",
+                  "rut": "15384642-1",
+                  "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+                }
+              ],
+              "rut": "76308071-4"
+            },
+            {
+              "fecha": "21-02-2021 21:00:00",
+              "razonSocial": "CONSTRUCTORA VASA SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/02/22/42887/05/1900143.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "SORAYA IVETTE JADUE JADUE",
+                  "rut": "15384642-1",
+                  "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES DSH SPA",
+                  "rut": null,
+                  "domicilio": "AV. KENNEDY LATERAL 5002, DEPARTAMENTO 71, VITACURA"
+                },
+                {
+                  "socio": "INVERSIONES SAFITA SPA",
+                  "rut": null,
+                  "domicilio": "AV. ITALIA 1634, ÑUÑOA"
+                }
+              ],
+              "rut": "76308071-4"
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 87670,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 382270,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 30480,
+        "lineaCredito": 13250,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 45280,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 135250,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 42880,
+          "lineaCredito": 54610
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 3,
+          "tasacionTotal": 44011766,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "CONSTRUCTORA VASA LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        null
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:55c187bcb740198639de778117904a742eb7e08831c4b7d1c103df7ff9073280",
+      "cached_at": "2026-05-31T21:31:46.516966"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "10-01-2017 00:00:00",
+            "litigantes": [
+              {
+                "rut": "15384642-1",
+                "nombre": "SORAYA IVETTE JADUE JADUE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76308071-4",
+                "nombre": "Constructora Vasa SpA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "78504920-9",
+                "nombre": "Inmobiliaria e Inversiones Yany Limitada  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-276-2017",
+            "tribunal": "1º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:31:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:72a3de9e8f8a22c020424dcd2cd66bc83aebafceb2fdbbb5504c964452e12e50",
+        "cached_at": "2026-05-31T21:31:46.868706"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:31:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1e01220904e59991d6dfcc8b5f30376788945af2ce15294088d94b1469956a5e",
+        "cached_at": "2026-05-31T21:31:47.232619"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 4,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "31-01-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13262472-0",
+                "nombre": "GUILLERMO OYARZUN CASTRO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "ENDERSON GREGORIO TOVAR ARRIETA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16097411-7",
+                "nombre": "MATÍAS HORACIO NOVOA CARBONE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16662920-9",
+                "nombre": "EDGARDO ANDRÉS UMANZOR RIVEROS (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76704482-8",
+                "nombre": "AQUILES NS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76308071-4",
+                "nombre": "CONSTRUCTORA VASA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "78063650-5",
+                "nombre": "EMPRESA CONSTRUCTORA PROYEKTA LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13754946-8",
+                "nombre": "SILVANA FRANCISCA CALLEJAS EMBLICO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16912551-1",
+                "nombre": "CAROLINA STEPHANY GONZÁLEZ KUSNIR (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16660390-0",
+                "nombre": "ANDRÉS MANUEL LABBÉ CORTÉS (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-254-2022",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-02-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15153891-6",
+                "nombre": "ALEX SANTIAGO LIENCURA MUÑOZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14476645-8",
+                "nombre": "MARÍA CAROLINA GAJARDO MOYA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14345789-3",
+                "nombre": "MARÍA SOLEDAD SANTELICES SAZO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10663000-3",
+                "nombre": "CRISTIAN TOLEDO TOLEDO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76446886-4",
+                "nombre": "JAMAT SEGURIDAD RECURSOS HUMANOS Y CAPACITACIONES SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76308071-4",
+                "nombre": "CONSTRUCTORA VASA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Exhorto",
+            "rit": "E-990-2020",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-02-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15153891-6",
+                "nombre": "ALEX SANTIAGO LIENCURA MUÑOZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14476645-8",
+                "nombre": "MARÍA CAROLINA GAJARDO MOYA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "Si"
+              },
+              {
+                "rut": "14345789-3",
+                "nombre": "MARÍA SOLEDAD SANTELICES SAZO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "Si"
+              },
+              {
+                "rut": "10663000-3",
+                "nombre": "CRISTIAN TOLEDO TOLEDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "Si"
+              },
+              {
+                "rut": "76446886-4",
+                "nombre": "JAMAT SEGURIDAD RECURSOS HUMANOS Y CAPACITACIONES SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76308071-4",
+                "nombre": "CONSTRUCTORA VASA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-7-2020",
+            "tribunal": "1° Juzgado de Letras de Linares",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "21-01-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15384642-1",
+                "nombre": "SORAYA IVETTE JADUE JADUE (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "26560174-K",
+                "nombre": "NEY ARMANDO SILVA PETETE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "26652683-0",
+                "nombre": "JOSE MANUEL MENDOZA OLAVES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "26695531-6",
+                "nombre": "FRANCISCO JAVIER ALAVA SANCHEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "8534847-7",
+                "nombre": "VICTOR HUGO SOLAR PAVEZ (Revoca Poder)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76938908-3",
+                "nombre": "CONSTRUCCIÓN PROYECTOS MANTE. KEMPES SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76308071-4",
+                "nombre": "CONSTRUCTORA VASA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16083923-6",
+                "nombre": "WILLIAM HERNÁN GALLEGOS CERDA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-504-2020",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:31:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6d133bca365bd254899843b79750cfe4f74b38e0d3c678afcd149052f0746809",
+        "cached_at": "2026-05-31T21:31:47.589855"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:31:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3fa6923b9892ec2abea977bf45dcbcc8683569fbb6ef7551d50a29152ed0d44b",
+        "cached_at": "2026-05-31T21:31:47.934185"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-03-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ESTEBAN LUENGO CONTRERAS ",
+            "periodo": "01/2025",
+            "rutAfiliado": "11382110-8",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:31:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:413e7ea840d595787be4293a4546a0d47cc5b3a04ec3659d2983245d912b9f64",
+        "cached_at": "2026-05-31T21:31:48.288733"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76308071-4",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "CONSTRUCTORA VASA LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSTRUCTORA VASA LIMITADA",
+            "rutSociedad": "76308071-4",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2013-07-17",
+            "socios": [
+              {
+                "nombre": "ANTONIO MARCELO SABAGH HADDAD",
+                "rut": "12488116-1",
+                "domicilio": "SAN IGNACIO 700, QUILICURA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "DANIEL RODRIGO SABAGH HADDAD",
+                "rut": "12882460-K",
+                "domicilio": "MIRAFLORES 169 OFICINA 42 SANTIAGO",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SORAYA IVETTE JADUE JADUE",
+                "rut": "15384642-1",
+                "domicilio": "MIRAFLORES 169 OFICINA 52 SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "MARTÍN IGNACIO VARELA VENEGAS",
+                "rut": "10033953-6",
+                "domicilio": "CERRO SAN RAMÓN N° 2387, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "INVERSIONES DSH SPA",
+                "rut": null,
+                "domicilio": "AV KENNEDY LATERAL 5002 DEPARTAMENTO 71 VITACURA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "INVERSIONES SAFITA SPA",
+                "rut": null,
+                "domicilio": "AV ITALIA 1634 ÑUÑOA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "MARIA SOLEDAD LASCAR MERINO",
+                "rut": null,
+                "domicilio": "AVENIDA ISIDORA GOYENECHEA 3477, OFICINA 10, COMUNA DE LAS CONDES, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Notario titular",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES DSH SPA",
+                "rut": null,
+                "domicilio": "AVENIDA KENNEDY LATERAL 5002, DEPARTAMENTO 71, COMUNA DE VITACURA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "47.50"
+              },
+              {
+                "nombre": "INVERSIONES SAFITA SPA",
+                "rut": null,
+                "domicilio": "AVENIDA ITALIA 1634, COMUNA DE NUÑOA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "47.50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-12-22",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/12/22/44330/05/2745205.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-02-22",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/02/22/42887/05/1900143.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-12-26",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/26/42839/05/1871947.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-02-10",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2016/02/10/996318_M_SPA_20160210.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2015-12-04",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2015/12/04/973886_M_SPA_20151204_firmada.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2015-08-12",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2015/08/12/932984_M_SPA_20150812_firmada.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2013-07-18",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2013/07/18/663617_C_LTDA_20130718_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:646141b7b41fc68f6cb353b9e520117d03310dfebd5a22c728ac68aee0e396ff",
+      "cached_at": "2026-05-31T21:31:48.913359"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76308071-4",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "03-12-2015 21:00:00",
+            "razonSocial": "CONSTRUCTORA VASA SPA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/12/04/973886_M_SPA_20151204_firmada.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "SORAYA IVETTE JADUE JADUE",
+                "rut": "15384642-1",
+                "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+              }
+            ],
+            "rut": "76308071-4"
+          },
+          {
+            "fecha": "09-02-2016 21:00:00",
+            "razonSocial": "CONSTRUCTORA VASA SPA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/02/10/996318_M_SPA_20160210.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "SORAYA IVETTE JADUE JADUE",
+                "rut": "15384642-1",
+                "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+              },
+              {
+                "nombre": "MARTIN VARELA VENEGAS",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76308071-4"
+          },
+          {
+            "fecha": "25-12-2020 21:00:00",
+            "razonSocial": "CONSTRUCTORA VASA SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/26/42839/05/1871947.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "SORAYA IVETTE JADUE JADUE",
+                "rut": "15384642-1",
+                "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+              }
+            ],
+            "rut": "76308071-4"
+          },
+          {
+            "fecha": "21-02-2021 21:00:00",
+            "razonSocial": "CONSTRUCTORA VASA SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/02/22/42887/05/1900143.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "SORAYA IVETTE JADUE JADUE",
+                "rut": "15384642-1",
+                "domicilio": "MIRAFLORES 169 OFICINA 52, SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES DSH SPA",
+                "rut": null,
+                "domicilio": "AV. KENNEDY LATERAL 5002, DEPARTAMENTO 71, VITACURA"
+              },
+              {
+                "nombre": "INVERSIONES SAFITA SPA",
+                "rut": null,
+                "domicilio": "AV. ITALIA 1634, ÑUÑOA"
+              }
+            ],
+            "rut": "76308071-4"
+          },
+          {
+            "fecha": "21-12-2025 21:00:00",
+            "razonSocial": "CONSTRUCTORA VASA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/12/22/44330/05/2745205.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76308071-4"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76308071-4",
+            "sociedad": "CONSTRUCTORA VASA SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:69da141734474f2f5c0a3fbf4552f7347bd90f508ea7547f91d19e6d9bc440d7",
+        "cached_at": "2026-05-31T21:31:49.277201"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 412750,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 4,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5f65801036b7c989e1141d33ce3492227a22fc55209a7087ab483f5ee2a28394",
+      "cached_at": "2026-05-31T21:31:49.870944"
+    }
+  }
+}

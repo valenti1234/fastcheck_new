@@ -1,0 +1,848 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76440383-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76440383-5",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "LSH PUBLICIDAD SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "12-06-2015",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MENOR DE COMPUTADORES, EQUIPO PERIFERICO, PROGRAMAS INFOR",
+            "codigo": "474100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-06-2015"
+          },
+          {
+            "actividades": "ACTIVIDADES DE MENSAJERIA",
+            "codigo": "532000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "25-03-2021"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE",
+            "codigo": "620200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-06-2015"
+          },
+          {
+            "actividades": "SERVICIOS DE PUBLICIDAD PRESTADOS POR EMPRESAS",
+            "codigo": "731001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-06-2015"
+          },
+          {
+            "actividades": "LAVADO Y LIMPIEZA, INCLUIDA LA LIMPIEZA EN SECO, DE PRODUCTOS TEXTILES",
+            "codigo": "960100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "18-01-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          }
+        ],
+        "cantidadActividades": 5,
+        "cantidadDocumentos": 6,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "25.000,01 a 50.000,00",
+          "cantidadTrabajadores": 14
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 1,
+        "todosLosCasos": 2,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:11:04",
+        "ultimaActualizacionCobranza": "30-05-2026 00:11:04",
+        "ultimaActualizacionLaboral": "30-05-2026 00:11:04",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:11:04"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "19-01-2024 21:00:00",
+              "razonSocial": "LSH PUBLICIDAD SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/20/43755/05/2440745.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "SERGIO ANTONIO CARMONA ZUÑIGA",
+                  "rut": "9963443-K",
+                  "domicilio": "PASEO AHUMADA Nº 312, OFICINA 236 SANTIAGO"
+                },
+                {
+                  "socio": "JORGE ANDRES LOPEZ SANCHEZ",
+                  "rut": null,
+                  "domicilio": "ALBERTO UNDURRAGA N 1515 CASA 34, HUECHURABA"
+                }
+              ],
+              "rut": "76440383-5"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:11:05"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 80420,
+        "deudaDirectaCastigada": 13240,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 39990,
+        "deudaDirectaVencida": 8400,
+        "deudaDirectaVigente": 18800,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 92760,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 92760,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 6450
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-05-2026 00:11:05"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:11:05"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 23.374362799950262,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 223.37436279995026,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "LSH PUBLICIDAD SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Cámara de Comercio",
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a900beefe2ee699ca336390020b8b24446f805bfb6041d980f2344a8fecec34e",
+      "cached_at": "2026-05-30T00:11:06.309867"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Excepciones",
+            "fechaIngreso": "30-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76440383-5",
+                "nombre": "LSH PUBLICIDAD SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12238675-9",
+                "nombre": "JUANPABLO SÁNCHEZ SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76283867-2",
+                "nombre": "COMERCIALIZADORA BETTER FOOD CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-13793-2024",
+            "tribunal": "8º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "17-10-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12238675-9",
+                "nombre": "JUAN PABLO SÁNCHEZ SEPÚLVEDA (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76529300-6",
+                "nombre": "MORTEROS TRANSEX S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76440383-5",
+                "nombre": "LSH PUBLICIDAD SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-8361-2021",
+            "tribunal": "8º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:11:05"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:56ad3a963eb12d21202cec553b3003326440ec47f17a21602bf0ad2a0db6d5d2",
+        "cached_at": "2026-05-30T00:11:06.670394"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:11:05"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:300847a9994af0e8b31381e5584cdc555e1825ff954310c086ae5bddce131174",
+        "cached_at": "2026-05-30T00:11:07.027887"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:11:05"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:342e9e5576046a808da59f1dde7e02a7459dcc2d6085f90085afaeaf12f7991b",
+        "cached_at": "2026-05-30T00:11:07.386416"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:11:04"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:808e29f328541ed559a7c460ac8d634aee15da7a3f1fe8ebbc2f5ed21c709978",
+        "cached_at": "2026-05-30T00:11:07.752492"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 29,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROSA ANGELA SOTO GUTIERREZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "26477006-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA ANDREA VILLARINO MUNOZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "16369733-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIA MAGELA BONSANTO GARCIA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "27201221-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIA BONSANTO GARCIA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "27201221-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO JOSE CASTELLANO SOTO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "16790044-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAMON ALEXANDER ESPINAL GONZALEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "26662773-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ANTONIO HEREDIA TORRES ",
+            "periodo": "10/2025",
+            "rutAfiliado": "16373291-2",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANDREA BELEN JIMENEZ NAZARENO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "20484784-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ANDRES LOPEZ SANCHEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "16303895-1",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ANDRES LOPEZ SANCHEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "16303895-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GABRIELA MABEL MORENO DIAZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19099836-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Uno",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GABRIELA MABEL MORENO DÍAZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19099836-3",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SERGIO ESTEBAN PUEBLA SILVA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19635480-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EDWANYI DIRMARI REYES FONSECA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "26830239-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GABRIELA MABEL MORENO DIAZ ",
+            "periodo": "09/2025",
+            "rutAfiliado": "19099836-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ANDRES LOPEZ SANCHEZ ",
+            "periodo": "09/2025",
+            "rutAfiliado": "16303895-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Uno",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GABRIELA MABEL MORENO DÍAZ ",
+            "periodo": "09/2025",
+            "rutAfiliado": "19099836-3",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA ANDREA VILLARINO MUNOZ ",
+            "periodo": "09/2025",
+            "rutAfiliado": "16369733-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIA BONSANTO GARCIA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "27201221-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIA MAGELA BONSANTO GARCIA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "27201221-0",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:11:04"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1bf4de2204a7abfa466b54027a3f83d79055d2f62da0fa149bffe50790554952",
+        "cached_at": "2026-05-30T00:11:08.094858"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76440383-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "LSH PUBLICIDAD SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "LSH PUBLICIDAD SPA",
+            "rutSociedad": "76440383-5",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2015-06-09",
+            "socios": [
+              {
+                "nombre": "JORGE ANDRES LOPEZ SANCHEZ",
+                "rut": "16303895-1",
+                "domicilio": "DOMICILIADO EN LOS TILDES A PUCON, CALLE AV. EL PARQUE N°102, CASA N°821, COMUNA DE PUCON, REGION DE LA ARAUCANIA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "DAVID ANTONIO HEREDIA TORRES",
+                "rut": "16373291-2",
+                "domicilio": "PASAJE CAMBERRA N 5906, COMUNA DE CONCHALÍ, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "20.00"
+              },
+              {
+                "nombre": "JORGE DAVID SABBAG MUNOZ",
+                "rut": "8399320-0",
+                "domicilio": "CALLE PERICLES N 1236, DEPARTAMENTO N 412, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "JORGE ANDRÉS LÓPEZ SÁNCHEZ",
+                "rut": null,
+                "domicilio": "CALLE DEL ARRIERO N 7576, COMUNA DE HUECHURABA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-01-20",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/20/43755/05/2440745.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2015-06-10",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2015/06/10/913382_C_SPA_20150610_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5079d3e84bbea1f77c5234744601770174b5524650464596a8cc25618163a8ed",
+      "cached_at": "2026-05-30T00:11:08.741766"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76440383-5",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "19-01-2024 21:00:00",
+            "razonSocial": "LSH PUBLICIDAD SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/20/43755/05/2440745.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "SERGIO ANTONIO CARMONA ZUÑIGA",
+                "rut": "9963443-K",
+                "domicilio": "PASEO AHUMADA Nº 312, OFICINA 236 SANTIAGO"
+              },
+              {
+                "nombre": "JORGE ANDRES LOPEZ SANCHEZ",
+                "rut": null,
+                "domicilio": "ALBERTO UNDURRAGA N 1515 CASA 34, HUECHURABA"
+              }
+            ],
+            "rut": "76440383-5"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76440383-5",
+            "sociedad": "LSH PUBLICIDAD SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:164a590df4aaf4419003a795bc52cf864cadf24fb4447227ffb9aafb916a4d35",
+        "cached_at": "2026-05-30T00:11:09.113888"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 76.62563720004974,
+      "numeradorFinanzas": 61630,
+      "denominadorFinanzas": 80430,
+      "ponderacionFinanzas": 23.374362799950262,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 100,
+      "montoBoletinLaboral": 4207523,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 100,
+      "montoBoletinComercial": 5999091,
+      "ponderacionBoletinComercial": 0,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 123.37436279995026,
+      "etiquetaClasificacion": "High",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:911424c5f2c56f13398ce4242f2df084316a17216f3f6142394b36c5970a9200",
+      "cached_at": "2026-05-30T00:11:09.775504"
+    }
+  }
+}

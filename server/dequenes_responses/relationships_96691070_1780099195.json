@@ -1,0 +1,35 @@
+{
+  "pathCount": 2,
+  "relationships": [
+    {
+      "source": "96691070",
+      "target": "9098781",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1994-02-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96691070",
+      "target": "9098781",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "1994-02-12",
+        "doh_id": "4071803",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1994/02/12/do-19940212.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "9098781": "LUIS ALBERTO ABUGOCH JAMES",
+    "96691070": "MUNDOLAB S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:043426587c357c36b6e0ec2f09606fc41a3c18c06981652c86292b14d0520413",
+    "cached_at": "2026-05-29T23:59:55.801260"
+  }
+}

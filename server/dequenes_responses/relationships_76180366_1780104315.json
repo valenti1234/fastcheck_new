@@ -1,0 +1,161 @@
+{
+  "pathCount": 13,
+  "relationships": [
+    {
+      "source": "76180366",
+      "target": "10868888",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-12-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76180366",
+      "target": "12881373",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "425507",
+        "match_type": "i_bt",
+        "source": "DO",
+        "published_at": "2011-12-01",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/12/01/425507_C_SA_20111201_firmado.pdf"
+      }
+    },
+    {
+      "source": "76180366",
+      "target": "10868888",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "425507",
+        "match_type": "bt",
+        "source": "DO",
+        "published_at": "2011-12-01",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/12/01/425507_C_SA_20111201_firmado.pdf"
+      }
+    },
+    {
+      "source": "78216258",
+      "target": "10868888",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-07-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76514800",
+      "target": "10868888",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-04-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76036258",
+      "target": "10868888",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-10-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76514800",
+      "target": "10868888",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6559925",
+        "doh_extraction_id": "873561",
+        "shares_percent": 99.9,
+        "source": "DOH",
+        "doh_id": "6559925",
+        "published_at": "2006-04-03",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/04/03/do-20060403.pdf"
+      }
+    },
+    {
+      "source": "76036258",
+      "target": "10868888",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2344341",
+        "cve": "2344341",
+        "shares_percent": 30,
+        "source": "DO",
+        "published_at": "2023-06-14",
+        "doc_extraction_id": "2218715",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/07/14/43601/05/2344341.pdf"
+      }
+    },
+    {
+      "source": "78216258",
+      "target": "10868888",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACjB61Yv1v5Y",
+        "source": "RES",
+        "published_at": "2025-07-29"
+      }
+    },
+    {
+      "source": "99519440",
+      "target": "12881373",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-04-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77735958",
+      "target": "12881373",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-03-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78209550",
+      "target": "12881373",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_3027393",
+        "doh_extraction_id": "424790",
+        "shares_percent": 20,
+        "source": "DOH",
+        "doh_id": "3027393",
+        "published_at": "1995-05-25",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1995/05/25/do-19950525.pdf"
+      }
+    },
+    {
+      "source": "77735958",
+      "target": "12881373",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACk2VItUqJDf",
+        "source": "RES",
+        "published_at": "2023-03-28"
+      }
+    }
+  ],
+  "entityNames": {
+    "10868888": "RUBEN RODRIGO QUEZADA REPISO",
+    "12881373": "CLAUDIO ALEJANDRO MOYA MOYA",
+    "76036258": "CLAVE TECNOLOGIA Y SERVICIOS S.A.",
+    "76180366": "CLAVE SISTEMAS S.A",
+    "76514800": "INVERSIONES Y ASESORIAS CAPTREN LIMITADA",
+    "77735958": "INVERSIONES MOYA CASANOVA SPA",
+    "78209550": "MANUFACTURAS DE CALZADOS ANROSSE LTDA",
+    "78216258": "INVERSIONES PATAGONIA SPA",
+    "99519440": "CLAVE CONSULTORIA EN GESTION DE NEGOCIOS S A"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:ab390d6b2ff1590e279a7cf71bef3c016bcf43e7fa095285b5b502b85fed1d12",
+    "retrieved_at": "2026-05-30T01:25:15.322064"
+  }
+}

@@ -1,0 +1,1444 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76258990-7"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76258990-7",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "ON STREET S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "26-04-2005",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS DE PUBLICIDAD PRESTADOS POR EMPRESAS",
+            "codigo": "731001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "26-04-2005"
+          },
+          {
+            "actividades": "OTROS SERVICIOS DE ATENCION DE LA SALUD HUMANA PRESTADOS POR EMPRESAS",
+            "codigo": "869091",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "04-12-2020"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Libro Control De Timbraje",
+            "ultimoAnioTimbrado": "2009"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2005"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": "26-05-2026 16:23:12",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "100.000,01 a 200.000,00",
+          "cantidadTrabajadores": 192
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "31-05-2026 21:43:13"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 1,
+        "laboralPresentados": 3,
+        "laboralConcluidos": 6,
+        "casosActuales": 1,
+        "casosArchivados": 3,
+        "casosConcluidos": 8,
+        "todosLosCasos": 12,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 4
+        },
+        "ultimaActualizacionCiviles": "31-05-2026 21:43:12",
+        "ultimaActualizacionCobranza": "31-05-2026 21:43:12",
+        "ultimaActualizacionLaboral": "31-05-2026 21:43:12",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 2,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 2
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 5,
+          "montoTotalMultas": 9627068,
+          "multasPagadas": 5,
+          "montoMultasPagadas": 9627068,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:43:13"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:43:13"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "16-10-2016 21:00:00",
+              "razonSocial": "ON STREET S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/10/17/41585/05/1124727.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "SERVICIOS PUBLICITARIOS ON STREET S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76258990-7"
+            },
+            {
+              "fecha": "01-04-2020 21:00:00",
+              "razonSocial": "ON STREET S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/04/02/42622/05/1747440.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ON STREET S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76258990-7"
+            }
+          ],
+          "ultimaActualizacion": "31-05-2026 21:43:12"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 427570,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 470840,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 272260,
+        "lineaCredito": 116010,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 533970,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 650700,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 323590,
+          "lineaCredito": 124760
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 86,
+          "tasacionTotal": 1024649860,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "31-05-2026 21:43:13"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 90.9090909090909,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 390.9090909090909,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ON STREET S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:33cabc862131cfe51e3e3ea8ac6bc44e7cb7b98a9c767196afd6abfef1ff4c94",
+      "cached_at": "2026-05-31T21:43:14.125119"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "9 Terminada ",
+            "fechaIngreso": "29-06-2016 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10654390-9",
+                "nombre": "NICOLÁS SEBASTIÁN CALAS VEGA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8656223-5",
+                "nombre": "RODRIGO ALONSO HERRERA VALENZUELA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14519064-9",
+                "nombre": "MAGLIS KARINNE HERNANDEZ VALLEJOS",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16359118-9",
+                "nombre": "ROSARIO PAZ MARÍA ESNAOLA SELLAN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": " SERVICIOS PUBLICITARIOS ON SRT EET S.A.",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15637398-2",
+                "nombre": "ELEODORO VALDES URETA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-16264-2016",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:43:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d6d7db13177fda46ae4fe983373938399b820b575ef6ebf66018689ecf9a9990",
+        "cached_at": "2026-05-31T21:43:14.484523"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-04-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "SERVICIOS PUBLICITARIOS ON STREET S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-22280-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:43:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4696f0aabbdeffffb59053a78c23707cc71df1a272c903486fc83d726c219cf5",
+        "cached_at": "2026-05-31T21:43:14.833702"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 10,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "13-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "0-0",
+                "nombre": "CARABINEROS DE PANGUIPULLI",
+                "sujeto": "T.IND",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17201072-5",
+                "nombre": "ROCÍO VALERIA TORO BRAVO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13519683-5",
+                "nombre": "DANIELLA SOLEDAD LOPEZ BARRIENTOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18518015-8",
+                "nombre": "CÉSAR ANTONIO ÁLVAREZ GUTIÉRREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2-2025",
+            "tribunal": "Juzgado de Letras y Garantía de Panguipulli",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "19-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13930139-0",
+                "nombre": "KAREN ALICIA FUENTES ARAYA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17395011-K",
+                "nombre": "GUSTAVO ARIEL GUÍÑEZ CHÁVEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2358-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "03-01-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12851711-1",
+                "nombre": "JAIME EDUARDO VARELA CHARME (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17868571-6",
+                "nombre": "NICOLÁS ANDRÉS IRIARTE RAMÍREZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17407951-K",
+                "nombre": "NICOLÁS IGNACIO KAHN MAIBE (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19475974-6",
+                "nombre": "FERNANDO ANDRÉS HEVIA WERNER (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17348534-4",
+                "nombre": "DIEGO HERNAN LOPEZ NUÑEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16297171-9",
+                "nombre": "MARIO CÉSAR PEREDA DÍAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-23-2023",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "01-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17407951-K",
+                "nombre": "NICOLAS KAHN MAIBE (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN PEREZ BENGOLEA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12851711-1",
+                "nombre": "JAIME EDUARDO VARELA CHARME (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17868571-6",
+                "nombre": "NICOLÁS ANDRÉS IRIARTE RAMIREZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19082356-3",
+                "nombre": "STEFFANIA ANDREA ALVARADO GALLARDO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18025778-0",
+                "nombre": "JEAN PIERRE FOLATRE TAPIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-3368-2022",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "24-11-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18270194-7",
+                "nombre": "CINDY HELLEN ACEVEDO BRITO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18025778-0",
+                "nombre": "JEAN PIERRE FOLATRE TAPIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-3262-2022",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "27-02-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN PEREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14043697-6",
+                "nombre": "KAREN CRISTINA CONTRERAS PIZARRO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-284-2022",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Suspendido",
+            "estadoCausa": "Archivada",
+            "etapa": "Impugnación",
+            "fechaIngreso": "01-12-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9772243-9",
+                "nombre": "ERNESTINA RUTH ISRAEL LOPEZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17507098-2",
+                "nombre": "JUAN JOSÉ REYES AGUILERA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17857303-9",
+                "nombre": "NATALIA VALENTINA FAÚNDEZ CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18025778-0",
+                "nombre": "JEAN PIERRE FOLATRE TAPIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61601000-K",
+                "nombre": "SEREMI DE SALUD DE VALPARAÍSO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61006000-5",
+                "nombre": "FISCO DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2878-2021",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "01-12-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9772243-9",
+                "nombre": "ERNESTINA RUTH ISRAEL LOPEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19613878-1",
+                "nombre": "JACQUELINE JASMÍN CÁRDENAS CASTILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18025778-0",
+                "nombre": "JEAN PIERRE FOLATRE TAPIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61601000-K",
+                "nombre": "SEREMI DE SALUD DE VALPARAÍSO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61006000-5",
+                "nombre": "FISCO DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2876-2021",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "01-12-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18843159-3",
+                "nombre": "CAROLAY VERÓNICA VÁSQUEZ ARAVENA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18025778-0",
+                "nombre": "JEAN PIERRE FOLATRE TAPIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61601000-K",
+                "nombre": "SEREMI DE SALUD DE VALPARAÍSO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61006000-5",
+                "nombre": "FISCO DE CHILE, CONSEJO DE DEFENSA DEL ESTADO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2877-2021",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "13-10-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18640708-3",
+                "nombre": "FRANCISCO JOSÉ ERRÁZURIZ GOYCOOLEA (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "20388855-4",
+                "nombre": "ANAÍS ALEJANDRA SILVA ÑANCUPIL",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15615172-6",
+                "nombre": "JUAN PABLO HERRERA VERGARA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76258990-7",
+                "nombre": "ON STREET S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1279-2021",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:43:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:22d960966705646d6456e6506efeaa04661a998d1ee7659d6a076af54b61ab61",
+        "cached_at": "2026-05-31T21:43:15.193099"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "enunciado": "No contratar o mantener Contratado un trabajador en el área de recursos humanos certificado en materias de inclusión laboral.",
+            "estado": "PAGADA",
+            "fecha": "23-02-2025 21:00:00",
+            "multa": "1975/24/013-1",
+            "procedencia": "FISCALIZACION",
+            "um": "32",
+            "tipoUm": "UTM",
+            "montoClp": 2153408
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "06-02-2025 21:00:00",
+            "multa": "1161/24/008-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No realizar la comunicación electrónica a la Dirección del Trabajo durante el mes de enero de cada año.",
+            "estado": "PAGADA",
+            "fecha": "26-03-2024 21:00:00",
+            "multa": "6115/23/098-1",
+            "procedencia": "FISCALIZACION",
+            "um": "20",
+            "tipoUm": "UTM",
+            "montoClp": 1295860
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "24-02-2023 21:00:00",
+            "multa": "1838/22/071-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No escriturar contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "17-04-2022 20:00:00",
+            "multa": "1558/21/036-1",
+            "procedencia": "FISCALIZACION",
+            "um": "75",
+            "tipoUm": "UTM",
+            "montoClp": 4177800
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:43:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:513edaa228e78ff24ab24f9685c652d5549a33c0e88a0f02bd7f44fb98b4d626",
+        "cached_at": "2026-05-31T21:43:15.539448"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 34,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Monserrath Gabriela Guarda Conapi ",
+            "periodo": "03/2026",
+            "rutAfiliado": "10844667-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEXIS ENRIQUE CARRILLO HIGUERAS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "14212491-2",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BELARMINO ANTONIO MARTINEZ MARILAO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "10865171-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BELARMINO ANTONIO MARTINEZ MARILAO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "10865171-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BELARMINO ANTONIO MARTINEZ MARILAO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "10865171-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "08/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "&nbsp;",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Carlos Javier Manzano Cabeza ",
+            "periodo": "08/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": " "
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "08/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "07/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "06/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-07-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "05/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-06-2025 20:00:00",
+            "fechaDemanda": "En proceso &nbsp;de Interposición de demanda",
+            "nombreAfiliado": "CRISTIAN HERBERTH RUBIO QUEVEDO ",
+            "periodo": "04/2025",
+            "rutAfiliado": "12444440-3",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-06-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "04/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-05-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "03/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "02/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-03-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "01/2025",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "12/2024",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2025 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "CARLOS JAVIER MANZANO CABEZA ",
+            "periodo": "11/2024",
+            "rutAfiliado": "12532893-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "29-03-2024 21:00:00",
+            "fechaDemanda": "En proceso &nbsp;de Interposición de demanda",
+            "nombreAfiliado": "MITCHELL OSVALDO VEGA VEGA ",
+            "periodo": "01/2024",
+            "rutAfiliado": "9935318-K",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "28-02-2024 21:00:00",
+            "fechaDemanda": "En proceso &nbsp;de Interposición de demanda",
+            "nombreAfiliado": "MITCHELL OSVALDO VEGA CONTRERAS ",
+            "periodo": "12/2023",
+            "rutAfiliado": "9935318-K",
+            "tipoProducto": "Cotización voluntaria"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:43:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:80e3e0c348de090cb3bbf0727cacbdfa67adc016a7d57f94f3029d9287eefc20",
+        "cached_at": "2026-05-31T21:43:15.899242"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76258990-7",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ON STREET S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ON STREET S.A",
+            "rutSociedad": "76258990-7",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "ASESORÍAS E INVERSIONES EDUARDO BIZAMA CABALÁ E.I.R.L.",
+                "rut": "76336250-7",
+                "domicilio": "CAMINO LAS CAMPANAS 9538, LO BARNECHEA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES SAN PATRICIO LIMITADA",
+                "rut": "76415645-5",
+                "domicilio": "AVDA.PRESIDENTE IBÁÑEZ 05655-4, ESTA CIUDAD",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES MAR DEL SUR LIMITADA",
+                "rut": "77190220-0",
+                "domicilio": "CIRCUNVALACIÓN LAS TERRAZAS 1198, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES Y RENTAS PRETORIA LIMITADA",
+                "rut": "78063570-3",
+                "domicilio": "EL QUELTEHUE N°4750 LO BARNECHEA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORIAS E INVERSIONES LUCANO LIMITADA",
+                "rut": "76265140-8",
+                "domicilio": "AV. 11 DE SEPTIEMBREN 1945, OF 1017, PROVIDENCIA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-04-02",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/04/02/42622/05/1747440.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-10-17",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/10/17/41585/05/1124727.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:e243a65e2e07201d735d8ce71b38926b47ebce1a391275d9e54a7160bc534fd2",
+      "cached_at": "2026-05-31T21:43:16.500884"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76258990-7",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "16-10-2016 21:00:00",
+            "razonSocial": "ON STREET S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/10/17/41585/05/1124727.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "SERVICIOS PUBLICITARIOS ON STREET S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76258990-7"
+          },
+          {
+            "fecha": "01-04-2020 21:00:00",
+            "razonSocial": "ON STREET S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/04/02/42622/05/1747440.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ON STREET S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76258990-7"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76258990-7",
+            "sociedad": "ON STREET S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b5ea314d6e072633972f5393424c049498b078697ef813ca1f81d39be4d6aaea",
+        "cached_at": "2026-05-31T21:43:16.866402"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 743100,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 9.090909090909092,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 11,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 90.9090909090909,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 2,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 9627068,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 390.9090909090909,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:4b30fbd9237aa40b6092b22cff3dab4d92059ccfe7ce71849c0b48ec441fdc0a",
+      "cached_at": "2026-05-31T21:43:17.457123"
+    }
+  }
+}

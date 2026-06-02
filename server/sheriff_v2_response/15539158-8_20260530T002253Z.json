@@ -1,0 +1,558 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "15539158-8"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "15539158-8",
+      "esPersonaJuridica": false,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "ALINA MARGARITA VILLALOBOS COLOMA",
+        "presentaActividades": "NO",
+        "inicioActividades": null,
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Término de giro persona naturalContribuyente persona natural con certificado de Término de Giro. Por tanto, no posee documentos tributarios autorizados por el SII.De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.La situación se presenta a contar del  28-12-2016",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [],
+        "documentosTimbrados": [],
+        "cantidadActividades": null,
+        "cantidadDocumentos": null,
+        "ultimaActualizacion": "30-05-2026 00:22:46",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:22:46"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "30-05-2026 00:22:46",
+        "ultimaActualizacionCobranza": "30-05-2026 00:22:45",
+        "ultimaActualizacionLaboral": "30-05-2026 00:22:45",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:22:46"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": null,
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": null,
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-05-2026 00:22:46"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:22:46"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 2,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin"
+        ],
+        "porcentajeClasificacion": 200,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ALINA",
+        "segundoNombre": "MARGARITA",
+        "apellido": "VILLALOBOS",
+        "segundoApellido": "COLOMA",
+        "tipoPersona": "natural",
+        "riesgo": "critical",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 3,
+            "riesgo": "critical"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:85006a6d58c673cdff8756abea79ec396699902a771ce8c163a03b4f52d3c73f",
+      "cached_at": "2026-05-30T00:22:49.987366"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:338c423a004643bb489885f75a87ad21e0df43667189de52c485869a25c65dc2",
+        "cached_at": "2026-05-30T00:22:50.344140"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e17758c72d0c77be54108f61b6bdc1a0650abddaefbf88e27197bded572489bc",
+        "cached_at": "2026-05-30T00:22:50.698086"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0c5d62d56a238d2b64919addb3850b12725df2ec0a6916022c4ca24cb4f1014c",
+        "cached_at": "2026-05-30T00:22:51.071302"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:04f07465748e1d8db1eca564e683f28ffbde7dda2a1263ac517201bd901866fc",
+        "cached_at": "2026-05-30T00:22:51.416194"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:689b493705f546e4d559a9f7c2e8972eebff6bd549da7d62e3bcb0e062e0a527",
+        "cached_at": "2026-05-30T00:22:51.775676"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "15539158-8",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+            "postura": "Querellado",
+            "rol": "Ordinaria-2660-2022",
+            "fecha": "18/05/2022",
+            "infraccion": "OTROS HECHOS QUE NO CONSTITUYAN DELITO: AGRUP.1008,1009,1011",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ALICIA MARGARITA VILLALOBOS COLOMA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ALVARO PATRICIO CABRERA AHUMADA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EMPRESA DE TRANSPORTES DE PASA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FELIPE ALEJANDRO DÍAZ ACUÑA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEYLA PATRICIA CARVAJAL TADRES",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO FISCALIA LOCAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TAMARA MACARENA CARVAJAL TADRES",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "14º Juzgado de Garantía de Santiago",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+            "postura": "Querellado",
+            "rol": "Ordinaria-2401-2022",
+            "fecha": "10/05/2022",
+            "infraccion": "DELITO DESORDENES PUBLICOS ART. 269 (NO FALTA DEL CODIGO 130",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CRHISTIAN ALEJANDRO BASUALTO OLIVARES",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EMPRESA DE TRANSPORTES DE PASA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FELIPE ALEJANDRO DÍAZ ACUÑA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEYLA PATRICIA CARVAJAL TADRES",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TAMARA MACARENA CARVAJAL TADRES",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "14º Juzgado de Garantía de Santiago",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+            "postura": "Denunciante",
+            "rol": "Ordinaria-6127-2013",
+            "fecha": "06/08/2013",
+            "infraccion": "Presunta desgracia.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALINA MARGARITA VILLALOBOS COLOMA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "fiscalia GENERICO TRIBUNAL 1230",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NN",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "RACYEL CONSTANZA ACEVEDO VILLALOBOS",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "11º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 3
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d6134cec67898da84c66b1f49e0051aa33785db9ecc2e6b5ed115ac819992950",
+      "cached_at": "2026-05-30T00:22:52.891089"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "15539158-8",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:93f254b1dd2f6019376f7901552c144535ad187c389ed10cd278b8597b58801b",
+        "cached_at": "2026-05-30T00:22:53.234568"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": false,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "2",
+      "porcentajeClasificacion": 200,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 0
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:16a18383b3a6337e0c985423cf41264cf0b657a837e0133d224d5e5e2edd9495",
+      "cached_at": "2026-05-30T00:22:53.895817"
+    }
+  }
+}

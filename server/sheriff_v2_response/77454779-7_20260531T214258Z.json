@@ -1,0 +1,604 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77454779-7"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77454779-7",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "18-10-2021",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE TRANSPORTE DE PASAJEROS POR VIA TERRESTRE N.C.P.",
+            "codigo": "492290",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "18-10-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 2,
+        "ultimaActualizacion": "31-05-2026 21:42:53",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "2.400,01 a 5.000,00",
+          "cantidadTrabajadores": 1
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "31-05-2026 21:42:54"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "31-05-2026 21:42:53",
+        "ultimaActualizacionCobranza": "31-05-2026 21:42:53",
+        "ultimaActualizacionLaboral": "31-05-2026 21:42:52",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:42:53"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:42:53"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "10-07-2025 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "9429724",
+              "razonSocial": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+              "cve": "ACvlsxKIGAMi",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvlsxKIGAMi&codigo=3E-13-94-BB-5B-61-81-01-05-11-AD-C2-CD-BA-FA-E0",
+              "socios": [
+                {
+                  "socio": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                  "rut": "17039438-0",
+                  "domicilio": null,
+                  "acciones": "100",
+                  "monto": "$2.000.000 PESOS",
+                  "porcentaje": null
+                }
+              ],
+              "administradores": []
+            },
+            {
+              "fecha": "03-10-2021 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "4525214",
+              "razonSocial": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+              "cve": "ACYIhaLxrvO9",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYIhaLxrvO9&codigo=1B-4F-7A-6B-52-BA-7E-53-2F-98-02-D2-60-90-15-F3",
+              "socios": [
+                {
+                  "socio": "RAUL HERNAN FAUNDEZ BENAVIDES",
+                  "rut": "17146676-8",
+                  "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE",
+                  "acciones": "50",
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                  "rut": "17039438-0",
+                  "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE",
+                  "acciones": "50",
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "RAUL HERNAN FAUNDEZ BENAVIDES",
+                  "rut": "17146676-8",
+                  "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE"
+                },
+                {
+                  "administrador": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                  "rut": "17039438-0",
+                  "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d60afb144ab72c0946f326219c6028aff85ccc3d9f1ae837f0c31db2f7ae175a",
+      "cached_at": "2026-05-31T21:42:54.744330"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:42:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:414998917f5d3ef5721e0f1dec6b45d0c52c75b77259ae10055de1ec3aeb1126",
+        "cached_at": "2026-05-31T21:42:55.104529"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:42:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:edb61e23a99971d55c7fedcd1f2221025ba23f7d2fdcd92f95a9c8eca3cc385c",
+        "cached_at": "2026-05-31T21:42:55.462470"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:42:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:663046f4703a1e2795d0f438975ca79c71e2ad250c92cedf85bd52bcf49ca5f5",
+        "cached_at": "2026-05-31T21:42:55.798322"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:42:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7e86baa79e45e250f292999a16bed672e17711686e540a0ecfb5c55b4865df5e",
+        "cached_at": "2026-05-31T21:42:56.160890"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:42:53"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ad6171b86e24cf6937e84a9f25d95cf889f322392d1f4d81ad5ac318dfc824ad",
+        "cached_at": "2026-05-31T21:42:56.528138"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77454779-7",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+            "rutSociedad": "77454779-7",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2021-10-03",
+            "socios": [
+              {
+                "nombre": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                "rut": "17039438-0",
+                "domicilio": "14 SUR N°1855 COMUNA DE TALCA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "RAUL HERNAN FAUNDEZ BENAVIDES",
+                "rut": "17146676-8",
+                "domicilio": "LOMA LAS TORTILLAS N°SN COMUNA DE SAN JAVIER",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-07-11",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvlsxKIGAMi&codigo=3E-13-94-BB-5B-61-81-01-05-11-AD-C2-CD-BA-FA-E0"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2021-10-04",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYIhaLxrvO9&codigo=1B-4F-7A-6B-52-BA-7E-53-2F-98-02-D2-60-90-15-F3"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:54cffc7eaf2df61d12956fc169e9ba42f742b1b7dd03257dafc4b095c81aef06",
+      "cached_at": "2026-05-31T21:42:57.148208"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77454779-7",
+        "empresaEnUnDia": [
+          {
+            "fecha": "10-07-2025 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "9429724",
+            "razonSocial": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+            "cve": "ACvlsxKIGAMi",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvlsxKIGAMi&codigo=3E-13-94-BB-5B-61-81-01-05-11-AD-C2-CD-BA-FA-E0",
+            "socios": [
+              {
+                "socio": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                "rut": "17039438-0",
+                "domicilio": null,
+                "acciones": "100",
+                "monto": "$2.000.000 PESOS",
+                "porcentaje": null
+              }
+            ],
+            "administradores": []
+          },
+          {
+            "fecha": "03-10-2021 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "4525214",
+            "razonSocial": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA",
+            "cve": "ACYIhaLxrvO9",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYIhaLxrvO9&codigo=1B-4F-7A-6B-52-BA-7E-53-2F-98-02-D2-60-90-15-F3",
+            "socios": [
+              {
+                "socio": "RAUL HERNAN FAUNDEZ BENAVIDES",
+                "rut": "17146676-8",
+                "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE",
+                "acciones": "50",
+                "monto": "$1.000.000 CLP",
+                "porcentaje": "50%"
+              },
+              {
+                "socio": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                "rut": "17039438-0",
+                "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE",
+                "acciones": "50",
+                "monto": "$1.000.000 CLP",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "RAUL HERNAN FAUNDEZ BENAVIDES",
+                "rut": "17146676-8",
+                "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE"
+              },
+              {
+                "administrador": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+                "rut": "17039438-0",
+                "domicilio": "14 SUR N°1855 COMUNA DE TALCA REGION DEL MAULE"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:bb2e6b7c003b1e04cef51bf8d34d89933bf1e8eb3b8c348c6d37aefa874fdc79",
+        "cached_at": "2026-05-31T21:42:57.510407"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:9b0d6e1171b49d367db9258d06f3e670ede4f8233cc0e36cc2c0493d6c70051d",
+      "cached_at": "2026-05-31T21:42:58.119764"
+    }
+  }
+}

@@ -1,0 +1,644 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76627544-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76627544-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑIA LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "06-03-2024",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "AGENCIAS DE ADUANAS",
+            "codigo": "522910",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "06-03-2024"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 7,
+        "ultimaActualizacion": "30-05-2026 00:01:26",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "25.000,01 a 50.000,00",
+          "cantidadTrabajadores": 75
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:01:26"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "30-05-2026 00:01:25",
+        "ultimaActualizacionCobranza": "30-05-2026 00:01:25",
+        "ultimaActualizacionLaboral": "30-05-2026 00:01:25",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 2,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:01:25"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:01:26"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "21-03-2024 21:00:00",
+              "razonSocial": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑÍA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/22/43808/05/2470079.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JUAN EDUARDO MEWES RAMIREZ",
+                  "rut": null,
+                  "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+                },
+                {
+                  "socio": "MARLENE VIVIAN MEWES SCHNAIDT",
+                  "rut": null,
+                  "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+                },
+                {
+                  "socio": "RICARDO HUMBERTO MEWES SCHNAIDT",
+                  "rut": "7671569-6",
+                  "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+                },
+                {
+                  "socio": "MARTÍN LUIS MEWES ACHONDO",
+                  "rut": null,
+                  "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+                },
+                {
+                  "socio": "SEBASTIÁN EDUARDO MEWES ACHONDO",
+                  "rut": null,
+                  "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+                },
+                {
+                  "socio": "AGENCIA DE ADUANAS EDUARDO MEWES RAMÍREZ, RICARDO MEWES SCHNAIDT Y MARLENE MEWES SCHNAIDT LIMITADA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76627544-3"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:01:25"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 461760,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 492930,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 7320,
+        "lineaCredito": 17950,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 388840,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 420040,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 12540,
+          "lineaCredito": 39040
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 6,
+          "tasacionTotal": "680213687",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑIA LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d09901adfd97f042179965d93289bc1b976e633187aa880bba7e4f041dbed593",
+      "cached_at": "2026-05-30T00:01:26.918888"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:01:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e04eb4b219148b5090cf2a45d2c0f25662cfb56e8b49270212d5c4cbe50d80a5",
+        "cached_at": "2026-05-30T00:01:27.277990"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:01:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ed88e488a1a6bb4d167c981aca9d6849ff68a6226d9d866aa4e56841a666b140",
+        "cached_at": "2026-05-30T00:01:27.614290"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:01:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7519728b8bd8fc240028f70a6616df7308a528f0390698e3cbf558b352bf5b55",
+        "cached_at": "2026-05-30T00:01:27.953342"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:01:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:63bda8d307a8cae3d144d0f610348be79fa2190228dae71fbf74d346c5ee8b11",
+        "cached_at": "2026-05-30T00:01:28.296183"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Carlos Roberto Gutierrez Ruiz ",
+            "periodo": "08/2025",
+            "rutAfiliado": "19510407-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Marian Nataly Morel Poly ",
+            "periodo": "08/2025",
+            "rutAfiliado": "16790665-6",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:01:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3e19ee9f3829f1f7cb6661d65f1c1d46fb9b7cf20d6ab4b6c1300c8eb3776c6f",
+        "cached_at": "2026-05-30T00:01:28.654143"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76627544-3",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑIA LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑIA LIMITADA",
+            "rutSociedad": "76627544-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2024-03-12",
+            "socios": [
+              {
+                "nombre": "MARTIN LUIS MEWES ACHONDO",
+                "rut": "17086796-3",
+                "domicilio": "CAMINO 2 PONIENTE PARCELA 59 Y 61 N°4 COMUNA DE BUIN",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "1.00"
+              },
+              {
+                "nombre": "SEBASTIAN EDUARDO MEWES ACHONDO",
+                "rut": "18021578-6",
+                "domicilio": "LUIS CARRERA N°1400 DEPTO/LOCAL 14 COMUNA DE VITACURA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "1.00"
+              },
+              {
+                "nombre": "RICARDO MEWES SCHNAIDT",
+                "rut": "7671569-6",
+                "domicilio": "AVENIDA LIBERTADOR BERNARDO O'HIGGINS N° 580, OFICINA 508, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "38.00"
+              },
+              {
+                "nombre": "MARLENE VIVIAN MEWES SCHNAIDT",
+                "rut": "8863815-8",
+                "domicilio": "AVENIDA TERESA VIAL N° 4455, CASA 21, LO BARNECHEA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "JUAN EDUARDO MEWES RAMIREZ",
+                "rut": "3015765-6",
+                "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "20.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-03-22",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/22/43808/05/2470079.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2024-03-13",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/13/43800/05/2465542.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:03fbad78512cf2dc45d3f6694a084e3510ef981461f852d789feb959d29881ff",
+      "cached_at": "2026-05-30T00:01:29.260015"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76627544-3",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "21-03-2024 21:00:00",
+            "razonSocial": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑÍA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/22/43808/05/2470079.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JUAN EDUARDO MEWES RAMIREZ",
+                "rut": null,
+                "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+              },
+              {
+                "nombre": "MARLENE VIVIAN MEWES SCHNAIDT",
+                "rut": null,
+                "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+              },
+              {
+                "nombre": "RICARDO HUMBERTO MEWES SCHNAIDT",
+                "rut": "7671569-6",
+                "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+              },
+              {
+                "nombre": "MARTÍN LUIS MEWES ACHONDO",
+                "rut": null,
+                "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+              },
+              {
+                "nombre": "SEBASTIÁN EDUARDO MEWES ACHONDO",
+                "rut": null,
+                "domicilio": "FANOR VELASCO 85, OFICINA 401, SANTIAGO"
+              },
+              {
+                "nombre": "AGENCIA DE ADUANAS EDUARDO MEWES RAMÍREZ, RICARDO MEWES SCHNAIDT Y MARLENE MEWES SCHNAIDT LIMITADA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76627544-3"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76627544-3",
+            "sociedad": "AGENCIA DE ADUANAS RICARDO MEWES SCHNAIDT Y COMPAÑÍA LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e7b88ccbc37a7e2da31bbedd08ff293c9d70592a469d547758a2fe2eae069a2a",
+        "cached_at": "2026-05-30T00:01:29.602269"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 500250,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 2,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1df6fdad7e7fef58c222970c76987ab07aef6ba00c80ef8f6c8bb26601e8d2b5",
+      "cached_at": "2026-05-30T00:01:30.483911"
+    }
+  }
+}

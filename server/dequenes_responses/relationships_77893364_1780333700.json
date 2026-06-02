@@ -1,0 +1,112 @@
+{
+  "pathCount": 10,
+  "relationships": [
+    {
+      "source": "77893364",
+      "target": "16777193",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-01-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77893364",
+      "target": "16210345",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-01-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77893364",
+      "target": "16777193",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACVbuKfuavCy",
+        "source": "RES",
+        "published_at": "2024-01-30"
+      }
+    },
+    {
+      "source": "77893364",
+      "target": "16210345",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACVbuKfuavCy",
+        "source": "RES",
+        "published_at": "2024-01-30"
+      }
+    },
+    {
+      "source": "78240382",
+      "target": "16777193",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-08-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78240382",
+      "target": "16777193",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC1VB15tDFmw",
+        "source": "RES",
+        "published_at": "2025-08-28"
+      }
+    },
+    {
+      "source": "78240382",
+      "target": "16210345",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-08-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76992457",
+      "target": "16210345",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-03-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78240382",
+      "target": "16210345",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC1VB15tDFmw",
+        "source": "RES",
+        "published_at": "2025-08-28"
+      }
+    },
+    {
+      "source": "76992457",
+      "target": "16210345",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC0t1fB6oWVr",
+        "source": "RES",
+        "published_at": "2019-03-20"
+      }
+    }
+  ],
+  "entityNames": {
+    "16210345": "ANDREA ISABEL RUIZ PENA",
+    "16777193": "NATALIA CATHERINNE BARRERA ALEGRIA",
+    "76992457": "HEALTHY SPACE SPA",
+    "77893364": "CUIDADOS Y REHABILITACIÓN RUIZ BARRERA LIMITADA",
+    "78240382": "PROHEALTHYWORK LIMITADA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:08f5b73a9cc9f42d68cbd98beec7ebc0a2453388ecf7bda37aaec99fc86a6d0f",
+    "cached_at": "2026-06-01T17:08:20.701319"
+  }
+}

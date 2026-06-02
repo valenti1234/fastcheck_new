@@ -1,0 +1,2718 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76733620-9"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76733620-9",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "10-01-2007",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE DOTACION DE RECURSOS HUMANOS",
+            "codigo": "783000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-01-2007"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2007"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Libro Control De Timbraje",
+            "ultimoAnioTimbrado": "2015"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 11,
+        "ultimaActualizacion": "30-05-2026 00:06:18",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "200.000,01 a 600.000,00",
+          "cantidadTrabajadores": 5866
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:06:18"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 5,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 8,
+        "laboralActivos": 58,
+        "laboralPresentados": 24,
+        "laboralConcluidos": 46,
+        "casosActuales": 63,
+        "casosArchivados": 25,
+        "casosConcluidos": 54,
+        "todosLosCasos": 142,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 63,
+          "demandante": 1,
+          "demandadoSolidario": 7,
+          "reclamante": 5,
+          "denunciado": 12
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:28:46",
+        "ultimaActualizacionCobranza": "28-05-2026 03:14:12",
+        "ultimaActualizacionLaboral": "28-05-2026 03:15:42",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 8,
+          "empleados": 8,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 100,
+            "cambioAbsoluto": 4
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 3,
+          "montoTotalMultas": 13616590,
+          "multasPagadas": 3,
+          "montoMultasPagadas": 13616590,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:06:19"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "12-07-2011 20:00:00",
+              "razonSocial": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/07/13/370209_M_LTDA_20110713_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "EMPRESA DE SERVICIOS TRANSITORIOS SELECT LIMITADA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76733620-9"
+            },
+            {
+              "fecha": "21-03-2024 21:00:00",
+              "razonSocial": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/22/43808/05/2470232.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76733620-9"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:06:18"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 752320,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 603760,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:06:19"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 55.303030303030305,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 25.000000000000014,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 280.3030303030303,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ee143b78da55e63106b97fe6d4a0d95375e5178a213caf0187e631a37df60252",
+      "cached_at": "2026-05-30T00:06:19.862399"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "05-06-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17366646-2",
+                "nombre": "FRANCISCO JAVIER DANKE GÓMEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76505935-6",
+                "nombre": "m3 MAQUILA DE ENVASES Y SERVICIOS LOGISTICOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-12483-2017",
+            "tribunal": "19º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:06:18"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1c8136a22e306650ba6abd38d6f7d21ee60cc5981b2d22e5b9c45c1941a04c41",
+        "cached_at": "2026-05-30T00:06:20.201792"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 13,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "09-10-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "17754802-2",
+                "nombre": "YASNA WALESKA HANCENN SOTO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "90299000-3",
+                "nombre": "CÍA. NACIONAL DE TELÉFONOS TELEFÓNICA DEL SUR S. A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCÓN DELGADO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CÁRDENAS SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17812798-5",
+                "nombre": "NIDY ANDREA MOSCOSO ALLEL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE STEPHANIE SOLÍS DE OVANDO FRANCO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16951025-3",
+                "nombre": "MIGUEL ANGEL CALDERÓN FLORES",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-209-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "22-01-2025 21:00:00",
+            "monto": "1404921",
+            "litigantes": [
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "20051319-3",
+                "nombre": "YESSENIA BELÉN HERNÁNDEZ BUGUEÑO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE STEPHANIE SOLÍS DE OVANDO MARIMÁN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15378208-3",
+                "nombre": "SERGIO ANDRÉS TORRETTI ARMENDÁRIZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17812798-5",
+                "nombre": "NIDY ANDREA MOSCOSO ALLEL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19671250-K",
+                "nombre": "ENRIQUE ESTEBAN CARRASCO NILO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8547038-8",
+                "nombre": "SERGIO ENRIQUE CARRASCO LABRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9116656-9",
+                "nombre": "IGNACIO SERGIO RÍOS MELO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-346-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "18-05-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96591040-9",
+                "nombre": "EMPRESAS CAROZZI S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9877673-7",
+                "nombre": "MARIO GUILLERMO LORCA PISMANTE",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16674943-3",
+                "nombre": "SERGIO EDGARDO FUICA GUTIÉRREZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "13906706-1",
+                "nombre": "CARLA ISABEL VIDAL PÉREZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10387416-5",
+                "nombre": "ROCÍO MACARENA GARCIA DE LA PASTORA ZAVALA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17812798-5",
+                "nombre": "NIDY ANDREA MOSCOSO ALLEL",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18159282-6",
+                "nombre": "JAVIERA ANDREA SERPELL MÜLLER",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16200575-8",
+                "nombre": "TOMÁS RODRIGO GARNHAM OYARZÚN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14092954-9",
+                "nombre": "YASNA VALESKA MALDONADO NAVARRO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "18395507-1",
+                "nombre": "CATALINA ISABEL MELGAREJO ESPINA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17275756-1",
+                "nombre": "CRISTIAN HUMBERTO ALEGRE DONOSO",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE STEPHANIE SOLÍS DE OVANDO MARIMÁN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "20211585-3",
+                "nombre": "FRANCISCA IGNACIA GAJARDO ALZAMORA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12046779-4",
+                "nombre": "CAROLINA ALDUNATE LEÓN",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-112-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "04-01-2021 21:00:00",
+            "monto": "3860",
+            "litigantes": [
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17213860-8",
+                "nombre": "ALEJANDRO SIMÓN LEIVA ILLANES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96722400-6",
+                "nombre": "PACIFICO CABLE S.P.A.  ",
+                "sujeto": "DDO.SU",
+                "persona": "J"
+              },
+              {
+                "rut": "15381877-0",
+                "nombre": "FELIPE IGNACIO FRÍAS RIVAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE STEPHANIE SOLÍS DE OVANDO MARIMÁN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13310990-0",
+                "nombre": "MAX ANDRÉS CORNEJO VALDÉS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13906706-1",
+                "nombre": "CARLA ISABEL VIDAL PÉREZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15612848-1",
+                "nombre": "PAULA DENISSE RAASCH MORALES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "05-09-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITAD  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-34416-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-06-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "Administradora de Fondos de Pensiones Modelo S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-22286-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "11-08-2016 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17366646-2",
+                "nombre": "FRANCISCO DANKE GOMEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "81826800-9",
+                "nombre": "C.C.A.F LOS ANDES  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14207630-6",
+                "nombre": "LUIS ALBERTO CONTRERAS BENAVIDES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15932008-1",
+                "nombre": "DANIELA MARGARITA FUENTES ORMAZABAL",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIO  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-38900-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "08-11-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "Administradora de Fondos de Pensiones Modelo  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-44053-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "24-02-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98001000-7",
+                "nombre": "A.F.P. CUPRUM S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7072258-5",
+                "nombre": "RAUL TRONCOSO DELPIANO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "EMPRESA DE SERVICIOS TRANSITORIOS SELECT  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-9350-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "12-02-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "Administradora de Fondos de Pensiones Modelo  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-11942-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "06-03-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "81826800-9",
+                "nombre": "CAJA DE COMP. DE ASIG. FAMILIAR LOS ANDES  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15363924-8",
+                "nombre": "FRANCISCO JAVIER SMITH COVARRUBIAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMP DE SERV TRANSITORIOS LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-11175-2013",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "17-02-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96981130-8",
+                "nombre": "ADM. DE FONDOS DE CESANTIA CHILE S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6022610-5",
+                "nombre": "RAUL TOMAS BUSTOS CASTILLO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMP DE SERV TRANSITORIOS LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-9445-2013",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "28-01-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "A.F.P. HABITAT S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-5613-2013",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:06:18"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:315d71ed78ee55628ec62a3ee51f3cd5a0ce4e2b2a12646a03ad7fc1e91af518",
+        "cached_at": "2026-05-30T00:06:20.562180"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 7,
+        "cantidad": 128,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "13-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15991171-3",
+                "nombre": "GONZALO JESÚS RIQUELME BARAHONA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12660875-6",
+                "nombre": "JUAN CARLOS BERMEDO MATTEUCCI (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1813-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "06-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "20439517-9",
+                "nombre": "GENESIS VALESKA ROJAS GUZMÁN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10722186-7",
+                "nombre": "ALEJANDRA EUGENIA AGUILA DUFF (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-484-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "23-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18070086-2",
+                "nombre": "CARLA DANITZA CARRASCO ZAPATA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17046591-1",
+                "nombre": "PAULO JAVIER ALEXIS VELASQUEZ BURGOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77424780-7",
+                "nombre": "EWOS CHILE ALIMENTOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-22-2026",
+            "tribunal": "2do Juzgado de Letras de Coronel",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11006145-5",
+                "nombre": "EUGENIA ALEJANDRA RIQUELME SOTO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9544838-0",
+                "nombre": "CLAUDIO HERNAN BARRIENTOS AGUILAR (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81094100-6",
+                "nombre": "COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-16-2026",
+            "tribunal": "Juzgado de Letras y Garantía de La Unión",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "18-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15982453-5",
+                "nombre": "CARLOS LOPEZ LOPEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19825266-2",
+                "nombre": "MICHELL MAGDALENA VERA CARVAJAL",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76626060-8",
+                "nombre": "A.W.FABER CASTELL CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-66-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Calama",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "09-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18142342-0",
+                "nombre": "GONZALO ALFREDO RAMOS ENRÍQUEZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17277814-3",
+                "nombre": "TOMÁS ANDRÉS TAPIA TAPIA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18100279-4",
+                "nombre": "FRANCISCO NICOLÁS PANES PÉREZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19493009-7",
+                "nombre": "MATÍAS IGNACIO LAZO MEYER",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96722400-6",
+                "nombre": "PACIFICO CABLE SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12436792-1",
+                "nombre": "SUSAN ANGELINA CALDERÓN CHOPPELO (Revoca Poder)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17844329-1",
+                "nombre": "MARIO NICOLÁS EMILIO MORALES ORTIZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-67-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Arica",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "28-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19809054-9",
+                "nombre": "VICENTE ANDRÉS PARRA SOLIMANO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER",
+                "sujeto": "DDO.SO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE SOLIS DE OVANDO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "27143451-0",
+                "nombre": "DANA ANGELY MARTIN GONZALEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12632433-2",
+                "nombre": "GUNTHER EMILIO KREITHER FELIU (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96722400-6",
+                "nombre": "PACIFICO CABLE SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-53-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "12-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18068475-1",
+                "nombre": "SERGIO PABLO POZO ROJAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20651354-3",
+                "nombre": "GERMÁN ALONSO PADILLA GUZMÁN (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16728707-7",
+                "nombre": "GUIDO ANTONIO ROJAS RAMOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96962900-3",
+                "nombre": "RANDSTAD CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96722400-6",
+                "nombre": "PACIFICO CABLE SPA",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-14-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "30-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19577675-K",
+                "nombre": "KARINA ANDREA SÁEZ MARDONES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77424780-7",
+                "nombre": "EWOS CHILE ALIMENTOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12525683-K",
+                "nombre": "MARCELO ANDRÉS PEÑAILILLO MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-126-2025",
+            "tribunal": "1er Juzgado de Letras de Coronel",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "16-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE SOLIS DE OVANDO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17277814-3",
+                "nombre": "TOMAS TAPIA TAPIA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13566496-0",
+                "nombre": "SERGIO CORDERO VILLABLANCA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19127435-0",
+                "nombre": "CATERIN FERNANDA ALFARO CORTÉS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6492-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19992852-K",
+                "nombre": "JOSÉ RICARDO LARA ULLOA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13900458-2",
+                "nombre": "VERÓNICA ANDREA LARA ROJAS (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8896-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE SOLIS DE OVANDO",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17277814-3",
+                "nombre": "TOMÁS ANDRÉS TAPIA TAPIA",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-33-2025",
+            "tribunal": "2do Juzgado de Letras de Coronel",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18054926-9",
+                "nombre": "SYLVIA MIREYA BAEZA ROJAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16083923-6",
+                "nombre": "WILLIAM HERNÁN GALLEGOS CERDA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76042014-K",
+                "nombre": "WALMART CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3891-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "06-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19190136-3",
+                "nombre": "YESENIA DEL PILAR MENDES CHAPARRO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9976101-6",
+                "nombre": "PABLO ESTEBAN ACUÑA RODRIGUEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12231964-4",
+                "nombre": "CECILIA DEL ROSARIO CABRERA GARCIA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12546122-0",
+                "nombre": "CLAUDIO MARCELO GERARDO CANDIA GUZMAN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11485247-3",
+                "nombre": "MARÍA CECILIA PAOLA NOGUER FERNANDEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76042014-K",
+                "nombre": "WALMART CHILE S.A.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-597-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "06-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17462436-4",
+                "nombre": "ROBERTO PABLO POBLETE SANTIBÁÑEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9976101-6",
+                "nombre": "PABLO ESTEBAN ACUÑA RODRIGUEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12231964-4",
+                "nombre": "CECILIA DEL ROSARIO CABRERA GARCIA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12546122-0",
+                "nombre": "CLAUDIO MARCELO GERARDO CANDIA GUZMAN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11485247-3",
+                "nombre": "MARÍA CECILIA PAOLA NOGUER FERNANDEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76042014-K",
+                "nombre": "WALMART CHILE S.A.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-598-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "23-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96962900-3",
+                "nombre": "RANDSTAD CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96547710-1",
+                "nombre": "CERVECERIAS CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19064013-2",
+                "nombre": "ANGELO ADRIÁN BUSTAMANTE TAPIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15371915-2",
+                "nombre": "JORGE LENA SALGADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16375512-2",
+                "nombre": "MARÍA DE LA PAZ OLEGARIA AGUILERA JAQUE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17295077-9",
+                "nombre": "PAOLA BELEN BOLVARAN BOLVARAN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7665-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "06-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12417623-9",
+                "nombre": "JULIO ARTURO LÓPEZ AHUMADA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19234389-5",
+                "nombre": "PABLO ANDRÉS MILLALÉN FERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14277373-2",
+                "nombre": "NAYADE MABEL VALENZUELA VÁSQUEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96962900-3",
+                "nombre": "RANDSTAD CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437740-0",
+                "nombre": "RANDSTAD SERVICIOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81094100-6",
+                "nombre": "COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LIMITADA",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7184-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13842879-6",
+                "nombre": "CRISTIAN MARCELO MEDINA JARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19234389-5",
+                "nombre": "PABLO ANDRÉS MILLALÉN FERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14277373-2",
+                "nombre": "NAYADE MABEL VALENZUELA VÁSQUEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96962900-3",
+                "nombre": "RANDSTAD CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437740-0",
+                "nombre": "RANDSTAD SERVICIOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81094100-6",
+                "nombre": "COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LIMITADA",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-6782-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "03-09-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13312342-3",
+                "nombre": "HUGO RICARDO GOMEZ RUIZ (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8039568-K",
+                "nombre": "ANDRES RODRIGUEZ MORALES (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15783413-4",
+                "nombre": "DIEGO ANDRES SALDAÑA MARTINEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "4187704-9",
+                "nombre": "ALFREDO VALDES RODRIGUEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17985804-5",
+                "nombre": "ÁLVARO ESTEBAN VARAS PEÑA (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99289000-2",
+                "nombre": "METLIFE SEGUROS DE VIDA S.A",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17971042-0",
+                "nombre": "NELSON MAURICIO OYANEDEL DONOSO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17928752-8",
+                "nombre": "SOLEDAD ELIZABETH MAYORGA TAPIA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3063-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "19-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18592807-1",
+                "nombre": "JOSÉ SERGIO ANTONIO RAMÍREZ GAETE",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18506084-5",
+                "nombre": "MELISSA LORETO CAMPUSANO CHACÓN",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76733620-9",
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19307165-1",
+                "nombre": "LUCAS ALBERTO REBOLLEDO MAYER (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17681760-7",
+                "nombre": "NICOLE SOLIS DE OVANDO (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE SAN FELIPE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-177-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:06:18"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9e08ef3bf6b9da441afe034bccce676717f4ad2386d5437e397dc7c343adedf8",
+        "cached_at": "2026-05-30T00:06:21.036209"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 50,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "07-03-2026 21:00:00",
+            "multa": "4290/26/005-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-02-2026 21:00:00",
+            "multa": "2150/25/036-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-02-2026 21:00:00",
+            "multa": "8002/26/005-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "11-02-2026 21:00:00",
+            "multa": "4194/25/310-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "07-12-2025 21:00:00",
+            "multa": "4194/25/269-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-11-2025 21:00:00",
+            "multa": "4448/25/080-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-10-2025 21:00:00",
+            "multa": "1220/25/180-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "29-08-2025 20:00:00",
+            "multa": "6307/25/175-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "24-08-2025 20:00:00",
+            "multa": "1220/25/076-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-08-2025 20:00:00",
+            "multa": "8531/25/041-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "11-08-2025 20:00:00",
+            "multa": "1984/24/013-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-08-2025 20:00:00",
+            "multa": "4377/25/108-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-08-2025 20:00:00",
+            "multa": "4377/25/109-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "25-07-2025 20:00:00",
+            "multa": "8382/25/108-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-07-2025 20:00:00",
+            "multa": "8382/25/106-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-07-2025 20:00:00",
+            "multa": "1220/25/068-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-07-2025 20:00:00",
+            "multa": "7422/25/134-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer en forma personal a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-07-2025 20:00:00",
+            "multa": "3274/25/169-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "04-06-2025 20:00:00",
+            "multa": "8064/25/125-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer en forma personal a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "29-05-2025 20:00:00",
+            "multa": "3274/25/080-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:28:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2bf5eb028eee5fb07805d9c7ca3061aab494e3ae57eeb8b3e350229eab7eea99",
+        "cached_at": "2026-05-30T00:06:21.380369"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 7,
+        "cantidad": 134,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NICOLAS PATRICIO LODY LAGUNAS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "23240118-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEX MARCELO ARCOS TORRES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12593566-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR MANUEL RIQUELME JORQUERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "18840403-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GERALD JUDA GUTIERREZ SANHUEZA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21148610-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SEBASTIAN ALEJANDRO ABARCA MUJICA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "19852607-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR MANUEL ZUNIGA CARCAMO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20771300-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR MANUEL ZUNIGA CARCAMO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20771300-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALVARO ELADIO VERGARA JELDRES ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19750534-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MATIAS IGNACIO RODRIGUEZ ALVARADO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "20061202-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FELIPE SANCHEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "21553422-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCISCO JAVIER QUICHEL ALARCON ",
+            "periodo": "10/2025",
+            "rutAfiliado": "17247875-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HÉCTOR LEANDRO SALAZAR BALCAZA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19465922-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GERALDINE CAMILA TRONCOSO CARRILLO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19578529-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GISSEL VERA RIQUELME ",
+            "periodo": "10/2025",
+            "rutAfiliado": "15207641-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE HUMBERTO PUCHI GOMEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "20385367-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HELMUTH ESTEBAN REYES HUENCHUCONA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "17561015-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCISCO ALBERTO GUTIÉRREZ QUILAPAN ",
+            "periodo": "10/2025",
+            "rutAfiliado": "17219150-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN JOSE SAMUEL GUERRA CARO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "21251923-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA PAZ ORELLANA SILVA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "21899875-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LISANDRO NICOLAS MELO CERECEDA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19776424-4",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:28:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:51aa290d6cd00c38771e1333642c622f449cb7a0bab0e723e6f24af92cb20d25",
+        "cached_at": "2026-05-30T00:06:21.721147"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76733620-9",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+            "rutSociedad": "76733620-9",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2001-08-01",
+            "socios": [
+              {
+                "nombre": "RANDSTAD CHILE S.A.",
+                "rut": "96962900-3",
+                "domicilio": "APOQUINDO CUATRO MIL QUINIENTOS UNO, OFICINA NÚMERO QUINIENTOS UNO, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "95.00"
+              },
+              {
+                "nombre": "SELECT INVESTMENTS CHILE LIMITADA",
+                "rut": "77650560-9",
+                "domicilio": "HENDAYA 60 OFICINA 601, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "RANDSTAD INVESTMENTS CHILE LIMITADA",
+                "rut": null,
+                "domicilio": "HENDAYA 60 OFICINA 601, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "5.00"
+              },
+              {
+                "nombre": "EMPRESA DE SERVICIOS TRANSITORIOS SELECT LIMITADA",
+                "rut": null,
+                "domicilio": "APOQUINDO 4501, OFICINA 501, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SELECT APPOINTMENTS (HOLDINGS) LIMITED",
+                "rut": null,
+                "domicilio": "HALTON, LONDRES, INGLATERRA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.01"
+              },
+              {
+                "nombre": "SELECT APPOINTMENTS NORTH AMERICA, INC.",
+                "rut": null,
+                "domicilio": "HALTON, LONDRES, INGLATERRA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.99"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-03-22",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/22/43808/05/2470232.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2011-07-13",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2011/07/13/370209_M_LTDA_20110713_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:878fd8d5db694ca7d5c133c3230ed3f23408ee701121796ff8330a30b82bdc7f",
+      "cached_at": "2026-05-30T00:06:22.359246"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76733620-9",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "12-07-2011 20:00:00",
+            "razonSocial": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/07/13/370209_M_LTDA_20110713_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "EMPRESA DE SERVICIOS TRANSITORIOS SELECT LIMITADA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76733620-9"
+          },
+          {
+            "fecha": "21-03-2024 21:00:00",
+            "razonSocial": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/03/22/43808/05/2470232.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76733620-9"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76733620-9",
+            "sociedad": "RANDSTAD EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:71dc53f2be06118a55fa8c0a3c094e0989a1b1559b46a71b3d090a8a95b9001f",
+        "cached_at": "2026-05-30T00:06:22.707255"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 752320,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 44.696969696969695,
+      "numeradorJudicial": 59,
+      "denominadorJudicial": 132,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 55.303030303030305,
+      "porcentajeMoraPrevisional": 74.99999999999999,
+      "casosMoraPrevisional": 7,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 69191540,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 25.000000000000014,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 280.3030303030303,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c97ee684399eff3d0dc9e1ab8b14955ffc8bbaa9fdc929d62aa9033644753bc0",
+      "cached_at": "2026-05-30T00:06:23.294129"
+    }
+  }
+}

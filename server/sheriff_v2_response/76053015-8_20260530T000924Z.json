@@ -1,0 +1,780 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76053015-8"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76053015-8",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "FIDENS LAT S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "07-04-2009",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE PROGRAMACION INFORMATICA",
+            "codigo": "620100",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "27-07-2009"
+          },
+          {
+            "actividades": "EMPRESAS DE ASESORIA Y CONSULTORIA EN INVERSION FINANCIERA; SOCIEDADES",
+            "codigo": "661903",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "07-04-2009"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "07-04-2009"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Nota De Credito Exportacion",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota De Debito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2020"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 15,
+        "ultimaActualizacion": "30-05-2026 00:09:20",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "25.000,01 a 50.000,00",
+          "cantidadTrabajadores": 15
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 1,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "28-05-2026 03:22:36",
+        "ultimaActualizacionCobranza": "28-05-2026 03:08:27",
+        "ultimaActualizacionLaboral": "28-05-2026 03:09:37",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 14,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:09:19"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:09:19"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-05-2026 00:09:20"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:09:20"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "FIDENS LAT S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Cámara de Comercio"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:69363c76f1ae62d8202ac62068b66fec317882752d3241ce06da57c3224d94a5",
+      "cached_at": "2026-05-30T00:09:21.354747"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:09:20"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a1fffcf374df9809f1534210057c09110086b7e8c5fe728b4a8010616783f3a3",
+        "cached_at": "2026-05-30T00:09:21.695873"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "15-12-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADM. DE FONDOS DE CESANTIA DE CHILE II SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76053015-8",
+                "nombre": "FIDENS LAT S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-65536-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:09:20"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c09895ab7ec4cf17e7e4ceb0f6a05f3fa8ee91b09a98d2b5ba133bcc1dd774cb",
+        "cached_at": "2026-05-30T00:09:22.054772"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:09:20"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5415f5d3e97c309d6acd6d35396a49e1ee141bd58aa861733b4b3ea90d971416",
+        "cached_at": "2026-05-30T00:09:22.391777"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "28-05-2026 03:22:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f9222f13d228cf0769160b4bb2be3526d920110c051ad76033951e2945361c1d",
+        "cached_at": "2026-05-30T00:09:22.738331"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 14,
+        "casos": [
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "05/2022",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-04-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "02/2022",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "25-02-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "12/2021",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-03-2021 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "01/2021",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-12-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "10/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "27-11-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "09/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-10-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "08/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-09-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "07/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-05-2020 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "03/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-05-2020 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "03/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-04-2020 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "02/2020",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "30-12-2019 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "10/2019",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-11-2019 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "09/2019",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-11-2018 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "WILMER GEOVANNY GARCIA ARANA ",
+            "periodo": "09/2018",
+            "rutAfiliado": "14749201-4",
+            "tipoProducto": "Ahorro Voluntario"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:22:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:193f1781d56aed5f8b80cef5ecac8e1502f246a6c27203c729384301cbcc05b8",
+        "cached_at": "2026-05-30T00:09:23.079178"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76053015-8",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "FIDENS LAT S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "FIDENS LAT S.A",
+            "rutSociedad": "76053015-8",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2009-03-29",
+            "socios": [
+              {
+                "nombre": "PEDRO TOMÁS IÑIGUEZ GONZÁLEZ",
+                "rut": "10698651-7",
+                "domicilio": "CAMINO SAN JOSÉ, PARCELA N, SITIO N° 10, COLINA, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "HÉCTOR GONZALO SILVA LAHIDALGA",
+                "rut": "6989406-2",
+                "domicilio": "AVENIDA PANORÁMICA N° 11973. LO BARNECHEA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES MAÑIGUALES LIMITADA",
+                "rut": "77770640-3",
+                "domicilio": "HENDAYA NÚMERO 60, OFICINA 402, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES DOS Y DOS LIMITADA",
+                "rut": "78042890-2",
+                "domicilio": "PANORÁMICA 11973, LO BARNECHEA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "AMS SPA",
+                "rut": "77261875-1",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES G.S.L. E HIJOS LIMITADA",
+                "rut": "76361603-7",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ALBERTO FERNANDO FARAGGI WIEHOFT",
+                "rut": null,
+                "domicilio": "HENDAYA 60, OFICINA 402, LAS CONDES",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SOCIEDAD DE ASESORÍAS E INVERSIONES LAGOS DE SUR LIMITADA",
+                "rut": null,
+                "domicilio": "CAMINO SAN JOSÉ PARCELA 11, SITIO 10, COLINA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "DELIBOR DANTUAN RAZMULC TARES",
+                "rut": null,
+                "domicilio": "CALLE NUESTRA SEÑORA DEL ROSARIO 3600, DEPARTAMENTO 113, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES MAÑIGUALES S.A.",
+                "rut": null,
+                "domicilio": "CALLE HENDAYA N°60, PISO 4 LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8dd3791c224af126a9a470dcdd1b817868740b95d9831623616943a7d8c68428",
+      "cached_at": "2026-05-30T00:09:23.682425"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76053015-8",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:787c5857c2a775f64084ddba7d0afc00dd140f5d3d135ed362531135adfd3546",
+        "cached_at": "2026-05-30T00:09:24.043011"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 1,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 1,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b9225e29a72ac23cc69f2b78c965954a182acd4b99d0698a19c6141d87816b4b",
+      "cached_at": "2026-05-30T00:09:24.629695"
+    }
+  }
+}

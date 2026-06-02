@@ -1,0 +1,2856 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76909880-1"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76909880-1",
+      "esPersonaJuridica": true,
+      "fechaCarga": "27-05-2026",
+      "identificacion": {
+        "razonSocial": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-08-2007",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE VENTA AL POR MENOR EN COMERCIOS NO ESPECIALIZADOS",
+            "codigo": "471990",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-07-2020"
+          },
+          {
+            "actividades": "OTROS SERVICIOS DE ALMACENAMIENTO Y DEPOSITO N.C.P.",
+            "codigo": "521009",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          },
+          {
+            "actividades": "ALQUILER DE BIENES INMUEBLES AMOBLADOS O CON EQUIPOS Y MAQUINARIAS",
+            "codigo": "681011",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-08-2021"
+          },
+          {
+            "actividades": "SERVICIOS DE PUBLICIDAD PRESTADOS POR EMPRESAS",
+            "codigo": "731001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "21-12-2015"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-08-2007"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2007"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota De Debito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2008"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2007"
+          }
+        ],
+        "cantidadActividades": 5,
+        "cantidadDocumentos": 17,
+        "ultimaActualizacion": "27-05-2026 15:45:32",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "600.000,01 a 1.000.000,00",
+          "cantidadTrabajadores": 5115
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "27-05-2026 15:45:29"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 2,
+        "cobranzaActivos": 11,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 12,
+        "laboralActivos": 71,
+        "laboralPresentados": 28,
+        "laboralConcluidos": 94,
+        "casosActuales": 82,
+        "casosArchivados": 29,
+        "casosConcluidos": 108,
+        "todosLosCasos": 219,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 84,
+          "demandante": 7,
+          "demandadoSolidario": 1,
+          "reclamante": 2,
+          "denunciado": 17
+        },
+        "ultimaActualizacionCiviles": "27-05-2026 15:45:29",
+        "ultimaActualizacionCobranza": "27-05-2026 15:45:29",
+        "ultimaActualizacionLaboral": "27-05-2026 15:45:31",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 348,
+          "empleados": 169,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 92.27,
+            "cambioAbsoluto": 167
+          },
+          "ultimaActualizacion": "27-05-2026 15:45:40"
+        },
+        "multaLaboral": {
+          "totalMultas": 50,
+          "montoTotalMultas": 137198430,
+          "multasPagadas": 50,
+          "montoMultasPagadas": 137198430,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 69.85,
+            "cambioAbsoluto": 56423890
+          },
+          "ultimaActualizacion": "27-05-2026 15:45:37"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "27-05-2026 15:45:30"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "20-11-2024 21:00:00",
+              "razonSocial": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/11/21/44004/05/2573402.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76909880-1"
+            }
+          ],
+          "ultimaActualizacion": "27-05-2026 15:45:29"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 30060,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 425760,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 476340,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 187870,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 36960,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 36960,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 256940,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 188010
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "27-05-2026 15:45:30"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 3,
+          "tasacionTotal": "1311152409",
+          "ultimaActualizacion": "27-05-2026 15:45:30"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 61.61616161616162,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 10.646687697160885,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 272.2628493133225,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:54ef9b5309cd51c284e3992dd69a425af0f7c458b6aca7690d3b1f0f2b7175c8",
+      "cached_at": "2026-05-27T21:40:35.787900"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "05-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELÍAS ABARCA FUENTES (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10398733-4",
+                "nombre": "LILIANA ANDREA GALDÁMEZ ZELADA (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "60910000-1",
+                "nombre": "UNIVERSIDAD DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12251673-3",
+                "nombre": "LUIS ALFONSO GUAJARDO GUERRERO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16979192-9",
+                "nombre": "MILENKA MURIEL ARAYA CARRASCO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-9444-2023",
+            "tribunal": "20º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "18-05-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10398733-4",
+                "nombre": "LILIANA ANDREA GALDÁMEZ ZELADA (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "60910000-1",
+                "nombre": "UNIVERSIDAD DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16979192-9",
+                "nombre": "MILENKA MURIEL ARAYA CARRASCO (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12251673-3",
+                "nombre": "LUIS ALFONSO GUAJARDO GUERRERO (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-8320-2023",
+            "tribunal": "20º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Impugnación",
+            "fechaIngreso": "23-04-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6397378-5",
+                "nombre": "RODOLFO ALIRO BLANCO SANTANDER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "23389321-8",
+                "nombre": "TAKESHI UEKAWA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "79627190-6",
+                "nombre": "SONY CHILE LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17959251-7",
+                "nombre": "FERNANDO GIUSEPPE GAZZELLA CONTRERAS (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14147814-1",
+                "nombre": "FABIOLA DENISSE SCHENCKE AEDO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17189147-7",
+                "nombre": "CARLOS FELIPE ANDRÉS CORRO CALDERÓN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15379219-4",
+                "nombre": "JUAN PABLO MORALES BARROS (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-12332-2018",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:45:29"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:952252ce798f3da7a3db1d0ba38dff079ea0930ed078d2673250bf8f5ee739a8",
+        "cached_at": "2026-05-27T21:40:36.127022"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 23,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "19-09-2025 21:00:00",
+            "monto": "6031200",
+            "litigantes": [
+              {
+                "rut": "27084136-8",
+                "nombre": "JOSUAR JESUS MATOS MARQUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16417238-4",
+                "nombre": "BÁRBARA LISETTE FLORES ROJAS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELÍAS ABARCA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16936029-4",
+                "nombre": "GONZALO ELÍAS PÁEZ CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13198653-K",
+                "nombre": "CAROLINA ANA VILDÓSOLA CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15374445-9",
+                "nombre": "ELIZABETH CAROLINA MUÑOZ RUBIO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18620522-7",
+                "nombre": "CAMILA VALENTINA DEL PILAR SEPÚLVEDA BUSTAMANTE",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18021944-7",
+                "nombre": "RAÚL ANDRÉS AGUIRRE POBLETE",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16697050-4",
+                "nombre": "CARLA DENISSE ZÚÑIGA MORENO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19069293-0",
+                "nombre": "LORENA ANDREA VERA BLANCO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16660064-2",
+                "nombre": "DIEGO ALEJANDRO GÁLVEZ JEMENAO",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15958984-6",
+                "nombre": "JAVIERA ALEJANDRA INZUNZA RIVEROS",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96556940-5",
+                "nombre": "PROVEEDORES INTEGRALES PRISA S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3996-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "27-05-2025 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "82606800-0",
+                "nombre": "CCAF 18 DE SEPTIEMBRE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16213425-6",
+                "nombre": "CARLOS GARCÍA DE LA HUERTA CORNU",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A. (PROGESTIÓN S.A)",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-17304-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "26-02-2025 21:00:00",
+            "monto": "124352",
+            "litigantes": [
+              {
+                "rut": "12076914-6",
+                "nombre": "CHRISTIAN RAFAEL ECHEVERRÍA TORRES",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12488506-K",
+                "nombre": "MARISOL ANDREA FERNÁNDEZ MENA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20786932-5",
+                "nombre": "ROCIO CONSTANZA TORRES DIAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8802884-8",
+                "nombre": "CLAUDIA MARÍA BARBERÁN MANRÍQUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-143-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "18-02-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11636949-4",
+                "nombre": "LORENA ANDREA AEDO RIVERA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15538571-5",
+                "nombre": "ÚRSULA DE LA CRUZ CATALDO LABORIE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-721-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "05-03-2024 21:00:00",
+            "monto": "3769421",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "PROGESTION S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11495755-0",
+                "nombre": "CLAUDIO PATRICIO FERNÁNDEZ MELO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11589741-1",
+                "nombre": "MIGUEL ANGEL ARAYA AEDO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17631445-1",
+                "nombre": "RODRIGO IGNACIO QUIÑONES BARRÍA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-36-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Puerto Montt",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "22-01-2024 21:00:00",
+            "monto": "117019",
+            "litigantes": [
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELÍAS ABARCA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13310591-3",
+                "nombre": "JUAN CARLOS PEDREROS PADILLA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12917954-6",
+                "nombre": "NELSON ANDRÉS FRANCHI MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16936029-4",
+                "nombre": "GONZALO ELÍAS PÁEZ CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-46-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "14-05-2023 20:00:00",
+            "monto": "211642",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18795964-0",
+                "nombre": "ALEJANDRA DEL CARMEN ANDRADES CÉSPEDES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12910907-6",
+                "nombre": "LINDA ELIZABETH RAMÍREZ VALENZUELA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16936029-4",
+                "nombre": "GONZALO ELÍAS PÁEZ CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELÍAS ABARCA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1993-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "27-12-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "16936029-4",
+                "nombre": "GONZALO ELÍAS PÁEZ CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELÍAS ABARCA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17458476-1",
+                "nombre": "BRENDA DARLENT LAGOS RIQUELME",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15215883-1",
+                "nombre": "KARLA FRANCHESCA ARANEDA FIGUEROA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15678356-0",
+                "nombre": "PABLO SALVADOR CALDERÓN SOLÍS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15877543-3",
+                "nombre": "PATRICIO ROLANDO ESPINOZA MARTÍNEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADM DE RECURSOS HUMANOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-253-2021",
+            "tribunal": "Jdo. de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "02-11-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "11686898-9",
+                "nombre": "CHRISTIAN ROMÁN DULANSKY ARAYA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "19390533-1",
+                "nombre": "THIREEN ANGELINA FUENTES PETIT",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELÍAS ABARCA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-406-2020",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "03-04-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14109010-0",
+                "nombre": "ALEJANDRA MORAN LEDEZMA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADM DE RECURSOS HUMANOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13622885-4",
+                "nombre": "RODOLFO EDGARDO BELMAR LARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-176-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "16-07-2018 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "13671419-8",
+                "nombre": "ÁLVARO ANDRÉS MOLINA LEIVA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96856780-2",
+                "nombre": "ISAPRE CONSALUD S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADM DE RECURSOS HUMANOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-35585-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "11-06-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12865163-2",
+                "nombre": "YASMÍN CLAUDIA CUMSILLE CUMSILLE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17340515-4",
+                "nombre": "MIGUEL ANGEL VARGAS LOBOS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10166514-3",
+                "nombre": "MARCO GONZALEZ BUSTOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2434-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "11-04-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "Administradora de Fondos de Pensiones Modelo S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADM DE RECURSOS HUMANOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-20858-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "02-02-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCIÓN DEL TRABAJO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12752828-4",
+                "nombre": "LEONARDO SANDOVAL HERMOSILLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13622885-4",
+                "nombre": "RODOLFO EDGARDO BELMAR LARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADM DE RECURSOS HUMANOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13722727-4",
+                "nombre": "ANA MARIA ARRIAGADA DEMARCO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16842933-9",
+                "nombre": "PATRICIO JAVIER ULLOA AMPUERO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-21-2018",
+            "tribunal": "Jdo. de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "04-10-2017 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13622885-4",
+                "nombre": "RODOLFO EDGARDO BELMAR LARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10821432-5",
+                "nombre": "MARIA PAZ PINOCHET JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "5275464-K",
+                "nombre": "GUILLERMO HARTMANN GONZALEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17446713-7",
+                "nombre": "EVELYN ELENA CANDIA CASTILLO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10265816-7",
+                "nombre": "DANIELA HARTMANN CORTINA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13978353-0",
+                "nombre": "MARIA ISABEL GALLEGUILLOS GALLEGUILLOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16303734-3",
+                "nombre": "MARIA GRACIANA MARTINEZ NICOLAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "77261280-K",
+                "nombre": "FALABELLA RETAIL SA  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "15085417-2",
+                "nombre": "FELIPE ANDRÉS ESPINOZA ZEGERS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15374652-4",
+                "nombre": "JUAN GUILLERMO PADILLA HERRERA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16212932-5",
+                "nombre": "DANIELA ALEJANDRA HORMAZABAL FIGUEROA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16941517-K",
+                "nombre": "FABIOLA CONCHA MAUREIRA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "77146150-6",
+                "nombre": "WHIRPOOL CHILE LTDA  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-673-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-05-2016 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "ADMINISTRADORA DE FONDOS DE PENSIONES MODELO S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "PROGESTION S. A..  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO JOSÉ TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-26506-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "12-04-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOC.ADM.DE FDOS DE CESANTIA DE CHILE II S.A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "PROGESTION S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-19486-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "11-04-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "PROGESTION S. A..  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendaño",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-15780-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "26-03-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADM. DE FONDOS DE CESANTIA DE CHILE II SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "PROGESTION S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-24490-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "27-01-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "13671419-8",
+                "nombre": "ALVARO MOLINA LEIVA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96856780-2",
+                "nombre": "ISAPRE CONSALUD S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13914186-5",
+                "nombre": "KAREN LEPE HERMOSILLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTORA Y ADM DE RECURSOS HUMANOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12855370-3",
+                "nombre": "HUGO ANTONIO PUEBLA GASSET",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-4080-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:45:29"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:df73ce3522aaaed3b2e8fabf2f2fc53e5f27a406d53693206953e1faac0e4846",
+        "cached_at": "2026-05-27T21:40:36.598090"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 10,
+        "cantidad": 193,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12182433-7",
+                "nombre": "RODRIGO ESTEBAN MARÍN MOLINA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12295020-4",
+                "nombre": "MARIA EUGENIA SALINAS SOTO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1303-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "31-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16950265-K",
+                "nombre": "SUSAN MARJORIE VILLARROEL OTTH",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14693844-2",
+                "nombre": "SILVIA GONCALVES CONTRERASMALDONADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12930879-6",
+                "nombre": "ANDRÉS RODRIGO PEREZ VALDEBENITO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-324-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14138693-K",
+                "nombre": "RICARDO SANCHEZ ROJAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19092735-0",
+                "nombre": "FELIPE ALEJANDRO URRA HUECHAN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19095898-1",
+                "nombre": "DANIEL IGNACIO PÉREZ ALLENDE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76134941-4",
+                "nombre": "ADMINISTRADORA DE SUPERMERCADOS HIPER LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96439000-2",
+                "nombre": "WALMART CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76012833-3",
+                "nombre": "SUPER 10 S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76833720-9",
+                "nombre": "ABARROTES ECONOMICOS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76029743-7",
+                "nombre": "COMERCIALIZADORA DEL SUR SEIS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2106-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELIAS ABARCA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18330562-K",
+                "nombre": "JENNIFER GABRIELA SÁNCHEZ CASTRO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-44-2026",
+            "tribunal": "1º Juzgado de Letras de Puerto Varas",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "02-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12115862-0",
+                "nombre": "ÁLVARO EDUARDO VERDUGO CASTILLO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18664813-7",
+                "nombre": "JAVIER ADOLFO QUIERO PÉREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1561-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "09-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19836984-5",
+                "nombre": "MARÍA FERNANDA CORNEJO RIVERA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELIAS ABARCA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15181474-3",
+                "nombre": "EGON SCHMIDLIN VILLAVICENCIO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-214-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "27-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14562288-3",
+                "nombre": "JOSÉ LUIS OSSANDON OSSANDON (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20556654-6",
+                "nombre": "MELANIE FRANCISCA PANTA GONZÁLEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-48-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Calama",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Suspendido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "26-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19360417-K",
+                "nombre": "KATHERINE JOHANNA CABRERA ORTEGA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-51-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "22-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19974772-K",
+                "nombre": "JAVIERA PAZ MEZA TAPIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14573722-2",
+                "nombre": "CRISTIAN FERNANDO ROJAS BALMACEDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-402-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "15-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17138622-5",
+                "nombre": "YESENIA JASMÍN PEÑA DÍAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13922751-4",
+                "nombre": "JOSÉ MIGUEL LONG ARRIAGADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96656660-4",
+                "nombre": "PROCTER GAMBLE CHILE LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-271-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "13-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13500856-7",
+                "nombre": "CARLOS MANUEL MÁRQUEZ CASTRO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13922751-4",
+                "nombre": "JOSÉ MIGUEL LONG ARRIAGADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96656660-4",
+                "nombre": "PROCTER GAMBLE CHILE LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-227-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13719901-7",
+                "nombre": "CLAUDIO PERALTA PINTO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11365051-6",
+                "nombre": "CECILIA VERÓNICA BENAVIDES SÁNCHEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18647064-8",
+                "nombre": "KAREN NATALIA RODRÍGUEZ BARRERA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-39-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "17-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18647064-8",
+                "nombre": "KAREN NATALIA RODRÍGUEZ BARRERA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14203621-5",
+                "nombre": "FERNANDO GILBERTO GALAZ DÍAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-912-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "19-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17389998-K",
+                "nombre": "ALEX ARIAS BASTIAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5994-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "18-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19423731-6",
+                "nombre": "BORIS ROBINSON SOTO ARRIAGADA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-142-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Punta Arenas",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "78921690-8",
+                "nombre": "WOM S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17120147-0",
+                "nombre": "JAVIER IGNACIO HERRERA RODRIGUEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17275003-6",
+                "nombre": "LEONARDO ESTEBAN ABARCA VARGAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16960257-3",
+                "nombre": "KATHERINE LISSETT GUTIÉRREZ FAJARDO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-907-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "14-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96656660-4",
+                "nombre": "PROCTER GAMBLE CHILE LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13922751-4",
+                "nombre": "JOSÉ MIGUEL LONG ARRIAGADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17105150-9",
+                "nombre": "EDNA KATHERINE NICOL ORELLANA MENA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5237-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "06-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "25816376-1",
+                "nombre": "ALEJANDRO DE JESUS HERNANDEZ HERNANDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "6546506-K",
+                "nombre": "MAURICIO GUILLERMO BRAVO ARIS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16369017-9",
+                "nombre": "MARIA PAZ BRAVO GRAU (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96556940-5",
+                "nombre": "PROVEEDORES INTEGRALES PRISA S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5057-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "02-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19531100-5",
+                "nombre": "NICOLE ALEJANDRA OVIEDO TOLEDO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17616029-2",
+                "nombre": "LUIS OMAR ANTONIO ARROYO PANTOJA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1516-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "24-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76909880-1",
+                "nombre": "CONSULTOR Y ADMINISTRADOR DE RECURSOS HUMANOS S.A.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE SAN FELIPE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15348972-6",
+                "nombre": "JUAN ELIAS ABARCA FUENTES (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-311-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:45:29"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3fc5a7cca882ff76470efaaaf4252e3bf4ac08f22d032b5dd57eb946d5a6a10f",
+        "cached_at": "2026-05-27T21:40:37.037884"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 50,
+        "casos": [
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-03-2026 21:00:00",
+            "multa": "8370/25/064-1",
+            "procedencia": "FISCALIZACION",
+            "um": "10",
+            "tipoUm": "UTM",
+            "montoClp": 698890
+          },
+          {
+            "enunciado": "No pagar semana corrida.",
+            "estado": "PAGADA",
+            "fecha": "22-03-2026 21:00:00",
+            "multa": "8370/25/064-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4193340
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "20-03-2026 21:00:00",
+            "multa": "8867/26/010-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "15-03-2026 21:00:00",
+            "multa": "1706/26/007-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4193340
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-03-2026 21:00:00",
+            "multa": "1684/26/003-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-03-2026 21:00:00",
+            "multa": "1706/26/007-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4193340
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-03-2026 21:00:00",
+            "multa": "7519/26/018-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "26-02-2026 21:00:00",
+            "multa": "8055/25/035-2",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "26-02-2026 21:00:00",
+            "multa": "8055/25/035-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4176660
+          },
+          {
+            "enunciado": "No proporcionar a los trabajadores, libres de todo costo y cualquiera sea la función que éstos desempeñen, los elementos de protección personal.",
+            "estado": "PAGADA",
+            "fecha": "22-02-2026 21:00:00",
+            "multa": "1626/26/002-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4176660
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "22-02-2026 21:00:00",
+            "multa": "1697/25/001-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-02-2026 21:00:00",
+            "multa": "1984/25/404-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No pagar remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "11-02-2026 21:00:00",
+            "multa": "8165/25/054-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4176660
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "21-01-2026 21:00:00",
+            "multa": "4290/25/039-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "24-12-2025 21:00:00",
+            "multa": "8691/25/414-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-12-2025 21:00:00",
+            "multa": "8382/25/194-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No contener las liquidaciones de remuneraciones un anexo con, o no contener el anexo, los montos de cada comisión, bono, premio u otro incentivo, junto al detalle de cada operación que le dio origen y la forma empleada para su cálculo.",
+            "estado": "PAGADA",
+            "fecha": "15-11-2025 21:00:00",
+            "multa": "8510/25/052-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4172520
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-11-2025 21:00:00",
+            "multa": "6221/25/267-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "30-10-2025 21:00:00",
+            "multa": "8547/25/288-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No proporcionar a los trabajadores, libres de todo costo y cualquiera sea la función que éstos desempeñen, los elementos de protección personal.",
+            "estado": "PAGADA",
+            "fecha": "25-10-2025 21:00:00",
+            "multa": "1626/25/049-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4155900
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:45:29"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1a3e69968e16636e037e4107a8445514265c64e7939957d64d5add173378aeed",
+        "cached_at": "2026-05-27T21:40:37.400370"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 31,
+        "cantidad": 616,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Lorena Andrea Diaz Orellana ",
+            "periodo": "03/2026",
+            "rutAfiliado": "14486290-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Bastian Alejandro Delgado Concha ",
+            "periodo": "03/2026",
+            "rutAfiliado": "21962726-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Sthefano Remmy Del Campo Mora ",
+            "periodo": "03/2026",
+            "rutAfiliado": "19747452-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Camilo Andres Cuevas Ramirez ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17558561-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Felipe Israel Cornejo Allende ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17121413-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Erick Eduardo Colil Correa ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17047058-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Berta Yana Castro Cuevas ",
+            "periodo": "03/2026",
+            "rutAfiliado": "13184732-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Cristian Chureo Antil ",
+            "periodo": "03/2026",
+            "rutAfiliado": "20001057-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Leonardo Antonio Benucci Garces ",
+            "periodo": "03/2026",
+            "rutAfiliado": "19233694-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Joaquin Ignacio Barraza Peralta ",
+            "periodo": "03/2026",
+            "rutAfiliado": "21915699-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Cristian Andres Campusano Salinas ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17938691-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Luis Eduardo Badillo Salgado ",
+            "periodo": "03/2026",
+            "rutAfiliado": "13603002-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Pablo Ignacio Arriagada Allende ",
+            "periodo": "03/2026",
+            "rutAfiliado": "16385011-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Constanza Araceli Almonacid Villouta ",
+            "periodo": "03/2026",
+            "rutAfiliado": "22408879-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Yanara Alejandra Araos Polanco ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17876121-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Sebastian Patricio Araneda Yokens ",
+            "periodo": "03/2026",
+            "rutAfiliado": "22379464-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Sebastian Felipe Alegria Gonzalez ",
+            "periodo": "03/2026",
+            "rutAfiliado": "20774888-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Ruben David Boucchechter Abreu ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26590087-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Aracely Jhandira Aguayo Flores ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26440645-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Franco Paolo Espinoza Saez ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18810270-0",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:45:29"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f802b488f8b1c65d6cdca9ff4b064a2a276b1d2ab4b99736f54c3403a13e9d4b",
+        "cached_at": "2026-05-27T21:40:37.746941"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76909880-1",
+      "tipoPersona": "juridical",
+      "nombre": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS LIMITADA",
+            "rutSociedad": "76909880-1",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2003-09-03",
+            "socios": [
+              {
+                "nombre": "PABLO ANDRES VALENZUELA ARANCIBIA",
+                "rut": "15077403-9",
+                "domicilio": "AVENIDA LA MARINA 890",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ULISES FERNANDO VALENZUELA RETAMALES",
+                "rut": "8936246-6",
+                "domicilio": "LOS ABETOS N°530 DEPTO/LOCAL 10 VILLA MIRAFLORES BAJO COMUNA DE VIÑA DEL MAR",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "RAMON ANDRES MONTOYA GARCIA",
+                "rut": "13684281-1",
+                "domicilio": "ALVARO CASANOVA 1875, COMUNA DE ÑUÑOA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10.00"
+              },
+              {
+                "nombre": "RAMÓN ROBERTO MONTOYA MÉNDEZ",
+                "rut": "6879013-1",
+                "domicilio": "SIMÓN BOLÍVAR 7334-D, LA REINA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "90.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-11-21",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/11/21/44004/05/2573402.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:925a70609af6fa57e62f9ffd04818fbb1a803e2f80480684e7f5359bcef7b6a8",
+      "cached_at": "2026-05-27T21:40:38.396652"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76909880-1",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "20-11-2024 21:00:00",
+            "razonSocial": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/11/21/44004/05/2573402.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76909880-1"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76909880-1",
+            "sociedad": "CONSULTORA Y ADMINISTRADORA DE RECURSOS HUMANOS S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:495e5f42804829346067189f2f35686c34b7d57ce58dbf0b429d0c78891944c0",
+        "cached_at": "2026-05-27T21:40:38.783244"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 425760,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 38.38383838383838,
+      "numeradorJudicial": 76,
+      "denominadorJudicial": 198,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 61.61616161616162,
+      "porcentajeMoraPrevisional": 89.35331230283911,
+      "casosMoraPrevisional": 317,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 137198430,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 10.646687697160885,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 272.2628493133225,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:bbc58723e6bf38e00481b6280ff8283a2c78074d90a5d70cf6f656fce038d8a1",
+      "cached_at": "2026-05-27T21:40:39.378354"
+    }
+  }
+}

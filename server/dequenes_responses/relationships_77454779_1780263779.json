@@ -1,0 +1,93 @@
+{
+  "pathCount": 8,
+  "relationships": [
+    {
+      "source": "77454779",
+      "target": "17039438",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-07-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77454779",
+      "target": "17146676",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-10-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77454779",
+      "target": "17039438",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACvlsxKIGAMi",
+        "source": "RES",
+        "published_at": "2025-07-11"
+      }
+    },
+    {
+      "source": "77454779",
+      "target": "17146676",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACYIhaLxrvO9",
+        "source": "RES",
+        "published_at": "2021-10-04"
+      }
+    },
+    {
+      "source": "76969059",
+      "target": "17039438",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76969059",
+      "target": "17039438",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACCtHhpJvJxm",
+        "source": "RES",
+        "published_at": "2019-01-21"
+      }
+    },
+    {
+      "source": "77279833",
+      "target": "17146676",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-12-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77279833",
+      "target": "17146676",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC1KXjh2IcnB",
+        "source": "RES",
+        "published_at": "2020-12-22"
+      }
+    }
+  ],
+  "entityNames": {
+    "17039438": "RENE GONZALO ALFREDO ALBORNOZ PICART",
+    "17146676": "RAUL HERNAN FAUNDEZ BENAVIDES",
+    "76969059": "MECANICO AUTOMOTRIZ RENE GONZALO ALBORNOZ PICART E.I.R.L.",
+    "77279833": "TRANSPORTES FAUNDEZ BENAVIDES SPA",
+    "77454779": "SOCIEDAD DE TRANSPORTE PRIVADO DE PASAJEROS LOOCK SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:8b61eef91ccd66326f5f4e0b4fb0cd773292c8b28e03b6fb38f0b1bed012cf7e",
+    "cached_at": "2026-05-31T21:42:59.913895"
+  }
+}

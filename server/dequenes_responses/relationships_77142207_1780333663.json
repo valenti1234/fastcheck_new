@@ -1,0 +1,271 @@
+{
+  "pathCount": 25,
+  "relationships": [
+    {
+      "source": "77142207",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-10-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77142207",
+      "target": "77131258",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1743965",
+        "cve": "1743965",
+        "source": "DO",
+        "doc_extraction_id": "1869617",
+        "published_at": "2020-03-25",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/03/25/42614/05/1743965.pdf"
+      }
+    },
+    {
+      "source": "77142207",
+      "target": "59290990",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1743965",
+        "cve": "1743965",
+        "source": "DO",
+        "doc_extraction_id": "1869617",
+        "published_at": "2020-03-25",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/03/25/42614/05/1743965.pdf"
+      }
+    },
+    {
+      "source": "77142207",
+      "target": "77131258",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "77713982",
+      "target": "77142207",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "77142207",
+      "target": "59290990",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "77713982",
+      "target": "77142207",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACiBw32SAZ7n",
+        "source": "RES",
+        "published_at": "2023-02-14"
+      }
+    },
+    {
+      "source": "78432436",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2026-05-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78429835",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2026-05-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77912002",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-04-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77713982",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-02-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77285741",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-01-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77131258",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-10-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76374075",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-04-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76137072",
+      "target": "13766028",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-03-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78432436",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACVd3drQaBuP",
+        "source": "RES",
+        "published_at": "2026-05-27"
+      }
+    },
+    {
+      "source": "78429835",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AChph1iFbrCP",
+        "source": "RES",
+        "published_at": "2026-05-23"
+      }
+    },
+    {
+      "source": "76137072",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_7295388",
+        "doh_extraction_id": "976075",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "7295388",
+        "published_at": "2011-02-16",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/02/16/do-20110216.pdf"
+      }
+    },
+    {
+      "source": "77912002",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACn1xM3WDS91",
+        "source": "RES",
+        "published_at": "2024-04-16"
+      }
+    },
+    {
+      "source": "77285741",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACZV3HoxRRnt",
+        "source": "RES",
+        "published_at": "2023-08-11"
+      }
+    },
+    {
+      "source": "77285741",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACFaSLlVfxtZ",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "76374075",
+      "target": "13766028",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACZszbWXbwhY",
+        "source": "RES",
+        "published_at": "2014-04-22"
+      }
+    },
+    {
+      "source": "77131258",
+      "target": "8431507",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-02-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77131258",
+      "target": "8431507",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1735060",
+        "match_type": "bt_pn",
+        "source": "DO",
+        "published_at": "2020-03-04",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/03/04/42595/05/1735060.pdf"
+      }
+    },
+    {
+      "source": "59290990",
+      "target": "8431507",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-03-10",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "8431507": "GINA SOLANGE OCQUETEAU TACCHINI",
+    "13766028": "IGNACIO JAMAN MEWES",
+    "59290990": "WG CONSULTORES SST S.A.S.",
+    "76137072": "INVERSIONES FAIRWIND LIMITADA",
+    "76374075": "COMERCIALIZADORA DE PUBLICIDAD IGNACIO JAMAN MEWES E.I.R.L.",
+    "77131258": "GHP SPA",
+    "77142207": "WAYGROUP CHILE SPA",
+    "77285741": "NOVIJM SPA",
+    "77713982": "WAYGROUP TRAINING SPA",
+    "77912002": "TALENTOS EN ACCIÓN OTEC LIMITADA",
+    "78429835": "NOVI SPA",
+    "78432436": "JAMBU SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:46f4ff7f1f822857e69b97f27d004fce74c05271184bae1aa8e41d26fe97940e",
+    "cached_at": "2026-06-01T17:07:43.317080"
+  }
+}

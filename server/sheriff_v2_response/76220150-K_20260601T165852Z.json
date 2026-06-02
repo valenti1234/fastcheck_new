@@ -1,0 +1,1291 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76220150-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76220150-K",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "COMERCIALIZADORA PROTORQ SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-02-2005",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "REPARACION DE OTRO TIPO DE MAQUINARIA Y EQUIPOS INDUSTRIALES N.C.P.",
+            "codigo": "331209",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR NO ESPECIALIZADA",
+            "codigo": "469000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-02-2005"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Compras",
+            "ultimoAnioTimbrado": "2006"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Nota De Credito Exportacion",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota De Debito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2016"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 17,
+        "ultimaActualizacion": "01-06-2026 01:19:11",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "200.000,01 a 600.000,00",
+          "cantidadTrabajadores": 127
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 16:58:46"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 2,
+        "casosCivilesConcluidos": 4,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 0,
+        "laboralPresentados": 2,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 4,
+        "casosConcluidos": 5,
+        "todosLosCasos": 10,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "acreedor": 1,
+          "demandado": 1,
+          "demandante": 2,
+          "denunciado": 1
+        },
+        "ultimaActualizacionCiviles": "01-06-2026 16:58:46",
+        "ultimaActualizacionCobranza": "01-06-2026 16:58:46",
+        "ultimaActualizacionLaboral": "01-06-2026 16:58:46",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 51,
+          "empleados": 14,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 104,
+            "cambioAbsoluto": 26
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 1,
+          "montoTotalMultas": 555000,
+          "multasPagadas": 1,
+          "montoMultasPagadas": 555000,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 16:58:46"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 16:58:47"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "26-12-2021 21:00:00",
+              "razonSocial": "COMERCIALIZADORA PROTORQ S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/12/27/43137/05/2062661.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "COMERCIALIZADORA PROTORQ S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76220150-K"
+            },
+            {
+              "fecha": "15-09-2024 21:00:00",
+              "razonSocial": "COMERCIALIZADORA PROTORQ S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/09/16/43952/05/2546645.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76220150-K"
+            },
+            {
+              "fecha": "21-07-2025 20:00:00",
+              "razonSocial": "COMERCIALIZADORA PROTORQ S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/07/22/44204/05/2674667.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76220150-K"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 07:57:34"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 384110,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 587630,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 223650,
+        "lineaCredito": 73640,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 554680,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 804550,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 298110,
+          "lineaCredito": 54250
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 13,
+          "tasacionTotal": 180181797,
+          "ultimaActualizacion": "01-06-2026 16:58:47"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 1,
+          "tasacionTotal": "106226017",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 1.4705882352941302,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 301.47058823529414,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "COMERCIALIZADORA PROTORQ SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletin Comercial BOLCOM-INFOCOM",
+        "Boletin Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c967c0a895c3bcf4bd743f6717699f477b3e35f258a138ee99e4cea398f46fb1",
+      "cached_at": "2026-06-01T16:58:48.438680"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 7,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica",
+            "fechaIngreso": "04-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13675095-K",
+                "nombre": "RICARDO LUIS GUTIÉRREZ GUAJARDO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13333381-9",
+                "nombre": "VESNA BLAZEVIC QUIROZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76220150-K",
+                "nombre": "COMERCIALIZADORA PROTORQ S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-1339-2024",
+            "tribunal": "1º Juzgado de Letras de Buin",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "22-02-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76220150-K",
+                "nombre": "COMERCIALIZADORA PROTORQ S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7774016-3",
+                "nombre": "RICARDO ANTONIO PIZARRO RIVERA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "11485804-8",
+                "nombre": "JUAN PABLO URZÚA POBLETE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16916192-5",
+                "nombre": "JAVIER ENRIQUE GÓMEZ SANDOVAL",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "18273954-5",
+                "nombre": "CHRISTIAN ANDRÉS MONTT APABLAZA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15563564-9",
+                "nombre": "DIEGO ESTEBAN CHAMORRO LE ROY",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17320178-8",
+                "nombre": "PABLO JAVIER SALAMANCA CARRASCO",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "14512830-7",
+                "nombre": "CARLOS JESÚS RIBAS ASALGADO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-1190-2019",
+            "tribunal": "1º Juzgado de Letras de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "13-03-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76220150-K",
+                "nombre": "COMERCIALIZADORA PROTORQ S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7774016-3",
+                "nombre": "RICARDO ANTONIO PIZARRO RIVERA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "11485804-8",
+                "nombre": "JUAN PABLO URZÚA POBLETE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16916192-5",
+                "nombre": "JAVIER ENRIQUE GÓMEZ SANDOVAL",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-499-2018",
+            "tribunal": "2º Juzgado de Letras de Buin",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "14-02-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17651361-6",
+                "nombre": "JEAN CLOUDE BLANCH NAVARRO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17603406-8",
+                "nombre": "ÁLVARO IGNACIO TONELLI ESPARZA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76220150-K",
+                "nombre": "COMERCIALIZADORA PROTORQ S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7774016-3",
+                "nombre": "RICARDO ANTONIO PIZARRO RIVERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11485804-8",
+                "nombre": "JUAN PABLO URZÚA POBLETE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16916192-5",
+                "nombre": "JAVIER ENRIQUE GÓMEZ SANDOVAL",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18273954-5",
+                "nombre": "CHRISTIAN ANDRÉS MONTT APABLAZA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15563564-9",
+                "nombre": "DIEGO ESTEBAN CHAMORRO LE ROY (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17320178-8",
+                "nombre": "PABLO JAVIER SALAMANCA CARRASCO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14512830-7",
+                "nombre": "CARLOS JESÚS RIBAS ASALGADO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-5370-2018",
+            "tribunal": "4º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Verificación de créditos",
+            "fechaIngreso": "06-06-2016 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76220150-K",
+                "nombre": "COMERCIAL PROTORQ SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "13531714-4",
+                "nombre": "ALEJANDRA BRICEÑO VARGAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "60805000-0",
+                "nombre": "TESORERÍA GENERAL DE LA REPÚBLICA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "98000000-1",
+                "nombre": "AFP CAPITAL S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76265736-8",
+                "nombre": "METLIFE CHILE ACQUISITION CO. S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76762250-3",
+                "nombre": "A.F.P. MODELO S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "60805000-0",
+                "nombre": "TESORERÍA GENERAL DE LA REPÚBLICA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              }
+            ],
+            "proc": "Concursal de Liquidación Voluntaria - Empresa Deudora",
+            "rol": "C-381-2016",
+            "tribunal": "1º Juzgado de Letras de Vallenar",
+            "sujeto": "ACRDOR",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Sentencia ",
+            "fechaIngreso": "19-05-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13431266-1",
+                "nombre": "CRISTIAN ALEJANDRO ENCINA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10876150-4",
+                "nombre": "RODRIGO MANUEL ORREGO GÁLVEZ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76220150-K",
+                "nombre": " COMERCIAL PROTORQ SA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Sumario Especial",
+            "rol": "C-2499-2014",
+            "tribunal": "3º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "21-04-2014 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76220150-K",
+                "nombre": " COMERCIAL PROTORQ SA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9718159-4",
+                "nombre": "ARTURO JAVIER NAVARRETE TARRAGÓ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76158353-0",
+                "nombre": " COMERCIAL SERVICES LIMITADA ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-6860-2014",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 06:22:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8451befbd23a0566f7b5d917abbc1a911b3dfd7efa321307c9f1c1a976081aa5",
+        "cached_at": "2026-06-01T16:58:48.786859"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "27-01-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOC.ADM.DE FDOS DE CESANTIA DE CHILE II S.A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76220150-K",
+                "nombre": "COMERCIALIZADORA PROTORQ S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-20-2016",
+            "tribunal": "2° Juzgado de Letras de Buin",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 06:22:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1fb438f837c17743748df28b4e9b68e7b422433f1d0a380e8601923fc4e127f6",
+        "cached_at": "2026-06-01T16:58:49.130338"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-07-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10733486-6",
+                "nombre": "SANDRA CORINA SÁNCHEZ LIZANA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13469248-0",
+                "nombre": "PAOLA ANDREA OSPITAL REBOLLEDO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76220150-K",
+                "nombre": "comercializadora protorq s.a.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-13-2023",
+            "tribunal": "1er Juzgado de Letras de Buin",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "28-05-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18584645-8",
+                "nombre": "RICARDO IGOR IMBARACK ARCE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13828283-K",
+                "nombre": "ABEL MOISES SEPULVEDA GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76220150-K",
+                "nombre": "comercializadora protorq s.a.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-41-2023",
+            "tribunal": "2do Juzgado de Letras de Buin",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 06:22:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:76e95fd042f65a199c610bf2f82f4304ae1161a59bab0217b14b852d6ba751e9",
+        "cached_at": "2026-06-01T16:58:49.473625"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-04-2024 20:00:00",
+            "multa": "4440/24/071-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 16:58:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4ab05f3307fea49667d91504dd1d1f0807d2d093efdad63ab206addcdb07cc34",
+        "cached_at": "2026-06-01T16:58:49.848799"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 5,
+        "cantidad": 88,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS ADOLFO RECART GIORDANO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "8729822-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Sebastian Gonzalo Barrios Sepulveda ",
+            "periodo": "01/2026",
+            "rutAfiliado": "19066598-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS ADOLFO RECART GIORDANO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "8729822-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Romina Andrea Palacios Acevedo ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17239843-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROMINA ANDREA PALACIOS ACEVEDO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17239843-k",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO RECART STOLLMANN ",
+            "periodo": "12/2025",
+            "rutAfiliado": "19831035-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS ADOLFO RECART GIORDANO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "8729822-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN PABLO TEJO VILLA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "19066899-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JONNATTAN ERICK ASTORGA SUAREZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "16568053-7",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GONZALO ANDRES DIAZ MUNOZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "13995724-5",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LEONARDO ANTONIO SANHUEZA PEREZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "18618631-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROMINA ANDREA PALACIOS ACEVEDO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17239843-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN PABLO TEJO VILLA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "19066899-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CESAR ANTONIO ROMERO OLAVE ",
+            "periodo": "11/2025",
+            "rutAfiliado": "19487402-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LEONARDO ANTONIO SANHUEZA PEREZ ",
+            "periodo": "11/2025",
+            "rutAfiliado": "18618631-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MAURICIO BAEZA OSSES ",
+            "periodo": "11/2025",
+            "rutAfiliado": "20111744-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO RECART STOLLMANN ",
+            "periodo": "11/2025",
+            "rutAfiliado": "19831035-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GONZALO ANDRES DIAZ MUNOZ ",
+            "periodo": "11/2025",
+            "rutAfiliado": "13995724-5",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS ADOLFO RECART GIORDANO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "8729822-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MAURICIO BAEZA OSSES ",
+            "periodo": "10/2025",
+            "rutAfiliado": "20111744-5",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 16:58:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6cd02667dafef6b0ee7046a3638794b799081cdeb8a6bd58e0b37ee10eee7970",
+        "cached_at": "2026-06-01T16:58:50.191561"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76220150-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "COMERCIALIZADORA PROTORQ SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "COMERCIALIZADORA PROTORQ S.A",
+            "rutSociedad": "76220150-K",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2004-12-26",
+            "socios": [
+              {
+                "nombre": "EDUARDO RAFAEL IÑIGUEZ MUJICA",
+                "rut": "19688778-4",
+                "domicilio": "AVENIDA APOQUINDO 3500 PISO 9, COMUNA DE LAS CONDES, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "DIAZ Y OLIVA INVERSIONES SPA",
+                "rut": "77026934-2",
+                "domicilio": "AVENIDA JAIME GUZMÁN N° 05.100, DEPARTAMENTO 1.101, COMUNA Y CIUDAD DE ANTOFAGASTA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CARLOS ADOLFO RECART GIORDANO",
+                "rut": "8729822-1",
+                "domicilio": "CAMINO PADRE HURTADO N4635, PARCELA N5, COMUNA DE PAINE",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "90.00"
+              },
+              {
+                "nombre": "INVERSIONES VILLANELO SPA.",
+                "rut": "77244848-1",
+                "domicilio": "VICUÑA MACKENNA 170, DEPARTAMENTO 405, REÑACA BAJO, VIÑA DEL MAR",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARÍA ANDREA STOLLMANN GAETE",
+                "rut": null,
+                "domicilio": "BUIN, BERNARDO O'HIGGINS 24",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10.00"
+              },
+              {
+                "nombre": "RUTA7 INVERSIONES S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-07-22",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/07/22/44204/05/2674667.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-09-16",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/09/16/43952/05/2546645.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-12-27",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/12/27/43137/05/2062661.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:910f474975d36eec5c586a979746fa46a009d7e82c22a0b2343f507d74fd69d3",
+      "cached_at": "2026-06-01T16:58:50.814236"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76220150-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "26-12-2021 21:00:00",
+            "razonSocial": "COMERCIALIZADORA PROTORQ S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/12/27/43137/05/2062661.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "COMERCIALIZADORA PROTORQ S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76220150-K"
+          },
+          {
+            "fecha": "15-09-2024 21:00:00",
+            "razonSocial": "COMERCIALIZADORA PROTORQ S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/09/16/43952/05/2546645.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76220150-K"
+          },
+          {
+            "fecha": "21-07-2025 20:00:00",
+            "razonSocial": "COMERCIALIZADORA PROTORQ S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/07/22/44204/05/2674667.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76220150-K"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76220150-K",
+            "sociedad": "COMERCIALIZADORA PROTORQ S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:183161275e6474852d305ff817592d0dfb38d79b29aeb5a69278556c1b7f62c7",
+        "cached_at": "2026-06-01T16:58:51.205975"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 811280,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 6,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 98.52941176470587,
+      "casosMoraPrevisional": 51,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 555000,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 1.4705882352941302,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 301.47058823529414,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:95dee5b877dd776c17f3cf98b3fcd99a3018d47c15dc520c324ba380a3853ffd",
+      "cached_at": "2026-06-01T16:58:52.116763"
+    }
+  }
+}

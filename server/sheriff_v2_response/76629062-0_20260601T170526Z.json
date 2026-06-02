@@ -1,0 +1,538 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76629062-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76629062-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "LIBRE DE RIESGOS SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "23-06-2016",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "EMPRESAS DE ASESORIA Y CONSULTORIA EN INVERSION FINANCIERA; SOCIEDADES",
+            "codigo": "661903",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-06-2016"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-06-2016"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2019"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 3,
+        "ultimaActualizacion": "01-06-2026 17:05:22",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "600,01 a 2.400,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 17:05:22"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "01-06-2026 17:05:21",
+        "ultimaActualizacionCobranza": "01-06-2026 17:05:21",
+        "ultimaActualizacionLaboral": "01-06-2026 17:05:21",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:05:21"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "08-06-2016 20:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "783312",
+              "razonSocial": "SOCIEDAD POR ACCIONES LIBRE DE RIESGOS SPA",
+              "cve": "ACtd7ojb22PK",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACtd7ojb22PK&codigo=66-25-3B-54-7C-5B-4D-AE-55-62-BD-FD-1E-63-A7-8E",
+              "socios": [
+                {
+                  "socio": "FRANCISCO ANTONIO VARGAS VALENCIA",
+                  "rut": "13682054-0",
+                  "domicilio": "CONDOMINIO LOS COMENDADORES DE LAMPA PARCELA 79 N°79 COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "2",
+                  "monto": "$100.000 PESOS",
+                  "porcentaje": 100
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "FRANCISCO ANTONIO VARGAS VALENCIA",
+                  "rut": "13682054-0",
+                  "domicilio": "CONDOMINIO LOS COMENDADORES DE LAMPA PARCELA 79 N°79 COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "08/2025",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 1500,
+        "variacion": {
+          "periodo": "02/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 1500
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 1,
+          "tasacionTotal": 1658660,
+          "ultimaActualizacion": "01-06-2026 17:05:23"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "LIBRE DE RIESGOS SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:fd1249d16917056de4a93d10fd7cfb3cd97ce309db1e1d7b79323371029b11e3",
+      "cached_at": "2026-06-01T17:05:23.444196"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d66dab98a18362ff1e8f40d0246ccd4cfe88054b41fae8f1e0b6bb05e528e827",
+        "cached_at": "2026-06-01T17:05:23.768451"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0ef3f2c83ce0bdce148dc0e1e369fc87e30f011a7ae4a0b0c5feeac2ea6feae2",
+        "cached_at": "2026-06-01T17:05:24.089898"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:fc52c51ef07a075de9a7f21fb5210f7a8fcf22fa50df3096763e042688347e87",
+        "cached_at": "2026-06-01T17:05:24.408264"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1f4f76b3a06e674e86bcaf1ee8b352ad6840bdf4e6823493c132f1b8af1bcff3",
+        "cached_at": "2026-06-01T17:05:24.741849"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9d7b99e9f73a56db4e10b2d453c85e697982361cc349a130225ec7adeccc1639",
+        "cached_at": "2026-06-01T17:05:25.071849"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76629062-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "LIBRE DE RIESGOS SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "LIBRE DE RIESGOS SPA",
+            "rutSociedad": "76629062-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2016-06-08",
+            "socios": [
+              {
+                "nombre": "FRANCISCO ANTONIO VARGAS VALENCIA",
+                "rut": "13682054-0",
+                "domicilio": "CONDOMINIO LOS COMENDADORES DE LAMPA PARCELA 79 N°79 COMUNA DE LAMPA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2016-06-09",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACtd7ojb22PK&codigo=66-25-3B-54-7C-5B-4D-AE-55-62-BD-FD-1E-63-A7-8E"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5defa91e63f0136eda85cb0c5c209967c5cef7214e4b9bc5e446a249036372f5",
+      "cached_at": "2026-06-01T17:05:25.694854"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76629062-0",
+        "empresaEnUnDia": [
+          {
+            "fecha": "08-06-2016 20:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "783312",
+            "razonSocial": "SOCIEDAD POR ACCIONES LIBRE DE RIESGOS SPA",
+            "cve": "ACtd7ojb22PK",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACtd7ojb22PK&codigo=66-25-3B-54-7C-5B-4D-AE-55-62-BD-FD-1E-63-A7-8E",
+            "socios": [
+              {
+                "socio": "FRANCISCO ANTONIO VARGAS VALENCIA",
+                "rut": "13682054-0",
+                "domicilio": "CONDOMINIO LOS COMENDADORES DE LAMPA PARCELA 79 N°79 COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO",
+                "acciones": "2",
+                "monto": "$100.000 PESOS",
+                "porcentaje": 100
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "FRANCISCO ANTONIO VARGAS VALENCIA",
+                "rut": "13682054-0",
+                "domicilio": "CONDOMINIO LOS COMENDADORES DE LAMPA PARCELA 79 N°79 COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e679d70857f4cb30ef7a8afd95f1ca0ea1a0b11bbac8a262bc047e362df83843",
+        "cached_at": "2026-06-01T17:05:26.035683"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c643bbffd2ec4c31280a2e0afe2c63e71eb247471e428b984549de9483126a90",
+      "cached_at": "2026-06-01T17:05:26.649313"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pathCount": 4,
+  "relationships": [
+    {
+      "source": "76648701",
+      "target": "16686276",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-08-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76648701",
+      "target": "16686276",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACthH5fLWa9D",
+        "source": "RES",
+        "published_at": "2016-08-09"
+      }
+    },
+    {
+      "source": "76648701",
+      "target": "16842291",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-08-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76648701",
+      "target": "16842291",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACthH5fLWa9D",
+        "source": "RES",
+        "published_at": "2016-08-09"
+      }
+    }
+  ],
+  "entityNames": {
+    "16686276": "LUIS HUMBERTO DIAZ TENORIO",
+    "16842291": "CARLOS ANDRES SALAZAR MUNOZ",
+    "76648701": "CAMAHUE LIMITADA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:fec3340d12478930c0545ed779c48465be306e779fb5a8713b91a8647ada5666",
+    "cached_at": "2026-05-30T00:20:04.987469"
+  }
+}

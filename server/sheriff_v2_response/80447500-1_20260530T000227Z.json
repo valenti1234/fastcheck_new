@@ -1,0 +1,1314 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "80447500-1"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "80447500-1",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "AGENCIA DE ADUANAS I P HARDY Y COMPANIA LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "AGENCIAS DE ADUANAS",
+            "codigo": "522910",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2006"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2006"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2001"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2018"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 13,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "50.000,01 a 100.000,00",
+          "cantidadTrabajadores": 109
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:02:23"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 2,
+        "cobranzaPresentados": 1,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 2,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 6,
+        "casosActuales": 4,
+        "casosArchivados": 1,
+        "casosConcluidos": 8,
+        "todosLosCasos": 13,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 3,
+          "demandadoSolidario": 1,
+          "denunciado": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:02:22",
+        "ultimaActualizacionCobranza": "30-05-2026 00:02:22",
+        "ultimaActualizacionLaboral": "30-05-2026 00:02:23",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 5,
+          "montoTotalMultas": 6176946,
+          "multasPagadas": 5,
+          "montoMultasPagadas": 6176946,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:02:23"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:02:23"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "27-12-2024 21:00:00",
+              "razonSocial": "AGENCIA DE ADUANAS I.P. HARDY Y COMPAÑIA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/12/28/44035/05/2590198.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "80447500-1"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:02:23"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 128500,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 128500,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 351440,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 151290,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 151290,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 349240
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 7,
+          "tasacionTotal": 71327530,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 8,
+          "tasacionTotal": "362209674",
+          "ultimaActualizacion": "30-05-2026 00:02:24"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 55.55555555555556,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 355.55555555555554,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "AGENCIA DE ADUANAS I P HARDY Y COMPANIA LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ab4e1bbdabcbc6480979b0efcb69068c9561739b579952dbdeb04a6c8b5400e1",
+      "cached_at": "2026-05-30T00:02:24.448991"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada ",
+            "fechaIngreso": "05-01-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIA DE ADUANAS IP HARDY Y CIA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10654559-6",
+                "nombre": "MARCELA ELENA NARBONA CARREÑO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-119-2020",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:02:23"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:57c7eb1ef2bc8ebf24b89958a17bbe2fd0acf31345a2428ea4ac0034743ffafd",
+        "cached_at": "2026-05-30T00:02:24.807869"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 4,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "19-07-2021 00:00:00",
+            "monto": "1",
+            "litigantes": [
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIA DE ADUANAS IP HARDY Y CIA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15634519-9",
+                "nombre": "CHRISTIAN FELIPE CABALLERO VARGAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12622195-9",
+                "nombre": "JOSÉ MIGUEL VILLEGAS PALMA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-411-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "14-04-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIA DE ADUANA IP HARDY Y CIA. LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12131275-1",
+                "nombre": "PAULA ANDREA FRÍAS ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15331410-1",
+                "nombre": "DAVID LEONIDAS ODDÓ BEAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15701822-1",
+                "nombre": "MARÍA ELIANA ALEGRÍA ESTEBAN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15543789-8",
+                "nombre": "DANIELA ANDREA ALLENDE MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCIÓN PROVINCIAL DEL TRABAJO DE PUERTO MONTT  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1593-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "06-04-2017 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "0-0",
+                "nombre": "CESAR ANTONIO CORNEJO GARCIA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16212323-8",
+                "nombre": "NICOLAS RUIZ TAGLE PANATT",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12636806-2",
+                "nombre": "KARLA KOCH CID",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "11846601-2",
+                "nombre": "MAURICIO ALEJANDRO ROSE FUENTEALBA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16212034-4",
+                "nombre": "MATIAS IHL RODRIGUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12488506-K",
+                "nombre": "MARISOL FERNANDEZ MENA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15434350-4",
+                "nombre": "TAMARA ISABEL CADENA TAPIA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10599840-6",
+                "nombre": "MARCELA ALEJANDRA TORRES ACUÑA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12076914-6",
+                "nombre": "CHRISTIAN ECHEVERRIA TORRES",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1400-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-06-2013 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIA DE ADUANA IP HARDY Y CIA. LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-2478-2013",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:02:23"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c8fb06f805400a631ad9f83812cccb0f51ea5447e48b93191a00b9ddd8141861",
+        "cached_at": "2026-05-30T00:02:25.149339"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 8,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "23-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10732302-3",
+                "nombre": "GUSTAVO CARLOS BURGOS VELASQUEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10489962-5",
+                "nombre": "ERICK MAURICIO RIVADENEIRA VARGAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-880-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "05-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10489962-5",
+                "nombre": "ERICK MAURICIO RIVADENEIRA VARGAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10732302-3",
+                "nombre": "GUSTAVO CARLOS BURGOS VELASQUEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1068-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-10-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "90703000-8",
+                "nombre": "NESTLÉ CHILE S.A.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17619537-1",
+                "nombre": "BÁRBARA NATALIA BUSTOS PACHECO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15634519-9",
+                "nombre": "CHRISTIAN FELIPE CABALLERO VARGAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17754073-0",
+                "nombre": "PAZ IGNACIA ALBORNOZ CASTILLO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18378322-K",
+                "nombre": "FELIPE ANDRÉS CELIS GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-691-2023",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "29-11-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17646158-6",
+                "nombre": "BRAULIO EDISON REINOSO CONTRERAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10538340-1",
+                "nombre": "GUILLERMINA TRÁNSITO MALDONADO GORIGOITÍA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9981438-1",
+                "nombre": "MARCIA ALEJANDRA DIAZ CARRASCO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-66-2021",
+            "tribunal": "1º Juzgado de Letras de Los Andes",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "02-02-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10381494-4",
+                "nombre": "SAÚL IVÁN ARREDONDO VICUÑA (Poder Amplio)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13457865-3",
+                "nombre": "CAROLINA DEL PILAR PÉREZ RODRÍGUEZ (Poder Amplio)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-19-2020",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "RECTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Cumplimiento",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "07-09-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19487592-4",
+                "nombre": "CLAUDIA IVETTE BAÑADOS URRUTIA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17560646-7",
+                "nombre": "SERGIO ORLANDO VENEGAS BRICEÑO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO JOSÉ ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-567-2019",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "26-05-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12131275-1",
+                "nombre": "PAULA ANDREA FRÍAS ESPINOZA (Poder Simple)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15331410-1",
+                "nombre": "DAVID LEONIDAS ODDÓ BEAS (Poder Simple)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15701822-1",
+                "nombre": "MARÍA ELIANA ALEGRÍA ESTEBAN (Poder Simple)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15543789-8",
+                "nombre": "DANIELA ANDREA ALLENDE MUÑOZ (Poder Simple)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-241-2019",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "07-11-2018 00:00:00",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9671698-2",
+                "nombre": "EDUARDO ARRATE MENARE",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "80447500-1",
+                "nombre": "AGENCIAS DE ADUANAS  I. P.  HARDY  COMPAÑIA LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-12-2018",
+            "tribunal": "2° Juzgado de Letras de San Antonio",
+            "sujeto": "RECTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:02:23"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:887bad1e7cd8df4e98f06e79e35cbfd07b903eb25286e137d8bce0a513a0192b",
+        "cached_at": "2026-05-30T00:02:25.505557"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "07-10-2023 21:00:00",
+            "multa": "8025/23/114-1",
+            "procedencia": "RECLAMO",
+            "um": "1.6",
+            "tipoUm": "IMM",
+            "montoClp": 800000
+          },
+          {
+            "enunciado": "No otorgar fracción de feriado anual de a lo menos 10 días en forma continua.",
+            "estado": "PAGADA",
+            "fecha": "23-07-2023 20:00:00",
+            "multa": "1779/23/048-1",
+            "procedencia": "FISCALIZACION",
+            "um": "40",
+            "tipoUm": "UTM",
+            "montoClp": 2533040
+          },
+          {
+            "enunciado": "No pagar gratificación convencional.",
+            "estado": "PAGADA",
+            "fecha": "05-10-2021 21:00:00",
+            "multa": "3449/19/123-1",
+            "procedencia": "FISCALIZACION",
+            "um": "40",
+            "tipoUm": "UTM",
+            "montoClp": 2113680
+          },
+          {
+            "enunciado": "Efectuar en forma (errónea) (incompleta) la declaración de las cotizaciones previsionales.",
+            "estado": "PAGADA",
+            "fecha": "05-10-2021 21:00:00",
+            "multa": "3449/19/123-2",
+            "procedencia": "FISCALIZACION",
+            "um": "11.25",
+            "tipoUm": "UF",
+            "montoClp": 338765
+          },
+          {
+            "enunciado": "Efectuar en forma (errónea) (incompleta) la declaración de las cotizaciones previsionales del Seguro de Cesantía.",
+            "estado": "PAGADA",
+            "fecha": "05-10-2021 21:00:00",
+            "multa": "3449/19/123-3",
+            "procedencia": "FISCALIZACION",
+            "um": "13",
+            "tipoUm": "UF",
+            "montoClp": 391461
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:02:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:78400ba76b59ed8c45e62d5dbce036e2b008e569863409dc31f1a297162b61bc",
+        "cached_at": "2026-05-30T00:02:25.848668"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:02:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d4b2af87bea197ad8d81e59c623d7131a93bc51e19a9b174d8eb5ca858fd1c35",
+        "cached_at": "2026-05-30T00:02:26.207998"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "80447500-1",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "AGENCIA DE ADUANAS I P HARDY Y COMPANIA LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "AGENCIA DE ADUANAS I P HARDY Y COMPANIA LIMITADA",
+            "rutSociedad": "80447500-1",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1963-11-01",
+            "socios": [
+              {
+                "nombre": "PHILIP OWEN FERGUS HARDY TUDOR",
+                "rut": "7266750-6",
+                "domicilio": "MISMO DOMICILIO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10.88"
+              },
+              {
+                "nombre": "FRANCES ISABEL HARDY TUDOR",
+                "rut": "8238897-4",
+                "domicilio": "CONDOMINIO LOS NOGALES N° 36, MACHALÍ",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10.88"
+              },
+              {
+                "nombre": "HARDY SALMOND HERBERT PETER",
+                "rut": "1631576-1",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "60.00"
+              },
+              {
+                "nombre": "TUDOR ANDERLY",
+                "rut": "2884278-3",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "24.48"
+              },
+              {
+                "nombre": "HARDY TUDOR MICHAEL",
+                "rut": "6562219-K",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10.88"
+              },
+              {
+                "nombre": "HARDY SALMOND MARGARET",
+                "rut": "1785064-4",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "HARDY SALMOND MOIRA ANNE",
+                "rut": "2407232-0",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "IAIN PETER MACPHERSON HARDY TUDOR",
+                "rut": "5846785-5",
+                "domicilio": "BLANCO 1199, VALPARAÍSO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "HERBERT PETER HARDI SALMOND",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-12-28",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/12/28/44035/05/2590198.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a6760597bce2709657890059726b81e845693c4f1e24847690bb46e7fb30b5b2",
+      "cached_at": "2026-05-30T00:02:26.814749"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "80447500-1",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "27-12-2024 21:00:00",
+            "razonSocial": "AGENCIA DE ADUANAS I.P. HARDY Y COMPAÑIA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/12/28/44035/05/2590198.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "80447500-1"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "80447500-1",
+            "sociedad": "AGENCIA DE ADUANAS I.P. HARDY Y COMPAÑIA LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:275642dfe65008214ae96dd37a14c4d383977cd55ce1422ed5279b8bdc9d0da4",
+        "cached_at": "2026-05-30T00:02:27.156976"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 128500,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 44.44444444444444,
+      "numeradorJudicial": 4,
+      "denominadorJudicial": 9,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 55.55555555555556,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 6176946,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 355.55555555555554,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1cbb87f22c32c4871a1b8c5f6bf62a5a118b1a386fd11143e0f5b72a7f990527",
+      "cached_at": "2026-05-30T00:02:27.748599"
+    }
+  }
+}

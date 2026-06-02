@@ -1,0 +1,74 @@
+{
+  "pathCount": 6,
+  "relationships": [
+    {
+      "source": "77017828",
+      "target": "12911588",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-05-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76471894",
+      "target": "12911588",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-01-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76471894",
+      "target": "12911588",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACixr7R9MdLQ",
+        "source": "RES",
+        "published_at": "2015-01-16"
+      }
+    },
+    {
+      "source": "77017828",
+      "target": "12911588",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACR5uKVz7aAt",
+        "source": "RES",
+        "published_at": "2019-05-22"
+      }
+    },
+    {
+      "source": "77017828",
+      "target": "14425324",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACR5uKVz7aAt",
+        "source": "RES",
+        "published_at": "2019-05-22"
+      }
+    },
+    {
+      "source": "76471894",
+      "target": "14425324",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACixr7R9MdLQ",
+        "source": "RES",
+        "published_at": "2015-01-16"
+      }
+    }
+  ],
+  "entityNames": {
+    "12911588": "JUAN ANDRES ALARCON AMAYO",
+    "14425324": "SOLEDAD DEL CARMEN SOTO SOTO",
+    "76471894": "ALARCÒN AMAYO LIMITADA",
+    "77017828": "A Y A INGENIERIA SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:0d12e1b3100657d8d26582eecc9f89938f1a8f8b3e77d2230e34c0cb224fd4af",
+    "retrieved_at": "2026-06-01T17:03:06.066693"
+  }
+}

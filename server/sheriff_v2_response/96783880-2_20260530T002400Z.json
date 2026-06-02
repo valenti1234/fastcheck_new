@@ -1,0 +1,2520 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96783880-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96783880-2",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+        "presentaActividades": "SI",
+        "inicioActividades": "03-04-1996",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE APOYO PARA LA EXPLOTACION DE OTRAS MINAS Y CANTERAS PRE",
+            "codigo": "099001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          },
+          {
+            "actividades": "ALQUILER DE BIENES INMUEBLES AMOBLADOS O CON EQUIPOS Y MAQUINARIAS",
+            "codigo": "681011",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "26-03-2013"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "03-04-1996"
+          },
+          {
+            "actividades": "OTROS SERVICIOS DE ATENCION DE LA SALUD HUMANA PRESTADOS POR EMPRESAS",
+            "codigo": "869091",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "1997"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "1996"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2000"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "1996"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Fact Exenta",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "1998"
+          },
+          {
+            "documento": "Libro Control De Timbraje",
+            "ultimoAnioTimbrado": "1996"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 22,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 1426
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:23:55"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 4,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 4,
+        "cobranzaPresentados": 1,
+        "cobranzaConcluidos": 8,
+        "laboralActivos": 62,
+        "laboralPresentados": 7,
+        "laboralConcluidos": 14,
+        "casosActuales": 66,
+        "casosArchivados": 12,
+        "casosConcluidos": 22,
+        "todosLosCasos": 100,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 50,
+          "reclamante": 1,
+          "denunciado": 27
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:23:54",
+        "ultimaActualizacionCobranza": "28-05-2026 03:23:53",
+        "ultimaActualizacionLaboral": "28-05-2026 03:26:14",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 45,
+          "empleados": 14,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 73.08,
+            "cambioAbsoluto": 19
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 13,
+          "montoTotalMultas": 20641970,
+          "multasPagadas": 13,
+          "montoMultasPagadas": 20641970,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 76.17,
+            "cambioAbsoluto": 8925120
+          },
+          "ultimaActualizacion": "30-05-2026 00:23:55"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:23:55"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "21-06-2013 20:00:00",
+              "razonSocial": "CENTRO DE ESPECIALIDADES MÉDICAS CLÍNICA ARICA S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2013/06/22/654011_M_SA_20130622_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "INMOBILIARIA E INVERSIONES CLÍNICA ARICA S.A.",
+                  "rut": "76197717-2",
+                  "domicilio": "AVENIDA ARGENTINA NÚMERO 2249 DE LA CIUDAD Y COMUNA DE ARICA"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "10-12-2023 21:00:00",
+              "razonSocial": "MUTUAL DE SEGURIDAD ASESORÍAS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/12/11/43722/05/2419715.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "CORPORACIÓN CIEDESS",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "MUTUAL DE SEGURIDAD DE LA CÁMARA CHILENA DE LA CONSTRUCCIÓN",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "96783880-2"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:23:55"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 3400,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 1690030,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 35200,
+        "lineaCredito": 988400,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 3180,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 1593180,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 51160,
+          "lineaCredito": 989570
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 4,
+          "tasacionTotal": 46753906,
+          "ultimaActualizacion": "30-05-2026 00:23:56"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:23:56"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 34.34343434343434,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0.5555555555555571,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 234.8989898989899,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletin Comercial BOLCOM-INFOCOM",
+        "Boletin Dicom",
+        "Boletin Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a41cca28e55c855c39de22814a2e92d143056e441717ea9954f59d352ec11c41",
+      "cached_at": "2026-05-30T00:23:56.829283"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 4,
+        "casos": [
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "04-08-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76363188-5",
+                "nombre": "INMOBILIARIA E INVERSIONES IPIA SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12248595-1",
+                "nombre": "JAIME ANDRÉS DÍAZ ORELLANA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12248595-1",
+                "nombre": "JAIME ANDRÉS DÍAZ ORELLANA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-11767-2020",
+            "tribunal": "25º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "14-07-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76363188-5",
+                "nombre": "INMOBILIARIA E INVERSIONES IPIA SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12248595-1",
+                "nombre": "JAIME ANDRÉS DÍAZ ORELLANA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6873172-0",
+                "nombre": "GUSTAVO EMILIO ZEBALLOS MARÍN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-10763-2020",
+            "tribunal": "25º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "07-05-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "6873172-0",
+                "nombre": "GUSTAVO EMILIO ZEBALLOS MARÍN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76363188-5",
+                "nombre": "INMOBILIARIA E INVERSIONES IPIA SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12248595-1",
+                "nombre": "JAIME ANDRÉS DÍAZ ORELLANA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-7234-2020",
+            "tribunal": "25º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "15-04-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76363188-5",
+                "nombre": "INMOBILIARIA E INVERSIONES IPIA SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12248595-1",
+                "nombre": "JAIME ANDRÉS DÍAZ ORELLANA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12248595-1",
+                "nombre": "JAIME ANDRÉS DÍAZ ORELLANA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6873172-0",
+                "nombre": "GUSTAVO EMILIO ZEBALLOS MARÍN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-6265-2020",
+            "tribunal": "25º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:23:55"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a05fcff5a90b1260c535f62657d1b9ff320ad15bc3add1cfdf1c31e8b282b6fb",
+        "cached_at": "2026-05-30T00:23:57.188009"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 13,
+        "casos": [
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "11-01-2026 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "16175736-5",
+                "nombre": "LUIS RODRIGO HERNÁNDEZ FIGUEROA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10948642-6",
+                "nombre": "GABRIEL GUILLERMO LARA GÓMEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13688508-1",
+                "nombre": "DORA SOLANGE YÁÑEZ TERÁN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZÚA MENESES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15356821-9",
+                "nombre": "GABRIEL ALEJANDRO LARA PARRA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-129-2026",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "04-09-2025 20:00:00",
+            "monto": "32651423",
+            "litigantes": [
+              {
+                "rut": "17280427-6",
+                "nombre": "CAMILO ALEJANDRO MUÑOZ CHELME",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10948642-6",
+                "nombre": "GABRIEL GUILLERMO LARA GÓMEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13688508-1",
+                "nombre": "DORA SOLANGE YÁÑEZ TERÁN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZÚA MENESES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13941301-6",
+                "nombre": "CARLOS ANDRÉS PERALTA PÉREZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3779-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-03-2025 21:00:00",
+            "monto": "4327091",
+            "litigantes": [
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15182162-6",
+                "nombre": "CLAUDIO ANTONIO FIERRO SANHUEZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15518609-7",
+                "nombre": "LUCIANO ADOLFO HENRÍQUEZ ALARCÓN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-166-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "05-08-2024 20:00:00",
+            "monto": "3032726",
+            "litigantes": [
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZÚA MENESES",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76485762-3",
+                "nombre": "COMPANIA MINERA ZALDIVAR SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "79950630-0",
+                "nombre": "COMPAÑIA MINERA ZALDIVAR SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9959890-5",
+                "nombre": "GONZALO MARIO LUIS MONTES ASTABURUAGA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15501143-2",
+                "nombre": "CRISTIAN ENRIQUE LASO LYONS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18400470-4",
+                "nombre": "MELANIE INÉS FERNÁNDEZ ANCH",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17132058-5",
+                "nombre": "MARÍA JOSÉ GAITÁN MORÁN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16770622-3",
+                "nombre": "CAROLINA RAQUEL SAAVEDRA HERNÁNDEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15017657-3",
+                "nombre": "CLAUDIA LUCÍA ANZA CRUZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15679372-8",
+                "nombre": "GILLIAN ANNE GEMMEL LYONS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15678793-0",
+                "nombre": "ZDENKA ANDREA RIVEROS FERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-393-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "27-04-2023 20:00:00",
+            "monto": "39954022",
+            "litigantes": [
+              {
+                "rut": "76296619-0",
+                "nombre": "COLMENA GOLDEN CROSS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11415851-8",
+                "nombre": "PATRICIA LORETO LOURDES MATELUNA FLETCHER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-17493-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Sentencia",
+            "fechaIngreso": "30-03-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17752938-9",
+                "nombre": "FABIOLA ESTER MORALES FERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14025221-2",
+                "nombre": "MAURICIO ALVAREZ LILLO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10966233-K",
+                "nombre": "JORGE FIGUEROA ARANEDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15176621-8",
+                "nombre": "RONALD JOSÉ CARRASCO PROVOSTE",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-101-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-05-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17265138-0",
+                "nombre": "IGNACIO ANDRÉS ÁLVAREZ VERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8601630-3",
+                "nombre": "JULIO JOSÉ LUIS ÁLVAREZ PINTO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17727799-1",
+                "nombre": "CRISTIAN PATRICIO CONTRERAS CASTILLO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-1619-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "27-01-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17265138-0",
+                "nombre": "IGNACIO ANDRÉS ÁLVAREZ VERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8601630-3",
+                "nombre": "JULIO JOSÉ LUIS ÁLVAREZ PINTO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17727799-1",
+                "nombre": "CRISTIAN PATRICIO CONTRERAS CASTILLO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-297-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "17-01-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17265138-0",
+                "nombre": "IGNACIO ANDRÉS ÁLVAREZ VERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8601630-3",
+                "nombre": "JULIO JOSÉ LUIS ÁLVAREZ PINTO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17727799-1",
+                "nombre": "CRISTIAN PATRICIO CONTRERAS CASTILLO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD Y ASESORIAS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-2-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de Castro",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "29-07-2018 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-44443-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "01-02-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98001000-7",
+                "nombre": "Administradora de Fondos de Pensiones Cuprum.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DESEGURIDAD ASESORIAS S. A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-6796-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "24-02-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98001000-7",
+                "nombre": "A.F.P. CUPRUM S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DESEGURIDAD ASESORIAS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-8766-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-04-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "Administradora de Fondos de Pensiones Modelo  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-31503-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:23:55"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b12c0b9176bea8d0936df8a63361570c563b859a582d755ce3a45f136e82df67",
+        "cached_at": "2026-05-30T00:23:57.549205"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 5,
+        "cantidad": 83,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "19-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11280356-4",
+                "nombre": "JOSÉ ARTURO CORNEJO MAYOR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "24722392-4",
+                "nombre": "JUAN PABLO CALDERINI",
+                "sujeto": "DDO.SU",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13721752-K",
+                "nombre": "OSVALDO ANTONIO VIVEROS MUÑOZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-9-2026",
+            "tribunal": "1º Juzgado de Letras de Santa Cruz",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "13-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12599766-K",
+                "nombre": "LUIS ALEJANDRO REYES LAZCANO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9922952-7",
+                "nombre": "WILLIAM ARELIS GALAZ ORREGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-25-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de San Felipe",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "05-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13688508-1",
+                "nombre": "DORA SOLANGE YÁÑEZ TERÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZÚA MENESES (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15639542-0",
+                "nombre": "JOAQUIN IGNACIO RODRIGUEZ SOZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15639542-0",
+                "nombre": "JOAQUIN IGNACIO RODRIGUEZ SOZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORÍAS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-671-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "05-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13688508-1",
+                "nombre": "DORA SOLANGE YAÑEZ TERAN",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "CENTRO DE CONCILIACIÓN Y MEDIACIÓN DRT METROPOLITANA ORIENTE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZUA MENESES",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-104-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "28-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17598135-7",
+                "nombre": "PATRICIA CAROLINA AYALA MARTÍNEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16784754-4",
+                "nombre": "DANIELA ISABEL MUÑOZ TORRES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-701-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18540419-6",
+                "nombre": "DOMINIQUE ANDRÉS ROBLES ALBAGNAC",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15216621-4",
+                "nombre": "ALEX ANDRÉS FERRADA CISTERNAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13955615-1",
+                "nombre": "RODOLFO LUIS ARAVENA BELTRAN (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15590161-6",
+                "nombre": "VÍCTOR ALONSO SANHUEZA MUÑOZ (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-403-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18593630-9",
+                "nombre": "GONZALO NICOLÁS SEBASTIÁN ALARCÓN TAPIA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16122371-9",
+                "nombre": "ALEXIS LEANDRO ROJAS MORENO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-4537-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "28-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16324725-9",
+                "nombre": "OSCAR ANDRÉS DÍAZ CORTÉS (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16325198-1",
+                "nombre": "DIEGO ALEJANDRO TAPIA CORTÉS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18075480-6",
+                "nombre": "CONSTANSA GISSELA MORALES PORTIÑO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-9239-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9380709-K",
+                "nombre": "CLAUDIO ENRIQUE ÁLVAREZ MALDONADO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6400-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "01-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15413498-0",
+                "nombre": "FELIPE ANDRE QUIROZ DOMINGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10422441-5",
+                "nombre": "MIRIAM NATALIA BARRAZA BUGUEÑO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6234-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "01-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17365649-1",
+                "nombre": "CRISTINA BELÉN MELO RIVAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17426762-6",
+                "nombre": "CHRISTIAN ANDRÉS ALEGRÍA BELLO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18030987-K",
+                "nombre": "CATALINA PAZ SILVIA PRADENAS MATELUNA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8648-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15870546-K",
+                "nombre": "INGRID MARCELA MONÁRDEZ QUINSACARA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-125-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Copiapó",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10868169-1",
+                "nombre": "PABLO SEBASTIÁN URRUTIA VIO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16356921-3",
+                "nombre": "DANIELA ANDREA TORRES FUENTES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8141-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "03-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17213869-1",
+                "nombre": "BÁRBARA DOMINIQUE SANDOVAL SALAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9368735-3",
+                "nombre": "JUAN CARLOS PEREZ PINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1745-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "26-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16208145-4",
+                "nombre": "JUAN MANUEL CABRERA CÁCERES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15353140-4",
+                "nombre": "NATALIA ANDREA MARCHANT BADILLA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5477-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "16-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13688508-1",
+                "nombre": "DORA SOLANGE YÁÑEZ TERÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZÚA MENESES (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15639542-0",
+                "nombre": "JOAQUIN IGNACIO RODRIGUEZ SOZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15639542-0",
+                "nombre": "JOAQUIN IGNACIO RODRIGUEZ SOZA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5317-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "01-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8956740-8",
+                "nombre": "LEYLA CAROLA MORENO ARÉVALO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9526413-1",
+                "nombre": "MARCELO FABIÁN VILLALON BADILLA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3398-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "01-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16626912-1",
+                "nombre": "RITA TATIANA TRONCOSO SÁNCHEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-4982-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "09-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15747424-3",
+                "nombre": "FELIPE ANDRÉS GUTIÉRREZ SÁNCHEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13304905-3",
+                "nombre": "HUGO FELIPE ESCOBAR ARZOLA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-506-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "02-09-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15333275-4",
+                "nombre": "JUAN ANTONIO URZÚA MENESES (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96783880-2",
+                "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCON DELGADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CARDENAS SEPULVEDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17061116-0",
+                "nombre": "PAULA TAMARA LUENGO ALARCÓN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-459-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:23:55"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4e0ed3e5861238e7b662741bd40cd931dee5a3877d1abc70937c59af91d2319a",
+        "cached_at": "2026-05-30T00:23:58.013510"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 13,
+        "casos": [
+          {
+            "enunciado": "No denunciar al Organismo Administrador respectivo el accidente o enfermedad profesional.",
+            "estado": "PAGADA",
+            "fecha": "05-01-2026 21:00:00",
+            "multa": "1621/23/074-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4185060
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "01-01-2026 21:00:00",
+            "multa": "8681/24/042-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4185060
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "20-12-2025 21:00:00",
+            "multa": "8137/25/353-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No pagar remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "28-11-2025 21:00:00",
+            "multa": "8691/24/076-2",
+            "procedencia": "RECLAMO",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2086260
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo del tipo electrónico computacional.",
+            "estado": "PAGADA",
+            "fecha": "28-11-2025 21:00:00",
+            "multa": "8691/24/076-1",
+            "procedencia": "RECLAMO",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4172520
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-11-2025 21:00:00",
+            "multa": "8867/25/205-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-09-2025 20:00:00",
+            "multa": "7651/25/144-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-09-2025 20:00:00",
+            "multa": "1628/25/037-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "28-10-2024 21:00:00",
+            "multa": "1974/23/124-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "11-05-2024 20:00:00",
+            "multa": "3487/24/093-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "04-05-2024 20:00:00",
+            "multa": "3527/24/069-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-01-2023 21:00:00",
+            "multa": "8208/22/062-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1853070
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-09-2022 21:00:00",
+            "multa": "8118/22/029-1",
+            "procedencia": "RECLAMO",
+            "um": "0.55",
+            "tipoUm": "IMM",
+            "montoClp": 275000
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:23:54"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e1632206071967a13412330efe66ef22c7943b56b3c7de2caaf4c4b7da6b700a",
+        "cached_at": "2026-05-30T00:23:58.362322"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 5,
+        "cantidad": 82,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIO EDUARDO VALENZUELA ISSOTTA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "14015136-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIO EDUARDO VALENZUELA ISSOTTA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "14015136-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAULA ALEJANDRA JONES BENAVENTE ",
+            "periodo": "12/2025",
+            "rutAfiliado": "10550894-8",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAULA ALEJANDRA JONES BENAVENTE ",
+            "periodo": "12/2025",
+            "rutAfiliado": "10550894-8",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIO EDUARDO VALENZUELA ISSOTTA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14015136-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BERTA EUGENIA JOFRe DONOSO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "16324512-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO SALVADOR QUIROZ CORDOVA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17308758-6",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO SALVADOR QUIROZ CORDOVA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "17308758-6",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GLORIA ESTRELLA ARAYA VEGA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "9162889-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BERTA EUGENIA JOFRe DONOSO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "16324512-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAULA ALEJANDRA JONES BENAVENTE ",
+            "periodo": "11/2025",
+            "rutAfiliado": "10550894-8",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JESSICA CAROLINA SUAZO LOBOS ",
+            "periodo": "11/2025",
+            "rutAfiliado": "17501836-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE IGNACIO GONZALEZ GONZALEZ ",
+            "periodo": "11/2025",
+            "rutAfiliado": "17527535-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "XIMENA DEL CARMEN ANTuNEZ MADARIAGA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "17027011-8",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAULA ALEJANDRA JONES BENAVENTE ",
+            "periodo": "11/2025",
+            "rutAfiliado": "10550894-8",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KAREN NATALY PAVEZ AVILA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "18114744-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIO EDUARDO VALENZUELA ISSOTTA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "14015136-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAULA ALEJANDRA JONES BENAVENTE ",
+            "periodo": "10/2025",
+            "rutAfiliado": "10550894-8",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE IGNACIO GONZALEZ GONZALEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "17527535-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RICARDO JAVIER BRUNA CORTES ",
+            "periodo": "10/2025",
+            "rutAfiliado": "18316867-3",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:23:54"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:58a0c5ad434ea249b61776204b7abb937ad06bd5314c851b62ceeae91d8b413f",
+        "cached_at": "2026-05-30T00:23:58.704947"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96783880-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "MUTUAL DE SEGURIDAD ASESORIAS S A",
+            "rutSociedad": "96783880-2",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1996-01-18",
+            "socios": [
+              {
+                "nombre": "CORPORACIÓN DE INVESTIGACIÓN, ESTUDIO Y DESARROLLO DE LA SEGURIDAD SOCIAL, CIEDESS",
+                "rut": "71800700-3",
+                "domicilio": "SAN IGNACIO N° 50, PISO 2°, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2023-12-11",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/12/11/43722/05/2419715.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "ADMINISTRADORA CLINICAS REGIONALES S A",
+                "rut": "99528690-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CENTRO DE ESPECIALIDADES MEDICAS CLINICA ARICA SA",
+                "rut": "76211373-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CLINICA PORTADA SPA",
+                "rut": "99537800-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CLÍNICA REGIONAL DEL ELQUI S.A.",
+                "rut": null,
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CLÍNICA REGIONAL LA PORTADA DE ANTOFAGASTA S.A.",
+                "rut": null,
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MUTUAL DE SEGURIDAD CAPACITACION S A",
+                "rut": "76410180-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "NUEVA MUTUALIDAD MEDICA E INMOBILIARIA ARICA SOCIEDAD ANONIMA",
+                "rut": "96925650-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SERVICIOS DE COMUNICACION MEDICA S A",
+                "rut": "96862290-0",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:9dad5b92aa99c08b3de97ccd7ca5237e113dc28ac54a8fc1a136fe5dac2c4e69",
+      "cached_at": "2026-05-30T00:23:59.319333"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96783880-2",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "21-06-2013 20:00:00",
+            "razonSocial": "CENTRO DE ESPECIALIDADES MÉDICAS CLÍNICA ARICA S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2013/06/22/654011_M_SA_20130622_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "INMOBILIARIA E INVERSIONES CLÍNICA ARICA S.A.",
+                "rut": "76197717-2",
+                "domicilio": "AVENIDA ARGENTINA NÚMERO 2249 DE LA CIUDAD Y COMUNA DE ARICA"
+              },
+              {
+                "nombre": "MUTUAL ASESORÍAS S.A.",
+                "rut": "96783880-2",
+                "domicilio": null
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "10-12-2023 21:00:00",
+            "razonSocial": "MUTUAL DE SEGURIDAD ASESORÍAS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/12/11/43722/05/2419715.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "CORPORACIÓN CIEDESS",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "MUTUAL DE SEGURIDAD DE LA CÁMARA CHILENA DE LA CONSTRUCCIÓN",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "96783880-2"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0968884905",
+            "society": "BIOMECANICA Y SALUD LABORAL S A"
+          },
+          {
+            "rut": "0995378000",
+            "society": "CLINICA PORTADA SPA"
+          },
+          {
+            "rut": "0764101804",
+            "society": "MUTUAL DE SEGURIDAD CAPACITACION S A"
+          },
+          {
+            "rut": "0968622900",
+            "society": "SERVICIOS DE COMUNICACION MEDICA S A"
+          },
+          {
+            "rut": null,
+            "sociedad": "CENTRO DE ESPECIALIDADES MÉDICAS CLÍNICA ARICA S.A"
+          },
+          {
+            "rut": "96783880-2",
+            "sociedad": "MUTUAL DE SEGURIDAD ASESORÍAS S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:fcb986bb61412b11722fa6704a6b4a5b29df9c792ed3dd9995663a3c56f055a1",
+        "cached_at": "2026-05-30T00:23:59.689958"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 1725230,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 65.65656565656566,
+      "numeradorJudicial": 65,
+      "denominadorJudicial": 99,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 34.34343434343434,
+      "porcentajeMoraPrevisional": 99.44444444444444,
+      "casosMoraPrevisional": 45,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 20641970,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0.5555555555555571,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 234.8989898989899,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:7f95efdc06bc1cd01064f4e8adbfeacaf3a56aa0d2c9ee2795b765c54ad69f7e",
+      "cached_at": "2026-05-30T00:24:00.567060"
+    }
+  }
+}

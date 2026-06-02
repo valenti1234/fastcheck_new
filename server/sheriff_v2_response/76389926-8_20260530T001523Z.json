@@ -1,0 +1,656 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76389926-8"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76389926-8",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "MORA TECHNOLOGY SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "19-08-2014",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE",
+            "codigo": "620200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-08-2014"
+          },
+          {
+            "actividades": "EMPRESAS DE ASESORIA Y CONSULTORIA EN INVERSION FINANCIERA; SOCIEDADES",
+            "codigo": "661903",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-08-2014"
+          },
+          {
+            "actividades": "ALQUILER DE BIENES INMUEBLES AMOBLADOS O CON EQUIPOS Y MAQUINARIAS",
+            "codigo": "681011",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "16-12-2024"
+          },
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "16-12-2024"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "100.000,01 a 200.000,00",
+          "cantidadTrabajadores": 14
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:15:17"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 1,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "denunciado": 1
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:10:21",
+        "ultimaActualizacionCobranza": "28-05-2026 03:11:23",
+        "ultimaActualizacionLaboral": "28-05-2026 03:13:17",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:15:16"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:15:17"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "07-02-2014 21:00:00",
+              "razonSocial": "MORA TECHNOLOGY SPA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/02/08/741976_C_SPA_20140208_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "RODRIGO URZÚA LEÓN",
+                  "rut": null,
+                  "domicilio": "APOQUINDO N 3500, OFICINA 401, LAS CONDES, SANTIAGO"
+                }
+              ],
+              "rut": "76389926-8"
+            },
+            {
+              "fecha": "25-10-2024 21:00:00",
+              "razonSocial": "MORA TECHNOLOGY SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/10/26/43984/05/2563318.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76389926-8"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:15:16"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 2730220,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 2752840,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 47940,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 2745050,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 2767380,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 50200
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-05-2026 00:15:18"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:15:18"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 0,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "MORA TECHNOLOGY SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a5a95e7d343fc1fa1b740366c3346410a12db84bb796f3ef806d9fa7d3e54945",
+      "cached_at": "2026-05-30T00:15:20.318488"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:15:17"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6fcb8ff0c2439d32c4595951c4db3d28a45ae26ec609e49aa211f26075cb20d8",
+        "cached_at": "2026-05-30T00:15:20.669509"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:15:17"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a92afc92c1ce636bc65f9205f62431859e3a01298e2e00fa08540324a1c496e7",
+        "cached_at": "2026-05-30T00:15:21.040386"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14475636-3",
+                "nombre": "CLAUDIA ELIZABETH GALAZ TOLOSA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13478901-8",
+                "nombre": "BERNARDITA TERESA JARA VEAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76389926-8",
+                "nombre": "MORA TECHNOLOGY SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3897-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:15:17"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3c1126eb2c4e9a4f0e41d1158c0167eddb64a15c0578ec5058917fb44b3505dc",
+        "cached_at": "2026-05-30T00:15:21.410007"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "28-05-2026 03:10:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:db5d91595e62c4e031adf181e7fc6f25b44f3571a3e8d0ac5a163f036907dc6f",
+        "cached_at": "2026-05-30T00:15:21.782180"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "28-06-2024 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO GUILLERMO ZELMANOVITS ALEGRIA ",
+            "periodo": "04/2024",
+            "rutAfiliado": "11981382-4",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "30-05-2024 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO GUILLERMO ZELMANOVITS ALEGRIA ",
+            "periodo": "03/2024",
+            "rutAfiliado": "11981382-4",
+            "tipoProducto": "Cotización obligatorias"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:10:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1935d68c1208e89e36d9ed32c4efe838efa74241731ae37d0548063ea4e32f10",
+        "cached_at": "2026-05-30T00:15:22.121419"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76389926-8",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "MORA TECHNOLOGY SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "MORA TECHNOLOGY SPA",
+            "rutSociedad": "76389926-8",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2014-02-07",
+            "socios": [
+              {
+                "nombre": "RODRIGO JAVIER URZUA LEON",
+                "rut": "11624846-8",
+                "domicilio": "AVENIDA APOQUINDO 3500 OFICINA 401, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "CARLOS ALBERTO AGUIAR DESORMEAUX",
+                "rut": "10005274-1",
+                "domicilio": "CALLE MONJITAS N 392 OFICINA 1602, COMUNA DE SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORIAS E INVERSIONES CALA LIMITADA",
+                "rut": "76122130-2",
+                "domicilio": "MONJITAS Nº 392, PISO 16, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-10-26",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/10/26/43984/05/2563318.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2014-02-08",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2014/02/08/741976_C_SPA_20140208_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ed00bdb0f729c8f4ccc94ba0a2f12585144fe4f2c243691a33a47f78c47aba96",
+      "cached_at": "2026-05-30T00:15:22.726069"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76389926-8",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "07-02-2014 21:00:00",
+            "razonSocial": "MORA TECHNOLOGY SPA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/02/08/741976_C_SPA_20140208_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "RODRIGO URZÚA LEÓN",
+                "rut": null,
+                "domicilio": "APOQUINDO N 3500, OFICINA 401, LAS CONDES, SANTIAGO"
+              }
+            ],
+            "rut": "76389926-8"
+          },
+          {
+            "fecha": "25-10-2024 21:00:00",
+            "razonSocial": "MORA TECHNOLOGY SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/10/26/43984/05/2563318.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76389926-8"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76389926-8",
+            "sociedad": "MORA TECHNOLOGY SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c2fe05661c6edb9aaeca6a7948bf73a2b173a63831db28590fca4ff7671f7f7a",
+        "cached_at": "2026-05-30T00:15:23.091110"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 2752840,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 100,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 1,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 0,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8e07d8483087c2b160adcf48616883f873af25a207fe86b3e0723400eba7d88d",
+      "cached_at": "2026-05-30T00:15:23.754770"
+    }
+  }
+}

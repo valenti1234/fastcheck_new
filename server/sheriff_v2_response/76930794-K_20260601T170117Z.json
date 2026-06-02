@@ -1,0 +1,1104 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76930794-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76930794-K",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "TDM SERVICES CHILE SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "05-10-2018",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "REPARACION DE EQUIPO ELECTRICO (EXCEPTO REPARACION DE EQUIPO Y ENSERES",
+            "codigo": "331400",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "15-06-2020"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE OTROS TIPOS DE MAQUINARIA Y EQUIPO N.C.P.",
+            "codigo": "465909",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-02-2019"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 7,
+        "ultimaActualizacion": "01-06-2026 17:01:13",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "25.000,01 a 50.000,00",
+          "cantidadTrabajadores": 39
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 17:01:13"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1
+        },
+        "ultimaActualizacionCiviles": "01-06-2026 17:01:11",
+        "ultimaActualizacionCobranza": "01-06-2026 17:01:12",
+        "ultimaActualizacionLaboral": "01-06-2026 17:01:12",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 2,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 1,
+          "montoTotalMultas": 335000,
+          "multasPagadas": 1,
+          "montoMultasPagadas": 335000,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:01:12"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:01:13"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "25-09-2018 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/09/26/42165/05/1468922.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "TDM SERVICES CHILE SPA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "28-09-2018 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/09/29/42168/05/1471084.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "TOMAS ROJAS GALLARDO",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "MANUEL MARTINEZ PEREZ",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "18-12-2018 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/12/19/42233/05/1513977.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "GONZÁLEZ SALINAS",
+                  "rut": null,
+                  "domicilio": "CALLE AGUSTINAS Nº 1.070 PISO 2"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "27-12-2018 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/12/28/42240/05/1519822.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "TDM SERVICES CHILE SPA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "27-02-2019 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/02/28/42292/05/1554406.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "TDM SERVICE BRASIL LTDA",
+                  "rut": "59274010-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CRISTIANO MARCIO SIQUEIRA GIANINI",
+                  "rut": "48204941-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO. 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "23-04-2019 20:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/04/24/42337/05/1579938.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "TDM SERVICE BRASIL LTDA",
+                  "rut": "59274010-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CRISTIANO MARCIO SIQUEIRA GIANINI",
+                  "rut": "48204941-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO. 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "09-07-2019 20:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/07/10/42400/05/1619153.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "TDM SERVICE BRASIL LTDA",
+                  "rut": "59274010-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "LINO IVAN JELDEZ ARAVENA",
+                  "rut": "6930407-9",
+                  "domicilio": "CALLE DOCTOR MANUEL BARROS BORGOÑO N 41, DEPARTAMENTO 1005, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "01-09-2021 20:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/09/02/43044/05/2003897.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                  "rut": "8521961-8",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "TDM SERVICE BRASIL LTDA",
+                  "rut": "59274010-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "29-12-2021 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/12/30/43140/05/2065126.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                  "rut": "8521961-8",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "17-03-2023 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/03/18/43505/05/2287637.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                  "rut": "8521961-8",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "TDM SERVICE BRASIL LTDA",
+                  "rut": "59274010-9",
+                  "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "29-09-2024 21:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/09/30/43961/05/2551363.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "25-04-2025 20:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/04/26/44134/05/2639619.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76930794-K"
+            },
+            {
+              "fecha": "30-05-2025 20:00:00",
+              "razonSocial": "TDM SERVICES CHILE SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/31/44162/05/2654401.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76930794-K"
+            }
+          ],
+          "ultimaActualizacion": "01-06-2026 17:01:12"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 690,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 2,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 0,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 200,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "TDM SERVICES CHILE SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a9d9f9d3eb94d08f273db61033d5dab2b9b5c29f18639be994c2e8c300308910",
+      "cached_at": "2026-06-01T17:01:14.182297"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "22-01-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15870781-0",
+                "nombre": "KARINA ALEJANDRA IBARRA FIGUEROA (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19445714-6",
+                "nombre": "JESÚS IGNACIO MARTÍNEZ OLGUÍN (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19398491-6",
+                "nombre": "ALEX BARING RODRÍGUEZ RODRÍGUEZ (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77639543-9",
+                "nombre": "HOTTEL SPA (HOTEL MARINA)",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76930794-K",
+                "nombre": "TDM SERVICES CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-405-2024",
+            "tribunal": "4 ° Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:01:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:add63c1eba366cac8a6dfcfcf2d959dcc7ba8452e9540c4dc9a697fecd771152",
+        "cached_at": "2026-06-01T17:01:14.509558"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:01:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:49d87b7d4710f0f5d142dc9485cb2ef9e473300441c1e28da812d5814b1c51ea",
+        "cached_at": "2026-06-01T17:01:14.840173"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:01:12"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7bf688a76dc61a70db49bc97f39b3071097815068a0dd90e3fbb07402229784f",
+        "cached_at": "2026-06-01T17:01:15.167234"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "28-08-2025 20:00:00",
+            "multa": "4260/25/097-1",
+            "procedencia": "RECLAMO",
+            "um": "0.67",
+            "tipoUm": "IMM",
+            "montoClp": 335000
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:01:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:08618c907e201bd17cd787fcb8e0ccf03c30a96db98bcc384818b00066e7fc3a",
+        "cached_at": "2026-06-01T17:01:15.498576"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 4,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-07-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ANTONIO OPAZO ARRIAGADA ",
+            "periodo": "05/2025",
+            "rutAfiliado": "18456046-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-06-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ANTONIO OPAZO ARRIAGADA ",
+            "periodo": "04/2025",
+            "rutAfiliado": "18456046-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-08-2024 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BENJAMIN IGNACIO SOTELO BECERRA ",
+            "periodo": "06/2024",
+            "rutAfiliado": "20887865-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-03-2024 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CRISTIAN OCTAVIO BELTRAN SALINAS ",
+            "periodo": "01/2024",
+            "rutAfiliado": "17164877-7",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:01:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:279ab44f905f0b0285083714e7f3f0a5d6790de1a008ca5068f06b15812d6a26",
+        "cached_at": "2026-06-01T17:01:15.820807"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76930794-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "TDM SERVICES CHILE SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "TDM SERVICES CHILE SPA",
+            "rutSociedad": "76930794-K",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2018-09-25",
+            "socios": [
+              {
+                "nombre": "CRISTIANO MARCIO SIQUEIRA GIANINI",
+                "rut": "48204941-9",
+                "domicilio": "MANUEL BARROS BORGOÑO N° 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "TDM SERVICE BRASIL LTDA.",
+                "rut": "59274010-9",
+                "domicilio": "MANUEL BARROS BORGOÑO N° 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "LINO IVAN JELDEZ ARAVENA",
+                "rut": "6930407-9",
+                "domicilio": "DR MANUEL BARROS BORGOÑO 41, DEPTO 1005, PROVIDENCIA",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "GUILLERMO GONZALO DONOSO GARCIA",
+                "rut": "8389136-K",
+                "domicilio": "PASAJE ARRAS 29, CURAUMA, VALPARAÍSO",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                "rut": "8521961-8",
+                "domicilio": "ANTONIO BELLET 90 DEPTO 1507 PROVIDENCIA",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "OSCAR MARABOLÍ CATALÁN",
+                "rut": "8651930-5",
+                "domicilio": "FLOR DE AZUCENAS 112, DPTO. 41, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JESSICA ELIANE ROZAS DOS SANTOS",
+                "rut": "25400968-7",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-05-31",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/31/44162/05/2654401.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-04-26",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/04/26/44134/05/2639619.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-09-30",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/09/30/43961/05/2551363.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2023-03-18",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/03/18/43505/05/2287637.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-12-30",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/12/30/43140/05/2065126.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-09-02",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/09/02/43044/05/2003897.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-07-10",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/07/10/42400/05/1619153.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-04-24",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/04/24/42337/05/1579938.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-02-28",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/02/28/42292/05/1554406.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-12-28",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/12/28/42240/05/1519822.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-12-19",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/12/19/42233/05/1513977.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2018-09-26",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/09/26/42165/05/1468922.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1485a3d4638b0411bcd25fdb2e5e2a5b526e5723f29c03f3c3f5c06ab33da9a3",
+      "cached_at": "2026-06-01T17:01:16.416158"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76930794-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "25-09-2018 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/09/26/42165/05/1468922.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "TDM SERVICES CHILE SPA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "28-09-2018 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/09/29/42168/05/1471084.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "TOMAS ROJAS GALLARDO",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "MANUEL MARTINEZ PEREZ",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "18-12-2018 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/12/19/42233/05/1513977.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "GONZÁLEZ SALINAS",
+                "rut": null,
+                "domicilio": "CALLE AGUSTINAS Nº 1.070 PISO 2"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "27-12-2018 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/12/28/42240/05/1519822.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "TDM SERVICES CHILE SPA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "27-02-2019 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/02/28/42292/05/1554406.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "TDM SERVICE BRASIL LTDA",
+                "rut": "59274010-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "CRISTIANO MARCIO SIQUEIRA GIANINI",
+                "rut": "48204941-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO. 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "23-04-2019 20:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/04/24/42337/05/1579938.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "TDM SERVICE BRASIL LTDA",
+                "rut": "59274010-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "CRISTIANO MARCIO SIQUEIRA GIANINI",
+                "rut": "48204941-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO. 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "09-07-2019 20:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/07/10/42400/05/1619153.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "TDM SERVICE BRASIL LTDA",
+                "rut": "59274010-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "LINO IVAN JELDEZ ARAVENA",
+                "rut": "6930407-9",
+                "domicilio": "CALLE DOCTOR MANUEL BARROS BORGOÑO N 41, DEPARTAMENTO 1005, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "01-09-2021 20:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/09/02/43044/05/2003897.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                "rut": "8521961-8",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "TDM SERVICE BRASIL LTDA",
+                "rut": "59274010-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "29-12-2021 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/12/30/43140/05/2065126.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                "rut": "8521961-8",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "17-03-2023 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/03/18/43505/05/2287637.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JUAN CARLOS AMADOR NACUSE PHILLIPS",
+                "rut": "8521961-8",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "TDM SERVICE BRASIL LTDA",
+                "rut": "59274010-9",
+                "domicilio": "CALLE MANUEL BARROS BORGOÑO N 41, DEPTO 1005, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "29-09-2024 21:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/09/30/43961/05/2551363.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "25-04-2025 20:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/04/26/44134/05/2639619.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76930794-K"
+          },
+          {
+            "fecha": "30-05-2025 20:00:00",
+            "razonSocial": "TDM SERVICES CHILE SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/31/44162/05/2654401.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76930794-K"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76930794-K",
+            "sociedad": "TDM SERVICES CHILE SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:45e2faf49672e890e0405a6791d8759db93c79cd49b008b4098e606c4afa6c7f",
+        "cached_at": "2026-06-01T17:01:16.747970"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 100,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 1,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 0,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 2,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 335000,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 200,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8bbf526d57215de71d989d2316d6fdfde0047cac2f4bdef1280977583d9c039f",
+      "cached_at": "2026-06-01T17:01:17.329723"
+    }
+  }
+}

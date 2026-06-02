@@ -1,0 +1,117 @@
+{
+  "pathCount": 10,
+  "relationships": [
+    {
+      "source": "96582310",
+      "target": "6973084",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96582310",
+      "target": "59326860",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96582310",
+      "target": "59322040",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 1,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "59326860",
+      "target": "96582310",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2220575",
+        "match_type": "i_bt_all",
+        "source": "DO",
+        "published_at": "2022-11-22",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/11/22/43407/05/2220575.pdf"
+      }
+    },
+    {
+      "source": "59326860",
+      "target": "10647360",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-06-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59326860",
+      "target": "16606344",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-06-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59326860",
+      "target": "16606344",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2220575",
+        "match_type": "bt_all",
+        "source": "DO",
+        "published_at": "2022-11-22",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/11/22/43407/05/2220575.pdf"
+      }
+    },
+    {
+      "source": "59322040",
+      "target": "8618927",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-06-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59322040",
+      "target": "10612313",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-06-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59322040",
+      "target": "15638675",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-06-04",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "6973084": "CARMEN ANDREA CANEPA LOBOS",
+    "8618927": "JAIME EDUARDO ANDRES MARTIN CUADRADO",
+    "10612313": "FRANCISCA BEATRIZ CORTI VIVIANI",
+    "10647360": "SEBASTIAN ARTURO ODDO GOMEZ",
+    "15638675": "CONSTANZA TRISOTTI BERNAIN",
+    "16606344": "MARTIN NICOLAS CORONADO ATENAS",
+    "59322040": "GRIFOLS INTERNATIONAL S.A.",
+    "59326860": "GRIFOLS, S.A.",
+    "96582310": "GRIFOLS CHILE S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:273bb9940817b19a6087ea99fdcbcd68e0978c0e0925095679d6759c69ffec8c",
+    "cached_at": "2026-05-30T01:31:26.818724"
+  }
+}

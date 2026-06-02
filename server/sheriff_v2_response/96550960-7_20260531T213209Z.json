@@ -1,0 +1,3996 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96550960-7"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96550960-7",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "SODEXO SERVICIOS S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "TERMINACION Y ACABADO DE EDIFICIOS",
+            "codigo": "433000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "03-02-2011"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE BEBIDAS ALCOHOLICAS Y NO ALCOHOLICAS",
+            "codigo": "463020",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-11-2012"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE BEBIDAS ALCOHOLICAS Y NO ALCOHOLICAS EN COMERCIO",
+            "codigo": "472200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-11-2012"
+          },
+          {
+            "actividades": "SUMINISTRO DE COMIDAS POR ENCARGO (SERVICIOS DE BANQUETERIA)",
+            "codigo": "562100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-11-2012"
+          },
+          {
+            "actividades": "SUMINISTRO INDUSTRIAL DE COMIDAS POR ENCARGO; CONCESION DE SERVICIOS D",
+            "codigo": "562900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-10-2000"
+          },
+          {
+            "actividades": "SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR EMPRESAS",
+            "codigo": "801001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "03-02-2011"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE LIMPIEZA DE EDIFICIOS E INSTALACIONES INDUSTRIALE",
+            "codigo": "812909",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "03-02-2011"
+          },
+          {
+            "actividades": "REPARACION DE OTROS EFECTOS PERSONALES Y ENSERES DOMESTICOS",
+            "codigo": "952900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "03-02-2011"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Rollos Maquinas Registradoras",
+            "ultimoAnioTimbrado": "2002"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Facturas De Compras",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "2007"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2004"
+          },
+          {
+            "documento": "Libro Control De Timbraje",
+            "ultimoAnioTimbrado": "2004"
+          },
+          {
+            "documento": "Libro Control De Documentos",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2015"
+          }
+        ],
+        "cantidadActividades": 9,
+        "cantidadDocumentos": 23,
+        "ultimaActualizacion": "07-05-2026 13:17:25",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 2308
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 1,
+        "casosBolcom": 0,
+        "MontoInfocom": 1921850,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 1921850
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 11,
+        "casosCivilesConcluidos": 3,
+        "cobranzaActivos": 21,
+        "cobranzaPresentados": 3,
+        "cobranzaConcluidos": 27,
+        "laboralActivos": 55,
+        "laboralPresentados": 24,
+        "laboralConcluidos": 100,
+        "casosActuales": 77,
+        "casosArchivados": 38,
+        "casosConcluidos": 130,
+        "todosLosCasos": 245,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "acreedor": 1,
+          "demandado": 79,
+          "demandante": 8,
+          "demandadoSolidario": 4,
+          "reclamante": 7,
+          "denunciado": 16
+        },
+        "ultimaActualizacionCiviles": "31-05-2026 21:32:04",
+        "ultimaActualizacionCobranza": "31-05-2026 21:32:04",
+        "ultimaActualizacionLaboral": "31-05-2026 21:32:05",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 344,
+          "empleados": 50,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 66.18,
+            "cambioAbsoluto": 137
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 39,
+          "montoTotalMultas": 140168099,
+          "multasPagadas": 39,
+          "montoMultasPagadas": 140168099,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 12.77,
+            "cambioAbsoluto": 15868512
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:32:04"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "22-01-2017 21:00:00",
+              "razonSocial": "SODEXO SERVICIOS S.A",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/23/41665/05/1172594.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "96550960-7"
+            },
+            {
+              "fecha": "24-01-2017 21:00:00",
+              "razonSocial": "SODEXO SERVICIOS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/25/41667/05/1172936.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "SODEXO SERVICIOS S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "96550960-7"
+            },
+            {
+              "fecha": "20-04-2021 20:00:00",
+              "razonSocial": "SODEXO SERVICIOS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/21/42935/05/1930232.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "96550960-7"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 10:23:38"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 2878870,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 2756940,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 2,
+          "tasacionTotal": 822681,
+          "ultimaActualizacion": "06-04-2026 07:18:38"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "06-04-2026 07:18:38"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 65.71428571428572,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 9.548104956268233,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 25,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 200.26239067055394,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "SODEXO SERVICIOS S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:580b74c47c65ae1869fa4cd8636f5970bc0047eb0c01eeeee14e921fbecbff7a",
+      "cached_at": "2026-05-31T21:32:06.014025"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 15,
+        "casos": [
+          {
+            "estado": "Suspendido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "6 Cumplimiento Corte",
+            "fechaIngreso": "28-02-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18007588-7",
+                "nombre": "SIMONA ANTONIA MARQUET STANDEN (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "78005760-2",
+                "nombre": "SOCIEDAD DE SEGURIDAD AEREA S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8459675-2",
+                "nombre": "JUAN CARLOS DORR BULNES (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15379219-4",
+                "nombre": "JUAN PABLO MORALES BARROS (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17189147-7",
+                "nombre": "CARLOS FELIPE ANDRÉS CORRO CALDERÓN (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18473010-3",
+                "nombre": "PAULA ANDREA TERESITA FRANJOLA LARA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "94623000-6",
+                "nombre": "SODEXO CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76825224-6",
+                "nombre": "VALTEC CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19133988-6",
+                "nombre": "ETHAN ILAN TEPLITZKY DOMÍNGUEZ (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19475675-5",
+                "nombre": "MARÍA FRANCISCA SAIEH FERNÁNDEZ (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9070188-6",
+                "nombre": "FERNANDO URRUTIA BASCUÑÁN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10033540-9",
+                "nombre": "JORGE HUMBERTO MATUS CALDERÓN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16370244-4",
+                "nombre": "JOSÉ MANUEL DONOSO BERNALES (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-2218-2021",
+            "tribunal": "24º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada ",
+            "fechaIngreso": "01-07-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "8266300-2",
+                "nombre": "CARLOS JAVIER DELGADILLO DÍAZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13852056-0",
+                "nombre": "ROBERTO ANDRÉS DE LA PAZ VALENZUELA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13039726-3",
+                "nombre": "RODRIGO ITURRA ESCALA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18061411-7",
+                "nombre": "FRANCISCO IGNACIO BELMAR BARRIENTOS",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "20071879-8",
+                "nombre": "CRISTÓBAL ANDRÉS PACHECO MAREGATTI",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-10176-2020",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Junta, Objeciones y Periodo Extraor.",
+            "fechaIngreso": "28-11-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "AFP HABITAT SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "98000000-1",
+                "nombre": "AFP CAPITAL SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "5402197-6",
+                "nombre": "PATRICIO ELGUETA ADROVEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESÚS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10922077-9",
+                "nombre": "PABLO ANDRÉS CAGLEVIC MEDINA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "9460424-9",
+                "nombre": "GONZALO FERRADA MOLINA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17003686-7",
+                "nombre": "MARJORIE JACQUELINE VIVIANA ZENTENO NÚÑEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "7010414-8",
+                "nombre": "DANIEL HERNÁN EMILIO ORTÚZAR GANA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "97030000-7",
+                "nombre": "BANCO DEL ESTADO DE CHILE  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "13635757-3",
+                "nombre": "CECILIA ANDREA YASIN VIDAL",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "5527830-K",
+                "nombre": "MARÍA VICTORIA VALENCIA MERCAIDO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10949399-6",
+                "nombre": "CRISTIAN MARCELO HUERTA BUSTAMANTE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SERV.DE ALIMENTACION NACIONALES S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "60805000-0",
+                "nombre": "TESORERIA GENERAL DE LA REPUBLICA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "9666781-7",
+                "nombre": "MIGUEL EMILIO SALINAS SÁNCHEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76392556-0",
+                "nombre": "TRANSPORTES R.I. SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "11415851-8",
+                "nombre": "PATRICIA LORETO LOURDES MATELUNA FLETCHER",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96856780-2",
+                "nombre": "ISAPRE CONSALUD S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "9268850-K",
+                "nombre": "ROBERTO GASTÓN ROMERO FUENTES",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76297337-5",
+                "nombre": "COMERCIALIZADORA HERNANDEZ HERMANOS LTDA  ",
+                "sujeto": "DDOR. ",
+                "persona": "J"
+              },
+              {
+                "rut": "17406262-5",
+                "nombre": "SEBASTIÁN NICOLÁS MOLLEDA KATALINIC",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "98001200-K",
+                "nombre": "AFP PLANVITAL SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              }
+            ],
+            "proc": "Liquidación Forzosa",
+            "rol": "C-19912-2019",
+            "tribunal": "1º Juzgado Civil de Puente Alto",
+            "sujeto": "ACRDOR",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "22-01-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13831554-1",
+                "nombre": "MAY CONZUELO GUTIÉRREZ OTTO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS  .",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD  .",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2432-2018",
+            "tribunal": "3º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "27-11-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13831554-1",
+                "nombre": "MAY CONZUELO GUTIÉRREZ OTTO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-34535-2017",
+            "tribunal": "3º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "22-11-2016 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15888711-8",
+                "nombre": "FELIPE ADOLFO ALCAÍNO MALDONADO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16472370-4",
+                "nombre": "CLAUDIO EDUARDO RUIZ BARRÍA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-29065-2016",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Excepciones ",
+            "fechaIngreso": "21-08-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SERV.DE ALIMENTACION NACIONALES S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8779556-K",
+                "nombre": "ASTRID GERALDINE VERDUGO PARADA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76413340-4",
+                "nombre": "TRANSPORTES DAMIR LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2179-2014",
+            "tribunal": "Juzgado de Letras de Colina",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "9 Apelación y/o consulta 1ra Instancia",
+            "fechaIngreso": "13-04-2014 21:00:00",
+            "litigantes": [
+              {
+                "rut": "60908000-0",
+                "nombre": " JUNTA NACIONAL DE AUXILIO ESCO LAR Y BECA",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8710271-8",
+                "nombre": "RAFAEL AUGUSTO VICUQA UNDURRAGA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-6187-2014",
+            "tribunal": "14º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "3 Réplica ",
+            "fechaIngreso": "23-03-2014 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9770007-9",
+                "nombre": "ALEJANDRO MUQOZ CASTELLSN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76102760-3",
+                "nombre": " CIDET GLOBALES S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-4086-2014",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Término Probatorio",
+            "fechaIngreso": "09-01-2014 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8710271-8",
+                "nombre": "RAFAEL AUGUSTO VICUQA UNDURRAGA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "61006000-5",
+                "nombre": " FISCO DE CHILE ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-721-2014",
+            "tribunal": "8º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Ingreso ",
+            "fechaIngreso": "15-12-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9770007-9",
+                "nombre": "ALEJANDRO MUQOZ CASTELLSN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76102760-3",
+                "nombre": " CIDET GLOBALES S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-20224-2013",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Ingreso ",
+            "fechaIngreso": "14-11-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9770007-9",
+                "nombre": "ALEJANDRO MUQOZ CASTELLSN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76102760-3",
+                "nombre": " CIDET GLOBALES S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-17635-2013",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "08-05-2013 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15912226-3",
+                "nombre": "CHERIE NEVENKA ROMERO MALLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76635200-6",
+                "nombre": " FACTORONE S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-5760-2013",
+            "tribunal": "23º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Dúplica ",
+            "fechaIngreso": "16-12-2012 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "60908000-0",
+                "nombre": " JUNTA NACIONAL DE AUXILIO ESCO LAR Y BECAS",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8710271-8",
+                "nombre": "RAFAEL AUGUSTO VICUQA UNDURRAGA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "94623000-6",
+                "nombre": " SODEXHO CHILE S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-28515-2012",
+            "tribunal": "24º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "27-03-2012 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": " SODEXO SERVICIOS S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "18911824-4",
+                "nombre": "GISELA VANESA SÁNCHEZ DÍAZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6755-2012",
+            "tribunal": "30º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 06:35:20"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f014ade0cacdaf08eea8b420d2f8f9a44cd7ee44c8dae0d1c66cc19025a11832",
+        "cached_at": "2026-05-31T21:32:06.371049"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 51,
+        "casos": [
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "28-04-2024 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17849276-4",
+                "nombre": "ANA FRANCISCA DE LAS NIEVES SEGURA PAINECURA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16473205-3",
+                "nombre": "ALEJANDRO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12293909-K",
+                "nombre": "JOSÉ LUIS CAMILO COFRÉ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16803269-2",
+                "nombre": "JAVIERA VANINA CARRERA OLIVARES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13067832-7",
+                "nombre": "JUAN CARLOS VILLAGRA TORRES",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2275-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "11-02-2024 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10436704-6",
+                "nombre": "ROBERTO ANTONIO CASTELETTI ROMERO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18391481-2",
+                "nombre": "JOSEFA CUSSO SAAVEDRA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17145238-4",
+                "nombre": "SIMÓN ARTURO PARADA MANZUR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8784146-4",
+                "nombre": "CHRISTIAN ARTURO VON BERGEN RODRÍGUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-846-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "10-05-2023 20:00:00",
+            "monto": "78",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13759105-7",
+                "nombre": "MARÍA INÉS ROMERO ESCOBEDO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16740924-5",
+                "nombre": "MAURICIO EDUARDO TAPIA MARÍN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17849276-4",
+                "nombre": "ANA FRANCISCA DE LAS NIEVES SEGURA PAINECURA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17269888-3",
+                "nombre": "GONZALO ANDRÉS TAPIA MARÍN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1966-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "04-05-2023 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17849276-4",
+                "nombre": "ANA FRANCISCA DE LAS NIEVES SEGURA PAINECURA",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16428245-7",
+                "nombre": "GUILLERMO ERNESTO VERA ZAPATA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCIÓN COMUNAL DEL TRABAJO DE MAIPÚ",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1849-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "21-02-2023 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "11264408-3",
+                "nombre": "BERNARDITA DEL PILAR LÓPEZ MORENO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "6715869-5",
+                "nombre": "LUZ ELIANA MATILDE TRONCOSO MUÑOZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "25626322-K",
+                "nombre": "ASSONEL NELUS ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8651538-5",
+                "nombre": "LEONTINA DEL CARMEN ROLDÁN DURÁN",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12409388-0",
+                "nombre": "ISABEL CLAUDIA LAGOS CASTRO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15384263-9",
+                "nombre": "CRISTÓBAL RABY BIGGS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9099322-4",
+                "nombre": "BERNARDA DE LAS MERCEDES ARIAS CORREA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "25439945-0",
+                "nombre": "MIREILLE PIERRE ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "9969461-0",
+                "nombre": "VERÓNICA YANET PARDO SOLÍS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "18698862-0",
+                "nombre": "BÁRBARA ESPERANZA RIVADERA PÉREZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15642180-4",
+                "nombre": "PAMELA CAROLINA SILVA GRILLE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "14342857-5",
+                "nombre": "SOLANGE ALICIA ÁLVAREZ ÁLVAREZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10535222-0",
+                "nombre": "JOAQUÍN MARCELO SILVA GRILLE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-710-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "18-05-2021 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE SANTIAGO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8784146-4",
+                "nombre": "CHRISTIAN ARTURO VON BERGEN RODRÍGUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9354250-9",
+                "nombre": "PABLO ANDRÉS MOREIRA LUMBRERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16370801-9",
+                "nombre": "VALENTINA FABIOLA FLEN MOURGUET",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2091-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "21-04-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE PUERTO MONTT  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14446656-K",
+                "nombre": "FELIPE ANDRÉS PALMA GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15959871-3",
+                "nombre": "JUAN PABLO DOYHAMBERRY VIERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15384263-9",
+                "nombre": "CRISTÓBAL RABY BIGGS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17702638-7",
+                "nombre": "BENJAMÍN RILLÓN GÓMEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1655-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "30-09-2020 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15384263-9",
+                "nombre": "CRISTÓBAL RABY BIGGS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO SANTIAGO PONIENTE  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17702638-7",
+                "nombre": "BENJAMÍN RILLÓN GÓMEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14446656-K",
+                "nombre": "FELIPE ANDRÉS PALMA GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3012-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "17-12-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "16819594-K",
+                "nombre": "JOSÉ JOAQUÍN MATÍAS GONZÁLEZ GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13366369-K",
+                "nombre": "VERÓNICA CARMEN SEPÚLVEDA SAAVEDRA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-16-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de San Felipe",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "17-12-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "15384263-9",
+                "nombre": "CRISTÓBAL RABY BIGGS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14565724-5",
+                "nombre": "MANUEL BENITO CUEVAS PALMA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14028432-7",
+                "nombre": "MARÍA ANTONIETA LETELIER MATURANA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "94623000-6",
+                "nombre": "SODEXO CHILE S.A.  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "79556490-K",
+                "nombre": "SODEXO INVERSIONES S.A  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "17603173-5",
+                "nombre": "BENJAMÍN ANDRÉS PUMPIN MISSIEGO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17702638-7",
+                "nombre": "BENJAMÍN RILLÓN GÓMEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5661-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "15-12-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "15423473-K",
+                "nombre": "JORGE ELÍAS GAVILÁN FERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15642180-4",
+                "nombre": "PAMELA CAROLINA SILVA GRILLE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10535222-0",
+                "nombre": "JOAQUÍN MARCELO SILVA GRILLE",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6821469-6",
+                "nombre": "JORGE FERNANDO TOBAR MONTERO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5619-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "08-12-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12972684-9",
+                "nombre": "GUILLERMO EDUARDO FUENTES YÁÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16598753-5",
+                "nombre": "JORGE HERNÁN BONILLA CASTILLO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16283625-0",
+                "nombre": "CARLA VERÓNICA PALAVECINO ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15853857-1",
+                "nombre": "MAURO ESTEBAN RODRÍGUEZ ÁLVAREZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "16765098-8",
+                "nombre": "JUAN PABLO FIGUEROA FERRADA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15384263-9",
+                "nombre": "CRISTÓBAL RABY BIGGS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17702638-7",
+                "nombre": "BENJAMÍN RILLÓN GÓMEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-707-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "23-09-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "15423473-K",
+                "nombre": "JORGE ELÍAS GAVILÁN FERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13027916-3",
+                "nombre": "PEDRO WILSON MAUREIRA FUENTES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15993330-K",
+                "nombre": "FERNANDO OMAR ALÉ PIZARRO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16150196-4",
+                "nombre": "NATHALY NICOL ARRIAZA ARRIAGADA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4189-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-08-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15423473-K",
+                "nombre": "JORGE ELÍAS GAVILÁN FERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "19718041-2",
+                "nombre": "MARCELO ALEJANDRO BENAVIDES MÉNDEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16936459-1",
+                "nombre": "MARÍA CELESTE DE JESÚS RIQUELME AGUAYO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14565724-5",
+                "nombre": "MANUEL BENITO CUEVAS PALMA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "77905330-K",
+                "nombre": "ANGLO AMERICAN CHILE LTDA  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3568-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-07-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76762250-3",
+                "nombre": "Administradora de Fondos de Pensiones Modelo S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-26571-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "09-07-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCIÓN DEL TRABAJO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15384263-9",
+                "nombre": "CRISTÓBAL RABY BIGGS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "11361610-5",
+                "nombre": "EDITH DEL ROSARIO DELGADO HINOJOSA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO DE PROVIDENCIA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17603173-5",
+                "nombre": "BENJAMÍN ANDRÉS PUMPIN MISSIEGO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2755-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "26-03-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCÓN DELGADO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CÁRDENAS SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10885577-0",
+                "nombre": "ANGÉLICA DEL PILAR VENEGAS VIDAL",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-894-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-03-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCÓN DELGADO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CÁRDENAS SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10599036-7",
+                "nombre": "MARISOL DE JESÚS SANDOVAL GUZMÁN",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-893-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "21-03-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCÓN DELGADO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CÁRDENAS SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13859225-1",
+                "nombre": "CAROLINA ANDREA SUAZO FLORES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-847-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-03-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCÓN DELGADO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CÁRDENAS SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9894682-9",
+                "nombre": "JULIA DEL ROSARIO OTÁROLA BAEZA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-846-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 06:35:20"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1ac25af936070fa1cb3f022363d3003b4b632f229499a285daea3f6501f68397",
+        "cached_at": "2026-05-31T21:32:06.842094"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 9,
+        "cantidad": 179,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "30-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13675347-9",
+                "nombre": "CELINDA PAOLA LIZAMA FUENTES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17132058-5",
+                "nombre": "MARIA JOSE GAITAN MORAN",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16770622-3",
+                "nombre": "CAROLINA SAAVEDRA HERNANDEZ",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-433-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "25-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16723711-8",
+                "nombre": "CAMILO TOMÁS HERNÁNDEZ GATICA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9121225-0",
+                "nombre": "LUIS EDUARDO COLE RAMIREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19731477-K",
+                "nombre": "BÁRBARA DANIELA OLIVARES GUTIÉRREZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1481-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "24-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11576380-6",
+                "nombre": "ERNA MILAGRO MANRÍQUEZ JIMÉNEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15165288-3",
+                "nombre": "VICTOR RUBEN FERRADA ORDENES (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-284-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16424511-K",
+                "nombre": "HERNÁN IVÁN HERNÁNDEZ MEZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18953452-3",
+                "nombre": "ROBERTO NICOLÁS JARA GONZÁLEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1437-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "17-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "65217012-9",
+                "nombre": "SINDICATO Nº2 DE ESTABLECIMIENTO DE EMPRESA SIGES CHILE S.A. EP LA SERENA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9857407-7",
+                "nombre": "LUIS RODRIGO FERNANDEZ PORTALUPII",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "94623000-6",
+                "nombre": "SODEXO CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79556490-K",
+                "nombre": "SODEXO INVERSIONES S A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96992160-K",
+                "nombre": "siges Chile",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-218-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de La Serena",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18580522-0",
+                "nombre": "GILMAR ALEXIS ROJAS CASTILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "89862200-2",
+                "nombre": "LATAM AIRLINES GROUP S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17829256-0",
+                "nombre": "MARÍA DE JESÚS AVILES MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16813346-4",
+                "nombre": "MARIO ENRIQUE PEÑA VILLENA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-291-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "13-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9752671-0",
+                "nombre": "MARISOL HENRÍQUEZ OLIVARES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12016627-1",
+                "nombre": "LAUTARO FARIÑA QUEZADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16357258-3",
+                "nombre": "PABLO VILCHES LETELIER (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17954767-8",
+                "nombre": "DIEGO FRANCISCO ZÁRATE NÚÑEZ (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18380645-9",
+                "nombre": "JOAQUIN HERNANDEZ SEPULVEDA (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96963660-3",
+                "nombre": "HOSPITAL CLÍNICO VIÑA DEL MAR",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19731477-K",
+                "nombre": "BÁRBARA DANIELA OLIVARES GUTIÉRREZ (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-57-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "07-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19731477-K",
+                "nombre": "BÁRBARA DANIELA OLIVARES GUTIÉRREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11602864-6",
+                "nombre": "SANDRA DEL PILAR SILVA AGUILAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10535222-0",
+                "nombre": "JOAQUÍN MARCELO SILVA GRILLE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15642180-4",
+                "nombre": "PAMELA CAROLINA SILVA GRILLE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-123-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "06-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19731477-K",
+                "nombre": "BÁRBARA DANIELA OLIVARES GUTIÉRREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17293046-8",
+                "nombre": "ABRAHAM ANDRES ROMERO ESCOBEDO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9702188-0",
+                "nombre": "MARCELO ADOLFO MUJICA HARRIS (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-86-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "28-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17382637-0",
+                "nombre": "GONZALO NICOLÁS PIZARRO GAUTHIER",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10535222-0",
+                "nombre": "JOAQUÍN MARCELO SILVA GRILLE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15642180-4",
+                "nombre": "PAMELA CAROLINA SILVA GRILLE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-9260-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "25-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17761971-K",
+                "nombre": "AINHOA BEIXAMEL DURÁN LEIVA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17242097-4",
+                "nombre": "SEBASTIÁN ADOLFO CRUZ SARAVIA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-4495-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "10-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19731477-K",
+                "nombre": "BÁRBARA DANIELA OLIVARES GUTIÉRREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14565724-5",
+                "nombre": "MANUEL BENITO CUEVAS PALMA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12686491-4",
+                "nombre": "JOSÉ LUIS SEPÚLVEDA SEPÚLVEDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6379-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "6546506-K",
+                "nombre": "MAURICIO GUILLERMO BRAVO ARIS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16369017-9",
+                "nombre": "MARIA PAZ BRAVO GRAU (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19096588-0",
+                "nombre": "MARGARITA PAZ LLAITUQUEO RETAMALES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8534-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "19-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "94623000-6",
+                "nombre": "SODEXO CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79556490-K",
+                "nombre": "SODEXO CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96556930-8",
+                "nombre": "SODEXO SOLUCIONES DE MOTIVACION CHILE SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76098841-3",
+                "nombre": "SOCIEDAD CONSECIONARIA GRUPO  SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96992160-K",
+                "nombre": "SIGES CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76727762-8",
+                "nombre": "MOVIL PASS SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18146841-6",
+                "nombre": "NICOLÁS ESTEBAN SANTANA ERIZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18107531-7",
+                "nombre": "ROSA ANDREA ALTAMIRANO AZÓCAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-51-2025",
+            "tribunal": "Juzgado de Letras de Arauco",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "17-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "90703000-8",
+                "nombre": "NESTLE CHILE S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16097411-7",
+                "nombre": "MATÍAS HORACIO NOVOA CARBONE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15960928-6",
+                "nombre": "RAIMUNDO ABURTO GUEVARA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17662123-0",
+                "nombre": "GONZALO ALEJANDRO MELLAO MANRÍQUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8295-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13078266-3",
+                "nombre": "JOSE LEDESMA CORTEZ",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "23555859-9",
+                "nombre": "OLGA YANETH MORAN MOSQUERA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1319-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "11-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19731477-K",
+                "nombre": "BÁRBARA DANIELA OLIVARES GUTIÉRREZ",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "91619000-K",
+                "nombre": "VULCO S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10744173-5",
+                "nombre": "JAVIER EDUARDO VALENCIA POZO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16714713-5",
+                "nombre": "HÉCTOR ALEJANDRO GUZMÁN LAGOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8117-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "28-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13249597-1",
+                "nombre": "CAROLINA ANDREA GUZMAN BUSTOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18794427-9",
+                "nombre": "DANITZA VALERIA MARIPÁN BRAVO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1510-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "30-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9857407-7",
+                "nombre": "LUIS RODRIGO FERNANDEZ PORTALUPII",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "65217012-9",
+                "nombre": "SINDICATO Nº2 DE ESTABLECIMIENTO DE EMPRESA SIGES CHILE S.A. EP LA SERENA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "94623000-6",
+                "nombre": "SODEXO CHILE SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79556490-K",
+                "nombre": "SODEXO INVERSIONES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96992160-K",
+                "nombre": "siges Chile",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-908-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de La Serena",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "08-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16466572-0",
+                "nombre": "ALEJANDRA EVA NOVOA VÁSQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16942393-8",
+                "nombre": "MIGUEL ALBERTO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17097839-0",
+                "nombre": "ROLANDO ESTEBAN GONZÁLEZ MOYA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96550960-7",
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13249597-1",
+                "nombre": "CAROLINA ANDREA GUZMAN BUSTOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18794427-9",
+                "nombre": "DANITZA VALERIA MARIPÁN BRAVO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15906194-9",
+                "nombre": "EMILIO IGNACIO PALAVICINO FERRADA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1138-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 06:35:20"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1964433ffafaae773082c14d5ccadc536d7c155495d8140d71db9d6ec5235704",
+        "cached_at": "2026-05-31T21:32:07.310447"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 39,
+        "casos": [
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "25-12-2025 21:00:00",
+            "multa": "7921/25/001-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-12-2025 21:00:00",
+            "multa": "6360/24/045-1",
+            "procedencia": "FISCALIZACION",
+            "um": "36",
+            "tipoUm": "UTM",
+            "montoClp": 2503512
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "25-07-2025 20:00:00",
+            "multa": "1684/25/120-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "06-06-2025 20:00:00",
+            "multa": "4189/24/104-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "17-02-2025 21:00:00",
+            "multa": "7236/23/009-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4037640
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-02-2025 21:00:00",
+            "multa": "6360/25/003-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4037640
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-01-2025 21:00:00",
+            "multa": "1929/24/283-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "29-12-2024 21:00:00",
+            "multa": "7385/24/311-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-12-2024 21:00:00",
+            "multa": "3430/24/309-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-11-2024 21:00:00",
+            "multa": "3345/24/299-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-11-2024 21:00:00",
+            "multa": "3110/24/320-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "05-11-2024 21:00:00",
+            "multa": "8704/23/012-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No cumplir estipulaciones de instrumento colectivo.",
+            "estado": "PAGADA",
+            "fecha": "05-08-2024 20:00:00",
+            "multa": "3058/23/092-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3954060
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "31-07-2024 20:00:00",
+            "multa": "7236/23/008-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3954060
+          },
+          {
+            "enunciado": "No denunciar al Organismo Administrador respectivo el accidente o enfermedad profesional.",
+            "estado": "PAGADA",
+            "fecha": "15-05-2024 20:00:00",
+            "multa": "6293/24/013-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3926580
+          },
+          {
+            "enunciado": "No pagar remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "15-12-2023 21:00:00",
+            "multa": "8600/23/022-1",
+            "procedencia": "FISCALIZACION",
+            "um": "14.4",
+            "tipoUm": "UTM",
+            "montoClp": 924710
+          },
+          {
+            "enunciado": "No cumplimiento de resolución fundada que autoriza sistema excepcional de distribución de jornadas de trabajo y descanso",
+            "estado": "PAGADA",
+            "fecha": "04-10-2023 21:00:00",
+            "multa": "3112/22/092-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3810900
+          },
+          {
+            "enunciado": "No pagar remuneraciones.",
+            "estado": "PAGADA",
+            "fecha": "03-10-2023 21:00:00",
+            "multa": "1893/23/007-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3810900
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "03-10-2023 21:00:00",
+            "multa": "1893/23/007-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3810900
+          },
+          {
+            "enunciado": "No otorgar beneficio de sala cuna  a trabajadoras de la empresa",
+            "estado": "PAGADA",
+            "fecha": "31-07-2023 20:00:00",
+            "multa": "1178/21/021-1",
+            "procedencia": "FISCALIZACION",
+            "um": "70",
+            "tipoUm": "UTM",
+            "montoClp": 4423930
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:32:04"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:71f8c3ff445c413dace07c6802035f1d4f59547a24a986b072c7b7a37d717dd8",
+        "cached_at": "2026-05-31T21:32:07.659272"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 79,
+        "cantidad": 1566,
+        "casos": [
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN NORANDO JULIO RIVERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12214113-6",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KATRINA CONSTANZA PEREZ PINTO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21467347-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA JOSE GOMEZ FARIAS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19782394-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARMEN PATRICIA GONZALEZ RIVERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "10400562-4",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "YESENIA LISSETTE ORELLANA ROMAN ",
+            "periodo": "02/2026",
+            "rutAfiliado": "18378849-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KATRINA CONSTANZA PEREZ PINTO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21467347-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "IVAN GUILLERMO FIGUEROA DIAZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21733391-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GONZALO ADOLFO BASAURE CABRERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12878369-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA JOSE GOMEZ FARIAS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19782394-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARMEN PATRICIA GONZALEZ RIVERA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "10400562-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Instituto de Previsión Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS ORLANDO MARIN WILMER ",
+            "periodo": "02/2026",
+            "rutAfiliado": "6575546-7",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Instituto de Previsión Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PRUDENCIA DEL CARMEN MOLINA SEGUEL ",
+            "periodo": "02/2026",
+            "rutAfiliado": "9184925-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Instituto de Previsión Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EUGENIO BAUTISTA OYANEDER FUENTES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "7541957-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EUGENIO BAUTISTA OYANEDER FUENTES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "7541957-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JULIA DEL CARMEN LOYOLA GONZALEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "13708705-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SONNIA VANESSA NICOLE FAURE HUENCHUHUAL ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19429726-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SOFIA CORINA PIZARROSO RUIZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "20728573-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "YESENIA LISSETTE ORELLANA ROMAN ",
+            "periodo": "02/2026",
+            "rutAfiliado": "18378849-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "YOSEAN NATALI ALARCON HINOJOSA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21939158-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SOFIA CORINA PIZARROSO RUIZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "20728573-0",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:32:04"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3e402ab40e5ae65b6de07cc0715d47bb6f4700a6b70bea9174a0f6b28a426597",
+        "cached_at": "2026-05-31T21:32:08.016423"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96550960-7",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "SODEXO SERVICIOS S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SODEXO SERVICIOS S.A",
+            "rutSociedad": "96550960-7",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1988-12-31",
+            "socios": [
+              {
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "SODEXO CHILE S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JAIME RODRIGUEZ GARCIA-REYES",
+                "rut": "7038313-6",
+                "domicilio": "LOS GOMEROS N 1501, DEPARTAMENTO 207, VITACURA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SODEXHO CHILE S.A.",
+                "rut": "94623000-6",
+                "domicilio": "WILLIAMS REBOLLEDO 1799, ÑUÑOA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SODEXHO INVERSIONES S.A.",
+                "rut": "79556490-K",
+                "domicilio": "WILLIAMS REBOLLEDO 1799, ÑUÑOA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.55"
+              },
+              {
+                "nombre": "SODEXO CHILE S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.45"
+              },
+              {
+                "nombre": "CLAUDIA GUILOFF PUPLAN",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-04-21",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/21/42935/05/1930232.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-01-25",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/25/41667/05/1172936.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-01-23",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/23/41665/05/1172594.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5aca1c62c205017f3f28d171a2407c24fac8de20064d96a2856ebc0029ae4fa4",
+      "cached_at": "2026-05-31T21:32:08.624057"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96550960-7",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "22-01-2017 21:00:00",
+            "razonSocial": "SODEXO SERVICIOS S.A",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/23/41665/05/1172594.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "96550960-7"
+          },
+          {
+            "fecha": "24-01-2017 21:00:00",
+            "razonSocial": "SODEXO SERVICIOS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/25/41667/05/1172936.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "SODEXO SERVICIOS S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "96550960-7"
+          },
+          {
+            "fecha": "20-04-2021 20:00:00",
+            "razonSocial": "SODEXO SERVICIOS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/21/42935/05/1930232.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "96550960-7"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "96550960-7",
+            "sociedad": "SODEXO SERVICIOS S.A"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e8e0facf3247c07fd43546d5726dad8fbc17cd90eff1f6c1fea2d25b5b7ee7c1",
+        "cached_at": "2026-05-31T21:32:08.975549"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 2878870,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 34.285714285714285,
+      "numeradorJudicial": 72,
+      "denominadorJudicial": 210,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 65.71428571428572,
+      "porcentajeMoraPrevisional": 90.45189504373177,
+      "casosMoraPrevisional": 343,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 140168099,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 9.548104956268233,
+      "porcentajeBoletinComercial": 75,
+      "montoBoletinComercial": 1921850,
+      "ponderacionBoletinComercial": 25,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 200.26239067055394,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:f8594eade8b79bbc1f8bcc7201326d4546d2855dc98dd4adb9e2d850b8b06282",
+      "cached_at": "2026-05-31T21:32:09.570282"
+    }
+  }
+}

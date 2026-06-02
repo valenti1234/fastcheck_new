@@ -1,0 +1,150 @@
+{
+  "pathCount": 12,
+  "relationships": [
+    {
+      "source": "76206460",
+      "target": "10872295",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-12-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76206460",
+      "target": "11961258",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1161173",
+        "cve": "1161173",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2016-12-31",
+        "doc_extraction_id": "1483304",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/12/31/41647/05/1161173.pdf"
+      }
+    },
+    {
+      "source": "76206460",
+      "target": "10872295",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1161173",
+        "cve": "1161173",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2016-12-31",
+        "doc_extraction_id": "1483304",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/12/31/41647/05/1161173.pdf"
+      }
+    },
+    {
+      "source": "76840498",
+      "target": "10872295",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-03-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76551612",
+      "target": "10872295",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-10-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76235647",
+      "target": "10872295",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-01-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76235647",
+      "target": "10872295",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_586452",
+        "cve": "586452",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2013-01-05",
+        "doc_extraction_id": "1553894",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2013/01/05/586452_C_LTDA_20130105_firmado.pdf"
+      }
+    },
+    {
+      "source": "76551612",
+      "target": "10872295",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACmhjWsRO4r1",
+        "source": "RES",
+        "published_at": "2015-10-07"
+      }
+    },
+    {
+      "source": "76840498",
+      "target": "10872295",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC5nQ4ZQTSlz",
+        "source": "RES",
+        "published_at": "2018-03-02"
+      }
+    },
+    {
+      "source": "76332205",
+      "target": "11961258",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-12-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76235647",
+      "target": "11961258",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_586452",
+        "cve": "586452",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2013-01-05",
+        "doc_extraction_id": "1553894",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2013/01/05/586452_C_LTDA_20130105_firmado.pdf"
+      }
+    },
+    {
+      "source": "76332205",
+      "target": "11961258",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACQFMcMSH9na",
+        "source": "RES",
+        "published_at": "2013-12-13"
+      }
+    }
+  ],
+  "entityNames": {
+    "10872295": "DAGOBERTO EDUARDO HIDALGO SANCHEZ",
+    "11961258": "SANDRA INES CERDA OLIVA",
+    "76206460": "SOC CONSTRUCTORA HIDALGO CERDA LTDA",
+    "76235647": "TRANSPORTES CERDA HIDALGO LIMITADA",
+    "76332205": "TRANSPORTES SANDRA INÉS CERDA OLIVA E.I.R.L.",
+    "76551612": "TECNOLOGIA SOPORTE Y CONTROL LIMITADA",
+    "76840498": "INMOBILIARIA E INVERSIONES JACI SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:6591b50f80af4924d4c5f0b571af2fee8ea17ca7fcc8e4a487a077f1daa728a8",
+    "cached_at": "2026-05-30T00:03:49.496727"
+  }
+}

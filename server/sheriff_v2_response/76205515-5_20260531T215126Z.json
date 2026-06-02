@@ -1,0 +1,704 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76205515-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76205515-5",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "SERVICIOS VICTORIA SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "12-04-2012",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "MANTENIMIENTO Y REPARACION DE VEHICULOS AUTOMOTORES",
+            "codigo": "452002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "11-04-2012"
+          },
+          {
+            "actividades": "SERVICIOS DE TRANSPORTE DE TRABAJADORES",
+            "codigo": "492220",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "08-01-2016"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2017"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 8,
+        "ultimaActualizacion": "31-05-2026 21:49:22",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "5.000,01 a 10.000,00",
+          "cantidadTrabajadores": 8
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "31-05-2026 21:49:20"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "31-05-2026 21:49:19",
+        "ultimaActualizacionCobranza": "31-05-2026 21:49:19",
+        "ultimaActualizacionLaboral": "31-05-2026 21:49:19",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 10,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 66.67,
+            "cambioAbsoluto": 4
+          },
+          "ultimaActualizacion": "31-05-2026 21:49:29"
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:49:19"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:49:20"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "11-12-2019 21:00:00",
+              "actuacion": "MIGRACIÓN",
+              "numeroAtencion": "2710759",
+              "razonSocial": "MANTENCION Y LIMPIEZA DE VEHICULOS Y OTROS MARCELA CORTES CODOCEO E.I.R.L.",
+              "cve": "AC3vWnvn3Lfy",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3vWnvn3Lfy&codigo=61-A1-A3-BE-7E-8C-3C-F5-37-B4-A4-E9-B7-3A-D0-22",
+              "socios": [
+                {
+                  "socio": "MARCELA ALEJANDRA CORTES CODOCEO",
+                  "rut": "13418137-0",
+                  "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA",
+                  "acciones": "1.000.000",
+                  "monto": "CL1.000.000",
+                  "porcentaje": "100%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "MARCELA ALEJANDRA CORTES CODOCEO",
+                  "rut": "13418137-0",
+                  "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA"
+                }
+              ]
+            },
+            {
+              "fecha": "16-01-2020 21:00:00",
+              "actuacion": "TRANSFORMACIÓN",
+              "numeroAtencion": "2710814",
+              "razonSocial": "SERVICIOS VICTORIA SPA",
+              "cve": "ACvU5BAZ1XEo",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvU5BAZ1XEo&codigo=9B-43-2F-38-8B-F2-85-6F-1B-3F-BB-33-A8-80-D1-75",
+              "socios": [
+                {
+                  "socio": "MARCELA ALEJANDRA CORTES CODOCEO",
+                  "rut": "13418137-0",
+                  "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA",
+                  "acciones": "1000",
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": "100%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "MARCELA ALEJANDRA CORTES CODOCEO",
+                  "rut": "13418137-0",
+                  "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 156360,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 156360,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 6090,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 168250,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 168250,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 13950
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 12,
+          "tasacionTotal": 194732825,
+          "ultimaActualizacion": "31-05-2026 21:49:20"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "31-05-2026 21:49:20"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": 100,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "SERVICIOS VICTORIA SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0147f53130074bbe091bafbd2d69a0b430a56e09a96c1b4bfbe3d6b7675c8c4e",
+      "cached_at": "2026-05-31T21:51:23.008089"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:49:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:240171d922297966cf1a7175629f0b24610d1130f728ce8d18bef5b80dfedc3e",
+        "cached_at": "2026-05-31T21:51:23.349712"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:49:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:274b45ae6e20c76e86288ae880d1f7da78650b6905372f03cb9656643d20504b",
+        "cached_at": "2026-05-31T21:51:23.687466"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:49:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:13389e311ab27396162f4cdb310bfa11cca63ff39532f4435a25167ff4f02377",
+        "cached_at": "2026-05-31T21:51:24.025760"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:49:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:07b7a37b9a7b290c44fecc73c78e694af7f222e688f01ec6a3144a76db1f42f5",
+        "cached_at": "2026-05-31T21:51:24.370516"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 10,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO GIL OCAMPO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26280622-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO GIL OCAMPO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26280622-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO GIL OCAMPO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "26280622-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAVID ALEJANDRO GIL OCAMPO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "26280622-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2020 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARCELA ALEJANDRA CORTES CODOCEO ",
+            "periodo": "02/2020",
+            "rutAfiliado": "13418137-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARCELA ALEJANDRA CORTES CODOCEO ",
+            "periodo": "01/2020",
+            "rutAfiliado": "13418137-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-02-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARCELA ALEJANDRA CORTES CODOCEO ",
+            "periodo": "12/2019",
+            "rutAfiliado": "13418137-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2020 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARCELA ALEJANDRA CORTES CODOCEO ",
+            "periodo": "11/2019",
+            "rutAfiliado": "13418137-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2019 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARCELA ALEJANDRA CORTES CODOCEO ",
+            "periodo": "10/2019",
+            "rutAfiliado": "13418137-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-11-2019 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "MARCELA ALEJANDRA CORTES CODOCEO ",
+            "periodo": "09/2019",
+            "rutAfiliado": "13418137-0",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:49:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0d2f968dd2197205ce62de9067b190e32c49bf88a1b1766e35646fcf41aa6a0f",
+        "cached_at": "2026-05-31T21:51:24.729911"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76205515-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "SERVICIOS VICTORIA SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SERVICIOS VICTORIA SPA",
+            "rutSociedad": "76205515-5",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "MARCELA ALEJANDRA CORTES CODOCEDO",
+                "rut": "13418137-0",
+                "domicilio": "SOTOMAYOR 3026",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "TRANSFORMACIÓN",
+                "fecha": "2020-01-17",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvU5BAZ1XEo&codigo=9B-43-2F-38-8B-F2-85-6F-1B-3F-BB-33-A8-80-D1-75"
+              },
+              {
+                "actuacion": "MIGRACIÓN",
+                "fecha": "2019-12-12",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3vWnvn3Lfy&codigo=61-A1-A3-BE-7E-8C-3C-F5-37-B4-A4-E9-B7-3A-D0-22"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:599ace3bc05e95b781dbeb145e7eb6156722886f6bc671ed54ba4887debbbb83",
+      "cached_at": "2026-05-31T21:51:25.351580"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76205515-5",
+        "empresaEnUnDia": [
+          {
+            "fecha": "11-12-2019 21:00:00",
+            "actuacion": "MIGRACIÓN",
+            "numeroAtencion": "2710759",
+            "razonSocial": "MANTENCION Y LIMPIEZA DE VEHICULOS Y OTROS MARCELA CORTES CODOCEO E.I.R.L.",
+            "cve": "AC3vWnvn3Lfy",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3vWnvn3Lfy&codigo=61-A1-A3-BE-7E-8C-3C-F5-37-B4-A4-E9-B7-3A-D0-22",
+            "socios": [
+              {
+                "socio": "MARCELA ALEJANDRA CORTES CODOCEO",
+                "rut": "13418137-0",
+                "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA",
+                "acciones": "1.000.000",
+                "monto": "CL1.000.000",
+                "porcentaje": "100%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "MARCELA ALEJANDRA CORTES CODOCEO",
+                "rut": "13418137-0",
+                "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA"
+              }
+            ]
+          },
+          {
+            "fecha": "16-01-2020 21:00:00",
+            "actuacion": "TRANSFORMACIÓN",
+            "numeroAtencion": "2710814",
+            "razonSocial": "SERVICIOS VICTORIA SPA",
+            "cve": "ACvU5BAZ1XEo",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvU5BAZ1XEo&codigo=9B-43-2F-38-8B-F2-85-6F-1B-3F-BB-33-A8-80-D1-75",
+            "socios": [
+              {
+                "socio": "MARCELA ALEJANDRA CORTES CODOCEO",
+                "rut": "13418137-0",
+                "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA",
+                "acciones": "1000",
+                "monto": "$1.000.000 CLP",
+                "porcentaje": "100%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "MARCELA ALEJANDRA CORTES CODOCEO",
+                "rut": "13418137-0",
+                "domicilio": "PASAJE HUAYNA ATACAMA N°3058 VILLA PORTAL DEL INCA COMUNA DE CALAMA REGION DE ANTOFAGASTA"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0a29a6de42f8a906be85a4d8ae67d63324e016790237d8ab49556dfd8963ad57",
+        "cached_at": "2026-05-31T21:51:25.711591"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 156360,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 4,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1e0f1dd674e679dd7aac222ecdce020fd7f277c2d788af438316682cf5dcf31c",
+      "cached_at": "2026-05-31T21:51:26.334876"
+    }
+  }
+}

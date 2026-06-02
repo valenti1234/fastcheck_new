@@ -1,0 +1,100 @@
+{
+  "pathCount": 7,
+  "relationships": [
+    {
+      "source": "76042618",
+      "target": "14363307",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-12-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76042618",
+      "target": "15498345",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2477614",
+        "cve": "2477614",
+        "shares_percent": 1,
+        "source": "DO",
+        "published_at": "2024-04-10",
+        "doc_extraction_id": "2145331",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2024/04/10/43822/05/2477614.pdf"
+      }
+    },
+    {
+      "source": "76042618",
+      "target": "14363307",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2477614",
+        "cve": "2477614",
+        "shares_percent": 99,
+        "source": "DO",
+        "published_at": "2024-04-10",
+        "doc_extraction_id": "2145331",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2024/04/10/43822/05/2477614.pdf"
+      }
+    },
+    {
+      "source": "76336896",
+      "target": "14363307",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-11-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76114294",
+      "target": "14363307",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2010-09-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76336896",
+      "target": "14363307",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_698218",
+        "cve": "698218",
+        "shares_percent": 99,
+        "source": "DO",
+        "published_at": "2013-10-18",
+        "doc_extraction_id": "2113471",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2013/10/18/698218_C_LTDA_20131018_firmado.pdf"
+      }
+    },
+    {
+      "source": "76114294",
+      "target": "14363307",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2476461",
+        "cve": "2476461",
+        "shares_percent": 99,
+        "source": "DO",
+        "published_at": "2024-04-06",
+        "doc_extraction_id": "1865882",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2024/04/06/43819/05/2476461.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "14363307": "JUAN JORGE VERDUGO ZAVALA",
+    "15498345": "YANSI AIDE SUAREZ SUAREZ",
+    "76042618": "INGENIERIA, INDUSTRIA Y CONSTRUCCION SOLVE LIMITADA",
+    "76114294": "SOLVE INGENIERIA LIMITADA",
+    "76336896": "INDUSTRIAL METALFABRIK LIMITADA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:37f2256d79728bc50ef7c6aa0b6f3fc629c7b29ba799cb5d717addaa9ce6e82b",
+    "cached_at": "2026-05-30T00:05:46.422207"
+  }
+}

@@ -1,0 +1,916 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "11319305-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "11319305-0",
+      "esPersonaJuridica": false,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "NALDA ELIZABETH AVILA BENAVIDES",
+        "presentaActividades": "NO",
+        "inicioActividades": null,
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [],
+        "documentosTimbrados": [],
+        "cantidadActividades": null,
+        "cantidadDocumentos": null,
+        "ultimaActualizacion": "30-05-2026 00:22:16",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 1,
+        "casosBolcom": 0,
+        "MontoInfocom": 72135,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 72135
+        },
+        "ultimaActualizacion": "30-05-2026 00:22:16"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 2,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 2,
+        "casosConcluidos": 1,
+        "todosLosCasos": 3,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 2
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:22:16",
+        "ultimaActualizacionCobranza": "30-05-2026 00:22:15",
+        "ultimaActualizacionLaboral": "30-05-2026 00:22:16",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:22:16"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 70,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 70,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 75,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances"
+        ],
+        "porcentajeClasificacion": 175,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "NALDA",
+        "segundoNombre": "ELIZABETH",
+        "apellido": "AVILA",
+        "segundoApellido": "BENAVIDES",
+        "tipoPersona": "natural",
+        "riesgo": "critical",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 4,
+            "riesgo": "critical"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:e8ba44ba052b6e4c5625b4b47e9f7497d67684548a31bbecd976ac32f6261ed5",
+      "cached_at": "2026-05-30T00:22:27.554093"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "21-08-2016 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96825170-8",
+                "nombre": "SOCIEDAD DE CREDITOS COMERCIALES S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8924473-0",
+                "nombre": "JOSÉ ENRIQUE CORREA TOCORNAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "11319305-0",
+                "nombre": "NALDA ELIZABETH ÁVILA BENAVIDES",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantía",
+            "rol": "C-2083-2016",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "15 Terminada ",
+            "fechaIngreso": "27-12-2015 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9794445-8",
+                "nombre": "PABLO SEBASTIÁN TORRENS MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "11319305-0",
+                "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96842380-0",
+                "nombre": " TRICARD S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-32671-2015",
+            "tribunal": "13º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "09-11-2015 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96825170-8",
+                "nombre": " SOCIEDAD DE CREDITOS COMERCIAL ES S.A.",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "11319305-0",
+                "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8924473-0",
+                "nombre": "JOSÉ ENRIQUE CORREA TOCORNAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15143956-K",
+                "nombre": "GONZALO EDUARDO BAEZA RUZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-3300-2015",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:22:15"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c614e1ac0f21a528f74c8a739f8514d0bfcae1f0d72c4aed0f2ee9433630acdd",
+        "cached_at": "2026-05-30T00:22:27.915862"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:15"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:31ee7d14520342b7e4165c2aae94b896955c5d029bd302360b1896bad080848d",
+        "cached_at": "2026-05-30T00:22:28.274428"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:15"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1d7cd534f9b6c6a15df321f999bc11e4219b91310ddcf33a60638683e0802581",
+        "cached_at": "2026-05-30T00:22:28.612862"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:16"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c41bd526957482c1e7ec8ed6c42b78b1b33fa16ac377d1044437ace8239ff18b",
+        "cached_at": "2026-05-30T00:22:28.976005"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:22:16"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:fe8d126e1f01966375d693134284889211ecc5ca54ae4936abc3b7993e39078c",
+        "cached_at": "2026-05-30T00:22:29.312221"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "11319305-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+            "postura": "Denunciante",
+            "rol": "Ordinaria-2650-2022",
+            "fecha": "12/04/2022",
+            "infraccion": "AMENAZAS SIMPLES CONTRA PERSONAS Y PROPIEDADES ART. 296 Nº3.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MANUEL HUMBERTO ARAVENA MONTECINOS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PAOLA ANDREA GONZÁLEZ DÍAZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RODRIGO ANDRÉS CHÁVEZ MOYANO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Talca",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "NALDA ELIZABETH ÁVILA BENAVIDES",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-587-2021",
+            "fecha": "11/04/2021",
+            "infraccion": "FALSIFICACION O USO MALICIOSO DE DOC PÚBL ART. 193,194,196 | INFRINGIR NORMAS HIGIÉNICAS Y DE SALUBRIDAD",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "MANUEL HUMBERTO ARAVENA ÁVILA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MP.",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NALDA ELIZABETH ÁVILA BENAVIDES",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "PATRICIO ELISEO CAROCA LUENGO",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SILVIA ALEJANDRA CARREÑO VÁSQUEZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de San Javier",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+            "postura": "Testigo",
+            "rol": "Ordinaria-29-2014",
+            "fecha": "25/03/2014",
+            "infraccion": "Trafico ilícito de drogas (Art. 3).",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "ANGEL DAVID ÁVILA CALDERÓN",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ANTONIO SEPULVEDA DIAZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CARABINEROS",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CCP TALCA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL OCTAVIO VERGARA GALAZ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ELIZABETH DEL CARMEN AGUSTO AGUSTO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ELIZETH VILLENAS MEDEL",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EUGENIO JOAQUÍN GARCÍA REVECO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FERNANDO MONTERO VIVEROS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO JAVIER ROSSI GONZALEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO LEON LETELIER",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GUILLERMO ANTONIO ARAVENA ÁVILA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "IGNACIO GARRIDO GUERRERO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "INES BLANCO BAEZA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE SANDOVAL MUÑOZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN MOYA PIZARRO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KARINA ROMERO GARCIA",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS ALEJANDRO ARAVENA ÁVILA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Privado libertad"
+              },
+              {
+                "nombre": "MANUEL HUMBERTO ARAVENA AVILA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELINO ERNESTO ZUÑIGA ABRIGO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIA ALICIA TORRES OLAVE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAURICIO GONZALEZ MORALES",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOL FRANCISCA BRAVO HIDALGO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SILVIA ALEJANDRA CARREÑO VÁSQUEZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VERONICA AVALOS ODANO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "YAZMIN ANDREA ALARCON ROMERO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Auto de apertura",
+            "tribunal": "Tribunal de Juicio Oral en lo Penal de Talca",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+            "postura": "Testigo",
+            "rol": "Ordinaria-4090-2013",
+            "fecha": "31/05/2013",
+            "infraccion": "Trafico ilícito de drogas (Art. 3).",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "ANGEL DAVID ÁVILA CALDERÓN",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ANTONIO SEPULVEDA DIAZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CARABINEROS",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CCP TALCA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL OCTAVIO VERGARA GALAZ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ELIZABETH DEL CARMEN AGUSTO AGUSTO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ELIZETH VILLENAS MEDEL",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EUGENIO JOAQUÍN GARCÍA REVECO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FERNANDO MONTERO VIVEROS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO JAVIER ROSSI GONZALEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO LEON LETELIER",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GUILLERMO ANTONIO ARAVENA ÁVILA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "IGNACIO GARRIDO GUERRERO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "INES BLANCO BAEZA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE SANDOVAL MUÑOZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN MOYA PIZARRO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KARINA ROMERO GARCIA",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS ALEJANDRO ARAVENA ÁVILA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Privado libertad"
+              },
+              {
+                "nombre": "MANUEL HUMBERTO ARAVENA AVILA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELINO ERNESTO ZUÑIGA ABRIGO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIA ALICIA TORRES OLAVE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAURICIO GONZALEZ MORALES",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NALDA ELIZABETH AVILA BENAVIDES",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOL FRANCISCA BRAVO HIDALGO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SILVIA ALEJANDRA CARREÑO VÁSQUEZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TOP TALCA",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VERONICA AVALOS ODANO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "YAZMIN ANDREA ALARCON ROMERO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Talca",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 4
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0f325da26260d6272d5a6e4db06c5aedd256038f0c6845ec354e35a03a486bcc",
+      "cached_at": "2026-05-30T00:22:30.459831"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "11319305-0",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c3410dc4bc70fc5ced7e5e6d035eef8e0228c4cbfdaeba32b6cd63c48941da4c",
+        "cached_at": "2026-05-30T00:22:30.802185"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": false,
+      "porcentajeFinanzas": 100,
+      "numeradorFinanzas": 70,
+      "denominadorFinanzas": 70,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 3,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 25,
+      "montoBoletinComercial": 72135,
+      "ponderacionBoletinComercial": 75,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 175,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 0
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a35d68b488f4d6c16d940687a77904cb6156f8332ac982ae3dfd75ecdbcec0db",
+      "cached_at": "2026-05-30T00:22:31.416408"
+    }
+  }
+}

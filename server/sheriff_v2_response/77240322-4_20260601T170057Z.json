@@ -1,0 +1,1629 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77240322-4"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77240322-4",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "19-10-2020",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralSeñor Contribuyente, el Servicio de Impuestos Internos, por norma legal, se encuentra imposibilitado de entregar información detallada a terceros de su situación tributaria.De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.La situación se presenta a contar del  18-03-2026",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "MANTENIMIENTO Y REPARACION DE VEHICULOS AUTOMOTORES",
+            "codigo": "452002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-10-2020"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-10-2020"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2021"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 5,
+        "ultimaActualizacion": "01-06-2026 17:00:52",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "50.000,01 a 100.000,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 6,
+        "casosBolcom": 47,
+        "MontoInfocom": 27909738,
+        "MontoBolcom": 156107123,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": 105.78,
+          "cambioAbsoluto": 94592441
+        },
+        "ultimaActualizacion": "01-06-2026 17:00:53"
+      },
+      "judicial": {
+        "casosCivilesActivos": 12,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 4,
+        "cobranzaActivos": 3,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 3,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 18,
+        "casosArchivados": 0,
+        "casosConcluidos": 4,
+        "todosLosCasos": 22,
+        "casosQuiebra": 1,
+        "posturasActivasPresentadas": {
+          "demandado": 14,
+          "demandante": 1,
+          "deudor": 1,
+          "denunciado": 2
+        },
+        "ultimaActualizacionCiviles": "01-06-2026 17:00:51",
+        "ultimaActualizacionCobranza": "01-06-2026 17:00:51",
+        "ultimaActualizacionLaboral": "01-06-2026 17:00:51",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 51,
+          "empleados": 25,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 218.75,
+            "cambioAbsoluto": 35
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 1224612,
+          "multasPagadas": 2,
+          "montoMultasPagadas": 1224612,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:00:52"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "27-09-2020 21:00:00",
+              "razonSocial": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/09/28/42766/05/1823350.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "LUIS ALBERTO URQUIZA GUERRA",
+                  "rut": "11190242-9",
+                  "domicilio": "AVENIDA PEDRO AGUIRRE CERDA N 11.092 ANTOFAGASTA"
+                },
+                {
+                  "socio": "LUIS ALBERTO URQUIZA CORTES",
+                  "rut": "17092163-1",
+                  "domicilio": "CALLE MALAQUÍAS CONCHA N 1863-4 CALAMA"
+                }
+              ],
+              "rut": "77240322-4"
+            },
+            {
+              "fecha": "22-05-2022 20:00:00",
+              "razonSocial": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/05/23/43259/05/2131391.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "LUIS ALBERTO URQUIZA GUERRA",
+                  "rut": "11190242-9",
+                  "domicilio": "AVENIDA PEDRO AGUIRRE CERDA N 11.092 ANTOFAGASTA"
+                },
+                {
+                  "socio": "LUIS ALBERTO URQUIZA CORTES",
+                  "rut": "17092163-1",
+                  "domicilio": "CALLE MALAQUÍAS CONCHA N 1863-4 CALAMA"
+                },
+                {
+                  "socio": "DANILO ALBERTO URQUETA URQUETA",
+                  "rut": "17655986-1",
+                  "domicilio": "CALLE OHIGGINS N 11 COMUNA DE SIERRA GORDA"
+                }
+              ],
+              "rut": "77240322-4"
+            }
+          ],
+          "ultimaActualizacion": "01-06-2026 17:00:52"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 148620,
+        "deudaDirectaCastigada": 37570,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 24270,
+        "deudaDirectaVencida": 25620,
+        "deudaDirectaVigente": 244970,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 34440,
+        "leasingVigente": 64830,
+        "lineaCredito": 9930,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 155900,
+          "deudaDirectaCastigada": 150,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 19650,
+          "deudaDirectaVencida": 10040,
+          "deudaDirectaVigente": 301850,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 12020,
+          "leasingVigente": 84360,
+          "lineaCredito": 10380
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 6,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "09-03-2026 22:11:00"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "09-03-2026 22:11:01"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 71.76279823951819,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 19.04761904761905,
+        "judicialBankruptcy": true,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 6.372549019607845,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 15.881028775989932,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": -286.936004917265,
+        "etiquetaClasificacion": "Critical"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:bf88732e4360e6fd7adf667f31e25f9bbf135beed326ba8fc36d29dd7af08145",
+      "cached_at": "2026-06-01T17:00:54.213007"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 16,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "15-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17839062-7",
+                "nombre": "EDUARDO ESTEBAN PEÑA GARAVITO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77078244-9",
+                "nombre": "X CAPITAL SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-800-2026",
+            "tribunal": "3º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "01-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76267002-K",
+                "nombre": "SANTA IDE SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15771582-8",
+                "nombre": "ESTEBAN JAVIER LARRONDO OSSANDÓN (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-665-2026",
+            "tribunal": "2º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "",
+            "estadoCausa": "",
+            "etapa": "",
+            "fechaIngreso": "22-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76590264-9",
+                "nombre": "LIBERO SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16438208-7",
+                "nombre": "NICOLÁS GERÓNIMO BRIBBO AMAS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "",
+            "rol": "C-605-2026",
+            "tribunal": "3º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "05-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12574894-5",
+                "nombre": "RODRIGO IGNACIO MANDIOLA CEPEDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76869923-2",
+                "nombre": "CONSULTORÍA Y VENTA DE SUMINISTROS LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-446-2026",
+            "tribunal": "2º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "04-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "97030000-7",
+                "nombre": "BANCO DEL ESTADO   DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18431792-3",
+                "nombre": "NICOLÁS ALEJANDRO MUÑOZ FERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13869531-K",
+                "nombre": "CRISTIAN MIGUEL OGALDE MESSINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17092163-1",
+                "nombre": "LUIS ALBERTO URQUIZA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-445-2026",
+            "tribunal": "1º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "04-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18431792-3",
+                "nombre": "NICOLÁS ALEJANDRO MUÑOZ FERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13869531-K",
+                "nombre": "CRISTIAN MIGUEL OGALDE MESSINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17092163-1",
+                "nombre": "LUIS ALBERTO URQUIZA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "97030000-7",
+                "nombre": "BANCO DEL ESTADO   DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-446-2026",
+            "tribunal": "1º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Terminada",
+            "fechaIngreso": "04-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8423336-6",
+                "nombre": "ALEJANDRO ANTONIO PACHECO MUNDACA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10269291-8",
+                "nombre": "JULIO CÉSAR AGUILERA MOLINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Monitorio",
+            "rol": "C-441-2026",
+            "tribunal": "4 ° Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "04-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "97030000-7",
+                "nombre": "BANCO DEL ESTADO   DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18431792-3",
+                "nombre": "NICOLÁS ALEJANDRO MUÑOZ FERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13869531-K",
+                "nombre": "CRISTIAN MIGUEL OGALDE MESSINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17092163-1",
+                "nombre": "LUIS ALBERTO URQUIZA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-444-2026",
+            "tribunal": "1º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio tramitación",
+            "fechaIngreso": "03-09-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96861280-8",
+                "nombre": "EUROCAPITAL S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDOR.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10548434-8",
+                "nombre": "FRANCISCO JAVIER URRESTI BOFILL (Sin Acreditacion)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Liquidación Forzosa",
+            "rol": "C-2962-2025",
+            "tribunal": "2º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDOR.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "30-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "77356020-K",
+                "nombre": "COMERCIAL DE VALORES SERVICIOS FINANCIEROS SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15838354-3",
+                "nombre": "EMILIO FERNANDO PAYERA VELÁSQUEZ (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18463504-6",
+                "nombre": "JAVIER ANTONIO VALENZUELA FARÍAS (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17092163-1",
+                "nombre": "LUIS ALBERTO URQUIZA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-9275-2025",
+            "tribunal": "3º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "22-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16672960-2",
+                "nombre": "NICOLE YESSENIA BOLADOS ANGEL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16488660-3",
+                "nombre": "JOCELYN CECILIA PÉREZ SEGOVIA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77237934-K",
+                "nombre": "MUNDO SERVICIOS SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2187-2025",
+            "tribunal": "2º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "21-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17092163-1",
+                "nombre": "LUIS ALBERTO URQUIZA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10548434-8",
+                "nombre": "FRANCISCO JAVIER URRESTI BOFILL (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13599738-2",
+                "nombre": "JUAN CARLOS BUSTOS ESPINOSA (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96861280-8",
+                "nombre": "EUROCAPITAL S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-1705-2025",
+            "tribunal": "1º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "06-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13599738-2",
+                "nombre": "JUAN CARLOS BUSTOS ESPINOSA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16210104-8",
+                "nombre": "RAÚL ANDRÉS DELL'ORO PALMA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17092163-1",
+                "nombre": "LUIS ALBERTO URQUIZA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76005909-9",
+                "nombre": "COMERCIAL MOTORES DE LOS ANDES SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-6449-2025",
+            "tribunal": "5º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "06-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10353281-7",
+                "nombre": "PATRICIO BERNARDO MARTÍNEZ FUENTES",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77943259-9",
+                "nombre": "GROWE ARTEAGA SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-4374-2024",
+            "tribunal": "1º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "12-09-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76936715-2",
+                "nombre": "BRATO RENTAL SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10348133-3",
+                "nombre": "FERNANDO ARTURO YUNG MORAGA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "BRATO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-4263-2023",
+            "tribunal": "2º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "16-06-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13599738-2",
+                "nombre": "JUAN CARLOS BUSTOS ESPINOSA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76544188-9",
+                "nombre": "MHE MAESTRANZA Y CONSTRUCCIÓN LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15019690-6",
+                "nombre": "JAVIER IGNACIO ROJAS MANCILLA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-1526-2021",
+            "tribunal": "1º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:00:52"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6bfe71dfd64c6b63fee88d9950cf00bd977b1fdc1edc10bb8e07341b96768d9e",
+        "cached_at": "2026-06-01T17:00:54.563265"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "15-03-2026 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendaño",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-681-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "10-03-2026 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "98001200-K",
+                "nombre": "Administradora de Fondos de Pensiones Planvital",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendaño",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-584-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-01-2026 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "77601648-9",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE III S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendaño",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-67-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:00:52"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:334ae33451a38a9691e708e2377c727c84f16dace92813c87d449546c6583010",
+        "cached_at": "2026-06-01T17:00:54.924032"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13599738-2",
+                "nombre": "JUAN CARLOS BUSTOS ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17295276-3",
+                "nombre": "ALEJANDRA PAOLA ARAYA CORTÉS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1617-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "14-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13419689-0",
+                "nombre": "JUAN ÁLVARO SALAS SANTANDER (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25977867-0",
+                "nombre": "EFRAIN ANDRES MORENO MANRIQUE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17725612-9",
+                "nombre": "ALONSO MAURICIO MONDACA AVENDAÑO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13599738-2",
+                "nombre": "JUAN CARLOS BUSTOS ESPINOSA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-45-2024",
+            "tribunal": "Juzgado de Letras de Mejillones",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13419689-0",
+                "nombre": "JUAN ÁLVARO SALAS SANTANDER (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16009300-5",
+                "nombre": "BASILIO ESTEBAN GORRI LÓPEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77240322-4",
+                "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88325800-2",
+                "nombre": "COMPLEJO METALURGICO ALTONORTE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-44-2024",
+            "tribunal": "Juzgado de Letras de Mejillones",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:00:52"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:76cf4ec4a7dd481356d61b8bfb94d77e96053453e0a4f2008be0ce0cb87260da",
+        "cached_at": "2026-06-01T17:00:55.325682"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "enunciado": "No comunicar personalmente o por escrito al trabajador el término de contrato del trabajo en el plazo de (3) – (6) días hábiles.",
+            "estado": "PAGADA",
+            "fecha": "11-03-2025 21:00:00",
+            "multa": "3487/24/457-1",
+            "procedencia": "RECLAMO",
+            "um": "10",
+            "tipoUm": "UTM",
+            "montoClp": 680340
+          },
+          {
+            "enunciado": "No enviar a la Inspección del Trabajo dentro del plazo de 3 días hábiles copia del aviso de término del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "11-03-2025 21:00:00",
+            "multa": "3487/24/457-2",
+            "procedencia": "RECLAMO",
+            "um": "8",
+            "tipoUm": "UTM",
+            "montoClp": 544272
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:00:51"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8928d79f0128e843dbd776ea0738d1bb8a285f4bd201b89fb23a9e2d2d95041d",
+        "cached_at": "2026-06-01T17:00:55.683489"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 4,
+        "cantidad": 63,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUIS URQUIZA CORTES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17092163-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DENNISE ALEXANA CAMPILLAY ROJAS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18507873-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DENNISE ALEXANA CAMPILLAY ROJAS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18507873-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUIS ALBERTO URQUIZA CORTES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17092163-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MIGUEL DIAZ MEZA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17930816-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "IVAN IGNACIO SOTO GONZALEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17821753-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RUBEN ADRIAN JARA PARRA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17453687-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUIS EDUARDO AMAYA LAY ",
+            "periodo": "12/2025",
+            "rutAfiliado": "16351344-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCO MICHAEL GARRIDO BUSTAMANTE ",
+            "periodo": "12/2025",
+            "rutAfiliado": "18176705-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEX ANDRES CHAVEZ PENA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15448738-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JAIME ALEJANDRO SILVA SALINAS ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14188933-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EDUARDO ALEJANDRO MOREIRA PARRALES ",
+            "periodo": "12/2025",
+            "rutAfiliado": "23694428-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCELO ALEJANDRO BREVE VILLABLANCA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "14213606-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCELO FERNANDO BUSTOS MORALES ",
+            "periodo": "10/2025",
+            "rutAfiliado": "10988633-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ISRAEL ALEJANDRO CANTO ROCO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "10214161-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAURO ANDRES CONTRERAS RAMIREZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "15680040-6",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCELO FERNANDO BUSTOS MORALES ",
+            "periodo": "10/2025",
+            "rutAfiliado": "10988633-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAURO ANDRES CONTRERAS RAMIREZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "15680040-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAURO ANDRES CONTRERAS RAMIREZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "15680040-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ITALO IGNACIO FIGUEROA MATAMALA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "18588781-2",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:00:51"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4572b34828808f8955f432a2b29a4d0069aa4925840192318103471ede2d951f",
+        "cached_at": "2026-06-01T17:00:56.012860"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77240322-4",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+            "rutSociedad": "77240322-4",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2020-09-27",
+            "socios": [
+              {
+                "nombre": "LUIS ALBERTO URQUIZA GUERRA",
+                "rut": "11190242-9",
+                "domicilio": "AVENIDA PEDRO AGUIRRE CERDA 11092, ANTOFAGASTA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "LUIS ALBERTO URQUIZA CORTES",
+                "rut": "17092163-1",
+                "domicilio": "CALLE MALAQUÍAS CONCHA 1863, CASA 24 CONDOMINIO BARCELONA, CALAMA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "DANILO ALBERTO URQUETA URQUETA",
+                "rut": "17655986-1",
+                "domicilio": "O'HIGGINS N11 COMUNA DE SIERRA GORDA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "1"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-05-23",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/05/23/43259/05/2131391.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2020-09-28",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/09/28/42766/05/1823350.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ccfb1d31d4b1eb7855fb150ebeebc63a0ebe6a42e9d2372957082423063d2072",
+      "cached_at": "2026-06-01T17:00:56.620036"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77240322-4",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "27-09-2020 21:00:00",
+            "razonSocial": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/09/28/42766/05/1823350.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "LUIS ALBERTO URQUIZA GUERRA",
+                "rut": "11190242-9",
+                "domicilio": "AVENIDA PEDRO AGUIRRE CERDA N 11.092 ANTOFAGASTA"
+              },
+              {
+                "nombre": "LUIS ALBERTO URQUIZA CORTES",
+                "rut": "17092163-1",
+                "domicilio": "CALLE MALAQUÍAS CONCHA N 1863-4 CALAMA"
+              }
+            ],
+            "rut": "77240322-4"
+          },
+          {
+            "fecha": "22-05-2022 20:00:00",
+            "razonSocial": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/05/23/43259/05/2131391.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "LUIS ALBERTO URQUIZA GUERRA",
+                "rut": "11190242-9",
+                "domicilio": "AVENIDA PEDRO AGUIRRE CERDA N 11.092 ANTOFAGASTA"
+              },
+              {
+                "nombre": "LUIS ALBERTO URQUIZA CORTES",
+                "rut": "17092163-1",
+                "domicilio": "CALLE MALAQUÍAS CONCHA N 1863-4 CALAMA"
+              },
+              {
+                "nombre": "DANILO ALBERTO URQUETA URQUETA",
+                "rut": "17655986-1",
+                "domicilio": "CALLE OHIGGINS N 11 COMUNA DE SIERRA GORDA"
+              }
+            ],
+            "rut": "77240322-4"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "77240322-4",
+            "sociedad": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a8e3ae883c7699277c91d45ece291852cbeb9dc76272868989eaab5e6a80405e",
+        "cached_at": "2026-06-01T17:00:56.998147"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 28.237201760481817,
+      "numeradorFinanzas": 121900,
+      "denominadorFinanzas": 431700,
+      "ponderacionFinanzas": 71.76279823951819,
+      "porcentajeJudicial": 80.95238095238095,
+      "numeradorJudicial": 17,
+      "denominadorJudicial": 21,
+      "quiebraJudicial": true,
+      "ponderacionJudicial": 19.04761904761905,
+      "porcentajeMoraPrevisional": 93.62745098039215,
+      "casosMoraPrevisional": 51,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 1224612,
+      "porcentajeBoletinLaboral": 100,
+      "montoBoletinLaboral": 46234538,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 84.11897122401007,
+      "montoBoletinComercial": 184016861,
+      "ponderacionBoletinComercial": 15.881028775989932,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": -293.30855393687284,
+      "etiquetaClasificacion": "Critical",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3ee7bcf3c81f5b18c5a54cf5ed74e7926023a6c87bf05a10709f619331fcb8ae",
+      "cached_at": "2026-06-01T17:00:57.770369"
+    }
+  }
+}

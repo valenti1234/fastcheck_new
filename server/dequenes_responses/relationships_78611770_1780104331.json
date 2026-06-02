@@ -1,0 +1,37 @@
+{
+  "pathCount": 2,
+  "relationships": [
+    {
+      "source": "78611770",
+      "target": "6989902",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78611770",
+      "target": "6989902",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6475913",
+        "doh_extraction_id": "650846",
+        "shares_percent": 5,
+        "source": "DOH",
+        "doh_id": "6475913",
+        "published_at": "2005-11-12",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2005/11/12/do-20051112.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "6989902": "RICARDO HASBUN YANINE",
+    "78611770": "COMERCIALIZACION Y DISTRIBUCION COMPUTACIONAL S A"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:f9f374865d7abdb39c4e0c1cb6437c0d9af936158828d883a1585f9bbaaa58e6",
+    "retrieved_at": "2026-05-30T01:25:31.823994"
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "78427340-7"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "78427340-7",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "PETROHUE LTDA.",
+        "presentaActividades": "SI",
+        "inicioActividades": "05-10-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2003"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Honorarios",
+            "ultimoAnioTimbrado": "1999"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2004"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "1997"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": "01-06-2026 17:06:59",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "5.000,01 a 10.000,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 17:06:59"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 1,
+        "casosConcluidos": 0,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "01-06-2026 17:06:58",
+        "ultimaActualizacionCobranza": "01-06-2026 17:06:58",
+        "ultimaActualizacionLaboral": "01-06-2026 17:06:58",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:06:58"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:06:59"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "28-07-2017 20:00:00",
+              "razonSocial": "SERVICIOS PROFESIONALES PETROHUÉ LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/07/29/41821/05/1249566.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "HERNÁN JAVIER SION LABRA",
+                  "rut": null,
+                  "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CHESIRA DEL CARMEN MAIZ MINA",
+                  "rut": null,
+                  "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ÁLVARO SION MAIZ",
+                  "rut": null,
+                  "domicilio": "JAVIER DE VIANA 2478, VITACURA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CHESSIRA SION MAIZ",
+                  "rut": null,
+                  "domicilio": "DIEGO DE DEZA 1.159, DEPARTAMENTO 81, LAS CONDES, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "MACARENA SION MAIZ",
+                  "rut": null,
+                  "domicilio": "LAS DALIAS 2.728, DEPARTAMENTO 204, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "78427340-7"
+            },
+            {
+              "fecha": "16-04-2019 20:00:00",
+              "razonSocial": "SERVICIOS PROFESIONALES PETROHUÉ LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/04/17/42333/05/1576813.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "CHESIRA DEL CARMEN MAIZ MINA",
+                  "rut": null,
+                  "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ÁLVARO SION MAIZ",
+                  "rut": null,
+                  "domicilio": "JAVIER DE VIANA 2478, VITACURA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CHESSIRA SION MAIZ",
+                  "rut": null,
+                  "domicilio": "DIEGO DE DEZA 1.159, DEPARTAMENTO 81, LAS CONDES, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "MACARENA SION MAIZ",
+                  "rut": null,
+                  "domicilio": "LAS DALIAS 2.728, DEPARTAMENTO 204, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "78427340-7"
+            }
+          ],
+          "ultimaActualizacion": "01-06-2026 17:06:59"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 1500,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 1500
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "PETROHUE LTDA.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:65143c5aab5e7d9e1e42b272b13ae4dbd0e3227290b524f9973ea6a1b1f123f1",
+      "cached_at": "2026-06-01T17:07:00.662785"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "9 Ejecución de Sentencia",
+            "fechaIngreso": "30-06-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "78427340-7",
+                "nombre": " SERVICIOS PROFESIONALES PETROH UE LIMITADA",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "69070300-9",
+                "nombre": " ILUSTRE MUINICIPALIDAD DE PROV IDENCIA",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12469256-3",
+                "nombre": "JOSI MIGUEL MORALES NZQEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantía",
+            "rol": "C-12788-2014",
+            "tribunal": "20º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:06:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c74aecc13b9957b6c2c7deac1b5f728117d47ad5f7c3a7f10c0622c47c1150e2",
+        "cached_at": "2026-06-01T17:07:00.982175"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ead9c6be1774dfdf206d27e0ff66452c28ee61d63bdb6899acc284b7a317f4b0",
+        "cached_at": "2026-06-01T17:07:01.313456"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2b8ac016c4a47764cd8802cac5742591603436d1219c03e983130be6ca1f4d0d",
+        "cached_at": "2026-06-01T17:07:01.683894"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1f7b493fc5c28d843459cd705b4f3e4aa225f378bd8ecc62f2d6a271869cad66",
+        "cached_at": "2026-06-01T17:07:02.024127"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e5e5ec6de63e78e3bc0b652bf1d5556251a683bac6c11c0698c8671ece0f04be",
+        "cached_at": "2026-06-01T17:07:02.373332"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "78427340-7",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "PETROHUE LTDA.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "PETROHUE LTDA",
+            "rutSociedad": "78427340-7",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1993-09-23",
+            "socios": [
+              {
+                "nombre": "ALVARO SION MAIZ",
+                "rut": "14543321-5",
+                "domicilio": "DOMICILIADO EN TOMAS ANDREWS N°081, COMUNA DE PROVIDENCIA, REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CHESIRA DEL CARMEN MAIZ MINA",
+                "rut": "5471342-8",
+                "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "MACARENA SION MAIZ",
+                "rut": "15637325-7",
+                "domicilio": "LAS DALIAS 2728, DEPARTAMENTO 204, PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "HERNAN JAVIER SION LABRA",
+                "rut": "5395208-9",
+                "domicilio": "DOMICILIADO EN TOMAS ANDREWS N°081, COMUNA DE PROVIDENCIA, REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "60.00"
+              },
+              {
+                "nombre": "CHESSIRA SION MAIZ",
+                "rut": "8715335-5",
+                "domicilio": "DIEGO DE DEZA 1159 DEPARTAMENTO 81 LAS CONDES REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CHESIRA SION MAIZ",
+                "rut": null,
+                "domicilio": "DIEGO DE DEZA 1159, DEPARTAMENTO 81, LAS CONDES, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-04-17",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/04/17/42333/05/1576813.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-07-29",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/07/29/41821/05/1249566.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "INVERSIONES SORA SPA.",
+                "rut": "76240096-0",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:e16a458a0313da78beb10813dc026a55961c0d92304146927868a09d95a4415f",
+      "cached_at": "2026-06-01T17:07:03.055973"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "78427340-7",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "28-07-2017 20:00:00",
+            "razonSocial": "SERVICIOS PROFESIONALES PETROHUÉ LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/07/29/41821/05/1249566.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "HERNÁN JAVIER SION LABRA",
+                "rut": null,
+                "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "CHESIRA DEL CARMEN MAIZ MINA",
+                "rut": null,
+                "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ÁLVARO SION MAIZ",
+                "rut": null,
+                "domicilio": "JAVIER DE VIANA 2478, VITACURA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "CHESSIRA SION MAIZ",
+                "rut": null,
+                "domicilio": "DIEGO DE DEZA 1.159, DEPARTAMENTO 81, LAS CONDES, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "MACARENA SION MAIZ",
+                "rut": null,
+                "domicilio": "LAS DALIAS 2.728, DEPARTAMENTO 204, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "78427340-7"
+          },
+          {
+            "fecha": "16-04-2019 20:00:00",
+            "razonSocial": "SERVICIOS PROFESIONALES PETROHUÉ LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/04/17/42333/05/1576813.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "CHESIRA DEL CARMEN MAIZ MINA",
+                "rut": null,
+                "domicilio": "HERNANDO DE AGUIRRE 1073, DEPARTAMENTO 501, PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ÁLVARO SION MAIZ",
+                "rut": null,
+                "domicilio": "JAVIER DE VIANA 2478, VITACURA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "CHESSIRA SION MAIZ",
+                "rut": null,
+                "domicilio": "DIEGO DE DEZA 1.159, DEPARTAMENTO 81, LAS CONDES, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "MACARENA SION MAIZ",
+                "rut": null,
+                "domicilio": "LAS DALIAS 2.728, DEPARTAMENTO 204, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "78427340-7"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "78427340-7",
+            "sociedad": "SERVICIOS PROFESIONALES PETROHUÉ LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7898ab5714be21c56588e34862a67aee9268aebeb83f53d9b1f2e7cffadfe3b6",
+        "cached_at": "2026-06-01T17:07:03.394052"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3c39d9d394536843da80387095cd2fea2c75a00dfacb9e756a6b40032ec32c43",
+      "cached_at": "2026-06-01T17:07:04.003320"
+    }
+  }
+}

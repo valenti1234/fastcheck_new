@@ -1,0 +1,838 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76084788-7"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76084788-7",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "CESKAT SYSTEMS S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "19-01-2010",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "REPARACION DE OTROS EQUIPOS ELECTRONICOS Y OPTICOS N.C.P.",
+            "codigo": "331309",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-01-2010"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE VENTA POR MENOR NO REALIZADAS EN COMERCIOS, PUEST",
+            "codigo": "479909",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "07-04-2010"
+          },
+          {
+            "actividades": "EMPRESAS DE SERVICIOS DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULTOR",
+            "codigo": "711002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-01-2010"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2010"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota De Debito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2023"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 13,
+        "ultimaActualizacion": "29-05-2026 00:37:11",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "50.000,01 a 100.000,00",
+          "cantidadTrabajadores": 15
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "29-05-2026 00:37:11"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 1,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 1,
+        "casosConcluidos": 2,
+        "todosLosCasos": 4,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1,
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "29-05-2026 00:37:09",
+        "ultimaActualizacionCobranza": "28-05-2026 03:08:42",
+        "ultimaActualizacionLaboral": "28-05-2026 03:10:07",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 11,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 120,
+            "cambioAbsoluto": 6
+          },
+          "ultimaActualizacion": "29-05-2026 00:37:26"
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 1366120,
+          "multasPagadas": 2,
+          "montoMultasPagadas": 1366120,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "29-05-2026 00:37:11"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "29-05-2026 00:37:14"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 30,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 106300,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 30,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 95230,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "29-05-2026 17:25:21"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "29-05-2026 17:25:22"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 350,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "nombre": "CESKAT SYSTEMS S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:dc9c4a197d797e5e447b188edab799d1a1ef116ffd60832757ff301e6ebd64ce",
+      "cached_at": "2026-05-29T17:25:22.718186"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "23-07-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76084788-7",
+                "nombre": " CESKAT SYSTEMS S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9117608-4",
+                "nombre": "CAMILO OCTAVIO RILLSN REYES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96701530-K",
+                "nombre": " COMERCIALIZADORA NUTRECO CHILE LIMITADA",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-15144-2014",
+            "tribunal": "11º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "26-06-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76084788-7",
+                "nombre": " CESKAT SYSTEMS S.A. ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9117608-4",
+                "nombre": "CAMILO OCTAVIO RILLSN REYES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96701530-K",
+                "nombre": " COMERCIALIZADORA NUTRECO CHILE LTDA",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-12619-2014",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 00:37:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9e877380230b469c15e3d26423b483edbb657898c507bd5c9b61afadf86a8616",
+        "cached_at": "2026-05-29T17:25:23.137298"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "04-07-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76084788-7",
+                "nombre": "CESKAT SYSTEMS S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-39673-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 00:37:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0b720461d6959c99cdbee23497119839fe6e11d2dfec9d09c1f31a275aa692a2",
+        "cached_at": "2026-05-29T17:25:23.482736"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-03-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14403216-0",
+                "nombre": "JORGE GUILLERMO CONTRERAS LERMANDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19180399-K",
+                "nombre": "VALENTINA ABRIL ZEIDLER PALACIOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15010448-3",
+                "nombre": "VICTOR RODRIGO FUENTES PALACIOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76084788-7",
+                "nombre": "CESKAT SYSTEMS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-484-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 00:37:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4f976ba1dc53e13b9553dcbbd2b0c13472250f711bcac322804fcb0ba7b8f9f2",
+        "cached_at": "2026-05-29T17:25:23.818838"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "enunciado": "No pagar indemnización por feriado proporcional.",
+            "estado": "PAGADA",
+            "fecha": "11-04-2025 20:00:00",
+            "multa": "8064/25/055-1",
+            "procedencia": "RECLAMO",
+            "um": "10",
+            "tipoUm": "UTM",
+            "montoClp": 683060
+          },
+          {
+            "enunciado": "No pagar las remuneraciones adeudadas al término del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "11-04-2025 20:00:00",
+            "multa": "8064/25/055-2",
+            "procedencia": "RECLAMO",
+            "um": "10",
+            "tipoUm": "UTM",
+            "montoClp": 683060
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 00:37:09"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2f1371e7c5255f65fe809f3cd65debdee3770c6e5bba7c5e3a3c1d375abccd19",
+        "cached_at": "2026-05-29T17:25:24.362456"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 11,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "10/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "09/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "08/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "07/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "06/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-07-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "05/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-06-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR EDUARDO MONASTERIO ROJAS ",
+            "periodo": "04/2025",
+            "rutAfiliado": "17428139-4",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 00:37:09"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a133cb9fd964e17037f9b758897671b9e78cf9006c29329aa2f6c11103bf8343",
+        "cached_at": "2026-05-29T17:25:24.709711"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76084788-7",
+      "tipoPersona": "juridical",
+      "nombre": "CESKAT SYSTEMS S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CESKAT SYSTEMS S.A",
+            "rutSociedad": "76084788-7",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2010-01-04",
+            "socios": [
+              {
+                "nombre": "PEDRO PABLO GUERRA VERGARA",
+                "rut": "7082533-3",
+                "domicilio": "VICTOR URIBE 2260, QUILICURA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES ASETEC LIMITADA",
+                "rut": "77230120-0",
+                "domicilio": "PASAJE PERSEO NÚMERO 532, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "RUHE WEIBEL JAIME ENRIQUE",
+                "rut": "8362896-0",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "PICTON LANGFORD SPA",
+                "rut": null,
+                "domicilio": "VICTOR URIBE 2260, QUILICURA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "GUSTAVO ADOLFO JARA WEISHAUPT",
+                "rut": "7747899-K",
+                "domicilio": "PASAJE PERSEO NÚMERO 532, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES INGENUAS LIMITADA",
+                "rut": null,
+                "domicilio": "LO BELTRÁN 8140, VITACURA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:90932bea64121c395eaeb77d0cda259eeea47ba556b4b05824a823fe354e5fcd",
+      "cached_at": "2026-05-29T17:25:25.849694"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76084788-7",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2b6460d117551472b58f4aa0fb6e885f1b7811d85452714c977f1b06b6fa2b5a",
+        "cached_at": "2026-05-29T17:25:26.558052"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 106300,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 50,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 2,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 11,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 1366120,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 350,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:76d6baf4f95f8fcac187876a1279040333fe0c4f85c33cd3778ef8bb2f63a6e6",
+      "cached_at": "2026-05-29T17:25:27.163795"
+    }
+  }
+}

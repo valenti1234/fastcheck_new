@@ -1,0 +1,87 @@
+{
+  "pathCount": 6,
+  "relationships": [
+    {
+      "source": "76583310",
+      "target": "10242576",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-07-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76583310",
+      "target": "10242576",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6647812",
+        "doh_extraction_id": "212266",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "6647812",
+        "published_at": "2006-07-06",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/07/06/do-20060706.pdf"
+      }
+    },
+    {
+      "source": "76583310",
+      "target": "13177720",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6647812",
+        "doh_extraction_id": "212266",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "6647812",
+        "published_at": "2006-07-06",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/07/06/do-20060706.pdf"
+      }
+    },
+    {
+      "source": "76260779",
+      "target": "10242576",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_628748",
+        "cve": "628748",
+        "shares_percent": 33.33,
+        "source": "DO",
+        "published_at": "2013-04-20",
+        "doc_extraction_id": "1765627",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2013/04/20/628748_C_LTDA_20130420_firmado1.pdf"
+      }
+    },
+    {
+      "source": "77361028",
+      "target": "10242576",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACKsbST6nkZs",
+        "source": "RES",
+        "published_at": "2021-12-16"
+      }
+    },
+    {
+      "source": "77361028",
+      "target": "10242576",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACwdZ7sdkjYC",
+        "source": "RES"
+      }
+    }
+  ],
+  "entityNames": {
+    "10242576": "JORGE EDUARDO OVIEDO ARAYA",
+    "13177720": "MARIA ANGELICA DELZO SANTIAGO",
+    "76260779": "EMPRESA CONSTRUCTORA IS LIMITADA",
+    "76583310": "COMERCIALIZADORA OVIEDO ARAYA Y COMPANIA LIMITADA",
+    "77361028": "JEOCONSTRUCCIONES SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:2307169c2bd620c00425b6e4cf4ac9cd2ac685af04f4cc785b13a363900629fe",
+    "cached_at": "2026-05-30T00:07:09.419189"
+  }
+}

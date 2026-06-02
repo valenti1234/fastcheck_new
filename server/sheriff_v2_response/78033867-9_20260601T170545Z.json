@@ -1,0 +1,565 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "78033867-9"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "78033867-9",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "C&R ASESORIAS PROFESIONALES  DEL SUR LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "22-10-2024",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS PROFESIONALES DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULT",
+            "codigo": "711003",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "22-10-2024"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boletas De Honorarios Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 3,
+        "ultimaActualizacion": "01-06-2026 17:05:41",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "0,01 a 200,00",
+          "cantidadTrabajadores": "Sin información"
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 17:05:41"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "01-06-2026 17:05:40",
+        "ultimaActualizacionCobranza": "01-06-2026 17:05:41",
+        "ultimaActualizacionLaboral": "01-06-2026 17:05:40",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:05:40"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:05:41"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "15-10-2024 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "8254326",
+              "razonSocial": "C&R ASESORIAS PROFESIONALES DEL SUR LIMITADA",
+              "cve": "ACunM2RV5tHn",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACunM2RV5tHn&codigo=9B-72-A9-1A-32-93-27-7B-25-55-44-90-7B-04-9A-6B",
+              "socios": [
+                {
+                  "socio": "RODRIGO ANDRES REYES HERNANDEZ",
+                  "rut": "14225846-3",
+                  "domicilio": "NUEVA ORIENTE 4 N°5513 VILLA VALLE VOLCANES COMUNA DE PUERTO MONTT REGION DE LOS LAGOS",
+                  "acciones": null,
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "ARIEL ENRIQUE CARCAMO PEREZ",
+                  "rut": "12712245-8",
+                  "domicilio": "CALLE A N°2064 VILLA LOMAS DE CARDONAL COMUNA DE PUERTO MONTT REGION DE LOS LAGOS",
+                  "acciones": null,
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "RODRIGO ANDRES REYES HERNANDEZ",
+                  "rut": "14225846-3",
+                  "domicilio": "NUEVA ORIENTE 4 N°5513 VILLA VALLE VOLCANES COMUNA DE PUERTO MONTT REGION DE LOS LAGOS"
+                },
+                {
+                  "administrador": "ARIEL ENRIQUE CARCAMO PEREZ",
+                  "rut": "12712245-8",
+                  "domicilio": "CALLE A N°2064 VILLA LOMAS DE CARDONAL COMUNA DE PUERTO MONTT REGION DE LOS LAGOS"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "01-06-2026 17:05:42"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "01-06-2026 17:05:41"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "C&R ASESORIAS PROFESIONALES  DEL SUR LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ccd5250fd96e36926eefb912b045d22f27bb93b03819849d0abf55b1ef62cfb0",
+      "cached_at": "2026-06-01T17:05:42.811994"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:22ef202fc2101b6bfae9c8df55752378a329ae5a0fafba576fb9e1b0f9ad5228",
+        "cached_at": "2026-06-01T17:05:43.130490"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:858be8fe7f664ad53353c228585da780be63e1373c5e9669c3fcfaaeb58e2817",
+        "cached_at": "2026-06-01T17:05:43.449157"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9f2dbd26f53cbc9be004a9affaf3ee313cfff2b8db46e1072c513d6583d6294b",
+        "cached_at": "2026-06-01T17:05:43.769140"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:40"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5410e1930a92912e89229c94e416d5dfd8e6f5c61c4ec3fa455d15975021ea9f",
+        "cached_at": "2026-06-01T17:05:44.092868"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:05:40"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8b88dc74055b266e44bd83d6ff63242ebafd96112e5fcb5259b351113e79eeec",
+        "cached_at": "2026-06-01T17:05:44.408994"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "78033867-9",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "C&R ASESORIAS PROFESIONALES  DEL SUR LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "C&R ASESORIAS PROFESIONALES  DEL SUR LIMITADA",
+            "rutSociedad": "78033867-9",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2024-10-15",
+            "socios": [
+              {
+                "nombre": "ARIEL ENRIQUE CARCAMO PEREZ",
+                "rut": "12712245-8",
+                "domicilio": "MISQUIHUE N°KM 15 COMUNA DE MAULLIN",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "RODRIGO ANDRES REYES HERNÁNDEZ",
+                "rut": "14225846-3",
+                "domicilio": "NUEVA ORIENTE NÚMERO CUATRO 5513, DPTO.134, VALLE VOLCANES, PUERTO MONTT",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2024-10-16",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACunM2RV5tHn&codigo=9B-72-A9-1A-32-93-27-7B-25-55-44-90-7B-04-9A-6B"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ffe080a605111411c1d8662827d2bb45e894df3437ec892eb5c881b137816e64",
+      "cached_at": "2026-06-01T17:05:44.991978"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "78033867-9",
+        "empresaEnUnDia": [
+          {
+            "fecha": "15-10-2024 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "8254326",
+            "razonSocial": "C&R ASESORIAS PROFESIONALES DEL SUR LIMITADA",
+            "cve": "ACunM2RV5tHn",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACunM2RV5tHn&codigo=9B-72-A9-1A-32-93-27-7B-25-55-44-90-7B-04-9A-6B",
+            "socios": [
+              {
+                "socio": "RODRIGO ANDRES REYES HERNANDEZ",
+                "rut": "14225846-3",
+                "domicilio": "NUEVA ORIENTE 4 N°5513 VILLA VALLE VOLCANES COMUNA DE PUERTO MONTT REGION DE LOS LAGOS",
+                "acciones": null,
+                "monto": "$1.000.000 CLP",
+                "porcentaje": "50%"
+              },
+              {
+                "socio": "ARIEL ENRIQUE CARCAMO PEREZ",
+                "rut": "12712245-8",
+                "domicilio": "CALLE A N°2064 VILLA LOMAS DE CARDONAL COMUNA DE PUERTO MONTT REGION DE LOS LAGOS",
+                "acciones": null,
+                "monto": "$1.000.000 CLP",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "RODRIGO ANDRES REYES HERNANDEZ",
+                "rut": "14225846-3",
+                "domicilio": "NUEVA ORIENTE 4 N°5513 VILLA VALLE VOLCANES COMUNA DE PUERTO MONTT REGION DE LOS LAGOS"
+              },
+              {
+                "administrador": "ARIEL ENRIQUE CARCAMO PEREZ",
+                "rut": "12712245-8",
+                "domicilio": "CALLE A N°2064 VILLA LOMAS DE CARDONAL COMUNA DE PUERTO MONTT REGION DE LOS LAGOS"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2e4d4637edd0d0caf3226d93440b59abb08f99d00c485903f8d8e4496730c66a",
+        "cached_at": "2026-06-01T17:05:45.346933"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:17b41938f30d911f3fb920eb081ee439cdfc323010aee41f4fe059eea8a9acc8",
+      "cached_at": "2026-06-01T17:05:45.920257"
+    }
+  }
+}

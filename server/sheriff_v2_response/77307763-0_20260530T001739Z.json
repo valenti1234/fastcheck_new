@@ -1,0 +1,1366 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77307763-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77307763-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "CONSTRUCTORA RIO COLONIA SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "08-02-2021",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "CONSTRUCCION DE EDIFICIOS PARA USO NO RESIDENCIAL",
+            "codigo": "410020",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          },
+          {
+            "actividades": "CONSTRUCCION DE PROYECTOS DE SERVICIO PUBLICO",
+            "codigo": "422000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          },
+          {
+            "actividades": "CONSTRUCCION DE OTRAS OBRAS DE INGENIERIA CIVIL",
+            "codigo": "429000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          },
+          {
+            "actividades": "DEMOLICION",
+            "codigo": "431100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          },
+          {
+            "actividades": "PREPARACION DEL TERRENO",
+            "codigo": "431200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          },
+          {
+            "actividades": "OTRAS INSTALACIONES PARA OBRAS DE CONSTRUCCION",
+            "codigo": "432900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          },
+          {
+            "actividades": "TERMINACION Y ACABADO DE EDIFICIOS",
+            "codigo": "433000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-02-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2022"
+          }
+        ],
+        "cantidadActividades": 7,
+        "cantidadDocumentos": 6,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "200.000,01 a 600.000,00",
+          "cantidadTrabajadores": 746
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:17:34"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 1,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 3,
+        "laboralPresentados": 3,
+        "laboralConcluidos": 2,
+        "casosActuales": 5,
+        "casosArchivados": 3,
+        "casosConcluidos": 2,
+        "todosLosCasos": 10,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 7,
+          "demandadoSolidario": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:17:33",
+        "ultimaActualizacionCobranza": "30-05-2026 00:17:33",
+        "ultimaActualizacionLaboral": "30-05-2026 00:17:33",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 3,
+          "empleados": 3,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 200,
+            "cambioAbsoluto": 2
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 3,
+          "montoTotalMultas": 3643464,
+          "multasPagadas": 3,
+          "montoMultasPagadas": 3643464,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:17:34"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:17:34"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:17:34"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 250,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "CONSTRUCTORA RIO COLONIA SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:079fc68c8d344b19c6ed5bb6ce557c2d71cf65aa788efd2cffdf58e62b852b52",
+      "cached_at": "2026-05-30T00:17:34.984910"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "10-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10387420-3",
+                "nombre": "REYNERIO DAGOBERTO GARCIA DE LA PASTORA ZAVALA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76404448-7",
+                "nombre": "RED MOVIL SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-11199-2025",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:17:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8a1e4eaa8b28df7c1d39598f03cb959590df4397ea3ae14748dfc743f255bb5c",
+        "cached_at": "2026-05-30T00:17:35.344158"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "14-09-2025 21:00:00",
+            "monto": "4055772",
+            "litigantes": [
+              {
+                "rut": "13835671-K",
+                "nombre": "OSVALDO ANTONIO FLORES OSSANDÓN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77034316-K",
+                "nombre": "FABRICACIÓN CONSTRUCCIÓN E INSTALACIONES SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGUIRIDAD",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10948642-6",
+                "nombre": "GABRIEL GUILLERMO LARA GÓMEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17407951-K",
+                "nombre": "NICOLÁS IGNACIO KAHN MAIBE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8306866-3",
+                "nombre": "JUAN CARLOS ANTONIO GALDAMES LANAS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19594669-8",
+                "nombre": "LUIS FELIPE PEDRO MONCADA ZÚÑIGA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12851711-1",
+                "nombre": "JAIME EDUARDO VARELA CHARME",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19670932-0",
+                "nombre": "FELIPE IGNACIO FERNÁNDEZ SILVA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19293055-3",
+                "nombre": "RAFAEL ANDRÉS MUTIS REYES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16630362-1",
+                "nombre": "DAVID GERMÁN ARANEDA TAPIA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3925-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:17:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ea6233b325d90bd010188f4bcd473b96534685490f726bd87e49db524212ad58",
+        "cached_at": "2026-05-30T00:17:35.715824"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 8,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "06-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18327733-2",
+                "nombre": "MARCO ANDRÉS RIQUELME ALCOTA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13081821-8",
+                "nombre": "ENRIQUE ALEJANDRO ROZAS FAÚNDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76306672-K",
+                "nombre": "CONSORCIO ICAFAL - LYD S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96528140-1",
+                "nombre": "CONSTRUCTORA L Y D S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4823-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "01-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "27194403-9",
+                "nombre": "WILFREDO CISNEROS GUTIERREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96528140-1",
+                "nombre": "CONSTRUCTORA L Y D S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76306672-K",
+                "nombre": "CONSORCIO ICAFAL - LYD S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88481800-1",
+                "nombre": "ICAFAL INGENIERÍA Y CONSTRUCCIÓN S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10030604-2",
+                "nombre": "OSCAR FABIÁN LOBOS ALARCON (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4758-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-04-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19945885-K",
+                "nombre": "JAIME ANDRÉS ESCOBAR MUÑOZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12232031-6",
+                "nombre": "RODRIGO PATRICIO SAMUR FAJURI (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17374197-9",
+                "nombre": "ALEJANDRA ROCCIO RAVELLO GAETE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17188224-9",
+                "nombre": "HÉCTOR RENÉ RODRIGO JOSÉ MARÍA MELO GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18623721-8",
+                "nombre": "DIEGO RODRIGUEZ CABELLO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3095-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "30-07-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17407951-K",
+                "nombre": "NICOLÁS IGNACIO KAHN MAIBE (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17401952-5",
+                "nombre": "MARÍA DEL ROSARIO HEERWAGEN MADRID (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8536871-0",
+                "nombre": "ROSA ESTER GARCÍA FUENTES (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20147207-5",
+                "nombre": "CRISTÓBAL BASTIÁN MORALES NÚÑEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15370524-0",
+                "nombre": "LUCÍA LILIANA PLANET SEPULVEDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19670932-0",
+                "nombre": "FELIPE FERNANDEZ SILVA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12851711-1",
+                "nombre": "JAIME EDUARDO VARELA CHARME (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2979-2023",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-07-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19594669-8",
+                "nombre": "LUIS FELIPE PEDRO MONCADA ZÚÑIGA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19280202-4",
+                "nombre": "TAMARA FERNANDA SÁNCHEZ JARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77384733-9",
+                "nombre": "SUTTON GUTIERREZ SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15737975-5",
+                "nombre": "MARÍA LORETO CARREÑO LARA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16305070-6",
+                "nombre": "CARLOS EDUARDO WLADIMIR SANDOVAL PARRA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2868-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "06-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "7985648-7",
+                "nombre": "JERÓNIMO ANDRÉS CARCELEN PACHECO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16226167-3",
+                "nombre": "GASTÓN TOMÁS BERGEON VALENZUELA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13457653-7",
+                "nombre": "SERGIO ANTONIO MONTES LARRAÍN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17704792-9",
+                "nombre": "RAFAEL LUIS VARGAS VALDÉS (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19068639-6",
+                "nombre": "VALENTINA MACARENA WITT GONZÁLEZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17265507-6",
+                "nombre": "JOSÉ MIGUEL RAMOS BASCUÑAN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "7419801-5",
+                "nombre": "JULIO ARMANDO CERDA ARAYA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "88481800-1",
+                "nombre": "ICAFAL INGENIERÍA Y CONSTRUCCIÓN S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96528140-1",
+                "nombre": "CONSTRUCTORA L Y D S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "59291940-0",
+                "nombre": "PUENTES Y CALZADAS INFRAESTRUCTURAS S.L.U. AGENCIA EN CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12851711-1",
+                "nombre": "JAIME EDUARDO VARELA CHARME (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17407951-K",
+                "nombre": "NICOLÁS IGNACIO KAHN MAIBE (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18640223-5",
+                "nombre": "MARÍA IGNACIA COLOMA MARTÍNEZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17401952-5",
+                "nombre": "MARÍA DEL ROSARIO HEERWAGEN MADRID (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17843350-4",
+                "nombre": "GEOVANNI DAVID FUENTES MARTÍNEZ (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4012-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "30-05-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15637605-1",
+                "nombre": "JUAN MANUEL PÉREZ BENGOLEA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16273632-9",
+                "nombre": "SOFÍA NATALIE VIELMA SÁEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17407951-K",
+                "nombre": "NICOLÁS IGNACIO KAHN MAIBE (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12851711-1",
+                "nombre": "JAIME EDUARDO VARELA CHARME (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17064835-8",
+                "nombre": "BLAS GABRIEL GACITÚA GARCÉS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16946767-6",
+                "nombre": "DANIELA FRANCISCA CACERES RODRIGUEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16841168-5",
+                "nombre": "SEBASTIÁN ANDRÉS AVENDAÑO FARFAN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96528140-1",
+                "nombre": "CONSTRUCTORA L Y D S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3842-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "07-05-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9506198-2",
+                "nombre": "SANDRO DANIEL PLAZA MACAYA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18327733-2",
+                "nombre": "MARCO ANDRÉS RIQUELME ALCOTA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96528140-1",
+                "nombre": "CONSTRUCTORA L Y D S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77307763-0",
+                "nombre": "CONSTRUCTORA RÍO COLONIA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3186-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:17:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b8def229d1524db65ec4306854f51b335d582503afc3899c77ee78bea218f448",
+        "cached_at": "2026-05-30T00:17:36.091213"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "enunciado": "No suprimir los factores de peligro en el lugar de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-02-2024 21:00:00",
+            "multa": "7600/23/036-1",
+            "procedencia": "FISCALIZACION",
+            "um": "24",
+            "tipoUm": "UTM",
+            "montoClp": 1544232
+          },
+          {
+            "enunciado": "No mantener en los lugares de trabajo las condiciones sanitarias y ambientales necesarias.",
+            "estado": "PAGADA",
+            "fecha": "13-02-2024 21:00:00",
+            "multa": "7600/23/036-2",
+            "procedencia": "FISCALIZACION",
+            "um": "24",
+            "tipoUm": "UTM",
+            "montoClp": 1544232
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "27-08-2023 20:00:00",
+            "multa": "1984/23/062-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:17:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:119321afd6235c694faee8079e609ac3f2c925ff1d6fb4d929a6e83069d86a14",
+        "cached_at": "2026-05-30T00:17:37.366654"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 6,
+        "casos": [
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EDUARDO ALFONSO CONA CEA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "18091219-3",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAURICIO ARTURO ESPINOZA MALDONADO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "13553868-k",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE LUIS QUINTANILLA QUINTANILLA ",
+            "periodo": "06/2025",
+            "rutAfiliado": "10489021-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-03-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CRISTIAN SANDRO OJEDA PONCE ",
+            "periodo": "01/2025",
+            "rutAfiliado": "11415137-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-07-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCISCO JAVIER ZUNIGA MUNOZ ",
+            "periodo": "05/2023",
+            "rutAfiliado": "17463688-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-06-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCISCO JAVIER ZUNIGA MUNOZ ",
+            "periodo": "04/2023",
+            "rutAfiliado": "17463688-5",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:17:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9f4706e0418f08584bcbe14b0df4ecd9ae8aea79601a413c994369238025ac12",
+        "cached_at": "2026-05-30T00:17:37.725010"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77307763-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "CONSTRUCTORA RIO COLONIA SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSTRUCTORA RIO COLONIA SPA",
+            "rutSociedad": "77307763-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2021-01-10",
+            "socios": [
+              {
+                "nombre": "ICAFAL INGENIERÍA Y CONSTRUCCIÓN S.A.",
+                "rut": "88481800-1",
+                "domicilio": "AUGUSTO LEGUÍA SUR N 160, OFICINA 61, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CONSTRUCTORA L Y D S.A.",
+                "rut": "96528140-1",
+                "domicilio": "PALACIO RIESCO NÚMERO 4387, COMUNA DE HUECHURABA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "30.00"
+              },
+              {
+                "nombre": "PUENTES Y CALZADAS INFRAESTRUCTURAS S.L.U. AGENCIA EN CHILE",
+                "rut": "59291940-0",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ICAFAL INGENIERÍA Y CONSTRUCCIÓN S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "30.00"
+              },
+              {
+                "nombre": "PUENTES Y CALZADAS INSFRAESTRUCTURAS S.L.U., AGENCIA EN CHILE",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2021-01-11",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/11/42851/05/1878550.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2021-01-04",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/04/42845/05/1875298.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:940de53aa734e7e0385be40cf862dbbdc85be69fccd12baa53a40c25bda6dd00",
+      "cached_at": "2026-05-30T00:17:38.348159"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77307763-0",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8c06f9c5c02cec45a6399a724cda0bbad4abb837a95de2ecfe7b8e301079d0b4",
+        "cached_at": "2026-05-30T00:17:38.715039"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 50,
+      "numeradorJudicial": 5,
+      "denominadorJudicial": 10,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 3,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 3643464,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 250,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0b1307bb95a61ab80b864e215a21985c2c866048ddc878cc92e02ba2b49ff2c3",
+      "cached_at": "2026-05-30T00:17:39.353452"
+    }
+  }
+}

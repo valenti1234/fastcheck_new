@@ -1,0 +1,71 @@
+{
+  "pathCount": 5,
+  "relationships": [
+    {
+      "source": "99510910",
+      "target": "7790435",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-11-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76361113",
+      "target": "7790435",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-01-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76310321",
+      "target": "7790435",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-11-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76361113",
+      "target": "7790435",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_741577",
+        "cve": "741577",
+        "shares_percent": 30,
+        "source": "DO",
+        "published_at": "2014-02-07",
+        "doc_extraction_id": "2176061",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/02/07/741577_C_LTDA_20140207_firmado.pdf"
+      }
+    },
+    {
+      "source": "76310321",
+      "target": "7790435",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_674774",
+        "cve": "674774",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2013-08-16",
+        "doc_extraction_id": "1481091",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2013/08/16/674774_C_EIRL_20130816_firmado.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "7790435": "JUAN PABLO AGUIRRE OVALLE",
+    "76310321": "INMOBILIARIA E INVERSIONES JUAN PABLO AGUIRRE OVALLE EMPRESA INDIVIDUA",
+    "76361113": "COMERCIALIZADORA CELYAG LIMITADA",
+    "99510910": "SEGURYCEL SA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:cfd88091bf8812c32c3cba8e920bc1dc32879f1a1d970987d63fa7006f108814",
+    "cached_at": "2026-05-30T00:22:02.907147"
+  }
+}

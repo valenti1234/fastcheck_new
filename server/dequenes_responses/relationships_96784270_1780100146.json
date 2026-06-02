@@ -1,0 +1,213 @@
+{
+  "pathCount": 18,
+  "relationships": [
+    {
+      "source": "96784270",
+      "target": "9833255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-05-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96784270",
+      "target": "59219370",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2239442",
+        "cve": "2239442",
+        "source": "DO",
+        "doc_extraction_id": "2068744",
+        "published_at": "2022-12-23",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/12/23/43433/05/2239442.pdf"
+      }
+    },
+    {
+      "source": "96784270",
+      "target": "59281350",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2239442",
+        "cve": "2239442",
+        "source": "DO",
+        "doc_extraction_id": "2068744",
+        "published_at": "2022-12-23",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/12/23/43433/05/2239442.pdf"
+      }
+    },
+    {
+      "source": "96784270",
+      "target": "78363570",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2239442",
+        "cve": "2239442",
+        "source": "DO",
+        "doc_extraction_id": "2068744",
+        "published_at": "2022-12-23",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/12/23/43433/05/2239442.pdf"
+      }
+    },
+    {
+      "source": "96784270",
+      "target": "59219370",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.97,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96784270",
+      "target": "59281350",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.03,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "78224123",
+      "target": "9833255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-08-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76147515",
+      "target": "9833255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76099304",
+      "target": "9833255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2010-06-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76099304",
+      "target": "9833255",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_7072697",
+        "doh_extraction_id": "925771",
+        "shares_percent": 96.67,
+        "source": "DOH",
+        "doh_id": "7072697",
+        "published_at": "2010-05-18",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2010/05/18/do-20100518.pdf"
+      }
+    },
+    {
+      "source": "59219370",
+      "target": "7538002",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59219370",
+      "target": "7537997",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59281350",
+      "target": "7538002",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-11-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59281350",
+      "target": "7537997",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-11-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78363570",
+      "target": "6819654",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78363570",
+      "target": "5737217",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-10-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78363570",
+      "target": "6819654",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6213046",
+        "doh_extraction_id": "1002293",
+        "shares_percent": 45,
+        "source": "DOH",
+        "doh_id": "6213046",
+        "published_at": "2002-08-06",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/08/06/do-20020806.pdf"
+      }
+    },
+    {
+      "source": "78363570",
+      "target": "5737217",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6213046",
+        "doh_extraction_id": "1002293",
+        "shares_percent": 55,
+        "source": "DOH",
+        "doh_id": "6213046",
+        "published_at": "2002-08-06",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/08/06/do-20020806.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "5737217": "LUIS GERARDO RAMON VICENTE NUALART GONZALEZ",
+    "6819654": "JAIME PATRICIO MEDINA MORALES",
+    "7537997": "FRANCISCO JAVIER PFEFFER URQUIAGA",
+    "7538002": "GERMAN JOSE PFEFFER URQUIAGA",
+    "9833255": "JORGE ANDRES MONTT GUZMAN",
+    "59219370": "ROISUR INVERSIONES S.A.",
+    "59281350": "GARFIN ENERGY CORP SRL",
+    "76099304": "INVERSIONES DONA MARIA CRISTINA LIMITADA",
+    "76147515": "NEWQUAY S.A.",
+    "78224123": "LM FOODS SPA",
+    "78363570": "INMOBILIARIA E INVERSIONES CERRO MAULEN LIMITADA",
+    "96784270": "INTERGAS SA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:33203be17e9765c3cf69bffef9db1153ebe7f961df5433f80dfd6e3c9f105b01",
+    "cached_at": "2026-05-30T00:15:46.007572"
+  }
+}

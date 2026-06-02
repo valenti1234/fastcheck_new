@@ -1,0 +1,620 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76971082-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76971082-5",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "CONSTRUCCIÓN, INGENIERÍA E INVERSIONES FREDES SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "24-01-2019",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS INSTALACIONES PARA OBRAS DE CONSTRUCCION",
+            "codigo": "432900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-01-2019"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES ESPECIALIZADAS DE CONSTRUCCION",
+            "codigo": "439000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-01-2019"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-01-2019"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2022"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 5,
+        "ultimaActualizacion": "31-05-2026 21:41:26",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "10.000,01 a 25.000,00",
+          "cantidadTrabajadores": 10
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "31-05-2026 21:41:26"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "31-05-2026 21:41:26",
+        "ultimaActualizacionCobranza": "31-05-2026 21:41:26",
+        "ultimaActualizacionLaboral": "31-05-2026 21:41:26",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 1,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:41:26"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "23-01-2019 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "2096187",
+              "razonSocial": "CONSTRUCCION, INGENIERIA E INVERSIONES FREDES SPA",
+              "cve": "ACoTaeBqZcM8",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACoTaeBqZcM8&codigo=FA-4F-D0-8F-D0-D7-DC-EC-8A-1A-F4-20-35-94-2D-16",
+              "socios": [
+                {
+                  "socio": "ROBERT CAMILO FREDES CONTRERAS",
+                  "rut": "15028423-6",
+                  "domicilio": "MONEDA N°812 DEPTO/LOCAL 601 COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "2000",
+                  "monto": "$2.000.000 CLP",
+                  "porcentaje": null
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ROBERT CAMILO FREDES CONTRERAS",
+                  "rut": "15028423-6",
+                  "domicilio": "MONEDA N°812 DEPTO/LOCAL 601 COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            },
+            {
+              "fecha": "25-12-2024 21:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "8503404",
+              "razonSocial": "CONSTRUCCION, INGENIERIA E INVERSIONES FREDES SPA",
+              "cve": "ACsKnK7FsHrJ",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACsKnK7FsHrJ&codigo=BD-D5-4D-90-25-0E-CA-22-4F-50-BC-F8-49-68-E2-A2",
+              "socios": [
+                {
+                  "socio": "ROBERT CAMILO FREDES CONTRERAS",
+                  "rut": "15028423-6",
+                  "domicilio": null,
+                  "acciones": "25000",
+                  "monto": "$25.000.000 CLP",
+                  "porcentaje": null
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ROBERT CAMILO FREDES CONTRERAS",
+                  "rut": "15028423-6",
+                  "domicilio": null
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 6480,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 6480,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 17340,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 960,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 16380,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 2,
+          "tasacionTotal": 14841000,
+          "ultimaActualizacion": "31-05-2026 21:41:27"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "CONSTRUCCIÓN, INGENIERÍA E INVERSIONES FREDES SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d6e23f99da6a518c8647992e203e666e9fe30ae34b1bd6c1c8d70d8b2f1d3237",
+      "cached_at": "2026-05-31T21:41:27.619813"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:26"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:bf547e74baacf95af8e2b6decc9ffa92eac35d4d631790d81f22d99667ac99c9",
+        "cached_at": "2026-05-31T21:41:27.981215"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:26"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:bc79259b61303d1fa04147493b3fd5ecdd69d9e8ba4f3070e4550e05e684c535",
+        "cached_at": "2026-05-31T21:41:28.318748"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:26"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2bd8a936261b0c0133dd3f40426f8849771fcc1599207f46ec0443b57034ceae",
+        "cached_at": "2026-05-31T21:41:28.677775"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:26"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1cda2a7e07fa3645d27d9ae115c99197dd450fd9de427ad0941e21a6d3ac6425",
+        "cached_at": "2026-05-31T21:41:29.042099"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-03-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CESAR ALEJANDRO CHAPARRO PLASENCIA ",
+            "periodo": "01/2025",
+            "rutAfiliado": "25692622-9",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "31-05-2026 21:41:26"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:da0f8b54766741d9a49b37a9f1dc9d53f864bd3df9b812156f3efb70141866e8",
+        "cached_at": "2026-05-31T21:41:29.400707"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76971082-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "CONSTRUCCIÓN, INGENIERÍA E INVERSIONES FREDES SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSTRUCCIÓN, INGENIERÍA E INVERSIONES FREDES SPA",
+            "rutSociedad": "76971082-5",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2019-01-23",
+            "socios": [
+              {
+                "nombre": "ROBERT CAMILO FREDES CONTRERAS",
+                "rut": "15028423-6",
+                "domicilio": "COVADONGA NÚMERO 338, POBLACIÓN COBRESAL",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-12-26",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACsKnK7FsHrJ&codigo=BD-D5-4D-90-25-0E-CA-22-4F-50-BC-F8-49-68-E2-A2"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2019-01-24",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACoTaeBqZcM8&codigo=FA-4F-D0-8F-D0-D7-DC-EC-8A-1A-F4-20-35-94-2D-16"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3708f1134be1a6d3b5dc43965157c5dd0e697f20aba1ccfe22aa48848da9b9c1",
+      "cached_at": "2026-05-31T21:41:30.028378"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76971082-5",
+        "empresaEnUnDia": [
+          {
+            "fecha": "23-01-2019 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "2096187",
+            "razonSocial": "CONSTRUCCION, INGENIERIA E INVERSIONES FREDES SPA",
+            "cve": "ACoTaeBqZcM8",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACoTaeBqZcM8&codigo=FA-4F-D0-8F-D0-D7-DC-EC-8A-1A-F4-20-35-94-2D-16",
+            "socios": [
+              {
+                "socio": "ROBERT CAMILO FREDES CONTRERAS",
+                "rut": "15028423-6",
+                "domicilio": "MONEDA N°812 DEPTO/LOCAL 601 COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                "acciones": "2000",
+                "monto": "$2.000.000 CLP",
+                "porcentaje": null
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ROBERT CAMILO FREDES CONTRERAS",
+                "rut": "15028423-6",
+                "domicilio": "MONEDA N°812 DEPTO/LOCAL 601 COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          },
+          {
+            "fecha": "25-12-2024 21:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "8503404",
+            "razonSocial": "CONSTRUCCION, INGENIERIA E INVERSIONES FREDES SPA",
+            "cve": "ACsKnK7FsHrJ",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACsKnK7FsHrJ&codigo=BD-D5-4D-90-25-0E-CA-22-4F-50-BC-F8-49-68-E2-A2",
+            "socios": [
+              {
+                "socio": "ROBERT CAMILO FREDES CONTRERAS",
+                "rut": "15028423-6",
+                "domicilio": null,
+                "acciones": "25000",
+                "monto": "$25.000.000 CLP",
+                "porcentaje": null
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ROBERT CAMILO FREDES CONTRERAS",
+                "rut": "15028423-6",
+                "domicilio": null
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:568f21d55f8213c7ae1c2ea278287af17e7d77a688f0c6e67ecb816170432f2a",
+        "cached_at": "2026-05-31T21:41:30.388852"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 6480,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 1,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1330b8665588f185b5c14986c2285b99669c25510659d6fb2ed78370629da27f",
+      "cached_at": "2026-05-31T21:41:30.998165"
+    }
+  }
+}

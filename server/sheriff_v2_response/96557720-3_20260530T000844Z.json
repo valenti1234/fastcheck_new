@@ -1,0 +1,3449 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96557720-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96557720-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "SISTEMAS ORACLE DE CHILE LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Sin observaciones.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MENOR DE COMPUTADORES, EQUIPO PERIFERICO, PROGRAMAS INFOR",
+            "codigo": "474100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-12-2008"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE",
+            "codigo": "620200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "ALQUILER DE BIENES INMUEBLES AMOBLADOS O CON EQUIPOS Y MAQUINARIAS",
+            "codigo": "681011",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-09-2017"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "1990"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "1990"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2002"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "1997"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Fact Exenta",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "1998"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 19,
+        "ultimaActualizacion": "30-04-2026 17:02:59",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 424
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:08:39"
+      },
+      "judicial": {
+        "casosCivilesActivos": 8,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 8,
+        "cobranzaActivos": 2,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 9,
+        "laboralActivos": 17,
+        "laboralPresentados": 6,
+        "laboralConcluidos": 12,
+        "casosActuales": 27,
+        "casosArchivados": 7,
+        "casosConcluidos": 29,
+        "todosLosCasos": 63,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 21,
+          "demandante": 1,
+          "demandadoSolidario": 2,
+          "reclamante": 1,
+          "denunciado": 8,
+          "tercero": 1
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:57:39",
+        "ultimaActualizacionCobranza": "28-05-2026 03:23:23",
+        "ultimaActualizacionLaboral": "28-05-2026 03:25:01",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 12,
+          "empleados": 4,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 12
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 7,
+          "montoTotalMultas": 20248840,
+          "multasPagadas": 7,
+          "montoMultasPagadas": 20248840,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 5.8,
+            "cambioAbsoluto": 1110000
+          },
+          "ultimaActualizacion": "30-05-2026 00:08:39"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:08:39"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "31-07-2017 20:00:00",
+              "razonSocial": "SISTEMAS ORACLE DE CHILE S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/08/01/41823/05/1250527.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "LOGFIRE CHILE SPA",
+                  "rut": "76023837-6",
+                  "domicilio": "CALLE MARCHANT PEREIRA 150, OF 1501 Y 1502, PROVIDENCIA, SANTIAGO"
+                }
+              ],
+              "rut": "96557720-3"
+            },
+            {
+              "fecha": "30-06-2019 20:00:00",
+              "razonSocial": "SISTEMAS ORACLE DE CHILE S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/07/01/42392/05/1614631.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ACME ACQUISITION, LLC",
+                  "rut": null,
+                  "domicilio": "AVENIDA VITACURA 2939, PISO 6, LAS CONDES, SANTIAGO"
+                },
+                {
+                  "socio": "OCAPAC HOLDING COMPANY UNLIMITED COMPANY",
+                  "rut": null,
+                  "domicilio": "AVENIDA VITACURA 2939, PISO 6, LAS CONDES, SANTIAGO"
+                }
+              ],
+              "rut": "96557720-3"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:08:39"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 9077470,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 10654450,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 4,
+          "tasacionTotal": 53215483,
+          "ultimaActualizacion": "12-05-2026 20:00:11"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "12-05-2026 20:00:11"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 57.89473684210527,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 357.89473684210526,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "SISTEMAS ORACLE DE CHILE LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b67347b79ec38256b9949ee10067d82aa37add2c5b0ba96d93d4e851b588eede",
+      "cached_at": "2026-05-30T00:08:40.730124"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 17,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "09-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15317882-8",
+                "nombre": "BRUNO ROMO MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16094984-8",
+                "nombre": "CRISTIAN PÉREZ LARRAÍN",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19637396-9",
+                "nombre": "HORACIO JOSÉ INFANTE FUENZALIDA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17087119-7",
+                "nombre": "JUAN PABLO LABBÉ AROCCA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17188442-K",
+                "nombre": "CLAUDIA ANDREA SALAZAR ALTIERI",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17353980-0",
+                "nombre": "FIORELLA MARÍA CAVAGNARO VILLAR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76163106-3",
+                "nombre": "BANPRO FACTORING S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-8343-2024",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Contestación",
+            "fechaIngreso": "06-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16094984-8",
+                "nombre": "CRISTIAN PÉREZ LARRAÍN (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17188442-K",
+                "nombre": "CLAUDIA ANDREA SALAZAR ALTIERI (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17353980-0",
+                "nombre": "FIORELLA MARÍA CAVAGNARO VILLAR (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10551295-3",
+                "nombre": "ENRIQUE EDUARDO RODRÍGUEZ DONATTI (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77501341-9",
+                "nombre": "CONSTRUCCIONES FENIX SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77577282-4",
+                "nombre": "INFINITO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76748775-4",
+                "nombre": "TRANSPORTES DESPOUSE-FREIRE LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77233798-1",
+                "nombre": "EMPRESA DE TRANSPORTES CAMG SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76335687-6",
+                "nombre": "CONTRATISTA JUAN CARLOS ANDRÉS COHEN GONZÁLEZ E.I.R.L.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77603864-4",
+                "nombre": "CONSULTORA ASESORAPYME SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77862553-9",
+                "nombre": "SOCIEDAD DE TRANSPORTES Y SEGURIDAD LAS ACACIAS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76299831-9",
+                "nombre": "BANFACTORING S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99575550-5",
+                "nombre": "BOLSA DE PRODUCTOS DE CHILE  AGROPECUARIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76184721-K",
+                "nombre": "BPC SERVICIOS Y NEGOCIOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76163106-3",
+                "nombre": "BANPRO FACTORING S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76693083-2",
+                "nombre": "7 CUMBRES FACTORING SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17087119-7",
+                "nombre": "JUAN PABLO LABBÉ AROCCA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19637396-9",
+                "nombre": "HORACIO JOSÉ INFANTE FUENZALIDA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-8125-2024",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Término Probatorio",
+            "fechaIngreso": "18-04-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19637396-9",
+                "nombre": "HORACIO JOSÉ INFANTE FUENZALIDA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76299831-9",
+                "nombre": "BANFACTORING S.P.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10551295-3",
+                "nombre": "ENRIQUE EDUARDO RODRÍGUEZ DONATTI (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-7221-2024",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Impugnación",
+            "fechaIngreso": "11-04-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17087119-7",
+                "nombre": "JUAN PABLO LABBÉ AROCCA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76786329-2",
+                "nombre": "PORTAFOLIO KLYM CHILE SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18463504-6",
+                "nombre": "JAVIER ANTONIO VALENZUELA FARÍAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6851-2024",
+            "tribunal": "23º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "5 Conciliación y/o Recibe a prueba",
+            "fechaIngreso": "18-01-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10820420-6",
+                "nombre": "ALDO ADRIÁN MOLINARI VALDÉS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16306549-5",
+                "nombre": "MÓNICA GABRIELA PÉREZ QUINTANA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18120895-3",
+                "nombre": "ISMAEL CLEMENTE FIGUEROA VALDIVIA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19679053-5",
+                "nombre": "SAMIN YOUSEFI SHAMSI (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "60503000-9",
+                "nombre": "EMPRESA DE CORREOS DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77841030-3",
+                "nombre": "DELOITTE SERVICIOS PROFESIONALES LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Amplio)",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "TERC.I",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19637396-9",
+                "nombre": "HORACIO JOSÉ INFANTE FUENZALIDA (Poder Amplio)",
+                "sujeto": "AP.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16123078-2",
+                "nombre": "JOSÉ IGNACIO AGUIRRE FUENTES (Poder Simple)",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96587780-0",
+                "nombre": "PRODUCTORA DE CINE Y TELEVISION T.V.A. S.A.",
+                "sujeto": "TERC.I",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16123078-2",
+                "nombre": "JOSÉ IGNACIO AGUIRRE FUENTES",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "97018000-1",
+                "nombre": "SCOTIABANK CHILE S. A.",
+                "sujeto": "TERC.I",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12722136-7",
+                "nombre": "VICENTE ANDRÉS SABATINI MUJICA (Poder Amplio)",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18936558-6",
+                "nombre": "PAUL VICHENZO MAGLIONA AGURTO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13282503-3",
+                "nombre": "GIOVANNI D'ANGELLO DONATI SANHUEZA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18145958-1",
+                "nombre": "JOSÉ ANTONIO ESPINOSA FERNÁNDEZ (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17267278-7",
+                "nombre": "PABLO VODANOVIC CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15381544-5",
+                "nombre": "NICOLÁS FELIPE YURASZECK PEÑARANDA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-902-2023",
+            "tribunal": "17º Juzgado Civil de Santiago",
+            "sujeto": "TERC.I",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "21-07-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96655860-1",
+                "nombre": "FACTORING SECURITY S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7976765-4",
+                "nombre": "CLAUDIA ALEJANDRA MOYA URTUBIA (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-7359-2022",
+            "tribunal": "2º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "03-06-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18936457-1",
+                "nombre": "ARANTXA MARÍA ERECHE TUZZINI",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76576662-1",
+                "nombre": "RALEI DEVELOPMENT GROUP SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8997318-K",
+                "nombre": "ARIELA SOFÍA AGOSIN WEISZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16142288-6",
+                "nombre": "FÉLIX ANDRÉS ANTOLIN MARTÍNEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13882348-2",
+                "nombre": "RODRIGO AUGUSTO DÍAZ DE VALDÉS BALBONTÍN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL&#039;ORO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18340471-7",
+                "nombre": "MARCO ANTONIO MORAGA PÉREZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-2177-2022",
+            "tribunal": "1º Juzgado Civil de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "09-10-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18936457-1",
+                "nombre": "ARANTXA MARÍA ERECHE TUZZINI (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81407200-2",
+                "nombre": "FABRICA DE CALZADOS GINO S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8343577-1",
+                "nombre": "ROBERTO RAÚL BONNEFOY MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13458677-K",
+                "nombre": "EDUARDO ANDRÉS CONTESSE CARVACHO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "21744100-5",
+                "nombre": "RENATO MANUEL ALARCON LEGARDA",
+                "sujeto": "TERC.I",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15374275-8",
+                "nombre": "ÁLVARO FELIPE NICOLÁS HERNÁNDEZ PIEPER (Poder Amplio)",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19957897-9",
+                "nombre": "PABLO SEBASTIÁN ESCALONA SARNIGUET (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19957897-9",
+                "nombre": "PABLO SEBASTIÁN ESCALONA SARNIGUET",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19686251-K",
+                "nombre": "CAROLINA IGNACIA HAGEMANN LOIS (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20074245-1",
+                "nombre": "IGNACIA PAZ SAAVEDRA LABORDERIE (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-15449-2020",
+            "tribunal": "29º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "02-07-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "60805000-0",
+                "nombre": "TESORERÍA GENERAL DE LA REPUBLICA DE CHILE  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17082445-8",
+                "nombre": "SEBASTIÁN COLOMA RÍOS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9772243-9",
+                "nombre": "ERNESTINA RUTH ISRAEL LOPEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13439600-8",
+                "nombre": "CAROLINA CECILIA VÁSQUEZ ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "19037524-2",
+                "nombre": "DOUGLAS IGNACIO SCHAWCROFT REYES",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-10236-2020",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica",
+            "fechaIngreso": "05-05-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18499280-9",
+                "nombre": "HANS DAVID MUÑOZ ZUNINO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15339689-2",
+                "nombre": "MIGUEL ANTONIO SCHURMANN OPAZO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16615675-0",
+                "nombre": "FRANCISCO GIUSEPPE BASSI DÍAZ (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16234280-0",
+                "nombre": "ESTEBAN ADOLFO BARRA OLIVARES (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18936457-1",
+                "nombre": "ARANTXA MARÍA ERECHE TUZZINI (Sin Acreditacion)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "84854200-8",
+                "nombre": "IMPORTADORA AUTOMARCO LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "5424589-0",
+                "nombre": "JOSÉ ALBERTO EUGENIO RÍOS MELLADO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10046267-2",
+                "nombre": "CRISTIAN SANTIAGO LESCOT JEREZ (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76536311-K",
+                "nombre": "ASESORIAS, INVERSIONES Y SERVICIOS INFORMÁTICOS APPSYS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19637396-9",
+                "nombre": "HORACIO JOSÉ INFANTE FUENZALIDA (Sin Acreditacion)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17600727-3",
+                "nombre": "IGNACIO JAVIER VARAS GARCÍA (Sin Acreditacion)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19953466-1",
+                "nombre": "FELIPE IGNACIO SALDÍAS MEZZANO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18919766-7",
+                "nombre": "VALENTINA ALEJANDRA PAVLICH MARISCAL (Sin Acreditacion)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-7155-2020",
+            "tribunal": "13º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica ",
+            "fechaIngreso": "14-01-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18936457-1",
+                "nombre": "ARANTXA MARÍA ERECHE TUZZINI",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16611041-6",
+                "nombre": "MARÍA JOSEFA LARRAÍN ERRÁZURIZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "19524691-2",
+                "nombre": "GABRIEL AGUSTÍN RICARDO PEDRAZA PARADA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76576662-1",
+                "nombre": "RALEI DEVELOPMENT GROUP SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8997318-K",
+                "nombre": "ARIELA SOFÍA AGOSIN WEISZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16142288-6",
+                "nombre": "FÉLIX ANDRÉS ANTOLIN MARTÍNEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13882348-2",
+                "nombre": "RODRIGO AUGUSTO DÍAZ DE VALDÉS BALBONTÍN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL ORO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18340471-7",
+                "nombre": "MARCO ANTONIO MORAGA PÉREZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "23089836-7",
+                "nombre": "RUTH DEL CARMEN ZUNIGA RAMIREZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13996340-7",
+                "nombre": "GUISELA ANDREA GALLARDO PILAR",
+                "sujeto": "PERI  ",
+                "persona": "N"
+              },
+              {
+                "rut": "20680325-8",
+                "nombre": "SEBASTIÁN BENJAMÍN FARÍAS VILLANUEVA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-1141-2020",
+            "tribunal": "13º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "26-09-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10961550-1",
+                "nombre": "IGNACIO ERNESTO NAUDON DELL'ORO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13882348-2",
+                "nombre": "RODRIGO AUGUSTO DÍAZ DE VALDÉS BALBONTÍN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16483526-K",
+                "nombre": "RUGGERO IGNACIO COZZI ELZO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76362804-3",
+                "nombre": "PRONOVA TECHNOLOGIES S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8949358-7",
+                "nombre": "JUAN ESTEBAN PUGA VIAL (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15840367-6",
+                "nombre": "GASTÓN EDGARDO MAZA QUINTERO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19137676-5",
+                "nombre": "THOMAS SCHMIDT PUGA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19137676-5",
+                "nombre": "THOMAS SCHMIDT PUGA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18397163-8",
+                "nombre": "DANITZA MONTSERRAT ETEROVIC MARTÍ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10914838-5",
+                "nombre": "JUAN IGNACIO DONOSO STEGEN (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-30305-2018",
+            "tribunal": "13º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "03-05-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13829588-5",
+                "nombre": "CARLOS AUGUSTO FUENTES RETAMAL (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76101958-9",
+                "nombre": "SERVICIOS Y ASESORÍAS JURÍDICAS  FYC SOCIEDAD DE PROFESIONALES LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-13392-2018",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "6 Impugnación de Sentencia",
+            "fechaIngreso": "02-02-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17307815-3",
+                "nombre": "FRANCISCO JAVIER JIMÉNEZ BUSTAMANTE",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17395404-2",
+                "nombre": "JONATHAN CRUCES VENEGAS",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17603667-2",
+                "nombre": "JUAN PABLO ARÉVALO AYALA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13852731-K",
+                "nombre": "NATHALIA ANDREA GUTIÉRREZ CARRAZANA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12661987-1",
+                "nombre": "SERGIO MIGUEL GONZÁLEZ YÁÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76011042-6",
+                "nombre": "INVERSIONES G &amp; G LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16879551-3",
+                "nombre": "RENATO IGNACIO GÁLVEZ INOSTROZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "RODRIGO ASTORGA ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12455558-2",
+                "nombre": "EDUARDO ANDRES MARCHI FERNANDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2191-2017",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada ",
+            "fechaIngreso": "17-01-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76011042-6",
+                "nombre": "INVERSIONES G &amp; G LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12661987-1",
+                "nombre": "SERGIO MIGUEL GONZÁLEZ YÁÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13852731-K",
+                "nombre": "NATHALIA ANDREA GUTIÉRREZ CARRAZANA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16879551-3",
+                "nombre": "RENATO IGNACIO GÁLVEZ INOSTROZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "RODRIGO ASTORGA ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-927-2017",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "12-08-2013 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96557720-3",
+                "nombre": " SISTEMAS ORACLE DE CHILE S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7934976-3",
+                "nombre": "CLAUDIO ALFONSO FELLER SCHLEYER",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "60911000-7",
+                "nombre": " UNIVERSIDAD DE SANTIAGO DE CHI LE",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-11320-2013",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "02-08-2012 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96557720-3",
+                "nombre": " SISTEMAS ORACLE DE CHILE S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96806840-7",
+                "nombre": " COMPUTACION OLIDATA LIMITADA ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12455558-2",
+                "nombre": "EDUARDO ANDRES MARCHI FERNANDEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-48267-2012",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:39"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c18dff30db011449d17dc6db0cc0b7863adec696b195101e46090fec4fc10946",
+        "cached_at": "2026-05-30T00:08:41.199917"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 11,
+        "casos": [
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "24-10-2023 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "24369590-2",
+                "nombre": "OSCAR LUIS ALBERTO AUTUORI",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8311158-5",
+                "nombre": "EDUARDO URREJOLA MONTENEGRO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10653415-2",
+                "nombre": "CARLOS MARAMBIO SÁNCHEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19078051-1",
+                "nombre": "FELIPE ÁLAMOS MUMBRU",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16017366-1",
+                "nombre": "JORGE EDUARDO TORO BUSTAMANTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4846-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "20-06-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMA ORACLE DE CHILE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8042983-5",
+                "nombre": "ENRIQUE HUMBERTO RUSQUE SOLÍS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16017366-1",
+                "nombre": "JORGE EDUARDO TORO BUSTAMANTE",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "8709021-3",
+                "nombre": "GERARDO MARCELO ARÉVALO LÓPEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2734-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "12-07-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76240079-0",
+                "nombre": "Administradora de Fondos de Pensiones Cuprum S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-26293-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "13-03-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-15054-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "29-11-2017 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-34724-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "11-04-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76240079-0",
+                "nombre": "Administradora de Fondos de Pensiones Cuprum S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9481314-K",
+                "nombre": "Luis Bilbao Aravena",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-15624-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "17-11-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOC.ADM.DE FDOS DE CESANTIA DE CHILE II S.A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-46682-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "22-02-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98001000-7",
+                "nombre": "A.F.P. CUPRUM S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-8181-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "02-03-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98001000-7",
+                "nombre": "A.F.P. CUPRUM S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7072258-5",
+                "nombre": "RAUL TRONCOSO DELPIANO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-10338-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-02-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADM. DE FONDOS DE CESANTIA DE CHILE II SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DECHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-14450-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "15-01-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-4060-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:39"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1f981751f097c26e37e922db1e36361dcaf078186856ea2590efe38e2fc9fbe1",
+        "cached_at": "2026-05-30T00:08:41.540438"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 35,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11736948-K",
+                "nombre": "LUIS ALBERTO CAMPOS CANIFRU (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "24620649-K",
+                "nombre": "OSCAR DAVID VARGAS MAQUEDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1158-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "18-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14590953-8",
+                "nombre": "JAMES HUMBERTO ISLA URRUTIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17596861-K",
+                "nombre": "PABLO SAFFIRIO ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18636757-K",
+                "nombre": "FRANCISCO JAVIER SAFFIRIO ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17408844-6",
+                "nombre": "MAX IGNACIO YURASZECK PEREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17271913-9",
+                "nombre": "FELIPE MARTÍN NOGUEIRA FERRADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18152647-5",
+                "nombre": "JAVIERA ANDREA PLAZA MARÍN (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19136525-9",
+                "nombre": "JOSÉ PABLO PATIÑO IZQUIERDO (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-400-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17408844-6",
+                "nombre": "MAX IGNACIO YURASZECK PEREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18636757-K",
+                "nombre": "FRANCISCO JAVIER SAFFIRIO ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17596861-K",
+                "nombre": "PABLO SAFFIRIO ESPINOZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17271913-9",
+                "nombre": "FELIPE MARTÍN NOGUEIRA FERRADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19136525-9",
+                "nombre": "JOSÉ PABLO PATIÑO IZQUIERDO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18152647-5",
+                "nombre": "JAVIERA ANDREA PLAZA MARÍN (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14590953-8",
+                "nombre": "JAMES HUMBERTO ISLA URRUTIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-9002-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "28203972-9",
+                "nombre": "ADRIAN IGNACIO LAGRANDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9005934-3",
+                "nombre": "LEYLA HIRMAS BORMANN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298699-2",
+                "nombre": "AMANDA PATRICIA LORCA SOTO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17031370-4",
+                "nombre": "NICOLÁS ALONSO CORNEJO MONTENEGRO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8892-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "28098683-6",
+                "nombre": "DANIEL BELLUZZI BIAZOTO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15701085-9",
+                "nombre": "FELIPE EDUARDO NAVARRETE PEÑA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8879-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17598248-5",
+                "nombre": "MATÍAS CRISTÓBAL JARAMILLO MERCADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15181575-8",
+                "nombre": "NAVIA RUKMINI TEMER CARRILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8771-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "25-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13544403-0",
+                "nombre": "LEONARDO ANDRÉS ARAYA ARRIAGADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13634956-2",
+                "nombre": "RODRIGO VICTORIANO JORQUERA PULGAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16573466-1",
+                "nombre": "RAMIRO VARGAS VERA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6120-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "21-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18311494-8",
+                "nombre": "SUSANA SALIME HIPLAN ESTEFFAN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10753142-4",
+                "nombre": "FRANCISCA VERÓNICA MIRANDA OYARZÚN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16623406-9",
+                "nombre": "TAMMY ANDREA MARTÍNEZ CAMBIAZO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11736948-K",
+                "nombre": "LUIS ALBERTO CAMPOS CANIFRU",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-37-2025",
+            "tribunal": "Juzgado de Letras de Villa Alemana",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "20-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15701085-9",
+                "nombre": "FELIPE EDUARDO NAVARRETE PEÑA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18910851-6",
+                "nombre": "SERGIO JAVIER MONTIEL DIMTER",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-6114-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "8247227-4",
+                "nombre": "ÁLVARO CRISTIAN NEIRA RAMOS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13687944-8",
+                "nombre": "FRANCISCO JAVIER SEPULVEDA HERNAIZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11910588-9",
+                "nombre": "LUIS ANTONIO BORQUEZ OYARZUN (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2065-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "02-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9491203-2",
+                "nombre": "MARCOS ENRIQUE RODRÍGUEZ OSIAC",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15701085-9",
+                "nombre": "FELIPE EDUARDO NAVARRETE PEÑA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3886-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-02-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13191125-4",
+                "nombre": "IVO ANTONIO VLAHOVIC CABRERA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17083321-K",
+                "nombre": "ANAÍS AYAZI DE MARCHI (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12403935-5",
+                "nombre": "HUGO CRISTIAN FABREGA VEGA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19173473-4",
+                "nombre": "CATALINA FRANCISCA FÁBREGA ZÚÑIGA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18767181-7",
+                "nombre": "SEBASTIAN FELIPE SEREY GAGGERO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-460-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-02-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8711453-8",
+                "nombre": "JOAQUÍN ALFONSO CHIWEI MA-SHICHOY MORAL",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17083321-K",
+                "nombre": "ANAÍS AYAZI DE MARCHI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12403935-5",
+                "nombre": "HUGO CRISTIAN FABREGA VEGA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19173473-4",
+                "nombre": "CATALINA FRANCISCA FÁBREGA ZÚÑIGA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18767181-7",
+                "nombre": "SEBASTIAN FELIPE SEREY GAGGERO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-398-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-02-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15740029-0",
+                "nombre": "ROLANDO CRISTIAN ABURTO CERECEDA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15701085-9",
+                "nombre": "FELIPE EDUARDO NAVARRETE PEÑA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-393-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13706557-6",
+                "nombre": "CÉSAR ALEJANDRO ROMÁN REYES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15332544-8",
+                "nombre": "MARCELO EDUARDO PEZOA CARRASCO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15776924-3",
+                "nombre": "DAVID MALDONADO ROMERO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15477278-2",
+                "nombre": "MAXIMILIANO RAMIRO SANCHEZ PINILLA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-357-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16017366-1",
+                "nombre": "JORGE TORO BUSTAMANTE (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "CENTRO DE CONCILIACIÓN Y MEDIACIÓN DRT METROPOLITANA ORIENTE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-907-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "03-04-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9005934-3",
+                "nombre": "LEYLA HIRMAS BORMANN (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18585417-5",
+                "nombre": "PAULINA ELIANA DEL VILLAR RAMÍREZ (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12299209-8",
+                "nombre": "HÉCTOR RODRIGO ESTRADA BENAVENTE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19078051-1",
+                "nombre": "FELIPE ÁLAMOS MUMBRU (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18283032-1",
+                "nombre": "VICTORIA PAZ CARRASCO CÁRCAMO (Poder Simple)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18298699-2",
+                "nombre": "AMANDA PATRICIA LORCA SOTO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16017366-1",
+                "nombre": "JORGE EDUARDO BUSTAMANTE TORO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15341526-9",
+                "nombre": "JULIO CÉSAR VALDIVIA PÉREZ (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-903-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-11-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17598248-5",
+                "nombre": "MATÍAS CRISTÓBAL JARAMILLO MERCADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "8513719-0",
+                "nombre": "CLAUDIA ROCÍO SOLEDAD RIQUELME ROBLES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1634-2023",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "12-11-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "22137965-9",
+                "nombre": "DAVID ARTURO SANCHEZ CUEVAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17598248-5",
+                "nombre": "MATÍAS CRISTÓBAL JARAMILLO MERCADO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16017366-1",
+                "nombre": "JORGE EDUARDO BUSTAMANTE TORO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19078051-1",
+                "nombre": "FELIPE ÁLAMOS MUMBRU (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18159282-6",
+                "nombre": "JAVIERA ANDREA SERPELL MÜLLER (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16072339-4",
+                "nombre": "CÉSAR ROLANDO MIRANDA ROJAS",
+                "sujeto": "T.IND",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2694-2023",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "28-09-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17598248-5",
+                "nombre": "MATÍAS CRISTÓBAL JARAMILLO MERCADO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96557720-3",
+                "nombre": "SISTEMAS ORACLE DE CHILE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15566412-6",
+                "nombre": "NICOLE PATRICIA EUGENIA ZÚÑIGA GONZÁLEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19078051-1",
+                "nombre": "FELIPE ÁLAMOS MUMBRU (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15341526-9",
+                "nombre": "JULIO CÉSAR VALDIVIA PÉREZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18159282-6",
+                "nombre": "JAVIERA ANDREA SERPELL MÜLLER (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16017366-1",
+                "nombre": "JORGE EDUARDO BUSTAMANTE TORO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2352-2023",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:39"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7e468ec37ac2ade62f49e8a0b49b0f89b31abb57f3d4521438ae928ad57e0f2f",
+        "cached_at": "2026-05-30T00:08:41.984180"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 7,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-02-2026 21:00:00",
+            "multa": "4282/25/274-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-01-2026 21:00:00",
+            "multa": "6400/25/414-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-07-2025 20:00:00",
+            "multa": "8691/25/179-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-06-2024 20:00:00",
+            "multa": "1001/24/103-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "16-12-2022 21:00:00",
+            "multa": "1725/22/037-3",
+            "procedencia": "FISCALIZACION",
+            "um": "21.38",
+            "tipoUm": "IMM",
+            "montoClp": 10690000
+          },
+          {
+            "enunciado": "Distribuir jornada semanal ordinaria de 45 horas en más de 6 días (menos de 5 días).",
+            "estado": "PAGADA",
+            "fecha": "16-12-2022 21:00:00",
+            "multa": "1725/22/037-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3669420
+          },
+          {
+            "enunciado": "Exceder máximo de 2 horas extras por día.",
+            "estado": "PAGADA",
+            "fecha": "16-12-2022 21:00:00",
+            "multa": "1725/22/037-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3669420
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:57:39"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:fca32ccd9d584fbdab76a1d2d90056887bf8ae009487fcfb9701237fd6f47f5b",
+        "cached_at": "2026-05-30T00:08:42.344976"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 7,
+        "cantidad": 140,
+        "casos": [
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GUSTAVO ENRIQUE BARRIOS SCHILLING ",
+            "periodo": "12/2025",
+            "rutAfiliado": "19204320-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HUGO IGNACIO ARREDONDO SOTO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15312045-5",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA CAROLINA RODRIGUEZ KRIPPEL ",
+            "periodo": "12/2025",
+            "rutAfiliado": "8452864-1",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANNER EDUARDO MORALES PALMA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "13439835-3",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GUSTAVO ENRIQUE BARRIOS SCHILLING ",
+            "periodo": "11/2025",
+            "rutAfiliado": "19204320-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEJANDRO JAVIER GUTTERO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "23697751-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANNER EDUARDO MORALES PALMA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "13439835-3",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HUGO IGNACIO ARREDONDO SOTO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "15312045-5",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO OSVALDO VARGAS ",
+            "periodo": "11/2025",
+            "rutAfiliado": "8717492-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA CAROLINA RODRIGUEZ KRIPPEL ",
+            "periodo": "11/2025",
+            "rutAfiliado": "8452864-1",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANNER EDUARDO MORALES PALMA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "13439835-3",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GUSTAVO ENRIQUE BARRIOS SCHILLING ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19204320-4",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HUGO IGNACIO ARREDONDO SOTO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "15312045-5",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA CAROLINA RODRIGUEZ KRIPPEL ",
+            "periodo": "10/2025",
+            "rutAfiliado": "8452864-1",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEJANDRO JAVIER GUTTERO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "23697751-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LUIS ESTEBAN MOYA DIAZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "8538489-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO OSVALDO VARGAS ",
+            "periodo": "10/2025",
+            "rutAfiliado": "8717492-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MANUELA DE LA VEGA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "18390430-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO OSVALDO VARGAS ",
+            "periodo": "09/2025",
+            "rutAfiliado": "8717492-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "STEPHANE ABRAN ",
+            "periodo": "09/2025",
+            "rutAfiliado": "22618414-7",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:57:39"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:540160770291df1a8a8de19fe1f8a25b0490ec684fffdbca2872d1710cdaaa15",
+        "cached_at": "2026-05-30T00:08:42.684576"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96557720-3",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "SISTEMAS ORACLE DE CHILE LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SISTEMAS ORACLE DE CHILE LIMITADA",
+            "rutSociedad": "96557720-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "LOGFIRE CHILE SPA",
+                "rut": "76023837-6",
+                "domicilio": "CIUDAD DE SANTIAGO DE CHILE",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ACME ACQUISITION LLC",
+                "rut": "59284770-1",
+                "domicilio": "AVENIDA VITACURA 2939 PISO 6 LAS CONDES SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.96"
+              },
+              {
+                "nombre": "OCAPAC HOLDING COMPANY UNLIMITED COMPANY",
+                "rut": "59284760-4",
+                "domicilio": "AVENIDA VITACURA 2939, PISO 6, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.03"
+              },
+              {
+                "nombre": "ORACLE  HOLDINGS INC.",
+                "rut": "59243520-9",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ORACLE AMERICA INC.",
+                "rut": "59243530-6",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ORACLE SYSTEMS CORPORATION",
+                "rut": "59204300-9",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-07-01",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/07/01/42392/05/1614631.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-08-01",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/08/01/41823/05/1250527.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "ACONEX CHILE SPA",
+                "rut": "76093571-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CENTRO DE CAPACITACION ORACLE LIMITADA",
+                "rut": "78019230-5",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CENTRO DE CAPACITACIÓN ORACLE LIMITADA",
+                "rut": null,
+                "tipoDeParticipacion": "Administrador - Socio"
+              },
+              {
+                "razonSocial": "COMERCIAL SIEBEL SYSTEMS CHILE LIMITADA",
+                "rut": "77527220-1",
+                "tipoDeParticipacion": "Administrador - Socio"
+              },
+              {
+                "razonSocial": "PEOPLESOFT CHILE LIMITADA",
+                "rut": "77413470-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SISTEMAS ORACLE DE CHILE LIMITADA",
+                "rut": "96557720-3",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ac63a74192199f45e8e8ada6623bb9fa6f73b56186632f78e740943cc8388cbe",
+      "cached_at": "2026-05-30T00:08:43.317929"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96557720-3",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "31-07-2017 20:00:00",
+            "razonSocial": "SISTEMAS ORACLE DE CHILE S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/08/01/41823/05/1250527.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "LOGFIRE CHILE SPA",
+                "rut": "76023837-6",
+                "domicilio": "CALLE MARCHANT PEREIRA 150, OF 1501 Y 1502, PROVIDENCIA, SANTIAGO"
+              }
+            ],
+            "rut": "96557720-3"
+          },
+          {
+            "fecha": "30-06-2019 20:00:00",
+            "razonSocial": "SISTEMAS ORACLE DE CHILE S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/07/01/42392/05/1614631.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ACME ACQUISITION, LLC",
+                "rut": null,
+                "domicilio": "AVENIDA VITACURA 2939, PISO 6, LAS CONDES, SANTIAGO"
+              },
+              {
+                "nombre": "OCAPAC HOLDING COMPANY UNLIMITED COMPANY",
+                "rut": null,
+                "domicilio": "AVENIDA VITACURA 2939, PISO 6, LAS CONDES, SANTIAGO"
+              }
+            ],
+            "rut": "96557720-3"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0774134700",
+            "society": "PEOPLESOFT CHILE LIMITADA"
+          },
+          {
+            "rut": "0775272201",
+            "society": "COMERCIAL SIEBEL SYSTEMS CHILE LIMITADA"
+          },
+          {
+            "rut": "0760935719",
+            "society": "ACONEX CHILE SPA"
+          },
+          {
+            "rut": "0780192305",
+            "society": "CENTRO DE CAPACITACION ORACLE LIMITADA"
+          },
+          {
+            "rut": "96557720-3",
+            "sociedad": "SISTEMAS ORACLE DE CHILE S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f1b26b6240324ab35712d3d0ba03410c8850db026d2bd011e8c48ed6a2a74c50",
+        "cached_at": "2026-05-30T00:08:43.694957"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 9077470,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 42.10526315789473,
+      "numeradorJudicial": 24,
+      "denominadorJudicial": 57,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 57.89473684210527,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 12,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 20248840,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 357.89473684210526,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:44308fb5330cf9220d665a968f119f16f2c50e23aeca6218b34ba839c518da8d",
+      "cached_at": "2026-05-30T00:08:44.370536"
+    }
+  }
+}

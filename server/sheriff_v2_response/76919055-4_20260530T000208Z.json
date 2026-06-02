@@ -1,0 +1,1277 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76919055-4"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76919055-4",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "MORYA SERVICES LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "20-09-2018",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FABRICACION DE PRODUCTOS METALICOS PARA USO ESTRUCTURAL",
+            "codigo": "251100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-01-2023"
+          },
+          {
+            "actividades": "CONSTRUCCION DE OTRAS OBRAS DE INGENIERIA CIVIL",
+            "codigo": "429000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-06-2019"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE PRODUCTOS FARMACEUTICOS Y MEDICINALES",
+            "codigo": "464907",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "24-03-2020"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE EQUIPO, PARTES Y PIEZAS ELECTRONICOS Y DE TELECO",
+            "codigo": "465200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-11-2023"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE MAQUINARIA METALURGICA, PARA LA MINERIA, EXTRACC",
+            "codigo": "465901",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-09-2018"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE MAQUINARIA Y EQUIPO DE OFICINA; VENTA AL POR MAY",
+            "codigo": "465904",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-11-2023"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE MATERIALES DE CONSTRUCCION, ARTICULOS DE FERRETE",
+            "codigo": "466302",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-11-2023"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2024"
+          }
+        ],
+        "cantidadActividades": 7,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "25.000,01 a 50.000,00",
+          "cantidadTrabajadores": 55
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:02:04"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 6,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 6,
+        "todosLosCasos": 6,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "28-05-2026 03:15:42",
+        "ultimaActualizacionCobranza": "28-05-2026 03:15:00",
+        "ultimaActualizacionLaboral": "28-05-2026 03:16:01",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 4,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 4
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:02:03"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:02:03"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "06-01-2019 21:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "2065200",
+              "razonSocial": "MORYA SERVICES LIMITADA",
+              "cve": "AC1pYmsBLx9m",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC1pYmsBLx9m&codigo=21-18-96-88-E2-AE-DF-36-DB-89-DF-83-7F-E5-8B-70",
+              "socios": [
+                {
+                  "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$48.000.000 CLP",
+                  "porcentaje": "80%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+                }
+              ]
+            },
+            {
+              "fecha": "23-03-2020 21:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "2825340",
+              "razonSocial": "MORYA SERVICES LIMITADA",
+              "cve": "AC7GK0zDegpK",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7GK0zDegpK&codigo=38-2C-DC-B3-1D-4E-5E-9A-DC-35-D7-F2-01-51-8C-C3",
+              "socios": [
+                {
+                  "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$48.000.000 CLP",
+                  "porcentaje": "80%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+                }
+              ]
+            },
+            {
+              "fecha": "12-09-2018 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "1879924",
+              "razonSocial": "MORYA SERVICES LIMITADA",
+              "cve": "ACaIS1DJj3Kb",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACaIS1DJj3Kb&codigo=51-28-0F-6A-C0-57-C3-CE-CC-FA-00-82-25-B4-A1-93",
+              "socios": [
+                {
+                  "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "CL2.000.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "CL8.000.000 CLP",
+                  "porcentaje": "80%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+                }
+              ]
+            },
+            {
+              "fecha": "27-05-2019 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "2330003",
+              "razonSocial": "MORYA SERVICES LIMITADA",
+              "cve": "ACan0ln3sICY",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACan0ln3sICY&codigo=74-F0-93-7B-74-4A-10-1B-E7-CC-98-0D-81-49-DD-B5",
+              "socios": [
+                {
+                  "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$48.000.000 CLP",
+                  "porcentaje": "80%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+                }
+              ]
+            },
+            {
+              "fecha": "22-09-2019 21:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "2541169",
+              "razonSocial": "MORYA SERVICES LIMITADA",
+              "cve": "ACYUOrHOuM0D",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYUOrHOuM0D&codigo=7F-B7-2A-FD-22-E3-4C-A2-6C-1C-78-44-B1-EF-CE-2A",
+              "socios": [
+                {
+                  "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$48.000.000 CLP",
+                  "porcentaje": "80%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+                }
+              ]
+            },
+            {
+              "fecha": "10-06-2020 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "3020345",
+              "razonSocial": "MORYA SERVICES LIMITADA",
+              "cve": "ACZocdv9xaxF",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZocdv9xaxF&codigo=13-BC-00-80-FE-9E-81-95-44-49-87-56-DD-D7-A2-7D",
+              "socios": [
+                {
+                  "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                  "rut": "19979852-9",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                  "acciones": null,
+                  "monto": "$48.000.000 CLP",
+                  "porcentaje": "80%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                  "rut": "17552319-7",
+                  "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 216660,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 216660,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 2619030,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 19960,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 444560,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 444560,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 2655710,
+          "leasingMoroso": 0,
+          "leasingVigente": 28740,
+          "lineaCredito": 30710
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 8,
+          "tasacionTotal": 99053140,
+          "ultimaActualizacion": "30-05-2026 00:02:04"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:02:04"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "MORYA SERVICES LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3a1371f65153e39d83a840bb380f5113517c5bd4e68d4c56b409e327e45d2273",
+      "cached_at": "2026-05-30T00:02:05.143515"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 6,
+        "casos": [
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "08-03-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10128121-3",
+                "nombre": "DANIEL JORGE ERNESTO IBÁÑEZ GANDOLFO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15353824-7",
+                "nombre": "CECILIA RAQUEL SANDOVAL CARRASCO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76919055-4",
+                "nombre": "MORYA SERVICES LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17552319-7",
+                "nombre": "SHANI DAVID DAYANANI LACHMANDAS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10977282-8",
+                "nombre": "DARÍO EMIGDIO CHACÓN VICENTELO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18499632-4",
+                "nombre": "SEBASTIÁN ANTONIO CANO ROJAS",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-233-2022",
+            "tribunal": "1º Juzgado de Letras de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "08-11-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76919055-4",
+                "nombre": "MORYA SERVICES LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8219721-4",
+                "nombre": "JAIME JAVIER CORDERO MARTINI (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76220532-7",
+                "nombre": "IMPORTADORA EXPORTADORA DISTRIBUIDORA Y COMERCIALIZADORA MUNDIMED LIMITDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15639047-K",
+                "nombre": "ALEJANDRO ESTEBAN YÁÑEZ MUÑOZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-2950-2021",
+            "tribunal": "2º Juzgado de Letras de Iquique",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "10-02-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15353824-7",
+                "nombre": "CECILIA RAQUEL SANDOVAL CARRASCO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76919055-4",
+                "nombre": "MORYA SERVICES LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17552319-7",
+                "nombre": "SHANI DAVID DAYANANI LACHMANDAS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10128121-3",
+                "nombre": "DANIEL JORGE ERNESTO IBAQEZ GANDOLFO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-230-2020",
+            "tribunal": "1º Juzgado de Letras de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "17-11-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17552319-7",
+                "nombre": "SHANI DAVID DAYANANI LACHMANDAS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76919055-4",
+                "nombre": "MORYA SERVICES LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15353824-7",
+                "nombre": "CECILIA RAQUEL SANDOVAL CARRASCO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10128121-3",
+                "nombre": "DANIEL JORGE ERNESTO IBAQEZ GANDOLFO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-1652-2019",
+            "tribunal": "3º Juzgado de Letras de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "10-11-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76919055-4",
+                "nombre": "MORYA SERVICES LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15353824-7",
+                "nombre": "CECILIA RAQUEL SANDOVAL CARRASCO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10128121-3",
+                "nombre": "DANIEL JORGE ERNESTO IBAQEZ GANDOLFO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17552319-7",
+                "nombre": "SHANI DAVID DAYANANI LACHMANDAS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-1615-2019",
+            "tribunal": "3º Juzgado de Letras de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "6 Terminada",
+            "fechaIngreso": "06-11-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10128121-3",
+                "nombre": "DANIEL JORGE ERNESTO IBÁÑEZ GANDOLFO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15353824-7",
+                "nombre": "CECILIA RAQUEL SANDOVAL CARRASCO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76919055-4",
+                "nombre": "MORYA SERVICES LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17552319-7",
+                "nombre": "SHANI DAVID DAYANANI LACHMANDAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10977282-8",
+                "nombre": "DARÍO EMIGDIO CHACÓN VICENTELO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18499632-4",
+                "nombre": "SEBASTIÁN ANTONIO CANO ROJAS (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8219721-4",
+                "nombre": "JAIME JAVIER CORDERO MARTINI (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Juicio de arrendamiento",
+            "rol": "C-32055-2019",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:02:03"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3ed9490fa630872c4354a482986cc2eb952a3d1cece3f26550951d73c59fdce2",
+        "cached_at": "2026-05-30T00:02:05.485422"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:02:03"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:18c63f50046a21ac23ff09abefe69e02e57ba4edf1ae67dedaefaedf5dcf5b8d",
+        "cached_at": "2026-05-30T00:02:05.847878"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:02:03"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:99681833fac3178d90561118101af4135583892ba564d3503892057998c13a82",
+        "cached_at": "2026-05-30T00:02:06.205751"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "28-05-2026 03:15:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4afa85afb673aaf865a4bfaa6e4e08eb4dea71f388fb9306c954d308813eec34",
+        "cached_at": "2026-05-30T00:02:06.576035"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "IGNACIO ANDRES DIAZ REYES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "18744121-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FELIX ANTONIO VALDEBENITO MORALES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15326543-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "IGNACIO ANDRES DIAZ REYES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18744121-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FELIX ANTONIO VALDEBENITO MORALES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15326543-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2024 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSHEP ANTHONY DIAZ AREYUNA ",
+            "periodo": "10/2024",
+            "rutAfiliado": "13531151-0",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:15:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:582a46606e5a781b6808fd50f8586501fc50e3d7a990c9d0bc1004f2c5dde195",
+        "cached_at": "2026-05-30T00:02:06.915872"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76919055-4",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "MORYA SERVICES LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "MORYA SERVICES LIMITADA",
+            "rutSociedad": "76919055-4",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2018-09-12",
+            "socios": [
+              {
+                "nombre": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "1325",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "80"
+              },
+              {
+                "nombre": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "DOMICILIADO EN SALITRERA VICTORIA N°3255 VILLA IQUIQUE, COMUNA DE IQUIQUE, REGION DE TARAPACA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "20"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-06-11",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZocdv9xaxF&codigo=13-BC-00-80-FE-9E-81-95-44-49-87-56-DD-D7-A2-7D"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-03-24",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7GK0zDegpK&codigo=38-2C-DC-B3-1D-4E-5E-9A-DC-35-D7-F2-01-51-8C-C3"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-09-23",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYUOrHOuM0D&codigo=7F-B7-2A-FD-22-E3-4C-A2-6C-1C-78-44-B1-EF-CE-2A"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-05-28",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACan0ln3sICY&codigo=74-F0-93-7B-74-4A-10-1B-E7-CC-98-0D-81-49-DD-B5"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-01-07",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC1pYmsBLx9m&codigo=21-18-96-88-E2-AE-DF-36-DB-89-DF-83-7F-E5-8B-70"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2018-09-13",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACaIS1DJj3Kb&codigo=51-28-0F-6A-C0-57-C3-CE-CC-FA-00-82-25-B4-A1-93"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:07adcb96ef50da16ed5f124ae7e7bf0cb3aa58684615177aee031b4a5870a1e7",
+      "cached_at": "2026-05-30T00:02:07.563260"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76919055-4",
+        "empresaEnUnDia": [
+          {
+            "fecha": "06-01-2019 21:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "2065200",
+            "razonSocial": "MORYA SERVICES LIMITADA",
+            "cve": "AC1pYmsBLx9m",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC1pYmsBLx9m&codigo=21-18-96-88-E2-AE-DF-36-DB-89-DF-83-7F-E5-8B-70",
+            "socios": [
+              {
+                "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$12.000.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$48.000.000 CLP",
+                "porcentaje": "80%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+              }
+            ]
+          },
+          {
+            "fecha": "23-03-2020 21:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "2825340",
+            "razonSocial": "MORYA SERVICES LIMITADA",
+            "cve": "AC7GK0zDegpK",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7GK0zDegpK&codigo=38-2C-DC-B3-1D-4E-5E-9A-DC-35-D7-F2-01-51-8C-C3",
+            "socios": [
+              {
+                "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$12.000.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$48.000.000 CLP",
+                "porcentaje": "80%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+              }
+            ]
+          },
+          {
+            "fecha": "12-09-2018 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "1879924",
+            "razonSocial": "MORYA SERVICES LIMITADA",
+            "cve": "ACaIS1DJj3Kb",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACaIS1DJj3Kb&codigo=51-28-0F-6A-C0-57-C3-CE-CC-FA-00-82-25-B4-A1-93",
+            "socios": [
+              {
+                "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "CL2.000.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "CL8.000.000 CLP",
+                "porcentaje": "80%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+              }
+            ]
+          },
+          {
+            "fecha": "27-05-2019 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "2330003",
+            "razonSocial": "MORYA SERVICES LIMITADA",
+            "cve": "ACan0ln3sICY",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACan0ln3sICY&codigo=74-F0-93-7B-74-4A-10-1B-E7-CC-98-0D-81-49-DD-B5",
+            "socios": [
+              {
+                "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$12.000.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$48.000.000 CLP",
+                "porcentaje": "80%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+              }
+            ]
+          },
+          {
+            "fecha": "22-09-2019 21:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "2541169",
+            "razonSocial": "MORYA SERVICES LIMITADA",
+            "cve": "ACYUOrHOuM0D",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYUOrHOuM0D&codigo=7F-B7-2A-FD-22-E3-4C-A2-6C-1C-78-44-B1-EF-CE-2A",
+            "socios": [
+              {
+                "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$12.000.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$48.000.000 CLP",
+                "porcentaje": "80%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+              }
+            ]
+          },
+          {
+            "fecha": "10-06-2020 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "3020345",
+            "razonSocial": "MORYA SERVICES LIMITADA",
+            "cve": "ACZocdv9xaxF",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZocdv9xaxF&codigo=13-BC-00-80-FE-9E-81-95-44-49-87-56-DD-D7-A2-7D",
+            "socios": [
+              {
+                "socio": "LAVIN HARSH DAYANANI LACHMANDAS",
+                "rut": "19979852-9",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$12.000.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA",
+                "acciones": null,
+                "monto": "$48.000.000 CLP",
+                "porcentaje": "80%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "SHANI DAVID DAYANANI LACHMANDAS",
+                "rut": "17552319-7",
+                "domicilio": "SALITRERA VICTORIA N°3255 VILLA MAGISTERIO COMUNA DE IQUIQUE REGION DE TARAPACA"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f0acded53b7386f5358c3e39aabd31588bbca2f2de94f791d3b2042b10a05852",
+        "cached_at": "2026-05-30T00:02:07.933504"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 216660,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 5,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 4,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:21e77ddbbfc7ad7cdffd969e4a7faf542c214ef711fd2702aea9b3d9c07e5752",
+      "cached_at": "2026-05-30T00:02:08.523559"
+    }
+  }
+}

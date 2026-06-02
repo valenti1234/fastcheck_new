@@ -1,0 +1,651 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77308085-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77308085-2",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "ABEI CHILE SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "15-02-2021",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Como recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas. \n\n\n\n\n\n\n\n\ncertifica(14444,'SITTRIB','TribTerc');\n\n\nmostrarPie()",
+        "situacionActual": "No se encuentra en la Nómina de Contribuyentes de Difícil Fiscalización (NDF) vigente al periodo tributario Agosto/2024",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MENOR POR CORREO, POR INTERNET Y VIA TELEFONICA",
+            "codigo": "479100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "15-02-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 3,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "5.000,01 a 10.000,00",
+          "cantidadTrabajadores": 4
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "01-06-2026 17:00:30",
+        "ultimaActualizacionCobranza": "01-06-2026 17:00:30",
+        "ultimaActualizacionLaboral": "01-06-2026 17:00:30",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 3,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:00:30"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:00:31"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "13-05-2025 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "9176976",
+              "razonSocial": "ABEI CHILE SPA",
+              "cve": "ACeRBiO2nPlo",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACeRBiO2nPlo&codigo=64-E6-72-3A-23-4B-2C-55-18-07-67-3B-0D-F9-8A-02",
+              "socios": [
+                {
+                  "socio": "CARLOS GABRIEL STEINER",
+                  "rut": "",
+                  "domicilio": null,
+                  "acciones": "1000",
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": 50
+                },
+                {
+                  "socio": "ALVARO BOURLOT",
+                  "rut": "28299486-0",
+                  "domicilio": null,
+                  "acciones": "1000",
+                  "monto": "$1.000.000 CLP",
+                  "porcentaje": 50
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ALVARO BOURLOT",
+                  "rut": "28299486-0",
+                  "domicilio": null
+                }
+              ]
+            },
+            {
+              "fecha": "09-02-2021 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "3731453",
+              "razonSocial": "ABEI CHILE SPA",
+              "cve": "ACs2tyRxdX7e",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACs2tyRxdX7e&codigo=76-D8-32-24-58-9C-47-39-57-78-3A-0F-F2-BE-7E-1B",
+              "socios": [
+                {
+                  "socio": "ALEXIS FABRITSIO SALAZAR SOTO",
+                  "rut": "12124786-0",
+                  "domicilio": "RAFAEL CALDERON N°725 DEPTO/LOCAL 36 VILLA EL ARRAYAN COMUNA DE TALAGANTE REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "2000",
+                  "monto": "$2.000.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ALEXIS FABRITSIO SALAZAR SOTO",
+                  "rut": "12124786-0",
+                  "domicilio": "RAFAEL CALDERON N°725 DEPTO/LOCAL 36 VILLA EL ARRAYAN COMUNA DE TALAGANTE REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "07/2024",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "01/2024",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "01-06-2026 17:00:31"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ABEI CHILE SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Vehículos",
+        "Cámara de Comercio"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:419a2b328a129efec408507541ff2f1723f04858ee97d95eee4854a07e4e9216",
+      "cached_at": "2026-06-01T17:00:32.434068"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:00:30"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:08cae7f3afe058c3778e90bde954b67c60f23bb91a4364f5474e6f11cafbe54c",
+        "cached_at": "2026-06-01T17:00:32.948750"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:00:30"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c4c3003265dee2cc37cc88f1dba5e86a4d822aaf2c8f061d0a3af21caa7b3875",
+        "cached_at": "2026-06-01T17:00:33.299478"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:00:30"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7a616a667f54b4cb96b8aab1eaae4c95ea8d88dabf0efaea7963865dd71dea0a",
+        "cached_at": "2026-06-01T17:00:33.642998"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:00:30"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:49fc23125823a232155066f16801cdc902a04664702c080dff24fb07488706e6",
+        "cached_at": "2026-06-01T17:00:34.026753"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-12-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA JOSE MORALES LAGOS ",
+            "periodo": "10/2023",
+            "rutAfiliado": "13896776-k",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "29-12-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEXIS FABRITSIO SALAZAR SOTO ",
+            "periodo": "10/2023",
+            "rutAfiliado": "12124786-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-12-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEXIS FABRITSIO SALAZAR SOTO ",
+            "periodo": "10/2023",
+            "rutAfiliado": "12124786-0",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:00:30"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e880b2773cf5578f0e1cc847892bb72fae15b431feb6756412f286f8b55da9a1",
+        "cached_at": "2026-06-01T17:00:34.396890"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77308085-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ABEI CHILE SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ABEI CHILE SPA",
+            "rutSociedad": "77308085-2",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2021-02-09",
+            "socios": [
+              {
+                "nombre": "ALEXIS FABRITSIO SALAZAR SOTO",
+                "rut": "12124786-0",
+                "domicilio": "RAFAEL CALDERÓN N°725 DEPTO/LOCAL 36 VILLA EL ARRAYAN COMUNA DE TALAGANTE",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "CONSTANZA ANDREA PAREDES SÁNCHEZ",
+                "rut": "18404597-4",
+                "domicilio": "CAMINO LORETO 2127, CONDOMINIO EL HARAS PARCELA 25, TALAGANTE",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ALVARO BOURLOT",
+                "rut": "28299486-0",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-05-14",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACeRBiO2nPlo&codigo=64-E6-72-3A-23-4B-2C-55-18-07-67-3B-0D-F9-8A-02"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2021-02-10",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACs2tyRxdX7e&codigo=76-D8-32-24-58-9C-47-39-57-78-3A-0F-F2-BE-7E-1B"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ee262cdc4df6feddbc71bf52eb114e59a61428b4b2c8467385fb114668bba02b",
+      "cached_at": "2026-06-01T17:00:35.019027"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77308085-2",
+        "empresaEnUnDia": [
+          {
+            "fecha": "13-05-2025 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "9176976",
+            "razonSocial": "ABEI CHILE SPA",
+            "cve": "ACeRBiO2nPlo",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACeRBiO2nPlo&codigo=64-E6-72-3A-23-4B-2C-55-18-07-67-3B-0D-F9-8A-02",
+            "socios": [
+              {
+                "socio": "CARLOS GABRIEL STEINER",
+                "rut": "",
+                "domicilio": null,
+                "acciones": "1000",
+                "monto": "$1.000.000 CLP",
+                "porcentaje": 50
+              },
+              {
+                "socio": "ALVARO BOURLOT",
+                "rut": "28299486-0",
+                "domicilio": null,
+                "acciones": "1000",
+                "monto": "$1.000.000 CLP",
+                "porcentaje": 50
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ALVARO BOURLOT",
+                "rut": "28299486-0",
+                "domicilio": null
+              }
+            ]
+          },
+          {
+            "fecha": "09-02-2021 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "3731453",
+            "razonSocial": "ABEI CHILE SPA",
+            "cve": "ACs2tyRxdX7e",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACs2tyRxdX7e&codigo=76-D8-32-24-58-9C-47-39-57-78-3A-0F-F2-BE-7E-1B",
+            "socios": [
+              {
+                "socio": "ALEXIS FABRITSIO SALAZAR SOTO",
+                "rut": "12124786-0",
+                "domicilio": "RAFAEL CALDERON N°725 DEPTO/LOCAL 36 VILLA EL ARRAYAN COMUNA DE TALAGANTE REGION METROPOLITANA DE SANTIAGO",
+                "acciones": "2000",
+                "monto": "$2.000.000 CLP",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ALEXIS FABRITSIO SALAZAR SOTO",
+                "rut": "12124786-0",
+                "domicilio": "RAFAEL CALDERON N°725 DEPTO/LOCAL 36 VILLA EL ARRAYAN COMUNA DE TALAGANTE REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e4870860f1a5994c00c20b69d9c3655d07c5a9d958f5d9e7d95c3f61f9b48bb7",
+        "cached_at": "2026-06-01T17:00:35.412190"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 3,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:30de3a32dfa4d42e5196c3cc48e3b3ae48ab771269e3cb7ac0ff4b0ad987cb27",
+      "cached_at": "2026-06-01T17:00:37.949085"
+    }
+  }
+}

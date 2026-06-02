@@ -1,0 +1,115 @@
+{
+  "pathCount": 9,
+  "relationships": [
+    {
+      "source": "76216513",
+      "target": "15644273",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76216513",
+      "target": "16368787",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76216513",
+      "target": "59216070",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76144387",
+      "target": "15644273",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78241853",
+      "target": "15644273",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2742090",
+        "cve": "2742090",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2025-12-17",
+        "doc_extraction_id": "2309441",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/12/17/44326/05/2742090.pdf"
+      }
+    },
+    {
+      "source": "76144387",
+      "target": "15644273",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_7220906",
+        "doh_extraction_id": "965086",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "7220906",
+        "published_at": "2011-04-27",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/04/27/do-20110427.pdf"
+      }
+    },
+    {
+      "source": "76144387",
+      "target": "16368787",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76144387",
+      "target": "16368787",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_7220906",
+        "doh_extraction_id": "965086",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "7220906",
+        "published_at": "2011-04-27",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/04/27/do-20110427.pdf"
+      }
+    },
+    {
+      "source": "59216070",
+      "target": "9907842",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-12-29",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "9907842": "ANDRES RAFAEL VERGARA GONZALEZ",
+    "15644273": "ALEJANDRO ANDRES FEUEREISEN BESA",
+    "16368787": "JUAN JOSE BESA VERGARA",
+    "59216070": "WHOLEMEANING, INC.",
+    "76144387": "SILTA SISTEMAS DE INFORMACION Y ESTUDIOS INTEGRALES LIMITADA",
+    "76216513": "WIRD CHILE SPA",
+    "78241853": "ASESORIAS E INVERSIONES AFB SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:42aeecac858a2c32de9f1a5a8f5a8d9fc7dcce9208fc9b4a757bdae7bdf948ce",
+    "cached_at": "2026-06-01T17:08:02.111665"
+  }
+}

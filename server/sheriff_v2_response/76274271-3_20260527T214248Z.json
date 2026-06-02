@@ -1,0 +1,2764 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76274271-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76274271-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "27-05-2026",
+      "identificacion": {
+        "razonSocial": "BGR S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "23-04-2013",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE AGENCIAS DE EMPLEO",
+            "codigo": "781000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-04-2013"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE DOTACION DE RECURSOS HUMANOS",
+            "codigo": "783000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-04-2013"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 11,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "200.000,01 a 600.000,00",
+          "cantidadTrabajadores": 3366
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "27-05-2026 21:42:43"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 23,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 11,
+        "laboralActivos": 69,
+        "laboralPresentados": 12,
+        "laboralConcluidos": 31,
+        "casosActuales": 92,
+        "casosArchivados": 12,
+        "casosConcluidos": 42,
+        "todosLosCasos": 146,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 68,
+          "demandante": 6,
+          "demandadoSolidario": 1,
+          "reclamante": 12,
+          "demandadoSubsidiario": 1,
+          "denunciado": 16
+        },
+        "ultimaActualizacionCiviles": "27-05-2026 21:42:42",
+        "ultimaActualizacionCobranza": "27-05-2026 21:42:43",
+        "ultimaActualizacionLaboral": null,
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 1000,
+          "empleados": 333,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 1000
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 50,
+          "montoTotalMultas": 51611168,
+          "multasPagadas": 50,
+          "montoMultasPagadas": 51611168,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 58.94,
+            "cambioAbsoluto": 19140000
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 365358,
+          "variacion": {
+            "montoTotal": 365358,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "27-05-2026 21:42:43"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "04-01-2026 21:00:00",
+              "razonSocial": "BGR S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2026/01/05/44340/05/2750401.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76274271-3"
+            }
+          ],
+          "ultimaActualizacion": "27-05-2026 21:42:42"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 299650,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 299650,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 12790,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 312910,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 312910,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 12960
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "20-04-2026 16:25:38"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 2,
+          "tasacionTotal": "394351529",
+          "ultimaActualizacion": "20-04-2026 16:25:38"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 33.88429752066115,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 233.88429752066116,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "nombre": "BGR S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:97f8fbd800497360e6c45395aa8f00335a862e3257aed015a31f53e43a01bab0",
+      "cached_at": "2026-05-27T21:42:44.568345"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "27-05-2026 21:42:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c8f01aa42f1cdabd237e12798a985ce8c7b85beea2fe95010d17f1d52ef28bfa",
+        "cached_at": "2026-05-27T21:42:44.904247"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 34,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "26-03-2026 21:00:00",
+            "monto": "2861115",
+            "litigantes": [
+              {
+                "rut": "15080502-3",
+                "nombre": "JENNIFER ALEJANDRA CASTILLO LATUD",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16645510-3",
+                "nombre": "FABIOLA ALEJANDRA CARREÑO GÓMEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13916995-6",
+                "nombre": "SANDRA LEONOR VILCHES QUILODRÁN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10410236-0",
+                "nombre": "RODRIGO ANDRÉS ALBORNOZ POLLMANN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18639190-K",
+                "nombre": "IGNACIO JAVIER VARGAS AHUMADA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1234-2026",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "25-02-2026 21:00:00",
+            "monto": "492168",
+            "litigantes": [
+              {
+                "rut": "17141142-4",
+                "nombre": "PAMELA ANDREA GONZÁLEZ GUARDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18678346-8",
+                "nombre": "SERGIO EFRAÍN VILLAR MACHUCA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO ANDRÉS VALDIVIA MERINO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18147390-8",
+                "nombre": "ANA MARÍA BARRIENTOS ALARCÓN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-793-2026",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "10-12-2025 21:00:00",
+            "monto": "150345",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE OSORNO",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16842933-9",
+                "nombre": "PATRICIO JAVIER ULLOA AMPUERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-202-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "06-11-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "17099884-7",
+                "nombre": "HAIDDE MARISOL VALLEJOS DUARTE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18395533-0",
+                "nombre": "RAFAEL MATÍAS FRANZ ÁLVAREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4718-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "10-06-2025 20:00:00",
+            "monto": "173901",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13723101-8",
+                "nombre": "MARÍA VIOLETA RAMÍREZ LARENAS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16542736-K",
+                "nombre": "SOLEDAD DEL PILAR CONTRERAS LOZANO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12878794-1",
+                "nombre": "ALEJANDRO RAMÓN ORELLANA MOYA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13350664-0",
+                "nombre": "IRIS DEL ROSARIO LEIVA MACHUCA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3-2025",
+            "tribunal": "Jdo. de Letras y Garantía de Pichilemu",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "14-05-2025 20:00:00",
+            "monto": "672100",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96720910-4",
+                "nombre": "MONDELEZ CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12714627-6",
+                "nombre": "HÉCTOR ALEJANDRO DUHART GALLARDO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13266431-5",
+                "nombre": "CLAUDIA ANDREA CAYÚN GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12757296-8",
+                "nombre": "ALICIA DEL CARMEN FLORES NITOR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-127-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Puerto Montt",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "26-03-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13607574-8",
+                "nombre": "PAOLA ANDREA LARA SANHUEZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18436690-8",
+                "nombre": "CAMILA IGNACIA NEIRA PÉREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-107-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "25-03-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16632895-0",
+                "nombre": "YESENIA YENIFER GUÍÑEZ MUÑOZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16635200-2",
+                "nombre": "MARCELA IVONNE CIFUENTES SANTANDER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12193440-K",
+                "nombre": "DANIELLA ANDREA GARCÍA CONCHA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16362009-K",
+                "nombre": "JOSÉ PEDRO LÓPEZ RAMÍREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13112683-2",
+                "nombre": "ALDO MAURICIO VILLA BURGOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13221595-2",
+                "nombre": "ROSA MARÍA ISABEL SOTOMAYOR SÁNCHEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12856549-3",
+                "nombre": "MARGARITA ALEJANDRA AZÚA SOTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9166215-9",
+                "nombre": "EDUARDO JAVIER BARROS ROMERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-102-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "06-01-2025 21:00:00",
+            "monto": "1022626",
+            "litigantes": [
+              {
+                "rut": "96656660-4",
+                "nombre": "PROCTER & GAMBLE CHILE LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10410750-8",
+                "nombre": "JORGE LUIS DEL ESCOVAL RODRÍGUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10738758-7",
+                "nombre": "SANDRA XIMENA CÁRDENAS MARTÍNEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "28-10-2024 21:00:00",
+            "monto": "2065275",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16232139-0",
+                "nombre": "JENIFFER CAROLINA ROCO LORCA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17560646-7",
+                "nombre": "SERGIO ORLANDO VENEGAS BRICEÑO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-621-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "15-09-2024 21:00:00",
+            "monto": "2020218",
+            "litigantes": [
+              {
+                "rut": "13221595-2",
+                "nombre": "ROSA MARÍA ISABEL SOTOMAYOR SÁNCHEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9166215-9",
+                "nombre": "EDUARDO JAVIER BARROS ROMERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17002372-2",
+                "nombre": "CELSO HERNÁN CAMPOS REYES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-37-2024",
+            "tribunal": "Juzgado de Letras de Villarrica",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "10-09-2024 21:00:00",
+            "monto": "520377",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12974298-4",
+                "nombre": "RODRIGO ARIEL SOTO MACHUCA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11984427-4",
+                "nombre": "SANDRA SUSANA MORAGA CONTRERAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-673-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "09-09-2024 21:00:00",
+            "monto": "1099193",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99590850-6",
+                "nombre": "GENOMMA LAB CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18773939-K",
+                "nombre": "VÍCTOR MANUEL MUÑOZ FUENTEALBA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15371915-2",
+                "nombre": "JORGE MANUEL LENA SALGADO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16375512-2",
+                "nombre": "MARÍA DE LA PAZ OLEGARIA AGUILERA ARANIBAR",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4502-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "19-08-2024 20:00:00",
+            "monto": "632849",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A. (UNIMARC)",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "24440869-9",
+                "nombre": "EVELYN LUCÍA GONZALEZ BARRIENTOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19461182-K",
+                "nombre": "JAVIERA PAZ VILLEGAS SOTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17056652-1",
+                "nombre": "ISAAC JACOB OYARZO GUARDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16533861-8",
+                "nombre": "CLAUDIO ANDRÉS VERA SANTANA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-35-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Coyhaique",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-08-2024 20:00:00",
+            "monto": "527551",
+            "litigantes": [
+              {
+                "rut": "13824377-K",
+                "nombre": "DANIEL ESTEBAN GONZÁLEZ STOFFEL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17208416-8",
+                "nombre": "NATALIE ANDREA POVEDA GUTIÉRREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-12-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Castro",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "15-08-2024 20:00:00",
+            "monto": "1029405",
+            "litigantes": [
+              {
+                "rut": "99590850-6",
+                "nombre": "GENOMMA LAB CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18891536-1",
+                "nombre": "JAVIERA FERNANDA SILVA VALDÉS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16908866-7",
+                "nombre": "PABLO JOSÉ ULLOA FARÍAS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-240-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Prueba",
+            "fechaIngreso": "22-02-2024 21:00:00",
+            "monto": "1449160",
+            "litigantes": [
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18067662-7",
+                "nombre": "EUGENIO EDUARDO CUADRA CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15181474-3",
+                "nombre": "EGON FERNANDO SCHMIDLIN VILLAVICENCIO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "70816700-2",
+                "nombre": "CORPORACIÓN DE ASISTENCIA JUDICIAL DEL BIOBÍO",
+                "sujeto": "T.EXC.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-62-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "02-10-2023 21:00:00",
+            "monto": "646481",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15184899-0",
+                "nombre": "PAZ DENIS QUEVEDO PAREDES",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10344583-3",
+                "nombre": "LORETO ANGÉLICA ABARZÚA SANDOVAL",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "99590850-6",
+                "nombre": "GENOMMA LAB CHILE S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13109934-7",
+                "nombre": "JUAN ALEJANDRO MONCADA SALAZAR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-166-2023",
+            "tribunal": "Jdo. de Letras del Trabajo de Los Ángeles",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "15-11-2022 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION DEL TRABAJO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16872217-6",
+                "nombre": "CAMILA FERNANDA LORCA CISTERNAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10967599-7",
+                "nombre": "MARTA GEMA DONAIRE MATAMOROS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4832-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-01-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "16046856-4",
+                "nombre": "FRANCISCO JAVIER CURIHUENTRO COLIPÍ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12974685-8",
+                "nombre": "RICARDO LEONARDO CONTRERAS VERA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rit": "E-170-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 21:42:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8c149847a644ef19aee75e23c5c18cf086e75a17a18e98db000b045ff485bcf7",
+        "cached_at": "2026-05-27T21:42:45.397583"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 6,
+        "cantidad": 116,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "16-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20662204-0",
+                "nombre": "TAMARA SCARLETH ZÚÑIGA LARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8861089-K",
+                "nombre": "SUSANA CAROLINA GARCIA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14382420-9",
+                "nombre": "MARÍA ELSA PINTO GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15524715-0",
+                "nombre": "DANIELA ANDREA MARQUEZ MOLINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-173-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "08-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16188200-3",
+                "nombre": "VIVIANA NICOLE CRUZ FLORES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12842990-5",
+                "nombre": "RODRIGO FERNANDO NAVARRO ARQUEROS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13358226-6",
+                "nombre": "MARITZA JOHANNA CORTES CORTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12220284-4",
+                "nombre": "ALEX MARCELO LANDSBERGER VARELA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9539434-5",
+                "nombre": "GABRIEL ALFONSO GALLARDO VERDUGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19816991-9",
+                "nombre": "LUCAS IGNACIO JAVIER MARDONES OJEDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96720910-4",
+                "nombre": "MONDELEZ CHILE S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9403566-K",
+                "nombre": "HANS NEIL MILES VEGA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-262-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de La Serena",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "05-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18676655-5",
+                "nombre": "JOCELYN DAFNA HERNÁNDEZ VENTURA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13019126-6",
+                "nombre": "CAROLINA ANDREA SEVERINO ROJAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-39-2026",
+            "tribunal": "1er Juzgado de Letras de Melipilla",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15874549-6",
+                "nombre": "CLAUDIA ELIANA AGÜERO AGÜERO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17889238-K",
+                "nombre": "SONIA VALENTINA PAREDES ULLOA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12714627-6",
+                "nombre": "HECTOR ALEJANDRO DUHART GALLARDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96656660-4",
+                "nombre": "PROCTER GAMBLE CHILE LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-49-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Castro",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17060055-K",
+                "nombre": "ERIKA JANETTE QUIÑELEO PAINE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14129453-9",
+                "nombre": "RUBÉN RODRIGO LEVIPÁN LAGOS (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-922-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18675523-5",
+                "nombre": "CRISTIAN ALEJANDRO GONZÁLEZ MUÑOZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16658896-0",
+                "nombre": "PEDRO IGNACIO PEÑA SANCHEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-187-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "17-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96720910-4",
+                "nombre": "MONDELEZ CHILE S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19259647-5",
+                "nombre": "PADIS ALEJANDRO CONTRERAS ARAYA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19560766-4",
+                "nombre": "IGNACIO OSCCAR CONTRERAS FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81201000-K",
+                "nombre": "CENCOSUD RETAIL S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1226-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "12-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15524715-0",
+                "nombre": "DANIELA ANDREA MARQUEZ MOLINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14382420-9",
+                "nombre": "MARÍA ELSA PINTO GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8861089-K",
+                "nombre": "SUSANA CAROLINA GARCIA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13404077-7",
+                "nombre": "ANGÉLICA JANETH PROVOSTE BAHAMONDES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-80-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "26-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20085836-0",
+                "nombre": "FERNANDO JOAQUÍN DE CONDE DURÁN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15597249-1",
+                "nombre": "ABIGAIL ALEJANDRA MEDINA CAMPOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-44-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "21-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17318371-2",
+                "nombre": "FRANCISCA JAVIERA PEREZ ARCE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14021829-4",
+                "nombre": "ANGEL FRANCISCO PAVEZ VÁSQUEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-19-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16083042-5",
+                "nombre": "DAVID ALEJANDRO ZUMELZU MÁRQUEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12000913-3",
+                "nombre": "HUMBERTO PATRICIO FUENTES DIAZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76134941-4",
+                "nombre": "ADMINISTRADORA DE SUPERMERCADOS HIPER LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-19-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSE TOMAS DOÑA VIAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18104765-8",
+                "nombre": "KATHERINNE NICOLE CISTERNA ROMERO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3-2026",
+            "tribunal": "Juzgado de Letras de Lautaro",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "28-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16985775-K",
+                "nombre": "DANIELA FERNANDA CERDA FARÍAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12240314-9",
+                "nombre": "FRANCISCO JAVIER RAMIREZ GUTIERREZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6672-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSE TOMAS DOÑA VIAL (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-25-2025",
+            "tribunal": "2º Juzgado de Letras de Los Andes",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16584381-9",
+                "nombre": "PAOLA ROSEMARY WILLER MONTES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11781411-4",
+                "nombre": "EDWIN FERREIRA SANHUEZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-392-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "03-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16610937-K",
+                "nombre": "JOSÉ TOMÁS DOÑA VIAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12697013-7",
+                "nombre": "ALEJANDRA ISOLINA SANHUEZA MUJICA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17348530-1",
+                "nombre": "GIANINA VANESSA RODRÍGUEZ VIZAMA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1921-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "24-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "21148582-5",
+                "nombre": "YESSENIA SCARLETH ZÚÑIGA ALARCÓN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8861089-K",
+                "nombre": "SUSANA CAROLINA GARCIA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15524715-0",
+                "nombre": "DANIELA ANDREA MARQUEZ MOLINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14382420-9",
+                "nombre": "MARÍA ELSA PINTO GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-575-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "17-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15524715-0",
+                "nombre": "DANIELA ANDREA MARQUEZ MOLINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14382420-9",
+                "nombre": "MARÍA ELSA PINTO GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8861089-K",
+                "nombre": "SUSANA CAROLINA GARCIA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15122438-5",
+                "nombre": "MARILIN FRANCHESCA CABRERA CAMPOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-554-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "13-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "93834000-5",
+                "nombre": "CENCOSUD S A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13264045-9",
+                "nombre": "RICARDO ORLANDO LEAL NÚÑEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8536871-0",
+                "nombre": "ROSA ESTER GARCIA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5895-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "16-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "77312431-0",
+                "nombre": "STAG EST SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76274271-3",
+                "nombre": "BGR S.A.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9702188-0",
+                "nombre": "MARCELO ADOLFO MUJICA HARRIS (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17836883-4",
+                "nombre": "PAOLA ANDREA OPAZO RUBIO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5320-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SU",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 21:42:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9491979b2951ed204dc71fd42d55926e9996e97f24275905b6ba30ff3f55730f",
+        "cached_at": "2026-05-27T21:42:45.910105"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 50,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-03-2026 21:00:00",
+            "multa": "4306/26/017-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "19-02-2026 21:00:00",
+            "multa": "3902/26/002-1",
+            "procedencia": "RECLAMO",
+            "um": "0.67",
+            "tipoUm": "IMM",
+            "montoClp": 335000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-02-2026 21:00:00",
+            "multa": "8283/26/002-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-01-2026 21:00:00",
+            "multa": "2149/25/122-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-01-2026 21:00:00",
+            "multa": "8867/25/282-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "14-01-2026 21:00:00",
+            "multa": "8867/25/282-2",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-01-2026 21:00:00",
+            "multa": "1972/25/428-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "31-12-2025 21:00:00",
+            "multa": "2010/25/080-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "28-12-2025 21:00:00",
+            "multa": "1268/25/139-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "25-12-2025 21:00:00",
+            "multa": "3527/25/268-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-12-2025 21:00:00",
+            "multa": "1323/25/286-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "27-09-2025 21:00:00",
+            "multa": "8531/25/096-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-09-2025 21:00:00",
+            "multa": "7736/25/112-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-09-2025 20:00:00",
+            "multa": "6221/25/201-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "27-08-2025 20:00:00",
+            "multa": "3119/25/172-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-08-2025 20:00:00",
+            "multa": "1878/25/010-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "08-08-2025 20:00:00",
+            "multa": "7713/25/216-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "01-08-2025 20:00:00",
+            "multa": "3538/25/122-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "27-07-2025 20:00:00",
+            "multa": "3367/24/002-1",
+            "procedencia": "RECLAMO",
+            "um": "0.55",
+            "tipoUm": "IMM",
+            "montoClp": 275000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-07-2025 20:00:00",
+            "multa": "8002/25/106-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 21:42:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:04411e7ab9a8f66dde64f4bd753e01b488023b63e196367413034fb57b805a53",
+        "cached_at": "2026-05-27T21:42:46.262232"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 83,
+        "cantidad": 1659,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAMILA FERNANDA ANDRADE SANHUEZA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17489612-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VALESKA LOURDES ARAYA CORTES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "19659607-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BENJAMIN ANTONIO ALCAIDE ACOSTA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21354645-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BARBARA SOLANGE ALVEAL ALMONACID ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21372805-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATSUKY DANNY ANTICOY VERDUGO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "22065359-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Luis Enrique Araya Riffo ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17148295-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PAMELA MARIBEL AGUILERA DIAZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "14019880-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA EDITH ALARCON MONTES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "10548332-5",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KAREN ALEJANDRA ALFARO PLAZA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "20966052-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ALFREDO ALVAREZ FARIAS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "16560808-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALICIA CAROLINA ANGEL GUZMAN ",
+            "periodo": "01/2026",
+            "rutAfiliado": "12940667-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ELBE ANGEL ASTUDILLO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "11751937-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ROMINA SOFIA ARANCIBIA HERNANDEZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18269661-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS ANDRES ARAVENA NOVOA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18813386-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE JOSHUA ABEL CASTILLO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18762655-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIANELA ABELLO BALBOA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "11898012-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VALENTINO MARIANO AGUIRRE GALLARDO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17713590-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA EDITH ALARCON MONTES ",
+            "periodo": "01/2026",
+            "rutAfiliado": "10548332-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLA ANDREA ALFARO MARTINEZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18673603-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VALESKA FRANCISCA ARAYA GUERRA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18314105-8",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 21:42:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0660dcbe3be65b11ed7d8171f6e409b358971e04322a5071735802c7f0ef560e",
+        "cached_at": "2026-05-27T21:42:46.601890"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76274271-3",
+      "tipoPersona": "juridical",
+      "nombre": "BGR S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "BGR S.A",
+            "rutSociedad": "76274271-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "KNOW HOW PROMOCIONES S.A.",
+                "rut": "76013645-K",
+                "domicilio": "AVENIDA LA MONTAÑA 57, PARQUE INDUSTRIAL LOS LIBERTADORES, COMUNA DE COLINA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES E INMOBILIARIA HANSA LIMITADA",
+                "rut": "76034620-9",
+                "domicilio": "AVENIDA LA MONTAÑA 57, PARQUE INDUSTRIAL LOS LIBERTADORES, COMUNA DE COLINA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.00"
+              },
+              {
+                "nombre": "AMPV S.A.",
+                "rut": "76272987-3",
+                "domicilio": "AVENIDA LA MONTAÑA 57, PARQUE INDUSTRIAL LOS LIBERTADORES, COMUNA DE COLINA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "1.00"
+              },
+              {
+                "nombre": "GABRIEL MARIE WOLF PUNTOUS-GILDEMEISTER",
+                "rut": "14660428-5",
+                "domicilio": "BENJAMÍN 2973; LAS CONDES",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "BRUNO MARIE BERTRAND PUNTOUS- GILDEMEISTER",
+                "rut": "14660429-3",
+                "domicilio": "SANTIAGO, CALLE LA CONCEPCIÓN 141, OFICINA 1007, PISO 10, COMUNA DE PROVIDENCIA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "KARINA ALEJANDRA FLORES MUÑOZ",
+                "rut": null,
+                "domicilio": "LA CONCEPCIÓN 65 PISO 2 COMUNA DE PROVIDENCIA",
+                "tipoDeParticipacion": "Notario suplente",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ANDRÉS FELIPE RIEUTORD ALVARADO",
+                "rut": null,
+                "domicilio": "LA CONCEPCIÓN N°65, PISO 2, COMUNA DE PROVIDENCIA",
+                "tipoDeParticipacion": "Notario titular",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "RAÚL IVÁN PERRY PEFAUR",
+                "rut": null,
+                "domicilio": "AHUMADA 312, OFICINA 236, SANTIAGO",
+                "tipoDeParticipacion": "Notario titular",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "EVELYN GALARCE GONZALEZ",
+                "rut": "16374931-9",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2026-01-05",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2026/01/05/44340/05/2750401.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:116091e7a12864f8e38cff6eb7014e4846749c690c03f7cbf51d814035831247",
+      "cached_at": "2026-05-27T21:42:47.315098"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76274271-3",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "04-01-2026 21:00:00",
+            "razonSocial": "BGR S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2026/01/05/44340/05/2750401.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76274271-3"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76274271-3",
+            "sociedad": "BGR S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4e16224d2851a0ad107d12f161c0dcda66ddb1b606b442ffd812b5c3f6c95a6a",
+        "cached_at": "2026-05-27T21:42:47.735016"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 299650,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 67.2,
+      "numeradorJudicial": 84,
+      "denominadorJudicial": 125,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 32.8,
+      "porcentajeMoraPrevisional": 100,
+      "casosMoraPrevisional": 1000,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 77510388,
+      "porcentajeBoletinLaboral": 100,
+      "montoBoletinLaboral": 365358,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 232.8,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1a3c4cd67f91d42b3d265889d960f4df3d6a04dcb6dc49ed4cac3ac2a302ce7f",
+      "cached_at": "2026-05-27T21:42:48.332610"
+    }
+  }
+}

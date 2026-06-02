@@ -1,0 +1,1003 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77025021-8"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77025021-8",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "AKSIOM INGENIERIA PARA TRABAJOS EN ALTURA SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "10-06-2019",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS INSTALACIONES PARA OBRAS DE CONSTRUCCION",
+            "codigo": "432900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-06-2019"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE VENTA AL POR MENOR EN COMERCIOS NO ESPECIALIZADOS",
+            "codigo": "471990",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-06-2019"
+          },
+          {
+            "actividades": "EMPRESAS DE SERVICIOS DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULTOR",
+            "codigo": "711002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-06-2019"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2019"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 6,
+        "ultimaActualizacion": "30-05-2026 00:04:22",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "10.000,01 a 25.000,00",
+          "cantidadTrabajadores": 39
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:04:22"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 1,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 1,
+        "casosConcluidos": 0,
+        "todosLosCasos": 2,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1,
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:16:36",
+        "ultimaActualizacionCobranza": "28-05-2026 03:15:44",
+        "ultimaActualizacionLaboral": "28-05-2026 03:18:04",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:04:21"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:04:21"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "05-06-2019 20:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "2292232",
+              "razonSocial": "SOCIEDAD POR ACCIONES AKSIOM TECNOLOGIA & SOLUCIONES EN ALTURA SPA",
+              "cve": "ACAeTUa0Om6g",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAeTUa0Om6g&codigo=B4-8E-70-4F-66-CA-1C-5B-1D-B3-14-FA-84-42-D3-4A",
+              "socios": [
+                {
+                  "socio": "FERNANDO JAVIER MEDEL JOPIA",
+                  "rut": "15782944-0",
+                  "domicilio": "MAR DEL PLATA N°02166 VILLA COVIEFI COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA",
+                  "acciones": "100",
+                  "monto": "$100.000 CLP",
+                  "porcentaje": "20%"
+                },
+                {
+                  "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": "JOSE BERNARDO TAGLE N°862 VILLA COVIEFI COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA",
+                  "acciones": "300",
+                  "monto": "$300.000 CLP",
+                  "porcentaje": "60%"
+                },
+                {
+                  "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "15008539-K",
+                  "domicilio": "AV. RICAVENTURA N°10651 DEPTO/LOCAL 32 VILLA COND. BORDEMAR 4 COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA",
+                  "acciones": "100",
+                  "monto": "$100.000 CLP",
+                  "porcentaje": "20%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": "JOSE BERNARDO TAGLE N°862 VILLA COVIEFI COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA"
+                },
+                {
+                  "administrador": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "15008539-K",
+                  "domicilio": "AV. RICAVENTURA N°10651 DEPTO/LOCAL 32 VILLA COND. BORDEMAR 4 COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA"
+                }
+              ]
+            },
+            {
+              "fecha": "30-09-2024 21:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "8153956",
+              "razonSocial": "AKSIOM INGENIERIA PARA TRABAJOS EN ALTURA SPA",
+              "cve": "ACAwVyZyU3mJ",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAwVyZyU3mJ&codigo=20-B1-88-AA-31-DC-3C-D8-F1-F7-ED-86-14-8F-05-65",
+              "socios": [
+                {
+                  "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": null,
+                  "acciones": "350",
+                  "monto": "$350.000 CLP",
+                  "porcentaje": "70%"
+                },
+                {
+                  "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "",
+                  "domicilio": null,
+                  "acciones": "150",
+                  "monto": "$150.000 CLP",
+                  "porcentaje": "30%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": null
+                }
+              ]
+            },
+            {
+              "fecha": "09-05-2024 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "7588010",
+              "razonSocial": "AKSIOM TECNOLOGIA & SOLUCIONES EN ALTURA SPA",
+              "cve": "ACs1yC7e1rRx",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACs1yC7e1rRx&codigo=70-A5-88-22-87-05-76-66-72-B2-EA-74-B5-FC-22-27",
+              "socios": [
+                {
+                  "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": null,
+                  "acciones": "350",
+                  "monto": "$350.000 CLP",
+                  "porcentaje": "70%"
+                },
+                {
+                  "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "15008539-K",
+                  "domicilio": null,
+                  "acciones": "150",
+                  "monto": "$150.000 CLP",
+                  "porcentaje": "30%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": null
+                },
+                {
+                  "administrador": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "15008539-K",
+                  "domicilio": null
+                }
+              ]
+            },
+            {
+              "fecha": "13-07-2022 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "5416736",
+              "razonSocial": "AKSIOM TECNOLOGIA & SOLUCIONES EN ALTURA SPA",
+              "cve": "ACXa1maTex3w",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACXa1maTex3w&codigo=14-58-BC-0A-F7-99-59-5D-BF-05-E0-B1-08-78-10-88",
+              "socios": [
+                {
+                  "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": null,
+                  "acciones": "400",
+                  "monto": "$400.000 PESOS",
+                  "porcentaje": 80
+                },
+                {
+                  "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "15008539-K",
+                  "domicilio": null,
+                  "acciones": "100",
+                  "monto": "$100.000 PESOS",
+                  "porcentaje": 20
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                  "rut": "15316160-7",
+                  "domicilio": null
+                },
+                {
+                  "administrador": "ALABAN RICARDO RIVERA ALANOCA",
+                  "rut": "15008539-K",
+                  "domicilio": null
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        },
+        "mallaSocietariaInterna": [
+          {
+            "participaciones": [
+              {
+                "rut": "77075858-0",
+                "sociedad": "AKSIOM COACHING Y CAPACITACIÓ"
+              }
+            ],
+            "ultimaActualizacion": "30-05-2026 00:04:21"
+          }
+        ]
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 27090,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 27090,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 53570,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 138970,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 138970,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 50980
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 6,
+          "tasacionTotal": 51452375,
+          "ultimaActualizacion": "30-05-2026 00:04:21"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:04:22"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "AKSIOM INGENIERIA PARA TRABAJOS EN ALTURA SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:fcd6bf5723609cb28fc963684002712874aa75baf2c579aca77c22ea863334ba",
+      "cached_at": "2026-05-30T00:04:23.463323"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica",
+            "fechaIngreso": "07-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13644815-3",
+                "nombre": "SONIA MARÍA MÁRQUEZ ARANDA (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16327721-2",
+                "nombre": "DANIELA PAZ ESPINOZA ORTEGA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16244515-4",
+                "nombre": "JEREMY ALBERTO URQUIETA SOZA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77025021-8",
+                "nombre": "AKSIOM TECNOLOGÍA & SOLUCIONES EN ALTURA SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96947280-5",
+                "nombre": "WORLD SURVEY SERVICES S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-2897-2024",
+            "tribunal": "2º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:04:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c6ac0fe3545a43857c9f2ff3d5c314c994eaa5718d118abe143c88f033def409",
+        "cached_at": "2026-05-30T00:04:23.823423"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:04:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:073441439f28ad5fd3075e1c6849e22e7ecaf5bf5f330542a05af3fa5b5ddc36",
+        "cached_at": "2026-05-30T00:04:24.168936"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Suspendido",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "04-08-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "7840218-0",
+                "nombre": "PABLO JAVIER SCHULTZ GUADAROLI",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18014959-7",
+                "nombre": "DAVID CRISTÓBAL GARAY BOTTA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15692042-8",
+                "nombre": "ANA DEL CARMEN ROJAS SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12616296-0",
+                "nombre": "VLADIMIR ANDRÉS VERGARA OLIVARES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9793131-3",
+                "nombre": "JAIME FERNANDO CORTES MORA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77025021-8",
+                "nombre": "AKSIOM TECNOLOGÍA & SOLUCIONES EN ALTURA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96676520-8",
+                "nombre": "PUERTO DE MEJILLONES S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-980-2022",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:04:21"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9451789b1243c7d09a204a4574e46f84e670cd2a43c2e75484876dcae2549485",
+        "cached_at": "2026-05-30T00:04:24.507284"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "28-05-2026 03:16:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:21c356981445dbf83cb39961d95596c58bcb751d4ec094ad0c6bb928722f21e4",
+        "cached_at": "2026-05-30T00:04:24.855223"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TOMAS SCHONFFELDT CARRASCO ",
+            "periodo": "08/2025",
+            "rutAfiliado": "20296899-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAURICIO ESTEBAN GONZÁLEZ MOYA ",
+            "periodo": "12/2024",
+            "rutAfiliado": "16113985-8",
+            "tipoProducto": "Cotización voluntaria"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:16:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:de268419127e4da735a58c612a9f9141bb10ead9ae15db3db0b32718b3af2bb7",
+        "cached_at": "2026-05-30T00:04:25.196958"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77025021-8",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "AKSIOM INGENIERIA PARA TRABAJOS EN ALTURA SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "AKSIOM INGENIERIA PARA TRABAJOS EN ALTURA SPA",
+            "rutSociedad": "77025021-8",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2019-06-05",
+            "socios": [
+              {
+                "nombre": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": "LIDIA MORENO N°265 BLOQUE A- 2 DEPTO/LOCAL 502 VILLA PARQUE JUAN LOPEZ COMUNA DE ANTOFAGASTA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "30"
+              },
+              {
+                "nombre": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": "DOMICILIADO EN IQUIQUE N°3857 DEPTO/LOCAL 211, COMUNA DE ANTOFAGASTA, REGION DE ANTOFAGASTA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "70"
+              },
+              {
+                "nombre": "FERNANDO JAVIER MEDEL JOPIA",
+                "rut": "15782944-0",
+                "domicilio": "ALTOS DEL MAR 1001, TORRE A, DEPARTAMENTO 23, ANTOFAGASTA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "20"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-10-01",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAwVyZyU3mJ&codigo=20-B1-88-AA-31-DC-3C-D8-F1-F7-ED-86-14-8F-05-65"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-05-10",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACs1yC7e1rRx&codigo=70-A5-88-22-87-05-76-66-72-B2-EA-74-B5-FC-22-27"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-07-14",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACXa1maTex3w&codigo=14-58-BC-0A-F7-99-59-5D-BF-05-E0-B1-08-78-10-88"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2019-06-06",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAeTUa0Om6g&codigo=B4-8E-70-4F-66-CA-1C-5B-1D-B3-14-FA-84-42-D3-4A"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "CAPACITACIONES BOREAL SPA",
+                "rut": "77075858-0",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:4f75ae45e9054b73bf4170b3397bc70095d9ac4d7f6c74ace523d60222fd2b25",
+      "cached_at": "2026-05-30T00:04:25.808823"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77025021-8",
+        "empresaEnUnDia": [
+          {
+            "fecha": "05-06-2019 20:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "2292232",
+            "razonSocial": "SOCIEDAD POR ACCIONES AKSIOM TECNOLOGIA & SOLUCIONES EN ALTURA SPA",
+            "cve": "ACAeTUa0Om6g",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAeTUa0Om6g&codigo=B4-8E-70-4F-66-CA-1C-5B-1D-B3-14-FA-84-42-D3-4A",
+            "socios": [
+              {
+                "socio": "FERNANDO JAVIER MEDEL JOPIA",
+                "rut": "15782944-0",
+                "domicilio": "MAR DEL PLATA N°02166 VILLA COVIEFI COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA",
+                "acciones": "100",
+                "monto": "$100.000 CLP",
+                "porcentaje": "20%"
+              },
+              {
+                "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": "JOSE BERNARDO TAGLE N°862 VILLA COVIEFI COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA",
+                "acciones": "300",
+                "monto": "$300.000 CLP",
+                "porcentaje": "60%"
+              },
+              {
+                "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": "AV. RICAVENTURA N°10651 DEPTO/LOCAL 32 VILLA COND. BORDEMAR 4 COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA",
+                "acciones": "100",
+                "monto": "$100.000 CLP",
+                "porcentaje": "20%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": "JOSE BERNARDO TAGLE N°862 VILLA COVIEFI COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA"
+              },
+              {
+                "administrador": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": "AV. RICAVENTURA N°10651 DEPTO/LOCAL 32 VILLA COND. BORDEMAR 4 COMUNA DE ANTOFAGASTA REGION DE ANTOFAGASTA"
+              }
+            ]
+          },
+          {
+            "fecha": "30-09-2024 21:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "8153956",
+            "razonSocial": "AKSIOM INGENIERIA PARA TRABAJOS EN ALTURA SPA",
+            "cve": "ACAwVyZyU3mJ",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAwVyZyU3mJ&codigo=20-B1-88-AA-31-DC-3C-D8-F1-F7-ED-86-14-8F-05-65",
+            "socios": [
+              {
+                "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": null,
+                "acciones": "350",
+                "monto": "$350.000 CLP",
+                "porcentaje": "70%"
+              },
+              {
+                "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "",
+                "domicilio": null,
+                "acciones": "150",
+                "monto": "$150.000 CLP",
+                "porcentaje": "30%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": null
+              }
+            ]
+          },
+          {
+            "fecha": "09-05-2024 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "7588010",
+            "razonSocial": "AKSIOM TECNOLOGIA & SOLUCIONES EN ALTURA SPA",
+            "cve": "ACs1yC7e1rRx",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACs1yC7e1rRx&codigo=70-A5-88-22-87-05-76-66-72-B2-EA-74-B5-FC-22-27",
+            "socios": [
+              {
+                "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": null,
+                "acciones": "350",
+                "monto": "$350.000 CLP",
+                "porcentaje": "70%"
+              },
+              {
+                "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": null,
+                "acciones": "150",
+                "monto": "$150.000 CLP",
+                "porcentaje": "30%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": null
+              },
+              {
+                "administrador": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": null
+              }
+            ]
+          },
+          {
+            "fecha": "13-07-2022 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "5416736",
+            "razonSocial": "AKSIOM TECNOLOGIA & SOLUCIONES EN ALTURA SPA",
+            "cve": "ACXa1maTex3w",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACXa1maTex3w&codigo=14-58-BC-0A-F7-99-59-5D-BF-05-E0-B1-08-78-10-88",
+            "socios": [
+              {
+                "socio": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": null,
+                "acciones": "400",
+                "monto": "$400.000 PESOS",
+                "porcentaje": 80
+              },
+              {
+                "socio": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": null,
+                "acciones": "100",
+                "monto": "$100.000 PESOS",
+                "porcentaje": 20
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JAVIER ALBERTO SAAVEDRA GONZALEZ",
+                "rut": "15316160-7",
+                "domicilio": null
+              },
+              {
+                "administrador": "ALABAN RICARDO RIVERA ALANOCA",
+                "rut": "15008539-K",
+                "domicilio": null
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": [
+          {
+            "rut": "0770758580",
+            "society": "AKSIOM COACHING Y CAPACITACION SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7dc51323dcdc04c550ccb17dff5df5e37489042b79b2827cdf7be30f67f0a2cb",
+        "cached_at": "2026-05-30T00:04:26.177851"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 27090,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 1,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:9153904b16f575b32916d2d8b490a7234302b6592a1a87a68dcf9b3bb727e771",
+      "cached_at": "2026-05-30T00:04:26.786918"
+    }
+  }
+}

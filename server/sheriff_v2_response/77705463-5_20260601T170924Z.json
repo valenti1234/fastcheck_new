@@ -1,0 +1,571 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77705463-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77705463-5",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "GENIUS PREVENCION LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "30-01-2023",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "30-01-2023"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 2,
+        "ultimaActualizacion": "01-06-2026 17:06:20",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "600,01 a 2.400,00",
+          "cantidadTrabajadores": 1
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 17:06:20"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "01-06-2026 17:06:19",
+        "ultimaActualizacionCobranza": "01-06-2026 17:06:19",
+        "ultimaActualizacionLaboral": "01-06-2026 17:06:19",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 1,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:06:30"
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:06:19"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:06:21"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "24-01-2023 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "5879918",
+              "razonSocial": "GENIUS PREVENCION LIMITADA",
+              "cve": "ACX5LynGCG7I",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACX5LynGCG7I&codigo=1F-23-90-64-77-F8-28-8F-64-29-C9-54-2C-D0-CD-1A",
+              "socios": [
+                {
+                  "socio": "CLAUDIO ANDRES PEREZ CARRILLO",
+                  "rut": "12897142-4",
+                  "domicilio": "LO OVALLE N°0185 COMUNA DE LA GRANJA REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": null,
+                  "monto": "$50.000 PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "IVAN PATRICIO BALBONTIN BERRIOS",
+                  "rut": "9674009-3",
+                  "domicilio": "STA SARA PC 7 LT 9 N°9 VILLA LOS ESPINOS COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": null,
+                  "monto": "$50.000 PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "CLAUDIO ANDRES PEREZ CARRILLO",
+                  "rut": "12897142-4",
+                  "domicilio": "LO OVALLE N°0185 COMUNA DE LA GRANJA REGION METROPOLITANA DE SANTIAGO"
+                },
+                {
+                  "administrador": "IVAN PATRICIO BALBONTIN BERRIOS",
+                  "rut": "9674009-3",
+                  "domicilio": "STA SARA PC 7 LT 9 N°9 VILLA LOS ESPINOS COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "01-06-2026 17:06:20"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "01-06-2026 17:06:20"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": 100,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "GENIUS PREVENCION LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:9a6e7ee411dd27007af8a44b58fef4a3d4148ded577ec7b4ead4d43bfae1c1c5",
+      "cached_at": "2026-06-01T17:09:21.680778"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:090491da337d365277b9e4eb8a6da522f496b74910d6b0af8eee38757f1b361e",
+        "cached_at": "2026-06-01T17:09:22.000170"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9a3b0259d7d39174a80a4bea24517f44938198b77fa090a859ac08bd813e933a",
+        "cached_at": "2026-06-01T17:09:22.321224"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:515e1b39955b39193551f463207c25cb554a14e6240b6c79b64f361f71ca1673",
+        "cached_at": "2026-06-01T17:09:22.648785"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:06:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c726206648fd8294e52236936539ec972cfdf02660e6a0e537c1f81cfccf55f1",
+        "cached_at": "2026-06-01T17:09:22.970556"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-11-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GINA LOURDES PARRA AYAR ",
+            "periodo": "09/2023",
+            "rutAfiliado": "11666324-4",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 17:06:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:04639d7e92bdf7370f0f9a16c5d15c580b3ae8c7bd686cc9cbd080d56510987b",
+        "cached_at": "2026-06-01T17:09:23.312029"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77705463-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "GENIUS PREVENCION LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "GENIUS PREVENCION LIMITADA",
+            "rutSociedad": "77705463-5",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2023-01-24",
+            "socios": [
+              {
+                "nombre": "CLAUDIO ANDRES PEREZ CARRILLO",
+                "rut": "12897142-4",
+                "domicilio": "CADETE OSCAR MARTINEZ N°1737 VILLA LA BANDERA COMUNA DE SAN RAMON",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "IVAN PATRICIO BALBONTIN BERRIOS",
+                "rut": "9674009-3",
+                "domicilio": "STA SARA PC 7 LT 9 - 9 N°9 VILLA LOS ESPINOS COMUNA DE LAMPA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2023-01-25",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACX5LynGCG7I&codigo=1F-23-90-64-77-F8-28-8F-64-29-C9-54-2C-D0-CD-1A"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:2d885de4bf24da8322a664f96eca91e5beef1812472918ed23d8b3e65f9156b9",
+      "cached_at": "2026-06-01T17:09:23.888765"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77705463-5",
+        "empresaEnUnDia": [
+          {
+            "fecha": "24-01-2023 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "5879918",
+            "razonSocial": "GENIUS PREVENCION LIMITADA",
+            "cve": "ACX5LynGCG7I",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACX5LynGCG7I&codigo=1F-23-90-64-77-F8-28-8F-64-29-C9-54-2C-D0-CD-1A",
+            "socios": [
+              {
+                "socio": "CLAUDIO ANDRES PEREZ CARRILLO",
+                "rut": "12897142-4",
+                "domicilio": "LO OVALLE N°0185 COMUNA DE LA GRANJA REGION METROPOLITANA DE SANTIAGO",
+                "acciones": null,
+                "monto": "$50.000 PESOS",
+                "porcentaje": "50%"
+              },
+              {
+                "socio": "IVAN PATRICIO BALBONTIN BERRIOS",
+                "rut": "9674009-3",
+                "domicilio": "STA SARA PC 7 LT 9 N°9 VILLA LOS ESPINOS COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO",
+                "acciones": null,
+                "monto": "$50.000 PESOS",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "CLAUDIO ANDRES PEREZ CARRILLO",
+                "rut": "12897142-4",
+                "domicilio": "LO OVALLE N°0185 COMUNA DE LA GRANJA REGION METROPOLITANA DE SANTIAGO"
+              },
+              {
+                "administrador": "IVAN PATRICIO BALBONTIN BERRIOS",
+                "rut": "9674009-3",
+                "domicilio": "STA SARA PC 7 LT 9 N°9 VILLA LOS ESPINOS COMUNA DE LAMPA REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:98c5c8572af5d66bc4a6c041e77fd7f7f4c664562f315aa3d0d128f64bba0ad3",
+        "cached_at": "2026-06-01T17:09:24.214230"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 1,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:86571937c3473b76b54abf013b166b5de1f1f2711e6fbc61495b50990c779baf",
+      "cached_at": "2026-06-01T17:09:24.794338"
+    }
+  }
+}

@@ -1,0 +1,2446 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "99512110-7"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "99512110-7",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "GRUPO NORTE SEGURIDAD SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "05-02-2003",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR EMPRESAS",
+            "codigo": "801001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "22-06-2017"
+          },
+          {
+            "actividades": "ACTIVIDADES DE SERVICIOS DE SISTEMAS DE SEGURIDAD (INCLUYE SERVICIOS D",
+            "codigo": "802000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-09-2024"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "05-02-2003"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 11,
+        "ultimaActualizacion": "08-05-2026 15:30:42",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "200.000,01 a 600.000,00",
+          "cantidadTrabajadores": 1230
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:07:23"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 1,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 3,
+        "laboralActivos": 12,
+        "laboralPresentados": 22,
+        "laboralConcluidos": 26,
+        "casosActuales": 13,
+        "casosArchivados": 23,
+        "casosConcluidos": 30,
+        "todosLosCasos": 66,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 25,
+          "demandante": 1,
+          "reclamante": 2,
+          "denunciado": 8
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:07:22",
+        "ultimaActualizacionCobranza": "30-05-2026 00:07:22",
+        "ultimaActualizacionLaboral": "30-05-2026 00:07:23",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 2,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 2
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 1,
+          "montoTotalMultas": 2063550,
+          "multasPagadas": 1,
+          "montoMultasPagadas": 2063550,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:07:22"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "02-06-2016 20:00:00",
+              "razonSocial": "GRUPO NORTE SEGURIDAD S.A.",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/06/03/1030674_M_SA_20160603.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "INVERSIONES VALBUENA CHILE S.A.",
+                  "rut": "96958420-4",
+                  "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+                },
+                {
+                  "socio": "ADQUISICIONES Y SERVICIOS GRUPO NORTE LIMITADA",
+                  "rut": "76152670-7",
+                  "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+                }
+              ],
+              "rut": "99512110-7"
+            },
+            {
+              "fecha": "04-05-2017 21:00:00",
+              "razonSocial": "GRUPO NORTE SEGURIDAD S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/05/05/41749/05/1211488.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES VALBUENA CHILE S.A.",
+                  "rut": "96958420-4",
+                  "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+                },
+                {
+                  "socio": "ADQUISICIONES Y SERVICIOS GRUPO NORTE LIMITADA",
+                  "rut": "76152670-7",
+                  "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+                }
+              ],
+              "rut": "99512110-7"
+            },
+            {
+              "fecha": "16-01-2020 21:00:00",
+              "razonSocial": "GRUPO NORTE SEGURIDAD SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/01/17/42555/05/1712587.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JOSÉ ROLANDO ÁLVAREZ VALBUENA",
+                  "rut": "48080187-3",
+                  "domicilio": "AVENIDA ALONSO DE CÓRDOVA 5151, OFICINA 1602, COMUNA DE LAS CONDES"
+                },
+                {
+                  "socio": "EDUARDO ANTONIO BERASAIN MARABOLÍ",
+                  "rut": "12153826-1",
+                  "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+                },
+                {
+                  "socio": "ALFONSO RODRIGO ARMSTRONG SALGADO",
+                  "rut": null,
+                  "domicilio": "DEL CORRALERO 6745, VITACURA"
+                },
+                {
+                  "socio": "JESÚS SORIA GARCÍA",
+                  "rut": "25951209-3",
+                  "domicilio": "CALLE SANTA BEATRIZ NÚMERO 81, DEPARTAMENTO 1306 PROVIDENCIA"
+                },
+                {
+                  "socio": "INVERSIONES VALBUENA CHILE SPA",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "ADQUISICIONES Y SERVICIOS GRUPO NORTE SPA",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "ELSON ANTONIO SILVA TOBAR",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "BÁRBARA CONSUELO GAMBOA PENTZ",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "99512110-7"
+            },
+            {
+              "fecha": "29-10-2021 21:00:00",
+              "razonSocial": "GRUPO NORTE SEGURIDAD SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/10/30/43091/05/2034809.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "OSCAR MANUEL GAJARDO CARREÑO",
+                  "rut": "15342240-0",
+                  "domicilio": "AVENIDA ALONSO DE CÓRDOVA NÚMERO CINCO MIL CIENTO CINCUENTA Y UNO, OFICINA MIL SEISCIENTOS DOS, COMUNA DE LAS CONDES"
+                },
+                {
+                  "socio": "DARÍO ANÍBAL CUADRA JUNES",
+                  "rut": "15919300-4",
+                  "domicilio": "CALLE ROGER DE FLOR 2871, OFICINA 103, COMUNA DE LAS CONDES"
+                },
+                {
+                  "socio": "ALFONSO RODRIGO ARMSTRONG SALGADO",
+                  "rut": null,
+                  "domicilio": "DEL CORRALERO 6745, VITACURA"
+                },
+                {
+                  "socio": "JESÚS SORIA GARCÍA",
+                  "rut": "25951209-3",
+                  "domicilio": "CALLE SANTA BEATRIZ NÚMERO 81, DEPARTAMENTO 1306 PROVIDENCIA"
+                },
+                {
+                  "socio": "INVERSIONES VALBUENA CHILE SPA",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "ADQUISICIONES Y SERVICIOS GRUPO NORTE SPA",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "ELSON ANTONIO SILVA TOBAR",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "BÁRBARA CONSUELO GAMBOA PENTZ",
+                  "rut": null,
+                  "domicilio": null
+                },
+                {
+                  "socio": "EDUARDO ANTONIO BERASAIN MARABOLI",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "99512110-7"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:07:22"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 115890,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 825330,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 403010,
+        "leasingMoroso": 0,
+        "leasingVigente": 60610,
+        "lineaCredito": 84000,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 136690,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 905010,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 20330,
+          "lineaCredito": 79000
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 10,
+          "tasacionTotal": 80894040,
+          "ultimaActualizacion": "24-03-2026 18:14:25"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "24-03-2026 18:14:25"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 81.9672131147541,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 381.9672131147541,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "GRUPO NORTE SEGURIDAD SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:6dcca9dc31ac0c3661861e47a31791dd0032a25a5b9aca725a16b327607cd642",
+      "cached_at": "2026-05-30T00:07:23.819820"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "14-01-2014 21:00:00",
+            "litigantes": [
+              {
+                "rut": "99512110-7",
+                "nombre": " PROSINTEL GRUPO NORTE S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-1086-2014",
+            "tribunal": "29º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "15-10-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "99512110-7",
+                "nombre": " PROSINTEL GRUPO NORTE S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-15412-2013",
+            "tribunal": "5º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:07:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6188121b63c83022d2d06cc0bbe0c47cde94d6cb278bef2736bac9aaabcba97d",
+        "cached_at": "2026-05-30T00:07:24.184871"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 4,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "18-06-2023 20:00:00",
+            "monto": "234618",
+            "litigantes": [
+              {
+                "rut": "76960424-3",
+                "nombre": "A.F.P UNO S.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO JOSÉ TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "GRUPO NORTE SEGURIDAD SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-27722-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "22-04-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "GRUPO NORTE SEGURIDAD S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-15797-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "12-09-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "GRUPO NORTE SEGURIDAD S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-44381-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-03-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96981130-8",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-9312-2013",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:07:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e228d1046c57d99e0552c4895a901f95ab2666057a49559dfc66be04fb0ab1e5",
+        "cached_at": "2026-05-30T00:07:24.545161"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 60,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "01-04-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALAN",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO CORONEL",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-5-2026",
+            "tribunal": "1er Juzgado de Letras de Coronel",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "22-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18434151-4",
+                "nombre": "ALEJANDRO MARCELO GONZÁLEZ GONZÁLEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77562427-2",
+                "nombre": "EASY ADMINISTRADORA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12525683-K",
+                "nombre": "MARCELO ANDRÉS PEÑAILILLO MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-21-2026",
+            "tribunal": "2do Juzgado de Letras de Coronel",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "02-09-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76391983-8",
+                "nombre": "EASTON INMOBILIARIA INDUSTRIAL SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17585487-8",
+                "nombre": "LUIS ALEJANDRO GARRIDO ESPARZA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11802825-2",
+                "nombre": "SANTIAGO OSVALDO GEISER QUINTANA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-350-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19754477-5",
+                "nombre": "RAFAEL IGNACIO ROJAS TRAIMAQUEO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14166935-4",
+                "nombre": "PABLO HERNAN MEDEL FUENZALIDA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17596262-K",
+                "nombre": "MARIA JESUS MENA ESCOBAR (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76391983-8",
+                "nombre": "EASTON INMOBILIARIA INDUSTRIAL SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-5924-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13036478-0",
+                "nombre": "JOSÉ SEBASTIÁN OSSES CANIO (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16428502-2",
+                "nombre": "MARIO ANDRES ESPINOZA ZAMUDIO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2018-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "21-04-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13061082-K",
+                "nombre": "GERARDO ANDRES HEVIA VALENZUELA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16042684-5",
+                "nombre": "NATALIA CANALES GAJARDO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1353-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "09-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17426762-6",
+                "nombre": "CHRISTIAN ANDRÉS ALEGRÍA BELLO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17365649-1",
+                "nombre": "CRISTINA BELÉN MELO RIVAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18078332-6",
+                "nombre": "PAULA ANDREA SOTO CERÓN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-149-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "31-12-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19764141-K",
+                "nombre": "CONSTANZA VALERIA CANALES PARRA (Poder Amplio)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Simple)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16632035-6",
+                "nombre": "CARLA ANDREA SILVA LAGOS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17585487-8",
+                "nombre": "LUIS ALEJANDRO GARRIDO ESPARZA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-12-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALAN (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO SANTIAGO PONIENTE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-960-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "01-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17790150-4",
+                "nombre": "EDGARD ARIEL PÉREZ ARAYA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81094100-6",
+                "nombre": "COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17945625-7",
+                "nombre": "NICOL DEL CARMEN BALLADARES CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-39-2024",
+            "tribunal": "1º Juzgado de Letras de Quilpue",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "24-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13516249-3",
+                "nombre": "MARCELO ALEJANDRO CERDA CANDIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13607574-8",
+                "nombre": "PAOLA ANDREA LARA SANHUEZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76391983-8",
+                "nombre": "EASTON INMOBILIARIA INDUSTRIAL SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-806-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17203467-5",
+                "nombre": "JAVIER HERNÁN SUAZO HERRERA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81094100-6",
+                "nombre": "COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17945625-7",
+                "nombre": "NICOL DEL CARMEN BALLADARES CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12994030-1",
+                "nombre": "MAURICIO ALEJANDRO BARRÍA MENA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-37-2024",
+            "tribunal": "2º Juzgado de Letras de Quilpue",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "25-09-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14395867-1",
+                "nombre": "HERNÁN ANTONIO SERRANO MENESES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9858191-K",
+                "nombre": "MARCELO IVÁN JIMENEZ RETAMAL (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2641-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13054407-K",
+                "nombre": "CRISTIAN ERNESTO ÁLVAREZ PALACIOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15666161-9",
+                "nombre": "GASTÓN ANTONIO ZUÑIGA FLORES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76466068-4",
+                "nombre": "SOCIEDAD CONCESIONARIA NUEVO PUDAHUEL S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4654-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "04-04-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17585487-8",
+                "nombre": "LUIS ALEJANDRO GARRIDO ESPARZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19076487-7",
+                "nombre": "PEDRO ANTONIO RIQUELME MANRÍQUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19071346-6",
+                "nombre": "GUSTAVO ADOLFO MUÑOZ MATUS (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76391983-8",
+                "nombre": "EASTON INMOBILIARIA INDUSTRIAL SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19764141-K",
+                "nombre": "CONSTANZA VALERIA CANALES PARRA (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-314-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "19-02-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Amplio)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15367147-8",
+                "nombre": "ANDRÉS GUY PELISSIER DEL CAMPO (Poder Amplio)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13607574-8",
+                "nombre": "PAOLA ANDREA LARA SANHUEZA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13580286-7",
+                "nombre": "ANDREA CAROLINA MUSRE GUZMAN (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10418271-2",
+                "nombre": "SERGIO ANIBAL MERINO BARRIGA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76391983-8",
+                "nombre": "EASTON INMOBILIARIA INDUSTRIAL SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-37-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-11-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13225884-8",
+                "nombre": "RAÚL ANDRÉS VILLALON CARDENAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15751933-6",
+                "nombre": "ROBERTO GABRIEL RODRÍGUEZ GONZÁLEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "81094100-6",
+                "nombre": "COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-40-2023",
+            "tribunal": "1º Juzgado de Letras de Quilpue",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "11-10-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13955615-1",
+                "nombre": "RODOLFO LUIS ARAVENA BELTRAN (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15216621-4",
+                "nombre": "ALEX ANDRÉS FERRADA CISTERNAS (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17321575-4",
+                "nombre": "EVANGS HELMER MORA MONSALVES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15590161-6",
+                "nombre": "VÍCTOR ALONSO SANHUEZA MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18229035-1",
+                "nombre": "ROSARIO FERNANDA ZULETA SEGURA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18703080-3",
+                "nombre": "CAMILA PAZ ARAVENA VERA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7034-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "17-08-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17705897-1",
+                "nombre": "CAMILA FABIOLA JAQUE ASTORGA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16915318-3",
+                "nombre": "BASTIÁN MARCELO LEYTON GALDAMES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18247894-6",
+                "nombre": "RUBÉN JARED BRAVO HERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16519692-9",
+                "nombre": "PASCAL ENRIQUE DE LOURDES GARRIDO ORTIZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-5803-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "08-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12069925-3",
+                "nombre": "LUIS REINALDO VENEGAS VALENZUELA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19438738-5",
+                "nombre": "SOFÍA MARGARITA COLLAO CEPEDA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15581369-5",
+                "nombre": "VIVIANA MUÑOZ MIRANDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "99512110-7",
+                "nombre": "PROSINTEL GRUPO NORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "60503000-9",
+                "nombre": "EMPRESA DE CORREOS DE CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "11636483-2",
+                "nombre": "OMAR ENRIQUE FUENTES FERNÁNDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13068596-K",
+                "nombre": "MARÍA PAZ FUENZALIDA CATALÁN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16193175-6",
+                "nombre": "PAULA ALEJANDRA GAC MENA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16773319-0",
+                "nombre": "FLAVIA ANTONELLA PARODI HENRÍQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4076-2023",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:07:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:12f0202389049a62915b3ab822fe4a1901e5cab646daa4a51d2875a858e5b80f",
+        "cached_at": "2026-05-30T00:07:25.020093"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 39,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "25-02-2026 21:00:00",
+            "multa": "8531/26/003-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "29-11-2025 21:00:00",
+            "multa": "1001/25/073-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "Pagar sueldo base inferior al ingreso mínimo mensual.",
+            "estado": "PAGADA",
+            "fecha": "12-10-2025 21:00:00",
+            "multa": "8653/24/057-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4155900
+          },
+          {
+            "enunciado": "Pagar sueldo base inferior al ingreso mínimo mensual.",
+            "estado": "PAGADA",
+            "fecha": "12-10-2025 21:00:00",
+            "multa": "8653/24/051-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4155900
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-10-2025 21:00:00",
+            "multa": "6360/24/001-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2077950
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-10-2025 21:00:00",
+            "multa": "4133/25/159-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No tomar las medidas efectivas para evitar la presencia de insectos (roedores).",
+            "estado": "PAGADA",
+            "fecha": "22-06-2025 20:00:00",
+            "multa": "7945/25/014-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4127100
+          },
+          {
+            "enunciado": "No tomar todas las medidas necesarias contra las inclemencias del tiempo en lugares abiertos.",
+            "estado": "PAGADA",
+            "fecha": "22-06-2025 20:00:00",
+            "multa": "7945/25/014-3",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2063550
+          },
+          {
+            "enunciado": "No mantener los lugares de trabajo en buenas condiciones de orden y limpieza.",
+            "estado": "PAGADA",
+            "fecha": "22-06-2025 20:00:00",
+            "multa": "7945/25/014-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2063550
+          },
+          {
+            "enunciado": "No mantener las paredes, cielos rasos, puertas y ventanas en buen estado de limpieza y conservación.",
+            "estado": "PAGADA",
+            "fecha": "15-06-2025 20:00:00",
+            "multa": "6354/25/017-3",
+            "procedencia": "FISCALIZACION",
+            "um": "20",
+            "tipoUm": "UTM",
+            "montoClp": 1375700
+          },
+          {
+            "enunciado": "No mantener protegidas las instalaciones eléctricas o de gas.",
+            "estado": "PAGADA",
+            "fecha": "15-06-2025 20:00:00",
+            "multa": "6354/25/017-1",
+            "procedencia": "FISCALIZACION",
+            "um": "20",
+            "tipoUm": "UTM",
+            "montoClp": 1375700
+          },
+          {
+            "enunciado": "No contar con pavimentos y revestimientos de los pisos en las secciones o áreas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-06-2025 20:00:00",
+            "multa": "6354/25/017-2",
+            "procedencia": "FISCALIZACION",
+            "um": "20",
+            "tipoUm": "UTM",
+            "montoClp": 1375700
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-06-2025 20:00:00",
+            "multa": "1973/25/122-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "Omitir información obligatoria en aviso escrito de término del contrato.",
+            "estado": "PAGADA",
+            "fecha": "11-06-2025 20:00:00",
+            "multa": "1972/25/144-1",
+            "procedencia": "RECLAMO",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4127100
+          },
+          {
+            "enunciado": "Pagar sueldo base inferior al ingreso mínimo mensual.",
+            "estado": "PAGADA",
+            "fecha": "02-06-2025 20:00:00",
+            "multa": "7593/25/015-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2063550
+          },
+          {
+            "enunciado": "No otorgar descanso dentro de la jornada.",
+            "estado": "PAGADA",
+            "fecha": "09-05-2025 20:00:00",
+            "multa": "1185/24/052-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2059440
+          },
+          {
+            "enunciado": "No mantener toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "03-02-2025 21:00:00",
+            "multa": "7593/24/067-1",
+            "procedencia": "FISCALIZACION",
+            "um": "13.36",
+            "tipoUm": "IMM",
+            "montoClp": 6680000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "10-11-2024 21:00:00",
+            "multa": "1317/24/011-1",
+            "procedencia": "FISCALIZACION",
+            "um": "13.36",
+            "tipoUm": "IMM",
+            "montoClp": 6680000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-11-2024 21:00:00",
+            "multa": "4081/24/211-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No otorgar descanso dentro de la jornada.",
+            "estado": "PAGADA",
+            "fecha": "10-10-2024 21:00:00",
+            "multa": "1185/24/037-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1996830
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:07:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5930cf3c00c36993cf5faa1f48b76b13b4407eb2cd29de03c0935c94209fff9a",
+        "cached_at": "2026-05-30T00:07:25.364583"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 9,
+        "casos": [
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR HUGO VASQUEZ NANCO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15650940-k",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CHRISTIAN ALEJANDRO SOLAR OLEA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "12687459-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS PATRICIO MANRIQUEZ THEZA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "8691121-3",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR HUGO ZEPEDA ULLOA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "13680007-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARGARITA ELSA ARRIAZA SILVA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "21883929-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCO EXEQUIEL CATRILAF PAILLAO ",
+            "periodo": "09/2025",
+            "rutAfiliado": "22346767-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO ANDRES OLATE HERRERA ",
+            "periodo": "08/2025",
+            "rutAfiliado": "17832270-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARTIN IGNACIO RIVERA CARDENAS ",
+            "periodo": "08/2025",
+            "rutAfiliado": "16224437-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-12-2024 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RUBEN ENRIQUE PACHECO YANEZ ",
+            "periodo": "10/2024",
+            "rutAfiliado": "16616046-4",
+            "tipoProducto": "Ahorro Voluntario"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:07:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:bfbeef623840da441ae1e453dd5e762c16b34de86118d97c83b5a46c375dec4a",
+        "cached_at": "2026-05-30T00:07:25.723433"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "99512110-7",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "GRUPO NORTE SEGURIDAD SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "GRUPO NORTE SEGURIDAD SPA",
+            "rutSociedad": "99512110-7",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2002-11-11",
+            "socios": [
+              {
+                "nombre": "EDUARDO ANTONIO BERASAIN MARABOLÍ",
+                "rut": "12153826-1",
+                "domicilio": "1951",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "OSCAR MANUEL GAJARDO CARREÑO",
+                "rut": "15342240-0",
+                "domicilio": "JOSÉ JOAQUÍN PÉREZ 941, CASA A, SAN BERNARDO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "DARÍO ANÍBAL CUADRA JUNES",
+                "rut": "15919300-4",
+                "domicilio": "JOSÉ MIGUEL CARRERA 424, DEPTO. 208, COMUNA Y CIUDAD SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARÍA REYES MANCEBO LÓPEZ",
+                "rut": "24314745-K",
+                "domicilio": "1951",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JESÚS SORIA GARCÍA",
+                "rut": "25951209-3",
+                "domicilio": "AVENIDA SANTA BEATRIZ 81, DEPTO 1306, PROVIDENCIA",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ADQUISICIONES Y SERVICIOS GRUPO NORTE LIMITADA",
+                "rut": "76152670-7",
+                "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.00"
+              },
+              {
+                "nombre": "INVERSIONES ALVAREZ Y MIGUEZ S.A.",
+                "rut": "96958420-4",
+                "domicilio": "1951",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.90"
+              },
+              {
+                "nombre": "ELSON ANTONIO SILVA TOBAR",
+                "rut": "12044471-9",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "BARBARA CONSUELO GAMBOA PENTZ",
+                "rut": "10872365-3",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ALFONSO RODRIGO ARMSTRONG SALGADO",
+                "rut": "10890407-0",
+                "domicilio": "DEL CORRALERO 6745, VITACURA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JOSÉ ROLANDO ÁLVAREZ VALBUENA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JAIME DE LA LAMA LEÓN",
+                "rut": "24481673-8",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES VALBUENA CHILE S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.99"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-10-30",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/10/30/43091/05/2034809.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-01-17",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/01/17/42555/05/1712587.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-05-05",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/05/05/41749/05/1211488.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-06-03",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2016/06/03/1030674_M_SA_20160603.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:6e4193e448c6f6269a7eee75d076e1f914a0c75fbb14d505fee8ae766836fed6",
+      "cached_at": "2026-05-30T00:07:26.331476"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "99512110-7",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "02-06-2016 20:00:00",
+            "razonSocial": "GRUPO NORTE SEGURIDAD S.A.",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/06/03/1030674_M_SA_20160603.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "INVERSIONES VALBUENA CHILE S.A.",
+                "rut": "96958420-4",
+                "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+              },
+              {
+                "nombre": "ADQUISICIONES Y SERVICIOS GRUPO NORTE LIMITADA",
+                "rut": "76152670-7",
+                "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+              }
+            ],
+            "rut": "99512110-7"
+          },
+          {
+            "fecha": "04-05-2017 21:00:00",
+            "razonSocial": "GRUPO NORTE SEGURIDAD S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/05/05/41749/05/1211488.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES VALBUENA CHILE S.A.",
+                "rut": "96958420-4",
+                "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+              },
+              {
+                "nombre": "ADQUISICIONES Y SERVICIOS GRUPO NORTE LIMITADA",
+                "rut": "76152670-7",
+                "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+              }
+            ],
+            "rut": "99512110-7"
+          },
+          {
+            "fecha": "16-01-2020 21:00:00",
+            "razonSocial": "GRUPO NORTE SEGURIDAD SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/01/17/42555/05/1712587.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JOSÉ ROLANDO ÁLVAREZ VALBUENA",
+                "rut": "48080187-3",
+                "domicilio": "AVENIDA ALONSO DE CÓRDOVA 5151, OFICINA 1602, COMUNA DE LAS CONDES"
+              },
+              {
+                "nombre": "EDUARDO ANTONIO BERASAIN MARABOLÍ",
+                "rut": "12153826-1",
+                "domicilio": "AVENIDA LOS CONQUISTADORES 1951, PROVIDENCIA"
+              },
+              {
+                "nombre": "ALFONSO RODRIGO ARMSTRONG SALGADO",
+                "rut": null,
+                "domicilio": "DEL CORRALERO 6745, VITACURA"
+              },
+              {
+                "nombre": "JESÚS SORIA GARCÍA",
+                "rut": "25951209-3",
+                "domicilio": "CALLE SANTA BEATRIZ NÚMERO 81, DEPARTAMENTO 1306 PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES VALBUENA CHILE SPA",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "ADQUISICIONES Y SERVICIOS GRUPO NORTE SPA",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "ELSON ANTONIO SILVA TOBAR",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "BÁRBARA CONSUELO GAMBOA PENTZ",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "99512110-7"
+          },
+          {
+            "fecha": "29-10-2021 21:00:00",
+            "razonSocial": "GRUPO NORTE SEGURIDAD SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/10/30/43091/05/2034809.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "OSCAR MANUEL GAJARDO CARREÑO",
+                "rut": "15342240-0",
+                "domicilio": "AVENIDA ALONSO DE CÓRDOVA NÚMERO CINCO MIL CIENTO CINCUENTA Y UNO, OFICINA MIL SEISCIENTOS DOS, COMUNA DE LAS CONDES"
+              },
+              {
+                "nombre": "DARÍO ANÍBAL CUADRA JUNES",
+                "rut": "15919300-4",
+                "domicilio": "CALLE ROGER DE FLOR 2871, OFICINA 103, COMUNA DE LAS CONDES"
+              },
+              {
+                "nombre": "ALFONSO RODRIGO ARMSTRONG SALGADO",
+                "rut": null,
+                "domicilio": "DEL CORRALERO 6745, VITACURA"
+              },
+              {
+                "nombre": "JESÚS SORIA GARCÍA",
+                "rut": "25951209-3",
+                "domicilio": "CALLE SANTA BEATRIZ NÚMERO 81, DEPARTAMENTO 1306 PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES VALBUENA CHILE SPA",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "ADQUISICIONES Y SERVICIOS GRUPO NORTE SPA",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "ELSON ANTONIO SILVA TOBAR",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "BÁRBARA CONSUELO GAMBOA PENTZ",
+                "rut": null,
+                "domicilio": null
+              },
+              {
+                "nombre": "EDUARDO ANTONIO BERASAIN MARABOLI",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "99512110-7"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "99512110-7",
+            "sociedad": "GRUPO NORTE SEGURIDAD S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:dafc9a195cd885e5b6580dc08bb939c0d4af6e1ad7af5a8d8b12c0c8494369ce",
+        "cached_at": "2026-05-30T00:07:26.704105"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 885940,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 18.0327868852459,
+      "numeradorJudicial": 11,
+      "denominadorJudicial": 61,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 81.9672131147541,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 2,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 103769776,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 381.9672131147541,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:51be6844bb141562bc5c400e9ce6868bb96f297d1a13cc0464d2b45dad602734",
+      "cached_at": "2026-05-30T00:07:27.314765"
+    }
+  }
+}

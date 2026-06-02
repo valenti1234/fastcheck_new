@@ -1,0 +1,3497 @@
+{
+  "pathCount": 344,
+  "relationships": [
+    {
+      "source": "90073000",
+      "target": "11392130",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-02-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "11837080",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "10083827",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-02-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "7477197",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-02-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "90073000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2614921",
+        "cve": "2614921",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2025-02-24",
+        "doc_extraction_id": "1661923",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/02/24/44083/05/2614921.pdf"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "47005023",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.01,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "70016370",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.01,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "96852100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 22.49,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "90073000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.8306199917,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.12,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 13.42,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "96026000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 11.94,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "99036000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 49.08,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "80354200",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.01,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90073000",
+      "target": "96589140",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 1.85,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "11392130",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-03-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76641983",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-01-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99506820",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-12-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96793770",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96640360",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-01-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "86251100",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-03-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96767580",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2005-07-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96566900",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96534140",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96972440",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-12-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96608270",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1995-03-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "84322600",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-12-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "86755600",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-03-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "94660000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-01-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96954550",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-06-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92893000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-05-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96539380",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-12-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "84662000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1994-06-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78619410",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1995-03-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936090",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-12-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "79534600",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-06-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "83032100",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-01-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78619370",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1998-08-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-06-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78009000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-06-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77619310",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-07-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77489120",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-09-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77542000",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-01-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-06-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76389157",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-04-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-12-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76251331",
+      "target": "6060760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-12-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96534140",
+      "target": "6060760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6166904",
+        "doh_extraction_id": "948859",
+        "shares_percent": 1.5,
+        "source": "DOH",
+        "doh_id": "6166904",
+        "published_at": "2002-10-11",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/10/11/do-20021011.pdf"
+      }
+    },
+    {
+      "source": "78009000",
+      "target": "6060760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6189626",
+        "doh_extraction_id": "482369",
+        "shares_percent": 90,
+        "source": "DOH",
+        "doh_id": "6189626",
+        "published_at": "2002-11-04",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/11/04/do-20021104.pdf"
+      }
+    },
+    {
+      "source": "77542000",
+      "target": "6060760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6125707",
+        "doh_extraction_id": "743128",
+        "shares_percent": 90,
+        "source": "DOH",
+        "doh_id": "6125707",
+        "published_at": "2002-03-21",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/03/21/do-20020321.pdf"
+      }
+    },
+    {
+      "source": "77489120",
+      "target": "6060760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5903370",
+        "doh_extraction_id": "933159",
+        "shares_percent": 10,
+        "source": "DOH",
+        "doh_id": "5903370",
+        "published_at": "2000-09-15",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2000/09/15/do-20000915.pdf"
+      }
+    },
+    {
+      "source": "96539380",
+      "target": "6060760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1157583",
+        "match_type": "bt_pn",
+        "source": "DO",
+        "published_at": "2016-12-28",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/12/28/41644/05/1157583.pdf"
+      }
+    },
+    {
+      "source": "76641983",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96659880",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96696580",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92893000",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90343000",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-03-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-01-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78470400",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77743720",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76879940",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-06-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76388179",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-07-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76304550",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305910",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305620",
+      "target": "18023534",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "18023534",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_968289",
+        "cve": "968289",
+        "shares_percent": 17.74,
+        "source": "DO",
+        "published_at": "2015-11-19",
+        "doc_extraction_id": "1921400",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2015/11/19/968289_M_LTDA_20151119_firmada.pdf"
+      }
+    },
+    {
+      "source": "76344210",
+      "target": "18023534",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1330410",
+        "cve": "1330410",
+        "source": "DO",
+        "doc_extraction_id": "2179147",
+        "published_at": "2018-01-04",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2018/01/04/41948/05/1330410.pdf"
+      }
+    },
+    {
+      "source": "76339500",
+      "target": "18023534",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1330408",
+        "cve": "1330408",
+        "source": "DO",
+        "doc_extraction_id": "2179599",
+        "published_at": "2018-01-04",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2018/01/04/41948/05/1330408.pdf"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "11837080",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "71427800",
+      "target": "11837080",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-04-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76641983",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-01-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-08-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-07-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96659880",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-07-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90343000",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-03-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-01-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96696580",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92893000",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936870",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-09-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936890",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-10-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78470400",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77743720",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-08-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77048132",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-07-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76879940",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-08-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-06-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76388179",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-07-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305910",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-07-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-09-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305620",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-07-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76304550",
+      "target": "13441839",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-07-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "13441839",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "914483",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2015-06-13",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2015/06/13/914483_C_LTDA_20150613_firmado.pdf"
+      }
+    },
+    {
+      "source": "92893000",
+      "target": "13441839",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1627844",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2019-07-27",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2019/07/27/42414/05/1627844.pdf"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "10083827",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76287574",
+      "target": "10083827",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACXRpWLwVSJT",
+        "source": "RES",
+        "published_at": "2015-02-23"
+      }
+    },
+    {
+      "source": "76287574",
+      "target": "10083827",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACDTJyfdOZIY",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "7477197",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-03-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77376616",
+      "target": "7477197",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-06-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77376616",
+      "target": "7477197",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACPZTspdfmIR",
+        "source": "RES",
+        "published_at": "2025-06-19"
+      }
+    },
+    {
+      "source": "76641983",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90343000",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-01-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-08-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92893000",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96696580",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96659880",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-03-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96539380",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-12-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936890",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-10-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936870",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-09-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78470400",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77743720",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77619310",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-05-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77046220",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-10-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77048132",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-07-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76879940",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-06-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76388179",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-07-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76311711",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-12-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305620",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305910",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76304550",
+      "target": "11833353",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "11833353",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2742226",
+        "cve": "2742226",
+        "shares_percent": 5,
+        "source": "DO",
+        "published_at": "2025-12-17",
+        "doc_extraction_id": "2309502",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/12/17/44326/05/2742226.pdf"
+      }
+    },
+    {
+      "source": "77046220",
+      "target": "11833353",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6001839",
+        "doh_extraction_id": "749324",
+        "shares_percent": 99.9,
+        "source": "DOH",
+        "doh_id": "6001839",
+        "published_at": "2000-10-19",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2000/10/19/do-20001019.pdf"
+      }
+    },
+    {
+      "source": "76311711",
+      "target": "11833353",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_709439",
+        "cve": "709439",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2013-11-16",
+        "doc_extraction_id": "1806267",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2013/11/16/709439_C_LTDA_20131116_firmado.pdf"
+      }
+    },
+    {
+      "source": "77437140",
+      "target": "11833353",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5909444",
+        "doh_extraction_id": "738736",
+        "shares_percent": 0.1,
+        "source": "DOH",
+        "doh_id": "5909444",
+        "published_at": "2000-05-04",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2000/05/20/do-20000520.pdf"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "11833353",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "914483",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2015-06-13",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2015/06/13/914483_C_LTDA_20150613_firmado.pdf"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-06-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90343000",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92893000",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96696580",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96566900",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96777490",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-01-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-03-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96659880",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-06-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-08-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1999-12-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936870",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-01-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78936890",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-01-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78470400",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77743720",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-04-25",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77375060",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77374970",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-08-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76879940",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-06-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76388179",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-07-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-09-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305620",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305910",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76304550",
+      "target": "5389326",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96777490",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5782623",
+        "doh_extraction_id": "663125",
+        "shares_percent": 99.89998,
+        "source": "DOH",
+        "doh_id": "5782623",
+        "published_at": "1999-12-14",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/12/14/do-19991214.pdf"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_3835785",
+        "doh_extraction_id": "140753",
+        "source": "DOH",
+        "published_at": "1992-06-15",
+        "doh_id": "3835785",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1992/06/15/do-19920615.pdf"
+      }
+    },
+    {
+      "source": "78936890",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6346385",
+        "doh_extraction_id": "355941",
+        "shares_percent": 85.74,
+        "source": "DOH",
+        "doh_id": "6346385",
+        "published_at": "2004-07-10",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2004/07/10/do-20040710.pdf"
+      }
+    },
+    {
+      "source": "77374970",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2002-05-08",
+        "doh_id": "6130607",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/05/08/do-20020508.pdf"
+      }
+    },
+    {
+      "source": "78936870",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2004-07-10",
+        "doh_id": "6386992",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2004/07/10/do-20040710.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2415676",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2023-12-01",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/12/01/43715/05/2415676.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt",
+        "source": "DOH",
+        "published_at": "2006-12-11",
+        "doh_id": "6527786",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/12/11/do-20061211.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5389326",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt",
+        "source": "DOH",
+        "published_at": "2006-03-31",
+        "doh_id": "6675658",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/03/31/do-20060331.pdf"
+      }
+    },
+    {
+      "source": "76641983",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-01-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-06-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96696580",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96903240",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-01-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96626600",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "90343000",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96659880",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78470400",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78405710",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77743720",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77375060",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77374970",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-08-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76879940",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-06-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76388179",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-07-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305910",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76305620",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76304550",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "5394883",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-09-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78201440",
+      "target": "5394883",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2742226",
+        "cve": "2742226",
+        "shares_percent": 17.853193,
+        "source": "DO",
+        "published_at": "2025-12-17",
+        "doc_extraction_id": "2309502",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/12/17/44326/05/2742226.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5394883",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2006-03-31",
+        "doh_id": "6675658",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/03/31/do-20060331.pdf"
+      }
+    },
+    {
+      "source": "77375060",
+      "target": "5394883",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2002-05-08",
+        "doh_id": "6197138",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/05/08/do-20020508.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5394883",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2006-12-11",
+        "doh_id": "6527786",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/12/11/do-20061211.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5394883",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2002-08-07",
+        "doh_id": "6138887",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/08/07/do-20020807.pdf"
+      }
+    },
+    {
+      "source": "77278660",
+      "target": "5394883",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2415676",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2023-12-01",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/12/01/43715/05/2415676.pdf"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "16845498",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-01-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "16301481",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-01-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "78484450",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.001270005,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "97024000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0003699948,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "99036000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 49.084680075,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 13.415009938,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "80708300",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.002720012,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "96589140",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 1.8454799422,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "96852100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 22.486809995,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "84142700",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0003699948,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "83161700",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0001500299,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.1159399385,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "95842000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0036899571,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "47005023",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0050700291,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "80354200",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0055199496,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "80949100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.002650077,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "81494400",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0010400494,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "70016370",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0056000446,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "80294600",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.0003400227,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76639528",
+      "target": "96026000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 11.939059953,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "92461000",
+      "target": "47005023",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.03,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "16301481",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-03-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "10357255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "96852100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2260850",
+        "cve": "2260850",
+        "source": "DO",
+        "doc_extraction_id": "2214044",
+        "published_at": "2023-01-26",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/01/26/43461/05/2260850.pdf"
+      }
+    },
+    {
+      "source": "78470400",
+      "target": "96852100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.9,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "84177300",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 307057,
+        "shares_percent": 1.54,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 307057
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96683200",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 122369,
+        "shares_percent": 0.61,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 122369
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "6889389",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 106225,
+        "shares_percent": 0.53,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 106225
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96519800",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "90343000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "80537000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96026000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 827496,
+        "shares_percent": 4.14,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 827496
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "7115567",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 48130,
+        "shares_percent": 0.24,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 48130
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "80537000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1463996,
+        "shares_percent": 7.32,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1463996
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "90343000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 9881858,
+        "shares_percent": 49.41,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 9881858
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96571220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 83431,
+        "shares_percent": 0.42,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 83431
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 5279727,
+        "shares_percent": 26.4,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 5279727
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96772490",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 28307,
+        "shares_percent": 0.14,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 28307
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "70009410",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 123369,
+        "shares_percent": 0.62,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 123369
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96519800",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 578141,
+        "shares_percent": 2.89,
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=5",
+        "shares_paid": 578141
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "84177300",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96852100",
+      "target": "96026000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96852100&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAAAWdAAf&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "9595986",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-12-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76316290",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_3114574",
+        "doh_extraction_id": "156113",
+        "source": "DOH",
+        "published_at": "1996-06-21",
+        "doh_id": "3114574",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1996/07/02/do-19960702.pdf"
+      }
+    },
+    {
+      "source": "99548240",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.06333415,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "95412000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 3.26523247,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "91666000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.03,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76182362",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.03052285,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "2730755",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 312478,
+        "shares_percent": 1.02,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 312478
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "76214193",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 158402,
+        "shares_percent": 0.51,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 158402
+      }
+    },
+    {
+      "source": "96569460",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1551088,
+        "shares_percent": 6.71,
+        "source": "CMF",
+        "url": "mercado=V&rut=96569460&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy AAX&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1551088
+      }
+    },
+    {
+      "source": "91553000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=91553000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzBAAT&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "90331000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 392969,
+        "shares_percent": 0.61,
+        "source": "CMF",
+        "url": "mercado=V&rut=90331000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzCAAH&vig=VI&control=svs&pestania=5",
+        "shares_paid": 392969
+      }
+    },
+    {
+      "source": "90412000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1341243,
+        "shares_percent": 1.07,
+        "source": "CMF",
+        "url": "mercado=V&rut=90412000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzFAAE&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1341243
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96514120",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96513200",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96513200&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAAv&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "95412000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1885586,
+        "shares_percent": 6.13,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1885586
+      }
+    },
+    {
+      "source": "96566900",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96566900&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy9AAZ&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "99010000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 645925,
+        "shares_percent": 3.23,
+        "source": "CMF",
+        "url": "mercado=V&rut=99010000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy9AAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 645925
+      }
+    },
+    {
+      "source": "94660000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 4680077,
+        "shares_percent": 0.17,
+        "source": "CMF",
+        "url": "mercado=V&rut=94660000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy9AAT&vig=VI&control=svs&pestania=5",
+        "shares_paid": 4680077
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "95412000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96514420",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 194390,
+        "shares_percent": 0.63,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 194390
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96502680",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96566900",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 2375800,
+        "shares_percent": 1.67,
+        "source": "CMF",
+        "url": "mercado=V&rut=96566900&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy9AAZ&vig=VI&control=svs&pestania=5",
+        "shares_paid": 2375800
+      }
+    },
+    {
+      "source": "90320000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 3683124,
+        "shares_percent": 8.41,
+        "source": "CMF",
+        "url": "mercado=V&rut=90320000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzCAAG&vig=VI&control=svs&pestania=5",
+        "shares_paid": 3683124
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "2592598",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 265974,
+        "shares_percent": 0.86,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 265974
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96620460",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "99037000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1003098,
+        "shares_percent": 0.56,
+        "source": "CMF",
+        "url": "mercado=V&rut=99037000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzPAAI&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1003098
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96502680",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 9162942,
+        "shares_percent": 29.77,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 9162942
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "8366283",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 222668,
+        "shares_percent": 0.72,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 222668
+      }
+    },
+    {
+      "source": "91553000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 2022447,
+        "shares_percent": 1.62,
+        "source": "CMF",
+        "url": "mercado=V&rut=91553000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzBAAT&vig=VI&control=svs&pestania=5",
+        "shares_paid": 2022447
+      }
+    },
+    {
+      "source": "96556310",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 4021073,
+        "shares_percent": 0.88,
+        "source": "CMF",
+        "url": "mercado=V&rut=96556310&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy7AAm&vig=VI&control=svs&pestania=5",
+        "shares_paid": 4021073
+      }
+    },
+    {
+      "source": "76143636",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=76143636&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzMAAC&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96504420",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 13744413,
+        "shares_percent": 44.66,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 13744413
+      }
+    },
+    {
+      "source": "90412000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=90412000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzFAAE&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96513200",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1219051,
+        "shares_percent": 5.28,
+        "source": "CMF",
+        "url": "mercado=V&rut=96513200&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAAv&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1219051
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96514120",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 389253,
+        "shares_percent": 1.26,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 389253
+      }
+    },
+    {
+      "source": "99010000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=99010000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy9AAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "96569460",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=96569460&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABy AAX&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96504420",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "90320000",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=90320000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzCAAG&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "2730755",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "8551220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 234321,
+        "shares_percent": 0.76,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 234321
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "96620460",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 1437083,
+        "shares_percent": 4.67,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 1437083
+      }
+    },
+    {
+      "source": "76143636",
+      "target": "93727000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 5158020,
+        "shares_percent": 2.31,
+        "source": "CMF",
+        "url": "mercado=V&rut=76143636&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzMAAC&vig=VI&control=svs&pestania=5",
+        "shares_paid": 5158020
+      }
+    },
+    {
+      "source": "93727000",
+      "target": "8386155",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 222669,
+        "shares_percent": 0.72,
+        "source": "CMF",
+        "url": "mercado=V&rut=93727000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzAAA3&vig=VI&control=svs&pestania=5",
+        "shares_paid": 222669
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "7321397",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "3464294",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "10357255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "3464294",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_3835785",
+        "doh_extraction_id": "140753",
+        "source": "DOH",
+        "published_at": "1992-06-15",
+        "doh_id": "3835785",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1992/06/15/do-19920615.pdf"
+      }
+    },
+    {
+      "source": "96644730",
+      "target": "5399404",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_3835785",
+        "doh_extraction_id": "140753",
+        "source": "DOH",
+        "published_at": "1992-06-15",
+        "doh_id": "3835785",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1992/06/15/do-19920615.pdf"
+      }
+    },
+    {
+      "source": "90343000",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1261050",
+        "cve": "1261050",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2017-08-24",
+        "doc_extraction_id": "1864835",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/08/24/41842/05/1261050.pdf"
+      }
+    },
+    {
+      "source": "76879940",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6790510",
+        "doh_extraction_id": "931516",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "6790510",
+        "published_at": "2007-06-18",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/06/18/do-20070618.pdf"
+      }
+    },
+    {
+      "source": "76472458",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_914483",
+        "cve": "914483",
+        "shares_percent": 2,
+        "source": "DO",
+        "published_at": "2015-06-13",
+        "doc_extraction_id": "1990395",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2015/06/13/914483_C_LTDA_20150613_firmado.pdf"
+      }
+    },
+    {
+      "source": "76388179",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1124820",
+        "cve": "1124820",
+        "shares_percent": 99.915682,
+        "source": "DO",
+        "published_at": "2016-10-17",
+        "doc_extraction_id": "1688488",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/10/17/41585/05/1124820.pdf"
+      }
+    },
+    {
+      "source": "76281842",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1343757",
+        "cve": "1343757",
+        "shares_percent": 99.8333,
+        "source": "DO",
+        "published_at": "2018-01-27",
+        "doc_extraction_id": "1623682",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2018/01/27/41968/05/1343757.pdf"
+      }
+    },
+    {
+      "source": "76305910",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1119823",
+        "cve": "1119823",
+        "source": "DO",
+        "doc_extraction_id": "1781631",
+        "published_at": "2016-09-22",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/10/05/41576/05/1119823.pdf"
+      }
+    },
+    {
+      "source": "96696580",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "96644730",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 40,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "78201440",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96026000",
+      "target": "96589140",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "10357255",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "3464294",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "7321397",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99036000",
+      "target": "96659880",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2260850",
+        "cve": "2260850",
+        "source": "DO",
+        "doc_extraction_id": "2214044",
+        "published_at": "2023-01-26",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/01/26/43461/05/2260850.pdf"
+      }
+    },
+    {
+      "source": "76282865",
+      "target": "99036000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.01795699,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90753000",
+      "target": "99036000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.02,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "90331000",
+      "target": "99036000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=90331000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzCAAH&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "90331000",
+      "target": "99036000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 4418933,
+        "shares_percent": 6.9,
+        "source": "CMF",
+        "url": "mercado=V&rut=90331000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzCAAH&vig=VI&control=svs&pestania=5",
+        "shares_paid": 4418933
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "5399404",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-08-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "7321397",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-08-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "78179060",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 46,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76641983",
+      "target": "96589140",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96589140",
+      "target": "90343000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 14,
+        "source": "SII_REC_COM"
+      }
+    }
+  ],
+  "entityNames": {
+    "2592598": "JOSE ANTONIO CASTELLA ARGUELLES",
+    "2730755": "CARMEN ESTER GARCIA AGUIRRE",
+    "3464294": "SERGIO RENATO DERPICH LOPEZ",
+    "5389326": "JOAQUIN LADISLAO BARROS FONTAINE",
+    "5394883": "MARCIA DE LOURDES GUNDELACH CAMACHO",
+    "5399404": "GONZALO JOSE DIEGO AMENABAR VIVES",
+    "6060760": "BALTAZAR JULIO SANCHEZ GUZMAN",
+    "6889389": "ANDRES PEREZ SALINAS",
+    "7115567": "MARIA ANGELA SIRI BRIGANTI",
+    "7321397": "MANUEL JOSE BARROS BARROS",
+    "7477197": "JORGE EDUARDO VARELA GUERRA",
+    "8366283": "PATRICIO FERNANDO GARCIA HARMSEN",
+    "8386155": "MARIA LUISA GARCIA HARMSEN",
+    "8551220": "SUSANA GARCIA HARMSEN",
+    "9595986": "ISMAEL ENRIQUE MATURANA CHAVEZ",
+    "10083827": "CARLOS RODOLFO PARDO QUIROZ",
+    "10357255": "ALBERTO HUGO NALLY FERNANDEZ",
+    "11392130": "JUAN FREDDY ARAVENA HENRIQUEZ",
+    "11833353": "JOSE MIGUEL SANCHEZ ERLE",
+    "11837080": "RICARDO ANTONIO JACQUES LUNA",
+    "13441839": "GONZALO GARCIA BUSTAMANTE",
+    "16301481": "ANTONELLA PATRIZIA BARBIERI BOSONI",
+    "16845498": "SERGIO LUCIANO VENEGAS RODRIGUEZ",
+    "18023534": "SERGIO JOAQUIN ERRAZURIZ BARROS",
+    "47005023": "RAINBOW FUNDS",
+    "70009410": "ASOC DE CANALISTAS SOCIEDAD DEL CANAL DE MAIPO",
+    "70016370": "COOP DE EMPLEADOS PARTICULARES LTDA",
+    "71427800": "CENTRO DE PADRES Y APODERADOS COLEGIO TERESIANO ENRIQUE DE OSSO",
+    "76143636": "CAROZZI S.A.",
+    "76182362": "MAR DEL SUR S.A.",
+    "76214193": "INVERSIONES GLOGAR S.A.",
+    "76251331": "ASESORIA E INVERSIONES MECHUQUE SPA",
+    "76281842": "DISTRIBUIDORA Y COMERCIALIZADORA NORTE VERDE LIMITADA",
+    "76282865": "INMOBILIARIA CLINICA SANTA MARIA SPA",
+    "76287574": "COMUNICACIONES Y MARKETING MADISON LIMITADA",
+    "76304550": "TERMAS DE JAHUEL S A",
+    "76305620": "EMBOTELLADORA DE AGUAS JAHUEL S A",
+    "76305910": "AGRICOLA Y COMERCIAL JAHUEL S A",
+    "76311711": "COMERCIALIZADORA SEKAY LIMITADA",
+    "76316290": "INMOBILIARIA PRAT S.A.",
+    "76339500": "AGRICOLA SAN MATEO LIMITADA",
+    "76344210": "AGRICOLA SANTA SARA LIMITADA",
+    "76388179": "SOCIEDAD LACTEOS PAHUILMO LIMITADA",
+    "76389157": "EOLICO LAS PENAS SPA",
+    "76472458": "INGENIERIA EN MANTENCION TECNICA IMTEC LIMITADA",
+    "76639528": "SAN ENRIQUE S.A.",
+    "76641983": "ASUNCIÓN S.A.",
+    "76879940": "TRATAMIENTOS SPA JAHUEL LTDA",
+    "77046220": "INMOBILIARIA TAFALLA LIMITADA",
+    "77048132": "DISTRIBUIDORA Y COMERCIALIZADORA CALLE LIMPIA SPA",
+    "77278660": "INVERSIONES PETORCA LIMITADA",
+    "77374970": "INVERSIONES CUN CUN S A",
+    "77375060": "INVERSIONES SAN ENRIQUE S A",
+    "77376616": "JV PHARMA SPA",
+    "77437140": "INMOBILIARIA VIANA LIMITADA",
+    "77489120": "SOC AGRICOLA VINEDOS CULLIPEUMO LIMITADA",
+    "77542000": "ASESORIAS PORTOFINO LIMITADA",
+    "77619310": "CURSOS DE CAPACITACION Y CONFERENCIAS EDICIONES FINANCIERAS LIMITADA",
+    "77743720": "SOC DE TRANSPORTES ANTIQUE RENT A CAR LIMITADA",
+    "78009000": "BALTAZAR SANCHEZ ASESORIAS E INVERSIONES",
+    "78179060": "CIA DE INVERSIONES ALMAHUE",
+    "78201440": "AGRICOLA LA MARTINA LTDA",
+    "78405710": "INVERSIONES MALIHUE LIMITADA",
+    "78470400": "METRAIN S A",
+    "78484450": "CENTINELA INVERSIONES LTDA",
+    "78619370": "CORDILLERA COMUNICACIONES LIMITADA",
+    "78619410": "CORDILLERA COMUNICACIONES HOLDING LIMITADA",
+    "78936090": "INMOBILIARIA MONTE AZUL S A",
+    "78936870": "INMOBILIARIA LIRAY LIMITADA",
+    "78936890": "CONSULTORA GAMMA LIMITADA",
+    "79534600": "VINA CENTENARIA S A",
+    "80294600": "SUC LUIS DOGGENWEILER Y CIA",
+    "80354200": "SUC NICOLAS FERRARO CORTESE",
+    "80537000": "LARRAIN VIAL SA CORREDORA DE BOLSA",
+    "80708300": "OYARCE CONEJEROS NATAVIO SUC",
+    "80949100": "SPALLONI Y CIA LIMITADA",
+    "81494400": "UNIVERSIDAD DE CONCEPCION",
+    "83032100": "SERVICIOS Y CONSULTORIAS HENDAYA SA",
+    "83161700": "CLINICA SANTA LUCIA LTDA",
+    "84142700": "SUC ANTONIO GOMEZ Y CIA LTDA",
+    "84177300": "BTG PACTUAL CHILE SA CORREDORES DE BOLSA",
+    "84322600": "MINERA LAS VEGAS S A",
+    "84662000": "SOC CONTRACTUAL MINERA PLACERMETAL",
+    "86251100": "CONSTRUCCIONES E INVERSIONES INMO  BILIARIA MALAGA LIMITADA",
+    "86755600": "BAYONA S A",
+    "90073000": "INSTITUTO SANITAS S A",
+    "90320000": "COMPAÑIA ELECTRO METALURGICA S A",
+    "90331000": "CRISTALERIAS DE CHILE S A",
+    "90343000": "SA JAHUEL DE AGUAS MINERALES Y BAL NEARIO",
+    "90412000": "MINERA VALPARAISO SA",
+    "90753000": "CLINICA SANTA MARIA SPA",
+    "91553000": "FORESTAL CONSTRUCTORA Y COMERCIAL  DEL PACIFICO SUR SOCIEDAD ANONIMA",
+    "91666000": "INDUSTRIAS CERESITA S A",
+    "92461000": "VINA UNDURRAGA S A",
+    "92893000": "PRODUCTOS QUIMICOS TANAX S A C E I",
+    "93727000": "CIA DE INVERSIONES LA ESPANOLA S A",
+    "94660000": "MARITIMA DE INVERSIONES S A",
+    "95412000": "CIA INMOBILIARIA LA HISPANO CHILENA S A",
+    "95842000": "INSIGNE S A",
+    "96026000": "CHEMOPHARMA S A",
+    "96502680": "INVERSIONES ALONSO DE ERCILLA SA",
+    "96504420": "INVERSIONES CRISTOBAL COLON SA",
+    "96513200": "INVERSIONES UNION ESPANOLA S A",
+    "96514120": "INVERSIONES BEDA S A",
+    "96514420": "INVERSIONES SAN PABLO S A",
+    "96519800": "BCI CORREDOR DE BOLSA S A",
+    "96534140": "INVERSIONES LA BODEGA SA",
+    "96539380": "EDICIONES FINANCIERAS  SA",
+    "96556310": "ANTARCHILE S A",
+    "96566900": "NAVARINO S A",
+    "96569460": "INVERSIONES COVADONGA S A",
+    "96571220": "BANCHILE CORREDORES DE BOLSA S A",
+    "96589140": "CHEMO S A",
+    "96608270": "COMUNICACION INFORMACION ENTRETEN  CION Y CULTURA S A",
+    "96620460": "LA CAPELLANIA SA",
+    "96626600": "ENLOZADOS INDUSTRIALES S A ENINSA",
+    "96640360": "QUEMCHI S A",
+    "96644730": "INVERSIONES MALAGA SA",
+    "96659880": "INVERSIONES Y ASESORIAS GUAYACAN S A",
+    "96683200": "SANTANDER CORREDORES DE BOLSA LIMITADA",
+    "96696580": "SERVICIOS INTEGRALES DE PUBLICIDAD S A PENTAGRAMA",
+    "96767580": "CONSTRUCTORA APOGER S A",
+    "96772490": "CONSORCIO CORREDORES DE BOLSA S A",
+    "96777490": "INVERSIONES J B F LIMITADA",
+    "96793770": "EDICIONES CHILOE S A",
+    "96852100": "QUILICURA S A",
+    "96903240": "INVERSIONES B Y G LIMITADA",
+    "96954550": "SUR ANDINO S A",
+    "96972440": "CRISTALCHILE INVERSIONES S A",
+    "97024000": "BANCO DE A EDWARDS",
+    "99010000": "INVERSIONES UNESPA S A",
+    "99036000": "CIA DE INVERSIONES LA CENTRAL S A",
+    "99037000": "ZURICH CHILE SEGUROS GENERALES S.A.",
+    "99506820": "INVERSIONES ELECMETAL LIMITADA",
+    "99548240": "CGE MAGALLANES S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:b279116a4d696e54f8d72cd20faafd002edf5c979694a004fd38d682a2b4995c",
+    "cached_at": "2026-05-30T00:19:41.930281"
+  }
+}

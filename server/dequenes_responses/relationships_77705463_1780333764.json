@@ -1,0 +1,108 @@
+{
+  "pathCount": 9,
+  "relationships": [
+    {
+      "source": "77705463",
+      "target": "12897142",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-01-25",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77705463",
+      "target": "9674009",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-01-25",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77705463",
+      "target": "9674009",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACX5LynGCG7I",
+        "source": "RES",
+        "published_at": "2023-01-25"
+      }
+    },
+    {
+      "source": "77705463",
+      "target": "12897142",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACX5LynGCG7I",
+        "source": "RES",
+        "published_at": "2023-01-25"
+      }
+    },
+    {
+      "source": "76627229",
+      "target": "12897142",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-06-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76224371",
+      "target": "12897142",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_367822",
+        "cve": "367822",
+        "shares_percent": 33.33,
+        "source": "DO",
+        "published_at": "2011-07-06",
+        "doc_extraction_id": "1495864",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/07/06/367822_C_LTDA_20110706_firmado.pdf"
+      }
+    },
+    {
+      "source": "76627229",
+      "target": "12897142",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACnkfpRtT1D1",
+        "source": "RES",
+        "published_at": "2016-06-04"
+      }
+    },
+    {
+      "source": "76665202",
+      "target": "9674009",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-10-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76665202",
+      "target": "9674009",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACcaGWaCgu7A",
+        "source": "RES",
+        "published_at": "2016-10-05"
+      }
+    }
+  ],
+  "entityNames": {
+    "9674009": "IVAN PATRICIO BALBONTIN BERRIOS",
+    "12897142": "CLAUDIO ANDRES PEREZ CARRILLO",
+    "76224371": "ASESORIAS Y CAPACITACION PQR LIMITADA",
+    "76627229": "CLAUDIO ANDRES PEREZ CARRILLO ASESORIAS EN PREVENCION DE RIESGOS E.I.R.L.",
+    "76665202": "ASESORIAS IVAN PATRICIO BALBONTIN BERRIOS E.I.R.L.",
+    "77705463": "GENIUS PREVENCION LIMITADA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:44a2c9a092fe7226f55a7cb77006ae829a3a78d2b6a21f1f07180a5eb44bd877",
+    "retrieved_at": "2026-06-01T17:09:24.896559"
+  }
+}

@@ -1,0 +1,2731 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76730990-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76730990-2",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "08-01-2007",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "EMPRESAS DE ASESORIA Y CONSULTORIA EN INVERSION FINANCIERA; SOCIEDADES",
+            "codigo": "661903",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "29-09-2010"
+          },
+          {
+            "actividades": "ACTIVIDADES DE AGENCIAS DE EMPLEO TEMPORAL (INCLUYE EMPRESAS DE SERVIC",
+            "codigo": "782000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE DOTACION DE RECURSOS HUMANOS",
+            "codigo": "783000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-01-2007"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-04-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2010"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2008"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 10,
+        "ultimaActualizacion": "30-04-2026 14:54:57",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "600.000,01 a 1.000.000,00",
+          "cantidadTrabajadores": 7861
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:24:14"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 5,
+        "cobranzaPresentados": 1,
+        "cobranzaConcluidos": 4,
+        "laboralActivos": 58,
+        "laboralPresentados": 20,
+        "laboralConcluidos": 38,
+        "casosActuales": 64,
+        "casosArchivados": 21,
+        "casosConcluidos": 42,
+        "todosLosCasos": 127,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 53,
+          "demandante": 1,
+          "reclamante": 21,
+          "denunciado": 10
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:13:44",
+        "ultimaActualizacionCobranza": "28-05-2026 03:13:20",
+        "ultimaActualizacionLaboral": "28-05-2026 03:14:45",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 31,
+          "empleados": 25,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 210,
+            "cambioAbsoluto": 21
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 50,
+          "montoTotalMultas": 32022100,
+          "multasPagadas": 49,
+          "montoMultasPagadas": 31467100,
+          "multasPendientes": 1,
+          "montoMultasPendientes": 555000,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 28.51,
+            "cambioAbsoluto": 7105000
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:24:14"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "06-05-2016 21:00:00",
+              "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/05/07/1022300_M_LTDA_20160507.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                  "rut": "78092910-3",
+                  "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "CORPORACIÓN EDUCACIONAL DE LA CONSTRUCCIÓN",
+                  "rut": "70912300-9",
+                  "domicilio": "BARROS ERRÁZURIZ 1954 OFICINA 204, PROVIDENCIA"
+                }
+              ],
+              "rut": "76730990-2"
+            },
+            {
+              "fecha": "25-05-2016 20:00:00",
+              "razonSocial": "GEPYS MULTISERVICIOS LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/05/26/1028080_M_LTDA_20160526.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                  "rut": "78092910-3",
+                  "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "76077571-1"
+            },
+            {
+              "fecha": "09-01-2018 21:00:00",
+              "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/10/41953/05/1333603.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "HÉCTOR ALEJANDRO GUERRA MUÑOZ",
+                  "rut": "8378922-0",
+                  "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "JORGE DÍAZ FERNÁNDEZ",
+                  "rut": "5426069-5",
+                  "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "XINERGÍA LABORAL S.A.",
+                  "rut": "96729120-K",
+                  "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                  "rut": "78092910-3",
+                  "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "LORENA PINOCHET GARRIDO",
+                  "rut": "12507727-7",
+                  "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+                }
+              ],
+              "rut": "76730990-2"
+            },
+            {
+              "fecha": "09-01-2018 21:00:00",
+              "razonSocial": "GEPYS MULTISERVICIOS LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/10/41953/05/1333610.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "HÉCTOR ALEJANDRO GUERRA MUÑOZ",
+                  "rut": "8378922-0",
+                  "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                  "rut": "78092910-3",
+                  "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "LORENA PINOCHET GARRIDO",
+                  "rut": "12507727-7",
+                  "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+                }
+              ],
+              "rut": "76077571-1"
+            },
+            {
+              "fecha": "27-12-2020 21:00:00",
+              "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/28/42840/05/1872698.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76730990-2"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:24:14"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 160,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 85430,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 501990,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 40000,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 10,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 85010,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 40000
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-04-2026 14:54:54"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-04-2026 14:54:57"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50.51546391752577,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0.8064516129032171,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 251.321915530429,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletin Comercial BOLCOM-INFOCOM",
+        "Boletin Dicom",
+        "Boletin Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:defa8724be091b50fcfb69d1011cae0c42b922a000b65869f7744970f12ac164",
+      "cached_at": "2026-05-30T00:24:16.419847"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio de la Tramitación",
+            "fechaIngreso": "15-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "78947550-4",
+                "nombre": "CEVA FREIGHT MANAGEMENT LOGÍSTICA DE CHILE LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16611951-0",
+                "nombre": "PATRICIO FRANCISCO RAMILA PINOCHET",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11666945-5",
+                "nombre": "RAÚL ANTONIO MONTERO LÓPEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18499280-9",
+                "nombre": "HANS DAVID MUÑOZ ZUNINO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2325-2026",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6149a39c3d57c8a4d4977fc2fa9b00dc5973e75963efe7aaf1abebcbc63f7cf6",
+        "cached_at": "2026-05-30T00:24:16.775127"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 10,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "09-12-2024 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "82606800-0",
+                "nombre": "CCAF 18 DE SEPTIEMBRE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15317632-9",
+                "nombre": "DENISSE ALEJANDRA BARRAZA DÍAZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-53726-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "30-03-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "19911886-2",
+                "nombre": "ILEIN ASHLEY PIZARRO CARDOZO",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MÓNICA NATALIA CIFUENTES MANRÍQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9487171-9",
+                "nombre": "PAULO GUILLERMO CÁCERES CORTÉS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12843640-5",
+                "nombre": "EVELYN ISABEL HERVIA GUTIÉRREZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "24062651-9",
+                "nombre": "SANDRA VIVIANA MOSQUERA PAZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15381022-2",
+                "nombre": "MATIAS AMIGO GARCIA",
+                "sujeto": "T.EXC.",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-42-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de Copiapó",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "15-04-2021 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13015942-7",
+                "nombre": "RENÉ DAVID NAVARRO ALBIÑA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17980324-0",
+                "nombre": "DAVID ERNESTO CORTÉS PASTÉN",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "18398070-K",
+                "nombre": "GONZALO ALFONSO AGUILERA JOFRÉ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-59-2021",
+            "tribunal": "Jdo. de Letras del Trabajo de Copiapó",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "12-05-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-18575-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "05-11-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76240079-0",
+                "nombre": "Administradora de Fondos de Pensiones Cuprum S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-60738-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-04-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-22837-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "09-01-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-1778-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "22-11-2017 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98001200-K",
+                "nombre": "Administradora de Fondos de Pensiones Planvital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EST. LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-33039-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "27-01-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOC.ADM.DE FDOS DE CESANTIA DE CHILE II S.A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-5105-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Suspendido",
+            "estadoCausa": "Archivada",
+            "etapa": "Ingreso",
+            "fechaIngreso": "03-01-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-17-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:46f0ec17ae826768f1c074b4716a72b10619092dac254d17b9c0ab5f88570410",
+        "cached_at": "2026-05-30T00:24:17.126846"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 6,
+        "cantidad": 116,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "13-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "28186695-8",
+                "nombre": "AGUSTIN ANTONIO QUIJADA ROMERO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15307166-7",
+                "nombre": "DORIS GONZALEZ CEA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10371455-9",
+                "nombre": "KARINA MANCILLA BARRIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-12-2026",
+            "tribunal": "Juzgado de Letras y Garantía de Puerto Natales",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19249604-7",
+                "nombre": "MARLY VALENTINA RAPIMÁN COCIO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17201072-5",
+                "nombre": "ROCÍO VALERIA TORO BRAVO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96942400-2",
+                "nombre": "MEGASALUD",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-69-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valdivia",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "04-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12403540-6",
+                "nombre": "CRISTIAN COUSIÑO HIDALGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "21066429-7",
+                "nombre": "MATÍAS ALEJANDRO DÍAZ PARANCÁN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77398220-1",
+                "nombre": "MERCADOLIBRE CHILE LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-58-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valdivia",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "25-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16796005-7",
+                "nombre": "ANGEL EFRAÍN CARTES YÁÑEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8351932-0",
+                "nombre": "LEONARDO JAVIER PONCE PINEDA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "78414620-0",
+                "nombre": "stand off s.a.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-749-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "15-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15919448-5",
+                "nombre": "FRANCISCO JAVIER LANGER FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17149246-7",
+                "nombre": "MELISA EVELYN NARANJO FARFAN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20328308-3",
+                "nombre": "GERMÁN ENRIQUE FAÚNDEZ CORTEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79746250-0",
+                "nombre": "ELABORADORA DE ALIMENTOS FRUTALE LTDA.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MÓNICA NATALIA CIFUENTES MANRÍQUEZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO ANDRÉS HERRAZ SCHADE (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-806-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "12-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MONICA NATALIA CIFUENTES MANRIQUEZ",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO HERRAZ SCHADE",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16019299-2",
+                "nombre": "AUDREY EVELYN VIDAL LUCERO",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-19-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valdivia",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "24245918-0",
+                "nombre": "OMAIRA ISABEL PELAEZ SUAREZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "78092910-3",
+                "nombre": "GESTION DE PERSONAS Y SERVICIOS LIMITADA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "80326500-3",
+                "nombre": "OXIQUIM S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15331191-9",
+                "nombre": "IGOR ALEJANDRO FERNÁNDEZ MÉNDEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-589-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "19-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15692042-8",
+                "nombre": "ANA DEL CARMEN ROJAS SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14570186-4",
+                "nombre": "JUAN ALFREDO PIZARRO LEDESMA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "95616000-6",
+                "nombre": "JOY GLOBAL",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-90-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "15-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "5275464-K",
+                "nombre": "GUILLERMO ROBERTO HARTMANN GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10265816-7",
+                "nombre": "DANIELA PATRICIA HARTMANN CORTINA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25954473-4",
+                "nombre": "JOSE LUIS ARROYO MIRANDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11485247-3",
+                "nombre": "MARÍA CECILIA PAOLA NOGUER FERNANDEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12231964-4",
+                "nombre": "CECILIA DEL ROSARIO CABRERA GARCIA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9976101-6",
+                "nombre": "PABLO ESTEBAN ACUÑA RODRIGUEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12546122-0",
+                "nombre": "CLAUDIO MARCELO GERARDO CANDIA GUZMAN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77261280-K",
+                "nombre": "SERVICIOS GENERALES FALABELLA RETAIL SPA",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-25-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MONICA NATALIA CIFUENTES MANRIQUEZ (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO HERRAZ SCHADE (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN (Poder Amplio)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCIÓN COMUNAL DEL TRABAJO NORTE CHACABUCO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-28-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "12-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9905882-K",
+                "nombre": "PAULINA PEÑA OVALLE",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17073305-3",
+                "nombre": "CRISTIAN ANDRÉS VIDELA MONTAU",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79746250-0",
+                "nombre": "ELABORADORA DE ALIMENTOS FRUTALE LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-180-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "04-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO ANDRÉS HERRAZ SCHADE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16531792-0",
+                "nombre": "DAVID ORLANDO ROLANDO MUÑOZ CORREA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19249604-7",
+                "nombre": "MARLY VALENTINA RAPIMÁN COCIO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MÓNICA NATALIA CIFUENTES MANRÍQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17201072-5",
+                "nombre": "ROCÍO VALERIA TORO BRAVO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valdivia",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "25-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "78627210-6",
+                "nombre": "HIPERMERCADOS TOTTUS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16042684-5",
+                "nombre": "NATALIA CANALES GAJARDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25612936-1",
+                "nombre": "PATRICK LEONARDO GONZALES CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MÓNICA NATALIA CIFUENTES MANRÍQUEZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO ANDRÉS HERRAZ SCHADE (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13658499-5",
+                "nombre": "KENNETH GRANT MACLEAN LUENGO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-6644-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "17-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77398220-1",
+                "nombre": "MERCADOLIBRE CHILE LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16600572-8",
+                "nombre": "LEOPOLDO JAVIER ALEXIS VIDAL GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "21825689-9",
+                "nombre": "ALEJANDRO ISRAEL SALAZAR SANHUEZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-665-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "20-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "CENTRO DE CONCILIACIÓN Y MEDIACIÓN REGIÓN METROPOLITANA PONIENTE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO HERRAZ SCHADE",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MONICA NATALIA CIFUENTES MANRIQUEZ",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-1059-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76785280-0",
+                "nombre": "XINERGIA LABORAL SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77398220-1",
+                "nombre": "MERCADOLIBRE CHILE LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10989905-4",
+                "nombre": "PATRICIO RODRIGO GOMEZ BENAVIDES (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8378922-0",
+                "nombre": "HÉCTOR ALEJANDRO GUERRA MUÑOZ",
+                "sujeto": "DNCDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17519343-K",
+                "nombre": "CAROLINA ANDREA CARRASCO GONZALEZ",
+                "sujeto": "DDO.SO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8837017-1",
+                "nombre": "CARMEN GLORIA OJEDA ESPINOZA",
+                "sujeto": "DNCDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20905189-3",
+                "nombre": "SEBASTIÁN ELÍAS ZÚÑIGA PEREIRA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3986-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "27-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76416767-8",
+                "nombre": "AT LOGISTICA S.A.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15358647-0",
+                "nombre": "MAXIMILIANO NICOLÁS ROBLES SCHWARTZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17381099-7",
+                "nombre": "MARCO ANTONIO CAVALLARI VARGAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5520-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "20-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15890724-0",
+                "nombre": "MIGUEL AMAYA RIQUELME (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13298210-4",
+                "nombre": "CLAUDIA MABEL SANTAMARÍA RIQUELME",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5364-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "12-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17959873-6",
+                "nombre": "IGNACIO JOSÉ SAN MARTÍN CURÍN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17175468-2",
+                "nombre": "MÓNICA NATALIA CIFUENTES MANRÍQUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18954862-1",
+                "nombre": "MAXIMILIANO ANDRÉS HERRAZ SCHADE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16531792-0",
+                "nombre": "DAVID ORLANDO ROLANDO MUÑOZ CORREA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20253099-0",
+                "nombre": "HEROS DUVAN CARO ORTIZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-391-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Valdivia",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76730990-2",
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70285500-4",
+                "nombre": "ZONA FRANCA DE IQUIQUE S A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17555364-9",
+                "nombre": "ALAN PHILLIP ROBINSON GODOY TELLO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17430082-8",
+                "nombre": "LORENA ANDREA QUIROGA MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-407-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f362d5e02bbe0ca9a86e48822fc5cdc9cea243929def3b0996738e5a79abfae6",
+        "cached_at": "2026-05-30T00:24:17.570511"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 49,
+        "casos": [
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "19-04-2024 20:00:00",
+            "multa": "7713/24/052-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-04-2024 20:00:00",
+            "multa": "1499/24/001-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-04-2024 21:00:00",
+            "multa": "7556/24/033-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-04-2024 21:00:00",
+            "multa": "6170/24/026-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "21-02-2024 21:00:00",
+            "multa": "8646/24/005-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-01-2024 21:00:00",
+            "multa": "8105/23/138-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "04-01-2024 21:00:00",
+            "multa": "8659/23/031-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3879960
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "30-12-2023 21:00:00",
+            "multa": "3110/23/256-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-12-2023 21:00:00",
+            "multa": "8040/23/249-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-12-2023 21:00:00",
+            "multa": "3920/23/049-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "24-11-2023 21:00:00",
+            "multa": "1122/23/173-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "09-11-2023 21:00:00",
+            "multa": "8382/23/112-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-10-2023 21:00:00",
+            "multa": "3119/23/081-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "07-10-2023 21:00:00",
+            "multa": "7385/23/094-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-09-2023 21:00:00",
+            "multa": "4360/23/081-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "08-09-2023 21:00:00",
+            "multa": "1122/23/093-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No pagar las horas extraordinarias.",
+            "estado": "PAGADA",
+            "fecha": "01-09-2023 20:00:00",
+            "multa": "1453/23/019-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1903560
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-08-2023 20:00:00",
+            "multa": "3541/23/067-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No pagar indemnización compensatoria del feriado a trabajador de EST, que ha prestado servicios continuos o discontinuos por 30 o más días.",
+            "estado": "PAGADA",
+            "fecha": "17-08-2023 20:00:00",
+            "multa": "1293/23/012-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3791940
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-07-2023 20:00:00",
+            "multa": "3276/23/027-1",
+            "procedencia": "RECLAMO",
+            "um": "1.1",
+            "tipoUm": "IMM",
+            "montoClp": 550000
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:13:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8520d5ff61b0226264c92a9d275ee48928b4a9dd79f7820af2c0ee7e250ae3c8",
+        "cached_at": "2026-05-30T00:24:17.936283"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 8,
+        "cantidad": 154,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAUL DARIO URBINA STUARDO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21590931-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAMILIA PATRICIA KATHERINE JARA SOTO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21149678-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ISABELLA LICARAYEN SALAS GALVEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "20975778-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANGELES ZAIRA VARELA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "27447171-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "IGNACIO ARTURO KLAPP ESPINOZA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21330645-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SANDRA DE LOS ANGELES CANALES GARCiA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21766963-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEXANDRA PAOLA RIVERA SILVA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19752580-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JAVIER ENRIQUE ALDEA RAMOS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "21073363-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAUL DARIO URBINA STUARDO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21590931-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JAVIER ENRIQUE ALDEA RAMOS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21073363-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ISABELLA LICARAYEN SALAS GALVEZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "20975778-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TAMARA PAZ SAEZ DIAZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "18609907-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAMILIA PATRICIA KATHERINE JARA SOTO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "21149678-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE LUIS ARROYO MIRANDA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "25954473-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAUL DARIO URBINA STUARDO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "21590931-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS CHRISTIAN COSSIO AHUMADA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "6921180-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CONSTANZA BEATRIZ PONTIGO PONTIGO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "21682703-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TAMARA PAZ SAEZ DIAZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "18609907-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ISABELLA LICARAYEN SALAS GALVEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20975778-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAUL DARIO URBINA STUARDO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "21590931-k",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:13:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:92d30f98032425e73335515dbf53adf800f6c2c50c4768d515f0fef534dbfcbf",
+        "cached_at": "2026-05-30T00:24:18.296094"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76730990-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+            "rutSociedad": "76730990-2",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2009-11-03",
+            "socios": [
+              {
+                "nombre": "HERNAN ANGULO MONSALVE",
+                "rut": "8600608-1",
+                "domicilio": "MARCHANT PEREIRA N°367 DEPTO/LOCAL 201 COMUNA DE PROVIDENCIA REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "LORENA PINOCHET GARRIDO",
+                "rut": "12507727-7",
+                "domicilio": "HUÉRFANOS 812, PISO 7, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "FERNANDO CARREÑO BARRERA",
+                "rut": "4216638-3",
+                "domicilio": "CALLE MARCHANT PEREIRA 10, PISO 3, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JORGE JOSÉ FRANCISCO DÍAZ FERNÁNDEZ",
+                "rut": "5426069-5",
+                "domicilio": "EL BOSQUE 32, CANTAGUA, ZAPALLAR, QUINTA REGIÓN",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "RAUL ANTONIO ARRÁZOLA CASTRO",
+                "rut": "6554557-8",
+                "domicilio": "CAMINO LIRAY PARCELA 18 CASA 7, COLINA, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CORPORACIÓN DE DEPORTES DE LA CÁMARA CHILENA DE LA CONSTRUCCIÓN, CORDEP",
+                "rut": "70659800-6",
+                "domicilio": "LAGO RANCO N° 1890, PEDRO AGUIRRE CERDA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.99"
+              },
+              {
+                "nombre": "CORPORACIÓN EDUCACIONAL DE LA CONSTRUCCIÓN, COREDUC",
+                "rut": "70912300-9",
+                "domicilio": "ALFREDO BARROS ERRÁZURIZ N° 1954, OFICINA 204, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "NICOLAS ALFONSO STARCK AGUILERA",
+                "rut": "7375747-9",
+                "domicilio": "LA CONCEPCIÓN OCHENTA Y UNO OFICINA NOVECIENTOS DIEZ, COMUNA DE PROVIDENCIA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                "rut": "78092910-3",
+                "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.99"
+              },
+              {
+                "nombre": "HÉCTOR GUERRA MUÑOZ",
+                "rut": "8378922-0",
+                "domicilio": "LOS BELLOTOS N°2440, OFICINA NP9, LAS CONDES",
+                "tipoDeParticipacion": "Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "XINERGIA LABORAL S. A.",
+                "rut": "96729120-K",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS N° 125, PROVIDENCIA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.01"
+              },
+              {
+                "nombre": "MAXIMO MONTERO LABBE",
+                "rut": "3550420-6",
+                "domicilio": "ALMIRANTE GOTUZZO N 96, OFICINA 54, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "FERNANDO FRANCISCO JAVIER ALAMOS SANTA CRUZ",
+                "rut": "9121011-8",
+                "domicilio": "PLAZA DEL CLAUSTRO 4036, LO BARNECHEA",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "PATRICIO MERINO SCHEIHING",
+                "rut": "3544703-2",
+                "domicilio": "HUÉRFANOS 812, PISO 7, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "PABLO GARCÍA PRIETO",
+                "rut": "6608554-6",
+                "domicilio": "HUÉRFANOS 812 PISO 7, SANTIAGO",
+                "tipoDeParticipacion": "Administrador",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CORPORACIÓN DE APOYO FAMILIAR",
+                "rut": null,
+                "domicilio": "AV. PRESIDENTE EDUARDO FREI MONTALVA 4850, RENCA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.01"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-12-28",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/28/42840/05/1872698.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-01-10",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/10/41953/05/1333603.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-05-07",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2016/05/07/1022300_M_LTDA_20160507.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "rut": "76730990-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "GEPYS MULTISERVICIOS SPA",
+                "rut": "76077571-1",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8ac45d3f5fafb5ec031e23717396dfcef147f37afb358be7aedfd791f97bb8ee",
+      "cached_at": "2026-05-30T00:24:18.922408"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76730990-2",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "06-05-2016 21:00:00",
+            "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/05/07/1022300_M_LTDA_20160507.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                "rut": "78092910-3",
+                "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "CORPORACIÓN EDUCACIONAL DE LA CONSTRUCCIÓN",
+                "rut": "70912300-9",
+                "domicilio": "BARROS ERRÁZURIZ 1954 OFICINA 204, PROVIDENCIA"
+              }
+            ],
+            "rut": "76730990-2"
+          },
+          {
+            "fecha": "25-05-2016 20:00:00",
+            "razonSocial": "GEPYS MULTISERVICIOS LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/05/26/1028080_M_LTDA_20160526.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                "rut": "78092910-3",
+                "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "rut": "76730990-2",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, COMUNA DE PROVIDENCIA, SANTIAGO"
+              }
+            ],
+            "rut": "76077571-1"
+          },
+          {
+            "fecha": "09-01-2018 21:00:00",
+            "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/10/41953/05/1333603.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "HÉCTOR ALEJANDRO GUERRA MUÑOZ",
+                "rut": "8378922-0",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "JORGE DÍAZ FERNÁNDEZ",
+                "rut": "5426069-5",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "XINERGÍA LABORAL S.A.",
+                "rut": "96729120-K",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                "rut": "78092910-3",
+                "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "LORENA PINOCHET GARRIDO",
+                "rut": "12507727-7",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+              }
+            ],
+            "rut": "76730990-2"
+          },
+          {
+            "fecha": "09-01-2018 21:00:00",
+            "razonSocial": "GEPYS MULTISERVICIOS LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/10/41953/05/1333610.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "HÉCTOR ALEJANDRO GUERRA MUÑOZ",
+                "rut": "8378922-0",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "GESTIÓN DE PERSONAS Y SERVICIOS LIMITADA",
+                "rut": "78092910-3",
+                "domicilio": "AV. PEDRO DE VALDIVIA 1370, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA",
+                "rut": "76730990-2",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "LORENA PINOCHET GARRIDO",
+                "rut": "12507727-7",
+                "domicilio": "ARZOBISPO LARRAÍN GANDARILLAS 125, PROVIDENCIA, SANTIAGO"
+              }
+            ],
+            "rut": "76077571-1"
+          },
+          {
+            "fecha": "27-12-2020 21:00:00",
+            "razonSocial": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/28/42840/05/1872698.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS SPA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76730990-2"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0760775711",
+            "society": "GEPYS MULTISERVICIOS SPA"
+          },
+          {
+            "rut": "76730990-2",
+            "sociedad": "GEPYS EMPRESA DE SERVICIOS TRANSITORIOS LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3c21999ebea28a2f38eb27eb4017e3ccda7adb4bffcebe79cf9f5264cf7e2080",
+        "cached_at": "2026-05-30T00:24:19.273922"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 85430,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 49.48453608247423,
+      "numeradorJudicial": 48,
+      "denominadorJudicial": 97,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50.51546391752577,
+      "porcentajeMoraPrevisional": 99.19354838709678,
+      "casosMoraPrevisional": 31,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 64171576,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0.8064516129032171,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 251.321915530429,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:225e3a1bee8c2268f3b2e7aa5d47b4685c9cb7f664a51f9aa53cefe584c7bf22",
+      "cached_at": "2026-05-30T00:24:19.878173"
+    }
+  }
+}

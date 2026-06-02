@@ -1,0 +1,4559 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "81698900-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "81698900-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "27-05-2026",
+      "identificacion": {
+        "razonSocial": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Contribuyente tasado para realizar actividad esporádicaLa base imponible de este contribuyente fue tasada por el Servicio de Impuestos Internos, por lo tanto, está eximido para emitir boletas en el período autorizado.La situación se presenta a contar del  12-12-2007",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "CULTIVO DE OTRAS PLANTAS PERENNES",
+            "codigo": "012900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "CRIA DE OTROS ANIMALES N.C.P.",
+            "codigo": "014909",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE COMPUTADORES, EQUIPO PERIFERICO, PROGRAMAS INFOR",
+            "codigo": "474100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE ARTICULOS DE PAPELERIA Y ESCRITORIO EN COMERCIOS",
+            "codigo": "476103",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR POR CORREO, POR INTERNET Y VIA TELEFONICA",
+            "codigo": "479100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "13-07-2007"
+          },
+          {
+            "actividades": "EXPLOTACION DE ESTACIONAMIENTOS DE VEHICULOS AUTOMOTORES Y PARQUIMETRO",
+            "codigo": "522120",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE ALOJAMIENTO N.C.P.",
+            "codigo": "559009",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "SUMINISTRO INDUSTRIAL DE COMIDAS POR ENCARGO; CONCESION DE SERVICIOS D",
+            "codigo": "562900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE EDICION",
+            "codigo": "581900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ACTIVIDADES DE DISTRIBUCION DE PELICULAS CINEMATOGRAFICAS, VIDEOS Y PR",
+            "codigo": "591300",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          },
+          {
+            "actividades": "ACTIVIDADES DE EXHIBICION DE PELICULAS CINEMATOGRAFICAS Y CINTAS DE VI",
+            "codigo": "591400",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          },
+          {
+            "actividades": "TRANSMISIONES DE RADIO",
+            "codigo": "601000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          },
+          {
+            "actividades": "PROGRAMACION Y TRANSMISIONES DE TELEVISION",
+            "codigo": "602000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE TELECOMUNICACIONES N.C.P.",
+            "codigo": "619090",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE",
+            "codigo": "620200",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ALQUILER DE BIENES INMUEBLES AMOBLADOS O CON EQUIPOS Y MAQUINARIAS",
+            "codigo": "681011",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS",
+            "codigo": "721000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS",
+            "codigo": "722000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ALQUILER DE OTROS TIPOS DE MAQUINARIAS Y EQUIPOS SIN OPERARIO N.C.P.",
+            "codigo": "773009",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ACTIVIDADES DE INVESTIGACION (INCLUYE ACTIVIDADES DE INVESTIGADORES Y",
+            "codigo": "803000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "FOTOCOPIADO, PREPARACION DE DOCUMENTOS Y OTRAS ACTIVIDADES ESPECIALIZA",
+            "codigo": "821900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ENSEÑANZA SUPERIOR EN UNIVERSIDADES PRIVADAS",
+            "codigo": "853120",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "ENSEÑANZA PREUNIVERSITARIA",
+            "codigo": "854901",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "OTROS TIPOS DE ENSEÑANZA N.C.P.",
+            "codigo": "854909",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "23-09-2016"
+          },
+          {
+            "actividades": "ACTIVIDADES DE HOSPITALES Y CLINICAS PRIVADAS",
+            "codigo": "861020",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          },
+          {
+            "actividades": "CENTROS MEDICOS PRIVADOS (ESTABLECIMIENTOS DE ATENCION AMBULATORIA)",
+            "codigo": "862021",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-08-2001"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Rollos Maquinas Registradoras",
+            "ultimoAnioTimbrado": "2006"
+          },
+          {
+            "documento": "Boleta No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Compras",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2009"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas - Entradas De Espectaculos",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "1991"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota De Credito Exportacion",
+            "ultimoAnioTimbrado": "1997"
+          },
+          {
+            "documento": "Certificados De Donaciones",
+            "ultimoAnioTimbrado": "2022"
+          }
+        ],
+        "cantidadActividades": 27,
+        "cantidadDocumentos": 25,
+        "ultimaActualizacion": "07-05-2026 16:13:50",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 9200
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 1429,
+        "casosCivilesPresentados": 5885,
+        "casosCivilesConcluidos": 15307,
+        "cobranzaActivos": 81,
+        "cobranzaPresentados": 3,
+        "cobranzaConcluidos": 43,
+        "laboralActivos": 138,
+        "laboralPresentados": 70,
+        "laboralConcluidos": 237,
+        "casosActuales": 1648,
+        "casosArchivados": 5958,
+        "casosConcluidos": 15587,
+        "todosLosCasos": 23193,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "acreedor": 41,
+          "demandado": 367,
+          "demandante": 7060,
+          "solicitante": 3,
+          "demandadoSolidario": 55,
+          "reclamante": 11,
+          "terceroIndependiente": 1,
+          "demandadoSubsidiario": 2,
+          "denunciado": 55,
+          "tercero": 6,
+          "terceroExcluido": 1
+        },
+        "ultimaActualizacionCiviles": null,
+        "ultimaActualizacionCobranza": null,
+        "ultimaActualizacionLaboral": null,
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 1000,
+          "empleados": 394,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 1000
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 50,
+          "montoTotalMultas": 88841865,
+          "multasPagadas": 50,
+          "montoMultasPagadas": 88841865,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 31.15,
+            "cambioAbsoluto": 21100010
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "08-04-2011 21:00:00",
+              "razonSocial": "INVERSIONES MODINGER LARRAÍN LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/04/09/336506_M_LTDA_20110409_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "MARIO LARRAÍN SALAS",
+                  "rut": null,
+                  "domicilio": "AGUSTINAS N 1345, SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES MODINGER LARRAÍN LIMITADA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76148299-8"
+            },
+            {
+              "fecha": "10-10-2016 21:00:00",
+              "razonSocial": "CANAL 13 S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/10/11/41580/05/1122125.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES CANAL 13 SPA",
+                  "rut": "76131468-8",
+                  "domicilio": "EL GOLF 40, PISO 20, LAS CONDES"
+                },
+                {
+                  "socio": "INVERSIONES TV MEDIOS LIMITADA",
+                  "rut": "76111872-2",
+                  "domicilio": "ENRIQUE FOSTER SUR 20, PISO 18, LAS CONDES, SANTIAGO"
+                }
+              ],
+              "rut": "76115132-0"
+            },
+            {
+              "fecha": "02-06-2017 20:00:00",
+              "razonSocial": "COOPERATIVA DE SERVICIO ASOCIACIÓN DE MÉDICOS DEL HOSPITAL CLÍNICO DE LA UNIVERSIDAD CATÓLICA DE CHILE LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/06/03/41774/05/1223216.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "FACULTAD DE MEDICINA DE LA UNIVERSIDAD CATÓLICA DE CHILE",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "27-05-2026 15:40:01"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 386620,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 77901730,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 49380,
+        "lineaCredito": 7418020,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 294850,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 69541400,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 65340,
+          "lineaCredito": 9603620
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 72,
+          "tasacionTotal": 520811929,
+          "ultimaActualizacion": "09-03-2026 15:00:26"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 711,
+          "tasacionTotal": "254136551646",
+          "ultimaActualizacion": "09-03-2026 15:00:29"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 68.29268292682927,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 268.2926829268293,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 5,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:21cb69c37411955624126bcad3b79352afc6e0931920716c6bbfa1ef0fcfdf19",
+      "cached_at": "2026-05-27T15:40:07.806107"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1132,
+        "cantidad": 22621,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "18-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16432879-1",
+                "nombre": "FRANCISCO JAVIER BRIONES FREDES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17447-2025",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "18-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13657861-8",
+                "nombre": "CAROLINA EUGENIA MELO HURTADO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17449-2025",
+            "tribunal": "25º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15843930-1",
+                "nombre": "ELIZABETH ANDREA MANRÍQUEZ ARAYA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17033-2025",
+            "tribunal": "2º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15380270-K",
+                "nombre": "ADOLFO FELIPE FIERRO GUTIÉRREZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17035-2025",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15779785-9",
+                "nombre": "JAVIER ANDRÉS CASTRO SALINAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17041-2025",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15526099-8",
+                "nombre": "CARLOS ANDRÉS BANDA GARCÍA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-17078-2025",
+            "tribunal": "6º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "08-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15312218-0",
+                "nombre": "KARINA ANDREA FORMAS CORTEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16900-2025",
+            "tribunal": "1º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "08-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13832885-6",
+                "nombre": "NICOLÁS FELIPE ZAMARÍN BROCCO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16855-2025",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "02-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13498240-3",
+                "nombre": "FRANCISCO ANDRÉS MIRANDA IÑÍGUEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-10862-2025",
+            "tribunal": "1º Juzgado Civil de Puente Alto",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "02-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16655649-K",
+                "nombre": "MARÍA SILVIA LATHAM SORIANO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16703-2025",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "01-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16306766-8",
+                "nombre": "CRISTHIAN ALFONSO HERRERA FUENTES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16655-2025",
+            "tribunal": "14º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "01-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16391434-4",
+                "nombre": "JAIME SEBASTIÁN PINO PABLOS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16683-2025",
+            "tribunal": "30º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "13-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16069192-1",
+                "nombre": "JAVIER FRANCISCO LEONARDO HERRERA VALVERDE",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-15710-2025",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "13-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16014173-5",
+                "nombre": "PAULINA JAVIERA PÉREZ VERA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Mínima Cuantía",
+            "rol": "C-15696-2025",
+            "tribunal": "21º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Excepciones",
+            "fechaIngreso": "13-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18021123-3",
+                "nombre": "NICOLÁS ANDRÉS BADIOLA NAVARRO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-15690-2025",
+            "tribunal": "23º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "11-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15316386-3",
+                "nombre": "NATALIA ISABEL QUINTANILLA MORALES (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15316386-3",
+                "nombre": "NATALIA ISABEL QUINTANILLA MORALES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-15541-2025",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "11-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17934614-1",
+                "nombre": "DANIEL EXEQUIEL GUZMÁN PINILLA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-15541-2025",
+            "tribunal": "16º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "29-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13734706-7",
+                "nombre": "HERNÁN ANDRÉS RAMÍREZ BELMAR",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9903242-1",
+                "nombre": "JUAN GUILLERMO NOVOA MOLINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13895306-8",
+                "nombre": "BÁRBARA BEATRIZ ENCINA CASTRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-15206-2025",
+            "tribunal": "10º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "27-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "7967204-1",
+                "nombre": "VÍCTOR ENRIQUE ROJAS FARÍAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17044594-5",
+                "nombre": "FRANCISCA ANDREA DAPELO RIQUELME (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17268761-K",
+                "nombre": "CAMILA ANDREA MARTORELL FELIS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7751236-5",
+                "nombre": "BERTA ELISA ZIEBRECHT QUIÑONES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "65026216-6",
+                "nombre": "FUNDACIÓN PROCULTURA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "61806000-4",
+                "nombre": "FISCO DE CHILE-MINISTERIO DE LAS CULTURAS, LAS ARTES Y EL PATRIMONIO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-15119-2025",
+            "tribunal": "19º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "21-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "26003349-2",
+                "nombre": "EMMAR STEPHANY CONDE OLIVO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17600667-6",
+                "nombre": "OCTAVIO ALBERTO KEHR CASTILLO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-14762-2025",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:40:01"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ea9f279bfd706f63b6d04b519584285e76e25a23e58e64fcdf68d72b5de9e299",
+        "cached_at": "2026-05-27T15:40:29.765480"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 7,
+        "cantidad": 127,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "23-03-2026 21:00:00",
+            "monto": "3788104",
+            "litigantes": [
+              {
+                "rut": "17674320-4",
+                "nombre": "VERENA CLAUDIA KULENKAMPFF SCHREWE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16037531-0",
+                "nombre": "MARIBEL ANDREA BRIONES SANHUEZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-55-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Los Ángeles",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "23-02-2026 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7697323-7",
+                "nombre": "ALEXANDER ADRIÁN LESCOT JEREZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14127581-K",
+                "nombre": "FELIPE ESTEBAN HERNÁNDEZ MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12621186-4",
+                "nombre": "MICHELPAOLO EUGENIO MARÍN URRUTIA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-733-2026",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "23-12-2025 21:00:00",
+            "monto": "6490338",
+            "litigantes": [
+              {
+                "rut": "13450869-8",
+                "nombre": "CAROLINA VICTORIA GALAZ VALDEBENITO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12254300-5",
+                "nombre": "VÍCTOR ALEJANDRO LEYTON ASTUDILLO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5506-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "02-09-2025 20:00:00",
+            "monto": "4249998",
+            "litigantes": [
+              {
+                "rut": "14196995-1",
+                "nombre": "ALEJANDRA ANDREA DEL CARMEN PEÑA JAROBA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16813346-4",
+                "nombre": "MARIO ENRIQUE PEÑA VILLENA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3728-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "28-08-2025 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "77635130-K",
+                "nombre": "LOGISTICA Y TECNOLOGIA LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "86578400-7",
+                "nombre": "RETEC SISTEMAS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "80470300-4",
+                "nombre": "MAX HUBER REPROTÉCNICA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76136134-1",
+                "nombre": "KACE CONSULTORES LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17699781-8",
+                "nombre": "RODRIGO ANDRÉS MORENO PIZARRO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18146246-9",
+                "nombre": "TOMÁS VINICIO JARA BARRA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17287230-1",
+                "nombre": "GONZALO MATÍAS MARTÍ MALDONADO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17087953-8",
+                "nombre": "IGNACIO FRANCISCO MARTIN MIHOVILOVIC",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8083109-9",
+                "nombre": "CLAUDIO RENÉ KINAST SALINAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15712031-K",
+                "nombre": "JOSÉ LUIS CAAMAÑO GUTIÉRREZ",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15771582-8",
+                "nombre": "ESTEBAN JAVIER LARRONDO OSSANDÓN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17993615-1",
+                "nombre": "IGNACIO TOMÁS BASAURE ROJO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "79693930-3",
+                "nombre": "LOREAL CHILE S.A.",
+                "sujeto": "T.EXC.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "T.EXC.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7013321-0",
+                "nombre": "HERBERT ROBERT HANS HUBER HAUPT",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3638-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "T.EXC.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "25-08-2025 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO CORDILLERA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16302288-5",
+                "nombre": "ALFRED ANDRÉS SHERMAN LEINENWEBER",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "25070756-8",
+                "nombre": "NATALIA SCARLETT DÍAZ MONTECINOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18464015-5",
+                "nombre": "MAXIMILIANO ESTEBAN SANTIBÁÑEZ CISTERNAS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-126-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Puente Alto",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-02-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12265714-0",
+                "nombre": "MARÍA FERNANDA VICUÑA URETA",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8697864-4",
+                "nombre": "JORGE NICOLÁS ZANZO GARCÍA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCIÓN PROVINCIAL DEL TRABAJO DE SANTIAGO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-556-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "22-12-2024 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18746227-4",
+                "nombre": "CAMILA VALENTINA PEREIRA AGUAYO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18136922-1",
+                "nombre": "FERNANDA CAMILA ESPINOZA ARROS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19088413-9",
+                "nombre": "DANIELA BELÉN DÍAZ SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-947-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-12-2024 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "13994694-4",
+                "nombre": "CÉSAR LEONARDO ANDRÉS AGUILAR CERDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76421274-6",
+                "nombre": "HOSPITAL HOUSEKEEPING SYSTEMS CHILE S.P.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE (HOSPITAL CLÍNICO UC Y CENTROS ANCORA)",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18025196-0",
+                "nombre": "PEDRO JOSÉ ERRÁZURIZ AGUIRRE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16302288-5",
+                "nombre": "ALFRED ANDRÉS SHERMAN LEINENWEBER",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18754550-1",
+                "nombre": "MARTINA DANNEMANN KOUDRITCH",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15626764-3",
+                "nombre": "CAROLINA ANDREA SCHETTINO ELGUETA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "26299288-8",
+                "nombre": "ANDERSON TOUSSAINT",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-6225-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "02-12-2024 21:00:00",
+            "monto": "2503276",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19190223-8",
+                "nombre": "LISSETTE MICHELLE GONZÁLEZ SOTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15131841-K",
+                "nombre": "DANIELA DE LAS MERCEDES CABRERA RODRIGUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5929-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "25-11-2024 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13058466-7",
+                "nombre": "CONSTANZA IVETTE ANGELCOS GUTIÉRREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17811299-6",
+                "nombre": "CATALINA DEL CARMEN CÁCERES CÁCERES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5819-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "11-11-2024 21:00:00",
+            "monto": "883783",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18151175-3",
+                "nombre": "JEANNETTE ALEJANDRA PARDO GALAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17087722-5",
+                "nombre": "JUAN EDUARDO CRUZ KUSCH",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5559-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "03-11-2024 21:00:00",
+            "monto": "1306446",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18171543-K",
+                "nombre": "DIEGO ALFONSO CAMPOS LEÓN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17402153-8",
+                "nombre": "GABRIELA ANDREA PERALTA HOTT",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5443-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "28-10-2024 21:00:00",
+            "monto": "584888",
+            "litigantes": [
+              {
+                "rut": "8802884-8",
+                "nombre": "CLAUDIA MARÍA BARBERÁN MANRÍQUEZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15434350-4",
+                "nombre": "TAMARA ISABEL CADENA TAPIA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12076914-6",
+                "nombre": "CHRISTIAN RAFAEL ECHEVERRÍA TORRES",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12488506-K",
+                "nombre": "MARISOL ANDREA FERNÁNDEZ MENA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10599840-6",
+                "nombre": "MARCELA ALEJANDRA TORRES ACUÑA",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13489352-4",
+                "nombre": "ANA ELIZABETH RECABARREN PINTO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10012953-1",
+                "nombre": "JAVIER ANDRÉS FIGUEROA FARFÁN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5389-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "05-09-2024 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77438413-8",
+                "nombre": "QD FOOD SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18506084-5",
+                "nombre": "MELISSA LORETO CAMPUSANO CHACÓN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18936486-5",
+                "nombre": "VALENTINA LILLO ESPINOSA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15917573-1",
+                "nombre": "LISA MARIANA GARRIDO INOSTROZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "26208283-0",
+                "nombre": "WILSON FABIAN ESPINOZA NAVARRETE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18961633-3",
+                "nombre": "ISABEL DE LOS ANGELES DÍAZ VELÁSQUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12627751-2",
+                "nombre": "MARÍA CAROLINA CATALÁN TAPIA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4442-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-08-2024 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "77593852-8",
+                "nombre": "CVM CONSTRUCTORES SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77368194-5",
+                "nombre": "CVM CONSTRUCCION E INGENIERIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18022241-3",
+                "nombre": "JAVIER IGNACIO CHACÓN CLERICUS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE (HOSPITAL CLÍNICO UC Y CENTROS ANCORA)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17802147-8",
+                "nombre": "MELISA DE JESÚS OLIVEROS SOTO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9977830-K",
+                "nombre": "MARCOS NICOLÁS ERAZO CALDERARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19731614-4",
+                "nombre": "MARÍA PAZ PALMA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19323374-0",
+                "nombre": "MARÍA PAZ PUGA LAGOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17149246-7",
+                "nombre": "MELISA EVELYN NARANJO FARFÁN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15919448-5",
+                "nombre": "FRANCISCO JAVIER LANGER FUENTES",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16796494-K",
+                "nombre": "FABIÁN ALEJANDRO RAMOS CONTRERAS",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18534751-6",
+                "nombre": "ANDRÉS PATRICIO MOLINA SÁNCHEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76230125-3",
+                "nombre": "CONSTRUCTORA DE VICENTE EDIFICACIÓN S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4114-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "07-08-2024 20:00:00",
+            "monto": "45134824",
+            "litigantes": [
+              {
+                "rut": "8465253-9",
+                "nombre": "CLAUDIO ARTURO BRAVO LÓPEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13276838-2",
+                "nombre": "MARTA MÓNICA MERCADO PAINÉN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-103-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "12-06-2024 20:00:00",
+            "monto": "6535949",
+            "litigantes": [
+              {
+                "rut": "77438413-8",
+                "nombre": "QD FOOD SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE (HOSPITAL CLÍNICO UC Y CENTROS ANCORA)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9380713-8",
+                "nombre": "JAIME ANDRÉS LASO CORDERO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10866280-8",
+                "nombre": "SERGIO ANTONIO ZÚÑIGA HERRERA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20932541-1",
+                "nombre": "NAOMÍ MILLARAY REBOLLEDO AROS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3069-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "19-05-2024 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "77438413-8",
+                "nombre": "QD FOOD SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10866280-8",
+                "nombre": "SERGIO ANTONIO ZÚÑIGA HERRERA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040613-6",
+                "nombre": "PEDRO PABLO IRURETA URIARTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20420067-K",
+                "nombre": "MICHELLE ANAÍS LEYTON BUSTOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE (HOSPITAL CLÍNICO UC Y CENTROS ANCORA)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2641-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "21-04-2024 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE (HOSPITAL CLÍNICO UC Y CENTROS ANCORA)",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99573490-7",
+                "nombre": "UC CHRISTUS SERVICIOS CLÍNICOS S.P.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19234676-2",
+                "nombre": "VALENTINA DENISSE ARCE LEIVA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9910389-2",
+                "nombre": "GUSTAVO ALEJANDRO CHAMORRO SÁNCHEZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18754550-1",
+                "nombre": "MARTINA DANNEMANN KOUDRITCH",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16302288-5",
+                "nombre": "ALFRED ANDRÉS SHERMAN LEINENWEBER",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19638604-1",
+                "nombre": "ISIDORA IGNACIA FERNÁNDEZ ALARCÓN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18025196-0",
+                "nombre": "PEDRO JOSÉ ERRÁZURIZ AGUIRRE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15737975-5",
+                "nombre": "MARÍA LORETO CARREÑO LARA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-2129-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:40:01"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d533f3c9e328d545665877ed7bbfad137d372722e1c1bdd502d6d7dc2554f315",
+        "cached_at": "2026-05-27T15:40:30.291530"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 23,
+        "cantidad": 445,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13471326-7",
+                "nombre": "FELIPE ANDRÉS VICUÑA NEUBER (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16410131-2",
+                "nombre": "DIEGO FRANCISCO HUENCHÚN SÁNCHEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1448-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "8617182-1",
+                "nombre": "PATRICIO RICARDO PÉREZ ROJAS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17088168-0",
+                "nombre": "MARÍA DE LOS ANGELES BARROS ECHENIQUE (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17265727-3",
+                "nombre": "CARMINA VASQUEZ MEJIAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96691330-4",
+                "nombre": "DICTUC S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1430-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19083433-6",
+                "nombre": "CAMILA IGNACIA PÉREZ CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18942091-9",
+                "nombre": "ANTONIETA IGNACIA ARAVENA TORO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1394-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "08-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "20389772-3",
+                "nombre": "VALERIA CELESTE VALENZUELA ESPINOZA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19860362-7",
+                "nombre": "ANGELA AMANDA VALENZUELA ASTUDILLO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15783266-2",
+                "nombre": "RAÚL ARTURO TORO GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1348-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19637131-1",
+                "nombre": "DANIELA BELÉN CALDERÓN ESPINOZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17403490-7",
+                "nombre": "DANIEL JOSÉ GONZALEZ FEHRMANN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76754097-3",
+                "nombre": "UC CHRISTUS SERVICIOS AMBULATORIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2275-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "24-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19918302-8",
+                "nombre": "CONSTANZA YESSENIA MEZA HERMOSILLA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19860362-7",
+                "nombre": "ANGELA AMANDA VALENZUELA ASTUDILLO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15783266-2",
+                "nombre": "RAÚL ARTURO TORO GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2201-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "24-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11840235-9",
+                "nombre": "MARGARITA ANDREA SILVA ALCAYAGA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12639428-4",
+                "nombre": "CLAUDIA GALINDO LOPEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2205-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9379350-1",
+                "nombre": "RAMON DOMINGUEZ HIDALGO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16192334-6",
+                "nombre": "FRANCIS REYES CASTRO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8400194-5",
+                "nombre": "MARCOS EUGENIO PARRAGUEZ AVILÉS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1114-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "21-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13342101-7",
+                "nombre": "MYRIAM HAUACH JARA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14000907-5",
+                "nombre": "ALEXIS JOSÉ BOUDON PALACIOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1398-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "26015065-0",
+                "nombre": "YANI ENEIDA MONTENEGRO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15331289-3",
+                "nombre": "JUAN PABLO ABELLO GOMEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76173961-1",
+                "nombre": "GELATERIA ZADELFI LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77458180-4",
+                "nombre": "ASEOS Y SERVICIO FULL SERVICE LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "65097565-0",
+                "nombre": "EDIFICIO TORRES DE APOQUINDO",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76011712-9",
+                "nombre": "INMOVILIARIA NEOHAUS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2061-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18147057-7",
+                "nombre": "LUIS ANDRÉS ACOSTA SEGURA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17616963-K",
+                "nombre": "ÍTALO SILVIO ANTOLA REBOLLEDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12464073-3",
+                "nombre": "VÍCTOR HUGO CARRILLO HERNÁNDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1967-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12802887-0",
+                "nombre": "CARLA KAREN BUGUEÑO HUERTA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10461028-5",
+                "nombre": "CARLOS MARCELO SANTANDER CASTRO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19997184-0",
+                "nombre": "CARLOS LUCAS SANTANDER IBÁÑEZ (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17829640-K",
+                "nombre": "PIA FERNANDA ALIAGA RAMIREZ (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1857-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "09-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19607995-5",
+                "nombre": "RODRIGO ESTEBAN ESPINOZA QUIROZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76867342-K",
+                "nombre": "SAP SEGURIDAD Y SERVICIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9166215-9",
+                "nombre": "EDUARDO JAVIER BARROS ROMERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-13-2026",
+            "tribunal": "Juzgado de Letras de Villarrica",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20838394-9",
+                "nombre": "FRANCISCA CAROLINA ARRATIA SAAVEDRA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15783266-2",
+                "nombre": "RAÚL ARTURO TORO GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19860362-7",
+                "nombre": "ANGELA AMANDA VALENZUELA ASTUDILLO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-908-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "09-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13963443-8",
+                "nombre": "EMERSON ALEJANDRO MONSALVES DÍAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76867342-K",
+                "nombre": "SAP SEGURIDAD Y SERVICIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9166215-9",
+                "nombre": "EDUARDO JAVIER BARROS ROMERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-14-2026",
+            "tribunal": "Juzgado de Letras de Villarrica",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9505752-7",
+                "nombre": "EDGARDO ROBERTO RIQUELME ROJAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17881184-3",
+                "nombre": "JULIO CESAR RIQUELME MENA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76867342-K",
+                "nombre": "SAP SEGURIDAD Y SERVICIOS SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9166215-9",
+                "nombre": "EDUARDO JAVIER BARROS ROMERO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-16-2026",
+            "tribunal": "Juzgado de Letras de Villarrica",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "02-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18326182-7",
+                "nombre": "ERIC ANTONIO PEÑALOZA CORNEJO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20237339-9",
+                "nombre": "JUAN PABLO PEÑALOZA CORNEJO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18128735-7",
+                "nombre": "NICOLÁS ANDRÉS DURÁN PALMA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1554-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19359017-9",
+                "nombre": "ERIKA MARCELA CELSI NÚÑEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17673670-4",
+                "nombre": "CARLOS IGNACIO VALDEBENITO POBLETE (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-707-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "20-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16037531-0",
+                "nombre": "MARIBEL ANDREA BRIONES SANHUEZA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17674320-4",
+                "nombre": "VERENA CLAUDIA KULENKAMPFF SCHREWE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-107-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Los Angeles",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "7745584-1",
+                "nombre": "CATHERINE ANDREA VERENA CALDERÓN REISENAUER",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17375010-2",
+                "nombre": "HÉCTOR IGNACIO SALAZAR SOLIS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20078451-0",
+                "nombre": "ANNABELLE SCARLETH SEPÚLVEDA RUBILAR (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81698900-0",
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-662-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "27-05-2026 15:40:01"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:105233c8a31dc4aed5ab2e637c34bde551b6f4eaf28d99941dffe0462ba25765",
+        "cached_at": "2026-05-27T15:40:30.775567"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 50,
+        "casos": [
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "22-03-2026 21:00:00",
+            "multa": "8507/23/065-3",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2096670
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización.",
+            "estado": "PAGADA",
+            "fecha": "21-03-2026 21:00:00",
+            "multa": "3499/25/075-2",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "21-03-2026 21:00:00",
+            "multa": "3499/25/075-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4193340
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "13-12-2025 21:00:00",
+            "multa": "1324/25/326-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "28-11-2025 21:00:00",
+            "multa": "4194/25/202-1",
+            "procedencia": "RECLAMO",
+            "um": "0.89",
+            "tipoUm": "IMM",
+            "montoClp": 445000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "09-11-2025 21:00:00",
+            "multa": "6100/25/232-1",
+            "procedencia": "RECLAMO",
+            "um": "0.89",
+            "tipoUm": "IMM",
+            "montoClp": 445000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "26-10-2025 21:00:00",
+            "multa": "1324/25/277-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "21-10-2025 21:00:00",
+            "multa": "1088/25/037-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2077950
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-07-2025 20:00:00",
+            "multa": "7787/25/137-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "23-07-2025 20:00:00",
+            "multa": "7787/25/136-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No escriturar contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "19-07-2025 20:00:00",
+            "multa": "8510/25/025-1",
+            "procedencia": "FISCALIZACION",
+            "um": "15",
+            "tipoUm": "UTM",
+            "montoClp": 1033845
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-07-2025 20:00:00",
+            "multa": "1688/25/139-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-05-2025 20:00:00",
+            "multa": "1973/25/087-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "12-04-2025 20:00:00",
+            "multa": "1507/25/049-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "09-04-2025 20:00:00",
+            "multa": "8683/25/048-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "27-03-2025 21:00:00",
+            "multa": "1703/25/036-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "07-03-2025 21:00:00",
+            "multa": "4541/25/023-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "07-03-2025 21:00:00",
+            "multa": "4541/25/024-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "07-03-2025 21:00:00",
+            "multa": "4541/25/022-1",
+            "procedencia": "RECLAMO",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4082040
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "26-02-2025 21:00:00",
+            "multa": "4178/24/346-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          }
+        ],
+        "ultimaActualizacion": null
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ab360c2a4ca2d5f51db38bab7b8dbfbde16b658292855c218d3142109838bbcd",
+        "cached_at": "2026-05-27T15:40:31.125089"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 199,
+        "cantidad": 3963,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Florencia Margarita Barba Salas ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18767944-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Francisca Javiera Bufadel Faundez ",
+            "periodo": "03/2026",
+            "rutAfiliado": "19814690-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Cristian Roberto Alvear Montecino ",
+            "periodo": "03/2026",
+            "rutAfiliado": "13734662-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Patricia Ximena Aviles Retamal ",
+            "periodo": "03/2026",
+            "rutAfiliado": "8953746-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Nelson Enrique Becerra Rojas ",
+            "periodo": "03/2026",
+            "rutAfiliado": "15829568-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Juan Diego Bonilla Ibanez ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17962327-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MURIEL CONSTANZA ALARCON LUCO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "16936481-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "IVAN ANDRE ALVAREZ DOBREVA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "20429134-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Mauricio Cristobal Arce Argomedo ",
+            "periodo": "03/2026",
+            "rutAfiliado": "15541883-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Felipe Arias Soto ",
+            "periodo": "03/2026",
+            "rutAfiliado": "13457270-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JAVIER IGNACIO BARROS BASCUNAN ",
+            "periodo": "03/2026",
+            "rutAfiliado": "7003510-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Felipe Ignacio Becerra Calderon ",
+            "periodo": "03/2026",
+            "rutAfiliado": "16143048-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CARLOS FELIPE BISBAL RIVAS ",
+            "periodo": "03/2026",
+            "rutAfiliado": "13962979-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN DIEGO BONILLA IBANEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17962327-7",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA AIDA AGUILERA INSUNZA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "12873963-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Alfonso Alonso Ahumada Donoso ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17083736-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CRISTOBAL IGNACIO ALBORNOZ LUENGO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "20949314-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Roxana Constanza Alvarez Sanguineti ",
+            "periodo": "03/2026",
+            "rutAfiliado": "20638312-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Camila Fernanda De Jesus Aravena Vasquez ",
+            "periodo": "03/2026",
+            "rutAfiliado": "19182836-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "Paula Cabezon Jasen ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18639063-6",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": null
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e271d5fcd57d5e870a89ab8e440a9e7471744a8482a5c3cbd3e7dd75cc5a06da",
+        "cached_at": "2026-05-27T15:40:31.494056"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "81698900-0",
+      "tipoPersona": "juridical",
+      "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+            "rutSociedad": "81698900-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [],
+            "extractos": [],
+            "participaciones": [
+              {
+                "razonSocial": "AGENCIA ACREDITADORA DE LA CALIDAD DE LA EDUCACION SUPERIOR,QUALITAS S.A.",
+                "rut": "76017267-7",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "ALGAE FUELS S.A.",
+                "rut": "76122974-5",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "ALIMENTACION Y SERVICIOS U C S A",
+                "rut": "96763160-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "ASOC CHILENA DE LABORATORIOS Y CERTIFICADORES DE MATERIALES ASOC GREMIAL",
+                "rut": "73116200-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CANAL 13 SA",
+                "rut": "79611513-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CANAL 13 SPA",
+                "rut": "76115132-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CAPACITUC S A",
+                "rut": "96673200-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CONSORCIO TECNOLOGICO DE LA INDUSTRIA HORTOFRUTICOLA S A",
+                "rut": "76511290-7",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CONSORCIO TECNOLOGICO EN BIOMEDICINA CLINICO-MOLECULAR S.A.",
+                "rut": "76011738-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CORPORACION HUBTEC CHILE",
+                "rut": "65158938-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "EDUCA UC DOS S.A.",
+                "rut": "77026105-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "ELEMENTAL S.A.",
+                "rut": "76659730-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "EMPRESAS UC CHRISTUS SPA",
+                "rut": "77176706-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "FUNDACION QUALITAS PARA LA EDUCACION",
+                "rut": "65203923-5",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "GESTORA DE CREDITOS U C S A",
+                "rut": "96993740-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INDALUM S.A. EN LIQUIDACION",
+                "rut": "76309108-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA CENTRO MÉDICO U.C.S.A.",
+                "rut": null,
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA SAN PATRICIO S A",
+                "rut": "99551480-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA U C S A",
+                "rut": "96703490-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INNOVACION Y TECNOLOGIA VITIVINICOLA S.A",
+                "rut": "76571080-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSIONES CANAL 13 SPA",
+                "rut": "76131468-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSIONES UC CH SPA",
+                "rut": "76487632-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MEDIOS AUSTRALES S A",
+                "rut": "96995550-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MELON S.A.",
+                "rut": "76109779-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "OTRI CHILE S.A.",
+                "rut": "76005253-1",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PROYECTOS Y SERVICIOS UC SPA",
+                "rut": "99520720-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SOC DE RADIOEMISORAS DEL NORTE S A",
+                "rut": "96507430-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SOCIEDAD DE CAPACITACION Y DE SERVICIOS SAN SEBASTIAN S.A.",
+                "rut": "76339930-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SOCIEDAD EDUCACIONAL BOSTON ACADEMY S.A.",
+                "rut": "99581930-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "TRAINING COMPETENCE SPA",
+                "rut": "76466404-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "UC CHRISTUS SALUD SPA",
+                "rut": "99540210-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "UC CHRISTUS SERVICIOS CLINICOS SPA",
+                "rut": "99573490-7",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+            "postura": "Querellante",
+            "rol": "Ordinaria-12276-2016",
+            "fecha": "15/11/2016",
+            "infraccion": "ESTAFAS Y OTRAS DEFRAUDACIONES CONTRA PARTICULARES",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "15 JUZGADO CIVIL",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALEJANDRA MONSERRAT LOBOS CHAMORRO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "BALBI Y CIA LTDA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CRISTIAN FELIPE CASTILLO AQUEVEQUE",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1221",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO JOSÉ PAVEZ TETLAK",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE GALVEZ SANTIBAÑEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE RICARDO GÁLVEZ SANTIBÁÑEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA JAVIERA VENEGAS LLANOS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOLÁS NAVARRETE FASCHING",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ROBERTO BALBI",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "2º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+            "postura": "Querellante",
+            "rol": "Ordinaria-10496-2016",
+            "fecha": "15/06/2016",
+            "infraccion": "ESTAFAS Y OTRAS DEFRAUDACIONES CONTRA PARTICULARES",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "20COMISARIA PUENTE ALTO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALFREDO ANDRÉS QUEZADA MARTÍNEZ",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ANDRES IGNACIO FIGUEROA GOMEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ANIXA PAMELA LIZAMA ESTAY",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ANIXA PAMELA LIZAMA ESTAY",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CLAUDIO ANGEL ASPE LETELIER",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIO CESAR CAAMAÑO MUÑOZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRS STGO SUR II",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DIEGO VILLARROEL CONTRARAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO JAVIER UGARTE MILLAN",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO JAVIER UGARTE MILLAN",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GABRIELA NOVOA MUÑOZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GERMAN LUIS OVALLE MADRID",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ITX GENCHI ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS MILLÁN HIDALGO",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "POLICIA DE INVESTIGACIONES",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLIC",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VICTOR MANUEL CIFUENTES DOMINGUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "7º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+            "postura": "Querellante",
+            "rol": "Ordinaria-10225-2015",
+            "fecha": "25/09/2015",
+            "infraccion": "Injuria (accion privada).",
+            "estado": "Tramitación",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CLAUDIA RABB COPELLO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EUGENIO MERINO PALACIOS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN ESTEBAN PEDRO MONTERO LEÓN",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO LUIS BATTAGLIA CASTRO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONOR DEL TRÁNSITO CERÓN LLÉVENES",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAXIMILIANO ARTURO URRUTIA QUEZADA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "4º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+            "postura": "Querellante",
+            "rol": "Ordinaria-12454-2015",
+            "fecha": "02/07/2015",
+            "infraccion": "FALSOTESTIMONIO, PERJURIO O DENUNCIA CALUMNIOSA.ART. 206,.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "(2)LEONOR DEL TRÁNSITO CERON LLEVENES",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ALEJANDRO GODOY DONOSO",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "BENJAMIN FONTECILLA CORNEJO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAMILA GREBE RAMIREZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIA FRANCESCA RABB COPELLO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIA RABB COPELLO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIO ANGEL ASPE LETELIER",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN ANDRES DIAZ SCAFF",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EUGENIO MERINO PALACIOS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EUGENIO XAVIER MERINO PALACIOS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN ESTEBAN MONTERO LEON",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN ESTEBAN PEDRO MONTERO LEON",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO BATTAGLIA CASTRO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONOR DEL TRÁNSITO CERON LLEVENES",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LEONOR DEL TRÁNSITO CERÓN LLÉVENES",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARISOL GARCIA CARRERA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARISOL GARCIA CARRERA",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAXIMILIANO ARTURO URRUTIA QUEZADA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VÍCTOR MANUEL VIDAL MOYA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "7º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+            "postura": "Víctima",
+            "rol": "Ordinaria-3549-2014",
+            "fecha": "09/04/2014",
+            "infraccion": "Otros delitos contra la ley de propiedad intelectual.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "EDUARDO HARCHA CHAER",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1227",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GABRIEL PENSA REICH",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN VICENTE NICOLÁS BERNARDO GALLARDO CUNEO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "(MAIL) RODRIGO LAVADOS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MATIAS SOMARRIVA LABRA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MATIAS SOMARRIVA LABRA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MAURO ANER PINO MOLINA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "REPRESENTANTE LEGAL BIOSIQUE",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "RODRIGO LAVADOS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 5
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:608a7b995bba1842acd44e1f6086cf789534b69187edf4e3a69dab0bc848185b",
+      "cached_at": "2026-05-27T15:40:32.130600"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "81698900-0",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "08-04-2011 21:00:00",
+            "razonSocial": "INVERSIONES MODINGER LARRAÍN LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/04/09/336506_M_LTDA_20110409_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "MARIO LARRAÍN SALAS",
+                "rut": null,
+                "domicilio": "AGUSTINAS N 1345, SANTIAGO"
+              },
+              {
+                "nombre": "UNIVERSIDAD CATÓLICA DE CHILE",
+                "rut": "81698900-0",
+                "domicilio": "ALAMEDA 340, SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES MODINGER LARRAÍN LIMITADA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76148299-8"
+          },
+          {
+            "fecha": "10-10-2016 21:00:00",
+            "razonSocial": "CANAL 13 S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/10/11/41580/05/1122125.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES CANAL 13 SPA",
+                "rut": "76131468-8",
+                "domicilio": "EL GOLF 40, PISO 20, LAS CONDES"
+              },
+              {
+                "nombre": "INVERSIONES TV MEDIOS LIMITADA",
+                "rut": "76111872-2",
+                "domicilio": "ENRIQUE FOSTER SUR 20, PISO 18, LAS CONDES, SANTIAGO"
+              },
+              {
+                "nombre": "UNIVERSIDAD CATÓLICA DE CHILE",
+                "rut": "81698900-0",
+                "domicilio": "ALAMEDA 340, SANTIAGO"
+              }
+            ],
+            "rut": "76115132-0"
+          },
+          {
+            "fecha": "02-06-2017 20:00:00",
+            "razonSocial": "COOPERATIVA DE SERVICIO ASOCIACIÓN DE MÉDICOS DEL HOSPITAL CLÍNICO DE LA UNIVERSIDAD CATÓLICA DE CHILE LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/06/03/41774/05/1223216.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "UNIVERSIDAD CATÓLICA DE CHILE",
+                "rut": "81698900-0",
+                "domicilio": "ALAMEDA 340, SANTIAGO"
+              },
+              {
+                "nombre": "FACULTAD DE MEDICINA DE LA UNIVERSIDAD CATÓLICA DE CHILE",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0761229745",
+            "society": "ALGAE FUELS SA"
+          },
+          {
+            "rut": "0771734731",
+            "society": "TIRESIAS SPA"
+          },
+          {
+            "rut": "0904330000",
+            "society": "CIA RADIO CHILENA S A"
+          },
+          {
+            "rut": "0966913304",
+            "society": "DICTUC SA"
+          },
+          {
+            "rut": "0763399303",
+            "society": "SOCIEDAD DE CAPACITACION Y DE SERVICIOS SAN SEBASTIAN SA"
+          },
+          {
+            "rut": "0995207206",
+            "society": "PROYECTOS Y SERVICIOS UC SPA"
+          },
+          {
+            "rut": "0652039235",
+            "society": "FUNDACION QUALITAS PARA LA EDUCACION"
+          },
+          {
+            "rut": "0763091082",
+            "society": "INDALUM SA EN LIQUIDACION"
+          },
+          {
+            "rut": "0731161003",
+            "society": "INSTITUTO DE LA CONSTRUCCION"
+          },
+          {
+            "rut": "0995608200",
+            "society": "INVERSIONES VENTANA S A"
+          },
+          {
+            "rut": "065198274K",
+            "society": "CORPORACION CENTRO TECNOLOGICO DE ECONOMIA CIRCULAR"
+          },
+          {
+            "rut": "077017337K",
+            "society": "BIOTHERVAX SPA"
+          },
+          {
+            "rut": "0966912502",
+            "society": "ALERTA AL CONOCIMIENTO SPA"
+          },
+          {
+            "rut": "0965074309",
+            "society": "SOC DE RADIOEMISORAS DEL NORTE S A"
+          },
+          {
+            "rut": "0966657103",
+            "society": "CONSTRUCTA S A"
+          },
+          {
+            "rut": "0771767060",
+            "society": "EMPRESAS UC CHRISTUS SPA"
+          },
+          {
+            "rut": "065202324K",
+            "society": "FUNDACION MAVI UC"
+          },
+          {
+            "rut": "0966732008",
+            "society": "CAPACITUC S A"
+          },
+          {
+            "rut": "0760117382",
+            "society": "CONSORCIO TECNOLOGICO EN BIOMEDICINA CLINICOMOLECULAR SA"
+          },
+          {
+            "rut": "0967631604",
+            "society": "ALIMENTACION Y SERVICIOS U C S A"
+          },
+          {
+            "rut": "0533109012",
+            "society": "SUCESION RUPERTO BUSTOS VALDERRAMA"
+          },
+          {
+            "rut": "0747011001",
+            "society": "CENTRO DE INTERMEDIACION PARA EL DESARR DE LAS PERSONAS EN EL TRABAJO"
+          },
+          {
+            "rut": "0764876326",
+            "society": "INVERSIONES UC CH SPA"
+          },
+          {
+            "rut": "0995402106",
+            "society": "UC CHRISTUS SALUD SPA"
+          },
+          {
+            "rut": "0760052531",
+            "society": "OTRI CHILE SA"
+          },
+          {
+            "rut": "0967034908",
+            "society": "INMOBILIARIA U C S A"
+          },
+          {
+            "rut": "0969937409",
+            "society": "GESTORA DE CREDITOS U C S A"
+          },
+          {
+            "rut": "0765112907",
+            "society": "CONSORCIO TECNOLOGICO DE LA INDUSTRIA HORTOFRUTICOLA S A"
+          },
+          {
+            "rut": "065158938K",
+            "society": "CORPORACION HUBTEC CHILE"
+          },
+          {
+            "rut": "0770261058",
+            "society": "EDUCA UC DOS SA"
+          },
+          {
+            "rut": "065234111K",
+            "society": "FUNDACION ANCHORA UC"
+          },
+          {
+            "rut": "073116200K",
+            "society": "ASOC CHILENA DE LABORATORIOS Y CERTIFICADORES DE MATERIALES ASOC GREMIAL"
+          },
+          {
+            "rut": "0969955504",
+            "society": "MEDIOS AUSTRALES S A"
+          },
+          {
+            "rut": "0764664043",
+            "society": "TRAINING COMPETENCE SPA"
+          },
+          {
+            "rut": "099582020K",
+            "society": "SERVICIOS CLINICOS SAN CARLOS DE APOQUINDO S A"
+          },
+          {
+            "rut": "0765710804",
+            "society": "INNOVACION Y TECNOLOGIA VITIVINICOLA SA"
+          },
+          {
+            "rut": "0766597300",
+            "society": "ELEMENTAL SA"
+          },
+          {
+            "rut": "0760172677",
+            "society": "AGENCIA ACREDITADORA DE LA CALIDAD DE LA EDUCACION SUPERIORQUALITAS SA"
+          },
+          {
+            "rut": "76148299-8",
+            "sociedad": "INVERSIONES MODINGER LARRAÍN LIMITADA"
+          },
+          {
+            "rut": "76115132-0",
+            "sociedad": "CANAL 13 S.A."
+          },
+          {
+            "rut": null,
+            "sociedad": "COOPERATIVA DE SERVICIO ASOCIACIÓN DE MÉDICOS DEL HOSPITAL CLÍNICO DE LA UNIVERSIDAD CATÓLICA DE CHILE LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7562d8b6fea54ac484525becb9fe131c7dd8e3069435c232c7d87dcf9ed7f212",
+        "cached_at": "2026-05-27T15:40:32.537718"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 77951110,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 31.70731707317073,
+      "numeradorJudicial": 286,
+      "denominadorJudicial": 902,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 68.29268292682927,
+      "porcentajeMoraPrevisional": 100,
+      "casosMoraPrevisional": 1000,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 88841865,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 268.2926829268293,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b15a9565c4f84841e6b65b2551d45abde3bc6cd2495b580175aeb370f728e1dd",
+      "cached_at": "2026-05-27T15:40:33.679179"
+    }
+  }
+}

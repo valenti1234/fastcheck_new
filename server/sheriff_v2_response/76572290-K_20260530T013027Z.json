@@ -1,0 +1,3127 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76572290-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76572290-K",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "VERA Y HOLA LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "04-07-2006",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS DE TRANSPORTE DE TRABAJADORES",
+            "codigo": "492220",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "29-02-2016"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE TRANSPORTE DE PASAJEROS POR VIA TERRESTRE N.C.P.",
+            "codigo": "492290",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "29-02-2016"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "16-02-2012"
+          },
+          {
+            "actividades": "ALQUILER DE EQUIPOS DE TRANSPORTE SIN OPERARIO, EXCEPTO VEHICULOS AUTO",
+            "codigo": "773001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "04-01-2017"
+          },
+          {
+            "actividades": "OTROS SERVICIOS DE ATENCION DE LA SALUD HUMANA PRESTADOS POR EMPRESAS",
+            "codigo": "869091",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "04-07-2006"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2006"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2007"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2007"
+          }
+        ],
+        "cantidadActividades": 5,
+        "cantidadDocumentos": 16,
+        "ultimaActualizacion": "11-05-2026 18:31:37",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "100.000,01 a 200.000,00",
+          "cantidadTrabajadores": 402
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 01:30:23"
+      },
+      "judicial": {
+        "casosCivilesActivos": 3,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 2,
+        "cobranzaActivos": 8,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 3,
+        "laboralActivos": 10,
+        "laboralPresentados": 4,
+        "laboralConcluidos": 34,
+        "casosActuales": 21,
+        "casosArchivados": 5,
+        "casosConcluidos": 39,
+        "todosLosCasos": 65,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 20,
+          "demandante": 3,
+          "denunciado": 3
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 01:30:23",
+        "ultimaActualizacionCobranza": "30-05-2026 01:30:23",
+        "ultimaActualizacionLaboral": "30-05-2026 01:30:23",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 4,
+          "empleados": 2,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 4
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 33,
+          "montoTotalMultas": 98886829,
+          "multasPagadas": 33,
+          "montoMultasPagadas": 98886829,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 5.19,
+            "cambioAbsoluto": 4882570
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:30:23"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "22-12-2016 21:00:00",
+              "razonSocial": "VERA Y HOLA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/23/41640/05/1155255.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "CRISTIAN ALEJANDRO VERA FIERRO",
+                  "rut": "13108906-6",
+                  "domicilio": "ANTÁRTICA NÚMERO DOS MIL SEISCIENTOS VEINTITRÉS, OSORNO"
+                },
+                {
+                  "socio": "JOSÉ FRANCISCO HOLA BUSTAMANTE",
+                  "rut": null,
+                  "domicilio": "HILDA MADRID Nº759, LOMAS DEL SOL, QUILPUÉ, V REGIÓN"
+                },
+                {
+                  "socio": "ALAIN ALEXIS CARMONA CORTES",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76572290-K"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 01:30:22"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 537490,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 6160,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 531330,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 171090,
+        "leasingMoroso": 4620,
+        "leasingVigente": 396690,
+        "lineaCredito": 62100,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 424990,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 424990,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 177340,
+          "leasingMoroso": 0,
+          "leasingVigente": 137000,
+          "lineaCredito": 86240
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 24,
+          "tasacionTotal": 220029646,
+          "ultimaActualizacion": "28-04-2026 21:41:11"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 1,
+          "tasacionTotal": "206487562",
+          "ultimaActualizacion": "28-04-2026 21:41:11"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 98.85172560715807,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 64.70588235294117,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 363.55760796009923,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "VERA Y HOLA LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:208b07d6a4fe3599a5d370b5480601328dd604c42ec7dc79f4cd79bac3501481",
+      "cached_at": "2026-05-30T01:30:24.439175"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 6,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "20-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16557698-5",
+                "nombre": "FABRITZIO FILIPPO VARELA AVENDAÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16114093-7",
+                "nombre": "MARCO ANTONIO CASTELLANOS MUÑOZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-2381-2025",
+            "tribunal": "1º Juzgado de Letras de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Contestación",
+            "fechaIngreso": "16-12-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12822931-0",
+                "nombre": "SEBASTIÁN BERNARDO GUERRA ESPINOZA (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "4570290-1",
+                "nombre": "JOSÉ CLAUDIO TRONCOSO CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9025756-0",
+                "nombre": "PATRICIO HERNÁN TRONCOSO CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11159443-0",
+                "nombre": "MARLA JANNETTE TRONCOSO JARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10747505-2",
+                "nombre": "CLAUDIA XIMENA TRONCOSO JARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10067355-K",
+                "nombre": "NORMA DEL CARMEN TRONCOSO JARA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17650239-8",
+                "nombre": "CAMILA ANDREA DELGADO TRONCOSO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15250639-2",
+                "nombre": "JUAN CARLOS CISTERNAS FRIZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61602260-1",
+                "nombre": "HOSPITAL BASE SAN JOSE  DE OSORNO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-3922-2024",
+            "tribunal": "1º Juzgado de Letras de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "16-02-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12822931-0",
+                "nombre": "SEBASTIÁN BERNARDO GUERRA ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-91-2021",
+            "tribunal": "Juzgado de Letras y Gar. de Lota",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "27-01-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12822931-0",
+                "nombre": "SEBASTIÁN BERNARDO GUERRA ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-320-2021",
+            "tribunal": "1º Juzgado Civil de Concepción",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica ",
+            "fechaIngreso": "19-11-2020 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12822931-0",
+                "nombre": "SEBASTIÁN BERNARDO GUERRA ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17651361-6",
+                "nombre": "JEAN CLOUDE BLANCH NAVARRO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15935376-1",
+                "nombre": "DIEGO SEBASTIÁN ALEGRÍA MALUENDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "11485804-8",
+                "nombre": "JUAN PABLO URZÚA POBLETE",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18249587-5",
+                "nombre": "JOSÉ ANTONIO SÁNCHEZ INOSTROZA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-17357-2020",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación",
+            "fechaIngreso": "18-10-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "60805022-1",
+                "nombre": "TESORERIA PROVINCIAL DE OSORNO",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16794209-1",
+                "nombre": "VALENTINA SCARLETT JUSTO PODLECH (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6121694-4",
+                "nombre": "MARÍA BEATRIZ MOHR RUDLOFF",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81711200-5",
+                "nombre": "CLUB OSORNO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8368027-K",
+                "nombre": "CLAUDIA LUCRECIA SÁEZ EPPLE",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76614090-4",
+                "nombre": "SOCIEDAD AGRICOLA RIOS Y URIBE LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10305735-3",
+                "nombre": "CLAUDIA LORENA LABBÉ GUTIÉRREZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13039736-0",
+                "nombre": "CATALINA MARÍA VALDERRAMA RONCO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8787988-7",
+                "nombre": "MICHAEL ANTHONY ROGER MONTGOMERY BUHLER",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "2837872-6",
+                "nombre": "AMÉRICO ARTURO ACUÑA ROSAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10963332-1",
+                "nombre": "CARLOS OTTMAR MENZEL GONZÁLEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6846516-8",
+                "nombre": "GABRIELA CATALINA BESSER HAYLER",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9543598-K",
+                "nombre": "LUIS ALBERTO FROHLICH MOHR",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7052245-4",
+                "nombre": "VERÓNICA CECILIA MUÑOZ KETTLER",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "78484020-4",
+                "nombre": "INVERSIONES DIAZ Y GALLEGUILLOS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8931450-K",
+                "nombre": "CRISTIAN ANDRÉS MOREIRA AICHELE",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18427608-9",
+                "nombre": "CLAUDIA PAULINA TEKE GUZMÁN",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9717337-0",
+                "nombre": "EMILIO ENRIQUE SCHNETTLER VIVANCO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9393738-4",
+                "nombre": "JAIME ALEJANDRO KRIMAN NÚÑEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10340022-8",
+                "nombre": "LUIS ALBERTO ALARCÓN RAMÍREZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76025769-9",
+                "nombre": "CONSTRUCTORA KATAR LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13734691-5",
+                "nombre": "CARLOS IGNACIO HOTT SCHMIDT",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76559043-4",
+                "nombre": "SOCIEDAD R Y S LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10791944-9",
+                "nombre": "CLAUDIA WALESKA KUSCHEL FUCHSLOCHER",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "82357300-6",
+                "nombre": "SUC ARNTZ MEIJER JUAN",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "82904000-K",
+                "nombre": "COOP CAMPESINA ORIENTE LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11308245-3",
+                "nombre": "XIMENA ISABEL CASAS VILLEGAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "70620200-5",
+                "nombre": "ACCION SOCIAL DIANA DE ROB",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10855569-6",
+                "nombre": "IVÁN RUDY CANCINO DÍAZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61402011-3",
+                "nombre": "OFICINA PROVINCIAL OSORNO, MINISTERIO BIENES NACIONALES",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8092456-9",
+                "nombre": "GLADYS INÉS AÑAZCO REUTER",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8931194-2",
+                "nombre": "SERGIO GABRIEL TRUJILLO MIRANDA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12422568-K",
+                "nombre": "CHRISTIAN HERNÁN MARTÍNEZ MOMBERG",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "5049390-3",
+                "nombre": "IRMA DEL CARMEN ÁLVAREZ LOAIZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "SINDICATTO CHIPRODAL S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6945321-K",
+                "nombre": "MARTA LETICIA CONTRERAS PÉREZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76352506-6",
+                "nombre": "INMOBILIARIA ÑILQUE SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "7735454-9",
+                "nombre": "HÉCTOR FERNANDO RODRÍGUEZ HERNÁNDEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12753276-1",
+                "nombre": "RICARDO SEBASTIÁN SCHULZ SCHULZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "88362500-5",
+                "nombre": "EMPRESA CONSTRUCTORA ABINSA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12756326-8",
+                "nombre": "RODRIGO ALEJANDRO ARRIAGADA MAYORGA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77110000-7",
+                "nombre": "INMOBILIARIA ABINSA LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "75973940-K",
+                "nombre": "COMITE ALLEGADOS SOL DEL PACIFICO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11709857-5",
+                "nombre": "JOVITA ALEJANDRA LOAIZA MUÑOZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9076987-1",
+                "nombre": "PEDRO LEONIDAS POOL VARGAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10384399-5",
+                "nombre": "INGRID LORENA BORCHERS BRICEÑO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6918442-1",
+                "nombre": "CARLOS ALBERTO WAEGER SCHLEEF",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "48148284-4",
+                "nombre": "SILVINA DEL CARMEN GOROSO RETAMALES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "4842987-4",
+                "nombre": "VÍCTOR MARTÍNEZ FERNÁNDEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77551330-6",
+                "nombre": "CONSTRUCTORA ALCUS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6831093-8",
+                "nombre": "ARIEL ENRIQUE SANDOVAL FLORES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76062760-7",
+                "nombre": "INMOBILIARIA MARTABID SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Tributario - Remate Bienes Raíces",
+            "rol": "C-3578-2019",
+            "tribunal": "2º Juzgado de Letras de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:30:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1f826f46010805cb6e6d7706fc2b5188f673a451a71b03d5ae165a2dae1f0d4a",
+        "cached_at": "2026-05-30T01:30:24.779982"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 11,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "25-09-2023 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "76399731-6",
+                "nombre": "RESMED TRANSPORTES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17354375-1",
+                "nombre": "IGNACIO NICOLÁS VALENZUELA SALGADO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13233942-2",
+                "nombre": "ANDRÉS GUSTAVO ZÚÑIGA SANTIBÁÑEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12660921-3",
+                "nombre": "CLARA LUISA MANZANO AGUILERA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17469395-1",
+                "nombre": "SEBASTIÁN ANDRÉS CONTRERAS TEJEDOR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-125-2023",
+            "tribunal": "Jdo. de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Prueba",
+            "fechaIngreso": "09-06-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9539434-5",
+                "nombre": "GABRIEL ALFONSO GALLARDO VERDUGO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12661262-1",
+                "nombre": "CRISTIAN GABRIEL YÁÑEZ ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13358226-6",
+                "nombre": "MARITZA JOHANNA CORTÉS CORTÉS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17140074-0",
+                "nombre": "CAROLINA PAZ LIMA PÁEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76125157-0",
+                "nombre": "SACYR OPERACION Y SERVICIOS  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "9403566-K",
+                "nombre": "HANS NEIL MILES VEGA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "7772589-K",
+                "nombre": "MARÍA MÓNICA GAJARDO GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12842990-5",
+                "nombre": "RODRIGO FERNANDO NAVARRO ARQUEROS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13425301-0",
+                "nombre": "LEONARDO ANDRÉS ROJAS MILLA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12220284-4",
+                "nombre": "ALEX MARCELO LANDSBERGER VARELA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-162-2022",
+            "tribunal": "Jdo. de Letras del Trabajo de La Serena",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "17-05-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "16183534-K",
+                "nombre": "MANUEL ALEJANDRO ARAYA GÓMEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17140074-0",
+                "nombre": "CAROLINA PAZ LIMA PÁEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO VALLENAR  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17295139-2",
+                "nombre": "FELIPE ANTONIO LÓPEZ MONTENEGRO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4-2022",
+            "tribunal": "2º Juzgado de Letras de Vallenar",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-03-2022 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "18331851-9",
+                "nombre": "JAVIER ANDRÉS KISER ASTORGA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76496130-7",
+                "nombre": "SOCIEDAD CONCESIONARIA COSTANERA NORTE S.A.  ",
+                "sujeto": "DDO.SO",
+                "persona": "J"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18807302-6",
+                "nombre": "FLORENCIA VALENTINA CONSTANZO GÓMEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17140074-0",
+                "nombre": "CAROLINA PAZ LIMA PÁEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17677189-5",
+                "nombre": "ÁLVARO JACOB ANANÍAS GUERRA GUTIÉRREZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16392803-5",
+                "nombre": "WALTER ALEXIS GONZÁLEZ MORALES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1123-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "06-04-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "18897576-3",
+                "nombre": "LYNDA ROMANÉ ROBLES ARENAS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA  Y HOLA LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17140074-0",
+                "nombre": "CAROLINA PAZ LIMA PÁEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12000913-3",
+                "nombre": "HUMBERTO PATRICIO FUENTES DÍAZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "PATRICIA VEGA GALLARDO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-50-2021",
+            "tribunal": "Jdo. de Letras del Trabajo de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Discusión",
+            "fechaIngreso": "22-01-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA CARVALLO CARRASCO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17140074-0",
+                "nombre": "CAROLINA LIMA PAEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16160764-9",
+                "nombre": "DIEGO ELÍAS CARILLANCA BEROÍZA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8114719-1",
+                "nombre": "OSVALDO MAURICIO GARAY OLAVARRÍA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16421627-6",
+                "nombre": "WALTER VILLAVICENCIO MAZA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16126595-0",
+                "nombre": "OSVALDO MAURICIO GARAY PALMA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-313-2020",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "13-11-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-1377-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "02-03-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA  Y HOLA LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "1-9",
+                "nombre": "INSPECCION DEL TRABAJO DE LA SERENA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "1-9",
+                "nombre": "PABLO CHANG MANDIOLA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-54-2019",
+            "tribunal": "Jdo. de Letras del Trabajo de La Serena",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "22-10-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17140074-0",
+                "nombre": "CAROLINA LIMA PAEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16019366-2",
+                "nombre": "SANDRA PAULINA GUTIÉRREZ BRAVO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10292150-K",
+                "nombre": "JORGE ANTONIO VALENZUELA DÍAZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA  Y HOLA LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-335-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-04-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-771-2018",
+            "tribunal": "Jdo. de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "15-01-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "81826800-9",
+                "nombre": "C.C.A.F LOS ANDES  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15363924-8",
+                "nombre": "FRANCISCO JAVIER SMITH COVARRUBIAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA  Y HOLA LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-2219-2015",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:30:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:71d2c2cc825fed79fcf9e7287f5e901e5045af7d4cb52f62dd2575f152f1b610",
+        "cached_at": "2026-05-30T01:30:25.126211"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 48,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "01-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8931590-5",
+                "nombre": "RODRIGO IVÁN PÉREZ CEBALLOS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12000913-3",
+                "nombre": "HUMBERTO PATRICIO FUENTES DIAZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76125157-0",
+                "nombre": "SACYR OPERACION Y SERVICIOS SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-96-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "31-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15176018-K",
+                "nombre": "HÉCTOR OMAR CASTRO CÉSPEDES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76125157-0",
+                "nombre": "SACYR OPERACION Y SERVICIOS SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14147590-8",
+                "nombre": "RICARDO ANTONIO IGOR VALENCIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-300-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "27-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13690905-3",
+                "nombre": "ALBANO DENIS TORO CARDENAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-274-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "13-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "0-0",
+                "nombre": "DANIEL ORLANDI GUTIERREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13998978-3",
+                "nombre": "DANIEL HUMBERTO GUTIERREZ ORLANDI (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13481487-K",
+                "nombre": "MARIO ANDRÉS GARRIDO ULLOA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3361-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-05-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "14298414-8",
+                "nombre": "CARLOS PATRICIO ULLOA MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19237777-3",
+                "nombre": "CAMILO CRISTOPHER VACCARO DÍAZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13087691-9",
+                "nombre": "FRESIA ROSA LOPEZ CAMPUZANO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76496130-7",
+                "nombre": "SOCIEDAD CONCESIONARIA COSTANERA NORTE",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3241-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "13-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12447356-K",
+                "nombre": "RICARDO MAURICIO ARAYA BARRAZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76125157-0",
+                "nombre": "SACYR OPERACION Y SERVICIOS SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12842990-5",
+                "nombre": "RODRIGO FERNANDO NAVARRO ARQUEROS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9403566-K",
+                "nombre": "HANS NEIL MILES VEGA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12220284-4",
+                "nombre": "ALEX MARCELO LANDSBERGER VARELA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9539434-5",
+                "nombre": "GABRIEL ALFONSO GALLARDO VERDUGO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13358226-6",
+                "nombre": "MARITZA JOHANNA CORTES CORTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11347319-3",
+                "nombre": "JAIME ANDRÉS PIZARRO BURGOA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15578500-4",
+                "nombre": "RODRIGO EDUARDO BRICEÑO CORTÉS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19816991-9",
+                "nombre": "LUCAS IGNACIO JAVIER MARDONES OJEDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-807-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de La Serena",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "01-09-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18737773-0",
+                "nombre": "ELIAS HUENCHUÑIR CATALAN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12900074-0",
+                "nombre": "LUIS ALBERTO VARGAS OLEA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-471-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "30-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17661699-7",
+                "nombre": "DANIEL ENRIQUE GÓMEZ RIVERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18551601-6",
+                "nombre": "NIKOLAS IGNACIO LÓPEZ VEGA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-632-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de La Serena",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "28-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9343555-9",
+                "nombre": "CLAUDIA ANDREA CARVALLO CARRASCO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13687602-3",
+                "nombre": "PABLO ALEJANDRO LASTRA VEGA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17699953-5",
+                "nombre": "FERNANDO FELIPE ALJARO GARCÍA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17700927-K",
+                "nombre": "MANUEL ANDRÉS GUERRA CASTILLO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17502571-5",
+                "nombre": "CAROL ALEJANDRA ORTIZ ROMO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17485529-3",
+                "nombre": "JOSÉ ESTEBAN VIVANCO PÉREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18934307-8",
+                "nombre": "IGNACIO ANDRÉS GUZMÁN EMPARÁN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19296428-8",
+                "nombre": "ANTONIA FRANCISCA URRUTIA CODNER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96942440-1",
+                "nombre": "GESTION VIAL S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-4085-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "11-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19081734-2",
+                "nombre": "SANTIAGO JOSÉ ARENAS BOBENRIETH (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16080220-0",
+                "nombre": "HORACIO ANDRÉS ORLANDO JOAQUÍN DEL VALLE FRAGA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19980132-5",
+                "nombre": "CAMILA ANDREA SEGUEL SUÁREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12000913-3",
+                "nombre": "HUMBERTO PATRICIO FUENTES DIAZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76172397-9",
+                "nombre": "SOCIEDAD CONCESIONARIA RUTAS DEL DESIERTO S A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-277-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "18-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19289982-6",
+                "nombre": "RONALD EDUARDO BARRAZA DELGADO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15633167-8",
+                "nombre": "JUAN MANUEL DIAZ PEREIRA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-2848-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "29-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15590768-1",
+                "nombre": "CHRISTIAN ANDRÉS VALDEBENITO ACUÑA (Poder Simple)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "27187761-7",
+                "nombre": "RUBEN DARIO MEDINA SIMANCA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9354208-8",
+                "nombre": "RICARDO CELESTINO LAGOS GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-23-2024",
+            "tribunal": "1er Juzgado de Letras de Melipilla",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "27-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16080220-0",
+                "nombre": "HORACIO ANDRÉS ORLANDO JOAQUÍN DEL VALLE FRAGA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "21210435-3",
+                "nombre": "MAURICIO IGNACIO JEREMÍAS ELGUETA HORMAZÁBAL",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11816047-9",
+                "nombre": "PATRICIA MELY VEGA GALLARDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76399731-6",
+                "nombre": "RESMED TRANSPORTES LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76172397-9",
+                "nombre": "SOCIEDAD CONCESIONARIA RUTAS DEL DESIERTO S A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-330-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12422133-1",
+                "nombre": "SUSANA JACQUELINE TARZIJAN TRONCOSO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17919353-1",
+                "nombre": "ERIC IVAR AGUIRRE BAHAMONDES (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12444170-6",
+                "nombre": "ERIKA JOCELINNE SANTANA DÍAZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76125157-0",
+                "nombre": "SACYR OPERACION Y SERVICIOS SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "61202000-0",
+                "nombre": "FISCO CHILE MINISTERIO DE OBRAS PUBLICAS/DIRECC DE VIALIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-50-2023",
+            "tribunal": "Juzgado de Letras del Trabajo de Copiapó",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-02-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12399022-6",
+                "nombre": "CARLOS ANDRÉS GARCÍA OLIVARES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13902423-0",
+                "nombre": "PABLO ANDRÉS LAGOS FEEST (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12660921-3",
+                "nombre": "CLARA LUISA MANZANO AGUILERA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-42-2023",
+            "tribunal": "Juzgado de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "18-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13702344-K",
+                "nombre": "FERNANDO ELÍAS LLANOS CONTRERAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13922751-4",
+                "nombre": "JOSÉ MIGUEL LONG ARRIAGADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10432927-6",
+                "nombre": "JORGE ANTONIO PAREDES RAMOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19133400-0",
+                "nombre": "SEBASTIÁN IGNACIO ESCUDERO PARADA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76496130-7",
+                "nombre": "SOCIEDAD CONCESIONARIA COSTANERA NORTE",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13482887-0",
+                "nombre": "OSCAR GONZALO ÓRDENES MORALES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-3530-2022",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "12-06-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13233942-2",
+                "nombre": "ANDRÉS GUSTAVO ZÚÑIGA SANTIBÁÑEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13108906-6",
+                "nombre": "CRISTIAN ALEJANDRO VERA FIERRO",
+                "sujeto": "DNCDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76399731-6",
+                "nombre": "RESMED TRANSPORTES LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17469395-1",
+                "nombre": "SEBASTIÁN ANDRÉS CONTRERAS TEJEDOR",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76399731-6",
+                "nombre": "RESMED TRANSPORTES LIMITADA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-63-2022",
+            "tribunal": "Juzgado de Letras del Trabajo de Osorno",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "08-12-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13414743-1",
+                "nombre": "CRISTIAN FRANCISCO CASTILLO PASTÉN",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14106540-8",
+                "nombre": "DAVID TORO IGLESIAS",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12760843-1",
+                "nombre": "PATRICIO FERNANDO JORQUERA VILDOSO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Exhorto",
+            "rit": "E-171-2021",
+            "tribunal": "Juzgado de Letras del Trabajo de Osorno",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "29-11-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13414743-1",
+                "nombre": "CRISTIAN FRANCISCO CASTILLO PASTÉN",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14106540-8",
+                "nombre": "DAVID TORO IGLESIAS",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12760843-1",
+                "nombre": "PATRICIO FERNANDO JORQUERA VILDOSO",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12660921-3",
+                "nombre": "CLARA LUISA MANZANO AGUILERA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-249-2021",
+            "tribunal": "Juzgado de Letras del Trabajo de Iquique",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "16-11-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15585349-2",
+                "nombre": "IVÁN GABRIEL SAN MARTÍN RAMÍREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16370909-0",
+                "nombre": "CARLOS CASTILLO ALVAREZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12917138-3",
+                "nombre": "ROBERTO PATRICIO ROJAS ANDRADE",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76572290-K",
+                "nombre": "VERA Y HOLA LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13233942-2",
+                "nombre": "ANDRÉS GUSTAVO ZÚÑIGA SANTIBÁÑEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Exhorto",
+            "rit": "E-160-2021",
+            "tribunal": "Juzgado de Letras del Trabajo de Osorno",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:30:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1c14db94dec4a1a71b4e4e176a493c9b0c074a71618da81ef6c676eeca04a471",
+        "cached_at": "2026-05-30T01:30:25.595449"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 33,
+        "casos": [
+          {
+            "enunciado": "No otorgar beneficio de sala cuna a trabajadoras de una empresa/ centro o complejo comercial (industrial) (servicios).",
+            "estado": "PAGADA",
+            "fecha": "12-01-2026 21:00:00",
+            "multa": "1190/25/046-1",
+            "procedencia": "FISCALIZACION",
+            "um": "70",
+            "tipoUm": "UTM",
+            "montoClp": 4882570
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-07-2025 20:00:00",
+            "multa": "3856/24/091-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-02-2025 21:00:00",
+            "multa": "3856/24/090-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "07-08-2024 20:00:00",
+            "multa": "1323/24/230-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "04-08-2024 20:00:00",
+            "multa": "1323/24/227-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "27-07-2024 20:00:00",
+            "multa": "1598/24/017-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3958020
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "11-07-2024 20:00:00",
+            "multa": "8871/24/076-1",
+            "procedencia": "RECLAMO",
+            "um": "1.2",
+            "tipoUm": "IMM",
+            "montoClp": 600000
+          },
+          {
+            "enunciado": "No trasladar a trabajadora a otro trabajo que no sea perjudicial para su estado de embarazo.",
+            "estado": "PAGADA",
+            "fecha": "31-05-2024 20:00:00",
+            "multa": "3568/24/003-1",
+            "procedencia": "FISCALIZACION",
+            "um": "210",
+            "tipoUm": "UTM",
+            "montoClp": 13811700
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "18-05-2024 20:00:00",
+            "multa": "7928/24/046-1",
+            "procedencia": "RECLAMO",
+            "um": "1.1",
+            "tipoUm": "IMM",
+            "montoClp": 550000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "17-12-2023 21:00:00",
+            "multa": "8610/22/040-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No permitir ausentarse dos horas de la jornada de trabajo, al trabajador, con el fin de que éste pueda sufragar durante elecciones.",
+            "estado": "PAGADA",
+            "fecha": "13-10-2023 21:00:00",
+            "multa": "7977/23/017-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3810900
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "28-05-2023 20:00:00",
+            "multa": "1562/23/021-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "05-05-2023 20:00:00",
+            "multa": "8004/23/003-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "14-04-2023 20:00:00",
+            "multa": "3530/23/004-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No instruir en el uso de extintores.",
+            "estado": "PAGADA",
+            "fecha": "16-03-2023 21:00:00",
+            "multa": "3087/22/056-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1873500
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-02-2023 21:00:00",
+            "multa": "3087/22/064-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3717240
+          },
+          {
+            "enunciado": "No dar cumplimiento a lo dispuesto en el Reglamento Interno de Orden, Higiene y Seguridad.",
+            "estado": "PAGADA",
+            "fecha": "15-02-2023 21:00:00",
+            "multa": "3087/22/064-3",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3717240
+          },
+          {
+            "enunciado": "No tomar todas las medidas necesarias para proteger eficazmente la vida y salud de los trabajadores.",
+            "estado": "PAGADA",
+            "fecha": "15-02-2023 21:00:00",
+            "multa": "3087/22/062-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3717240
+          },
+          {
+            "enunciado": "No instruir en el uso de extintores.",
+            "estado": "PAGADA",
+            "fecha": "15-02-2023 21:00:00",
+            "multa": "3087/22/062-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3717240
+          },
+          {
+            "enunciado": "No contener el contrato de trabajo las cláusulas básicas legales.",
+            "estado": "PAGADA",
+            "fecha": "15-02-2023 21:00:00",
+            "multa": "3087/22/064-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3717240
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:30:23"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b0bc8a4fd731fbf4f79e275bfe03b25ba1b093cd1cfad7308a98cbded301878a",
+        "cached_at": "2026-05-30T01:30:25.961660"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 39,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MATiAS FRANCISCO GONZALEZ RODRiGUEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "20052493-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BELEN IGNACIA VERA FIGUEROA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "27984033-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BELEN IGNACIA VERA FIGUEROA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "27984033-k",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EMILIO EDUARDO CORTES MUNOZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "11605021-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BORIS JAVIER ACUNA RODRIGUEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15357255-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BORIS JAVIER ACUNA RODRIGUEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15357255-0",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GUIDO ANDRES CARCAMO RIOS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12753169-2",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GUIDO ANDRES CARCAMO RIOS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12753169-2",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GUIDO ANDRES CARCAMO RIOS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12753169-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIA LILIAN CARCAMO TOLEDO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15273858-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DANNY ROBERTO COFRE GOMEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "13458817-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DANNY ROBERTO COFRE GOMEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "13458817-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIANA NIKOL CONTRERAS ALTAMIRANO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19028255-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIANA NIKOL CONTRERAS ALTAMIRANO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19028255-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO ANTONIO CORTES MUNOZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12801981-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EMILIO EDUARDO CORTES MUNOZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "11605021-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EMILIO EDUARDO CORTES MUNOZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "11605021-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE FRANCISCO HOLA BUSTAMANTE ",
+            "periodo": "02/2026",
+            "rutAfiliado": "14375776-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE FRANCISCO HOLA BUSTAMANTE ",
+            "periodo": "02/2026",
+            "rutAfiliado": "14375776-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIO ALEJANDRO JARAMILLO MARQUEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "19268911-2",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:30:23"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:85cfb0c6fdb6f0764110b7182bbbb015adf16a424f0785adf2e1e2cb390fc20c",
+        "cached_at": "2026-05-30T01:30:26.302964"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76572290-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "VERA Y HOLA LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "VERA Y HOLA LIMITADA",
+            "rutSociedad": "76572290-K",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2006-06-18",
+            "socios": [
+              {
+                "nombre": "ALAIN ALEXIS CARMONA CORTES",
+                "rut": "10037258-4",
+                "domicilio": "LOS COLONOS N°2050 DEPTO/LOCAL 23 COMUNA DE OSORNO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CRISTIAN ALEJANDRO VERA FIERRO",
+                "rut": "13108906-6",
+                "domicilio": "ANTÁRTICA NÚMERO 2623, OSORNO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "98.00"
+              },
+              {
+                "nombre": "JOSE FRANCISCO HOLA BUSTAMANTE",
+                "rut": "14375776-5",
+                "domicilio": "CALLE HILDA MADRID NÚMERO 759, LOMAS DEL SOL II, COMUNA DE QUILPUÉ",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "2.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-12-23",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/23/41640/05/1155255.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "GLOBAL MAQUI PATAGONIA SPA",
+                "rut": "77122789-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "RESMED TRANSPORTES LIMITADA",
+                "rut": "76399731-6",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:f973e096417aa497186b771a0244ea1808fc56150c1bef2dc326ef4c59050953",
+      "cached_at": "2026-05-30T01:30:26.928253"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76572290-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "22-12-2016 21:00:00",
+            "razonSocial": "VERA Y HOLA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/23/41640/05/1155255.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "CRISTIAN ALEJANDRO VERA FIERRO",
+                "rut": "13108906-6",
+                "domicilio": "ANTÁRTICA NÚMERO DOS MIL SEISCIENTOS VEINTITRÉS, OSORNO"
+              },
+              {
+                "nombre": "JOSÉ FRANCISCO HOLA BUSTAMANTE",
+                "rut": null,
+                "domicilio": "HILDA MADRID Nº759, LOMAS DEL SOL, QUILPUÉ, V REGIÓN"
+              },
+              {
+                "nombre": "ALAIN ALEXIS CARMONA CORTES",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76572290-K"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0771227899",
+            "society": "GLOBAL MAQUI PATAGONIA SPA"
+          },
+          {
+            "rut": "0763997316",
+            "society": "RESMED TRANSPORTES LIMITADA"
+          },
+          {
+            "rut": "76572290-K",
+            "sociedad": "VERA Y HOLA LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:54ac2f6b866d4d26fac0905df0c35bbc11f2716cce26ac730cf74309b2e210e8",
+        "cached_at": "2026-05-30T01:30:27.292293"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 1.148274392841926,
+      "numeradorFinanzas": 10780,
+      "denominadorFinanzas": 938800,
+      "ponderacionFinanzas": 98.85172560715807,
+      "porcentajeJudicial": 35.294117647058826,
+      "numeradorJudicial": 18,
+      "denominadorJudicial": 51,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 64.70588235294117,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 4,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 98886829,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 363.55760796009923,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5211a44c06026b674bf35838397d89630e4115d3e2728eed72db238a56c8c7ba",
+      "cached_at": "2026-05-30T01:30:27.884506"
+    }
+  }
+}

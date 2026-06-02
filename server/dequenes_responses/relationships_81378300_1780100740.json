@@ -1,0 +1,530 @@
+{
+  "pathCount": 52,
+  "relationships": [
+    {
+      "source": "81378300",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-03-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "10839339",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-02-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "10362509",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-12-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "15385268",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-09-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "13058695",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-02-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "12873020",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-09-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-02-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "10981889",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-11-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "59052640",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_538501",
+        "cve": "538501",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2012-09-11",
+        "doc_extraction_id": "1575798",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/09/11/538501_M_LTDA_20120911_firmado.pdf"
+      }
+    },
+    {
+      "source": "81378300",
+      "target": "59052640",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "99591760",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-02-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99540790",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-07-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "94398000",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96951490",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "91637000",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96867320",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78740450",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76567490",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-02-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76408470",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-11-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76336354",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-11-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76381445",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-07-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76116242",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-09-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76116207",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76116262",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76116219",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76026848",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-02-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59243600",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-09-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59087960",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-03-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59201640",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-08-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59276740",
+      "target": "10931698",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-11-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78132220",
+      "target": "10931698",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_4062919",
+        "doh_extraction_id": "459264",
+        "shares_percent": 0,
+        "source": "DOH",
+        "doh_id": "4062919",
+        "published_at": "1994-09-09",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1994/09/21/do-19940921.pdf"
+      }
+    },
+    {
+      "source": "76388855",
+      "target": "10362509",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-08-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76935956",
+      "target": "13058695",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-10-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76935956",
+      "target": "13058695",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AC1FdTw6w1XE",
+        "source": "RES",
+        "published_at": "2018-10-26"
+      }
+    },
+    {
+      "source": "99591760",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-07-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96867320",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "91637000",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96951490",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "94398000",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-11-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78740450",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-08-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76567490",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-07-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76408470",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76381445",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-06-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76116219",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76116207",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-06-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76026848",
+      "target": "16097320",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-07-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59052640",
+      "target": "14597196",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-12-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59052640",
+      "target": "17402779",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-01-25",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59052640",
+      "target": "22112669",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-12-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59052640",
+      "target": "14467279",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-12-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59052640",
+      "target": "22087473",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-12-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59052640",
+      "target": "22881576",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-07-15",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "10362509": "JUAN CARLOS SOLA ALCAZAR",
+    "10839339": "PATRICIA DEL CARMEN CARTAGENA SALINAS",
+    "10931698": "JULIO ANTONIO ESPINOZA OVALLE",
+    "10981889": "JOSE LUIS SARABIA MATAMALA",
+    "12873020": "MARCELO GIOVANNI VALDEBENITO SANCHEZ",
+    "13058695": "JOAN MANUEL CARRILLO BARRERA",
+    "14467279": "DANIEL RAUL BEYA OPIZO",
+    "14597196": "SYLVIA-SHARI GROSSLING CONTRERAS",
+    "15385268": "LUIS IGNACIO ZUNIGA CASANOVA",
+    "16097320": "BYRON BENJAMIN SURREY MONTERO",
+    "17402779": "SANTIAGO BENITEZ GIBBONS",
+    "22087473": "CRISTIAN JAVIER LAVAGNINO",
+    "22112669": "MARIA DEL CARMEN SILVANA DI LORENZO GARCIA DA ROSA",
+    "22881576": "JAMES TAIT",
+    "59052640": "ABBOTT LABORATORIES",
+    "59087960": "EUROPEAN SERVICES SOCIEDAD ANONIMA",
+    "59201640": "KALO PHARMA INTERNACIONAL S.L.",
+    "59243600": "ABBOTT PRODUCTS B.V.",
+    "59276740": "ABBOTT IBERIAN INVESTMENT (2) LIMITED",
+    "76026848": "FARMACOLOGIA EN AQUACULTURA VETERINARIA FAV S.A.",
+    "76116207": "INVERSIONES K2 SPA",
+    "76116219": "CFR CHILE S.A",
+    "76116242": "CFR PHARMACEUTICALS S.A.",
+    "76116262": "CFR INTERNATIONAL SPA",
+    "76336354": "CFR INVERSIONES SPA",
+    "76381445": "ABBOTT LABORATORIES(CHILE) HOLDCO SPA",
+    "76388855": "ABBOTT LABORATORIES (CHILE) HOLDCO (DOS) SPA",
+    "76408470": "IGLOO ZONE CHILE S.A.",
+    "76567490": "AQUAGESTION CAPACITACION S.A.",
+    "76935956": "URBANO LEGAL SPA",
+    "78132220": "FORMULARIOS CONTINUOS A OVALLE LTDA",
+    "78740450": "RECBEN XENERICS FARMACEUTICA LIMITADA",
+    "81378300": "ABBOTT LABORATORIES DE CHILE LTDA",
+    "91637000": "LABORATORIOS RECALCINE SA",
+    "94398000": "LABORATORIOS LAFI LIMITADA",
+    "96867320": "ESPRIT DE VIE S A",
+    "96951490": "NOVASALUD COM S A",
+    "99540790": "TALPIOT INVESTMENTS SPA.",
+    "99591760": "AQUAGESTION S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:7d324621b176404805677af44921b4dd45550e018ab40043d734415a94569a62",
+    "cached_at": "2026-05-30T00:25:40.961372"
+  }
+}

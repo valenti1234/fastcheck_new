@@ -1,0 +1,2990 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96951870-8"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96951870-8",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "BIONET S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "15-05-2001",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE LABORATORIOS CLINICOS Y BANCOS DE SANGRE",
+            "codigo": "869010",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "15-05-2001"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Cuadriplicado Factura",
+            "ultimoAnioTimbrado": "2005"
+          },
+          {
+            "documento": "Cuadriplicado Fact Exenta",
+            "ultimoAnioTimbrado": "2005"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 18,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "600.000,01 a 1.000.000,00",
+          "cantidadTrabajadores": 660
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:18:14"
+      },
+      "judicial": {
+        "casosCivilesActivos": 3,
+        "casosCivilesPresentados": 13,
+        "casosCivilesConcluidos": 11,
+        "cobranzaActivos": 3,
+        "cobranzaPresentados": 1,
+        "cobranzaConcluidos": 5,
+        "laboralActivos": 23,
+        "laboralPresentados": 6,
+        "laboralConcluidos": 17,
+        "casosActuales": 29,
+        "casosArchivados": 20,
+        "casosConcluidos": 33,
+        "todosLosCasos": 82,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 19,
+          "demandante": 7,
+          "demandadoSolidario": 3,
+          "reclamante": 3,
+          "denunciado": 17
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:18:14",
+        "ultimaActualizacionCobranza": "30-05-2026 00:18:14",
+        "ultimaActualizacionLaboral": "30-05-2026 00:18:14",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 126,
+          "empleados": 29,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 125,
+            "cambioAbsoluto": 70
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 17,
+          "montoTotalMultas": 54954108,
+          "multasPagadas": 17,
+          "montoMultasPagadas": 54954108,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:18:15"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "06-05-2025 20:00:00",
+              "razonSocial": "BIONET S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/07/44142/05/2643100.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "96951870-8"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:18:13"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 310,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 310,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 495530,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 450,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 450,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 476540
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 9,
+          "tasacionTotal": 111775968,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:18:14"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 62.5,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 262.5,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "BIONET S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:904929937ff2fa3e0d29b420f7714069e01681ab83af94235ea88c62ae67604a",
+      "cached_at": "2026-05-30T00:18:15.752507"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 27,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "09-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9059407-9",
+                "nombre": "FRANCISCO JAVIER LEPPES LÓPEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "65173126-7",
+                "nombre": "FUNDACION RED SALUD DE LA UNIVERSIDAD ANTOFAGASTA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-1938-2025",
+            "tribunal": "3º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Contestación Excepciones",
+            "fechaIngreso": "01-12-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9059407-9",
+                "nombre": "FRANCISCO JAVIER LEPPES LÓPEZ (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16576218-5",
+                "nombre": "FELIPE ALBERTO HERRERA MAYORGA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "65173126-7",
+                "nombre": "FUNDACION RED SALUD DE LA UNIVERSIDAD ANTOFAGASTA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-5241-2024",
+            "tribunal": "4 ° Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "13-12-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "8840275-8",
+                "nombre": "EDUARDO OSCIEL BARRIOS ACOSTA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13531714-4",
+                "nombre": "ALEJANDRA ANDREA BRICEÑO VARGAS (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-481-2018",
+            "tribunal": "1º Juzgado de Letras de Vallenar",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "17-06-2018 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": " LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15037408-1",
+                "nombre": "MANUEL ALEXIS ESPEJO MILLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": " ASOC CHILENA DE SEGURIDAD ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15691066-K",
+                "nombre": "RAFAEL ALEXIS ARAYA MERCADO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-435-2018",
+            "tribunal": "7º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "14-01-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15691066-K",
+                "nombre": "RAFAEL ALEXIS ARAYA MERCADO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": " LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": " ASOC CHILENA DE SEGURIDAD ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15037408-1",
+                "nombre": "MANUEL ALEXIS ESPEJO MILLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-32-2018",
+            "tribunal": "17º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "16-11-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "99549130-3",
+                "nombre": "CLINICA CUMBRES DEL NORTE  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "11293514-2",
+                "nombre": "ENRIQUE ALBERTO DURÁN DURÁN",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8623628-1",
+                "nombre": "LUIS GILBERTO BASUALTO PLAZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-5271-2017",
+            "tribunal": "4 ° Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Exhorto",
+            "fechaIngreso": "01-10-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15037408-1",
+                "nombre": "MANUEL ALEXIS ESPEJO MILLA (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15691066-K",
+                "nombre": "RAFAEL ALEXIS ARAYA MERCADO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-582-2017",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Dúplica",
+            "fechaIngreso": "30-09-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15037408-1",
+                "nombre": "MANUEL ALEXIS ESPEJO MILLA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15691066-K",
+                "nombre": "RAFAEL ALEXIS ARAYA MERCADO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9038119-9",
+                "nombre": "MARCO ANTONIO IGLESIAS MUÑOZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17025442-2",
+                "nombre": "ESTEFANÍA JUDITH ORELLANA TAIBO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14282990-8",
+                "nombre": "MARCELO ANDRÉS SIMIAN TASCON (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-4372-2017",
+            "tribunal": "4 ° Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "13-09-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15770021-9",
+                "nombre": "NELSON TAPIA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17132578-1",
+                "nombre": "STHEFANIA BARRAZA NOVOA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": " LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-551-2017",
+            "tribunal": "20º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "25-07-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17025442-2",
+                "nombre": "ESTEFANÍA JUDITH ORELLANA TAIBO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96522500-5",
+                "nombre": "ISAPRE MASVIDA  S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-18736-2017",
+            "tribunal": "7º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "11-07-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "8623628-1",
+                "nombre": "LUIS GILBERTO BASUALTO PLAZA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8623628-1",
+                "nombre": "LUIS GILBERTO BASUALTO PLAZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantía",
+            "rol": "C-645-2017",
+            "tribunal": "Juzgado de Letras de Illapel",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "20-06-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": " LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15770021-9",
+                "nombre": "NELSON TAPIA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17132578-1",
+                "nombre": "STHEFANIA BARRAZA NOVOA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-362-2017",
+            "tribunal": "29º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Dúplica ",
+            "fechaIngreso": "19-06-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17132578-1",
+                "nombre": "sTHEFANIA BARRAZA NOVOA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15770021-9",
+                "nombre": "NELSON LUIS TAPIA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17025442-2",
+                "nombre": "ESTEFANÍA JUDITH ORELLANA TAIBO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-2718-2017",
+            "tribunal": "3º Juzgado de Letras Civil de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "29-05-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17025442-2",
+                "nombre": "ESTEFANÍA JUDITH ORELLANA TAIBO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96522500-5",
+                "nombre": "ISAPRE MASVIDA  S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-11717-2017",
+            "tribunal": "7º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "27-03-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17025442-2",
+                "nombre": "ESTEFANÍA JUDITH ORELLANA TAIBO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13531714-4",
+                "nombre": "ALEJANDRA ANDREA BRICEÑO VARGAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8840275-8",
+                "nombre": "EDUARDO OSCIEL BARRIOS ACOSTA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-6050-2017",
+            "tribunal": "7º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Ingreso ",
+            "fechaIngreso": "20-03-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13531714-4",
+                "nombre": "ALEJANDRA ANDREA BRICEÑO VARGAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8840275-8",
+                "nombre": "EDUARDO OSCIEL BARRIOS ACOSTA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-5408-2017",
+            "tribunal": "7º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "21-02-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "69041200-4",
+                "nombre": "ILUSTRE MUNICIPALIDAD DE ILLAPEL  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8623628-1",
+                "nombre": "LUIS GILBERTO BASUALTO PLAZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-182-2017",
+            "tribunal": "Juzgado de Letras de Illapel",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "02-02-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "69041200-4",
+                "nombre": "ILUSTRE MUNICIPALIDAD DE ILLAPEL  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8623628-1",
+                "nombre": "LUIS GILBERTO BASUALTO PLAZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-133-2017",
+            "tribunal": "Juzgado de Letras de Illapel",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "02-08-2016 20:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": " LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8623628-1",
+                "nombre": "LUIS GILBERTO BASUALTO PLAZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96775770-5",
+                "nombre": " PLUS MEDICA S.A. ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-19352-2016",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "13-12-2015 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76675940-8",
+                "nombre": " CENTRO DE DIALISI SAN PEDRO DE LA PAS CIA",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": " LABORATORIOS CLINICOS BIONET S .A.",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-622-2015",
+            "tribunal": "1º Juzgado Civil de Temuco",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:18:13"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4f5fbba62c9db35d43a64802f511596d8a094c229e23c122e7bf9e9929cc2ce1",
+        "cached_at": "2026-05-30T00:18:16.225001"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 9,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "14-05-2023 20:00:00",
+            "monto": "-984895",
+            "litigantes": [
+              {
+                "rut": "17347823-2",
+                "nombre": "ANDREA NICOLE URIBE COSTA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9270341-K",
+                "nombre": "EDGARDO RODRIGO GARCÍA NEIMAN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15360176-3",
+                "nombre": "PAMELA INGRID REYES RAMOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-120-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "31-12-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "75005300-9",
+                "nombre": "FUCYT  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17045803-6",
+                "nombre": "PABLO FERNANDO FUENZALIDA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16283625-0",
+                "nombre": "CARLA VERONICA PALAVECINO ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17199518-3",
+                "nombre": "PAULA MERELLO LOBOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO CASTILLO BARRIOS",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13435086-5",
+                "nombre": "GONZALO ALEJANDRO LIRA FUENZALIDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16977126-K",
+                "nombre": "VICTORIA ALEJANDRA MUÑOZ SEPULVEDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17107847-4",
+                "nombre": "FRANCISCA VIAL HERRERA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16936259-9",
+                "nombre": "FRANCISCA RAMIREZ JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15191213-3",
+                "nombre": "RAUL FERNANDEZ TOLEDO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "6349821-1",
+                "nombre": "JULIA DEL CARMEN UGARTE CANCINO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16367030-5",
+                "nombre": "ISAIAS OSCAR RODRIGUEZ REYES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18294789-K",
+                "nombre": "DIEGO IGNACIO AVENDAÑO LORCA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "11847016-8",
+                "nombre": "CRISTIAN BRICEÑO ECHEVERRIA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "1-9",
+                "nombre": "OSCAR GABLET PINTO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10518725-4",
+                "nombre": "CHRISTIAN GERMAN ALVIZ RIFFO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12232396-K",
+                "nombre": "RODRIGO UGARTE BOLUMBURU",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15959452-1",
+                "nombre": "CONSTANZA RIOS GHIO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17271522-2",
+                "nombre": "JAVIER MARTINEZ CORTES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16014686-9",
+                "nombre": "NICOLAS QUINTANILLA PAVEZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10739386-2",
+                "nombre": "HECTOR PEREZ BONIFAZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15382562-9",
+                "nombre": "ANDRÉS DIGHERO EBERHARD",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17839745-1",
+                "nombre": "MARIANA TERESA RAMÍREZ FUENZALIDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17496030-5",
+                "nombre": "LEYLA ANDREA ALUL BARRÍA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "96934940-K",
+                "nombre": "IMAGENES 2001 SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "65117605-0",
+                "nombre": "SINDICATO DE EMPRESA ESACHS TRANSPORTE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76481620-K",
+                "nombre": "CENTRO MEDICO HTS  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96627120-5",
+                "nombre": "INMOBILIARIA CLINICAS REGIONALES S A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "78185540-5",
+                "nombre": "SOREMA S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5552-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Sentencia",
+            "fechaIngreso": "24-09-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "15671500-K",
+                "nombre": "VALERY ANDREA SÁEZ VEGA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "9270341-K",
+                "nombre": "EDGARDO RODRIGO GARCÍA NEIMAN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15360176-3",
+                "nombre": "PAMELA INGRID REYES RAMOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9038119-9",
+                "nombre": "MARCO ANTONIO IGLESIAS MUÑOZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-133-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-12-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10992181-5",
+                "nombre": "SAMUEL DEMETRIO ARCE MAZUA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16532597-4",
+                "nombre": "MARGARITA VALESSCA FIGUEROA TORRES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13757589-2",
+                "nombre": "CONSTANZA ANDREA NAVARRO NAVARRO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9568448-3",
+                "nombre": "RICARDO ANDRÉS ZÚÑIGA LIZAMA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15524444-5",
+                "nombre": "MITCHEL NICOLÁS GELSIS HENRÍQUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-273-2018",
+            "tribunal": "Jdo. de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "05-07-2018 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesús Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-40444-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "19-02-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A.  .",
+                "sujeto": "RCTE. ",
+                "persona": "J"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "PABLO CHANG MANDIOLA",
+                "sujeto": "AB.RCD",
+                "persona": "N"
+              },
+              {
+                "rut": "16642276-0",
+                "nombre": "ELIAS ALCAYAGA ZUMARAN",
+                "sujeto": "AB.RCD",
+                "persona": "N"
+              },
+              {
+                "rut": "15675044-1",
+                "nombre": "RODRIGO VARAS HUERTA",
+                "sujeto": "AB.RCT",
+                "persona": "N"
+              },
+              {
+                "rut": "10143029-4",
+                "nombre": "GONZALO PHILLIPS DEL POZO",
+                "sujeto": "AB.RCT",
+                "persona": "N"
+              },
+              {
+                "rut": "16450926-5",
+                "nombre": "KAREM GONZALEZ ROJO",
+                "sujeto": "AB.RCD",
+                "persona": "N"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "CLAUDIA PINTO ROBLES",
+                "sujeto": "AB.RCD",
+                "persona": "N"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE COQUIMBO  ",
+                "sujeto": "EMPLEA",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-38-2018",
+            "tribunal": "Jdo. de Letras del Trabajo de La Serena",
+            "sujeto": "RCTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-04-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "ADMINISTRADORA DE FONDOS DE PENSIONES HABITAT S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S. A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO JOSÉ TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-22302-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "23-03-2016 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76240079-0",
+                "nombre": "ADMINISTRADORA DE FONDOS DE PENSIONES CUPRUM S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S. A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO JOSÉ TOCORNAL FUENZALIDA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-16807-2016",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "20-03-2014 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco José Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-22367-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:18:13"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4fa05111bcbd9d872afbf63bf29ce1e267f93bdc45ead192584d561fb1c0dbb8",
+        "cached_at": "2026-05-30T00:18:16.564106"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 46,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "03-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "DNCTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15566889-K",
+                "nombre": "DANIELA ISABEL CÓRDOVA ACEVEDO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16117451-3",
+                "nombre": "PABLO FERNANDO FUENTES CÁCERES (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15243143-0",
+                "nombre": "FRANCISCA HERNANDEZ SERVANTI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12783698-1",
+                "nombre": "DANIELA AGUILERA BERTUCCI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13234537-6",
+                "nombre": "CAROLINA DAGNINO MOREL (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17304388-0",
+                "nombre": "RODRIGO IVÁN SALAS CARO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17481058-3",
+                "nombre": "DIEGO IGNACIO SAAVEDRA ACEITUNO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19038582-5",
+                "nombre": "NAHUEL ARIEL PONCE ANCAMILLA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-829-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "30-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "27049056-5",
+                "nombre": "LINA MARCELA JIMENEZ MOSQUERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77656303-K",
+                "nombre": "EMPRESA SUR ULTRA SERVICIOS INTEGRALES DE ASEO LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9368735-3",
+                "nombre": "JUAN CARLOS PEREZ PINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1891-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14112329-7",
+                "nombre": "DAYAN DEL CARMEN NARANJO TAPIA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18305425-2",
+                "nombre": "PATRICIA SCARLETE MORENO HERVAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-523-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Calama",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17517217-3",
+                "nombre": "KARLA NICOLE GAJARDO PÉREZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3536-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11357878-5",
+                "nombre": "CARLOS ALBERTO YÁÑEZ GALLARDO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16710465-7",
+                "nombre": "CAMILA IGNACIA CABRALES FERRER (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16965079-9",
+                "nombre": "VICENTE GRUBSIC LAVIN",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18570323-1",
+                "nombre": "LORENA MARITZA CORDERO ORELLANA",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76793747-4",
+                "nombre": "BIOMOTO SERVICIOS DE TRANSPORTE SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2147-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "15-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13501250-5",
+                "nombre": "TAMARA SOLEDAD NAVARRO FLORES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14382420-9",
+                "nombre": "MARÍA ELSA PINTO GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15524715-0",
+                "nombre": "DANIELA ANDREA MARQUEZ MOLINA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8861089-K",
+                "nombre": "SUSANA CAROLINA GARCIA FUENTES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-265-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18972231-1",
+                "nombre": "MARCELA LAIS CORTÉS CORTÉS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1997-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-04-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15360176-3",
+                "nombre": "PAMELA REYES RAMOS (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION DEL TRABAJO MAIPU",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-305-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-03-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13315440-K",
+                "nombre": "MARICARMEN YESENIA ROCHA LEIVA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-871-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "21-01-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13999442-6",
+                "nombre": "CAROLINA ROSALBA DOMÍNGUEZ RIVEROS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-210-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "03-12-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15360176-3",
+                "nombre": "PAMELA REYES RAMOS (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION DEL TRABAJO DE PUERTO MONTT",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-923-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17435223-2",
+                "nombre": "ANDRÉS ERNESTO ARANEDA CRUZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17587969-2",
+                "nombre": "RODRIGO ANTONIO MANCILLA COYOPAE",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18988829-5",
+                "nombre": "MATILDE VALENTINA NÚÑEZ GUAJARDO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3197-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16866822-8",
+                "nombre": "FERNANDA ANDREA ALBORNOZ MÉNDEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13473005-6",
+                "nombre": "CHRISTIAN DAVID DONOSO OGGERO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13474112-0",
+                "nombre": "JORGE MAXIMILIANO MORI CARRASCO (Poder Amplio)",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-3065-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "06-10-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15878876-4",
+                "nombre": "DANIELA ALEJANDRA CONCHA GUTIERREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12714627-6",
+                "nombre": "HECTOR ALEJANDRO DUHART GALLARDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19085412-4",
+                "nombre": "KAREN ELIZABETH TEJEDA OJEDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77468602-9",
+                "nombre": "SERVICIOS INDUSTRIALES HUGO TRONCOSO EIRL",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "8687796-1",
+                "nombre": "HUGO ALEJANDRO TRONCOSO LEIVA",
+                "sujeto": "DDO.SO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-476-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Puerto Montt",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "17-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17226351-8",
+                "nombre": "KARLA JAZMINA BURGOS CHIGUAY",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2293-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "18-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14576352-5",
+                "nombre": "NIDIA ANDREA ROA PAREDES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1985-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "14112329-7",
+                "nombre": "DAYAN DEL CARMEN NARANJO TAPIA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "22206316-7",
+                "nombre": "NUBIA QUIÑONES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-744-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12567512-3",
+                "nombre": "MAGALY YANET CORTÉS GUTIÉRREZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1772-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "24-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "6553288-3",
+                "nombre": "ADRIANA DE LAS MERCEDES CÁRDENAS ESCOBAR",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1749-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "11669809-9",
+                "nombre": "FRANCISCO ALEJANDRO SANCHEZ MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17036799-5",
+                "nombre": "JILLIANS SOLANGE FUENTES CAMPOS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET S.A",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1587-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:18:13"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:01266901a95df05ddbd6139267268d4adc082165d0d927ad0dd22399a9157cf4",
+        "cached_at": "2026-05-30T00:18:17.030831"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 19,
+        "casos": [
+          {
+            "enunciado": "No tomar todas las medidas necesarias para proteger eficazmente la vida y salud de los trabajadores.",
+            "estado": "PAGADA",
+            "fecha": "10-02-2026 21:00:00",
+            "multa": "1473/24/027-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4176660
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-02-2026 21:00:00",
+            "multa": "1473/24/027-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4176660
+          },
+          {
+            "enunciado": "No tomar todas las medidas necesarias para proteger eficazmente la vida y salud de los trabajadores.",
+            "estado": "PAGADA",
+            "fecha": "05-05-2025 20:00:00",
+            "multa": "6370/24/059-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118880
+          },
+          {
+            "enunciado": "No dar cumplimiento a lo dispuesto en el Reglamento Interno de Orden, Higiene y Seguridad.",
+            "estado": "PAGADA",
+            "fecha": "05-05-2025 20:00:00",
+            "multa": "6370/24/059-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118880
+          },
+          {
+            "enunciado": "No tomar todas las medidas necesarias para proteger eficazmente la vida y salud de los trabajadores.",
+            "estado": "PAGADA",
+            "fecha": "17-11-2024 21:00:00",
+            "multa": "3058/24/058-2",
+            "procedencia": "FISCALIZACION",
+            "um": "36",
+            "tipoUm": "UTM",
+            "montoClp": 2398608
+          },
+          {
+            "enunciado": "No dar cumplimiento a lo dispuesto en el Reglamento Interno de Orden, Higiene y Seguridad.",
+            "estado": "PAGADA",
+            "fecha": "17-11-2024 21:00:00",
+            "multa": "3058/24/058-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3997680
+          },
+          {
+            "enunciado": "No tomar todas las medidas necesarias para proteger eficazmente la vida y salud de los trabajadores.",
+            "estado": "PAGADA",
+            "fecha": "29-10-2024 21:00:00",
+            "multa": "1167/24/035-1",
+            "procedencia": "FISCALIZACION",
+            "um": "36",
+            "tipoUm": "UTM",
+            "montoClp": 2396196
+          },
+          {
+            "enunciado": "No requerir el acuerdo previo al sindicato de la empresa, por el sistema de distribución de la jornada de trabajo, aplicable a un trabajador afiliado a tal sindicato.",
+            "estado": "PAGADA",
+            "fecha": "22-08-2024 20:00:00",
+            "multa": "3677/24/040-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3954060
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "23-01-2024 21:00:00",
+            "multa": "1425/23/261-1",
+            "procedencia": "RECLAMO",
+            "um": "1",
+            "tipoUm": "IMM",
+            "montoClp": 500000
+          },
+          {
+            "enunciado": "No cumplimiento de resolución fundada que autoriza sistema excepcional de distribución de jornadas de trabajo y descanso",
+            "estado": "PAGADA",
+            "fecha": "09-08-2023 20:00:00",
+            "multa": "1739/23/027-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3791940
+          },
+          {
+            "enunciado": "No cumplir estipulaciones de instrumento colectivo.",
+            "estado": "PAGADA",
+            "fecha": "09-08-2023 20:00:00",
+            "multa": "1739/23/027-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3791940
+          },
+          {
+            "enunciado": "No cumplir estipulaciones de instrumento colectivo.",
+            "estado": "PAGADA",
+            "fecha": "09-08-2023 20:00:00",
+            "multa": "1739/23/026-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3791940
+          },
+          {
+            "enunciado": "No entregar copia reglamento interno orden, higiene seguridad a sindicato/comité paritario, 30 días antes de la fecha en que comience a regir.",
+            "estado": "PAGADA",
+            "fecha": "25-06-2023 20:00:00",
+            "multa": "8659/23/003-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3795780
+          },
+          {
+            "enunciado": "No dar a conocer reglamento interno de orden, higiene y seguridad.",
+            "estado": "PAGADA",
+            "fecha": "25-06-2023 20:00:00",
+            "multa": "8659/23/003-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3795780
+          },
+          {
+            "enunciado": "No constituir Comité Bipartito de Capacitación.",
+            "estado": "PAGADA",
+            "fecha": "21-05-2023 20:00:00",
+            "multa": "1989/23/032-1",
+            "procedencia": "FISCALIZACION",
+            "um": "50",
+            "tipoUm": "UTM",
+            "montoClp": 3153700
+          },
+          {
+            "enunciado": "No cumplir estipulaciones de instrumento colectivo.",
+            "estado": "PAGADA",
+            "fecha": "07-03-2023 21:00:00",
+            "multa": "1175/22/019-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3747000
+          },
+          {
+            "enunciado": "No consignar por escrito las modificaciones del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "24-06-2022 20:00:00",
+            "multa": "8509/22/004-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3453420
+          },
+          {
+            "enunciado": "No realizar la comunicación electrónica durante el mes de enero de cada año a la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-11-2021 21:00:00",
+            "multa": "4367/21/191-1",
+            "procedencia": "FISCALIZACION",
+            "um": "42",
+            "tipoUm": "UTM",
+            "montoClp": 2245992
+          },
+          {
+            "enunciado": "No dotar de vestidores o guardarropas fijo o móvil.",
+            "estado": "PAGADA",
+            "fecha": "08-10-2021 21:00:00",
+            "multa": "1175/21/012-1",
+            "procedencia": "FISCALIZACION",
+            "um": "36",
+            "tipoUm": "UTM",
+            "montoClp": 1902312
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:18:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:22d30b6ed14da706cfb274ed51065528805294f5f61b5fbd87aa85f4bc8564dd",
+        "cached_at": "2026-05-30T00:18:17.374286"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 7,
+        "cantidad": 133,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALICIA ANDREA VEGA CASTILLO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14104830-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANNIA BEATRIZ ROCO SANDOVAL ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15019512-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARLEN DEL TRANSITO TAPIA TAPIA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15047393-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA ALEJANDRA VALENZUELA GONZALEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "18832738-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCISCA PAZ PARADA IRIARTE ",
+            "periodo": "12/2025",
+            "rutAfiliado": "19881485-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCISCA CATALINA PIZARRO VARGAS ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20449901-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATALY GISSELLE MARTINEZ MUNOZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "18591874-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA LEONOR SALINAS CELSI ",
+            "periodo": "12/2025",
+            "rutAfiliado": "10348317-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DAYANA ANDREA ISABEL MONTES PINEDA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20614521-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR EDUARDO ORTIZ PIMENTEL ",
+            "periodo": "12/2025",
+            "rutAfiliado": "10306767-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CATALINA ROCIO GUERRA ECHEVERRIA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20132514-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "KARLA JAZMINA BURGOS CHIGUAY ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17226351-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NUBIA QUINONES QUINONES ",
+            "periodo": "12/2025",
+            "rutAfiliado": "22206316-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ARACELY PAVEZ HERNANDEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "20663020-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JIMENA DEL VALLE CABRITA RODRIGUEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "26497873-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JACQUELINE ANDREA HELBIG PIZARRO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15430488-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CRISTOPHER MARTINEZ DIAZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17686492-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DANIELA ANDREA LEON ITURRA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15126607-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAGALY YANET CORTES GUTIERREZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "12567512-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALICIA ANDREA VEGA CASTILLO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14104830-9",
+            "tipoProducto": "Cotización obligatorias"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:18:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:543193844022d6bd8dc762058a96690d7c07ab7200ba230ca1ac3c7a93e5ca05",
+        "cached_at": "2026-05-30T00:18:17.733753"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96951870-8",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "BIONET S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "BIONET S.A",
+            "rutSociedad": "96951870-8",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "rut": "70360100-6",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INSTITUTO DE DIAGNOSTICO S A",
+                "rut": "92051000-0",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-05-07",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/07/44142/05/2643100.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2014-08-11",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2014/08/11/805601_M_SA_20140811_firmado.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "LABORATORIO CLÍNICO MARINA ARAUCO S.A.",
+                "rut": null,
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5565ea8e376e539dee24f8f0eb7c2bdfe82426ab4063396143964dc8ddbb9ec6",
+      "cached_at": "2026-05-30T00:18:18.370455"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96951870-8",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "06-05-2025 20:00:00",
+            "razonSocial": "BIONET S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/07/44142/05/2643100.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "96951870-8"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "96951870-8",
+            "sociedad": "BIONET S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:220388b0255161da663e1d191996337cb4444ed88ead1f8a850474d50780e638",
+        "cached_at": "2026-05-30T00:18:18.711378"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 310,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 37.5,
+      "numeradorJudicial": 24,
+      "denominadorJudicial": 64,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 62.5,
+      "porcentajeMoraPrevisional": 100,
+      "casosMoraPrevisional": 126,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 63307428,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 262.5,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:cd91f75e889ac717f2f39e6b407db24367fdc50176af5b6844e4103484dfba90",
+      "cached_at": "2026-05-30T00:18:19.328145"
+    }
+  }
+}

@@ -1,0 +1,3303 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "79766650-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "79766650-5",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "CONSTRUCTORA DIGUA LTDA",
+        "presentaActividades": "SI",
+        "inicioActividades": "01-01-1993",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "CONSTRUCCION DE EDIFICIOS PARA USO RESIDENCIAL",
+            "codigo": "410010",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "01-01-1993"
+          },
+          {
+            "actividades": "CONSTRUCCION DE PROYECTOS DE SERVICIO PUBLICO",
+            "codigo": "422000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-11-2018"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2010"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Facturas De Compras",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Debito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Letras De Cambio",
+            "ultimoAnioTimbrado": "1997"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2003"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "1998"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 17,
+        "ultimaActualizacion": "30-05-2026 00:24:35",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "600.000,01 a 1.000.000,00",
+          "cantidadTrabajadores": 971
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 3,
+        "casosCivilesPresentados": 4,
+        "casosCivilesConcluidos": 3,
+        "cobranzaActivos": 2,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 3,
+        "laboralActivos": 11,
+        "laboralPresentados": 4,
+        "laboralConcluidos": 11,
+        "casosActuales": 16,
+        "casosArchivados": 8,
+        "casosConcluidos": 17,
+        "todosLosCasos": 41,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 10,
+          "demandante": 6,
+          "demandadoSolidario": 8
+        },
+        "ultimaActualizacionCiviles": null,
+        "ultimaActualizacionCobranza": null,
+        "ultimaActualizacionLaboral": null,
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 3,
+          "empleados": 3,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 200,
+            "cambioAbsoluto": 2
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 4740180,
+          "multasPagadas": 2,
+          "montoMultasPagadas": 4740180,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:24:34"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:24:35"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "25-12-2016 21:00:00",
+              "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/26/41642/05/1157201.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                  "rut": "6762155-7",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                  "rut": null,
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                }
+              ],
+              "rut": "79766650-5"
+            },
+            {
+              "fecha": "13-12-2017 21:00:00",
+              "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/14/41932/05/1319072.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                  "rut": "6762155-7",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                  "rut": null,
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                }
+              ],
+              "rut": "79766650-5"
+            },
+            {
+              "fecha": "21-02-2018 21:00:00",
+              "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/02/22/41990/05/1357385.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                  "rut": "96903910-9",
+                  "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+                }
+              ],
+              "rut": "76842638-4"
+            },
+            {
+              "fecha": "29-06-2018 20:00:00",
+              "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/06/30/42096/05/1424096.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                  "rut": "96903910-9",
+                  "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+                }
+              ],
+              "rut": "76842638-4"
+            },
+            {
+              "fecha": "18-10-2019 21:00:00",
+              "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/10/19/42481/05/1671056.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                  "rut": "6762155-7",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES AMGR S.A.",
+                  "rut": "77005796-5",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES JRLC S.A.",
+                  "rut": "77005791-4",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                  "rut": null,
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                }
+              ],
+              "rut": "79766650-5"
+            },
+            {
+              "fecha": "18-12-2019 21:00:00",
+              "razonSocial": "CONSTRUCTRA DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/12/19/42532/05/1699327.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                  "rut": "6762155-7",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES AMGR S.A.",
+                  "rut": "77005796-5",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES JRLC S.A.",
+                  "rut": "77005791-4",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                  "rut": null,
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                }
+              ],
+              "rut": "79766650-5"
+            },
+            {
+              "fecha": "12-01-2021 21:00:00",
+              "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/13/42853/05/1879299.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES JRLC S.A.",
+                  "rut": "77005791-4",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                  "rut": "96903910-9",
+                  "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+                }
+              ],
+              "rut": "76842638-4"
+            },
+            {
+              "fecha": "02-02-2021 21:00:00",
+              "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/02/03/42871/05/1890237.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                  "rut": "6762155-7",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES AMGR S.A.",
+                  "rut": "77005796-5",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "JAIME RAFAEL LEIVA CÁRDENAS",
+                  "rut": "4849331-9",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "INVERSIONES JRLC S.A.",
+                  "rut": "77005791-4",
+                  "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+                },
+                {
+                  "socio": "ZENON EDUARDO CARDENAS DAZA",
+                  "rut": "10060731-K",
+                  "domicilio": "1 NORTE Nº 801, OFICINA Nº 507, EDIFICIO PLAZA CENTRO, TALCA"
+                }
+              ],
+              "rut": "79766650-5"
+            },
+            {
+              "fecha": "20-01-2026 21:00:00",
+              "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2026/01/21/44355/05/2757551.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "79766650-5"
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "12/2025",
+        "deudaDirectaComercial": 1872025,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 4999597,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 14762006,
+        "leasingMoroso": 0,
+        "leasingVigente": 1851761,
+        "lineaCredito": 1000,
+        "variacion": {
+          "periodo": "06/2025",
+          "deudaDirectaComercial": 4012675,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 8494694,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 10845319,
+          "leasingMoroso": 0,
+          "leasingVigente": 1918842,
+          "lineaCredito": 1000
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 24,
+          "tasacionTotal": 362323281,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 122,
+          "tasacionTotal": "3313271697",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 67.74193548387098,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 367.741935483871,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "CONSTRUCTORA DIGUA LTDA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3fbc8677c19b743276e443b3ceb8e5574b6a0bd0042e2d4823df0687fb5bf18b",
+      "cached_at": "2026-05-30T00:24:36.343482"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 10,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Audiencia",
+            "fechaIngreso": "12-11-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17930874-6",
+                "nombre": "DIEGO ANTONIO PABLO RIVERA GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6187285-K",
+                "nombre": "GUILLERMO JOSÉ MONSALVE MERCADAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17137461-8",
+                "nombre": "ALFONSO ARNOLDO BOCAZ URRUTIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76429386-K",
+                "nombre": "CONSTRUCTORA R&R LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Designación Árbitro",
+            "rol": "C-2909-2024",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Dúplica",
+            "fechaIngreso": "03-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19690297-K",
+                "nombre": "RAIMUNDO JAVIER SOTO LOZANO (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17699824-5",
+                "nombre": "GIAN-FRANCO TAVOLARI RIVERA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20775758-6",
+                "nombre": "BENJAMÍN EDUARDO BRAVO PARRA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7052756-1",
+                "nombre": "LUIS CARLOS VALDÉS CORREA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19080099-7",
+                "nombre": "LUIS CARLOS VALDÉS IRARRÁZAVAL (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18636958-0",
+                "nombre": "SAMUEL JOSÉ VILLASECA VIAL (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8573160-2",
+                "nombre": "ALBERTO ARTURO HERRERA ESPINOZA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6187285-K",
+                "nombre": "GUILLERMO JOSÉ MONSALVE MERCADAL (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9004301-3",
+                "nombre": "OSCAR RAFAEL CONTRERAS BLANCO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17085580-9",
+                "nombre": "ÁLVARO ANDRÉS AWAD SIRHAN (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17697845-7",
+                "nombre": "OSCAR MIGUEL CONTRERAS POMES (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17080643-3",
+                "nombre": "LUIS GUILLERMO SILVA BRAVO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96511460-2",
+                "nombre": "CONSTRUMART S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "80397900-6",
+                "nombre": "SAINT-GOBAIN WEBER CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-3321-2024",
+            "tribunal": "Juzgado de Letras de Colina",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación",
+            "fechaIngreso": "07-02-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8841472-1",
+                "nombre": "JUAN FÉLIX AVILÉS SILVA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13722001-6",
+                "nombre": "DANIELA INÉS CASTRO GUZMÁN",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10360170-3",
+                "nombre": "NINFA CECILIA ROJAS GAJARDO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13950473-9",
+                "nombre": "ERICK EDUARDO SUAZO JARA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12589596-4",
+                "nombre": "JUAN RAMÓN CARVALLO ORELLANA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "2297161-1",
+                "nombre": "OLGA AMELIA ARRIAGADA HORMAZABAL",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6746989-5",
+                "nombre": "PAULO ANDRÉS BRAVO URETA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9561522-8",
+                "nombre": "LUISA VERÓNICA ROJAS HUANEL",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10985049-7",
+                "nombre": "DAVID ALEJANDRO GAETE TORRES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15136402-0",
+                "nombre": "INGRID YOANY OLAVE HERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "60805012-4",
+                "nombre": "TESORERIA REGIONAL DEL MAULE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76183518-1",
+                "nombre": "GUILLERMO ENRIQUE MENDOZA FUENTES COMERCIALIZADORA DE PRODUCTOS CARNIC",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77146786-5",
+                "nombre": "INVERSIONES E INMOBILIARIA FERNANDO CERD",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "71230100-7",
+                "nombre": "DEP 18 DE SEPTIMBRE F.C.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Tributario - Remate Bienes Raíces",
+            "rol": "C-381-2024",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada",
+            "fechaIngreso": "23-05-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17930874-6",
+                "nombre": "DIEGO ANTONIO PABLO RIVERA GONZÁLEZ (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61607000-2",
+                "nombre": "FISCO DE CHILE - SERVICIO SALUD ÑUBLE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-486-2022",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada",
+            "fechaIngreso": "16-05-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17930874-6",
+                "nombre": "DIEGO ANTONIO PABLO RIVERA GONZÁLEZ (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61607000-2",
+                "nombre": "FISCO DE CHILE - SERVICIO SALUD ÑUBLE",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-752-2022",
+            "tribunal": "2º Juzgado Civil de Chillán",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "5 Conciliación y/o Recibe a prueba",
+            "fechaIngreso": "03-04-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15379641-6",
+                "nombre": "ORLANDO ANTONIO POBLETE ORTÚZAR (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "4849331-9",
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17043640-7",
+                "nombre": "NICOLÁS ANDRÉS MARÍN GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17565104-7",
+                "nombre": "ALEJANDRA DE LOS ANDES DE BLOCK VARGAS (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20473703-7",
+                "nombre": "CATALINA ANDREA PIZARRO VILLENA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13596726-2",
+                "nombre": "AUGUSTO MARCELO SANTIS POBLETE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12962927-4",
+                "nombre": "PAULA MARGOT NATALIA DEL SOL ALFARO REYES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19243227-8",
+                "nombre": "PÍA VALENTINA DINAMARCA CARRASCO (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-448-2022",
+            "tribunal": "3º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "30-07-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "61006000-5",
+                "nombre": "CONSEJO DE DEFENSA DEL ESTADO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7968570-4",
+                "nombre": "JOSÉ ISIDORO VILLALOBOS GARCÍA HUIDOBRO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "4849331-9",
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2569-2019",
+            "tribunal": "4º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "26-12-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13616935-1",
+                "nombre": "RUBÉN ANTONIO ROJAS VALDÉS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16196752-1",
+                "nombre": "ELIZABETH YUSSET NILO SALAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16555029-3",
+                "nombre": "EUGENIO ROBERTO PAROT SOTO (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6187285-K",
+                "nombre": "GUILLERMO JOSÉ MONSALVE MERCADAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-4049-2018",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "18-08-2014 20:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96825530-4",
+                "nombre": "RMD KWIKFORM CHILE S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12467279-1",
+                "nombre": "ENZO LEONARDO COPPA HURTADO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantía",
+            "rol": "C-2348-2014",
+            "tribunal": "2º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Presentación de la Medida Prejudicial ",
+            "fechaIngreso": "09-06-2013 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16726784-K",
+                "nombre": "MARMA ALICIA ALBORNOZ ACUQA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Medida prejudicial",
+            "rol": "C-1694-2013",
+            "tribunal": "3º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:40dca610a42f8d689e8934878642deb0d310f14e5afb50df355f4a4be3745fab",
+        "cached_at": "2026-05-30T00:24:36.715127"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "29-01-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17519986-1",
+                "nombre": "LUIS ALBERTO PROUST CÁCERES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE JOSÉ DIEZ PINOCHET",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-17-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Rancagua",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "26-06-2024 20:00:00",
+            "monto": "6802160",
+            "litigantes": [
+              {
+                "rut": "77005791-4",
+                "nombre": "INVERSIONES JRLC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96903910-9",
+                "nombre": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76842638-4",
+                "nombre": "CONSORCIO DIGUA LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE JOSÉ DIEZ PINOCHET",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14085587-1",
+                "nombre": "YESSICA ALEJANDRA VILLALOBOS LÓPEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16531876-5",
+                "nombre": "SEBASTIÁN ANTONIO GUILLERMO PAINEMAL GRANZOTTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-188-2024",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "30-07-2020 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16726765-3",
+                "nombre": "CAMILA ANDREA MOYA GUAJARDO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17107789-3",
+                "nombre": "JULIO ANTONIO LEMAITRE TORRES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12106457-K",
+                "nombre": "JORGE ALBERTO WILSON OLAVARRÍA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16002010-5",
+                "nombre": "MARCOS ESTEBAN MORENO LEIVA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-126-2020",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "01-11-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LTDA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12106457-K",
+                "nombre": "JORGE ALBERTO WILSON OLAVARRIA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6187285-K",
+                "nombre": "GUILLERMO JOSE MONSALVE MERCADAL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "12589950-1",
+                "nombre": "MANUEL EDUARDO GONZALEZ CORRAL",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16455668-9",
+                "nombre": "SUSANA EUGENIA RUIZ MORENO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-289-2015",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "16-04-2013 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "CONSTRUCTORA DIGUA LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "69110500-8",
+                "nombre": "ILUSTRE MUNICIPALIDAD DE SAN CLEMENTE  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13304905-3",
+                "nombre": "HUGO FELIPE ESCOBAR ARZOLA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "13857921-2",
+                "nombre": "LUIS RODRIGO FARIAS ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15139039-0",
+                "nombre": "RODRIGO ARANCIBIA MORALES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "7476218-2",
+                "nombre": "JOAQUIN ENRIQUE MUÑOZ NUÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "6187285-K",
+                "nombre": "GUILLERMO MONSALVE MERCADAL",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "9913258-2",
+                "nombre": "CLAUDIO ALFONSO RIVAS VILLALOBOS",
+                "sujeto": "T.IND.",
+                "persona": "N"
+              },
+              {
+                "rut": "12106457-K",
+                "nombre": "JORGE ALBERTO WILSON OLAVARRIA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-74-2013",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:04e31b6d11411bca8e8e2feab314039702bf18ab32fc719db3ad3dad29b08f13",
+        "cached_at": "2026-05-30T00:24:37.052418"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 28,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "20-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19796122-8",
+                "nombre": "ROBERTO ANDRÉS AGUILAR CORTÉS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19237662-9",
+                "nombre": "KEVIN PATRICIO BROWTON SERRANO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-267-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "08-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15381892-4",
+                "nombre": "SEBASTIÁN PABLO CHACON LARRAIN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14121438-1",
+                "nombre": "GONZALO ANDRÉS CHACON LARRAIN",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15497602-7",
+                "nombre": "JUAN EDUARDO SERRANO FARÍAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61202000-0",
+                "nombre": "FISCO DE CHILE MINISTERIO DE OBRAS PUBLICAS",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "69090900-6",
+                "nombre": "MUNICIPALIDAD DE PAREDONES",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-13-2026",
+            "tribunal": "Juzgado de Letras y Garantia de Peralillo",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE DIEZ PINOCHET",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19807844-1",
+                "nombre": "ANYELA FRANCISCA ARROYO AGÜERO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-45-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "12-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15676843-K",
+                "nombre": "ALEJANDRO HUMBERTO CABRERA MONSALVES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16600572-8",
+                "nombre": "LEOPOLDO JAVIER ALEXIS VIDAL GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71238300-3",
+                "nombre": "FUNDACION TELETON",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-483-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "30-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16600572-8",
+                "nombre": "LEOPOLDO JAVIER ALEXIS VIDAL GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9438469-9",
+                "nombre": "JOHN ERWIN GALLARDO ESPINOZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76756988-2",
+                "nombre": "UNICON CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88006900-4",
+                "nombre": "E-CL MEJILLONES",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77850430-8",
+                "nombre": "CONSTRUCTORA REMFISC LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-400-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "30-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16600572-8",
+                "nombre": "LEOPOLDO JAVIER ALEXIS VIDAL GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10862145-1",
+                "nombre": "RAÚL EDUARDO CORTÉS HERMOSILLA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76756988-2",
+                "nombre": "UNICON CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88006900-4",
+                "nombre": "E-CL MEJILLONES",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77850430-8",
+                "nombre": "CONSTRUCTORA REMFISC LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-399-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76756988-2",
+                "nombre": "UNICON CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88006900-4",
+                "nombre": "E-CL MEJILLONES",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77850430-8",
+                "nombre": "CONSTRUCTORA REMFISC LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16600572-8",
+                "nombre": "LEOPOLDO JAVIER ALEXIS VIDAL GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12012680-6",
+                "nombre": "MARCO DAMIÁN VIVEROS MARCHANT",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-397-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76756988-2",
+                "nombre": "UNICON CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88006900-4",
+                "nombre": "E-CL MEJILLONES",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77850430-8",
+                "nombre": "CONSTRUCTORA REMFISC LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16600572-8",
+                "nombre": "LEOPOLDO JAVIER ALEXIS VIDAL GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12382971-9",
+                "nombre": "PEDRO ANTONIO PACHECO PACHECO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-396-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "22-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16218758-9",
+                "nombre": "PATRICIO NICOLÁS MÉNDEZ ROJAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15160946-5",
+                "nombre": "EDUARDO ANTONIO ORTEGA CASTRO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10060731-K",
+                "nombre": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-299-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-04-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13502327-2",
+                "nombre": "ALEJANDRO JAVIER CASTILLO BRICEÑO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76080212-3",
+                "nombre": "AMSYS SEGURIDAD Y SERVICIOS LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11951456-8",
+                "nombre": "CHRISTIAN GERMÁN ZAMORA GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15328380-K",
+                "nombre": "FRANCISCO ANDRÉS CRUZAT ROMÁN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-186-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "21-04-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE DIEZ PINOCHET",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17107119-4",
+                "nombre": "EVELYN GRICEL URRUTIA MARÍN",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-181-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-12-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96969840-4",
+                "nombre": "EMAQ S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11756793-1",
+                "nombre": "JUAN ANTONIO GUZMÁN MIRANDA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17963043-5",
+                "nombre": "ALONSO SEBASTIÁN SOTO DE LA FUENTE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17237027-6",
+                "nombre": "MACARENA DEL CARMEN TORO DELGADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "72240400-9",
+                "nombre": "GOBIERNO REGIONAL DE OHIGGINS",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-682-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE DIEZ PINOCHET",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11601424-6",
+                "nombre": "RAUL ERNESTO QUIJON CARO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18801465-8",
+                "nombre": "MARY ELISA FERRELL CHÁVEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18928507-8",
+                "nombre": "FERNANDA ANDREA GONZÁLEZ ARAVENA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-127-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "15-08-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15371915-2",
+                "nombre": "JORGE LENA SALGADO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16375512-2",
+                "nombre": "MARÍA DE LA PAZ OLEGARIA AGUILERA JAQUE (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12363618-K",
+                "nombre": "LUIS ALEJANDRO GALLARDO SANHUEZA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61806000-4",
+                "nombre": "FISCO DE CHILE (SERVICIO NACIONAL DE MENORES)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-556-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "25-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE DIEZ PINOCHET (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17519986-1",
+                "nombre": "LUIS ALBERTO PROUST CÁCERES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-452-2024",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Cumplimiento",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "02-10-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8481520-9",
+                "nombre": "YOLANDA ELIZABETH CASTRO MILLA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17738840-8",
+                "nombre": "LILAN ROSARIO NAVARRETE QUINTRILEO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12446414-5",
+                "nombre": "DANIELLA ALEJANDRA FAUNDEZ SAAVEDRA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76984153-9",
+                "nombre": "QUICKWALL FACHADAS LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76217443-K",
+                "nombre": "CONSTRUCTORA SUARIAS LIMITADA",
+                "sujeto": "T.COAD",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "T.COAD",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14527975-5",
+                "nombre": "VICENTE JOSÉ DIEZ PINOCHET (Poder Amplio)",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-6827-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "T.COAD",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-09-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14015802-K",
+                "nombre": "JORGE ARMANDO MUÑOZ ZURITA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76442618-5",
+                "nombre": "COMERCIAL SAN BENITO LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "71647500-K",
+                "nombre": "UNIVERSIDAD BERNARDO O HIGGINS",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-506-2023",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-11-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14085587-1",
+                "nombre": "YESSICA ALEJANDRA VILLALOBOS LÓPEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16794724-7",
+                "nombre": "JORGE EDUARDO HERRERA SPULER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96903910-9",
+                "nombre": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77005791-4",
+                "nombre": "INVERSIONES JRLC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76842638-4",
+                "nombre": "CONSORCIO DIGUA LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-602-2022",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "23-11-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9096028-8",
+                "nombre": "MARIO ENRIQUE VERGARA VENEGAS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16545256-9",
+                "nombre": "CRISTIAN ALBERTO ABARCA ANTIMAN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "8648167-7",
+                "nombre": "JUAN HUMBERTO MEDEL POBLETE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "91915000-9",
+                "nombre": "INGENIERIA Y CONSTRUCCION SIGDO KOPPERS SA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76530685-K",
+                "nombre": "INGEMAULE LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76282026-9",
+                "nombre": "CONSTRUCTORA BSK EWS LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "91300000-5",
+                "nombre": "CONSTRUCTORA TECSA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96684600-3",
+                "nombre": "EMPRESA DE MONTAJES INDUSTRIALES SALFA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79875160-3",
+                "nombre": "SKANSKA CHILE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96687370-1",
+                "nombre": "DSD CONSTRUCCIONES Y MONTAJES S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96945830-6",
+                "nombre": "constructora norte sur S.a.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "92562000-9",
+                "nombre": "CONSTRUCTORA BELFI S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77796800-9",
+                "nombre": "CONSORCIO DELTA-DSD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77690360-4",
+                "nombre": "CONSTRUCTORA BELFI CON PAX INCOLUR LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79730880-3",
+                "nombre": "INGENIERIA Y CONSTRUCCIONES INCOLUR S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79990590-6",
+                "nombre": "CONSTRUCTORA BDS BELFI LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "81191100-3",
+                "nombre": "CONSTRUCTORA INELA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "78583830-0",
+                "nombre": "CONSORCIO DE CONSTRUCCION BELFI INELA LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "92247000-6",
+                "nombre": "EMPRESA CONSTRUCTORA DELTA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "86016100-1",
+                "nombre": "JAHUEL INGENERIA Y CONSTRUCCION LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79989330-4",
+                "nombre": "CONSTRUCTORA BELFE INCOLUR LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96513310-0",
+                "nombre": "CONSTRUCTORA INARCO S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "78301430-0",
+                "nombre": "CONSTRUCTORA AEROPUERTO LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79711330-1",
+                "nombre": "AGROINDUSTRIAS CEPIA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "83691900-9",
+                "nombre": "INGENIERIA Y CONSTRUCCIÓN CRUZ DEL  SUR LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "87615100-6",
+                "nombre": "CONSTRUCTORA SAN CRISTOBAL LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7190-2022",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "12-09-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13892011-9",
+                "nombre": "CARMEN PATRICIA VELIZ SILVA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9933298-0",
+                "nombre": "DANTE PAOLO RIGHETTI MAUREIRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10663000-3",
+                "nombre": "CRISTIAN TOLEDO TOLEDO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19886490-0",
+                "nombre": "JEREMY IVÁN ROMERO SEGUEL",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76893944-6",
+                "nombre": "METALURGICA CURICO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "71647500-K",
+                "nombre": "UNIVERSIDAD BERNARDO O HIGGINS",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "79766650-5",
+                "nombre": "EMPRESA CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Exhorto",
+            "rit": "E-366-2022",
+            "tribunal": "Juzgado de Letras del Trabajo de Rancagua",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:168fdf39b6fe881ef0d748692a05157af41dcb4b878ec6ca3d03a9397c2338b7",
+        "cached_at": "2026-05-30T00:24:37.521199"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "enunciado": "No comunicar personalmente o por escrito al trabajador el término de contrato del trabajo en el plazo de (3) – (6) días hábiles.",
+            "estado": "PAGADA",
+            "fecha": "09-03-2025 21:00:00",
+            "multa": "3819/24/135-1",
+            "procedencia": "RECLAMO",
+            "um": "40",
+            "tipoUm": "UTM",
+            "montoClp": 2721360
+          },
+          {
+            "enunciado": "No contar con servicios higiénicos según los requisitos mínimos legales.",
+            "estado": "PAGADA",
+            "fecha": "20-12-2024 21:00:00",
+            "multa": "6262/24/032-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 2018820
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e39e39f82b7f09866d53f2b8dc0576a405bdc209f0a040c340c751b9a8b2529b",
+        "cached_at": "2026-05-30T00:24:37.864348"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 19,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GONZALO ANDRES HIDALGO CARRASCO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "20374120-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NICOLAS MATIAS PATRICIO ACOSTA GONZALEZ ",
+            "periodo": "10/2025",
+            "rutAfiliado": "16537446-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR LEONARDO ORELLANA TORO ",
+            "periodo": "09/2025",
+            "rutAfiliado": "16269913-k",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO IGNACIO FERNANDEZ SEPULVEDA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "17243850-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RUBEN ANTONIO REYES URBINA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "18227303-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MILTON SALGADO MUNDACA ",
+            "periodo": "07/2025",
+            "rutAfiliado": "9751024-5",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO CESAR VALENZUELA TOLEDO ",
+            "periodo": "07/2025",
+            "rutAfiliado": "17874255-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RENE ALEJANDRO VARGAS BRAVO ",
+            "periodo": "07/2025",
+            "rutAfiliado": "11951477-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "YIMMY ANTONIO YANEZ ISLAS ",
+            "periodo": "07/2025",
+            "rutAfiliado": "15134941-2",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR FERNANDO BRITO MOLINA ",
+            "periodo": "07/2025",
+            "rutAfiliado": "13101718-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIO EUSEBIO BRITO MOLINA ",
+            "periodo": "07/2025",
+            "rutAfiliado": "14264977-2",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FERNANDO AMBROSIO CONTRERAS LARA ",
+            "periodo": "07/2025",
+            "rutAfiliado": "14487393-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALFONSO ANDRES PENA SALAZAR ",
+            "periodo": "07/2025",
+            "rutAfiliado": "14267848-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE MILTON SALGADO MUNDACA ",
+            "periodo": "06/2025",
+            "rutAfiliado": "9751024-5",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RENE ALEJANDRO VARGAS BRAVO ",
+            "periodo": "06/2025",
+            "rutAfiliado": "11951477-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALFONSO ANDRES PENA SALAZAR ",
+            "periodo": "06/2025",
+            "rutAfiliado": "14267848-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PALOMA IGNACIA MORAN FARINA ",
+            "periodo": "06/2025",
+            "rutAfiliado": "20689986-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "VICTOR FERNANDO BRITO MOLINA ",
+            "periodo": "06/2025",
+            "rutAfiliado": "13101718-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIO EUSEBIO BRITO MOLINA ",
+            "periodo": "06/2025",
+            "rutAfiliado": "14264977-2",
+            "tipoProducto": "Cotización obligatorias"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:24:36"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3f8cdd2fa7d95010e79248eb7b9cde2408c5f008cd45558d722699c72f4b7803",
+        "cached_at": "2026-05-30T00:24:38.205823"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "79766650-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "CONSTRUCTORA DIGUA LTDA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSTRUCTORA DIGUA LTDA",
+            "rutSociedad": "79766650-5",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "1987-11-23",
+            "socios": [
+              {
+                "nombre": "ZENON EDUARDO CARDENAS DAZA",
+                "rut": "10060731-K",
+                "domicilio": "1 NORTE 801 OFICINA 507 EDIFICIO PLAZA CENTRO TALCA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "10.00"
+              },
+              {
+                "nombre": "JAIME RAFAEL LEIVA CARDENAS",
+                "rut": "4849331-9",
+                "domicilio": "1 NORTE N 801, OFICINA N 507, TALCA",
+                "tipoDeParticipacion": "Administrador - Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "49.00"
+              },
+              {
+                "nombre": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                "rut": "6762155-7",
+                "domicilio": "1 NORTE N° 507, EDIFICIO PLAZA CENTRO, TALCA",
+                "tipoDeParticipacion": "Administrador - Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "INVERSIONES JRLC S.A.",
+                "rut": "77005791-4",
+                "domicilio": "1 SUR 690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "45.00"
+              },
+              {
+                "nombre": "INVERSIONES AMGR S.A.",
+                "rut": "77005796-5",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "45.00"
+              },
+              {
+                "nombre": "JUAN BIANCHI ASTABURUAGA",
+                "rut": "3694498-6",
+                "domicilio": null,
+                "tipoDeParticipacion": "Notario",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "OMAR ALEJANDRO CASANOVA HENRIQUEZ",
+                "rut": "15136499-3",
+                "domicilio": "24 1/2 ORIENTE A N°4315 VILLA PARQUE SAN VALENTIN COMUNA DE TALCA REGION DEL MAULE",
+                "tipoDeParticipacion": "Notario suplente",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ANA MARIA GONZALEZ DEL RIO",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ANGELITA DE LA PAZ HORMAZABAL",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Notario titular",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2026-01-21",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2026/01/21/44355/05/2757551.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-02-03",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/02/03/42871/05/1890237.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-12-19",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/12/19/42532/05/1699327.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-10-19",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/10/19/42481/05/1671056.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-12-14",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/14/41932/05/1319072.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-12-26",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/26/41642/05/1157201.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+                "rut": "76842638-4",
+                "tipoDeParticipacion": "Administrador - Socio"
+              },
+              {
+                "razonSocial": "CONSTRUCTORA DOS NORTE LIMITDA",
+                "rut": "78867630-1",
+                "tipoDeParticipacion": "Administrador - Socio"
+              },
+              {
+                "razonSocial": "CONSTRUCTORA GUAYACÁN LIMITADA",
+                "rut": null,
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CONSTRUCTORA INDEPENDENCIA LIMITADA",
+                "rut": "77051810-5",
+                "tipoDeParticipacion": "Administrador - Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA Y CONSTRUCTORA LOMAS DE LA VINA LIMITADA",
+                "rut": "77655810-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSIONES DEPORTIVAS SOCIEDAD ANÓNIMA INMOBILIARIA",
+                "rut": null,
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "CONSTRUCTORA DIGUA LTDA",
+            "postura": "Víctima",
+            "rol": "Ordinaria-2921-2015",
+            "fecha": "24/08/2015",
+            "infraccion": "Robo en lugar no habitado.",
+            "estado": "Concluida",
+            "etapa": "Impugnación",
+            "litigantes": [
+              {
+                "nombre": "CAMILO ANTONIO BAHAMONDES OSES",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAMILO ELIFREDO LIBERA SOLORZA MARQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAMILO ELIFREDO LIBERA SOLORZA MARQUEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CENTRO CUMPLIMIENTO PENITENCIARIO LINARES",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONSTRUCTORA DIGUA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONSTRUCTORA DIGUA LTDA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA TERESA RECABARREN DOMÍNGUEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MÓNICA PAZ CÁNEPA LOBOS",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP.",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VÍCTOR ALEJANDRO MOYANO MUÑOZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Linares",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:e367611f900848a542164d1183b3e10320db6aeee38f34c9c277063268f46283",
+      "cached_at": "2026-05-30T00:24:38.805349"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "79766650-5",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "25-12-2016 21:00:00",
+            "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2016/12/26/41642/05/1157201.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                "rut": "6762155-7",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                "rut": null,
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              }
+            ],
+            "rut": "79766650-5"
+          },
+          {
+            "fecha": "13-12-2017 21:00:00",
+            "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/14/41932/05/1319072.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                "rut": "6762155-7",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                "rut": null,
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              }
+            ],
+            "rut": "79766650-5"
+          },
+          {
+            "fecha": "21-02-2018 21:00:00",
+            "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/02/22/41990/05/1357385.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "CONSTRUCTORA DIGUA LIMITADA",
+                "rut": "79766650-5",
+                "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+              },
+              {
+                "nombre": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                "rut": "96903910-9",
+                "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+              }
+            ],
+            "rut": "76842638-4"
+          },
+          {
+            "fecha": "29-06-2018 20:00:00",
+            "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/06/30/42096/05/1424096.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "CONSTRUCTORA DIGUA LIMITADA",
+                "rut": "79766650-5",
+                "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+              },
+              {
+                "nombre": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                "rut": "96903910-9",
+                "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+              }
+            ],
+            "rut": "76842638-4"
+          },
+          {
+            "fecha": "18-10-2019 21:00:00",
+            "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/10/19/42481/05/1671056.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                "rut": "6762155-7",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES AMGR S.A.",
+                "rut": "77005796-5",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES JRLC S.A.",
+                "rut": "77005791-4",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                "rut": null,
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              }
+            ],
+            "rut": "79766650-5"
+          },
+          {
+            "fecha": "18-12-2019 21:00:00",
+            "razonSocial": "CONSTRUCTRA DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/12/19/42532/05/1699327.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                "rut": "6762155-7",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES AMGR S.A.",
+                "rut": "77005796-5",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES JRLC S.A.",
+                "rut": "77005791-4",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "ZENÓN EDUARDO CÁRDENAS DAZA",
+                "rut": null,
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              }
+            ],
+            "rut": "79766650-5"
+          },
+          {
+            "fecha": "12-01-2021 21:00:00",
+            "razonSocial": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/13/42853/05/1879299.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES JRLC S.A.",
+                "rut": "77005791-4",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "CONSTRUCTORA DIGUA LIMITADA",
+                "rut": "79766650-5",
+                "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+              },
+              {
+                "nombre": "INMOBILIARIA Y CONSTRUCTORA DIGUA LIMITADA",
+                "rut": "96903910-9",
+                "domicilio": "CALLE 1 SUR Nº690, PISO 13, OFICINA 1316, EDIFICIO PLAZA TALCA, CIUDAD Y COMUNA DE TALCA"
+              }
+            ],
+            "rut": "76842638-4"
+          },
+          {
+            "fecha": "02-02-2021 21:00:00",
+            "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/02/03/42871/05/1890237.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ANA MARÍA GONZÁLEZ DEL RÍO",
+                "rut": "6762155-7",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES AMGR S.A.",
+                "rut": "77005796-5",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "JAIME RAFAEL LEIVA CÁRDENAS",
+                "rut": "4849331-9",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "INVERSIONES JRLC S.A.",
+                "rut": "77005791-4",
+                "domicilio": "CALLE 1 SUR Nº 690, OFICINA Nº 1316, TALCA"
+              },
+              {
+                "nombre": "ZENON EDUARDO CARDENAS DAZA",
+                "rut": "10060731-K",
+                "domicilio": "1 NORTE Nº 801, OFICINA Nº 507, EDIFICIO PLAZA CENTRO, TALCA"
+              }
+            ],
+            "rut": "79766650-5"
+          },
+          {
+            "fecha": "20-01-2026 21:00:00",
+            "razonSocial": "CONSTRUCTORA DIGUA LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2026/01/21/44355/05/2757551.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "79766650-5"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0799711702",
+            "society": "CONSTRUCTORA INDEPENDENCIA LIMITADA"
+          },
+          {
+            "rut": "0788676301",
+            "society": "CONSTRUCTORA DOS NORTE LIMITDA"
+          },
+          {
+            "rut": "0768426384",
+            "society": "CONSORCIO CONSTRUCTOR DIGUA LIMITADA"
+          },
+          {
+            "rut": "79766650-5",
+            "sociedad": "CONSTRUCTORA DIGUA LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d4e80b945ec711017d705c68d6850d959a9034d2d0d78cf1ba96b77c0457a761",
+        "cached_at": "2026-05-30T00:24:39.170904"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 15866180,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 36.36363636363637,
+      "numeradorJudicial": 12,
+      "denominadorJudicial": 33,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 63.63636363636363,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 3,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 4740180,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 363.6363636363636,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:104a77d2b515a6fc9817c973ee88e46663c2ae66e6ff8cb83e10f23eda5ebea7",
+      "cached_at": "2026-05-30T00:24:39.782101"
+    }
+  }
+}

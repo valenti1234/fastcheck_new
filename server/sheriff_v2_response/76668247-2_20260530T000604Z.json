@@ -1,0 +1,690 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76668247-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76668247-2",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "LAVATEX LAVANDERIA SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "20-10-2016",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FABRICACION DE OTROS PRODUCTOS TEXTILES N.C.P.",
+            "codigo": "139900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-10-2016"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE ARTICULOS DE PERFUMERIA, DE TOCADOR Y COSMETICOS",
+            "codigo": "477203",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-06-2020"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE OTROS PRODUCTOS EN COMERCIOS ESPECIALIZADOS N.C.",
+            "codigo": "477399",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-10-2016"
+          },
+          {
+            "actividades": "LAVADO Y LIMPIEZA, INCLUIDA LA LIMPIEZA EN SECO, DE PRODUCTOS TEXTILES",
+            "codigo": "960100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-10-2016"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boletas De Ventas Y Servicios",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2016"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "2.400,01 a 5.000,00",
+          "cantidadTrabajadores": 6
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:05:59"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 1,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 3,
+        "todosLosCasos": 3,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "30-05-2026 00:05:58",
+        "ultimaActualizacionCobranza": "30-05-2026 00:05:58",
+        "ultimaActualizacionLaboral": "30-05-2026 00:05:58",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:05:58"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:05:59"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "14-10-2016 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "977613",
+              "razonSocial": "LAVATEX LAVANDERIA SPA",
+              "cve": "ACjyUTlzhDZi",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACjyUTlzhDZi&codigo=69-FF-77-EA-46-6D-B8-2D-12-35-DC-50-D7-44-E7-97",
+              "socios": [
+                {
+                  "socio": "JAVIER ALFONSO ROMERO ARANGO",
+                  "rut": "14752403-K",
+                  "domicilio": "MONUMENTO N°1672A COMUNA DE MAIPU REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "5000",
+                  "monto": "$5.000.000 CLP",
+                  "porcentaje": null
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JAVIER ALFONSO ROMERO ARANGO",
+                  "rut": "14752403-K",
+                  "domicilio": "MONUMENTO N°1672A COMUNA DE MAIPU REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 19230,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 19230,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 2370,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 27300,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 27300,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 1450
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 2,
+          "tasacionTotal": 8444577,
+          "ultimaActualizacion": "24-03-2026 05:26:55"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "24-03-2026 05:26:55"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "LAVATEX LAVANDERIA SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a8514a5969a3a952580c5aa8ce3c559bbd2f7df2e2bef94fbd4f8a59ce7dc438",
+      "cached_at": "2026-05-30T00:06:00.527075"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Archivada Digital",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "06-10-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16172451-3",
+                "nombre": "FELIPE ANDRE CONTRERAS CARRASCO (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "93541000-2",
+                "nombre": "empresa hibu chile s.a.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76668247-2",
+                "nombre": "LAVATEX LAVANDERIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-27897-2017",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:05:59"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:aa5c64024de3aea5b8684517eb592239bccb9e28ff4c5409c289ec26d4367e65",
+        "cached_at": "2026-05-30T00:06:00.872226"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-08-2019 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76668247-2",
+                "nombre": "LAVATEX LAVANDERIA SPA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "5402197-6",
+                "nombre": "Patricio Elgueta Adrovez",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-40116-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:05:59"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:55d37a529f18e64a6c36297e5c64fecea66240193d34762658269aa1b6e5ffca",
+        "cached_at": "2026-05-30T00:06:01.232692"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-03-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14221952-2",
+                "nombre": "NADIA NOEMÍ MUÑOZ COYOPAY (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17953644-7",
+                "nombre": "ELSO ANDRÉS PIZARRO NÚÑEZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17386140-0",
+                "nombre": "MIGUEL ANGEL MENDOZA MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76668247-2",
+                "nombre": "LAVATEX LAVANDERIA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "26439041-9",
+                "nombre": "JORGE GEOVANI TORO ORTIZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-581-2021",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:05:59"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8e540a8ecb7a68732210f072c9389d89a5c687b7ceaa063b29327fb7bd0dadb1",
+        "cached_at": "2026-05-30T00:06:01.641274"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:05:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:edf5a1e05b82419ad0247533c00aed3577a3d05c06345918dd5d30281429d9e2",
+        "cached_at": "2026-05-30T00:06:02.001756"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:05:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e491f46742dbe9fc550d8b902f1e9ccff412979cf9d5e37126f5d16811b4b300",
+        "cached_at": "2026-05-30T00:06:02.358171"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76668247-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "LAVATEX LAVANDERIA SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "LAVATEX LAVANDERIA SPA",
+            "rutSociedad": "76668247-2",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2016-10-14",
+            "socios": [
+              {
+                "nombre": "JAVIER ALFONSO ROMERO ARANGO",
+                "rut": "14752403-K",
+                "domicilio": "WASHINGTON 2562, 5 PISO, OFICINA 310A",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2016-10-15",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACjyUTlzhDZi&codigo=69-FF-77-EA-46-6D-B8-2D-12-35-DC-50-D7-44-E7-97"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:91719525721c5a61c474c39c4acf96aa71132947e29cd9b2aa672593d4bbcfea",
+      "cached_at": "2026-05-30T00:06:03.082302"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76668247-2",
+        "empresaEnUnDia": [
+          {
+            "fecha": "14-10-2016 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "977613",
+            "razonSocial": "LAVATEX LAVANDERIA SPA",
+            "cve": "ACjyUTlzhDZi",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACjyUTlzhDZi&codigo=69-FF-77-EA-46-6D-B8-2D-12-35-DC-50-D7-44-E7-97",
+            "socios": [
+              {
+                "socio": "JAVIER ALFONSO ROMERO ARANGO",
+                "rut": "14752403-K",
+                "domicilio": "MONUMENTO N°1672A COMUNA DE MAIPU REGION METROPOLITANA DE SANTIAGO",
+                "acciones": "5000",
+                "monto": "$5.000.000 CLP",
+                "porcentaje": null
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JAVIER ALFONSO ROMERO ARANGO",
+                "rut": "14752403-K",
+                "domicilio": "MONUMENTO N°1672A COMUNA DE MAIPU REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:fb439e00d9bfaea01eeb798a40d33de496da91294d796ca6eba30c4467416e15",
+        "cached_at": "2026-05-30T00:06:03.468533"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 19230,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 3,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5f46d4fb34939989ceedcd3f43b25d0471e08624cc6705a4e210b0fdf8f34815",
+      "cached_at": "2026-05-30T00:06:04.226623"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "pathCount": 12,
+  "relationships": [
+    {
+      "source": "96557720",
+      "target": "15341526",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-09-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96557720",
+      "target": "59284770",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1614631",
+        "cve": "1614631",
+        "shares_percent": 99.968,
+        "source": "DO",
+        "published_at": "2019-07-01",
+        "doc_extraction_id": "2117171",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2019/07/01/42392/05/1614631.pdf"
+      }
+    },
+    {
+      "source": "96557720",
+      "target": "59284760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1614631",
+        "cve": "1614631",
+        "shares_percent": 0.032,
+        "source": "DO",
+        "published_at": "2019-07-01",
+        "doc_extraction_id": "2117171",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2019/07/01/42392/05/1614631.pdf"
+      }
+    },
+    {
+      "source": "96557720",
+      "target": "59284770",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.96843756,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96557720",
+      "target": "59284760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.03156245,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "99567090",
+      "target": "15341526",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-07-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76418331",
+      "target": "15341526",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-08-25",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76093571",
+      "target": "15341526",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-09-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59284770",
+      "target": "15341526",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-10-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59284760",
+      "target": "15341526",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-11-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76418331",
+      "target": "15341526",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACZb7UfjWUnn",
+        "source": "RES",
+        "published_at": "2017-11-10"
+      }
+    },
+    {
+      "source": "76418331",
+      "target": "15341526",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACfXLWfkJxZE",
+        "source": "RES"
+      }
+    }
+  ],
+  "entityNames": {
+    "15341526": "JULIO CESAR VALDIVIA PEREZ",
+    "59284760": "OCAPAC HOLDING COMPANY UNLIMITED COMPANY",
+    "59284770": "ACME ACQUISITION LLC",
+    "76093571": "ACONEX CHILE SPA",
+    "76418331": "VALDIVIA PÉREZ ABOGADOS LIMITADA",
+    "96557720": "SISTEMAS ORACLE DE CHILE LIMITADA",
+    "99567090": "MICROS FIDELIO CHILE S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:088b3c184f169b6829f66d5797edb712734b919476c885a94d32f267177e1b7e",
+    "cached_at": "2026-05-30T00:08:45.868673"
+  }
+}

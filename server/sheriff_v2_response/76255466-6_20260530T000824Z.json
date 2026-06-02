@@ -1,0 +1,3759 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76255466-6"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76255466-6",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "SAP CHILE LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "21-12-2012",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Sin observaciones.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "VENTA AL POR MAYOR NO ESPECIALIZADA",
+            "codigo": "469000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "21-12-2012"
+          },
+          {
+            "actividades": "VENTA AL POR MENOR DE COMPUTADORES, EQUIPO PERIFERICO, PROGRAMAS INFOR",
+            "codigo": "474100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-11-2014"
+          },
+          {
+            "actividades": "ACTIVIDADES DE PROGRAMACION INFORMATICA",
+            "codigo": "620100",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "21-12-2012"
+          },
+          {
+            "actividades": "SERVICIOS PERSONALES DE EDUCACION",
+            "codigo": "854902",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "21-12-2012"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Facturas De Exportacion",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura De Exportacion Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota De Debito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Nota De Credito Exportacion Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Libro Compras-Ventas",
+            "ultimoAnioTimbrado": "2014"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 17,
+        "ultimaActualizacion": "06-05-2026 19:50:37",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "más de 1.000.000,01",
+          "cantidadTrabajadores": 152
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 2,
+        "casosBolcom": 0,
+        "MontoInfocom": 4040883,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 4040883
+        },
+        "ultimaActualizacion": "30-05-2026 00:08:19"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 2,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 0,
+        "laboralPresentados": 1,
+        "laboralConcluidos": 1,
+        "casosActuales": 1,
+        "casosArchivados": 2,
+        "casosConcluidos": 4,
+        "todosLosCasos": 7,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "acreedor": 1,
+          "demandado": 1,
+          "denunciado": 1
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:10:22",
+        "ultimaActualizacionCobranza": "28-05-2026 03:10:19",
+        "ultimaActualizacionLaboral": "28-05-2026 03:12:03",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 7,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 250,
+            "cambioAbsoluto": 5
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:08:19"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:08:20"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 12,
+          "tasacionTotal": 232121937,
+          "ultimaActualizacion": "02-04-2026 14:20:52"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "02-04-2026 14:20:40"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 0,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 200,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "SAP CHILE LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:742587fd18dc12f2b3bb777f0d675e92efce31c7af002f6382d36431e9b1ec53",
+      "cached_at": "2026-05-30T00:08:21.141123"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 4,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Tramitación",
+            "fechaIngreso": "05-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "8270154-0",
+                "nombre": "ANTONIO RICARDO ÁLAMOS AVENDAÑO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "26808272-7",
+                "nombre": "MELISA CAROLINA LOPEZ GONZALEZ",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18326182-7",
+                "nombre": "ERIC ANTONIO PEÑALOZA CORNEJO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13961482-8",
+                "nombre": "GABRIELA LORETO LEAL RIQUELME (Sin Acreditacion)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20191430-2",
+                "nombre": "EDIAN FELIPE ARANCIBIA PILQUINAO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19656304-0",
+                "nombre": "JOAQUÍN ANDRÉS ROJAS-MAY CARRASCO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14121674-0",
+                "nombre": "DANIEL ORSINI YACONI (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17810316-4",
+                "nombre": "CRISTIAN ANDRÉS MUÑOZ LEVILL (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13998978-3",
+                "nombre": "DANIEL HUMBERTO GUTIÉRREZ ORLANDI (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "26333876-6",
+                "nombre": "MARIA LORENZA RANGEL",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19551359-7",
+                "nombre": "ROCÍO DEL PILAR LÓPEZ RIVEROS (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "25768567-5",
+                "nombre": "NATHALY LEMOS CALDERON (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18638119-K",
+                "nombre": "CATALINA ALEJANDRA UNDA RODRÍGUEZ (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18865751-6",
+                "nombre": "HELIOT IGNACIO PALMA CUEVAS (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15706255-7",
+                "nombre": "ALEX HUMBERTO MUÑOZ MIÑO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "FRANCISCO JOSÉ WALTERSDORFER RIVERA",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14119150-0",
+                "nombre": "PAOLA ALEJANDRA ZÚÑIGA SERRANO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10789171-4",
+                "nombre": "FRANCISCO ANDRÉS BAÑADOS GEYWITZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19602893-5",
+                "nombre": "NICOLÁS ANTONIO CAJTAK RIOSECO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7558754-6",
+                "nombre": "CARLOS EUGENIO CASTRO CASTRO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13548976-K",
+                "nombre": "MANUEL JOSÉ DÍAZ DE VALDÉS HERRERA (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13066019-3",
+                "nombre": "VÍCTOR IGNACIO ROJAS SILVA (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11770155-7",
+                "nombre": "VÍCTOR JOEL ESPINOSA AGURTO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13686892-6",
+                "nombre": "JOHANNA ALEJANDRA HINRICHSEN PARRA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16014085-2",
+                "nombre": "FERNANDO MIGUEL PÉREZ ZAPATA (Sin Acreditacion)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18300586-3",
+                "nombre": "SEBASTIÁN IGNACIO DÍAZ CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13686086-0",
+                "nombre": "DANIEL PATRICIO CARRASCO TORO (Sin Acreditacion)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15820906-3",
+                "nombre": "ABBY STEPHANY FLIES AÑON (Sin Acreditacion)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17285984-4",
+                "nombre": "CAMILA PAZ CHAPARRO GUERRERO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19475675-5",
+                "nombre": "MARÍA FRANCISCA SAIEH FERNÁNDEZ (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15669533-5",
+                "nombre": "ELIZABETH KAREN SANTANDER MORALES (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15782561-5",
+                "nombre": "PAULINA JESÚS CASTRO ORELLANA (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13671419-8",
+                "nombre": "ÁLVARO ANDRÉS MOLINA LEIVA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13774270-5",
+                "nombre": "MAURICIO ANTONIO PEÑA TOLEDO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19753941-0",
+                "nombre": "NICOLÁS EDUARDO TRANAMÁN SANTIBÁÑEZ (Sin Acreditacion)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13831554-1",
+                "nombre": "MAY CONZUELO GUTIÉRREZ OTTO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15679645-K",
+                "nombre": "CRISTIAN ANTONIO HENRÍQUEZ DÍAZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16143658-5",
+                "nombre": "MARÍA IGNACIA AGUILERA BRICEÑO (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19280769-7",
+                "nombre": "DANIEL ALEJANDRO ROMÁN ACEVEDO (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11222860-8",
+                "nombre": "ENRIQUE MARCO ANTONIO ORTIZ D'AMICO",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13882348-2",
+                "nombre": "RODRIGO AUGUSTO DÍAZ DE VALDÉS BALBONTÍN (Sin Acreditacion)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19686251-K",
+                "nombre": "CAROLINA IGNACIA HAGEMANN LOIS (Sin Acreditacion)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16212079-4",
+                "nombre": "JOSÉ PABLO RENCORET VALDÉS (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15735904-5",
+                "nombre": "JAMES ROBERT BLACK DUVANCED (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16574174-9",
+                "nombre": "MANUEL IGNACIO DE LA PRIDA CONTRERAS (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9908931-8",
+                "nombre": "CRISTIAN AMÉRICO GANDARILLAS SERANI (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17961548-7",
+                "nombre": "DANIELA FERNANDA HERRERA BUSCO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15734541-9",
+                "nombre": "IGNACIO ANDRÉS ALARCÓN FALLAU (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14081260-9",
+                "nombre": "RICARDO ANTONIO LÓPEZ VYHMEISTER (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17320178-8",
+                "nombre": "PABLO JAVIER SALAMANCA CARRASCO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6613073-8",
+                "nombre": "VICENTE ALFONSO DE LA FUENTE MONTANÉ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20164041-5",
+                "nombre": "JOSÉ AGUSTÍN ARRATIA CONTRERAS (Poder Amplio)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19323637-5",
+                "nombre": "PABLO GABRIEL RIOSECO GRIFFERO (Poder Amplio)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12123758-K",
+                "nombre": "SERGIO ENRIQUE YAVAR CELEDÓN (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15374304-5",
+                "nombre": "FERNANDA ANDREA ÓRDENES MARÍN (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18640121-2",
+                "nombre": "MICHELLE ANDREA MOLINA BURGOS (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15932008-1",
+                "nombre": "DANIELA MARGARITA FUENTES ORMAZÁBAL (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11625023-3",
+                "nombre": "JAIME TAGLE LETELIER (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6068654-8",
+                "nombre": "RAÚL JOSÉ RENCORET DOMÍNGUEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9858765-9",
+                "nombre": "JOSÉ JOAQUÍN LAGOS VELASCO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19555216-9",
+                "nombre": "SEBASTIÁN LORENZO VEGA SALVO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10689134-6",
+                "nombre": "BRUNO FELIPE CARRIQUIRY BERNER (Sin Acreditacion)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18069059-K",
+                "nombre": "DANIEL ESTEBAN LEPE MARTÍNEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13915024-4",
+                "nombre": "JORGE GONZALO MARTÍNEZ ALDUNATE (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15665649-6",
+                "nombre": "JUAN JOSÉ FLORES FUENTES (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17698913-0",
+                "nombre": "FRANCISCO FERNANDO MARTÍNEZ AGUIRRE (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16099546-7",
+                "nombre": "JUAN ENRIQUE NAZAR MUÑIZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12418457-6",
+                "nombre": "AÍDA DE LAS MERCEDES GAETE PACHECO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10315593-2",
+                "nombre": "WALDO FARÍAS FRITSCH (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15333256-8",
+                "nombre": "ROCÍO ORNELLA VERGARA SASSARINI (Sin Acreditacion)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16793998-8",
+                "nombre": "DOMINIQUE GISELLE LUCHSINGER FARET (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19637223-7",
+                "nombre": "CAMILA ANDREA JOVEL PINEDO (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11625541-3",
+                "nombre": "MATÍAS SANHUEZA FONTAINE (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18397320-7",
+                "nombre": "MARÍA DE LOS ANGELES GUAJARDO BUSTOS (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18808022-7",
+                "nombre": "MARTINA SOFÍA QUEIROLO MANRÍQUEZ (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17408188-3",
+                "nombre": "JUAN PABLO RUIZ DE GAMBOA ARIAS (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13722870-K",
+                "nombre": "JUAN ALEJANDRO VÁSQUEZ RETAMAL",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13233643-1",
+                "nombre": "SEBASTIÁN IGNACIO FERNÁNDEZ DEL PINO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16909630-9",
+                "nombre": "PILAR ALEJANDRA CAAMAÑO ARAVENA (Poder Simple)",
+                "sujeto": "AP.LIQ",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17687340-K",
+                "nombre": "CONSTANZA BELÉN CUADRA MIRANDA (Poder Simple)",
+                "sujeto": "AP.LIQ",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13470603-1",
+                "nombre": "PRISCILLA ESTRELLA HORTA MORALES (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19135185-1",
+                "nombre": "VICENTE JORGE ARACENA SALGADO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16471672-4",
+                "nombre": "MANUELA ANTONINA CROSS PEY (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19289970-2",
+                "nombre": "PAOLA ELIANA BALLAS HESSIN (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13830619-4",
+                "nombre": "CRISTÓBAL GUERRERO CORTÉS (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13847910-2",
+                "nombre": "JUAN IGNACIO TORRES FOLLERT (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17839062-7",
+                "nombre": "EDUARDO ESTEBAN PEÑA GARAVITO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16210104-8",
+                "nombre": "RAÚL ANDRÉS DELL'ORO PALMA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13472887-6",
+                "nombre": "RAMÓN IGNACIO BRIONES MONTALDO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14409886-2",
+                "nombre": "SEBASTIÁN SÁNCHEZ LÓPEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19539720-1",
+                "nombre": "FERNANDA SAAVEDRA RENARD (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8779420-2",
+                "nombre": "GUSTAVO ALEJANDRO ORTIZ RAMÍREZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15959835-7",
+                "nombre": "DANIEL IGNACIO MORGADO MAIZA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11947866-9",
+                "nombre": "RUBÉN EMILIO VARGAS RODRÍGUEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16384439-7",
+                "nombre": "VALESKA YOSELYN LÓPEZ YÁÑEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17409014-9",
+                "nombre": "LUIS FELIPE RIEDEL MARTÍNEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14081260-9",
+                "nombre": "RICARDO ANTONIO LÓPEZ VYHMEISTER",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16766841-0",
+                "nombre": "FELIPE ALEJANDRO ANANÍAS LAMA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10406977-0",
+                "nombre": "RAFAEL VICENTE GONZÁLEZ MONTAUBAN (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "FRANCISCO JOSÉ TOCORNAL FUENZALIDA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13496673-4",
+                "nombre": "PAULA ANDREA PIZARRO SAN MARTÍN (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15333063-8",
+                "nombre": "RENÉ EDUARDO SOTTOLICHIO ROJAS (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10033757-6",
+                "nombre": "DAGOBERTO ENRIQUE PAREDES MALDONADO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6590398-9",
+                "nombre": "JUAN PABLO DOMÍNGUEZ BALMACEDA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10922077-9",
+                "nombre": "PABLO ANDRÉS CAGLEVIC MEDINA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19891092-9",
+                "nombre": "ISIDORA CATALINA CORREA GODOY (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19438365-7",
+                "nombre": "CAMILO ANDRÉS MUÑOZ RUBIO (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13692282-3",
+                "nombre": "FERNANDA JAVIERA GUAJARDO LEAL (Poder Simple)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9978406-7",
+                "nombre": "LUCÍA LORETO CASTELLANO UGARTE (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18171851-K",
+                "nombre": "ANTONIO JOSÉ SARTORI JORDÁN (Sin Acreditacion)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16768325-8",
+                "nombre": "SERGIO MATÍAS IGNACIO SEPÚLVEDA SALAMANCA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17701001-4",
+                "nombre": "MARCELO IGNACIO FUENTES MEDINA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18168625-1",
+                "nombre": "JAVIER SANTIAGO GAJARDO NOVILLO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "5905985-8",
+                "nombre": "EDUARDO VICENTE ALARCÓN BRITO",
+                "sujeto": "ACRDOR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7040252-1",
+                "nombre": "ROLANDO MUSIET TALGUIA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18934018-4",
+                "nombre": "MARÍA IGNACIA ARRATIA SALINAS (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13546133-4",
+                "nombre": "CRISTÓBAL MARCELO SARRALDE GONZÁLEZ (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17086879-K",
+                "nombre": "CRISTIAN EDUARDO CALDERÓN BESSI (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10599983-6",
+                "nombre": "CRISTIAN ANDRÉS PALACIOS VERGARA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17414810-4",
+                "nombre": "IGNACIO ESTEBAN SAAVEDRA OLGUÍN (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11978479-4",
+                "nombre": "MATÍAS JOSÉ PRIETO ALCALDE (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16319923-8",
+                "nombre": "CRISTIAN ANDRÉS AGUILERA AGUILERA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17776459-0",
+                "nombre": "JAVIER ESTEBAN MOLINA VERGARA (Poder Simple)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13671562-3",
+                "nombre": "SIMÓN SERGIO ANÍBAL LUIS ALFONSO RICARDO ZAÑARTU GOMIEN (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12467279-1",
+                "nombre": "ENZO LEONARDO COPPA HURTADO (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14141745-2",
+                "nombre": "FELIPE RUBÉN DUHALDE VERA (Poder Amplio)",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18488429-1",
+                "nombre": "TOMÁS VICENTE AGUSTÍN MELÉNDEZ MORAGA (Sin Acreditacion)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18233278-K",
+                "nombre": "MARCEL ANDREE SIRONVALLE GAETE (Sin Acreditacion)",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14738958-2",
+                "nombre": "LINA MARCELA CALLEJAS RAMIREZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15720045-3",
+                "nombre": "FRANCISCO ANDRÉS MOYA NAULIN",
+                "sujeto": "AB.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19246871-K",
+                "nombre": "NICOLÁS VALDÉS IRARRÁZAVAL",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12883203-3",
+                "nombre": "RICARDO ANDRÉS REVECO URZÚA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18934169-5",
+                "nombre": "FRANCISCO JOSÉ TORM METZ",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18539894-3",
+                "nombre": "GUSTAVO ADOLFO MARTIN PEÑA",
+                "sujeto": "AP.ACR",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10381036-1",
+                "nombre": "XIMENA LORETO VERA BARRIENTOS",
+                "sujeto": "LIQUID",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76960424-3",
+                "nombre": "ADMINISTRADORA DE FONDOS DE PENSIONES UNO",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96861280-8",
+                "nombre": "EUROCAPITAL S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77719596-4",
+                "nombre": "KAPITALLIS SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76693083-2",
+                "nombre": "7 CUMBRES FACTORING SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96800570-7",
+                "nombre": "ENEL DISTRIBUCION CHILE S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96667560-8",
+                "nombre": "TANNER SERVICIOS FINANCIEROS S.A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76981875-8",
+                "nombre": "CONTEMPORA COMPAÑÍA DE SEGUROS GENERALES S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "61979440-0",
+                "nombre": "IPS",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "98000000-1",
+                "nombre": "ADMINISTRADORA DE FONDOS DE PENSIONES CAPITAL S.A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77601648-9",
+                "nombre": "ADM. DE FONDOS DE CESANTIA CHILE III S.A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76762250-3",
+                "nombre": "AFP MODELO",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76205358-6",
+                "nombre": "FOUNDERSOFT S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96572800-7",
+                "nombre": "ISAPRE BANMÉDICA S. A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96502530-8",
+                "nombre": "ISAPRE VIDA TRES S. A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76296619-0",
+                "nombre": "ISAPRE COLMENA GOLDEN CROSS SA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96856780-2",
+                "nombre": "ISAPRE CONSALUD",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96928800-1",
+                "nombre": "ADPORTAS MEDIA GROUP S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "92040000-0",
+                "nombre": "IBM DE CHILE S.A.C.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99520000-7",
+                "nombre": "EMPRESAS COPEC S.A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76039285-5",
+                "nombre": "ARRIENDO DE EQUIPOS Y SERVICIOS TERREAU CIA LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76203708-4",
+                "nombre": "LATIN PARTS SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76360977-4",
+                "nombre": "PRIMUS CAPITAL S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "78561520-4",
+                "nombre": "METRICA SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76713293-K",
+                "nombre": "NLD ABOGADOS ASOCIADOS LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76168421-3",
+                "nombre": "MVG COMPUTACIÓN LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "89912300-K",
+                "nombre": "INGENIERIA Y CONSTRUCCION RICARDO RODRIGUEZ Y CIA. LTDA.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76937530-9",
+                "nombre": "NLD ABOGADOS SPA,",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76487733-0",
+                "nombre": "INSSIDE INFORMACION INTELIGENTE SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77346355-7",
+                "nombre": "KYNDRYL CHILE SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77266524-5",
+                "nombre": "OPENTEC SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "83547100-4",
+                "nombre": "AUTORENTAS DEL PACÍFICO SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77010351-7",
+                "nombre": "ROCKET MEDIA SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77915170-0",
+                "nombre": "TD SYNNEX CHILE LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76378507-6",
+                "nombre": "ASESORIA Y CONSULTORIA EN  TELECOMUNICACIONES E INFORMATICA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76180467-7",
+                "nombre": "INMOBILIARIA KENNEDY PLAZA LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "78428750-5",
+                "nombre": "INVERSIONES BARTOLOMÉ LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96580060-3",
+                "nombre": "ADEXUS S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "79569020-4",
+                "nombre": "AGENCIA DE VIAJES MUNDO TOUR LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96896440-2",
+                "nombre": "SAC CHILE S.A. (GLOBAL  CROSSING)",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76032107-9",
+                "nombre": "FDD INNOVACIÓN & CRECIMIENTO SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76133068-3",
+                "nombre": "MARIO ANDRÉS SEPÚLVEDA VÁSQUEZ IMPORTACIÓN Y COMERCIALIZACIÓN DE VEHÍCULOS, REPUESTOS Y ACCESORIOS E",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77296159-6",
+                "nombre": "TECNIO INGENIERÍA &  SOLUCIONES",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "85896100-9",
+                "nombre": "SERVICIOS EQUIFAX CHILE LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96756680-2",
+                "nombre": "IRON MOUNTAIN CHILE S A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77480780-2",
+                "nombre": "INVERSIONES AUTOMOTRICES LTDA.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76967060-2",
+                "nombre": "ROAD INGENIERIA LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77620570-2",
+                "nombre": "HP FINANCIAL SERVICES (CHILE) LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76390833-K",
+                "nombre": "RANKMI SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96794750-4",
+                "nombre": "AVANT SERVICIOS INTEGRALES S.A. STARKEN SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76291105-1",
+                "nombre": "JYM SERVICIOS TI Y  CABLEADO ESTRUCTURADO LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "88983600-8",
+                "nombre": "GTD TELEDUCTOS S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76893429-0",
+                "nombre": "SERVICIOS TECNO SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "SAP CHILE LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "78338910-K",
+                "nombre": "MAINSOFT S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76773193-0",
+                "nombre": "ASESORES Y CONSULTORES EN INFORMATICA  MARCELO MORA EIRL",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96721280-6",
+                "nombre": "GTD TELESAT S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76240079-0",
+                "nombre": "AFP CUPRUM SA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96651910-K",
+                "nombre": "COMPASS CATERING S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76509092-K",
+                "nombre": "STI SERVICIOS SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76430395-4",
+                "nombre": "QUADMINDS CHILE SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99576570-5",
+                "nombre": "INTELIGENCIA DE NEGOCIOS, S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96777170-8",
+                "nombre": "SK RENTAL S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81826800-9",
+                "nombre": "LOS ANDES CCAF",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76466468-K",
+                "nombre": "BCI CORREDOR DE BOLSA DE PRODUCTOS S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "79966730-4",
+                "nombre": "SISTEMA Y REDES LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76037480-6",
+                "nombre": "GENESYS TECNOLOGIAS DE INFORMACION",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96919050-8",
+                "nombre": "ACEPTA.COM S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77219044-1",
+                "nombre": "XLC XEPELIN FONDO DE INVERSIÓN PRIVADO",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76256968-K",
+                "nombre": "SERVICIOS PROFESIONALES DE CONSULTORÍA SANDINO MARTÍNEZ FUENTES E.I.R.L.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77279166-6",
+                "nombre": "OTCONSULTING SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77545677-9",
+                "nombre": "NGF SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99593350-0",
+                "nombre": "TANDEM S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76124890-1",
+                "nombre": "TELEFONICA MÓVILES CHILE S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "59197250-2",
+                "nombre": "SERVICIOS FINANCIEROS INTCOMEX LLC",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "78703410-1",
+                "nombre": "TELEFÓNICA EMPRESAS CHILE S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76119769-K",
+                "nombre": "SIGA RENTAL LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76877009-3",
+                "nombre": "FONDO DE INVERSIÓN PRIVADO FACTURAS",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99012000-5",
+                "nombre": "CIA. DE SEGUROS VIDA CONSORCIO NACIONAL DE SEGUROS S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76696269-6",
+                "nombre": "NORTHTEK INGENIERIA LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "90635000-9",
+                "nombre": "TELEFÓNICA CHILE S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96806980-2",
+                "nombre": "EMPRESA NACIONAL DE TELECOMUNICACIONES S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "92580000-7",
+                "nombre": "EMPRESA NACIONAL DE TELECOMUNICACIONES S.A. (ENTEL CHILE S.A.)",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77083642-5",
+                "nombre": "WORLD NEXUS SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76152777-0",
+                "nombre": "CONSULTORA FREESAP LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76768946-2",
+                "nombre": "VOISSNET CLOUD SERVICES SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76188587-1",
+                "nombre": "VICTORIA S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77466910-8",
+                "nombre": "INGENIERIA CARO Y CARO LIMITADA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76284864-3",
+                "nombre": "TRANSPORTES CARGOEX TRANSCOURRIER LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77765481-0",
+                "nombre": "SERVICIOS DE TELECOMUNICACIONES Y ELECTRICIDAD SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76744880-5",
+                "nombre": "ATC INGENIEROS SOCIEDAD ANÓNIMA EST",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77448000-5",
+                "nombre": "E-PRESS ASESORES DE PRENSA E IMAGEN CORPORATIVA LTDA.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76867894-4",
+                "nombre": "JESSCAR SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77757569-4",
+                "nombre": "LA TEMPLANZA SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76859891-6",
+                "nombre": "SERVICIOS SMARTER SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "99524110-2",
+                "nombre": "LICENCIAS ON LINE S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76434454-5",
+                "nombre": "STORAGE MEDIA SPA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76150523-8",
+                "nombre": "NEXSYS DE CHILE S.A.",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "77684416-0",
+                "nombre": "DELOITTE ASESORIAS LEGALES Y TRIBUTARIAS LTDA",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96580060-3",
+                "nombre": "TANDEM CHILE S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "78137000-2",
+                "nombre": "INGRAM MICRO CHILE S.A",
+                "sujeto": "ACRDOR",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Liquidación Voluntaria",
+            "rol": "C-10404-2024",
+            "tribunal": "15º Juzgado Civil de Santiago",
+            "sujeto": "ACRDOR",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada ",
+            "fechaIngreso": "18-11-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96580060-3",
+                "nombre": "ADEXUS S.A.  ",
+                "sujeto": "DDOR. ",
+                "persona": "J"
+              },
+              {
+                "rut": "12883203-3",
+                "nombre": "RICARDO ANDRÉS REVECO URZÚA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16208150-0",
+                "nombre": "ROBERTO CRISTIAN VILLASECA VIAL",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17957120-K",
+                "nombre": "ANDRÉS IGNACIO LAFUENTE QUIROZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18934169-5",
+                "nombre": "FRANCISCO JOSÉ TORM METZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "96565580-8",
+                "nombre": "CIA. DE LEASING TATTERSALL S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "96556930-8",
+                "nombre": "SODEXHO PASS CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "8779556-K",
+                "nombre": "ASTRID GERALDINE VERDUGO PARADA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18145958-1",
+                "nombre": "JOSÉ ANTONIO ESPINOSA FERNÁNDEZ",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15254259-3",
+                "nombre": "BERTA PILAR CASTRO ZELADA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18168625-1",
+                "nombre": "JAVIER SANTIAGO GAJARDO NOVILLO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "8689681-8",
+                "nombre": "FERNANDO JAVIER SANTIBÁÑEZ SOTO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18637420-7",
+                "nombre": "RICARDO DANIEL ARANDA GUTIÉRREZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16371168-0",
+                "nombre": "ISABEL MARGARITA BRAVO PUIG",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18635846-5",
+                "nombre": "ANTONIA CATALINA FERNÁNDEZ ARROYO",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16154556-2",
+                "nombre": "ARTURO ALEJANDRO FONTECILLA MONTT",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15378500-7",
+                "nombre": "PABLO RICARDO KLIMA GOLBORNE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76235918-9",
+                "nombre": "ALERO EIRL  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "96633760-5",
+                "nombre": "MICROSOFT CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "11625349-6",
+                "nombre": "JOSÉ MIGUEL RIED UNDURRAGA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16209255-3",
+                "nombre": "RICARDO JOSÉ ABOGABIR CORREA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18104571-K",
+                "nombre": "ELENA ISABEL VALENZUELA SILVA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17089038-8",
+                "nombre": "RODRIGO IGNACIO HAIQUEL BELART",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "13433104-6",
+                "nombre": "JAIME FELIPE SILVA BRUCE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "9907605-4",
+                "nombre": "CARLOS RODRIGO NELSON EFFA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "12123758-K",
+                "nombre": "SERGIO ENRIQUE YAVAR CELEDÓN",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "78338910-K",
+                "nombre": "MAINSOFT S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "15784651-5",
+                "nombre": "CAMILA ANTONIA FLORES DELPIANO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10461266-0",
+                "nombre": "RODRIGO NOVOA URENDA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16809182-6",
+                "nombre": "GONZALO JAVIER ÁVILA FAGUETT",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76150523-8",
+                "nombre": "NEXSYS DE CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17600666-8",
+                "nombre": "JUAN CÉSAR PABLO KEHR CASTILLO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76509092-K",
+                "nombre": "STI SERVICIOS SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76104326-9",
+                "nombre": "CCIEXPRESS SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76140676-0",
+                "nombre": "FT VENDOR FINANCE CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17405575-0",
+                "nombre": "DANIELA PAZ GÓMEZ DRAGO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "14506537-2",
+                "nombre": "FELIPE BUNSTER ECHENIQUE",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "8779420-2",
+                "nombre": "GUSTAVO ALEJANDRO ORTIZ RAMÍREZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76430395-4",
+                "nombre": "QUADMINDS CHILE SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "10461266-0",
+                "nombre": "RODRIGO NOVOA URENDA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17959653-9",
+                "nombre": "SEBASTIÁN ANDRÉS RUISEÑOR ARAOS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76246428-4",
+                "nombre": "SLS LATAM CHILE SAA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16831200-8",
+                "nombre": "MAUREEN ALEXANDRA GROB HADIDA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16016243-0",
+                "nombre": "JENNIFFER PAOLA PAREDES GUZMÁN",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "65156280-5",
+                "nombre": "CLUD ANDES  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "6097144-7",
+                "nombre": "GUSTAVO RAFAEL ZÚÑIGA KRAUSS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "6590398-9",
+                "nombre": "JUAN PABLO DOMÍNGUEZ BALMACEDA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96539380-3",
+                "nombre": "EDICIONES FINANCIERAS S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "13685972-2",
+                "nombre": "IGNACIO RIED UNDURRAGA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96896440-2",
+                "nombre": "SAC CHILE S.A. (GLOBAL  CROSSING",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76800593-1",
+                "nombre": "MACAPITAL SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "sap chile ltda  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16376947-6",
+                "nombre": "DANIEL ALEJANDRO CORTÉS SILVA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10035017-3",
+                "nombre": "ARMANDO BENJAMÍN CUMMINS SANTA MARÍA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76639129-K",
+                "nombre": "ARITECH SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16940543-3",
+                "nombre": "JULIO ANDRÉS SEPÚLVEDA MOLINE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76493211-0",
+                "nombre": "SOLUCIONES TECNOLOGICAS S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16726491-3",
+                "nombre": "MÓNICA CECILIA VALDIVIESO ELISSETCHE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96843140-4",
+                "nombre": "DISTRIBUIDORA CUMMINS CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "9070188-6",
+                "nombre": "FERNANDO URRUTIA BASCUÑÁN",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10567206-3",
+                "nombre": "FRANCISCO JAVIER BARTUCEVIC SÁNCHEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16094649-0",
+                "nombre": "ANDRÉS JOSÉ SEPÚLVEDA DÍAZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16371077-3",
+                "nombre": "JOSÉ TOMÁS DEL CAMPO DE LA ROSA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "14006475-0",
+                "nombre": "RACHID DANTE RUIZ CUELLAR",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "6291945-0",
+                "nombre": "JORGE CHRISTIAN GUERRERO VELÁSQUEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "90635000-9",
+                "nombre": "TELEFONICA CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "88983600-8",
+                "nombre": "GTD TELEDUCTOS S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "88808700-1",
+                "nombre": "SATEL ELECTRICIDAD LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "99595990-9",
+                "nombre": "LATAM TRADE CAPITAL S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "12467279-1",
+                "nombre": "ENZO LEONARDO COPPA HURTADO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "12404075-2",
+                "nombre": "DIEGO JOSÉ BENAVENTE DÍAZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17519533-5",
+                "nombre": "CATALINA DANAE CABEZAS CÉSPEDES",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "6068654-8",
+                "nombre": "RAÚL JOSÉ RENCORET DOMÍNGUEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16212079-4",
+                "nombre": "JOSÉ PABLO RENCORET VALDÉS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76218919-4",
+                "nombre": "AXESAT CHILE SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "15308559-5",
+                "nombre": "CARLOS SEBASTIÁN MARÍN MÁRQUEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16069033-K",
+                "nombre": "KARINA ASTRID LEVERONE QUEVEDO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17084905-1",
+                "nombre": "JOSÉ JOAQUÍN MEZA MAGGI",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "14118728-7",
+                "nombre": "RODRIGO JOSÉ ALMARZA CARVAJAL",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16574358-K",
+                "nombre": "NICOLÁS VIOLLIER CAPELLI",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17268655-9",
+                "nombre": "FELIPE IGNACIO ALLENDE LIQUITAY",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10350869-K",
+                "nombre": "JAVIER SAN MARTÍN ARJONA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "11947866-9",
+                "nombre": "RUBÉN EMILIO VARGAS RODRÍGUEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76180467-7",
+                "nombre": "INMOBILIARIA KENNEDY PLAZA LTDA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "18642347-K",
+                "nombre": "DIEGO LEDERMANN ACOSTA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18465741-4",
+                "nombre": "JAVIER ANDRÉS MATURANA OYANEDEL",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17443298-8",
+                "nombre": "ADACILA ANDREA CARRASCO VALENZUELA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96726200-5",
+                "nombre": "ONDULADORES DE CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16656032-2",
+                "nombre": "LUIS NICOLÁS RIESCO SUÁREZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "8548722-1",
+                "nombre": "JOSÉ IGNACIO CÁRDENAS GEBAUER",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96861280-8",
+                "nombre": "EUROCAPITAL S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "96678680-9",
+                "nombre": "HEWLLETT PACKARD DE CHILE S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16885620-2",
+                "nombre": "CAROLINA NATALIA SALDÍAS RUSSELL",
+                "sujeto": "AB. SO",
+                "persona": "N"
+              },
+              {
+                "rut": "15341766-0",
+                "nombre": "PABLO ANDRÉS DÍAZ GONZÁLEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "99525100-0",
+                "nombre": "GAMA LEASING OPERATIVO SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76656353-8",
+                "nombre": "AF TECNOLOGA Y PROYECTOS SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16768285-5",
+                "nombre": "TOMÁS BENJAMÍN YÁÑEZ MONTERO",
+                "sujeto": "ACRDOR",
+                "persona": "N"
+              },
+              {
+                "rut": "17596165-8",
+                "nombre": "VESNA ANDREA TORRENS JURIN",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "12851814-2",
+                "nombre": "ANDRÉS RAMIRO FERNÁNDEZ MÉNDEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "11846642-K",
+                "nombre": "ÁLVARO GUILLERMO ASTABURUAGA GATICA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "7354163-8",
+                "nombre": "JORGE ALAN GOMPERTZ PUMARINO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16094984-8",
+                "nombre": "CRISTIAN PÉREZ LARRAÍN",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76566000-9",
+                "nombre": "OVERSEAS LOGISTICAS CHILE S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17702310-8",
+                "nombre": "MARÍA DE LOS ANGELES HERMOSILLA VARAS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "13905385-0",
+                "nombre": "GONZALO ANDRÉS GONZÁLEZ GOYENECHEA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "8666801-7",
+                "nombre": "MAXIMILIANO JOSÉ STONE MANDIOLA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96667560-8",
+                "nombre": "TANNER SERVICIOS FINANCIEROS S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "6590398-9",
+                "nombre": "JUAN PABLO DOMÍNGUEZ BALMACEDA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "9356989-K",
+                "nombre": "ANGELA MARÍA MARGARITA ARTEAGA VIAL",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15016876-7",
+                "nombre": "ANTONIO ALEJANDRO LÓPEZ PARDO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17703742-7",
+                "nombre": "JOAQUÍN IGNACIO BARNACHEA VÁSQUEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76744880-5",
+                "nombre": "ATC INGENIEROS S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17727597-2",
+                "nombre": "STEFANIE ANDREA HOPFNER ASMUSSEN",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18642347-K",
+                "nombre": "DIEGO LEDERMANN ACOSTA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10254961-9",
+                "nombre": "ANTONIO PÉREZ DONOSO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76741123-5",
+                "nombre": "XLC DEUDA DIRECTA FONDO INVERSION PRIVADO  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "10551295-3",
+                "nombre": "ENRIQUE EDUARDO RODRÍGUEZ DONATTI",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16940349-K",
+                "nombre": "SEBASTIAN ALBERTO LLONA SOLIS DE OVANDO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96705940-4",
+                "nombre": "INTCOMEX S A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "15121668-4",
+                "nombre": "SERGIO ESTEBAN SOTO MORI",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17409014-9",
+                "nombre": "LUIS FELIPE RIEDEL MARTÍNEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "99524110-2",
+                "nombre": "LICENCIAS ON LINE S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "77164280-2",
+                "nombre": "TANNER LEASING VENDOR LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "78428750-5",
+                "nombre": "inversiones Bartolomé Limitada  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76466468-K",
+                "nombre": "BCI CORREDOR DE BOLSA DE PRODUCTOS S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "9485902-6",
+                "nombre": "RODOLFO DANIEL FUENZALIDA SANHUEZA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "10789171-4",
+                "nombre": "FRANCISCO ANDRÉS BAÑADOS GEYWITZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "83628100-4",
+                "nombre": "SONDA S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17029214-6",
+                "nombre": "FELIPE ANDRE SAVRON CARRASCO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "13548878-K",
+                "nombre": "OSCAR ANDRÉS BRETON JARA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15644313-1",
+                "nombre": "TOMAS KUBICK ORREGO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17560968-7",
+                "nombre": "SEBASTIÁN ANDRÉS FUENTES PRINCE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76596744-9",
+                "nombre": "chita spa  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "10981240-4",
+                "nombre": "JUAN SEBASTIÁN PORTALES VELASCO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "78535560-1",
+                "nombre": "PRODUCCIONES MUNDO LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "18166588-2",
+                "nombre": "MELANIE KATE RUSSELL WEITZEL",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "59157750-6",
+                "nombre": "CIENA INTERNATIONAL INC. AGENCIA EN CHILE  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "18465094-0",
+                "nombre": "GERARDO ANTONIO GUTIÉRREZ RIQUELME",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17268655-9",
+                "nombre": "FELIPE IGNACIO ALLENDE LIQUITAY",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15377983-K",
+                "nombre": "MATÍAS IGNACIO MALLOL ARELLANO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76855605-9",
+                "nombre": "DLA PIPER BAZ NLD SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16610536-6",
+                "nombre": "CAMILA GABRIELA RAMÍREZ VARGAS",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "14548451-0",
+                "nombre": "RODRIGO IGNACIO BUSTAMANTE GAETE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "12853717-1",
+                "nombre": "ANTONIO FERNANDO MARGOZZINI GRAN",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "13611827-7",
+                "nombre": "GIAN CARLO LORENZINI ROJAS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "6613073-8",
+                "nombre": "VICENTE ALFONSO DE LA FUENTE MONTANÉ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "9978406-7",
+                "nombre": "LUCÍA LORETO CASTELLANO UGARTE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "14081260-9",
+                "nombre": "RICARDO ANTONIO LÓPEZ VYHMEISTER",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76080198-4",
+                "nombre": "DE LAGE LANDEN S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76134123-5",
+                "nombre": "DESARROLLO WEB ILÓGICA LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "6929081-7",
+                "nombre": "CRISTIAN ANDRÉS BUZETA ROACH",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17628757-8",
+                "nombre": "EDUARDO ALBERTO CORTÉS TORO",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17596165-8",
+                "nombre": "VESNA ANDREA TORRENS JURIN",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "8066508-3",
+                "nombre": "FÉLIX ANTONIO VERGARA RUIZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16099011-2",
+                "nombre": "JOSÉ TOMÁS LAGOS MANTEROLA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "8979446-3",
+                "nombre": "EDUARDO CRISTIAN AMÉSTICA MORA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "9215376-2",
+                "nombre": "MATÍAS CRISTIAN BERNDT ALZÉRRECA",
+                "sujeto": "ACRDOR",
+                "persona": "N"
+              },
+              {
+                "rut": "9128196-1",
+                "nombre": "SERGIO RODRIGO ESPINOZA MORRAL",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76360977-4",
+                "nombre": "PRIMUS CAPITAL SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "9908931-8",
+                "nombre": "CRISTIAN AMÉRICO GANDARILLAS SERANI",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "98001200-K",
+                "nombre": "AFP PLANVITAL SA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76532190-5",
+                "nombre": "EUROAMERICA SERVICIOS FINANCIEROS S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "18171851-K",
+                "nombre": "ANTONIO JOSÉ SARTORI JORDÁN",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "76877009-3",
+                "nombre": "FONDO DE INVERSIÓN PRIVADO FACTURAS  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16319923-8",
+                "nombre": "CRISTIAN ANDRÉS AGUILERA AGUILERA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18465741-4",
+                "nombre": "JAVIER ANDRÉS MATURANA OYANEDEL",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96670840-9",
+                "nombre": "DIMERC S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "76927721-8",
+                "nombre": "MUNDO PAPELES SPA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "11834142-2",
+                "nombre": "CARLOS FELIPE FUENZALIDA ARENAS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96643410-4",
+                "nombre": "RECUPEROS S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "79966730-4",
+                "nombre": "SISTEMA Y REDES LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17406262-5",
+                "nombre": "SEBASTIÁN NICOLÁS MOLLEDA KATALINIC",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16067653-1",
+                "nombre": "DIEGO NICOLÁS VALDEBENITO VÉLIZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "97006000-6",
+                "nombre": "BANCO DE CRÉDITO E INVERSIONES  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "16885620-2",
+                "nombre": "CAROLINA NATALIA SALDÍAS RUSSELL",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17084905-1",
+                "nombre": "JOSÉ JOAQUÍN MEZA MAGGI",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16482875-1",
+                "nombre": "ROCÍO AMAPOLA LÓPEZ GANDARILLAS",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96543670-7",
+                "nombre": "CAM Chile SpA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "17086879-K",
+                "nombre": "CRISTIAN EDUARDO CALDERÓN BESSI",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16069033-K",
+                "nombre": "KARINA ASTRID LEVERONE QUEVEDO",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "83547100-4",
+                "nombre": "AUTORENTAS DEL PACIFICO LTDA.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "15348577-1",
+                "nombre": "ERNESTO EDUARDO PÉREZ VERA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "77915170-0",
+                "nombre": "AFINA SISTEMAS INFORMATIVOS LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "11625541-3",
+                "nombre": "MATÍAS SANHUEZA FONTAINE",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17409576-0",
+                "nombre": "FELIPE EDUARDO GUZMÁN MÉNDEZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "78137000-2",
+                "nombre": "INGRAM MICRO CHILE S.A  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "10963081-0",
+                "nombre": "TOMÁS COX FERRER",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17110007-0",
+                "nombre": "CLAUDIO OSCAR MANUEL ARAVENA SIGALA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "96626570-1",
+                "nombre": "INCOFIN S.A.  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "77620570-2",
+                "nombre": "HP FINANCIAL SERVICES CHILE LIMITADA  ",
+                "sujeto": "ACRDOR",
+                "persona": "J"
+              },
+              {
+                "rut": "10922077-9",
+                "nombre": "PABLO ANDRÉS CAGLEVIC MEDINA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18063716-8",
+                "nombre": "KARINA DEYANIRA ARAVENA VALENCIA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15720045-3",
+                "nombre": "FRANCISCO ANDRÉS MOYA NAULIN",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15644540-1",
+                "nombre": "CLAUDIA PAZ ESCOBAR DÍAZ",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17406326-5",
+                "nombre": "ANDRÉS SALVADOR CUEVAS BRAUN",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16016598-7",
+                "nombre": "BENJAMÍN PEDRO MATÍAS AGUSTÍN FERRADA WALKER",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "19323637-5",
+                "nombre": "PABLO GABRIEL RIOSECO GRIFFERO",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18299065-5",
+                "nombre": "ROSARIO DEL PILAR DÍAZ FERNÁNDEZ",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18667446-4",
+                "nombre": "PAULA LORETO VÁSQUEZ SILVA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "17860154-7",
+                "nombre": "VICTORIA PAZ VALLEJO FABRES",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "15374304-5",
+                "nombre": "FERNANDA ANDREA ÓRDENES MARÍN",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18172022-0",
+                "nombre": "VICENTE JOSÉ CHOMON DEL CAMPO",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "22939281-6",
+                "nombre": "MURIEL POIRIER ",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18268398-1",
+                "nombre": "DAVID AARON NAVEA MOYA",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "19078921-7",
+                "nombre": "SARA JOSEFINA CROZIER GONZÁLEZ",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "14689075-K",
+                "nombre": "MILTON EZEQUIEL GUTCOVSKY ",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "18730311-7",
+                "nombre": "SEBASTIÁN ANDRÉS FUENTES CLAVEL",
+                "sujeto": "AP.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16210104-8",
+                "nombre": "RAÚL ANDRÉS DELL&#039;ORO PALMA",
+                "sujeto": "ACRDOR",
+                "persona": "N"
+              },
+              {
+                "rut": "16210104-8",
+                "nombre": "RAÚL ANDRÉS DELL&#039;ORO PALMA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              },
+              {
+                "rut": "16210104-8",
+                "nombre": "RAÚL ANDRÉS DELL&#039;ORO PALMA",
+                "sujeto": "AB.ACR",
+                "persona": "N"
+              }
+            ],
+            "proc": "Reorganización Concursal",
+            "rol": "C-32898-2019",
+            "tribunal": "15º Juzgado Civil de Santiago",
+            "sujeto": "ACRDOR",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva",
+            "fechaIngreso": "26-09-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11656590-0",
+                "nombre": "CHRISTIAN MARCELLE RUIZ VARAS (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76230257-8",
+                "nombre": "Inversiones y Asesorias Cota Superior",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "sap chile ltda",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-27005-2017",
+            "tribunal": "6º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "19-09-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "11656590-0",
+                "nombre": "CHRISTIAN MARCELLE RUIZ VARAS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10627309-K",
+                "nombre": "LEONEL FRANCISCO GRAFF AGUERREBERE",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "sap chile ltda  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76230257-8",
+                "nombre": "Inversiones y Asesorias Cota Superior  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-25913-2017",
+            "tribunal": "6º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:430b17eb83cb89f5221f81351a7d74b5afe0abb0e43c3e3df20eb6a527a8fd04",
+        "cached_at": "2026-05-30T00:08:21.723101"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-02-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "SAP CHILE LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-7708-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:bc3b498926168b9d3770754d741d349a08529e8a57b14aba0e5d29bf196bd238",
+        "cached_at": "2026-05-30T00:08:22.061742"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-06-2023 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10335696-2",
+                "nombre": "RODRIGO ALEXIS VILLABLANCA POBLETE",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "SAP CHILE LTDA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "11643053-3",
+                "nombre": "FERNANDO MIGUEL LOHSE VALENZUELA",
+                "sujeto": "AP.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "11643053-3",
+                "nombre": "FERNANDO MIGUEL LOHSE VALENZUELA (Poder Simple)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1467-2023",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "03-10-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10958123-2",
+                "nombre": "KAREN ANRIETH SANDOVAL GAJARDO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19133262-8",
+                "nombre": "CLAUDIA ANDREA GUZMÁN VALENZUELA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19133262-8",
+                "nombre": "CLAUDIA ANDREA GUZMÁN VALENZUELA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18502835-6",
+                "nombre": "CATALINA PAZ GRANIC VILLANUEVA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16838974-4",
+                "nombre": "CLAUDIO QUEZADA DE LA JARA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17189246-5",
+                "nombre": "LUIS ALBERTO SILVA ROJAS (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "26517374-8",
+                "nombre": "JHORDAN ALFREDO DELGADO ZERPA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "77339220-K",
+                "nombre": "TACORAY CIA. LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76901857-3",
+                "nombre": "TACORA ASEO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15665354-3",
+                "nombre": "CAROLINA ANDREA GALARCE WENZEL (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15833358-9",
+                "nombre": "MIGUEL ERNESTO MERINO ORDENES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76255466-6",
+                "nombre": "SAP CHILE LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-5506-2021",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:08:19"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1bf22f6178f583fa5c8a15cb7c807864692c10b4e9d67b720f49dc91ac9fbd5a",
+        "cached_at": "2026-05-30T00:08:22.417815"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "28-05-2026 03:10:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:733c3431c2c5e4c08237571fc2950ee7d851163d3738f79b4e8047f327b47f07",
+        "cached_at": "2026-05-30T00:08:22.760147"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 22,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO SLUD ",
+            "periodo": "02/2026",
+            "rutAfiliado": "25009575-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "02/2026",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "01/2026",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO SLUD ",
+            "periodo": "01/2026",
+            "rutAfiliado": "25009575-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO SLUD ",
+            "periodo": "12/2025",
+            "rutAfiliado": "25009575-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO SLUD ",
+            "periodo": "11/2025",
+            "rutAfiliado": "25009575-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "11/2025",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA BORZATTO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "24987617-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATALIA RODRIGUEZ AVELLANEDA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "26590970-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "10/2025",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO SLUD ",
+            "periodo": "10/2025",
+            "rutAfiliado": "25009575-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA BORZATTO ",
+            "periodo": "09/2025",
+            "rutAfiliado": "24987617-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATALIA RODRIGUEZ AVELLANEDA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "26590970-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO SLUD ",
+            "periodo": "09/2025",
+            "rutAfiliado": "25009575-9",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIA LAURA FUSARO ",
+            "periodo": "09/2025",
+            "rutAfiliado": "23681278-2",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "09/2025",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TANIA MEJIAS RIQUELME ",
+            "periodo": "08/2025",
+            "rutAfiliado": "14150797-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATALIA RODRIGUEZ AVELLANEDA ",
+            "periodo": "08/2025",
+            "rutAfiliado": "26590970-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CAROLINA BORZATTO ",
+            "periodo": "08/2025",
+            "rutAfiliado": "24987617-8",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:10:22"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:30889390e653d28a44db360366d11bb79b174b8bcad77028fcb111da69dcd662",
+        "cached_at": "2026-05-30T00:08:23.122514"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76255466-6",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "SAP CHILE LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SAP CHILE LIMITADA",
+            "rutSociedad": "76255466-6",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2013-04-09",
+            "socios": [
+              {
+                "nombre": "JUAN PABLO MATUS PICKERING",
+                "rut": "6373290-7",
+                "domicilio": "AVENIDA ANDRÉS BELLO NÚMERO 2711, PISO 19, COMUNA DE LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "LEONEL GRAFF AGUERREBERE",
+                "rut": "10627309-K",
+                "domicilio": "ROSARIO NORTE NO100 PISO 13, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "0.01"
+              },
+              {
+                "nombre": "SAP  AG",
+                "rut": "59189880-9",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.999"
+              },
+              {
+                "nombre": "SAP ARGENTINA S.A.",
+                "rut": "59186000-3",
+                "domicilio": "ROSARIO NORTE NÚMERO CIEN, PISO TRECE, COMUNA DE LAS CONDES, REGIÓN METROPOLITANA, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "99.99"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2013-05-10",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2013/05/10/637859_M_LTDA_20130510_firmado.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2013-04-10",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2013/04/10/624870_C_LTDA_20130410_firmado.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2012-12-21",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2012/12/21/581529_C_LTDA_20121221_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:145d37d0f00c80f96ae76f55aa78140dcdc2b8d26fce21582ff58615d10328a0",
+      "cached_at": "2026-05-30T00:08:23.748111"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76255466-6",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8bb93c46f5e901b94af02b62f737408cf0ad2b36c3e21a677c7e3c1cd66e1e3b",
+        "cached_at": "2026-05-30T00:08:24.121062"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 5,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 7,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 100,
+      "montoBoletinComercial": 4040883,
+      "ponderacionBoletinComercial": 0,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 200,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:eb264998d1c290c63b4277fcc59249706caa92317ebed4d212c6533305cfffa2",
+      "cached_at": "2026-05-30T00:08:24.715396"
+    }
+  }
+}

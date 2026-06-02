@@ -1,0 +1,650 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76805897-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76805897-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "31-05-2026",
+      "identificacion": {
+        "razonSocial": "ASESORÍA ITO DE OBRA LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "30-01-2018",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS PERSONALES N.C.P.",
+            "codigo": "960909",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "01-01-2023"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2019"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 4,
+        "ultimaActualizacion": "31-05-2026 21:41:07",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "5.000,01 a 10.000,00",
+          "cantidadTrabajadores": 14
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": null,
+        "ultimaActualizacionCobranza": null,
+        "ultimaActualizacionLaboral": null,
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:41:06"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "31-05-2026 21:41:06"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "21-06-2018 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "1670202",
+              "razonSocial": "ASESORIA ITO DE OBRA LIMITADA",
+              "cve": "AC7GoMz2gwPW",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7GoMz2gwPW&codigo=2F-21-09-66-F8-EF-7D-0C-CF-91-25-1A-61-A6-E8-83",
+              "socios": [
+                {
+                  "socio": "JORGE RENATO LILLO SAAVEDRA",
+                  "rut": "11825595-K",
+                  "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO",
+                  "acciones": null,
+                  "monto": "$500.000 CLP",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "PABLO ANDRES PURATIC BARRIA",
+                  "rut": "9716983-7",
+                  "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO",
+                  "acciones": null,
+                  "monto": "$500.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JORGE RENATO LILLO SAAVEDRA",
+                  "rut": "11825595-K",
+                  "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO"
+                },
+                {
+                  "administrador": "PABLO ANDRES PURATIC BARRIA",
+                  "rut": "9716983-7",
+                  "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO"
+                }
+              ]
+            },
+            {
+              "fecha": "23-11-2017 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "1454278",
+              "razonSocial": "ASESORIA ITO DE OBRA LIMITADA",
+              "cve": "ACRkxQkPGqc0",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACRkxQkPGqc0&codigo=47-08-2F-14-76-6E-57-FB-57-0F-E5-7B-4E-70-69-07",
+              "socios": [
+                {
+                  "socio": "JORGE RENATO LILLO SAAVEDRA",
+                  "rut": "11825595-K",
+                  "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO",
+                  "acciones": null,
+                  "monto": "$500.000 CLP",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "PABLO ANDRES PURATIC BARRIA",
+                  "rut": "9716983-7",
+                  "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO",
+                  "acciones": null,
+                  "monto": "$500.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JORGE RENATO LILLO SAAVEDRA",
+                  "rut": "11825595-K",
+                  "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO"
+                },
+                {
+                  "administrador": "PABLO ANDRES PURATIC BARRIA",
+                  "rut": "9716983-7",
+                  "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "12/2025",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "06/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "31-05-2026 21:41:07"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ASESORÍA ITO DE OBRA LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:9ef49d21d450eeb82f066f07cf399a32be6b3572a8d91f76840f729b80c6bb82",
+      "cached_at": "2026-05-31T21:41:08.066163"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:57cafe1bc30bfd73052d44cd27d316398065cb8259f2355c01f11574f7cd925f",
+        "cached_at": "2026-05-31T21:41:08.427287"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c5ab067708299abab838743e6c13c9682f7104162ea99ab709552add1c545bad",
+        "cached_at": "2026-05-31T21:41:08.769100"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:741c595dc9a19c566428004ca3d4d2eea9196243ae0293e3c7c19df9679821e9",
+        "cached_at": "2026-05-31T21:41:09.129165"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6e232038a9ba40cf7e7ee8410bbf5348b62a7e29a9c9d161f52a1a821979842f",
+        "cached_at": "2026-05-31T21:41:09.475064"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "31-05-2026 21:41:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:20d2538c609c59a62cead34d0d9b6822b48dab4a13d0e8e1abb837c2635a6edd",
+        "cached_at": "2026-05-31T21:41:09.813396"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76805897-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ASESORÍA ITO DE OBRA LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ASESORÍA ITO DE OBRA LIMITADA",
+            "rutSociedad": "76805897-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2017-11-23",
+            "socios": [
+              {
+                "nombre": "JORGE RENATO LILLO SAAVEDRA",
+                "rut": "11825595-K",
+                "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "PABLO ANDRES PURATIC BARRIA",
+                "rut": "9716983-7",
+                "domicilio": "DOMICILIADO EN HUITO N°1560 DEPTO/LOCAL 26, COMUNA DE VALPARAISO, REGION DE VALPARAISO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-06-22",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7GoMz2gwPW&codigo=2F-21-09-66-F8-EF-7D-0C-CF-91-25-1A-61-A6-E8-83"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2017-11-24",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACRkxQkPGqc0&codigo=47-08-2F-14-76-6E-57-FB-57-0F-E5-7B-4E-70-69-07"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:edf3c4d512570f5d82e889f88d57b246082a343bc88c995e0e15d4ae12525610",
+      "cached_at": "2026-05-31T21:41:10.422415"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76805897-0",
+        "empresaEnUnDia": [
+          {
+            "fecha": "21-06-2018 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "1670202",
+            "razonSocial": "ASESORIA ITO DE OBRA LIMITADA",
+            "cve": "AC7GoMz2gwPW",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7GoMz2gwPW&codigo=2F-21-09-66-F8-EF-7D-0C-CF-91-25-1A-61-A6-E8-83",
+            "socios": [
+              {
+                "socio": "JORGE RENATO LILLO SAAVEDRA",
+                "rut": "11825595-K",
+                "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO",
+                "acciones": null,
+                "monto": "$500.000 CLP",
+                "porcentaje": "50%"
+              },
+              {
+                "socio": "PABLO ANDRES PURATIC BARRIA",
+                "rut": "9716983-7",
+                "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO",
+                "acciones": null,
+                "monto": "$500.000 CLP",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JORGE RENATO LILLO SAAVEDRA",
+                "rut": "11825595-K",
+                "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO"
+              },
+              {
+                "administrador": "PABLO ANDRES PURATIC BARRIA",
+                "rut": "9716983-7",
+                "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO"
+              }
+            ]
+          },
+          {
+            "fecha": "23-11-2017 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "1454278",
+            "razonSocial": "ASESORIA ITO DE OBRA LIMITADA",
+            "cve": "ACRkxQkPGqc0",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACRkxQkPGqc0&codigo=47-08-2F-14-76-6E-57-FB-57-0F-E5-7B-4E-70-69-07",
+            "socios": [
+              {
+                "socio": "JORGE RENATO LILLO SAAVEDRA",
+                "rut": "11825595-K",
+                "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO",
+                "acciones": null,
+                "monto": "$500.000 CLP",
+                "porcentaje": "50%"
+              },
+              {
+                "socio": "PABLO ANDRES PURATIC BARRIA",
+                "rut": "9716983-7",
+                "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO",
+                "acciones": null,
+                "monto": "$500.000 CLP",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "JORGE RENATO LILLO SAAVEDRA",
+                "rut": "11825595-K",
+                "domicilio": "FELIPE II N°720 VILLA LOS FUNDADORES COMUNA DE VALPARAISO REGION DE VALPARAISO"
+              },
+              {
+                "administrador": "PABLO ANDRES PURATIC BARRIA",
+                "rut": "9716983-7",
+                "domicilio": "DORIS MARTINEZ N°708 VILLA LOMAS DEL SOL COMUNA DE QUILPUE REGION DE VALPARAISO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:80175b2a0a7a4c4dae700f4a9e703b360106ee7ff6107375a134e3be0ca29e8c",
+        "cached_at": "2026-05-31T21:41:10.785879"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:dc2887fdb1c708bb90a654f65fb4f01f9b23aafcfb473dacb9fd2ff8f2433aa9",
+      "cached_at": "2026-05-31T21:41:11.410894"
+    }
+  }
+}

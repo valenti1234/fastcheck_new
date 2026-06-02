@@ -1,0 +1,33 @@
+{
+  "pathCount": 2,
+  "relationships": [
+    {
+      "source": "76629062",
+      "target": "13682054",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-06-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78114266",
+      "target": "13682054",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-02-24",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "13682054": "FRANCISCO ANTONIO VARGAS VALENCIA",
+    "76629062": "LIBRE DE RIESGOS SPA",
+    "78114266": "LUMILED SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:d06bb50242ec098aa87319918342b272aa7cb5dd21c7887d32815a6405fb13f3",
+    "cached_at": "2026-06-01T17:05:28.419472"
+  }
+}

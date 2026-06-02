@@ -1,0 +1,4800 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76911070-4"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76911070-4",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "ALIANZA SEGURIDAD LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "10-08-2007",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Sin observaciones.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR EMPRESAS",
+            "codigo": "801001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-08-2007"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boletas De Honorarios Electronicas",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2008"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 10,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "200.000,01 a 600.000,00",
+          "cantidadTrabajadores": 8345
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "29-05-2026 16:19:42"
+      },
+      "judicial": {
+        "casosCivilesActivos": 2,
+        "casosCivilesPresentados": 8,
+        "casosCivilesConcluidos": 14,
+        "cobranzaActivos": 62,
+        "cobranzaPresentados": 5,
+        "cobranzaConcluidos": 32,
+        "laboralActivos": 300,
+        "laboralPresentados": 74,
+        "laboralConcluidos": 297,
+        "casosActuales": 364,
+        "casosArchivados": 87,
+        "casosConcluidos": 343,
+        "todosLosCasos": 794,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 299,
+          "demandante": 14,
+          "reclamante": 84,
+          "denunciado": 54
+        },
+        "ultimaActualizacionCiviles": "28-05-2026 03:15:42",
+        "ultimaActualizacionCobranza": "28-05-2026 03:15:06",
+        "ultimaActualizacionLaboral": "28-05-2026 03:16:43",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 70,
+          "empleados": 36,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 37.25,
+            "cambioAbsoluto": 19
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 50,
+          "montoTotalMultas": 191844338,
+          "multasPagadas": 50,
+          "montoMultasPagadas": 191844338,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "29-05-2026 16:19:42"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "08-01-2016 21:00:00",
+              "razonSocial": "ALIANZA SEGURIDAD LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/01/09/985234_M_LTDA_20160109.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "ALBERTO VICENTE RIQUELME VENEGAS",
+                  "rut": "7047749-1",
+                  "domicilio": "PASAJE SOTERO DEL RIO TRESCIENTOS VEINTISÉIS OFICINA SETECIENTOS TRES, SANTIAGO"
+                },
+                {
+                  "socio": "HUGO EUSEBIO IBACETA CERDA",
+                  "rut": "8844277-6",
+                  "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "76911070-4"
+            },
+            {
+              "fecha": "28-08-2019 20:00:00",
+              "razonSocial": "ALIANZA SEGURIDAD LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/08/29/42441/05/1645792.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "ALBERTO VICENTE RIQUELME VENEGAS",
+                  "rut": "7047749-1",
+                  "domicilio": "PASAJE SOTERO DEL RIO TRESCIENTOS VEINTISÉIS OFICINA SETECIENTOS TRES, SANTIAGO"
+                },
+                {
+                  "socio": "HUGO EUSEBIO IBACETA CERDA",
+                  "rut": "8844277-6",
+                  "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "MARYSOL DE LAS MERCEDES CERDA ORTIZ",
+                  "rut": "5978199-5",
+                  "domicilio": "CALLE RANCAGUA Nº 544, PROVIDENCIA"
+                }
+              ],
+              "rut": "76911070-4"
+            },
+            {
+              "fecha": "06-04-2021 20:00:00",
+              "razonSocial": "REAL SEGURIDAD SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/07/42923/05/1922904.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MANUEL ANTONIO LAZCANO TELLO",
+                  "rut": "14282510-4",
+                  "domicilio": "CALLE TEGUALDA NÚMERO DOS MIL CINCUENTA Y DOS OFICINA C, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "CAROL IRENE IBACETA CERDA",
+                  "rut": "8835749-3",
+                  "domicilio": "VICUÑA MACKENNA N 327, DEPARTAMENTO 216, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "HUGO EUSEBIO IBACETA CERDA",
+                  "rut": "8844277-6",
+                  "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "77023462-K"
+            },
+            {
+              "fecha": "18-04-2021 20:00:00",
+              "razonSocial": "REAL SEGURIDAD SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/19/42933/05/1929233.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "CAROL IRENE IBACETA CERDA",
+                  "rut": "8835749-3",
+                  "domicilio": "VICUÑA MACKENNA N 327, DEPARTAMENTO 216, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "HUGO EUSEBIO IBACETA CERDA",
+                  "rut": "8844277-6",
+                  "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "77023462-K"
+            }
+          ],
+          "ultimaActualizacion": "29-05-2026 16:19:41"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 2059780,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 2778850,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 1442120,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 211450,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 2463530,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 3338370,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 1575330,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 188230
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "04-05-2026 21:06:29"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "04-05-2026 21:06:28"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50.51546391752577,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 10.897435897435884,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 261.41289981496163,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "nombre": "ALIANZA SEGURIDAD LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "critical",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 11,
+            "riesgo": "critical"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8ac9a2d6df9d90ff5323543e859273b3600ff8c156681102610568f27500e0d2",
+      "cached_at": "2026-05-29T16:19:43.681019"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 24,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "29-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13299451-K",
+                "nombre": "JULIO HÉCTOR QUIÑINAO GUTIÉRREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19148739-7",
+                "nombre": "RODRIGO ALBERTO VÁSQUEZ SANTIBÁÑEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19355145-9",
+                "nombre": "STEFANY ALEXANDRA CASTAÑEDA ZEGARRA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-1572-2026",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Contestación",
+            "fechaIngreso": "22-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15543789-8",
+                "nombre": "DANIELA ANDREA ALLENDE MUÑOZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION COMUNAL DEL TRABAJO DE PROVIDENCIA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11636358-5",
+                "nombre": "JUAN FRANCISCO DÁVILA CAMPUSANO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-15660-2022",
+            "tribunal": "6º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada",
+            "fechaIngreso": "15-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCIÓN PROVINCIAL DEL TRABAJO DE CARDENAL CARO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11456922-4",
+                "nombre": "LUIS ALBERTO BRAVO DÍAZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-308-2022",
+            "tribunal": "Juzgado de Letras y Gar.de Pichilemu",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "12-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13214218-1",
+                "nombre": "MARCO ANTONIO ARMESTO ROMERO (Poder Amplio)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17295139-2",
+                "nombre": "FELIPE ANTONIO LÓPEZ MONTENEGRO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO HUASCO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-564-2022",
+            "tribunal": "1º Juzgado de Letras de Vallenar",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Contestación",
+            "fechaIngreso": "11-12-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13214218-1",
+                "nombre": "MARCO ANTONIO ARMESTO ROMERO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6263196-1",
+                "nombre": "JOSÉ MIGUEL SAGREDO SANHUEZA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVINCIAL  DEL TRABAJO DE COPIAPO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6263196-1",
+                "nombre": "JOSÉ MIGUEL SAGREDO SANHUEZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-2089-2022",
+            "tribunal": "1º Juzgado de Letras de Copiapó",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "04-02-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16100791-9",
+                "nombre": "STEFANIE ALEXANDRA RAMDOHR MONTGOMERY",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15368474-K",
+                "nombre": "JOSÉ TOMÁS ÁLVAREZ ESTENSSORO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17251741-2",
+                "nombre": "IGNACIO EDUARDO LETELIER JOFRÉ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10050070-1",
+                "nombre": "PATRICIO JAVIER PINTO HURTADO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17434187-7",
+                "nombre": "JOSÉ MIGUEL VERGARA DÍAZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14511424-1",
+                "nombre": "MARCELA FERNANDA PEÑA CUNI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12880071-9",
+                "nombre": "JESSICA PAOLA GALLEGOS ROMO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17628948-1",
+                "nombre": "NICOLÁS EDUARDO MIRANDA FIGUEROA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-1217-2022",
+            "tribunal": "1º Juzgado Civil de Puente Alto",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "04-02-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19081577-3",
+                "nombre": "MARÍA JESÚS DEL CASTILLO PARDOW",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18953805-7",
+                "nombre": "FRANCO IGNACIO LEÓN PARDO",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16100791-9",
+                "nombre": "STEFANIE ALEXANDRA RAMDOHR MONTGOMERY",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15368474-K",
+                "nombre": "JOSÉ TOMÁS ÁLVAREZ ESTENSSORO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17251741-2",
+                "nombre": "IGNACIO EDUARDO LETELIER JOFRÉ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10050070-1",
+                "nombre": "PATRICIO JAVIER PINTO HURTADO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17434187-7",
+                "nombre": "JOSÉ MIGUEL VERGARA DÍAZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14511424-1",
+                "nombre": "MARCELA FERNANDA PEÑA CUNI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12880071-9",
+                "nombre": "JESSICA PAOLA GALLEGOS ROMO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17628948-1",
+                "nombre": "NICOLÁS EDUARDO MIRANDA FIGUEROA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-112-2022",
+            "tribunal": "2º Juzgado De Letras De Talagante",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "04-02-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16100791-9",
+                "nombre": "STEFANIE ALEXANDRA RAMDOHR MONTGOMERY",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15368474-K",
+                "nombre": "JOSÉ TOMÁS ÁLVAREZ ESTENSSORO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17251741-2",
+                "nombre": "IGNACIO EDUARDO LETELIER JOFRÉ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10050070-1",
+                "nombre": "PATRICIO JAVIER PINTO HURTADO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17434187-7",
+                "nombre": "JOSÉ MIGUEL VERGARA DÍAZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14511424-1",
+                "nombre": "MARCELA FERNANDA PEÑA CUNI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12880071-9",
+                "nombre": "JESSICA PAOLA GALLEGOS ROMO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17628948-1",
+                "nombre": "NICOLÁS EDUARDO MIRANDA FIGUEROA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-162-2022",
+            "tribunal": "1º Juzgado de Letras de Los Angeles",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "19-01-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16100791-9",
+                "nombre": "STEFANIE ALEXANDRA RAMDOHR MONTGOMERY",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15368474-K",
+                "nombre": "JOSÉ TOMÁS ÁLVAREZ ESTENSSORO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17251741-2",
+                "nombre": "IGNACIO EDUARDO LETELIER JOFRÉ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10050070-1",
+                "nombre": "PATRICIO JAVIER PINTO HURTADO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17434187-7",
+                "nombre": "JOSÉ MIGUEL VERGARA DÍAZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14511424-1",
+                "nombre": "MARCELA FERNANDA PEÑA CUNI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12880071-9",
+                "nombre": "JESSICA PAOLA GALLEGOS ROMO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17628948-1",
+                "nombre": "NICOLÁS EDUARDO MIRANDA FIGUEROA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "19081577-3",
+                "nombre": "MARÍA JESÚS DEL CASTILLO PARDOW",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "8471444-5",
+                "nombre": "ALONSO BRUNO CAMILO GARCÍA ECHEGOYEN",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18953805-7",
+                "nombre": "FRANCO IGNACIO LEÓN PARDO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-172-2022",
+            "tribunal": "Juzgado de Letras de Peñaflor",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada ",
+            "fechaIngreso": "03-06-2020 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16085969-5",
+                "nombre": "JOSÉ MIGUEL VILLANUEVA ESPINOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76321038-3",
+                "nombre": "SOCIEDAD INMOBILIARIA SPORT CHILE LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-8634-2020",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Impugnación de Sentencia",
+            "fechaIngreso": "04-11-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16100791-9",
+                "nombre": "STEFANIE ALEXANDRA RAMDOHR MONTGOMERY (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15368474-K",
+                "nombre": "JOSÉ TOMÁS ÁLVAREZ ESTENSSORO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17251741-2",
+                "nombre": "IGNACIO EDUARDO LETELIER JOFRÉ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10050070-1",
+                "nombre": "PATRICIO JAVIER PINTO HURTADO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17434187-7",
+                "nombre": "JOSÉ MIGUEL VERGARA DÍAZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14511424-1",
+                "nombre": "MARCELA FERNANDA PEÑA CUNI (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9480702-6",
+                "nombre": "PATRICIO ALEJANDRO RODRÍGUEZ VIGNOLI (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12880071-9",
+                "nombre": "JESSICA PAOLA GALLEGOS ROMO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17628948-1",
+                "nombre": "NICOLÁS EDUARDO MIRANDA FIGUEROA (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17602865-3",
+                "nombre": "MARIELA IORANA SCHULZE CÓRDOVA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17267193-4",
+                "nombre": "ESTEBAN ANTONIO REBAGLIATI DÍAZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19081577-3",
+                "nombre": "MARÍA JESÚS DEL CASTILLO PARDOW (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-34393-2018",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "5 Impugnación de Sentencia",
+            "fechaIngreso": "30-11-2016 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13369747-0",
+                "nombre": "MANUEL ANTONIO AGURTO ESPARZA",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "14269086-1",
+                "nombre": "MARCELO EDUARDO CHANDÍA PEÑA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17943424-5",
+                "nombre": "BARBARA NILO DINAMARCA",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "7655891-4",
+                "nombre": "IRMA ELENA DE CARMEN SOTO RODRIGUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "61806000-4",
+                "nombre": " FISCO DE CHILE ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12889261-3",
+                "nombre": "GONZALO PATRICIO ESPINOZA URZZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-29685-2016",
+            "tribunal": "30º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "08-08-2013 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "53311652-3",
+                "nombre": " COMUNIDAD ECOBARRIO CASAGRANDE PARQUE 92",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-11201-2013",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Excepciones ",
+            "fechaIngreso": "31-03-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17668180-2",
+                "nombre": "LUIS HUMBERTO URIBE GUEVARA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-3385-2013",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "24-03-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "53311652-3",
+                "nombre": " COMUNIDAD ECOBARRIO CASAGRANDE PARQUE 92",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-3059-2013",
+            "tribunal": "4º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "05-03-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "53311652-3",
+                "nombre": " COMUNIDAD ECOBARRIO CASAGRANDE PARQUE 92",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Prep. recon de firma y conf de deuda",
+            "rol": "C-1797-2013",
+            "tribunal": "17º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "16-01-2013 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17668180-2",
+                "nombre": "LUIS HUMBERTO URIBE GUEVARA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-823-2013",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "19-12-2012 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17668180-2",
+                "nombre": "LUIS HUMBERTO URIBE GUEVARA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-28834-2012",
+            "tribunal": "26º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "12-12-2012 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9971552-9",
+                "nombre": "LUIS ALBERTO MORALES PIZARRO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-35493-2012",
+            "tribunal": "1º Juzgado Civil de San Miguel",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Ejecución de Sentencia",
+            "fechaIngreso": "11-12-2012 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12698147-3",
+                "nombre": "CRISTSBAL ANDRIS SEBASTIAN FUENTEALBA ALVEAR",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": " ALIANZA SEGURIDAD LIMITADA ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8669188-4",
+                "nombre": "JAIME GUSTAVO ADOLFO ROSALES BERGQVIST",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ordinario",
+            "rol": "C-28035-2012",
+            "tribunal": "5º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 16:19:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8f836c1dad608386530cc50c5b68d013de8342cf216158681d698324cf1b6952",
+        "cached_at": "2026-05-29T16:19:44.127763"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 5,
+        "cantidad": 99,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-04-2026 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "9515618-5",
+                "nombre": "MARISOL EUGENIA JOFRÉ CORVACHO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17369161-0",
+                "nombre": "JESÚS MANUEL CÁCERES VILLALOBOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "24505025-9",
+                "nombre": "KARINA PATRICIA COLQUE QUISPE",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18313898-7",
+                "nombre": "SOLANGE DEL CARMEN GONZÁLEZ VALERIO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76134941-4",
+                "nombre": "ADMINISTRADORA DE SUPERMERCADOS HIPER LT",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-33-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Arica",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "26-03-2026 21:00:00",
+            "monto": "1972978",
+            "litigantes": [
+              {
+                "rut": "9133149-7",
+                "nombre": "VÍCTOR MANUEL TORRES HERNÁNDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12910428-7",
+                "nombre": "ERIKA ADELINA VALDIVIA SOTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12520585-2",
+                "nombre": "FERNANDO MAURICIO MAUREIRA ORELLANA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A. (UNIMARC",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-73-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "03-02-2026 21:00:00",
+            "monto": "942622",
+            "litigantes": [
+              {
+                "rut": "20615066-1",
+                "nombre": "LUIS ALBERTO NORAMBUENA YÁÑEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12974685-8",
+                "nombre": "RICARDO LEONARDO CONTRERAS VERA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18313898-7",
+                "nombre": "SOLANGE DEL CARMEN GONZÁLEZ VALERIO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76042014-K",
+                "nombre": "WALMART CHILE S.A",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5-2026",
+            "tribunal": "Jdo. de Letras del Trabajo de Arica",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "12-01-2026 21:00:00",
+            "monto": "9434403",
+            "litigantes": [
+              {
+                "rut": "15194283-0",
+                "nombre": "GLORIA ISABEL ESPARZA CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A. (UNIMARC",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10453113-K",
+                "nombre": "JUAN PAULO MUÑOZ YÁÑEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13109934-7",
+                "nombre": "JUAN ALEJANDRO MONCADA SALAZAR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1-2026",
+            "tribunal": "Juzgado de Letras y Garantía de Cabrero",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "11-01-2026 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "13311709-1",
+                "nombre": "ROBERTO NAZARIO RIQUELME LEAL",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14610986-1",
+                "nombre": "JULIO CÉSAR ACUÑA LEIVA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10354302-9",
+                "nombre": "BRUNO GUSTAVO CAPRILE BIERMANN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19713793-2",
+                "nombre": "CARLA ALEJANDRA GARCÍA FILGUEIRA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12924442-9",
+                "nombre": "RICARDO RAÚL MUÑOZ FLORES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15519025-6",
+                "nombre": "PABLO JAVIER SANDOVAL SEGURA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17218048-5",
+                "nombre": "ALEJANDRO PATRICIO MOSCOSO SÁNCHEZ",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18031350-8",
+                "nombre": "MARÍA HELENA ORTIZ ROA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76134941-4",
+                "nombre": "ADMINISTRADORA DE SUPERMERCADOS HÍPER LIMITADA.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76032436-1",
+                "nombre": "HIPERMERCADO LIDER PRINCIPE DE GALES",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-28-2026",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "04-12-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "15685059-4",
+                "nombre": "XIMENA ANDREA ZEPEDA TORRES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17430082-8",
+                "nombre": "LORENA ANDREA QUIROGA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15010448-3",
+                "nombre": "VÍCTOR RODRIGO FUENTES PALACIOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17364677-1",
+                "nombre": "MARÍA DE LOS ANGELES DUBO CORTÉS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19979250-4",
+                "nombre": "LUIS OSVALDO MUÑOZ CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17659347-4",
+                "nombre": "NADIA CECILIA SANDOVAL AGÜERO",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9982583-9",
+                "nombre": "ANDRÉS IGNACIO KLENNER SOTO",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76833720-9",
+                "nombre": "ABARROTES ECONOMICOS  LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-37-2025",
+            "tribunal": "Jdo. de Letras y Garantía de Alto Hospicio",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "22-10-2025 21:00:00",
+            "monto": "471660",
+            "litigantes": [
+              {
+                "rut": "13358796-9",
+                "nombre": "MANUEL ARTURO ROJAS IBACACHE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA DE SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10917834-9",
+                "nombre": "JORGE ANDRÉS PÉREZ CONEJEROS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15730650-2",
+                "nombre": "HUMBERTO RAMÓN PADILLA ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16748244-9",
+                "nombre": "ROBERTO HÉCTOR RUIZ SANTOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8835749-3",
+                "nombre": "CAROL IRENE IBACETA CERDA",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4499-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "09-10-2025 21:00:00",
+            "monto": "848135",
+            "litigantes": [
+              {
+                "rut": "21204742-2",
+                "nombre": "NICOLÁS ALEJANDRO GAJARDO RUIZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13511241-0",
+                "nombre": "ÁLVARO RODRIGO BRAVO SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7130396-9",
+                "nombre": "HÉCTOR ROLANDO ALARCÓN DELGADO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12192201-0",
+                "nombre": "CARLOS PATRICIO CÁRDENAS SEPÚLVEDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A. (UNIMARC",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-211-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "08-10-2025 21:00:00",
+            "monto": "1011657",
+            "litigantes": [
+              {
+                "rut": "14473267-7",
+                "nombre": "HERALDO MARCELO VEGA EPULEF",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13221595-2",
+                "nombre": "ROSA MARÍA ISABEL SOTOMAYOR SÁNCHEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12856549-3",
+                "nombre": "MARGARITA ALEJANDRA AZÚA SOTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "77215640-5",
+                "nombre": "ADMINISTRADORA DE VENTAS AL DETALLE LTDA. (ARCOPRIME LTDA.)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-341-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "06-10-2025 21:00:00",
+            "monto": "881101",
+            "litigantes": [
+              {
+                "rut": "11638928-2",
+                "nombre": "ALEJANDRO CÉSAR MOLINA NAVARRO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9933298-0",
+                "nombre": "DANTE PAOLO RIGHETTI MAUREIRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13892011-9",
+                "nombre": "CARMEN PATRICIA VÉLIZ SILVA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-113-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Curicó",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "06-10-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCION PROVINCIAL DEL TRABAJO DE PROVIDENCIA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19755171-2",
+                "nombre": "MARÍA PAZ BENAVENTE CASTRO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16693216-5",
+                "nombre": "DIEGO ALEJANDRO MÉNDEZ PINTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19713793-2",
+                "nombre": "CARLA ALEJANDRA GARCÍA FILGUEIRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18031350-8",
+                "nombre": "MARÍA HELENA ORTIZ ROA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9354250-9",
+                "nombre": "PABLO ANDRÉS MOREIRA LUMBRERA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12838539-8",
+                "nombre": "PAULINA PAZ VÁSQUEZ GHO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17303453-9",
+                "nombre": "YOLANDA ISABEL OPAZO HERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4246-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "06-10-2025 21:00:00",
+            "monto": "753111",
+            "litigantes": [
+              {
+                "rut": "12784219-1",
+                "nombre": "LUIS FERNANDO SOTO NAVARRO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9933298-0",
+                "nombre": "DANTE PAOLO RIGHETTI MAUREIRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10663000-3",
+                "nombre": "CRISTIAN AGUSTÍN TOLEDO TOLEDO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13892011-9",
+                "nombre": "CARMEN PATRICIA VÉLIZ SILVA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-112-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Curicó",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "29-09-2025 21:00:00",
+            "monto": "766526",
+            "litigantes": [
+              {
+                "rut": "11985288-9",
+                "nombre": "SANDRA CAROLINA URRUTIA RIVERA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12697013-7",
+                "nombre": "ALEJANDRA ISOLINA SANHUEZA MUJICA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A. (UNIMARC",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-646-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "24-09-2025 21:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10970597-7",
+                "nombre": "PATRICIO ALFONSO PINILLA VALENCIA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16748244-9",
+                "nombre": "ROBERTO HÉCTOR RUIZ SANTOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17742349-1",
+                "nombre": "GUILLERMO ANÍBAL VALLE MORALES",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14350783-1",
+                "nombre": "DARÍO OCTAVIO MOLINA BENAVENTE",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12083889-K",
+                "nombre": "VANEZZA SIMONE SEGUEL LAMA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-1-2025",
+            "tribunal": "Juzgado de Letras y Garantía de Yumbel",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Embargo",
+            "fechaIngreso": "15-09-2025 21:00:00",
+            "monto": "590563",
+            "litigantes": [
+              {
+                "rut": "17469868-6",
+                "nombre": "MARCOS ANDRÉS TIRADO VALLADARES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12910428-7",
+                "nombre": "ERIKA ADELINA VALDIVIA SOTO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12520585-2",
+                "nombre": "FERNANDO MAURICIO MAUREIRA ORELLANA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A. (UNIMARC",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-19-2025",
+            "tribunal": "Jdo. de Letras de Constitución",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "18-08-2025 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17339765-8",
+                "nombre": "NICOLÁS MATÍAS SEPÚLVEDA MONTECINOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16370801-9",
+                "nombre": "VALENTINA FABIOLA FLEN MOURGUET",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19755171-2",
+                "nombre": "MARÍA PAZ BENAVENTE CASTRO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15078134-5",
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15693631-6",
+                "nombre": "ISABEL RODRÍGUEZ TELLO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96675670-5",
+                "nombre": "EQUINOX CHILE SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "19379278-2",
+                "nombre": "DAVID ALEJANDRO DÍAZ ESCOBAR",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3469-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "28-07-2025 20:00:00",
+            "monto": "1730493",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18676620-2",
+                "nombre": "CRISTÓBAL KURT CARVAJAL HERNÁNDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19109974-5",
+                "nombre": "IGNACIO RODRIGO CHAVARRÍA URQUIOLA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3158-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "23-07-2025 20:00:00",
+            "monto": "2085150",
+            "litigantes": [
+              {
+                "rut": "15877543-3",
+                "nombre": "PATRICIO ROLANDO ESPINOZA MARTÍNEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19294324-8",
+                "nombre": "BELÉN ELIZABETH MUÑOZ ESCOBAR",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17499749-7",
+                "nombre": "EDUARDO ANDRÉS ANDANA RODRÍGUEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8853160-4",
+                "nombre": "EDUARDO ALEJANDRO PEÑAFIEL PEÑA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "EMPRESA RENDIC HERMANOS S.A. (UNIMARC)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76134941-4",
+                "nombre": "ADMINISTRADORA DE SUPERMERCADOS HÍPER LIMITADA.",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18134166-1",
+                "nombre": "FELIPE YONATAN CASTILLO FIGUEROA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-143-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "07-04-2025 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13214249-1",
+                "nombre": "RUBÉN ARIEL ROJAS MIRANDA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18031350-8",
+                "nombre": "MARÍA HELENA ORTIZ ROA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13658499-5",
+                "nombre": "KENNETH GRANT MACLEAN LUENGO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11612537-4",
+                "nombre": "JUAN JOSÉ CERDA BOERO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "96792430-K",
+                "nombre": "HOMCENTER SODIMAC S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11816047-9",
+                "nombre": "PATRICIA MELY VEGA GALLARDO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-4-2025",
+            "tribunal": "Jdo. de Letras y Garantía de Alto Hospicio",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "26-03-2025 21:00:00",
+            "monto": "250000",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "16748244-9",
+                "nombre": "ROBERTO HÉCTOR RUIZ SANTOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16129421-7",
+                "nombre": "MIGUEL ZAPATA VILLABLANCA",
+                "sujeto": "AP.RCD",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "INSPECCION PROVICIAL DEL TRABAJO DE ARICA Y PARINACOTA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "13007714-5",
+                "nombre": "EDITH ANDREA CALISAYA CUSICANQUI",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16466717-0",
+                "nombre": "SEBASTIÁN FERNANDO ESPINOZA ASTORGA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-27-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Arica",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 16:19:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ce9ea48b7fcd28dd2af5de2276f97d9ee854d808c8ed390234eebfafa78a81ca",
+        "cached_at": "2026-05-29T16:19:44.566689"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 34,
+        "cantidad": 671,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "19-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "24303991-6",
+                "nombre": "MARLENI CASTRO ALCOCER",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13015942-7",
+                "nombre": "RENÉ DAVID NAVARRO ALBIÑA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-127-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Copiapó",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "16-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-59-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Copiapó",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "13-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-52-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Copiapó",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "30-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-46-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Copiapó",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "30-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "0-0",
+                "nombre": "CENTRO DE CONCILIACIÓN Y MEDIACIÓN DRT METROPOLITANA ORIENTE",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-248-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "29-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17585487-8",
+                "nombre": "LUIS ALEJANDRO GARRIDO ESPARZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20583979-8",
+                "nombre": "DAVID IGNACIO MOLINA LÓPEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10233480-9",
+                "nombre": "GREGORIO SEGUNDO FILGUEIRA GARCÍA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76833720-9",
+                "nombre": "ABARROTES ECONOMICOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-282-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Temuco",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10550392-K",
+                "nombre": "JOSÉ GARCÍA SANDOVAL",
+                "sujeto": "RECDO.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-35-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Chillán",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "23-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20811380-1",
+                "nombre": "SEBASTIÁN ALONSO PEDREROS CÁCERES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17862297-8",
+                "nombre": "DIEGO ANÍBAL MANRÍQUEZ PLAZA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "81537600-5",
+                "nombre": "RENDIC HERMANOS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13625574-6",
+                "nombre": "ENZO ANDRÉS VERA SOLÍS",
+                "sujeto": "T.EXC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-5-2026",
+            "tribunal": "Juzgado de Letras y Garantía de Coelemu",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "23-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18814482-9",
+                "nombre": "JORGE ALEJANDRO SALAMANCA CASTILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12910428-7",
+                "nombre": "ERIKA ADELINA VALDIVIA SOTO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12520585-2",
+                "nombre": "FERNANDO MAURICIO MAUREIRA ORELLANA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71633300-0",
+                "nombre": "MEDIDA CAUTELAR RETENCION",
+                "sujeto": "DDO.SO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-188-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "23-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8539909-8",
+                "nombre": "GISELA INÉS KLEINSTEUBER SAA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19776037-0",
+                "nombre": "DANIEL ESTEBAN GONZÁLEZ CARMONA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96792430-K",
+                "nombre": "SODIMAC S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13658499-5",
+                "nombre": "KENNETH MACLEAN LUEGO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13658499-5",
+                "nombre": "KENNETH MACLEAN LUEGO",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-411-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Valparaíso",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "20-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13513226-8",
+                "nombre": "ROBERTO PABLO ESCALONA MEDINA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "25307896-0",
+                "nombre": "RICHARDSON CIUS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-265-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA (Poder Simple)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-21-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Arica",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "02-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20232062-7",
+                "nombre": "BRIAN MICHEL PÁEZ GAETE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15671318-K",
+                "nombre": "MARCELA VANESSA PIZARRO MUNOZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77261280-K",
+                "nombre": "FALABELLA RETAIL S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-15-2026",
+            "tribunal": "Juzgado de Letras de La Calera",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "01-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16149494-1",
+                "nombre": "DIEGO JESÚS ARRIAGADA ZAMORA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "71633300-0",
+                "nombre": "MEDIDA CAUTELAR RETENCION",
+                "sujeto": "DDO.SO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12237208-1",
+                "nombre": "ELIZABETH DEL CARMEN MOLINA SALAS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11675116-K",
+                "nombre": "TERESA JANET POBLETE TRONCOSO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-107-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-176-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "26-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "19209986-2",
+                "nombre": "LIZ ARACELY ABARCA GRACIA (Poder Amplio)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12722597-4",
+                "nombre": "HELIA CATALINA CASTRO SOLAR (Poder Amplio)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16127518-2",
+                "nombre": "VICTORIA ELISA GAETE SANTELICES (Poder Amplio)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-3-2026",
+            "tribunal": "Juzgado de Letras de San Vicente",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "25-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20052516-7",
+                "nombre": "DANIEL BASTIÁN PATRICIO VILLAGRÁN CARMONA (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-172-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "22-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18687358-0",
+                "nombre": "BORIS MAXIMILIANO SAAVEDRA BELTRÁN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17044070-6",
+                "nombre": "CINTHYA ZAIDA CONCHA CANDIA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76833720-9",
+                "nombre": "ABARROTES ECONOMICOS LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-109-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Los Angeles",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "22-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "8983672-7",
+                "nombre": "FRANCISCO WLADIMIR JOFRÉ GALLARDO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10948642-6",
+                "nombre": "GABRIEL GUILLERMO LARA GOMEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1319-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-02-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76911070-4",
+                "nombre": "ALIANZA SEGURIDAD LTDA.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18019648-K",
+                "nombre": "MANUEL ANGEL CORNEJO CASTILLO (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-4-2026",
+            "tribunal": "Juzgado de Letras y Garantía de Alto Hospicio",
+            "sujeto": "RECTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "29-05-2026 16:19:41"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8eefdcdd5210cec348bba6f10715e9cab7d7f6ca58cb918e987a871a8420864b",
+        "cached_at": "2026-05-29T16:19:45.009445"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 50,
+        "casos": [
+          {
+            "enunciado": "No mantener los lugares de trabajo en buenas condiciones de orden y limpieza.",
+            "estado": "PAGADA",
+            "fecha": "12-04-2023 20:00:00",
+            "multa": "6141/22/045-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1871640
+          },
+          {
+            "enunciado": "No contar con comedor con condiciones mínimas exigidas.",
+            "estado": "PAGADA",
+            "fecha": "12-04-2023 20:00:00",
+            "multa": "6141/22/045-4",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1871640
+          },
+          {
+            "enunciado": "No proporcionar elementos de protección personal que cumplan con los requisitos, características y tipos que exige el riesgo a cubrir.",
+            "estado": "PAGADA",
+            "fecha": "12-04-2023 20:00:00",
+            "multa": "6141/22/045-3",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1871640
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "12-03-2023 21:00:00",
+            "multa": "8593/22/008-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "05-03-2023 21:00:00",
+            "multa": "6101/22/011-2",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-03-2023 21:00:00",
+            "multa": "6101/22/011-1",
+            "procedencia": "FISCALIZACION",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "14-02-2023 21:00:00",
+            "multa": "9993/21/033-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No llevar correctamente registro de asistencia y determinación de las horas de trabajo del tipo electrónico computacional.",
+            "estado": "PAGADA",
+            "fecha": "12-02-2023 21:00:00",
+            "multa": "1260/22/071-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1858620
+          },
+          {
+            "enunciado": "No cumplir estipulaciones de instrumento colectivo.",
+            "estado": "PAGADA",
+            "fecha": "10-02-2023 21:00:00",
+            "multa": "7532/22/071-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1858620
+          },
+          {
+            "enunciado": "Incumplimiento al contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-02-2023 21:00:00",
+            "multa": "8681/22/054-1",
+            "procedencia": "FISCALIZACION",
+            "um": "30",
+            "tipoUm": "UTM",
+            "montoClp": 1858620
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "29-01-2023 21:00:00",
+            "multa": "8737/22/073-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "20-01-2023 21:00:00",
+            "multa": "7519/22/140-1",
+            "procedencia": "RECLAMO",
+            "um": "1",
+            "tipoUm": "IMM",
+            "montoClp": 500000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-01-2023 21:00:00",
+            "multa": "8837/22/033-1",
+            "procedencia": "FISCALIZACION",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "14-01-2023 21:00:00",
+            "multa": "1989/22/004-1",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "13-01-2023 21:00:00",
+            "multa": "1266/22/011-1",
+            "procedencia": "FISCALIZACION",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "Pagar sueldo base inferior al ingreso mínimo mensual.",
+            "estado": "PAGADA",
+            "fecha": "06-01-2023 21:00:00",
+            "multa": "8681/22/053-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3706140
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "04-01-2023 21:00:00",
+            "multa": "1207/22/030-1",
+            "procedencia": "RECLAMO",
+            "um": "1",
+            "tipoUm": "IMM",
+            "montoClp": 500000
+          },
+          {
+            "enunciado": "Omitir información obligatoria en aviso escrito de término del contrato.",
+            "estado": "PAGADA",
+            "fecha": "24-12-2022 21:00:00",
+            "multa": "1911/22/004-1",
+            "procedencia": "RECLAMO",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3669420
+          },
+          {
+            "enunciado": "No otorgar finiquito de trabajo y no poner el pago a disposición del trabajador dentro del plazo de 10 días hábiles.",
+            "estado": "PAGADA",
+            "fecha": "24-12-2022 21:00:00",
+            "multa": "1911/22/004-2",
+            "procedencia": "RECLAMO",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 3669420
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar las labores de fiscalización",
+            "estado": "PAGADA",
+            "fecha": "16-12-2022 21:00:00",
+            "multa": "3087/22/052-4",
+            "procedencia": "FISCALIZACION",
+            "um": "26.73",
+            "tipoUm": "IMM",
+            "montoClp": 13365000
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:15:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1e5d56432a53ab599a97ed508f8e559fbc291027dcf6efed2f0735bbb21701bf",
+        "cached_at": "2026-05-29T16:19:45.664018"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 15,
+        "cantidad": 298,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO GONZALO CANELO GAETE ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15065080-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATALIA ISABEL OCARES ALOCILLA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "16114507-6",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ANDRES TOBAR GUZMAN ",
+            "periodo": "02/2026",
+            "rutAfiliado": "15543290-k",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ANDRES TOBAR GUZMAN ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15543290-k",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NATALIA ISABEL OCARES ALOCILLA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "16114507-6",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO GONZALO CANELO GAETE ",
+            "periodo": "01/2026",
+            "rutAfiliado": "15065080-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCO ANTONIO ESPARZA ANCAMILLA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14541156-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO GONZALO CANELO GAETE ",
+            "periodo": "12/2025",
+            "rutAfiliado": "15065080-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PATRICIO ANDRES NAVARRO SANCHEZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "17504520-1",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "WILIBALDO IVAN SALINAS OLIVARES ",
+            "periodo": "12/2025",
+            "rutAfiliado": "14421923-6",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MAURICIO ALEJANDRO VEGA BRUNA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "11955543-4",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSE HUMBERTO FLORES CARTER ",
+            "periodo": "11/2025",
+            "rutAfiliado": "16924250-k",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO GONZALO CANELO GAETE ",
+            "periodo": "11/2025",
+            "rutAfiliado": "15065080-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NALDA ELIZABETH AVILA BENAVIDES ",
+            "periodo": "11/2025",
+            "rutAfiliado": "11319305-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALINA MARGARITA VILLALOBOS COLOMA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "15539158-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EDUARDO ANDRES CORREA JHONNE ",
+            "periodo": "11/2025",
+            "rutAfiliado": "17564081-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "LEONARDO ANTONIO GALLARDO GALLARDO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "17036265-9",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARCO ANTONIO ESPARZA ANCAMILLA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "14541156-4",
+            "tipoProducto": "Ahorro Voluntario"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALFREDO ALEJANDRO FREDES RIQUELME ",
+            "periodo": "11/2025",
+            "rutAfiliado": "13038196-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "WILIBALDO IVAN SALINAS OLIVARES ",
+            "periodo": "11/2025",
+            "rutAfiliado": "14421923-6",
+            "tipoProducto": "Cotización obligatorias"
+          }
+        ],
+        "ultimaActualizacion": "28-05-2026 03:15:42"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5d6e5467d920b65ab5c44336ae9faa1937beffea5a70b47d8bff0fc5d3ec40ee",
+        "cached_at": "2026-05-29T16:19:46.005999"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76911070-4",
+      "tipoPersona": "juridical",
+      "nombre": "ALIANZA SEGURIDAD LIMITADA",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ALIANZA SEGURIDAD LIMITADA",
+            "rutSociedad": "76911070-4",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2007-06-29",
+            "socios": [
+              {
+                "nombre": "ALBERTO VICENTE RIQUELME VENEGAS",
+                "rut": "7047749-1",
+                "domicilio": "BELLAVISTA 234, OFICINA E, RECOLETA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "JIMENA PAOLA NAREDO RETAMAL",
+                "rut": "10704651-8",
+                "domicilio": "AGUSTINAS N° 814, OFICINA 810, SANTIAGO, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "MARYSOL DE LAS MERCEDES CERDA ORTIZ",
+                "rut": "5978199-5",
+                "domicilio": "CALLE SEGUN DA N° 1140, VILLA ALEMANA, V RE GIÓN",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "1"
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "rut": "8844277-6",
+                "domicilio": "TRICAHUE N° 0142, ESTACIÓN CENTRAL",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "MARCO ANTONIO GALVEZ PINTO",
+                "rut": "11120060-2",
+                "domicilio": "COSTANERA SUR N7996, CERRO NAVIA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JIMENA PADILLA NAREDO RETAMAL",
+                "rut": null,
+                "domicilio": "SAN ANTONIO N° 418, OFICINA 606, SANTIAGO, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2019-08-29",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/08/29/42441/05/1645792.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2016-01-09",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2016/01/09/985234_M_LTDA_20160109.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "ALIANZA SEGURIDAD LIMITADA",
+                "rut": "76911070-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "REAL SEGURIDAD SPA",
+                "rut": "77023462-K",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-997-2025",
+            "fecha": "07/02/2025",
+            "infraccion": "REVELAR, APROVECHAR SECRETOS COMERC. ART. 284 AL 284 QUATER",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALIANZA  SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ANATOLE ALEJANDRO LARRABEITI YÁÑEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CARLA ALEJANDRA GARCÍA FILGUEIRA",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JULIO HECTOR AUIÑINAO GUTIERREZ",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MIGUEL ANGEL ZAPATA VILLABLANCA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NN NN NN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "RODRIGO FERNANDO TORRES DÍAZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "Juzgado de Garantía de Arica",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-6644-2024",
+            "fecha": "28/10/2024",
+            "infraccion": "GIRO DOLOSO DE CHEQUES  AC. PENAL PÜBLICA ART. 42. DFL 707",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CAROL IRENE IBACETA CERDA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARGARITA MARÍA MILLARES MÁRQUEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SEBASTIAN ANDRES LEMUS ACEITUNO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "14º Juzgado de Garantía de Santiago",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-958-2023",
+            "fecha": "20/02/2023",
+            "infraccion": "Sabotaje informático.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NN NN NN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-1968-2022",
+            "fecha": "11/07/2022",
+            "infraccion": "EJERCICIO ILEGAL DE LA PROFESIÓN.ART. 213. INC. 1º.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRA ANDREA GODOY ORMAZÁBAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN ANDRÉS MENDOZA DURÁN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "CRISTIAN RODRIGO ALIAGA AYARZA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DPP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "HERNÁN SERGIO DÍAZ VERDUGO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELA LORETO ARAYA ACUÑA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "OMAR SEBASTIÁN ZULETA ROJAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Incompetencia",
+            "tribunal": "Juzgado de Garantía de Calama",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-1927-2022",
+            "fecha": "18/04/2022",
+            "infraccion": "FALSIFICA DE LICENCIAS MEDICAS O PENSION ART.202 INC.2° Y 3°",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRA ANDREA GODOY ORMAZÁBAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GONZALO ROLANDO CRUZ SÁNCHEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "HÉCTOR CLAUDIO SOTO CANDIA",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JAIRO ALEJANDRO MARQUEZ LAGUADO",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARCELA LORETO ARAYA ACUÑA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "Apoderado",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-9313-2021",
+            "fecha": "10/12/2021",
+            "infraccion": "Sabotaje informático.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GONZALO ROLANDO CRUZ SÁNCHEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "HÉCTOR CLAUDIO SOTO CANDIA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NN NN NN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-8414-2020",
+            "fecha": "26/10/2020",
+            "infraccion": "EJERCICIO ILEGAL DE LA PROFESIÓN.ART. 213. INC. 1º.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRA ANDREA GODOY ORMAZÁBAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN ANDRÉS MENDOZA DURÁN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARCELA LORETO ARAYA ACUÑA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-8345-2020",
+            "fecha": "22/10/2020",
+            "infraccion": "OTROS HECHOS QUE NO CONSTITUYAN DELITO: AGRUP.1008,1009,1011",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1227",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELA LORETO ARAYA ACUÑA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NN NN NN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "PRISCILA DEL PILAR SALGADO VALDÉS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Víctima",
+            "rol": "Ordinaria-6856-2014",
+            "fecha": "15/07/2014",
+            "infraccion": "Hurto falta (494 bis codigo penal). | Hurto simple por un valor de 4 a 40 utm.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ALBERTO RIQUELME VENEGAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALBERTO RIQUELME VENEGAS",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALVI SUPERMERCADOS",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA MARICEL FIGUEROA PEREZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIO ENRIQUE GONZÁLEZ SALGADO",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL ARMANDO PEREZ HENRIQUEZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "DANIEL ARMANDO PÉREZ HENRÍQUEZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "DANIEL PEREZ HENRIQUEZ",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1237",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GUSTAVO ADOLFO PROMIS BAEZA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JDO DE LETRAS DEL TRABAJO SAN BERNARDO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE ANTONIO MIRANDA ZAMBRANO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ ANTONIO GUSTAVO ALFREDO HENRÍQUEZ MUÑIZ",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSE ANTONIO HENRIQUEZ MUÑIZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JULIO JAVIER ALEJANDRO ESPINOZA SEPÚLVEDA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS ALFREDO ARAVENA ALBORNOZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS ALFREDO ARAVENA ALBORNOZ",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS FERNANDO OLGUÍN AVILÉS",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA EUGENIA ARANEDA CANALES",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA PAULINA PODLECH JARPA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARYSOL DE LAS MERCEDES CERDA ORTIZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MIGUEL ANGEL BARRERA BOLADOS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MIGUEL BARRERA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO FISCALIA LOCAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NELSON CRISOSTO",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "NELSON EDUARDO CRISOSTO MAYORGA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "SUSANA CAROLINA WIELAND SARQUIS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de San Bernardo",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Víctima",
+            "rol": "Ordinaria-4838-2014",
+            "fecha": "19/05/2014",
+            "infraccion": "Hurto simple por un valor de 4 a 40 utm.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALBERTO RIQUELME VENEGAS",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL ARMANDO PEREZ HENRIQUEZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "DARÍO PANTOJA MARTÍNEZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MIGUEL ANGEL BARRERA BOLADOS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO FISCALIA LOCAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NELSON EDUARDO CRISOSTO MAYORGA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de San Bernardo",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "ALIANZA SEGURIDAD LIMITADA",
+            "postura": "Víctima",
+            "rol": "Ordinaria-7278-2013",
+            "fecha": "08/08/2013",
+            "infraccion": "Falsificacion o uso malicioso de documentos privados.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALBERTO RIQUELME VENEGAS",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTOBAL FUENTEALBA ALVEAR",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DAVID ISRAEL MILLA BALBONTIN",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1227",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GONZALO ESPINOZA URZUA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIO CÉSAR PALMA NAVARRETE",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "8º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 11
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5208d94be165248df90f53486407eee2b5fcc82822881dab696c282e9c8257dd",
+      "cached_at": "2026-05-29T16:19:46.716061"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76911070-4",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "08-01-2016 21:00:00",
+            "razonSocial": "ALIANZA SEGURIDAD LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/01/09/985234_M_LTDA_20160109.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "ALBERTO VICENTE RIQUELME VENEGAS",
+                "rut": "7047749-1",
+                "domicilio": "PASAJE SOTERO DEL RIO TRESCIENTOS VEINTISÉIS OFICINA SETECIENTOS TRES, SANTIAGO"
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "rut": "8844277-6",
+                "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+              }
+            ],
+            "rut": "76911070-4"
+          },
+          {
+            "fecha": "28-08-2019 20:00:00",
+            "razonSocial": "ALIANZA SEGURIDAD LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2019/08/29/42441/05/1645792.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "ALBERTO VICENTE RIQUELME VENEGAS",
+                "rut": "7047749-1",
+                "domicilio": "PASAJE SOTERO DEL RIO TRESCIENTOS VEINTISÉIS OFICINA SETECIENTOS TRES, SANTIAGO"
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "rut": "8844277-6",
+                "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "MARYSOL DE LAS MERCEDES CERDA ORTIZ",
+                "rut": "5978199-5",
+                "domicilio": "CALLE RANCAGUA Nº 544, PROVIDENCIA"
+              }
+            ],
+            "rut": "76911070-4"
+          },
+          {
+            "fecha": "06-04-2021 20:00:00",
+            "razonSocial": "REAL SEGURIDAD SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/07/42923/05/1922904.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MANUEL ANTONIO LAZCANO TELLO",
+                "rut": "14282510-4",
+                "domicilio": "CALLE TEGUALDA NÚMERO DOS MIL CINCUENTA Y DOS OFICINA C, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "CAROL IRENE IBACETA CERDA",
+                "rut": "8835749-3",
+                "domicilio": "VICUÑA MACKENNA N 327, DEPARTAMENTO 216, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "rut": "8844277-6",
+                "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "rut": "76911070-4",
+                "domicilio": null
+              }
+            ],
+            "rut": "77023462-K"
+          },
+          {
+            "fecha": "18-04-2021 20:00:00",
+            "razonSocial": "REAL SEGURIDAD SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/04/19/42933/05/1929233.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "CAROL IRENE IBACETA CERDA",
+                "rut": "8835749-3",
+                "domicilio": "VICUÑA MACKENNA N 327, DEPARTAMENTO 216, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "HUGO EUSEBIO IBACETA CERDA",
+                "rut": "8844277-6",
+                "domicilio": "CALLE RANCAGUA Nº 0544 COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "ALIANZA SEGURIDAD LIMITADA",
+                "rut": "76911070-4",
+                "domicilio": null
+              }
+            ],
+            "rut": "77023462-K"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76911070-4",
+            "sociedad": "ALIANZA SEGURIDAD LIMITADA"
+          },
+          {
+            "rut": "77023462-K",
+            "sociedad": "REAL SEGURIDAD SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:abffcc88fead7374f84e781768787830456930c8fa9236f46a4e6cc4d4d4cf6c",
+        "cached_at": "2026-05-29T16:19:47.072671"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 2778850,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 49.48453608247423,
+      "numeradorJudicial": 288,
+      "denominadorJudicial": 582,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50.51546391752577,
+      "porcentajeMoraPrevisional": 89.10256410256412,
+      "casosMoraPrevisional": 39,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 191844338,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 10.897435897435884,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 261.41289981496163,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:72aed32a3f63bcc4409eb0ed80cb51e07300c2b8c75aa9cf4a6d1de3309777fd",
+      "cached_at": "2026-05-29T16:19:47.683010"
+    }
+  }
+}

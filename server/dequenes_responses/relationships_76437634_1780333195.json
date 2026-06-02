@@ -1,0 +1,380 @@
+{
+  "pathCount": 31,
+  "relationships": [
+    {
+      "source": "76437634",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-03-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76437634",
+      "target": "76414019",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2685285",
+        "cve": "2685285",
+        "shares_percent": 60,
+        "source": "DO",
+        "published_at": "2025-08-13",
+        "doc_extraction_id": "1792080",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/08/13/44224/05/2685285.pdf"
+      }
+    },
+    {
+      "source": "76437634",
+      "target": "76413755",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2685285",
+        "cve": "2685285",
+        "shares_percent": 40,
+        "source": "DO",
+        "published_at": "2025-08-13",
+        "doc_extraction_id": "1792080",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/08/13/44224/05/2685285.pdf"
+      }
+    },
+    {
+      "source": "76437634",
+      "target": "76414019",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 39.97,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76437634",
+      "target": "76413755",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 60.03,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "77601509",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-05-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77316659",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-11-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77248262",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-10-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76901600",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76551804",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-03-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76413755",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-11-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76414019",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-11-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76046375",
+      "target": "6890604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-01-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77601509",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2131916",
+        "cve": "2131916",
+        "shares_percent": 60,
+        "source": "DO",
+        "published_at": "2022-05-24",
+        "doc_extraction_id": "1906752",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/05/24/43260/05/2131916.pdf"
+      }
+    },
+    {
+      "source": "77248262",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1832652",
+        "cve": "1832652",
+        "shares_percent": 20,
+        "source": "DO",
+        "published_at": "2020-10-19",
+        "doc_extraction_id": "1869305",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/10/19/42783/05/1832652.pdf"
+      }
+    },
+    {
+      "source": "76901600",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6782476",
+        "doh_extraction_id": "856908",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "6782476",
+        "published_at": "2007-06-25",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/06/25/do-20070625.pdf"
+      }
+    },
+    {
+      "source": "76719220",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6611046",
+        "doh_extraction_id": "792528",
+        "shares_percent": 20,
+        "source": "DOH",
+        "doh_id": "6611046",
+        "published_at": "2006-06-16",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/06/16/do-20060616.pdf"
+      }
+    },
+    {
+      "source": "76413755",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_816896",
+        "cve": "816896",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2014-09-10",
+        "doc_extraction_id": "2144061",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/09/10/816896_C_LTDA_20140910_firmado.pdf"
+      }
+    },
+    {
+      "source": "76414019",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_816898",
+        "cve": "816898",
+        "shares_percent": 33.4,
+        "source": "DO",
+        "published_at": "2014-09-10",
+        "doc_extraction_id": "2156787",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/09/10/816898_C_LTDA_20140910_firmado.pdf"
+      }
+    },
+    {
+      "source": "76046375",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1329133",
+        "cve": "1329133",
+        "shares_percent": 25,
+        "source": "DO",
+        "published_at": "2017-12-30",
+        "doc_extraction_id": "2269648",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/12/30/41945/05/1329133.pdf"
+      }
+    },
+    {
+      "source": "76551804",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1006218",
+        "match_type": "bt",
+        "source": "DO",
+        "published_at": "2016-03-14",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2016/03/14/1006218_C_LTDA_20160314.pdf"
+      }
+    },
+    {
+      "source": "76551804",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1832652",
+        "match_type": "bt",
+        "source": "DO",
+        "published_at": "2020-10-19",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/10/19/42783/05/1832652.pdf"
+      }
+    },
+    {
+      "source": "76551804",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2131916",
+        "match_type": "bt_all",
+        "source": "DO",
+        "published_at": "2022-05-24",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/05/24/43260/05/2131916.pdf"
+      }
+    },
+    {
+      "source": "76551804",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1198930",
+        "match_type": "bt",
+        "source": "DO",
+        "published_at": "2017-03-30",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/03/30/41722/05/1198930.pdf"
+      }
+    },
+    {
+      "source": "76551804",
+      "target": "6890604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1830598",
+        "match_type": "bt",
+        "source": "DO",
+        "published_at": "2020-10-15",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/10/15/42780/05/1830598.pdf"
+      }
+    },
+    {
+      "source": "76414019",
+      "target": "13473224",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_816898",
+        "cve": "816898",
+        "shares_percent": 33.3,
+        "source": "DO",
+        "published_at": "2014-09-10",
+        "doc_extraction_id": "2156787",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/09/10/816898_C_LTDA_20140910_firmado.pdf"
+      }
+    },
+    {
+      "source": "76414019",
+      "target": "13027991",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_816898",
+        "cve": "816898",
+        "shares_percent": 33.3,
+        "source": "DO",
+        "published_at": "2014-09-10",
+        "doc_extraction_id": "2156787",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/09/10/816898_C_LTDA_20140910_firmado.pdf"
+      }
+    },
+    {
+      "source": "77316659",
+      "target": "76414019",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 59.999899337,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76413755",
+      "target": "6930994",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-11-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76413755",
+      "target": "6930994",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_816896",
+        "cve": "816896",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2014-09-10",
+        "doc_extraction_id": "2144061",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/09/10/816896_C_LTDA_20140910_firmado.pdf"
+      }
+    },
+    {
+      "source": "77316659",
+      "target": "76413755",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 40.000100663,
+        "source": "SII_REC_COM"
+      }
+    }
+  ],
+  "entityNames": {
+    "6890604": "MARIELA FRAUMENI TUCCILLO",
+    "6930994": "BERNABE HUMBERTO DE LA CRUZ MENA",
+    "13027991": "MACARENA FERNANDA VASQUEZ FRAUMENI",
+    "13473224": "FRANCISCA MARIELA VASQUEZ FRAUMENI",
+    "76046375": "SEPROC CAPACITACION LIMITADA",
+    "76413755": "FRAUMENI Y DE LA CRUZ LIMITADA",
+    "76414019": "MARIELA FRAUMENI E HIJAS LIMITADA",
+    "76437634": "FRAUMENI Y COMPANIA SOCIEDAD ANONIMA",
+    "76551804": "INMOBILIARIA E INVERSIONES INVERNADA LIMITADA",
+    "76719220": "AGENCIA DE CAPACITACION SACAF LIMITADA",
+    "76901600": "FRAUMENI E HIJAS LTDA",
+    "77248262": "INMOBILIARIA E INVERSIONES INVERNADA LIMITADA",
+    "77316659": "INMOBILIARIA LAS PARCELAS LIMITADA",
+    "77601509": "INMOBILIARIA E INVERSIONES NUEVA INVERNADA LIMITADA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:d8d5b18a132dc625fe6b6201f8d1fe51ec6d73ef6298b413d3760aac77ff4033",
+    "cached_at": "2026-06-01T16:59:55.830415"
+  }
+}

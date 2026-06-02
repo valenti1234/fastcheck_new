@@ -1,0 +1,57 @@
+{
+  "pathCount": 4,
+  "relationships": [
+    {
+      "source": "77162051",
+      "target": "8775853",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-05-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77162051",
+      "target": "8775853",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACyPjUI7S52H",
+        "source": "RES",
+        "published_at": "2023-05-09"
+      }
+    },
+    {
+      "source": "77162051",
+      "target": "8775853",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACYhhtgTXBZm",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "77131151",
+      "target": "8775853",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1999273",
+        "cve": "1999273",
+        "shares_percent": 40,
+        "source": "DO",
+        "published_at": "2021-08-26",
+        "doc_extraction_id": "1479100",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2021/08/26/43038/05/1999273.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "8775853": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+    "77131151": "SERVICIOS INTEGRALES DEL BIOBIO SPA",
+    "77162051": "ADMCONDOMINIOSCL SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:d7cd307b832cb7e6c2460b45e9d74e27145c364dc63a732c5c700ea1f9672dad",
+    "retrieved_at": "2026-05-30T01:56:27.970616"
+  }
+}

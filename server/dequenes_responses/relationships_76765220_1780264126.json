@@ -1,0 +1,46 @@
+{
+  "pathCount": 3,
+  "relationships": [
+    {
+      "source": "76765220",
+      "target": "11714334",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-02-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76765220",
+      "target": "11714334",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt",
+        "source": "DOH",
+        "published_at": "2007-02-08",
+        "doh_id": "6710028",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/02/08/do-20070208.pdf"
+      }
+    },
+    {
+      "source": "76688232",
+      "target": "11714334",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACVHg11Khtf1",
+        "source": "RES",
+        "published_at": "2016-12-28"
+      }
+    }
+  ],
+  "entityNames": {
+    "11714334": "ELIZABETH ORIETA BORQUEZ VELASQUEZ",
+    "76688232": "BALMO SPA",
+    "76765220": "SERVICIOS DE ALIMENTACION Y COCTELERIA ELIZABETH ORIETA BORQUEZ VELASQUEZ EIRL"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:a2be042393c63c7a1fe2c2149d7a30057956cdf3a89996dd5ad60ca783a73bbf",
+    "retrieved_at": "2026-05-31T21:48:46.782266"
+  }
+}

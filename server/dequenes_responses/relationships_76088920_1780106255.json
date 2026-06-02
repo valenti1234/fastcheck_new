@@ -1,0 +1,57 @@
+{
+  "pathCount": 4,
+  "relationships": [
+    {
+      "source": "76088920",
+      "target": "5365876",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-05-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76088920",
+      "target": "6013972",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-05-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78589650",
+      "target": "6013972",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1994-12-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78589650",
+      "target": "6013972",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_4042304",
+        "doh_extraction_id": "770691",
+        "shares_percent": 73.33333,
+        "source": "DOH",
+        "doh_id": "4042304",
+        "published_at": "1994-05-27",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1994/05/27/do-19940527.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "5365876": "OLGA CARMEN MARCELLE DEFORMES DUCO",
+    "6013972": "MARIA SUSANA VALENZUELA GOUDIE",
+    "76088920": "CORREDORES DE PROPIEDADES ASOCIADAS LTDA",
+    "78589650": "INVERSIONES Y SERVICIOS LAS        VIOLETAS SUR LTDA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:50d919404b060fa9bb816b5d2ab03f6689cdd3fee6fc68446d89e4c1b0383d97",
+    "cached_at": "2026-05-30T01:57:35.751171"
+  }
+}

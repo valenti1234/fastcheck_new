@@ -1,0 +1,1030 @@
+{
+  "pathCount": 94,
+  "relationships": [
+    {
+      "source": "96951870",
+      "target": "11293514",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-11-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96951870",
+      "target": "9809841",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-04-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96951870",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96951870",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 50,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96961780",
+      "target": "11293514",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-08-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "51066490",
+      "target": "11293514",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-10-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77703750",
+      "target": "9809841",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-01-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77281630",
+      "target": "9809841",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1999-04-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76686038",
+      "target": "9809841",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-11-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77703750",
+      "target": "9809841",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6114788",
+        "doh_extraction_id": "708448",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "6114788",
+        "published_at": "2002-01-22",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2002/01/22/do-20020122.pdf"
+      }
+    },
+    {
+      "source": "77281630",
+      "target": "9809841",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5864685",
+        "doh_extraction_id": "678620",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "5864685",
+        "published_at": "1999-04-24",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/04/24/do-19990424.pdf"
+      }
+    },
+    {
+      "source": "76686038",
+      "target": "9809841",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1138991",
+        "cve": "1138991",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2016-11-23",
+        "doc_extraction_id": "1630990",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/11/23/41615/05/1138991.pdf"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "9908497",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "8943341",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-12-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "7170719",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-10-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "16606570",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "10775531",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-10-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "24725047",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "15370234",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-05-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "10701643",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-10-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "13253537",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-10-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96627120",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6737266",
+        "doh_extraction_id": "861725",
+        "source": "DOH",
+        "published_at": "2007-05-09",
+        "doh_id": "6737266",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/05/09/do-20070509.pdf"
+      }
+    },
+    {
+      "source": "78185540",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6573838",
+        "doh_extraction_id": "1003005",
+        "shares_percent": 75,
+        "source": "DOH",
+        "doh_id": "6573838",
+        "published_at": "2006-04-26",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/04/26/do-20060426.pdf"
+      }
+    },
+    {
+      "source": "75005300",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76479259",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 15.46,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76266276",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 22.52,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76837500",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.75,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96802800",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 0.07181355,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76481620",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.99655168,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "99579260",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 98.99996594,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96627120",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76198822",
+      "target": "70360100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.00061967,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "76198822",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "456263",
+        "match_type": "i_bt_pn",
+        "source": "DO",
+        "published_at": "2012-02-11",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/02/11/456263_M_SA_20120211_firmado.pdf"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "76421185",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "824340",
+        "match_type": "i_bt_pn",
+        "source": "DO",
+        "published_at": "2014-10-03",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/10/03/824340_C_SA_20141003_firmado.pdf"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "99579260",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "456263",
+        "match_type": "i_bt_pn",
+        "source": "DO",
+        "published_at": "2012-02-11",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/02/11/456263_M_SA_20120211_firmado.pdf"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "99579260",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "824340",
+        "match_type": "i_bt_pn",
+        "source": "DO",
+        "published_at": "2014-10-03",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/10/03/824340_C_SA_20141003_firmado.pdf"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "8943341",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "456263",
+        "match_type": "bt_pn",
+        "source": "DO",
+        "published_at": "2012-02-11",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/02/11/456263_M_SA_20120211_firmado.pdf"
+      }
+    },
+    {
+      "source": "70360100",
+      "target": "8943341",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "824340",
+        "match_type": "bt_pn",
+        "source": "DO",
+        "published_at": "2014-10-03",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/10/03/824340_C_SA_20141003_firmado.pdf"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7236618",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-03-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "5169389",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-03-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "8423404",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-03-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7636220",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-05-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7229213",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-03-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "13067170",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-03-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "6235548",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-09-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "8702376",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-09-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "5123918",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-03-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "9194906",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-03-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "10341273",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-09-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77314150",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.9,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "78982470",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5834337",
+        "doh_extraction_id": "416720",
+        "shares_percent": 99.9,
+        "source": "DOH",
+        "doh_id": "5834337",
+        "published_at": "1999-11-09",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/11/09/do-19991109.pdf"
+      }
+    },
+    {
+      "source": "96631140",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5822994",
+        "doh_extraction_id": "1000971",
+        "shares_percent": 99.9,
+        "source": "DOH",
+        "doh_id": "5822994",
+        "published_at": "1999-04-15",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/06/11/do-19990611.pdf"
+      }
+    },
+    {
+      "source": "96828990",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "78982470",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.9,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96631140",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.9,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "96963660",
+      "target": "92051000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 11.43,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "90249000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76337704",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76133139",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96489000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76120702",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76829370",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 6079118,
+        "shares_percent": 4.31,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 6079118
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "84177300",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 23183908,
+        "shares_percent": 16.45,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 23183908
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "84177300",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "97004000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96571220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96586750",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96800390",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 10148567,
+        "shares_percent": 7.2,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 10148567
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96519800",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 10090726,
+        "shares_percent": 7.16,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 10090726
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96519800",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "80537000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 5328377,
+        "shares_percent": 3.78,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 5328377
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76003506",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "80537000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76133139",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 7652312,
+        "shares_percent": 5.43,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 7652312
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76337704",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 3553017,
+        "shares_percent": 2.52,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 3553017
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96571220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 7681976,
+        "shares_percent": 5.45,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 7681976
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96489000",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 6716978,
+        "shares_percent": 4.77,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 6716978
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76418822",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96800390",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96586750",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 5875260,
+        "shares_percent": 4.17,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 5875260
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "3606109",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76829370",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76933080",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 10350550,
+        "shares_percent": 7.34,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 10350550
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76100825",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76003506",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_subs": 10148567,
+        "shares_percent": 7.2,
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=5",
+        "shares_paid": 10148567
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76926472",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "96767630",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "76933080",
+      "label": "OWNED_BY",
+      "information_source": {
+        "source": "CMF",
+        "url": "mercado=V&rut=92051000&grupo=&tipoentidad=RVEMI&row=AAAwy2ACTAAABzEAAF&vig=VI&control=svs&pestania=21"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7636220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "1999-11-09",
+        "doh_id": "5834337",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/11/09/do-19991109.pdf"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7636220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "2004-07-02",
+        "doh_id": "6338916",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2004/07/02/do-20040702.pdf"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7636220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "1999-12-11",
+        "doh_id": "5830450",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/12/11/do-19991211.pdf"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7229213",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "2004-07-02",
+        "doh_id": "6338916",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2004/07/02/do-20040702.pdf"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "5123918",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "2004-07-02",
+        "doh_id": "6338916",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2004/07/02/do-20040702.pdf"
+      }
+    },
+    {
+      "source": "92051000",
+      "target": "7636220",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "tt",
+        "source": "DOH",
+        "published_at": "1999-06-11",
+        "doh_id": "5822994",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1999/06/11/do-19990611.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "3606109": "MARIA CRISTINA CAMBIASO LANERI",
+    "5123918": "JUAN ANTONIO GUZMAN MOLINARI",
+    "5169389": "ALEJANDRO DOMINGO RAUL PEREZ RODRIGUEZ",
+    "6235548": "GRACIELA DEL CARMEN GONZALEZ ESCOBEDO",
+    "7170719": "PAUL GEORGE SCHIODTZ OBILINOVICH",
+    "7229213": "RODRIGO ALFREDO CASTILLO DARVICH",
+    "7236618": "ALEJANDRO EMILIO MILAD PALANECK",
+    "7636220": "MANUEL SERRA CAMBIASO",
+    "8423404": "CECILIA DEL CARMEN PALMA OJEDA",
+    "8702376": "JORGE ANDRES FALAHA HADDAD",
+    "8943341": "JULIO ALFONSO HENRIQUEZ BANTO",
+    "9194906": "JULIO ADOLFO CANO BARRIGA",
+    "9809841": "JOSE BORIS GONZALEZ GONZALEZ",
+    "9908497": "NICOLAS ALFONSO DIAZ MARZULLO",
+    "10341273": "MARTIN ANTONIO FEDERICO MANTEROLA VINCE",
+    "10701643": "ANGEL ALFONSO VARGAS AYALA",
+    "10775531": "CRISTOBAL ANDRES CUADRA COURT",
+    "11293514": "ENRIQUE ALBERTO DURAN DURAN",
+    "13067170": "IGNACIO MIGUEL PODUJE CARBONE",
+    "13253537": "JUAN LUIS MORENO ZULOAGA",
+    "15370234": "RODRIGO GABRIEL DE LA CALLE VASQUEZ",
+    "16606570": "CAMILA ANDREA ZACHARIAS MOLINA",
+    "24725047": "VERENA KATHARINA STERZL",
+    "51066490": "DURAN DURAN ENRIQUE ALBERTO Y OTROS",
+    "70360100": "ASOC CHILENA DE SEGURIDAD",
+    "75005300": "FUND CIENTIFICA Y TECNOLOGICA ASOCIACION CHILENA DE SEGURIDAD",
+    "76003506": "EL MADERAL INVERSIONES LIMITADA",
+    "76100825": "SIGLO XXI FONDO DE INVERSION MOBILIARIA",
+    "76120702": "BTG PACTUAL SMALL CAP CHILE FONDO DE INVERSION",
+    "76133139": "COMPASS SMALL CAP CHILE FONDO DE INVERSION",
+    "76198822": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPOR",
+    "76266276": "SERVICLINICA IQUIQUE INMOBILIARIA S.A.",
+    "76337704": "INVERSIONES BRIUT SPA",
+    "76418822": "BCI SMALL CAP CHILE FONDO DE INVERSION",
+    "76421185": "ORGANISMO TECNICO DE CAPACITACION ASOCIACION CHILENA DE SEGURIDAD S.A",
+    "76479259": "SERVISALUD INMOBILIARIA S.A.",
+    "76481620": "CENTRO MEDICO HTS SPA",
+    "76686038": "SOCIEDAD AGRICOLA SAN IGNACIO LIMITADA",
+    "76829370": "CAMOGLI INVERSIONES S.A",
+    "76837500": "CLINICA REGIONAL CURICO SPA",
+    "76926472": "FONDO DE INVERSION LARRAINVIAL SMALL CAP CHILE",
+    "76933080": "INVERSIONES ISLA DE VIS LIMITADA",
+    "77281630": "VALDES  & GONZALEZ AUDITORES CONSULTORES LIMITADAS",
+    "77314150": "SERVICIOS COMPLEMENTARIOS DE SALUD LIMITADA",
+    "77703750": "JM TRANSPORTES Y SERVICIOS INTEGRALES LIMITADA",
+    "78185540": "SOC DE DIAGNOSTICO MEDICO POR RESONANCIA MAGNETICA S.A.",
+    "78982470": "INDISA LABORATORIO LIMITADA",
+    "80537000": "LARRAIN VIAL SA CORREDORA DE BOLSA",
+    "84177300": "BTG PACTUAL CHILE SA CORREDORES DE BOLSA",
+    "90249000": "BOLSA DE COMERCIO DE SANTIAGO BOLSA DE V",
+    "92051000": "INSTITUTO DE DIAGNOSTICO S A",
+    "96489000": "CREDICORP CAPITAL CORREDORES DE BOLSA SPA",
+    "96519800": "BCI CORREDOR DE BOLSA S A",
+    "96571220": "BANCHILE CORREDORES DE BOLSA S A",
+    "96586750": "NEVASA S A CORREDORES DE BOLSA",
+    "96627120": "RED DE CLINICAS REGIONALES S.A.",
+    "96631140": "SERVICIOS INTEGRADOS DE SALUD LIMITADA",
+    "96767630": "BANCHILE ADMINISTRADORA GENERAL DE FONDOS S A",
+    "96800390": "INVERSIONES LA CALETA S A",
+    "96802800": "CLINICA ANDES SALUD EL LOA S.A.",
+    "96828990": "INMOBILIARIA SAN CRISTOBAL S A",
+    "96951870": "BIONET S.A.",
+    "96961780": "LABORATORIO CLINICO DEL SUR S A",
+    "96963660": "HOSPITAL CLINICO VINA DEL MAR S A",
+    "97004000": "BANCO DE CHILE",
+    "99579260": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:2d068e3430ed468daedc30bc97e70700f9fcf4ef43be4338a136133b22452216",
+    "cached_at": "2026-05-30T00:18:21.214071"
+  }
+}

@@ -1,0 +1,1734 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "17036265-9"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "17036265-9",
+      "esPersonaJuridica": false,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "LEONARDO ANTONIO GALLARDO GALLARDO",
+        "presentaActividades": "SI",
+        "inicioActividades": "23-01-2020",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "23-01-2020"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Boletas De Honorarios Electronicas",
+            "ultimoAnioTimbrado": "2020"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 1,
+        "ultimaActualizacion": "30-05-2026 00:23:33",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 13,
+        "casosBolcom": 6,
+        "MontoInfocom": 24506440,
+        "MontoBolcom": 910729,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": 2690.86,
+          "cambioAbsoluto": 24506440
+        },
+        "ultimaActualizacion": "30-05-2026 00:23:33"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 1,
+        "todosLosCasos": 2,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:23:32",
+        "ultimaActualizacionCobranza": "30-05-2026 00:23:32",
+        "ultimaActualizacionLaboral": "30-05-2026 00:23:32",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:23:32"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 8650,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 2690,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 8650,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 2690
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "30-05-2026 00:23:33"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 00:23:32"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 17.195294400281682,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 167.19529440028168,
+        "etiquetaClasificacion": "High"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "LEONARDO",
+        "segundoNombre": "ANTONIO",
+        "apellido": "GALLARDO",
+        "segundoApellido": "GALLARDO",
+        "tipoPersona": "natural",
+        "riesgo": "critical",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 21,
+            "riesgo": "critical"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:55ab58cc348245e6fbcdf57de72096b6c9e057e4009bb849a90fcc437d00b3ca",
+      "cached_at": "2026-05-30T00:23:36.087790"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Excepciones",
+            "fechaIngreso": "09-11-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76002293-4",
+                "nombre": "SANTANDER CONSUMER FINANCE LTDA.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14223168-9",
+                "nombre": "VÍCTOR DAVID PEÑA SILVA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16526326-K",
+                "nombre": "PAULINA ANDREA QUEVEDO URBINA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13932268-1",
+                "nombre": "SEBASTIÁN ANDRÉS BARRA CASTRO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17036265-9",
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-18861-2023",
+            "tribunal": "7º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "15 Terminada ",
+            "fechaIngreso": "12-03-2014 21:00:00",
+            "litigantes": [
+              {
+                "rut": "96522900-0",
+                "nombre": " CREDITOS ORGANIZACION Y FINANZ AS S.A.",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "6669374-0",
+                "nombre": "JORGE ALEJANDRO FIGUEROA GONZÁLEZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17036265-9",
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria (Citac.Conf.Deuda)",
+            "rol": "C-8509-2014",
+            "tribunal": "1º Juzgado Civil de San Miguel",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:23:32"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:48ec27db69a69c8e09584fa17df9af52ce2ea6a320a83ff09d15fc6017f0111a",
+        "cached_at": "2026-05-30T00:23:36.431736"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:23:32"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c79d68dff25d585793da9b4e1cc093216f3c3a4c15b5e3eeb08a67a4389ae73b",
+        "cached_at": "2026-05-30T00:23:36.792988"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:23:32"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f880a00e355b44edbbb223893f7df1bf3e1cec3e8c5fc170d9e91663421f8778",
+        "cached_at": "2026-05-30T00:23:37.133896"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:23:32"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:89ff8147c5b3476feac4cdcf98bd3c383523d25df82023dfff03a0d2a292b571",
+        "cached_at": "2026-05-30T00:23:37.476152"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 00:23:32"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f68c6e549c2bb3282dc8e1e46af0efac7de0573b6fd5a7f8a092d02c9615a83f",
+        "cached_at": "2026-05-30T00:23:37.834983"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "17036265-9",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-63-2026",
+            "fecha": "11/02/2026",
+            "infraccion": "Portar elemento conocidamente destinados cometer delito robo | Portar elementos conocidamente destinados a cometer delito de robo. Art. 445, Código Penal",
+            "estado": "En Tramitación",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "CARABINEROS CURANILAHUE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CARABINEROS CURANILAHUE",
+                "sujeto": "Policía",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CARES MARTÍNEZ JOHNNY ANDRÉS",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EDUARDO IGNACIO OSSES BAEZA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GALLARDO GALLARDO LEONARDO ANTONIO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOHNNY ANDRÉS CARES MARTÍNEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Privado libertad"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "OSSES BAEZA EDUARDO IGNACIO",
+                "sujeto": "Defensor penal público",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PDI LEBU",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PDI LEBU",
+                "sujeto": "Policía",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "-",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-295-2024",
+            "fecha": "19/04/2024",
+            "infraccion": "CONDUC.ESTADO DE EBRIEDAD CON O SIN DAÑOS O LESIONES LEVES.",
+            "estado": "Tramitación",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CARABINEROS CURANILAHUE",
+                "sujeto": "Policía",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ ANDRÉS ORTIZ JIMÉNEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MICHAEL LUCIANO LEAL MARTINEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PDI LEBU",
+                "sujeto": "Policía",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SEBASTIAN LEONARDO RIQUELME CASTRO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SEBASTIAN LEONARDO RIQUELME CASTRO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SILVIA ROMINA AGUILERA DÍAZ",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-912-2021",
+            "fecha": "24/12/2021",
+            "infraccion": "MALTRATO HABITUAL (VIF) ART. 14 LEY 20.066.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRAN ROA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MIRIAM RUTH ESCALONA RIVAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Querellado",
+            "rol": "Ordinaria-912-2021",
+            "fecha": "24/12/2021",
+            "infraccion": "MALTRATO HABITUAL (VIF) ART. 14 LEY 20.066.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRAN ROA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MIRIAM RUTH ESCALONA RIVAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-785-2020",
+            "fecha": "26/08/2020",
+            "infraccion": "Desacato (Art. 240 Codigo de Procedimiento Civil).",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "4 COMISARIA CURANILAHUE",
+                "sujeto": "Policía",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO CURANILAHUE",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "Patricio Andres Robles Contreras",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Querellado",
+            "rol": "Ordinaria-1056-2019",
+            "fecha": "26/11/2019",
+            "infraccion": "Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MIRIAM RUTH ESCALONA RIVAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciante",
+            "rol": "Ordinaria-988-2019",
+            "fecha": "04/11/2019",
+            "infraccion": "Desacato (Art. 240 Codigo de Procedimiento Civil). | Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CARABINEROS DE CURANILAHUE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GERARD GERSON VIDAL SANCHEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MIRIAM RUTH ESCALONA RIVAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "Patricio Andres Robles Contreras",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-988-2019",
+            "fecha": "04/11/2019",
+            "infraccion": "Desacato (Art. 240 Codigo de Procedimiento Civil). | Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CARABINEROS DE CURANILAHUE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GERARD GERSON VIDAL SANCHEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MIRIAM RUTH ESCALONA RIVAS",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "Patricio Andres Robles Contreras",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Víctima",
+            "rol": "Ordinaria-1068-2016",
+            "fecha": "06/12/2016",
+            "infraccion": "Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "DAVID ROSAMEL MERA ORTIZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DIEGO ARMANDO CHAVEZ GRONDONA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Víctima",
+            "rol": "Ordinaria-1253-2016",
+            "fecha": "30/11/2016",
+            "infraccion": "AMENAZAS SIMPLES CONTRA PERSONAS Y PROPIEDADES ART. 296 Nº3.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "DIEGO ARMANDO CHÁVEZ GRONDONA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ERWIN IVÁN MONSÁLVEZ MARTÍNEZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "GABRIEL ROGER MARRIAN ALVAREZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ ANDRÉS ORTIZ JIMÉNEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VÍCTOR ALEJANDRO RIFFO PÉREZ",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Arauco",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-39-2015",
+            "fecha": "18/03/2015",
+            "infraccion": "ROBO CON INTIMIDACIÓN . ART. 433, 436 inc. 1",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRO ANTONIO VERA VERA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ANGELA YASNA GUTIERREZ BIZAMA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL AARON RAMIREZ PEÑAILILLO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FABIAN ENRIQUE OBREQUE HERNANDEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO TOMAS CHEUQUELEN SIERRA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GABRIEL PINILLA GARCIA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE EDUARDO REBOLLEDO FICA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE HERNAN SEPULVEDA CASQUEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSE SARAVIA MONSALVEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LUIS RIVERA ZAMBRANO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS VEGA CARRILLO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELO MEZA MELLADO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIA INES GALLARDO GALLARDO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ULISES GUTIERREZ BRAGANZA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VICTOR CASTILLO ROZAS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Auto de apertura",
+            "tribunal": "TRIBUNAL ORAL EN LO PENAL DE CAÑETE",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-897-2014",
+            "fecha": "04/12/2014",
+            "infraccion": "Daños simples.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRO ANTONIO VERA VERA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CDP ARAUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EDUARDO FUENTES RODRIGUEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUANA DOMINGA SOTO CAMPOS",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUANA DOMINGA SOTO CAMPOS",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRAN ROA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VICTOR MAURICIO CASTILLO ROZAS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-684-2014",
+            "fecha": "26/08/2014",
+            "infraccion": "ROBO CON INTIMIDACIÓN . ART. 433, 436 inc. 1",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "ANGELA YASNA GUTIERREZ BIZAMA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CDP ARAUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CDP LEBU",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DANIEL AARON RAMIREZ PEÑAILILLO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FABIAN ENRIQUE OBREQUE HERNANDEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO TOMAS CHEUQUELEN SIERRA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GABRIEL PINILLA GARCIA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "IGNACIO ANDRÉS ITURRIETA URREA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE EDUARDO REBOLLEDO FICA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JORGE HERNAN SEPULVEDA CASQUEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSE SARAVIA MONSALVEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LUIS RIVERA ZAMBRANO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS VEGA CARRILLO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELO MEZA MELLADO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARIA INES GALLARDO GALLARDO",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PIA CAMPOS CAMPOS",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PÍA LORENA CAMPOS CAMPOS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ULISES GUTIERREZ BRAGANZA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VICTOR CASTILLO ROZAS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-385-2014",
+            "fecha": "02/05/2014",
+            "infraccion": "AMENAZAS SIMPLES CONTRA PERSONAS Y PROPIEDADES ART. 296 Nº3.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ALEJANDRO ANTONIO VERA VERA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CDP ARAUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ ANDRÉS ORTIZ JIMÉNEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRAN ROA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-367-2014",
+            "fecha": "25/04/2014",
+            "infraccion": "AMENAZAS SIMPLES CONTRA PERSONAS Y PROPIEDADES ART. 296 Nº3.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CHRISTIAN EDUARDO BELTRAN SOTO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CHRISTIAN EDUARDO BELTRAN SOTO",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VANIA ALEXANDRA VILLARROEL PACHECO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-684-2013",
+            "fecha": "05/07/2013",
+            "infraccion": "AMENAZAS SIMPLES CONTRA PERSONAS Y PROPIEDADES ART. 296 Nº3. | Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "JOSÉ ANDRÉS ORTIZ JIMÉNEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRAN ROA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRAN ROA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "SERGIO ALEJANDRO MUÑOZ ITURRA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-633-2013",
+            "fecha": "28/06/2013",
+            "infraccion": "RECEPTACION. ART. 456 BIS A.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "ANSELMO IVAN GARRIDO CONTRERAS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "LUIS EMILIO ROBLES CABRERA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS EMILIO ROBLES CABRERA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SERGIO ALEJANDRO MUÑOZ ITURRA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-508-2013",
+            "fecha": "23/05/2013",
+            "infraccion": "PORTE ILEGAL DE ARMA DE FUEGO, MUNICIONES Y OTROS SUJETAS A. | RECEPTACION. ART. 456 BIS A. | ROBO CON INTIMIDACIÓN . ART. 433, 436 inc. 1",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "CARABINEROS CURANILAHUE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CAROLINA ANDREA MOLINA ALBORNOZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CDP ARAUCO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRS CAÑETE",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ITX GENCHI ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MIRTA ELIANA FUENTEALBA PEREZ",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PATRICIO ANDRÉS ROBLES CONTRERAS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PEDRO ANDRÉS AGUILERA SOTO",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SONIA EDITH SILVA RODRIGUEZ",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VERONICA ISABEL OLATE MARTINEZ",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Víctima",
+            "rol": "Ordinaria-154-2013",
+            "fecha": "01/03/2013",
+            "infraccion": "CUASIDELITO DE LESIONES: ART 490, 491 INC 2° Y 492.",
+            "estado": "Concluida",
+            "etapa": "Investigación",
+            "litigantes": [
+              {
+                "nombre": "ANSELMO IVAN GARRIDO CONTRERAS",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EMMANUEL JOB CASTRO ROJAS",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JONATHAN EDGARDO CASTRO ROJAS",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN ALBERTO CISTERNAS CHAMBLAS",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUAN ALBERTO CISTERNAS FERNANDEZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RICARDO ARIEL PALMA BAHAMONDES",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "RICARDO ARIEL PALMA BAHAMONDES",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SERGIO ALEJANDRO MUÑOZ ITURRA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-110-2013",
+            "fecha": "25/02/2013",
+            "infraccion": "Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "KAREN VALESKA BELTRÁN ROA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "PEDRO ANDRÉS AGUILERA SOTO",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          },
+          {
+            "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-28-2013",
+            "fecha": "15/01/2013",
+            "infraccion": "Lesiones graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "DAVID ROSAMEL MERA ORTIZ",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ ANDRÉS ORTIZ JIMÉNEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LEONARDO ANTONIO GALLARDO GALLARDO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARÍA ALEJANDRA MONSALVE VEGA",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MICHEL ESTEBAN GARCES PARRA",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MICHEL ESTEBAN GARCES PARRA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "N/N",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "SERGIO ALEJANDRO MUÑOZ ITURRA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Letras y Garantía de Curanilahue",
+            "esDenunciado": true
+          }
+        ],
+        "totalCoincidencias": 21
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0eceab0c9107399d48d533deab02053c077bed3169ca479a0777722eb5b0680a",
+      "cached_at": "2026-05-30T00:23:39.031132"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "17036265-9",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:89586a9469fabe6aaa026078347557c7d961204ac07fe34fca66fb6049d52c16",
+        "cached_at": "2026-05-30T00:23:39.371734"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 100,
+      "numeradorFinanzas": 8650,
+      "denominadorFinanzas": 8650,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 50,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 2,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 82.80470559971832,
+      "montoBoletinComercial": 25417169,
+      "ponderacionBoletinComercial": 17.195294400281682,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 167.19529440028168,
+      "etiquetaClasificacion": "High",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:88a852be32263abefd7a31ada17fe700ab968ff4e782a5a224ade97fe5640a9f",
+      "cached_at": "2026-05-30T00:23:40.007674"
+    }
+  }
+}

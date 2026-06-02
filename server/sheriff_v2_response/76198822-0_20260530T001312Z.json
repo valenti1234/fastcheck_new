@@ -1,0 +1,2704 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76198822-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76198822-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPOR",
+        "presentaActividades": "SI",
+        "inicioActividades": "02-03-2012",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE TRANSPORTE DE PASAJEROS POR VIA TERRESTRE N.C.P.",
+            "codigo": "492290",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "29-02-2012"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boletas De Prestacion De Servicios De 3r",
+            "ultimoAnioTimbrado": "2013"
+          },
+          {
+            "documento": "Otros Libros Empastados",
+            "ultimoAnioTimbrado": "2014"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 11,
+        "ultimaActualizacion": null,
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Gran empresa",
+          "ventasAnuales": "600.000,01 a 1.000.000,00",
+          "cantidadTrabajadores": 1217
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 00:13:07"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 2,
+        "cobranzaActivos": 8,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 6,
+        "laboralActivos": 42,
+        "laboralPresentados": 14,
+        "laboralConcluidos": 42,
+        "casosActuales": 50,
+        "casosArchivados": 14,
+        "casosConcluidos": 50,
+        "todosLosCasos": 114,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 43,
+          "demandante": 2,
+          "reclamante": 1,
+          "denunciado": 17,
+          "denunciante": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 00:13:06",
+        "ultimaActualizacionCobranza": "30-05-2026 00:13:07",
+        "ultimaActualizacionLaboral": "30-05-2026 00:13:07",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 19,
+          "empleados": 7,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 18.75,
+            "cambioAbsoluto": 3
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 36,
+          "montoTotalMultas": 99845594,
+          "multasPagadas": 36,
+          "montoMultasPagadas": 99845594,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0.56,
+            "cambioAbsoluto": 555000
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 00:13:07"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "29-01-2014 21:00:00",
+              "razonSocial": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD TRANSPORTE S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/01/30/738600_M_SA_20140130_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76198822-0"
+            }
+          ],
+          "ultimaActualizacion": "30-05-2026 00:13:07"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "13-04-2026 19:34:09"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "13-04-2026 19:34:09"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 55.14018691588785,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 50,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 205.14018691588785,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPOR",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:e526a4525aab3236c4f411943d49f050ee3d05af4f347e1de1445e16d8e6ee98",
+      "cached_at": "2026-05-30T00:13:08.595443"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "03-03-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12561953-3",
+                "nombre": "ROBERTO ANDRÉS NEIRA CÁCERES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76330590-2",
+                "nombre": "TRANSPORTES JOSE CARRASCO RETAMAL E.I.R.L.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "10922077-9",
+                "nombre": "PABLO ANDRÉS CAGLEVIC MEDINA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Menor Cuantia",
+            "rol": "C-8069-2019",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "4 Terminada",
+            "fechaIngreso": "03-02-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12561953-3",
+                "nombre": "ROBERTO ANDRÉS NEIRA CÁCERES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76330590-2",
+                "nombre": "TRANSPORTES JOSE CARRASCO RETAMAL E.I.R.L.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-4169-2019",
+            "tribunal": "17º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:13:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c58a905a9745f4f8695bb37560bd16791adbf6398eee970be8157d1746885c4f",
+        "cached_at": "2026-05-30T00:13:08.932535"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 14,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "28-08-2025 20:00:00",
+            "monto": "782141",
+            "litigantes": [
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESA DE SERVICIOS EXTERNOS ACHS TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "18575570-3",
+                "nombre": "GUILLERMO IGNACIO CÁCERES SEPÚLVEDA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13142691-7",
+                "nombre": "LUIS MARCEL CRETTON AGUAYO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10892459-4",
+                "nombre": "LUIS FELIPE SÁEZ CARLIER",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19887114-1",
+                "nombre": "ANDRÉS ALEJANDRO MUÑOZ RAMÍREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10013353-9",
+                "nombre": "JOAQUÍN EDUARDO REBOLLEDO VIDAL",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18957316-2",
+                "nombre": "ROMINA ANGÉLICA OCAMPO DÍAZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15633167-8",
+                "nombre": "JUAN MANUEL DÍAZ PEREIRA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16394925-3",
+                "nombre": "CAMILO IGNACIO VELOSO ELLIS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15458996-1",
+                "nombre": "PATRICIO ÍTALO VILLARROEL ALARCÓN",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-149-2025",
+            "tribunal": "Jdo. de Letras del Trabajo de Los Ángeles",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "18-08-2025 20:00:00",
+            "monto": "68750",
+            "litigantes": [
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESA DE SERVICIOS EXTERNOS ACHS TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "9673877-3",
+                "nombre": "JOSÉ FERNANDO MOLINEIRO DE RUIZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18425919-2",
+                "nombre": "DAVID IGNACIO MENDOZA BURGOS",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACIÓN CHILENA DE SEGURIDAD (ACHS)",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO HUMBERTO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13829607-5",
+                "nombre": "TANIA ALEJANDRA GACITÚA MUÑOZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-34-2025",
+            "tribunal": "1º Juzgado de Letras de San Antonio",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "30-08-2023 20:00:00",
+            "monto": "0",
+            "litigantes": [
+              {
+                "rut": "16323571-4",
+                "nombre": "GONZALO IGNACIO DÍAZ SALVO",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "65884280-3",
+                "nombre": "SINDICATO DE LA EMPRESA DE SERVICIOS EXTERNOS ACHS S.A. (ESACHS).",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17045803-6",
+                "nombre": "PABLO FERNANDO FUENZALIDA FUENTES",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10892459-4",
+                "nombre": "LUIS FELIPE SÁEZ CARLIER",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16749450-1",
+                "nombre": "JOSÉ LUIS MUÑOZ EYQUEM",
+                "sujeto": "AB.TER",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCIÓN COMUNAL DEL TRABAJO PROVIDENCIA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11468879-7",
+                "nombre": "CARLOS ALBERTO LASTRA RAMOS",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12034295-9",
+                "nombre": "JAVIER ALEJANDRO VEGA MARTINOVIC",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9354250-9",
+                "nombre": "PABLO ANDRÉS MOREIRA LUMBRERA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "99579260-5",
+                "nombre": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-3772-2023",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "02-10-2022 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17858777-3",
+                "nombre": "EDUARDO IGNACIO BRAVO PIZARRO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "17090359-5",
+                "nombre": "STEPHANO NOVANI CORREA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-426-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Discusión",
+            "fechaIngreso": "19-01-2022 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO HUMBERTO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17779227-6",
+                "nombre": "JIMMY ABRAHAM ROCHA NORAMBUENA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "18084615-8",
+                "nombre": "FELIPE IGNACIO CÓRDOVA FREZZANI",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-290-2022",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Sintramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Excepciones / Objeta Liquidación",
+            "fechaIngreso": "31-12-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "75005300-9",
+                "nombre": "FUCYT  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96951870-8",
+                "nombre": "BIONET SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "17045803-6",
+                "nombre": "PABLO FERNANDO FUENZALIDA FUENTES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16283625-0",
+                "nombre": "CARLA VERONICA PALAVECINO ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17199518-3",
+                "nombre": "PAULA MERELLO LOBOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO CASTILLO BARRIOS",
+                "sujeto": "AP.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "13435086-5",
+                "nombre": "GONZALO ALEJANDRO LIRA FUENZALIDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16977126-K",
+                "nombre": "VICTORIA ALEJANDRA MUÑOZ SEPULVEDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17107847-4",
+                "nombre": "FRANCISCA VIAL HERRERA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "16936259-9",
+                "nombre": "FRANCISCA RAMIREZ JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15191213-3",
+                "nombre": "RAUL FERNANDEZ TOLEDO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "6349821-1",
+                "nombre": "JULIA DEL CARMEN UGARTE CANCINO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16367030-5",
+                "nombre": "ISAIAS OSCAR RODRIGUEZ REYES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "18294789-K",
+                "nombre": "DIEGO IGNACIO AVENDAÑO LORCA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "11847016-8",
+                "nombre": "CRISTIAN BRICEÑO ECHEVERRIA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "1-9",
+                "nombre": "OSCAR GABLET PINTO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10518725-4",
+                "nombre": "CHRISTIAN GERMAN ALVIZ RIFFO",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12232396-K",
+                "nombre": "RODRIGO UGARTE BOLUMBURU",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "15959452-1",
+                "nombre": "CONSTANZA RIOS GHIO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "17271522-2",
+                "nombre": "JAVIER MARTINEZ CORTES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16014686-9",
+                "nombre": "NICOLAS QUINTANILLA PAVEZ",
+                "sujeto": "AP.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "10739386-2",
+                "nombre": "HECTOR PEREZ BONIFAZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15382562-9",
+                "nombre": "ANDRÉS DIGHERO EBERHARD",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17839745-1",
+                "nombre": "MARIANA TERESA RAMÍREZ FUENZALIDA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17496030-5",
+                "nombre": "LEYLA ANDREA ALUL BARRÍA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "96934940-K",
+                "nombre": "IMAGENES 2001 SPA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "65117605-0",
+                "nombre": "SINDICATO DE EMPRESA ESACHS TRANSPORTE S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76481620-K",
+                "nombre": "CENTRO MEDICO HTS  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "96627120-5",
+                "nombre": "INMOBILIARIA CLINICAS REGIONALES S A  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "78185540-5",
+                "nombre": "SOREMA S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5552-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "21-07-2021 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "15382562-9",
+                "nombre": "ANDRÉS DIGHERO EBERHARD",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10020937-3",
+                "nombre": "RICARDO ANTONIO LOBOS BADILLA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "9270341-K",
+                "nombre": "EDGARDO RODRIGO GARCÍA NEIMAN",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10892459-4",
+                "nombre": "LUIS FELIPE SÁEZ CARLIER",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-103-2021",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "12-08-2019 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "ESACHS TRANSPORTES S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-30951-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "06-01-2019 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "14213496-9",
+                "nombre": "LUIS ENRIQUE BALMAZABAL GUZMÁN",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13307645-K",
+                "nombre": "OSCAR ALFREDO CASTRO TOLOZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Otros Títulos Ejecutivos",
+            "rit": "J-5-2019",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Ingreso",
+            "fechaIngreso": "09-12-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000100-8",
+                "nombre": "Administradora de Fondos de Pensiones Habitat  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMP. SERV. EXTERNOS ASOC. CHILENA SEGURIDAD TRANS.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8352676-9",
+                "nombre": "Francisco Tocornal Fuenzalida",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-67124-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "10-07-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO HUMBERTO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "70816700-2",
+                "nombre": "CORPORACION DE ASISTENCIA JUDICIAL DE LA REGION DEL BIO BIO  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12403540-6",
+                "nombre": "CRISTIAN COUSIÑO HIDALGO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "15267166-0",
+                "nombre": "MIGUEL GONZALO ARCOS RUBILAR",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "16283625-0",
+                "nombre": "CARLA VERONICA PALAVECINO ROJAS",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-8-2018",
+            "tribunal": "Juzgado de Letras y Garantía de Panguipulli",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "09-01-2018 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADMINISTRADORA DE FONDOS DE CESANTIA DE CHILE II S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "ESACHS TRANSPORTES S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8270154-0",
+                "nombre": "Antonio Ricardo Alamos Avendano",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-2041-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "07-08-2014 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76237243-6",
+                "nombre": "SOCIEDAD ADM. DE FONDOS DE CESANTIA DE CHILE II SA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "ESACHS TRANSPORTES S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "MANUEL JESUS FIGUEROA SAAVEDRA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-47387-2014",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "04-05-2014 20:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESA SERVICIOS EXTERNOS ACHS TRANSPORTE SA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14371187-0",
+                "nombre": "ANA MARIA CAMPOS ARAYA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6212807-0",
+                "nombre": "DOMINGO SEGUNDO RODRIGUEZ ANGULO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Cumplimiento Laboral",
+            "rit": "C-5-2014",
+            "tribunal": "1º Juzgado de Letras de Vallenar",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:13:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:41aae39920f2666cb813b1cfc88bfe22897e819a0d809a28459e21f97a920d95",
+        "cached_at": "2026-05-30T00:13:09.373700"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 5,
+        "cantidad": 98,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "06-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "24095480-K",
+                "nombre": "MICHEL CAMILA LIBREROS BETANCOURT",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18782560-1",
+                "nombre": "MATÍAS ENRIQUE BERRÍOS FUCHSLOCHER (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19460579-K",
+                "nombre": "DANTE FRANCESCO GARIBOLDI CAPELLI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "99579260-5",
+                "nombre": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1324-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "05-04-2026 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10328754-5",
+                "nombre": "FERNANDO RUBÉN CATALÁN ALVARADO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "10410236-0",
+                "nombre": "RODRIGO ANDRÉS ALBORNOZ POLLMANN (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16645510-3",
+                "nombre": "FABIOLA ALEJANDRA CARREÑO GOMEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13916995-6",
+                "nombre": "SANDRA LEONOR VILCHES QUILODRAN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18639190-K",
+                "nombre": "IGNACIO JAVIER VARGAS AHUMADA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2485-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "31-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16726764-5",
+                "nombre": "FRANCISCO IGNACIO ACUÑA GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16731436-8",
+                "nombre": "CRISTIAN IGNACIO ROJAS GARRIDO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "14529091-0",
+                "nombre": "MAURICIO MIRANDA JIMENEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2388-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "18-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17967049-6",
+                "nombre": "NICOLE ANNAIE YÁÑEZ CONTRERAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1351-2026",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Impugnación Monitorio",
+            "fechaIngreso": "21-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10940699-6",
+                "nombre": "SANTIAGO SANDRO FERNÁNDEZ ESCOBAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17543582-4",
+                "nombre": "VERONICA MESÍAS POBLETE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-389-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "14-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO HUMBERTO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18425919-2",
+                "nombre": "DAVID IGNACIO MENDOZA BURGOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19263630-2",
+                "nombre": "ODETTE JAVIERA SILVA ÁLVAREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18026258-K",
+                "nombre": "CAMILA RETAMALES QUIROZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "19435111-9",
+                "nombre": "LUCIANO IGNACIO ASCUÍ MESTRE",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16645656-8",
+                "nombre": "RAÚL ANTONIO PAILLÁN PARRAGUEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-248-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-12-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15646570-4",
+                "nombre": "ERWIN ITURRIAGA ITURRIAGA",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18422226-4",
+                "nombre": "VALERIA CECILIA TOBAR CELIS",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-4329-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "07-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18201472-9",
+                "nombre": "MAKARENA SUANY GONZÁLEZ ROMERO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18957472-K",
+                "nombre": "RICARDO ANDRÉS BRICEÑO RAMÍREZ (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12887023-7",
+                "nombre": "JUAN AMADO CARRASCO SÁNCHEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8021-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "09-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13493528-6",
+                "nombre": "JUAN CRISTIAN SILVA GUZMAN",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17242097-4",
+                "nombre": "SEBASTIÁN ADOLFO CRUZ SARAVIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7289-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "06-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9998523-2",
+                "nombre": "JORGE ORLANDO PALOMINO LLANCAMIL",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011223-9",
+                "nombre": "CRISTHOPER EDUARDO MONTECINO VENEGAS (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16327977-0",
+                "nombre": "JENNIFER ROMINA JARA VIELMA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SU",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1182-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "10-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "18425919-2",
+                "nombre": "DAVID IGNACIO MENDOZA BURGOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13471326-7",
+                "nombre": "FELIPE ANDRÉS VICUÑA NEUBER (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15565816-9",
+                "nombre": "SCARLET GRIMANESA AVENDAÑO HERNÁNDEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "12890074-8",
+                "nombre": "PATRICIO HUMBERTO CASTILLO BARRIOS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-4618-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Cumplimiento Med.Prej",
+            "fechaIngreso": "10-09-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17703061-9",
+                "nombre": "MARÍA IGNACIA CABALLERO IBARRA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18235073-7",
+                "nombre": "DANIELA YHARA CHÁVEZ MATURANA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18749789-2",
+                "nombre": "CAMILA FERNANDA PLAZA CANALES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15973036-0",
+                "nombre": "NATALIE ALEJANDRA CLAROT NÚÑEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-4616-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "03-09-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17586406-7",
+                "nombre": "CRISTIAN MATÍAS ESPINOZA ORMEÑO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16011933-0",
+                "nombre": "RODRIGO VALDIVIA MERINO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13943580-K",
+                "nombre": "MARCELA ELIANA SEPÚLVEDA VÁSQUEZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-41-2025",
+            "tribunal": "Juzgado de Letras de Mejillones",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "15367277-6",
+                "nombre": "MAURICIO REYES MARQUEZ",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17271872-8",
+                "nombre": "VALERY NATALIA TORRES RODRÍGUEZ",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "11982669-1",
+                "nombre": "DANIEL MARCELO BARRERA JIMÉNEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-261-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Curicó",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "77114664-3",
+                "nombre": "SIERRA ATACAMA SPA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "24987235-0",
+                "nombre": "EDWARD STEVENS VALENCIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "93007000-9",
+                "nombre": "SOQUIMICH",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79947100-0",
+                "nombre": "SQM INDUSTRIAL S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "79626800-K",
+                "nombre": "S.Q.M. SALAR S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96592190-7",
+                "nombre": "SQM NITRATOS S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16926995-5",
+                "nombre": "CAMILA BERNARDA CALLE CASTRO",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17132284-7",
+                "nombre": "KAMILA ARMINDA LEIVA BITAR",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1164-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "16-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "61502000-1",
+                "nombre": "DIRECCION GENERAL DEL TRABAJO",
+                "sujeto": "DNCTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17643876-2",
+                "nombre": "VÍCTOR DANILO VILLANUEVA GÓMEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-20-2025",
+            "tribunal": "1° Juzgado de Letras de Vallenar",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Única",
+            "fechaIngreso": "07-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "14112329-7",
+                "nombre": "DAYAN DEL CARMEN NARANJO TAPIA",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "20346986-1",
+                "nombre": "ALESANDRA ESKARLE JAIME JAIME",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOCIACION CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-156-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Calama",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "02-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19712347-8",
+                "nombre": "CAMILA JAVIERA MARÍN ZAMORANO",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "6872725-1",
+                "nombre": "GERMAN YOVANE MONETTA (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "70360100-6",
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-17-2025",
+            "tribunal": "2° Juzgado de Letras de Vallenar",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "26-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "16634724-6",
+                "nombre": "NIBALDO ANDRES SAEZ MONTOYA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18802956-6",
+                "nombre": "EMPRESA DE TRANSPORTES RURALES TUR BUS LTDA O TUR BUS SPA. GUTIERREZ MUÑOZ",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-101-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Los Angeles",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "25-06-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19831999-6",
+                "nombre": "VALERIA ELIZABETH CAROCA MUÑOZ",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76198822-0",
+                "nombre": "EMPRESAS DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13998978-3",
+                "nombre": "DANIEL HUMBERTO GUTIERREZ ORLANDI (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-2199-2025",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:13:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1a07d23c19f57b3b2a1c146844d187f5d87166cc78a9f25290157b9ca985b577",
+        "cached_at": "2026-05-30T00:13:09.821751"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 36,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-01-2026 21:00:00",
+            "multa": "7385/25/376-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "15-11-2025 21:00:00",
+            "multa": "3952/25/171-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "06-11-2025 21:00:00",
+            "multa": "3119/25/217-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "03-10-2025 21:00:00",
+            "multa": "8109/25/148-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No adoptar de manera inmediata las medidas de resguardo necesarias respecto de los involucrados por acoso sexual, laboral y/o violencia en el trabajo, en caso de investigación efectuada por el empleador.",
+            "estado": "PAGADA",
+            "fecha": "02-10-2025 21:00:00",
+            "multa": "2024/25/007-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4155900
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "27-08-2025 20:00:00",
+            "multa": "8002/25/154-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No adoptar de manera inmediata el empleador, solicitadas por la Inspección del Trabajo, en el caso de que la denuncia fuere presentada ante la Inspección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "14-08-2025 20:00:00",
+            "multa": "1994/25/010-2",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No evaluar de acuerdo a la metodología establecida en el  Manual del Método del Cuestionario CEAL-SM / SUSESO instruido en el  del Protocolo de Vigilancia de Riesgos Psicosociales en el Trabajo",
+            "estado": "PAGADA",
+            "fecha": "14-08-2025 20:00:00",
+            "multa": "1994/25/010-1",
+            "procedencia": "FISCALIZACION",
+            "um": "60",
+            "tipoUm": "UTM",
+            "montoClp": 4118820
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "01-08-2025 20:00:00",
+            "multa": "7631/25/166-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "25-07-2025 20:00:00",
+            "multa": "6288/25/091-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "11-07-2025 20:00:00",
+            "multa": "7385/25/140-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "09-07-2025 20:00:00",
+            "multa": "8385/25/014-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-04-2025 21:00:00",
+            "multa": "3175/25/022-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "05-04-2025 21:00:00",
+            "multa": "6067/25/094-1",
+            "procedencia": "RECLAMO",
+            "um": "2",
+            "tipoUm": "IMM",
+            "montoClp": 1000000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "21-02-2025 21:00:00",
+            "multa": "4532/24/405-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "19-02-2025 21:00:00",
+            "multa": "1929/24/315-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "16-02-2025 21:00:00",
+            "multa": "8401/25/005-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "05-01-2025 21:00:00",
+            "multa": "1843/24/378-1",
+            "procedencia": "RECLAMO",
+            "um": "1.11",
+            "tipoUm": "IMM",
+            "montoClp": 555000
+          },
+          {
+            "enunciado": "Exceder permanencia máxima de 12 horas diarias.",
+            "estado": "PAGADA",
+            "fecha": "20-12-2024 21:00:00",
+            "multa": "7425/24/052-1",
+            "procedencia": "FISCALIZACION",
+            "um": "48",
+            "tipoUm": "UTM",
+            "montoClp": 3230112
+          },
+          {
+            "enunciado": "Exceder máximo de 2 horas extras por día.",
+            "estado": "PAGADA",
+            "fecha": "20-12-2024 21:00:00",
+            "multa": "7425/24/052-2",
+            "procedencia": "FISCALIZACION",
+            "um": "48",
+            "tipoUm": "UTM",
+            "montoClp": 3230112
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:13:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0c631e4669251483eeb506aa49a228aa9e7cbc847a63a0c258795d05eb958668",
+        "cached_at": "2026-05-30T00:13:10.272561"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 2,
+        "cantidad": 23,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAUL ALEJANDRO MUNOZ VILLALOBOS ",
+            "periodo": "01/2026",
+            "rutAfiliado": "8251518-6",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Cuprum",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "GERSON ELIED VIDAL BELLO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "12763577-3",
+            "tipoProducto": "Cotización voluntaria"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ENRIQUE RODRIGUEZ PUEBLA ",
+            "periodo": "11/2025",
+            "rutAfiliado": "7983421-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ENRIQUE RODRIGUEZ PUEBLA ",
+            "periodo": "10/2025",
+            "rutAfiliado": "7983421-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE ENRIQUE RODRIGUEZ PUEBLA ",
+            "periodo": "09/2025",
+            "rutAfiliado": "7983421-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCO ANDRES PARDO NAVARRETE ",
+            "periodo": "07/2025",
+            "rutAfiliado": "16916148-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ANDRO IVAN TORO VARGAS ",
+            "periodo": "07/2025",
+            "rutAfiliado": "17128725-1",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-08-2025 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCO ANDRES PARDO NAVARRETE ",
+            "periodo": "06/2025",
+            "rutAfiliado": "16916148-8",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Instituto de Previsión Social",
+            "fecha": "30-05-2024 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RAMON ANTONIO BECERRA CONTRERAS ",
+            "periodo": "03/2024",
+            "rutAfiliado": "5837984-0",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-08-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "SERGIO ANTONIO LOPEZ ARAYA ",
+            "periodo": "06/2023",
+            "rutAfiliado": "8061163-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-07-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "SERGIO ANTONIO LOPEZ ARAYA ",
+            "periodo": "05/2023",
+            "rutAfiliado": "8061163-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-06-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "SERGIO ANTONIO LOPEZ ARAYA ",
+            "periodo": "04/2023",
+            "rutAfiliado": "8061163-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-06-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "JOSE ELIBERTO GATICA VIDAL ",
+            "periodo": "04/2023",
+            "rutAfiliado": "8244943-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-05-2023 20:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "SERGIO ANTONIO LOPEZ ARAYA ",
+            "periodo": "03/2023",
+            "rutAfiliado": "8061163-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "27-02-2023 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "HERNAN GERARDO GALVEZ HIDALGO ",
+            "periodo": "12/2022",
+            "rutAfiliado": "7042492-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-01-2023 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "HERNAN GERARDO GALVEZ HIDALGO ",
+            "periodo": "11/2022",
+            "rutAfiliado": "7042492-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-12-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "HERNAN GERARDO GALVEZ HIDALGO ",
+            "periodo": "10/2022",
+            "rutAfiliado": "7042492-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-11-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "HERNAN GERARDO GALVEZ HIDALGO ",
+            "periodo": "09/2022",
+            "rutAfiliado": "7042492-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-10-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "HERNAN GERARDO GALVEZ HIDALGO ",
+            "periodo": "08/2022",
+            "rutAfiliado": "7042492-4",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2022 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "HERNAN GERARDO GALVEZ HIDALGO ",
+            "periodo": "07/2022",
+            "rutAfiliado": "7042492-4",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 00:13:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ae53da7cd796ee93dcc3dd8b5a3aebeab306990cc0c2a912eefad3acb4c391c8",
+        "cached_at": "2026-05-30T00:13:10.637178"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76198822-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPOR",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACION CHILENA DE SEGURIDAD TRANSPORTE S.A",
+            "rutSociedad": "76198822-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "ASOC CHILENA DE SEGURIDAD",
+                "rut": "70360100-6",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "SOCIEDAD DE DIAGNÓSTICO MÉDICO POR RESONANCIA MAGNÉTICA S.A.",
+                "rut": "78185540-5",
+                "domicilio": "RAMÓN CARNICER 185, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "CENTRO MÉDICO HTS SPA.",
+                "rut": "76481620-K",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2014-01-30",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2014/01/30/738600_M_SA_20140130_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:45daba68b3988d5d1bf58f0a799e4c6d3d8751a9cf585df08b299a4ff77360af",
+      "cached_at": "2026-05-30T00:13:11.285287"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76198822-0",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "29-01-2014 21:00:00",
+            "razonSocial": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD TRANSPORTE S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/01/30/738600_M_SA_20140130_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD TRANSPORTE S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76198822-0"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76198822-0",
+            "sociedad": "EMPRESA DE SERVICIOS EXTERNOS ASOCIACIÓN CHILENA DE SEGURIDAD TRANSPORTE S.A"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:98eb4633bbd35ac75462e7e0041367150a6c73c05562db16f77b0297f5a57703",
+        "cached_at": "2026-05-30T00:13:11.651030"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 44.85981308411215,
+      "numeradorJudicial": 48,
+      "denominadorJudicial": 107,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 55.14018691588785,
+      "porcentajeMoraPrevisional": 50,
+      "casosMoraPrevisional": 19,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 99845594,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 50,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 205.14018691588785,
+      "etiquetaClasificacion": "Medium",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:67a360e1efcec650acb17716a582ebb6241479b798d4a1df414e8c45758b069f",
+      "cached_at": "2026-05-30T00:13:12.329353"
+    }
+  }
+}

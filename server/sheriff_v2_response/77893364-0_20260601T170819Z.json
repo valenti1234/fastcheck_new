@@ -1,0 +1,579 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77893364-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77893364-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "CUIDADOS Y REHABILITACIÓN RUIZ BARRERA LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "19-02-2024",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CENTROS DE SALUD MUNICIPALIZADOS (SERVICIOS DE SALUD PU",
+            "codigo": "862010",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-02-2024"
+          },
+          {
+            "actividades": "OTROS SERVICIOS DE ATENCION DE LA SALUD HUMANA PRESTADOS POR EMPRESAS",
+            "codigo": "869091",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-02-2024"
+          },
+          {
+            "actividades": "ACTIVIDADES DE ATENCION EN INSTITUCIONES PARA PERSONAS DE EDAD Y PERSO",
+            "codigo": "873000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "19-02-2024"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 3,
+        "ultimaActualizacion": "01-06-2026 17:08:14",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "0,01 a 200,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 17:08:15"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "01-06-2026 17:08:14",
+        "ultimaActualizacionCobranza": "01-06-2026 17:08:14",
+        "ultimaActualizacionLaboral": "01-06-2026 17:08:13",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 17:08:14"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "29-01-2024 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "7255164",
+              "razonSocial": "CUIDADOS Y REHABILITACION RUIZ BARRERA LIMITADA",
+              "cve": "ACVbuKfuavCy",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVbuKfuavCy&codigo=88-0E-35-3C-C6-A9-E6-91-47-A3-4D-6E-AD-14-45-ED",
+              "socios": [
+                {
+                  "socio": "NATALIA CATHERINNE BARRERA ALEGRIA",
+                  "rut": "16777193-9",
+                  "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": null,
+                  "monto": "$250.000 PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "ANDREA ISABEL RUIZ PENA",
+                  "rut": "16210345-8",
+                  "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": null,
+                  "monto": "$250.000 PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "NATALIA CATHERINNE BARRERA ALEGRIA",
+                  "rut": "16777193-9",
+                  "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO"
+                },
+                {
+                  "administrador": "ANDREA ISABEL RUIZ PENA",
+                  "rut": "16210345-8",
+                  "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "01-06-2026 17:08:15"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "CUIDADOS Y REHABILITACIÓN RUIZ BARRERA LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:03fbc6a8a11f2af22da2d28b162f32ea38af57acddb1835621d5c5de0855e187",
+      "cached_at": "2026-06-01T17:08:16.305722"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:08:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c0f635f649d79bae8637d0aac09ec88bc2b695d584a8af8bf8fb29c0426b90fa",
+        "cached_at": "2026-06-01T17:08:16.623679"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:08:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7cfe42306660c14cbb3175d301ab6690533264952ce303a2c611898d3fd5c1a3",
+        "cached_at": "2026-06-01T17:08:16.961119"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:08:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4b19528623b8f1a0ca687c1265ab2f95a92d9bfa099a76bf488323f6fc46de53",
+        "cached_at": "2026-06-01T17:08:17.279649"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:08:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5fe74e012a183600ce21cec4c28c58b2132f41981dfd8baaa7c29d362bd9a860",
+        "cached_at": "2026-06-01T17:08:17.603897"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 17:08:14"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:af90f514901d19e6162de5f88cbfd9ec43ab60afdafddc4d8344730d64129157",
+        "cached_at": "2026-06-01T17:08:17.921076"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77893364-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "CUIDADOS Y REHABILITACIÓN RUIZ BARRERA LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CUIDADOS Y REHABILITACIÓN RUIZ BARRERA LIMITADA",
+            "rutSociedad": "77893364-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2024-01-29",
+            "socios": [
+              {
+                "nombre": "ANDREA ISABEL RUIZ PEÑA",
+                "rut": "16210345-8",
+                "domicilio": "DOMICILIADA EN CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO, COMUNA DE PUENTE ALTO, REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "NATALIA CATHERINNE BARRERA ALEGRIA",
+                "rut": "16777193-9",
+                "domicilio": "DOMICILIADA EN CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO, COMUNA DE PUENTE ALTO, REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2024-01-30",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVbuKfuavCy&codigo=88-0E-35-3C-C6-A9-E6-91-47-A3-4D-6E-AD-14-45-ED"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:52d5f13b19aae1cecdf0e6aee44f6caaf51034e36e615c287aa918b242401b16",
+      "cached_at": "2026-06-01T17:08:18.513929"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77893364-0",
+        "empresaEnUnDia": [
+          {
+            "fecha": "29-01-2024 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "7255164",
+            "razonSocial": "CUIDADOS Y REHABILITACION RUIZ BARRERA LIMITADA",
+            "cve": "ACVbuKfuavCy",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVbuKfuavCy&codigo=88-0E-35-3C-C6-A9-E6-91-47-A3-4D-6E-AD-14-45-ED",
+            "socios": [
+              {
+                "socio": "NATALIA CATHERINNE BARRERA ALEGRIA",
+                "rut": "16777193-9",
+                "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO",
+                "acciones": null,
+                "monto": "$250.000 PESOS",
+                "porcentaje": "50%"
+              },
+              {
+                "socio": "ANDREA ISABEL RUIZ PENA",
+                "rut": "16210345-8",
+                "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO",
+                "acciones": null,
+                "monto": "$250.000 PESOS",
+                "porcentaje": "50%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "NATALIA CATHERINNE BARRERA ALEGRIA",
+                "rut": "16777193-9",
+                "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO"
+              },
+              {
+                "administrador": "ANDREA ISABEL RUIZ PENA",
+                "rut": "16210345-8",
+                "domicilio": "CALLE CERRO ROBLE N°01891 VILLA VILLA LOS PORTALES DE SAN FRANCISCO COMUNA DE PUENTE ALTO REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c383c32601ccf594b75e56e3b4b2c596cc3278ac946c8ee5c6c3e0768423f009",
+        "cached_at": "2026-06-01T17:08:18.845568"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b0042c8d568ee44d866cd231286821c01348c78519d323935330c68596e2b4c4",
+      "cached_at": "2026-06-01T17:08:19.417431"
+    }
+  }
+}

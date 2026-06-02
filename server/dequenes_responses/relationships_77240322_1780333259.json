@@ -1,0 +1,96 @@
+{
+  "pathCount": 7,
+  "relationships": [
+    {
+      "source": "77240322",
+      "target": "17092163",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-09-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77240322",
+      "target": "11190242",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1823350",
+        "cve": "1823350",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2020-09-28",
+        "doc_extraction_id": "1953472",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/09/28/42766/05/1823350.pdf"
+      }
+    },
+    {
+      "source": "77240322",
+      "target": "17092163",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1823350",
+        "cve": "1823350",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2020-09-28",
+        "doc_extraction_id": "1953472",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/09/28/42766/05/1823350.pdf"
+      }
+    },
+    {
+      "source": "78346234",
+      "target": "11190242",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2026-01-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96948890",
+      "target": "11190242",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-04-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77674400",
+      "target": "11190242",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-11-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77674400",
+      "target": "11190242",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6600654",
+        "doh_extraction_id": "500777",
+        "shares_percent": 99,
+        "source": "DOH",
+        "doh_id": "6600654",
+        "published_at": "2006-01-25",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/01/25/do-20060125.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "11190242": "LUIS ALBERTO URQUIZA GUERRA",
+    "17092163": "LUIS ALBERTO URQUIZA CORTES",
+    "77240322": "MACROSS INGENIERIA Y SERVICIOS INTEGRALES LIMITADA",
+    "77674400": "EMPRESA DE SERVICIOS DE MONTAJE INDUSTRIAL LTDA",
+    "78346234": "VERTEX INDUSTRIAL SPA",
+    "96948890": "THERMOMEC S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:6b9ab391b6f0f9c15ca72598b8bd1bf0047d8a6d86bf3c83d8cf066294e4ac8f",
+    "cached_at": "2026-06-01T17:00:59.547107"
+  }
+}

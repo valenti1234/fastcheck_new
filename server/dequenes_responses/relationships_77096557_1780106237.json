@@ -1,0 +1,44 @@
+{
+  "pathCount": 3,
+  "relationships": [
+    {
+      "source": "77096557",
+      "target": "18100080",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-11-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77096557",
+      "target": "18100080",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACY2o76Iie1e",
+        "source": "RES",
+        "published_at": "2019-11-27"
+      }
+    },
+    {
+      "source": "77455657",
+      "target": "18100080",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACP4o4OaW3sd",
+        "source": "RES",
+        "published_at": "2021-10-05"
+      }
+    }
+  ],
+  "entityNames": {
+    "18100080": "PABLO ANDRES FERNANDEZ GACITUA",
+    "77096557": "PFG MANTENIMIENTO Y SERVICIOS SPA",
+    "77455657": "MAQUINARIAS FERNANDEZ HERMANOS SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:50146511e96ac98d2d802d89250d9174deb2b86901bff02401bebf531cada356",
+    "retrieved_at": "2026-05-30T01:57:17.078441"
+  }
+}

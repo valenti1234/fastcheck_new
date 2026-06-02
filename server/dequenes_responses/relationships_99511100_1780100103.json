@@ -1,0 +1,132 @@
+{
+  "pathCount": 11,
+  "relationships": [
+    {
+      "source": "99511100",
+      "target": "8869030",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-01-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "99511100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6698803",
+        "doh_extraction_id": "910925",
+        "shares_percent": 99.9999,
+        "source": "DOH",
+        "doh_id": "6698803",
+        "published_at": "2007-10-29",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/10/29/do-20071029.pdf"
+      }
+    },
+    {
+      "source": "76714972",
+      "target": "8869030",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-03-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76042418",
+      "target": "8869030",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2010-09-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "8869030",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2010-02-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "7946741",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-11-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "6378671",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-11-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "6992918",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-11-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "21211434",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-11-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "6992931",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-11-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76000712",
+      "target": "96936430",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6698803",
+        "doh_extraction_id": "910925",
+        "shares_percent": 0.0001,
+        "source": "DOH",
+        "doh_id": "6698803",
+        "published_at": "2007-10-29",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/10/29/do-20071029.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "6378671": "SERGIO DAVID MOTLES DUBINOVSKY",
+    "6992918": "EDUARDO JAIME ERGAS WEISNER",
+    "6992931": "ALEJANDRO ENRIQUE ERGAS WEISNER",
+    "7946741": "TEODORO WIGODSKI SIREBRENIK",
+    "8869030": "LUIS FELIPE GAJARDO OLMOS",
+    "21211434": "FERNANDO KOGAN KRIZ",
+    "76000712": "INMOBILIARIA SAN FRANCISCO S.A.",
+    "76042418": "HOTELERA ORREGO LUCO SPA",
+    "76714972": "HOTELERA PARQUE LASTARRIA SPA",
+    "96936430": "INMOBILIARIA TERRA AUSTRALIS S.A.",
+    "99511100": "HOTELERA SAN FRANCISCO S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:e786cf4c7ca1873db60d6c2849a66db506f14960b6820e4086bf852ad6c8f191",
+    "cached_at": "2026-05-30T00:15:03.941641"
+  }
+}

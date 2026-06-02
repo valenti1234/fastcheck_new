@@ -1,0 +1,1510 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76437634-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76437634-K",
+      "esPersonaJuridica": true,
+      "fechaCarga": "01-06-2026",
+      "identificacion": {
+        "razonSocial": "FRAUMENI Y COMPANIA SOCIEDAD ANONIMA",
+        "presentaActividades": "SI",
+        "inicioActividades": "06-03-2015",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR EMPRESAS",
+            "codigo": "801001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-06-2024"
+          },
+          {
+            "actividades": "SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR INDEPENDIENTES",
+            "codigo": "801003",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "17-03-2015"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "17-03-2015"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 5,
+        "ultimaActualizacion": "01-06-2026 16:59:49",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "50.000,01 a 100.000,00",
+          "cantidadTrabajadores": 290
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "01-06-2026 16:59:49"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 8,
+        "laboralPresentados": 1,
+        "laboralConcluidos": 3,
+        "casosActuales": 8,
+        "casosArchivados": 2,
+        "casosConcluidos": 4,
+        "todosLosCasos": 14,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 8,
+          "demandante": 1,
+          "denunciado": 1
+        },
+        "ultimaActualizacionCiviles": "01-06-2026 16:59:48",
+        "ultimaActualizacionCobranza": "01-06-2026 16:59:48",
+        "ultimaActualizacionLaboral": "01-06-2026 16:59:48",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 5,
+          "empleados": 1,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 150,
+            "cambioAbsoluto": 3
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 1005000,
+          "multasPagadas": 2,
+          "montoMultasPagadas": 1005000,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 79.46,
+            "cambioAbsoluto": 445000
+          },
+          "ultimaActualizacion": "01-06-2026 16:59:48"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "01-06-2026 16:59:49"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "04-02-2015 21:00:00",
+              "razonSocial": "FRAUMENI Y COMPAÑÍA SOCIEDAD ANÓNIMA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/02/05/873429_C_SA_20150205_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "MARIELA FRAUMENI TUCCILLO",
+                  "rut": "6890604-0",
+                  "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "BERNABE HUMBERTO DE LA CRUZ MENA",
+                  "rut": "6930994-1",
+                  "domicilio": "AVENIDA PROVIDENCIA N 1100, OFICINA 10, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "FRAUMENI Y DE LA CRUZ LIMITADA",
+                  "rut": "76413755-8",
+                  "domicilio": null
+                },
+                {
+                  "socio": "MARIELA FRAUMENI E HIJAS LIMITADA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76437634-K"
+            },
+            {
+              "fecha": "29-12-2017 21:00:00",
+              "razonSocial": "SEPROC CAPACITACIÓN LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/30/41945/05/1329133.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MARIELA FRAUMENI TUCCILLO",
+                  "rut": "6890604-0",
+                  "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "MACARENA FERNANDA VÁSQUEZ FRAUMENI",
+                  "rut": null,
+                  "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "FRANCISCA MARIELA VÁSQUEZ FRAUMENI",
+                  "rut": null,
+                  "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "PABLO DE LA CRUZ PERNAS",
+                  "rut": "17084374-6",
+                  "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "BERNABÉ HUMBERTO DE LA CRUZ MENA",
+                  "rut": null,
+                  "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+                }
+              ],
+              "rut": "76437634-K"
+            },
+            {
+              "fecha": "11-12-2020 21:00:00",
+              "razonSocial": "FRAUMENI Y COMPAÑÍA SOCIEDAD ANÓNIMA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/12/42828/05/1864047.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76437634-K"
+            },
+            {
+              "fecha": "11-04-2025 20:00:00",
+              "razonSocial": "FRAUMENI Y COMPAÑIA SOCIEDAD ANONIMA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/04/12/44124/05/2633460.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76437634-K"
+            },
+            {
+              "fecha": "12-08-2025 20:00:00",
+              "razonSocial": "FRAUMENI Y COMPAÑIA SOCIEDAD ANONIMA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/08/13/44224/05/2685285.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76437634-K"
+            }
+          ],
+          "ultimaActualizacion": "01-06-2026 16:59:48"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 83800,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 173710,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 34000,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 84360,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 149370,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 34500
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 2,
+          "tasacionTotal": 41920003,
+          "ultimaActualizacion": "24-03-2026 05:23:44"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "24-03-2026 05:23:43"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 27.272727272727266,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 327.27272727272725,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "FRAUMENI Y COMPANIA SOCIEDAD ANONIMA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:7275f673219e45e598896088fefb41d02d95f1d98cf86973c73974a24ffccb68",
+      "cached_at": "2026-06-01T16:59:50.668174"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "20-08-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "5026889-6",
+                "nombre": "JUAN CARLOS ESGUEP SARAH",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "2859244-2",
+                "nombre": "JUANA CLORINDA CELEDÓN LEÓN",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "5929109-2",
+                "nombre": "LEÓN HALPERN NAPARSTEK",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "76046375-2",
+                "nombre": "Seproc Capacitacion Ltda.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Juicio de arrendamiento",
+            "rol": "C-22032-2017",
+            "tribunal": "11º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital",
+            "estadoCausa": "Archivada",
+            "etapa": "6 Terminada",
+            "fechaIngreso": "08-08-2017 20:00:00",
+            "litigantes": [
+              {
+                "rut": "5026889-6",
+                "nombre": "JUAN CARLOS ESGUEP SARAH (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "2859244-2",
+                "nombre": "JUANA CLORINDA CELEDÓN LEÓN",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "5929109-2",
+                "nombre": "LEÓN HALPERN NAPARSTEK",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6890604-0",
+                "nombre": "MARIELA FRAUMENI TUCCILLO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76046375-2",
+                "nombre": "Seproc Capacitacion Ltda.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Juicio de arrendamiento",
+            "rol": "C-20323-2017",
+            "tribunal": "11º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 16:59:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:18d78b1040ef578b10eec8808fdadab5c689d76a600f453ade2069154a1c48c2",
+        "cached_at": "2026-06-01T16:59:51.041980"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "01-06-2026 16:59:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:41b7a9de716f8fe60cd1040110d7397cdc6e84cb59ba429b9665e3504f9e90fe",
+        "cached_at": "2026-06-01T16:59:51.393650"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 12,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "27-01-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "20334919-K",
+                "nombre": "VALENTINA ESTEFANÍA ACEVEDO VERCHES",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15447819-1",
+                "nombre": "GONZALO IGNACIO RAMIREZ GONZALEZ (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-339-2026",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "06-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17339765-8",
+                "nombre": "NICOLAS SEPULVEDA MONTECINOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "7007816-3",
+                "nombre": "EDUARDO HUMBERTO LÓPEZ JAQUE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7984-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "21-10-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "9906166-9",
+                "nombre": "CARLOS IGNACIO RAMÍREZ VALDIVIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "13904109-7",
+                "nombre": "DANIELA ALEJANDRA GONZALEZ FLORES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96955420-8",
+                "nombre": "SIMONETTI INMOBILIARIA S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "88147600-2",
+                "nombre": "HORMIGONES TRANSEX LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-7583-2025",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "14-07-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17339765-8",
+                "nombre": "NICOLAS SEPULVEDA MONTECINOS (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "9855985-K",
+                "nombre": "SERGIO VICTORIANO VERA IBARRA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "86510400-6",
+                "nombre": "CENTRO VETERINARIO Y AGRICOLA LTDA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-5116-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "10-06-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "5413213-1",
+                "nombre": "CARLOS ALBERTO GARCÍA QUIRILAO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15707869-0",
+                "nombre": "GIPSI PEREZ BARRERA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-4225-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "27-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17280762-3",
+                "nombre": "CÉSAR ANTONIO VILLALÓN PALOMINO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "17145238-4",
+                "nombre": "SIMÓN ARTURO PARADA MANZUR (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96687900-9",
+                "nombre": "OHIO NATIONAL SEGUROS DE VIDA SA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3824-2024",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "25-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "9544516-0",
+                "nombre": "NANCY DEL PILAR CORNEJO CARRASCO",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15833358-9",
+                "nombre": "MIGUEL ERNESTO MERINO ORDENES (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15665354-3",
+                "nombre": "CAROLINA ANDREA GALARCE WENZEL (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "77244858-9",
+                "nombre": "CONSORCIO CORREDORES DE SEGURIDAD LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3752-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "29-04-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "5135739-6",
+                "nombre": "GONZALO RAÚL ENRIQUE SALAS BORDALÍ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "16611501-9",
+                "nombre": "CLAUDIO ANDRÉS SALVATIERRA GARIB (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "18335906-1",
+                "nombre": "FELIPE ESTEBAN KUSCH PRADO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3110-2024",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "23-03-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14382873-5",
+                "nombre": "CARLOS ISMAEL MELLADO TAPIA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "53316274-6",
+                "nombre": "CONDOMINIO PLAZA SAN DAMIAN",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13429446-9",
+                "nombre": "ALEJANDRA ANDREA MANCILLA FRÍAS (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15643108-7",
+                "nombre": "JACKO ARIEL BITRÁN ALVO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14122663-0",
+                "nombre": "GABRIELA PATRICIA ILLANES BUSTAMANTE (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2069-2023",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "10-12-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "14122663-0",
+                "nombre": "GABRIELA PATRICIA ILLANES BUSTAMANTE (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "5818289-3",
+                "nombre": "WILLIAM NELSON ALIAGA FERREIRA",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18537365-7",
+                "nombre": "CAMILA VERÓNICA DÍAZ TAPIA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-8519-2019",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Cumplimiento",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "14-01-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "RECTE.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14122663-0",
+                "nombre": "GABRIELA ILLANES BUSTAMANTE (Poder Amplio)",
+                "sujeto": "AB.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "INSPECCIÓN COMUNAL DEL TRABAJO DE PROVIDENCIA",
+                "sujeto": "RECDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15376599-5",
+                "nombre": "LORETO ANGÉLICA GONZÁLEZ MORENO (Poder Simple)",
+                "sujeto": "AP.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "11361610-5",
+                "nombre": "EDITH DEL ROSARIO DELGADO HINOJOSA (Poder Simple)",
+                "sujeto": "AB.RCD",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "0-0",
+                "nombre": "SERGIO FUICA GUTIERREZ (Poder Simple)",
+                "sujeto": "AP.RCT",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Reclamo",
+            "rit": "I-27-2019",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "RECTE.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "15-06-2016 00:00:00",
+            "litigantes": [
+              {
+                "rut": "7984031-9",
+                "nombre": "VICTOR HUGO GUERRERO CALDERON",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9906764-0",
+                "nombre": "JAVIER ANTONIO SUSACASA MASSONE (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15962216-9",
+                "nombre": "VALENTINA VERÓNICA GUNDELACH LIZARRAGA (Poder Amplio)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16608300-1",
+                "nombre": "PATRICIA ANDREA FONTALBA AGUIRRE (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76437634-K",
+                "nombre": "FRAUMENI Y CIA. S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "53322328-1",
+                "nombre": "COMUNIDAD EDIFICIOS ALTO EL PLOMO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "53322328-1",
+                "nombre": "COMUNIDAD EDIFICIOS ALTO EL PLOMO",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16207203-K",
+                "nombre": "NICOLE NALLAR MADRID (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "5026889-6",
+                "nombre": "JUAN CARLOS ESGUEP SARAH (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-3208-2016",
+            "tribunal": "2º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 16:59:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:53aa6d1307ff5c516e4485ae4255dfb82bbe6bde42a2bf8617d4203ce7b9fedb",
+        "cached_at": "2026-06-01T16:59:51.755043"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "enunciado": "No comparecer a citación de la Dirección del Trabajo.",
+            "estado": "PAGADA",
+            "fecha": "19-12-2025 21:00:00",
+            "multa": "8867/25/246-1",
+            "procedencia": "RECLAMO",
+            "um": "0.89",
+            "tipoUm": "IMM",
+            "montoClp": 445000
+          },
+          {
+            "enunciado": "No exhibir  toda la documentación necesaria para efectuar la conciliación",
+            "estado": "PAGADA",
+            "fecha": "11-07-2025 20:00:00",
+            "multa": "1001/24/144-1",
+            "procedencia": "RECLAMO",
+            "um": "1.12",
+            "tipoUm": "IMM",
+            "montoClp": 560000
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 16:59:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e79192729b7618bd731d89911e8fd08b6c5d68de7ff4384dad86a46ed4ffcbb5",
+        "cached_at": "2026-06-01T16:59:52.143895"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BASTIAN ANDRES PERALTA SOTELO ",
+            "periodo": "12/2025",
+            "rutAfiliado": "19503851-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BASTIAN ANDRES PERALTA SOTELO ",
+            "periodo": "11/2025",
+            "rutAfiliado": "19503851-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-12-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BASTIAN ANDRES PERALTA SOTELO ",
+            "periodo": "10/2025",
+            "rutAfiliado": "19503851-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "28-11-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BASTIAN ANDRES PERALTA SOTELO ",
+            "periodo": "09/2025",
+            "rutAfiliado": "19503851-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-10-2025 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BASTIAN ANDRES PERALTA SOTELO ",
+            "periodo": "08/2025",
+            "rutAfiliado": "19503851-1",
+            "tipoProducto": "Seguro Social"
+          }
+        ],
+        "ultimaActualizacion": "01-06-2026 16:59:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:59f2a0600c83d56f2fb464d7f3caee5c0f4a83ee5b54bb0e0c4d6cfffc24a711",
+        "cached_at": "2026-06-01T16:59:52.498736"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76437634-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "FRAUMENI Y COMPANIA SOCIEDAD ANONIMA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "FRAUMENI Y COMPANIA SOCIEDAD ANONIMA",
+            "rutSociedad": "76437634-K",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2018-09-30",
+            "socios": [
+              {
+                "nombre": "MILTON ANTONIO SILVA HURTADO",
+                "rut": "12872266-1",
+                "domicilio": "LOS ABEDULES 1373, LAS FLORES 11, CIUDAD DE LOS VALLES, COMUNA DE PUDAHUEL",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "97.34"
+              },
+              {
+                "nombre": "REBECA PAOLA MEDINA HERNÁNDEZ",
+                "rut": "14245829-2",
+                "domicilio": "CAPITÁN ORELLA 2575, ÑUÑOA, R.M.",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "2.66"
+              },
+              {
+                "nombre": "PABLO DE LA CRUZ PERNAS",
+                "rut": "17084374-6",
+                "domicilio": "ESCULTORA REBECA MATTE 2074 CASA I, COMUNA LA REINA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARIELA FRAUMENI TUCCILLO",
+                "rut": "6890604-0",
+                "domicilio": "INDIANA N° 1222, VITACURA",
+                "tipoDeParticipacion": "Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "BERNABE HUMBERTO DE LA CRUZ MENA",
+                "rut": "6930994-1",
+                "domicilio": "AVENIDA PROVIDENCIA 1100, TORRE D, OFICINA 10, COMUNA DE PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio - Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "FRAUMENI Y DE LA CRUZ LIMITADA",
+                "rut": "76413755-8",
+                "domicilio": "AVENIDA PROVIDENCIA N° 1208, OFICINA N° 703, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "MACARENA FERNANDA VASQUEZ FRAUMENI",
+                "rut": "13027991-0",
+                "domicilio": "AVENIDA PROVIDENCIA 1100, TORRE D, OFICINA 10, COMUNA DE PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "FRANCISCA MARIELA VASQUEZ FRAUMENI",
+                "rut": "13473224-5",
+                "domicilio": "AVENIDA PROVIDENCIA 1100, TORRE D, OFICINA 10, COMUNA DE PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MARIELA FRAUMENI E HIJAS LIMITADA",
+                "rut": "76414019-2",
+                "domicilio": "AVENIDA PROVIDENCIA N° 1208, OFICINA N° 703, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "60.00"
+              },
+              {
+                "nombre": "MARCELA FRAUMENI TUCCILLO",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-08-13",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/08/13/44224/05/2685285.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-04-12",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/04/12/44124/05/2633460.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2020-12-12",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/12/42828/05/1864047.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2018-10-01",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/10/01/42169/05/1471386.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2017-12-30",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/30/41945/05/1329133.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2015-02-05",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2015/02/05/873429_C_SA_20150205_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:eb4270d18b1cffbd6e7ae473524cebe8ef1f2efaccacd0e66cac98aa397a7aaf",
+      "cached_at": "2026-06-01T16:59:53.124086"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76437634-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "04-02-2015 21:00:00",
+            "razonSocial": "FRAUMENI Y COMPAÑÍA SOCIEDAD ANÓNIMA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/02/05/873429_C_SA_20150205_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "MARIELA FRAUMENI TUCCILLO",
+                "rut": "6890604-0",
+                "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "BERNABE HUMBERTO DE LA CRUZ MENA",
+                "rut": "6930994-1",
+                "domicilio": "AVENIDA PROVIDENCIA N 1100, OFICINA 10, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "FRAUMENI Y DE LA CRUZ LIMITADA",
+                "rut": "76413755-8",
+                "domicilio": null
+              },
+              {
+                "nombre": "MARIELA FRAUMENI E HIJAS LIMITADA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76437634-K"
+          },
+          {
+            "fecha": "29-12-2017 21:00:00",
+            "razonSocial": "SEPROC CAPACITACIÓN LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/30/41945/05/1329133.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MARIELA FRAUMENI TUCCILLO",
+                "rut": "6890604-0",
+                "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "MACARENA FERNANDA VÁSQUEZ FRAUMENI",
+                "rut": null,
+                "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "FRANCISCA MARIELA VÁSQUEZ FRAUMENI",
+                "rut": null,
+                "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "PABLO DE LA CRUZ PERNAS",
+                "rut": "17084374-6",
+                "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "BERNABÉ HUMBERTO DE LA CRUZ MENA",
+                "rut": null,
+                "domicilio": "PROVIDENCIA Nº 1208, OFICINA 704, COMUNA DE PROVIDENCIA, SANTIAGO"
+              }
+            ],
+            "rut": "76437634-K"
+          },
+          {
+            "fecha": "11-12-2020 21:00:00",
+            "razonSocial": "FRAUMENI Y COMPAÑÍA SOCIEDAD ANÓNIMA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2020/12/12/42828/05/1864047.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76437634-K"
+          },
+          {
+            "fecha": "11-04-2025 20:00:00",
+            "razonSocial": "FRAUMENI Y COMPAÑIA SOCIEDAD ANONIMA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/04/12/44124/05/2633460.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76437634-K"
+          },
+          {
+            "fecha": "12-08-2025 20:00:00",
+            "razonSocial": "FRAUMENI Y COMPAÑIA SOCIEDAD ANONIMA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/08/13/44224/05/2685285.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76437634-K"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "76437634-K",
+            "sociedad": "FRAUMENI Y COMPAÑÍA SOCIEDAD ANÓNIMA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a2c95ca580eb5e01e0e8b07b3059d290254a7f7f1e06a768ef7f1eac23c1733d",
+        "cached_at": "2026-06-01T16:59:53.490236"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 173710,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 72.72727272727273,
+      "numeradorJudicial": 8,
+      "denominadorJudicial": 11,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 27.272727272727266,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 5,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 1005000,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 327.27272727272725,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c36aa57fa3a8278b8a419b85a75bbb015f7039ece2e472c175a7826b0eda60da",
+      "cached_at": "2026-06-01T16:59:54.435152"
+    }
+  }
+}

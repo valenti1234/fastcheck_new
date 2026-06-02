@@ -1,0 +1,690 @@
+{
+  "pathCount": 64,
+  "relationships": [
+    {
+      "source": "76965882",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-12-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76965882",
+      "target": "59282130",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1986838",
+        "cve": "1986838",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2021-07-30",
+        "doc_extraction_id": "2245752",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2021/07/30/43015/05/1986838.pdf"
+      }
+    },
+    {
+      "source": "76965882",
+      "target": "59282130",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76464195",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-05-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78151408",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-07-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78168233",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-08-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78041731",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-02-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78102873",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-05-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77180586",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-05-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "99555750",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-05-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96687910",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1994-01-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "89093800",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-08-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96854030",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2009-01-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96783940",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-04-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96952710",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-01-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96826960",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-12-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96648710",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-01-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78606050",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-02-27",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78125080",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1994-05-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77952501",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-08-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77836625",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-01-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77844696",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2024-01-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77639242",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-08-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77426010",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2002-11-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77102117",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-11-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76792381",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-05-31",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76785928",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-09-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76489351",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-08-24",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59202970",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-07-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59285640",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-10-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59071340",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59190950",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-06-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59286900",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-06-09",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59176200",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-01-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59117120",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-01-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59118660",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-03-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59244580",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-01-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59057850",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-12-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59098990",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2003-02-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59297670",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-10-28",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59136880",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2007-06-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59168390",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2011-04-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59038640",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2000-01-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59117130",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-01-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59118670",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-03-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59123180",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2006-09-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "65177942",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-04-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "65146947",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-03-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76049250",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-02-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76218618",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2019-08-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76299454",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-01-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76309041",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2015-04-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76318402",
+      "target": "7405758",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-10-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77102117",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2035002",
+        "cve": "2035002",
+        "source": "DO",
+        "doc_extraction_id": "1862007",
+        "published_at": "2021-11-02",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2021/11/02/43092/05/2035002.pdf"
+      }
+    },
+    {
+      "source": "96858740",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5767225",
+        "doh_extraction_id": "206919",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "5767225",
+        "published_at": "1998-05-08",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1998/05/08/do-19980508.pdf"
+      }
+    },
+    {
+      "source": "78606050",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_884415",
+        "cve": "884415",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2015-03-11",
+        "doc_extraction_id": "1924615",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2015/03/11/884415_M_LTDA_20150311_firmado.pdf"
+      }
+    },
+    {
+      "source": "78125080",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_884414",
+        "cve": "884414",
+        "shares_percent": 80,
+        "source": "DO",
+        "published_at": "2015-03-11",
+        "doc_extraction_id": "1928202",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2015/03/11/884414_M_LTDA_20150311_firmado.pdf"
+      }
+    },
+    {
+      "source": "77482080",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_5918297",
+        "doh_extraction_id": "331908",
+        "shares_percent": 1,
+        "source": "DOH",
+        "doh_id": "5918297",
+        "published_at": "2000-07-29",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2000/07/29/do-20000729.pdf"
+      }
+    },
+    {
+      "source": "76792381",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1245585",
+        "cve": "1245585",
+        "shares_percent": 45,
+        "source": "DO",
+        "published_at": "2017-07-24",
+        "doc_extraction_id": "2081633",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/07/24/41816/05/1245585.pdf"
+      }
+    },
+    {
+      "source": "96648710",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1141632",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2016-11-26",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/11/26/41618/05/1141632.pdf"
+      }
+    },
+    {
+      "source": "96648710",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1329452",
+        "match_type": "tt",
+        "source": "DO",
+        "published_at": "2018-01-02",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2018/01/02/41946/05/1329452.pdf"
+      }
+    },
+    {
+      "source": "77844696",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2450336",
+        "match_type": "bt_pn",
+        "source": "DO",
+        "published_at": "2024-02-07",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2024/02/07/43770/05/2450336.pdf"
+      }
+    },
+    {
+      "source": "59057850",
+      "target": "7405758",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "bt_pn",
+        "source": "DOH",
+        "published_at": "2004-03-18",
+        "doh_id": "6418987",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2004/03/18/do-20040318.pdf"
+      }
+    },
+    {
+      "source": "59282130",
+      "target": "16657598",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2013-11-18",
+        "source": "SII_REP"
+      }
+    }
+  ],
+  "entityNames": {
+    "7405758": "MANUEL JESUS VERGARA ECHEVERRIA",
+    "16657598": "LUIS FELIPE CANO MUNCHMEYER",
+    "59038640": "WARTSILA DIESEL INTERNATIONAL LTD OY",
+    "59057850": "CONTRERAS HERMANOS SOCIEDAD ANONIMA AGENCIA EN CHILE",
+    "59071340": "WARTSILA DIESEL LATIN AMERICA LIMITED",
+    "59098990": "ASTRAZENECA UK LIMITED AGENCIA S A EN CHILE",
+    "59117120": "ASTRAZENECA CONTINENT B.V",
+    "59117130": "ASTRAZENECA TREASURY LIMITED",
+    "59118660": "\"SUDAMERICA EN FIESTA\" SOCIEDAD ANONIMA",
+    "59118670": "POSADAS DO BRASIL EMPREENDIMENTOS HOTELEIROS LTDA",
+    "59123180": "CROBEL SOCEDAD ANONIMA",
+    "59136880": "WILSON OVERSEAS AB",
+    "59168390": "CONTRERAS HERMANOS SOCIEDAD ANONIMA INDUSTRIAL COMERCIAL FINANCIERA AGRICOLA GANADERA Y MINERA",
+    "59176200": "GLOBAL MEDICINE ASSISTANCE LLC",
+    "59190950": "MAQUINARIA ESTACIONAMIENTOS Y PARQUIMETROS SL",
+    "59202970": "S.C.I.SERVICIOS DE CONTROL E INSPECCION S.A.",
+    "59244580": "TRAVEL ACE INTERNATIONAL DE SERVICIOS S.A.",
+    "59282130": "APERSIS LW SA",
+    "59285640": "COUNCIL ON INTERNATIONAL EDUCATIONAL EXCHANGE, INC.",
+    "59286900": "POTENCIA Y TECNOLOGIAS INCORPORADAS SA",
+    "59297670": "HYBRICO ENERGY TECHNOLOGIES LTD",
+    "65146947": "ASOCIACION INTERCIENCIA",
+    "65177942": "CENTRO DE ESTUDIOS DE GOBERNANZA ULTIMA LINEA CEGUL",
+    "76049250": "GASODUCTO TANDY A KIMIRI AIKE CONTRERAS Y ASOCIADOS LIMITADA",
+    "76218618": "IMPORTADORA Y EXPORTADORA GARDESI CHILE SPA",
+    "76299454": "MEYPAR CHILE SPA",
+    "76309041": "TAVIL CHILE SPA",
+    "76318402": "COMPANIA AUXILIAR DE PIPELINE WELDING SPA",
+    "76464195": "GESLORMOR SPA",
+    "76489351": "ASIA SOUTH PACIFIC COMMERCE SPA",
+    "76785928": "ENERGIAS RENOVABLES GREEN AND BLUE SPA",
+    "76792381": "CONVENIOS DUAL DIPLOMA INTERNACIONAL (CHILE) CIA. LIMITADA",
+    "76965882": "VALTRIA CHILE SPA",
+    "77102117": "INGENIERIA DE PROYECTOS 3D IMPACT GROUP LIMITADA",
+    "77180586": "BURKERT CHILE SPA",
+    "77426010": "PROGRAMA DE INTERCAMBIO ESTUDIANTIL COUNCIL LIMITADA",
+    "77482080": "CIES INTERNATIONAL FILMS LIMITADA",
+    "77639242": "MAXWIN CHILE SPA",
+    "77836625": "FIBERVENT CHILE SPA",
+    "77844696": "CONTROL SYSTEMS TECHNOLOGY CHILE SPA",
+    "77952501": "LINKED SPA",
+    "78041731": "ARIOL CONSULTING CHILE SPA",
+    "78102873": "DOT TECHNOLOGY CHILE SPA",
+    "78125080": "BC & MC LAW AND INTERNATIONAL BUSINESS CONSULTING LTDA.",
+    "78151408": "BRYANT PARK CONSULTING CHILE SPA",
+    "78168233": "PAX ASSISTANCE CHILE SPA",
+    "78606050": "HARSER & EPLIEE MARKETING Y RECURSOS CIA. LTDA.",
+    "89093800": "LAS MALVAS S.A.",
+    "96648710": "INDUSTRIA E INVERSIONES CARTAHUE S A",
+    "96687910": "INVERSIONES Y RENTAS ANFEMAS S A",
+    "96783940": "PUEBLO EVITA CHILE S A",
+    "96826960": "S C I CHILE S A",
+    "96854030": "IECSA & PIPESA S A",
+    "96858740": "APA INTERNATIONAL CHILE S A",
+    "96952710": "SAN ISIDRO S A",
+    "99555750": "RED MUNDIAL DE ASISTENCIAS DE CHILE S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:f79cbcd1bcffdcd2218555e986a52f1f7b8f30c6e8b1bf9041f6687addce1f1d",
+    "cached_at": "2026-05-30T00:03:29.963918"
+  }
+}

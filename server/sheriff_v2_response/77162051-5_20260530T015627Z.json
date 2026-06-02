@@ -1,0 +1,633 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77162051-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77162051-5",
+      "esPersonaJuridica": true,
+      "fechaCarga": "29-05-2026",
+      "identificacion": {
+        "razonSocial": "ADMCONDOMINIOSCL SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "28-05-2020",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "OTRAS ACTIVIDADES DE TRANSPORTE DE PASAJEROS POR VIA TERRESTRE N.C.P.",
+            "codigo": "492290",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "10-05-2023"
+          },
+          {
+            "actividades": "CONSEJO DE ADMINISTRACION DE EDIFICIOS Y CONDOMINIOS",
+            "codigo": "949904",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "10-05-2023"
+          },
+          {
+            "actividades": "ACTIVIDADES DE OTRAS ASOCIACIONES N.C.P.",
+            "codigo": "949909",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-05-2020"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 2,
+        "ultimaActualizacion": "30-05-2026 01:29:45",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "2.400,01 a 5.000,00",
+          "cantidadTrabajadores": 3
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "11/2025",
+          "periodoActual": "05/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "30-05-2026 01:29:45"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 1,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "denunciado": 1
+        },
+        "ultimaActualizacionCiviles": "30-05-2026 01:29:44",
+        "ultimaActualizacionCobranza": "30-05-2026 01:29:43",
+        "ultimaActualizacionLaboral": "30-05-2026 01:29:44",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:29:54"
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:29:44"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "11/2025",
+            "periodoActual": "05/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "30-05-2026 01:29:45"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "26-05-2020 20:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "2986395",
+              "razonSocial": "ADMCONDOMINIOSCL SPA",
+              "cve": "ACYhhtgTXBZm",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYhhtgTXBZm&codigo=4C-A0-35-90-ED-03-12-CD-6F-F6-1B-46-3B-2F-2F-24",
+              "socios": [
+                {
+                  "socio": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                  "rut": "8775853-2",
+                  "domicilio": "PARQUES DE CARRIEL N°5745 DEPTO/LOCAL CASA10 VILLA VALLE DE HUASCO COMUNA DE TALCAHUANO REGION DEL BIOBIO",
+                  "acciones": "10",
+                  "monto": "$4.000.000 CLP",
+                  "porcentaje": null
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                  "rut": "8775853-2",
+                  "domicilio": "PARQUES DE CARRIEL N°5745 DEPTO/LOCAL CASA10 VILLA VALLE DE HUASCO COMUNA DE TALCAHUANO REGION DEL BIOBIO"
+                }
+              ]
+            },
+            {
+              "fecha": "08-05-2023 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "6306907",
+              "razonSocial": "ADMCONDOMINIOSCL SPA",
+              "cve": "ACyPjUI7S52H",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACyPjUI7S52H&codigo=5A-F9-D5-A7-FC-6A-B6-A7-3B-F0-38-D5-74-22-79-33",
+              "socios": [
+                {
+                  "socio": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                  "rut": "8775853-2",
+                  "domicilio": null,
+                  "acciones": "110",
+                  "monto": "$36.350.000 CLP",
+                  "porcentaje": null
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                  "rut": "8775853-2",
+                  "domicilio": null
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 19320,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 19320,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 17880,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 26730,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 26730,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 19650,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 6,
+          "tasacionTotal": 143216560,
+          "ultimaActualizacion": "30-05-2026 01:29:44"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "30-05-2026 01:29:44"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": 100,
+        "ponderacionJudicial": 0,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ADMCONDOMINIOSCL SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:c97874185da16e95a5591916b5d3fdcb8ad9e435b29c75651e519995acf00455",
+      "cached_at": "2026-05-30T01:56:24.417919"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:29:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1d927e5d783221d621b185bb8328a157641503cc83f04313ce6f5e568c7ec021",
+        "cached_at": "2026-05-30T01:56:24.768347"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:29:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:de798dfe34c59179c63fb864118c68935805151b00668b85d97bce949252f164",
+        "cached_at": "2026-05-30T01:56:25.163091"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "11-11-2025 21:00:00",
+            "litigantes": [
+              {
+                "rut": "77162051-5",
+                "nombre": "ADMCONDOMINIOSCL SPA",
+                "sujeto": "DNCDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "6441654-5",
+                "nombre": "JUAN PABLO GRAU MASCAYANO (Poder Amplio)",
+                "sujeto": "AB.DNC",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15591677-K",
+                "nombre": "VALESKA ALEJANDRA MONTESINO HERRERA",
+                "sujeto": "DNCTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Tutela",
+            "rit": "T-1303-2025",
+            "tribunal": "Juzgado de Letras del Trabajo de Concepción",
+            "sujeto": "DNCDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "30-05-2026 01:29:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2b9a2c0473d17516b38d638ee59a1c4bce4262f2840da93e6824816c680cd9de",
+        "cached_at": "2026-05-30T01:56:25.505082"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:29:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4beca54c687d6cc106d1f8e91b9c2ef5999170b39854b47e3517954b564db0cf",
+        "cached_at": "2026-05-30T01:56:25.848307"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "30-05-2026 01:29:44"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:280f17babe6e6abf8129f9c5fda6f2ead39601eaca83f32975ffe6fec3383ea1",
+        "cached_at": "2026-05-30T01:56:26.205042"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77162051-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ADMCONDOMINIOSCL SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ADMCONDOMINIOSCL SPA",
+            "rutSociedad": "77162051-5",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2020-05-26",
+            "socios": [
+              {
+                "nombre": "CAUPOLICÁN NELSON ZÚÑIGA ZÚÑIGA",
+                "rut": "8775853-2",
+                "domicilio": "PARQUES DE CARRIEL 5745 CASA 10, CONCEPCIÓN",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2023-05-09",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACyPjUI7S52H&codigo=5A-F9-D5-A7-FC-6A-B6-A7-3B-F0-38-D5-74-22-79-33"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2020-05-27",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYhhtgTXBZm&codigo=4C-A0-35-90-ED-03-12-CD-6F-F6-1B-46-3B-2F-2F-24"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:2ea46b35873aff2b1f1c7b8414bf210ec6f79e857cc82da2a5844ae3661915f7",
+      "cached_at": "2026-05-30T01:56:26.987683"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77162051-5",
+        "empresaEnUnDia": [
+          {
+            "fecha": "26-05-2020 20:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "2986395",
+            "razonSocial": "ADMCONDOMINIOSCL SPA",
+            "cve": "ACYhhtgTXBZm",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYhhtgTXBZm&codigo=4C-A0-35-90-ED-03-12-CD-6F-F6-1B-46-3B-2F-2F-24",
+            "socios": [
+              {
+                "socio": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                "rut": "8775853-2",
+                "domicilio": "PARQUES DE CARRIEL N°5745 DEPTO/LOCAL CASA10 VILLA VALLE DE HUASCO COMUNA DE TALCAHUANO REGION DEL BIOBIO",
+                "acciones": "10",
+                "monto": "$4.000.000 CLP",
+                "porcentaje": null
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                "rut": "8775853-2",
+                "domicilio": "PARQUES DE CARRIEL N°5745 DEPTO/LOCAL CASA10 VILLA VALLE DE HUASCO COMUNA DE TALCAHUANO REGION DEL BIOBIO"
+              }
+            ]
+          },
+          {
+            "fecha": "08-05-2023 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "6306907",
+            "razonSocial": "ADMCONDOMINIOSCL SPA",
+            "cve": "ACyPjUI7S52H",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACyPjUI7S52H&codigo=5A-F9-D5-A7-FC-6A-B6-A7-3B-F0-38-D5-74-22-79-33",
+            "socios": [
+              {
+                "socio": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                "rut": "8775853-2",
+                "domicilio": null,
+                "acciones": "110",
+                "monto": "$36.350.000 CLP",
+                "porcentaje": null
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "CAUPOLICAN NELSON ZUNIGA ZUNIGA",
+                "rut": "8775853-2",
+                "domicilio": null
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:77005819686330902bc6bc7cbd33fd411f033cc0d7870cc660306bbb33f81f8a",
+        "cached_at": "2026-05-30T01:56:27.352928"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-05",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 19320,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 100,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 1,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 0,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:2d95b1915e1453719405770af62667671416c688a3deaba38b21ee9fc2244979",
+      "cached_at": "2026-05-30T01:56:27.951836"
+    }
+  }
+}

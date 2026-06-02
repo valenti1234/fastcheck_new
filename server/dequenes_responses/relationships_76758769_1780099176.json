@@ -1,0 +1,111 @@
+{
+  "pathCount": 9,
+  "relationships": [
+    {
+      "source": "76758769",
+      "target": "12585611",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-06-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76758769",
+      "target": "12585611",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2580453",
+        "cve": "2580453",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2024-12-06",
+        "doc_extraction_id": "1591254",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2024/12/06/44017/05/2580453.pdf"
+      }
+    },
+    {
+      "source": "77690036",
+      "target": "12585611",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-12-30",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77388062",
+      "target": "12585611",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-06-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77090610",
+      "target": "12585611",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-12-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77090610",
+      "target": "12585611",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_3220032",
+        "doh_extraction_id": "546872",
+        "shares_percent": 33.33,
+        "source": "DOH",
+        "doh_id": "3220032",
+        "published_at": "1997-09-30",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1997/09/30/do-19970930.pdf"
+      }
+    },
+    {
+      "source": "77388062",
+      "target": "12585611",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACArbECmkIpj",
+        "source": "RES",
+        "published_at": "2021-06-22"
+      }
+    },
+    {
+      "source": "77690036",
+      "target": "12585611",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACWyAqaoUuvh",
+        "source": "RES",
+        "published_at": "2022-12-30"
+      }
+    },
+    {
+      "source": "76793866",
+      "target": "12585611",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACIGxzTxZoqB",
+        "source": "RES"
+      }
+    }
+  ],
+  "entityNames": {
+    "12585611": "MARIA CECILIA MOREL PADILLA",
+    "76758769": "SOCIEDAD COMERCIALIZADORA DE INSUMOS, EQUIPOS Y SERVICIOS CLINICOS CMP",
+    "76793866": "ARTENUESTRO SPA",
+    "77090610": "IMPORTADORA CIENCIA Y TECNOLOGIA LIMITADA",
+    "77388062": "LA IDEA ASESORÍA Y PRODUCCIÓN EN COMUNICACIONES Y PUBLICIDAD SPA",
+    "77690036": "CMP CENTRAL DE PROCESOS SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:522e694c202ae5f8d894aa61322c714c9aa20212c8cc5d5a7e5d5a7f401e85b3",
+    "cached_at": "2026-05-29T23:59:36.359102"
+  }
+}

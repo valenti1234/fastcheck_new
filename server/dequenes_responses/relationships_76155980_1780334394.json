@@ -1,0 +1,184 @@
+{
+  "pathCount": 13,
+  "relationships": [
+    {
+      "source": "76155980",
+      "target": "7258939",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2004-09-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76155980",
+      "target": "16607874",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6647108",
+        "doh_extraction_id": "436664",
+        "shares_percent": 10,
+        "source": "DOH",
+        "doh_id": "6647108",
+        "published_at": "2006-06-09",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/06/09/do-20060609.pdf"
+      }
+    },
+    {
+      "source": "76155980",
+      "target": "7258939",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6647108",
+        "doh_extraction_id": "436664",
+        "shares_percent": 40,
+        "source": "DOH",
+        "doh_id": "6647108",
+        "published_at": "2006-06-09",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/06/09/do-20060609.pdf"
+      }
+    },
+    {
+      "source": "76155980",
+      "target": "2596496",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6647108",
+        "doh_extraction_id": "436664",
+        "shares_percent": 25,
+        "source": "DOH",
+        "doh_id": "6647108",
+        "published_at": "2006-06-09",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/06/09/do-20060609.pdf"
+      }
+    },
+    {
+      "source": "76155980",
+      "target": "1922623",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6647108",
+        "doh_extraction_id": "436664",
+        "shares_percent": 25,
+        "source": "DOH",
+        "doh_id": "6647108",
+        "published_at": "2006-06-09",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2006/06/09/do-20060609.pdf"
+      }
+    },
+    {
+      "source": "78441630",
+      "target": "7258939",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1993-11-17",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77688910",
+      "target": "7258939",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-12-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77634700",
+      "target": "7258939",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2001-08-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "79934930",
+      "target": "7258939",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_380985",
+        "cve": "380985",
+        "shares_percent": 6.25,
+        "source": "DO",
+        "published_at": "2011-08-11",
+        "doc_extraction_id": "2255432",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2011/08/11/380985_M_LTDA_20110811_firmado.pdf"
+      }
+    },
+    {
+      "source": "77688910",
+      "target": "7258939",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6102905",
+        "doh_extraction_id": "785636",
+        "shares_percent": 90,
+        "source": "DOH",
+        "doh_id": "6102905",
+        "published_at": "2001-12-07",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2001/12/07/do-20011207.pdf"
+      }
+    },
+    {
+      "source": "77634700",
+      "target": "7258939",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6050427",
+        "doh_extraction_id": "786008",
+        "shares_percent": 50,
+        "source": "DOH",
+        "doh_id": "6050427",
+        "published_at": "2001-07-06",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2001/07/06/do-20010706.pdf"
+      }
+    },
+    {
+      "source": "76749216",
+      "target": "7258939",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1716398",
+        "cve": "1716398",
+        "shares_percent": 4.76,
+        "source": "DO",
+        "published_at": "2020-01-24",
+        "doc_extraction_id": "2137205",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/01/24/42561/05/1716398.pdf"
+      }
+    },
+    {
+      "source": "77688910",
+      "target": "1922623",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6102905",
+        "doh_extraction_id": "785636",
+        "shares_percent": 10,
+        "source": "DOH",
+        "doh_id": "6102905",
+        "published_at": "2001-12-07",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2001/12/07/do-20011207.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "1922623": "MARIO WALDO CONCHA VEGA",
+    "2596496": "BLANCA PINTO GONZALEZ",
+    "7258939": "MARIO RODRIGO CONCHA PINTO",
+    "16607874": "PAZ ANDREA CONCHA VASQUEZ",
+    "76155980": "DOCTOR MARIO CONCHA Y COMPANIA LIMITADA",
+    "76749216": "ANESTESIOLOGOS HOSPITAL CLINICO UC SPA",
+    "77634700": "SOC DE INVERSIONES VASQUEZ Y CONCHA COMPANIA LIMITADA",
+    "77688910": "SOC DE INVERSIONES MARIO CONCHA Y COMPANIA LIMITADA",
+    "78441630": "MARIO CONCHA PINTO ANESTES.INVEST. DOCENCIA Y ENFERMERIA Y CIA. LTDA.",
+    "79934930": "ANESTESIOLOGOS HOSPITAL CLINICO LIMITADA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:698f6bbade3d9bdffa8696435f157c0aa6127179013985b1b9ea2c387defbd82",
+    "retrieved_at": "2026-06-01T17:19:54.943818"
+  }
+}

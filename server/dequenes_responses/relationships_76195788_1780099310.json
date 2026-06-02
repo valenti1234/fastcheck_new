@@ -1,0 +1,129 @@
+{
+  "pathCount": 10,
+  "relationships": [
+    {
+      "source": "76195788",
+      "target": "8878136",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-07-12",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76195788",
+      "target": "9907978",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-02-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76195788",
+      "target": "9907978",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_456461",
+        "cve": "456461",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2012-02-11",
+        "doc_extraction_id": "2281749",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/02/11/456461_C_SPA_20120211_firmado.pdf"
+      }
+    },
+    {
+      "source": "77798412",
+      "target": "8878136",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-11",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77240373",
+      "target": "8878136",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-10-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77244728",
+      "target": "8878136",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-10-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76340317",
+      "target": "8878136",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-05-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77798412",
+      "target": "8878136",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2346323",
+        "cve": "2346323",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2023-07-19",
+        "doc_extraction_id": "1489141",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/07/19/43605/05/2346323.pdf"
+      }
+    },
+    {
+      "source": "77240373",
+      "target": "8878136",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1830029",
+        "cve": "1830029",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2020-10-13",
+        "doc_extraction_id": "1428288",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2020/10/13/42778/05/1830029.pdf"
+      }
+    },
+    {
+      "source": "76340317",
+      "target": "8878136",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_752590",
+        "cve": "752590",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2014-03-13",
+        "doc_extraction_id": "1973485",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/03/13/752590_C_SPA_20140313_firmado.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "8878136": "MARIO PATRICIO GONZALEZ MUNIZAGA",
+    "9907978": "MARIANELLA SOLANGE ROUMEAU CRESTA",
+    "76195788": "TRANSFARMA SPA",
+    "76340317": "COMERCIALIZADORA IMPORTADORA Y EXPORTADORA MISUR SPA",
+    "77240373": "INVERSIONES MILLARAY SPA",
+    "77244728": "TRANSFARMA LOGISTICA SPA",
+    "77798412": "IKIGAI SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:882d52ba08a0286f160887e83258ffcd8e22a1e4a9cbcc8e018a729a7a51f8c7",
+    "cached_at": "2026-05-30T00:01:50.854220"
+  }
+}
