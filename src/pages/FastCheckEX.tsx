@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
-import { Users } from 'lucide-react';
+/* import { Users } from 'lucide-react'; */
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import PageLayout from '../components/layouts/PageLayout';
 import { apiClient, userNotesApi, UserNote, formatChileanRut } from '../services/api';
@@ -11,8 +11,8 @@ import { lookupRut, checkSociosEvaluations, resetSociosEvaluations } from '../se
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import toast from 'react-hot-toast';
-import QRCode from 'qrcode';
-import duxiterLogo from '../assets/duxiter_logo.png';
+/* import QRCode from 'qrcode';
+import duxiterLogo from '../assets/duxiter_logo.png'; */
 import duxiterLogoBar from '../assets/duxiter_logo_bar.jpg';
 import { logger } from '../utils/logger';
 import ReactMarkdown from 'react-markdown';
@@ -26,12 +26,15 @@ import { ChevronDown, ChevronUp, Download, Edit3, Save, X, FileText } from 'luci
 import * as XLSX from 'xlsx';
 import { useTranslation } from 'react-i18next';
 import type { AntiunionCase } from '../services/antiunionCaseService';
-import formatRut from '../utils/rutFormat';
+/* import formatRut from '../utils/rutFormat'; */
 import TableAssessment from '../components/ui/TableAssessment/TableAssessment';
 import TableSummary from '../components/ui/TableSummary/TableSummary';
 import TableBasic from '../components/ui/TableBasic/TableBasic';
 import MeshTable from '../components/ui/MeshTable/MeshTable';
 import Legalrepresentatives from '../components/ui/Legalrepresentatives/Legalrepresentatives';
+/* import MeshSocios from '../components/ui/MeshSocios/MeshSocios'; */
+import MeshFlowTable from '../components/ui/MeshFlowTable/MeshFlowTable';
+/* import MeshFlowChartOwned from '../components/ui/MeshFlowChartOwnedLib/MeshFlowChartOwnedLib'; */
 
 interface ParameterData {
   label: string;
@@ -160,7 +163,9 @@ const FastCheck: React.FC = () => {
     informacion: true,
     hallazgos: true,
     resumen: true,
-    notas: true
+    notas: true,
+    MallaRelacional: true,
+    ResumenHallazgos: true
   });
   const [exportingPdf, setExportingPdf] = useState(false);
   const reportRef = useRef<HTMLDivElement>(null);
@@ -1442,9 +1447,28 @@ const FastCheck: React.FC = () => {
   // Initialize socios evaluations when data changes
   useEffect(() => {
     const initializeSociosEvaluations = async () => {
-      if (data?.companyGeneralInfo?.socios) {
-        const socios = data.companyGeneralInfo.socios;
-        const sociosRuts = socios.map((socio: { rut: string }) => socio.rut);
+      // Obtener socios desde compliance.sociedades.coincidencias[].socios
+      const coincidencias = data?.sheriffLogData?.filteredDetails?.compliance?.sociedades?.coincidencias || [];
+
+      const seenKeys = new Set<string>();
+      const socios: { name: string; rut: string }[] = [];
+
+      for (const coincidencia of coincidencias) {
+        if (!Array.isArray(coincidencia?.socios)) continue;
+        for (const s of coincidencia.socios) {
+          const rut = (s?.rut || '').trim();
+          const name = (s?.nombre || '').trim();
+          if (!name) continue; // descartar socios sin nombre
+          // Dedupe: por rut si lo hay; si no, por nombre
+          const key = rut || `__noRut__${name.toLowerCase()}`;
+          if (seenKeys.has(key)) continue;
+          seenKeys.add(key);
+          socios.push({ name, rut });
+        }
+      }
+
+      if (socios.length > 0) {
+        const sociosRuts = socios.map((socio) => socio.rut);
 
         // Helper function to process socios with RUT search functionality
         const processSociosWithRutSearch = (socios: { name: string; rut: string; isNaturalPerson?: boolean; personType?: string }[], existingEvaluations?: any) => {
@@ -2117,7 +2141,7 @@ const FastCheck: React.FC = () => {
     }
   };
 
-  const toggleSection = (section: 'parametros' | 'informacion' | 'hallazgos' | 'notas' | 'resumen') => {
+  const toggleSection = (section: 'parametros' | 'informacion' | 'hallazgos' | 'notas' | 'resumen' | 'MallaRelacional') => {
     setExpandedSections(prev => ({
       ...prev,
       [section]: !prev[section]
@@ -2205,7 +2229,9 @@ const FastCheck: React.FC = () => {
         informacion: true,
         hallazgos: true,
         resumen: true,
-        notas: true
+        notas: true,
+        MallaRelacional: true,
+        ResumenHallazgos: true
       });
 
       await new Promise(resolve => setTimeout(resolve, 1500));
@@ -3206,7 +3232,6 @@ const FastCheck: React.FC = () => {
           await addPageHeaderImage();
         }
 
-
         // Círculo azul (bullet)
         pdf.setFillColor(59, 130, 246);
         pdf.circle(margin + 2, currentY - 1.5, 2.5, "F");
@@ -3557,8 +3582,8 @@ const FastCheck: React.FC = () => {
 
 
         {/* Resultado Evaluación */}
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow dark:shadow-gray-700">
-          <div className="flex items-center mb-4">
+        <div className="bg-white dark:bg-gray-800 p-3 rounded-lg shadow dark:shadow-gray-700">
+          <div className="flex items-center">
             <div className="w-8 h-8 bg-blue-500 rounded-full text-white flex items-center justify-center mr-2">
               <span></span>
             </div>
@@ -3635,202 +3660,6 @@ const FastCheck: React.FC = () => {
 
           {expandedSections.parametros && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-              {/* 
-            
-              <TableAssessment
-                title="Compliance"
-                dataTitle={["Parámetro", "Impacto", "Detectado", "Riesgo", "Detalles"]}
-                data={(riskSummary.allRules?.complianceRules || []).map(rule => ({
-                  label: rule.label,
-                  impacto: rule.impacto,
-                  detected: rule.risk === 'no_disponible' ? null : rule.detected,
-                  risk: rule.risk,
-                  details: rule.details,
-                  showDetails: ['Quiebra Judicial', 'Término de Giro', 'Contribuyente de difícil fiscalización'].includes(rule.label) ||
-                    (rule.details && (
-                      (Array.isArray(rule.details) && rule.details.length > 0) ||
-                      (typeof rule.details === 'object' && rule.details !== null && Object.keys(rule.details).length > 0)
-                    ))
-                }))}
-                getImpactColor={getImpactColor}
-                getTooltip={(label) => getTooltip("Compliance", label)}
-                onShowDetails={(title, details) => {
-                  setRuleDetailsTitle(title);
-                  setRuleDetailsContent(details);
-                  setShowRuleDetailsModal(true);
-                }}
-              />
-
-         
-                <TableAssessment
-                  title="Legal"
-                  dataTitle={["Parámetro", "Impacto", "Detectado", "Riesgo", "Detalles"]}
-                  data={(riskSummary.allRules?.legalRules || []).map(rule => {
-                    const isTrueValue = (val: any): boolean => {
-                      if (val === true) return true;
-                      if (typeof val === 'string') {
-                        const lower = val.toLowerCase().trim();
-                        return lower === 'true' || lower === '1' || lower === 'yes' || lower === 'si' || lower === 'sí';
-                      }
-                      if (typeof val === 'number') return val === 1;
-                      return false;
-                    };
-
-                    let dataDetails = rule.details;
-                    if (isTrueValue(dataDetails)) {
-                      dataDetails = [];
-                    }
-
-                    const hasDetails = ['Contribuyente de difícil fiscalización'].includes(rule.label) ||
-                      (dataDetails && (
-                        (Array.isArray(dataDetails) && dataDetails.length > 0) ||
-                        (typeof dataDetails === 'object' && dataDetails !== null && Object.keys(dataDetails).length > 0)
-                      ));
-
-                    return {
-                      label: rule.label,
-                      impacto: rule.impacto,
-                      detected: rule.detected,
-                      risk: rule.risk,
-                      details: rule.details,
-                      showDetails: hasDetails
-                    };
-                  })}
-                  getImpactColor={getImpactColor}
-                  getTooltip={(label) => getTooltip("Legal", label)}
-                  onShowDetails={(title, details) => {
-                    setRuleDetailsTitle(title);
-                    setRuleDetailsContent(details);
-                    setShowRuleDetailsModal(true);
-                  }}
-                />
-                <TableAssessment
-                  title="Antecedentes Penales"
-                  dataTitle={["Parámetro", "Impacto", "Detectado", "Riesgo", "Detalles"]}
-                  data={(() => {
-                    // Acceder a los datos desde la estructura correcta
-                    const todasCoincidencias = data?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
-                      data?.details?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
-                      data?.logEntry?.filteredDetails?.compliance?.penal?.coincidencias ||
-                      [];
-
-                    // Filtrar solo Demandado, Querellado y Denunciado
-                    const coincidenciasFiltradas = todasCoincidencias.filter((item: any) => {
-                      const postura = item?.postura?.toLowerCase() || '';
-                      return postura === 'demandado' ||
-                        postura === 'querellado' ||
-                        postura === 'denunciado';
-                    });
-
-                    const hasCoincidencias = coincidenciasFiltradas.length > 0;
-
-                    return [{
-                      label: "Causas Penales",
-                      impacto: "signifiactivo",
-                      detected: hasCoincidencias,
-                      risk: hasCoincidencias ? "alto" : "bajo",
-                      details: coincidenciasFiltradas,  // ← con litigantes incluido
-                      showDetails: hasCoincidencias
-                    }];
-                  })()}
-                  getImpactColor={getImpactColor}
-                  onShowDetails={(title, details) => {
-                    setRuleDetailsTitle(title);
-                    setRuleDetailsContent(details);
-                    setShowRuleDetailsModal(true);
-                  }}
-                />
-              </div>
-           
-              <TableAssessment
-                title="Capital Humano"
-                dataTitle={["Parámetro", "Impacto", "Detectado", "Riesgo", "Detalles"]}
-                data={(riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
-                  let dataRisk = rule.risk;
-                  let detectedValue = rule.detected;
-                  let detailsContent = rule.details;
-
-                  // Fix para Deuda Previsional Presunta
-                  if (rule.label === "Deuda Previsional Presunta") {
-                    const hasCases = rule.details?.casos?.length > 0;
-                    if (hasCases) {
-                      dataRisk = "alto";
-                      detectedValue = true;
-                    } else {
-                      dataRisk = "bajo";
-                      detectedValue = false;
-                    }
-                    detailsContent = rule.details?.casos ?? rule.details;
-                  }
-
-                  // Fix para Término de Giro
-                  let dataToCheck = rule.details;
-                  if (rule.label === "Deuda Previsional Presunta" && rule.details?.casos) {
-                    dataToCheck = rule.details?.casos;
-                  }
-                  if (rule.label === "Término de Giro") {
-                    dataToCheck = null;
-                  }
-
-                  const hasDetails = ['Quiebra Judicial', 'Término de Giro', 'Contribuyente de difícil fiscalización'].includes(rule.label) ||
-                    (dataToCheck && (
-                      (Array.isArray(dataToCheck) && dataToCheck.length > 0) ||
-                      (typeof dataToCheck === 'object' && dataToCheck !== null && Object.keys(dataToCheck).length > 0)
-                    ));
-
-                  return {
-                    label: rule.label,
-                    impacto: rule.impacto,
-                    detected: detectedValue,
-                    risk: dataRisk,
-                    details: detailsContent,
-                    showDetails: hasDetails
-                  };
-                })}
-                getImpactColor={getImpactColor}
-                onShowDetails={(title, details) => {
-                  setRuleDetailsTitle(title);
-                  setRuleDetailsContent(details);
-                  setShowRuleDetailsModal(true);
-                }}
-              />
-
-      
-              <TableAssessment
-                title="Financiero - Tributario"
-                dataTitle={["Parámetro", "Impacto", "Detectado", "Riesgo", "Detalles"]}
-                data={(riskSummary.allRules?.financieroTributarioRules || []).map(rule => {
-                  // Invertir detectado para "Inicio de Actividades"
-                  const detectedDisplay = rule.risk === 'no_disponible'
-                    ? null
-                    : rule.label === 'Inicio de Actividades'
-                      ? !rule.detected
-                      : rule.detected;
-
-                  const hasDetails = rule.details && (
-                    (Array.isArray(rule.details) && rule.details.length > 0) ||
-                    (typeof rule.details === 'object' && rule.details !== null && Object.keys(rule.details).length > 0)
-                  );
-
-                  return {
-                    label: rule.label,
-                    impacto: rule.impacto,
-                    detected: detectedDisplay,
-                    risk: rule.risk,
-                    details: rule.details,
-                    showDetails: hasDetails
-                  };
-                })}
-                getImpactColor={getImpactColor}
-                getTooltip={(label) => getTooltip("Financiero - Tributario", label)}
-                onShowDetails={(title, details) => {
-                  setRuleDetailsTitle(title);
-                  setRuleDetailsContent(details);
-                  setShowRuleDetailsModal(true);
-                }}
-              />
- */}
-
 
               <TableAssessment
                 titleTooltip="Evalúa riesgos penales y de integridad asociados al tercero crítico que pueden generar impactos legales o reputacionales relevantes para la organización."
@@ -3852,7 +3681,6 @@ const FastCheck: React.FC = () => {
                           (typeof rule.details === 'object' && rule.details !== null && Object.keys(rule.details as any).length > 0)
                         ))
                     })),
-                  // Causas Penales (antes en tabla Antecedentes Penales)
                   ...(() => {
                     const todasCoincidencias = data?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
                       data?.details?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
@@ -3880,7 +3708,6 @@ const FastCheck: React.FC = () => {
                 ]}
                 getImpactColor={getImpactColor}
                 getTooltip={(label) => {
-                  // Mapear nombres nuevos a los originales para tooltips
                   const originalLabel = label === 'Inhabilitación Estado – Ley 21.121' ? 'Condenas Ley 21.121' :
                     label === 'Inhabilitación Estado – Ley 20.393' ? 'Condenas Ley 20.393' :
                       label;
@@ -4044,7 +3871,6 @@ const FastCheck: React.FC = () => {
                       razonSocial,
                       lista,
                       nombre,
-                      /* Rut, procesoSanciones id */
                       ...rest
                     }: any) => rest);
                   }
@@ -4075,7 +3901,6 @@ const FastCheck: React.FC = () => {
                   let detectedValue = rule.detected;
                   let detailsContent: any = rule.details;
 
-                  // Fix para Deuda Previsional Presunta
                   if (rule.label === "Deuda Previsional Presunta") {
                     const normalized = normalizeDetails(rule.details);
                     const hasCases = normalized.length > 0;
@@ -4084,7 +3909,6 @@ const FastCheck: React.FC = () => {
                     detailsContent = normalized;
                   }
 
-                  // Fix para dataToCheck
                   let dataToCheck = rule.label === "Deuda Previsional Presunta" ? detailsContent : rule.details;
                   if (rule.label === "Término de Giro") {
                     dataToCheck = null;
@@ -4151,8 +3975,7 @@ const FastCheck: React.FC = () => {
                 data={(riskSummary.allRules?.financieroTributarioRules || []).map(rule => {
                   if (rule.label === 'Protestos y Morosidades') {
                     const existingItems = Array.isArray(rule.details) ? rule.details : [];
-                    /*   const icomItems = data?.sheriffLogData?.equifaxCommercialData?.credit?.debtsSummary?.icom?.commercialIcom ?? []; */
-                    const combined = [...existingItems/* , ...icomItems */];
+                    const combined = [...existingItems];
                     const hasAny = combined.length > 0;
                     return {
                       label: rule.label,
@@ -4276,351 +4099,368 @@ const FastCheck: React.FC = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+                <TableBasic
+                  title="Inicio de Actividades"
+                  columns={["Actividades", "Codigo", "Categoria", "Afecta iva", "Fecha"]}
+                  data={
+                    ((riskSummary.allRules?.financieroTributarioRules || [])
+                      .find(rule => rule.label === 'Inicio de Actividades')
+                      ?.details || [])
+                      .map((activity: any) => [
+                        activity.actividades || '—',
+                        activity.codigo || '—',
+                        activity.categoria || '—',
+                        activity.afectaIva || '—',
+                        activity.fecha || '—',
+                      ])
+                  }
+                />
 
-                {/*    <TableBasic
-                  title="Representantes Legales"
-                  columns={["Nombre", "Rut"]}
-                  data={companyGeneralInfo.administradores.map((admin: any) => [
-                    admin.name,
-                    formatRut(admin.rut),
-                  ])}
-                /> */}
-
-                <div>
-                  <div className="flex justify-between items-center mb-2">
-                    <div className="flex items-center gap-3">
-                      <h3 className="text-lg font-bold dark:text-white">Socios Historicos</h3>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">
-                        ({countEvaluatedAndSelectedSocios(sociosEvaluations)}/3 evaluados/seleccionados)
-                      </span>
-                      <span className="text-xs text-gray-600 dark:text-gray-400">
-                        {(() => {
-                          const total = sociosEvaluations.filter(s => s.isSelected).length;
-                          const done = sociosEvaluations.filter(s => s.isSelected && (s.status === 'completed' || s.previousEvaluation?.hasBeenEvaluated)).length;
-                          const err = sociosEvaluations.filter(s => s.isSelected && s.status === 'error').length;
-                          return `Avanzamento: ${done}/${total}${err > 0 ? `, errori: ${err}` : ''}`;
-                        })()}
-                      </span>
-                    </div>
-                    {sociosEvaluations.some(s => s.isSelected) && (
-                      <button
-                        onClick={evaluateSelectedSocios}
-                        disabled={isEvaluatingSocios}
-                        className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        {isEvaluatingSocios ? 'Evaluando...' : `Evaluar ${sociosEvaluations.filter(s => s.isSelected).length} Seleccionados`}
-                      </button>
-                    )}
-                  </div>
-
-                  {sociosEvaluations.length > 0 && (
-                    <div className="mb-3 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
-                      <p className="text-sm text-blue-700 dark:text-blue-300">
-                        <strong>Nota:</strong> Puedes evaluar un máximo de 3 socios en total (incluyendo los ya evaluados) para verificar su estado PEP.
-                      </p>
-                    </div>
-                  )}
-
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="bg-gray-100 dark:bg-gray-700">
-                        <th className="border dark:border-gray-600 p-2 text-left dark:text-white w-12">
-                          <span className="sr-only">Seleccionar</span>
-                          <FileText className="w-4 h-4 text-gray-600 dark:text-gray-300" />
-                        </th>
-                        <th
-                          className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
-                          onClick={() => {
-                            if (sociosSortKey === 'name') {
-                              setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
-                            } else {
-                              setSociosSortKey('name');
-                              setSociosSortDir('asc');
-                            }
-                          }}
-                        >
-                          <span className="inline-flex items-center gap-1">
-                            Nombre
-                            {sociosSortKey === 'name' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
-                          </span>
-                        </th>
-                        <th
-                          className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
-                          onClick={() => {
-                            if (sociosSortKey === 'rut') {
-                              setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
-                            } else {
-                              setSociosSortKey('rut');
-                              setSociosSortDir('asc');
-                            }
-                          }}
-                        >
-                          <span className="inline-flex items-center gap-1">
-                            Rut
-                            {sociosSortKey === 'rut' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
-                          </span>
-                        </th>
-                        <th
-                          className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
-                          onClick={() => {
-                            if (sociosSortKey === 'estadoEvaluacion') {
-                              setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
-                            } else {
-                              setSociosSortKey('estadoEvaluacion');
-                              setSociosSortDir('asc');
-                            }
-                          }}
-                        >
-                          <span className="inline-flex items-center gap-1">
-                            Estado Evaluación
-                            {sociosSortKey === 'estadoEvaluacion' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
-                          </span>
-                        </th>
-                        <th
-                          className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
-                          onClick={() => {
-                            if (sociosSortKey === 'estadoPep') {
-                              setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
-                            } else {
-                              setSociosSortKey('estadoPep');
-                              setSociosSortDir('asc');
-                            }
-                          }}
-                        >
-                          <span className="inline-flex items-center gap-1">
-                            Estado PEP
-                            {sociosSortKey === 'estadoPep' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
-                          </span>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {(() => {
-                        let sortedSocios = [...sociosEvaluations];
-                        if (sociosSortKey) {
-                          sortedSocios.sort((a, b) => {
-                            let aVal = '';
-                            let bVal = '';
-
-                            if (sociosSortKey === 'name' || sociosSortKey === 'rut') {
-                              aVal = String(a[sociosSortKey as keyof SocioEvaluation] ?? '');
-                              bVal = String(b[sociosSortKey as keyof SocioEvaluation] ?? '');
-                            } else if (sociosSortKey === 'estadoEvaluacion') {
-                              aVal = a.previousEvaluation?.hasBeenEvaluated ? 'Ya evaluado' : 'No evaluado';
-                              bVal = b.previousEvaluation?.hasBeenEvaluated ? 'Ya evaluado' : 'No evaluado';
-                            } else if (sociosSortKey === 'estadoPep') {
-                              aVal = a.evaluationResult?.hasPepChile ? 'PEP Chile' : a.evaluationResult?.hasFamiliaresPep ? 'Familiares PEP' : 'No evaluado';
-                              bVal = b.evaluationResult?.hasPepChile ? 'PEP Chile' : b.evaluationResult?.hasFamiliaresPep ? 'Familiares PEP' : 'No evaluado';
-                            }
-
-                            const cmp = aVal.localeCompare(bVal, undefined, { sensitivity: 'base' });
-                            return sociosSortDir === 'asc' ? cmp : -cmp;
-                          });
-                        }
-                        return (exportingPdf ? sortedSocios.slice(0, 25) : sortedSocios);
-                      })().map((socioEval, index) => {
-                        logger.log(`Rendering row ${index}: RUT=${socioEval.rut}, Name=${socioEval.name}, isSelected=${socioEval.isSelected}`);
-                        const totalCount = countEvaluatedAndSelectedSocios(sociosEvaluations);
-                        const naturalCheck = socioEval.isNaturalPerson ?? inferIsNaturalFromRut(socioEval.rut);
-                        const isDisabled = socioEval.isEvaluating ||
-                          (!socioEval.isSelected && totalCount >= 3) ||
-                          (socioEval.previousEvaluation?.hasBeenEvaluated || !!socioEval.evaluationResult) ||
-                          (naturalCheck !== true);
-                        return (
-                          <tr key={`socio-${socioEval.rut}`} className={index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800' : 'dark:bg-gray-900'}>
-                            <td className="border dark:border-gray-600 p-2 w-12">
-                              <input
-                                type="checkbox"
-                                checked={socioEval.isSelected}
-                                onChange={(e) => {
-                                  logger.log(`Checkbox clicked for RUT: ${socioEval.rut}, Name: ${socioEval.name}`);
-                                  toggleSocioSelection(socioEval.rut);
-                                }}
-                                disabled={isDisabled}
-                                className={`w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ${isDisabled && !socioEval.isSelected ? 'opacity-50 cursor-not-allowed' : ''}`}
-                              />
-                            </td>
-                            <td className="border dark:border-gray-600 p-2 dark:text-gray-300">
-                              <div className="flex items-center gap-2">
-                                <span>{socioEval.name}</span>
-                                {(() => {
-                                  const nCheck = socioEval.isNaturalPerson ?? inferIsNaturalFromRut(socioEval.rut);
-                                  const label = nCheck === true ? 'Natural' : nCheck === false ? 'Jurídica' : 'Desconocido';
-                                  const cls = nCheck === true
-                                    ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
-                                    : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300';
-                                  return (
-                                    <span className={`inline-block text-xs px-2 py-1 rounded ${cls}`} title={label}>
-                                      {label}
-                                    </span>
-                                  );
-                                })()}
-                              </div>
-                            </td>
-                            <td className="border dark:border-gray-600 p-2 dark:text-gray-300">
-                              {socioEval.rut ? (
-                                <div className="flex items-center gap-2">
-                                  <span>{formatChileanRut(socioEval.rut)}</span>
-                                  {socioEval.rutFoundAutomatically && (
-                                    <span
-                                      className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded dark:bg-green-900 dark:text-green-300"
-                                      title="RUT trovato automaticamente nei dati esterni"
-                                    >
-                                      Auto
-                                    </span>
-                                  )}
-                                </div>
-                              ) : (
-                                <span className="text-gray-500 italic">Sin RUT</span>
-                              )}
-                            </td>
-                            <td className="border dark:border-gray-600 p-2">
-                              {socioEval.previousEvaluation?.hasBeenEvaluated ? (
-                                <div className="space-y-1">
-                                  <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                                    Ya evaluado
-                                  </span>
-                                  {socioEval.previousEvaluation.evaluationDate && (
-                                    <div className="text-xs text-gray-500 dark:text-gray-400">
-                                      {new Date(socioEval.previousEvaluation.evaluationDate).toLocaleDateString('it-IT')}
-                                    </div>
-                                  )}
-                                </div>
-                              ) : (
-                                <span className="text-gray-500 dark:text-gray-400 text-xs">No evaluado</span>
-                              )}
-                            </td>
-                            <td className="border dark:border-gray-600 p-2">
-                              {socioEval.isEvaluating ? (
-                                <span className="text-blue-600 dark:text-blue-400">Evaluando...</span>
-                              ) : socioEval.evaluationResult ? (
-                                <div className="space-y-1">
-                                  {socioEval.evaluationResult.hasPepChile && (
-                                    <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded dark:bg-red-900 dark:text-red-300">
-                                      PEP Chile
-                                    </span>
-                                  )}
-                                  {socioEval.evaluationResult.hasFamiliaresPep && (
-                                    <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded dark:bg-orange-900 dark:text-orange-300 ml-1">
-                                      Familiares PEP
-                                    </span>
-                                  )}
-                                  {!socioEval.evaluationResult.hasPepChile && !socioEval.evaluationResult.hasFamiliaresPep && (
-                                    <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded dark:bg-green-900 dark:text-green-300">
-                                      Sin PEP
-                                    </span>
-                                  )}
-                                </div>
-                              ) : socioEval.previousEvaluation?.hasBeenEvaluated ? (
-                                <div className="space-y-1">
-                                  {socioEval.previousEvaluation.hasPepChile && (
-                                    <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded dark:bg-red-900 dark:text-red-300">
-                                      PEP Chile
-                                    </span>
-                                  )}
-                                  {socioEval.previousEvaluation.hasFamiliaresPep && (
-                                    <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded dark:bg-orange-900 dark:text-orange-300 ml-1">
-                                      Familiares PEP
-                                    </span>
-                                  )}
-                                  {!socioEval.previousEvaluation.hasPepChile && !socioEval.previousEvaluation.hasFamiliaresPep && (
-                                    <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded dark:bg-green-900 dark:text-green-300">
-                                      Sin PEP
-                                    </span>
-                                  )}
-                                  {socioEval.status === 'error' && (
-                                    <div className="text-xs text-red-600 dark:text-red-400 mt-1">Errore valutazione: {socioEval.errorMessage || 'sconosciuto'}</div>
-                                  )}
-                                </div>
-                              ) : (
-                                <span className="text-gray-500 dark:text-gray-400">No evaluado</span>
-                              )}
-                            </td>
-                          </tr>
-                        )
-                      })}
-                    </tbody>
-                  </table>
-
-                  {/* Summary of PEP evaluation */}
-                  {pepEvaluationSummary.evaluatedSocios.length > 0 && (
-                    <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                      <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Resumen Evaluación PEP</h4>
-                      <div className="space-y-1 text-sm">
-                        <div className="flex items-center">
-                          <span className="text-blue-700 dark:text-blue-300">Socios evaluados: </span>
-                          <span className="ml-1 font-medium">{pepEvaluationSummary.evaluatedSocios.length}</span>
-                        </div>
-                        {pepEvaluationSummary.pepChileDetected && (
-                          <div className="flex items-center">
-                            <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
-                            <span className="text-red-700 dark:text-red-300">PEP Chile detectado en socios</span>
-                          </div>
-                        )}
-                        {pepEvaluationSummary.familiaresPepDetected && (
-                          <div className="flex items-center">
-                            <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                            <span className="text-orange-700 dark:text-orange-300">Familiares PEP detectado en socios</span>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  )}
-                </div>
               </div>
             </div>
           )}
-
-     {/*      {!exportingPdf && (
-            <MeshFlowChart
-              title="Mapa de Empresas en las que Participa"
-              dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
-              mainRut={companyData.rut}
-              height={460}
-            />
-          )} */}
-          <MeshTable
-            title="Malla Relacional"
-            height={exportingPdf && "auto" /* : "35rem" */}
-            dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
-            mainRut={companyData.rut}
-            forceExpanded={exportingPdf}
-          />
-
-          <Legalrepresentatives
-            dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
-            mainRut={companyData.rut}
-          />
-
-
-          <TableBasic
-            title="Inicio de Actividades"
-            columns={["Actividades", "Codigo", "Categoria", "Afecta iva", "Fecha"]}
-            data={
-              ((riskSummary.allRules?.financieroTributarioRules || [])
-                .find(rule => rule.label === 'Inicio de Actividades')
-                ?.details || [])
-                .map((activity: any) => [
-                  activity.actividades || '—',
-                  activity.codigo || '—',
-                  activity.categoria || '—',
-                  activity.afectaIva || '—',
-                  activity.fecha || '—',
-                ])
-            }
-          />
-
         </div>
-        <div className='flex'>
-          <div className="w-8 h-8 bg-blue-500 rounded-full text-white flex items-center justify-center mr-2">
-            <span></span>
+
+        {/* Malla Relacional - Accordion */}
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow dark:shadow-gray-700">
+          <div
+            className="flex items-center justify-between mb-4 cursor-pointer"
+            onClick={() => toggleSection('MallaRelacional')}
+          >
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-blue-500 rounded-full text-white flex items-center justify-center mr-2">
+                <span></span>
+              </div>
+              <h2 className="text-xl font-bold text-blue-500 dark:text-blue-400">Malla Relacional</h2>
+            </div>
+            {expandedSections.MallaRelacional ?
+              <ChevronUp className="h-6 w-6 text-blue-500" /> :
+              <ChevronDown className="h-6 w-6 text-blue-500" />
+            }
           </div>
 
-          <h2 className="text-xl font-bold text-blue-500 dark:text-blue-400">Resumen de Hallazgos
-          </h2>
+          {expandedSections.MallaRelacional && (
+            <div className="space-y-6">
+              <div style={{ display: exportingPdf ? 'none' : 'block' }}>
+              {/*   <MeshFlowChartOwned
+                  title="Mapa de Empresas Controladas"
+                  dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                  mainRut={companyData.rut}
+                  height={460}
+                  forceExpanded={false}
+                /> */}
 
+
+
+
+              </div>
+              <Legalrepresentatives
+                dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                mainRut={companyData.rut}
+              />
+
+
+              <div>
+                <div className="flex justify-between items-center mb-2">
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-lg font-bold dark:text-white">Socios Historicos</h3>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">
+                      ({countEvaluatedAndSelectedSocios(sociosEvaluations)}/3 evaluados/seleccionados)
+                    </span>
+                    <span className="text-xs text-gray-600 dark:text-gray-400">
+                      {(() => {
+                        const total = sociosEvaluations.filter(s => s.isSelected).length;
+                        const done = sociosEvaluations.filter(s => s.isSelected && (s.status === 'completed' || s.previousEvaluation?.hasBeenEvaluated)).length;
+                        const err = sociosEvaluations.filter(s => s.isSelected && s.status === 'error').length;
+                        return `Avanzamento: ${done}/${total}${err > 0 ? `, errori: ${err}` : ''}`;
+                      })()}
+                    </span>
+                  </div>
+                  {sociosEvaluations.some(s => s.isSelected) && (
+                    <button
+                      onClick={evaluateSelectedSocios}
+                      disabled={isEvaluatingSocios}
+                      className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                    >
+                      {isEvaluatingSocios ? 'Evaluando...' : `Evaluar ${sociosEvaluations.filter(s => s.isSelected).length} Seleccionados`}
+                    </button>
+                  )}
+                </div>
+
+                {sociosEvaluations.length > 0 && (
+                  <div className="mb-3 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                    <p className="text-sm text-blue-700 dark:text-blue-300">
+                      <strong>Nota:</strong> Puedes evaluar un máximo de 3 socios en total (incluyendo los ya evaluados) para verificar su estado PEP.
+                    </p>
+                  </div>
+                )}
+
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-gray-100 dark:bg-gray-700">
+                      <th className="border dark:border-gray-600 p-2 text-left dark:text-white w-12">
+                        <span className="sr-only">Seleccionar</span>
+                        <FileText className="w-4 h-4 text-gray-600 dark:text-gray-300" />
+                      </th>
+                      <th
+                        className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
+                        onClick={() => {
+                          if (sociosSortKey === 'name') {
+                            setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
+                          } else {
+                            setSociosSortKey('name');
+                            setSociosSortDir('asc');
+                          }
+                        }}
+                      >
+                        <span className="inline-flex items-center gap-1">
+                          Nombre
+                          {sociosSortKey === 'name' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
+                        </span>
+                      </th>
+                      <th
+                        className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
+                        onClick={() => {
+                          if (sociosSortKey === 'rut') {
+                            setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
+                          } else {
+                            setSociosSortKey('rut');
+                            setSociosSortDir('asc');
+                          }
+                        }}
+                      >
+                        <span className="inline-flex items-center gap-1">
+                          Rut
+                          {sociosSortKey === 'rut' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
+                        </span>
+                      </th>
+                      <th
+                        className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
+                        onClick={() => {
+                          if (sociosSortKey === 'estadoEvaluacion') {
+                            setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
+                          } else {
+                            setSociosSortKey('estadoEvaluacion');
+                            setSociosSortDir('asc');
+                          }
+                        }}
+                      >
+                        <span className="inline-flex items-center gap-1">
+                          Estado Evaluación
+                          {sociosSortKey === 'estadoEvaluacion' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
+                        </span>
+                      </th>
+                      <th
+                        className="border dark:border-gray-600 p-2 text-left dark:text-white cursor-pointer select-none"
+                        onClick={() => {
+                          if (sociosSortKey === 'estadoPep') {
+                            setSociosSortDir(sociosSortDir === 'asc' ? 'desc' : 'asc');
+                          } else {
+                            setSociosSortKey('estadoPep');
+                            setSociosSortDir('asc');
+                          }
+                        }}
+                      >
+                        <span className="inline-flex items-center gap-1">
+                          Estado PEP
+                          {sociosSortKey === 'estadoPep' && (sociosSortDir === 'asc' ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />)}
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(() => {
+                      let sortedSocios = [...sociosEvaluations];
+                      if (sociosSortKey) {
+                        sortedSocios.sort((a, b) => {
+                          let aVal = '';
+                          let bVal = '';
+
+                          if (sociosSortKey === 'name' || sociosSortKey === 'rut') {
+                            aVal = String(a[sociosSortKey as keyof SocioEvaluation] ?? '');
+                            bVal = String(b[sociosSortKey as keyof SocioEvaluation] ?? '');
+                          } else if (sociosSortKey === 'estadoEvaluacion') {
+                            aVal = a.previousEvaluation?.hasBeenEvaluated ? 'Ya evaluado' : 'No evaluado';
+                            bVal = b.previousEvaluation?.hasBeenEvaluated ? 'Ya evaluado' : 'No evaluado';
+                          } else if (sociosSortKey === 'estadoPep') {
+                            aVal = a.evaluationResult?.hasPepChile ? 'PEP Chile' : a.evaluationResult?.hasFamiliaresPep ? 'Familiares PEP' : 'No evaluado';
+                            bVal = b.evaluationResult?.hasPepChile ? 'PEP Chile' : b.evaluationResult?.hasFamiliaresPep ? 'Familiares PEP' : 'No evaluado';
+                          }
+
+                          const cmp = aVal.localeCompare(bVal, undefined, { sensitivity: 'base' });
+                          return sociosSortDir === 'asc' ? cmp : -cmp;
+                        });
+                      }
+                      return (exportingPdf ? sortedSocios.slice(0, 25) : sortedSocios);
+                    })().map((socioEval, index) => {
+                      logger.log(`Rendering row ${index}: RUT=${socioEval.rut}, Name=${socioEval.name}, isSelected=${socioEval.isSelected}`);
+                      const totalCount = countEvaluatedAndSelectedSocios(sociosEvaluations);
+                      const naturalCheck = socioEval.isNaturalPerson ?? inferIsNaturalFromRut(socioEval.rut);
+                      const isDisabled = socioEval.isEvaluating ||
+                        (!socioEval.isSelected && totalCount >= 3) ||
+                        (socioEval.previousEvaluation?.hasBeenEvaluated || !!socioEval.evaluationResult) ||
+                        (naturalCheck !== true);
+                      return (
+                        <tr key={`socio-${socioEval.rut}`} className={index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800' : 'dark:bg-gray-900'}>
+                          <td className="border dark:border-gray-600 p-2 w-12">
+                            <input
+                              type="checkbox"
+                              checked={socioEval.isSelected}
+                              onChange={(e) => {
+                                logger.log(`Checkbox clicked for RUT: ${socioEval.rut}, Name: ${socioEval.name}`);
+                                toggleSocioSelection(socioEval.rut);
+                              }}
+                              disabled={isDisabled}
+                              className={`w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ${isDisabled && !socioEval.isSelected ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            />
+                          </td>
+                          <td className="border dark:border-gray-600 p-2 dark:text-gray-300">
+                            <div className="flex items-center gap-2">
+                              <span>{socioEval.name}</span>
+                              {(() => {
+                                const nCheck = socioEval.isNaturalPerson ?? inferIsNaturalFromRut(socioEval.rut);
+                                const label = nCheck === true ? 'Natural' : nCheck === false ? 'Jurídica' : 'Desconocido';
+                                const cls = nCheck === true
+                                  ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+                                  : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300';
+                                return (
+                                  <span className={`inline-block text-xs px-2 py-1 rounded ${cls}`} title={label}>
+                                    {label}
+                                  </span>
+                                );
+                              })()}
+                            </div>
+                          </td>
+                          <td className="border dark:border-gray-600 p-2 dark:text-gray-300">
+                            {socioEval.rut ? (
+                              <div className="flex items-center gap-2">
+                                <span>{formatChileanRut(socioEval.rut)}</span>
+                                {socioEval.rutFoundAutomatically && (
+                                  <span
+                                    className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded dark:bg-green-900 dark:text-green-300"
+                                    title="RUT trovato automaticamente nei dati esterni"
+                                  >
+                                    Auto
+                                  </span>
+                                )}
+                              </div>
+                            ) : (
+                              <span className="text-gray-500 italic">Sin RUT</span>
+                            )}
+                          </td>
+                          <td className="border dark:border-gray-600 p-2">
+                            {socioEval.previousEvaluation?.hasBeenEvaluated ? (
+                              <div className="space-y-1">
+                                <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
+                                  Ya evaluado
+                                </span>
+                                {socioEval.previousEvaluation.evaluationDate && (
+                                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                                    {new Date(socioEval.previousEvaluation.evaluationDate).toLocaleDateString('it-IT')}
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
+                              <span className="text-gray-500 dark:text-gray-400 text-xs">No evaluado</span>
+                            )}
+                          </td>
+                          <td className="border dark:border-gray-600 p-2">
+                            {socioEval.isEvaluating ? (
+                              <span className="text-blue-600 dark:text-blue-400">Evaluando...</span>
+                            ) : socioEval.evaluationResult ? (
+                              <div className="space-y-1">
+                                {socioEval.evaluationResult.hasPepChile && (
+                                  <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded dark:bg-red-900 dark:text-red-300">
+                                    PEP Chile
+                                  </span>
+                                )}
+                                {socioEval.evaluationResult.hasFamiliaresPep && (
+                                  <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded dark:bg-orange-900 dark:text-orange-300 ml-1">
+                                    Familiares PEP
+                                  </span>
+                                )}
+                                {!socioEval.evaluationResult.hasPepChile && !socioEval.evaluationResult.hasFamiliaresPep && (
+                                  <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded dark:bg-green-900 dark:text-green-300">
+                                    Sin PEP
+                                  </span>
+                                )}
+                              </div>
+                            ) : socioEval.previousEvaluation?.hasBeenEvaluated ? (
+                              <div className="space-y-1">
+                                {socioEval.previousEvaluation.hasPepChile && (
+                                  <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded dark:bg-red-900 dark:text-red-300">
+                                    PEP Chile
+                                  </span>
+                                )}
+                                {socioEval.previousEvaluation.hasFamiliaresPep && (
+                                  <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded dark:bg-orange-900 dark:text-orange-300 ml-1">
+                                    Familiares PEP
+                                  </span>
+                                )}
+                                {!socioEval.previousEvaluation.hasPepChile && !socioEval.previousEvaluation.hasFamiliaresPep && (
+                                  <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded dark:bg-green-900 dark:text-green-300">
+                                    Sin PEP
+                                  </span>
+                                )}
+                                {socioEval.status === 'error' && (
+                                  <div className="text-xs text-red-600 dark:text-red-400 mt-1">Errore valutazione: {socioEval.errorMessage || 'sconosciuto'}</div>
+                                )}
+                              </div>
+                            ) : (
+                              <span className="text-gray-500 dark:text-gray-400">No evaluado</span>
+                            )}
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+
+                {/* Summary of PEP evaluation */}
+                {pepEvaluationSummary.evaluatedSocios.length > 0 && (
+                  <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                    <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Resumen Evaluación PEP</h4>
+                    <div className="space-y-1 text-sm">
+                      <div className="flex items-center">
+                        <span className="text-blue-700 dark:text-blue-300">Socios evaluados: </span>
+                        <span className="ml-1 font-medium">{pepEvaluationSummary.evaluatedSocios.length}</span>
+                      </div>
+                      {pepEvaluationSummary.pepChileDetected && (
+                        <div className="flex items-center">
+                          <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                          <span className="text-red-700 dark:text-red-300">PEP Chile detectado en socios</span>
+                        </div>
+                      )}
+                      {pepEvaluationSummary.familiaresPepDetected && (
+                        <div className="flex items-center">
+                          <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                          <span className="text-orange-700 dark:text-orange-300">Familiares PEP detectado en socios</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <MeshTable
+                title="Controladores y Estructura de Propiedad"
+                height={exportingPdf && "auto"}
+                dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                mainRut={companyData.rut}
+                forceExpanded={exportingPdf}
+              />
+
+
+              <MeshFlowTable
+                title="Mapa de Empresas en las que Participa"
+                dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                mainRut={companyData.rut}
+              />
+
+
+            </div>
+          )}
         </div>
-
 
         {/* Principales Hallazgos - Accordion */}
         {findings.length > 0 && showHallazgos && (
@@ -4661,320 +4501,323 @@ const FastCheck: React.FC = () => {
           </div>
         )}
 
-
-
-
-
-
-        {/* Resumen Section - MODIFICADO */}
-        {expandedSections.resumen && (
-          <div className="space-y-6">
-            {(() => {
-
-              // ── Causas Penales ──────────────────────────────────────────
-              const causasPenalesRule: ParameterData = (() => {
-                const todasCoincidencias =
-                  data?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
-                  data?.details?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
-                  data?.logEntry?.filteredDetails?.compliance?.penal?.coincidencias ||
-                  [];
-                const coincidenciasFiltradas = todasCoincidencias.filter((item: any) => {
-                  const postura = item?.postura?.toLowerCase() || '';
-                  return postura === 'demandado' || postura === 'querellado' || postura === 'denunciado';
-                });
-                return {
-                  label: "Causas Penales",
-                  impacto: "severo",
-                  detected: coincidenciasFiltradas.length > 0,
-                  risk: coincidenciasFiltradas.length > 0 ? "critico" : "bajo",
-                  details: coincidenciasFiltradas,
-                };
-              })();
-
-              // ── Reputación Pública y Mediática ──────────────────────────
-              const reputacionRule: ParameterData = (() => {
-                const coincidencias =
-                  data?.sheriffLogData?.filteredDetails?.compliance?.noticias?.coincidencias ||
-                  data?.details?.sheriffLogData?.filteredDetails?.compliance?.noticias?.coincidencias ||
-                  data?.logEntry?.filteredDetails?.compliance?.noticias?.coincidencias ||
-                  [];
-                return {
-                  label: "Reputación Pública y Mediática",
-                  impacto: "significativo",
-                  detected: coincidencias.length > 0,
-                  risk: coincidencias.length > 0 ? "alto" : "bajo",
-                  details: coincidencias,
-                };
-              })();
-
-              // ── Normalizar capitalHumanoRules ───────────────────────────
-              const normalizedCapitalHumanoRules = (riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
-                if (rule.label === 'Deuda Previsional Presunta') {
-                  const casos = normalizeDetails(rule.details);
-                  const hasCases = casos.length > 0;
-                  return {
-                    ...rule,
-                    risk: hasCases ? 'alto' : 'bajo',
-                    detected: hasCases,
-                    details: hasCases ? casos : [],
-                  };
-                }
-                return rule;
-              });
-
-              // ── Normalizar financieroTributarioRules ────────────────────
-              const normalizedFinancieroRules = (riskSummary.allRules?.financieroTributarioRules || []).map(rule => {
-                if (rule.label === 'Inicio de Actividades') {
-                  const hasActivities = Array.isArray(rule.details) && rule.details.length > 0;
-                  return {
-                    ...rule,
-                    detected: !hasActivities,
-                    risk: !hasActivities ? 'alto' : 'bajo',
-                  };
-                }
-                return rule;
-              });
-
-              // ── Espejear exactamente cada TableAssessment ───────────────
-              const detectedParams = [
-                // Integridad, Ética y Riesgo Penal
-                ...(getIntegridadComplianceRules(riskSummary.allRules?.complianceRules || []))
-                  .map(rule => ({
-                    ...rule,
-                    label: rule.label === 'Condenas Ley 21.121' ? 'Inhabilitación Estado – Ley 21.121'
-                      : rule.label === 'Condenas Ley 20.393' ? 'Inhabilitación Estado – Ley 20.393'
-                        : rule.label,
-                    detected: rule.risk === 'no_disponible' ? false : rule.detected,
-                  })),
-                causasPenalesRule,
-
-                // Contingencias Judiciales
-                ...(riskSummary.allRules?.legalRules || []),
-
-                // Reputación y Conflictos de Interés
-                ...(riskSummary.allRules?.complianceRules || [])
-                  .filter(rule => ['Listas Propias Alto Impacto', 'Listas Propias Mediano Impacto'].includes(rule.label))
-                  .map(rule => ({
-                    ...rule,
-                    detected: rule.risk === 'no_disponible' ? false : rule.detected,
-                  })),
-                reputacionRule,
-
-                // Ambiental y Sostenibilidad
-                // Ambiental y Sostenibilidad
-                ...(riskSummary.allRules?.complianceRules || [])
-                  .filter(rule => [
-                    'Sanciones Medioambientales',
-                    'Proceso Sanciones Medioambientales',
-                    'Procesos Sancionatorios Medioambientales',
-                    'Procesos Sanciones Medioambientales'
-                  ].includes(rule.label))
-                  .map(rule => ({
-                    ...rule,
-                    detected: rule.risk === 'no_disponible' ? false : rule.detected,
-                  })),
-
-                // Laboral y Capital Humano
-                ...normalizedCapitalHumanoRules,
-
-                // Financiero y Tributario
-                ...normalizedFinancieroRules,
-
-              ].filter(rule =>
-                rule.detected === true &&
-                rule.risk !== 'no_disponible'
-              );
-
-              if (detectedParams.length === 0) {
-                return (
-                  <div className="text-center py-8">
-                    <p className="text-gray-500 dark:text-gray-400">
-                      No se detectaron parámetros de riesgo
-                    </p>
-                  </div>
-                );
-              }
-
-              // ── calculateTotals ─────────────────────────────────────────
-              const calculateTotals = (rule: ParameterData) => {
-                let d: any = rule.details;
-
-                if (rule.label === 'Deuda Previsional Presunta' && d?.casos) {
-                  d = d.casos;
-                }
-
-                const items: Array<{ label: string; value: string | number; variant: string }> = [];
-                const label = rule.label || '';
-                const riskVariant = rule.risk === 'critico' ? 'danger' : 'warning';
-
-                // Casos especiales sin "Total" encabezado
-                if (label === 'Inicio de Actividades') {
-                  items.push({ label: 'Sin Inicio de Actividades registrado', value: 'No registra', variant: 'danger' });
-                  return items;
-                }
-                if (label === 'Contribuyente de difícil fiscalización') {
-                  items.push({ label: 'Clasificado como difícil fiscalización', value: 'Sí', variant: 'warning' });
-                  return items;
-                }
-                if (label === 'Quiebra Judicial') {
-                  items.push({ label: 'Tiene Quiebra Judicial', value: 'Sí', variant: 'danger' });
-                  return items;
-                }
-                if (label === 'Término de Giro') {
-                  items.push({ label: 'Registra Término de Giro', value: 'Sí', variant: 'danger' });
-                  return items;
-                }
-
-                // Sin array de detalles: fallback
-                if (d == null || !Array.isArray(d) || d.length === 0) {
-                  items.push({ label: label, value: 'Detectado', variant: riskVariant });
-                  return items;
-                }
-
-                if (typeof d[0] !== 'object' || d[0] === null) {
-                  items.push({ label: `Total ${label}`, value: d.length, variant: 'info' });
-                  return items;
-                }
-
-                // Total encabezado
-                items.push({ label: `Total ${label}`, value: d.length, variant: 'info' });
-
-                if (label === 'Multas Laborales') {
-                  let montoTotal = 0;
-                  d.forEach((row: any) => {
-                    const monto = row?.monto || row?.Monto || 0;
-                    montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
-                  });
-                  items.push({ label: 'Cantidad de multas', value: d.length, variant: 'warning' });
-                  items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
-                }
-
-                else if (label === 'Protestos y Morosidades') {
-                  let montoTotal = 0;
-                  d.forEach((row: any) => {
-                    const monto = row?.monto || row?.Monto || row?.unpaidAmount || row?.['Monto'] || 0;
-                    montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
-                  });
-                  items.push({ label: 'Cantidad de protestos y morosidades', value: d.length, variant: 'warning' });
-                  items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
-                }
-
-                else if (label === 'Condenas por Prácticas Antisindicales') {
-                  let montoTotal = 0;
-                  d.forEach((row: any) => {
-                    const monto = row?.montoMulta || row?.['Monto Multa'] || row?.monto || row?.Monto || 0;
-                    montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
-                  });
-                  items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'warning' });
-                  items.push({ label: 'Monto total multas', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
-                }
-
-                else if (label === 'Procesos Sancionatorios Medioambientales') {
-                  items.push({ label: 'Cantidad de procesos', value: d.length, variant: 'info' });
-                }
-
-                else if (label === 'Sanciones Medioambientales') {
-                  items.push({ label: 'Cantidad de sanciones', value: d.length, variant: 'warning' });
-                }
-
-                else if (label === 'Inhabilitación Estado – Ley 21.121') {
-                  items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'danger' });
-                }
-
-                else if (label === 'Inhabilitación Estado – Ley 20.393') {
-                  items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'danger' });
-                }
-
-                else if (label === 'Listas Internacionales') {
-                  items.push({ label: 'Registros en listas internacionales', value: d.length, variant: 'danger' });
-                }
-
-                else if (label === 'PEP Chile') {
-                  items.push({ label: 'Personas PEP detectadas', value: d.length, variant: 'danger' });
-                }
-
-                else if (label === 'Familiares PEP') {
-                  items.push({ label: 'Familiares PEP detectados', value: d.length, variant: 'warning' });
-                }
-
-                else if (label === 'Listas Propias Alto Impacto') {
-                  items.push({ label: 'Cantidad de registros', value: d.length, variant: 'danger' });
-                }
-
-                else if (label === 'Listas Propias Mediano Impacto') {
-                  items.push({ label: 'Cantidad de registros', value: d.length, variant: 'warning' });
-                }
-
-                else if (label === 'Reputación Pública y Mediática') {
-                  items.push({ label: 'Noticias encontradas', value: d.length, variant: 'warning' });
-                }
-
-                else if (label === 'Boletín Concursal' || label === 'Boletin Concursal') {
-                  items.push({ label: 'Registros en Boletín Concursal', value: d.length, variant: 'warning' });
-                }
-
-                else if (
-                  label === 'Causas Civiles' ||
-                  label === 'Causas Laborales' ||
-                  label === 'Causas de Cobranza Laboral'
-                ) {
-                  let vigentesCount = 0;
-                  let concluidasCount = 0;
-                  let archivadasCount = 0;
-                  d.forEach((row: any) => {
-                    const estadoLower = String(row?.estado || row?.Estado || '').toLowerCase();
-                    if (estadoLower.includes('vigente')) vigentesCount++;
-                    else if (estadoLower.includes('concluida') || estadoLower.includes('concluido')) concluidasCount++;
-                    else if (estadoLower.includes('archivada') || estadoLower.includes('archivado')) archivadasCount++;
-                  });
-                  items.push({ label: 'Causas Vigentes', value: vigentesCount, variant: 'danger' });
-                  items.push({ label: 'Causas Concluidas', value: concluidasCount, variant: 'info' });
-                  items.push({ label: 'Causas Archivadas', value: archivadasCount, variant: 'warning' });
-                }
-
-                else if (label === 'Deuda Previsional Presunta') {
-                  items.push({ label: 'Afiliados con deuda previsional presunta', value: d.length, variant: 'warning' });
-                }
-
-                else if (label === 'Deuda Previsional Publicada') {
-                  let montoTotal = 0;
-                  d.forEach((row: any) => {
-                    const monto = row?.monto || row?.Monto || 0;
-                    montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
-                  });
-                  items.push({ label: 'Cantidad de casos', value: d.length, variant: 'warning' });
-                  items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
-                }
-
-                else if (label === 'Causas Penales') {
-                  let demandadoCount = 0;
-                  let querelladoCount = 0;
-                  let denunciadoCount = 0;
-                  d.forEach((row: any) => {
-                    const postura = (row?.postura || row?.Postura || '').toLowerCase().trim();
-                    if (postura === 'demandado') demandadoCount++;
-                    else if (postura === 'querellado') querelladoCount++;
-                    else if (postura === 'denunciado') denunciadoCount++;
-                  });
-                  items.push({ label: 'Total causas penales', value: d.length, variant: 'danger' });
-                  if (demandadoCount > 0) items.push({ label: 'Como demandado', value: demandadoCount, variant: 'warning' });
-                  if (querelladoCount > 0) items.push({ label: 'Como querellado', value: querelladoCount, variant: 'warning' });
-                  if (denunciadoCount > 0) items.push({ label: 'Como denunciado', value: denunciadoCount, variant: 'warning' });
-                }
-
-                return items;
-              };
-
-              return (
-                <TableSummary
-                  criticalAndHighParams={detectedParams}
-                  riskSummary={riskSummary}
-                  calculateTotals={calculateTotals}
-                />
-              );
-            })()}
+        {/* Resumen de Hallazgos - Accordion */}
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow dark:shadow-gray-700">
+          <div
+            className="flex items-center justify-between mb-4 cursor-pointer"
+            onClick={() => toggleSection('resumen')}
+          >
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-blue-500 rounded-full text-white flex items-center justify-center mr-2">
+                <span></span>
+              </div>
+              <h2 className="text-xl font-bold text-blue-500 dark:text-blue-400">Resumen de Hallazgos</h2>
+            </div>
+            {expandedSections.resumen ?
+              <ChevronUp className="h-6 w-6 text-blue-500" /> :
+              <ChevronDown className="h-6 w-6 text-blue-500" />
+            }
           </div>
-        )}
+
+          {expandedSections.resumen && (
+            <div className="space-y-6">
+              {(() => {
+
+                // ── Causas Penales ──────────────────────────────────────────
+                const causasPenalesRule: ParameterData = (() => {
+                  const todasCoincidencias =
+                    data?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
+                    data?.details?.sheriffLogData?.filteredDetails?.compliance?.penal?.coincidencias ||
+                    data?.logEntry?.filteredDetails?.compliance?.penal?.coincidencias ||
+                    [];
+                  const coincidenciasFiltradas = todasCoincidencias.filter((item: any) => {
+                    const postura = item?.postura?.toLowerCase() || '';
+                    return postura === 'demandado' || postura === 'querellado' || postura === 'denunciado';
+                  });
+                  return {
+                    label: "Causas Penales",
+                    impacto: "severo",
+                    detected: coincidenciasFiltradas.length > 0,
+                    risk: coincidenciasFiltradas.length > 0 ? "critico" : "bajo",
+                    details: coincidenciasFiltradas,
+                  };
+                })();
+
+                // ── Reputación Pública y Mediática ──────────────────────────
+                const reputacionRule: ParameterData = (() => {
+                  const coincidencias =
+                    data?.sheriffLogData?.filteredDetails?.compliance?.noticias?.coincidencias ||
+                    data?.details?.sheriffLogData?.filteredDetails?.compliance?.noticias?.coincidencias ||
+                    data?.logEntry?.filteredDetails?.compliance?.noticias?.coincidencias ||
+                    [];
+                  return {
+                    label: "Reputación Pública y Mediática",
+                    impacto: "significativo",
+                    detected: coincidencias.length > 0,
+                    risk: coincidencias.length > 0 ? "alto" : "bajo",
+                    details: coincidencias,
+                  };
+                })();
+
+                // ── Normalizar capitalHumanoRules ───────────────────────────
+                const normalizedCapitalHumanoRules = (riskSummary.allRules?.capitalHumanoRules || []).map(rule => {
+                  if (rule.label === 'Deuda Previsional Presunta') {
+                    const casos = normalizeDetails(rule.details);
+                    const hasCases = casos.length > 0;
+                    return {
+                      ...rule,
+                      risk: hasCases ? 'alto' : 'bajo',
+                      detected: hasCases,
+                      details: hasCases ? casos : [],
+                    };
+                  }
+                  return rule;
+                });
+
+                // ── Normalizar financieroTributarioRules ────────────────────
+                const normalizedFinancieroRules = (riskSummary.allRules?.financieroTributarioRules || []).map(rule => {
+                  if (rule.label === 'Inicio de Actividades') {
+                    const hasActivities = Array.isArray(rule.details) && rule.details.length > 0;
+                    return {
+                      ...rule,
+                      detected: !hasActivities,
+                      risk: !hasActivities ? 'alto' : 'bajo',
+                    };
+                  }
+                  return rule;
+                });
+
+                // ── Espejear exactamente cada TableAssessment ───────────────
+                const detectedParams = [
+                  ...(getIntegridadComplianceRules(riskSummary.allRules?.complianceRules || []))
+                    .map(rule => ({
+                      ...rule,
+                      label: rule.label === 'Condenas Ley 21.121' ? 'Inhabilitación Estado – Ley 21.121'
+                        : rule.label === 'Condenas Ley 20.393' ? 'Inhabilitación Estado – Ley 20.393'
+                          : rule.label,
+                      detected: rule.risk === 'no_disponible' ? false : rule.detected,
+                    })),
+                  causasPenalesRule,
+
+                  ...(riskSummary.allRules?.legalRules || []),
+
+                  ...(riskSummary.allRules?.complianceRules || [])
+                    .filter(rule => ['Listas Propias Alto Impacto', 'Listas Propias Mediano Impacto'].includes(rule.label))
+                    .map(rule => ({
+                      ...rule,
+                      detected: rule.risk === 'no_disponible' ? false : rule.detected,
+                    })),
+                  reputacionRule,
+
+                  ...(riskSummary.allRules?.complianceRules || [])
+                    .filter(rule => [
+                      'Sanciones Medioambientales',
+                      'Proceso Sanciones Medioambientales',
+                      'Procesos Sancionatorios Medioambientales',
+                      'Procesos Sanciones Medioambientales'
+                    ].includes(rule.label))
+                    .map(rule => ({
+                      ...rule,
+                      detected: rule.risk === 'no_disponible' ? false : rule.detected,
+                    })),
+
+                  ...normalizedCapitalHumanoRules,
+
+                  ...normalizedFinancieroRules,
+
+                ].filter(rule =>
+                  rule.detected === true &&
+                  rule.risk !== 'no_disponible'
+                );
+
+                if (detectedParams.length === 0) {
+                  return (
+                    <div className="text-center py-8">
+                      <p className="text-gray-500 dark:text-gray-400">
+                        No se detectaron parámetros de riesgo
+                      </p>
+                    </div>
+                  );
+                }
+
+                // ── calculateTotals ─────────────────────────────────────────
+                const calculateTotals = (rule: ParameterData) => {
+                  let d: any = rule.details;
+
+                  if (rule.label === 'Deuda Previsional Presunta' && d?.casos) {
+                    d = d.casos;
+                  }
+
+                  const items: Array<{ label: string; value: string | number; variant: string }> = [];
+                  const label = rule.label || '';
+                  const riskVariant = rule.risk === 'critico' ? 'danger' : 'warning';
+
+                  if (label === 'Inicio de Actividades') {
+                    items.push({ label: 'Sin Inicio de Actividades registrado', value: 'No registra', variant: 'danger' });
+                    return items;
+                  }
+                  if (label === 'Contribuyente de difícil fiscalización') {
+                    items.push({ label: 'Clasificado como difícil fiscalización', value: 'Sí', variant: 'warning' });
+                    return items;
+                  }
+                  if (label === 'Quiebra Judicial') {
+                    items.push({ label: 'Tiene Quiebra Judicial', value: 'Sí', variant: 'danger' });
+                    return items;
+                  }
+                  if (label === 'Término de Giro') {
+                    items.push({ label: 'Registra Término de Giro', value: 'Sí', variant: 'danger' });
+                    return items;
+                  }
+
+                  if (d == null || !Array.isArray(d) || d.length === 0) {
+                    items.push({ label: label, value: 'Detectado', variant: riskVariant });
+                    return items;
+                  }
+
+                  if (typeof d[0] !== 'object' || d[0] === null) {
+                    items.push({ label: `Total ${label}`, value: d.length, variant: 'info' });
+                    return items;
+                  }
+
+                  items.push({ label: `Total ${label}`, value: d.length, variant: 'info' });
+
+                  if (label === 'Multas Laborales') {
+                    let montoTotal = 0;
+                    d.forEach((row: any) => {
+                      const monto = row?.monto || row?.Monto || 0;
+                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                    });
+                    items.push({ label: 'Cantidad de multas', value: d.length, variant: 'warning' });
+                    items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                  }
+
+                  else if (label === 'Protestos y Morosidades') {
+                    let montoTotal = 0;
+                    d.forEach((row: any) => {
+                      const monto = row?.monto || row?.Monto || row?.unpaidAmount || row?.['Monto'] || 0;
+                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                    });
+                    items.push({ label: 'Cantidad de protestos y morosidades', value: d.length, variant: 'warning' });
+                    items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                  }
+
+                  else if (label === 'Condenas por Prácticas Antisindicales') {
+                    let montoTotal = 0;
+                    d.forEach((row: any) => {
+                      const monto = row?.montoMulta || row?.['Monto Multa'] || row?.monto || row?.Monto || 0;
+                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                    });
+                    items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'warning' });
+                    items.push({ label: 'Monto total multas', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                  }
+
+                  else if (label === 'Procesos Sancionatorios Medioambientales') {
+                    items.push({ label: 'Cantidad de procesos', value: d.length, variant: 'info' });
+                  }
+
+                  else if (label === 'Sanciones Medioambientales') {
+                    items.push({ label: 'Cantidad de sanciones', value: d.length, variant: 'warning' });
+                  }
+
+                  else if (label === 'Inhabilitación Estado – Ley 21.121') {
+                    items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'danger' });
+                  }
+
+                  else if (label === 'Inhabilitación Estado – Ley 20.393') {
+                    items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'danger' });
+                  }
+
+                  else if (label === 'Listas Internacionales') {
+                    items.push({ label: 'Registros en listas internacionales', value: d.length, variant: 'danger' });
+                  }
+
+                  else if (label === 'PEP Chile') {
+                    items.push({ label: 'Personas PEP detectadas', value: d.length, variant: 'danger' });
+                  }
+
+                  else if (label === 'Familiares PEP') {
+                    items.push({ label: 'Familiares PEP detectados', value: d.length, variant: 'warning' });
+                  }
+
+                  else if (label === 'Listas Propias Alto Impacto') {
+                    items.push({ label: 'Cantidad de registros', value: d.length, variant: 'danger' });
+                  }
+
+                  else if (label === 'Listas Propias Mediano Impacto') {
+                    items.push({ label: 'Cantidad de registros', value: d.length, variant: 'warning' });
+                  }
+
+                  else if (label === 'Reputación Pública y Mediática') {
+                    items.push({ label: 'Noticias encontradas', value: d.length, variant: 'warning' });
+                  }
+
+                  else if (label === 'Boletín Concursal' || label === 'Boletin Concursal') {
+                    items.push({ label: 'Registros en Boletín Concursal', value: d.length, variant: 'warning' });
+                  }
+
+                  else if (
+                    label === 'Causas Civiles' ||
+                    label === 'Causas Laborales' ||
+                    label === 'Causas de Cobranza Laboral'
+                  ) {
+                    let vigentesCount = 0;
+                    let concluidasCount = 0;
+                    let archivadasCount = 0;
+                    d.forEach((row: any) => {
+                      const estadoLower = String(row?.estado || row?.Estado || '').toLowerCase();
+                      if (estadoLower.includes('vigente')) vigentesCount++;
+                      else if (estadoLower.includes('concluida') || estadoLower.includes('concluido')) concluidasCount++;
+                      else if (estadoLower.includes('archivada') || estadoLower.includes('archivado')) archivadasCount++;
+                    });
+                    items.push({ label: 'Causas Vigentes', value: vigentesCount, variant: 'danger' });
+                    items.push({ label: 'Causas Concluidas', value: concluidasCount, variant: 'info' });
+                    items.push({ label: 'Causas Archivadas', value: archivadasCount, variant: 'warning' });
+                  }
+
+                  else if (label === 'Deuda Previsional Presunta') {
+                    items.push({ label: 'Afiliados con deuda previsional presunta', value: d.length, variant: 'warning' });
+                  }
+
+                  else if (label === 'Deuda Previsional Publicada') {
+                    let montoTotal = 0;
+                    d.forEach((row: any) => {
+                      const monto = row?.monto || row?.Monto || 0;
+                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                    });
+                    items.push({ label: 'Cantidad de casos', value: d.length, variant: 'warning' });
+                    items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                  }
+
+                  else if (label === 'Causas Penales') {
+                    let demandadoCount = 0;
+                    let querelladoCount = 0;
+                    let denunciadoCount = 0;
+                    d.forEach((row: any) => {
+                      const postura = (row?.postura || row?.Postura || '').toLowerCase().trim();
+                      if (postura === 'demandado') demandadoCount++;
+                      else if (postura === 'querellado') querelladoCount++;
+                      else if (postura === 'denunciado') denunciadoCount++;
+                    });
+                    items.push({ label: 'Total causas penales', value: d.length, variant: 'danger' });
+                    if (demandadoCount > 0) items.push({ label: 'Como demandado', value: demandadoCount, variant: 'warning' });
+                    if (querelladoCount > 0) items.push({ label: 'Como querellado', value: querelladoCount, variant: 'warning' });
+                    if (denunciadoCount > 0) items.push({ label: 'Como denunciado', value: denunciadoCount, variant: 'warning' });
+                  }
+
+                  return items;
+                };
+
+                return (
+                  <TableSummary
+                    criticalAndHighParams={detectedParams}
+                    riskSummary={riskSummary}
+                    calculateTotals={calculateTotals}
+                  />
+                );
+              })()}
+            </div>
+          )}
+        </div>
 
 
 
@@ -5332,7 +5175,6 @@ const FastCheck: React.FC = () => {
 
             return (
               <div key={`leg-${index}`} className="bg-white rounded-lg shadow mb-4 break-inside-avoid-page">
-                {/*  {index === 0 && <h3 className="text-lg font-bold mb-4">Legal</h3>} */}
                 <h4 className=" font-semibold text-red-600 mb-2">{rule.label}</h4>
 
                 <div className="overflow-x-auto w-full">
@@ -5370,7 +5212,6 @@ const FastCheck: React.FC = () => {
           {/* ================= CAPITAL HUMANO ================= */}
           <h3 className="text-lg font-bold mb-4 w-full bg-blue-100 p-1 text-blue-500">Capital Humano</h3>
           {(riskSummary.allRules?.capitalHumanoRules || []).map((rule, index) => {
-            // Obtener los datos correctos según el parámetro
             let details = rule.details;
             if (rule.label === 'Deuda Previsional Presunta' && rule.details?.casos) {
               details = rule.details.casos;
@@ -5423,7 +5264,6 @@ const FastCheck: React.FC = () => {
             const columns = Array.from(new Set(details.flatMap(item => Object.keys(item || {}))));
             return (
               <div key={`fin-${indexFincieroT}`} className="bg-white rounded-lg shadow mb-4 break-inside-avoid-page">
-                {/*  {indexFincieroT === 0 && <h3 className="text-lg font-bold mb-4">Financiero - Tributario</h3>} */}
                 <h4 className=" font-semibold text-purple-600 mb-2">{rule.label}</h4>
 
                 <div className="overflow-x-auto w-full">
@@ -5464,6 +5304,7 @@ const FastCheck: React.FC = () => {
 
     </PageLayout>
   );
+
 };
 
 export default FastCheck;

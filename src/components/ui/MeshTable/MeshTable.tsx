@@ -81,6 +81,8 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     const [expandedOwn, setExpandedOwn] = useState<Set<number>>(new Set());
     const [viewMode, setViewMode] = useState<'table' | 'map'>('table');
 
+
+    
     if (!dequienesRelationships) return null;
 
     const { relationships = [], entityNames = {} } = dequienesRelationships;
@@ -646,13 +648,13 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                 <div className="space-y-6">
                     {ownRows.length > 0 ? (
                         <div>
-                            <SectionToggle
-                                label="Controladores y Estructura de Propiedad"
+                           {/*  <SectionToggle
+                                label=""
                                 open={showOwn}
                                 onToggle={() => setShowOwn(v => !v)}
-                            />
+                            /> */}
 
-                            {showOwn && (
+                            
                                 <>
                                     <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 mb-3 space-y-1.5 text-sm">
                                         {controlador && (
@@ -706,7 +708,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                                         </p>
                                     </div>
                                 </>
-                            )}
+                          
                         </div>
                     ) : (
                         <p className="text-gray-500 dark:text-gray-400 italic text-sm py-4">Sin datos de malla societaria</p>

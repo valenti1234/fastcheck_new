@@ -81,23 +81,56 @@ const processDeepAnalysisFromCompact = (
   compactData: CompactRutData[],
   allowedRuts: Set<string>
 ) => {
+  // 🔍 LOG TEMPORAL DE DIAGNÓSTICO (borrar cuando se resuelva)
+  const rutsConsiderados = compactData
+    .filter(e => allowedRuts.has(e.rutValue))
+    .map(e => e.rutValue);
+  const rutsUnicos = new Set(rutsConsiderados);
+  console.log('=== DIAGNÓSTICO DEEP ANALYSIS ===');
+  console.log('compactData total entries:', compactData.length);
+  console.log('RUTs considerados (con allowed):', rutsConsiderados.length);
+  console.log('RUTs únicos:', rutsUnicos.size);
+  if (rutsConsiderados.length !== rutsUnicos.size) {
+    const dupes = rutsConsiderados.filter((r, i) => rutsConsiderados.indexOf(r) !== i);
+    console.warn('⚠️ RUTs DUPLICADOS en compactData:', [...new Set(dupes)]);
+  }
+  for (const entry of compactData) {
+    if (!allowedRuts.has(entry.rutValue)) continue;
+    const labels = entry.rules.map(r => r.label);
+    const labelDupes = labels.filter((l, i) => labels.indexOf(l) !== i);
+    if (labelDupes.length > 0) {
+      console.warn(`⚠️ RUT ${entry.rutValue} tiene labels repetidas:`, [...new Set(labelDupes)]);
+    }
+  }
+  // 🔍 FIN LOG TEMPORAL
+
   const paramCounts: Record<string, number> = {};
-  const paramRuts: Record<string, string[]> = {};
+  const paramRutsSet: Record<string, Set<string>> = {};
   const allCriticoLabels = new Set<string>();
   const criticoCounts: Record<string, number> = {};
 
+  const addRutToParam = (label: string, rut: string) => {
+    if (!paramRutsSet[label]) paramRutsSet[label] = new Set();
+    paramRutsSet[label].add(rut);
+  };
+
   for (const entry of compactData) {
     if (!allowedRuts.has(entry.rutValue)) continue;
+
+    // Evita contar dos veces la misma regla del mismo RUT
+    const rulesProcessedForRut = new Set<string>();
 
     for (const rule of entry.rules) {
       if (rule.isSevero) allCriticoLabels.add(rule.label);
 
       if (rule.detected && (rule.risk === 'critico' || rule.risk === 'alto')) {
-        paramCounts[rule.label] = (paramCounts[rule.label] || 0) + 1;
-        if (!paramRuts[rule.label]) paramRuts[rule.label] = [];
-        paramRuts[rule.label].push(entry.rutValue);
-        if (rule.isSevero) {
-          criticoCounts[rule.label] = (criticoCounts[rule.label] || 0) + 1;
+        if (!rulesProcessedForRut.has(rule.label)) {
+          rulesProcessedForRut.add(rule.label);
+          paramCounts[rule.label] = (paramCounts[rule.label] || 0) + 1;
+          addRutToParam(rule.label, entry.rutValue);
+          if (rule.isSevero) {
+            criticoCounts[rule.label] = (criticoCounts[rule.label] || 0) + 1;
+          }
         }
       }
     }
@@ -105,17 +138,23 @@ const processDeepAnalysisFromCompact = (
     // Causas Penales siempre se considera severo/Crítico como dimensión
     allCriticoLabels.add('Causas Penales');
     if (entry.causasPenalesDetected) {
-      paramCounts['Causas Penales'] = (paramCounts['Causas Penales'] || 0) + 1;
-      if (!paramRuts['Causas Penales']) paramRuts['Causas Penales'] = [];
-      paramRuts['Causas Penales'].push(entry.rutValue);
-      criticoCounts['Causas Penales'] = (criticoCounts['Causas Penales'] || 0) + 1;
+      // ✅ Guarda contra doble conteo si "Causas Penales" también vino en entry.rules
+      if (!rulesProcessedForRut.has('Causas Penales')) {
+        rulesProcessedForRut.add('Causas Penales');
+        paramCounts['Causas Penales'] = (paramCounts['Causas Penales'] || 0) + 1;
+        addRutToParam('Causas Penales', entry.rutValue);
+        criticoCounts['Causas Penales'] = (criticoCounts['Causas Penales'] || 0) + 1;
+      }
     }
 
     if (entry.noticiasDetected) {
-      paramCounts['Reputación Pública y Mediática'] =
-        (paramCounts['Reputación Pública y Mediática'] || 0) + 1;
-      if (!paramRuts['Reputación Pública y Mediática']) paramRuts['Reputación Pública y Mediática'] = [];
-      paramRuts['Reputación Pública y Mediática'].push(entry.rutValue);
+      // ✅ Misma guarda para Reputación Pública
+      if (!rulesProcessedForRut.has('Reputación Pública y Mediática')) {
+        rulesProcessedForRut.add('Reputación Pública y Mediática');
+        paramCounts['Reputación Pública y Mediática'] =
+          (paramCounts['Reputación Pública y Mediática'] || 0) + 1;
+        addRutToParam('Reputación Pública y Mediática', entry.rutValue);
+      }
     }
   }
 
@@ -127,7 +166,21 @@ const processDeepAnalysisFromCompact = (
     .map(name => ({ name, count: criticoCounts[name] || 0 }))
     .sort((a, b) => b.count - a.count);
 
-  return { dimensionesCriticas, parametrosCriticos, rutsByParam: paramRuts };
+  // Convertir Sets de vuelta a arrays para la salida
+  const rutsByParam: Record<string, string[]> = {};
+  for (const [label, set] of Object.entries(paramRutsSet)) {
+    rutsByParam[label] = Array.from(set);
+  }
+
+  // 🔍 VERIFICACIÓN: el count debe coincidir con la cantidad de RUTs únicos
+  for (const { label, count } of parametrosCriticos) {
+    const rutCount = rutsByParam[label]?.length || 0;
+    if (count !== rutCount) {
+      console.warn(`⚠️ DESFASE en "${label}": count=${count} pero RUTs únicos=${rutCount}`);
+    }
+  }
+
+  return { dimensionesCriticas, parametrosCriticos, rutsByParam };
 };
 
 // Helper: extrae lo mínimo necesario desde una respuesta cruda de un RUT
@@ -328,7 +381,6 @@ const Dashboard: React.FC = () => {
               limit: 50,
               sortField,
               sortDirection,
-              ...(appliedSearch && { search: appliedSearch })
             });
             if (res?.data) allData = [...allData, ...res.data];
             totalP = res?.pagination?.totalPages || 1;
@@ -352,7 +404,7 @@ const Dashboard: React.FC = () => {
       }
     };
     fetchData();
-  }, [user, tenant, currentPage, itemsPerPage, sortField, sortDirection, appliedSearch, isFilterMode]);
+  }, [user, tenant, currentPage, itemsPerPage, sortField, sortDirection, isFilterMode]);
 
 
   useEffect(() => {
@@ -367,32 +419,32 @@ const Dashboard: React.FC = () => {
       ? allDataForFilters
       : (allDataForCharts.length > 0 ? allDataForCharts : results);
 
- const rutInfoMap = new Map<string, { razonSocial: string; fecha: string; _id: string }>();
-for (const r of dataSource) {
-  const rut = r.rut || r.identifier || '';
-  if (!rut) continue;
-  rutInfoMap.set(rut, {
-    razonSocial: r.details?.razonSocial || r.razonSocial || 'N/A',
-    fecha: r.createdAt,
-    _id: r._id
-  });
-}
+    const rutInfoMap = new Map<string, { razonSocial: string; fecha: string; _id: string }>();
+    for (const r of dataSource) {
+      const rut = r.rut || r.identifier || '';
+      if (!rut) continue;
+      rutInfoMap.set(rut, {
+        razonSocial: r.details?.razonSocial || r.razonSocial || 'N/A',
+        fecha: r.createdAt,
+        _id: r._id
+      });
+    }
 
-const enrichRuts = (rutsByParam: Record<string, string[]>) => {
-  const enriched: Record<string, Array<{ rut: string; razonSocial: string; fecha: string; _id: string }>> = {};
-  for (const [label, ruts] of Object.entries(rutsByParam)) {
-    enriched[label] = ruts.map(rut => {
-      const info = rutInfoMap.get(rut);
-      return {
-        rut,
-        razonSocial: info?.razonSocial || 'N/A',
-        fecha: info?.fecha || '',
-        _id: info?._id || ''
-      };
-    });
-  }
-  return enriched;
-};
+    const enrichRuts = (rutsByParam: Record<string, string[]>) => {
+      const enriched: Record<string, Array<{ rut: string; razonSocial: string; fecha: string; _id: string }>> = {};
+      for (const [label, ruts] of Object.entries(rutsByParam)) {
+        enriched[label] = ruts.map(rut => {
+          const info = rutInfoMap.get(rut);
+          return {
+            rut,
+            razonSocial: info?.razonSocial || 'N/A',
+            fecha: info?.fecha || '',
+            _id: info?._id || ''
+          };
+        });
+      }
+      return enriched;
+    };
 
     if (!hasFilters) {
       let allRuts = new Set(compactRutData.map(r => r.rutValue));
@@ -812,7 +864,14 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
       console.error('Error cargando análisis profundo cacheado:', e);
     }
   }, []);
+
+  // 🔍 Aplica todos los filtros del lado del cliente: fecha, riesgo, tags y búsqueda
+  // La búsqueda matchea por RUT (normalizado: sin puntos/guiones) o por Razón Social
   const applyFiltersToData = (data: IResult[]) => {
+    const normalizeRut = (str: string) => str.replace(/[.\-\s]/g, '').toLowerCase();
+    const searchNormalized = appliedSearch ? normalizeRut(appliedSearch) : '';
+    const searchLower = appliedSearch ? appliedSearch.toLowerCase().trim() : '';
+
     return data.filter(result => {
       const resultDate = new Date(result.createdAt);
       const start = appliedStartDate ? new Date(appliedStartDate) : null;
@@ -823,6 +882,17 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
       if (appliedRiskLevels.length > 0 && !appliedRiskLevels.includes(result.riskAssessment?.riskSummary?.semaphore || '')) return false;
 
       if (appliedTags.length > 0 && (!result.noteTags || !result.noteTags.some(tag => appliedTags.includes(tag)))) return false;
+
+      // Búsqueda por RUT (normalizado) o Razón Social
+      if (appliedSearch) {
+        const rut = result.rut || result.identifier || '';
+        const razonSocial = result.details?.razonSocial || result.razonSocial || '';
+
+        const rutMatch = normalizeRut(rut).includes(searchNormalized);
+        const nameMatch = razonSocial.toLowerCase().includes(searchLower);
+
+        if (!rutMatch && !nameMatch) return false;
+      }
 
       return true;
     });
@@ -920,7 +990,8 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
   // Para gráficos: siempre usar todos los datos cargados
   const dataForCharts = allDataForCharts.length > 0 ? allDataForCharts : results;
 
-  const filteredResults = hasNonSearchFilters ? applyFiltersToData(baseData) : baseData;
+  // ⚠️ Ahora aplicamos TODOS los filtros (incluyendo búsqueda) cuando estamos en filter mode
+  const filteredResults = isFilterMode ? applyFiltersToData(baseData) : baseData;
   const filteredChartsData = applyFiltersToData(dataForCharts);
 
   const dataAfterSelection = selectedRuts.length > 0
@@ -969,7 +1040,8 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
     setAppliedSearch(trimmedSearch);
     setCurrentPage(1);
 
-    const needsAllData = startDate || endDate || riskLevelFilters.length > 0 || tagFilters.length > 0;
+    // ✅ La búsqueda también requiere cargar todas las páginas para filtrar globalmente
+    const needsAllData = startDate || endDate || riskLevelFilters.length > 0 || tagFilters.length > 0 || trimmedSearch;
 
     if (needsAllData) {
       setLoadingAllData(true);
@@ -979,12 +1051,12 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
         let page = 1;
         let totalP = 1;
         do {
+          // Sin "search" en el request: el filtrado se hace en cliente
           const res = await getResults({
             page,
             limit: 50,
             sortField,
             sortDirection,
-            ...(trimmedSearch && { search: trimmedSearch })
           });
           if (res?.data) allData = [...allData, ...res.data];
           totalP = res?.pagination?.totalPages || 1;
@@ -994,7 +1066,12 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
         const uniqueData = removeDuplicateRuts(allData);
 
         setAllDataForFilters(uniqueData);
-        toast.success(`Filtros aplicados - ${uniqueData.length} registros cargados`);
+
+        if (trimmedSearch) {
+          toast.success(`Búsqueda aplicada en ${uniqueData.length} registros`);
+        } else {
+          toast.success(`Filtros aplicados - ${uniqueData.length} registros cargados`);
+        }
       } catch (error) {
         logger.error('Error loading all data:', error);
         toast.error('Error al cargar datos');
@@ -1004,9 +1081,6 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
     } else {
       setIsFilterMode(false);
       setAllDataForFilters([]);
-      if (trimmedSearch) {
-        toast.success('Búsqueda aplicada');
-      }
     }
   };
 
@@ -1058,10 +1132,12 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
     setCurrentPage(1);
 
     setTimeout(() => {
-      const stillNeedsAllData = (filterType === 'startDate' ? false : !!appliedStartDate) ||
+      const stillNeedsAllData =
+        (filterType === 'startDate' ? false : !!appliedStartDate) ||
         (filterType === 'endDate' ? false : !!appliedEndDate) ||
         (filterType === 'riskLevel' && value ? appliedRiskLevels.filter(r => r !== value).length > 0 : appliedRiskLevels.length > 0) ||
-        (filterType === 'tag' && value ? appliedTags.filter(t => t !== value).length > 0 : appliedTags.length > 0);
+        (filterType === 'tag' && value ? appliedTags.filter(t => t !== value).length > 0 : appliedTags.length > 0) ||
+        (filterType === 'search' ? false : !!appliedSearch);
 
       if (!stillNeedsAllData) {
         setIsFilterMode(false);
@@ -1116,7 +1192,6 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
           limit: 50,
           sortField,
           sortDirection,
-          ...(appliedSearch && { search: appliedSearch })
         });
         if (res?.data) allData = [...allData, ...res.data];
         totalP = res?.pagination?.totalPages || 1;
@@ -1142,7 +1217,7 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
       let page = 1;
       let totalP = 1;
       do {
-        const res = await getResults({ page, limit: 50, sortField, sortDirection, ...(appliedSearch && { search: appliedSearch }) });
+        const res = await getResults({ page, limit: 50, sortField, sortDirection });
         if (res?.data) allResults = [...allResults, ...res.data];
         totalP = res?.pagination?.totalPages || 1;
         page++;
@@ -1246,7 +1321,6 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
 
           const PX_TO_MM = 0.22;
 
-          // 1) Capturar parte superior (sin las cards de RUT) → ancho completo
           // 1) Capturar parte superior (sin las cards de RUT ni el título de la tabla) → ancho completo
           const cards = Array.from(deepEl.querySelectorAll('[data-pdf-section="rut-card"]')) as HTMLElement[];
           const originalCardDisplay: string[] = [];
@@ -1297,7 +1371,6 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
           // Esperar a que el DOM reflowee antes de medir columnas
           await new Promise(resolve => setTimeout(resolve, 100));
 
-          // 2) Capturar la tabla de cada card: thead + cada fila independientemente
           // 2) Capturar la tabla de cada card: thead + cada fila independientemente
           type RowCanvas = { canvas: HTMLCanvasElement; cardIndex: number };
           const headerCanvases: (HTMLCanvasElement | null)[] = [];
@@ -1458,56 +1531,6 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
 
             currentY += 8;
           }
-
-          // Restaurar truncate
-          cardTruncatedEls.forEach(({ el, original }) => {
-            el.style.cssText = original;
-          });
-
-          // Dibujar en el PDF: por cada card, header + filas con salto de página
-          for (let cardIdx = 0; cardIdx < cards.length; cardIdx++) {
-            const headerCanvas = headerCanvases[cardIdx];
-            const rows = rowCanvases.filter(r => r.cardIndex === cardIdx);
-            if (rows.length === 0) continue;
-
-            const headerImgH = headerCanvas ? (headerCanvas.height * chartWidth) / headerCanvas.width : 0;
-
-            // Asegurar que el header + al menos 1 fila entren en la página actual
-            const firstRowH = (rows[0].canvas.height * chartWidth) / rows[0].canvas.width;
-            if (currentY + headerImgH + firstRowH > pageHeight - margin) {
-              pdf.addPage();
-              currentY = margin;
-            }
-
-            // Dibujar header
-            if (headerCanvas) {
-              pdf.addImage(headerCanvas.toDataURL('image/jpeg', 0.95), 'JPEG', margin, currentY, chartWidth, headerImgH);
-              currentY += headerImgH;
-            }
-
-            // Dibujar cada fila, redibujando header en cada nueva página
-            for (const { canvas: rowCanvas } of rows) {
-              const rowImgH = (rowCanvas.height * chartWidth) / rowCanvas.width;
-
-              if (currentY + rowImgH > pageHeight - margin) {
-                pdf.addPage();
-                currentY = margin;
-                if (headerCanvas) {
-                  pdf.addImage(headerCanvas.toDataURL('image/jpeg', 0.95), 'JPEG', margin, currentY, chartWidth, headerImgH);
-                  currentY += headerImgH;
-                }
-              }
-
-              pdf.addImage(rowCanvas.toDataURL('image/jpeg', 0.95), 'JPEG', margin, currentY, chartWidth, rowImgH);
-              currentY += rowImgH;
-            }
-
-            currentY += 8;
-          }
-
-
-
-
 
           expandables.forEach((el, i) => {
             const htmlEl = el as HTMLElement;
@@ -1756,7 +1779,14 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Búsqueda rápida</label>
                 <div className="relative">
                   <MagnifyingGlassIcon className="h-5 w-5 absolute left-3 top-2.5 text-gray-400" />
-                  <input type="text" placeholder="RUT o Nombre..." value={searchFilter} onChange={e => setSearchFilter(e.target.value)} className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white outline-none" />
+                  <input
+                    type="text"
+                    placeholder="RUT o Razón Social..."
+                    value={searchFilter}
+                    onChange={e => setSearchFilter(e.target.value)}
+                    onKeyDown={e => { if (e.key === 'Enter') handleApplyFilters(); }}
+                    className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white outline-none"
+                  />
                 </div>
               </div>
             </div>
@@ -1870,12 +1900,6 @@ const enrichRuts = (rutsByParam: Record<string, string[]>) => {
               onExportExcel={handleExportInfo}
             />
           </div>
-
-
-
-
-
-
 
           {/* Layout Dashboard */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
