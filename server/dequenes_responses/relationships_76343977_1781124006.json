@@ -1,0 +1,111 @@
+{
+  "pathCount": 10,
+  "relationships": [
+    {
+      "source": "76343977",
+      "target": "13231963",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76343977",
+      "target": "12776294",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-01-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76343977",
+      "target": "12776294",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACieEUZi0LCW",
+        "source": "RES",
+        "published_at": "2014-07-14"
+      }
+    },
+    {
+      "source": "76343977",
+      "target": "13231963",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACieEUZi0LCW",
+        "source": "RES",
+        "published_at": "2014-07-14"
+      }
+    },
+    {
+      "source": "76343977",
+      "target": "13231963",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACkJW71lyo5A",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "76343977",
+      "target": "12776294",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACkJW71lyo5A",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "76787687",
+      "target": "13231963",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2017-10-06",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76787687",
+      "target": "13231963",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACIFfS7M9oJU",
+        "source": "RES",
+        "published_at": "2017-10-06"
+      }
+    },
+    {
+      "source": "77707151",
+      "target": "12776294",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACqCjyatIWui",
+        "source": "RES",
+        "published_at": "2023-02-16"
+      }
+    },
+    {
+      "source": "77707151",
+      "target": "12776294",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AChiP4D11grf",
+        "source": "RES"
+      }
+    }
+  ],
+  "entityNames": {
+    "12776294": "GUILLERMO JULIAN CONTRERAS TORRE",
+    "13231963": "MAURICIO ANDRES GUTIERREZ IBANEZ",
+    "76343977": "CONTRERAS Y GUTIERREZ SEGURIDAD Y SERVICIOS LIMITADA",
+    "76787687": "GUTIERREZ Y PACHECO  SEGURIDAD INTEGRAL LIMITADA",
+    "77707151": "GOMEZ Y CONTRERAS LIMITADA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:fadbd0b62121464393c43689397f2c0c6907bd508de19dc33395574a7fe5d7fe",
+    "cached_at": "2026-06-10T20:40:06.722336"
+  }
+}

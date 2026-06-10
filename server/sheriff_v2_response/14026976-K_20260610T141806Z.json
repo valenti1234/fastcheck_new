@@ -12,18 +12,51 @@
       "rut": "14026976-K",
       "esPersonaJuridica": false,
       "fechaCarga": "09-06-2026",
+      "identificacion": {
+        "razonSocial": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+        "presentaActividades": "SI",
+        "inicioActividades": "19-11-2010",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Contribuyente incluido en Nómina de Difícil Fiscalización (NDF)El contribuyente se encuentra incluido en la Nómina de Difícil Fiscalización, siendo vendedor de producto(s) primario(s).Si Ud. no es retenedor de cambio de sujeto de IVA:De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.Si Ud. es retenedor de cambio de sujeto de IVA:Debe emitir factura de compra con retención de 100% de IVA a este contribuyente; de no hacerlo se hará acreedor a la sanción establecida en el artículo 97 Nro. 10 de Código Tributario, sin perjuicio del cobro de impuesto no retenido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.#.",
+        "situacionActual": "Contribuyente incluido en Nómina de Difícil Fiscalización (NDF)El contribuyente se encuentra incluido en la Nómina de Difícil Fiscalización, siendo vendedor de producto(s) primario(s).Si Ud. no es retenedor de cambio de sujeto de IVA:De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.Si Ud. es retenedor de cambio de sujeto de IVA:Debe emitir factura de compra con retención de 100% de IVA a este contribuyente; de no hacerlo se hará acreedor a la sanción establecida en el artículo 97 Nro. 10 de Código Tributario, sin perjuicio del cobro de impuesto no retenido.",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS PROFESIONALES DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULT",
+            "codigo": "711003",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "19-11-2010"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Boletas De Honorarios Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 1,
+        "cantidadDocumentos": 1,
+        "ultimaActualizacion": "09-06-2026 13:58:07",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
       "boletinComercial": {
-        "casosInfocom": 0,
-        "casosBolcom": 0,
-        "MontoInfocom": 0,
-        "MontoBolcom": 0,
+        "casosInfocom": 2,
+        "casosBolcom": 8,
+        "MontoInfocom": 903798,
+        "MontoBolcom": 3637524,
         "variacion": {
-          "ultimoPeriodo": null,
-          "periodoActual": null,
-          "cambioPorcentual": null,
-          "cambioAbsoluto": 0
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": 66.12,
+          "cambioAbsoluto": 1807596
         },
-        "ultimaActualizacion": null
+        "ultimaActualizacion": "09-06-2026 13:58:11"
       },
       "judicial": {
         "casosCivilesActivos": 0,
@@ -53,12 +86,12 @@
           "casosTotales": 0,
           "empleados": 0,
           "variacion": {
-            "ultimoPeriodo": null,
-            "periodoActual": null,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
             "cambioPorcentual": null,
             "cambioAbsoluto": 0
           },
-          "ultimaActualizacion": null
+          "ultimaActualizacion": "09-06-2026 13:58:16"
         },
         "multaLaboral": {
           "totalMultas": 0,
@@ -68,12 +101,12 @@
           "multasPendientes": 0,
           "montoMultasPendientes": 0,
           "variacion": {
-            "ultimoPeriodo": null,
-            "periodoActual": null,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
             "cambioPorcentual": null,
             "cambioAbsoluto": 0
           },
-          "ultimaActualizacion": null
+          "ultimaActualizacion": "09-06-2026 14:01:35"
         },
         "boletinLaboral": {
           "montoTotal": 0,
@@ -206,6 +239,247 @@
           "ultimaActualizacion": null
         }
       },
+      "legalSummary": [
+        {
+          "nombre": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+          "rut": "76030744-0",
+          "fecha": "2008-08-08",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 76,
+          "actividad": "CONSTRUCCION DE EDIFICIOS PARA USO RESIDENCIAL",
+          "comuna": "CURICO",
+          "riskScore": null,
+          "porcentajeParticipacion": "33.33",
+          "socios": [
+            {
+              "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+              "rut": "15130521-0",
+              "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "50"
+            },
+            {
+              "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+              "rut": "15491851-5",
+              "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "50"
+            },
+            {
+              "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+              "rut": "14026976-K",
+              "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "33.33"
+            }
+          ],
+          "participaciones": [],
+          "extractos": [
+            {
+              "id": 5012761,
+              "fecha": "2025-10-07",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3TnJKhLz56",
+              "cve": "AC3TnJKhLz56",
+              "tieneExtracto": false
+            },
+            {
+              "id": 3237750,
+              "fecha": "2024-12-18",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACr8FZYJJYu2&codigo=A5-37-90-C2-4B-C5-D5-3F-49-2A-49-04-29-49-37-56",
+              "cve": "ACr8FZYJJYu2",
+              "tieneExtracto": false
+            },
+            {
+              "id": 142659,
+              "fecha": "2024-02-23",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACHjeyJX31uX&codigo=F9-AE-2D-4F-C8-32-60-3D-4F-C5-30-42-BE-6F-F5-2E",
+              "cve": "ACHjeyJX31uX",
+              "tieneExtracto": false
+            },
+            {
+              "id": 67311,
+              "fecha": "2018-08-29",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACrCE1T8hL1L&codigo=9C-49-A4-2A-E8-B1-EF-1D-9C-FE-12-CA-39-62-81-DA",
+              "cve": "ACrCE1T8hL1L",
+              "tieneExtracto": false
+            },
+            {
+              "id": 10347,
+              "fecha": "2018-07-27",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3feTrJC3CR&codigo=A0-C5-0D-ED-CA-39-E9-9A-BE-DE-FE-FD-89-1C-B2-F0",
+              "cve": "AC3feTrJC3CR",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1231382,
+              "fecha": "2018-06-13",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACyMb8aXeMqZ&codigo=32-95-E8-84-14-D2-EE-F7-A8-03-C8-F8-AC-78-86-AD",
+              "cve": "ACyMb8aXeMqZ",
+              "tieneExtracto": false
+            },
+            {
+              "id": 11969,
+              "fecha": "2018-06-01",
+              "actuacion": "MIGRACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACqMyAUvpv1A&codigo=42-A2-15-8B-5B-85-6B-F1-68-20-B1-59-F3-21-17-52",
+              "cve": "ACqMyAUvpv1A",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1881046,
+              "fecha": "2018-03-07",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/03/07/42001/05/1362673.pdf",
+              "cve": "1362673",
+              "tieneExtracto": false
+            },
+            {
+              "id": 2320557,
+              "fecha": "2014-12-15",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf",
+              "cve": "853051",
+              "tieneExtracto": false
+            },
+            {
+              "id": 3986891,
+              "fecha": "2008-08-20",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            }
+          ]
+        },
+        {
+          "nombre": "INVERSIONES LAS MARTINAS LIMITADA",
+          "rut": "76782667-2",
+          "fecha": "2017-09-25",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "TERMINADA",
+          "trabajadores": null,
+          "actividad": null,
+          "comuna": null,
+          "riskScore": null,
+          "porcentajeParticipacion": "50",
+          "socios": [
+            {
+              "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+              "rut": "14026976-K",
+              "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "50"
+            },
+            {
+              "nombre": "FELIPE ALONSO RAMIREZ MATAMALA",
+              "rut": "15219871-K",
+              "domicilio": "PASAJE LAS MURTILLAS NRO 320, JARDINES DE ANTILHUE, CONCEPCIÓN",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "50"
+            }
+          ],
+          "participaciones": [],
+          "extractos": [
+            {
+              "id": 1315996,
+              "fecha": "2017-09-25",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACW0B1tL1KpX&codigo=44-8C-31-B0-6C-E0-0B-F9-19-46-D8-80-B8-04-FA-21",
+              "cve": "ACW0B1tL1KpX",
+              "tieneExtracto": false
+            }
+          ]
+        },
+        {
+          "nombre": "CONSULTORÍA E INGENIERÍA MARBOFE SPA",
+          "rut": "77360921-7",
+          "fecha": "2021-05-07",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 0,
+          "actividad": "OTRAS ACTIVIDADES ESPECIALIZADAS DE CONSTRUCCION",
+          "comuna": "EL CARMEN",
+          "riskScore": null,
+          "porcentajeParticipacion": "100",
+          "socios": [
+            {
+              "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+              "rut": "14026976-K",
+              "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "100"
+            }
+          ],
+          "participaciones": [],
+          "extractos": [
+            {
+              "id": 681418,
+              "fecha": "2021-05-07",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAYqmgGH6g7&codigo=8B-CA-BB-EE-D7-7D-FD-76-B7-11-5E-F2-98-A0-55-6F",
+              "cve": "ACAYqmgGH6g7",
+              "tieneExtracto": false
+            }
+          ]
+        },
+        {
+          "nombre": "CONSTRUCTORA MARBOFE SPA",
+          "rut": "78212125-1",
+          "fecha": "2025-07-23",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": null,
+          "actividad": "OTRAS ACTIVIDADES ESPECIALIZADAS DE CONSTRUCCION",
+          "comuna": null,
+          "riskScore": null,
+          "porcentajeParticipacion": "100",
+          "socios": [
+            {
+              "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+              "rut": "14026976-K",
+              "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "100"
+            }
+          ],
+          "participaciones": [],
+          "extractos": [
+            {
+              "id": 3831548,
+              "fecha": "2025-07-23",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACiy4u7hzmqZ&codigo=62-A5-29-8F-1E-53-6F-DA-50-2E-0C-2B-89-C3-AA-FF",
+              "cve": "ACiy4u7hzmqZ",
+              "tieneExtracto": false
+            }
+          ]
+        }
+      ],
       "deudaBancaria": {
         "periodo": "04/2026",
         "deudaDirectaComercial": 0,
@@ -240,32 +514,33 @@
         "vehiculos": {
           "cantidadVehiculos": 0,
           "tasacionTotal": 0,
-          "ultimaActualizacion": null
+          "ultimaActualizacion": "09-06-2026 13:58:07"
         },
         "propiedades": {
           "cantidadPropiedades": 0,
-          "tasacionTotal": 0,
-          "ultimaActualizacion": null
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "09-06-2026 13:58:07"
         }
       },
       "creditScoring": {
         "ponderacionFinanciero": 100,
-        "maxPonderacionFinanciero": null,
+        "maxPonderacionFinanciero": 100,
         "ponderacionJudicial": 100,
         "judicialBankruptcy": false,
         "maxPonderacionJudicial": 100,
-        "ponderacionCobranzaLaboral": 0,
+        "ponderacionCobranzaLaboral": 100,
         "maxPonderacionCobranzaLaboral": 100,
-        "ponderacionBoletin": 100,
+        "ponderacionBoletin": 0,
         "maxPonderacionBoletin": 100,
-        "cantidadAyudantes": 3,
+        "cantidadAyudantes": 4,
         "nombresAyudantes": [
           "judicial",
           "commertialBulletin",
-          "finances"
+          "finances",
+          "laborCollection"
         ],
         "porcentajeClasificacion": 300,
-        "etiquetaClasificacion": "Risk free"
+        "etiquetaClasificacion": "Low"
       },
       "ratings": {
         "etiquetasActivas": [],
@@ -292,36 +567,36 @@
         }
       },
       "compliance": {
-        "estado": "NO PROCESADO",
-        "nombre": "",
-        "segundoNombre": "",
-        "apellido": "",
-        "segundoApellido": "",
+        "estado": "PROCESADO",
+        "nombre": "NELSON",
+        "segundoNombre": "DAGOBERTO",
+        "apellido": "SANDOVAL",
+        "segundoApellido": "ESPARZA",
         "tipoPersona": "natural",
-        "riesgo": "free",
+        "riesgo": "critical",
         "resumen": {
           "pepChile": {
-            "totalResultados": 0,
-            "riesgo": "free"
+            "totalResultados": 4,
+            "riesgo": "critical"
           },
           "pepChileFamiliares": {
-            "totalResultados": 0,
+            "totalResultados": 3,
             "riesgo": "free"
           },
           "funcionariosPublicos": {
-            "totalResultados": 0,
-            "riesgo": "free"
+            "totalResultados": 1,
+            "riesgo": "medium"
           },
           "listasInternacionales": {
             "totalResultados": 0,
             "riesgo": "free"
           },
           "penal": {
-            "totalResultados": 0,
-            "riesgo": "free"
+            "totalResultados": 1,
+            "riesgo": "critical"
           },
           "mallaSocietaria": {
-            "totalResultados": 0,
+            "totalResultados": 4,
             "riesgo": "free"
           },
           "noticias": {
@@ -336,7 +611,7 @@
     "_cache_info": {
       "cached": false,
       "cache_key": "sheriff_v2_cache:sheriff_v2_get:b16f1e06c590b70c936a40ebc5f0ffa38a85d4823aa0eaf8c389db1c5eda8d24",
-      "cached_at": "2026-06-09T13:58:07.346509"
+      "cached_at": "2026-06-10T14:18:02.551561"
     }
   },
   "judicial": {
@@ -623,7 +898,7 @@
       "_cache_info": {
         "cached": false,
         "cache_key": "sheriff_v2_cache:sheriff_v2_get:6798defc327c9133d154bf260f1a52522582bb587d2868efd37dc38f8b2c80c6",
-        "cached_at": "2026-06-09T13:58:07.680064"
+        "cached_at": "2026-06-10T14:18:02.924477"
       }
     },
     "cobranza": {
@@ -638,7 +913,7 @@
       "_cache_info": {
         "cached": false,
         "cache_key": "sheriff_v2_cache:sheriff_v2_get:0c9482bf33481341e54eb96c9d5b530188831f90357e6286ac422d8dc660efc3",
-        "cached_at": "2026-06-09T13:58:08.012869"
+        "cached_at": "2026-06-10T14:18:03.245744"
       }
     },
     "laboral": {
@@ -653,7 +928,7 @@
       "_cache_info": {
         "cached": false,
         "cache_key": "sheriff_v2_cache:sheriff_v2_get:2d3d3ea69447b8d16b58a46cfa61c701ea04f3b2a59fae79e97a2dc08aa8f596",
-        "cached_at": "2026-06-09T13:58:08.335445"
+        "cached_at": "2026-06-10T14:18:03.562724"
       }
     }
   },
@@ -670,7 +945,7 @@
       "_cache_info": {
         "cached": false,
         "cache_key": "sheriff_v2_cache:sheriff_v2_get:377b646026e4152b9f0b4217061490c0599ca7ec0ea2f9aeb85946b2462e0b24",
-        "cached_at": "2026-06-09T13:58:08.660797"
+        "cached_at": "2026-06-10T14:18:03.888907"
       }
     },
     "moraPrevisional": {
@@ -685,7 +960,7 @@
       "_cache_info": {
         "cached": false,
         "cache_key": "sheriff_v2_cache:sheriff_v2_get:648fad3775a7c283f26331cdba54967a9c6222b8863a193e6fddc6a2b9066c41",
-        "cached_at": "2026-06-09T13:58:08.989813"
+        "cached_at": "2026-06-10T14:18:04.224481"
       }
     }
   },
@@ -1061,7 +1336,7 @@
     "_cache_info": {
       "cached": false,
       "cache_key": "sheriff_v2_cache:sheriff_v2_get:a8337a7c8491bd9cb0d38bb1a47e2f831797916b463a41c3ddbc7e362ea11151",
-      "cached_at": "2026-06-09T13:58:16.430015"
+      "cached_at": "2026-06-10T14:18:05.387561"
     }
   },
   "legal": {
@@ -1106,7 +1381,7 @@
       "_cache_info": {
         "cached": false,
         "cache_key": "sheriff_v2_cache:sheriff_v2_get:ece0e8e15a9e5c69eb64495d51e7c94581f587f00668b51f478a565e843f72f6",
-        "cached_at": "2026-06-09T13:58:16.761837"
+        "cached_at": "2026-06-10T14:18:05.707426"
       }
     }
   },
@@ -1150,7 +1425,7 @@
     "_cache_info": {
       "cached": false,
       "cache_key": "sheriff_v2_cache:sheriff_v2_get:3a75f240d7dcb67ae57f6d1a0f4cb5b96dd0cc9d623c00285188d99849744fd9",
-      "cached_at": "2026-06-09T13:58:17.340507"
+      "cached_at": "2026-06-10T14:18:06.293676"
     }
   }
 }

@@ -1,0 +1,1465 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76112019-0"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76112019-0",
+      "esPersonaJuridica": true,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "INVERSIONES BANMERCHANT SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "08-09-2010",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+            "codigo": "643000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "08-09-2010"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE CONCESION DE CREDITO N.C.P.",
+            "codigo": "649209",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "07-12-2017"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "26-11-2012"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2020"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2021"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 7,
+        "ultimaActualizacion": "10-06-2026 14:56:34",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Mediana empresa",
+          "ventasAnuales": "50.000,01 a 100.000,00",
+          "cantidadTrabajadores": 29
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "10-06-2026 14:56:34"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 1,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 1,
+        "todosLosCasos": 2,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1
+        },
+        "ultimaActualizacionCiviles": "10-06-2026 14:56:33",
+        "ultimaActualizacionCobranza": "10-06-2026 14:56:34",
+        "ultimaActualizacionLaboral": "10-06-2026 14:56:33",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 14:56:34"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 14:56:35"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "25-01-2017 21:00:00",
+              "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/26/41668/05/1174220.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "BANMERCHANT S.A.",
+                  "rut": "96696590-8",
+                  "domicilio": "ALONSO DE CÓRDOVA 2.860, OFICINA 205, VITACURA"
+                }
+              ],
+              "rut": "76680115-3"
+            },
+            {
+              "fecha": "23-02-2017 21:00:00",
+              "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/02/24/41693/05/1186818.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "BANMERCHANT S.A.",
+                  "rut": "96696590-8",
+                  "domicilio": "ALONSO DE CÓRDOVA 2.860, OFICINA 205, VITACURA"
+                }
+              ],
+              "rut": "76680115-3"
+            },
+            {
+              "fecha": "17-05-2017 20:00:00",
+              "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/05/18/41760/05/1216540.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "BANMERCHANT S.A.",
+                  "rut": "96696590-8",
+                  "domicilio": "ALONSO DE CÓRDOVA 2.860, OFICINA 205, VITACURA"
+                }
+              ],
+              "rut": "76680115-3"
+            },
+            {
+              "fecha": "20-12-2017 21:00:00",
+              "razonSocial": "BANMERCHANT ASESORÍAS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/21/41938/05/1322614.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "INMOBILIARIA VITALIA S.A",
+                  "rut": "96866370-4",
+                  "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+                }
+              ],
+              "rut": "76820778-K"
+            },
+            {
+              "fecha": "25-12-2017 21:00:00",
+              "razonSocial": "BANMERCHANT SERVICIOS FINANCIEROS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/26/41941/05/1326294.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES FUTURO SPA",
+                  "rut": "89255200-2",
+                  "domicilio": "AVENIDA PAJARITOS NÚMERO 3195, OFICINA NÚMERO 1003, COMUNA DE MAIPÚ, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76441520-5"
+            },
+            {
+              "fecha": "18-01-2018 21:00:00",
+              "razonSocial": "INVERSIONES BANMERCHANT S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/19/41961/05/1337933.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76112019-0"
+            },
+            {
+              "fecha": "07-07-2021 20:00:00",
+              "razonSocial": "INVERSIONES BANMERCHANT S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973494.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES FUTURO SPA",
+                  "rut": "89255200-2",
+                  "domicilio": "AVENIDA PAJARITOS NÚMERO 3195, OFICINA NÚMERO 1003, COMUNA DE MAIPÚ, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                  "rut": "78799940-9",
+                  "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES BMC S.A.",
+                  "rut": "96826570-9",
+                  "domicilio": "ISIDORA GOYENECHEA 3.250, PISO 5, LAS CONDES"
+                },
+                {
+                  "socio": "INVERSIONES Y ASESORÍAS LIMITADA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76112019-0"
+            },
+            {
+              "fecha": "04-09-2022 20:00:00",
+              "razonSocial": "INVERSIONES BANMERCHANT SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/05/43345/05/2182833.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76112019-0"
+            },
+            {
+              "fecha": "07-09-2022 20:00:00",
+              "razonSocial": "INVERSIONES BANMERCHANT SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/08/43348/05/2184248.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "76112019-0"
+            },
+            {
+              "fecha": "11-01-2024 21:00:00",
+              "razonSocial": "BANMERCHANT CAPITAL SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/12/43748/05/2436660.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [],
+              "rut": null
+            },
+            {
+              "fecha": "30-01-2024 21:00:00",
+              "razonSocial": "BANMERCHANT CAPITAL SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/31/43764/05/2447695.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [],
+              "rut": "77830884-3"
+            }
+          ],
+          "ultimaActualizacion": "10-06-2026 14:56:34"
+        }
+      },
+      "legalSummary": [
+        {
+          "nombre": "INVERSIONES BANMERCHANT SPA",
+          "rut": "76112019-0",
+          "fecha": "2010-08-12",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 26,
+          "actividad": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+          "comuna": "VITACURA",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "INVERSIONES BMC S A",
+              "rut": "96826570-9",
+              "domicilio": "AVDA. ALONSO DE CORDOVA 2860, Depto 204, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "77.57"
+            },
+            {
+              "nombre": "INVERSIONES Y ASESORIAS LIMITADA",
+              "rut": "96872680-3",
+              "domicilio": "ARQUITECTO SULLIVAN 5949, Depto, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "8.8"
+            },
+            {
+              "nombre": "FRANCISCO WALKER PRIETO Y COMPANIA LIMITADA",
+              "rut": "76020850-7",
+              "domicilio": "AV PROVIDENCIA 1650, Depto 905, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "INVERSIONES FUTURO SPA",
+              "rut": "76254441-5",
+              "domicilio": "AVDA ALONSO  DE CORDOVA 2860, Depto, Bloque, 205-A, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES W Y M LIMITADA",
+              "rut": "78799940-9",
+              "domicilio": "MARCHANT PEREIRA 221, Depto P.12, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "BANMERCHANT CAPITAL S A",
+              "rut": "96979350-4",
+              "domicilio": "AVDA. ALONSO DE CORDOVA 2860, Depto 205, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            }
+          ],
+          "participaciones": [
+            {
+              "razonSocial": "BANMERCHANT SERVICIOS FINANCIEROS SA",
+              "rut": "76441520-5",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2006-01-02"
+            },
+            {
+              "razonSocial": "ASESORIAS BANMERCHANT CHILE S A",
+              "rut": "77007270-0",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "1997-05-09"
+            },
+            {
+              "razonSocial": "BANMERCHANT CAPITAL SPA",
+              "rut": "77830884-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2024-01-05"
+            },
+            {
+              "razonSocial": "BANMERCHANT S A",
+              "rut": "96696590-8",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "1994-01-17"
+            },
+            {
+              "razonSocial": "BANMERCHANT CAPITAL S A",
+              "rut": "96979350-4",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2002-01-28"
+            },
+            {
+              "razonSocial": "BANMERCHANT INMOBILIARIA S A",
+              "rut": "96991810-2",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2002-06-27"
+            },
+            {
+              "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+              "rut": "76680115-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "99.9",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2017-01-18"
+            },
+            {
+              "razonSocial": "BMI SERVICIOS INMOBILIARIOS S.A.",
+              "rut": "76410463-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "99",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2014-08-18"
+            },
+            {
+              "razonSocial": "BMI ASESORIAS S.A.",
+              "rut": "76820778-K",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "99",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2017-12-13"
+            },
+            {
+              "razonSocial": "INMOBILIARIA VITALIA S.A.",
+              "rut": "96866370-4",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "90",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "1998-05-05"
+            },
+            {
+              "razonSocial": "FONDO DE INVERSION PRIVADO BANPARQ",
+              "rut": "76741403-K",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "10.26937641",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2017-05-16"
+            }
+          ],
+          "extractos": [
+            {
+              "id": 2433087,
+              "fecha": "2022-09-08",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/08/43348/05/2184248.pdf",
+              "cve": "2184248",
+              "tieneExtracto": false
+            },
+            {
+              "id": 2433127,
+              "fecha": "2022-09-05",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/05/43345/05/2182833.pdf",
+              "cve": "2182833",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1533386,
+              "fecha": "2021-07-08",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973494.pdf",
+              "cve": "1973494",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1567542,
+              "fecha": "2018-01-19",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/19/41961/05/1337933.pdf",
+              "cve": "1337933",
+              "tieneExtracto": false
+            },
+            {
+              "id": 3821350,
+              "fecha": "2010-10-21",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": "276110",
+              "tieneExtracto": true
+            },
+            {
+              "id": 3823370,
+              "fecha": "2010-10-12",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 3836283,
+              "fecha": "2010-08-23",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            }
+          ]
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "07/2025",
+        "deudaDirectaComercial": 336,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 336,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 41315,
+        "variacion": {
+          "periodo": "01/2025",
+          "deudaDirectaComercial": 255427,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 255427,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 41799
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 350,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "INVERSIONES BANMERCHANT SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8d08cc6512d3d2e94477457fc4a13a5ccf813c61c4235882fad42c8dc1c1f8b6",
+      "cached_at": "2026-06-10T14:56:35.506528"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "7 Terminada",
+            "fechaIngreso": "29-07-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13161565-5",
+                "nombre": "HELENA BEATRIZ GALLEGOS CORDONES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13161565-5",
+                "nombre": "HELENA BEATRIZ GALLEGOS CORDONES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76375194-5",
+                "nombre": "INMOBILIARIA RMP S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96866370-4",
+                "nombre": "INMOBILIARIA VITALIA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76020850-7",
+                "nombre": "FRANCISCO WALKER PRIETO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96826570-9",
+                "nombre": "INVERSIONES BMC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76112019-0",
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96844950-8",
+                "nombre": "CONSTRUCTORA EBCO S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17420387-3",
+                "nombre": "LUIS ALEJANDRO BRAVO VELOSO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16363300-0",
+                "nombre": "JOSÉ ROBERTO MORENO ARIZMENDY (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8496037-3",
+                "nombre": "TOMÁS WALKER PRIETO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17083408-9",
+                "nombre": "BENJAMÍN CRISTÓBAL SEPÚLVEDA LETELIER (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13672556-4",
+                "nombre": "MATÍAS NOVOA MENDIZÁBAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13890952-2",
+                "nombre": "CRISTIAN ANDRÉS SÁEZ ROJIC (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16006654-7",
+                "nombre": "DAFNE ORIT KOHEN FRÍAS (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16097190-8",
+                "nombre": "NICOLÁS MANUEL MAGLIONA MARKOVICTH (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15565451-1",
+                "nombre": "JOSÉ TOMÁS CASTRO CELEDÓN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-23781-2019",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 14:56:34"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:09b409b85b618e2b944eba2571ad6627c7b602776bca260bcb268f8630c7502f",
+        "cached_at": "2026-06-10T14:56:35.825667"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:56:34"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ea3654622699e7a61f6103d67c2776af6c2905595695640cff0d2f8888ed019a",
+        "cached_at": "2026-06-10T14:56:36.147275"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15692042-8",
+                "nombre": "ANA DEL CARMEN ROJAS SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15840896-1",
+                "nombre": "CLAUDIA MARDESIC GONZÁLEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76219503-8",
+                "nombre": "INVERSIONES Y RENTAS ANTOFAGASTA II S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76376661-6",
+                "nombre": "INVERSIONES ANTOFAGASTA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76704109-8",
+                "nombre": "RENTAS COPÉRNICO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96866370-4",
+                "nombre": "BMI S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76112019-0",
+                "nombre": "INVERSIONES BANMERCHANT S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96826570-9",
+                "nombre": "INVERSIONES BMC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": "SERVICIOS EDUCACIONALES SAN JOSE LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-348-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 14:56:34"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0477b37fbc950cf82a292a942fbef405505daeb92f7f5ca7a209280fc4ff7e6b",
+        "cached_at": "2026-06-10T14:56:36.466036"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:56:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1c0b8d641b4f5dc04c195a10276f46afb54a54f2e095e8c561c73a1883ca78f8",
+        "cached_at": "2026-06-10T14:56:36.795126"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:56:33"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d4d19e011213b5afa436e3cbd1ae4a0d6fbe6184d631bfbf5ec8a664db52ee54",
+        "cached_at": "2026-06-10T14:56:37.114022"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76112019-0",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "INVERSIONES BANMERCHANT SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "INVERSIONES BANMERCHANT SPA",
+            "rutSociedad": "76112019-0",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2010-08-22",
+            "socios": [
+              {
+                "nombre": "FRANCISCO WALKER PRIETO Y COMPAÑÍA LIMITADA",
+                "rut": "76020850-7",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, OF. 121, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                "rut": "78799940-9",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3250, PISO 5, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "AVENIDA ISIDORA GOYENECHEA N° 3250, PISO 5, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES FUTURO SPA",
+                "rut": "76254441-5",
+                "domicilio": "LUIS PASTEUR 7529, DEPARTAMENTO A 21, AMBOS COMUNA DE VITACURA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "BANMERCHANT CAPITAL S A",
+                "rut": "96979350-4",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES FUTURO SPA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES WYM LIMITADA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS LIMITADA",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-09-08",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/08/43348/05/2184248.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-09-05",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/05/43345/05/2182833.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-07-08",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973494.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-01-19",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/19/41961/05/1337933.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "ASESORIAS BANMERCHANT CHILE S A",
+                "rut": "77007270-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BANMERCHANT CAPITAL S A",
+                "rut": "96979350-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BANMERCHANT CAPITAL SPA",
+                "rut": "77830884-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BANMERCHANT INMOBILIARIA S A",
+                "rut": "96991810-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BANMERCHANT S A",
+                "rut": "96696590-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BANMERCHANT SERVICIOS FINANCIEROS SA",
+                "rut": "76441520-5",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BMI ASESORIAS S.A.",
+                "rut": "76820778-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BMI SERVICIOS INMOBILIARIOS S.A.",
+                "rut": "76410463-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "FONDO DE INVERSION PRIVADO BANPARQ",
+                "rut": "76741403-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA VITALIA S.A.",
+                "rut": "96866370-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSIONES BANMERCHANT SPA",
+                "rut": "76112019-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+                "rut": "76680115-3",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:664ec66af9e45f5f1adc8d2f5c92693ef98b66e9ce154c86c5931fdb48c3b6a3",
+      "cached_at": "2026-06-10T14:56:37.679951"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76112019-0",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "25-01-2017 21:00:00",
+            "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/01/26/41668/05/1174220.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              },
+              {
+                "nombre": "BANMERCHANT S.A.",
+                "rut": "96696590-8",
+                "domicilio": "ALONSO DE CÓRDOVA 2.860, OFICINA 205, VITACURA"
+              }
+            ],
+            "rut": "76680115-3"
+          },
+          {
+            "fecha": "23-02-2017 21:00:00",
+            "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/02/24/41693/05/1186818.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              },
+              {
+                "nombre": "BANMERCHANT S.A.",
+                "rut": "96696590-8",
+                "domicilio": "ALONSO DE CÓRDOVA 2.860, OFICINA 205, VITACURA"
+              }
+            ],
+            "rut": "76680115-3"
+          },
+          {
+            "fecha": "17-05-2017 20:00:00",
+            "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/05/18/41760/05/1216540.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              },
+              {
+                "nombre": "BANMERCHANT S.A.",
+                "rut": "96696590-8",
+                "domicilio": "ALONSO DE CÓRDOVA 2.860, OFICINA 205, VITACURA"
+              }
+            ],
+            "rut": "76680115-3"
+          },
+          {
+            "fecha": "20-12-2017 21:00:00",
+            "razonSocial": "BANMERCHANT ASESORÍAS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/21/41938/05/1322614.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              },
+              {
+                "nombre": "INMOBILIARIA VITALIA S.A",
+                "rut": "96866370-4",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              }
+            ],
+            "rut": "76820778-K"
+          },
+          {
+            "fecha": "25-12-2017 21:00:00",
+            "razonSocial": "BANMERCHANT SERVICIOS FINANCIEROS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/26/41941/05/1326294.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES FUTURO SPA",
+                "rut": "89255200-2",
+                "domicilio": "AVENIDA PAJARITOS NÚMERO 3195, OFICINA NÚMERO 1003, COMUNA DE MAIPÚ, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              }
+            ],
+            "rut": "76441520-5"
+          },
+          {
+            "fecha": "18-01-2018 21:00:00",
+            "razonSocial": "INVERSIONES BANMERCHANT S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/01/19/41961/05/1337933.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              }
+            ],
+            "rut": "76112019-0"
+          },
+          {
+            "fecha": "07-07-2021 20:00:00",
+            "razonSocial": "INVERSIONES BANMERCHANT S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/07/08/42997/05/1973494.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES FUTURO SPA",
+                "rut": "89255200-2",
+                "domicilio": "AVENIDA PAJARITOS NÚMERO 3195, OFICINA NÚMERO 1003, COMUNA DE MAIPÚ, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                "rut": "78799940-9",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3.250, PISO 5, LAS CONDES"
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS LIMITADA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76112019-0"
+          },
+          {
+            "fecha": "04-09-2022 20:00:00",
+            "razonSocial": "INVERSIONES BANMERCHANT SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/05/43345/05/2182833.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76112019-0"
+          },
+          {
+            "fecha": "07-09-2022 20:00:00",
+            "razonSocial": "INVERSIONES BANMERCHANT SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/08/43348/05/2184248.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [],
+            "rut": "76112019-0"
+          },
+          {
+            "fecha": "11-01-2024 21:00:00",
+            "razonSocial": "BANMERCHANT CAPITAL SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/12/43748/05/2436660.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "30-01-2024 21:00:00",
+            "razonSocial": "BANMERCHANT CAPITAL SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/01/31/43764/05/2447695.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              }
+            ],
+            "rut": "77830884-3"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0969793504",
+            "society": "BANMERCHANT CAPITAL S A"
+          },
+          {
+            "rut": "076820778K",
+            "society": "BMI ASESORIAS S A"
+          },
+          {
+            "rut": "0764415205",
+            "society": "BANMERCHANT SERVICIOS FINANCIEROS SA"
+          },
+          {
+            "rut": "0968663704",
+            "society": "INMOBILIARIA VITALIA S A"
+          },
+          {
+            "rut": "076741403K",
+            "society": "FONDO DE INVERSION PRIVADO BANPARQ"
+          },
+          {
+            "rut": "0766801153",
+            "society": "SOCIEDAD ADMINISTRADORA BANMERCHANT S A"
+          },
+          {
+            "rut": "0969918102",
+            "society": "BANMERCHANT INMOBILIARIA S A"
+          },
+          {
+            "rut": "0764104633",
+            "society": "BMI SERVICIOS INMOBILIARIOS S A"
+          },
+          {
+            "rut": "0761120190",
+            "society": "INVERSIONES BANMERCHANT SPA"
+          },
+          {
+            "rut": "0770072700",
+            "society": "ASESORIAS BANMERCHANT CHILE S A"
+          },
+          {
+            "rut": "0966965908",
+            "society": "BANMERCHANT S A"
+          },
+          {
+            "rut": null,
+            "sociedad": "BANMERCHANT CAPITAL SPA"
+          },
+          {
+            "rut": "77830884-3",
+            "sociedad": "BANMERCHANT CAPITAL SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:28453f70b683690962232fa052f1b488bc7276a608e5f9e1863c8af44385fd66",
+        "cached_at": "2026-06-10T14:56:38.004357"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 1209570,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 50,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 2,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 350,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:e8561e0ef1700c2003790b96ccc5721f3831769d8ba200ebb37b068d379a83fa",
+      "cached_at": "2026-06-10T14:56:38.570447"
+    }
+  }
+}

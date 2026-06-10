@@ -1,0 +1,1270 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96872680-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96872680-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "INVERSIONES Y ASESORIAS LIMITADA",
+        "presentaActividades": "SI",
+        "inicioActividades": "14-10-1998",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+            "codigo": "643000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "14-10-1998"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "14-10-1998"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "1999"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 5,
+        "ultimaActualizacion": "10-06-2026 14:58:49",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "2.400,01 a 5.000,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "10-06-2026 14:58:49"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "10-06-2026 14:58:48",
+        "ultimaActualizacionCobranza": "10-06-2026 14:58:48",
+        "ultimaActualizacionLaboral": "10-06-2026 14:58:48",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 14:58:48"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "19-09-2011 21:00:00",
+              "razonSocial": "PARTICIPACIONES IBSA S.A",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/09/20/397053_C_SA_20110920_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES BMC S.A.",
+                  "rut": "96826570-9",
+                  "domicilio": "ISIDORA GOYENECHEA 3.250, PISO 5, LAS CONDES"
+                },
+                {
+                  "socio": "FRANCISCO WALKER PRIETO Y COMPAÑÍA LIMITADA",
+                  "rut": "76020850-7",
+                  "domicilio": "MARCHANT PEREIRA 221, PISO 12, OF. 121, PROVIDENCIA"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "29-11-2012 21:00:00",
+              "razonSocial": "ASESORÍAS GRT LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/11/30/570928_M_LTDA_20121130_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "ROSA MARÍA GREZ RUIZ-TAGLE",
+                  "rut": null,
+                  "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+                },
+                {
+                  "socio": "MARÍA MAGDALENA GREZ RUIZ-TAGLE",
+                  "rut": null,
+                  "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+                },
+                {
+                  "socio": "INVERSIONES Y ASESORÍAS SAGRADA FAMILIA S.A.",
+                  "rut": "96652390-5",
+                  "domicilio": "FIDEL OTEIZA 1941, OF. 601, COMUNA DE PROVIDENCIA"
+                }
+              ],
+              "rut": "77562600-3"
+            },
+            {
+              "fecha": "18-02-2014 21:00:00",
+              "razonSocial": "INMOBILIARIA PALENA LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/02/19/745498_M_LTDA_20140219_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "ASESORÍAS E INVERSIONES LV LIMITADA",
+                  "rut": "76210777-5",
+                  "domicilio": "FIDEL OTEIZA 1941, OF. 601, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "INVERSIONES SAGRADA FAMILIA S.A.",
+                  "rut": null,
+                  "domicilio": "CALLE FIDEL OTEIZA N 1.941 OFICINA N 601, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "77562560-0"
+            },
+            {
+              "fecha": "18-02-2014 21:00:00",
+              "razonSocial": "INMOBILIARIA ALDEBARÁN MOSQUETO LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/02/19/745499_M_LTDA_20140219_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "ASESORÍAS E INVERSIONES LV LIMITADA",
+                  "rut": "76210777-5",
+                  "domicilio": "FIDEL OTEIZA 1941, OF. 601, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "INVERSIONES SAGRADA FAMILIA S.A.",
+                  "rut": null,
+                  "domicilio": "CALLE FIDEL OTEIZA N 1.941 OFICINA N 601, PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": "76284940-2"
+            },
+            {
+              "fecha": "07-01-2021 21:00:00",
+              "razonSocial": "PARTIBSADOS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/08/42849/05/1876993.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES FUTURO SPA",
+                  "rut": "89255200-2",
+                  "domicilio": "AVENIDA PAJARITOS NÚMERO 3195, OFICINA NÚMERO 1003, COMUNA DE MAIPÚ, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                  "rut": "78799940-9",
+                  "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES BMC S.A.",
+                  "rut": "96826570-9",
+                  "domicilio": "ISIDORA GOYENECHEA 3.250, PISO 5, LAS CONDES"
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "10-06-2026 14:58:49"
+        }
+      },
+      "legalSummary": [
+        {
+          "nombre": "INVERSIONES Y ASESORIAS LIMITADA",
+          "rut": "96872680-3",
+          "fecha": "1998-09-10",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 0,
+          "actividad": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+          "comuna": "VITACURA",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "DOMINIQUE PORTNER MULLER",
+              "rut": "6972498-1",
+              "domicilio": "CAMINO LA CAPELLANÍA NUMERO 1002, COMUNA DE LO BARNECHEA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "99.00"
+            },
+            {
+              "nombre": "ALEX CANTZLER HOFFMEISTER",
+              "rut": "9609264-4",
+              "domicilio": "AVENIDA KENNEDY 5428, DEPARTAMENTO 45, VITACURA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "99.00"
+            },
+            {
+              "nombre": "PABLO ANTONIO ZALAQUETT SAID",
+              "rut": "6978403-8",
+              "domicilio": "AVENIDA KENNEDY INTERIOR 5428, DEPTO. 91, VITACURA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "51.47"
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES LA MANADA LIMITADA",
+              "rut": "96803200-3",
+              "domicilio": "VALLE DEL MONASTERIO 2480, Depto 208, Bloque D, LO BARNECHEA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "48.53"
+            },
+            {
+              "nombre": "CALDERON MORENO FEDERICO",
+              "rut": "3675523-7",
+              "domicilio": null,
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "35.00"
+            },
+            {
+              "nombre": "ANA MARÍA CALDERÓN KALTWASSER",
+              "rut": "10334848-K",
+              "domicilio": "LAS HUALIALAS N°5487, DEPTO. 82, VITACURA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "35.00"
+            },
+            {
+              "nombre": "CRISTIÁN MEISS EHLERT",
+              "rut": "13851273-8",
+              "domicilio": "AVENIDA LOS PLÁTANOS 1977, VIÑA DEL MAR",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "20.00"
+            },
+            {
+              "nombre": "ANDRÉS MEISS EHLERT",
+              "rut": "13989931-8",
+              "domicilio": "AVENIDA LOS PLÁTANOS 1977, VIÑA DEL MAR",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "20.00"
+            },
+            {
+              "nombre": "CLAUDIA MEISS EHLERT",
+              "rut": "15096553-5",
+              "domicilio": "AV. LOS PLÁTANOS N° 1977, VIÑA DEL MAR",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "20.00"
+            },
+            {
+              "nombre": "SUSANNE EHLERT MILEWSKI",
+              "rut": "8971866-K",
+              "domicilio": "AV. LOS PLÁTANOS 1977, VIÑA DEL MAR",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "20.00"
+            },
+            {
+              "nombre": "MEISS FAHRENKROG CARLOS EDUARDO",
+              "rut": "4204796-1",
+              "domicilio": null,
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "19.00"
+            },
+            {
+              "nombre": "JOSÉ LUIS CALDERÓN KALTWASSER",
+              "rut": "9897016-9",
+              "domicilio": "LA HUALA 5075 CASA 9A, COMUNA DE LO BARNECHEA, REGIÓN METROPOLITANA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "15.00"
+            },
+            {
+              "nombre": "JUAN PABLO CALDERON KALTWASSER",
+              "rut": "9897033-9",
+              "domicilio": "AVENIDA ISIDORA GOYENECHEA Nº 3.356, OFICINA 50, COMUNA DE LAS CONDES, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO - SOCIO_INDIRECTO",
+              "cargo": null,
+              "porcentajeParticipacion": "15.00"
+            },
+            {
+              "nombre": "PABLO ZALAQUETT BUSTAMANTE",
+              "rut": "17700924-5",
+              "domicilio": "VALLE DEL MONASTERIO 2332, EDIFICIO 11, DEPTO 202, LO BARNECHEA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "10.00"
+            },
+            {
+              "nombre": "JUAN JOSE ZALAQUETT BUSTAMANTE",
+              "rut": "18395363-K",
+              "domicilio": "VALLE DEL MONASTERIO NÚMERO 2480, DEPARTAMENTO 208, LO BARNECHEA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "10.00"
+            },
+            {
+              "nombre": "SYLVIA BEATRIZ ZALAQUETT BUSTAMANTE",
+              "rut": "18303600-9",
+              "domicilio": "VALLE DEL MONASTERIO 2332, EDIFICIO 11, DEPTO 202, LO BARNECHEA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "10.00"
+            },
+            {
+              "nombre": "VERONICA CECILIA RODRIGUEZ HERMOSILLA",
+              "rut": "12890752-1",
+              "domicilio": "FERNANDO DE ARGÚELLO N°7245 DEPTO/LOCAL 202 COMUNA DE VITACURA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "1.00"
+            },
+            {
+              "nombre": "STEFANIE CANTZLER HOFFMEISTER",
+              "rut": "9675088-9",
+              "domicilio": "NUESTRA SEÑORA DEL ROSARIO 1487, VITACURA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "1.00"
+            },
+            {
+              "nombre": "SELVAGGIA MACIOTI MURILLO",
+              "rut": "11066670-5",
+              "domicilio": "CAMINO LA CAPELLANÍA NUMERO 1002, COMUNA DE LO BARNECHEA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "1.00"
+            },
+            {
+              "nombre": "FAHRENKROG REINHOLD HEDWIG",
+              "rut": "1637792-9",
+              "domicilio": null,
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "1.00"
+            },
+            {
+              "nombre": "ERWIN DIETER GARAFULIC LEHM",
+              "rut": "21203196-8",
+              "domicilio": "AV LA DEHESA 1201 OF 533, LO BARNECHEA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "SYLVIA BUSTAMANTE GUBBINS",
+              "rut": "11124954-7",
+              "domicilio": "ROSARIO NORTE 615, OFICINA 1104, LAS CONDES",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "DORA MÜLLER KÜBLER",
+              "rut": "5072221-K",
+              "domicilio": "CALLE LA AURORA 1484, VITACURA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "MARÍA CRISTINA YÁVAR BASCUÑÁN",
+              "rut": "6268740-1",
+              "domicilio": "EL BOSQUE SUR 353, PROVIDENCIA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "PAULINA VICTORIA GEMITA ZALAQUETT SAID",
+              "rut": "6978404-6",
+              "domicilio": "AVENIDA KENNEDY INTERIOR 5428, DEPTO. 91, VITACURA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "ANA MARÍA KALTWASSER FERNÁNDEZ",
+              "rut": "5899807-9",
+              "domicilio": "LAS HUALIALAS N°5487, DEPTO. 82, VITACURA, SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "NICANOR SERGIO SCHOENMAKERS GONZÁLEZ",
+              "rut": "4439575-4",
+              "domicilio": "LAS GOLONDRINAS N° 1485, REÑACA, VIÑA DEL MAR",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            }
+          ],
+          "participaciones": [
+            {
+              "razonSocial": "ASESORIAS, SERVICIOS E INVERSIONES LIMITADA",
+              "rut": "76108106-3",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "porcentajeParticipacion": "99.00",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2010-05-24"
+            },
+            {
+              "razonSocial": "INMOBILIARIA PALENA LIMITADA",
+              "rut": "77562560-0",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "50.00",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2001-02-07"
+            },
+            {
+              "razonSocial": "ASESORIAS GRT SPA",
+              "rut": "77562600-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "50.00",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2001-02-07"
+            },
+            {
+              "razonSocial": "COMPANIA DE SERVICIOS INTEGRALES LTD",
+              "rut": "78588250-4",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "25.00",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "1994-11-18"
+            },
+            {
+              "razonSocial": "DUAL S A",
+              "rut": "99508420-1",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "15",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2002-12-20"
+            },
+            {
+              "razonSocial": "INVERFOODS SA",
+              "rut": "76590150-2",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "10.04",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2006-06-09"
+            },
+            {
+              "razonSocial": "INVERSIONES BANMERCHANT SPA",
+              "rut": "76112019-0",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "8.8",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2010-08-12"
+            },
+            {
+              "razonSocial": "PARTIBSADOS S.A",
+              "rut": "77324984-9",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "4.9998984173",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2020-12-23"
+            },
+            {
+              "razonSocial": "PARTICIPACIONES IBSA S.A",
+              "rut": "76170072-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "4.99",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2011-09-13"
+            },
+            {
+              "razonSocial": "INMOBILIARIA Y RENTAS COSTA NORTE S.A.",
+              "rut": "76121074-2",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "2",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2010-10-25"
+            },
+            {
+              "razonSocial": "ADMINISTRADORA INVERFOODS S.A.",
+              "rut": "76137637-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "0.1",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2011-02-07"
+            },
+            {
+              "razonSocial": "INVERFOODS DOS S.A.",
+              "rut": "76138033-8",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2011-02-10"
+            },
+            {
+              "razonSocial": "ASESORIAS BANMERCHANT CHILE S A",
+              "rut": "77007270-0",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "TERMINADA",
+              "fechaConstitucion": "1997-05-09"
+            },
+            {
+              "razonSocial": "BANMERCHANT S A",
+              "rut": "96696590-8",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "TERMINADA",
+              "fechaConstitucion": "1994-01-17"
+            }
+          ],
+          "extractos": [
+            {
+              "id": 1920428,
+              "fecha": "2016-03-31",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/03/31/1010711_M_SPA_20160331.pdf",
+              "cve": "1010711",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1985528,
+              "fecha": "2016-01-28",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/01/28/992052_M_LTDA_20160128.pdf",
+              "cve": "992052",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1605893,
+              "fecha": "2015-12-23",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/12/23/979611_M_LTDA_20151223_firmada.pdf",
+              "cve": "979611",
+              "tieneExtracto": false
+            },
+            {
+              "id": 2358541,
+              "fecha": "2011-10-20",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/10/20/407844_M_LTDA_20111020_firmado.pdf",
+              "cve": "407844",
+              "tieneExtracto": false
+            },
+            {
+              "id": 3848157,
+              "fecha": "2010-06-23",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 3867267,
+              "fecha": "2010-03-18",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 3892774,
+              "fecha": "2009-11-19",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4172613,
+              "fecha": "2006-06-17",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4310629,
+              "fecha": "2003-11-19",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4330784,
+              "fecha": "2003-06-28",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4374497,
+              "fecha": "2002-05-17",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4460738,
+              "fecha": "2000-05-24",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4562298,
+              "fecha": "1998-07-27",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            },
+            {
+              "id": 4662952,
+              "fecha": "1995-04-18",
+              "actuacion": "MODIFICACION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            }
+          ]
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 64890,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 64890,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 100,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 73710,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 73710,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 100
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "INVERSIONES Y ASESORIAS LIMITADA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:aa8ed15abb537319f495f706f944ec489c99ef46cdd1a84410d379181ee2864e",
+      "cached_at": "2026-06-10T14:58:50.552682"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:58:49"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f7df1644f08bbbf67899835c32de784095f3c2b0cf0dc40da8893eeefdcdc28a",
+        "cached_at": "2026-06-10T14:58:50.875236"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:58:49"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e00e1b0e9f071b5a39e073fd46b2a3f4ad6730850436bf6034b631826f94fa23",
+        "cached_at": "2026-06-10T14:58:51.202302"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:58:49"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3d7be9874b311978099c326ce77903c576a603979d795e00a7490de71e5e6171",
+        "cached_at": "2026-06-10T14:58:51.520793"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:58:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a42fd06d8ebf5bc4cd01a247260e687ca9ce590e5b223841c06d987eaaf53c05",
+        "cached_at": "2026-06-10T14:58:51.848668"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:58:48"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0795674ac82d9d1a4ddf4a3a2d1f3398400426ea3a5b82f95dd64761ea6cf333",
+        "cached_at": "2026-06-10T14:58:52.167748"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96872680-3",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "INVERSIONES Y ASESORIAS LIMITADA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "INVERSIONES Y ASESORIAS LIMITADA",
+            "rutSociedad": "96872680-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [],
+            "extractos": [],
+            "participaciones": [
+              {
+                "razonSocial": "ADMINISTRADORA INVERFOODS S.A.",
+                "rut": "76137637-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "ASESORIAS BANMERCHANT CHILE S A",
+                "rut": "77007270-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BANMERCHANT S A",
+                "rut": "96696590-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "DUAL S A",
+                "rut": "99508420-1",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA Y RENTAS COSTA NORTE S.A.",
+                "rut": "76121074-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERFOODS DOS S.A.",
+                "rut": "76138033-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERFOODS SA",
+                "rut": "76590150-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSIONES BANMERCHANT SPA",
+                "rut": "76112019-0",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PARTIBSADOS S.A",
+                "rut": "77324984-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:6cdb385d6fccd35f8f38595fc571119d2537669f641df6f3b07751f6a777ea75",
+      "cached_at": "2026-06-10T14:58:52.746158"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96872680-3",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "19-09-2011 21:00:00",
+            "razonSocial": "PARTICIPACIONES IBSA S.A",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2011/09/20/397053_C_SA_20110920_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3.250, PISO 5, LAS CONDES"
+              },
+              {
+                "nombre": "FRANCISCO WALKER PRIETO Y COMPAÑÍA LIMITADA",
+                "rut": "76020850-7",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, OF. 121, PROVIDENCIA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "29-11-2012 21:00:00",
+            "razonSocial": "ASESORÍAS GRT LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2012/11/30/570928_M_LTDA_20121130_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "ROSA MARÍA GREZ RUIZ-TAGLE",
+                "rut": null,
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              },
+              {
+                "nombre": "MARÍA MAGDALENA GREZ RUIZ-TAGLE",
+                "rut": null,
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS SAGRADA FAMILIA S.A.",
+                "rut": "96652390-5",
+                "domicilio": "FIDEL OTEIZA 1941, OF. 601, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              }
+            ],
+            "rut": "77562600-3"
+          },
+          {
+            "fecha": "18-02-2014 21:00:00",
+            "razonSocial": "INMOBILIARIA PALENA LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/02/19/745498_M_LTDA_20140219_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "ASESORÍAS E INVERSIONES LV LIMITADA",
+                "rut": "76210777-5",
+                "domicilio": "FIDEL OTEIZA 1941, OF. 601, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES SAGRADA FAMILIA S.A.",
+                "rut": null,
+                "domicilio": "CALLE FIDEL OTEIZA N 1.941 OFICINA N 601, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "77562560-0"
+          },
+          {
+            "fecha": "18-02-2014 21:00:00",
+            "razonSocial": "INMOBILIARIA ALDEBARÁN MOSQUETO LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/02/19/745499_M_LTDA_20140219_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "ASESORÍAS E INVERSIONES LV LIMITADA",
+                "rut": "76210777-5",
+                "domicilio": "FIDEL OTEIZA 1941, OF. 601, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              },
+              {
+                "nombre": "INVERSIONES SAGRADA FAMILIA S.A.",
+                "rut": null,
+                "domicilio": "CALLE FIDEL OTEIZA N 1.941 OFICINA N 601, PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": "76284940-2"
+          },
+          {
+            "fecha": "07-01-2021 21:00:00",
+            "razonSocial": "PARTIBSADOS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/08/42849/05/1876993.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES FUTURO SPA",
+                "rut": "89255200-2",
+                "domicilio": "AVENIDA PAJARITOS NÚMERO 3195, OFICINA NÚMERO 1003, COMUNA DE MAIPÚ, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "FIDEL OTEÍZA N 1.941, OF. N 601, PROVIDENCIA"
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                "rut": "78799940-9",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3.250, PISO 5, LAS CONDES"
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": null,
+            "sociedad": "PARTICIPACIONES IBSA S.A"
+          },
+          {
+            "rut": "77562600-3",
+            "sociedad": "ASESORÍAS GRT LIMITADA"
+          },
+          {
+            "rut": "77562560-0",
+            "sociedad": "INMOBILIARIA PALENA LIMITADA"
+          },
+          {
+            "rut": "76284940-2",
+            "sociedad": "INMOBILIARIA ALDEBARÁN MOSQUETO LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:784b6b9edf4db81b12c5c60e47591a0fe7a93be2540131e81bcb2ab61ebb1796",
+        "cached_at": "2026-06-10T14:58:53.069157"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 64890,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:314efef3e9777cc7b3f2360c65ae9d4d56fa37ddf8b5648e20b490abce882308",
+      "cached_at": "2026-06-10T14:58:54.056425"
+    }
+  }
+}

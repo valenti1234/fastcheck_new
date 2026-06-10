@@ -21,7 +21,7 @@ import { Dialog } from '@headlessui/react';
 import {
   Tooltip,
 } from '@mui/material';
-/* import MeshFlowChart from '../components/ui/MeshFlowChart/MeshFlowChart'; */
+ import MeshFlowChart from '../components/ui/MeshFlowChart/MeshFlowChart'; 
 import { ChevronDown, ChevronUp, Download, Edit3, Save, X, FileText } from 'lucide-react';
 import * as XLSX from 'xlsx';
 import { useTranslation } from 'react-i18next';
@@ -4083,11 +4083,11 @@ const FastCheck: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold dark:text-white">Fecha Constitución:</p>
-                  <p className="dark:text-gray-300">{formatDateToDDMMYYYY(companyGeneralInfo.fechaDeConstitucion)}</p>
+                  <p className="dark:text-gray-300">{formatDateToDDMMYYYY(companyGeneralInfo?.fechaDeConstitucion)}</p>
                 </div>
                 <div>
                   <p className="font-bold dark:text-white">Fecha Iniciación de Actividades:</p>
-                  <p className="dark:text-gray-300">{formatDateToDDMMYYYY(companyGeneralInfo.inicioActividades)}</p>
+                  <p className="dark:text-gray-300">{formatDateToDDMMYYYY(companyGeneralInfo?.inicioActividades)}</p>
                 </div>
                 <div>
                   <p className="font-bold dark:text-white">Tamaño Empresa:</p>
@@ -4095,7 +4095,7 @@ const FastCheck: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold dark:text-white">Rango Ventas UF:</p>
-                  <p className="dark:text-gray-300">{companyGeneralInfo.rangoVentas}</p>
+                  <p className="dark:text-gray-300">{companyGeneralInfo?.rangoVentas}</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
@@ -4142,7 +4142,7 @@ const FastCheck: React.FC = () => {
           {expandedSections.MallaRelacional && (
             <div className="space-y-6">
               <div style={{ display: exportingPdf ? 'none' : 'block' }}>
-              {/*   <MeshFlowChartOwned
+          {/*       <MeshFlowChartOwned
                   title="Mapa de Empresas Controladas"
                   dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
                   mainRut={companyData.rut}

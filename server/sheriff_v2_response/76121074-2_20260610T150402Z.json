@@ -1,0 +1,536 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76121074-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76121074-2",
+      "esPersonaJuridica": true,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "INMOBILIARIA Y RENTAS COSTA NORTE S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "12-11-2010",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Contribuyente obligado a dar aviso de Término de GiroEste contribuyente, según lo dispuesto en la Res. Ex. N° 41 del 20-12-2002, por el hecho de acumular en forma continua 12 o más Declaraciones de Formulario 29, Sin Movimiento o No Presentadas, se encuentra obligado a dar aviso de Término de Giro, o en su defecto, a presentar una declaración jurada (Formulario 2125), manifestando su intención de continuar con su actividad económica.De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "CONSTRUCCION DE EDIFICIOS PARA USO RESIDENCIAL",
+            "codigo": "410010",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-01-2011"
+          },
+          {
+            "actividades": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+            "codigo": "643000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-11-2010"
+          },
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "28-01-2011"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2011"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 2,
+        "ultimaActualizacion": "10-06-2026 15:03:57",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "0,01 a 200,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "10-06-2026 15:03:58"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "10-06-2026 15:03:57",
+        "ultimaActualizacionCobranza": "10-06-2026 15:03:57",
+        "ultimaActualizacionLaboral": "10-06-2026 15:03:57",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 15:03:57"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 15:03:58"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": null,
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": null,
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "10-06-2026 15:03:58"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "INMOBILIARIA Y RENTAS COSTA NORTE S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:740984e0d9db1fb5543691546f6e5309104663fb5f88578457e077d66dc336b8",
+      "cached_at": "2026-06-10T15:03:59.117581"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:03:57"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:313e29b48025c5fb896b842000b7bffee0ba7d4e72138f6f8100fd60bbc7831c",
+        "cached_at": "2026-06-10T15:03:59.446772"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:03:57"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0b0ac37b0421b407253bdb0cdf16bc4f4b569607c36a4fb4ca14e0bf7982f91b",
+        "cached_at": "2026-06-10T15:03:59.793272"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:03:57"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:056e08a1f46a6ec7b3b03b7f68ec318e3579b5bdea99b91dda1db82573811108",
+        "cached_at": "2026-06-10T15:04:00.184662"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:03:57"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a6f5b41e9e00d6ef77bf08d82a4c890d52c1f7e8ff3d095d57d5940ba84ce96e",
+        "cached_at": "2026-06-10T15:04:00.510050"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:03:57"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:73d5005a6b73b92028e6f0a1983f79956a5254a0cfb80bd556df214a00716331",
+        "cached_at": "2026-06-10T15:04:00.829972"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76121074-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "INMOBILIARIA Y RENTAS COSTA NORTE S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "INMOBILIARIA Y RENTAS COSTA NORTE S.A",
+            "rutSociedad": "76121074-2",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "INMOBILIARIA E INVERSIONES COLINA BOREAL LIMITADA",
+                "rut": "76573010-4",
+                "domicilio": "ALONSO DE CÓRDOVA 2600, OFICINA 32, VITACURA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                "rut": "78799940-9",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3250, PISO 5, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "AVENIDA ISIDORA GOYENECHEA N° 3250, PISO 5, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES EL OLIVAR LIMITADA",
+                "rut": "77265970-9",
+                "domicilio": "SAN SEBASTIÁN 2807, OFICINA 1012, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES VILANOVA LTDA",
+                "rut": "78460680-5",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORIAS E INVERSIONES SANTA BARBARA LIMITADA",
+                "rut": "76062309-1",
+                "domicilio": "AV. EINSTEIN 0176, RECOLETA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:29355c452798672a74e735fe95bac562bd8718b37b0170168e14aeb40e37d0cd",
+      "cached_at": "2026-06-10T15:04:01.527243"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76121074-2",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9d43529c2fd35841d44344472ed08810f65751763884cbd0ecb29d14e6cfed50",
+        "cached_at": "2026-06-10T15:04:01.858809"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0bc969950d73da8929654ea8707c8a64189394f420ec5e05bd7d96bba8428cd6",
+      "cached_at": "2026-06-10T15:04:02.523634"
+    }
+  }
+}

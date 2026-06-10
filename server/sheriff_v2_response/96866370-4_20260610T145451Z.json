@@ -1,0 +1,923 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "96866370-4"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "96866370-4",
+      "esPersonaJuridica": true,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "INMOBILIARIA VITALIA S.A.",
+        "presentaActividades": "SI",
+        "inicioActividades": "06-08-1998",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "06-08-1998"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "28-10-2005"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2014"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Iva",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2017"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2012"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Libro Control De Timbraje",
+            "ultimoAnioTimbrado": "1999"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 10,
+        "ultimaActualizacion": "10-06-2026 14:54:47",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "10.000,01 a 25.000,00",
+          "cantidadTrabajadores": 8
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "10-06-2026 14:54:47"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 1,
+        "laboralPresentados": 1,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 1,
+        "casosConcluidos": 1,
+        "todosLosCasos": 3,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1,
+          "demandadoSolidario": 1
+        },
+        "ultimaActualizacionCiviles": "10-06-2026 14:54:47",
+        "ultimaActualizacionCobranza": "10-06-2026 14:54:46",
+        "ultimaActualizacionLaboral": "10-06-2026 14:54:47",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 14:54:47"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "20-12-2017 21:00:00",
+              "razonSocial": "BANMERCHANT ASESORÍAS S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/21/41938/05/1322614.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES BANMERCHANT S.A.",
+                  "rut": "76112019-0",
+                  "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+                }
+              ],
+              "rut": "76820778-K"
+            }
+          ],
+          "ultimaActualizacion": "10-06-2026 14:54:47"
+        }
+      },
+      "legalSummary": [
+        {
+          "nombre": "INMOBILIARIA VITALIA S.A.",
+          "rut": "96866370-4",
+          "fecha": "1998-05-05",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 8,
+          "actividad": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+          "comuna": "VITACURA",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "INVERSIONES BANMERCHANT SPA",
+              "rut": "76112019-0",
+              "domicilio": "AVDA ALONSO DE CORDOVA 2860, Depto 205 C, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "90"
+            },
+            {
+              "nombre": "BMI SERVICIOS INMOBILIARIOS S.A.",
+              "rut": "76410463-3",
+              "domicilio": "AV ALONSO DE CORDOVA 2860 205 -A, Depto, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "10"
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES W Y M LIMITADA",
+              "rut": "78799940-9",
+              "domicilio": "MARCHANT PEREIRA 221, Depto P.12, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            }
+          ],
+          "participaciones": [
+            {
+              "razonSocial": "BMI SERVICIOS INMOBILIARIOS S.A.",
+              "rut": "76410463-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "1",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2014-08-18"
+            },
+            {
+              "razonSocial": "BMI ASESORIAS S.A.",
+              "rut": "76820778-K",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "1",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2017-12-13"
+            },
+            {
+              "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+              "rut": "76680115-3",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "0.1",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2017-01-18"
+            }
+          ],
+          "extractos": []
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 990760,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 990760,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 1035280,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 1035280,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "10-06-2026 14:54:48"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 11,
+          "tasacionTotal": "792708047",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 66.66666666666667,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 366.6666666666667,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "INMOBILIARIA VITALIA S.A.",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b592c278f9ed89630e719582df1d22ee3430a1af9a2ec3f6b558403fd8c067e1",
+      "cached_at": "2026-06-10T14:54:48.520409"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "7 Terminada",
+            "fechaIngreso": "29-07-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "13161565-5",
+                "nombre": "HELENA BEATRIZ GALLEGOS CORDONES",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13161565-5",
+                "nombre": "HELENA BEATRIZ GALLEGOS CORDONES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76375194-5",
+                "nombre": "INMOBILIARIA RMP S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96866370-4",
+                "nombre": "INMOBILIARIA VITALIA S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76020850-7",
+                "nombre": "FRANCISCO WALKER PRIETO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96826570-9",
+                "nombre": "INVERSIONES BMC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76112019-0",
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "96844950-8",
+                "nombre": "CONSTRUCTORA EBCO S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "17420387-3",
+                "nombre": "LUIS ALEJANDRO BRAVO VELOSO (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16363300-0",
+                "nombre": "JOSÉ ROBERTO MORENO ARIZMENDY (Poder Simple)",
+                "sujeto": "AP.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8496037-3",
+                "nombre": "TOMÁS WALKER PRIETO (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17083408-9",
+                "nombre": "BENJAMÍN CRISTÓBAL SEPÚLVEDA LETELIER (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13672556-4",
+                "nombre": "MATÍAS NOVOA MENDIZÁBAL (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13890952-2",
+                "nombre": "CRISTIAN ANDRÉS SÁEZ ROJIC (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16006654-7",
+                "nombre": "DAFNE ORIT KOHEN FRÍAS (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16097190-8",
+                "nombre": "NICOLÁS MANUEL MAGLIONA MARKOVICTH (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15565451-1",
+                "nombre": "JOSÉ TOMÁS CASTRO CELEDÓN (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-23781-2019",
+            "tribunal": "28º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 14:54:47"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:cf64634e738cc08d80e3d83732741e315fc11d9d4984883a1c6c4d8ea05d7305",
+        "cached_at": "2026-06-10T14:54:48.842376"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:54:47"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2711d9258fc10af5b074f842e873b084a6daaa4f5562f8decb782c8ef5edf244",
+        "cached_at": "2026-06-10T14:54:49.162868"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15692042-8",
+                "nombre": "ANA DEL CARMEN ROJAS SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15840896-1",
+                "nombre": "CLAUDIA MARDESIC GONZÁLEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76219503-8",
+                "nombre": "INVERSIONES Y RENTAS ANTOFAGASTA II S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76376661-6",
+                "nombre": "INVERSIONES ANTOFAGASTA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76704109-8",
+                "nombre": "RENTAS COPÉRNICO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96866370-4",
+                "nombre": "BMI S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76112019-0",
+                "nombre": "INVERSIONES BANMERCHANT S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96826570-9",
+                "nombre": "INVERSIONES BMC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": "SERVICIOS EDUCACIONALES SAN JOSE LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-348-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "Audiencia de Juicio",
+            "fechaIngreso": "21-02-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "27001595-6",
+                "nombre": "DANIEL SAINFLEUR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "13994694-4",
+                "nombre": "CÉSAR LEONARDO ANDRÉS AGUILAR CERDA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76525290-3",
+                "nombre": "EBCO S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "7044633-2",
+                "nombre": "HERNÁN MARCOS BESOMI TOMÁS",
+                "sujeto": "DDO.SO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "96866370-4",
+                "nombre": "BMI S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "9854942-0",
+                "nombre": "MANUEL ANTONIO MARTÍNEZ GALLEGO (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10596403-K",
+                "nombre": "DANIEL EDUARDO SÁNCHEZ FARIÑA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-1131-2022",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.SO",
+            "estadoActual": "Archivada"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 14:54:47"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ed718b7b74c3c6f813c41bcd9c45cc83bcf484df61d0d36475d92fb161b9df61",
+        "cached_at": "2026-06-10T14:54:49.483864"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:54:47"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:708320ca4a2e64aa5831d76ee53c9ba4c9421ef05898366ca2dc859ed16203c4",
+        "cached_at": "2026-06-10T14:54:49.812718"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:54:47"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ab5cec2fc569bd2cea2d267bc41c4df0f7b46c4fd96b4813901900f83d376c5a",
+        "cached_at": "2026-06-10T14:54:50.138490"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "96866370-4",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "INMOBILIARIA VITALIA S.A.",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "INMOBILIARIA VITALIA S.A",
+            "rutSociedad": "96866370-4",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "ALONSO DE CÓRDOV A 2860, OFICINA 205, VITACURA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                "rut": "78799940-9",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "BMI SERVICIOS INMOBILIARIOS S.A.",
+                "rut": "76410463-3",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [],
+            "participaciones": [
+              {
+                "razonSocial": "BMI ASESORIAS S.A.",
+                "rut": "76820778-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BMI SERVICIOS INMOBILIARIOS S.A.",
+                "rut": "76410463-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SOCIEDAD ADMINISTRADORA BANMERCHANT S.A.",
+                "rut": "76680115-3",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3bacc9cce3c8a1f3e5105cca57830db4bada16d6853611bbb0a0fb1d2f1e9aff",
+      "cached_at": "2026-06-10T14:54:50.714492"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "96866370-4",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "20-12-2017 21:00:00",
+            "razonSocial": "BANMERCHANT ASESORÍAS S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/21/41938/05/1322614.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BANMERCHANT S.A.",
+                "rut": "76112019-0",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              },
+              {
+                "nombre": "INMOBILIARIA VITALIA S.A",
+                "rut": "96866370-4",
+                "domicilio": "AV. ALONSO DE CÓRDOVA Nº 2.870, PISO 2, VITACURA"
+              }
+            ],
+            "rut": "76820778-K"
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "0766801153",
+            "society": "SOCIEDAD ADMINISTRADORA BANMERCHANT S A"
+          },
+          {
+            "rut": "076820778K",
+            "society": "BMI ASESORIAS S A"
+          },
+          {
+            "rut": "0764104633",
+            "society": "BMI SERVICIOS INMOBILIARIOS S A"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c2b444ab6c49aa50c79279f29ac15b4bbde9c6468600efd88c45365c34c17466",
+        "cached_at": "2026-06-10T14:54:51.038378"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 990760,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 33.33333333333333,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 3,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 66.66666666666667,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 366.6666666666667,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5048618f91fcbb087392f814f0b09b42676123343337df0fa6e5cb1646ddb6ce",
+      "cached_at": "2026-06-10T14:54:51.635001"
+    }
+  }
+}

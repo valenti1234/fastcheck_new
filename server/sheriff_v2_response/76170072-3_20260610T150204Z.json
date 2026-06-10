@@ -1,0 +1,1323 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76170072-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76170072-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "PARTICIPACIONES IBSA S.A",
+        "presentaActividades": "SI",
+        "inicioActividades": "11-10-2011",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+            "codigo": "643000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "11-10-2011"
+          },
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "11-05-2026"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 1,
+        "ultimaActualizacion": "10-06-2026 15:02:00",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "5.000,01 a 10.000,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 2,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 1,
+        "laboralActivos": 1,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 3,
+        "casosArchivados": 0,
+        "casosConcluidos": 2,
+        "todosLosCasos": 5,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1,
+          "demandante": 1,
+          "solicitante": 1
+        },
+        "ultimaActualizacionCiviles": "10-06-2026 15:02:00",
+        "ultimaActualizacionCobranza": "10-06-2026 15:01:59",
+        "ultimaActualizacionLaboral": "10-06-2026 15:01:59",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 15:01:59"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "12-09-2014 21:00:00",
+              "razonSocial": "INVERSIONES Y DESARROLLOS INMOBILIARIOS PLAYA BLANCA S.A.",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/09/13/818124_C_SA_20140913_firmado.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "GRUPO DIGITAL S.A.",
+                  "rut": "77895390-0",
+                  "domicilio": "EL ROSAL 4547, COMUNA DE HUECHURABA, SANTIAGO"
+                },
+                {
+                  "socio": "SERGIO JUNEMANN DOBRONIC",
+                  "rut": "7095474-5",
+                  "domicilio": "SERRANO N 389, OF. 1001, IQUIQUE"
+                },
+                {
+                  "socio": "SALVATORE LIOI ESPINOSA",
+                  "rut": "8586617-6",
+                  "domicilio": "WALTER MULLER N 6134, COMUNA DE VITACURA, SANTIAGO"
+                }
+              ],
+              "rut": "76410463-3"
+            },
+            {
+              "fecha": "12-08-2015 21:00:00",
+              "razonSocial": "INMOBILIARIA Y CONSTRUCTORA PLAZA LOS DOMINICOS S.A.",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/08/13/933968_M_SA_20150813_firmada.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "INVERSIONES LOS BOLDOS LIMITADA",
+                  "rut": "76758991-3",
+                  "domicilio": "CALLE BENJAMÍN 2944, OFICINA 81, COMUNA DE LAS CONDES, CIUDAD SANTIAGO"
+                },
+                {
+                  "socio": "AGRÍCOLA Y COMERCIAL SANTA INÉS LIMITADA",
+                  "rut": "96396000-K",
+                  "domicilio": "AVENIDA LAS CONDES N 13.305, LAS CONDES"
+                },
+                {
+                  "socio": "INVERSIONES LAGO RANCO LIMITADA",
+                  "rut": "76082714-2",
+                  "domicilio": "AV. LAS CONDES 11.400, PISO 10, COMUNA VITACURA, DE SANTIAGO"
+                },
+                {
+                  "socio": "INVERSIONES GM LIMITADA",
+                  "rut": "76140988-3",
+                  "domicilio": "CASA B DE CAMINO HUINGANAL N 2263, LO BARNECHEA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "12-12-2017 21:00:00",
+              "razonSocial": "NORPRINT SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/13/41931/05/1318642.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [],
+              "rut": null
+            },
+            {
+              "fecha": "03-01-2021 21:00:00",
+              "razonSocial": "PARTICIPACIONES IBSA S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/04/42845/05/1875230.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "PARTICIPACIONES IBSA S.A.",
+                  "rut": null,
+                  "domicilio": "AV. ALONSO DE CÓRDOVA NÚMERO DOS MIL OCHOCIENTOS SESENTA, PISO DOS, COMUNA DE VITACURA"
+                },
+                {
+                  "socio": "PARTIBSADOS S.A.",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76170072-3"
+            },
+            {
+              "fecha": "06-01-2022 21:00:00",
+              "razonSocial": "PARTICIPACIONES IBSA S.A.",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/01/07/43146/05/2068454.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "INVERSIONES BMC S.A",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76170072-3"
+            },
+            {
+              "fecha": "30-06-2023 20:00:00",
+              "razonSocial": "PARQUE RESIDENCIAL TRINARES SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/07/01/43590/05/2338086.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "EBCO INMOBILIARIO SPA",
+                  "rut": "77105019-0",
+                  "domicilio": "AVENIDA SANTA MARÍA N 2450, TERCER PISO, COMUNA DE PROVIDENCIA"
+                },
+                {
+                  "socio": "EL CHAMISERO INMOBILIARIA S.A.",
+                  "rut": "94138000-K",
+                  "domicilio": "AV. APOQUINDO 3.076, OFICINA 501, LAS CONDES, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "12-10-2023 21:00:00",
+              "razonSocial": "RENTAS COPÉRNICO SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/10/13/43675/05/2389956.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [],
+              "rut": null
+            },
+            {
+              "fecha": "16-02-2024 21:00:00",
+              "razonSocial": "KÜLLAY SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/02/17/43779/05/2455655.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "EL CHAMISERO INMOBILIARIA S.A.",
+                  "rut": "94138000-K",
+                  "domicilio": "AV. APOQUINDO 3.076, OFICINA 501, LAS CONDES, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "10-06-2026 15:02:00"
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "12/2025",
+        "deudaDirectaComercial": 1046419,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 1046419,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 2488718,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 25000,
+        "variacion": {
+          "periodo": "06/2025",
+          "deudaDirectaComercial": 1110611,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 1110611,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 2651371,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 25000
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 17,
+          "tasacionTotal": "1097579115",
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 50,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 350,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "PARTICIPACIONES IBSA S.A",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        null,
+        null,
+        "Cámara de Comercio",
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:63d5e89723bd6eca7153696fba92fcbe85e04b80be03e3d0eb895ecbcbf92e2f",
+      "cached_at": "2026-06-10T15:02:01.114074"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Sin tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "0 Inicio tramitación",
+            "fechaIngreso": "28-08-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10293616-7",
+                "nombre": "GONZALO GUILLERMO FUENZALIDA FIGUEROA",
+                "sujeto": "AB. SO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "20121826-8",
+                "nombre": "MATÍAS JORGE IGNACIO GUTIÉRREZ INOSTROZA",
+                "sujeto": "AP.SOL",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "sujeto": "SOLIC.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Voluntario",
+            "rol": "V-206-2025",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "SOLIC.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "3 Sentencia",
+            "fechaIngreso": "24-07-2025 20:00:00",
+            "litigantes": [
+              {
+                "rut": "19634252-4",
+                "nombre": "CATALINA IRENE PUELMA MORALES (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14309635-1",
+                "nombre": "CLAUDIA PATRICIA ORELLANA MONARDES (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18525640-5",
+                "nombre": "DIEGO NICOLÁS VENEGAS RUBILAR (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19954707-0",
+                "nombre": "MARÍA JESÚS AGUIRRE RODRÍGUEZ (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "5277341-5",
+                "nombre": "EDITH DEL CARMEN MUJICA PLAZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Juicio de arrendamiento",
+            "rol": "C-10538-2025",
+            "tribunal": "13º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "6 Terminada ",
+            "fechaIngreso": "17-07-2012 20:00:00",
+            "litigantes": [
+              {
+                "rut": "76170072-3",
+                "nombre": " PARTICIPACIONES IBSA S.A ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": " PARTICIPACIONES IBSA S.A ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8072450-0",
+                "nombre": "LUIS EDUARDO VILLAVICENCIO MEZA",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Básico",
+            "rol": "C-16426-2012",
+            "tribunal": "18º Juzgado Civil de Santiago",
+            "sujeto": "DTE.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 15:02:00"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:28e4518127c0905998d14eee517922a50a73a46985003f1a850984f686e61c0f",
+        "cached_at": "2026-06-10T15:02:01.441574"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "16-03-2015 21:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000400-7",
+                "nombre": "A.F.P. PROVIDA S.A.  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "7072258-5",
+                "nombre": "RAUL TRONCOSO DELPIANO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": "SERVICIOS EDUCACIONALES SAN JOSE LTDA  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-958-2015",
+            "tribunal": "Jdo. de Letras del Trabajo de Puerto Montt",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 15:02:00"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:28826ff3172972f409d2846f52b4bc4812154fd6af39f20b3e96ef69e96d8346",
+        "cached_at": "2026-06-10T15:02:01.796183"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Audiencia Preparatoria",
+            "fechaIngreso": "04-03-2026 21:00:00",
+            "litigantes": [
+              {
+                "rut": "15692042-8",
+                "nombre": "ANA DEL CARMEN ROJAS SANDOVAL",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "15840896-1",
+                "nombre": "CLAUDIA MARDESIC GONZÁLEZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76219503-8",
+                "nombre": "INVERSIONES Y RENTAS ANTOFAGASTA II S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76376661-6",
+                "nombre": "INVERSIONES ANTOFAGASTA SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76704109-8",
+                "nombre": "RENTAS COPÉRNICO SPA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96866370-4",
+                "nombre": "BMI S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76112019-0",
+                "nombre": "INVERSIONES BANMERCHANT S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "96826570-9",
+                "nombre": "INVERSIONES BMC S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              },
+              {
+                "rut": "76170072-3",
+                "nombre": "SERVICIOS EDUCACIONALES SAN JOSE LTDA",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": null
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-348-2026",
+            "tribunal": "Juzgado de Letras del Trabajo de Antofagasta",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 15:02:00"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ba4ccb2fbd97f4bdd70985622f4e52e1bf032334819113cec3e9d7c1e627942d",
+        "cached_at": "2026-06-10T15:02:02.135075"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:02:00"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:cfe537fa2a8c54962523d4c9ddfa8154ca2a5e49f3c659597898a628e448751d",
+        "cached_at": "2026-06-10T15:02:02.458890"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:02:00"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:c1bf532fb4931b4064babeb2481a8d329e24bc8f59f157db974eb9390c19c5eb",
+        "cached_at": "2026-06-10T15:02:02.789759"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76170072-3",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "PARTICIPACIONES IBSA S.A",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "PARTICIPACIONES IBSA S.A",
+            "rutSociedad": "76170072-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2011-09-19",
+            "socios": [
+              {
+                "nombre": "FRANCISCO WALKER PRIETO Y COMPAÑÍA LIMITADA",
+                "rut": "76020850-7",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, OF. 121, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ASESORÍAS E INVERSIONES W Y M LIMITADA",
+                "rut": "78799940-9",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3250, PISO 5, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "AVENIDA ISIDORA GOYENECHEA N° 3250, PISO 5, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES FUTURO SPA",
+                "rut": "76254441-5",
+                "domicilio": "LUIS PASTEUR 7529, DEPARTAMENTO A 21, AMBOS COMUNA DE VITACURA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "45.34"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-01-07",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/01/07/43146/05/2068454.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2021-01-04",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/04/42845/05/1875230.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2011-09-20",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2011/09/20/397053_C_SA_20110920_firmado.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "BANMERCHANT CAPITAL S A",
+                "rut": "96979350-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "BMI SERVICIOS INMOBILIARIOS S.A.",
+                "rut": "76410463-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CONSTRUCTORA MORANDE S.A.",
+                "rut": "76272263-1",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "COQUIMBO COSTANERA SPA",
+                "rut": "77050669-7",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "COSTANERA CONCON SPA",
+                "rut": "76797747-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA BOLDOS DE CURICO DOS S.A",
+                "rut": "76178945-7",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA CANDELARIA SPA",
+                "rut": "76560852-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA EL TRANQUE SPA",
+                "rut": "76545352-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA MONTECASINO SPA",
+                "rut": "77101814-9",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA PAPUDO F-30 SPA",
+                "rut": "76850076-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA PLAZA LOS DOMINICOS S.A",
+                "rut": "76491456-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA SAN MIGUEL SPA",
+                "rut": "76487643-1",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INMOBILIARIA Y CONSTRUCTORA PLAZA LOS DOMINICOS S.A.",
+                "rut": "76166135-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INVERSIONES Y RENTAS PARQUE QUILICURA S.A.",
+                "rut": "76243495-4",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MEDIOS IMPRESOS SPA",
+                "rut": "76556117-5",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MINERA SIERRA DE TUINA S.A.",
+                "rut": "76785600-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MIRAOLAS PENUELAS II SPA",
+                "rut": "77916043-2",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "MIRAOLAS PEÑUELAS SPA",
+                "rut": "77708627-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "NORPRINT SPA",
+                "rut": "76818015-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "NPART SPA",
+                "rut": "77050712-K",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PAPUDO NORTE S.A.",
+                "rut": "76126007-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PARQUE RESIDENCIAL TRINARES SPA",
+                "rut": "77791066-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PARTICIPACIONES ANTOFAGASTA S.A",
+                "rut": "76203545-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PARTICIPACIONES BMC S A",
+                "rut": "96660880-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "PASTENE SPA",
+                "rut": "77102147-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "RENTAS COPERNICO SPA",
+                "rut": "76704109-8",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "SERVICIOS FINANCIEROS IYRU S. A.",
+                "rut": "76832166-3",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "VALLES UNIDOS SPA",
+                "rut": "76105276-4",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:fbb46b0bff3ebb2565401d71b9687910a433ac4c2fa5fff75c905a2ae7ad5552",
+      "cached_at": "2026-06-10T15:02:03.390895"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76170072-3",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "12-09-2014 21:00:00",
+            "razonSocial": "INVERSIONES Y DESARROLLOS INMOBILIARIOS PLAYA BLANCA S.A.",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/09/13/818124_C_SA_20140913_firmado.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "domicilio": "CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "GRUPO DIGITAL S.A.",
+                "rut": "77895390-0",
+                "domicilio": "EL ROSAL 4547, COMUNA DE HUECHURABA, SANTIAGO"
+              },
+              {
+                "nombre": "SERGIO JUNEMANN DOBRONIC",
+                "rut": "7095474-5",
+                "domicilio": "SERRANO N 389, OF. 1001, IQUIQUE"
+              },
+              {
+                "nombre": "SALVATORE LIOI ESPINOSA",
+                "rut": "8586617-6",
+                "domicilio": "WALTER MULLER N 6134, COMUNA DE VITACURA, SANTIAGO"
+              }
+            ],
+            "rut": "76410463-3"
+          },
+          {
+            "fecha": "12-08-2015 21:00:00",
+            "razonSocial": "INMOBILIARIA Y CONSTRUCTORA PLAZA LOS DOMINICOS S.A.",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2015/08/13/933968_M_SA_20150813_firmada.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "INVERSIONES LOS BOLDOS LIMITADA",
+                "rut": "76758991-3",
+                "domicilio": "CALLE BENJAMÍN 2944, OFICINA 81, COMUNA DE LAS CONDES, CIUDAD SANTIAGO"
+              },
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "domicilio": "CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "AGRÍCOLA Y COMERCIAL SANTA INÉS LIMITADA",
+                "rut": "96396000-K",
+                "domicilio": "AVENIDA LAS CONDES N 13.305, LAS CONDES"
+              },
+              {
+                "nombre": "INVERSIONES LAGO RANCO LIMITADA",
+                "rut": "76082714-2",
+                "domicilio": "AV. LAS CONDES 11.400, PISO 10, COMUNA VITACURA, DE SANTIAGO"
+              },
+              {
+                "nombre": "INVERSIONES GM LIMITADA",
+                "rut": "76140988-3",
+                "domicilio": "CASA B DE CAMINO HUINGANAL N 2263, LO BARNECHEA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "12-12-2017 21:00:00",
+            "razonSocial": "NORPRINT SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2017/12/13/41931/05/1318642.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "domicilio": "CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "03-01-2021 21:00:00",
+            "razonSocial": "PARTICIPACIONES IBSA S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2021/01/04/42845/05/1875230.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A.",
+                "rut": null,
+                "domicilio": "AV. ALONSO DE CÓRDOVA NÚMERO DOS MIL OCHOCIENTOS SESENTA, PISO DOS, COMUNA DE VITACURA"
+              },
+              {
+                "nombre": "PARTIBSADOS S.A.",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76170072-3"
+          },
+          {
+            "fecha": "06-01-2022 21:00:00",
+            "razonSocial": "PARTICIPACIONES IBSA S.A.",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/01/07/43146/05/2068454.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "INVERSIONES BMC S.A",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76170072-3"
+          },
+          {
+            "fecha": "30-06-2023 20:00:00",
+            "razonSocial": "PARQUE RESIDENCIAL TRINARES SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/07/01/43590/05/2338086.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "domicilio": "CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "EBCO INMOBILIARIO SPA",
+                "rut": "77105019-0",
+                "domicilio": "AVENIDA SANTA MARÍA N 2450, TERCER PISO, COMUNA DE PROVIDENCIA"
+              },
+              {
+                "nombre": "EL CHAMISERO INMOBILIARIA S.A.",
+                "rut": "94138000-K",
+                "domicilio": "AV. APOQUINDO 3.076, OFICINA 501, LAS CONDES, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "12-10-2023 21:00:00",
+            "razonSocial": "RENTAS COPÉRNICO SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/10/13/43675/05/2389956.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "domicilio": "CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "16-02-2024 21:00:00",
+            "razonSocial": "KÜLLAY SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2024/02/17/43779/05/2455655.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PARTICIPACIONES IBSA S.A",
+                "rut": "76170072-3",
+                "domicilio": "CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "EL CHAMISERO INMOBILIARIA S.A.",
+                "rut": "94138000-K",
+                "domicilio": "AV. APOQUINDO 3.076, OFICINA 501, LAS CONDES, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": "076560852K",
+            "society": "INMOBILIARIA CANDELARIA SPA"
+          },
+          {
+            "rut": "0767856008",
+            "society": "MINERA SIERRA DE TUINA SA"
+          },
+          {
+            "rut": "0764876431",
+            "society": "INMOBILIARIA SAN MIGUEL SPA"
+          },
+          {
+            "rut": "0767977476",
+            "society": "COSTANERA CONCON SPA"
+          },
+          {
+            "rut": "0777910663",
+            "society": "PARQUE RESIDENCIAL TRINARES SPA"
+          },
+          {
+            "rut": "0765627265",
+            "society": "INVERALTO SA"
+          },
+          {
+            "rut": "0764399692",
+            "society": "INVERLAGU SPA"
+          },
+          {
+            "rut": "077050712K",
+            "society": "NPART SPA"
+          },
+          {
+            "rut": "0763751945",
+            "society": "INMOBILIARIA RMP SA"
+          },
+          {
+            "rut": "0770506697",
+            "society": "COQUIMBO COSTANERA SPA"
+          },
+          {
+            "rut": "0779160432",
+            "society": "MIRAOLAS PENUELAS II SPA"
+          },
+          {
+            "rut": "0768500762",
+            "society": "INMOBILIARIA PAPUDO F30 SPA"
+          },
+          {
+            "rut": "0761052764",
+            "society": "VALLES UNIDOS SPA"
+          },
+          {
+            "rut": "0765453526",
+            "society": "INMOBILIARIA EL TRANQUE SPA"
+          },
+          {
+            "rut": "0771021476",
+            "society": "PASTENE SPA"
+          },
+          {
+            "rut": "0762722631",
+            "society": "CONSTRUCTORA MORANDE SA"
+          },
+          {
+            "rut": "0777086278",
+            "society": "MIRAOLAS PENUELAS SPA"
+          },
+          {
+            "rut": "0762035456",
+            "society": "PARTICIPACIONES ANTOFAGASTA SA"
+          },
+          {
+            "rut": "0768180156",
+            "society": "NORPRINT SPA"
+          },
+          {
+            "rut": "0767041098",
+            "society": "RENTAS COPERNICO SPA"
+          },
+          {
+            "rut": "0771018149",
+            "society": "INMOBILIARIA MONTECASINO SPA"
+          },
+          {
+            "rut": "0762434954",
+            "society": "INVERSIONES Y RENTAS PARQUE QUILICURA SA"
+          },
+          {
+            "rut": "0761260073",
+            "society": "PAPUDO NORTE SA"
+          },
+          {
+            "rut": "0768321663",
+            "society": "SERVICIOS FINANCIEROS IYRU S A"
+          },
+          {
+            "rut": "76410463-3",
+            "sociedad": "INVERSIONES Y DESARROLLOS INMOBILIARIOS PLAYA BLANCA S.A."
+          },
+          {
+            "rut": null,
+            "sociedad": "INMOBILIARIA Y CONSTRUCTORA PLAZA LOS DOMINICOS S.A."
+          },
+          {
+            "rut": "76170072-3",
+            "sociedad": "PARTICIPACIONES IBSA S.A."
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:51d482be93eb8c7d3dc03ff9712b207c368379cc1e621c9ae41a5db712f8f439",
+        "cached_at": "2026-06-10T15:02:03.717056"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 1003750,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 50,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 2,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 50,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 350,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:48097faf39c11b4390b033fab28f7f7b26c4d95f443ec8e99dbfa84f6312a1ec",
+      "cached_at": "2026-06-10T15:02:04.289093"
+    }
+  }
+}

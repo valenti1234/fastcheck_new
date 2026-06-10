@@ -1,0 +1,699 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "99508420-1"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "99508420-1",
+      "esPersonaJuridica": true,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "DUAL S A",
+        "presentaActividades": "SI",
+        "inicioActividades": "27-12-2002",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+            "codigo": "643000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-12-2002"
+          },
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "27-12-2002"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2025"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 1,
+        "ultimaActualizacion": "10-06-2026 15:06:25",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "0,01 a 200,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "10-06-2026 15:06:24",
+        "ultimaActualizacionCobranza": "10-06-2026 15:06:24",
+        "ultimaActualizacionLaboral": "10-06-2026 15:06:24",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 15:06:24"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {},
+      "legalSummary": [
+        {
+          "nombre": "DUAL S A",
+          "rut": "99508420-1",
+          "fecha": "2002-12-20",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 0,
+          "actividad": "FONDOS Y SOCIEDADES DE INVERSION Y ENTIDADES FINANCIERAS SIMILARES",
+          "comuna": "VITACURA",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "NPART SPA",
+              "rut": "77050712-K",
+              "domicilio": "AVDA ALONSO DE CORDOVA 2860, Depto 204, Bloque OFIC, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "70"
+            },
+            {
+              "nombre": "FRANCISCO WALKER PRIETO Y COMPANIA LIMITADA",
+              "rut": "76020850-7",
+              "domicilio": "AV PROVIDENCIA 1650, Depto 905, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "15"
+            },
+            {
+              "nombre": "INVERSIONES Y ASESORIAS LIMITADA",
+              "rut": "96872680-3",
+              "domicilio": "ARQUITECTO SULLIVAN 5949, Depto, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "15"
+            },
+            {
+              "nombre": "SOC DE INVERSIONES MB LIMITADA",
+              "rut": "77857520-5",
+              "domicilio": "EL GOLF 342, Depto, Bloque, ZAPALLAR, V REGION VALPARAISO",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES VALFER LTDA",
+              "rut": "78343190-4",
+              "domicilio": "MARCHANT PEREIRA 221, Depto 12, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES W Y M LIMITADA",
+              "rut": "78799940-9",
+              "domicilio": "MARCHANT PEREIRA 221, Depto P.12, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "PALMA Y COMPANIA LIMITADA",
+              "rut": "79785420-4",
+              "domicilio": "PADRE TED HUARD 4299, Depto 32, Bloque EDI 4, LO BARNECHEA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "RICARDO ROZZI Y CIA LTDA",
+              "rut": "88145400-9",
+              "domicilio": "LA NINA 3090, Depto 24, Bloque, LAS CONDES, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "INVERSIONES Y ASESORIAS LA LAGUNA SA",
+              "rut": "96597360-5",
+              "domicilio": "GINO GIRARDI 2224, Depto, Bloque, LO BARNECHEA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES CAMINO     COLONIAL  S.A.",
+              "rut": "96666330-8",
+              "domicilio": "M. PEREIRA 221, Depto P12, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "BANMERCHANT S A",
+              "rut": "96696590-8",
+              "domicilio": "AVDA. ALONSO DE CORDOVA 2860, Depto 205, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "INVERSIONES BMC S A",
+              "rut": "96826570-9",
+              "domicilio": "AVDA. ALONSO DE CORDOVA 2860, Depto 204, Bloque, VITACURA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            },
+            {
+              "nombre": "ASESORIAS E INVERSIONES W Y U  S A",
+              "rut": "96845290-8",
+              "domicilio": "MARCHANT PEREIRA 221, Depto P-12, Bloque, PROVIDENCIA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            }
+          ],
+          "participaciones": [
+            {
+              "razonSocial": "NUEVA SUPERMERCADOS SAN FRANCISCO BUIN S.A.",
+              "rut": "76076928-2",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "100",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2009-08-03"
+            },
+            {
+              "razonSocial": "INMOBILIARIA BAHIA LEONES S A",
+              "rut": "99506760-9",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "25",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2002-10-31"
+            },
+            {
+              "razonSocial": "INMOBILIARIA BMC S A",
+              "rut": "96851560-8",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "TERMINADA",
+              "fechaConstitucion": "1998-01-05"
+            },
+            {
+              "razonSocial": "INMOBILIARIA BAHIA LEONES TRES S A",
+              "rut": "99590900-6",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2005-04-06"
+            }
+          ],
+          "extractos": [
+            {
+              "id": 4346921,
+              "fecha": "2002-12-20",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": null,
+              "cve": null,
+              "tieneExtracto": true
+            }
+          ]
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "DUAL S A",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:4a039fadd16ad071582b3f3e386fea871186686949d3b194821d0ff4cb0ccaac",
+      "cached_at": "2026-06-10T15:06:26.336167"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:06:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:85662c851bb54147b65e70243be34173b894539fa9a8d74178e42e2a0f163c74",
+        "cached_at": "2026-06-10T15:06:26.657537"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:06:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:370c75959277476df9a8725e03d07de9fda1e87f3af20ef26e25359931733c9b",
+        "cached_at": "2026-06-10T15:06:26.980453"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:06:25"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3be123f3b1c5f19efbe45e7568c4815c38beda8a32ffa5620218414253dce119",
+        "cached_at": "2026-06-10T15:06:27.298730"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:06:24"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:349774761b8c23f42c2bd75dca05a5cf83c19c87125d3584cd685ad27691dd18",
+        "cached_at": "2026-06-10T15:06:27.619437"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 15:06:24"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ef1cccc25bded8c58dabdac70cc44775f9e9bd48b4ca150183448f163b8ef5aa",
+        "cached_at": "2026-06-10T15:06:27.940138"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "99508420-1",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "DUAL S A",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "DUAL S A",
+            "rutSociedad": "99508420-1",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2002-12-19",
+            "socios": [
+              {
+                "nombre": "FRANCISCO WALKER PRIETO Y COMPAÑÍA LIMITADA",
+                "rut": "76020850-7",
+                "domicilio": "MARCHANT PEREIRA 221, PISO 12, OF. 121, PROVIDENCIA, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "NPART SPA",
+                "rut": "77050712-K",
+                "domicilio": "AVENIDA ALONSO DE CÓRDOVA NÚMERO 2.860, OFICINA 204, COMUNA DE VITACURA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": "96826570-9",
+                "domicilio": "ISIDORA GOYENECHEA 3250, PISO 5, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES Y ASESORÍAS S.A.",
+                "rut": "96872680-3",
+                "domicilio": "AVENIDA ISIDORA GOYENECHEA N° 3250, PISO 5, LAS CONDES",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "INVERSIONES BMC S.A.",
+                "rut": null,
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "BANMERCHANT S.A.",
+                "rut": null,
+                "domicilio": "ISIDORA GOYENECHEA 3250, PISO 5, LAS CONDES, SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [],
+            "participaciones": [
+              {
+                "razonSocial": "INMOBILIARIA BAHIA LEONES S A",
+                "rut": "99506760-9",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b9fe18e9a4b8ad5fdbbceb626daf683aacad443d305c0ee230e3ff630e4f319d",
+      "cached_at": "2026-06-10T15:06:28.518207"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "99508420-1",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:dcdc6c84260969c3d6626262b1d8d7cea4c59c5d0ac873e965b1f54fb3f58e0f",
+        "cached_at": "2026-06-10T15:06:28.842457"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:688895f7b451bfe87807dbb0723bfbdeb9712eea2509b3d5ec6805062854b656",
+      "cached_at": "2026-06-10T15:06:29.408113"
+    }
+  }
+}

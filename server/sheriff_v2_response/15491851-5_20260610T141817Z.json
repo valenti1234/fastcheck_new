@@ -1,0 +1,1913 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "15491851-5"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "15491851-5",
+      "esPersonaJuridica": false,
+      "fechaCarga": "10-06-2026",
+      "identificacion": {
+        "razonSocial": "PAULO CRISTIAN SANDOVAL ESPARZA",
+        "presentaActividades": "SI",
+        "inicioActividades": "14-04-2009",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "15-02-2016"
+          },
+          {
+            "actividades": "SERVICIOS PROFESIONALES DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULT",
+            "codigo": "711003",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "04-11-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2018"
+          },
+          {
+            "documento": "Boletas De Honorarios Electronicas",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2020"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 4,
+        "ultimaActualizacion": "10-06-2026 14:18:09",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "10-06-2026 14:18:09"
+      },
+      "judicial": {
+        "casosCivilesActivos": 2,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 3,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 2,
+        "casosArchivados": 0,
+        "casosConcluidos": 3,
+        "todosLosCasos": 5,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1,
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "10-06-2026 14:18:08",
+        "ultimaActualizacionCobranza": "10-06-2026 14:18:07",
+        "ultimaActualizacionLaboral": "10-06-2026 14:18:07",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "10-06-2026 14:18:09"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "14-12-2014 21:00:00",
+              "razonSocial": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+                },
+                {
+                  "socio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA Nº 198"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "06-03-2018 21:00:00",
+              "razonSocial": "CONSTRUCTORA E INGENIERÍA INGESEP LIMITADA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/03/07/42001/05/1362673.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+                }
+              ],
+              "rut": "76030744-0"
+            },
+            {
+              "fecha": "14-05-2023 20:00:00",
+              "razonSocial": "CONSTRUCTORA E INVERSIONES EL CARMEN SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/05/15/43551/05/2314641.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "ALEXIS CAMILO GUILLERMO GARRIDO GALLARDO",
+                  "rut": "15567108-4",
+                  "domicilio": "PASAJE 46 ½ ORIENTE N 328, HACIENDA LAS RASTRAS, COMUNA Y PROVINCIA DE TALCA"
+                },
+                {
+                  "socio": "LESLIE PAMELA BELTRÁN AGUILERA",
+                  "rut": "16263704-5",
+                  "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+                },
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "10-06-2026 14:18:08"
+        },
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CHACABUCO N°831 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": null,
+                  "monto": "$300.000.000 DE PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CHACABUCO N°831 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": null,
+                  "monto": "$300.000.000 DE PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CHACABUCO N°831 COMUNA DE CURICO REGION DEL MAULE"
+                },
+                {
+                  "administrador": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CHACABUCO N°831 COMUNA DE CURICO REGION DEL MAULE"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "CONSTRUCTORA E INGENIERIA MARPA SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CARMEN N°459 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": "50",
+                  "monto": "$7.500.000 PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CARMEN N°459 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": "50",
+                  "monto": "$7.500.000 PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CARMEN N°459 COMUNA DE CURICO REGION DEL MAULE"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "SOCIEDAD POR ACCIONES MP INGENIERIA Y CONSTRUCCION SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CHACABUCO N°562 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": "5",
+                  "monto": "$500.000 CLP",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CHACABUCO N°838 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": "5",
+                  "monto": "$500.000 CLP",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CHACABUCO N°562 COMUNA DE CURICO REGION DEL MAULE"
+                },
+                {
+                  "administrador": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CHACABUCO N°838 COMUNA DE CURICO REGION DEL MAULE"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "CONSTRUCTORA E INVERSIONES EL",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "LESLIE PAMELA BELTRAN AGUILERA",
+                  "rut": "16263704-5",
+                  "domicilio": null,
+                  "acciones": 160,
+                  "monto": 1600000,
+                  "porcentaje": 40
+                },
+                {
+                  "socio": "ALEXIS CAMILO GUILLERMO GARRIDO GALLARDO",
+                  "rut": "15567108-4",
+                  "domicilio": null,
+                  "acciones": 160,
+                  "monto": 1600000,
+                  "porcentaje": 40
+                },
+                {
+                  "socio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": null,
+                  "acciones": 40,
+                  "monto": 400000,
+                  "porcentaje": 10
+                },
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": null,
+                  "acciones": 40,
+                  "monto": 400000,
+                  "porcentaje": 10
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": null,
+                  "rut": "15567108-4",
+                  "domicilio": null
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "INVERSIONES SANDOVAL SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CHACABUCO N°562 COMUNA DE CURICO REGION DEL MAULE",
+                  "acciones": 10,
+                  "monto": 1000000,
+                  "porcentaje": 100
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": null,
+                  "rut": "15491851-5",
+                  "domicilio": "CHACABUCO N°562 COMUNA DE CURICO REGION DEL MAULE"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 20640,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 142010,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 178600,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 1044010,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 93900,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 24160,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 144330,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 182600,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 1417050,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 94700
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 2,
+          "tasacionTotal": 18965158,
+          "ultimaActualizacion": "10-06-2026 14:18:09"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 5,
+          "tasacionTotal": "242964381",
+          "ultimaActualizacion": "10-06-2026 14:18:09"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 75,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 375,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "PAULO",
+        "segundoNombre": "CRISTIAN",
+        "apellido": "SANDOVAL",
+        "segundoApellido": "ESPARZA",
+        "tipoPersona": "natural",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 5,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        null
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:2d2b86c234822174165228994e63e389ccfdad0d6bff2363d835fdb9582e9aa5",
+      "cached_at": "2026-06-10T14:18:12.951754"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada",
+            "fechaIngreso": "30-05-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10715855-3",
+                "nombre": "JUAN PABLO RIVEROS VILLASECA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10258881-9",
+                "nombre": "ELIZABETH CONSUELO JARA MORALES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "5913933-9",
+                "nombre": "FERNANDO HASBÚN NAZAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8811257-1",
+                "nombre": "MARTA MARCELA PARADA BESSERER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7446442-4",
+                "nombre": "OSCAR IVÁN MOYA RETAMAL",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14019383-6",
+                "nombre": "MARÍA VICTORIA MOYA ESPINOZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16002984-6",
+                "nombre": "ALEJANDRA MOYA ESPINOZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19160645-0",
+                "nombre": "VALENTINA ALEXANDRA BUGUEÑO BONILLA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13611274-0",
+                "nombre": "NARCISO ANDRÉS JIMÉNEZ MORENO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15491851-5",
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14428435-6",
+                "nombre": "DANIEL ALEJANDRO OCAMPO RUBIO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16002461-5",
+                "nombre": "KAROL FABIOLA GAJARDO MARTÍNEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15139791-3",
+                "nombre": "LORETO IVONE GAJARDO MORAGA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "78739380-2",
+                "nombre": "AGRICOLA EL ENCANTO LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11723290-5",
+                "nombre": "LUIS OMAR BUGUEÑO PÁEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16594808-4",
+                "nombre": "FRANCISCO ALEJANDRO COFRÉ ARAVENA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12575264-0",
+                "nombre": "MIGUEL ANGEL CAMPOS ÁLVAREZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14571958-5",
+                "nombre": "VÍCTOR HUGO VALENZUELA RIQUELME",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12082484-8",
+                "nombre": "JOSÉ LUIS CARRASCO MUÑOZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-358-2022",
+            "tribunal": "Juzgado de Letras de Yungay",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "02-12-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10715855-3",
+                "nombre": "JUAN PABLO RIVEROS VILLASECA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10258881-9",
+                "nombre": "ELIZABETH CONSUELO JARA MORALES",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "5913933-9",
+                "nombre": "FERNANDO HASBÚN NAZAR",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8811257-1",
+                "nombre": "MARTA MARCELA PARADA BESSERER",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "7446442-4",
+                "nombre": "OSCAR IVÁN MOYA RETAMAL",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14019383-6",
+                "nombre": "MARÍA VICTORIA MOYA ESPINOZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16002984-6",
+                "nombre": "ALEJANDRA MOYA ESPINOZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "19160645-0",
+                "nombre": "VALENTINA ALEXANDRA BUGUEÑO BONILLA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13611274-0",
+                "nombre": "NARCISO ANDRÉS JIMÉNEZ MORENO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15491851-5",
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14428435-6",
+                "nombre": "DANIEL ALEJANDRO OCAMPO RUBIO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16002461-5",
+                "nombre": "KAROL FABIOLA GAJARDO MARTÍNEZ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15139791-3",
+                "nombre": "LORETO IVONE GAJARDO MORAGA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "78739380-2",
+                "nombre": "AGRICOLA EL ENCANTO LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "11723290-5",
+                "nombre": "LUIS OMAR BUGUEÑO PÁEZ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16594808-4",
+                "nombre": "FRANCISCO ALEJANDRO COFRÉ ARAVENA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12575264-0",
+                "nombre": "MIGUEL ANGEL CAMPOS ÁLVAREZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14571958-5",
+                "nombre": "VÍCTOR HUGO VALENZUELA RIQUELME",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12082484-8",
+                "nombre": "JOSÉ LUIS CARRASCO MUÑOZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-1759-2021",
+            "tribunal": "1º Juzgado Civil de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "22-06-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "7446442-4",
+                "nombre": "OSCAR IVÁN MOYA RETAMAL",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14019383-6",
+                "nombre": "MARÍA VICTORIA MOYA ESPINOZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16002984-6",
+                "nombre": "ALEJANDRA MOYA ESPINOZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "19160645-0",
+                "nombre": "VALENTINA ALEXANDRA BUGUEÑO BONILLA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13611274-0",
+                "nombre": "NARCISO ANDRÉS JIMÉNEZ MORENO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15491851-5",
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14428435-6",
+                "nombre": "DANIEL ALEJANDRO OCAMPO RUBIO",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16002461-5",
+                "nombre": "KAROL FABIOLA GAJARDO MARTÍNEZ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15139791-3",
+                "nombre": "LORETO IVONE GAJARDO MORAGA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "78739380-2",
+                "nombre": "AGRICOLA EL ENCANTO LIMITADA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "11723290-5",
+                "nombre": "LUIS OMAR BUGUEÑO PÁEZ",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16594808-4",
+                "nombre": "FRANCISCO ALEJANDRO COFRÉ ARAVENA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12575264-0",
+                "nombre": "MIGUEL ANGEL CAMPOS ÁLVAREZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "14571958-5",
+                "nombre": "VÍCTOR HUGO VALENZUELA RIQUELME",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12082484-8",
+                "nombre": "JOSÉ LUIS CARRASCO MUÑOZ",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "10715855-3",
+                "nombre": "JUAN PABLO RIVEROS VILLASECA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10258881-9",
+                "nombre": "ELIZABETH CONSUELO JARA MORALES",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "5913933-9",
+                "nombre": "FERNANDO HASBÚN NAZAR",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8811257-1",
+                "nombre": "MARTA MARCELA PARADA BESSERER",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-933-2021",
+            "tribunal": "2º Juzgado Civil de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "2 Aud.Contes.y Concil./Recib. a prueba",
+            "fechaIngreso": "11-02-2021 21:00:00",
+            "litigantes": [
+              {
+                "rut": "10715855-3",
+                "nombre": "JUAN PABLO RIVEROS VILLASECA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10258881-9",
+                "nombre": "ELIZABETH CONSUELO JARA MORALES",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "8811257-1",
+                "nombre": "MARTA MARCELA PARADA BESSERER (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7446442-4",
+                "nombre": "OSCAR IVÁN MOYA RETAMAL",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14019383-6",
+                "nombre": "MARÍA VICTORIA MOYA ESPINOZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16002984-6",
+                "nombre": "ALEJANDRA MOYA ESPINOZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13611274-0",
+                "nombre": "NARCISO ANDRÉS JIMÉNEZ MORENO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15491851-5",
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14428435-6",
+                "nombre": "DANIEL ALEJANDRO OCAMPO RUBIO",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16002461-5",
+                "nombre": "KAROL FABIOLA GAJARDO MARTÍNEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15139791-3",
+                "nombre": "LORETO IVONE GAJARDO MORAGA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "78739380-2",
+                "nombre": "AGRICOLA EL ENCANTO LIMITADA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "11723290-5",
+                "nombre": "LUIS OMAR BUGUEÑO PÁEZ",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16594808-4",
+                "nombre": "FRANCISCO ALEJANDRO COFRÉ ARAVENA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12575264-0",
+                "nombre": "MIGUEL ANGEL CAMPOS ÁLVAREZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17171048-0",
+                "nombre": "CRISTINA ELIZABETH ARÉVALO JARA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14571958-5",
+                "nombre": "VÍCTOR HUGO VALENZUELA RIQUELME (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12082484-8",
+                "nombre": "JOSÉ LUIS CARRASCO MUÑOZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17900922-6",
+                "nombre": "CONSTANZA BELÉN ALARCÓN CHAMBLES (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-327-2021",
+            "tribunal": "4º Juzgado de Letras de Talca",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "4 Sentencia ",
+            "fechaIngreso": "30-11-2016 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13130123-5",
+                "nombre": "CLAUDIO ALEJANDRO RODRÍGUEZ GUTIÉRREZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13598636-4",
+                "nombre": "JUAN ELÍAS BAEZA ESPINA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15133744-9",
+                "nombre": "LOREDANA FRANCISCA ALVARADO BARROS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15906695-9",
+                "nombre": "ANA ROSA ARAVENA TORRES",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15137964-8",
+                "nombre": "MAURICIO ESTEBAN ARRIAGADA GUERRERO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16727092-1",
+                "nombre": "CARLA CAROLINA ARAVENA VALENZUELA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "7391638-0",
+                "nombre": "JUAN MANUEL MORA ARÉVALO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14361858-7",
+                "nombre": "JAVIER IVÁN MADRID BRAVO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16316861-8",
+                "nombre": "DIEGO ARMANDO PAREDES JARA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "9906807-8",
+                "nombre": "CARLOS ERIC VALENZUELA PEÑA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14016080-6",
+                "nombre": "CÉSAR MANUEL ACEVEDO HENRÍQUEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12695618-5",
+                "nombre": "JOSÉ HORACIO OCAMPO AZÓCAR",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14018088-2",
+                "nombre": "ISABEL MARGARITA CAMPANO VÁSQUEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16999186-3",
+                "nombre": "JORGE ALEXIS ARAVENA VALENZUELA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "11437973-5",
+                "nombre": "MARIO RODRIGO ROJAS HERNÁNDEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15136780-1",
+                "nombre": "XIMENA DEL PILAR CARRILLO GÓMEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15135606-0",
+                "nombre": "DANIEL HUMBERTO ALBORNOZ SALINAS",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13831145-7",
+                "nombre": "LUIS ALBERTO ALCOTA ZÚÑIGA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15130564-4",
+                "nombre": "PAULA ANDREA LIZANA ORTIZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12588591-8",
+                "nombre": "MANUEL ANTONIO SALINAS CORDERO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15135112-3",
+                "nombre": "HERNÁN FRANCISCO MUÑOZ IBÁÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12498724-5",
+                "nombre": "LUIS ARSENIO SALAZAR SANDOVAL",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13355027-5",
+                "nombre": "VIVIANA MAGDALENA UGARTE PONCE",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "6250227-4",
+                "nombre": "JOSÉ LUIS BAEZA NÚÑEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13699290-2",
+                "nombre": "MARCELO EDUARDO AQUIN TOLOZA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13743835-6",
+                "nombre": "CRISTIAN ALEJANDRO CARRASCO MORA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "5627922-9",
+                "nombre": "VANYA PATRICIA IRENE MUÑOZ ALVIAL",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "13857735-k",
+                "nombre": "CRISTINA MACARENA ARAVENA MUÑOZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15491851-5",
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10332217-0",
+                "nombre": "MÓNICA MARISOL CARES TAPIA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "10991413-4",
+                "nombre": "PABLO CÉSAR ARRIAGADA ALBORNOZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16335264-8",
+                "nombre": "NATALIA ANDREA GONZÁLEZ GONZÁLEZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16294579-3",
+                "nombre": "CAROLINA ANDREA CASTRO CHEAUSU",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "14290178-1",
+                "nombre": "RICARDO ENRIQUE PINTO VERGARA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16298285-0",
+                "nombre": "ELIZABETH CAROLINE ULLOA SOTO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "8572814-8",
+                "nombre": "LINA DEL PILAR PINO MUÑOZ",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "16337325-4",
+                "nombre": "DANIELA CAROLINA RAMÍREZ SCHWENCKE",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "6029633-2",
+                "nombre": "HÉCTOR RAMÓN CORNEJO SILVA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15138578-8",
+                "nombre": "JEANNETTE DEL PILAR RODRÍGUEZ GAJARDO",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15128193-1",
+                "nombre": "PEDRO ALEJANDRO VIDAL RAMÍREZ",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76173243-9",
+                "nombre": "Inmobiliaria Independencia S.a.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "12418464-9",
+                "nombre": "CRISTIAN MANUEL ZAMORANO SANTANDER",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "6187285-K",
+                "nombre": "GUILLERMO JOSI MONSALVE MERCADAL",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "12106457-K",
+                "nombre": "JORGE ALBERTO WILSON OLAVARRMA",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              },
+              {
+                "rut": "17107789-3",
+                "nombre": "JULIO ANTONIO LEMAITRE TORRES",
+                "sujeto": "AB.DDO",
+                "persona": "N"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-3052-2016",
+            "tribunal": "1º Juzgado de Letras de Talca",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "10-06-2026 14:18:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:aee300fa9f2e7b916e984126a1c361a0bbd57342e230b3be9ec40bc7032a1a24",
+        "cached_at": "2026-06-10T14:18:13.394470"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:18:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:633d992ab9422a6aa671e6e8fe5ec406190a0ec03fe320152e86e0c956ce25d3",
+        "cached_at": "2026-06-10T14:18:14.091850"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:18:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:5db4c4bec9aed2bbef82ccfea0a932bb67f91483840f4a29d1bf5cdb894d0e0f",
+        "cached_at": "2026-06-10T14:18:14.444559"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:18:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:67f688e96606082faee14bffe0c912828feccd643042352291dad286360ac91d",
+        "cached_at": "2026-06-10T14:18:14.770355"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "10-06-2026 14:18:08"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:aacc0b97d0c8de99b3cc6340928f85b331048726214f5c022c3d2528adf62b85",
+        "cached_at": "2026-06-10T14:18:15.091904"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "15491851-5",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+            "rutSociedad": "76030744-0",
+            "nombreSocio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+            "rutSocio": "15491851-5",
+            "fecha": "2008-08-19",
+            "socios": [
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "33.33"
+              },
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+                "rut": "15130521-0",
+                "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-10-07",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3TnJKhLz56&codigo=2B-19-82-A6-D5-19-0D-4C-FC-F1-63-00-6F-BE-FE-25"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-12-18",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACr8FZYJJYu2&codigo=A5-37-90-C2-4B-C5-D5-3F-49-2A-49-04-29-49-37-56"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-02-23",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACHjeyJX31uX&codigo=F9-AE-2D-4F-C8-32-60-3D-4F-C5-30-42-BE-6F-F5-2E"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-08-29",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACrCE1T8hL1L&codigo=9C-49-A4-2A-E8-B1-EF-1D-9C-FE-12-CA-39-62-81-DA"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-07-27",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3feTrJC3CR&codigo=A0-C5-0D-ED-CA-39-E9-9A-BE-DE-FE-FD-89-1C-B2-F0"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-06-13",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACyMb8aXeMqZ&codigo=32-95-E8-84-14-D2-EE-F7-A8-03-C8-F8-AC-78-86-AD"
+              },
+              {
+                "actuacion": "MIGRACIÓN",
+                "fecha": "2018-06-01",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACqMyAUvpv1A&codigo=42-A2-15-8B-5B-85-6B-F1-68-20-B1-59-F3-21-17-52"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-03-07",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/03/07/42001/05/1362673.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2014-12-15",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "CONSTRUCTORA E INGENIERÍA MARPA SPA",
+            "rutSociedad": "76555665-1",
+            "nombreSocio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+            "rutSocio": "15491851-5",
+            "fecha": "2015-10-20",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+                "rut": "15130521-0",
+                "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2015-10-21",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACLMboHhymqa&codigo=7D-E4-65-B6-05-8B-66-82-0B-67-ED-72-B5-97-92-CC"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "MP INGENIERIA Y CONSTRUCCION SPA",
+            "rutSociedad": "77503603-6",
+            "nombreSocio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+            "rutSocio": "15491851-5",
+            "fecha": "2022-01-02",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+                "rut": "15130521-0",
+                "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2022-01-03",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACYimDMqDx8J&codigo=FC-6B-AC-02-2F-1E-0E-26-FF-20-8A-59-A2-E9-02-E4"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "CONSTRUCTORA E INVERSIONES EL CARMEN SPA",
+            "rutSociedad": "77798447-0",
+            "nombreSocio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+            "rutSocio": "15491851-5",
+            "fecha": "2023-05-18",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+                "rut": "15130521-0",
+                "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "MATÍAS IGNACIO RUZ MARTÍNEZ",
+                "rut": "17797066-2",
+                "domicilio": "CALLE MANUEL MONTT N 357, OFICINA N 615, COMUNA Y PROVINCIA DE CURICÓ",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "LUIS EDUARDO CASTRO ORTIZ",
+                "rut": "17529314-0",
+                "domicilio": "CALLE MANUEL MONTT N 357, OFICINA N 615, COMUNA Y PROVINCIA DE CURICÓ",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "ALEXIS CAMILO GUILLERMO GARRIDO GALLARDO",
+                "rut": "15567108-4",
+                "domicilio": "PASAJE 46 ½ ORIENTE N 328, HACIENDA LAS RASTRAS, COMUNA Y PROVINCIA DE TALCA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "40.00"
+              },
+              {
+                "nombre": "LESLIE PAMELA BELTRAN AGUILERA",
+                "rut": "16263704-5",
+                "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MIGRACIÓN",
+                "fecha": "2025-10-08",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACvyb9zz37xZ&codigo=FA-E6-8A-A0-0B-3B-5E-2F-F7-1D-88-8E-93-38-9B-DC"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2023-05-19",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/05/19/43555/05/2315928.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2023-05-15",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/05/15/43551/05/2314641.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "INGESEP SOCIEDAD DE INVERSIONES INMOBILIARIAS LIMITADA",
+            "rutSociedad": "78089099-1",
+            "nombreSocio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+            "rutSocio": "15491851-5",
+            "fecha": "2025-05-14",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+                "rut": "15130521-0",
+                "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2025-05-15",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2025/05/15/44149/05/2646904.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 5
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:8a0bdd3b5fbaf35c401b895564d0dc19753b69deda30c7bf7d64f8b70e1201ea",
+      "cached_at": "2026-06-10T14:18:16.136451"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "15491851-5",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "14-12-2014 21:00:00",
+            "razonSocial": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTIZ",
+                "rut": "15130521-0",
+                "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CALLE 17 NORTE N 3748, COMUNA Y PROVINCIA DE TALCA"
+              },
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA Nº 198"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "06-03-2018 21:00:00",
+            "razonSocial": "CONSTRUCTORA E INGENIERÍA INGESEP LIMITADA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/03/07/42001/05/1362673.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTIZ",
+                "rut": "15130521-0",
+                "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CALLE 17 NORTE N 3748, COMUNA Y PROVINCIA DE TALCA"
+              }
+            ],
+            "rut": "76030744-0"
+          },
+          {
+            "fecha": "14-05-2023 20:00:00",
+            "razonSocial": "CONSTRUCTORA E INVERSIONES EL CARMEN SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/05/15/43551/05/2314641.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "ALEXIS CAMILO GUILLERMO GARRIDO GALLARDO",
+                "rut": "15567108-4",
+                "domicilio": "PASAJE 46 ½ ORIENTE N 328, HACIENDA LAS RASTRAS, COMUNA Y PROVINCIA DE TALCA"
+              },
+              {
+                "nombre": "LESLIE PAMELA BELTRÁN AGUILERA",
+                "rut": "16263704-5",
+                "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+              },
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTIZ",
+                "rut": "15130521-0",
+                "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CALLE 17 NORTE N 3748, COMUNA Y PROVINCIA DE TALCA"
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": null,
+            "sociedad": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA"
+          },
+          {
+            "rut": "76030744-0",
+            "sociedad": "CONSTRUCTORA E INGENIERÍA INGESEP LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3759a58c695653b158fac21a4aae16ca9c5a116e335b280b6f39327140ddea0d",
+        "cached_at": "2026-06-10T14:18:16.460573"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 178600,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 25,
+      "numeradorJudicial": 1,
+      "denominadorJudicial": 4,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 75,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 375,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:0b2f4d7a1b1b3484c14f3ca2aeafd02707bc643bf0940080f833c704ac5a40dd",
+      "cached_at": "2026-06-10T14:18:17.025865"
+    }
+  }
+}
