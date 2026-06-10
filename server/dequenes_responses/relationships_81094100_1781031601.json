@@ -1,0 +1,93 @@
+{
+  "pathCount": 8,
+  "relationships": [
+    {
+      "source": "81094100",
+      "target": "9360639",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-03-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "81094100",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 20,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "6937964",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-08-04",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "76101812",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 20,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "75332200",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 20,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "82524300",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 10,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "84356800",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 20,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "65104082",
+      "target": "82392600",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 10,
+        "source": "SII_REC_COM"
+      }
+    }
+  ],
+  "entityNames": {
+    "6937964": "SERGIO ENGELBERTO NIKLITSCHEK HAUSDORF",
+    "9360639": "LIONEL DINALDO MANCILLA LAUSIC",
+    "65104082": "CORPORACION CONSORCIO LECHERO",
+    "75332200": "FEDERACION GREMIAL NACIONAL DE PRODUCTORES DE LECHE",
+    "76101812": "SOPROLE S.A.",
+    "81094100": "COOP AGRICOLA Y LECHERA DE LA UNION LTDA",
+    "82392600": "COOP AGRICOLA Y DE SERVICIOS LIMITADA",
+    "82524300": "VETERQUIMICA S.A.",
+    "84356800": "WATT'S  S.A."
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:706e7d39bbbe3161c02fc4d66e2bc75219f56003556ba4ece91839ea4bc371a5",
+    "retrieved_at": "2026-06-09T19:00:01.615897"
+  }
+}

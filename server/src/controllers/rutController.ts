@@ -81,6 +81,99 @@ export class RutController {
     }
   }
 
+  private static async syncTenantSpecificListaPropiaData(target: any, tenantId: string, rut: string) {
+    const normalizedRut = RutController.normalizeRut(rut);
+
+    const sociosFromCompanyGeneralInfo = Array.isArray(target?.companyGeneralInfo?.socios)
+      ? target.companyGeneralInfo.socios
+      : [];
+    const sociosFromSheriffLog = Array.isArray(target?.sheriffLogData?.companyGeneralInfo?.socios)
+      ? target.sheriffLogData.companyGeneralInfo.socios
+      : [];
+
+    const sociosFromFilteredDetails = (() => {
+      const coincidencias = target?.sheriffLogData?.filteredDetails?.compliance?.sociedades?.coincidencias;
+      if (!Array.isArray(coincidencias)) return [];
+      const out: any[] = [];
+      for (const c of coincidencias) {
+        if (Array.isArray(c?.socios)) out.push(...c.socios);
+      }
+      return out;
+    })();
+
+    const socioRuts = [...sociosFromCompanyGeneralInfo, ...sociosFromSheriffLog, ...sociosFromFilteredDetails]
+      .map((s: any) => s?.rut)
+      .filter((r: any) => typeof r === 'string' && r.trim().length > 0) as string[];
+
+    const baseRutsToCheck = [rut, ...socioRuts];
+    const rutCandidates = Array.from(
+      new Set(
+        baseRutsToCheck
+          .filter((r) => typeof r === 'string' && r.trim().length > 0)
+          .flatMap((r) => {
+            const nr = RutController.normalizeRut(r);
+            const noDash = nr.replace(/-/g, '');
+            return [nr, noDash];
+          })
+      )
+    ).filter(Boolean);
+
+    const lpaltosCollection = mongoose.connection.db.collection('lpaltos');
+    const lpmediosCollection = mongoose.connection.db.collection('lpmedios');
+
+    const [lpaltosRecords, lpmediosRecords] = await Promise.all([
+      lpaltosCollection.find({
+        rut: { $in: rutCandidates },
+        tenant: tenantId
+      }).toArray(),
+      lpmediosCollection.find({
+        rut: { $in: rutCandidates },
+        tenant: tenantId
+      }).toArray()
+    ]);
+
+    if (!target.sheriffLogData) {
+      target.sheriffLogData = {};
+    }
+    if (!target.sheriffLogData.summaryData) {
+      target.sheriffLogData.summaryData = {};
+    }
+    if (!target.sheriffLogData.summaryData.data) {
+      target.sheriffLogData.summaryData.data = {};
+    }
+
+    const uniqById = (rows: any[]) => {
+      const seen = new Set<string>();
+      const out: any[] = [];
+      for (const row of rows || []) {
+        const key = String(row?._id ?? '');
+        if (!key) {
+          out.push(row);
+          continue;
+        }
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push(row);
+      }
+      return out;
+    };
+
+    const uniqueLpaltos = uniqById(lpaltosRecords);
+    const uniqueLpmedios = uniqById(lpmediosRecords);
+
+    target.sheriffLogData.summaryData.data.lpaltosDetected = uniqueLpaltos.length > 0;
+    target.sheriffLogData.summaryData.data.lpmediosDetected = uniqueLpmedios.length > 0;
+    target.sheriffLogData.summaryData.data.lpaltosRecords = uniqueLpaltos;
+    target.sheriffLogData.summaryData.data.lpmediosRecords = uniqueLpmedios;
+
+    return {
+      normalizedRut,
+      lpaltosRecords: uniqueLpaltos,
+      lpmediosRecords: uniqueLpmedios,
+      rutsChecked: rutCandidates
+    };
+  }
+
   // Normalize and validate date string to ISO format (YYYY-MM-DD)
   static normalizeDate(dateStr: string): string {
     if (!dateStr) {
@@ -310,12 +403,25 @@ export class RutController {
   // Check lpaltos presence for a normalized RUT and tenant, update log entry flags
   static async checkLpaltosAndFlag(rut: string, tenantId: string, logEntry: any): Promise<void> {
     try {
-      if (logEntry.summaryData.data.lpaltosDetected > 0) {
-        console.warn (297,"already detected lpaltos records for RUT ${cleanRut} - Tenant ${tenantId}");
-        return;
-      }
       const cleanRut = rut.replace(/\./g, '').toUpperCase();
       const lpaltosCollection = mongoose.connection.db.collection('lpaltos');
+      if (logEntry.summaryData.data.lpaltosDetected > 0) {
+        //find in db  and add if detected another rut to lpaltosRecords
+        const lpaltosRecords = await lpaltosCollection.find({
+          rut: cleanRut,
+          tenant: tenantId
+        }).toArray();
+        //add to lpaltosRecords
+        if(lpaltosRecords.length > 0){
+          //add to the previous records if any
+          logEntry.summaryData.data.lpaltosRecords = [...(logEntry.summaryData.data.lpaltosRecords || []), ...lpaltosRecords];
+        }
+        //logEntry.summaryData.data.lpaltosRecords = lpaltosRecords || [];
+        console.warn (323,`already detected lpaltos records for RUT ${rut} - Tenant ${tenantId}`,logEntry.summaryData.data.lpaltosRecords);
+        return;
+      }
+      
+      
       console.warn(302,`[RutController.lookupRut] - Lpaltos check for RUT ${rut} - Tenant ${tenantId}`);
       const lpaltosRecords = await lpaltosCollection.find({
         rut: cleanRut,
@@ -330,7 +436,8 @@ export class RutController {
       }
       logEntry.summaryData.data.lpaltosDetected = lpaltosRecords.length > 0;
       logEntry.summaryData.data.lpaltosRecords = lpaltosRecords || [];
-      console.log(`[RutController.lookupRut] - Lpaltos check for tenant ${tenantId}: ${lpaltosRecords.length} records found`);
+      console.warn(333,`[RutController.lookupRut] - Lpaltos records for RUT ${cleanRut} - Tenant ${tenantId}`, logEntry.summaryData.data.lpaltosRecords);
+//      console.log(`[RutController.lookupRut] - Lpaltos check for tenant ${tenantId}: ${lpaltosRecords.length} records found`);
     } catch (error) {
       console.error(`[RutController.lookupRut] - Error checking lpaltos collection:`, error);
       if (!logEntry.summaryData) {
@@ -345,9 +452,6 @@ export class RutController {
   // Check lpmedios presence for a normalized RUT and tenant, update log entry flags
   static async checkLpmediosAndFlag(rut: string, tenantId: string, logEntry: any): Promise<void> {
     try {
-      if (logEntry.summaryData.data.lpmediosDetected > 0) {
-        return;
-      }
       const cleanRut = rut.replace(/\./g, '').toUpperCase();
       const lpmediosCollection = mongoose.connection.db.collection('lpmedios');
       console.warn(`[RutController.lookupRut] - Lpmedios check for RUT ${rut} - Tenant ${tenantId}`);
@@ -361,6 +465,14 @@ export class RutController {
         logEntry.summaryData = { data: {} };
       } else if (!logEntry.summaryData.data) {
         logEntry.summaryData.data = {};
+      }
+
+      if (logEntry.summaryData.data.lpmediosDetected > 0) {
+        if (lpmediosRecords.length > 0) {
+          logEntry.summaryData.data.lpmediosRecords = [...(logEntry.summaryData.data.lpmediosRecords || []), ...lpmediosRecords];
+        }
+        logEntry.summaryData.data.lpmediosDetected = (logEntry.summaryData.data.lpmediosRecords || []).length > 0;
+        return;
       }
 
       logEntry.summaryData.data.lpmediosDetected = lpmediosRecords.length > 0;
@@ -800,6 +912,7 @@ export class RutController {
           if (equifaxResponse.success && equifaxResponse.data) {
           //   console.warn(390, 'Equifax query successful for RUT:', validatedData.rut, equifaxResponse.data);
             companyGeneralInfo.socios = RutController.extractSociosFromEquifax(equifaxResponse.data);
+            console.warn(803, "new socios from equifax", companyGeneralInfo.socios);
             (logEntry as any).equifaxData = equifaxResponse.data;
             (filteredDetails as any).equifaxData = equifaxResponse.data;
             if (equifaxResponse.data.deudaPrevisionalPublicadaPersonaJuridica) {
@@ -869,7 +982,7 @@ export class RutController {
       }
 
       companyGeneralInfo.administradores = [];
-      console.log(298, "new socios", companyGeneralInfo.socios);
+      console.warn(298, "new socios in companyGeneralInfo.socios", companyGeneralInfo.socios);
 
       // Call Dequienes solo per company
       if (!validatedData.isPep) {
@@ -1078,7 +1191,7 @@ export class RutController {
       if(newResult.queryType === "primary"){
         newResult.isPep = false;
       }
-      console.warn(1087, "save newResult", newResult);
+ //     console.warn(1087, "save newResult", newResult);
       await newResult.save();
       RutController.logDebug('SAVE_RESULT_END', { resultId: newResult._id });
  
@@ -1740,6 +1853,105 @@ export class RutController {
         return res.status(404).json({ error: 'Result not found' });
       }
 
+      const riskRecalc = (req.query as any)?.risk === 'true';
+      const shouldAutoSyncListaPropia = (result as any)?.queryType !== 'derived_socio_pep';
+      if (shouldAutoSyncListaPropia) {
+        try {
+          const before = {
+            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
+            lpaltosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpaltosRecords)
+              ? (result as any).sheriffLogData.summaryData.data.lpaltosRecords.length
+              : 0,
+            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
+            lpmediosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpmediosRecords)
+              ? (result as any).sheriffLogData.summaryData.data.lpmediosRecords.length
+              : 0,
+          };
+
+          const { lpaltosRecords, lpmediosRecords } = await RutController.syncTenantSpecificListaPropiaData(
+            result as any,
+            tenantId,
+            (result as any)?.rut || ''
+          );
+
+          const normalizeLabel = (v: any) =>
+            String(v ?? '')
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, ' ')
+              .trim();
+
+          const labelMatches = (label: any, tokens: string[]) => {
+            const nl = normalizeLabel(label);
+            return tokens.every((t) => nl.includes(t));
+          };
+
+          const after = {
+            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
+            lpaltosRecordsLen: lpaltosRecords.length,
+            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
+            lpmediosRecordsLen: lpmediosRecords.length,
+          };
+
+          const hasLpRulesMismatch = (() => {
+            const complianceRules = (result as any)?.riskAssessment?.allRules?.complianceRules;
+            if (!Array.isArray(complianceRules)) return false;
+
+            const lpAlto = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'alto', 'impacto']));
+            const lpMedio = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'mediano', 'impacto']));
+
+            const altoDetected = lpAlto?.detected === true;
+            const medioDetected = lpMedio?.detected === true;
+            const altoShould = after.lpaltosRecordsLen > 0;
+            const medioShould = after.lpmediosRecordsLen > 0;
+
+            if (altoDetected !== altoShould) return true;
+            if (medioDetected !== medioShould) return true;
+
+            const altoDetailsLen = Array.isArray(lpAlto?.details) ? lpAlto.details.length : 0;
+            const medioDetailsLen = Array.isArray(lpMedio?.details) ? lpMedio.details.length : 0;
+
+            if (altoShould && altoDetailsLen === 0) return true;
+            if (medioShould && medioDetailsLen === 0) return true;
+
+            return false;
+          })();
+
+          const listaPropiaChanged =
+            before.lpaltosDetected !== after.lpaltosDetected ||
+            before.lpmediosDetected !== after.lpmediosDetected ||
+            before.lpaltosRecordsLen !== after.lpaltosRecordsLen ||
+            before.lpmediosRecordsLen !== after.lpmediosRecordsLen;
+
+          if (listaPropiaChanged || hasLpRulesMismatch || riskRecalc) {
+            const newRiskAssessment = await RiskCalculationService.calculateRisk(
+              result.sheriffLogData as any,
+              riskRecalc ? 'getResultById:onDemand' : 'getResultById:autosync'
+            );
+            if (newRiskAssessment) {
+              await Result.updateOne(
+                { _id: result._id },
+                {
+                  riskAssessment: newRiskAssessment,
+                  sheriffLogData: (result as any).sheriffLogData
+                }
+              );
+              (result as any).riskAssessment = newRiskAssessment;
+            }
+          } else {
+            await Result.updateOne(
+              { _id: result._id },
+              {
+                sheriffLogData: (result as any).sheriffLogData
+              }
+            );
+          }
+        } catch (riskError) {
+          console.error('[RISK_RECALC] Error syncing/recalculating riskAssessment by resultId:', riskError);
+        }
+      }
+
       // Fetch associated company details and risks
       const companyDetails = await CompanyDetails.findOne({ resultId: id, tenantId });
       const companyRisks = await CompanyRisks.findOne({ resultId: id, tenantId });
@@ -1799,108 +2011,91 @@ export class RutController {
 
         // CRITICAL: Recalculate tenant-specific lista propia flags
         // These lists are tenant-specific and must ALWAYS be recalculated
-        const cleanRut = rut.replace(/\./g, '').replace(/-/g, '');
-        // Format RUT with dash for lpaltos/lpmedios queries (they store RUTs with dash)
-        const rutWithDash = cleanRut.slice(0, -1) + '-' + cleanRut.slice(-1);
+        const normalizedRut = RutController.normalizeRut(rut);
 
         // Log original flags from the recycled result
         const originalLpaltosDetected = resultObject.sheriffLogData?.summaryData?.data?.lpaltosDetected;
         const originalLpmediosDetected = resultObject.sheriffLogData?.summaryData?.data?.lpmediosDetected;
-        console.log(`[LISTA_PROPIA_RECALC] 🔄 Starting recalculation for RUT: ${rutWithDash}`);
+        console.log(`[LISTA_PROPIA_RECALC] 🔄 Starting recalculation for RUT: ${normalizedRut}`);
         console.log(`[LISTA_PROPIA_RECALC] 📋 Original result from tenant: ${result.tenantId}`);
         console.log(`[LISTA_PROPIA_RECALC] 🎯 Target tenant: ${tenantId}`);
         console.log(`[LISTA_PROPIA_RECALC] 📊 Original flags - lpaltosDetected: ${originalLpaltosDetected}, lpmediosDetected: ${originalLpmediosDetected}`);
 
         try {
-          // Check if the RUT exists in the lpaltos collection (tenant-isolated)
-          console.log(`[LISTA_PROPIA_RECALC] 🔍 Querying lpaltos collection for RUT: ${rutWithDash}, tenant: ${tenantId}`);
-          const lpaltosCollection = mongoose.connection.db.collection('lpaltos');
-          const lpaltosRecords = await lpaltosCollection.find({
-            rut: rutWithDash,
-            tenant: tenantId
-          }).toArray();
-          console.log(`[LISTA_PROPIA_RECALC] 📈 Lpaltos query result: ${lpaltosRecords.length} records found`);
+          const { lpaltosRecords, lpmediosRecords } = await RutController.syncTenantSpecificListaPropiaData(resultObject, tenantId, rut);
+          const newLpaltosDetected = lpaltosRecords.length > 0;
+          const newLpmediosDetected = lpmediosRecords.length > 0;
 
-          // Check if the RUT exists in the lpmedios collection (tenant-isolated)
-          console.log(`[LISTA_PROPIA_RECALC] 🔍 Querying lpmedios collection for RUT: ${rutWithDash}, tenant: ${tenantId}`);
-          const lpmediosCollection = mongoose.connection.db.collection('lpmedios');
-          const lpmediosRecords = await lpmediosCollection.find({
-            rut: rutWithDash,
-            tenant: tenantId
-          }).toArray();
-          console.log(`[LISTA_PROPIA_RECALC] 📊 Lpmedios query result: ${lpmediosRecords.length} records found`);
+          console.log(`[LISTA_PROPIA_RECALC] ✅ Flags and records updated successfully:`);
+          console.log(`[LISTA_PROPIA_RECALC] 📈 lpaltosDetected: ${originalLpaltosDetected} → ${newLpaltosDetected} ${originalLpaltosDetected !== newLpaltosDetected ? '(CHANGED)' : '(UNCHANGED)'}`);
+          console.log(`[LISTA_PROPIA_RECALC] 📊 lpmediosDetected: ${originalLpmediosDetected} → ${newLpmediosDetected} ${originalLpmediosDetected !== newLpmediosDetected ? '(CHANGED)' : '(UNCHANGED)'}`);
+          console.log(`[LISTA_PROPIA_RECALC] 🧾 lpaltosRecords: ${lpaltosRecords.length}, lpmediosRecords: ${lpmediosRecords.length}`);
+          console.log(`[LISTA_PROPIA_RECALC] 🎯 Final result for tenant ${tenantId}: lpaltosDetected=${newLpaltosDetected}, lpmediosDetected=${newLpmediosDetected}`);
 
-          // Update the recycled result with tenant-specific lista propia flags
-          if (resultObject.sheriffLogData && resultObject.sheriffLogData.summaryData && resultObject.sheriffLogData.summaryData.data) {
-            const newLpaltosDetected = lpaltosRecords.length > 0;
-            const newLpmediosDetected = lpmediosRecords.length > 0;
+          // Recalculate riskAssessment with updated lista propia flags and records
+          console.log(`[RISK_RECALC] 🧮 Starting riskAssessment recalculation with updated lista propia data...`);
+          const originalRiskAssessment = resultObject.riskAssessment;
+          console.log(`[RISK_RECALC] 📊 Original riskAssessment exists: ${!!originalRiskAssessment}`);
 
-            resultObject.sheriffLogData.summaryData.data.lpaltosDetected = newLpaltosDetected;
-            resultObject.sheriffLogData.summaryData.data.lpmediosDetected = newLpmediosDetected;
+          try {
+            const newRiskAssessment = await RiskCalculationService.calculateRisk(resultObject.sheriffLogData, 'getResultByRut:lpflags');
 
-            console.log(`[LISTA_PROPIA_RECALC] ✅ Flags updated successfully:`);
-            console.log(`[LISTA_PROPIA_RECALC] 📈 lpaltosDetected: ${originalLpaltosDetected} → ${newLpaltosDetected} ${originalLpaltosDetected !== newLpaltosDetected ? '(CHANGED)' : '(UNCHANGED)'}`);
-            console.log(`[LISTA_PROPIA_RECALC] 📊 lpmediosDetected: ${originalLpmediosDetected} → ${newLpmediosDetected} ${originalLpmediosDetected !== newLpmediosDetected ? '(CHANGED)' : '(UNCHANGED)'}`);
-            console.log(`[LISTA_PROPIA_RECALC] 🎯 Final result for tenant ${tenantId}: lpaltosDetected=${newLpaltosDetected}, lpmediosDetected=${newLpmediosDetected}`);
+            if (newRiskAssessment) {
+              resultObject.riskAssessment = newRiskAssessment;
+              console.log(`[RISK_RECALC] ✅ RiskAssessment recalculated successfully`);
+              console.log(`[RISK_RECALC] 🎯 New risk level: ${newRiskAssessment.riskSummary?.riskLevelDescription || 'N/A'}`);
+              console.log(`[RISK_RECALC] 🚦 New semaphore: ${newRiskAssessment.riskSummary?.semaphore || 'N/A'}`);
 
-            // Recalculate riskAssessment with updated lista propia flags
-            console.log(`[RISK_RECALC] 🧮 Starting riskAssessment recalculation with updated lista propia flags...`);
-            const originalRiskAssessment = resultObject.riskAssessment;
-            console.log(`[RISK_RECALC] 📊 Original riskAssessment exists: ${!!originalRiskAssessment}`);
+              // Compare risk levels if both exist
+              if (originalRiskAssessment && originalRiskAssessment.riskSummary && newRiskAssessment.riskSummary) {
+                const originalLevel = originalRiskAssessment.riskSummary.riskLevelDescription;
+                const newLevel = newRiskAssessment.riskSummary.riskLevelDescription;
+                const originalSemaphore = originalRiskAssessment.riskSummary.semaphore;
+                const newSemaphore = newRiskAssessment.riskSummary.semaphore;
 
-            try {
-              const newRiskAssessment = await RiskCalculationService.calculateRisk(resultObject.sheriffLogData, 'getResultByRut:lpflags');
-
-              if (newRiskAssessment) {
-                resultObject.riskAssessment = newRiskAssessment;
-                console.log(`[RISK_RECALC] ✅ RiskAssessment recalculated successfully`);
-                console.log(`[RISK_RECALC] 🎯 New risk level: ${newRiskAssessment.riskSummary?.riskLevelDescription || 'N/A'}`);
-                console.log(`[RISK_RECALC] 🚦 New semaphore: ${newRiskAssessment.riskSummary?.semaphore || 'N/A'}`);
-
-                // Compare risk levels if both exist
-                if (originalRiskAssessment && originalRiskAssessment.riskSummary && newRiskAssessment.riskSummary) {
-                  const originalLevel = originalRiskAssessment.riskSummary.riskLevelDescription;
-                  const newLevel = newRiskAssessment.riskSummary.riskLevelDescription;
-                  const originalSemaphore = originalRiskAssessment.riskSummary.semaphore;
-                  const newSemaphore = newRiskAssessment.riskSummary.semaphore;
-
-                  console.log(`[RISK_RECALC] 📈 Risk level: ${originalLevel} → ${newLevel} ${originalLevel !== newLevel ? '(CHANGED)' : '(UNCHANGED)'}`);
-                  console.log(`[RISK_RECALC] 🚦 Semaphore: ${originalSemaphore} → ${newSemaphore} ${originalSemaphore !== newSemaphore ? '(CHANGED)' : '(UNCHANGED)'}`);
-                }
-              } else {
-                console.warn(`[RISK_RECALC] ⚠️ RiskAssessment recalculation returned null/undefined - keeping original`);
+                console.log(`[RISK_RECALC] 📈 Risk level: ${originalLevel} → ${newLevel} ${originalLevel !== newLevel ? '(CHANGED)' : '(UNCHANGED)'}`);
+                console.log(`[RISK_RECALC] 🚦 Semaphore: ${originalSemaphore} → ${newSemaphore} ${originalSemaphore !== newSemaphore ? '(CHANGED)' : '(UNCHANGED)'}`);
               }
-            } catch (riskError) {
-              console.error(`[RISK_RECALC] ❌ Error recalculating riskAssessment:`, riskError);
-              console.log(`[RISK_RECALC] 🛡️ Keeping original riskAssessment due to calculation error`);
+            } else {
+              console.warn(`[RISK_RECALC] ⚠️ RiskAssessment recalculation returned null/undefined - keeping original`);
             }
-          } else {
-            console.warn(`[LISTA_PROPIA_RECALC] ⚠️ Could not update flags - sheriffLogData structure not found in result object`);
+          } catch (riskError) {
+            console.error(`[RISK_RECALC] ❌ Error recalculating riskAssessment:`, riskError);
+            console.log(`[RISK_RECALC] 🛡️ Keeping original riskAssessment due to calculation error`);
           }
 
         } catch (error) {
           console.error(`[LISTA_PROPIA_RECALC] ❌ Error recalculating lista propia flags for tenant ${tenantId}:`, error);
-          console.error(`[LISTA_PROPIA_RECALC] 🔧 Setting flags to false as safety fallback`);
-          // Set flags to false on error to be safe
-          if (resultObject.sheriffLogData && resultObject.sheriffLogData.summaryData && resultObject.sheriffLogData.summaryData.data) {
-            resultObject.sheriffLogData.summaryData.data.lpaltosDetected = false;
-            resultObject.sheriffLogData.summaryData.data.lpmediosDetected = false;
-            console.log(`[LISTA_PROPIA_RECALC] 🛡️ Safety fallback applied - both flags set to false`);
+          console.error(`[LISTA_PROPIA_RECALC] 🔧 Setting flags and records to empty as safety fallback`);
+          if (!resultObject.sheriffLogData) {
+            resultObject.sheriffLogData = {};
+          }
+          if (!resultObject.sheriffLogData.summaryData) {
+            resultObject.sheriffLogData.summaryData = {};
+          }
+          if (!resultObject.sheriffLogData.summaryData.data) {
+            resultObject.sheriffLogData.summaryData.data = {};
+          }
 
-            // Try to recalculate riskAssessment with fallback flags
-            console.log(`[RISK_RECALC] 🔧 Attempting riskAssessment recalculation with fallback flags...`);
-            try {
-              const fallbackRiskAssessment = await RiskCalculationService.calculateRisk(resultObject.sheriffLogData, 'getResultByRut:fallback');
-              if (fallbackRiskAssessment) {
-                resultObject.riskAssessment = fallbackRiskAssessment;
-                console.log(`[RISK_RECALC] ✅ RiskAssessment recalculated successfully with fallback flags`);
-              } else {
-                console.warn(`[RISK_RECALC] ⚠️ Fallback riskAssessment calculation failed - keeping original`);
-              }
-            } catch (fallbackRiskError) {
-              console.error(`[RISK_RECALC] ❌ Error in fallback riskAssessment calculation:`, fallbackRiskError);
-              console.log(`[RISK_RECALC] 🛡️ Keeping original riskAssessment due to fallback calculation error`);
+          resultObject.sheriffLogData.summaryData.data.lpaltosDetected = false;
+          resultObject.sheriffLogData.summaryData.data.lpmediosDetected = false;
+          resultObject.sheriffLogData.summaryData.data.lpaltosRecords = [];
+          resultObject.sheriffLogData.summaryData.data.lpmediosRecords = [];
+          console.log(`[LISTA_PROPIA_RECALC] 🛡️ Safety fallback applied - flags false and records emptied`);
+
+          // Try to recalculate riskAssessment with fallback flags
+          console.log(`[RISK_RECALC] 🔧 Attempting riskAssessment recalculation with fallback flags...`);
+          try {
+            const fallbackRiskAssessment = await RiskCalculationService.calculateRisk(resultObject.sheriffLogData, 'getResultByRut:fallback');
+            if (fallbackRiskAssessment) {
+              resultObject.riskAssessment = fallbackRiskAssessment;
+              console.log(`[RISK_RECALC] ✅ RiskAssessment recalculated successfully with fallback flags`);
+            } else {
+              console.warn(`[RISK_RECALC] ⚠️ Fallback riskAssessment calculation failed - keeping original`);
             }
+          } catch (fallbackRiskError) {
+            console.error(`[RISK_RECALC] ❌ Error in fallback riskAssessment calculation:`, fallbackRiskError);
+            console.log(`[RISK_RECALC] 🛡️ Keeping original riskAssessment due to fallback calculation error`);
           }
         }
 
@@ -1932,11 +2127,130 @@ export class RutController {
 
 
       const riskRecalc = (req.query as any)?.risk === 'true';
+      const shouldAutoSyncListaPropia = (result as any)?.queryType !== 'derived_socio_pep';
+      if (shouldAutoSyncListaPropia) {
+        try {
+          console.log('[LISTA_PROPIA_AUTOSYNC] start', {
+            rut,
+            tenantId,
+            resultId: String((result as any)?._id ?? ''),
+            riskRecalc
+          });
+          const before = {
+            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
+            lpaltosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpaltosRecords)
+              ? (result as any).sheriffLogData.summaryData.data.lpaltosRecords.length
+              : 0,
+            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
+            lpmediosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpmediosRecords)
+              ? (result as any).sheriffLogData.summaryData.data.lpmediosRecords.length
+              : 0,
+          };
+
+          const { lpaltosRecords, lpmediosRecords, rutsChecked } = await RutController.syncTenantSpecificListaPropiaData(result as any, tenantId, rut);
+
+          const after = {
+            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
+            lpaltosRecordsLen: lpaltosRecords.length,
+            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
+            lpmediosRecordsLen: lpmediosRecords.length,
+          };
+
+          console.log('[LISTA_PROPIA_AUTOSYNC] synced', {
+            rut,
+            tenantId,
+            rutsCheckedCount: Array.isArray(rutsChecked) ? rutsChecked.length : 0,
+            before,
+            after
+          });
+
+          const normalizeLabel = (v: any) =>
+            String(v ?? '')
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, ' ')
+              .trim();
+
+          const labelMatches = (label: any, tokens: string[]) => {
+            const nl = normalizeLabel(label);
+            return tokens.every((t) => nl.includes(t));
+          };
+
+          const hasLpRulesMismatch = (() => {
+            const complianceRules = (result as any)?.riskAssessment?.allRules?.complianceRules;
+            if (!Array.isArray(complianceRules)) return false;
+
+            const lpAlto = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'alto', 'impacto']));
+            const lpMedio = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'mediano', 'impacto']));
+
+            const altoDetected = lpAlto?.detected === true;
+            const medioDetected = lpMedio?.detected === true;
+
+            const altoShould = after.lpaltosRecordsLen > 0;
+            const medioShould = after.lpmediosRecordsLen > 0;
+
+            if (altoDetected !== altoShould) return true;
+            if (medioDetected !== medioShould) return true;
+
+            const altoDetailsLen = Array.isArray(lpAlto?.details) ? lpAlto.details.length : 0;
+            const medioDetailsLen = Array.isArray(lpMedio?.details) ? lpMedio.details.length : 0;
+
+            if (altoShould && altoDetailsLen === 0) return true;
+            if (medioShould && medioDetailsLen === 0) return true;
+
+            return false;
+          })();
+
+          const listaPropiaChanged =
+            before.lpaltosDetected !== after.lpaltosDetected ||
+            before.lpmediosDetected !== after.lpmediosDetected ||
+            before.lpaltosRecordsLen !== after.lpaltosRecordsLen ||
+            before.lpmediosRecordsLen !== after.lpmediosRecordsLen;
+
+          const shouldRecalcForListaPropia = listaPropiaChanged || hasLpRulesMismatch;
+          if (shouldRecalcForListaPropia) {
+            console.log('[LISTA_PROPIA_AUTOSYNC] recalc riskAssessment', {
+              rut,
+              tenantId,
+              listaPropiaChanged,
+              hasLpRulesMismatch
+            });
+            const newRiskAssessment = await RiskCalculationService.calculateRisk(result.sheriffLogData as any, 'getResultByRut:autosync');
+            if (newRiskAssessment) {
+              await Result.updateOne(
+                { _id: result._id },
+                {
+                  riskAssessment: newRiskAssessment,
+                  sheriffLogData: (result as any).sheriffLogData
+                }
+              );
+              (result as any).riskAssessment = newRiskAssessment;
+            }
+          } else if (!riskRecalc) {
+            await Result.updateOne(
+              { _id: result._id },
+              {
+                sheriffLogData: (result as any).sheriffLogData
+              }
+            );
+          }
+        } catch (e) {
+          console.error('[LISTA_PROPIA_AUTOSYNC] Error syncing lista propia data:', e);
+        }
+      }
       if (riskRecalc) {
         try {
+          await RutController.syncTenantSpecificListaPropiaData(result as any, tenantId, rut);
           const newRiskAssessment = await RiskCalculationService.calculateRisk(result.sheriffLogData as any, 'getResultByRut:onDemand');
           if (newRiskAssessment) {
-            await Result.updateOne({ _id: result._id }, { riskAssessment: newRiskAssessment });
+            await Result.updateOne(
+              { _id: result._id },
+              {
+                riskAssessment: newRiskAssessment,
+                sheriffLogData: (result as any).sheriffLogData
+              }
+            );
             (result as any).riskAssessment = newRiskAssessment;
           }
         } catch (riskError) {

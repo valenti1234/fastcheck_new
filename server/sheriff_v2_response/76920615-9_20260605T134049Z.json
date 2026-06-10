@@ -1,0 +1,700 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76920615-9"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76920615-9",
+      "esPersonaJuridica": true,
+      "fechaCarga": "05-06-2026",
+      "identificacion": {
+        "razonSocial": "SOCIEDAD COMERCIAL RODRIGO URBANO SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "12-09-2018",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIOS DE EXTINCION Y PREVENCION DE INCENDIOS FORESTALES",
+            "codigo": "024003",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "03-04-2021"
+          },
+          {
+            "actividades": "VENTA AL POR MAYOR DE OTROS TIPOS DE MAQUINARIA Y EQUIPO N.C.P.",
+            "codigo": "465909",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-09-2018"
+          },
+          {
+            "actividades": "EMPRESAS DE SERVICIOS DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULTOR",
+            "codigo": "711002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "12-09-2018"
+          },
+          {
+            "actividades": "ALQUILER DE VEHICULOS AUTOMOTORES SIN CHOFER",
+            "codigo": "771000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-09-2024"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2024"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 9,
+        "ultimaActualizacion": "12-05-2026 15:29:42",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "10.000,01 a 25.000,00",
+          "cantidadTrabajadores": 26
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 11,
+        "MontoInfocom": 0,
+        "MontoBolcom": 90952158,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": 948.15,
+          "cambioAbsoluto": 82274793
+        },
+        "ultimaActualizacion": "05-06-2026 13:40:44"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "05-06-2026 13:40:43",
+        "ultimaActualizacionCobranza": "05-06-2026 13:40:43",
+        "ultimaActualizacionLaboral": "05-06-2026 13:40:43",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 45,
+          "empleados": 10,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 800,
+            "cambioAbsoluto": 40
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "05-06-2026 13:40:43"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "05-06-2026 13:40:44"
+        }
+      },
+      "legal": {},
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 145530,
+        "deudaDirectaCastigada": 6360,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 5130,
+        "deudaDirectaVencida": 17830,
+        "deudaDirectaVigente": 116210,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 9310,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 138190,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 7360,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 130840,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 14150
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 10,
+          "tasacionTotal": 110214109,
+          "ultimaActualizacion": "12-05-2026 15:29:42"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "12-05-2026 15:29:41"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 79.8529512815227,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 2.2222222222222143,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 0,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 182.0751735037449,
+        "etiquetaClasificacion": "High"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "SOCIEDAD COMERCIAL RODRIGO URBANO SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a13f2a894626c2f23e29b36a0cd9ed9c265733c13f1d1570115e52316df8eb19",
+      "cached_at": "2026-06-05T13:40:45.511970"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "05-06-2026 13:40:43"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f94e6b487468c00e65e1200fd5638716ef23b220e34269046fbd8434ef3251b0",
+        "cached_at": "2026-06-05T13:40:45.843873"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "05-06-2026 13:40:43"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2a4e065ee75370c6a250a2b7b114be1697005fc603ade1e689f2a14964047c1d",
+        "cached_at": "2026-06-05T13:40:46.178054"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "05-06-2026 13:40:43"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6bf154f81db42aae25fb78dcd799ed4fde8072abf1151de9b6a07f11529fd3ee",
+        "cached_at": "2026-06-05T13:40:46.537119"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "05-06-2026 13:40:43"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a3c630b3c0fb5b2961ef0c778167765a7d81b2f5ba867d6fe0031eabb539496a",
+        "cached_at": "2026-06-05T13:40:46.862626"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 45,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NELSON ERNESTO BRIZUELA FUENTES ",
+            "periodo": "03/2026",
+            "rutAfiliado": "10025541-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NELSON ERNESTO BRIZUELA FUENTES ",
+            "periodo": "03/2026",
+            "rutAfiliado": "10025541-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EDWIN DANIEL DIAZ SANCHEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26817304-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO VICENTE ANDRES ARREPOL ZAVALA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18838027-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO URBANO ARREPOL GOMEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "12813657-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HERNAN RODRIGO ANTIQUERA SALINAS ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17293669-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HERNAN RODRIGO ANTIQUERA SALINAS ",
+            "periodo": "03/2026",
+            "rutAfiliado": "17293669-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "EDWIN DANIEL DIAZ SANCHEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26817304-8",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO VICENTE ANDRES ARREPOL ZAVALA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18838027-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIOLA CAROLINA MARTINEZ SANCHEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26351968-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MARIOLA CAROLINA MARTINEZ SANCHEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "26351968-k",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCO MATIAS TAPIA SARMIENTO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18012502-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "FRANCO MATIAS TAPIA SARMIENTO ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18012502-7",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HERNAN RODRIGO ANTIQUERA SALINAS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "17293669-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NELSON ERNESTO BRIZUELA FUENTES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "10025541-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "NELSON ERNESTO BRIZUELA FUENTES ",
+            "periodo": "02/2026",
+            "rutAfiliado": "10025541-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO VICENTE ANDRES ARREPOL ZAVALA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "18838027-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "RODRIGO URBANO ARREPOL GOMEZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "12813657-6",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "DIEGO VICENTE ANDRES ARREPOL ZAVALA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "18838027-1",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HERNAN RODRIGO ANTIQUERA SALINAS ",
+            "periodo": "02/2026",
+            "rutAfiliado": "17293669-5",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "05-06-2026 13:40:43"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:27efe08e8c0efbad7ba4dd1505b848a74cf079c85969ca1a4705d64f8a1dc909",
+        "cached_at": "2026-06-05T13:40:47.212671"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76920615-9",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "SOCIEDAD COMERCIAL RODRIGO URBANO SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SOCIEDAD COMERCIAL RODRIGO URBANO SPA",
+            "rutSociedad": "76920615-9",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2018-08-19",
+            "socios": [
+              {
+                "nombre": "RODRIGO URBANO ARREPOL GOMEZ",
+                "rut": "12813657-6",
+                "domicilio": "JUAN RAMÓN POMAR Nº 2790, PUNTA MIRA NORTE, DE LA CIUDAD Y COMUNA DE COQUIMBO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2018-08-20",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/08/20/42136/05/1449723.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3f1db140aeb8404a0a5ecd273aaf3214f607bcd4f508805884a4c1d978929533",
+      "cached_at": "2026-06-05T13:40:48.028255"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76920615-9",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:a964a40d98f7e3b66e12039c7bf2a1fb6a54b99c1b59428de1bbd83c04137e69",
+        "cached_at": "2026-06-05T13:40:48.359038"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 20.14704871847729,
+      "numeradorFinanzas": 29320,
+      "denominadorFinanzas": 145530,
+      "ponderacionFinanzas": 79.8529512815227,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 97.77777777777779,
+      "casosMoraPrevisional": 45,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 2.2222222222222143,
+      "porcentajeBoletinComercial": 100,
+      "montoBoletinComercial": 90952158,
+      "ponderacionBoletinComercial": 0,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 182.0751735037449,
+      "etiquetaClasificacion": "High",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:7b8b39e10439236e2753e081bc0e9073d2dc86571d10c09f6e4bf839d2cccb1b",
+      "cached_at": "2026-06-05T13:40:49.127727"
+    }
+  }
+}

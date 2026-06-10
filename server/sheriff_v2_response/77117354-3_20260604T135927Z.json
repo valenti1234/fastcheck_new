@@ -1,0 +1,916 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77117354-3"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77117354-3",
+      "esPersonaJuridica": true,
+      "fechaCarga": "04-06-2026",
+      "identificacion": {
+        "razonSocial": "VELÁSQUEZ SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "27-01-2020",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "SERVICIO DE LAVADO DE VEHICULOS AUTOMOTORES",
+            "codigo": "452001",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-01-2020"
+          },
+          {
+            "actividades": "MANTENIMIENTO Y REPARACION DE VEHICULOS AUTOMOTORES",
+            "codigo": "452002",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "27-01-2020"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-03-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2021"
+          }
+        ],
+        "cantidadActividades": 3,
+        "cantidadDocumentos": 6,
+        "ultimaActualizacion": "04-06-2026 13:58:59",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "10.000,01 a 25.000,00",
+          "cantidadTrabajadores": 115
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "04-06-2026 13:58:59"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "04-06-2026 13:58:58",
+        "ultimaActualizacionCobranza": "04-06-2026 13:58:58",
+        "ultimaActualizacionLaboral": "04-06-2026 13:58:58",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 56,
+          "empleados": 15,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 93.1,
+            "cambioAbsoluto": 27
+          },
+          "ultimaActualizacion": "04-06-2026 13:59:08"
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "04-06-2026 13:58:58"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "04-06-2026 13:58:59"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "21-01-2020 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "2771243",
+              "razonSocial": "VELASQUEZ SPA",
+              "cve": "ACqThrv0EO0L",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACqThrv0EO0L&codigo=C5-55-54-C1-5D-F1-04-A2-D0-1E-26-EF-58-0C-2F-EC",
+              "socios": [
+                {
+                  "socio": "NATALY STEPHANIE VELASQUEZ CARRASCO",
+                  "rut": "17831958-2",
+                  "domicilio": "ERASMO DE ESCALA N°2382 BLOQUE V DEPTO/LOCAL N COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "3500",
+                  "monto": "$3.500.000 CLP",
+                  "porcentaje": 100
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "NATALY STEPHANIE VELASQUEZ CARRASCO",
+                  "rut": "17831958-2",
+                  "domicilio": "ERASMO DE ESCALA N°2382 BLOQUE V DEPTO/LOCAL N COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 212740,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 212740,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 6950,
+        "lineaCredito": 2500,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 143900,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 143900,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 11210,
+          "lineaCredito": 2500
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 1,
+          "tasacionTotal": 29773142,
+          "ultimaActualizacion": "04-06-2026 13:58:59"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "04-06-2026 13:58:59"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": 100,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 4.464285714285722,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 304.4642857142857,
+        "etiquetaClasificacion": "Low"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "VELÁSQUEZ SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 3,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b3fe19cdcead56ae16d72ff3bcd70d1858c34d53b6d9fc7464a9cb400998cb0c",
+      "cached_at": "2026-06-04T13:59:24.354420"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "04-06-2026 13:58:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:407880504d635a716fe0731e4bfd356de5d9e70321ce2eb56cbffd1da66936d6",
+        "cached_at": "2026-06-04T13:59:24.670904"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "04-06-2026 13:58:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9af531f25df9bf90861c27f8dfe2a7523c9454ad5c38f13d3f0cdc4fda5766c9",
+        "cached_at": "2026-06-04T13:59:25.005665"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "04-06-2026 13:58:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0322cfeeed1ea95d324b207e32142946031fc481b6dbbc8685f99d912f882ee2",
+        "cached_at": "2026-06-04T13:59:25.329564"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "04-06-2026 13:58:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ab535015c7632a73e079d185462ad952c90fb89f2d0aa93608d0790b99d751d6",
+        "cached_at": "2026-06-04T13:59:25.657392"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 3,
+        "cantidad": 56,
+        "casos": [
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ALBERTO CUEVAS ROA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "9379099-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "BARBARA FRANCISCA OLIVARES LOPEZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "18120690-K",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ALBERTO CUEVAS ROA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "9379099-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE EDUARDO ENRIQUE SOTO GATICA ",
+            "periodo": "03/2026",
+            "rutAfiliado": "9489842-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-05-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEX ABELARDO MORA MUNOZ ",
+            "periodo": "03/2026",
+            "rutAfiliado": "28233825-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ALBERTO CUEVAS ROA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "9379099-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ALBERTO CUEVAS ROA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "9379099-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SEBASTIAN YURYMET BRICENO SUAZO ",
+            "periodo": "02/2026",
+            "rutAfiliado": "17049540-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEX ABELARDO MORA MUNOZ ",
+            "periodo": "02/2026",
+            "rutAfiliado": "28233825-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "29-04-2026 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE EDUARDO ENRIQUE SOTO GATICA ",
+            "periodo": "02/2026",
+            "rutAfiliado": "9489842-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ALBERTO CUEVAS ROA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "9379099-5",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SEBASTIAN YURYMET BRICENO SUAZO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17049540-3",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JUAN ALBERTO CUEVAS ROA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "9379099-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEX ABELARDO MORA MUNOZ ",
+            "periodo": "01/2026",
+            "rutAfiliado": "28233825-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Habitat",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SEBASTIAN YURYMET BRICENO SUAZO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17049540-3",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "SEBASTIAN YURYMET BRICENO SUAZO ",
+            "periodo": "01/2026",
+            "rutAfiliado": "17049540-3",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "30-03-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE EDUARDO ENRIQUE SOTO GATICA ",
+            "periodo": "01/2026",
+            "rutAfiliado": "9489842-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JORGE EDUARDO ENRIQUE SOTO GATICA ",
+            "periodo": "12/2025",
+            "rutAfiliado": "9489842-0",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "Seguro Social",
+            "fecha": "27-02-2026 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "ALEX ABELARDO MORA MUNOZ ",
+            "periodo": "12/2025",
+            "rutAfiliado": "28233825-4",
+            "tipoProducto": "Seguro Social"
+          },
+          {
+            "afp": "AFP Modelo",
+            "fecha": "30-01-2026 21:00:00",
+            "fechaDemanda": "Judicial P",
+            "nombreAfiliado": "ALEX ABELARDO MORA MUNOZ ",
+            "periodo": "11/2025",
+            "rutAfiliado": "28233825-4",
+            "tipoProducto": "Cotización obligatorias"
+          }
+        ],
+        "ultimaActualizacion": "04-06-2026 13:58:58"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:dafd7ad9338b51fb17b01a9aa8597766f0df9328b845bc4b09afae64aa03ee47",
+        "cached_at": "2026-06-04T13:59:25.982507"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77117354-3",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "VELÁSQUEZ SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "VELÁSQUEZ SPA",
+            "rutSociedad": "77117354-3",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2020-01-21",
+            "socios": [
+              {
+                "nombre": "NATALY STEPHANIE VELASQUEZ CARRASCO",
+                "rut": "17831958-2",
+                "domicilio": "ERASMO DE ESCALA N°2382 BLOQUE V DEPTO/LOCAL N COMUNA DE SANTIAGO",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2020-01-22",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACqThrv0EO0L&codigo=C5-55-54-C1-5D-F1-04-A2-D0-1E-26-EF-58-0C-2F-EC"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "GLENDA SMOK VELASQUEZ SPA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-21418-2018",
+            "fecha": "29/11/2018",
+            "infraccion": "ESTAFAS Y OTRAS DEFRAUDACIONES CONTRA PARTICULARES",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CLAUDIO ANDRÉS QUIROGA HINOJOSA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CRISTIAN IVAN DIAZ RIQUELME",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1226",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLENDA SCARLETT SMOK VELASQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLENDA SMOK VELASQUEZ SPA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MANUEL ALEJANDRO PALMA RUBILAR",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MARCELO ANDRES TOBAR CARREÑO",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARCELO ANDRÉS TOBAR CARREÑO",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARIA VIRGINIA FUENMAYOR UZCATEGUI",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MARIA VIRGINIA FUENMAYOR UZCATEGUI",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "ROMINA ANDREA MORENO RUZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "VÍCTOR EDUARDO PROVIDEL LABARCA",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "7º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "GLENDA SMOK VELASQUEZ SPA",
+            "postura": "Querellante",
+            "rol": "Ordinaria-1923-2017",
+            "fecha": "30/01/2017",
+            "infraccion": "FRAUDE DE SUBVENCIONES ART 470 N°8",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1226",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLENDA SMOK VELASQUEZ SPA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLENDA SMOK VELASQUEZ SPA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOLAS ALEJANDRO CAYO MARQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOLÁS ALEJANDRO CAYO MÁRQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TANIA VICTORIA ARELLANO NEIRA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "TANIA VICTORIA ARELLANO NEIRA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "7º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          },
+          {
+            "nombre": "GLENDA SMOK VELASQUEZ SPA",
+            "postura": "Víctima",
+            "rol": "Ordinaria-1923-2017",
+            "fecha": "30/01/2017",
+            "infraccion": "FRAUDE DE SUBVENCIONES ART 470 N°8",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1226",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLENDA SMOK VELASQUEZ SPA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "GLENDA SMOK VELASQUEZ SPA",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOLAS ALEJANDRO CAYO MARQUEZ",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NICOLÁS ALEJANDRO CAYO MÁRQUEZ",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "TANIA VICTORIA ARELLANO NEIRA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "TANIA VICTORIA ARELLANO NEIRA",
+                "sujeto": "Querellado",
+                "situacionLibertad": "Libre"
+              }
+            ],
+            "materia": "Querella",
+            "tribunal": "7º Juzgado de Garantía de Santiago",
+            "esDenunciado": false
+          }
+        ],
+        "totalCoincidencias": 3
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d99edd877158de83416f88539bd30c52c09e95d06f3147334c64853bffb72a9d",
+      "cached_at": "2026-06-04T13:59:26.581541"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77117354-3",
+        "empresaEnUnDia": [
+          {
+            "fecha": "21-01-2020 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "2771243",
+            "razonSocial": "VELASQUEZ SPA",
+            "cve": "ACqThrv0EO0L",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACqThrv0EO0L&codigo=C5-55-54-C1-5D-F1-04-A2-D0-1E-26-EF-58-0C-2F-EC",
+            "socios": [
+              {
+                "socio": "NATALY STEPHANIE VELASQUEZ CARRASCO",
+                "rut": "17831958-2",
+                "domicilio": "ERASMO DE ESCALA N°2382 BLOQUE V DEPTO/LOCAL N COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                "acciones": "3500",
+                "monto": "$3.500.000 CLP",
+                "porcentaje": 100
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "NATALY STEPHANIE VELASQUEZ CARRASCO",
+                "rut": "17831958-2",
+                "domicilio": "ERASMO DE ESCALA N°2382 BLOQUE V DEPTO/LOCAL N COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3f8971ef4eeab393ec9d07cfe52ef968a49ad42d44a914caf4231dacd60b5f3f",
+        "cached_at": "2026-06-04T13:59:26.910088"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 219690,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 95.53571428571428,
+      "casosMoraPrevisional": 56,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 4.464285714285722,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 304.4642857142857,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:1d98bc38c7dd3780f245e27e2928442cae0d381c9ccd5980e72fbaac9272b750",
+      "cached_at": "2026-06-04T13:59:27.488932"
+    }
+  }
+}

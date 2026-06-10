@@ -1,0 +1,830 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76538921-6"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76538921-6",
+      "esPersonaJuridica": true,
+      "fechaCarga": "09-06-2026",
+      "identificacion": {
+        "razonSocial": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "05-02-2016",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "05-02-2016"
+          },
+          {
+            "actividades": "OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.",
+            "codigo": "829900",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "09-03-2016"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2024"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 3,
+        "ultimaActualizacion": "09-06-2026 12:18:45",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Pequeña empresa",
+          "ventasAnuales": "5.000,01 a 10.000,00",
+          "cantidadTrabajadores": 0
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "09-06-2026 12:18:46"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "09-06-2026 12:18:45",
+        "ultimaActualizacionCobranza": "09-06-2026 12:18:45",
+        "ultimaActualizacionLaboral": "09-06-2026 12:18:45",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "09-06-2026 12:18:45"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "24-06-2022 20:00:00",
+              "razonSocial": "AMICIS AUTOMÓVILES SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/06/25/43287/05/2148131.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "PIA ANDREA LABARRERA PINOCHET",
+                  "rut": "15556700-7",
+                  "domicilio": "CALLE VICENTE PÉREZ ROSALES N 1028, COMUNA DE LA REINA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ÁLVARO ALONSO ROMO GONZÁLEZ",
+                  "rut": "16323255-3",
+                  "domicilio": "CALLE VASCO ÑUÑEZ DE BALBOA N 4666, SAN JOAQUÍN"
+                },
+                {
+                  "socio": "JOSE LUÍS VALENZUELA CAMPOS",
+                  "rut": "15327779-6",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "FLORENCIA DE LOURDES CAMPOS CIUDAD",
+                  "rut": "9155296-5",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "JUAN LINDOR GAMBOA SANTANDER",
+                  "rut": "13196595-8",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "RAFAEL GUILLERMO PEÑAS AEDO",
+                  "rut": "14152415-1",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "YELSON FABIAN PALMA JARA",
+                  "rut": "14164110-7",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "08-12-2022 21:00:00",
+              "razonSocial": "INFLEXION CONSULTING SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/12/09/43421/05/2231284.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "JOSE LUIS VALENZUELA CAMPOS",
+                  "rut": null,
+                  "domicilio": "LUIS THAYER OJEDA Nº558. DEPARTAMENTO 51, PROVIDENCIA"
+                },
+                {
+                  "socio": "JOSE SEBASTIAN REBOLLEDO BARRERA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": null
+            },
+            {
+              "fecha": "09-02-2023 21:00:00",
+              "razonSocial": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/02/10/43474/05/2270411.pdf",
+              "seccion": "MODIFICACIÓN",
+              "socios": [
+                {
+                  "socio": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+                  "rut": "14123342-4",
+                  "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "REBOLLEDO & PERAGALLO SPA",
+                  "rut": null,
+                  "domicilio": null
+                }
+              ],
+              "rut": "76538921-6"
+            },
+            {
+              "fecha": "21-02-2023 21:00:00",
+              "razonSocial": "CYBERSECURITY TRAINING SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/02/22/43484/05/2275966.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+                  "rut": "14123342-4",
+                  "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "MILTON EDUARDO FERRADA CRISÓSTOMO",
+                  "rut": "15398084-5",
+                  "domicilio": "QUEBRADA DEL CHACO N 02263, COMUNA DE PUENTE ALTO, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "09-06-2026 12:18:45"
+        }
+      },
+      "legalSummary": [
+        {
+          "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+          "rut": "76538921-6",
+          "fecha": "2016-01-20",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 0,
+          "actividad": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+          "comuna": "LO BARNECHEA",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+              "rut": "14123342-4",
+              "domicilio": "GUARDIA VIEJA 202, OFICINA 403, PROVIDENCIA, REGIÓN METROPOLITANA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "100"
+            },
+            {
+              "nombre": "MARCELA PAZ PERAGALLO LIZANA",
+              "rut": "15315399-K",
+              "domicilio": "HAMBURGO N 1933, DEPARTAMENTO 72, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "50.00"
+            }
+          ],
+          "participaciones": [
+            {
+              "razonSocial": "CYBERSECURITY TRAINING SPA",
+              "rut": "77733522-7",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "50.00",
+              "estado": "TERMINADA",
+              "fechaConstitucion": "2023-02-20"
+            },
+            {
+              "razonSocial": "AMICIS AUTOMOVILES SPA",
+              "rut": "77611574-6",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": "8.80",
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2022-06-06"
+            },
+            {
+              "razonSocial": "INFLEXION CONSULTING SPA",
+              "rut": "77691089-9",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2022-09-28"
+            },
+            {
+              "razonSocial": "AUTOIMPULSO SPA",
+              "rut": "78343241-2",
+              "tipoDeParticipacion": "SOCIO",
+              "porcentajeParticipacion": null,
+              "estado": "VIGENTE",
+              "fechaConstitucion": "2025-12-29"
+            }
+          ],
+          "extractos": [
+            {
+              "id": 2120764,
+              "fecha": "2023-02-10",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/02/10/43474/05/2270411.pdf",
+              "cve": "2270411",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1983115,
+              "fecha": "2016-01-30",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2016/01/30/993327_C_SPA_20160130.pdf",
+              "cve": "993327",
+              "tieneExtracto": false
+            }
+          ]
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d9da105387531592a544c9a12a73e852c1df52dcf5ac381532cae9d1e7f38bbf",
+      "cached_at": "2026-06-09T12:18:46.932524"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 12:18:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7515b8e90c02994d8bcd90bc149f53e9e9fe63249ca5b5546aa2a2724be844fd",
+        "cached_at": "2026-06-09T12:18:47.270025"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 12:18:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:679919116b1cdff1e9ee6e9f61a8bb5899b0c5d6229764cebe99cf9c88b298a7",
+        "cached_at": "2026-06-09T12:18:47.592014"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 12:18:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7b7b6b69b0eaeff5dd29f98d4aa39b664c0ce76bebeeb8c263c641e51a0b9cdb",
+        "cached_at": "2026-06-09T12:18:47.924125"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 12:18:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0410b0ce87b0031bb77f65eb0f694d0d6cf24c75961ed9fc6404366199673bbd",
+        "cached_at": "2026-06-09T12:18:48.253674"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 12:18:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:17eb3e0411ba1603ae0497fac92fa78fdc93c75f70c9d1a0daee6221a06135c6",
+        "cached_at": "2026-06-09T12:18:48.574590"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76538921-6",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+            "rutSociedad": "76538921-6",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2016-01-29",
+            "socios": [
+              {
+                "nombre": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+                "rut": "14123342-4",
+                "domicilio": "HAMBURGO N 1933, DEPARTAMENTO 72, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              },
+              {
+                "nombre": "MARCELA PAZ PERAGALLO LIZANA",
+                "rut": "15315399-K",
+                "domicilio": "HAMBURGO N 1933, DEPARTAMENTO 72, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50.00"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2023-02-10",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/02/10/43474/05/2270411.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2016-01-30",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2016/01/30/993327_C_SPA_20160130.pdf"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "AMICIS AUTOMOVILES SPA",
+                "rut": "77611574-6",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "CYBERSECURITY TRAINING SPA",
+                "rut": "77733522-7",
+                "tipoDeParticipacion": "Socio"
+              },
+              {
+                "razonSocial": "INFLEXION CONSULTING SPA",
+                "rut": "77691089-9",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:ea3cfd7097c91d2c131e1cf550262e36d0054c7453324ed6d06e4cdeac93dc99",
+      "cached_at": "2026-06-09T12:18:49.167213"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76538921-6",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "24-06-2022 20:00:00",
+            "razonSocial": "AMICIS AUTOMÓVILES SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/06/25/43287/05/2148131.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PIA ANDREA LABARRERA PINOCHET",
+                "rut": "15556700-7",
+                "domicilio": "CALLE VICENTE PÉREZ ROSALES N 1028, COMUNA DE LA REINA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+                "rut": "76538921-6",
+                "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ÁLVARO ALONSO ROMO GONZÁLEZ",
+                "rut": "16323255-3",
+                "domicilio": "CALLE VASCO ÑUÑEZ DE BALBOA N 4666, SAN JOAQUÍN"
+              },
+              {
+                "nombre": "JOSE LUÍS VALENZUELA CAMPOS",
+                "rut": "15327779-6",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "FLORENCIA DE LOURDES CAMPOS CIUDAD",
+                "rut": "9155296-5",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "JUAN LINDOR GAMBOA SANTANDER",
+                "rut": "13196595-8",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "RAFAEL GUILLERMO PEÑAS AEDO",
+                "rut": "14152415-1",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "YELSON FABIAN PALMA JARA",
+                "rut": "14164110-7",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "08-12-2022 21:00:00",
+            "razonSocial": "INFLEXION CONSULTING SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/12/09/43421/05/2231284.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+                "rut": "76538921-6",
+                "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "JOSE LUIS VALENZUELA CAMPOS",
+                "rut": null,
+                "domicilio": "LUIS THAYER OJEDA Nº558. DEPARTAMENTO 51, PROVIDENCIA"
+              },
+              {
+                "nombre": "JOSE SEBASTIAN REBOLLEDO BARRERA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": null
+          },
+          {
+            "fecha": "09-02-2023 21:00:00",
+            "razonSocial": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/02/10/43474/05/2270411.pdf",
+            "seccion": "MODIFICACIÓN",
+            "socios": [
+              {
+                "nombre": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+                "rut": "14123342-4",
+                "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "REBOLLEDO & PERAGALLO SPA",
+                "rut": null,
+                "domicilio": null
+              }
+            ],
+            "rut": "76538921-6"
+          },
+          {
+            "fecha": "21-02-2023 21:00:00",
+            "razonSocial": "CYBERSECURITY TRAINING SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2023/02/22/43484/05/2275966.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+                "rut": "14123342-4",
+                "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+                "rut": "76538921-6",
+                "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "MILTON EDUARDO FERRADA CRISÓSTOMO",
+                "rut": "15398084-5",
+                "domicilio": "QUEBRADA DEL CHACO N 02263, COMUNA DE PUENTE ALTO, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": null,
+            "sociedad": "AMICIS AUTOMÓVILES SPA"
+          },
+          {
+            "rut": "76538921-6",
+            "sociedad": "ASESORIAS E INVERSIONES LOS ANGELES SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:583ff5c7a1b93c93d59e1699d015e60a690cbc7d74f26a672713188848aedbfc",
+        "cached_at": "2026-06-09T12:18:49.493620"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "3",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:af6ecd250f79c690dd6169dad848fa199452cf3a00b52f4ada0310d829e86f4a",
+      "cached_at": "2026-06-09T12:18:50.095259"
+    }
+  }
+}

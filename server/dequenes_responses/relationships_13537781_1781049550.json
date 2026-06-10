@@ -1,0 +1,111 @@
+{
+  "pathCount": 8,
+  "relationships": [
+    {
+      "source": "77608267",
+      "target": "13537781",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-06-10",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76688457",
+      "target": "13537781",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-12-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77608267",
+      "target": "13537781",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2146012",
+        "cve": "2146012",
+        "shares_percent": 40,
+        "source": "DO",
+        "published_at": "2022-06-20",
+        "doc_extraction_id": "2196423",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/06/20/43283/05/2146012.pdf"
+      }
+    },
+    {
+      "source": "76688457",
+      "target": "13537781",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACUbVQHpEFA1",
+        "source": "RES",
+        "published_at": "2017-11-29"
+      }
+    },
+    {
+      "source": "76688457",
+      "target": "13537781",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACTpLk0zS31l",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "77608267",
+      "target": "20941941",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2146012",
+        "cve": "2146012",
+        "shares_percent": 15,
+        "source": "DO",
+        "published_at": "2022-06-20",
+        "doc_extraction_id": "2196423",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/06/20/43283/05/2146012.pdf"
+      }
+    },
+    {
+      "source": "77608267",
+      "target": "19911582",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2146012",
+        "cve": "2146012",
+        "shares_percent": 15,
+        "source": "DO",
+        "published_at": "2022-06-20",
+        "doc_extraction_id": "2196423",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/06/20/43283/05/2146012.pdf"
+      }
+    },
+    {
+      "source": "77608267",
+      "target": "19125458",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2146012",
+        "cve": "2146012",
+        "shares_percent": 15,
+        "source": "DO",
+        "published_at": "2022-06-20",
+        "doc_extraction_id": "2196423",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/06/20/43283/05/2146012.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "13537781": "JOCELYN JOHANNA MORENO TORREBLANCA LIQUIDACION",
+    "19125458": "JOCELYN MARGOT LANAS MORENO",
+    "19911582": "KATHERINE ELIANA LANAS MORENO",
+    "20941941": "CONSTANZA CAROLINA LANAS MORENO",
+    "76688457": "JMT SPA",
+    "77608267": "JJMT GROUP SPA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:0347a98d120c18061911b6563def471a27424d96e55e8aa31b6985c31e779e67",
+    "cached_at": "2026-06-09T23:59:10.958211"
+  }
+}

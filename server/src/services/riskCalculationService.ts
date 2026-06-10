@@ -901,6 +901,7 @@ export class RiskCalculationService {
     //check if rut exist in lpaltos collection
     if (logEntry.summaryData?.data?.lpaltosDetected === true) {
       rulObj.detected = true;
+      console.warn(904, logEntry.summaryData.data.lpaltosRecords);
       (rulObj as any).details = logEntry.summaryData.data.lpaltosRecords || [];
       (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, (rulObj as any).details);
       for (let detail of (rulObj as any).details) {
@@ -998,7 +999,7 @@ export class RiskCalculationService {
       rulObj.detected = false;
     }
 
-    console.warn(909, `[evaluateComplianceRules] RUT ${logEntry.rut} found in noticias coincidencias collection`, rulObj);
+   // console.warn(909, `[evaluateComplianceRules] RUT ${logEntry.rut} found in noticias coincidencias collection`, rulObj);
 
     if (rulObj.detected) {
       switch (rulObj.impacto) {
@@ -1596,7 +1597,8 @@ export class RiskCalculationService {
       score: 0,
       dataSourceDesc: "Dettagli da logEntry.laboralCasesData filtrando soggetti DDO/DDOR e normalizzando date"
     };
-    const laboralCases = v2.judicial.laboral.data || [];
+    console.warn(1600,v2.judicial.laboral.data.casos);
+    const laboralCases = v2.judicial.laboral.data.casos || [];
     rulObj.score = laboralCases.length;
     (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, laboralCases || []);
 
@@ -1634,7 +1636,7 @@ export class RiskCalculationService {
     };
 
     //    console.warn(1365,v2.judicial);
-    const cobranzaLaboral = v2?.judicial?.cobranza?.data || [];
+    const cobranzaLaboral = v2?.judicial?.cobranza?.data.casos || [];
 
     //    const cobranzaLaboral =  v2.cobranzaLaboral.multaLaboral.data || [];
 

@@ -1,0 +1,1001 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "15327779-6"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "15327779-6",
+      "esPersonaJuridica": false,
+      "fechaCarga": "09-06-2026",
+      "identificacion": {
+        "razonSocial": "JOSE LUIS VALENZUELA CAMPOS",
+        "presentaActividades": "SI",
+        "inicioActividades": "03-10-2006",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES",
+            "codigo": "681012",
+            "categoria": "Primera",
+            "afectaIva": "No",
+            "fecha": "08-05-2024"
+          },
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "21-07-2023"
+          },
+          {
+            "actividades": "SERVICIOS PROFESIONALES DE INGENIERIA Y ACTIVIDADES CONEXAS DE CONSULT",
+            "codigo": "711003",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "03-10-2006"
+          },
+          {
+            "actividades": "ACTIVIDADES DE INVESTIGACION (INCLUYE ACTIVIDADES DE INVESTIGADORES Y",
+            "codigo": "803000",
+            "categoria": "Segunda",
+            "afectaIva": "No",
+            "fecha": "03-10-2006"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Boleta Exenta Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Boletas De Honorarios Electronicas",
+            "ultimoAnioTimbrado": "2026"
+          }
+        ],
+        "cantidadActividades": 4,
+        "cantidadDocumentos": 4,
+        "ultimaActualizacion": "09-06-2026 18:20:55",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "09-06-2026 18:20:55"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 1,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 1,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "09-06-2026 18:20:54",
+        "ultimaActualizacionCobranza": "09-06-2026 18:20:55",
+        "ultimaActualizacionLaboral": "09-06-2026 18:20:55",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "24-06-2022 20:00:00",
+              "razonSocial": "AMICIS AUTOMÓVILES SPA",
+              "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/06/25/43287/05/2148131.pdf",
+              "seccion": "CONSTITUCIÓN",
+              "socios": [
+                {
+                  "socio": "PIA ANDREA LABARRERA PINOCHET",
+                  "rut": "15556700-7",
+                  "domicilio": "CALLE VICENTE PÉREZ ROSALES N 1028, COMUNA DE LA REINA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+                  "rut": "76538921-6",
+                  "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "ÁLVARO ALONSO ROMO GONZÁLEZ",
+                  "rut": "16323255-3",
+                  "domicilio": "CALLE VASCO ÑUÑEZ DE BALBOA N 4666, SAN JOAQUÍN"
+                },
+                {
+                  "socio": "FLORENCIA DE LOURDES CAMPOS CIUDAD",
+                  "rut": "9155296-5",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "JUAN LINDOR GAMBOA SANTANDER",
+                  "rut": "13196595-8",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "RAFAEL GUILLERMO PEÑAS AEDO",
+                  "rut": "14152415-1",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                },
+                {
+                  "socio": "YELSON FABIAN PALMA JARA",
+                  "rut": "14164110-7",
+                  "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "09-06-2026 18:20:54"
+        },
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "SOCIEDAD DE INVERSIONES MIRABILIA SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "PIA ANDREA LABARRERA PINOCHET",
+                  "rut": "15556700-7",
+                  "domicilio": "HABANA N°288 COMUNA DE VINA DEL MAR REGION DE VALPARAISO",
+                  "acciones": "500",
+                  "monto": "$500.000 PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "JOSE LUIS VALENZUELA CAMPOS",
+                  "rut": "15327779-6",
+                  "domicilio": "MERCED N°268 DEPTO/LOCAL 7B COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "500",
+                  "monto": "$500.000 PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JOSE LUIS VALENZUELA CAMPOS",
+                  "rut": "15327779-6",
+                  "domicilio": "MERCED N°268 DEPTO/LOCAL 7B COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "SOCIEDAD DE INVERSIONES GENUS SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "JOSE LUIS VALENZUELA CAMPOS",
+                  "rut": "15327779-6",
+                  "domicilio": "MERCED N°268 DEPTO/LOCAL 7B COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "500",
+                  "monto": "$500.000 PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "JOSE LUIS SEGUNDO VALENZUELA REBOLLEDO",
+                  "rut": "7816448-4",
+                  "domicilio": "MERCED N°268 DEPTO/LOCAL 7B COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "500",
+                  "monto": "$500.000 PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "JOSE LUIS VALENZUELA CAMPOS",
+                  "rut": "15327779-6",
+                  "domicilio": "MERCED N°268 DEPTO/LOCAL 7B COMUNA DE SANTIAGO REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": null,
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": null,
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 30,
+          "tasacionTotal": "748755063",
+          "ultimaActualizacion": "09-06-2026 18:20:56"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "JOSE",
+        "segundoNombre": "LUIS",
+        "apellido": "VALENZUELA",
+        "segundoApellido": "CAMPOS",
+        "tipoPersona": "natural",
+        "riesgo": "critical",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 1,
+            "riesgo": "critical"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 4,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:cdb08820c88fb01f5d4ba77438e46dd634fb5a331a9765d8e73adb3b4820a435",
+      "cached_at": "2026-06-09T18:20:59.493942"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "06-12-2012 21:00:00",
+            "litigantes": [
+              {
+                "rut": "6223619-1",
+                "nombre": "JAIME OMAR BERRMOS VILLAGRA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "12464483-6",
+                "nombre": "ALBERTO ANDRIS REGORD MONTIGU",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "14123342-4",
+                "nombre": "JOSI SEBASTIAN REBOLLEDO BARRERA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              },
+              {
+                "rut": "15327779-6",
+                "nombre": "JOSI LUIS VALENZUELA CAMPOS",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-27757-2012",
+            "tribunal": "1º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 18:20:55"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:079826b9b881eab67ff3268d94dc332d26421c88401dfef0c5497406ce55b77c",
+        "cached_at": "2026-06-09T18:20:59.823911"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 18:20:55"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:645775fe991ea3ad9bd850077b7ce46eca81bf011fe6756e96f05adf917cd0fa",
+        "cached_at": "2026-06-09T18:21:00.277145"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 18:20:55"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ee3843e94b58e7523822a951b5607f5f297f22d637025ff6ac80f1890157cc00",
+        "cached_at": "2026-06-09T18:21:00.648533"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 18:20:54"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ab2c96f18a15c6b66584c997a65e9d39a27bcc26fce6e89e376399d1494d60e1",
+        "cached_at": "2026-06-09T18:21:00.979769"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 18:20:54"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:3112a1c8336e3177a19cf28e1003ec116c7500c8e23c772d2d3871f3f1cf3d99",
+        "cached_at": "2026-06-09T18:21:01.309134"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "15327779-6",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "JOSE LUIS VALENZUELA CAMPOS",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "SOCIEDAD DE INVERSIONES MIRABILIA SPA",
+            "rutSociedad": "76581688-2",
+            "nombreSocio": "JOSE LUÍS VALENZUELA CAMPOS",
+            "rutSocio": "15327779-6",
+            "fecha": "2016-01-13",
+            "socios": [
+              {
+                "nombre": "JOSE LUÍS VALENZUELA CAMPOS",
+                "rut": "15327779-6",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "PÍA ANDREA LABARRERA PINOCHET",
+                "rut": "15556700-7",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2016-01-14",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACXKIF3ECEbi&codigo=81-B8-42-D4-48-10-CE-02-D4-19-8A-41-F4-AE-00-04"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "SOCIEDAD DE INVERSIONES GENUS SPA",
+            "rutSociedad": "76581871-0",
+            "nombreSocio": "JOSE LUÍS VALENZUELA CAMPOS",
+            "rutSocio": "15327779-6",
+            "fecha": "2016-01-14",
+            "socios": [
+              {
+                "nombre": "JOSE LUÍS VALENZUELA CAMPOS",
+                "rut": "15327779-6",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "JOSE LUIS SEGUNDO VALENZUELA REBOLLEDO",
+                "rut": "7816448-4",
+                "domicilio": "MERCED N°268 DEPTO/LOCAL 7B COMUNA DE SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2016-01-15",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACR2FonD3I56&codigo=A0-EC-97-56-03-92-96-2B-4D-FE-BF-9A-A7-92-E8-33"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "AMICIS AUTOMOVILES SPA",
+            "rutSociedad": "77611574-6",
+            "nombreSocio": "JOSE LUÍS VALENZUELA CAMPOS",
+            "rutSocio": "15327779-6",
+            "fecha": "2022-06-24",
+            "socios": [
+              {
+                "nombre": "JUAN LINDOR GAMBOA SANTANDER",
+                "rut": "13196595-8",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "11.80"
+              },
+              {
+                "nombre": "RAFAEL GUILLERMO PEÑAS AEDO",
+                "rut": "14152415-1",
+                "domicilio": "AV PERÚ N880 DPTO 1008, COMUNA DE RECOLETA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "17.60"
+              },
+              {
+                "nombre": "JOSE LUÍS VALENZUELA CAMPOS",
+                "rut": "15327779-6",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "28.70"
+              },
+              {
+                "nombre": "PÍA ANDREA LABARRERA PINOCHET",
+                "rut": "15556700-7",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "2.90"
+              },
+              {
+                "nombre": "YELSON FABIAN PALMA JARA",
+                "rut": "14164110-7",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "8.80"
+              },
+              {
+                "nombre": "ÁLVARO ALONSO ROMO GONZÁLEZ",
+                "rut": "16323255-3",
+                "domicilio": "VASCO NUÑEZ DE BALBOA N 4666 SAN JOAQUÍN",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "5.10"
+              },
+              {
+                "nombre": "REBOLLEDO Y PERAGALLO SPA",
+                "rut": "76538921-6",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "8.80"
+              },
+              {
+                "nombre": "FLORENCIA DE LOURDES CAMPOS CIUDAD",
+                "rut": "9155296-5",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "16.30"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2022-06-25",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/06/25/43287/05/2148131.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "INFLEXION CONSULTING SPA",
+            "rutSociedad": "77691089-9",
+            "nombreSocio": "JOSE LUÍS VALENZUELA CAMPOS",
+            "rutSocio": "15327779-6",
+            "fecha": "2022-12-08",
+            "socios": [
+              {
+                "nombre": "JOSE LUÍS VALENZUELA CAMPOS",
+                "rut": "15327779-6",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "JOSÉ SEBASTIÁN REBOLLEDO BARRERA",
+                "rut": "14123342-4",
+                "domicilio": "HAMBURGO N 1933, DEPARTAMENTO 72, COMUNA DE ÑUÑOA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio Indirecto",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              },
+              {
+                "nombre": "REBOLLEDO Y PERAGALLO SPA",
+                "rut": "76538921-6",
+                "domicilio": "GUARDIA VIEJA N°202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": null
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2022-12-09",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/12/09/43421/05/2231284.pdf"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2022-09-30",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/09/30/43365/05/2195914.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 4
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "JOSÉ LUIS VALENZUELA CAMPOS",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-191-2013",
+            "fecha": "03/09/2013",
+            "infraccion": "Giro doloso de cheques (Sólo Crimen)",
+            "estado": "Concluida",
+            "etapa": "Cumplimiento",
+            "litigantes": [
+              {
+                "nombre": "ABNER AVILES MARDONES",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ABNER ENRIQUE AVILÉS MARDONES",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "ALEJANDRA ANDREA GODOY ORMAZÁBAL",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CLAUDIO ANDRÉS PIZARRO LERIN",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "COMPAÑIA DE SEGUROS CREDITO CONTINENTAL SA",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "EMBOTELLADORAS CHILENAS UNIDAS SA.",
+                "sujeto": "Querellante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "IGNACIO FERNANDO GONZÁLEZ LANDETA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "IGNACIO FERNANDO GONZÁLEZ LANDETA",
+                "sujeto": "Testigo",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ ADRIÁN CASTRO FUENTES",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JOSÉ LUIS VALENZUELA CAMPOS",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "JOSÉ MAURICIO QUIROGA ROBLES",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JUACS",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LESLIA CAROLINA LAGOS LABRAÑA",
+                "sujeto": "Abogado patrocinante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LUIS HAROLDO PINO URIBE",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MINISTERIO PUBLICO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Auto de apertura",
+            "tribunal": "7º TRIBUNAL DE JUICIO ORAL EN LO PENAL DE SANTIAGO",
+            "esDenunciado": true
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:9a634c0ff8947bbe1e6009c8bc02eb1dd839280ccd39f50af79f9b3b49f93942",
+      "cached_at": "2026-06-09T18:21:02.701222"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "15327779-6",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "24-06-2022 20:00:00",
+            "razonSocial": "AMICIS AUTOMÓVILES SPA",
+            "linkPdf": "http://www.diariooficial.interior.gob.cl/publicaciones/2022/06/25/43287/05/2148131.pdf",
+            "seccion": "CONSTITUCIÓN",
+            "socios": [
+              {
+                "nombre": "PIA ANDREA LABARRERA PINOCHET",
+                "rut": "15556700-7",
+                "domicilio": "CALLE VICENTE PÉREZ ROSALES N 1028, COMUNA DE LA REINA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+                "rut": "76538921-6",
+                "domicilio": "HAMBURGO N 1933, DEPTO. 72, COMUNA DE ÑUÑOA, CIUDAD DE SANTIAGO, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "ÁLVARO ALONSO ROMO GONZÁLEZ",
+                "rut": "16323255-3",
+                "domicilio": "CALLE VASCO ÑUÑEZ DE BALBOA N 4666, SAN JOAQUÍN"
+              },
+              {
+                "nombre": "JOSE LUÍS VALENZUELA CAMPOS",
+                "rut": "15327779-6",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "FLORENCIA DE LOURDES CAMPOS CIUDAD",
+                "rut": "9155296-5",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "JUAN LINDOR GAMBOA SANTANDER",
+                "rut": "13196595-8",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "RAFAEL GUILLERMO PEÑAS AEDO",
+                "rut": "14152415-1",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              },
+              {
+                "nombre": "YELSON FABIAN PALMA JARA",
+                "rut": "14164110-7",
+                "domicilio": "GUARDIA VIEJA N 202, OFICINA 403, COMUNA DE PROVIDENCIA, REGIÓN METROPOLITANA"
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": null,
+            "sociedad": "AMICIS AUTOMÓVILES SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:f4ccd03f99b2557e0494fbb15318814bb2c7547cab6e2cc8a5707c0a42c764e8",
+        "cached_at": "2026-06-09T18:21:03.038266"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 626420,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 1,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:793623a82b8f3799289e82a765466329597a81fb77c024a9c75b4d9b8dc66593",
+      "cached_at": "2026-06-09T18:21:03.640254"
+    }
+  }
+}

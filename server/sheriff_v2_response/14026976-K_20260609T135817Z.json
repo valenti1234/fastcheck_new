@@ -1,0 +1,1156 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "14026976-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "14026976-K",
+      "esPersonaJuridica": false,
+      "fechaCarga": "09-06-2026",
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": null,
+          "periodoActual": null,
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": null
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 1,
+        "casosCivilesConcluidos": 5,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 1,
+        "casosConcluidos": 5,
+        "todosLosCasos": 6,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 1
+        },
+        "ultimaActualizacionCiviles": "09-06-2026 13:58:06",
+        "ultimaActualizacionCobranza": "09-06-2026 13:58:05",
+        "ultimaActualizacionLaboral": "09-06-2026 13:58:05",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "09-06-2026 13:58:06"
+        }
+      },
+      "legal": {
+        "diarioOficial": {
+          "casos": [
+            {
+              "fecha": "14-12-2014 21:00:00",
+              "razonSocial": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+              "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf",
+              "seccion": "MODIFICACIONES",
+              "socios": [
+                {
+                  "socio": "MARCOS ALEXIS POBLETE ORTIZ",
+                  "rut": "15130521-0",
+                  "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+                },
+                {
+                  "socio": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                  "rut": "15491851-5",
+                  "domicilio": "CALLE 17 NORTE N 3748, COMUNA Y PROVINCIA DE TALCA"
+                }
+              ],
+              "rut": null
+            }
+          ],
+          "ultimaActualizacion": "09-06-2026 13:58:05"
+        },
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "INVERSIONES LAS MARTINAS LIMITADA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "FELIPE ALONSO RAMIREZ MATAMALA",
+                  "rut": "15219871-K",
+                  "domicilio": "PASAJE LAS MURTILLAS N°370 VILLA JARDINES DE ANTILHUE COMUNA DE CONCEPCION REGION DEL BIOBIO",
+                  "acciones": null,
+                  "monto": "$5.000.000 DE PESOS",
+                  "porcentaje": "50%"
+                },
+                {
+                  "socio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "BALMACEDA N°198 COMUNA DE EL CARMEN REGION DE NUBLE",
+                  "acciones": null,
+                  "monto": "$5.000.000 DE PESOS",
+                  "porcentaje": "50%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "FELIPE ALONSO RAMIREZ MATAMALA",
+                  "rut": "15219871-K",
+                  "domicilio": "PASAJE LAS MURTILLAS N°370 VILLA JARDINES DE ANTILHUE COMUNA DE CONCEPCION REGION DEL BIOBIO"
+                },
+                {
+                  "administrador": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "BALMACEDA N°198 COMUNA DE EL CARMEN REGION DE NUBLE"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "CONSULTORIA E INGENIERIA MARBOFE SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "BALMACEDA N°198 COMUNA DE EL CARMEN REGION DE NUBLE",
+                  "acciones": "1",
+                  "monto": "$3.000.000 CLP",
+                  "porcentaje": "100%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "BALMACEDA N°198 COMUNA DE EL CARMEN REGION DE NUBLE"
+                }
+              ]
+            },
+            {
+              "fecha": null,
+              "actuacion": null,
+              "numeroAtencion": null,
+              "razonSocial": "SOCIEDAD POR ACCIONES CONSTRUCTORA MARBOFE SPA",
+              "cve": null,
+              "linkPdf": null,
+              "socios": [
+                {
+                  "socio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "BALMACEDA N°198 BLOQUE OF C COMUNA DE EL CARMEN REGION DE NUBLE",
+                  "acciones": "10",
+                  "monto": "$3.000.000 CLP",
+                  "porcentaje": 100
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                  "rut": "14026976-K",
+                  "domicilio": "BALMACEDA N°198 BLOQUE OF C COMUNA DE EL CARMEN REGION DE NUBLE"
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        }
+      },
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 9800,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 19430,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 12180,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 3,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances"
+        ],
+        "porcentajeClasificacion": 300,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "NO PROCESADO",
+        "nombre": "",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "natural",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b16f1e06c590b70c936a40ebc5f0ffa38a85d4823aa0eaf8c389db1c5eda8d24",
+      "cached_at": "2026-06-09T13:58:07.346509"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 6,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "25-01-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "93930000-7",
+                "nombre": "CLÍNICA LAS CONDES S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "15806977-6",
+                "nombre": "PATRICIA ALEJANDRA SILVA PARRA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14026976-K",
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17778460-5",
+                "nombre": "FRANCISCA SALOMÉ MAYORGA VERGARA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18934507-0",
+                "nombre": "FELIPE ANTONIO CAÑETE OCAMPO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "17881159-2",
+                "nombre": "FERNANDO ALBERTO ERICES SÁNCHEZ (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16794164-8",
+                "nombre": "ROMINA FERNANDA PARADA CÁRCAMO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "18468536-1",
+                "nombre": "JUAN CARLOS PULGAR HERNÁNDEZ (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16609476-3",
+                "nombre": "ALBERTO CHAPARRO YENTZEN",
+                "sujeto": "AP.DNT",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13340098-2",
+                "nombre": "CARLA ANDREA ROBLEDO MALHUE (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-1419-2023",
+            "tribunal": "9º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "2 Excepciones",
+            "fechaIngreso": "28-11-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17243406-1",
+                "nombre": "GASPAR OSVALDO CORTÉS MOYA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10639706-6",
+                "nombre": "ALEJANDRA ANDREA LOYOLA LAREE (Sin Acreditacion)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "19055659-K",
+                "nombre": "DANIELA JACQUELINE RODRÍGUEZ JERIA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14026976-K",
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2934-2022",
+            "tribunal": "2º Juzgado Civil de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "15-10-2019 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12456725-4",
+                "nombre": "CHRISTIAN MARCEL DETRE LOBO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16321697-3",
+                "nombre": "FELIPE MAURICIO ALLIENDE ALFARO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14026976-K",
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-3221-2019",
+            "tribunal": "1º Juzgado Civil de Concepción",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido ",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Terminada ",
+            "fechaIngreso": "02-09-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12456725-4",
+                "nombre": "CHRISTIAN MARCEL DETRE LOBO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "16321697-3",
+                "nombre": "FELIPE MAURICIO ALLIENDE ALFARO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14026976-K",
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "DDO.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Exhorto",
+            "rol": "E-582-2019",
+            "tribunal": "Juzgado de Letras de Yungay",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "13-08-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12456725-4",
+                "nombre": "CHRISTIAN MARCEL DETRE LOBO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16321697-3",
+                "nombre": "FELIPE MAURICIO ALLIENDE ALFARO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14026976-K",
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-4083-2019",
+            "tribunal": "2º Juzgado Civil de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "04-08-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "12456725-4",
+                "nombre": "CHRISTIAN MARCEL DETRE LOBO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "16321697-3",
+                "nombre": "FELIPE MAURICIO ALLIENDE ALFARO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "97004000-5",
+                "nombre": "BANCO DE CHILE",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "14026976-K",
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-3902-2019",
+            "tribunal": "2º Juzgado Civil de Chillán",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 13:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:6798defc327c9133d154bf260f1a52522582bb587d2868efd37dc38f8b2c80c6",
+        "cached_at": "2026-06-09T13:58:07.680064"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 13:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:0c9482bf33481341e54eb96c9d5b530188831f90357e6286ac422d8dc660efc3",
+        "cached_at": "2026-06-09T13:58:08.012869"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 13:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:2d3d3ea69447b8d16b58a46cfa61c701ea04f3b2a59fae79e97a2dc08aa8f596",
+        "cached_at": "2026-06-09T13:58:08.335445"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 13:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:377b646026e4152b9f0b4217061490c0599ca7ec0ea2f9aeb85946b2462e0b24",
+        "cached_at": "2026-06-09T13:58:08.660797"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 13:58:06"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:648fad3775a7c283f26331cdba54967a9c6222b8863a193e6fddc6a2b9066c41",
+        "cached_at": "2026-06-09T13:58:08.989813"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "14026976-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+            "rutSociedad": "76030744-0",
+            "nombreSocio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "rutSocio": "14026976-K",
+            "fecha": "2008-08-19",
+            "socios": [
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "33.33"
+              },
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTÍZ",
+                "rut": "15130521-0",
+                "domicilio": "CIUDAD DE CURICÓ, CALLE CARMEN NÚMERO 459",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CIUDAD DE TALCA, CALLE DIECISIETE NORTE NÚMERO 3748",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2025-10-07",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3TnJKhLz56&codigo=2B-19-82-A6-D5-19-0D-4C-FC-F1-63-00-6F-BE-FE-25"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-12-18",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACr8FZYJJYu2&codigo=A5-37-90-C2-4B-C5-D5-3F-49-2A-49-04-29-49-37-56"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-02-23",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACHjeyJX31uX&codigo=F9-AE-2D-4F-C8-32-60-3D-4F-C5-30-42-BE-6F-F5-2E"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-08-29",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACrCE1T8hL1L&codigo=9C-49-A4-2A-E8-B1-EF-1D-9C-FE-12-CA-39-62-81-DA"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-07-27",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC3feTrJC3CR&codigo=A0-C5-0D-ED-CA-39-E9-9A-BE-DE-FE-FD-89-1C-B2-F0"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-06-13",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACyMb8aXeMqZ&codigo=32-95-E8-84-14-D2-EE-F7-A8-03-C8-F8-AC-78-86-AD"
+              },
+              {
+                "actuacion": "MIGRACIÓN",
+                "fecha": "2018-06-01",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACqMyAUvpv1A&codigo=42-A2-15-8B-5B-85-6B-F1-68-20-B1-59-F3-21-17-52"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2018-03-07",
+                "url": "http://www.diariooficial.interior.gob.cl/publicaciones/2018/03/07/42001/05/1362673.pdf"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2014-12-15",
+                "url": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "INVERSIONES LAS MARTINAS LIMITADA",
+            "rutSociedad": "76782667-2",
+            "nombreSocio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "rutSocio": "14026976-K",
+            "fecha": "2017-09-24",
+            "socios": [
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              },
+              {
+                "nombre": "FELIPE ALONSO RAMIREZ MATAMALA",
+                "rut": "15219871-K",
+                "domicilio": "PASAJE LAS MURTILLAS NRO 320, JARDINES DE ANTILHUE, CONCEPCIÓN",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "50"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2017-09-25",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACW0B1tL1KpX&codigo=44-8C-31-B0-6C-E0-0B-F9-19-46-D8-80-B8-04-FA-21"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "CONSULTORÍA E INGENIERÍA MARBOFE SPA",
+            "rutSociedad": "77360921-7",
+            "nombreSocio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "rutSocio": "14026976-K",
+            "fecha": "2021-05-06",
+            "socios": [
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2021-05-07",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACAYqmgGH6g7&codigo=8B-CA-BB-EE-D7-7D-FD-76-B7-11-5E-F2-98-A0-55-6F"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          },
+          {
+            "nombreSociedad": "CONSTRUCTORA MARBOFE SPA",
+            "rutSociedad": "78212125-1",
+            "nombreSocio": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "rutSocio": "14026976-K",
+            "fecha": "2025-07-22",
+            "socios": [
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA N° 198",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "100"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2025-07-23",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACiy4u7hzmqZ&codigo=62-A5-29-8F-1E-53-6F-DA-50-2E-0C-2B-89-C3-AA-FF"
+              }
+            ],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 4
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-5314-2021",
+            "fecha": "07/12/2021",
+            "infraccion": "Lesiones menos graves.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "49° UNIDAD FISCALIZADORA LINARES",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "CESAR HERRERA MOLINA",
+                "sujeto": "Defensor privado",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "DEPARTAMENTO DE EXTRANJERIA Y",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FRANCISCO JAVIER VARGAS VILLALOBOS",
+                "sujeto": "Defensor",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "LESLIE LORETO CERDA MONTECINO",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "MP.",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "PATRICIA ELENA SPIESS HENRÍQUEZ",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "RETEN CONVENTO DE LONGAVÍ",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "SUBCOMLONGAVI",
+                "sujeto": "Colaborador",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de Linares",
+            "esDenunciado": true
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL POR EL CARMEN",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "periodo": "2021-2024"
+          },
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "periodo": "2023"
+          },
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "periodo": "2022"
+          },
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "periodo": "2021"
+          }
+        ],
+        "totalCoincidencias": 4
+      },
+      "familiaresPep": {
+        "coincidencias": [
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "url": "https://www.infoprobidad.cl/Declaracion/Declaracion?ID=1062970",
+            "periodo": "03/05/2023",
+            "datosRelaciones": [
+              {
+                "nombre": "NANCY DEL CARMEN ESPARZA GUTIERREZ",
+                "parentesco": "MADRE"
+              },
+              {
+                "nombre": "NELSON LEONEL SANDOVAL SALAZAR",
+                "parentesco": "PADRE"
+              }
+            ]
+          },
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "url": "https://www.infoprobidad.cl/Declaracion/Declaracion?ID=866897",
+            "periodo": "04/05/2022",
+            "datosRelaciones": [
+              {
+                "nombre": "NANCY DEL CARMEN ESPARZA GUTIERREZ",
+                "parentesco": "MADRE"
+              },
+              {
+                "nombre": "NELSON LEONEL SANDOVAL SALAZAR",
+                "parentesco": "PADRE"
+              }
+            ]
+          },
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CONCEJAL",
+            "institucion": "MUNICIPALIDAD DE EL CARMEN",
+            "url": "https://www.infoprobidad.cl/Declaracion/Declaracion?ID=731320",
+            "periodo": "29/07/2021",
+            "datosRelaciones": [
+              {
+                "nombre": "NANCY DEL CARMEN ESPARZA GUTIERREZ",
+                "parentesco": "MADRE"
+              },
+              {
+                "nombre": "NELSON LEONEL SANDOVAL SALAZAR",
+                "parentesco": "PADRE"
+              }
+            ]
+          }
+        ],
+        "totalCoincidencias": 3
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [
+          {
+            "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+            "cargo": "CANDIDATO A CONCEJAL 2021",
+            "institucion": "SERVEL CANDIDATOS A ELECCIONES",
+            "periodo": "2021"
+          }
+        ],
+        "totalCoincidencias": 1
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:a8337a7c8491bd9cb0d38bb1a47e2f831797916b463a41c3ddbc7e362ea11151",
+      "cached_at": "2026-06-09T13:58:16.430015"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "14026976-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [
+          {
+            "fecha": "14-12-2014 21:00:00",
+            "razonSocial": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA",
+            "linkPdf": "https://www.diariooficial.interior.gob.cl/media/2014/12/15/853051_M_LTDA_20141215_firmado.pdf",
+            "seccion": "MODIFICACIONES",
+            "socios": [
+              {
+                "nombre": "MARCOS ALEXIS POBLETE ORTIZ",
+                "rut": "15130521-0",
+                "domicilio": "CALLE MÁLAGA N 806, VILLA LA PAZ, COMUNA Y PROVINCIA DE CURICÓ"
+              },
+              {
+                "nombre": "PAULO CRISTIAN SANDOVAL ESPARZA",
+                "rut": "15491851-5",
+                "domicilio": "CALLE 17 NORTE N 3748, COMUNA Y PROVINCIA DE TALCA"
+              },
+              {
+                "nombre": "NELSON DAGOBERTO SANDOVAL ESPARZA",
+                "rut": "14026976-K",
+                "domicilio": "COMUNA EL CARMEN, CALLE BALMACEDA Nº 198"
+              }
+            ],
+            "rut": null
+          }
+        ],
+        "participaciones": [
+          {
+            "rut": null,
+            "sociedad": "CONSTRUCTORA E INGENIERIA INGESEP LIMITADA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:ece0e8e15a9e5c69eb64495d51e7c94581f587f00668b51f478a565e843f72f6",
+        "cached_at": "2026-06-09T13:58:16.761837"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 9800,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 6,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 100,
+      "montoBoletinComercial": 1807596,
+      "ponderacionBoletinComercial": 0,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 300,
+      "etiquetaClasificacion": "Low",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:3a75f240d7dcb67ae57f6d1a0f4cb5b96dd0cc9d623c00285188d99849744fd9",
+      "cached_at": "2026-06-09T13:58:17.340507"
+    }
+  }
+}

@@ -1,0 +1,1473 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "76186615-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "76186615-K",
+      "esPersonaJuridica": true,
+      "fechaCarga": "09-06-2026",
+      "identificacion": {
+        "razonSocial": "RODCAR CONSTRUCCION Y MONTAJES SOCIEDAD ANONIMA",
+        "presentaActividades": "SI",
+        "inicioActividades": "17-01-2012",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "FABRICACION DE PRODUCTOS METALICOS PARA USO ESTRUCTURAL",
+            "codigo": "251100",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "17-06-2020"
+          },
+          {
+            "actividades": "REPARACION DE MAQUINARIA METALURGICA, PARA LA MINERIA, EXTRACCION DE P",
+            "codigo": "331202",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "17-06-2020"
+          },
+          {
+            "actividades": "CONSTRUCCION DE EDIFICIOS PARA USO NO RESIDENCIAL",
+            "codigo": "410020",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "05-11-2018"
+          },
+          {
+            "actividades": "CONSTRUCCION DE OTRAS OBRAS DE INGENIERIA CIVIL",
+            "codigo": "429000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "05-11-2018"
+          },
+          {
+            "actividades": "TERMINACION Y ACABADO DE EDIFICIOS",
+            "codigo": "433000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "20-02-2012"
+          },
+          {
+            "actividades": "ALQUILER DE OTROS TIPOS DE MAQUINARIAS Y EQUIPOS SIN OPERARIO N.C.P.",
+            "codigo": "773009",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "21-11-2019"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Facturas",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Factura No Afecta O Exenta Electronica",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Guias De Despacho",
+            "ultimoAnioTimbrado": "2015"
+          },
+          {
+            "documento": "Guia Despacho Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Nota Debito Electronica",
+            "ultimoAnioTimbrado": "2021"
+          },
+          {
+            "documento": "Notas De Credito",
+            "ultimoAnioTimbrado": "2016"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2022"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2019"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2023"
+          }
+        ],
+        "cantidadActividades": 6,
+        "cantidadDocumentos": 10,
+        "ultimaActualizacion": "09-06-2026 16:28:38",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "0,01 a 200,00",
+          "cantidadTrabajadores": 5
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 2,
+        "casosBolcom": 6,
+        "MontoInfocom": 169987,
+        "MontoBolcom": 189962889,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": 0.3,
+          "cambioAbsoluto": 576967
+        },
+        "ultimaActualizacion": "09-06-2026 16:28:38"
+      },
+      "judicial": {
+        "casosCivilesActivos": 3,
+        "casosCivilesPresentados": 3,
+        "casosCivilesConcluidos": 4,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 5,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 3,
+        "casosActuales": 3,
+        "casosArchivados": 3,
+        "casosConcluidos": 12,
+        "todosLosCasos": 18,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandado": 6
+        },
+        "ultimaActualizacionCiviles": "09-06-2026 16:28:37",
+        "ultimaActualizacionCobranza": "09-06-2026 16:28:37",
+        "ultimaActualizacionLaboral": "09-06-2026 16:28:37",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 18,
+          "empleados": 6,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 2,
+          "montoTotalMultas": 953520,
+          "multasPagadas": 2,
+          "montoMultasPagadas": 953520,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": 0,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "09-06-2026 16:28:38"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        }
+      },
+      "legal": {},
+      "legalSummary": [
+        {
+          "nombre": "RODCAR CONSTRUCCION Y MONTAJES SOCIEDAD ANONIMA",
+          "rut": "76186615-K",
+          "fecha": "2011-10-19",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 5,
+          "actividad": "CONSTRUCCION DE EDIFICIOS PARA USO NO RESIDENCIAL",
+          "comuna": "RECOLETA",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "SERVICIOS INDUSTRIALES RODCAR SPA",
+              "rut": "76977320-7",
+              "domicilio": "BELLAVISTA 185, Depto 1001, Bloque, RECOLETA, XIII REGION METROPOLITANA",
+              "tipoPersona": "juridica",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": null
+            }
+          ],
+          "participaciones": [],
+          "extractos": []
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "11/2023",
+        "deudaDirectaComercial": 293538,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 4228,
+        "deudaDirectaVencida": 77360,
+        "deudaDirectaVigente": 211950,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 5605,
+        "variacion": {
+          "periodo": "05/2023",
+          "deudaDirectaComercial": 430594,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 18425,
+          "deudaDirectaVencida": 38922,
+          "deudaDirectaVigente": 373247,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 5435
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "09-06-2026 16:28:38"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 72.20530220959466,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 83.33333333333334,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 59.72222222222222,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 37.597604985361116,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 252.85846275051136,
+        "etiquetaClasificacion": "Medium"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "RODCAR CONSTRUCCION Y MONTAJES SOCIEDAD ANONIMA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": [
+        "Vehículos",
+        "Boletín Laboral"
+      ]
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:84197c6767e59717f06db6140235e072405a72f9bd7af6b05e28e60f90d46187",
+      "cached_at": "2026-06-09T16:28:39.069248"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 10,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "19-05-2024 20:00:00",
+            "litigantes": [
+              {
+                "rut": "10481262-7",
+                "nombre": "MÓNICA CARLA MEDINA RAMOS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "12354986-4",
+                "nombre": "FREDDY NELSON RAMÍREZ LEÓN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "14395244-4",
+                "nombre": "RODRIGO ARIEL RAMÍREZ LEÓN (Sin Acreditacion)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "97036000-K",
+                "nombre": "BANCO SANTANDER-CHILE S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCIÓN Y MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-8869-2024",
+            "tribunal": "24º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "8 Terminada",
+            "fechaIngreso": "04-03-2024 21:00:00",
+            "litigantes": [
+              {
+                "rut": "16893855-1",
+                "nombre": "ANA LUISA BOLDT STRICKLER",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15845201-4",
+                "nombre": "JORGE IGNACIO DOREN AGÜERO",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76721910-5",
+                "nombre": "CINTAC S.A.I.C.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCIÓN Y MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-4209-2024",
+            "tribunal": "14º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "01-10-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "97036000-K",
+                "nombre": "BANCO SANTANDER -  CHILE S.A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "12354986-4",
+                "nombre": "FREDDY NELSON RAMÍREZ LEÓN (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10481262-7",
+                "nombre": "MÓNICA CARLA MEDINA RAMOS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCIÓN Y MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-16858-2023",
+            "tribunal": "24º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "08-03-2023 21:00:00",
+            "litigantes": [
+              {
+                "rut": "97018000-1",
+                "nombre": "SCOTIABANK CHILE S. A.",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "6362280-K",
+                "nombre": "LUIS FELIPE ABOGABIR SAID (Poder Amplio con Limitaciones)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "13685600-6",
+                "nombre": "JUAN CARLOS GODOY CARRASCO (Poder Amplio con Limitaciones)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10481262-7",
+                "nombre": "MÓNICA CARLA MEDINA RAMOS",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCIÓN Y MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-4104-2023",
+            "tribunal": "4º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Vigente"
+          },
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Archivada",
+            "etapa": "1 Notificación demanda y su proveído",
+            "fechaIngreso": "27-02-2018 21:00:00",
+            "litigantes": [
+              {
+                "rut": "17088474-4",
+                "nombre": "PEDRO-PABLO MUÑOZ LENCK (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION Y MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76445625-4",
+                "nombre": "INGENIERÍA Y CONSTRUCCIÓN CISMATER SPA",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              }
+            ],
+            "proc": "Sumario",
+            "rol": "C-6487-2018",
+            "tribunal": "11º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Tramitación ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Preparación vía ejecutiva ",
+            "fechaIngreso": "06-04-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76186615-K",
+                "nombre": "Rodcar Construccion y Montajes S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15621768-9",
+                "nombre": "EDUARDO ANDRÉS VÁSQUEZ SANTIS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76574530-6",
+                "nombre": "SIISTEC INGENIERIA LTDA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6502-2017",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "26-03-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76186615-K",
+                "nombre": "Rodcar Construccion y Montajes S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "15621768-9",
+                "nombre": "EDUARDO ANDRÉS VÁSQUEZ SANTIS",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76574530-6",
+                "nombre": "SIISTEC INGENIERIA LTDA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-6001-2017",
+            "tribunal": "12º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "0 Ingreso ",
+            "fechaIngreso": "16-03-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "13254289-9",
+                "nombre": "RODRIGO ALEJANDRO GODOY ALFARO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "Rodcar Construccion y Montajes S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "14165680-5",
+                "nombre": "MARIO MARCELO LAZO BARAHONA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-5175-2017",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Archivada"
+          },
+          {
+            "estado": "Archivada Digital ",
+            "estadoCausa": "Archivada",
+            "etapa": "11 Terminada ",
+            "fechaIngreso": "06-02-2017 21:00:00",
+            "litigantes": [
+              {
+                "rut": "76186615-K",
+                "nombre": "Rodcar Construccion y Montajes S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "13254289-9",
+                "nombre": "RODRIGO ALEJANDRO GODOY ALFARO",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "14165680-5",
+                "nombre": "MARIO MARCELO LAZO BARAHONA",
+                "sujeto": "DTE.  ",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Obligación de Dar",
+            "rol": "C-2310-2017",
+            "tribunal": "22º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Arch. Judic.",
+            "estadoCausa": "Archivada",
+            "etapa": "10 Terminada ",
+            "fechaIngreso": "07-05-2015 21:00:00",
+            "litigantes": [
+              {
+                "rut": "70360100-6",
+                "nombre": " ASOCIACIÓN CHILENA DE SEGURIDA D.",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": " RODCAR CONSTRUCCIONES Y MONTAJ ES S.A.",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "10269784-7",
+                "nombre": "JUAN PABLO RAIMUNDO VARELA MIQUEL",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Gestión Preparatoria Notificación Cobro de Factura",
+            "rol": "C-10987-2015",
+            "tribunal": "29º Juzgado Civil de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 16:28:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:bcb64e7147616ddb2faeb2aafda1450330120d288b56afdf7fcb028d19ef4270",
+        "cached_at": "2026-06-09T16:28:39.400896"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 5,
+        "casos": [
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-02-2025 21:00:00",
+            "monto": "428006",
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION Y MONTAJE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "3332573-8",
+                "nombre": "Alicia Soto Santaella",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-7973-2025",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Sin archivar",
+            "etapa": "Terminada",
+            "fechaIngreso": "04-07-2024 20:00:00",
+            "monto": "437178",
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital",
+                "sujeto": "DTE.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION Y MONTAJE S.A.",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA"
+              },
+              {
+                "rut": "3332573-8",
+                "nombre": "Alicia Soto Santaella",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-31698-2024",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "07-03-2018 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "6495959-K",
+                "nombre": "ARMANDO ALEJANDRO FERNANDO DE LAIRE FORTTES",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION Y MONTAJES S.A  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "61603000-0",
+                "nombre": "FONASA  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-12826-2018",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "13-02-2017 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "98000000-1",
+                "nombre": "Administradora de Fondos de Pensiones Capital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION Y MONTAJE S. A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "2415267-7",
+                "nombre": "Manuel Jesus Figueroa Saavedra",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo DNPA",
+            "rit": "D-3621-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "09-02-2017 00:00:00",
+            "monto": null,
+            "litigantes": [
+              {
+                "rut": "17406262-5",
+                "nombre": "SEBASTIAN MOLLEDA KATALINIC",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              },
+              {
+                "rut": "98001200-K",
+                "nombre": "Administradora de Fondos de Pensiones Planvital  ",
+                "sujeto": "DTE.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION Y MONTAJE S.A.  ",
+                "sujeto": "DDO.  ",
+                "persona": "J"
+              },
+              {
+                "rut": "8924473-0",
+                "nombre": "Jose Enrique Correa Tocornal",
+                "sujeto": "AB.DTE",
+                "persona": "N"
+              }
+            ],
+            "proc": "Ejecutivo Previsional",
+            "rit": "P-7116-2017",
+            "tribunal": "Jdo. Cob. Laboral y Previsional de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 16:28:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:9d71cf6aba354d8c65fe1d5240f022e1a08a055c47b72c9f12cc67aa2fcbbf40",
+        "cached_at": "2026-06-09T16:28:39.730952"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 3,
+        "casos": [
+          {
+            "estado": "Cumplimiento",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "15-07-2022 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17277814-3",
+                "nombre": "TOMAS TAPIA TAPIA (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "19342399-K",
+                "nombre": "FRANCO IGNACIO OLIVARES VARGAS",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "87930900-K",
+                "nombre": "CRUZ Y DAVILA INGENIEROS  CONSULTORES LTDA.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Monitorio",
+            "rit": "M-1663-2022",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Concluido",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "01-09-2021 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17727370-8",
+                "nombre": "JUAN IGNACIO DURÁN HERNÁNDEZ (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10031865-2",
+                "nombre": "PATRICIO JOSÉ SILVA-RIESCO OJEDA (Poder Amplio)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76009481-1",
+                "nombre": "MAESTRANZA VERDUGO LIMITADA",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15216619-2",
+                "nombre": "TOMÁS ANDRÉS ZULETA CARRANDI (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15381204-7",
+                "nombre": "JUAN ANTONIO SABAL SEPULVEDA (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "6923794-0",
+                "nombre": "VÍCTOR MANUEL SOTO PÉREZ",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-427-2021",
+            "tribunal": "Juzgado de Letras del Trabajo de San Bernardo",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          },
+          {
+            "estado": "Cumplimiento",
+            "estadoCausa": "Archivada",
+            "etapa": "Terminada",
+            "fechaIngreso": "25-04-2019 20:00:00",
+            "litigantes": [
+              {
+                "rut": "17530229-8",
+                "nombre": "VALENTINA MARÍA HERRERA GONZÁLEZ (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17275756-1",
+                "nombre": "CRISTIAN HUMBERTO ALEGRE DONOSO (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "18156567-5",
+                "nombre": "JOAQUÍN ANTONIO ARISMENDI LINACRE (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "12046779-4",
+                "nombre": "CAROLINA ALDUNATE LEON (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "20211585-3",
+                "nombre": "FRANCISCA IGNACIA GAJARDO ALZAMORA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17086650-9",
+                "nombre": "ANDREA TERESA CALDERON ROA (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "14092954-9",
+                "nombre": "YASNA VALESKA MALDONADO NAVARRO (Poder Simple)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "16752197-5",
+                "nombre": "FRANCISCO JAVIER GORMAZ OLATE",
+                "sujeto": "DTE.",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "90320000-6",
+                "nombre": "COMPAÑIA ELECTRO METALURGICA S.A.",
+                "sujeto": "DDO.SO",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "76186615-K",
+                "nombre": "RODCAR CONSTRUCCION MONTAJES S.A",
+                "sujeto": "DDO.",
+                "persona": "JURIDICA",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17348243-4",
+                "nombre": "REINALDO ANTONIO LONARDI BUSTOS (Revoca Poder)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15941258-K",
+                "nombre": "FRANCIA KATHERINE VILLEGAS GUZMÁN",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "10031865-2",
+                "nombre": "PATRICIO SILVA RIESCO OJEDA",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "17727370-8",
+                "nombre": "JUAN IGNACIO DURÁN HERNÁNDEZ",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              },
+              {
+                "rut": "15204863-7",
+                "nombre": "PABLO ANDRÉS ARAYA ZACARIAS",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL",
+                "abogadoDefensor": "No"
+              }
+            ],
+            "materia": "Ordinario",
+            "rit": "O-2909-2019",
+            "tribunal": "1º Juzgado de Letras del Trabajo de Santiago",
+            "sujeto": "DDO.",
+            "estadoActual": "Concluida"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 16:28:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e1a237db0223f49147f98880cf4253016a60c32084669d741c65df6469be9794",
+        "cached_at": "2026-06-09T16:28:40.385840"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 2,
+        "casos": [
+          {
+            "enunciado": "No comunicar personalmente o por escrito al trabajador el término de contrato del trabajo en el plazo de (3) – (6) días hábiles.",
+            "estado": "PAGADA",
+            "fecha": "10-09-2022 20:00:00",
+            "multa": "8244/22/053-1",
+            "procedencia": "RECLAMO",
+            "um": "8",
+            "tipoUm": "UTM",
+            "montoClp": 476760
+          },
+          {
+            "enunciado": "No enviar a la Inspección del Trabajo dentro del plazo de 3 días hábiles copia del aviso de término del contrato de trabajo.",
+            "estado": "PAGADA",
+            "fecha": "10-09-2022 20:00:00",
+            "multa": "8244/22/053-2",
+            "procedencia": "RECLAMO",
+            "um": "8",
+            "tipoUm": "UTM",
+            "montoClp": 476760
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 16:28:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:307abb1970aaf69b79912c9345aa91b6e90b5403b7d83e8f93dfcb904006503e",
+        "cached_at": "2026-06-09T16:28:40.709991"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 18,
+        "casos": [
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-11-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "09/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-10-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "08/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Capital",
+            "fecha": "29-09-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR HERNAN VENEGAS GONZALEZ ",
+            "periodo": "07/2023",
+            "rutAfiliado": "7934596-2",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "JOSELINE DE LAS MER ROJAS CASTILLO ",
+            "periodo": "07/2023",
+            "rutAfiliado": "12252501-5",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "HECTOR HERNAN VENEGAS GONZALEZ ",
+            "periodo": "07/2023",
+            "rutAfiliado": "7934596-2",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO ANDRES MALDONADO PRESAS ",
+            "periodo": "07/2023",
+            "rutAfiliado": "17294195-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-09-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA MEDINA RAMOS ",
+            "periodo": "07/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-09-2023 21:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "07/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-08-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "06/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-07-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "05/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-06-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "04/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "30-05-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "03/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "28-04-2023 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "02/2023",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "AFP Provida",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA MEDINA RAMOS ",
+            "periodo": "05/2022",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Cotización obligatorias"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "TAMARA ANDREA ROJAS BORQUEZ ",
+            "periodo": "05/2022",
+            "rutAfiliado": "19022511-9",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "CLAUDIO ALBERTO CAMPOS ALIAGA ",
+            "periodo": "05/2022",
+            "rutAfiliado": "14625830-1",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "PABLO ANDRES MALDONADO PRESAS ",
+            "periodo": "05/2022",
+            "rutAfiliado": "17294195-8",
+            "tipoProducto": "Seguro de Cesantía"
+          },
+          {
+            "afp": "Administradora de Fondos de Cesantía, AFC",
+            "fecha": "29-07-2022 20:00:00",
+            "fechaDemanda": "Prejudicial",
+            "nombreAfiliado": "MONICA CARLA MEDINA RAMOS ",
+            "periodo": "05/2022",
+            "rutAfiliado": "10481262-7",
+            "tipoProducto": "Seguro de Cesantía"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 16:28:37"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:cfb1b43d3bb42f8f2c4160b573b10cdc49ada73f8271ddb480c013ea1be2fb6d",
+        "cached_at": "2026-06-09T16:28:41.034049"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "76186615-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "RODCAR CONSTRUCCION Y MONTAJES SOCIEDAD ANONIMA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "RODCAR CONSTRUCCION Y MONTAJES SOCIEDAD ANONIMA",
+            "rutSociedad": "76186615-K",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": null,
+            "socios": [],
+            "extractos": [],
+            "participaciones": [],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:69424d10773e3c95dacb3cb6c6a53df2d5190f4a13c339ca5866342b93343b00",
+      "cached_at": "2026-06-09T16:28:41.616707"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "76186615-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:803a14a20bfec4bf6da8ff4ef88a86a73c65d54a7560d1a07458930fd8bad5ee",
+        "cached_at": "2026-06-09T16:28:41.943731"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 97.45054217366112,
+      "numeradorFinanzas": 117730,
+      "denominadorFinanzas": 120810,
+      "ponderacionFinanzas": 2.5494578263388803,
+      "porcentajeJudicial": 16.666666666666664,
+      "numeradorJudicial": 3,
+      "denominadorJudicial": 18,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 83.33333333333334,
+      "porcentajeMoraPrevisional": 40.27777777777778,
+      "casosMoraPrevisional": 18,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 953520,
+      "porcentajeBoletinLaboral": 100,
+      "montoBoletinLaboral": 14694075,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 62.402395014638884,
+      "montoBoletinComercial": 190132876,
+      "ponderacionBoletinComercial": 37.597604985361116,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 123.48039614503334,
+      "etiquetaClasificacion": "High",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:f4ef93b6723431d06a322799870944a4fb5eabc60de476f1774c4ae05c7f983a",
+      "cached_at": "2026-06-09T16:28:42.578024"
+    }
+  }
+}

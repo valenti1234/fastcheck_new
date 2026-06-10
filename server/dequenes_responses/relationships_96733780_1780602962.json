@@ -1,0 +1,382 @@
+{
+  "pathCount": 32,
+  "relationships": [
+    {
+      "source": "96733780",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1998-01-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96733780",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_2940900",
+        "doh_extraction_id": "117351",
+        "source": "DOH",
+        "published_at": "1995-08-22",
+        "doh_id": "2940900",
+        "url": "https://www.diariooficial.interior.gob.cl/media/1995/08/22/do-19950822.pdf"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-10-16",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96670850",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1997-09-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96875660",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1999-04-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77944650",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-10-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77666946",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76420036",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-09-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76420039",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-09-01",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76367764",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-08-26",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76020668",
+      "target": "4976760",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2008-06-02",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "4976760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1186170",
+        "cve": "1186170",
+        "shares_percent": 50.1,
+        "source": "DO",
+        "published_at": "2017-02-23",
+        "doc_extraction_id": "2226193",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/02/23/41692/05/1186170.pdf"
+      }
+    },
+    {
+      "source": "77944650",
+      "target": "4976760",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1140525",
+        "cve": "1140525",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2016-11-25",
+        "doc_extraction_id": "1822989",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/11/25/41617/05/1140525.pdf"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "15719907",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "9386128",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "14426663",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "14376041",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "9386130",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "8909020",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "9386126",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-07-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "59274250",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1433117",
+        "match_type": "i_bt",
+        "source": "DO",
+        "published_at": "2018-07-21",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2018/07/21/42112/05/1433117.pdf"
+      }
+    },
+    {
+      "source": "96875660",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1101849",
+        "cve": "1101849",
+        "source": "DO",
+        "doc_extraction_id": "1637569",
+        "published_at": "2016-08-20",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/08/20/41538/05/1101849.pdf"
+      }
+    },
+    {
+      "source": "77666946",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2349204",
+        "cve": "2349204",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2023-07-24",
+        "doc_extraction_id": "1497644",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/07/24/43609/05/2349204.pdf"
+      }
+    },
+    {
+      "source": "76367764",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_792519",
+        "cve": "792519",
+        "shares_percent": 100,
+        "source": "DO",
+        "published_at": "2014-07-05",
+        "doc_extraction_id": "1730296",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/07/05/792519_C_SPA_20140705_firmado.pdf"
+      }
+    },
+    {
+      "source": "76020668",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6877081",
+        "doh_extraction_id": "504544",
+        "shares_percent": 99.9,
+        "source": "DOH",
+        "doh_id": "6877081",
+        "published_at": "2008-05-19",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2008/05/19/do-20080519.pdf"
+      }
+    },
+    {
+      "source": "77666946",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76020668",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 99.9,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "59274250",
+      "target": "96690870",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "1425127",
+        "match_type": "i_bt",
+        "source": "DO",
+        "published_at": "2018-07-05",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2018/07/05/42099/05/1425127.pdf"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "76392238",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1186170",
+        "cve": "1186170",
+        "shares_percent": 10,
+        "source": "DO",
+        "published_at": "2017-02-23",
+        "doc_extraction_id": "2226193",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/02/23/41692/05/1186170.pdf"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "76391102",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1186170",
+        "cve": "1186170",
+        "shares_percent": 10,
+        "source": "DO",
+        "published_at": "2017-02-23",
+        "doc_extraction_id": "2226193",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/02/23/41692/05/1186170.pdf"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "76414777",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1186170",
+        "cve": "1186170",
+        "shares_percent": 10,
+        "source": "DO",
+        "published_at": "2017-02-23",
+        "doc_extraction_id": "2226193",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/02/23/41692/05/1186170.pdf"
+      }
+    },
+    {
+      "source": "96690870",
+      "target": "77974590",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1186170",
+        "cve": "1186170",
+        "shares_percent": 19.9,
+        "source": "DO",
+        "published_at": "2017-02-23",
+        "doc_extraction_id": "2226193",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2017/02/23/41692/05/1186170.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "4976760": "GABRIEL JORGE FONZO SCHLESINGER",
+    "8909020": "LUIS IGNACIO UQUILLAS HERRERA",
+    "9386126": "GABRIEL RAFAEL AGUSTIN FONZO CRUZAT",
+    "9386128": "LORETO MONIQUE FONZO CRUZAT",
+    "9386130": "LORENA DEL CARMEN FONZO CRUZAT",
+    "14376041": "CRISTIAN ALEJANDRO PEREIRA PERROT",
+    "14426663": "RODRIGO IGNACIO PRIETO BRUGGEMANN",
+    "15719907": "CAMILA JAVIERA FONZO CRUZAT",
+    "59274250": "AGRO & FOOD INTEGRITY AGENCIA EN CHILE",
+    "76020668": "EXPORTADORA INTEGRITY PACKAGING LIMITADA",
+    "76367764": "FAIRPRODUCE SPA",
+    "76391102": "INVERSIONES CAMILA FONZO CRUZAT E.I.R.L",
+    "76392238": "INVERSIONES LORENA FONZO CRUZAT E.I.R.L",
+    "76414777": "INVERSIONES LORETO FONZO CRUZAT E.I.R.L",
+    "76420036": "LAS MERCEDES SERVICIOS SPA",
+    "76420039": "SAN PABLO SERVICIOS SPA",
+    "77666946": "INTEGRITY RECICLA SPA",
+    "77944650": "TRANSPORTES INTEGRITY LOGISTICS SPA",
+    "77974590": "INVERSIONES NOVIEMBRE DIEZ SPA",
+    "96670850": "FRISER S A",
+    "96690870": "INTEGRITY S.A.",
+    "96733780": "ULTRA PAC SUDAMERICA S A",
+    "96875660": "FROSTY S A"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:15482d1b1084e98a75d784713510a97ddd0b11eeaf794d54d49017b542b8e035",
+    "cached_at": "2026-06-04T19:56:02.022598"
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "77486093-2"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "77486093-2",
+      "esPersonaJuridica": true,
+      "fechaCarga": "09-06-2026",
+      "identificacion": {
+        "razonSocial": "PROCUREMENT SERVICES SPA",
+        "presentaActividades": "SI",
+        "inicioActividades": "21-12-2021",
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "SI",
+        "observaciones": "Recomendación GeneralComo recomendación general, siempre que se realicen transacciones comerciales con cualquier contribuyente, el SII aconseja verificar, en las opciones anteriores habilitadas, el timbraje del documento y que la actividad económica esté vigente en las bases de datos del Servicio. Además, se recomienda verificar que el domicilio y la actividad económica consignados en la factura o boleta que reciba, correspondan al vendedor o prestador del servicio ofrecido. Para un mayor resguardo, se recomienda efectuar el pago con cheque nominativo o vale vista a favor del proveedor, anotando al reverso el RUT del emisor y número del documento recibido.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [
+          {
+            "actividades": "ACTIVIDADES DE CONSULTORIA DE GESTION",
+            "codigo": "702000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "21-12-2021"
+          },
+          {
+            "actividades": "ESTUDIOS DE MERCADO Y ENCUESTAS DE OPINION PUBLICA",
+            "codigo": "732000",
+            "categoria": "Primera",
+            "afectaIva": "Si",
+            "fecha": "21-12-2021"
+          }
+        ],
+        "documentosTimbrados": [
+          {
+            "documento": "Factura Electronica",
+            "ultimoAnioTimbrado": "2026"
+          },
+          {
+            "documento": "Factura Compra Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Nota Credito Electronica",
+            "ultimoAnioTimbrado": "2025"
+          },
+          {
+            "documento": "Contabilidad En Hojas Sueltas Con Nro.Un",
+            "ultimoAnioTimbrado": "2023"
+          },
+          {
+            "documento": "Boleta De Terceros Electronicas",
+            "ultimoAnioTimbrado": "2024"
+          }
+        ],
+        "cantidadActividades": 2,
+        "cantidadDocumentos": 5,
+        "ultimaActualizacion": "20-05-2026 14:51:56",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": "Micro empresa",
+          "ventasAnuales": "200,01 a 600,00",
+          "cantidadTrabajadores": 5
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "09-06-2026 15:24:11"
+      },
+      "judicial": {
+        "casosCivilesActivos": 0,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 0,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 0,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {},
+        "ultimaActualizacionCiviles": "09-06-2026 15:24:11",
+        "ultimaActualizacionCobranza": "09-06-2026 15:24:10",
+        "ultimaActualizacionLaboral": "09-06-2026 15:24:10",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "09-06-2026 15:24:11"
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "09-06-2026 15:24:11"
+        }
+      },
+      "legal": {
+        "empresaEnUnDia": {
+          "casos": [
+            {
+              "fecha": "13-04-2026 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "12869993",
+              "razonSocial": "PROCUREMENT SERVICES SPA",
+              "cve": "AC7gbP7jnUoc",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7gbP7jnUoc&codigo=00-1D-80-88-F8-6F-ED-9E-11-47-45-88-7E-09-15-93",
+              "socios": [
+                {
+                  "socio": "CARMEN GLORIA ALARCON CORDOVA",
+                  "rut": "14388075-3",
+                  "domicilio": null,
+                  "acciones": 34,
+                  "monto": 3400000,
+                  "porcentaje": null
+                },
+                {
+                  "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": "LAS CONDES, Región METROPOLITANA DE SANTIAGO",
+                  "acciones": 352,
+                  "monto": 35200000,
+                  "porcentaje": null
+                },
+                {
+                  "socio": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                  "rut": "11972627-1",
+                  "domicilio": null,
+                  "acciones": 136,
+                  "monto": 13600000,
+                  "porcentaje": null
+                },
+                {
+                  "socio": "GABRIEL HUGO ALKALAY PESCE",
+                  "rut": "11261518-0",
+                  "domicilio": null,
+                  "acciones": 98,
+                  "monto": 9800000,
+                  "porcentaje": null
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": null,
+                  "rut": "13423577-2",
+                  "domicilio": null
+                },
+                {
+                  "administrador": null,
+                  "rut": "11972627-1",
+                  "domicilio": null
+                }
+              ]
+            },
+            {
+              "fecha": "08-05-2022 20:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "5165617",
+              "razonSocial": "PROCUREMENT SERVICES SPA",
+              "cve": "ACLciDeRZFs3",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACLciDeRZFs3&codigo=07-69-CC-1A-60-13-66-5F-C7-A9-7E-B3-B0-46-E3-FB",
+              "socios": [
+                {
+                  "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": null,
+                  "acciones": "120",
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": "19.67%"
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": null
+                }
+              ]
+            },
+            {
+              "fecha": "23-11-2021 21:00:00",
+              "actuacion": "CONSTITUCIÓN",
+              "numeroAtencion": "4703427",
+              "razonSocial": "PROCUREMENT SERVICES SPA",
+              "cve": "ACVKWuE9ByaF",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVKWuE9ByaF&codigo=D1-4D-2D-C0-7A-D0-EA-D1-5C-38-92-C4-82-13-DA-6F",
+              "socios": [
+                {
+                  "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA REGION METROPOLITANA DE SANTIAGO",
+                  "acciones": "120",
+                  "monto": "$12.000.000 CLP",
+                  "porcentaje": 100
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA REGION METROPOLITANA DE SANTIAGO"
+                }
+              ]
+            },
+            {
+              "fecha": "19-12-2024 21:00:00",
+              "actuacion": "MODIFICACIÓN",
+              "numeroAtencion": "8490822",
+              "razonSocial": "PROCUREMENT SERVICES SPA",
+              "cve": "ACZmnyzWGxd4",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZmnyzWGxd4&codigo=3C-F6-99-AB-B8-18-63-ED-35-36-B0-B1-63-4C-0E-8A",
+              "socios": [
+                {
+                  "socio": "CARMEN GLORIA ALARCON CORDOVA",
+                  "rut": "14388075-3",
+                  "domicilio": null,
+                  "acciones": "117",
+                  "monto": "$11.700.000 CLP",
+                  "porcentaje": 19.18
+                },
+                {
+                  "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": null,
+                  "acciones": "316",
+                  "monto": "$31.600.000 CLP",
+                  "porcentaje": 51.8
+                },
+                {
+                  "socio": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                  "rut": "11972627-1",
+                  "domicilio": null,
+                  "acciones": "104",
+                  "monto": "$10.400.000 CLP",
+                  "porcentaje": 17.05
+                },
+                {
+                  "socio": "GABRIEL HUGO ALKALAY PESCE",
+                  "rut": "11261518-0",
+                  "domicilio": null,
+                  "acciones": "73",
+                  "monto": "$7.300.000 CLP",
+                  "porcentaje": 11.97
+                }
+              ],
+              "administradores": [
+                {
+                  "administrador": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                  "rut": "13423577-2",
+                  "domicilio": null
+                },
+                {
+                  "administrador": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                  "rut": "11972627-1",
+                  "domicilio": null
+                }
+              ]
+            }
+          ],
+          "ultimaActualizacion": null
+        },
+        "mallaSocietariaInterna": [
+          {
+            "participaciones": [
+              {
+                "rut": "77486093-2",
+                "sociedad": "PROCUREMENT SERVICES SPA"
+              }
+            ],
+            "ultimaActualizacion": "09-06-2026 15:24:11"
+          }
+        ]
+      },
+      "legalSummary": [
+        {
+          "nombre": "PROCUREMENT SERVICES SPA",
+          "rut": "77486093-2",
+          "fecha": "2021-11-24",
+          "tipo": "PERSONA JURIDICA COMERCIAL",
+          "tipoEmpresa": "PERSONA JURIDICA COMERCIAL",
+          "estado": "VIGENTE",
+          "trabajadores": 5,
+          "actividad": "ESTUDIOS DE MERCADO Y ENCUESTAS DE OPINION PUBLICA",
+          "comuna": "LAS CONDES",
+          "riskScore": null,
+          "porcentajeParticipacion": null,
+          "socios": [
+            {
+              "nombre": "ELIZABETH ALEJANDRA CACERES CASTRO",
+              "rut": "13423577-2",
+              "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "51.8"
+            },
+            {
+              "nombre": "CARMEN GLORIA ALARCON CORDOVA",
+              "rut": "14388075-3",
+              "domicilio": "CARLOS ANTUNEZ N°2257 DEPTO/LOCAL 21 COMUNA DE PROVIDENCIA REGION METROPOLITANA DE SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "19.18"
+            },
+            {
+              "nombre": "CLAUDIA ALEJANDRA CERDA ABURTO",
+              "rut": "11972627-1",
+              "domicilio": null,
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "ADMINISTRADOR - SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "17.05"
+            },
+            {
+              "nombre": "GABRIEL HUGO ALKALAY PESCE",
+              "rut": "11261518-0",
+              "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA REGION METROPOLITANA DE SANTIAGO",
+              "tipoPersona": "natural",
+              "tipoDeParticipacion": "SOCIO",
+              "cargo": null,
+              "porcentajeParticipacion": "11.97"
+            }
+          ],
+          "participaciones": [],
+          "extractos": [
+            {
+              "id": 5226742,
+              "fecha": "2026-04-14",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7gbP7jnUoc",
+              "cve": "AC7gbP7jnUoc",
+              "tieneExtracto": false
+            },
+            {
+              "id": 2622557,
+              "fecha": "2024-12-20",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZmnyzWGxd4&codigo=3C-F6-99-AB-B8-18-63-ED-35-36-B0-B1-63-4C-0E-8A",
+              "cve": "ACZmnyzWGxd4",
+              "tieneExtracto": false
+            },
+            {
+              "id": 500713,
+              "fecha": "2022-05-09",
+              "actuacion": "MODIFICACION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACLciDeRZFs3&codigo=07-69-CC-1A-60-13-66-5F-C7-A9-7E-B3-B0-46-E3-FB",
+              "cve": "ACLciDeRZFs3",
+              "tieneExtracto": false
+            },
+            {
+              "id": 1256201,
+              "fecha": "2021-11-24",
+              "actuacion": "CONSTITUCION",
+              "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVKWuE9ByaF&codigo=D1-4D-2D-C0-7A-D0-EA-D1-5C-38-92-C4-82-13-DA-6F",
+              "cve": "ACVKWuE9ByaF",
+              "tieneExtracto": false
+            }
+          ]
+        }
+      ],
+      "deudaBancaria": {
+        "periodo": "04/2026",
+        "deudaDirectaComercial": 1180,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 1180,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 4830,
+        "variacion": {
+          "periodo": "10/2025",
+          "deudaDirectaComercial": 1580,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 1580,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 4420
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": "20-05-2026 14:51:56"
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "20-05-2026 14:51:55"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 100,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 100,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 4,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin",
+          "finances",
+          "laborCollection"
+        ],
+        "porcentajeClasificacion": 400,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "PROCUREMENT SERVICES SPA",
+        "segundoNombre": "",
+        "apellido": "",
+        "segundoApellido": "",
+        "tipoPersona": "juridical",
+        "riesgo": "free",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 1,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:b1b48868c8d9dd48baae4e9529b6991610189a514d73401db36ae1fded45ccb6",
+      "cached_at": "2026-06-09T15:24:12.953514"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 15:24:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:b8b5223c84d7b96b907658191bba8cfc28296a1ae5a6be76aed0d3467b57661b",
+        "cached_at": "2026-06-09T15:24:13.289224"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 15:24:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:4798a03855fcc1cd64085dd42a660ce4e07af7892da8a2db5a88d4b6a1d6dceb",
+        "cached_at": "2026-06-09T15:24:13.637434"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 15:24:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:98ca99b2819d7da3cca08d307401d2b69bc1ce58ae6e6f14471782e2e5e1a6b5",
+        "cached_at": "2026-06-09T15:24:13.979556"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 15:24:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:068d46b9485b7c392d8dcd4ce8e388f7dc4411e478f2c63950780efb57b099a9",
+        "cached_at": "2026-06-09T15:24:14.424981"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 15:24:11"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:1cd937158e1ec5d96a75d8027a9662b985d506708168b1b6bba9ca40a10b3844",
+        "cached_at": "2026-06-09T15:24:14.743095"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "77486093-2",
+      "estado": "PROCESADO",
+      "tipoPersona": "juridical",
+      "nombre": "PROCUREMENT SERVICES SPA",
+      "riesgo": "free",
+      "sociedades": {
+        "coincidencias": [
+          {
+            "nombreSociedad": "PROCUREMENT SERVICES SPA",
+            "rutSociedad": "77486093-2",
+            "nombreSocio": null,
+            "rutSocio": null,
+            "fecha": "2021-11-23",
+            "socios": [
+              {
+                "nombre": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA",
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "51.8"
+              },
+              {
+                "nombre": "CARMEN GLORIA ALARCON CORDOVA",
+                "rut": "14388075-3",
+                "domicilio": null,
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "19.18"
+              },
+              {
+                "nombre": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                "rut": "11972627-1",
+                "domicilio": null,
+                "tipoDeParticipacion": "Administrador - Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "17.05"
+              },
+              {
+                "nombre": "GABRIEL HUGO ALKALAY PESCE",
+                "rut": "11261518-0",
+                "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA REGION METROPOLITANA DE SANTIAGO",
+                "tipoDeParticipacion": "Socio",
+                "cargo": null,
+                "cargoEjecutivoPrincipal": null,
+                "fechaNombramiento": null,
+                "porcentajeParticipacion": "11.97"
+              }
+            ],
+            "extractos": [
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2026-04-14",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7gbP7jnUoc"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2024-12-20",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZmnyzWGxd4&codigo=3C-F6-99-AB-B8-18-63-ED-35-36-B0-B1-63-4C-0E-8A"
+              },
+              {
+                "actuacion": "MODIFICACIÓN",
+                "fecha": "2022-05-09",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACLciDeRZFs3&codigo=07-69-CC-1A-60-13-66-5F-C7-A9-7E-B3-B0-46-E3-FB"
+              },
+              {
+                "actuacion": "CONSTITUCIÓN",
+                "fecha": "2021-11-24",
+                "url": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVKWuE9ByaF&codigo=D1-4D-2D-C0-7A-D0-EA-D1-5C-38-92-C4-82-13-DA-6F"
+              }
+            ],
+            "participaciones": [
+              {
+                "razonSocial": "PROCUREMENT SERVICES SPA",
+                "rut": "77486093-2",
+                "tipoDeParticipacion": "Socio"
+              }
+            ],
+            "fuente": null
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:13e8345901c3aa598d817762421cc250877cb2918c8a266b0da6f080b6a67d93",
+      "cached_at": "2026-06-09T15:24:15.334249"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "77486093-2",
+        "empresaEnUnDia": [
+          {
+            "fecha": "13-04-2026 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "12869993",
+            "razonSocial": "PROCUREMENT SERVICES SPA",
+            "cve": "AC7gbP7jnUoc",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=AC7gbP7jnUoc&codigo=00-1D-80-88-F8-6F-ED-9E-11-47-45-88-7E-09-15-93",
+            "socios": [
+              {
+                "socio": "CARMEN GLORIA ALARCON CORDOVA",
+                "rut": "14388075-3",
+                "domicilio": null,
+                "acciones": 34,
+                "monto": 3400000,
+                "porcentaje": null
+              },
+              {
+                "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": "LAS CONDES, Región METROPOLITANA DE SANTIAGO",
+                "acciones": 352,
+                "monto": 35200000,
+                "porcentaje": null
+              },
+              {
+                "socio": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                "rut": "11972627-1",
+                "domicilio": null,
+                "acciones": 136,
+                "monto": 13600000,
+                "porcentaje": null
+              },
+              {
+                "socio": "GABRIEL HUGO ALKALAY PESCE",
+                "rut": "11261518-0",
+                "domicilio": null,
+                "acciones": 98,
+                "monto": 9800000,
+                "porcentaje": null
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": null,
+                "rut": "13423577-2",
+                "domicilio": null
+              },
+              {
+                "administrador": null,
+                "rut": "11972627-1",
+                "domicilio": null
+              }
+            ]
+          },
+          {
+            "fecha": "08-05-2022 20:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "5165617",
+            "razonSocial": "PROCUREMENT SERVICES SPA",
+            "cve": "ACLciDeRZFs3",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACLciDeRZFs3&codigo=07-69-CC-1A-60-13-66-5F-C7-A9-7E-B3-B0-46-E3-FB",
+            "socios": [
+              {
+                "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": null,
+                "acciones": "120",
+                "monto": "$12.000.000 CLP",
+                "porcentaje": "19.67%"
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": null
+              }
+            ]
+          },
+          {
+            "fecha": "23-11-2021 21:00:00",
+            "actuacion": "CONSTITUCIÓN",
+            "numeroAtencion": "4703427",
+            "razonSocial": "PROCUREMENT SERVICES SPA",
+            "cve": "ACVKWuE9ByaF",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACVKWuE9ByaF&codigo=D1-4D-2D-C0-7A-D0-EA-D1-5C-38-92-C4-82-13-DA-6F",
+            "socios": [
+              {
+                "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA REGION METROPOLITANA DE SANTIAGO",
+                "acciones": "120",
+                "monto": "$12.000.000 CLP",
+                "porcentaje": 100
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": "CAMINO DEL ROBLE N°1334 DEPTO/LOCAL 58 COMUNA DE HUECHURABA REGION METROPOLITANA DE SANTIAGO"
+              }
+            ]
+          },
+          {
+            "fecha": "19-12-2024 21:00:00",
+            "actuacion": "MODIFICACIÓN",
+            "numeroAtencion": "8490822",
+            "razonSocial": "PROCUREMENT SERVICES SPA",
+            "cve": "ACZmnyzWGxd4",
+            "linkPdf": "https://www.registrodeempresasysociedades.cl/Certificados/Escritura.aspx?cve=ACZmnyzWGxd4&codigo=3C-F6-99-AB-B8-18-63-ED-35-36-B0-B1-63-4C-0E-8A",
+            "socios": [
+              {
+                "socio": "CARMEN GLORIA ALARCON CORDOVA",
+                "rut": "14388075-3",
+                "domicilio": null,
+                "acciones": "117",
+                "monto": "$11.700.000 CLP",
+                "porcentaje": 19.18
+              },
+              {
+                "socio": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": null,
+                "acciones": "316",
+                "monto": "$31.600.000 CLP",
+                "porcentaje": 51.8
+              },
+              {
+                "socio": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                "rut": "11972627-1",
+                "domicilio": null,
+                "acciones": "104",
+                "monto": "$10.400.000 CLP",
+                "porcentaje": 17.05
+              },
+              {
+                "socio": "GABRIEL HUGO ALKALAY PESCE",
+                "rut": "11261518-0",
+                "domicilio": null,
+                "acciones": "73",
+                "monto": "$7.300.000 CLP",
+                "porcentaje": 11.97
+              }
+            ],
+            "administradores": [
+              {
+                "administrador": "ELIZABETH ALEJANDRA CACERES CASTRO",
+                "rut": "13423577-2",
+                "domicilio": null
+              },
+              {
+                "administrador": "CLAUDIA ALEJANDRA CERDA ABURTO",
+                "rut": "11972627-1",
+                "domicilio": null
+              }
+            ]
+          }
+        ],
+        "diarioOficial": [],
+        "participaciones": [
+          {
+            "rut": "77486093-2",
+            "society": "PROCUREMENT SERVICES SPA"
+          }
+        ]
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:7dac7ad05a1b3169509a1c63c713f799940a3c048ba84a037292a0d4d694fc60",
+        "cached_at": "2026-06-09T15:24:15.667057"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": true,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 1180,
+      "ponderacionFinanzas": 100,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 100,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "4",
+      "porcentajeClasificacion": 400,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin",
+        "finances",
+        "laborCollection"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 100
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:400bab7d3ddb942eec0edc2fa5b58bec070c6a5d112b661c94d695fc21eeb7db",
+      "cached_at": "2026-06-09T15:24:16.301841"
+    }
+  }
+}

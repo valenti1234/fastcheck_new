@@ -1,0 +1,86 @@
+{
+  "pathCount": 7,
+  "relationships": [
+    {
+      "source": "78343241",
+      "target": "14123342",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-12-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76538921",
+      "target": "14123342",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2016-02-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78343241",
+      "target": "15327779",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-12-29",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77611574",
+      "target": "76538921",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2148131",
+        "cve": "2148131",
+        "shares_percent": 8.8,
+        "source": "DO",
+        "published_at": "2022-06-25",
+        "doc_extraction_id": "2195487",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2022/06/25/43287/05/2148131.pdf"
+      }
+    },
+    {
+      "source": "76538921",
+      "target": "15398084",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2275966",
+        "cve": "2275966",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2023-02-22",
+        "doc_extraction_id": "2152635",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/02/22/43484/05/2275966.pdf"
+      }
+    },
+    {
+      "source": "77733522",
+      "target": "76538921",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "2275966",
+        "match_type": "i_bt",
+        "source": "DO",
+        "published_at": "2023-02-22",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/02/22/43484/05/2275966.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "14123342": "JOSE SEBASTIAN REBOLLEDO BARRERA",
+    "15327779": "JOSE LUIS VALENZUELA CAMPOS",
+    "15398084": "MILTON EDUARDO FERRADA CRISOSTOMO",
+    "76538921": "ASESORIAS E INVERSIONES LOS ANGELES SPA",
+    "77611574": "AMICIS AUTOMOVILES SPA",
+    "77733522": "CYBERSECURITY TRAINING SPA",
+    "78343241": "AUTOIMPULSO SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:5e115d26de35287aa97bbfb2177eee420a2cd2a684bcc7303e39ea029f73be22",
+    "retrieved_at": "2026-06-09T12:15:35.417569"
+  }
+}

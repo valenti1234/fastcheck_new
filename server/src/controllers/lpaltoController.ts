@@ -444,7 +444,7 @@ export class LpaltoController {
         tenant: tenantId,
         rut: { $regex: sanitizedRut, $options: 'i' } 
       }).sort({ createdAt: -1 });
-
+      console.warn(447,lpaltoEntries);
       return res.status(200).json(lpaltoEntries);
     } catch (error) {
       console.error(`[${new Date().toISOString()}] [LpaltoController.searchByRut] - Error:`, error);

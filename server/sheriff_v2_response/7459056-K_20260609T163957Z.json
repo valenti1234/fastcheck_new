@@ -1,0 +1,532 @@
+{
+  "success": true,
+  "cargarRut": {
+    "success": true,
+    "data": [
+      "7459056-K"
+    ]
+  },
+  "resumen": {
+    "success": true,
+    "data": {
+      "rut": "7459056-K",
+      "esPersonaJuridica": false,
+      "fechaCarga": "09-06-2026",
+      "identificacion": {
+        "razonSocial": "JAIME SEGUNDO JIMÉNEZ ESCOBAR",
+        "presentaActividades": "NO",
+        "inicioActividades": null,
+        "autorizadoMonedaExtranjera": "NO",
+        "empresaMenor": "NO",
+        "observaciones": "Rut consultado sin iniciación de actividadesEl RUT consultado no figura con iniciación de actividades ante el SII. Por tanto, no posee documentos tributarios autorizados por este Servicio.De efectuar transacciones con este contribuyente, se sugiere, como medio de resguardo, efectuar el pago del bien y/o servicio contratado con cheque nominativo, vale vista nominativo o transferencia electrónica de dinero a nombre del emisor de la factura, girado contra la cuenta corriente bancaria del comprador o beneficiario del servicio, anotando al reverso el RUT del emisor y el número de la factura. En el caso de transferencias electrónicas de dinero, esta misma información, incluyendo el monto de la operación, se debe registrar en los respaldos de la transacción electrónica del banco.",
+        "notas": "Si el contribuyente correspondiente al RUT consultado, no está de acuerdo o desconoce la situación informada en esta consulta, deberá concurrir a la unidad del SII correspondiente a su domicilio para aclarar o resolver su situación.Esta consulta no constituye una certificación del comportamiento tributario del contribuyente. De esta manera, si para un RUT no aparecen observaciones, no significa que en una posterior auditoría no se detecten problemas.",
+        "situacionActual": "No se encuentra en la nómina de difícil fiscalización",
+        "actividadEconomicaVigente": [],
+        "documentosTimbrados": [],
+        "cantidadActividades": null,
+        "cantidadDocumentos": null,
+        "ultimaActualizacion": "09-06-2026 16:39:46",
+        "tamanoEmpresaSii": {
+          "tamanoEmpresa": null,
+          "ventasAnuales": null,
+          "cantidadTrabajadores": null
+        }
+      },
+      "boletinComercial": {
+        "casosInfocom": 0,
+        "casosBolcom": 0,
+        "MontoInfocom": 0,
+        "MontoBolcom": 0,
+        "variacion": {
+          "ultimoPeriodo": "12/2025",
+          "periodoActual": "06/2026",
+          "cambioPorcentual": null,
+          "cambioAbsoluto": 0
+        },
+        "ultimaActualizacion": "09-06-2026 16:39:46"
+      },
+      "judicial": {
+        "casosCivilesActivos": 1,
+        "casosCivilesPresentados": 0,
+        "casosCivilesConcluidos": 0,
+        "cobranzaActivos": 0,
+        "cobranzaPresentados": 0,
+        "cobranzaConcluidos": 0,
+        "laboralActivos": 0,
+        "laboralPresentados": 0,
+        "laboralConcluidos": 0,
+        "casosActuales": 1,
+        "casosArchivados": 0,
+        "casosConcluidos": 0,
+        "todosLosCasos": 1,
+        "casosQuiebra": 0,
+        "posturasActivasPresentadas": {
+          "demandante": 1
+        },
+        "ultimaActualizacionCiviles": "09-06-2026 16:39:46",
+        "ultimaActualizacionCobranza": "09-06-2026 16:39:46",
+        "ultimaActualizacionLaboral": "09-06-2026 16:39:46",
+        "boletinConcursal": false
+      },
+      "cobranzaLaboral": {
+        "moraPrevisional": {
+          "casosTotales": 0,
+          "empleados": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "multaLaboral": {
+          "totalMultas": 0,
+          "montoTotalMultas": 0,
+          "multasPagadas": 0,
+          "montoMultasPagadas": 0,
+          "multasPendientes": 0,
+          "montoMultasPendientes": 0,
+          "variacion": {
+            "ultimoPeriodo": null,
+            "periodoActual": null,
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": null
+        },
+        "boletinLaboral": {
+          "montoTotal": 0,
+          "variacion": {
+            "montoTotal": 0,
+            "ultimoPeriodo": "12/2025",
+            "periodoActual": "06/2026",
+            "cambioPorcentual": null,
+            "cambioAbsoluto": 0
+          },
+          "ultimaActualizacion": "09-06-2026 16:39:46"
+        }
+      },
+      "legal": {},
+      "legalSummary": [],
+      "deudaBancaria": {
+        "periodo": null,
+        "deudaDirectaComercial": 0,
+        "deudaDirectaCastigada": 0,
+        "deudaDirectaHipotecaria": 0,
+        "deudaDirectaMorosa": 0,
+        "deudaDirectaVencida": 0,
+        "deudaDirectaVigente": 0,
+        "deudaIndirectaCastigada": 0,
+        "deudaIndirectaVencida": 0,
+        "deudaIndirectaVigente": 0,
+        "leasingMoroso": 0,
+        "leasingVigente": 0,
+        "lineaCredito": 0,
+        "variacion": {
+          "periodo": null,
+          "deudaDirectaComercial": 0,
+          "deudaDirectaCastigada": 0,
+          "deudaDirectaHipotecaria": 0,
+          "deudaDirectaMorosa": 0,
+          "deudaDirectaVencida": 0,
+          "deudaDirectaVigente": 0,
+          "deudaIndirectaCastigada": 0,
+          "deudaIndirectaVencida": 0,
+          "deudaIndirectaVigente": 0,
+          "leasingMoroso": 0,
+          "leasingVigente": 0,
+          "lineaCredito": 0
+        }
+      },
+      "bienes": {
+        "vehiculos": {
+          "cantidadVehiculos": 0,
+          "tasacionTotal": 0,
+          "ultimaActualizacion": null
+        },
+        "propiedades": {
+          "cantidadPropiedades": 0,
+          "tasacionTotal": "0",
+          "ultimaActualizacion": "09-06-2026 16:39:46"
+        }
+      },
+      "creditScoring": {
+        "ponderacionFinanciero": 0,
+        "maxPonderacionFinanciero": null,
+        "ponderacionJudicial": 100,
+        "judicialBankruptcy": false,
+        "maxPonderacionJudicial": 100,
+        "ponderacionCobranzaLaboral": 0,
+        "maxPonderacionCobranzaLaboral": 100,
+        "ponderacionBoletin": 100,
+        "maxPonderacionBoletin": 100,
+        "cantidadAyudantes": 2,
+        "nombresAyudantes": [
+          "judicial",
+          "commertialBulletin"
+        ],
+        "porcentajeClasificacion": 200,
+        "etiquetaClasificacion": "Risk free"
+      },
+      "ratings": {
+        "etiquetasActivas": [],
+        "cantidadComentarios": 0,
+        "calificacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionCumplimientoGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionRelacionGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionTransparenciaGlobal": {
+          "valor": 0,
+          "total": 0
+        },
+        "calificacionFiabilidadGlobal": {
+          "valor": 0,
+          "total": 0
+        }
+      },
+      "compliance": {
+        "estado": "PROCESADO",
+        "nombre": "JAIME",
+        "segundoNombre": "SEGUNDO",
+        "apellido": "JIMÉNEZ",
+        "segundoApellido": "ESCOBAR",
+        "tipoPersona": "natural",
+        "riesgo": "critical",
+        "resumen": {
+          "pepChile": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "pepChileFamiliares": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "funcionariosPublicos": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "listasInternacionales": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "penal": {
+            "totalResultados": 1,
+            "riesgo": "critical"
+          },
+          "mallaSocietaria": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          },
+          "noticias": {
+            "totalResultados": 0,
+            "riesgo": "free"
+          }
+        }
+      },
+      "incluyeEquifax": false,
+      "ayudantesFallidos": []
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:5b5dab517594c665a6be4d2e08f9f844878d19965ba6daa1d5df41d6a61307b3",
+      "cached_at": "2026-06-09T16:39:54.130557"
+    }
+  },
+  "judicial": {
+    "civil": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 1,
+        "cantidad": 1,
+        "casos": [
+          {
+            "estado": "Tramitación",
+            "estadoCausa": "Sin archivar",
+            "etapa": "5 Conciliación y/o Recibe a prueba",
+            "fechaIngreso": "27-10-2022 21:00:00",
+            "litigantes": [
+              {
+                "rut": "12636492-K",
+                "nombre": "RODRIGO ANDRÉS CARRASCO CANCINO (Poder Amplio)",
+                "sujeto": "AB.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "10054725-2",
+                "nombre": "MARCOS ESTEBAN JIMÉNEZ ESCOBAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7003095-0",
+                "nombre": "MARÍA INÉS JIMÉNEZ ESCOBAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7459056-K",
+                "nombre": "JAIME SEGUNDO JIMÉNEZ ESCOBAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "9249498-5",
+                "nombre": "ANDRÉS FLORENCIO JIMÉNEZ ESCOBAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6543845-3",
+                "nombre": "GUILLERMINA DE LAS MERCEDES JIMÉNEZ ESCOBAR",
+                "sujeto": "DTE.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "6717310-4",
+                "nombre": "CARLOS AMABLE JIMÉNEZ ESCOBAR",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "7003094-2",
+                "nombre": "BERTA MYRIAM JIMÉNEZ ESCOBAR",
+                "sujeto": "DDO.",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "15434170-6",
+                "nombre": "MANUEL JESÚS RODRÍGUEZ JIMÉNEZ (Poder Simple)",
+                "sujeto": "AP.DTE",
+                "persona": "NATURAL"
+              },
+              {
+                "rut": "11721135-5",
+                "nombre": "FÉLIX GUSTAVO RIVAS CHANDÍA (Poder Simple)",
+                "sujeto": "AB.DDO",
+                "persona": "NATURAL"
+              }
+            ],
+            "proc": "Ordinario Mayor Cuantía",
+            "rol": "C-3099-2022",
+            "tribunal": "1º Juzgado de Letras de San Bernardo",
+            "sujeto": "DTE.",
+            "estadoActual": "Vigente"
+          }
+        ],
+        "ultimaActualizacion": "09-06-2026 16:39:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:e4a03d46c73be8e0e00ab630284efc09310af2da9edd9dd167265dd9bf326648",
+        "cached_at": "2026-06-09T16:39:54.468292"
+      }
+    },
+    "cobranza": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 16:39:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8a3208645130d253384ae9ef0389a7d5253b75535bc7af3708a5449bfce3c356",
+        "cached_at": "2026-06-09T16:39:54.799969"
+      }
+    },
+    "laboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 16:39:45"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:8148a7d3ae7524c6f1dcfc93cc4c66ce55ae3ae16a2da94c26e5683d40ee5344",
+        "cached_at": "2026-06-09T16:39:55.127536"
+      }
+    }
+  },
+  "cobranzaLaboral": {
+    "multaLaboral": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 16:39:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:d95a1a7321c40d2330b32f4800e2f805bea60bfba8a0697aed2abc783218432f",
+        "cached_at": "2026-06-09T16:39:55.482924"
+      }
+    },
+    "moraPrevisional": {
+      "success": true,
+      "data": {
+        "page": 1,
+        "totalPages": 0,
+        "cantidad": 0,
+        "casos": [],
+        "ultimaActualizacion": "09-06-2026 16:39:46"
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:be9b85e748f4b5cb861cfe8833770198711f80b25d6e6c35608f905d6e2560f5",
+        "cached_at": "2026-06-09T16:39:55.802885"
+      }
+    }
+  },
+  "compliance": {
+    "success": true,
+    "data": {
+      "rut": "7459056-K",
+      "estado": "PROCESADO",
+      "tipoPersona": "natural",
+      "nombre": "JAIME SEGUNDO JIMÉNEZ ESCOBAR",
+      "riesgo": "critical",
+      "sociedades": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "listasInternacionales": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "penal": {
+        "coincidencias": [
+          {
+            "nombre": "JAIME SEGUNDO JIMENEZ ESCOBAR",
+            "postura": "Denunciado",
+            "rol": "Ordinaria-3453-2022",
+            "fecha": "19/04/2022",
+            "infraccion": "AMENAZAS SIMPLES CONTRA PERSONAS Y PROPIEDADES ART. 296 Nº3.",
+            "estado": "Concluida",
+            "etapa": "Inicio de la acción",
+            "litigantes": [
+              {
+                "nombre": "CONFIDENCIAL",
+                "sujeto": "Víctima",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "FISCAL GENERICO TRIBUNAL 1237",
+                "sujeto": "Fiscal",
+                "situacionLibertad": null
+              },
+              {
+                "nombre": "JAIME SEGUNDO JIMENEZ ESCOBAR",
+                "sujeto": "Denunciado",
+                "situacionLibertad": "Libre"
+              },
+              {
+                "nombre": "MAURICIO ESTEBAN ARRIAGADA TOLEDO",
+                "sujeto": "Denunciante",
+                "situacionLibertad": null
+              }
+            ],
+            "materia": "Denuncia",
+            "tribunal": "Juzgado de Garantía de San Bernardo",
+            "esDenunciado": true
+          }
+        ],
+        "totalCoincidencias": 1
+      },
+      "noticias": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "pepChile": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "familiaresPep": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      },
+      "funcionariosPublicos": {
+        "coincidencias": [],
+        "totalCoincidencias": 0
+      }
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:aa1fbf763968082705fba06f7c0204e094eb6d6662c72195ed2040776a2886c4",
+      "cached_at": "2026-06-09T16:39:56.884534"
+    }
+  },
+  "legal": {
+    "mallaSocietaria": {
+      "success": true,
+      "data": {
+        "rut": "7459056-K",
+        "empresaEnUnDia": [],
+        "diarioOficial": [],
+        "participaciones": []
+      },
+      "_cache_info": {
+        "cached": false,
+        "cache_key": "sheriff_v2_cache:sheriff_v2_get:cb9375b1ed143ab191ade5f2fbc2a5612cd4b10e893fb87a8c671e622e0eb023",
+        "cached_at": "2026-06-09T16:39:57.216130"
+      }
+    }
+  },
+  "creditScore": {
+    "success": true,
+    "data": {
+      "periodo": "2026-06",
+      "inicioActividades": false,
+      "porcentajeFinanzas": 0,
+      "numeradorFinanzas": 0,
+      "denominadorFinanzas": 0,
+      "ponderacionFinanzas": 0,
+      "porcentajeJudicial": 0,
+      "numeradorJudicial": 0,
+      "denominadorJudicial": 0,
+      "quiebraJudicial": false,
+      "ponderacionJudicial": 100,
+      "porcentajeMoraPrevisional": 0,
+      "casosMoraPrevisional": 0,
+      "porcentajeMultasLaborales": 0,
+      "montoMultasLaborales": 0,
+      "porcentajeBoletinLaboral": 0,
+      "montoBoletinLaboral": 0,
+      "ponderacionCobranzaLaboral": 0,
+      "porcentajeBoletinComercial": 0,
+      "montoBoletinComercial": 0,
+      "ponderacionBoletinComercial": 100,
+      "cantidadHelpers": "2",
+      "porcentajeClasificacion": 200,
+      "etiquetaClasificacion": "Risk free",
+      "nombresHelpers": [
+        "judicial",
+        "commertialBulletin"
+      ],
+      "maxPonderacionJudicial": 100,
+      "maxPonderacionBoletinComercial": 100,
+      "maxPonderacionCobranzaLaboral": 0
+    },
+    "_cache_info": {
+      "cached": false,
+      "cache_key": "sheriff_v2_cache:sheriff_v2_get:d367f55d5ac17ba2174e4d72dc924762c76a4302e3681c83c49ae6feaf800eaf",
+      "cached_at": "2026-06-09T16:39:57.881570"
+    }
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "pathCount": 23,
+  "relationships": [
+    {
+      "source": "77396020",
+      "target": "7331292",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-02-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77396020",
+      "target": "6371604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-02-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77396020",
+      "target": "13836221",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-10-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77396020",
+      "target": "13757606",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2023-02-14",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77396020",
+      "target": "76246606",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_2691677",
+        "cve": "2691677",
+        "shares_percent": 99.9998,
+        "source": "DO",
+        "published_at": "2025-08-27",
+        "doc_extraction_id": "1853359",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/08/27/44235/05/2691677.pdf"
+      }
+    },
+    {
+      "source": "77396020",
+      "target": "76246606",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 100,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "78845800",
+      "target": "6371604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-06-05",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78828060",
+      "target": "6371604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "1996-05-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76417380",
+      "target": "6371604",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2005-12-15",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "96623430",
+      "target": "6371604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_1161201",
+        "cve": "1161201",
+        "shares_percent": 6.75,
+        "source": "DO",
+        "published_at": "2016-12-31",
+        "doc_extraction_id": "2190513",
+        "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2016/12/31/41647/05/1161201.pdf"
+      }
+    },
+    {
+      "source": "77668910",
+      "target": "6371604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6104171",
+        "doh_extraction_id": "895852",
+        "shares_percent": 40,
+        "source": "DOH",
+        "doh_id": "6104171",
+        "published_at": "2001-10-27",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2001/10/27/do-20011027.pdf"
+      }
+    },
+    {
+      "source": "76417380",
+      "target": "6371604",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "doh_id_6767174",
+        "doh_extraction_id": "1058430",
+        "shares_percent": 25,
+        "source": "DOH",
+        "doh_id": "6767174",
+        "published_at": "2007-02-23",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2007/02/23/do-20070223.pdf"
+      }
+    },
+    {
+      "source": "78147352",
+      "target": "13836221",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-07-25",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76368224",
+      "target": "13836221",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-09-03",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "13836221",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-09-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76368224",
+      "target": "13836221",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_808708",
+        "cve": "808708",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2014-08-21",
+        "doc_extraction_id": "1351756",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2014/08/21/808708_C_LTDA_20140821_firmado.pdf"
+      }
+    },
+    {
+      "source": "76556761",
+      "target": "13836221",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACKlgWSOmXZR",
+        "source": "RES",
+        "published_at": "2015-10-22"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "12881612",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2022-09-08",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "59189600",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 6,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "59189610",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 41,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "76246596",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 6,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "59189590",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 23.5,
+        "source": "SII_REC_COM"
+      }
+    },
+    {
+      "source": "76246606",
+      "target": "76246602",
+      "label": "OWNED_BY",
+      "information_source": {
+        "shares_percent": 23.5,
+        "source": "SII_REC_COM"
+      }
+    }
+  ],
+  "entityNames": {
+    "6371604": "ANDRES ELIAS NAGEL WAELDER",
+    "7331292": "MARCELO FERNANDO IGNACIO SHERTZER CUMPLIDO",
+    "12881612": "RODRIGO ANDRES GONZALEZ TOLEDO",
+    "13757606": "CRISTIAN EDUARDO GONZALEZ VEGA",
+    "13836221": "ELIZABETH DEL CARMEN CASTRO MENDEZ",
+    "59189590": "FREE RADICALS LLC",
+    "59189600": "BEACH SUNRISE LLC",
+    "59189610": "ALTO GROUP,LLC",
+    "76246596": "INVERSIONES INGRATON SPA",
+    "76246602": "INVERSIONES ROCA AZUL SPA",
+    "76246606": "SYNTHEON HOLDINGS SPA",
+    "76368224": "SOCIEDAD COMERCIALIZADORA CHILENA LIMITADA",
+    "76417380": "CONSTRUCTORA E INVERSIONES NAGEL GUILOFF LIMITADA",
+    "76556761": "HC Y ASOCIADOS SPA",
+    "77396020": "SYNTHEON CHILE LIMITADA",
+    "77668910": "INVERSIONES ALFA MEDIA LIMITADA",
+    "78147352": "SYNTHEON HOLDINGS DOS SPA",
+    "78828060": "DNP TRANSPORTES LIMITADA",
+    "78845800": "SOC DE INVERSIONES TIKAL LIMITADA",
+    "96623430": "FOMENTO URBANO LIMITADA"
+  },
+  "_cache_info": {
+    "cached": false,
+    "cache_key": "dequienes_cache:dequienes_relationships:164fb9287db5bbfce80e0edb57d290d3595a5526a896160284db366e64a03a08",
+    "cached_at": "2026-06-03T20:49:13.436520"
+  }
+}

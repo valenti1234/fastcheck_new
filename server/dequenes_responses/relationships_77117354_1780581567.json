@@ -1,0 +1,108 @@
+{
+  "pathCount": 9,
+  "relationships": [
+    {
+      "source": "77117354",
+      "target": "17831958",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-01-22",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77117354",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACqThrv0EO0L",
+        "source": "RES",
+        "published_at": "2020-01-22"
+      }
+    },
+    {
+      "source": "76846701",
+      "target": "17831958",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2018-03-20",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76320188",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "i_bt",
+        "source": "DOH",
+        "published_at": "2009-10-29",
+        "doh_id": "6948953",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2009/10/29/do-20091029.pdf"
+      }
+    },
+    {
+      "source": "76076523",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "match_type": "i_bt",
+        "source": "DOH",
+        "published_at": "2009-10-29",
+        "doh_id": "6948953",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2009/10/29/do-20091029.pdf"
+      }
+    },
+    {
+      "source": "76490782",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACHiGGgbxQ0A",
+        "source": "RES",
+        "published_at": "2020-11-10"
+      }
+    },
+    {
+      "source": "76846701",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACmR6mLHTqTu",
+        "source": "RES",
+        "published_at": "2020-08-17"
+      }
+    },
+    {
+      "source": "76846701",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACL70bRQ8yOz",
+        "source": "RES"
+      }
+    },
+    {
+      "source": "76490782",
+      "target": "17831958",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACOgFhhvh6hg",
+        "source": "RES"
+      }
+    }
+  ],
+  "entityNames": {
+    "17831958": "NATALY STEPHANIE VELASQUEZ CARRASCO",
+    "76076523": "SERVICIOS AUTOMOTRICES VELASQUEZ LIMITADA",
+    "76320188": "SERVICIOS AUTOMOTRICES VELASQUEZ LIMITADA",
+    "76490782": "SERVICIOS AUTOMOTRICES CARLOS HUMBERTO VELÁSQUEZ COLLAO E.I.R.L.",
+    "76846701": "SERVICIOS INTEGRALES VELASQUEZ SPA",
+    "77117354": "VELÁSQUEZ SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:2b76c5c0a0d7f0143c7fa54207983922dc0158e0a641142cd9718957ac94d9f4",
+    "retrieved_at": "2026-06-04T13:59:27.505993"
+  }
+}
