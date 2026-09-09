@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import axios from 'axios'; // Added axios for PDF download
-import { SheriffService } from '../services/sheriffService'; // Import SheriffService
+import { SheriffService, filterVigenteCasesOnly } from '../services/sheriffService'; // Import SheriffService + helper filtro vigente
 import { sheriffV2Service } from '../services/sheriffV2Service'; // Import SheriffV2Service
 import { OpenAIService } from '../services/OpenAIService'; // Import OpenAI Service
 import { CompanyAnalysisService } from '../services/companyAnalysisService'; // Import CompanyAnalysisService
@@ -670,7 +670,10 @@ export class RutController {
         isRefreshing: validatedData.isRefreshing
       });
 
-      refresh = validatedData.isMonitoring || validatedData.isRefreshing;
+      // Only trigger archive on explicit user refresh. Monitoring (periodic checks) must
+      // NOT archive the historical chain, otherwise prior consultation records are hidden.
+      refresh = validatedData.isRefreshing;
+      const isMonitoring = validatedData.isMonitoring;
 
       if (!testNotRefresh && refresh) {
         RutController.logDebug('REFRESH_ARCHIVE_START', { rut: validatedData.rut, tenantId: req.user?.tenant });
@@ -681,7 +684,7 @@ export class RutController {
         console.log("[REFRESH] Archived previous results for RUT:", validatedData.rut, "Count:", archiveResult.modifiedCount);
         RutController.logDebug('REFRESH_ARCHIVE_END', { archivedCount: archiveResult.modifiedCount });
       } else {
-        console.warn(59, "************************ lookupRut not refresh test", validatedData);
+        console.warn(59, "************************ lookupRut not refresh test", validatedData, { isMonitoring });
       }
       
       RutController.logDebug('CHECK_EXISTING_START', { rut: validatedData.rut });
@@ -693,6 +696,43 @@ export class RutController {
           resultId: existingResult._id,
           processingTime: `${(performance.now() - startTime).toFixed(3)}ms`
         });
+
+        try {
+          const processingTime = Date.now() - startTime;
+          await ConsultaHistoryService.logIndividualConsulta(
+            req,
+            validatedData.rut,
+            '/api/rut/lookup',
+            200,
+            {
+              rut: existingResult.rut || validatedData.rut,
+              riskLevel: (existingResult as any).riskAssessment?.globalSemaphore || (existingResult as any).riskAssessment?.riskSummary?.semaphore || 'unknown',
+              companyName: (existingResult as any).companyGeneralInfo?.razonSocial || (existingResult as any).details?.razonSocial || 'unknown'
+            },
+            undefined,
+            processingTime,
+            validatedData.isPep || validatedData.isMonitoring ? 0 : 1,
+            {
+              isRefresh: false,
+              isMonitoring: validatedData.isMonitoring,
+              isRefreshing: validatedData.isRefreshing,
+              isPep: validatedData.isPep,
+              hasExistingResult: true,
+              servedFromCache: true,
+              requestData: {
+                rut: validatedData.rut,
+                isMonitoring: validatedData.isMonitoring,
+                isRefreshing: validatedData.isRefreshing,
+                refresh,
+                isPep: validatedData.isPep,
+                hasExistingResult: true
+              }
+            }
+          );
+        } catch (logError) {
+          console.error('[CONSULTA_HISTORY] Error logging cached consultation (existingResult):', logError);
+        }
+
         return res.status(200).json(existingResult);
       }
       RutController.logDebug('CHECK_EXISTING_END', { found: !!existingResult, refresh });
@@ -824,8 +864,8 @@ export class RutController {
         laboralCasesData: (newSheriff as any)?.judicial?.laboral.data ?? {},
 
         cobranzaCasesData: (newSheriff as any)?.judicial?.cobranza.data ?? {},
-        moraPrevisionalCasesData: (newSheriff as any)?.cobranzaLaboral?.moraPrevisional.data ?? {},
-        multaLaboralCasesData: (newSheriff as any)?.cobranzaLaboral?.multaLaboral.data ?? {},
+        moraPrevisionalCasesData: filterVigenteCasesOnly((newSheriff as any)?.cobranzaLaboral?.moraPrevisional.data) ?? {},
+        multaLaboralCasesData: filterVigenteCasesOnly((newSheriff as any)?.cobranzaLaboral?.multaLaboral.data) ?? {},
 
         commercialBulletinCasesData: {},
 
@@ -857,7 +897,23 @@ export class RutController {
         bolabTypePersonaNatural: [],
         bolabTypePersonaNaturalList: [],
         equifaxData: (logEntry as any).equifaxData,
-        sheriffV2Data: newSheriff,
+        sheriffV2Data: (() => {
+          if (newSheriff == null || typeof newSheriff !== 'object') return newSheriff;
+          const filteredSheriff: any = Array.isArray(newSheriff)
+            ? [...(newSheriff as any[])]
+            : {...(newSheriff as Record<string, any>)};
+          const cob = (filteredSheriff as any).cobranzaLaboral;
+          if (cob && typeof cob === 'object') {
+            if (cob.moraPrevisional && ('data' in cob.moraPrevisional)) {
+              cob.moraPrevisional = {...cob.moraPrevisional, data: filterVigenteCasesOnly(cob.moraPrevisional.data)};
+            }
+            if (cob.multaLaboral && ('data' in cob.multaLaboral)) {
+              cob.multaLaboral = {...cob.multaLaboral, data: filterVigenteCasesOnly(cob.multaLaboral.data)};
+            }
+            (filteredSheriff as any).cobranzaLaboral = {...cob};
+          }
+          return filteredSheriff;
+        })(),
         allCallsSucceeded: (newSheriff as any)?.success ?? false,
       };
       if ((newSheriff as any)?.resumen.data.esPersonaJuridica) {
@@ -993,7 +1049,7 @@ export class RutController {
           const deqRes = await dequienesService.queryRelationships({
             rut: validatedData.rut,
             tenantId: tenantId,
-            distance: 2,
+            distance: 5,
             relationshipDirection: 'BOTH',
             onePathPerNode: false
           });

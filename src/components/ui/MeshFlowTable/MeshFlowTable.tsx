@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import formatRut from '../../../utils/rutFormat';
+import { filterOutNotaryRelationships } from '../../../utils/dequienes';
 
 const MAX_DEPTH = 5;
 
@@ -56,8 +57,10 @@ const MeshFlowTable: React.FC<Props> = ({
 
   // BFS bidireccional desde el centro, igual que MeshFlowChart
   const rows = useMemo<FlowRow[]>(() => {
-    if (!dequienesRelationships?.relationships?.length) return [];
-    const { relationships, entityNames = {} } = dequienesRelationships;
+    // Filtra via: scarta notari / conservador / registro civile (tipoDeParticipacion + nomi blacklist)
+    const cleaned = filterOutNotaryRelationships(dequienesRelationships);
+    if (!cleaned?.relationships?.length) return [];
+    const { relationships, entityNames = {} } = cleaned;
     const cleanMain = normalizeRut(mainRut || '');
     if (!cleanMain) return [];
 

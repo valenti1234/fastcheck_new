@@ -96,7 +96,7 @@ export class DequienesService {
     let statusCode: number | undefined;
     let errorMessage: string | undefined;
 
-    const distance = req.distance ?? 2;
+    const distance = req.distance ?? 5;
     const relationshipDirection = req.relationshipDirection ?? 'BOTH';
     const onePathPerNode = req.onePathPerNode ?? false;
     const apiKey = (req.apiKey || process.env.DEQUIENES_API_KEY || '').trim();

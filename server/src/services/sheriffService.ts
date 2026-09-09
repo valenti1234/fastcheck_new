@@ -13,6 +13,68 @@ dotenv.config();
 
 const SHERIFF_API_URL = process.env.SHERIFF_API_URL || 'https://prod.api.thesheriff.cl/api/v1';
 
+// =============================================================================
+// Helper: FILTRO VIGENTE = TRUE (Mora Previsional / Multa Laboral / altri casi)
+//
+// Gestisce DUE formati di payload:
+//   A) Formato HELPER (array piatto): [ caso1, caso2, casoN ]
+//        => es: const filtered = filterVigenteCasesOnly(axiosResp.data)
+//   B) Formato WRAPPER Sheriff V2 (object):  { cantidad, casos: [...], ultimaActualizacion, ... }
+//        => es: const filtered = filterVigenteCasesOnly(sheriff.cobranzaLaboral.moraPrevisional.data)
+//
+// In caso B, ritornano nuovo oggetto wrapper con:
+//   - `casos` filtrato
+//   - `cantidad` sovrascritto = len(casosFiltrados)
+//   - `totalPages` se esisteva, ricalcolato (min 1)
+//   - altri campi (page, ultimaActualizacion, ...) invariati
+//
+// Il filtro considera valido SOLO entries dove `vigente === true` (strict equality,
+// non truthy). Entries senza campo `vigente` (undefined / null / false) — SCARTATE.
+// =============================================================================
+export function filterVigenteCasesOnly<T = any>(payload: any | null | undefined): any {
+  if (payload === null || payload === undefined) return payload;
+
+  // Caso A) Array piatto (formato helper)
+  if (Array.isArray(payload)) {
+    return payload.filter((c: any) => c && typeof c === 'object' && (c as any).vigente === true);
+  }
+
+  // Caso B) WRAPPER object con chiave `casos` (array)
+  if (typeof payload === 'object') {
+    // Se l'oggetto NON ha la chiave `casos` (tipo: oggetto singolo caso): restituisco invariato
+    if (!('casos' in payload)) return payload;
+
+    const wrapper = payload as { casos: any[]; cantidad?: number; totalPages?: number; [k: string]: any };
+    if (!Array.isArray(wrapper.casos)) return payload;
+
+    const casosFiltrados = wrapper.casos.filter(
+      (c: any) => c && typeof c === 'object' && (c as any).vigente === true
+    );
+
+    const newWrapper: any = { ...wrapper, casos: casosFiltrados };
+
+    // Sovrascriviamo `cantidad` (se presente) con la nuova length
+    if ('cantidad' in wrapper) {
+      newWrapper.cantidad = casosFiltrados.length;
+    }
+    // Ricalcoliamo `totalPages` (se presente). Assumiamo che page size siano
+    // le entries per pagina di originale. Se non sappiamo, min 1.
+    if ('totalPages' in wrapper && typeof wrapper.totalPages === 'number' && wrapper.totalPages > 0) {
+      const origLen = wrapper.casos.length;
+      if (origLen > 0) {
+        const perPage = Math.max(1, Math.ceil(origLen / wrapper.totalPages));
+        newWrapper.totalPages = Math.max(1, Math.ceil(casosFiltrados.length / perPage));
+      } else {
+        newWrapper.totalPages = 1;
+      }
+    }
+    return newWrapper;
+  }
+
+  // Scalare/altri: restituisco invariato.
+  return payload;
+}
+
 interface RutLookupRequest {
   rut: string;
   isMonitoring: boolean;
@@ -382,20 +444,72 @@ export class SheriffService {
     }
     const moraPrevisionalCasesData = await makeApiCall('moraPrevisionalCasesData', 'get', `/helper/${sanitizedRut}/getMoraPrevisionalCases`);
     //console.log(151, 'moraPrevisionalCasesData', moraPrevisionalCasesData);
-    if (moraPrevisionalCasesData.data && Array.isArray(moraPrevisionalCasesData.data)) {
+
+    // ------- FILTRO: SOLO CASI CON vigente === true (Mora Previsional) -----------
+    let moraCasesFiltered: any;
+    if (moraPrevisionalCasesData.data) {
+      moraCasesFiltered = filterVigenteCasesOnly(moraPrevisionalCasesData.data);
+      if (Array.isArray(moraPrevisionalCasesData.data) && Array.isArray(moraCasesFiltered)) {
+        const before = moraPrevisionalCasesData.data.length;
+        const after = moraCasesFiltered.length;
+        if (before !== after) {
+          console.log(`[SheriffService] Filtro vigente moraPrevisional: ${before} → ${after} (rimossi ${before - after} casi non vigenti)`);
+        }
+      } else if (typeof moraCasesFiltered === 'object' && moraCasesFiltered?.casos && moraPrevisionalCasesData.data?.casos) {
+        const before = moraPrevisionalCasesData.data.casos.length;
+        const after = moraCasesFiltered.casos.length;
+        if (before !== after) {
+          console.log(`[SheriffService] Filtro vigente moraPrevisional (wrapper): ${before} → ${after} (rimossi ${before - after} casi non vigenti)`);
+        }
+      }
+    }
+
+    if (moraCasesFiltered && (Array.isArray(moraCasesFiltered) || (typeof moraCasesFiltered === 'object' && moraCasesFiltered?.casos))) {
       const casesLimit = Number(process.env.CASES_LIMIT || 10);
-      inMemoryLog.moraPrevisionalCasesData = moraPrevisionalCasesData.data.slice(0, casesLimit);
-      console.log(`[SheriffService] Limiting moraPrevisionalCasesData to 10 items from ${moraPrevisionalCasesData.data.length} total cases`);
+      if (Array.isArray(moraCasesFiltered)) {
+        inMemoryLog.moraPrevisionalCasesData = moraCasesFiltered.slice(0, casesLimit);
+        console.log(`[SheriffService] Limiting moraPrevisionalCasesData to ${casesLimit} items from ${moraCasesFiltered.length} total cases (vigenti)`);
+      } else {
+        // Limita i `casos` interni, preserva l'outer wrapper.
+        const limited = { ...moraCasesFiltered, casos: moraCasesFiltered.casos.slice(0, casesLimit) };
+        if ('cantidad' in limited) limited.cantidad = limited.casos.length;
+        inMemoryLog.moraPrevisionalCasesData = limited;
+        console.log(`[SheriffService] Limiting moraPrevisionalCasesData (wrapper) to ${casesLimit} inner casos from ${moraCasesFiltered.casos.length} total (vigenti)`);
+      }
     } else {
       console.warn(`[SheriffService] No moraPrevisionalCasesData for RUT: ${sanitizedRut}`);
     }
 
     const multaLaboralCasesData = await makeApiCall('multaLaboralCasesData', 'get', `/helper/${sanitizedRut}/getMultaLaboralCases`);
     // console.log(153, 'multaLaboralCasesData', multaLaboralCasesData);
-    if (multaLaboralCasesData.data && Array.isArray(multaLaboralCasesData.data)) {
+
+    // ------- FILTRO: SOLO CASI CON vigente === true (Multa Laboral) ---------------
+    let multaLaboralFiltered: any;
+    if (multaLaboralCasesData.data) {
+      multaLaboralFiltered = filterVigenteCasesOnly(multaLaboralCasesData.data);
+    }
+
+    if (multaLaboralFiltered && (Array.isArray(multaLaboralFiltered) || (typeof multaLaboralFiltered === 'object' && multaLaboralFiltered?.casos))) {
       const casesLimit = Number(process.env.CASES_LIMIT || 10);
-      inMemoryLog.multaLaboralCasesData = multaLaboralCasesData.data.slice(0, casesLimit);
-      console.log(`[SheriffService] Limiting multaLaboralCasesData to 10 items from ${multaLaboralCasesData.data.length} total cases`);
+      if (Array.isArray(multaLaboralFiltered)) {
+        const before = multaLaboralCasesData.data?.length ?? 0;
+        const after = multaLaboralFiltered.length;
+        if (before !== after) {
+          console.log(`[SheriffService] Filtro vigente multaLaboral: ${before} → ${after} (rimossi ${before - after} casi non vigenti)`);
+        }
+        inMemoryLog.multaLaboralCasesData = multaLaboralFiltered.slice(0, casesLimit);
+        console.log(`[SheriffService] Limiting multaLaboralCasesData to ${casesLimit} items from ${multaLaboralFiltered.length} total cases (vigenti)`);
+      } else {
+        const before = multaLaboralCasesData.data?.casos?.length ?? 0;
+        const after = multaLaboralFiltered.casos.length;
+        if (before !== after) {
+          console.log(`[SheriffService] Filtro vigente multaLaboral (wrapper): ${before} → ${after} (rimossi ${before - after} casi non vigenti)`);
+        }
+        const limited = { ...multaLaboralFiltered, casos: multaLaboralFiltered.casos.slice(0, casesLimit) };
+        if ('cantidad' in limited) limited.cantidad = limited.casos.length;
+        inMemoryLog.multaLaboralCasesData = limited;
+        console.log(`[SheriffService] Limiting multaLaboralCasesData (wrapper) to ${casesLimit} inner casos from ${multaLaboralFiltered.casos.length} total (vigenti)`);
+      }
     } else {
       console.warn(`[SheriffService] No multaLaboralCasesData for RUT: ${sanitizedRut}`);
     }

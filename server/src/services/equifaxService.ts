@@ -9,6 +9,7 @@ dotenv.config();
 
 // Environment variables for Equifax configuration
 const EQUIFAX_ENVIRONMENT = process.env.EQUIFAX_ENVIRONMENT || 'uat'; // 'uat' or 'prod'
+const EQUIFAX_LOG_TAG = '[EXT] [EQUIFAX]';
 
 // Personal data from environment variables
 const EQUIFAX_PERSONAL_DATA = {
@@ -89,7 +90,7 @@ export class EquifaxService {
 //    this.baseUrl = 'http://localhost:8021';
     this.baseUrl = 'http://localhost:8022';
 
-    console.warn(`Equifax API Base URL: ${this.baseUrl}`);
+    console.warn(`${EQUIFAX_LOG_TAG} API Base URL: ${this.baseUrl} | env=${EQUIFAX_ENVIRONMENT}`);
 
     this.axiosInstance = axios.create({
       baseURL: this.baseUrl,
@@ -103,11 +104,11 @@ export class EquifaxService {
     // Request interceptor for logging
     this.axiosInstance.interceptors.request.use(
       (config) => {
-        console.log(`Equifax API Request: ${config.method?.toUpperCase()} ${config.url}`);
+        console.log(`${EQUIFAX_LOG_TAG} [HTTP_REQ] ${config.method?.toUpperCase()} ${config.url}`);
         return config;
       },
       (error) => {
-        console.error('Equifax API Request Error:', error);
+        console.error(`${EQUIFAX_LOG_TAG} [HTTP_REQ_ERR]`, error?.message || error);
         return Promise.reject(error);
       }
     );
@@ -115,11 +116,14 @@ export class EquifaxService {
     // Response interceptor for logging
     this.axiosInstance.interceptors.response.use(
       (response) => {
-        console.log(`Equifax API Response: ${response.status} ${response.statusText}`);
+        const len = typeof response?.data === 'string' ? response.data.length
+          : JSON.stringify(response.data ?? '').length;
+        console.log(`${EQUIFAX_LOG_TAG} [HTTP_RES] status=${response.status} ${response.statusText || ''} content_len=${len} url=${response.config?.url}`);
         return response;
       },
       (error) => {
-        console.error('Equifax API Response Error:', error.response?.status, error.message);
+        const status = error?.response?.status ?? 'no_status';
+        console.error(`${EQUIFAX_LOG_TAG} [HTTP_RES_ERR] status=${status} msg=${error?.message || 'unknown'} url=${error?.config?.url || '<unknown>'}`);
         return Promise.reject(error);
       }
     );
@@ -158,6 +162,7 @@ export class EquifaxService {
       }
     };
 
+    console.debug?.(`${EQUIFAX_LOG_TAG} buildPayload | RUT=${rut} productName=${payload.productData.productName} productOrch=${payload.productData.productOrch}`);
     return payload;
   }
 
@@ -174,8 +179,10 @@ export class EquifaxService {
     const environment = EQUIFAX_ENVIRONMENT || 'uat';
     let usedRequestType = (requestType || 'personal').toLowerCase();
 
+    console.log(`${EQUIFAX_LOG_TAG} executeTransaction START | RUT=${rut} tenant=${tenantId} env=${environment} requestType_attempt=${usedRequestType}`);
+
     try {
-      console.log(`Executing Equifax transaction for RUT: ${rut}`);
+      console.log(`${EQUIFAX_LOG_TAG} Executing Equifax transaction for RUT: ${rut}`);
       // Use local test server endpoint
 //      const url = `http://localhost:8021/transaction/${environment}/rut-only`;
       const url = `http://localhost:8022/transaction/${environment}/rut-only`;
@@ -189,13 +196,17 @@ export class EquifaxService {
           chileanRut: rut,
           requestType: reqType
         };
-        console.log(`Calling local test server: ${url} with payload:`, rutOnlyPayload);
-        return await this.axiosInstance.post(url, rutOnlyPayload, { headers: postHeader });
+        console.log(`${EQUIFAX_LOG_TAG} makeCall → POST ${url} | chileanRut=${rut} requestType=${reqType}`);
+        console.log(`${EQUIFAX_LOG_TAG} makeCall payload:`, JSON.stringify(rutOnlyPayload));
+        const t0 = Date.now();
+        const r = await this.axiosInstance.post(url, rutOnlyPayload, { headers: postHeader });
+        console.log(`${EQUIFAX_LOG_TAG} makeCall DONE | status=${r.status} rt_ms=${Date.now() - t0}`);
+        return r;
       };
 
       // First attempt
       let response = await makeCall(usedRequestType);
-      //console.warn(`Equifax response data:`, response.data);
+      console.log(`${EQUIFAX_LOG_TAG} Attempt 1 (${usedRequestType}) HTTP OK status=${response.status} | keys_top=${Object.keys(response.data || {}).slice(0, 10)}`);
 
       // If Equifax returns a logical bad request in the body, retry with opposite type
       const responseData = response?.data;
@@ -204,15 +215,17 @@ export class EquifaxService {
       if (badReq && typeof badMsg === 'string') {
         if (badMsg.includes('enterprise') || badMsg.includes('empresarial')) {
           if (usedRequestType !== 'empresarial') {
-            console.warn('Equifax indicates enterprise RUT. Retrying with empresarial requestType.');
+            console.warn(`${EQUIFAX_LOG_TAG} BadRequest detected: Equifax says enterprise RUT. Retrying automatically with requestType=empresarial. previous_was=${usedRequestType}`);
             usedRequestType = 'empresarial';
             response = await makeCall(usedRequestType);
+            console.log(`${EQUIFAX_LOG_TAG} Retry empresarial HTTP OK status=${response.status}`);
           }
         } else if (badMsg.includes('personal') || badMsg.includes('persona')) {
           if (usedRequestType !== 'personal') {
-            console.warn('Equifax indicates personal RUT. Retrying with personal requestType.');
+            console.warn(`${EQUIFAX_LOG_TAG} BadRequest detected: Equifax says personal RUT. Retrying automatically with requestType=personal. previous_was=${usedRequestType}`);
             usedRequestType = 'personal';
             response = await makeCall(usedRequestType);
+            console.log(`${EQUIFAX_LOG_TAG} Retry personal HTTP OK status=${response.status}`);
           }
         }
       }
@@ -236,11 +249,12 @@ export class EquifaxService {
         responseData: response.data
       });
 
-      console.log(`Equifax transaction completed successfully for RUT: ${rut} - Time: ${responseTime}ms`);
+      console.log(`${EQUIFAX_LOG_TAG} Transaction OK | RUT=${rut} final_requestType=${usedRequestType} HTTP=${statusCode} total_rt_ms=${responseTime}`);
 
       let normalizedResponse = null;
       if (responseData.data) {
         if (responseData.data.commercialData) {
+          console.log(`${EQUIFAX_LOG_TAG} Response format: EMPRESARIAL (data.commercialData present) for RUT=${rut}`);
  //         console.warn(244,"equifaxService company >>>>>>>>>>>>>>>>>>>>>>",responseData.data.commercialData.credit.debtsSummary);
           //normalize response
           normalizedResponse = {
@@ -257,8 +271,9 @@ export class EquifaxService {
             allData: responseData.data
           };
           normalizedResponse.protestosMorosidadesPersonaJuridica = responseData.data.commercialData.credit.debtsSummary.unpaidTotalAmount || 0;
-        } 
+        }
       } else if (responseData.platinum360) { // persona RUT
+        console.log(`${EQUIFAX_LOG_TAG} Response format: PERSONA (platinum360 present) for RUT=${rut}`);
        // console.warn(244,"equifaxService persona >>>>>>>>>>>>>>>>>>>>>>",responseData.platinum360.getInformePlatinum360Response.response.Credit.DebtsSummary);
         normalizedResponse = {
           socios: [],
@@ -268,11 +283,11 @@ export class EquifaxService {
           protestosMorosidadesPersonaNatural: responseData.platinum360.getInformePlatinum360Response.response.Credit.DebtsSummary.ProtestSummary.TotalAmountProtests || 0,
           protestosMorosidadesPersonaNaturalList: responseData.platinum360.getInformePlatinum360Response.response.Credit.DebtsSummary.BED?.BEDType || [],
           bolabTypePersonaNatural: responseData.platinum360.getInformePlatinum360Response.response.Credit.DebtsSummary.BOLAB?.BOLABType || [],
-          allData: responseData 
+          allData: responseData
         };
      //   console.warn(270,`Equifax response data for persona RUT ${rut}:`, normalizedResponse.bolabTypePersonaNatural  );
       } else { //unrecognized response format
-        console.warn(`Unrecognized Equifax response format for RUT ${rut}:`, response.data);
+        console.warn(`${EQUIFAX_LOG_TAG} ⚠️ UNRECOGNIZED response format (no data.commercialData, no platinum360) RUT=${rut}. top_keys=${Object.keys(responseData || {}).slice(0, 12)}`);
         normalizedResponse = {
           socios: [],
           deudaPrevisionalPublicadaPersonaJuridica: null,
@@ -285,14 +300,15 @@ export class EquifaxService {
      // console.warn(`Normalized Equifax response for RUT ${rut}:`, normalizedResponse);
       // Save response to file for debugging/logging
       try {
-        await this.saveResponseToFile(rut, response.data);
+        const filepath = await this.saveResponseToFile(rut, response.data);
+        console.log(`${EQUIFAX_LOG_TAG} Response JSON saved | file=${filepath}`);
       } catch (saveError) {
-        console.warn(`Failed to save Equifax response to file for RUT ${rut}:`, saveError);
+        console.warn(`${EQUIFAX_LOG_TAG} ⚠️ Failed to save Equifax response to file for RUT ${rut}:`, (saveError as Error)?.message || saveError);
       }
       // Save response to MongoDB collection equifax-responses
       try {
         const cacheInfo = response.data?._cache_info;
-        await EquifaxResponseModel.create({
+        const dbDoc = await EquifaxResponseModel.create({
           tenantId,
           rut,
           environment,
@@ -307,8 +323,9 @@ export class EquifaxService {
           normalizedData: normalizedResponse,
           cacheInfo
         });
+        console.log(`${EQUIFAX_LOG_TAG} Response saved to MongoDB equifax-responses | _id=${(dbDoc as any)?._id ?? 'ok'} RUT=${rut} cached=${cacheInfo?.cached ?? false}`);
       } catch (dbError) {
-        console.warn(`Failed to save Equifax response to MongoDB for RUT ${rut}:`, dbError);
+        console.warn(`${EQUIFAX_LOG_TAG} ⚠️ Failed to save Equifax response to MongoDB for RUT ${rut}:`, (dbError as Error)?.message || dbError);
       }
 
       return normalizedResponse;
@@ -336,7 +353,7 @@ export class EquifaxService {
         responseData: err.response?.data
       });
 
-      console.error(`Error in Equifax transaction for RUT ${rut}:`, err.message);
+      console.error(`${EQUIFAX_LOG_TAG} ❌ Transaction FAIL for RUT ${rut} | status=${statusCode ?? 'no_http'} rt_ms=${responseTime} msg=${errorMessage}`);
 
       // Save error response to MongoDB collection equifax-responses
       try {
@@ -354,8 +371,9 @@ export class EquifaxService {
           requestPayload: { chileanRut: rut, requestType: usedRequestType },
           data: err.response?.data
         });
+        console.log(`${EQUIFAX_LOG_TAG} Error result saved to MongoDB equifax-responses | RUT=${rut}`);
       } catch (dbError) {
-        console.warn(`Failed to save Equifax error to MongoDB for RUT ${rut}:`, dbError);
+        console.warn(`${EQUIFAX_LOG_TAG} ⚠️ Failed to save Equifax error to MongoDB for RUT ${rut}:`, (dbError as Error)?.message || dbError);
       }
 
       throw error;
@@ -368,6 +386,8 @@ export class EquifaxService {
   public async queryRut(request: EquifaxRequest): Promise<EquifaxResponse> {
     const { rut, tenantId, personalData, productData } = request;
 
+    console.log(`${EQUIFAX_LOG_TAG} queryRut ENTRY | RUT=${rut} tenant=${tenantId} hasCustomPersonalData=${!!personalData} hasCustomProductData=${!!productData}`);
+
     try {
 
 
@@ -379,6 +399,7 @@ export class EquifaxService {
       // Execute transaction (pass requestType from caller via personalData.requestType)
       const data = await this.executeTransaction(payload, rut, tenantId, personalData?.requestType);
 
+      console.log(`${EQUIFAX_LOG_TAG} queryRut EXIT (success) | RUT=${rut} hasNormalizedData=${!!data}`);
       return {
         success: true,
         data,
@@ -390,7 +411,7 @@ export class EquifaxService {
       const statusCode = err.response?.status || 500;
       const errorMessage = err.message || 'Unknown error occurred';
 
-      console.error(` ! Equifax service error for RUT ${rut}:`, errorMessage);
+      console.error(`${EQUIFAX_LOG_TAG} ❌ queryRut EXIT (fail) | RUT=${rut} status=${statusCode} err=${errorMessage}`);
 
       return {
         success: false,
@@ -408,18 +429,22 @@ export class EquifaxService {
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
       const filename = `equifax_${rut}_${timestamp}.json`;
       const filepath = path.join(process.cwd(), 'equifax_responses', filename);
+      const dir = path.dirname(filepath);
+
+      console.debug?.(`${EQUIFAX_LOG_TAG} saveResponseToFile start | dir=${dir} filename=${filename}`);
 
       // Ensure directory exists
-      await fs.mkdir(path.dirname(filepath), { recursive: true });
+      await fs.mkdir(dir, { recursive: true });
 
       // Save response
-      await fs.writeFile(filepath, JSON.stringify(data, null, 2));
+      const jsonStr = JSON.stringify(data, null, 2);
+      await fs.writeFile(filepath, jsonStr);
 
-      console.log(`Equifax response saved to: ${filepath}`);
+      console.log(`${EQUIFAX_LOG_TAG} saveResponseToFile OK | file=${filepath} size_bytes=${jsonStr.length}`);
       return filepath;
 
     } catch (error) {
-      console.error('Error saving Equifax response to file:', error);
+      console.error(`${EQUIFAX_LOG_TAG} ❌ saveResponseToFile FAIL for RUT ${rut}:`, (error as Error)?.message || error);
       throw error;
     }
   }
@@ -428,11 +453,13 @@ export class EquifaxService {
    * Get service health status
    */
   public async getHealthStatus(): Promise<{ status: string; environment: string; baseUrl: string }> {
-    return {
+    const info = {
       status: 'active',
       environment: EQUIFAX_ENVIRONMENT,
       baseUrl: this.baseUrl
     };
+    console.log(`${EQUIFAX_LOG_TAG} getHealthStatus →`, JSON.stringify(info));
+    return info;
   }
 }
 

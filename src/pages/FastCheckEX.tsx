@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useRef, useCallback, useMemo } from 'react';
 /* import { Users } from 'lucide-react'; */
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import PageLayout from '../components/layouts/PageLayout';
 import { apiClient, userNotesApi, UserNote, formatChileanRut } from '../services/api';
 import RuleDetailsModal from '../components/ui/RuleDetailsModal/RuleDetailsModal';
 
-import { deriveRelations } from '../utils/dequienes';
+import { deriveRelations, filterOutNotaryRelationships, isNotaryEntry, deepCleanNotarySociosFromEntirePayload } from '../utils/dequienes';
 import { applyConstitutionDate } from '../utils/constitution';
 import { lookupRut, checkSociosEvaluations, resetSociosEvaluations } from '../services/companyService';
 import html2canvas from 'html2canvas';
@@ -192,6 +192,58 @@ const FastCheck: React.FC = () => {
   });
 
   const [financialRisk, setFinancialRisk] = useState<FinancialRisk | null>(null);
+
+  // ────────────────────────────────────────────────────────────────────
+  // 🛡️  SINGLE SOURCE OF TRUTH: DATI PULITI NOTARILE GLOBALMENTE
+  //
+  // deepCleanNotarySociosFromEntirePayload() deep-walk TUTTO l'albero
+  // e rimuove DA OGNI ARRAY entries con tipoDeParticipacion notarile
+  // o nome tipo "Notaría X". Vale per TUTTI i path:
+  //   - compliance.sociedades.coincidencias[].socios
+  //   - mallaSocietariaData.empresaEnUnDia[].socios
+  //   - mallaSocietariaData.diarioOficial[].socios
+  //   - societaryMeshExternal, dequienesRelationships, ...tutti gli altri
+  //
+  // Usiamo `cleanedData` invece di `data` in TUTTI i riferimenti
+  // interni al componente: useMemo, useEffect, JSX rendering.
+  // ────────────────────────────────────────────────────────────────────
+  const cleanedData = useMemo(() => {
+    const cleaned = deepCleanNotarySociosFromEntirePayload(data);
+    const stats = (cleaned as any)?._globalNotaryCleanup;
+    if (stats?.removedEntries > 0) {
+      logger.log(
+        `[CLEANUP GLOBALE] Rimosse ${stats.removedEntries} entries notarili da payload (` +
+          `path: ${JSON.stringify(stats.pathsTouched)}, ` +
+          `nomi: ${JSON.stringify(stats.removedNames)})`
+      );
+    }
+    return cleaned;
+  }, [data]);
+
+  // ── Malla Relacional: Purga notari / conservador / registro civile (tipoDeParticipacion blacklisted) ──
+  // Calcolato UNA sola volta, passiamo lo stesso oggetto filtrato a MeshTable e MeshFlowTable
+  // per evitare deepClone × 2 e doppio lavoro.
+  const dequienesForMesh = useMemo(() => {
+    const raw =
+      cleanedData?.sheriffLogData?.filteredDetails?.dequienesRelationships ||
+      cleanedData?.details?.sheriffLogData?.filteredDetails?.dequienesRelationships ||
+      cleanedData?.logEntry?.filteredDetails?.dequienesRelationships ||
+      undefined;
+    if (!raw) return undefined;
+    const filteredMesh = filterOutNotaryRelationships(raw);
+    const stats = (filteredMesh as any)?._notaryCleanup;
+    if (stats?.removedRelations || stats?.removedEntityNames) {
+      logger.log(
+        `[Malla Relacional] Rimosse ${stats.removedRelations || 0} relazioni + ${stats.removedEntityNames || 0} entità notarili (nomi: ${JSON.stringify(stats.removedNames || [])})`
+      );
+    }
+    return filteredMesh;
+  }, [
+    cleanedData?.sheriffLogData?.filteredDetails?.dequienesRelationships,
+    cleanedData?.details?.sheriffLogData?.filteredDetails?.dequienesRelationships,
+    cleanedData?.logEntry?.filteredDetails?.dequienesRelationships,
+    cleanedData,
+  ]);
 
   // User notes state
   const [userNote, setUserNote] = useState<UserNote | null>(null);
@@ -1448,14 +1500,25 @@ const FastCheck: React.FC = () => {
   useEffect(() => {
     const initializeSociosEvaluations = async () => {
       // Obtener socios desde compliance.sociedades.coincidencias[].socios
-      const coincidencias = data?.sheriffLogData?.filteredDetails?.compliance?.sociedades?.coincidencias || [];
+      // NOTA BENE: usiamo cleanedData (dati GLOBALMENTE purgati da notari) e come
+      // DOPPIA SICUREZZA ri-applichiamo isNotaryEntry sul singolo elemento.
+      const coincidencias = cleanedData?.sheriffLogData?.filteredDetails?.compliance?.sociedades?.coincidencias || [];
 
       const seenKeys = new Set<string>();
       const socios: { name: string; rut: string }[] = [];
 
+      let notarySkippedInCoincidencias = 0;
+      const skippedNotaryNames: string[] = [];
+
       for (const coincidencia of coincidencias) {
         if (!Array.isArray(coincidencia?.socios)) continue;
         for (const s of coincidencia.socios) {
+          // ---------- SKIP IF NOTARY / CONSERVADOR / REGISTRO CIVIL ----------
+          if (isNotaryEntry(s)) {
+            notarySkippedInCoincidencias += 1;
+            if (s?.nombre) skippedNotaryNames.push(String(s.nombre).trim());
+            continue;
+          }
           const rut = (s?.rut || '').trim();
           const name = (s?.nombre || '').trim();
           if (!name) continue; // descartar socios sin nombre
@@ -1466,6 +1529,69 @@ const FastCheck: React.FC = () => {
           socios.push({ name, rut });
         }
       }
+      if (notarySkippedInCoincidencias > 0) {
+        logger.log(
+          `[PEP Socios Filter] Scartati ${notarySkippedInCoincidencias} entry notarili da coincidencias[] (nomi: ${JSON.stringify(skippedNotaryNames)})`
+        );
+      }
+
+      // --- FONTE 2: Aggiungere anche socios da mallaSocietariaData.empresaEnUnDia[].socios ---
+      // (in questo path vivono molti socios presi da fonte Empresa en un Día; MARCOS ANDRES DIAZ LEON
+      //  e gli altri notari "titular" spesso appaiono qui + diarioOficial)
+      const malla =
+        cleanedData?.sheriffLogData?.filteredDetails?.mallaSocietariaData ||
+        cleanedData?.details?.sheriffLogData?.filteredDetails?.mallaSocietariaData ||
+        cleanedData?.details?.mallaSocietariaData ||
+        cleanedData?.logEntry?.filteredDetails?.mallaSocietariaData ||
+        null;
+
+      if (malla) {
+        let skippedFromMalla = 0;
+        const skippedFromMallaNames: string[] = [];
+
+        const pushSocioFromMallaSource = (s: any, sourceLabel: string) => {
+          if (!s) return;
+          // --- SKIP NOTARILE ---
+          if (isNotaryEntry(s)) {
+            skippedFromMalla += 1;
+            if (s?.nombre) skippedFromMallaNames.push(`${sourceLabel}:${String(s.nombre).trim()}`);
+            return;
+          }
+          const rut = (s?.rut || '').trim();
+          const name = (s?.nombre || '').trim();
+          if (!name) return;
+          const key = rut || `__noRut__${name.toLowerCase()}`;
+          if (seenKeys.has(key)) return;
+          seenKeys.add(key);
+          socios.push({ name, rut });
+        };
+
+        if (Array.isArray(malla.empresaEnUnDia)) {
+          for (const empresa of malla.empresaEnUnDia) {
+            if (!Array.isArray(empresa?.socios)) continue;
+            for (const s of empresa.socios) pushSocioFromMallaSource(s, 'empresaEnUnDia');
+          }
+        }
+        if (Array.isArray(malla.diarioOficial)) {
+          for (const diario of malla.diarioOficial) {
+            if (!Array.isArray(diario?.socios)) continue;
+            for (const s of diario.socios) pushSocioFromMallaSource(s, 'diarioOficial');
+          }
+        }
+        // Backwards compat path: qualora il backend mappi mallaSocietariaData anche sotto
+        // altre chiavi (es. "empresaEnUnDia" piatto / "socios" top-level):
+        if (Array.isArray((malla as any).socios)) {
+          for (const s of (malla as any).socios) pushSocioFromMallaSource(s, 'malla.socios');
+        }
+
+        if (skippedFromMalla > 0) {
+          logger.log(
+            `[PEP Socios Filter] Scartati ${skippedFromMalla} entries notarili da mallaSocietariaData (nomi: ${JSON.stringify(skippedFromMallaNames)})`
+          );
+        }
+      }
+
+      // Nota: anche le restanti sezioni (PEP, Antiunion, etc.) continuano a usare cleanedData.
 
       if (socios.length > 0) {
         const sociosRuts = socios.map((socio) => socio.rut);
@@ -1483,7 +1609,7 @@ const FastCheck: React.FC = () => {
               logger.warn('⚠️ Socio without RUT found:', socio.name);
 
               // Search for RUT in external data sources
-              const foundRut = searchRutInExternalData(socio.name, data);
+              const foundRut = searchRutInExternalData(socio.name, cleanedData);
               if (foundRut) {
                 finalRut = foundRut;
                 rutFoundAutomatically = true;
@@ -4155,7 +4281,7 @@ const FastCheck: React.FC = () => {
 
               </div>
               <Legalrepresentatives
-                dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                dequienesRelationships={dequienesForMesh}
                 mainRut={companyData.rut}
               />
 
@@ -4445,7 +4571,7 @@ const FastCheck: React.FC = () => {
               <MeshTable
                 title="Controladores y Estructura de Propiedad"
                 height={exportingPdf && "auto"}
-                dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                dequienesRelationships={dequienesForMesh}
                 mainRut={companyData.rut}
                 forceExpanded={exportingPdf}
               />
@@ -4453,7 +4579,7 @@ const FastCheck: React.FC = () => {
 
               <MeshFlowTable
                 title="Mapa de Empresas en las que Participa"
-                dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
+                dequienesRelationships={dequienesForMesh}
                 mainRut={companyData.rut}
               />
 

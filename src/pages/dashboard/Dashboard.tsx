@@ -63,9 +63,11 @@ interface DeepAnalysisStoragePayload {
   data: CompactRutData[];
 }
 
-// Función helper para eliminar RUTs duplicados
-const removeDuplicateRuts = (data: IResult[]): IResult[] => {
-  const uniqueResults = data.reduce((acc, result) => {
+// Charts/stats helper: keep the LATEST entry per RUT (1 row per RUT for aggregate views).
+// MUST NOT be used for the results table or filter pipeline — otherwise the consultation
+// HISTORY of repeated lookups on the same RUT is silently erased.
+const keepLatestPerRut = (data: IResult[]): IResult[] => {
+  const latest = data.reduce((acc, result) => {
     const rut = result.rut || result.identifier || '';
     if (!rut) return acc;
     const existing = acc.get(rut);
@@ -74,7 +76,7 @@ const removeDuplicateRuts = (data: IResult[]): IResult[] => {
     }
     return acc;
   }, new Map<string, IResult>());
-  return Array.from(uniqueResults.values());
+  return Array.from(latest.values());
 };
 
 const processDeepAnalysisFromCompact = (
@@ -370,34 +372,39 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       if (user && tenant && !isFilterMode) {
-        console.log('Fetching all data to remove duplicates');
+        // Use server-side pagination directly. We preserve every consultation
+        // so repeated lookups of the same RUT stay visible in the history.
+        // For charts/stats we still aggregate by latest-per-RUT.
         try {
-          let allData: IResult[] = [];
-          let page = 1;
-          let totalP = 1;
-          do {
-            const res = await getResults({
-              page,
-              limit: 50,
-              sortField,
-              sortDirection,
-            });
-            if (res?.data) allData = [...allData, ...res.data];
-            totalP = res?.pagination?.totalPages || 1;
-            page++;
-          } while (page <= totalP);
+          const res = await getResults({
+            page: currentPage,
+            limit: itemsPerPage,
+            sortField,
+            sortDirection,
+          });
 
-          const uniqueData = removeDuplicateRuts(allData);
-          uniqueData.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+          const pageData: IResult[] = Array.isArray(res?.data) ? res.data : [];
+          const total = res?.pagination?.total ?? pageData.length;
+          const tPages = res?.pagination?.totalPages ?? Math.max(1, Math.ceil(total / itemsPerPage));
 
-          const startIndex = (currentPage - 1) * itemsPerPage;
-          const paginatedData = uniqueData.slice(startIndex, startIndex + itemsPerPage);
+          // Charts still need the latest snapshot per RUT; pull a small rolling window
+          // from page 1 if we're on page 1 (cheap), otherwise reuse what's in allDataForCharts.
+          if (currentPage === 1) {
+            let rollingAll: IResult[] = [];
+            let p = 1;
+            let tp = 1;
+            do {
+              const r = await getResults({ page: p, limit: 50, sortField, sortDirection });
+              if (r?.data) rollingAll = [...rollingAll, ...r.data];
+              tp = r?.pagination?.totalPages || 1;
+              p++;
+            } while (p <= tp && rollingAll.length < 2000); // safety cap
+            setAllDataForCharts(keepLatestPerRut(rollingAll));
+          }
 
-          setResults(paginatedData);
-          setTotalPages(Math.ceil(uniqueData.length / itemsPerPage));
-          setAllDataForCharts(uniqueData);
-
-          console.log('Unique records:', uniqueData.length, 'Showing page:', currentPage);
+          setResults(pageData);
+          setTotalPages(tPages);
+          console.log('Fetched page:', currentPage, 'rows:', pageData.length, 'total:', total);
         } catch (error) {
           logger.error('Error fetching data:', error);
         }
@@ -1063,14 +1070,13 @@ const Dashboard: React.FC = () => {
           page++;
         } while (page <= totalP);
 
-        const uniqueData = removeDuplicateRuts(allData);
-
-        setAllDataForFilters(uniqueData);
+        setAllDataForFilters(allData);
+        setAllDataForCharts(keepLatestPerRut(allData));
 
         if (trimmedSearch) {
-          toast.success(`Búsqueda aplicada en ${uniqueData.length} registros`);
+          toast.success(`Búsqueda aplicada en ${allData.length} registros`);
         } else {
-          toast.success(`Filtros aplicados - ${uniqueData.length} registros cargados`);
+          toast.success(`Filtros aplicados - ${allData.length} registros cargados`);
         }
       } catch (error) {
         logger.error('Error loading all data:', error);
@@ -1198,9 +1204,8 @@ const Dashboard: React.FC = () => {
         page++;
       } while (page <= totalP);
 
-      const uniqueData = removeDuplicateRuts(allData);
-
-      setAllDataForFilters(uniqueData);
+      setAllDataForFilters(allData);
+      setAllDataForCharts(keepLatestPerRut(allData));
       toast.success(`Filtro de riesgo "${getRiskLevelLabel(riskLevel)}" aplicado`);
     } catch (error) {
       logger.error('Error loading all data:', error);
@@ -1223,9 +1228,7 @@ const Dashboard: React.FC = () => {
         page++;
       } while (page <= totalP);
 
-      const uniqueAllResults = removeDuplicateRuts(allResults);
-
-      const finalData = applyFiltersToData(uniqueAllResults);
+      const finalData = applyFiltersToData(allResults);
       const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4', compress: true });
       const pageWidth = 297;
       const pageHeight = 210;

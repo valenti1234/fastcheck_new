@@ -186,7 +186,34 @@ export class ConsultaHistoryService {
     }
 
     if (rut) {
-      query.rut = rut;
+      // Normalize both the query filter and look for both canonical (with dash) and stripped variants
+      // because older/alternative logging paths may store the RUT either with or without dash/padding.
+      const cleanedRaw = String(rut)
+        .replace(/\./g, '')
+        .replace(/\s+/g, '');
+      const noDash = cleanedRaw.replace(/-/g, '').toUpperCase();
+      const withDash = (() => {
+        if (cleanedRaw.includes('-')) {
+          const [num, dv] = cleanedRaw.split('-');
+          const numericRaw = num.replace(/[^0-9]/g, '');
+          const check = (dv || '').replace(/[^0-9kK]/g, '').toUpperCase();
+          const numeric = (numericRaw.replace(/^0+/, '') || '0');
+          return `${numeric}-${check}`;
+        }
+        if (cleanedRaw.length < 2) return cleanedRaw.toUpperCase();
+        const base = cleanedRaw.replace(/[^0-9kK]/g, '').toUpperCase();
+        const numericRaw = base.slice(0, -1).replace(/[^0-9]/g, '');
+        const check = base.slice(-1);
+        const numeric = (numericRaw.replace(/^0+/, '') || '0');
+        return `${numeric}-${check}`;
+      })();
+
+      const variants = [cleanedRaw, noDash, withDash].filter(Boolean);
+      const uniqVariants = Array.from(new Set(variants));
+      query.$or = [
+        { rut: { $in: uniqVariants } },
+        { ruts: { $elemMatch: { $in: uniqVariants } } }
+      ];
     }
 
     if (endpoint) {

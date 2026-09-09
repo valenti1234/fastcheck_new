@@ -1,5 +1,6 @@
 import { useState } from "react";
 import formatRut from "../../../utils/rutFormat";
+import { filterOutNotaryRelationships } from "../../../utils/dequienes";
 
 const MAX_DEPTH = 5;
 
@@ -81,11 +82,12 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     const [expandedOwn, setExpandedOwn] = useState<Set<number>>(new Set());
     const [viewMode, setViewMode] = useState<'table' | 'map'>('table');
 
-
-    
     if (!dequienesRelationships) return null;
 
-    const { relationships = [], entityNames = {} } = dequienesRelationships;
+    // Filtra via: scarta notari / conservador / registro civile (tipoDeParticipacion + nomi blacklist)
+    const cleaned = filterOutNotaryRelationships(dequienesRelationships);
+
+    const { relationships = [], entityNames = {} } = cleaned;
 
     if (!relationships.length) {
         return (

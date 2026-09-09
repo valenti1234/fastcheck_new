@@ -412,3 +412,96 @@ return RutController.getResultByRut(req, res);
 - **Estabilidad**: Eliminación de crashes del servidor
 - **Eficiencia**: Mejor reutilización de datos entre tenants
 - **Mantenibilidad**: Código más claro y correctamente tipado
+
+---
+
+## Fecha: 20 de Agosto de 2026
+
+### DeQuienes — Profundidad de relaciones: nivels 2 → 5 (máximo 5)
+Aumentati i livelli di profondità del grafo di relazioni societarie di **DeQuienes Graph API** da 2 a 5, così da mostrare **tutte le relazioni disponibili** della malla societaria (non solo i collegamenti fino al 2° grado di separazione). Ora il grafo include partecipanti indiretti a catena (es. socio → società A → società B → società C → società D = 5 livelli).
+
+#### 4 punti modificati (default + validazione):
+1. **Modello Pydantic** — `server/external_providers/dequienes/main.py:L100-L101`
+   - `RelationshipQueryParams.distance` → **default=5**, `ge=1`, `le=5`, descrizione OpenAPI inclusa.
+2. **Endpoint FastAPI** — `server/external_providers/dequienes/main.py:L296`
+   - `GET /relationships/{rut}` parametro `distance` → `Query(default=5, ge=1, le=5, description="Niveles de profundidad de relaciones DeQuienes (máx. 5 niveles)")`.
+   - ✅ Aggiunto import `Query` a `from fastapi import ...` L18 (mancava).
+3. **Service Node (fallback interno)** — `server/src/services/dequienesService.ts:L99`
+   - `const distance = req.distance ?? 2` → `?? 5` (se chi non passa `distance` ottiene 5).
+4. **Caller rutController (hardcoded)** — `server/src/controllers/rutController.ts:L1052`
+   - `queryRelationships({ ..., distance: 2, ... })` → `distance: 5` (la chiamata principale che popola `filteredDetails.dequienesRelationships`).
+
+#### Note sicurezza
+- Cap **`le=5`** (validazione FastAPI + Pydantic): rifiuta automaticamente `distance=6+` per evitare query troppo onerose sull'API di DeQuienes esterna (rischio 429 Too Many Requests / payload giganti).
+- **Cache invalidazione automatica**: la `cache_key` di DeQuienes (L304-L308) includeva già `distance` tra i campi hashati. Risultati cachati con `distance=2` non vengono quindi riusati per nuove richieste a `distance=5` → il primo recheck di un RUT già consultato farà 1 nuova chiamata verso DeQuienes con i nuovi 5 livelli, poi verrà salvato nella cache Mongo di DeQuienes come di consueto.
+
+#### Files modificati
+- `server/external_providers/dequienes/main.py` (L18 import, L100-L101 Pydantic, L296 endpoint)
+- `server/src/services/dequienesService.ts` (L99 default fallback)
+- `server/src/controllers/rutController.ts` (L1052 caller esplicito)
+
+---
+
+### Cobranza Laboral — Filtro Globale `vigente === true` (stretto)
+Solo i debiti **ancora attivi** (campo `vigente` strettamente uguale a `true`) vengono considerati nel sistema di rischio, nel conteggio wrapper, nell'AI prompt e nelle regole Mora Previsional/Multa Laboral. Casi con `vigente=false`, `vigente=null/undefined` o con il campo **mancante** vengono scartati automaticamente.
+
+#### 3 layer applicativi
+1. **Entry-level** — fetch helper Sheriff S1 + popolamento fallback Sheriff V2
+   - `sheriffService.ts`: nuovo helper `filterVigenteCasesOnly(payload)` polimorfico (array piatto o wrapper `{cantidad, totalPages, casos[]}`), applicato a mora previsional e multa laboral **PRIMA** di `slice(0, casesLimit=10)` (ordine corretto, no perdita di casi vigenti a causa di non-vigenti che saturano il budget).
+   - `rutController.ts`: campi flat `moraPrevisionalCasesData`/`multaLaboralCasesData` filtrati + **deep-clone e filtro del path `filteredDetails.sheriffV2Data.cobranzaLaboral.*.data`** (il path usato *realmente* dalle regole legali in riskCalc).
+2. **Risk-calc runtime SAFE-SAFE** — `riskCalculationService.ts:L102-L148`
+   - All'inizio di `calculateRisk()` (PRIMA di legal/humano/finanziario/compliance rules) vengono filtrati entrambi gli alias dove Sheriff V2 può vivere:
+     - A) `logEntry.filteredDetails.sheriffV2Data.cobranzaLaboral`
+     - B) `(logEntry as any).sheriffV2Data.cobranzaLaboral` (alias top-level, usato per la regola finanziaria L1759)
+   - Funziona anche per record storici **già salvati in Mongo** con casi non-vigenti (on-the-fly pulizia — nessun backfill DB necessario).
+3. **FastAPI risk-assessment veloce** — `fastcheck_api/app/api/v1/routers/rut.py`
+   - Helper Python `_filter_vigente_true(payload)` (clone logico 1:1 TS).
+   - Flag `has_labor_collection` ora controlla **`len(casos) > 0`** non più `bool(wrapper)` → risolti falsi positivi di `semaphore: "alto"` quando wrapper aveva meta-campi ma `casos=[]` dopo filtro.
+
+#### Coerenza metadati wrapper
+L'helper `filterVigenteCasesOnly` ricalcola sempre e automaticamente:
+- `cantidad = len(casos filtrati)` (sovrascritto)
+- `totalPages = ceil(len / per_page)` (dedotto dal prima).
+
+Nessun disallineamento piu' fra "cantidad dichiarata" e "casi realmente presenti nella tabella".
+
+#### Files modificati
+- `server/src/services/sheriffService.ts` (L16-L76, L445-L515)
+- `server/src/controllers/rutController.ts` (L867-L916)
+- `server/src/services/riskCalculationService.ts` (L16 import, L102-L148)
+- `fastcheck_api/app/api/v1/routers/rut.py` (L73-L137, L302, L359-L360)
+
+---
+
+### Deduplicazione scritture `server/json_data/riskCalculationResult_*.json`
+**Problema**: nel flusso recheck (`?risk=true`), `calculateRisk()` veniva invocata 4-7 volte per lo stesso RUT (caller: `unknown`, `lpflags`, `autosync`, `fallback`, `onDemand`, `getAIAnalysis`) → 4-7 file duplicati, ~480KB ciascuno.
+
+**Soluzione**: `riskCalculationService.ts:L18-L140`
+- **Debounce 2000ms**: chiamate multiple consecutive entro 2s sovrascrivono il pending payload e resettano il timer → **solo l'ultima chiamata (onDemand) vince**.
+- **Path FISSO sempre sovrascritto**: ogni RUT genera **ESATTAMENTE 1 file** (non multipli timestamped): `riskCalculationResult_LATEST_<RUT_NORMALIZZATO>.json`.
+- Log: override caller + write OK con size e timestamp.
+
+**Prima** (1 recheck → 4 file):
+```
+riskCalculationResult_1787228652603_76540986-1_unknown.json
+riskCalculationResult_1787228653354_76540986-1_lpflags.json
+riskCalculationResult_1787228654XXX_76540986-1_autosync.json
+riskCalculationResult_1787228655XXX_76540986-1_getResultByRut_onDemand.json
+```
+
+**Dopo** (1 recheck → 1 file, sempre lo stesso):
+```
+riskCalculationResult_LATEST_76540986-1.json   ← sovrascritto ogni volta
+```
+
+#### Files modificati
+- `server/src/services/riskCalculationService.ts` (L18-L140)
+
+---
+
+### Verifiche
+- ✅ TypeScript `GetDiagnostics`: 0 errori nuovi (solo HINT imports unused preesistenti)
+- ✅ `python3 -m py_compile fastcheck_api/.../rut.py`: exit 0 (0 errori sintassi)
+- ✅ Sample RUT 76540986-1 prima→dopo:
+  - Prima: `cobranzaLaboral.moraPrevisional.data` → `cantidad=52`, `casos=20` (9 T + 11 MISS campo vigente)
+  - Dopo:  → `cantidad=9`, `casos=9` (solo `vigente=true`)

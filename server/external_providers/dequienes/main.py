@@ -15,7 +15,7 @@ from typing import Dict, Any, Optional
 from datetime import datetime, timedelta
 
 import requests
-from fastapi import FastAPI, HTTPException, Depends, status, Header
+from fastapi import FastAPI, HTTPException, Depends, status, Header, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field, validator
@@ -98,7 +98,7 @@ pass
 
 
 class RelationshipQueryParams(BaseModel):
-    distance: int = Field(default=2)
+    distance: int = Field(default=5, ge=1, le=5, description="Niveles de profundidad de relaciones DeQuienes (máx. 5 niveles)")
     relationship_direction: str = Field(default="BOTH")
     one_path_per_node: bool = Field(default=False)
 
@@ -293,7 +293,7 @@ async def health_check():
     )
 
 @app.get("/relationships/{rut}")
-async def get_relationships(rut: str, distance: int = 2, relationship_direction: str = "BOTH", one_path_per_node: bool = False, x_api_key: Optional[str] = Header(default=None, alias="x-api-key")):
+async def get_relationships(rut: str, distance: int = Query(default=5, ge=1, le=5, description="Niveles de profundidad de relaciones DeQuienes (máx. 5 niveles)"), relationship_direction: str = "BOTH", one_path_per_node: bool = False, x_api_key: Optional[str] = Header(default=None, alias="x-api-key")):
     if relationship_direction not in ("BOTH", "OUTGOING", "INCOMING"):
         raise HTTPException(status_code=400, detail="Invalid relationship_direction")
     api_key = x_api_key or os.getenv("DEQUIENES_API_KEY", "").strip()

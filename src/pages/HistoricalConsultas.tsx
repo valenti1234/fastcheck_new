@@ -9,6 +9,26 @@ import logger from '../utils/logger';
 import jsPDF from 'jspdf';
 import { useTranslation } from 'react-i18next';
 
+const normalizeRutFilter = (rut: string): string => {
+  if (!rut) return rut;
+  const cleaned = String(rut).replace(/\./g, '').replace(/\s+/g, '');
+  const hasDash = cleaned.includes('-');
+  if (hasDash) {
+    const [num, dv] = cleaned.split('-');
+    const numericRaw = num.replace(/[^0-9]/g, '');
+    const check = (dv || '').replace(/[^0-9kK]/g, '').toUpperCase();
+    if (!numericRaw) return cleaned.toUpperCase();
+    const numeric = numericRaw.replace(/^0+/, '') || '0';
+    return `${numeric}-${check}`;
+  }
+  const base = cleaned.replace(/[^0-9kK]/g, '').toUpperCase();
+  if (base.length < 2) return base;
+  const numericRaw = base.slice(0, -1).replace(/[^0-9]/g, '');
+  const check = base.slice(-1);
+  const numeric = numericRaw.replace(/^0+/, '') || '0';
+  return `${numeric}-${check}`;
+};
+
 const HistoricalConsultas: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [consultas, setConsultas] = useState<HistoricalConsulta[]>([]);
@@ -92,12 +112,13 @@ const HistoricalConsultas: React.FC = () => {
 
   const applyQuickTypeFilter = (type: 'individual' | 'massive' | '') => {
     setConsultaType(type);
+    const normalizedRut = normalizeRutFilter(rutFilter);
 
     const newFilters: HistoricalConsultaFilters = {
       page: 1,
       limit: 20,
       ...(type && { consultaType: type as 'individual' | 'massive' }),
-      ...(rutFilter && { rut: rutFilter }),
+      ...(normalizedRut && { rut: normalizedRut }),
       ...(statusFilter && { responseStatus: parseInt(statusFilter) }),
       ...(startDate && { startDate }),
       ...(endDate && { endDate }),
@@ -110,11 +131,12 @@ const HistoricalConsultas: React.FC = () => {
   };
 
   const handleApplyFilters = () => {
+    const normalizedRut = normalizeRutFilter(rutFilter);
     const newFilters: HistoricalConsultaFilters = {
       page: 1,
       limit: 20,
       ...(consultaType && { consultaType: consultaType as 'individual' | 'massive' }),
-      ...(rutFilter && { rut: rutFilter }),
+      ...(normalizedRut && { rut: normalizedRut }),
       ...(statusFilter && { responseStatus: parseInt(statusFilter) }),
       ...(startDate && { startDate }),
       ...(endDate && { endDate }),

@@ -20,23 +20,36 @@ import requests
 from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 from dotenv import load_dotenv
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure
 
 # Configure logging
+EXT_PREFIX = "[EXT]"
+
+class ExtPrefixFilter(logging.Filter):
+    def filter(self, record):
+        record.msg = f"{EXT_PREFIX} {record.msg}"
+        return True
+
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,  # Full verbosità DEBUG per diagnostica esterna
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 logger = logging.getLogger(__name__)
+# Ensure every line gets the [EXT] tag
+logger.addFilter(ExtPrefixFilter())
+logger.setLevel(logging.DEBUG)
 
 # Load environment variables
 load_dotenv()
 
-print("MONGODB_URI:", os.getenv("MONGODB_URI"))
+print(f"{EXT_PREFIX} MONGODB_URI configured:",
+      (os.getenv("MONGODB_URI") or "")[:24] + "...(redacted)" if (os.getenv("MONGODB_URI") or "").strip() else "<missing>")
+print(f"{EXT_PREFIX} EQUIFAX_RESPONSES_DIR:", Path(__file__).resolve().parents[2] / "equifax_responses")
+logger.debug("Logger initialized for equifax provider (DEBUG verbosity enabled)")
 
 # MongoDB connection setup
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/duxiter")
@@ -78,7 +91,8 @@ class PersonalInformation(BaseModel):
     chileanRut: str = Field(..., description="Chilean RUT number")
  #   chileanSerialNumber: Optional[str] = Field(None, description="Chilean serial number (not required for empresarial)")
 
-    @validator('chileanRut')
+    @field_validator('chileanRut')
+    @classmethod
     def validate_rut(cls, v):
         if not v or not v.strip():
             raise ValueError('Chilean RUT is required')
@@ -99,7 +113,8 @@ class ProductData(BaseModel):
     customer: str = Field(..., description="Customer information")
     model: str = Field(..., description="Model information")
 
-    @validator('*', pre=True)
+    @field_validator('*', mode='before')
+    @classmethod
     def strip_strings(cls, v):
         if isinstance(v, str):
             return v.strip()
@@ -110,22 +125,60 @@ class EquifaxRequest(BaseModel):
     productData: ProductData
     requestType: Optional[str] = Field(default="personal", description="Request type: personal or empresarial")
 
-
-
-
+    @model_validator(mode='after')
+    def _log_on_creation(self):
+        """Log the FULL EquifaxRequest payload (request) every time an instance is created (L121-126 zone)."""
+        try:
+            dump = self.model_dump()
+            rut_excerpt = (
+                (((dump.get("applicants") or {})
+                  .get("primaryConsumer") or {})
+                 .get("personalInformation") or {})
+                .get("chileanRut")
+            ) or "unknown"
+            log_str = json.dumps(dump, default=str, indent=2)
+            logger.debug(
+                f"[MODEL_INSTANCE:EquifaxRequest] CREATED | chileanRut={rut_excerpt} requestType={dump.get('requestType')} size_bytes={len(log_str)}\n"
+                f"[REQUEST_BODY:EquifaxRequest] >>>\n{log_str}\n[REQUEST_BODY:EquifaxRequest] <<<"
+            )
+        except Exception as exc:
+            logger.warning(f"[MODEL_INSTANCE:EquifaxRequest] Could not serialize request for logging: {exc}")
+        return self
 
 class RutOnlyTransactionRequest(BaseModel):
     """Simplified request for RUT-only transactions - only requires RUT and request type"""
     chileanRut: str = Field(..., description="Chilean RUT number", example="77827780-8")
     requestType: Optional[str] = Field(default="personal", description="Request type: personal or empresarial", example="personal")
-    
-    class Config:
-        schema_extra = {
+
+    @field_validator('chileanRut', 'requestType', mode='before')
+    @classmethod
+    def _strip_fields(cls, v):
+        if isinstance(v, str):
+            return v.strip()
+        return v
+
+    @model_validator(mode='after')
+    def _log_on_creation(self):
+        """Log the FULL RutOnlyTransactionRequest body every time an instance is created (parsed from HTTP)."""
+        try:
+            dump = self.model_dump()
+            log_str = json.dumps(dump, default=str, indent=2)
+            logger.debug(
+                f"[MODEL_INSTANCE:RutOnlyTransactionRequest] CREATED | chileanRut={dump.get('chileanRut')} requestType={dump.get('requestType')} size_bytes={len(log_str)}\n"
+                f"[REQUEST_BODY:RutOnlyTransactionRequest] >>>\n{log_str}\n[REQUEST_BODY:RutOnlyTransactionRequest] <<<"
+            )
+        except Exception as exc:
+            logger.warning(f"[MODEL_INSTANCE:RutOnlyTransactionRequest] Could not serialize request for logging: {exc}")
+        return self
+
+    model_config = {
+        "json_schema_extra": {
             "example": {
-                "chileanRut": "77827780-8", 
+                "chileanRut": "77827780-8",
                 "requestType": "personal"
             }
         }
+    }
 
 class TokenResponse(BaseModel):
     access_token: str
@@ -392,50 +445,69 @@ def execute_transaction(env_key: str, token: str, payload: Dict[str, Any]) -> Di
     """Execute transaction with detailed logging, MongoDB caching, and automatic token refresh on 401"""
     # Generate cache key based on environment and payload
     cache_key = generate_cache_key(env_key, payload)
+    logger.debug(f"execute_transaction START | env={env_key} cache_key_short={cache_key[:24]}...")
+    ts_start = time.time()
     
     # Check cache first
     cached_result = get_cached_transaction(cache_key)
     if cached_result:
-        logger.info("Returning cached transaction result")
+        rt = (time.time() - ts_start) * 1000
+        logger.info(f"Returning cached transaction result | cache_hit=True rt_ms={rt:.0f}")
         # Add cache metadata to response
         cached_result["_cache_info"] = {
             "cached": True,
             "cache_key": cache_key,
-            "retrieved_at": datetime.utcnow().isoformat()
+            "retrieved_at": datetime.utcnow().isoformat(),
+            "rt_ms": rt
         }
         return cached_result
 
     # Cache miss - proceed with API call
+    logger.debug(f"Cache miss — proceeding to upstream Equifax API | env={env_key}")
     return _execute_transaction_with_retry(env_key, token, payload, cache_key)
 
 
 def _execute_transaction_with_retry(env_key: str, token: str, payload: Dict[str, Any], cache_key: str, is_retry: bool = False) -> Dict[str, Any]:
     """Internal function to execute transaction with retry logic for 401 errors"""
     url = ENDPOINTS[env_key]["execute"]
+    ts_start = time.time()
     
-    logger.info(f"Executing transaction on {env_key} environment{'(retry with refreshed token)' if is_retry else ''}")
+    logger.info(f"Executing transaction on {env_key} environment{' (retry with refreshed token)' if is_retry else ''}")
     logger.info(f"Transaction URL: {url}")
     
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
     }
-    logger.info(f"Request headers: {headers}")
+    token_tail = token[-6:] if len(token) > 10 else "***"
+    masked_headers = {
+        "Authorization": f"Bearer ***{token_tail}",
+        "Content-Type": "application/json"
+    }
+    logger.info(f"Request headers (Authorization masked): {json.dumps(masked_headers)}")
     if not is_retry:  # Only log payload on first attempt to avoid spam
-        logger.info(f"Request payload: {json.dumps(payload, indent=2)}")
+        logger.info(f"Request payload keys summary: {list(payload.keys())}")
+        rut_summary = (
+            payload.get("applicants", {})
+            .get("primaryConsumer", {})
+            .get("personalInformation", {})
+            .get("chileanRut", "unknown_rut")
+        )
+        logger.info(f"Target chileanRut: {rut_summary}")
     
     
     resp = requests.post(url, headers=headers, json=payload, timeout=60)
-    logger.info(f"Transaction response status: {resp.status_code}")
+    rt_ms = (time.time() - ts_start) * 1000
+    logger.info(f"Transaction response status: {resp.status_code} | rt_ms={rt_ms:.0f} | content_len={len(resp.content or b'')} bytes")
     
     # Handle 401 error with token refresh
     if resp.status_code == 401:
         if is_retry:
             # If this is already a retry, don't retry again
-            logger.error("401 Unauthorized: Token refresh failed, both original and refreshed tokens are invalid")
+            logger.error(f"401 Unauthorized: Token refresh failed (both tokens invalid) | rt_ms={rt_ms:.0f}")
             raise HTTPException(status_code=401, detail="Token refresh failed - authentication error persists")
         
-        logger.warning("401 Unauthorized: Token invalid or expired, attempting to refresh token")
+        logger.warning(f"401 Unauthorized: Token invalid/expired — refreshing & retrying | rt_ms={rt_ms:.0f}")
         
         # Clear the cached token to force refresh
         _clear_cached_token(env_key)
@@ -446,7 +518,7 @@ def _execute_transaction_with_retry(env_key: str, token: str, payload: Dict[str,
         
         try:
             new_token = fetch_token(env_key, client_id, client_secret, scope)
-            logger.info("Successfully refreshed token, retrying transaction")
+            logger.info("Successfully refreshed token — retrying transaction now")
             
             # Retry with the new token
             return _execute_transaction_with_retry(env_key, new_token, payload, cache_key, is_retry=True)
@@ -456,18 +528,18 @@ def _execute_transaction_with_retry(env_key: str, token: str, payload: Dict[str,
     
     # Handle other error patterns
     if resp.status_code == 404:
-        logger.error("404 Not Found: Requested orchestration not found")
+        logger.error(f"404 Not Found: Requested orchestration not found | rt_ms={rt_ms:.0f} | body_preview={(resp.text or '')[:200]}")
         raise HTTPException(status_code=404, detail="Requested orchestration not found")
     if resp.status_code == 400:
-        logger.error(f"400 Bad Request: {resp.text}")
+        logger.error(f"400 Bad Request: {(resp.text or '')[:500]}")
         raise HTTPException(status_code=400, detail=f"Bad Request: {resp.text}")
     if resp.status_code >= 500:
-        logger.error(f"{resp.status_code} Server error: {resp.text}")
+        logger.error(f"{resp.status_code} Server error: {(resp.text or '')[:500]} | rt_ms={rt_ms:.0f}")
         raise HTTPException(status_code=502, detail=f"Equifax server error: {resp.status_code}")
     
     try:
         result = resp.json()
-        logger.info("Transaction completed successfully")
+        logger.info(f"Transaction completed successfully | parsed_json=True rt_ms={rt_ms:.0f} keys_top={list(result.keys())[:12]}")
         
         # Save successful result to cache
         save_transaction_to_cache(cache_key, result)
@@ -477,12 +549,13 @@ def _execute_transaction_with_retry(env_key: str, token: str, payload: Dict[str,
             "cached": False,
             "cache_key": cache_key,
             "cached_at": datetime.utcnow().isoformat(),
-            "token_refreshed": is_retry
+            "token_refreshed": is_retry,
+            "rt_ms": rt_ms
         }
         
         return result
     except Exception as e:
-        logger.warning(f"Failed to parse JSON response: {e}")
+        logger.warning(f"Failed to parse JSON response: {e} — returning raw text (length: {len(resp.text or '')})")
         raw_result = {"raw": resp.text}
         
         # Save raw response to cache as well (in case it's a valid response format)
@@ -493,7 +566,9 @@ def _execute_transaction_with_retry(env_key: str, token: str, payload: Dict[str,
             "cached": False,
             "cache_key": cache_key,
             "cached_at": datetime.utcnow().isoformat(),
-            "token_refreshed": is_retry
+            "token_refreshed": is_retry,
+            "rt_ms": rt_ms,
+            "parse_failed": True
         }
         
         return raw_result
@@ -669,10 +744,12 @@ async def execute_rut_only_transaction(environment: str, request: RutOnlyTransac
     
     All other fields (productData, personalData) are automatically populated from environment variables.
     """
+    endpoint_ts_start = time.time()
     #print the json body of the request
-    logger.info(f"Received RUT-only request: {request.model_dump()}")
+    logger.info(f"RUT-only endpoint HIT | env={environment} chileanRut={request.chileanRut} requestType={request.requestType}")
 
     if environment not in ["uat", "prod"]:
+        logger.error(f"Invalid environment requested: {environment} — returning 400")
         raise HTTPException(status_code=400, detail="Environment must be 'uat' or 'prod'")
     
     try:
@@ -681,22 +758,59 @@ async def execute_rut_only_transaction(environment: str, request: RutOnlyTransac
         
         client_id, client_secret = get_credentials()
         scope = "https://api.latam.equifax.com/datos-comerciales/transaction"
+        logger.debug(f"Credentials ready | client_id_len={len(client_id)} client_secret_len={len(client_secret)}")
         
         # Get token
+        logger.debug("Fetching OAuth token (cache first)...")
         token = get_token(environment, client_id, client_secret, scope)
+        logger.debug(f"Token obtained (len={len(token)} chars)")
         
         # Convert to dict for API call
         payload = full_request.model_dump()
+        logger.info(f"Payload built (size: ~{len(json.dumps(payload, separators=(',',':')))} bytes)")
         
         # Execute transaction
+        logger.info(f"Calling execute_transaction now for {request.chileanRut} ({request.requestType} / {environment})...")
         result = execute_transaction(environment, token, payload)
-        # logger.info("Transaction result: %s", json.dumps(result, indent=2))
+        rt_total_ms = (time.time() - endpoint_ts_start) * 1000
+        result_type = "cached" if result.get("_cache_info", {}).get("cached") else "upstream"
+        top_keys = list(result.keys())[:10]
+        logger.info(f"execute_rut_only END | RUT={request.chileanRut} env={environment} result_type={result_type} total_rt_ms={rt_total_ms:.0f} top_result_keys={top_keys}")
+
+        # -------- LOG FULL RESPONSE BODY (requested at L121-126 zone) --------
+        try:
+            resp_json = json.dumps(result, default=str, indent=2)
+            total_chars = len(resp_json)
+            # Truncate extremely long payloads to protect console; keep first N chars, last M, plus ellipsis.
+            MAX_CHARS = 120000
+            if total_chars <= MAX_CHARS:
+                logger.debug(
+                    f"[RESPONSE_BODY:execute_rut_only_transaction] (type={result_type} size={total_chars} status=200 RUT={request.chileanRut}) >>>\n"
+                    f"{resp_json}\n"
+                    f"[RESPONSE_BODY:execute_rut_only_transaction] <<< END (size={total_chars})"
+                )
+            else:
+                head = resp_json[:int(MAX_CHARS * 0.7)]
+                tail = resp_json[-int(MAX_CHARS * 0.3):]
+                logger.debug(
+                    f"[RESPONSE_BODY:execute_rut_only_transaction] (type={result_type} size={total_chars} TRUNCATED {MAX_CHARS}/{total_chars} status=200 RUT={request.chileanRut}) >>>\n"
+                    f"{head}\n"
+                    f"[RESPONSE_BODY:execute_rut_only_transaction] ...<TRUNCATED {total_chars - MAX_CHARS} chars OMITTED>...\n"
+                    f"{tail}\n"
+                    f"[RESPONSE_BODY:execute_rut_only_transaction] <<< END (size={total_chars})"
+                )
+        except Exception as log_exc:
+            logger.warning(f"[RESPONSE_BODY:execute_rut_only_transaction] Failed to serialize response body for logging: {log_exc}")
+
         return result
         
     except HTTPException:
+        rt_ms = (time.time() - endpoint_ts_start) * 1000
+        logger.warning(f"HTTPException propagated from RUT-only endpoint | env={environment} rt_ms={rt_ms:.0f}")
         raise
     except Exception as e:
-        logger.error(f"RUT-only transaction failed: {e}")
+        rt_ms = (time.time() - endpoint_ts_start) * 1000
+        logger.exception(f"Unexpected failure in RUT-only transaction (env={environment} rut={request.chileanRut} rt_ms={rt_ms:.0f}): {e}")
         raise HTTPException(status_code=500, detail=f"Transaction failed: {str(e)}")
 
 @app.delete("/cache")
@@ -931,9 +1045,14 @@ async def cleanup_old_responses():
 
 @app.on_event("startup")
 async def startup_event():
+    logger.info(f"STARTUP FastAPI Equifax provider — creating background cleanup task")
     asyncio.create_task(cleanup_old_responses())
 
 if __name__ == "__main__":
     import uvicorn
-    #print(os.environ)
-    uvicorn.run(app, host="localhost", port=8022)
+    port = int(os.environ.get("EQUIFAX_PROVIDER_PORT", "8022"))
+    bind_host = os.environ.get("EQUIFAX_PROVIDER_HOST", "localhost")
+    print(f"{EXT_PREFIX} BOOT — starting uvicorn FastAPI server on {bind_host}:{port}")
+    print(f"{EXT_PREFIX} BOOT — environment detection from os.environ EQUIFAX_ENVIRONMENT =", os.environ.get("EQUIFAX_ENVIRONMENT", "not set"))
+    logger.info(f"Booting Equifax provider uvicorn on http://{bind_host}:{port}")
+    uvicorn.run(app, host=bind_host, port=port)

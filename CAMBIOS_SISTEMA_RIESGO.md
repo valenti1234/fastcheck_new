@@ -215,3 +215,71 @@ Se investigó un reporte de error 400 en el endpoint `/upload-file`. La verifica
 **Desarrollado por:** Asistente IA  
 **Revisado:** Enero 2025  
 **Estado:** Implementado y Funcional ✅
+
+---
+
+## [2026-08-20] — Filtro Global `vigente=true` (Cobranza Laboral) + Deduplicación `json_data/`
+
+### 🎯 Objetivos del cambio
+
+1. **Filtro GLOBAL de casos**: Mora Previsional (`moraPrevisionalCasesData` / `cobranzaLaboral.moraPrevisional.data.casos`) y Multa Laboral (`multaLaboralCasesData`) — **solo i casi con `vigente === true` (stretto)** entrano in:
+   - Ricalcolo del semaforo rischio (legal + capital humano rules)
+   - Dettagli inseriti nelle regole
+   - Prompt AI (OpenAIService)
+   - Campo `cantidad` e `totalPages` del wrapper Sheriff V2 **ricalcolati coerenti** dopo filtro
+2. **Riduci duplicati in `server/json_data/`**: durante il flusso "recheck" / rehachado, la funzione `calculateRisk` viene invocata 4-7 volte per lo stesso RUT → **prima generava 4-7 file**, adesso **massimo 1 file per RUT** (sempre lo stesso path, sovrascritto).
+
+### 📋 Files Modificati
+
+| File | Cambio |
+|---|---|
+| `server/src/services/sheriffService.ts` (Helper condiviso) | 1. **Nuovo helper `filterVigenteCasesOnly(payload)`** (L16-L76): polimorfico per array piatto HELPER S1 e wrapper Sheriff V2 `{cantidad, totalPages, casos[]}` — strict `c.vigente === true` (no truthiness), ricalcolo meta-campi numerici. 2. Applicazione a **blocco fetch** moraPrevisional + multaLaboral (L445-L515): filtro PRIMA di `slice(0, casesLimit=10)`, log prima/dopo. |
+| `server/src/controllers/rutController.ts` (popolamento `filteredDetails`) | 1. **L867-L868**: campi flat `moraPrevisionalCasesData` e `multaLaboralCasesData` → `filterVigenteCasesOnly()`. 2. **L900-L916 ✅ FIX CRITICO**: il path `filteredDetails.sheriffV2Data` (usato REALMENTE da RiskCalc L1489) prima era `sheriffV2Data: newSheriff` (intero payload non filtrato). Ora deep-clone e filtra `cobranzaLaboral.{moraPrevisional,multaLaboral}.data` PRIMA di assegnare. |
+| `server/src/services/riskCalculationService.ts` | 1. **L16**: nuovo import `filterVigenteCasesOnly` da `./sheriffService`. 2. **L102-L148 ✅ SAFE-SAFE runtime**: all'inizio di `calculateRisk()` — PRIMA di qualsiasi regola (compliance/legal/humano/finanziario) — filtra **ON-THE-FLY** ENTRAMBI i possibili alias dove vive Sheriff V2: (A) `logEntry.filteredDetails.sheriffV2Data` e (B) `(logEntry as any).sheriffV2Data` (top-level, usato L1759). Log before→after se il conteggio casi cambia. 3. **L18-L140 DEDUP JSON**: debounce 2000ms, scrive **solo 1 file per RUT** `riskCalculationResult_LATEST_<RUT>.json` (no file timestamped storici, sempre overwrite). Elimina 4-7 file duplicati durante il recheck. |
+| `fastcheck_api/app/api/v1/routers/rut.py` (Backend FastAPI) | 1. **L73-L109**: Helper Python clone 1:1 di TS `_filter_vigente_true(payload)`. 2. **L112-L127**: Helper `_has_non_empty_labor_collection` — flag `has_labor_collection` usato per rischio `semaphore: alto` ORA controlla `len(casos)>0` (non `bool(obj)` wrapper). Risolti falsi positivi quando wrapper conteneva meta-campi ma `casos=[]` dopo filtro. 3. **L302, L359-L360**: Estrazione da Sheriff S2 passa da helper filter. |
+
+### 🔐 Regola di filtro rigorosa
+
+| Valore campo `vigente` | Esito |
+|---|---|
+| ✅ `true` (boolean, strict equality) | **MANTENUTO** |
+| ❌ `false` / `null` / `undefined` (campo assente) | SCARTATO |
+| ❌ truthiness generico (`1`, `"si"`, `{}`) | SCARTATO — si usa `===` non `==` o truthy |
+
+### 🔁 Ordine operazioni corretto (prima del fix era invertito!)
+
+```
+✅ PRIMA filtra vigenti → POI applichi slice(0, casesLimit=10)
+```
+
+Prima del fix: se payload helper conteneva 15 casi (8 non-vigenti + 7 vigenti), `slice(0, 10)` consumava 8 slot di non-vigenti e scartava 5 vigenti dal fondo. Ora i 7 vigenti **rimangono tutti**.
+
+### 📁 json_data dopo il fix
+
+**Prima** (4x `calculateRisk` chimate in 1 richiesta recheck):
+```
+riskCalculationResult_1787228652603_76540986-1_unknown.json    (481KB)
+riskCalculationResult_1787228653354_76540986-1_lpflags.json
+riskCalculationResult_1787228654XXX_76540986-1_autosync.json
+riskCalculationResult_1787228655XXX_76540986-1_getResultByRut_onDemand.json
+```
+
+**Dopo** (1 file, sempre sovrascritto):
+```
+riskCalculationResult_LATEST_76540986-1.json   ← contiene sempre l'ultimo risultato
+```
+
+### 🔧 Verifiche Eseguite
+
+- TypeScript `GetDiagnostics`: 0 errori nuovi (solo HINT di imports unused preesistenti)
+- `python3 -m py_compile fastcheck_api/.../rut.py`: exit 0 (0 errori syntax)
+- Sample RUT 76540986-1:
+  - Prima filtro: `sheriffV2Data.cobranzaLaboral.moraPrevisional.data` 👉 `cantidad=52`, `casos.len=20` (9 T + 11 MISS campo vigente)
+  - Dopo filtro: 👉 `cantidad=9`, `casos.len=9` (solo 9 casi con `vigente=true`)
+
+### ⚠️ Backfill storico Mongo
+
+Record `SheriffDataLog` e `CompanyDetails` già scritti nel DB storico NON vengono aggiornati retroattivamente automaticamente. Il filtro SAFE-SAFE runtime in `riskCalculationService.calculateRisk()` **pulira' sempre i dati on-the-fly prima delle regole**, quindi le valutazioni successive risulteranno corrette indipendentemente.
+
+**Fecha de implementación:** 2026-08-20  
+**Estado:** ✅ COMPLETADO / VERIFICATO

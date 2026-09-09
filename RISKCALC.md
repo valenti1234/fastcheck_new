@@ -86,6 +86,44 @@
 - Sanzioni ambientali (dettaglio): `server/src/services/riskCalculationService.ts:444–548` (`getEnvironmentalSanctions`)
 - Procesos sancionatorios (dettaglio): `server/src/services/riskCalculationService.ts:675–775` (`getProcesosSancionatoriosMedioambientales`)
 
+---
+
+## [2026-08-20] GLOBAL VIGENTE FILTER — Cobranza Laboral (Mora Previsional + Multa Laboral)
+
+### Premessa
+Il campo `vigente` (boolean) presente in ogni `caso[]` di `cobranzaLaboral.moraPrevisional.data.casos` e `multaLaboral.data.casos` distingue i debiti ancora **attivi/aperti** da quelli **chiusi/cancellati/mancanti**. Ora nel sistema vengono **considerati SOLAMENTE i casi dove `vigente === true`** (stretto, non truthiness).
+
+### Helper condiviso
+- **TS** — `server/src/services/sheriffService.ts#L16-L76`: `filterVigenteCasesOnly(payload)` polimorfico (array HELPER S1 o wrapper Sheriff V2 `{cantidad, totalPages, casos[]}`). Ricalcola automaticamente meta-campi `cantidad = len(casos filtrati)` e `totalPages = ceil(len / per_page)`.
+- **Python** — `fastcheck_api/app/api/v1/routers/rut.py#L73-L109`: `_filter_vigente_true(payload)` (clone logico 1:1).
+
+### 3 livelli applicativi
+| Strato | File | Note |
+|---|---|---|
+| 1) Entry-level fetch/popola | `sheriffService.ts#L445-L515` + `rutController.ts#L867-L916` | Filtra mora + multa **prima** di `slice(0, casesLimit)` (ordine corretto!) e, crucially, filtra `filteredDetails.sheriffV2Data.cobranzaLaboral.*.data` PRIMA di assegnare al logEntry (questo è il path usato realmente dalle legal rules L1489). |
+| 2) Risk-calc SAFE-SAFE runtime | `riskCalculationService.ts#L102-L148` | All'inizio di `calculateRisk()` pulisce sia `logEntry.filteredDetails.sheriffV2Data` che `(logEntry as any).sheriffV2Data` (alias top-level usato L1759). Valido anche per record storici già salvati in Mongo con casi non-vigenti. |
+| 3) FastAPI risk veloce | `rut.py#L112-L137` | `has_labor_collection` non usa piu' `bool(obj)` ma controlla `len(casos)` — no falsi positivi di semaforo "alto". |
+
+### Coerenza metadati wrapper
+Il wrapper Sheriff V2 dopo filtro ha:
+```
+casos.length === cantidad === (numero casi vigenti === true)
+totalPages === ceil(cantidad / per_page_dedotto)
+```
+
+---
+
+## [2026-08-20] Deduplicazione scrittura `server/json_data/`
+
+### Problema
+Nel flusso `?risk=true` (recheck / rehachado) `rutController` invoca `RiskCalculationService.calculateRisk()` **4-7 volte** nella stessa richiesta (caller: `unknown`, `lpflags`, `autosync`, `fallback`, `onDemand`, `getAIAnalysis`...). Ogni chiamata scriveva un file timestamped separato → 4-7 file per RUT.
+
+### Soluzione
+`server/src/services/riskCalculationService.ts#L18-L140`:
+- **Debounce 2000ms** (finestra 2s): chiamate multiple consecutive sovrascrivono il pending payload e resettano il timer. Solo l'ultima vince.
+- **Path FISSO sempre sovrascritto**: `riskCalculationResult_LATEST_<normalizedRut>.json` (zero file timestamped storici; niente duplicati per recheck).
+- Logs: override del caller + write OK con size/timestamp.
+
 ## Origine dati e arricchimento
 - Popolamento `filteredDetails` e Equifax: `server/src/controllers/rutController.ts:553–613`, `server/src/controllers/rutController.ts:628–681` (assegnazioni dei campi, BOLAB, contatori)
 - Caricamento Sheriff summary: `server/src/services/sheriffService.ts:229–239` e serializzazione nel response: `server/src/controllers/rutController.ts:790–799`

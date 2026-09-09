@@ -70,11 +70,68 @@ def _compute_is_pep_from_compliance(compliance: Any) -> bool:
     return bool(pep or fam or pub)
 
 
+def _filter_vigente_true(payload: Any) -> Any:
+    """
+    Filtro VIGENTE = TRUE (stesso comportamento dell'helper TypeScript
+    filterVigenteCasesOnly in sheriffService.ts).
+
+    Mantiene solo le entries dove `caso.vigente is True`.
+    Formati supportati:
+      - list (array piatto): [ caso, caso, ... ]
+      - dict WRAPPER Sheriff V2:  { "cantidad": N, "casos": [...], "totalPages": N, ... }
+
+    Nel caso wrapper aggiorna anche `cantidad` = len(casos filtrati) e ricalcola
+    totalPages in modo coerente.
+    """
+    if payload is None:
+        return payload
+
+    # A) Formato lista piatta
+    if isinstance(payload, list):
+        return [
+            c for c in payload
+            if isinstance(c, dict) and c.get("vigente") is True
+        ]
+
+    # B) Formato wrapper dict con "casos"
+    if isinstance(payload, dict) and isinstance(payload.get("casos"), list):
+        casos = payload["casos"]
+        filtered = [c for c in casos if isinstance(c, dict) and c.get("vigente") is True]
+
+        new_payload: dict[str, Any] = {**payload, "casos": filtered}
+        if "cantidad" in payload:
+            new_payload["cantidad"] = len(filtered)
+        if isinstance(payload.get("totalPages"), int) and payload["totalPages"] > 0 and len(casos) > 0:
+            per_page = max(1, -(-len(casos) // payload["totalPages"]))  # ceil div
+            new_payload["totalPages"] = max(1, -(-len(filtered) // per_page))
+        return new_payload
+
+    return payload
+
+
+def _has_non_empty_labor_collection(obj: Any) -> bool:
+    """
+    has_labor_collection coerente dopo il filtro vigente=True:
+    considera un payload non vuoto solo se dopo il filtro ha almeno 1 caso.
+    """
+    if obj is None:
+        return False
+    if isinstance(obj, list):
+        return len(obj) > 0
+    if isinstance(obj, dict):
+        casos = obj.get("casos")
+        if isinstance(casos, list):
+            return len(casos) > 0
+        # Oggetto senza chiave `casos`: considera True solo se ha altre chiavi significative
+        return any(k not in {"page", "totalPages", "cantidad", "ultimaActualizacion"} for k in obj.keys())
+    return False
+
+
 def _simple_risk_assessment(filtered_details: dict[str, Any]) -> dict[str, Any]:
     compliance = filtered_details.get("compliance") or {}
     is_pep = _compute_is_pep_from_compliance(compliance)
     has_judicial = bool(filtered_details.get("civilCasesData") or filtered_details.get("laboralCasesData") or filtered_details.get("cobranzaCasesData"))
-    has_labor_collection = bool(filtered_details.get("moraPrevisionalCasesData") or filtered_details.get("multaLaboralCasesData"))
+    has_labor_collection = _has_non_empty_labor_collection(filtered_details.get("moraPrevisionalCasesData")) or _has_non_empty_labor_collection(filtered_details.get("multaLaboralCasesData"))
     semaphore = "bajo"
     if is_pep:
         semaphore = "critico"
@@ -299,8 +356,8 @@ async def lookup_rut(
             "civilCasesData": _safe_get(masked_sheriff_payload, "judicial", "civil", "data", default={}),
             "laboralCasesData": _safe_get(masked_sheriff_payload, "judicial", "laboral", "data", default={}),
             "cobranzaCasesData": _safe_get(masked_sheriff_payload, "judicial", "cobranza", "data", default={}),
-            "moraPrevisionalCasesData": _safe_get(masked_sheriff_payload, "cobranzaLaboral", "moraPrevisional", "data", default={}),
-            "multaLaboralCasesData": _safe_get(masked_sheriff_payload, "cobranzaLaboral", "multaLaboral", "data", default={}),
+            "moraPrevisionalCasesData": _filter_vigente_true(_safe_get(masked_sheriff_payload, "cobranzaLaboral", "moraPrevisional", "data", default={})),
+            "multaLaboralCasesData": _filter_vigente_true(_safe_get(masked_sheriff_payload, "cobranzaLaboral", "multaLaboral", "data", default={})),
         }
 
         compliance_person_type = "juridical" if bool(_safe_get(resumen_data, "esPersonaJuridica", default=False)) else "natural"

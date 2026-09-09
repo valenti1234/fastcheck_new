@@ -13,6 +13,76 @@ import path from 'path';
 import { Result } from '../models/Result';
 import { Logger } from 'winston';
 import { RiskDetailsFormatter } from '../helpers/RiskDetailsFormatter';
+import { filterVigenteCasesOnly } from './sheriffService';
+
+// -----------------------------------------------------------------------------
+// SINGLE-WRITE JSON DEDUP:
+//  - EXACTLY 1 FILE PER RUT: riskCalculationResult_LATEST_<RUT>.json
+//  - always overwrite (no historical timestamped files ever)
+//  - 2000ms debounce window so 4x calculateRisk in the same HTTP request
+//    collapse into 1 single write (the last caller wins).
+// -----------------------------------------------------------------------------
+const JSON_WRITE_DEBOUNCE_MS = 2000;
+
+type PendingWrite = {
+  timer: ReturnType<typeof setTimeout>;
+  payload: any;
+  rut: string;
+  caller: string;
+  scheduledAt: number;
+};
+
+const pendingJsonWrites = new Map<string, PendingWrite>();
+
+function scheduleJsonWrite(
+  rut: string,
+  caller: string,
+  totalResult: { logEntry: any; res: any }
+): void {
+  const normalizedRut = String(rut || 'unknown-rut').trim();
+  const normalizedCaller = String(caller || 'unknown').replace(/[^a-zA-Z0-9_:]/g, '_');
+
+  const previous = pendingJsonWrites.get(normalizedRut);
+  if (previous) {
+    clearTimeout(previous.timer);
+    console.warn(
+      `[RiskCalculationService.jsonWrite] debounce override RUT=${normalizedRut}:` +
+        ` caller="${previous.caller}" → "${normalizedCaller}"`
+    );
+  }
+
+  const scheduledAt = Date.now();
+  const timer = setTimeout(() => {
+    try {
+      const jsonDataDir = path.resolve(process.cwd(), 'json_data');
+      fs.mkdirSync(jsonDataDir, { recursive: true });
+
+      const serialized = JSON.stringify(totalResult, null, 2);
+      const fileName = `riskCalculationResult_LATEST_${normalizedRut}.json`;
+      const filePath = path.join(jsonDataDir, fileName);
+      fs.writeFileSync(filePath, serialized);
+
+      console.warn(
+        `[RiskCalculationService.jsonWrite] OK RUT=${normalizedRut} caller="${normalizedCaller}" ` +
+          `size=${serialized.length} file="${fileName}" ts=${new Date(scheduledAt).toISOString()}`
+      );
+    } catch (err) {
+      console.warn('[RiskCalculationService.jsonWrite] Failed write:', err);
+    } finally {
+      pendingJsonWrites.delete(normalizedRut);
+    }
+  }, JSON_WRITE_DEBOUNCE_MS);
+
+  try { (timer as any).unref?.(); } catch {}
+
+  pendingJsonWrites.set(normalizedRut, {
+    timer,
+    payload: totalResult,
+    rut: normalizedRut,
+    caller: normalizedCaller,
+    scheduledAt,
+  });
+}
 
 export class RiskCalculationService {
   public static formatDateDDMMYYYY(d: unknown): string | unknown {
@@ -35,6 +105,46 @@ export class RiskCalculationService {
     if (!logEntry || !logEntry.summaryData?.data) {
       console.log("Warning: Missing log entry or summary data in calculateRisk");
       return null;
+    }
+
+    // ✅ GLOBAL FILTER VIGENTE = TRUE on cobranzaLaboral (moraPrevisional + multaLaboral)
+    // Applica il filtro a ENTRAMBI i paths dove possono vivere i dati Sheriff V2:
+    //   A) logEntry.filteredDetails.sheriffV2Data.cobranzaLaboral.*.data
+    //   B) (logEntry as any).sheriffV2Data.cobranzaLaboral.*.data  (alias top-level)
+    // Safe-safe: se dati storici Mongo contenevano casi vigente=false/null/no-campo,
+    // vengono filtrati ON-THE-FLY prima di calcolare qualsiasi regola.
+    try {
+      const v2Paths: Array<{ base: any; label: string }> = [];
+      const fdAny = (logEntry as any).filteredDetails;
+      if (fdAny && fdAny.sheriffV2Data && typeof fdAny.sheriffV2Data === 'object') {
+        v2Paths.push({ base: fdAny.sheriffV2Data, label: 'filteredDetails.sheriffV2Data' });
+      }
+      const topV2 = (logEntry as any).sheriffV2Data;
+      if (topV2 && typeof topV2 === 'object' && topV2 !== fdAny?.sheriffV2Data) {
+        v2Paths.push({ base: topV2, label: 'top-level.sheriffV2Data' });
+      }
+      for (const { base, label } of v2Paths) {
+        const cob = base.cobranzaLaboral;
+        if (!cob || typeof cob !== 'object') continue;
+        let changed = false;
+        if (cob.moraPrevisional && ('data' in cob.moraPrevisional)) {
+          const before = Array.isArray(cob.moraPrevisional.data?.casos) ? cob.moraPrevisional.data.casos.length : 0;
+          const filteredData = filterVigenteCasesOnly(cob.moraPrevisional.data);
+          cob.moraPrevisional = { ...cob.moraPrevisional, data: filteredData };
+          const after = Array.isArray(filteredData?.casos) ? filteredData.casos.length : 0;
+          if (before !== after) { console.warn(`[RiskCalculationService.vigenteFilter] ${label}.moraPrevisional: ${before} → ${after}`); changed = true; }
+        }
+        if (cob.multaLaboral && ('data' in cob.multaLaboral)) {
+          const before = Array.isArray(cob.multaLaboral.data?.casos) ? cob.multaLaboral.data.casos.length : 0;
+          const filteredData = filterVigenteCasesOnly(cob.multaLaboral.data);
+          cob.multaLaboral = { ...cob.multaLaboral, data: filteredData };
+          const after = Array.isArray(filteredData?.casos) ? filteredData.casos.length : 0;
+          if (before !== after) { console.warn(`[RiskCalculationService.vigenteFilter] ${label}.multaLaboral: ${before} → ${after}`); changed = true; }
+        }
+        if (changed) base.cobranzaLaboral = { ...cob };
+      }
+    } catch (err) {
+      console.warn('[RiskCalculationService.vigenteFilter] Error (non fatal):', err);
     }
 
     //    const deuda = await this.evaluateDeuda(logEntry);
@@ -199,15 +309,12 @@ export class RiskCalculationService {
       logEntry,
       res
     };
-    //save res to json file in json_data folder with time and rut
-    try {
-      const jsonDataDir = path.resolve(process.cwd(), 'json_data');
-      fs.mkdirSync(jsonDataDir, { recursive: true });
-      const fileName = `riskCalculationResult_${Date.now()}_${rut}.json`;
-      fs.writeFileSync(path.join(jsonDataDir, fileName), JSON.stringify(totalResult, null, 2));
-    } catch (err) {
-      console.warn('[RiskCalculationService.calculateRisk] Failed to write json_data result file:', err);
-    }
+
+    // Schedulo scrittura json_data con DEBOUNCE 500ms per RUT:
+    // se calculateRisk() viene chiamato 4 volte nella stessa richiesta
+    // (es. recheck risk=true con 4 caller diversi), solo l'ULTIMA (onDemand) vince.
+    scheduleJsonWrite(rut, caller || 'unknown', totalResult);
+
     // console.warn(311, "call completed", res);
     return res;
 
