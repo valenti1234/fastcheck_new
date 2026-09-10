@@ -14,6 +14,10 @@ import { Result } from '../models/Result';
 import { Logger } from 'winston';
 import { RiskDetailsFormatter } from '../helpers/RiskDetailsFormatter';
 import { filterVigenteCasesOnly } from './sheriffService';
+import {
+  extractEquifaxProtestosMorosidades,
+  EquifaxProtestosMorosidadesResult,
+} from './equifaxService';
 
 // -----------------------------------------------------------------------------
 // SINGLE-WRITE JSON DEDUP:
@@ -2035,24 +2039,34 @@ export class RiskCalculationService {
       risk: "bajo",
       detected: false,
       score: 0,
-      dataSourceDesc: "Dettagli da filteredDetails.equifaxData.protestosMorosidadesPersonaNaturalList o fallback a debtsSummary.bed.commercialBed; normalizzazione date e rimozione campi"
+      dataSourceDesc: "Consolidato 3 fonti Equifax: BOLCOM (debtsSummary.bolcom.commercialBolcom) + ICOM (icom.commercialIcom) + BED (bed.commercialBed). TOTALE GENERALE preso da debtsSummary.debtsSummaryDetail.{totalDebts,totalAmountDebts} (NON da summaryBolcom). Validazione quadratura: BOLCOM + ICOM + BED === totals."
     };
 
-   // console.warn(1773, "logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.bolcom?.commercialBolcom",  logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.bolcom?.commercialBolcom);
-    // (rulObj as any).details = [];
-    (rulObj as any).details = logEntry?.filteredDetails?.equifaxData?.allData?.commercialData?.credit?.debtsSummary?.bolcom?.commercialBolcom || [];
-    if ((rulObj as any).details.length < 1) {
-      //try with personal data list
-      (rulObj as any).details = logEntry?.filteredDetails?.equifaxData?.protestosMorosidadesPersonaNaturalList || [];
-    }
-    //console.warn(1729,"details", (rulObj as any).details );
+    // ---- Consolidato Equifax 3 fonti (via helper condiviso) ----
+    const equifaxFusionado: any = logEntry?.filteredDetails?.equifaxData
+      ?? (logEntry as any).equifaxData
+      ?? {};
+    const pm: EquifaxProtestosMorosidadesResult = extractEquifaxProtestosMorosidades(equifaxFusionado);
 
-    if ((rulObj as any).details.length > 0) {
-      rulObj.detected = true;
-    } else {
-      (rulObj as any).details = [];
-      rulObj.detected = false;
-    }
+    (rulObj as any).details = pm.rows;
+    (rulObj as any).consolidado = {
+      totalDebts: pm.totalDebts,
+      totalAmountDebts: pm.totalAmountDebts,
+      perFuente: pm.perFuente,
+      fuenteCampiMap: pm.fuenteCampiMap,
+    };
+    (rulObj as any).quadratura = pm.quadratura;
+
+    // Detected = true se totalDebts > 0 oppure righe > 0 oppure almeno una fonte ha summary positivi.
+    const hasRighe = Array.isArray((rulObj as any).details) && (rulObj as any).details.length > 0;
+    const hasTotale = pm.totalDebts > 0 || pm.totalAmountDebts > 0;
+    const hasAnySummary =
+      (pm.perFuente.BOLCOM.summaryTotalField ?? 0) > 0 ||
+      (pm.perFuente.ICOM.summaryTotalField ?? 0) > 0 ||
+      (pm.perFuente.BED.summaryTotalField ?? 0) > 0;
+    rulObj.detected = hasRighe || hasTotale || hasAnySummary;
+    (rulObj as any).detailCount = pm.totalDebts > 0 ? pm.totalDebts : (hasRighe ? (rulObj as any).details.length : 0);
+    (rulObj as any).montoTotal = pm.totalAmountDebts;
 
     if (rulObj.detected) {
       switch (rulObj.impacto) {

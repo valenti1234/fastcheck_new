@@ -17,6 +17,160 @@ def _as_list(value: Any) -> list[Any]:
     return value if isinstance(value, list) else []
 
 
+def _to_number(v: Any) -> float:
+    if v is None or v == "":
+        return 0.0
+    if isinstance(v, bool):
+        return 0.0
+    if isinstance(v, (int, float)):
+        return float(v) if v == v else 0.0  # NaN guard
+    s = str(v).strip()
+    # Rimuovo simboli valuta / spazi
+    s = re.sub(r"[\s$€£¥]", "", s)
+    last_comma = s.rfind(",")
+    last_dot = s.rfind(".")
+    if last_comma >= 0 and last_comma > last_dot:
+        # Virgola come decimale: rimuovo tutti i punti e sostituisco "," con "."
+        s = s.replace(".", "").replace(",", ".", 1)
+    elif last_dot >= 0:
+        dots = s.count(".")
+        if dots > 1:
+            # Più punti => tutti separatori migliaia (formato CLP intero: "29.287.952.850")
+            s = s.replace(".", "")
+        else:
+            # Un solo punto: se dopo ci sono > 3 cifre => separatore migliaia per grandi numeri
+            after_dot = len(s) - last_dot - 1
+            if after_dot > 3:
+                s = s.replace(".", "")
+    # Rimango solo caratteri numerici - e .
+    s = re.sub(r"[^0-9.\-]", "", s)
+    if s in ("", "-", ".", "-."):
+        return 0.0
+    try:
+        n = float(s)
+        return n if n == n else 0.0
+    except Exception:
+        return 0.0
+
+
+def _classifica_pm(justification_description: Any, fuente: str) -> str:
+    if fuente == "ICOM":
+        return "SIN_CLASIFICACION_INDIVIDUAL"
+    if not isinstance(justification_description, str) or not justification_description.strip():
+        return "SIN_CLASIFICACION_INDIVIDUAL"
+    j = justification_description.strip().upper()
+    if re.search(r"PROTEST", j) or re.search(r"CHEQUE.*PROTEST|PROTEST.*CHEQUE", j) or re.search(r"PAGARE.*PROTEST", j):
+        return "PROTESTO"
+    if re.search(r"MOROS|MORA|DEUDA|IMPAG|A VENCER|VENCIDO", j):
+        return "MOROSIDAD"
+    return "MOROSIDAD"
+
+
+def _extract_equifax_protestos_morosidades(equifax_data: Any) -> dict[str, Any]:
+    """
+    Helper Python (clone 1:1 del TS extractEquifaxProtestosMorosidades):
+      - Totale generale da debtsSummary.debtsSummaryDetail.{totalDebts,totalAmountDebts}
+        (NON da summaryBolcom!)
+      - 3 fonti: BOLCOM / ICOM / BED + relativi summary
+      - Validazione quadratura: BOLCOM + ICOM + BED === totals
+    """
+    vuoto: dict[str, Any] = {
+        "rows": [],
+        "totalDebts": 0,
+        "totalAmountDebts": 0.0,
+        "perFuente": {
+            "BOLCOM": {"count": 0, "amount": 0.0, "summaryTotalField": 0, "summaryTotalAmountField": 0},
+            "ICOM": {"count": 0, "amount": 0.0, "summaryTotalField": 0, "summaryTotalAmountField": 0},
+            "BED": {"count": 0, "amount": 0.0, "summaryTotalField": 0, "summaryTotalAmountField": 0},
+        },
+        "quadratura": {"ok": True, "countDiff": 0, "amountDiff": 0.0, "message": "Dati non presenti"},
+        "fuenteCampiMap": {
+            "BOLCOM": {"detailPath": "debtsSummary.bolcom.commercialBolcom", "summary": {"total": "summaryBolcom.summaryTotal", "totalAmount": "summaryBolcom.summaryTotalAmount"}},
+            "ICOM": {"detailPath": "debtsSummary.icom.commercialIcom", "summary": {"total": "summaryIcom.summaryTotal", "totalAmount": "summaryIcom.summaryTotalAmount"}},
+            "BED": {"detailPath": "debtsSummary.bed.commercialBed", "summary": {"total": "summaryBed.summaryTotal", "totalAmount": "summaryBed.summaryTotalAmount"}},
+        },
+    }
+    if not isinstance(equifax_data, dict):
+        return vuoto
+
+    # 1. debtsSummary da 2 path possibili
+    debts_summary: dict[str, Any] = _as_dict(
+        _safe_get(equifax_data, "allData", "commercialData", "credit", "debtsSummary", default=None)
+        or _safe_get(equifax_data, "commercialData", "credit", "debtsSummary", default=None)
+    )
+    if not debts_summary:
+        return vuoto
+
+    # 2. Totale consolidato (da debtsSummaryDetail - NON da summaryBolcom!)
+    detail: dict[str, Any] = _as_dict(debts_summary.get("debtsSummaryDetail"))
+    total_debts = int(_to_number(detail.get("totalDebts")))
+    total_amount = _to_number(detail.get("totalAmountDebts"))
+
+    fonti_def = [
+        ("BOLCOM", "bolcom", "commercialBolcom", "summaryBolcom"),
+        ("ICOM", "icom", "commercialIcom", "summaryIcom"),
+        ("BED", "bed", "commercialBed", "summaryBed"),
+    ]
+    all_rows: list[Any] = []
+    per_fuente = vuoto["perFuente"]
+
+    for (key, node, list_k, summ_node) in fonti_def:
+        raw_list: list[Any] = _as_list(_safe_get(debts_summary, node, list_k, default=[]))
+        summ: dict[str, Any] = _as_dict(debts_summary.get(summ_node))
+        fonte_entry = per_fuente[key]
+        fonte_entry["summaryTotalField"] = int(_to_number(summ.get("summaryTotal")))
+        fonte_entry["summaryTotalAmountField"] = _to_number(summ.get("summaryTotalAmount"))
+
+        for raw in raw_list:
+            if not isinstance(raw, dict):
+                continue
+            jd = raw.get("justificationDescription") or raw.get("justification") or raw.get("descripcion")
+            nuova_riga: dict[str, Any] = dict(raw)
+            nuova_riga["_fuente"] = key
+            nuova_riga["_tipoClasificacion"] = _classifica_pm(jd, key)
+            if key == "ICOM":
+                nuova_riga["justificationDescription"] = jd if isinstance(jd, str) else "Sin clasificación individual (ICOM)"
+            else:
+                nuova_riga["justificationDescription"] = jd if isinstance(jd, (str, type(None))) else None
+            importo_riga = _to_number(
+                raw.get("unpaidAmount") or raw.get("amount") or raw.get("monto") or raw.get("Monto Multa")
+            )
+            fonte_entry["count"] += 1
+            fonte_entry["amount"] = float(fonte_entry["amount"]) + importo_riga
+            all_rows.append(nuova_riga)
+
+    # 4. Validazione quadratura
+    sum_count = per_fuente["BOLCOM"]["count"] + per_fuente["ICOM"]["count"] + per_fuente["BED"]["count"]
+    sum_amount = float(per_fuente["BOLCOM"]["amount"]) + float(per_fuente["ICOM"]["amount"]) + float(per_fuente["BED"]["amount"])
+    count_diff = total_debts - sum_count
+    amount_diff = abs(total_amount - sum_amount)
+    ok = (
+        (True if total_debts == 0 else count_diff == 0)
+        and (True if total_amount == 0 else amount_diff <= 1.0)
+    )
+    if ok:
+        msg = (
+            "Nessun protesto/morosità rilevato"
+            if (sum_count == 0 and total_debts == 0)
+            else f"Quadratura OK: BOLCOM({per_fuente['BOLCOM']['count']}) + ICOM({per_fuente['ICOM']['count']}) + BED({per_fuente['BED']['count']}) = {sum_count} === {total_debts}"
+        )
+    else:
+        msg = (
+            f"Quadratura WARN: somme fonte (count={sum_count}, amount=${round(sum_amount):,}) divergono da "
+            f"debtsSummaryDetail (totalDebts={total_debts}, totalAmount=${round(total_amount):,}). "
+            f"Count diff={count_diff}, Amount diff=${round(amount_diff):,}."
+        )
+
+    return {
+        "rows": all_rows,
+        "totalDebts": total_debts,
+        "totalAmountDebts": total_amount,
+        "perFuente": per_fuente,
+        "quadratura": {"ok": ok, "countDiff": count_diff, "amountDiff": amount_diff, "message": msg},
+        "fuenteCampiMap": vuoto["fuenteCampiMap"],
+    }
+
+
 def _safe_get(value: Any, *path: str, default: Any = None) -> Any:
     cur = value
     for key in path:
@@ -478,21 +632,37 @@ class RiskCalculationService:
             }
         )
 
-        equifax = _as_dict(_safe_get(log_entry, "filteredDetails", "equifaxData", default={}))
-        icom = _as_list(_safe_get(equifax, "allData", "commercialData", "credit", "debtsSummary", "icom", "commercialIcom", default=[]))
-        if not icom:
-            icom = _as_list(_safe_get(equifax, "protestosMorosidadesPersonaNaturalList", default=[]))
-        detected = len(icom) > 0
-        out.append(
-            {
-                "label": "Protestos y Morosidades",
-                "impacto": "significativo",
-                "detected": detected,
-                "risk": _risk_from_impact(detected, "significativo"),
-                "score": len(icom),
-                "details": icom,
-            }
+        equifax = _as_dict(_safe_get(log_entry, "filteredDetails", "equifaxData", default={})) or _as_dict(_safe_get(log_entry, "equifaxData", default={}))
+        pm = _extract_equifax_protestos_morosidades(equifax)
+        rows: list[Any] = pm["rows"] if isinstance(pm["rows"], list) else []
+        # Fallback a Persona Natural list se righe 0 ma dati esistono (guards retrocompatibilità)
+        if not rows:
+            alt = _as_list(_safe_get(equifax, "protestosMorosidadesPersonaNaturalList", default=[]))
+            if alt:
+                rows = alt
+        total_debts = int(pm["totalDebts"]) if isinstance(pm.get("totalDebts"), (int, float)) else len(rows)
+        total_amount = float(pm["totalAmountDebts"]) if isinstance(pm.get("totalAmountDebts"), (int, float)) else 0.0
+        detected = total_debts > 0 or len(rows) > 0 or total_amount > 0 or any(
+            (f.get("summaryTotalField") or 0) > 0 for f in pm["perFuente"].values()
         )
+        rule_entry: dict[str, Any] = {
+            "label": "Protestos y Morosidades",
+            "impacto": "significativo",
+            "detected": detected,
+            "risk": _risk_from_impact(detected, "significativo"),
+            "score": total_debts if total_debts > 0 else len(rows),
+            "details": rows,
+            "consolidado": {
+                "totalDebts": total_debts,
+                "totalAmountDebts": total_amount,
+                "perFuente": pm["perFuente"],
+                "fuenteCampiMap": pm["fuenteCampiMap"],
+            },
+            "quadratura": pm["quadratura"],
+            "montoTotal": total_amount,
+            "detailCount": total_debts if total_debts > 0 else len(rows),
+        }
+        out.append(rule_entry)
 
         inicio_actividades = _safe_get(ident, "inicioActividades", default=None)
         actividad = _as_list(_safe_get(ident, "actividadEconomicaVigente", default=[]))

@@ -464,3 +464,259 @@ export class EquifaxService {
 }
 
 export default EquifaxService;
+
+// =============================================================================
+// Helper condiviso: Protestos y Morosidades — Consolidato Equifax (3 fonti)
+// =============================================================================
+// Descrizione:
+//   Fast Check in precedenza usava SOLO summaryBolcom come totale generale (errore!).
+//   Adesso si considera il consolidato completo di Equifax secondo specifica:
+//     1. TOTALE GENERALE = debtsSummary.debtsSummaryDetail.{totalDebts, totalAmountDebts}
+//     2. DETTAGLIO PER FONTE (3)
+//          - BOLCOM: debtsSummary.bolcom.commercialBolcom   (MOROSIDAD/PROTESTO classificabile)
+//          - ICOM:   debtsSummary.icom.commercialIcom       (NESSUNA classificazione individuale)
+//          - BED:    debtsSummary.bed.commercialBed        (MOROSIDAD/PROTESTO classificabile)
+//     3. SUMMARY PER FONTE (conteggio/importo):
+//          - summaryBolcom.summaryTotal / summaryTotalAmount
+//          - summaryIcom.summaryTotal   / summaryTotalAmount
+//          - summaryBed.summaryTotal    / summaryTotalAmount
+//     4. VALIDAZIONE DI QUADRATURA:  (BOLCOM.count + ICOM.count + BED.count)  === totalDebts  &&
+//                                     (BOLCOM.amount + ICOM.amount + BED.amount) === totalAmountDebts
+//
+//   Riferimento: specifica "Ajuste Protestos y Morosidades – Equifax" (10/09/2026).
+//   Caso di test RUT 77.534.640-K atteso: 164 doc / $3.036.602.310
+//     BOLCOM 18 / $656.674.129
+//     ICOM   38 / $1.391.039.361
+//     BED   108 / $988.888.820
+
+export type MorosidadFuente = 'BOLCOM' | 'ICOM' | 'BED';
+
+export interface EquifaxProtestoMorosidadRow {
+  _fuente: MorosidadFuente;
+  _tipoClasificacion?: 'MOROSIDAD' | 'PROTESTO' | 'SIN_CLASIFICACION_INDIVIDUAL';
+  justificationDescription?: string | null;
+  expirationDate?: string | null;
+  unpaidAmount?: string | number | null;
+  documentType?: string | null;
+  libradorName?: string | null;
+  localidadName?: string | null;
+  creditType?: string | null;
+  debtType?: string | null;
+  reasonType?: string | null;
+  bulletinNumber?: string | number | null;
+  boletinNumber?: string | number | null;
+  boletinPage?: string | number | null;
+  [k: string]: any;
+}
+
+export interface EquifaxFuenteSummary {
+  count: number;
+  amount: number;
+  summaryTotalField: number | null;      // summaryBolcom.summaryTotal etc
+  summaryTotalAmountField: number | null;
+}
+
+export interface EquifaxProtestosMorosidadesResult {
+  rows: EquifaxProtestoMorosidadRow[];
+  totalDebts: number;
+  totalAmountDebts: number;
+  perFuente: Record<MorosidadFuente, EquifaxFuenteSummary>;
+  quadratura: {
+    ok: boolean;
+    countDiff: number;
+    amountDiff: number;
+    message: string;
+  };
+  fuenteCampiMap: Record<
+    MorosidadFuente,
+    { detailPath: string; summary: { total: string; totalAmount: string } }
+  >;
+}
+
+const _toNumber = (v: any): number => {
+  if (v === null || v === undefined || v === '') return 0;
+  if (typeof v === 'number') return isFinite(v) ? v : 0;
+  let s = String(v).trim();
+  // Rimuovo simboli valuta, spazi
+  s = s.replace(/[\s$€£¥]/g, '');
+  // Caso A: formato CL / europeo (punti separatori migliaia, virgola come decimale): "29.287.952.850"  (nessuna virgola = intero con . separatore)
+  //                                                                    oppure "2.928.795,50" (. migliaia, , decimale)
+  const lastComma = s.lastIndexOf(',');
+  const lastDot = s.lastIndexOf('.');
+  if (lastComma >= 0 && lastComma > lastDot) {
+    // "," è il separatore decimale: elimino tutti i "." e sostituisco "," con "." per parseFloat.
+    s = s.replace(/\./g, '').replace(',', '.');
+  } else if (lastDot >= 0) {
+    // Possono esserci più punti come separatori migliaia (formato CL intero): "29.287.952.850" → intero (nessuna virgola decimale)
+    //    se c'è un singolo punto a 2-3 cifre dall'ultima → lo trattiamo come decimale USA; altrimenti tutti i punti sono migliaia → li rimuovo.
+    const dots = (s.match(/\./g) || []).length;
+    if (dots > 1) {
+      // Più di 1 punto → tutti separatori migliaia (intero formattato CLP)
+      s = s.replace(/\./g, '');
+    } else {
+      // 1 solo punto: se dopo ci sono 2-3 cifre (E NON 6+!) → decimale USA; altrimenti separatore migliaia per grandi numeri
+      const afterDot = s.length - lastDot - 1;
+      if (afterDot > 3) s = s.replace(/\./g, '');
+    }
+  }
+  // Rimuovo rimanenti caratteri non numerici eccetto - e .
+  s = s.replace(/[^0-9.\-]/g, '');
+  if (s === '' || s === '-' || s === '.' || s === '-.') return 0;
+  const n = Number.parseFloat(s);
+  return isFinite(n) ? n : 0;
+};
+
+const _classifica = (
+  justificationDescription: string | null | undefined,
+  fuente: MorosidadFuente
+): 'MOROSIDAD' | 'PROTESTO' | 'SIN_CLASIFICACION_INDIVIDUAL' => {
+  // ICOM non classifica individualmente
+  if (fuente === 'ICOM') return 'SIN_CLASIFICACION_INDIVIDUAL';
+  if (!justificationDescription || typeof justificationDescription !== 'string') {
+    return 'SIN_CLASIFICACION_INDIVIDUAL';
+  }
+  const j = justificationDescription.trim().toUpperCase();
+  // Regole euristiche dalle definizioni Equifax (controllo per parole chiave comuni):
+  if (/PROTEST/.test(j) || /CHEQUE.*PROTEST|PROTEST.*CHEQUE/.test(j) || /PAGARE.*PROTEST/.test(j)) {
+    return 'PROTESTO';
+  }
+  if (/MOROS|MORA|DEUDA|IMPAG|A VENCER|VENCIDO/.test(j)) {
+    return 'MOROSIDAD';
+  }
+  // Se presente ma non riconosciuto -> MOROSIDAD come default, ma segnalo
+  return 'MOROSIDAD';
+};
+
+export function extractEquifaxProtestosMorosidades(
+  equifaxData: any
+): EquifaxProtestosMorosidadesResult {
+  const vuoto: EquifaxProtestosMorosidadesResult = {
+    rows: [],
+    totalDebts: 0,
+    totalAmountDebts: 0,
+    perFuente: {
+      BOLCOM: { count: 0, amount: 0, summaryTotalField: null, summaryTotalAmountField: null },
+      ICOM: { count: 0, amount: 0, summaryTotalField: null, summaryTotalAmountField: null },
+      BED: { count: 0, amount: 0, summaryTotalField: null, summaryTotalAmountField: null },
+    },
+    quadratura: { ok: true, countDiff: 0, amountDiff: 0, message: 'Dati non presenti' },
+    fuenteCampiMap: {
+      BOLCOM: {
+        detailPath: 'debtsSummary.bolcom.commercialBolcom',
+        summary: { total: 'summaryBolcom.summaryTotal', totalAmount: 'summaryBolcom.summaryTotalAmount' },
+      },
+      ICOM: {
+        detailPath: 'debtsSummary.icom.commercialIcom',
+        summary: { total: 'summaryIcom.summaryTotal', totalAmount: 'summaryIcom.summaryTotalAmount' },
+      },
+      BED: {
+        detailPath: 'debtsSummary.bed.commercialBed',
+        summary: { total: 'summaryBed.summaryTotal', totalAmount: 'summaryBed.summaryTotalAmount' },
+      },
+    },
+  };
+
+  if (!equifaxData || typeof equifaxData !== 'object') return vuoto;
+
+  // 1. debtsSummary da 2 path possibili (entrambi sono usati nel codebase)
+  const debtsSummary =
+    (equifaxData as any).allData?.commercialData?.credit?.debtsSummary ||
+    (equifaxData as any).commercialData?.credit?.debtsSummary ||
+    null;
+
+  if (!debtsSummary || typeof debtsSummary !== 'object') return vuoto;
+
+  // 2. Totale consolidato (da debtsSummaryDetail — NON da summaryBolcom!)
+  const detail = debtsSummary.debtsSummaryDetail || {};
+  const totalDebts = _toNumber(detail.totalDebts);
+  const totalAmountDebts = _toNumber(detail.totalAmountDebts);
+
+  // 3. 3 fonti: liste dettaglio + summary
+  const fonti: Array<{
+    key: MorosidadFuente;
+    list: any[];
+    summaryTotal: any;
+    summaryTotalAmount: any;
+  }> = [
+    {
+      key: 'BOLCOM',
+      list: Array.isArray(debtsSummary.bolcom?.commercialBolcom)
+        ? debtsSummary.bolcom.commercialBolcom
+        : [],
+      summaryTotal: debtsSummary.summaryBolcom?.summaryTotal,
+      summaryTotalAmount: debtsSummary.summaryBolcom?.summaryTotalAmount,
+    },
+    {
+      key: 'ICOM',
+      list: Array.isArray(debtsSummary.icom?.commercialIcom)
+        ? debtsSummary.icom.commercialIcom
+        : [],
+      summaryTotal: debtsSummary.summaryIcom?.summaryTotal,
+      summaryTotalAmount: debtsSummary.summaryIcom?.summaryTotalAmount,
+    },
+    {
+      key: 'BED',
+      list: Array.isArray(debtsSummary.bed?.commercialBed)
+        ? debtsSummary.bed.commercialBed
+        : [],
+      summaryTotal: debtsSummary.summaryBed?.summaryTotal,
+      summaryTotalAmount: debtsSummary.summaryBed?.summaryTotalAmount,
+    },
+  ];
+
+  const allRows: EquifaxProtestoMorosidadRow[] = [];
+  const perFuente: Record<MorosidadFuente, EquifaxFuenteSummary> = {
+    BOLCOM: { count: 0, amount: 0, summaryTotalField: null, summaryTotalAmountField: null },
+    ICOM: { count: 0, amount: 0, summaryTotalField: null, summaryTotalAmountField: null },
+    BED: { count: 0, amount: 0, summaryTotalField: null, summaryTotalAmountField: null },
+  };
+
+  for (const fonte of fonti) {
+    const { key, list, summaryTotal, summaryTotalAmount } = fonte;
+    const fonteSummary = perFuente[key];
+    fonteSummary.summaryTotalField = _toNumber(summaryTotal);
+    fonteSummary.summaryTotalAmountField = _toNumber(summaryTotalAmount);
+
+    for (const raw of list) {
+      if (!raw || typeof raw !== 'object') continue;
+      const jd = raw.justificationDescription ?? raw.justification ?? raw.descripcion ?? null;
+      const row: EquifaxProtestoMorosidadRow = {
+        ...raw,
+        _fuente: key,
+        _tipoClasificacion: _classifica(jd, key),
+        justificationDescription: key === 'ICOM'
+          ? (jd ?? 'Sin clasificación individual (ICOM)')
+          : jd ?? null,
+      };
+      const importoRiga = _toNumber(raw.unpaidAmount ?? raw.amount ?? raw.monto ?? raw['Monto Multa']);
+      fonteSummary.count += 1;
+      fonteSummary.amount += importoRiga;
+      allRows.push(row);
+    }
+  }
+
+  // 4. Validazione quadratura
+  const sumCount = perFuente.BOLCOM.count + perFuente.ICOM.count + perFuente.BED.count;
+  const sumAmount = perFuente.BOLCOM.amount + perFuente.ICOM.amount + perFuente.BED.amount;
+
+  const countDiff = totalDebts - sumCount;
+  const amountDiff = Math.abs(totalAmountDebts - sumAmount);
+  const ok =
+    (totalDebts === 0 ? true : countDiff === 0) &&
+    (totalAmountDebts === 0 ? true : amountDiff <= 1); // tolleranza ±1 peso (problemi di arrotondamento)
+
+  const message = ok
+    ? (sumCount === 0 && totalDebts === 0
+      ? 'Nessun protesto/morosità rilevato'
+      : `Quadratura OK: BOLCOM(${perFuente.BOLCOM.count}) + ICOM(${perFuente.ICOM.count}) + BED(${perFuente.BED.count}) = ${sumCount} === ${totalDebts}`)
+    : `Quadratura WARN: somme fonte (count=${sumCount}, amount=$${Math.round(sumAmount).toLocaleString('es-CL')}) divergono da debtsSummaryDetail (totalDebts=${totalDebts}, totalAmount=$${Math.round(totalAmountDebts).toLocaleString('es-CL')}). Count diff=${countDiff}, Amount diff=${Math.round(amountDiff).toLocaleString('es-CL')}.`;
+
+  return {
+    rows: allRows,
+    totalDebts,
+    totalAmountDebts,
+    perFuente,
+    quadratura: { ok, countDiff, amountDiff, message },
+    fuenteCampiMap: vuoto.fuenteCampiMap,
+  };
+}

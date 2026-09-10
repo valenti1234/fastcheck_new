@@ -73,6 +73,27 @@
 2. Protestos y Morosidades
    - Regola: `server/src/services/riskCalculationService.ts:1709–1763` (`evaluateFinancioeroTributarioRules`)
    - Condizione: `filteredDetails.protestosMorosidadesPersonaJuridica + filteredDetails.protestosMorosidadesPersonaNatural > 0`
+   - **Fonte ufficiale (2026-09-10, 1a-5a iterazione)**: `Equifax Fusion.debtsSummaryDetail`
+     - `totalDebts = BOLCOM.count + ICOM.count + BED.count + (diff 8)` — valore ufficiale 164 usato in Card e Modale header
+     - `totalAmountDebts = somma ufficiale $3.036.602.310` — NON somma delle rows grezze (156 righe = $2.928.795.285, WARN cuadratura)
+   - **Gerarchia fonti COUNT / MONTO (Card ↔ Modale ALLINEATE al 100% dal 2026-09-10)**:
+     ```
+     COUNT: 1) rule.detailCount  (BACKEND NUMBER PURE)
+            2) consolidado.totalDebts (debtsSummaryDetail.totalDebts)
+            3) fallback d.length (156, righe visualizzate BOLCOM+ICOM+BED)
+
+     MONTO: 1) rule.montoTotal   (BACKEND NUMBER PURE)
+            2) consolidado.totalAmountDebts (debtsSummaryDetail.totalAmountDebts)
+            3) fallback reduce rows parseNumberLocaleCL (2.928 Mld)
+     ```
+   - **UI Modale Dettagli Header** (`RuleDetailsModal.tsx L377-L480` + prop `riskSummary`):
+     - 5a iterazione (definitiva): ricerca AUTONOMA regola Protestos dentro `riskSummary.allRules` (flat+includes) → funziona da TUTTE le 14 aperture del modale, non dipende da Object.assign caller.
+   - **Visualizzazione Cuadratura (2026-09-10 ultimo update)**:
+     - Backend: calcolo e validazione quadratura SEMPRE attivi (audit/log).
+     - UI: riquadro "Validación de cuadratura" **RIMOSSO dalla Card** ([FastCheckEX.tsx L4993-L5001](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4993-L5001)) e da `_extraInfo` ([L4193-L4200](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4193-L4200)) come da richiesta utente — informazione superflua per operatore.
+   - **Parser CLP cross-layer** (`_toNumber` TS/Python + `parseNumberLocaleCL` React): distingue >1 punto come separatore migliaia ("29.287.952.850" → 29 miliardi, non 29) per evitare bug 10x.
+   - **ICOM**: nessuna classificazione individuale nelle rows → etichetta UI `ICOM (sin clasificación individual)`; NON inventare "Protesto" o "Morosidad" per righe ICOM.
+   - **Formattazione CLP UI**: `Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 })` = `formatCLP()` helper.
 3. Inicio de Actividades
    - Regola: `server/src/services/riskCalculationService.ts:1765–1797` (`evaluateFinancioeroTributarioRules`)
    - Condizione: `sii.presentaActividades !== "SI"` oppure `sii.inicioActividades` mancante

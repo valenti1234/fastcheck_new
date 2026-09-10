@@ -3549,12 +3549,41 @@ const FastCheck: React.FC = () => {
     }
     return null;
   })();
-  const formatCLP = (v: number | string) => {
-    const n = typeof v === 'string' ? Number(v) : v;
+  const parseNumberLocaleCL = (v: any): number => {
+    if (v === null || v === undefined || v === '') return 0;
+    if (typeof v === 'number') return isFinite(v) ? v : 0;
+    let s = String(v).trim();
+    s = s.replace(/[\s$€£¥]/g, '');
+    const lastComma = s.lastIndexOf(',');
+    const lastDot = s.lastIndexOf('.');
+    if (lastComma >= 0 && lastComma > lastDot) {
+      // Formato CL/virgola decimale: "2.928.795,50" → 2928795.5
+      s = s.replace(/\./g, '').replace(',', '.');
+    } else if (lastDot >= 0) {
+      const dots = (s.match(/\./g) || []).length;
+      if (dots > 1) {
+        // Più punti = separatori migliaia CL: "29.287.952.850" → 29287952850
+        s = s.replace(/\./g, '');
+      } else {
+          const afterDot = s.length - lastDot - 1;
+          if (afterDot > 3) {
+            // Un solo punto ma >3 cifre dopo = separatore migliaia per grandi numeri
+            s = s.replace(/\./g, '');
+          }
+        }
+    }
+    s = s.replace(/[^0-9.\-]/g, '');
+    if (s === '' || s === '-' || s === '.') return 0;
+    const n = Number.parseFloat(s);
+    return isFinite(n) ? n : 0;
+  };
+
+  const formatCLP = (v: number | string | null | undefined) => {
+    const n = parseNumberLocaleCL(v);
     try {
       return new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(n || 0);
     } catch {
-      return `${n ?? 0}`;
+      return `$${Math.round(n || 0).toLocaleString('es-CL')}`;
     }
   };
 
@@ -3701,6 +3730,7 @@ const FastCheck: React.FC = () => {
           onExportXLSX={handleExportXLSXDetails}
           headerRenameMap={headerRenameMap}
           columnOrder={ruleDetailsColumnOrder}
+          riskSummary={riskSummary}
         />
 
 
@@ -4087,6 +4117,35 @@ const FastCheck: React.FC = () => {
                     }));
                   }
 
+                  // ✅ Passo consolidado/quadratura/_rule SEMPRE per Protestos y Morosidades
+                  // (match robusto includes invece di ===; cerca in TUTTE le rules per sicurezza)
+                  const isPMTitle = typeof title === 'string' &&
+                    title.trim().toLowerCase().includes('protestos') &&
+                    title.trim().toLowerCase().includes('morosidades');
+                  if (isPMTitle && Array.isArray(processedDetails)) {
+                    const allRulesFlat: any[] = [];
+                    const allR = riskSummary?.allRules || {};
+                    (Object.keys(allR) as Array<keyof typeof allR>).forEach((k) => {
+                      const arr = (allR as any)[k];
+                      if (Array.isArray(arr)) allRulesFlat.push(...arr);
+                    });
+                    const reglaPM = allRulesFlat.find((r: any) => {
+                      const l = String(r?.label || '').trim().toLowerCase();
+                      return l.includes('protestos') && l.includes('morosidades');
+                    });
+                    if (reglaPM) {
+                      try {
+                        Object.assign(processedDetails as any, {
+                          _consolidado: (reglaPM as any).consolidado ?? null,
+                          _quadratura: (reglaPM as any).quadratura ?? null,
+                          _rule: reglaPM,
+                          detailCount: (reglaPM as any).detailCount,
+                          montoTotal: (reglaPM as any).montoTotal,
+                        });
+                      } catch { /* ignore */ }
+                    }
+                  }
+
                   setRuleDetailsTitle(title);
                   setRuleDetailsContent(processedDetails);
                   setRuleDetailsColumnOrder([]);
@@ -4101,15 +4160,49 @@ const FastCheck: React.FC = () => {
                 data={(riskSummary.allRules?.financieroTributarioRules || []).map(rule => {
                   if (rule.label === 'Protestos y Morosidades') {
                     const existingItems = Array.isArray(rule.details) ? rule.details : [];
-                    const combined = [...existingItems];
-                    const hasAny = combined.length > 0;
+                    const consolidado: any = (rule as any).consolidado ?? null;
+                    const totalDebts: number = consolidado?.totalDebts ?? existingItems.length;
+                    const totalAmountDebts: number = consolidado?.totalAmountDebts ?? 0;
+                    const hasAny = totalDebts > 0 || existingItems.length > 0 || totalAmountDebts > 0;
+                    const combined = hasAny ? [...existingItems] : rule.details;
+                    const perFuente = consolidado?.perFuente ?? null;
+                    const quadratura: any = (rule as any).quadratura ?? null;
+                    const extraInfo = consolidado
+                      ? [
+                          {
+                            label: 'Total consolidado (Equifax)',
+                            value: `${totalDebts} doc${totalDebts !== 1 ? 's' : ''} / ${formatCLP(totalAmountDebts)}`,
+                            variant: 'danger' as const,
+                          },
+                          ...(perFuente ? ([
+                            {
+                              label: '  · BOLCOM',
+                              value: `${perFuente.BOLCOM?.count ?? 0} docs / ${formatCLP(perFuente.BOLCOM?.amount ?? 0)}`,
+                              variant: 'warning' as const,
+                            },
+                            {
+                              label: '  · ICOM (sin clasificación individual)',
+                              value: `${perFuente.ICOM?.count ?? 0} docs / ${formatCLP(perFuente.ICOM?.amount ?? 0)}`,
+                              variant: 'info' as const,
+                            },
+                            {
+                              label: '  · BED',
+                              value: `${perFuente.BED?.count ?? 0} docs / ${formatCLP(perFuente.BED?.amount ?? 0)}`,
+                              variant: 'warning' as const,
+                            },
+                          ] as any) : [])
+                        ]
+                      : null;
+                    (rule as any)._extraInfo = extraInfo;
                     return {
                       label: rule.label,
                       impacto: rule.impacto,
                       detected: hasAny ? true : rule.detected,
                       risk: hasAny ? 'alto' : rule.risk,
                       details: hasAny ? combined : rule.details,
-                      showDetails: hasAny
+                      showDetails: hasAny,
+                      detailCount: totalDebts > 0 ? totalDebts : undefined,
+                      montoTotal: totalAmountDebts > 0 ? totalAmountDebts : undefined,
                     };
                   }
 
@@ -4805,36 +4898,101 @@ const FastCheck: React.FC = () => {
                     return items;
                   }
 
-                  items.push({ label: `Total ${label}`, value: d.length, variant: 'info' });
+                  const __ruleAny = rule as any;
+                  const __consolidadoFirst = __ruleAny.consolidado ?? null;
+                  function __robustCountNum(val: any): number | null {
+                    if (typeof val === 'number' && !isNaN(val)) return Math.round(val);
+                    if (typeof val === 'string' && val.trim() !== '') {
+                      const n = Number(val);
+                      if (!isNaN(n)) return Math.round(n);
+                    }
+                    return null;
+                  }
+                  let __countRobusto: number | null = null;
+                  __countRobusto = __robustCountNum(__ruleAny.detailCount);
+                  if (!(__countRobusto !== null && __countRobusto > 0)) __countRobusto = __robustCountNum(__consolidadoFirst?.totalDebts);
+                  const __valCount = (__countRobusto !== null && __countRobusto > 0) ? __countRobusto : d.length;
+                  items.push({ label: `Total ${label}`, value: __valCount, variant: 'info' });
 
                   if (label === 'Multas Laborales') {
                     let montoTotal = 0;
                     d.forEach((row: any) => {
                       const monto = row?.monto || row?.Monto || 0;
-                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                      montoTotal += parseNumberLocaleCL(monto);
                     });
                     items.push({ label: 'Cantidad de multas', value: d.length, variant: 'warning' });
-                    items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                    items.push({ label: 'Monto total', value: formatCLP(montoTotal), variant: 'danger' });
                   }
 
-                  else if (label === 'Protestos y Morosidades') {
-                    let montoTotal = 0;
-                    d.forEach((row: any) => {
-                      const monto = row?.monto || row?.Monto || row?.unpaidAmount || row?.['Monto'] || 0;
-                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                  else if (
+                    typeof label === 'string' &&
+                    label.trim().toLowerCase().includes('protestos') &&
+                    label.trim().toLowerCase().includes('morosidades')
+                  ) {
+                    const consolidado: any = (d as any)?._consolidado ?? (rule as any).consolidado ?? null;
+                    const perFuente = consolidado?.perFuente ?? null;
+                    const quadratura: any = (d as any)?._quadratura ?? (rule as any).quadratura ?? null;
+                    const defaultCount: number = Array.isArray(d) ? d.length : 0;
+                    const defaultAmount: number = Array.isArray(d)
+                      ? d.reduce((sum, row) => {
+                          const monto = row?.monto || row?.Monto || row?.unpaidAmount || row?.['Monto'] || 0;
+                          return sum + parseNumberLocaleCL(monto);
+                        }, 0)
+                      : 0;
+                    const ruleDetailCount = __robustCountNum((rule as any).detailCount) ?? 0;
+                    const consolidadoDebts = __robustCountNum(consolidado?.totalDebts) ?? 0;
+                    const ruleMontoTotal = (typeof (rule as any).montoTotal === 'number' && !isNaN((rule as any).montoTotal))
+                      ? (rule as any).montoTotal
+                      : parseNumberLocaleCL((rule as any).montoTotal);
+                    const totalDebts: number =
+                      (ruleDetailCount > 0)
+                        ? ruleDetailCount
+                        : (consolidadoDebts > 0 ? consolidadoDebts : defaultCount);
+                    const consolidadoAmount = parseNumberLocaleCL(consolidado?.totalAmountDebts);
+                    const totalAmountDebts: number =
+                      (ruleMontoTotal > 0)
+                        ? ruleMontoTotal
+                        : (consolidadoAmount > 0 ? consolidadoAmount : defaultAmount);
+                    if (items.length > 0 && totalDebts > 0) {
+                      items[0].value = totalDebts;
+                    }
+                    items.push({
+                      label: 'Cantidad de protestos y morosidades',
+                      value: totalDebts,
+                      variant: 'warning'
                     });
-                    items.push({ label: 'Cantidad de protestos y morosidades', value: d.length, variant: 'warning' });
-                    items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                    items.push({
+                      label: 'Monto total',
+                      value: formatCLP(totalAmountDebts),
+                      variant: 'danger'
+                    });
+                    if (perFuente) {
+                      items.push({
+                        label: '  · BOLCOM',
+                        value: `${perFuente.BOLCOM?.count ?? 0} docs / ${formatCLP(perFuente.BOLCOM?.amount ?? 0)}`,
+                        variant: 'warning' as any,
+                      });
+                      items.push({
+                        label: '  · ICOM (sin clasificación individual)',
+                        value: `${perFuente.ICOM?.count ?? 0} docs / ${formatCLP(perFuente.ICOM?.amount ?? 0)}`,
+                        variant: 'info' as any,
+                      });
+                      items.push({
+                        label: '  · BED',
+                        value: `${perFuente.BED?.count ?? 0} docs / ${formatCLP(perFuente.BED?.amount ?? 0)}`,
+                        variant: 'warning' as any,
+                      });
+                    }
                   }
 
                   else if (label === 'Condenas por Prácticas Antisindicales') {
                     let montoTotal = 0;
                     d.forEach((row: any) => {
                       const monto = row?.montoMulta || row?.['Monto Multa'] || row?.monto || row?.Monto || 0;
-                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                      montoTotal += parseNumberLocaleCL(monto);
                     });
                     items.push({ label: 'Cantidad de condenas', value: d.length, variant: 'warning' });
-                    items.push({ label: 'Monto total multas', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                    items.push({ label: 'Monto total multas', value: formatCLP(montoTotal), variant: 'danger' });
                   }
 
                   else if (label === 'Procesos Sancionatorios Medioambientales') {
@@ -4908,10 +5066,10 @@ const FastCheck: React.FC = () => {
                     let montoTotal = 0;
                     d.forEach((row: any) => {
                       const monto = row?.monto || row?.Monto || 0;
-                      montoTotal += typeof monto === 'number' ? monto : Number.parseFloat(String(monto).replace(/[^0-9.-]/g, '')) || 0;
+                      montoTotal += typeof monto === 'number' ? monto : parseNumberLocaleCL(monto);
                     });
                     items.push({ label: 'Cantidad de casos', value: d.length, variant: 'warning' });
-                    items.push({ label: 'Monto total', value: '$' + Math.round(montoTotal).toLocaleString('es-CL'), variant: 'danger' });
+                    items.push({ label: 'Monto total', value: formatCLP(montoTotal), variant: 'danger' });
                   }
 
                   else if (label === 'Causas Penales') {
@@ -4928,6 +5086,19 @@ const FastCheck: React.FC = () => {
                     if (demandadoCount > 0) items.push({ label: 'Como demandado', value: demandadoCount, variant: 'warning' });
                     if (querelladoCount > 0) items.push({ label: 'Como querellado', value: querelladoCount, variant: 'warning' });
                     if (denunciadoCount > 0) items.push({ label: 'Como denunciado', value: denunciadoCount, variant: 'warning' });
+                  }
+
+                  else {
+                    const genericAmount: number = Array.isArray(d)
+                      ? d.reduce((sum, row) => sum + parseNumberLocaleCL(
+                          row?.monto || row?.Monto || row?.unpaidAmount || row?.amount || row?.importe || 0
+                        ), 0) : 0;
+                    if (items.length === 0 || !items.some((it: any) => String(it.label || '').toLowerCase().includes('cantidad'))) {
+                      items.push({ label: 'Cantidad', value: d.length, variant: 'info' });
+                    }
+                    if (genericAmount > 0 && !items.some((it: any) => String(it.label || '').toLowerCase().includes('monto'))) {
+                      items.push({ label: 'Monto total', value: formatCLP(genericAmount), variant: 'warning' });
+                    }
                   }
 
                   return items;

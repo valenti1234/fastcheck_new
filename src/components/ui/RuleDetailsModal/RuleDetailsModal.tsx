@@ -33,6 +33,7 @@ interface RuleDetailsModalProps {
   headerRenameMap: Record<string, string>;
   columnButtons?: ColumnButton[];
   columnOrder?: string[];
+  riskSummary?: any;
 }
 
 const RuleDetailsModal: React.FC<RuleDetailsModalProps> = ({
@@ -49,7 +50,8 @@ const RuleDetailsModal: React.FC<RuleDetailsModalProps> = ({
   onExportXLSX,
   headerRenameMap,
   columnButtons,
-  columnOrder
+  columnOrder,
+  riskSummary
 }) => {
   // Estado para el sub-modal
   const [showSubModal, setShowSubModal] = useState(false);
@@ -375,26 +377,118 @@ ${xmlRows.join('\n')}
     }
 
     // Protestos y Morosidades
-    if (tableTitle === 'Protestos y Morosidades') {
-      const montoTotal = d.reduce((sum, row) => {
-        const monto = row?.monto || row?.Monto || row?.unpaidAmount || 0;
-        const clean = String(monto).replace(/\$/g, '').replace(/\./g, '').replace(/,/g, '').trim();
-        const num = typeof monto === 'number' ? monto : Number.parseFloat(clean) || 0;
-        return sum + num;
-      }, 0);
+    if (
+      typeof tableTitle === 'string' &&
+      tableTitle.trim().toLowerCase().includes('protestos') &&
+      tableTitle.trim().toLowerCase().includes('morosidades')
+    ) {
+      const parseNumberLocaleCL = (v: any): number => {
+        if (v === null || v === undefined || v === '') return 0;
+        if (typeof v === 'number') return isFinite(v) ? v : 0;
+        let s = String(v).trim();
+        s = s.replace(/[\s$€£¥]/g, '');
+        const lastComma = s.lastIndexOf(',');
+        const lastDot = s.lastIndexOf('.');
+        if (lastComma >= 0 && lastComma > lastDot) {
+          s = s.replace(/\./g, '').replace(',', '.');
+        } else if (lastDot >= 0) {
+          const dots = (s.match(/\./g) || []).length;
+          if (dots > 1) s = s.replace(/\./g, '');
+          else {
+            const afterDot = s.length - lastDot - 1;
+            if (afterDot > 3) s = s.replace(/\./g, '');
+          }
+        }
+        s = s.replace(/[^0-9.\-]/g, '');
+        if (s === '' || s === '-' || s === '.') return 0;
+        const n = Number.parseFloat(s);
+        return isFinite(n) ? n : 0;
+      };
+      const __robustCountNum = (val: any): number | null => {
+        if (typeof val === 'number' && !isNaN(val)) return Math.round(val);
+        if (typeof val === 'string' && val.trim() !== '') {
+          const n = Number(val);
+          if (!isNaN(n)) return Math.round(n);
+        }
+        return null;
+      };
+      const formatCLP = (v: number | string | null | undefined) => {
+        const n = parseNumberLocaleCL(v);
+        try {
+          return new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(n || 0);
+        } catch {
+          return `$${Math.round(n || 0).toLocaleString('es-CL')}`;
+        }
+      };
+
+      const rawAny = data as any;
+      const __ruleInjected = rawAny?._rule ?? null;
+      const __consolidatoInjected = rawAny?._consolidado ?? __ruleInjected?.consolidado ?? null;
+
+      // 🔴 FALLBACK ASSOLUTO 5a iterazione: se _rule non è stato iniettato dal caller,
+      // cerca AUTONOMAMENTE in riskSummary.allRules.
+      // Funziona da QUALSIASI dei 14 punti che aprono il modale, NON dipende da Object.assign.
+      let __ruleAuto: any = null;
+      if (!__ruleInjected && riskSummary) {
+        const allR = riskSummary?.allRules || {};
+        const flat: any[] = [];
+        (Object.keys(allR) as Array<keyof typeof allR>).forEach((k) => {
+          const arr = (allR as any)[k];
+          if (Array.isArray(arr)) flat.push(...arr);
+        });
+        __ruleAuto = flat.find((r: any) => {
+          const l = String(r?.label || '').trim().toLowerCase();
+          return l.includes('protestos') && l.includes('morosidades');
+        }) || null;
+      }
+
+      const __rule: any = __ruleInjected ?? __ruleAuto;
+      const consolidado: any = __consolidatoInjected ?? __rule?.consolidado ?? null;
+
+      const defaultCount: number = Array.isArray(d) ? d.length : 0;
+      const defaultAmount: number = Array.isArray(d)
+        ? d.reduce((sum, row) => {
+            const monto = row?.monto || row?.Monto || row?.unpaidAmount || 0;
+            return sum + parseNumberLocaleCL(monto);
+          }, 0)
+        : 0;
+
+      const ruleDetailCount = __robustCountNum(__rule?.detailCount) ?? __robustCountNum(rawAny?.detailCount) ?? 0;
+      const consolidadoDebts = __robustCountNum(consolidado?.totalDebts) ?? 0;
+
+      const ruleMontoTotal = (typeof __rule?.montoTotal === 'number' && !isNaN(__rule.montoTotal))
+        ? __rule.montoTotal
+        : parseNumberLocaleCL(__rule?.montoTotal);
+      const consolidadoAmount = parseNumberLocaleCL(consolidado?.totalAmountDebts);
+
+      // PRIORITA' 1: __rule.detailCount (BACKEND NUMBER PURE)
+      // PRIORITA' 2: consolidado.totalDebts (ufficiale debtsSummaryDetail)
+      // PRIORITA' 3: fallback d.length
+      const totalDebts: number =
+        (ruleDetailCount > 0)
+          ? ruleDetailCount
+          : (consolidadoDebts > 0 ? consolidadoDebts : defaultCount);
+
+      // PRIORITA' 1: __rule.montoTotal
+      // PRIORITA' 2: consolidado.totalAmountDebts
+      // PRIORITA' 3: fallback rows reduce
+      const montoTotal: number =
+        (ruleMontoTotal > 0)
+          ? ruleMontoTotal
+          : (consolidadoAmount > 0 ? consolidadoAmount : defaultAmount);
 
       return (
         <div className="flex flex-wrap gap-2">
           <div className="flex items-center gap-2">
             <span className="text-xs font-medium uppercase text-gray-600 dark:text-gray-300">Cantidad de protestos y morosidades</span>
             <span className={`inline-flex items-center px-2 py-1 rounded ${cls('info')}`}>
-              {d.length}
+              {totalDebts as number}
             </span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-xs font-medium uppercase text-gray-600 dark:text-gray-300">Monto total</span>
             <span className={`inline-flex items-center px-2 py-1 rounded ${cls('info')}`}>
-              ${Math.round(montoTotal).toLocaleString('es-CL')}
+              {formatCLP(montoTotal as number)}
             </span>
           </div>
         </div>

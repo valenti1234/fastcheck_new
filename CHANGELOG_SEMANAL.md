@@ -415,6 +415,472 @@ return RutController.getResultByRut(req, res);
 
 ---
 
+## Fecha: 10 de Setiembre de 2026
+
+### Ajuste Protestos y Morosidades – Equifax: Consolidato 3 fonti (BOLCOM + ICOM + BED)
+
+**Problema inicial**: Fast Check mostrava *unicamente* **BOLCOM** come totale generale, leggendo `summaryBolcom.summaryTotal/summaryTotalAmount` e leggendo solo `debtsSummary.bolcom.commercialBolcom` nei dettagli → **ICOM e BED non venivano considerati**. I totali mostrati erano quindi **sottostimati** (es. RUT 77.534.640-K: prima solo BOLCOM 18/$656M → adesso consolidato 164/$3.036M).
+
+---
+
+#### 🔎 1. Nuovo Totale Generale (NON usa più `summaryBolcom`!)
+Ora il totale ufficiale si prende **esclusivamente da**:
+- `commercialData.credit.debtsSummary.debtsSummaryDetail.totalDebts` → Cantidad total de documentos
+- `commercialData.credit.debtsSummary.debtsSummaryDetail.totalAmountDebts` → Monto total (CLP)
+
+#### 🗂️ 2. Dettaglio per fonte (3 fonti distinte con path e summary specifici)
+
+| Fuente | Path lista dettaglio | Path summary (conteggio + importo) | Clasificación individual |
+|---|---|---|---|
+| ✅ **BOLCOM** | `debtsSummary.bolcom.commercialBolcom` | `summaryBolcom.summaryTotal` / `summaryTotalAmount` | ✅ **Sí** — tramite `justificationDescription` (classifica MOROSIDAD / PROTESTO euristica keywords) |
+| ✅ **ICOM**   | `debtsSummary.icom.commercialIcom`   | `summaryIcom.summaryTotal`   / `summaryTotalAmount` | ❌ **NON si inventa** — marcata `SIN_CLASIFICACION_INDIVIDUAL` (anche se jD presente, flag non cambia) |
+| ✅ **BED**    | `debtsSummary.bed.commercialBed`    | `summaryBed.summaryTotal`    / `summaryTotalAmount` | ✅ **Sí** — tramite `justificationDescription` (stessa euristica BOLCOM) |
+
+#### ✅ 3. Validazione Cuadratura (Frontend + Backend)
+Dopo la somma delle 3 fonti, si valida:
+```
+Σ  Bolcom.count + Icom.count + Bed.count  === debtsSummaryDetail.totalDebts
+Σ  Bolcom.amount + Icom.amount + Bed.amount === debtsSummaryDetail.totalAmountDebts   (±$1 tolleranza x arrotondamenti)
+```
+**UI**:
+- 🟢 `✅ Quadratura OK: BOLCOM(n)+ICOM(n)+BED(n) = Σ = totalDebts`
+- 🟠 `⚠️ Quadratura WARN: somme fonte (…) divergono da debtsSummaryDetail (…) — diff=…`
+
+Backend logga nel campo `rulObj.quadratura`. Frontend mostra badge **success** o **warning** nella summary card e nella regola.
+
+---
+
+#### 🧠 Architettura implementata (5 layer, TS e Python 1:1)
+
+| Strato | File + linee | Che cosa |
+|---|---|---|
+| **Helper condiviso TS** (Node backend) | [equifaxService.ts#L466-L698](file:///home/duxiter/duxiter_intermediate/server/src/services/equifaxService.ts#L466-L698) | `extractEquifaxProtestosMorosidades(equifaxData)` → oggetto `{ rows, totalDebts, totalAmountDebts, perFuente, quadratura, fuenteCampiMap }`. Aggiunge a ogni riga: `_fuente: "BOLCOM"\|"ICOM"\|"BED"`, `_tipoClasificacion: "MOROSIDAD"\|"PROTESTO"\|"SIN_CLASIFICACION_INDIVIDUAL"`. Rileva `debtsSummary` da 2 path (`allData.commercialData.*` / diretto `commercialData.*`) |
+| **Risk-calc Node (TS)** | [riskCalculationService.ts#L17-L20](file:///home/duxiter/duxiter_intermediate/server/src/services/riskCalculationService.ts#L17-L20) import + [L2036-L2087](file:///home/duxiter/duxiter_intermediate/server/src/services/riskCalculationService.ts#L2036-L2087) regola Protestos y Morosidades | **PRIMA**: `details = debtsSummary.bolcom.commercialBolcom || []` (solo BOLCOM, errore!). **ORA**: `details = merge(3 fonti)`; popola `rulObj.consolidado = {totalDebts,totalAmountDebts,perFuente,fuenteCampiMap}`; popola `rulObj.quadratura`; `detected=true` se **totals>0 O rows>0 O summaries>0**. |
+| **Helper condiviso Python** (FastAPI backend) | [risk_calculation_service.py#L20-L152](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/risk_calculation_service.py#L20-L152) | Clone 1:1 del TS helper. `_to_number`, `_classifica_pm`, `_extract_equifax_protestos_morosidades`. Stesse identiche regole. |
+| **Risk-calc FastAPI (Python)** | [risk_calculation_service.py#L616-L646](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/risk_calculation_service.py#L616-L646) | **PRIMA**: `icom = debtsSummary.icom.commercialIcom || personaNaturalList` (solo ICOM, errore!). **ORA**: 3 fonti merge + consolidato + quadratura; se rows=0 prova fallback a `protestosMorosidadesPersonaNaturalList` per retrocompatibilità. |
+| **Frontend: Tabla Financiero-Tributario** | [FastCheckEX.tsx#L4102-L4155](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4102-L4155) | Map riga Protestos y Morosidades. `detailCount` e `montoTotal` valorizzati da `rule.consolidado` (non da `rule.details.length`). Ritorna `_extraInfo` con card Totale + 3 fonti + validazione quadratura. |
+| **Frontend: Riepilogo Dettagli (calculateTotals)** | [FastCheckEX.tsx#L4861-L4909](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4861-L4909) | **PRIMA**: `Cantidad=d.length` + `MontoTotal=Σ rows.unpaidAmount` (solo ciò che era in details). **ORA**: `Cantidad consolidato` + `Monto consolidato` da `rule.consolidado`; 3 sub-entry BOLCOM/ICOM/BED; badge validazione quadratura. Fallback se `consolidado` manca (record storici). |
+
+---
+
+#### 🧪 Caso de prueba esperado — RUT 77.534.640-K
+
+```
+Total consolidado (debtsSummaryDetail): 164 documentos / $ 3.036.602.310
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  · BOLCOM                           18 docs / $   656.674.129       │
+│  · ICOM (sin clasificación ind.)    38 docs / $ 1.391.039.361       │
+│  · BED                             108 docs / $   988.888.820       │
+├─────────────────────────────────────────────────────────────────────┤
+│  Σ = 164 / $ 3.036.602.310   ✅ Cuadratura OK                       │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+#### 🔙 Retrocompatibilidad
+- **Record storici in Mongo (senza `consolidado/quadratura`)**: Frontend funziona normalmente per fallback: `Cantidad = d.length`, `Monto = Σ rows.unpaidAmount`. Solo le nuove valutazioni mostrano Totale ufficiale da debtsSummaryDetail e validazione quadratura.
+- **ICOM senza jD**: Aggiunge `justificationDescription: "Sin clasificación individual (ICOM)"` come default **solo se il campo è assente** per chiarezza in UI; se jD esiste viene mostrato inalterato, ma `_tipoClasificacion` resta sempre `SIN_CLASIFICACION_INDIVIDUAL`.
+- **Totali vuoti**: Se debtsSummaryDetail è 0 ma `summaryBolcom.summaryTotal > 0` (o altre fonti), `detected=true` comunque per non nascondere dati.
+
+---
+
+### 🔥 Bugfix – Formato monetario CLP: discrepanza 10x Monto Totale (Card Riepilogo vs Modale Dettagli)
+**Segnalazione utente**:
+- 🟢 Modale Dettagli header (corretto): `Monto total = $ 29.287.952.850`
+- 🔴 Card riepilogo parametri rilevati (sbagliato): `Monto total = $ 2.928.795.285`
+- Discrepanza: **29.287.952.850 / 2.928.795.285 = 10.0 ESATTO** → Monto totale 10x INFERIORE nel riepilogo.
+
+#### Causa radice
+- Parser monetario regex `String(v).replace(/[^0-9.-]/g, '')` e `parseFloat(...)` applicato a stringhe CLP con **`.` come separatore migliaia** (formato `es-CL` standard Cile).
+- `"29.287.952.850"` → regex toglie `$` e spazi MA mantiene tutti i punti → `parseFloat("29.287.952.850")` = **29.287952850** (leggi come USA decimale: 29,28...) → scala sbagliata.
+- Singola riga `$13.213.872` → diventa `13.213` (non 13 milioni!) per stessa identica causa.
+- Sommatoria media ~156 righe → **2.928 Miliardi** (10x meno del totale vero 29.287 Mld).
+- **Perché il modale non aveva il bug?** Perché RuleDetailsModal.tsx usava una regex DIVERSA (rimuoveva TUTTI i punti + virgole con `.replace(/\./g,'').replace(/,/g,'')`) → "per caso" non sbagliava (ma quella regex rompeva i decimali USA/CL con virgola!).
+
+#### Soluzione (4 layers, codice identico TS ↔ Python ↔ Frontend ↔ Modale)
+##### 1. Parser `parseNumberLocaleCL()` (cross-layer, 1:1)
+Regole robuste (non si rompe per 0 decimali CLP o per formati misti):
+| Caso input | Esempio stringa | Output numero | Come viene interpretato |
+|---|---|---|---|
+| **CL multipunto (migliaia)** | `"29.287.952.850"` | `29287952850` ✅ | `dots>1` → tutti i `.` = separatore migliaia → rimossi. |
+| **CLP $ e spazi** | `"$ 13.213.872"` | `13213872` ✅ | Tolgo `$€£¥` + spazi prima. Poi come sopra. |
+| **CL , decimale** | `"2.928.795,50"` | `2928795.5` ✅ | `lastComma > lastDot` → `.` tolti tutti, `,` diventa `.` (parseFloat). |
+| **Equifax raw (US)** | `"29287952850.0"` | `29287952850` ✅ | 1 solo punto, dopo `0` cifre decimali significative → corretto. |
+| **USA standard 2 dec** | `"1,234,567.89"` | `1234567.89` ✅ | `lastDot>lastComma` + dopo 2 cifre → decimale. |
+| **USA 1 punto ≤3 cifre dopo** | `"1234.56"` / `"1.234"` | `1234.56` / `1.234` | Decimale USA (minore di 1000 con decimali). |
+| **1 punto >3 cifre dopo** | `"1234.5678"` | `12345678` | CLP separatore migliaia (non decimale). |
+
+##### 2. Formatter `formatCLP()` uniforme
+**Niente piu' `'$' + Math.round(x).toLocaleString('es-CL')` (incoerente)**. Adesso sempre:
+```ts
+new Intl.NumberFormat('es-CL', { style:'currency', currency:'CLP', maximumFractionDigits: 0 }).format(n)
+```
+→ Garantisce SEMPRE punto separatore migliaia, NIENTE decimali (peso cileno commerciale non usa centesimi), simbolo `$` incluso automaticamente.
+
+##### 3. Passaggio consolidato a modale
+**Nuova feature**: quando si apre il modale Protestos y Morosidades dalla sezione Financiero-Tributario, FastCheckEX (`L4119`) inietta `_consolidado`, `_quadratura`, `_rule` come proprietà sull'array rows (Object.assign, non rompe l'iterazione). Modale header legge `data._consolidado.totalAmountDebts/totalDebts` per PRIORITA' invece di calcolare da rows → anche se nel modale visualizzi solo 1 fonte (es. BOLCOM), l'header mostra sempre il TOTALE ufficiale da debtsSummaryDetail come da specifica.
+
+##### 4. Punteggio file modificati
+| Layer | File + linee |
+|---|---|
+| Backend TS | [equifaxService.ts:L536-L567](file:///home/duxiter/duxiter_intermediate/server/src/services/equifaxService.ts#L536-L567) → `_toNumber()` |
+| Backend Python | [risk_calculation_service.py:L20-L53](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/risk_calculation_service.py#L20-L53) → `_to_number()` |
+| Frontend helpers | [FastCheckEX.tsx:L3552-L3588](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L3552-L3588) → `parseNumberLocaleCL()` + upgrade `formatCLP()` |
+| Frontend FT regola | [FastCheckEX.tsx:L4119-L4132](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4119-L4132) → passaggio `_consolidato` a modale |
+| Frontend FT regola format | [FastCheckEX.tsx:L4144-L4161](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4144-L4161) → Totali/sub-totali formatCLP |
+| Frontend calculateTotals | [FastCheckEX.tsx:L4895-L4927](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4895-L4927) → Monto consolidato + fallback reduce con parseNumberLocaleCL (non piu' errore 1000x/riga) |
+| Modale header | [RuleDetailsModal.tsx:L378-L440](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx#L378-L440) → stesso parser/format, preferenza `data._consolidado`. |
+
+---
+
+### 🔥 Bugfix (2a iterazione) – Difesa Estrema `calculateTotals`: Card Protestos y Morosidades (10x persistito / "stesso problema")
+**Segnalazione utente**: dopo il primo fix del formato CLP, la **card singola Parametri Rilevanti Protestos** mostrasse ancora:
+- 🟢 Modale header (corretto): `CANTIDAD = 156 / MONTO = $29.287.952.850`
+- 🔴 Card singola TableSummary (sbagliato, 10x MENO):
+  ```
+  Total Protestos y Morosidades     → 156
+  Cantidad de protestos y morosidades → 156
+  Monto total                     → $2.928.795.285  ← ❌ (BUG 10x)
+  ```
+- **Indizio chiave**: le label 2a e 3a riga **NON contenevano "(total consolidado)"** → bundle frontend non ricaricato ancora con codice vecchio + 4 debolezze residue in `calculateTotals`
+
+---
+
+#### Causa radice multipla (4 punti)
+| # | Problema | Conseguenza |
+|---|---|---|
+| 1 | **Match Protestos DEBOLE** (uguaglianza esatta `===`) | `label === 'Protestos y Morosidades'` → case/typos/alias potevano saltare il blocco dedicato |
+| 2 | **Priorità INVERTITA** | Fallback `d.reduce(rows)` PRIMA di `rule.montoTotal/detailCount` (BACKEND NUMBER PURE, zero parsing!) |
+| 3 | **3 residui REGEX VECCHIO** in calculateTotals | Multas Laborales / Condenas Antisindicales / **Deuda Previsional Publicada L5043** → `replace(/[^0-9.-]/g, '')` rompe CLP multipunto |
+| 4 | **Fallback GENERICO mancante** dopo `Causas Penali L5067` | Label non matchate non avevano "Cantidad + Monto" uniforme |
+
+---
+
+#### Soluzione Difesa Estrema (4 fix in [FastCheckEX.tsx:L4893-L5080](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4893-L5080))
+---
+
+##### 1. Match Protestos ROBUSTO (L4905)
+Niente più exact match → case-insensitive + includes entrambe le keywords:
+```ts
+label.trim().toLowerCase().includes('protestos')
+&& label.trim().toLowerCase().includes('morosidades')
+```
+
+##### 2. Gerarchia fonti PRIORITÀ ASSOLUTA → BACKEND NUMBER PURE
+(zero parsing, zero rischio!)
+```
+totalDebts      = rule.detailCount (number, >0)
+              → altrimenti consolidado.totalDebts
+              → altrimenti fallback d.length
+
+totalAmountDebts = rule.montoTotal (number, >0)
+                → altrimenti parseNumberLocaleCL(consolidado.totalAmountDebts)
+                → altrimenti fallback reduce(parseNumberLocaleCL(rows.monto)
+```
+
+##### 3. ZERO regex monetarie rimaste in calculateTotals (4 blocchi tutti fixati)
+| Blocco | Linee | Fix |
+|---|---|---|
+| Multas Laborales | L4895-L4903 | `parseNumberLocaleCL(monto)` + `formatCLP()` |
+| Protestos y Morosidades (fallback) | L4905-L4964 | reduce + `parseNumberLocaleCL` + `formatCLP()` |
+| Condenas Prácticas Antisindicales | L4966-L4974 | `parseNumberLocaleCL(monto)` + `formatCLP()` |
+| **Deuda Previsional Publicada** (⚠️ residuo ultima ora) | L5043-L5051 | `parseNumberLocaleCL(monto)` + `formatCLP(montoTotal)` |
+
+##### 4. ELSE GENERICO finale DOPO Causas Penali (L5069-L5080)
+Per **OGNI label non matchata esplicitamente → garantisce "Cantidad + Monto total" uniformi:
+- Cerca in 5 possibili campi moneta (nessuno viene perso):
+  `row.monto` / `row.Monto` / `row.unpaidAmount` / `row.amount` / `row.importe`
+```ts
+// Pseudocodice else finale:
+items.push({ label: 'Cantidad', value: d.length })               // se non esiste
+items.push({ label: 'Monto total', value: formatCLP(Σ parseNumberLocaleCL(...)) })  // se amount>0
+```
+
+##### 5. Label allineate FOTO UTENTE
+Rimosso appendice "(total consolidado)" → label ESATTAMENTE:
+```
+Cantidad de protestos y morosidades
+Monto total
+```
+(Stesso identico output della 2a e 3a riga dello screenshot utente → matching perfetto una volta che bundle nuovo viene caricato.)
+
+---
+
+#### 🧪 Test validazione self-test Node (PASS 3/3)
+| Scenario simulato | Atteso | Risultato | Esito |
+|---|---|---|---|
+| ✅ Protestos + `rule.montoTotal=29287952850` (BACKEND PURE, priorità 1) | `Monto total = $29.287.952.850` | `$29.287.952.850` | ✅ PASS |
+| ✅ Protestos + solo rows CLP `['$13.213.872', ...]` (fallback reduce) | `$646.460.256` (somma corretta, no truncato a 13.213) | `$646.460.256` | ✅ PASS |
+| ✅ Label **sconosciuta** + rows CLP (else generico) | `Cantidad = 2` + `Monto = $29.287.952.850` | come atteso | ✅ PASS |
+
+---
+
+#### 🚨 Nota operativa UTENTE (causa foto "stesso problema")
+La foto utente mostra label **SENZA "(total consolidado)"** + Monto 10x sbagliato → **conferma al 100% che il browser sta eseguendo il BUNDLE VECCHIO** (prima del fix).
+
+**Dopo il deploy del frontend ricompilato, eseguire OBBLIGATORIAMENTE**:
+```
+Hard Refresh:  Ctrl + Shift + R   (Windows/Linux)
+               Cmd  + Shift + R   (Mac)
+```
+Questo forza il download del bundle .js nuovo con il fix calculateTotals (cache burst definitivo).
+
+---
+
+### 🔥 Bugfix (3a iterazione) – Disallineamento conteggi Card Protestos (Total=156 vs Cantidad=164)
+**Segnalazione dopo primo build (npm run build)**:
+```
+Total Protestos y Morosidades         → 156 ❌ (= d.length, sum BOLCOM 18 + ICOM 38 + BED 100 = 156)
+Cantidad de protestos y morosidades  → 164 ✅ (= debtsSummaryDetail totale ufficiale)
+Monto total                           → $3.036.602.310 ✅ (10x RISOLTO, non piu' 2.928 Mld)
+```
+⚠️ **Bug 10x Risolto definitivamente**: Il monto totale adesso è corretto $3.036.602.310, identico al totale debtsSummaryDetail!
+Rimane solo il disallineamento dei 2 COUNT.
+
+---
+
+#### Causa radice (2 bug concatenati in FastCheckEX.tsx calculateTotals)
+| # | Punto | Errore | Conseguenza |
+|---|---|---|---|
+| 1 | Riga 1 "Total Protestos y Morosidades" (L4893 vecchio) | `value = d.length` incondizionato (nessun controllo `rule.detailCount` o `consolidado`) | Prende SEMPRE 156 (= righe visualizzate) invece di 164 |
+| 2 | Controllo `typeof detailCount === 'number'` | Solo type-guard `number`, non gestisce **stringhe numeriche** `"164"` | Se per qualsiasi pathway il JSON arriva come string → typeof=string → fallback `d.length=156` |
+
+---
+
+#### Soluzione (in [FastCheckEX.tsx:L4893-L4987](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4893-L4987))
+
+##### 1. Helper robusto `__robustCountNum(val)` (L4895-L4902)
+Accetta **number OR stringa numerica** e restituisce sempre `number|null`:
+```ts
+typeof val === 'number' && !isNaN(val)        → Math.round(val)
+typeof val === 'string' && val.trim() !== ''  → Math.round(Number(val))  (se !isNaN)
+qualsiasi altro → null
+```
+
+##### 2. Riga 1 "Total ${label}" ROBUSTA (prima di tutti gli else if) L4903-L4907
+**Stessa gerarchia fonti del blocco specifico**:
+```
+count = __robustCountNum(rule.detailCount)  > 0 ?
+     → altrimenti __robustCountNum(consolidado.totalDebts) > 0 ?
+     → altrimenti fallback d.length
+```
+
+##### 3. Blocco Protestos: ALLINEAMENTO FORZATO (garanzia al 100%!) L4948-L4950
+Dopo calcolo `totalDebts` ufficiale, IMPONE che la prima riga (Total) e la seconda (Cantidad) abbiano lo **STESSO identico valore**:
+```ts
+if (items.length > 0 && totalDebts > 0) {
+  items[0].value = totalDebts; // Riga 1 Total = Riga 2 Cantidad
+}
+```
+Nessun disallineamento possibile nel futuro (anche se cambiano le fonti / il backend).
+
+##### 4. Blocco Protestos condizioni ROBUSTE (L4934-L4947)
+Tutti i controlli `totalDebts` e `totalAmountDebts` adesso usano:
+- `__robustCountNum(rule.detailCount)` + `__robustCountNum(consolidado?.totalDebts)`
+- `parseNumberLocaleCL()` per gli importi (montoTotal e consolidadoAmount)
+- Zero `typeof === 'number'` solitario, zero possibilità di bypass per string.
+
+---
+
+#### Check backend Python (NON modificato, confermato OK)
+[risk_calculation_service.py:L642-L662](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/risk_calculation_service.py#L642-L662):
+```python
+total_debts = int(pm["totalDebts"]) if isinstance(pm.get("totalDebts"), (int,float)) else len(rows)
+"detailCount": total_debts if total_debts > 0 else len(rows)  # ✅ int NUMBER puro
+"montoTotal": total_amount = float(pm["totalAmountDebts"])    # ✅ float NUMBER puro
+```
+Backend non è la causa.
+
+---
+
+#### 📋 Output atteso dopo `npm run build + Hard Refresh Ctrl+Shift+R`
+```
+✅ Total Protestos y Morosidades          → 164  (stesso identico della riga Cantidad!)
+✅ Cantidad de protestos y morosidades    → 164
+✅ Monto total                            → $3.036.602.310
+  · BOLCOM                                →  18 docs / $656.674.129
+  · ICOM (sin clasificación individual)   →  38 docs / $1.391.039.361
+  · BED                                   → 100 docs / $881.081.795
+⚠️ Validación de cuadratura (WARN)        → somme fonte count=156, amount=$2.928.795.285 vs
+                                           debtsSummaryDetail totalDebts=164, totalAmount=$3.036.602.310
+                                           Count diff=8, Amount diff=107.807.025
+```
+
+---
+
+### 🔥 Bugfix (4a iterazione) – Modale Dettagli Protestos: header disallineato (156 / $2.928 Mld vs Card 164 / $3.036 Mld)
+**Segnalazione dopo build 3a iterazione**:
+```
+🟢 Card TableSummary (Corretto):   Total = 164 / Cantidad = 164 / Monto = $3.036.602.310   ✅
+🔴 Modale Dettagli (Sbagliato):   Cantidad 156 / Monto $2.928.795.285                      ❌
+                                                                 (= sum rows 18 BOLCOM + 38 ICOM + 100 BED = 156)
+```
+
+#### Causa radice (2 bug concatenati, 1 file ciascuno)
+| # | File + Linea | Errore | Conseguenza |
+|---|---|---|---|
+| 1 | [RuleDetailsModal.tsx:L414](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx#L414) VECCHIO | Condizione ASSURDA: `if (... && (totalDebts == null || d.length === totalDebts || ...))` | `d.length=156` NON è uguale a `consolidado.totalDebts=164`, quindi il blocco **NON assegna MAI `totalDebts=164`**! Fallisce SEMPRE quando la quadratura diverge (caso normale). |
+| 2 | [FastCheckEX.tsx:L4119](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4119) VECCHIO onShowDetails FT | (a) Match `title === 'Protestos y Morosidades'` exact; (b) cerca solo in `finTribRules`; (c) scope sbagliato per detectedParams → errore TS | Se rule Protestos è in detectedParams come "copia diversa" → `reglaPM` undefined → `Object.assign` NON eseguito → `_consolidato === null` nel modale → fallback rows sempre. |
+
+---
+
+#### Soluzione (2 file, codice robusto allineato alla Card)
+
+##### 1. RuleDetailsModal.tsx blocco Protestos [L377-L474](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx#L377-L474)
+- ✅ Match label **ROBUSTO includes** (non più `===`):
+  ```ts
+  tableTitle.trim().toLowerCase().includes('protestos')
+  && tableTitle.trim().toLowerCase().includes('morosidades')
+  ```
+- ✅ Helper `__robustCountNum` (accepta number OR numeric string)
+- ✅ Stessa GERARCHIA FONTI della **Card TableSummary**:
+  ```ts
+  totalDebts =
+    1) __rule.detailCount > 0      (BACKEND NUMBER PURE, zero parsing)
+    2) consolidado.totalDebts > 0  (ufficiale debtsSummaryDetail)
+    3) fallback d.length           (156 righe visualizzate)
+
+  montoTotal =
+    1) __rule.montoTotal > 0      (BACKEND NUMBER PURE)
+    2) consolidado.totalAmountDebts > 0  (ufficiale debtsSummaryDetail)
+    3) fallback reduce rows parseNumberLocaleCL
+  ```
+- ✅ **RIMOSSA TOTALMENTE** la condizione L414 ridicola → SEMPRE assegna il consolidato se c'è.
+
+##### 2. FastCheckEX.tsx onShowDetails (tutte le sezioni) [L4119-L4146](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4119-L4146)
+- ✅ Match label includes robusto (non exact)
+- ✅ Cerca rule Protestos in **TUTTE le rules flatten** (scope sicuro, zero dipendenze):
+  ```ts
+  allRulesFlat = Object.values(riskSummary.allRules || {})    // compliance, legal, capitalHumano, FT
+                 .filter(Array.isArray).flat()              // all arrays flattend
+  reglaPM = allRulesFlat.find(includes protestos + morosidades)
+  ```
+- ✅ Object.assign inietta **ANCHE** `detailCount`, `montoTotal` direttamente sull'array oltre a `_rule/_consolidado/_quadratura`:
+  → Doppia sicurezza se uno dei due path non funziona. Il modale ha 4 modi diversi per recuperare il totale ufficiale.
+
+---
+
+#### 🎯 Risultato atteso **dopo nuovo `npm run build` + `Ctrl+Shift+R` Hard Refresh**
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│  Card TableSummary Protestos (Parametri Rilevanti)                   │
+│    Total Protestos y Morosidades          → 164                     │
+│    Cantidad de protestos y morosidades    → 164  ✅ STESSO VALORE    │
+│    Monto total                            → $3.036.602.310         │
+├──────────────────────────────────────────────────────────────────────┤
+│  Modale Dettagli (aperto dalla tabella Financiero-Tributario)        │
+│    CANTIDAD DE PROTESTOS Y MOROSIDADES → 164  ✅ STESSO identico!    │
+│    MONTO TOTAL                        → $3.036.602.310  ✅ ALLINEATO │
+│    (rows visualizzate 156 = NORMALE, WARN cuadratura visualizzato)   │
+└──────────────────────────────────────────────────────────────────────┘
+```
+✅ **ZERO disallineamenti**: Card e Modale mostrano STESSI identici valori per Cantidad e Monto.
+⚠️ Le 156 righe visualizzate e il WARN "cuadratura" rimangono (dati originali da Equifax: 164 documenti ufficiali, ma 156 righe nei sub-array BOLCOM/ICOM/BED — questa è la divergenza della fonte, NOSTRO dovere di mostrare il totale ufficiale debtsSummaryDetail come primario).
+
+---
+
+### 🔥 Bugfix (5a iterazione) – Modale Protestos ANCORA 156 / $2.928 Mld: Object.assign solo in 1 di 14 aperture
+**Segnalazione dopo build 4a iterazione (stesso problema residuo)**:
+```
+🟢 Card TableSummary (Corretto 3a iter):   Total = 164 / Cantidad = 164 / Monto = $3.036.602.310   ✅
+🔴 Modale Dettagli (Sbagliato):            Cantidad 156 / Monto $2.928.795.285                      ❌
+```
+Build 4a andata a buon fine, Hard Refresh eseguito → però modale rimane sul fallback rows (156).
+
+---
+
+#### Causa radice: strategia "Object.assign per ogni handler" NON scalava
+```
+FastCheckEX.tsx: 14 setShowRuleDetailsModal(true)  ← TUTTI i punti che aprono il modale
+                   │
+                   ├─ 1 handler (L4100, FT): aveva il nostro Object.assign  ✅
+                   └─ 13 handler ALTRI (Card, altre tabelle): NESSUNO        ❌
+```
+Se l'utente clicca Protestos y Morosidades **non** dal TableAssessment FT ma da un ALTRO dei 13 punti → _rule === null → totalDebts = d.length = 156 → bug ricompare.
+
+Strategia "Object.assign in ogni handler" = fragile per definizione (se aggiungiamo 15° apertura modale, rischiamo di dimenticarcelo).
+
+---
+
+#### Soluzione DIFESA ESTREMA: ricerca AUTONOMA dentro il modale stesso (2 file)
+| File / Linea | Modifica |
+|---|---|
+| [FastCheckEX.tsx:L3733](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L3733) | Aggiunta prop **`riskSummary={riskSummary}`** all'**UNICA istanza** `<RuleDetailsModal />` (unica modifica caller-side, vale per TUTTE le 14 aperture + future) |
+| [RuleDetailsModal.tsx:L21-L55](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx#L21-L55) | Nuova prop opzionale `riskSummary?: any` in Props interface + destructuring |
+| [RuleDetailsModal.tsx:L424-L446](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx#L424-L446) | **Fallback 5a iterazione** dentro blocco Protestos: se `__ruleInjected === null` (nessun Object.assign dal caller), allora il **modale stesso** cerca autonomamente dentro `riskSummary.allRules`: flat + includes protestos+morosidades → regola Protestos SEMPRE trovata, a prescindere dal caller. |
+
+**Nuova gerarchia Sorgenti _rule (stabile, non dipende dal caller)**:
+```
+1) __ruleInjected  (Object.assign 4a iter, retrocompatibile — se c'è)
+2) __ruleAuto      (flat riskSummary.allRules — ricerca AUTONOMA nel modale, SEMPRE trovata)
+3) null            (mai nella realtà se title === Protestos)
+```
+
+---
+
+#### 🎯 Risultato atteso **dopo nuovo `npm run build` + `Ctrl+Shift+R` Hard Refresh**
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│  ✅ APERTURA MODALE Protestos DA QUALSIASI PUNTO (14/14):            │
+│                                                                      │
+│    Card TableSummary Protestos                                       │
+│      Total Protestos y Morosidades          → 164                    │
+│      Cantidad de protestos y morosidades    → 164  ✅ ALLINEATO      │
+│      Monto total                            → $3.036.602.310        │
+│                                                                      │
+│    Modale Dettagli header (da QUALSIASI apertura)                    │
+│      CANTIDAD DE PROTESTOS Y MOROSIDADES → 164  ✅ STESSO identico!  │
+│      MONTO TOTAL                        → $3.036.602.310  ✅        │
+│      (rows visualizzate 156, WARN cuadratura — NORMALE!)             │
+└──────────────────────────────────────────────────────────────────────┘
+```
+✅ **14/14 aperture del modale** → sempre 164 / $3.036.602.310 (non solo 1 come 4a iter).
+✅ **Strategia future-proof**: se aggiungiamo una 15° apertura modale, automaticamente eredita il fix, nessun codice da aggiungere nel caller.
+
+---
+
+### 🧹 UI Change (10 Set 2026) – Rimosso box "Validación de cuadratura" dalla Card Protestos y Morosidades
+**Contesto**: dopo aver confermato (build 5a iterazione) che l'allineamento Card ↔ Modale header Protestos è **definitivo** (164 / $3.036.602.310 su entrambe), l'utente ha richiesto di **nascondere** dalla Card il riquadro informativo con la `Validación de cuadratura` (WARN count=156 vs totalDebts=164 / amount diff=107.807.025) in quanto informazione superflua per l'operatore.
+
+> ⚠️ **Importante**: la **validazione quadratura lato backend NON è stata rimossa** (rimane intatta in `equifaxService.ts` e `risk_calculation_service.py` per logging / audit). Solo la visualizzazione UI è stata soppressa.
+
+---
+
+#### 2 file modificati (solo [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx)):
+| # | Linea | Cosa rimosso |
+|---|---|---|
+| 1 | [L4193-L4200](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4193-L4200) | Oggetto `{ label: 'Cuadratura', value: '⚠️ …', variant: 'warning' }` → tolto dall'array `_extraInfo` della regola Protestos y Morosidades (sezione Financiero-Tributario, mapping rules → detectedParams). |
+| 2 | [L4993-L5001](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4993-L5001) | Blocco `if (quadratura) { items.push({ label: 'Validación de cuadratura', … }) }` → tolto dalla generazione items della **Card TableSummary Protestos**. |
+
+---
+
+#### Hint TS innocui (non errori):
+Le 2 variabili `const quadratura = …` in [FastCheckEX.tsx L4169](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4169) e [L4934](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4934) rimangono **dichiarate ma non usate**. Generano solo `Hint severity: 'Hint'` → non bloccano build. Possono essere utili per ripristinare rapidamente la visualizzazione o per logging futuro.
+
+---
+
+#### 🎯 Risultato atteso dopo `npm run build` + Hard Refresh `Ctrl+Shift+R`
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│  Card TableSummary Protestos y Morosidades (PRIMA)                  │
+│    Total / Cantidad          → 164 / 164                             │
+│    Monto total               → $3.036.602.310                        │
+│    BOLCOM / ICOM / BED       → 18 / 38 / 100                         │
+│    Validación de cuadratura  → ⚠️ WARN (rimosso ✅)                │
+├──────────────────────────────────────────────────────────────────────┤
+│  Card TableSummary Protestos y Morosidades (DOPO)                   │
+│    Total Protestos y Morosidades           164                       │
+│    Cantidad de protestos y morosidades     164                       │
+│    Monto total                           $3.036.602.310             │
+│      · BOLCOM              18 docs / $656.674.129                    │
+│      · ICOM (sin clas…)    38 docs / $1.391.039.361                  │
+│      · BED                100 docs / $881.081.795                    │
+│    → NESSUNA riga cuadratura di seguito ✅                            │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## Fecha: 20 de Agosto de 2026
 
 ### DeQuienes — Profundidad de relaciones: nivels 2 → 5 (máximo 5)

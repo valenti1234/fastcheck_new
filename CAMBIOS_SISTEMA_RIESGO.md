@@ -117,6 +117,77 @@ Los siguientes parámetros tienen la clasificación `isCritical: true`:
 
 ## Corrección de Bugs
 
+### [2026-09-10] Bug Protestos y Morosidades (Equifax Fusion) — Bug Monto 10x / Disallineamento Card↔Modale / Rimozione Box Cuadratura (1a → 5a iterazione)
+
+**Severità**: Alta — Indicatore finanziario Equifax chiave con monto sbagliato di **10x** e valori diversi fra Card e Modale Dettagli.
+
+**Cronologia Bug**:
+| Iter | Data | Problema Risolto |
+|---|---|---|
+| 1a | 10 Set | Monto Card 10x **in meno** ($2.928 Mld invece di $29.287 Mld) → Parser CLP cross-layer `_toNumber` / `parseNumberLocaleCL` che distingue `.` come separatore migliaia (>1 punto) vs decimale. |
+| 2a | 10 Set | Card rimaneva 2.928 Mld per match label debole + regex vecchie + mancanza else generico → Difesa Estrema in `calculateTotals` |
+| 3a | 10 Set | Disallineamento Card `Total=156` vs `Cantidad=164` → Helper `__robustCountNum` (number + numeric string) + riga Total robusta + forza `items[0].value = totalDebts`. **Card corretta 164 / $3.036.602.310.** |
+| 4a | 10 Set | Modale header Protestos ancora 156 / 2.928 Mld → (i) condizione ridicola L414 `d.length === totalDebts` rimossa; (ii) match includes robusto; (iii) Object.assign `_rule/_consolidado/detailCount/montoTotal` da caller FT. *Fallito*: solo 1 di 14 handler aggiornato. |
+| 5a | 10 Set | **Soluzione DEFINITIVA** — prop `riskSummary={riskSummary}` a **RuleDetailsModal** + ricerca AUTONOMA dentro il modale (flat `riskSummary.allRules` → find includes protestos+morosidades). **14/14 aperture del modale** → sempre 164 / $3.036.602.310 ✅. Future-proof: nuove aperture automaticamente ereditate. |
+| UI | 10 Set | **Rimozione box "Validación de cuadratura"** (WARN 156 vs 164) dalla Card e da `_extraInfo` (richiesta utente) — informazione superflua. Validazione backend intatta per audit/log. |
+
+---
+
+#### Punti Chiave di Ingegneria (Standard Permanenti):
+1.  **Gerarchia fonti Protestos (card ↔ modale, 0 disallineamenti)**:
+    ```
+    COUNT:  1) rule.detailCount    (BACKEND NUMBER PURE, zero parsing)
+            2) consolidado.totalDebts   (debtsSummaryDetail Equifax)
+            3) fallback d.length (156 righe visualizzate)
+
+    MONTO:  1) rule.montoTotal     (BACKEND NUMBER PURE)
+            2) consolidado.totalAmountDebts
+            3) reduce rows parseNumberLocaleCL (fallback)
+    ```
+2.  **Parser CLP multipunto (cross-layer 1:1)**:
+    - TS → `server/src/services/equifaxService.ts:L536-L567` `_toNumber()`
+    - Python → `fastcheck_api/app/services/risk_calculation_service.py:L20-L53` `_to_number()`
+    - React → `RuleDetailsModal.tsx:L383-L404` / FastCheckEX → `parseNumberLocaleCL()`
+    - 7 casi test PASS: `"29.287.952.850"` → **29287952850** (non 29!)
+3.  **Cuadratura Validazione (backend-only adesso)**:
+    - Confronto `Σ BOLCOM/ICOM/BED (156 righe) vs debtsSummaryDetail (164)`
+    - `diff != 0` → WARN (divergenza dati Equifax, non bug nostro)
+    - **NON mostrare più la cuadratura in UI** (`FastCheckEX.tsx L4993-L5001` e `L4193-L4200` rimossi) ma **NON rimuovere il calcolo backend** — serve audit.
+4.  **ICOM**: Righe ICOM **non forniscono classificazione individuale**. UI mostra `ICOM (sin clasificación individual)` — MAI inventare status "Protesto" / "Morosidad" per righe ICOM.
+5.  **Formattazione CLP UI**: `formatCLP(n) = Intl.NumberFormat('es-CL', {style:'currency', currency:'CLP', maximumFractionDigits:0})`
+
+---
+
+#### File Principali Modificati (10 Set 2026):
+| File | Linee | Cosa |
+|---|---|---|
+| [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx) | L3707-L3734 | `<RuleDetailsModal>` + prop `riskSummary={riskSummary}` |
+| [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx) | L4119-L4146 | onShowDetails FT flat allRules + Object.assign 6 campi (4a iter, retrocompatibile) |
+| [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx) | L4893-L4986 | calculateTotals Card Protestos: gerarchia robusta count + monto + perFuente cards |
+| [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx) | L4193-L4200 | ❌ Rimossa entry Cuadratura da `_extraInfo` FT |
+| [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx) | L4993-L5001 | ❌ Rimossa entry "Validación de cuadratura" da items Card |
+| [RuleDetailsModal.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx) | L21-L55 | Props interface + destructuring `riskSummary?: any` |
+| [RuleDetailsModal.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/RuleDetailsModal/RuleDetailsModal.tsx) | L377-L480 | Blocco Protestos renderStatistics: ricerca AUTONOMA regola se _rule non iniettato (5a iter) |
+| [equifaxService.ts](file:///home/duxiter/duxiter_intermediate/server/src/services/equifaxService.ts) | L536-L567 | Parser CLP `_toNumber` cross-layer (1a iter) |
+| [risk_calculation_service.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/risk_calculation_service.py) | L20-L53 | Parser CLP `_to_number` Python 1:1 |
+
+---
+
+#### Stato Finale Accettato (10 Set 2026):
+```
+Card TableSummary Protestos:
+  Total = 164   /   Cantidad = 164   /   Monto = $3.036.602.310
+  BOLCOM 18 / ICOM 38 / BED 100
+  (NESSUN box Validación de cuadratura)
+
+Modale Dettagli Protestos (da QUALSIASI apertura 14/14):
+  CANTIDAD = 164   /   MONTO TOTAL = $3.036.602.310
+  (stessi identici della Card, nessun disallineamento)
+  Righe visualizzate = 156 (NORMALE)
+```
+
+---
+
 ### Bug de Búsqueda de RUT en "Condenas por Prácticas Antisindicales"
 
 **Problema identificado:**
