@@ -1206,7 +1206,7 @@ export class RiskCalculationService {
     });
     if ((rulObj as any).details.length > 0) {
       rulObj.detected = true;
-      console.warn(1093,"penales",(rulObj as any).details);
+  //    console.warn(1093,"penales",(rulObj as any).details);
       (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, (rulObj as any).details);
     }
   //  console.warn(1056,"casos",(rulObj as any).details);
@@ -1581,7 +1581,7 @@ export class RiskCalculationService {
       score: 0,
       dataSourceDesc: "Dettagli derivati da summaryData.data.creditScoring.judicialBankruptcy"
     };
-    console.warn(1204, logEntry.filteredDetails.sheriffV2Data.resumen.data.judicial.casosQuiebra);
+    console.warn(1204,"casosQuiebra",logEntry.filteredDetails.sheriffV2Data.resumen.data.judicial.casosQuiebra);
     if (logEntry.filteredDetails.sheriffV2Data.resumen.data.judicial.casosQuiebra > 0) {
       (rulObj as any).details = ["Existe quiebra judicial"];
     } else {
@@ -1708,7 +1708,7 @@ export class RiskCalculationService {
       score: 0,
       dataSourceDesc: "Dettagli da logEntry.laboralCasesData filtrando soggetti DDO/DDOR e normalizzando date"
     };
-    console.warn(1600,v2.judicial.laboral.data.casos);
+ //   console.warn(1600,v2.judicial.laboral.data.casos);
     const laboralCases = v2.judicial.laboral.data.casos || [];
     rulObj.score = laboralCases.length;
     (rulObj as any).details = RiskDetailsFormatter.formatDetails(rulObj.label, laboralCases || []);

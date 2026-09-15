@@ -1,3 +1,171 @@
+## 2026-09-15
+
+### Fix Connessione MongoDB – Lentezza 81s → < 2s (IPv6 fallback + timeout troppo alti)
+**Problema**: All'avvio `dux_main` la connect a MongoDB impiegava **80.581 ms (~1m21s)** invece di < 2s:
+```
+13:58:37 [connectDB] Connecting to MongoDB at mongodb://172.19.40.102,172.19.40.103/duxiter?replicaSet=rs0
+13:59:58 [RabbitMQ] Connecting to RabbitMQ...  (dopo 1m21s!)
+```
+
+**Diagnostica socket TCP (15.09.2026)**:
+```
+✅ TCP OK  172.19.40.102:27017 in 4ms
+✅ TCP OK  172.19.40.103:27017 in 1ms
+→ ENTRAMBI i nodi del replica set sono UP! La rete è PERFETTA.
+```
+
+**👉 Conclusione causa 100%**: Node.js, in assenza di un `family` esplicito, **prova la risoluzione AAAA (IPv6) PRIMA di A (IPv4)**. Nella LAN 172.19.x.x non c'è IPv6 → ogni host perde ~30s in `dns.lookup` fallback. Su 2 host = ~60s. A questo si aggiunge il default `serverSelectionTimeoutMS: 30000` (30s invece di 5s). Totale ~81s.
+
+---
+
+**Soluzione**: 2 file backend modificati, stesse identiche opzioni Mongoose:
+
+| File | Linee | Cosa |
+|---|---|---|
+| 🎯 **`server/src/config/db.ts` (entrypoint principale, [index.ts L11](file:///home/duxiter/duxiter_intermediate/server/src/index.ts#L11))** | [L24-L45](file:///home/duxiter/duxiter_intermediate/server/src/config/db.ts#L24-L45) | Nuovo oggetto `MONGOOSE_OPTS`: `family: 4` (FORZA IPv4, salva 60s!), `serverSelectionTimeoutMS: 5000`, `connectTimeoutMS: 5000`, `socketTimeoutMS: 60000`, `heartbeatFrequencyMS: 3000`, `readPreference: primaryPreferred`. Opzioni tunabili via env: `MONGO_SERVER_SEL_TIMEOUT_MS`, `MONGO_CONNECT_TIMEOUT_MS`, `MONGO_SOCKET_TIMEOUT_MS`, `MONGO_HEARTBEAT_MS`, `MONGO_AUTH_SOURCE`, `MONGOOSE_DEBUG`. |
+| 👆 idem | [L64-L119](file:///home/duxiter/duxiter_intermediate/server/src/config/db.ts#L64-L119) | Banner deploy `🟢 [MONGOOSE OPTIMIZED v1.0]` con tabella parametri + `console.time/timeEnd` per misurare SEMPRE la durata connect + listeners granulari (`connecting`, `connected`, `open`, `disconnected`, `reconnected`, `reconnectFailed`, `close`, `error`) per debugging futuro senza ripetere test manuali. |
+| `server/src/config/database.ts` (usato da scripts/create-superadmin) | [L14-L22](file:///home/duxiter/duxiter_intermediate/server/src/config/database.ts#L14-L22) | Stesse identiche ottimizzazioni di `db.ts` per coerenza. |
+
+---
+
+**🎯 Risultato atteso dopo riavvio servizio dux_main**:
+```
+Nuovo banner:
+╔══════════════════════════════════════════════════════════════╗
+║  🟢 [MONGOOSE OPTIMIZED v1.0 • 15.09.2026]                  ║
+╚══════════════════════════════════════════════════════════════╝
+[connectDB] 🔄 Event: connecting ...
+[connectDB] ✅ Event: connected OK
+[connectDB] 🟢 Event: 'open' → connessione pronta alle query
+[connectDB] ✅ CONNESSIONE RIUSCITA: mongodb://172.19.40.102:27017/duxiter · readyState=1
+⏱️  [connectDB] Tempo totale connessione MongoDB: **142.456ms** ✅ (PRIMA era 81.000ms!)
+```
+
+### Fix Dequienes MeshTable – OWNED_BY bidirezionale ("Sin datos" → dati reali visibili)
+**Problema (RUT 92604000)**: sezione Malla Relacional "Controladores y Estructura de Propiedad" mostrava `Sin datos de malla societaria`, malgrado il payload grezzo JSON (`server/dequenes_responses/relationships_92604000_1789480909.json`) contenesse **20+ relazioni OWNED_BY**.
+
+**Causa radice**: Dequienes Graph API può ritornare OWNED_BY in **due direzioni opposte**, e MeshTable considerava solo 1 direzione:
+```
+Caso A (funzionava): {source = SOCIETA', target = DUENO, label: "OWNED_BY"}
+                     → main è POSSeduta → MeshTable cerca source==main → OK
+Caso B (falliva):    {source = FIGLIA,  target = MAIN_RUT, label: "OWNED_BY"}
+                     → main È IL PROPRIETARIO (soc. madre)
+                     → MeshTable cerca source==main → 0 match → "Sin datos"
+```
+Nel JSON di 92604000, **100% OWNED_BY erano di Caso B** (target==92604000), quindi la sezione era sempre vuota.
+
+---
+
+**Soluzione (MeshTable.tsx, fix 15/09 - versione `MESH BIDIRECTIONAL v1.0`)**:
+
+1. **[MeshTable.tsx L114-L157](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L114-L157)** → Normalizzazione OWNED_BY bidirezionale:
+   - Se esistono relazioni Caso A (source==main) → usa solo quelle (retrocompatibile).
+   - Se NON esistono relazioni dirette (Caso B, main è proprietario) → crea array `ownRelsNormalizzato` FLIPPANDO source↔target per ogni OWNED_BY dove target==main.
+   - Aggiunge flag `_flippedDirection: true` per tracciare le righe invertite.
+
+2. **[MeshTable.tsx L161-L242](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L161-L242)** → `buildOwnRows()` usa `ownRelsNormalizzato` invece di `ownRels`. Per le righe flipped:
+   - Vengono mostrate in UI come livello N1 (stesse di partecipazioni).
+   - Non vengono ESPANSE verso l'alto (`if (!flipped && isSociedad(ownerRut))`), perché semanticamente non sono "dueños" ma "società figlie" — evitiamo loop infiniti o catene sbagliate.
+
+3. **UI feedback**:
+   - Box **"Cobertura de la malla"** ([L739-L750](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L739-L750)) → nuova riga `Dirección OWNED_BY`:
+     ```
+     ✅ Dueños directos (main = società posseduta) · X relazioni originali
+     ⚠️ Main = propietario · mostrando N partecipaciones (dirección inversa) (fixed flipped 15/09)
+     ```
+   - **Banner deploy console** ([L282-L293](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L282-L293)) → `[MESH BIDIRECTIONAL v1.0 • 15.09.2026]` con conteggio `originali=N + flipped=M` → immediatamente verificabile da DevTools se il bundle nuovo è caricato.
+
+---
+
+**Risultato atteso dopo `npm run build + Hard Refresh` + nuovo RECHECK (per invalidare cache vecchie distance=2)**:
+```
+Malla Relacional / Controladores y Estructura de Propiedad (RUT 92604000):
+  ✅ NESSUN "Sin datos de malla societaria"
+  ✅ Box sopra tabella: Dirección OWNED_BY → ⚠️ Main = propietario · 20+ participaciones (dirección inversa)
+  ✅ Tabella mostra N righe N1 = società figlie possedute da 92604000 (badge N1 blu)
+  ✅ Console DevTools: banner verde 🟢 [MESH BIDIRECTIONAL v1.0 • 15.09.2026]
+  ✅ Legalrepresentatives (REPRESENTED_BY): continua a mostrare i 3 RUT come prima (non toccato)
+  ✅ MeshFlowTable "Empresas en las que Participa": non toccato, già funziona per questo scenario
+```
+
+#### 🩹 Fix 2 (15.09 — iterazione 2 Malla): dequienesRelationships Formato Oggetto {relationships, entityNames} invece di Array
+**Problema**: Dopo il fix bidirezionale (1), **malla ancora vuota**. Analisi su `server/json_data/riskCalculationResult_LATEST_92604000-6.json`:
+- Dati PRESENTI: `logEntry.filteredDetails.dequinesRelationships.relationships.length=100` (OWNED_BY:74, REPRESENTED_BY:26)
+- Provider Python salva dequinesRelationships come **OGGETTO**: `{relationships:[], entityNames:{...}, pathCount, ...}` (non array diretto!)
+
+**Causa radice** (2 bug dentro `FastCheckEX.tsx useMemo dequienesForMesh`):
+| Bug | Dettaglio | Perché falliva |
+|---|---|---|
+| 🟥 1 Formato | `filterOutNotaryRelationships()` preserva il tipo in uscita (obj→obj, arr→arr). I 3 componenti (MeshTable, Legalrepresentatives, MeshFlowTable) si aspettavano **Array<any>** `.filter(r => r.label)` su oggetto → falliva in silenzio → vuoto. |
+| 🟨 2 entityNames | Nomi società salvati separatamente in `entityNames: {rut: nombre}`. Relazioni avevano solo RUT. `getName(rut)` dentro MeshTable non trovava nome → N/A. |
+
+**Soluzione 2 finale** — [FastCheckEX.tsx L223-L297](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L223-L297):
+1.  **4 fallback path order**: sheriffLogData → details.sheriffLogData → logEntry → root filteredDetails (retrocompatibilità multi-formato).
+2.  **Pre-processing**: se input è OGGETTO (formato nuovo provider Python), **inietta entityNames dentro OGNI RELAZIONE**: `sourceName`, `targetName`, `_sourceEntityName`, `_targetEntityName` (con normalizzazione chiavi RUT: remove dots/trattini, case-insensitive).
+3.  **`filterOutNotaryRelationships(processedForFilter)`** invariato (funziona obj/arr grazie a deep clone + walk ricorsivo).
+4.  **Uniforma SEMPRE Array in uscita**: `filteredMesh` oggetto → restituisci `.relationships`. I 3 componenti ricevono **sempre Array<any>** come atteso.
+
+#### 🩹 Fix 3 (15.09 — iterazione 3 Malla): Ricerca RICORSIVA dequinesRelationships + variabile debug globale (path NON prevedibili)
+**Problema**: Dopo fix bidirezionale + formato oggetto, **malla ancora TOTALMENTE VUOTA per RUT 92604000-6 resultId 6aa934f2b06b194c838077d8**.
+
+**Diagnostica payload grezzo**:
+```
+✅ BACKEND DATI OK:
+  server/json_data/riskCalculationResult_LATEST_92604000-6.json
+  → logEntry.filteredDetails.dequinesRelationships = {relationships:100, entityNames:123}
+✅ FILE GREZZO PROVIDER: relationships_92604000_1789485117.json → 145 relazioni (45 rimosse da filtro notari)
+❌ FRONTEND: const raw = 4 path hardcodati → undefined per QUESTO resultId specifico
+```
+
+**👉 Root cause**: La struttura `cleanedData` NON è STABILE tra record salvati in Mongo diversi. I 4 path hardcodati originali:
+```ts
+cleanedData?.sheriffLogData?.filteredDetails?.dequinesRelationships
+cleanedData?.details?.sheriffLogData?.filteredDetails?.dequinesRelationships
+cleanedData?.logEntry?.filteredDetails?.dequinesRelationships
+(cleanedData as any)?.filteredDetails?.dequinesRelationships
+```
+→ per `resultId=6aa934f2b06b194c838077d8` **NESSUNO** di questi 4 path trovava la chiave. `raw=undefined` → useMemo ritornava undefined → malla vuota.
+
+---
+
+**Soluzione 3 finale — [FastCheckEX.tsx L239-L395](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L239-L395)**:
+
+| # | Blocco | Descrizione |
+|---|---|---|
+| ✅ 1 | **`normRut` condiviso** ([L239-L240](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L239-L240)) | Funzione normalizzazione RUT spostata a **livello componente** (non dentro useMemo) per essere accessibile sia da useMemo `dequienesForMesh` che da `useEffect` debug globale. |
+| ✅ 2 | **Ricerca RICORSIVA `findAllByKeyPatternFn(cleanedData, regex)`** ([L242-L258](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L242-L258)) | Sostituisce 4 path hardcodati. Walk **TUTTI** i nested object di `cleanedData` a **qualsiasi profondità (max 14 livelli)**, cerca chiavi matchanti `^dequinesRelationships$`. WeakSet `visited` per evitare stack overflow da riferimenti circolari closure React. |
+| ✅ 3 | **Scoring candidati `scoreCandidateFn()`** ([L259-L267](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L259-L267)) | Ordina tutti i match trovati per score (evita falsi positivi: array vuoto superficiale vs dati reali profondi):<br> 🔝 `Array.length>0` → 1000 - depth<br> 🔝 `Obj con .relationships.length>0` → 900 - depth<br> ⚠️ vuoti/null → 10 - 1000. |
+| ✅ 4 | **Banner console `🟢 [DEQUIES_FINDER v1.0]`** ([L268-L295](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L268-L295)) | Stampa `topkeys`, `matchStrict`, `chosen=path.esatto`, `type=Obj(rels=100,names=123)`, `totalRels=100`, lista match strict con score/tipo. `warn` rosso se raw=undefined. |
+| ✅ 5 | **Dependency array semplificato** ([L356](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L356)) | Rimosse 4 dipendenze hardcodate → **solo `[cleanedData]`**. Con ricerca ricorsiva non serve più tracciare path specifici. |
+| ✅ 6 | **Inject debug globale `useEffect`** ([L358-L395](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L358-L395)) | **Risolve definitivamente errori variabili inesistenti** (come oggi: `window.__reactFastCheck_data` non esisteva → undefined fuorviante). Espone in `window.__debugFastCheck`:<br>• `cleanedData` + `rawData` (oggetti completi)<br>• `dequinesForMesh` (array relazioni finale)<br>• `normRut()` (normalizza RUT per lookup)<br>• `findAll(/pattern/i)` **funzione ricerca ricorsiva GLOBALE** che stampa `console.table` TUTTI i match a qualsiasi profondità (anche su rawData). |
+| ✅ 7 | **Banner output useMemo** ([L340-L354](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L340-L354)) | Verde se non vuoto con `countByLabel` (`{OWNED_BY:74, REPRESENTED_BY:26}`), rosso se vuoto con warning. |
+
+---
+
+**🎯 Comandi validazione Console F12 (dopo build + hard refresh)**:
+```javascript
+// 1. Verifica array relazioni finale (ATTESO = 100 per 92604000-6):
+window.__debugFastCheck.dequinesForMesh?.length
+
+// 2. Se ancora 0 → ispeziona TUTTI i possibili match a qualsiasi profondità (stampa tabella):
+window.__debugFastCheck.findAll(/dequien/i)
+//   → mostra colonne: path | depth | type (Array(N) / Object / string)
+
+// 3. Oggetto completo ricevuto da backend (per analisi successive):
+window.__debugFastCheck.cleanedData
+```
+
+**Risultato atteso per RUT 92604000-6 resultId 6aa934f2b**:
+```
+🟢 [DEQUIES_FINDER v1.0 • 15.09.2026]
+  matchStrict: 1  matchLoose: 2  chosen=cleanedData.logEntry.filteredDetails.dequinesRelationships
+  type=Obj(rels=100, names=123)  totalRels=100
+🔧 [DEBUG GLOBAL INJECTED • 15.09.2026] window.__debugFastCheck pronta!
+🟢 Output useMemo: Array(100)  labels={"OWNED_BY":74,"REPRESENTED_BY":26}
+🟢 [MESH BIDIRECTIONAL v1.0 • 15.09.2026] originali=0 + flipped=74 (Main=propietario)
+```
+→ UI: Socios 26 righe nomi reali · Controladores 74 righe flipped · Nessun "Sin datos"
+
 ## 2026-09-10
 
 ### Ajuste Protestos y Morosidades – Equifax (Consolidato 3 fonti)

@@ -41,7 +41,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 # Ensure every line gets the [EXT] tag
 logger.addFilter(ExtPrefixFilter())
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 # Load environment variables
 load_dotenv()

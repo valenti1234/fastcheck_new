@@ -6,11 +6,14 @@ const MAX_DEPTH = 5;
 
 const normalizeRut = (rut: string | number): string => {
     if (rut == null) return '';
-    return String(rut).replace(/\./g, '').split('-')[0].trim();
+    // 🔧 Fix 15/09 v1.2: DV PRESERVAZIONE! Prima split('-')[0] → TOLGLIEVA DV ("92604000")
+    // Ma relazioni Dequines salvano RUT COMPRENSIVO DI DV ("92604000-6")
+    // → match 92604000 (senza DV) !== 92604000k (con DV normalizzato) → flipped=0 → 0 righe "Sin datos"
+    return String(rut).replace(/[^0-9Kk]/g, '').toLowerCase();
 };
 
 const isSociedad = (rut: string): boolean => {
-    const n = parseInt(normalizeRut(rut), 10);
+    const n = parseInt(normalizeRut(rut).replace(/[^0-9]/g, ''), 10);
     return !isNaN(n) && n >= 25_000_000;
 };
 
@@ -98,8 +101,29 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         );
     }
 
-    const cleanMain = normalizeRut(mainRut || '') || detectMainRut(relationships);
-    const getName = (rut: string) => entityNames[rut] || entityNames[normalizeRut(rut)] || '';
+    const normalizeRutOnlyDigits = (rut: string | number): string => String(rut ?? '').replace(/[^0-9]/g, '');
+    const rutMatchRobust = (rutA: any, rutB: any): boolean => {
+      // 3 FALLBACK per garantire match anche con formati diversi!
+      // 1. Normalizzazione standard (con K/k minuscolo):
+      const a1 = normalizeRut(rutA), b1 = normalizeRut(rutB);
+      if (a1 && b1 && a1 === b1) return true;
+      // 2. Solo CIFRE (no K/k, tolgo TUTTO: "-", ".", "k" ecc.) → 8 cifre!
+      const a2 = normalizeRutOnlyDigits(rutA), b2 = normalizeRutOnlyDigits(rutB);
+      if (a2 && b2 && a2 === b2) return true;
+      // 3. FALLBACK includes 8 cifre: match robusto anche se c'è dv o junk a destra/sinistra
+      if (a2 && b2 && a2.length >= 7 && b2.length >= 7) {
+        if (a2.startsWith(b2.slice(0,8)) || b2.startsWith(a2.slice(0,8))) return true;
+        if (a2.includes(b2.slice(0,8)) || b2.includes(a2.slice(0,8))) return true;
+      }
+      return false;
+    };
+    // 🔧 Fix 15/09 v1.3: detectMainRut SOLO SE mainRut PROP è vuoto!
+    // (prima detectMainRut trovava 81095400 perché RUT frequente = altre società, NON il main!)
+    let cleanMain_: string = '';
+    if (mainRut && String(mainRut).trim() !== '') cleanMain_ = normalizeRut(mainRut);
+    else cleanMain_ = detectMainRut(relationships);
+    const cleanMain = cleanMain_;
+    const getName = (rut: string) => entityNames[rut] || entityNames[normalizeRut(rut)] || entityNames[normalizeRutOnlyDigits(rut)] || '';
     const rootIsPerson = !isSociedad(cleanMain);
 
     if (rootIsPerson) {
@@ -111,14 +135,114 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         );
     }
 
-    const ownRels = relationships.filter((r: any) =>
-        r.label === 'OWNED_BY' && !r.information_source?.match_type
-    );
+    // 🔧 Fix 15.09 v1.4 — UNISCI SEMPRE !match_type (ufficiali) + match_type=TRUE (inferiti via RUT associato / stima)!
+    // Motivo: nel caso RUT 92604000-6, le 33 relazioni COL MAIN hanno match_type=TRUE (saltate!), quindi ownRels MAIN = 0.
+    const ownRels_raw = relationships.filter((r: any) => r.label === 'OWNED_BY');
+    const ownRels_noMatchType = ownRels_raw.filter((r: any) => !r?.information_source?.match_type);
+    const ownRels_matchType = ownRels_raw.filter((r: any) => r?.information_source?.match_type === true);
+    const unionSet = new Set<string>();
+    const ownRels: any[] = [];
+    for (const r of [...ownRels_noMatchType, ...ownRels_matchType]) {
+      const key = `${String(r.source)}__${String(r.target)}__${r._direction || ''}`;
+      if (!unionSet.has(key)) { unionSet.add(key); ownRels.push(r); }
+    }
+    // Banner debug counts extra
+    if (typeof window !== 'undefined') {
+      try { console.log(`%c   ➕ [MESH v1.4 OWNED_BY MERGED] noMatchType=${ownRels_noMatchType.length} matchTypeTRUE=${ownRels_matchType.length} union=${ownRels.length} (filtrati da raw=${ownRels_raw.length})`, 'color:#055160;background:#cff4fc;border:1px solid #9eeaf9;padding:2px 6px;border-radius:3px'); } catch(e){}
+    }
+
+    // 🔧 FIX 15/09/2026: OWNED_BY bidirezionale.
+    // Il payload Dequienes può ritornare OWNED_BY in ENTRAMBE le direzioni:
+    //   Caso A (classico):  {source: "SOCIETA'", target: "DUENO", label:"OWNED_BY"}  → società è posseduta dal dueño
+    //   Caso B (inverso):   {source: "FIGLIA",   target: "PADRE/SOC. MADRE", label:"OWNED_BY"}  → il RUT principale È LA SOC. MADRE (POSSIEDE figlie)
+    //   Caso C (attuale):   {source: "FIGLIA",   target: "MAIN=92604000",        label:"OWNED_BY"}  → tutte le 20+ righe del JSON sono inversa!
+    // Senza questo fix, se il mainRut matcha solo la parte target (Caso B/C): ownRows = [] → "Sin datos".
+    //
+    // Strategia: costruiamo ownRelsNormalizzato = UNIONE di:
+    //   1) ownRels originali (direzione A: source=società → target=dueño: processUpward cerca source==rut)
+    //   2) ownRels FLIPPATE : se mainRut === target della relazione (Caso B/C), invertiamo source ↔ target
+    //        {source: FIGLIA, target: MAIN} → flippato → {source: MAIN, target: FIGLIA, _flipped: true}
+    //        Nota: in questo caso "target" diventa "la società figlia POSSIEDE da MAIN" = MAIN ne è proprietario.
+    //        Però processUpward (direzione DUEÑI) non lo mostrerebbe come catena DUEÑI.
+    //        In realtà questo scenario B/C = MAIN È PROPRIETARIO → dovrebbe stare in MeshFlowTable ("imprese partecipate").
+    //        MA se non esistono relazioni dirette A (dove main è società posseduta), MeshTable va in "Sin datos" confondendo l'utente.
+    //        Quindi aggiungiamo ANCHE le righe flipped come se fossero partecipazioni (livello 1) da mostrare per non lasciare vuota la sezione.
+    //        → ma non espandiamo verso l'alto (non sono dueños, sono società figlie).
+    // 🔧 FIX 15/09/2026 v1.1: OWNED_BY bidirezionale ROBUSTO (UNISCI SEMPRE + deduplica).
+    //
+    // La versione 1.0 usava un branch "if (!originaliSourceFound) { aggiungi flipped }"
+    // BUG FATALE: basta 1 SOLA OWNED_BY CASO A (source=main) in tutto l'array (anche sbagliata
+    // o matchante solo per caso) → il branch salta → NESSUNA flipped aggiunta →
+    // → buildOwnRows trova solo la 1 riga falsa, oppure 0 righe → "Sin datos" spazzando 37+ relazioni vere.
+    //
+    // SOLUZIONE v1.1 ROBUSTA (branch eliminato del tutto):
+    //   1) Calcola SEMPRE set1 = directSet (source==main → Caso A classico: main è posseduta, dueño=N)
+    //   2) Calcola SEMPRE set2 = flippedSet (target==main → Caso B inverso: main è proprietario)
+    //   3) UNIONE set1 ∪ set2 tramite chiave `${src}__${tgt}` (deduplicazione 100%)
+    // → Qualsiasi mix di casi A + B viene catturato. Mai più "Sin datos" per 1 riga falsa.
+    const mainNorm = normalizeRut(cleanMain || '');
+    // ========== 🔧 DEBUG BANNER SEMPRE (v1.3 15.09) + counts MATCH ROBUST!
+    if (typeof window !== 'undefined') {
+        try {
+            const ownRelsSrc = ownRels.slice(0,5).map((r: any) => ({raw_s:String(r.source||''), raw_t:String(r.target||''), norm_s:normalizeRut(String(r.source||'')), norm_t:normalizeRut(String(r.target||''))}));
+            // counts con FALLBACK ROBUSTO!
+            const sEq = ownRels.filter((r:any)=> rutMatchRobust(r.source, cleanMain)).length;
+            const tEq = ownRels.filter((r:any)=> rutMatchRobust(r.target, cleanMain)).length;
+            // conteggio X campioni per vedere dove sta main (se c'è!)
+            const mainHits = ownRels.filter((r:any)=>rutMatchRobust(r.source, cleanMain)||rutMatchRobust(r.target, cleanMain)).length;
+            // eslint-disable-next-line no-console
+            console.log(
+                `%c🔎 [MESH DBG v1.3 ROBUSTO • 15.09.2026] %cMAIN debug: cleanMain=${JSON.stringify(cleanMain)} mainNorm=${JSON.stringify(mainNorm)} mainRut_PROP=${JSON.stringify(mainRut)} detectMainRut(rels)=${JSON.stringify(detectMainRut(ownRels))}  ||  ownRels=${ownRels.length}  rutMatchRobust(source==main) (CasoA):${sEq}   rutMatchRobust(target==main) (CasoB flipped):${tEq}   ownRels with MAIN TOT = ${mainHits}  || PRIME 5 relazioni:`,
+                'background:#7c3aed;color:#fff;font-weight:700;padding:4px 8px;border-radius:4px',
+                'color:#4c1d95;font-weight:600'
+            );
+            if (mainHits > 0) {
+              // eslint-disable-next-line no-console
+              console.table(ownRels.filter((r:any)=>rutMatchRobust(r.source, cleanMain)||rutMatchRobust(r.target, cleanMain)).slice(0,5).map((r:any)=>({raw_s:String(r.source||''), raw_t:String(r.target||''), matchRobust_s:rutMatchRobust(r.source, cleanMain), matchRobust_t:rutMatchRobust(r.target, cleanMain)})));
+            } else {
+              // eslint-disable-next-line no-console
+              console.table(ownRelsSrc);
+            }
+        } catch(e){}
+    }
+    // ========== FINE DEBUG v1.3
+    const directRels: any[] = [];
+    const flippedRels: any[] = [];
+    const unionKey = new Set<string>();
+    for (const r of ownRels) {
+      const s = normalizeRut(String(r.source || ''));
+      const t = normalizeRut(String(r.target || ''));
+      // Caso A — direct (main è posseduta da dueño a N1)
+      if (rutMatchRobust(r.source, cleanMain) && s !== t) {
+        const k = `${s}__${t}`;
+        if (!unionKey.has(k)) { unionKey.add(k); directRels.push({ ...r, _direction: 'direct' }); }
+      }
+      // Caso B — flipped (main è proprietario di società figlia)
+      if (rutMatchRobust(r.target, cleanMain) && s !== t) {
+        // Inverti source ↔ target per mantenere processUpward compat
+        // (direzione "source=società → target=dueño") — QUI main è PROPRIETARIO (target originale = main)
+        // => source = main (dell'originale r.target), target = figlia (originale r.source)
+        const k = `${s}__${t}`;
+        if (!unionKey.has(k)) {
+          unionKey.add(k);
+          flippedRels.push({
+            ...r,
+            _flippedDirection: true,
+            source: String(r.target || ''),
+            target: String(r.source || ''),
+            _direction: 'flipped',
+          });
+        }
+      }
+    }
+    const ownRelsNormalizzato: any[] = [...directRels, ...flippedRels];
+    const originaliCountDir = directRels.length;
+    const flippedCount = flippedRels.length;
 
     // ── OWNED_BY ──────────────────────────────────────────────────────────────
 
     const buildOwnRows = (): OwnRow[] => {
-        if (!ownRels.length) return [];
+        if (!ownRelsNormalizzato.length) return [];
 
         const rows: OwnRow[] = [];
         let nextId = 0;
@@ -134,7 +258,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
             const branchAncestors = new Set(ancestors);
             branchAncestors.add(rut);
 
-            const matched = ownRels.filter(
+            const matched = ownRelsNormalizzato.filter(
                 (r: any) => normalizeRut(String(r.source)) === rut,
             );
 
@@ -142,6 +266,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                 const ownerRut = normalizeRut(String(r.target || ''));
                 const pct = extractPct(r.information_source);
                 const src = r.information_source?.source || '';
+                const flipped = !!r?._flippedDirection;
                 const id = nextId++;
 
                 rows.push({
@@ -157,7 +282,10 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                     fuente: mapSource(src),
                 });
 
-                if (isSociedad(ownerRut)) {
+                // Se la riga è "flipped" (main è proprietaria di una società figlia)
+                // → NON espandiamo verso l'alto: sarebbe una catena senza fine e semanticamente sbagliata.
+                // Solo le righe ORIGINALI (non flipped) = main è posseduta → continuano la catena dueños N1→N5.
+                if (!flipped && isSociedad(ownerRut)) {
                     processUpward(ownerRut, level + 1, id, branchAncestors);
                 }
             }
@@ -166,7 +294,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         if (!rootIsPerson) {
             processUpward(cleanMain, 1, null, new Set());
         } else {
-            const companiesOwned = ownRels.filter(
+            const companiesOwned = ownRelsNormalizzato.filter(
                 (r: any) => normalizeRut(String(r.target)) === cleanMain,
             );
 
@@ -233,6 +361,19 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         border: '1px solid #e5e7eb', padding: '6px 8px', fontSize: '13px',
         verticalAlign: 'middle', wordBreak: 'break-word',
     };
+
+    // 🔧 Banner deploy versione fix 15/09
+    const BANNER_VERSION = '[MESH BIDIRECTIONAL v1.1 • 15.09.2026]';
+    if (typeof window !== 'undefined') {
+        try {
+            // eslint-disable-next-line no-console
+            console.log(
+                `%c🟢 ${BANNER_VERSION} %cOWNED_BY bidirezionale ROBUSTO (direct=${originaliCountDir} + flipped=${flippedCount} = ${originaliCountDir+flippedCount} / ownRels tot=${ownRels.length})`,
+                'background:#1d4ed8;color:#fff;font-weight:700;padding:4px 8px;border-radius:4px',
+                'color:#1d4ed8;font-weight:600'
+            );
+        } catch {}
+    }
 
     const NivelBadge = ({ level }: { level: number }) => (
         <span style={{
@@ -676,6 +817,21 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                                             <span className="text-gray-600 dark:text-gray-400">Cobertura de la malla: </span>
                                             <span className="text-gray-900 dark:text-gray-100">
                                                 Nivel máximo alcanzado: <strong>{maxLevel} de {MAX_DEPTH}</strong>
+                                            </span>
+                                        </div>
+                                        {/* 🔧 Fix 15/09 v1.1: info scenario bidirezionale ROBUSTO */}
+                                        <div>
+                                            <span className="text-gray-600 dark:text-gray-400">Dirección OWNED_BY: </span>
+                                            <span className="text-gray-900 dark:text-gray-100 font-medium">
+                                                {(originaliCountDir > 0 && flippedCount === 0) ? (
+                                                    <>✅ Dueños directos (main = sociedad poseída) · <span className="text-gray-600 dark:text-gray-400 text-xs">direct {originaliCountDir} rel.</span></>
+                                                ) : (originaliCountDir === 0 && flippedCount > 0) ? (
+                                                    <>⚠️ Main = propietario · mostrando <strong>{flippedCount}</strong> participaciones (dirección inversa){' '}
+                                                    <span className="text-gray-600 dark:text-gray-400 text-xs">(fixed flipped 15/09)</span></>
+                                                ) : (
+                                                    <>🔀 Mix · direct={originaliCountDir} + flipped={flippedCount} (={ownRelsNormalizzato.length}/ownRels {ownRels.length}){' '}
+                                                    <span className="text-gray-600 dark:text-gray-400 text-xs">(bidirezionale v1.1 15/09)</span></>
+                                                )}
                                             </span>
                                         </div>
                                     </div>

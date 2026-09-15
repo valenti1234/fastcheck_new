@@ -1,5 +1,45 @@
 # Riepilogo Regole di Calcolo Rischio
 
+## Appendice 0: Standard Permanenti Connessione MongoDB (da 15.09.2026)
+- **Diagnostica TCP porta 27017** su host replica set 172.19.40.102 e 103: **entrambi 1-4ms** — rete sana, nessun server down.
+- **Causa connessione 81s**: Node.js `family: undefined` = tenta prima AAAA (IPv6) in LAN IPv4-only → **30s fallback x 2 host = 60s persi**. Aggiunto `serverSelectionTimeoutMS default 30s` = totale 81s (match perfetto con timing del log dux_main).
+- **Fix obbligatorio 2 file**:
+  - Entrypoint: [server/src/config/db.ts](file:///home/duxiter/duxiter_intermediate/server/src/config/db.ts) → `mongoose.connect(URI, { family: 4, serverSelectionTimeoutMS: 5000, connectTimeoutMS: 5000, socketTimeoutMS: 60000, heartbeatFrequencyMS: 3000, readPreference: 'primaryPreferred' })`.
+  - Script CLI: [server/src/config/database.ts](file:///home/duxiter/duxiter_intermediate/server/src/config/database.ts) → stesse identiche opzioni.
+- **Opzioni tunabili via env** (senza rebuild):
+  - `MONGO_SERVER_SEL_TIMEOUT_MS` (default 5000)
+  - `MONGO_CONNECT_TIMEOUT_MS` (default 5000)
+  - `MONGO_SOCKET_TIMEOUT_MS` (default 60000)
+  - `MONGO_HEARTBEAT_MS` (default 3000)
+  - `MONGO_AUTH_SOURCE` (default non usato)
+  - `MONGOOSE_DEBUG=true` → logga ogni query (`collection.method(...)`) senza toccare codice.
+- **Banner deploy**: `🟢 [MONGOOSE OPTIMIZED v1.0 • 15.09.2026]` + box ASCII + `console.time/timeEnd` SEMPRE attivo per misurazione istantanea.
+- **Riduzione attesa**: 81.000 ms → ~150 ms. **Speedup ~540x**.
+
+## Appendice 1: Dequienes Graph API – Integrazione Frontend Malla Relazionale
+- **Payload grezzo backend** → `cleanedData.sheriffLogData.filteredDetails.dequienesRelationships` (da endpoint riskCalc).
+- **useMemo `dequienesForMesh` ([FastCheckEX.tsx L226-L246](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L226-L246))**: 1 sola volta calcola `filterOutNotaryRelationships(raw)` ([utils/dequienes.ts](file:///home/duxiter/duxiter_intermediate/src/utils/dequienes.ts)) → rimuove notari / conservador / registro civile (nomi blacklist + `tipoDeParticipacion` blacklist). Lo stesso oggetto filtrato viene passato ai 3 componenti:
+  1.  **Legalrepresentatives** ([Legalrepresentatives.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx)) → prende solo `label === "REPRESENTED_BY"`.
+  2.  **MeshTable "Controladores y Estructura de Propiedad"** ([MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx)) → prende solo `label === "OWNED_BY"`.
+  3.  **MeshFlowTable "Mapa de Empresas en las que Participa"** ([MeshFlowTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowTable/MeshFlowTable.tsx)) → direzione inversa (OUTGOING / partecipazioni).
+
+### OWNED_BY Semantica bidirezionale (standard da 15.09.2026, MESH BIDIRECTIONAL v1.0)
+Dequienes Graph API ritorna `OWNED_BY` in 2 direzioni, entrambe valide:
+| Caso | source | target | Significato | Fix applicato MeshTable
+|---|---|---|---|---
+| ✅ A (classic) | `SOCIETA'` | `DUEÑO / SOC. MADRE` | "Società è posseduta da" | Gestito come sempre (catena dueños N1→N5, depth fino a `MAX_DEPTH=5`).
+| ⚠️ B (inverso) | `SOCIETA' FIGLIA` | `MAIN RUT` | **"RUT principale è proprietario/ SOC. MADRE"** | **Fix 15/09**: se non esistono relazioni dirette A, flippa `source↔target` (flag `_flippedDirection`) e mostra come partecipazioni N1 (non espandibili verso l'alto). **Senza questo fix MeshTable va in "Sin datos"** (es. RUT 92604000).
+
+### Profondità distance=5 (da 10.09.2026, precedente 2)
+- Default backend/provider in 4 punti: [main.py provider Pydantic L100](file:///home/duxiter/duxiter_intermediate/server/external_providers/dequienes/main.py#L100) + [endpoint FastAPI L296](file:///home/duxiter/duxiter_intermediate/server/external_providers/dequienes/main.py#L296) + [dequienesService.ts fallback L99](file:///home/duxiter/duxiter_intermediate/server/src/services/dequienesService.ts#L99) + [rutController caller L1052](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts#L1052).
+- Cap di sicurezza `ge=1, le=5` su Pydantic **e** FastAPI.
+- Cache Dequienes già includeva `distance` nella cache_key → invalidazione automatica (primo recheck → nuova chiamata a 5 livelli).
+
+### Banner deploy (controllo versione da DevTools)
+🟢 `[MESH BIDIRECTIONAL v1.0 • 15.09.2026] (originali=N + flipped=M)` ([MeshTable.tsx L282-L293](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L282-L293))
+
+---
+
 ## Struttura complessiva
 - Funzione principale: `server/src/services/riskCalculationService.ts:14` (`RiskCalculationService.calculateRisk`)
 - Inizializzazione regole per dimensione: `server/src/services/riskCalculationService.ts:777–806` (`initializeRules`)

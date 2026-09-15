@@ -223,27 +223,336 @@ const FastCheck: React.FC = () => {
   // ── Malla Relacional: Purga notari / conservador / registro civile (tipoDeParticipacion blacklisted) ──
   // Calcolato UNA sola volta, passiamo lo stesso oggetto filtrato a MeshTable e MeshFlowTable
   // per evitare deepClone × 2 e doppio lavoro.
+  //
+  // 🔧 Fix 15.09.2026 — 2 bug finali risolti dopo analisi payload JSON 92604000-6:
+  //   Bug #1: format mismatch legacy vs nuovo provider Python
+  //      Legacy  → dequienesRelationships = Array<Rel>  (raw)
+  //      Nuovo   → dequienesRelationships = { relationships: Array<Rel>, entityNames: Record<rut,nombre>, pathCount, ... }  (OGGETTO)
+  //      filterOutNotaryRelationships() preserva il TIPO di input (obj → obj / arr → arr).
+  //      Ma i 3 componenti (MeshTable / Legalrepresentatives / MeshFlowTable) si aspettano Array<any>!
+  //      → uniformiamo SEMPRE ad ARRAY in uscita (estraendo .relationships se oggetto).
+  //
+  //   Bug #2: entityNames non veniva iniettato come sourceName/targetName
+  //      Provider Python ritorna i NOMI in entityNames (separato), ma le relazioni hanno solo RUT numerico.
+  //      getName(rut) dentro MeshTable non poteva risalire al nome senza entityNames → "N/A" invece di nome società.
+  //      → iniettiamo entityNames come sourceName / targetName / _sourceEntityName / _targetEntityName PRIMA di filterOutNotaryRelationships.
+  // Norm RUT (shared: usato dentro useMemo dequienes + debug globale)
+  const normRut = (s: any) => String(s ?? '').replace(/[^0-9Kk]/g, '').toLowerCase();
+
   const dequienesForMesh = useMemo(() => {
-    const raw =
-      cleanedData?.sheriffLogData?.filteredDetails?.dequienesRelationships ||
-      cleanedData?.details?.sheriffLogData?.filteredDetails?.dequienesRelationships ||
-      cleanedData?.logEntry?.filteredDetails?.dequienesRelationships ||
-      undefined;
+    // Ricerca RICORSIVA dequinesRelationships (qualunque path, max depth 14)
+    const findAllByKeyPatternFn = (
+      obj: any, keyPattern: RegExp, currentPath = 'cleanedData',
+      visited = new WeakSet(), maxDepth = 14, depth = 0,
+      results: Array<{ path: string; value: any; depth: number }> = []
+    ) => {
+      if (!obj || depth > maxDepth || typeof obj !== 'object') return results;
+      try { if (visited.has(obj)) return results; visited.add(obj); } catch (e) {}
+      for (const key of Object.keys(obj)) {
+        const val = (obj as any)[key];
+        const fullPath = currentPath + '.' + key;
+        if (keyPattern.test(key)) results.push({ path: fullPath, value: val, depth });
+        if (val && typeof val === 'object') {
+          findAllByKeyPatternFn(val, keyPattern, fullPath, visited, maxDepth, depth + 1, results);
+        }
+      }
+      return results;
+    };
+    const scoreCandidateFn = (c: { value: any; depth: number }) => {
+      const v = c.value;
+      if (Array.isArray(v)) return v.length > 0 ? 1000 - c.depth : 10 - c.depth;
+      if (v && typeof v === 'object') {
+        const rels = (v as any).relationships;
+        if (Array.isArray(rels)) return rels.length > 0 ? 900 - c.depth : 100 - c.depth;
+        return 50 - c.depth;
+      }
+      if (v === undefined || v === null) return -1000;
+      return 1 - c.depth;
+    };
+    const allMatchesFinder = findAllByKeyPatternFn(cleanedData, /^dequ[ie]*[a-z]*Relationships$/i);
+    const allLooseFinder = findAllByKeyPatternFn(cleanedData, /deq|relac|relation|^rels?$/i);
+    const allUltraFinder = findAllByKeyPatternFn(cleanedData, /deq/i);
+    // FALLBACK A CATENA: strict → loose → ultra (mai perdere dati!)
+    const allMatchesEffective: any[] = (allMatchesFinder.length > 0) ? allMatchesFinder :
+                                        (allLooseFinder.length > 0) ? allLooseFinder :
+                                        allUltraFinder;
+    const sorted = allMatchesEffective.slice().sort((a, b) => scoreCandidateFn(b) - scoreCandidateFn(a));
+    const topCand = sorted[0];
+    const raw = topCand ? topCand.value : undefined;
+
+    // Banner MINIMAL no-backtick-annidati
+    try {
+      const countR = Array.isArray(raw) ? raw.length :
+        (raw && typeof raw === 'object' && Array.isArray((raw as any).relationships) ? (raw as any).relationships.length : 0);
+      const countN = (raw && typeof raw === 'object' && (raw as any).entityNames && typeof (raw as any).entityNames === 'object')
+        ? Object.keys((raw as any).entityNames).length : 0;
+      const cssBanner = 'background:#0052cc;color:#fff;padding:3px 7px;border-radius:3px;font-weight:bold';
+      const topKeysShort = Object.keys(cleanedData ?? {}).slice(0, 8).join(',');
+      const chosenStr = topCand ? (topCand.path + ' depth=' + topCand.depth) : 'NESSUNO';
+      const typeStr = Array.isArray(raw) ? ('Array(' + raw.length + ')') :
+        (raw && typeof raw === 'object' ? ('Obj(rels=' + countR + ',names=' + countN + ')') : String(raw));
+      const bannerMsg = '%c🟢 [DEQUIES_FINDER v1.0 • 15.09.2026]%c  topkeys=' + topKeysShort +
+                        '  matchStrict=' + allMatchesFinder.length +
+                        '  matchLoose=' + allLooseFinder.length +
+                        '  matchUltra(/deq/i)=' + allUltraFinder.length +
+                        '  chosen=' + chosenStr +
+                        '  type=' + typeStr +
+                        '  totalRels=' + countR;
+      console.log(bannerMsg, cssBanner, 'color:#42526e');
+      if (allMatchesFinder.length > 0) {
+        console.log('  Match strict:', allMatchesFinder.map(function(m: any) {
+          return { p: m.path, d: m.depth, s: scoreCandidateFn(m),
+                   t: Array.isArray(m.value) ? ('A'+m.value.length) : (m.value && typeof m.value === 'object' ? 'O' : typeof m.value) };
+        }));
+      }
+      if (!raw) console.warn('%c  ⚠️ RAW=UNDEFINED → usa window.__debugFastCheck.findAll(/dequien/i)',
+                             'color:#ff6b00;font-weight:bold');
+    } catch (e) {}
+
     if (!raw) return undefined;
-    const filteredMesh = filterOutNotaryRelationships(raw);
+
+    // Pre-processing: se raw è OGGETTO (nuovo formato provider Python), inietta entityNames nelle relazioni
+    // e appiattisce formato legacy → 100% array + nomi dentro ogni riga.
+    let processedForFilter: any = raw;
+    if (raw && !Array.isArray(raw) && typeof raw === 'object') {
+      const relsArr = Array.isArray((raw as any).relationships) ? (raw as any).relationships : [];
+      const namesRaw = (raw as any).entityNames as Record<string, any> | undefined;
+      if (namesRaw && typeof namesRaw === 'object') {
+    // normRut già definito sopra
+        const lookup: Record<string,string> = {};
+        for (const [k, v] of Object.entries(namesRaw)) lookup[normRut(k)] = String(v ?? '');
+        processedForFilter = {
+          ...(raw as any),
+          relationships: relsArr.map((r: any) => {
+            const sN = lookup[normRut(r.source)];
+            const tN = lookup[normRut(r.target)];
+            return {
+              ...r,
+              sourceName: typeof r.sourceName === 'string' && r.sourceName ? r.sourceName : sN,
+              targetName: typeof r.targetName === 'string' && r.targetName ? r.targetName : tN,
+              _sourceEntityName: sN || r._sourceEntityName,
+              _targetEntityName: tN || r._targetEntityName,
+            };
+          }),
+        };
+      }
+    }
+
+    const filteredMesh = filterOutNotaryRelationships(processedForFilter);
     const stats = (filteredMesh as any)?._notaryCleanup;
     if (stats?.removedRelations || stats?.removedEntityNames) {
       logger.log(
         `[Malla Relacional] Rimosse ${stats.removedRelations || 0} relazioni + ${stats.removedEntityNames || 0} entità notarili (nomi: ${JSON.stringify(stats.removedNames || [])})`
       );
     }
-    return filteredMesh;
-  }, [
-    cleanedData?.sheriffLogData?.filteredDetails?.dequienesRelationships,
-    cleanedData?.details?.sheriffLogData?.filteredDetails?.dequienesRelationships,
-    cleanedData?.logEntry?.filteredDetails?.dequienesRelationships,
-    cleanedData,
-  ]);
+
+    // ✅ UNIFORMA SEMPRE AD OGGETTO {relationships, entityNames} (formato atteso da MeshTable + MeshFlowTable!)
+    //    entityNames serve a getName(rut) → NOMI REALI invece di N/A in entrambe le Mesh.
+    let finalObj: { relationships: any[]; entityNames: Record<string, string> } | undefined = undefined;
+    if (Array.isArray(filteredMesh)) {
+      finalObj = { relationships: filteredMesh, entityNames: {} };
+    } else if (filteredMesh && typeof filteredMesh === 'object') {
+      const rels = Array.isArray((filteredMesh as any).relationships) ? (filteredMesh as any).relationships : [];
+      const names = (filteredMesh as any).entityNames || {};
+      finalObj = { relationships: rels, entityNames: typeof names === 'object' ? names : {} };
+    }
+
+    // 🔧 FIX 15.09 v1.5 FALLBACK NOTARY MAIN:
+    // Se filterOutNotaryRelationships ha BUTTATO via TUTTE le relazioni COL MAIN RUT (false positive!),
+    // ripristiniamo SOLO LE RELAZIONI MAIN raw (non le notarili di altri!) da processedForFilter → MAI PIÙ "Sin datos".
+    try {
+      const normRutFb = (s: any) => String(s ?? '').replace(/[^0-9Kk]/g, '').toLowerCase();
+      const normDigitsOnly = (s: any) => String(s ?? '').replace(/[^0-9]/g, '');
+      const rutMatchFb = (a: any, b: any) => {
+        if (!a || !b) return false;
+        const a1 = normRutFb(a), b1 = normRutFb(b); if (a1 && b1 && a1 === b1) return true;
+        const a2 = normDigitsOnly(a), b2 = normDigitsOnly(b); if (a2 && b2 && a2 === b2) return true;
+        if (a2 && b2 && a2.length >= 7 && b2.length >= 7) { return a2.startsWith(b2.slice(0,8)) || b2.startsWith(a2.slice(0,8)) || a2.includes(b2.slice(0,8)) || b2.includes(a2.slice(0,8)); }
+        return false;
+      };
+      // Determina mainRut per il fallback
+      let mainRutForFb: string = cleanedData?.rut || cleanedData?.companyGeneralInfo?.rut || (cleanedData as any)?.companyData?.rut || '';
+      if (!mainRutForFb && typeof window !== 'undefined') {
+        try { mainRutForFb = new URLSearchParams(window.location.search).get('rut') || ''; } catch(e){}
+      }
+      const includeMain = (r: any) => rutMatchFb(r?.source, mainRutForFb) || rutMatchFb(r?.target, mainRutForFb);
+
+      // Raw rels PRIMA del filtro notarile (processedForFilter = relazioni già iniettate con nomi!)
+      const rawRels: any[] = Array.isArray(processedForFilter) ? processedForFilter : (processedForFilter?.relationships || []);
+      const rawNames: Record<string,string> = (!processedForFilter || Array.isArray(processedForFilter)) ? {} : (processedForFilter.entityNames || {});
+
+      // Owned_by / Represented_by MAIN (qualsiasi)
+      const mainRawOwns = rawRels.filter(r => r?.label === 'OWNED_BY' && includeMain(r));
+      const mainRawReps = rawRels.filter(r => r?.label === 'REPRESENTED_BY' && includeMain(r));
+      const mainRelsRaw = [...mainRawOwns, ...mainRawReps];
+
+      const mainFiltOwns = finalObj?.relationships?.filter(r => r?.label === 'OWNED_BY' && includeMain(r)) || [];
+      const mainFiltReps = finalObj?.relationships?.filter(r => r?.label === 'REPRESENTED_BY' && includeMain(r)) || [];
+
+      if ((mainFiltOwns.length === 0 && mainRawOwns.length > 0) || (mainFiltReps.length === 0 && mainRawReps.length > 0)) {
+        // Unisci filtered relazioni + main raw relazioni (dedup per source__target__label)
+        const dedupKey = new Set<string>();
+        const mergedRels: any[] = [];
+        for (const r of [...(finalObj?.relationships || []), ...mainRelsRaw]) {
+          if (!r || !r.label) continue;
+          const k = `${normRutFb(r.source)}__${normRutFb(r.target)}__${r.label}`;
+          if (!dedupKey.has(k)) { dedupKey.add(k); mergedRels.push(r); }
+        }
+        const addOwns = mainRawOwns.length - mainFiltOwns.length;
+        const addReps = mainRawReps.length - mainFiltReps.length;
+        // Merge entityNames (raw + filtered, raw ha la precedenza su missing)
+        const mergedNames: Record<string,string> = { ...(rawNames || {}), ...(finalObj?.entityNames || {}) };
+        finalObj = {
+          relationships: mergedRels,
+          entityNames: mergedNames,
+          _fallbackNotaryMainRestored: { addedOwns: Math.max(0, addOwns), addedReps: Math.max(0, addReps), mainRut: mainRutForFb, totalRestored: Math.max(0, addOwns) + Math.max(0, addReps) },
+        };
+        try {
+          const cssBanner = 'background:#d97706;color:#fff;padding:3px 8px;border-radius:4px;font-weight:bold';
+          const restored = (finalObj as any)._fallbackNotaryMainRestored;
+          console.log(`%c⚠️ [FALLBACK NOTARY MAIN FIX v1.5 • 15.09.2026]%c  Filtro notarile BUTTOVA main! → restore OWNED_BY=%d  REPRESENTED_BY=%d  TOTAL RESTORED=%d · mainRut=%s · rels finali ora=%d (prima %d)`,
+            cssBanner, 'color:#92400e',
+            restored.addedOwns, restored.addedReps, restored.totalRestored, JSON.stringify(mainRutForFb),
+            mergedRels.length, (finalObj as any)?._fallbackNotaryMainRestored ? mergedRels.length - restored.totalRestored : -1
+          );
+        } catch(e){}
+      }
+    } catch (eNotaryFb) {
+      console.warn('[FALLBACK NOTARY MAIN FIX] Eccezione non bloccante:', eNotaryFb);
+    }
+
+    try {
+      const countByLabel: Record<string, number> = {};
+      if (finalObj?.relationships?.length) for (const r of finalObj.relationships) { if (r && r.label) countByLabel[r.label] = (countByLabel[r.label] || 0) + 1; }
+      const len = finalObj?.relationships?.length || 0;
+      const css = len ? 'color:#2ea44f;font-weight:bold' : 'color:#ff2d2d;font-weight:bold';
+      const extraFb = (finalObj as any)?._fallbackNotaryMainRestored ? `  ⚠️FALLBACK_NOTARY=${JSON.stringify((finalObj as any)._fallbackNotaryMainRestored)}` : '';
+      console.log('%c  🔚 Output useMemo: Obj(relationships=' + len + ', entityNames=' + Object.keys(finalObj?.entityNames || {}).length + ')' +
+                  (len ? ('  labels=' + JSON.stringify(countByLabel)) : '  ⚠️ VUOTO!') + extraFb, css);
+    } catch (e) {}
+    return finalObj;
+  }, [cleanedData]);
+
+  useEffect(() => {
+    try {
+      const findAll = (pattern: RegExp) => {
+        const results: Array<{ path: string; value: any; depth: number }> = [];
+        const visited = new WeakSet();
+        const walk = (obj: any, currentPath: string, depth: number) => {
+          if (!obj || typeof obj !== 'object' || depth > 14) return;
+          if (visited.has(obj)) return;
+          visited.add(obj);
+          for (const key of Object.keys(obj)) {
+            const newPath = currentPath + '.' + key;
+            try {
+              if (pattern.test(key)) results.push({ path: newPath, value: (obj as any)[key], depth });
+            } catch (e) {}
+            walk((obj as any)[key], newPath, depth + 1);
+          }
+        };
+        walk(cleanedData, 'cleanedData', 0);
+        walk(data, 'rawData', 0);
+        console.table(results.map(r => ({ path: r.path, depth: r.depth, type: Array.isArray(r.value) ? ('Array(' + r.value.length + ')') : (r.value && typeof r.value === 'object' ? 'Object' : String(typeof r.value)) })));
+        return results;
+      };
+      // 🔧 FIX 15.09 INJECT ROBUSTO v1.1:
+      // Se useMemo non ha ancora calcolato dequinesForMesh (undefined) al momento di useEffect inject,
+      // LO CALCOLIAMO DIRETTAMENTE QUI da path sicuri (lo sappiamo da findAll: depth1 o depth2!)
+      // → Mai più 'Cannot read .relationships of undefined'!
+      let dequinesForMesh_INJECT = dequinesForMesh;
+      if (!dequinesForMesh_INJECT || !(dequinesForMesh_INJECT)?.relationships) {
+        try {
+          const tryPaths = [
+            () => (cleanedData)?.details?.dequinesRelationships,
+            () => (cleanedData)?.sheriffLogData?.filteredDetails?.dequinesRelationships,
+            () => (data)?.details?.dequinesRelationships,
+            () => (data)?.sheriffLogData?.filteredDetails?.dequinesRelationships,
+          ];
+          let rawFromPath = undefined;
+          for (const fn of tryPaths) {
+            try { const v = fn(); if (v && (Array.isArray(v?.relationships) || Array.isArray(v))) { rawFromPath = v; break; } } catch(e){}
+          }
+          if (rawFromPath) {
+            const relsIn = Array.isArray(rawFromPath) ? rawFromPath : (rawFromPath.relationships || []);
+            const namesIn = Array.isArray(rawFromPath) ? {} : (rawFromPath.entityNames || {});
+            const lookup = {};
+            if (namesIn && typeof namesIn === 'object') for (const [k,v] of Object.entries(namesIn)) lookup[normRut(k)] = String(v ?? '');
+            const relsWithNames = relsIn.map((r) => {
+              if (!r) return r;
+              const sN = lookup[normRut(r.source)];
+              const tN = lookup[normRut(r.target)];
+              return { ...r, sourceName: r.sourceName || sN, targetName: r.targetName || tN, _sourceEntityName: sN || r._sourceEntityName, _targetEntityName: tN || r._targetEntityName };
+            });
+            try {
+              const filt = filterOutNotaryRelationships({ relationships: relsWithNames, entityNames: namesIn });
+              const relsOut = Array.isArray(filt) ? filt : (filt).relationships || [];
+              const namesOut = Array.isArray(filt) ? namesIn : ((filt).entityNames || namesIn);
+              dequinesForMesh_INJECT = { relationships: relsOut, entityNames: namesOut, _recalculatedInInjectRobust1_1: true };
+            } catch(e2) {
+              dequinesForMesh_INJECT = { relationships: relsWithNames, entityNames: namesIn, _recalculatedInInjectRobust1_1_NO_NOTARY_FILTER: true };
+            }
+          }
+        } catch(e) { console.warn('[DEBUG GLOBAL] fallback calcolo dequinesForMesh fallito:', e); }
+      }
+      (window as any).__debugFastCheck = {
+        cleanedData, rawData: data,
+        dequinesForMesh: dequinesForMesh_INJECT,
+        normRut, findAll,
+        forceRecalc: () => {
+          try { (window as any).__debugFastCheck.dequinesForMesh = dequinesForMesh_INJECT; console.log('✅ forceRecalc OK. rels=', dequinesForMesh_INJECT?.relationships?.length); }
+          catch(e2){ console.error(e2); }
+        },
+      };
+      console.log('%c🔧 [DEBUG GLOBAL INJECTED v1.1 • 15.09.2026 🔧ROBUSTO]%c window.__debugFastCheck disponibile in console F12. dequinesForMesh type=%s rels=%s names=%s\n%c  Comandi utili:\n    %cwindow.__debugFastCheck.dequinesForMesh.relationships%c → array relazioni (atteso 63 per 92604000-6)\n    %cwindow.__debugFastCheck.findAll(/dequien/i)%c → tabella tutti i match a qualsiasi profondità',
+        'background:#1f6feb;color:#fff;padding:3px 10px;border-radius:4px;font-weight:bold',
+        'color:#1f6feb;font-weight:bold',
+        typeof dequinesForMesh_INJECT,
+        dequinesForMesh_INJECT?.relationships?.length ?? 0,
+        Object.keys(dequinesForMesh_INJECT?.entityNames || {}).length,
+        'color:#8b949e',
+        'color:#f0883e;background:#161b22;padding:1px 5px;border-radius:3px',
+        'color:#8b949e',
+        'color:#f0883e;background:#161b22;padding:1px 5px;border-radius:3px',
+        'color:#8b949e'
+      );
+      // 🔧 FIX 15.09 INJECT ROBUSTO v1.2 — RETRY SETTIMEOUT T1(250ms) T2(900ms)!
+      // (useMemo dequinesForMesh potrebbe essere undefined nel primo render veloce.
+      //  Aspettiamo → lo scope dequinesForMesh (useMemo) è valorizzato OR fallback path raw!)
+      if (typeof window !== 'undefined') {
+        const doReinject = (whenMs, tag) => {
+          setTimeout(() => {
+            try {
+              const obj = (window as any).__debugFastCheck || {};
+              let meshObj = dequinesForMesh;
+              if (!meshObj || !(meshObj)?.relationships?.length) meshObj = dequinesForMesh_INJECT;
+              if (!meshObj || !(meshObj)?.relationships?.length) {
+                try {
+                  const tryP = (cleanedData as any)?.details?.dequinesRelationships || (cleanedData as any)?.sheriffLogData?.filteredDetails?.dequinesRelationships || (data as any)?.details?.dequinesRelationships;
+                  if (tryP && (Array.isArray(tryP.relationships) || Array.isArray(tryP))) {
+                    meshObj = Array.isArray(tryP) ? { relationships: tryP, entityNames: {} } : { relationships: tryP.relationships || [], entityNames: tryP.entityNames || {} };
+                  }
+                } catch(e3){}
+              }
+              (window as any).__debugFastCheck = {
+                cleanedData: obj.cleanedData || cleanedData,
+                rawData: obj.rawData || data,
+                dequinesForMesh: meshObj,
+                normRut: obj.normRut || normRut,
+                findAll: obj.findAll || findAll,
+                forceRecalc: (obj.forceRecalc) || (() => {}),
+                _reinjectTag: tag,
+              };
+              const nlen = ((window as any).__debugFastCheck.dequinesForMesh)?.relationships?.length ?? -1;
+              if (nlen > 0) console.log('%c  ✅ [REINJECT '+tag+' @'+whenMs+'ms] dequinesForMesh OK! rels='+nlen, 'color:#16a34a;background:#dcfce7;padding:1px 6px;border-radius:3px;font-weight:600');
+              else console.warn('  ⚠️ [REINJECT '+tag+' @'+whenMs+'ms] ancora rels='+nlen);
+            } catch(errTimeout){ console.warn('[Reinject timeout fail]', errTimeout); }
+          }, whenMs);
+        };
+        doReinject(250, 'T1');
+        doReinject(900, 'T2-FINALE');
+      }
+    } catch (e) { console.warn('[DEBUG GLOBAL] inject fallito:', e); }
+  }, [cleanedData, data, dequienesForMesh]);
 
   // User notes state
   const [userNote, setUserNote] = useState<UserNote | null>(null);
@@ -1593,6 +1902,99 @@ const FastCheck: React.FC = () => {
 
       // Nota: anche le restanti sezioni (PEP, Antiunion, etc.) continuano a usare cleanedData.
 
+      // --- FONTE 4: 🔧 FIX 15.09.2026 v1.3. Importa Socios da Dequienes REPRESENTED_BY!
+      // Le 3 fonti sopra (compliance, mallaSocietariaData) in record resultId 6aa934f2b = 0 righe!
+      // Ma dequienesForMesh ha REPRESENTED_BY 23 relazioni + nomi VERI da entityNames. Non perdiamole!
+      let addedFromDequinesRep = 0;
+      const skippedDequinesNotary: string[] = [];
+      const debugF4Counts = { repsTotali: 0, repsNoMatchType: 0, srcEqMain: 0, tgtEqMain: 0, srcEqMainRobust:0, tgtEqMainRobust:0, saltatiNoRutMatch: 0, saltatiNotary: 0, saltatiNoName: 0, deduped: 0, nomiOK:0, nomiTryKey1:0, nomiTryKey2:0, nomiTryKey3:0, nomiFallbackEntityField:0 };
+      // isNotaryEntry già importata sopra (L48 utils/dequienes) — riutilizziamo
+        if ((dequinesForMesh as any)?.relationships?.length > 0 && (dequinesForMesh as any)?.entityNames) {
+          const repsAllRaw = (dequinesForMesh as any)?.relationships?.filter((r: any) => r?.label === 'REPRESENTED_BY') || [];
+          debugF4Counts.repsTotali = repsAllRaw.length;
+          // 🔧 FIX 15.09 FONTE4 v1.4: STESSO BUG MESH! Unisci match_type + no match_type (non buttar via 23 stimate)
+          const repsOnlyNoType = repsAllRaw.filter((r: any) => !r?.information_source?.match_type);
+          const repsOnlyMatchType = repsAllRaw.filter((r: any) => r?.information_source?.match_type === true);
+          const f4Set = new Set();
+          const repsOnly = [];
+          for (const r of [...repsOnlyNoType, ...repsOnlyMatchType]) {
+            const k = String(r.source||'')+'__'+String(r.target||'');
+            if (!f4Set.has(k)) { f4Set.add(k); repsOnly.push(r); }
+          }
+          debugF4Counts.repsNoMatchType = repsOnly.length;
+          debugF4Counts.repsOnly_noMatchType_raw = repsOnlyNoType.length;
+          debugF4Counts.repsOnly_matchTypeTRUE_raw = repsOnlyMatchType.length;
+          const namesDict = (dequinesForMesh as any)?.entityNames || {};
+        const mainRaw = companyData?.rut;
+        const mainNormLocal = normRut(mainRaw || '');
+        // 🔧 v1.3 RUT MATCH ROBUST (3 fallback!) come MeshTable
+        const normOnlyDigits = (s: any) => String(s ?? '').replace(/[^0-9]/g,'');
+        const rutMatchRobustF4 = (a: any, b: any) => {
+          const a1 = normRut(a), b1 = normRut(b);
+          if (a1 && b1 && a1===b1) return true;
+          const a2 = normOnlyDigits(a), b2 = normOnlyDigits(b);
+          if (a2 && b2 && a2===b2) return true;
+          if (a2 && b2 && a2.length>=7 && b2.length>=7) {
+            if (a2.startsWith(b2.slice(0,8)) || b2.startsWith(a2.slice(0,8))) return true;
+            if (a2.includes(b2.slice(0,8)) || b2.includes(a2.slice(0,8))) return true;
+          }
+          return false;
+        };
+        const tryGetName = (rutOrig: any): string => {
+          // 4 fallback per trovare il nome in entityNames (le chiavi possono avere formati diversi!)
+          let n = namesDict[normRut(rutOrig)]; if (n) { debugF4Counts.nomiTryKey1 += 1; return n; }
+          n = namesDict[String(rutOrig)]; if (n) { debugF4Counts.nomiTryKey2 += 1; return n; }
+          n = namesDict[normOnlyDigits(rutOrig)]; if (n) { debugF4Counts.nomiTryKey3 += 1; return n; }
+          const key = Object.keys(namesDict).find(k => normOnlyDigits(k) === normOnlyDigits(rutOrig));
+          if (key) { n = namesDict[key]; if (n) return n; }
+          return '';
+        };
+        debugF4Counts.srcEqMain = repsOnly.filter((r:any)=> normRut(String(r.source||''))===mainNormLocal).length;
+        debugF4Counts.tgtEqMain = repsOnly.filter((r:any)=> normRut(String(r.target||''))===mainNormLocal).length;
+        debugF4Counts.srcEqMainRobust = repsOnly.filter((r:any)=> rutMatchRobustF4(r.source, mainRaw)).length;
+        debugF4Counts.tgtEqMainRobust = repsOnly.filter((r:any)=> rutMatchRobustF4(r.target, mainRaw)).length;
+        for (const r of repsOnly) {
+          const src = normRut(String(r.source || ''));
+          const tgt = normRut(String(r.target || ''));
+          // REPRESENTED_BY semantica: source=azienda, target=rappresentante/socio.
+          // Se main (92604000) è source → socio = target; se flipped è target → socio = source
+          let socioRutNorm = ''; let socioRutOrig = ''; let socioName = '';
+          let matchSocio = false;
+          if (rutMatchRobustF4(r.source, mainRaw)) { socioRutNorm = tgt; socioRutOrig = String(r.target || ''); matchSocio = true; }
+          else if (rutMatchRobustF4(r.target, mainRaw)) { socioRutNorm = src; socioRutOrig = String(r.source || ''); matchSocio = true; }
+          if (!matchSocio) { debugF4Counts.saltatiNoRutMatch += 1; continue; } // relazione non collegata al RUT principale
+          // Nome da entityNames (multi fallback)
+          socioName = tryGetName(socioRutOrig);
+          if (!socioName) socioName = r._targetEntityName || r._sourceEntityName || '';
+          if (socioName) debugF4Counts.nomiOK += 1;
+          // Filtro notarile doppia sicurezza (filterOutNotaryRelationships già applicato, ma cautela)
+          if (isNotaryEntry({ nombre: socioName, rut: socioRutOrig })) {
+            debugF4Counts.saltatiNotary += 1;
+            skippedDequinesNotary.push(socioName || socioRutOrig);
+            continue;
+          }
+          if (!socioName) { debugF4Counts.saltatiNoName += 1; continue; } // senza nome = inutile per valutazione PEP
+          const key = socioRutNorm || `__noRut__${socioName.toLowerCase()}`;
+          if (seenKeys.has(key)) { debugF4Counts.deduped += 1; continue; }
+          seenKeys.add(key);
+          socios.push({ name: socioName, rut: (socioRutOrig || '').trim() });
+          addedFromDequinesRep += 1;
+        }
+      }
+      // 🔧 Banner SEMPRE visibile (anche 0) → debugging immediato
+      {
+        const msgStats = `stats=${JSON.stringify(debugF4Counts)} · mainRut_norm=${normRut(companyData?.rut)} · mainRut_raw=${companyData?.rut} · namesDict_keys=${Object.keys((dequienesForMesh as any)?.entityNames || {}).length}`;
+        if (addedFromDequinesRep > 0 || skippedDequinesNotary.length > 0) {
+          logger.log(
+            `🟢 [PEP Socios Filter FONTE4 v1.3 🔧ROBUSTO] Aggiunti ${addedFromDequinesRep} socios. Scartati notarili=${skippedDequinesNotary.length} · ${msgStats}`
+          );
+        } else {
+          logger.warn(
+            `⚠️ [PEP Socios Filter FONTE4 v1.3 🔧ROBUSTO] AGGIUNTI 0 (controlla counts). ${msgStats} · nomi_notary_scartati=${JSON.stringify(skippedDequinesNotary)}`
+          );
+        }
+      }
+
       if (socios.length > 0) {
         const sociosRuts = socios.map((socio) => socio.rut);
 
@@ -1710,7 +2112,7 @@ const FastCheck: React.FC = () => {
     };
 
     initializeSociosEvaluations();
-  }, [data, resetPerformed]);
+  }, [data, resetPerformed, cleanedData, dequienesForMesh, companyData?.rut]);
 
   // Helper function to count socios that are already evaluated or currently selected
   const countEvaluatedAndSelectedSocios = useCallback((sociosEvaluations: SocioEvaluation[]) => {

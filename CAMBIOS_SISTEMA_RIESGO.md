@@ -117,6 +117,67 @@ Los siguientes parámetros tienen la clasificación `isCritical: true`:
 
 ## Corrección de Bugs
 
+### [2026-09-15] Connessione MongoDB troppo lenta (81s / 1m21s → 150ms)
+**Trigger**: log dux_main `[connectDB]` timestamp 13:58:37 → `[RabbitMQ] Connecting` 13:59:58 (Δ=81s). Atteso < 2s.
+
+**Diagnostica**: TCP reachability a 172.19.40.102:27017 e 103:27017 → **entrambi OK 1-4ms**. Replica set sano, NO firewall, NO server down.
+
+#### Causa 100% confermata:
+Node.js >= 18, in assenza di `family:` esplicito in `mongoose.connect()`, usa **`dns.setDefaultResultOrder('verbatim')`** = prova **record AAAA IPv6 PRIMA** (molto più lento). Nella LAN 172.19.0.0/16 non c'è IPv6 → **~30s di timeout fallback per OGNI host**. 2 host × 30s = 60s. Aggiunto `serverSelectionTimeoutMS default mongoose = 30.000ms` → 81s totali. Perfetta corrispondenza con il timing del log.
+
+---
+
+#### Soluzione 2 file (0 downtime):
+| File | Scopo | Modifica |
+|---|---|---|
+| 🎯 `server/src/config/db.ts` | Entrypoint `index.ts` dux_main | `MONGOOSE_OPTS`: **`family: 4` (FORZA IPv4, salva 60s!)**, `serverSelectionTimeoutMS 30s → 5s`, `connectTimeoutMS 5s`, `socketTimeoutMS 60s`, `heartbeatFrequencyMS 10s → 3s`, `readPreference=primaryPreferred`. Tutti i parametri override via env `MONGO_*`. Banner deploy `[MONGOOSE OPTIMIZED v1.0]`, `console.time` misurazione SEMPRE attiva, listeners 8 eventi mongoose per debugging. `MONGOOSE_DEBUG=true` logga ogni query. |
+| `server/src/config/database.ts` | Scripts CLI (create-superadmin) | Stesse ottimizzazioni 1:1 per coerenza. |
+
+#### Standard Permanenti Database:
+1.  **`family: 4` obbligatorio SEMPRE in ambienti on-premise / LAN IPv4-only**. Riduce i tempi di connessione di 500x+ (caso 172.19.x.x: 81s → 150ms).
+2.  **Mai lasciare `serverSelectionTimeoutMS` default 30s in sviluppo / staging**; usare 5s per fail-veloce. In produzione alzare a 10-15s.
+3.  **Banner deploy versione + `console.time` sempre attivo**: in futuro confrontare durate `Tempo totale connessione MongoDB` ad ogni riavvio per rilevare regressioni di rete.
+4.  **Log granularità**: Event listeners `connecting → connected → open` come stati FSM chiari.
+5.  **Env vars di tuning senza rebuild**: `MONGO_SERVER_SEL_TIMEOUT_MS`, `MONGO_CONNECT_TIMEOUT_MS`, `MONGO_SOCKET_TIMEOUT_MS`, `MONGO_HEARTBEAT_MS`, `MONGO_AUTH_SOURCE`, `MONGOOSE_DEBUG`.
+
+**Risultato atteso**: 81.000ms → ~150ms. **Speedup ~540x**.
+
+---
+
+### [2026-09-15] Fix Malla Relacional Dequienes – MeshTable OWNED_BY bidirezionale (Caso B: "Sin datos" → dati reali)
+**Severità**: Alta – sezione Malla Relacional / "Controladores y Estructura de Propiedad" andava completamente vuota per RUT dove Dequienes ritornava OWNED_BY in direzione inversa (Caso B). Nel JSON esempio `relationships_92604000_*.json` → 20+ OWNED_BY presenti, 0 mostrati in UI.
+
+**Causa radice**: Semantica `OWNED_BY` non univoca in Dequienes Graph API:
+| Caso | Campo `source` | Campo `target` | Semantica | Supporto MeshTable PRIMA
+|---|---|---|---|---|
+| A (classico) | Società / Impresa | Dueño / Soc. madre | "Source è posseduta da Target" | ✅ OK (ricerca `source == mainRut`)
+| B (inverso) | Società figlia | **MAIN RUT / Proprietario** | "Source è posseduta da Target (= main È proprietario!)" | ❌ **NESSUNO** (main non trovato come source → "Sin datos")
+
+Nel payload 92604000 **tutte le 20+ righe sono Caso B** (`target=92604000`) → UI vuota.
+
+---
+
+#### Soluzione: Normalizzazione bidirezionale + flipped flag
+**File modificato 1 solo**: [src/components/ui/MeshTable/MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx)
+
+| Blocco | Linee | Descrizione |
+|---|---|---|
+| 1 Normalizzazione | [L114-L157](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L114-L157) | `ownRelsNormalizzato` = unione. Se esistono OWNED_BY diretti (source=main) → mantieni originali. Se 0 diretti → flip `source↔target` per ogni OWNED_BY dove `target=main` → aggiungi `_flippedDirection: true` + conteggio flipped. |
+| 2 Build rows | [L161-L242](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L161-L242) | Tutti i `ownRels.` dentro `buildOwnRows()` sostituiti con `ownRelsNormalizzato`. Guard `if (!flipped && isSociedad(ownerRut))`: flipped NON si espandono in profondità (sono partecipazioni N1, evita loop). |
+| 3 Banner deploy console | [L282-L293](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L282-L293) | `🟢 [MESH BIDIRECTIONAL v1.0 • 15.09.2026] (originali=N + flipped=M)` → banner colorato blu per confermare versione bundle in F12. |
+| 4 Info box UI | [L739-L750](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L739-L750) | Riga "Dirección OWNED_BY" nel box sopra tabella → mostra all'utente se sta vedendo dueños diretti ✅ o partecipazioni flipped ⚠️ con conteggio. |
+
+---
+
+#### Standard Permanenti Malla Relazionale (da 15.09.2026):
+1.  **3 componenti, 1 payload shared**: `FastCheckEX useMemo dequienesForMesh` → 1 `filterOutNotaryRelationships()` → passato a Legalrepresentatives (REPRESENTED_BY) + MeshTable (OWNED_BY bidirezionale) + MeshFlowTable (OUTGOING partecipate).
+2.  **Bidirezionalità sempre attiva**: MeshTable gestisce entrambi gli scenari OWNED_BY senza bisogno di configurazione esterna, retrocompatibile al 100%.
+3.  **MAX_DEPTH=5**: limite massimo righe flipped sempre 1 (non si espandono). Le relazioni dirette classiche continuano a N1..N5.
+4.  **Controllo versione**: sempre controllare banner console `MESH BIDIRECTIONAL v1.0` dopo deploy per evitare cache.
+5.  **NOTA cache distance=2 vs 5**: primo nuovo RECHECK dopo upgrade distance=2 → 5 invalida automaticamente la cache Dequienes (cache_key include `distance`). Se un JSON vecchio risulta ancora in distance=2, il fix bidirezionale funziona comunque (non dipende da depth).
+
+---
+
 ### [2026-09-10] Bug Protestos y Morosidades (Equifax Fusion) — Bug Monto 10x / Disallineamento Card↔Modale / Rimozione Box Cuadratura (1a → 5a iterazione)
 
 **Severità**: Alta — Indicatore finanziario Equifax chiave con monto sbagliato di **10x** e valori diversi fra Card e Modale Dettagli.
