@@ -135,20 +135,39 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         );
     }
 
-    // 🔧 Fix 15.09 v1.4 — UNISCI SEMPRE !match_type (ufficiali) + match_type=TRUE (inferiti via RUT associato / stima)!
-    // Motivo: nel caso RUT 92604000-6, le 33 relazioni COL MAIN hanno match_type=TRUE (saltate!), quindi ownRels MAIN = 0.
-    const ownRels_raw = relationships.filter((r: any) => r.label === 'OWNED_BY');
-    const ownRels_noMatchType = ownRels_raw.filter((r: any) => !r?.information_source?.match_type);
-    const ownRels_matchType = ownRels_raw.filter((r: any) => r?.information_source?.match_type === true);
-    const unionSet = new Set<string>();
+    // 🔧 Fix 15.09 v1.5 — **RIMUOVIAMO DEL TUTTO IL FILTRO !match_type**!
+    // Motivo: match_type TRUE era quello su provider Python (trovato via RUT associato STIMATO). Nel caso MAIN RUT, LE SUE
+    // 33 OWNED_BY matchano! Ma se scartiamo match_type===TRUE perdiamo TUTTO! → meglio TUTTI i OWNED_BY grezzi.
+    const ownRels_raw_ALL = relationships.filter((r: any) => r && r.label === 'OWNED_BY');
+    // Dedup TUTTI (source_norm__target_norm) — senza badare a match_type!
+    const dedup = new Set<string>();
     const ownRels: any[] = [];
-    for (const r of [...ownRels_noMatchType, ...ownRels_matchType]) {
-      const key = `${String(r.source)}__${String(r.target)}__${r._direction || ''}`;
-      if (!unionSet.has(key)) { unionSet.add(key); ownRels.push(r); }
+    for (const r of ownRels_raw_ALL) {
+      if (!r || (!r.source && !r.target)) continue;
+      const k = normalizeRut(String(r.source ?? '')) + '__' + normalizeRut(String(r.target ?? ''));
+      if (!dedup.has(k)) { dedup.add(k); ownRels.push(r); }
     }
-    // Banner debug counts extra
+    const ownRels_noMatchType = ownRels_raw_ALL.filter((r: any) => !r?.information_source?.match_type);
+    const ownRels_matchType = ownRels_raw_ALL.filter((r: any) => r?.information_source?.match_type === true);
+    // Banner debug EXTRA (vediamo SUBITO se MAIN è dentro ownRels!)
     if (typeof window !== 'undefined') {
-      try { console.log(`%c   ➕ [MESH v1.4 OWNED_BY MERGED] noMatchType=${ownRels_noMatchType.length} matchTypeTRUE=${ownRels_matchType.length} union=${ownRels.length} (filtrati da raw=${ownRels_raw.length})`, 'color:#055160;background:#cff4fc;border:1px solid #9eeaf9;padding:2px 6px;border-radius:3px'); } catch(e){}
+      try {
+        const normM = normalizeRut(mainRut || cleanMain || '');
+        const onlyD = (s: any) => String(s ?? '').replace(/[^0-9]/g, '');
+        const robustMatch = (a: any, b: any) => {
+          const a1 = normalizeRut(a), b1 = normalizeRut(b); if (a1 && b1 && a1 === b1) return true;
+          const a2 = onlyD(a), b2 = onlyD(b); if (a2 && b2 && a2 === b2) return true;
+          if (a2 && b2 && a2.length >= 7 && b2.length >= 7) return a2.startsWith(b2.slice(0,8))||b2.startsWith(a2.slice(0,8))||a2.includes(b2.slice(0,8))||b2.includes(a2.slice(0,8));
+          return false;
+        };
+        const mainCount = ownRels.filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).length;
+        const mtTrueCount = ownRels.filter(r=>r?.information_source?.match_type === true).filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).length;
+        const mtFalseCount = ownRels.filter(r=>!r?.information_source?.match_type).filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).length;
+        console.log(`%c   ➕ [MESH v1.5 🔥 NO MATCHTYPE FILTER!] OWNED_BY TOT=${ownRels_raw_ALL.length} dedup=${ownRels.length} noMatchType=${ownRels_noMatchType.length} matchTRUE=${ownRels_matchType.length} | MAIN dentro ownRels: ${mainCount} (mtFALSE=${mtFalseCount}, mtTRUE=${mtTrueCount})`, 'color:#831843;background:#fce7f3;border:1px solid #f9a8d4;padding:2px 10px;border-radius:4px;font-weight:700');
+        if (mainCount > 0) {
+          console.table(ownRels.filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).slice(0,5).map(r=>({raw_s:r.source, raw_t:r.target, match_type: (r?.information_source?.match_type === true ? 'TRUE' : (r?.information_source?.match_type ? 'OBJ/STR' : 'FALSE')), robust_s: robustMatch(r.source, normM), robust_t: robustMatch(r.target, normM)})));
+        }
+      } catch(e){}
     }
 
     // 🔧 FIX 15/09/2026: OWNED_BY bidirezionale.
