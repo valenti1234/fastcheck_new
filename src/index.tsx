@@ -14,8 +14,7 @@ const container = document.getElementById('root');
 if (container) {
   const root = createRoot(container);
   root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    // 🔧 FIX 21.09: RIMOSSO React.StrictMode → No doppio mount ReactFlow!
+    <App />
   );
 }

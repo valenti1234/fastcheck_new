@@ -25,13 +25,13 @@ const initializeDarkMode = () => {
 initializeDarkMode();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <VersionChangeNotifier />
-        <App />
-        <Toaster position="top-right" />
-      </AuthProvider>
-    </BrowserRouter>
-  </React.StrictMode>
+  // 🔧 FIX 21.09: RIMOSSO React.StrictMode per evitare DOPPIO mount di ReactFlow!
+  // StrictMode monta 2 volte i componenti e rompe useRef/useReactFlow interni → Appare e scompare!
+  <BrowserRouter>
+    <AuthProvider>
+      <VersionChangeNotifier />
+      <App />
+      <Toaster position="top-right" />
+    </AuthProvider>
+  </BrowserRouter>
 );

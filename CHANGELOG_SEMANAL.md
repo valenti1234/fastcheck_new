@@ -1355,9 +1355,142 @@ riskCalculationResult_LATEST_76540986-1.json   ← sovrascritto ogni volta
 
 ---
 
-### Verifiche
-- ✅ TypeScript `GetDiagnostics`: 0 errori nuovi (solo HINT imports unused preesistenti)
-- ✅ `python3 -m py_compile fastcheck_api/.../rut.py`: exit 0 (0 errori sintassi)
-- ✅ Sample RUT 76540986-1 prima→dopo:
-  - Prima: `cobranzaLaboral.moraPrevisional.data` → `cantidad=52`, `casos=20` (9 T + 11 MISS campo vigente)
+### 🔥 Fix (15-21 Set 2026 — FINAL FIX Malla Relacional + Mapa Cristobal v1.5): 6 Fix root cause!
+**Trigger utente finale (21.09.2026, dopo 10 iterazioni)**:
+> "Controladores = Sin datos, Socios = 0, Mapa = No se detectaron; Mapa Cristobal appare per mezzo secondo POI SPARISCE; zoom ritorna ORIGINALE; blink nomi nodi!"
+
+✅ **Risultato finale UI accettata**:
+- Controladores y Estructura → **~34 righe blu N1/N2** (NESSUNO "Sin datos")
+- Socios Historicos → **~26 righe nomi reali** (REPRESENTED_BY, FONTE4 v1.4)
+- Mapa de Empresas [Ver diagrama] → **36/36 Visibles! Grafo RADIALE 5 anelli, MAIN centro!**
+- Mapa: Zoom/Pan/Drag **NON ritorna indietro, NESSUN blink!**
+- Console F12 → 0 errori, 0 loop, ogni banner MAX 1 stampa!
+
+---
+
+#### 🥇 Fix 1 — Root Cause PADRE: `filterOutNotaryRelationships` BUTTAVA via TUTTE le 34 OWNED_BY MAIN!
+**Sintomo pre-fix (banner Mesh DBG viola 15.09)**:
+```
+➕ [MESH v1.4 OWNED_BY MERGED] noMatchType=38 matchTypeTRUE=0 union=27
+🔎 [MESH DBG v1.3] ownRels with MAIN TOT = 0  ❌  (dove erano finite le 33 MAIN?!?)
+```
+**Audit root cause 100%**: `filterOutNotaryRelationships()` (pensato per rimuovere "Notaria 3a Santiago" false-positive) — nel caso specifico RUT 92604000-6 rimuove **FALSE POSITIVE TUTTE le relazioni MAIN vere!**
+
+Soluzione: **Fallback NOTARY MAIN FIX v1.5b**:
+- Se DOPO il filtro notarile: `ownFiltOwns.length == 0 && ownRawOwns.length > 0` (stesso per REPRESENTED_BY) → **ripristina SOLO LE RELAZIONI MAIN raw** da `processedForFilter` (non ripristina notarili altrui!)
+- Dedup `Set ${normRut(s)}__${normRut(t)}__${label}` + merge `entityNames`
+- Banner diagnostico arancione: `⚠️ [FALLBACK NOTARY MAIN FIX v1.5]` con `addedOwns=34, addedReps=3`
+
+**Files modificati**:
+- `src/pages/FastCheckEX.tsx:L360-L439` — useMemo dequinesForMesh + fallback v1.5b
+
+---
+
+#### Fix 2 — Race Condition React: inject `dequinesForMesh = undefined` al primo render
+**Sintomo**: comando F12 `m.dequinesForMesh.relationships` → `TypeError: Cannot read properties of undefined (reading 'relationships')`
+**Root cause**: `useEffect inject globale` esegue al **primo render** (0ms), mentre `useMemo dequinesForMesh` impiega 200-900ms per calcolare 63-74 relazioni!
+
+Soluzione: **Inject GLOBALE v2.0 ROBUSTO**:
+- `useEffect(deps=[dequinesPrintKey])` → triggera SOLO quando `useMemo` finisce veramente (key univoca!)
+- Ref `__reinjectLastPrinted` Set (module-level!) → **MAX 1 stampa banner, nessun loop!**
+- Safety T-UNICO `setTimeout(3500ms)` come ultimo fallback se useMemo per qualche motivo non triggera.
+- Banner: `🔧 [DEBUG GLOBAL INJECTED v2.0 • 21.09]` + `✅ [REINJECT DYN v2.0 🔁] rels=74 names=94`
+
+**Files modificati**:
+- `src/pages/FastCheckEX.tsx:L167-L180` — refs module-level anti-loop
+- `src/pages/FastCheckEX.tsx:L443-L480` — useEffect dependency + safety T-UNICO
+
+---
+
+#### Fix 3 — MeshTable RUT mismatch flipped=0/direct=0 (conflitto DV/k/senza punti)
+**Sintomo**: banner Mesh DBG viola: `direct=0 + flipped=0 = 0 / ownRels tot=38` (38 OWNED_BY ma nessuno matchava MAIN!)
+**Root cause**: formati RUT eterogenei: `92.604.000-6` vs `92604000k` vs `92604000` (senza DV!).
+
+Soluzione: **rutMatchRobust() 3 fallback** + `cleanMain` da PROP!
+- Fallback 1: `normalizeRut` (solo [0-9Kk] lowercase)
+- Fallback 2: `normalizeRutOnlyDigits` (solo numeri, senza DV!)
+- Fallback 3: startsWith / includes sulle prime 8 cifre.
+- `cleanMain = normalize(mainRut PROP)` invece di `detectMainRut()` che trovava RUT sbagliato `81095400`!
+- Banner: `🔎 [MESH DBG v1.3 ROBUSTO]` con counts Caso A/Caso B.
+
+**Files modificati**:
+- `src/components/ui/MeshTable/MeshTable.tsx:L104-L127` — rutMatchRobust + cleanMain da prop
+- `src/components/ui/MeshTable/MeshTable.tsx:L138-L152` — MESH v1.5 OWNED_BY TUTTI (no match_type filter + dedup normRut!)
+
+---
+
+#### Fix 4 — Integrazione Cristobal `MeshFlowChartOwnedLib` + 6 bug fixati!
+**Componente aggiunto** (cartella nuova!):
+```
+src/components/ui/MeshFlowChartOwnedLib/
+  └── MeshFlowChartOwnedLib.tsx   (635 righe, ReactFlow grafo RADIALE!)
+```
+Dipendenza installata: `npm install @xyflow/react` ✅
+
+**6 bug di Cristobal risolti (15-21.09):**
+
+| # | Bug | Fix | Vers |
+|---|---|---|---|
+| 1 | Visibles: 0 / 36 (nessun nodo visibile!) | `useState(maxVisibleLevel = 99)` (> MAX_DEPTH 5 = sempre TUTTI!) | v1.5-duxiter |
+| 2 | "Appare per mezzo secondo e poi SPARISCE!" | 1) Rimosso **early return distruttivo L549** (non unmount piu' modale!) 2) Height modale **FISSA 600px** (non 70vh variabile!) 3) Wrapper `position: absolute` T/L/R/B=0 | v1.5-duxiter |
+| 3 | ReactFlow doppio mount / blink iniziale | **Rimosso `<React.StrictMode>`** da `main.tsx` E `index.tsx` (2 entry!) | - |
+| 4 | **ZOOM SPARISCE i nodi! 😱** | Middleware **`safeOnNodesChange`**: dopo `applyNodeChanges()` **ripristina SEMPRE 5 campi data custom** (`level, rut, name, isMain, isPerson`) da `layouted.nodes` fonte verità! | v1.5-duxiter |
+| 5 | Zoom ritorna ALL'ORIGINALE (non si salva!) | **RIMOSSA `fitView={true}` PROP da `<ReactFlow />`!** (era auto-fitView AD OGNI node change!) + refs pattern non cambiano ogni render | v1.5-duxiter |
+| 6 | Nomi nodi BLINKANO / 30 re-render/s! | Check **`giaCorretto` in safeOnNodesChange**: se dati OK → **stesso ref node!** (nessun nuovo oggetto! → React shallow compare = NO re-render inutile!) + `safeNodesForRender` filter level da mappa fallback. | v1.5-duxiter |
+
+**Extra**: Banner diagnostico ROSA `➕ [MESH FLOW v1.5-duxiter 🔥 RADIAL!]` raw=48 dedup=48 MAIN dentro ownRels=19 nodi=36 edges=41.
+
+---
+
+#### Fix 5 — Merge match_type TRUE + FALSE dedup (Mesh + FONTE4 Socios!)
+**Sintomo**: vecchio filtro `!information_source.match_type` → 33 relazioni MAIN stimate scartate!
+Soluzione: merge **`noMatchType ∪ matchTypeTRUE`** con dedup `Set ${normRut(s)}__${normRut(t)}__${label}`:
+- MeshTable OWNED_BY → banner `➕ [MESH v1.5 🔥 NO MATCHTYPE FILTER!] TOT=48 dedup=48 MAIN=19`
+- FONTE4 v1.4 Socios REPRESENTED_BY → 23 stimate aggiunte!
+- Banner `🟢 [PEP Socios Filter FONTE4 v1.4] Aggiunti≈23`
+
+---
+
+#### Fix 6 — Print-Once anti-loop TUTTI i banner diagnostici (16+)
+**Sintomo**: React StrictMode + 3 componenti si montano 2 volte → ogni banner veniva stampato DUE VOLTE! → "loop infinito!"
+Soluzione: **`Set<string> module-level`** anti-duplicato (non usa `useRef`, NON resetta MAI tra i re-render!). 3 file:
+- `src/components/ui/MeshTable.tsx:L7-L18` — 6 stampe MAX 1
+- `src/components/ui/MeshFlowChartOwnedLib/MeshFlowChartOwnedLib.tsx:L41-L52` — 1 stampa MAX 1
+- `src/pages/FastCheckEX.tsx:L129-L140` — 9 stampe MAX 1
+
+---
+
+#### Archiviati & Resolved (storico):
+- [x] Return formato array piatto → Sin datos (Fisso formato `{relationships, entityNames}`)
+- [x] Typo `dequinesForMesh` senza ie → corretto
+- [x] `cleanMain RUT sbagliato 81095400` → fisso da PROP `mainRut`
+- [x] `dequinesRelationships path instabile (4 depth diversi)` → fisso findAll ricorsiva WeakSet anti-circular scoring depth minima
+- [x] OWNED_BY Bidirezionale Caso A + B → unione Set flipped/dedup
+
+#### Files modificati (FINAL FIX 15-21.09):
+- `src/main.tsx:L27-L37` — Rimosso StrictMode + banner MONGOOSE OPTIMIZED v1.0
+- `src/index.tsx:L16-L19` — Rimosso StrictMode
+- `src/pages/FastCheckEX.tsx:L360-L439` — Fallback NOTARY MAIN v1.5b
+- `src/pages/FastCheckEX.tsx:L443-L480` — Inject v2.0 dependency + safety T-UNICO
+- `src/pages/FastCheckEX.tsx:L4762-L4773` — Montato MeshFlowChartOwnedLib Cristobal (commenti rimossi!)
+- `src/components/ui/MeshTable/MeshTable.tsx:L104-L127` — rutMatchRobust + cleanMain da prop
+- `src/components/ui/MeshTable/MeshTable.tsx:L138-L152` — v1.5 NO match_type filter
+- `src/components/ui/MeshTable/MeshTable.tsx:L172-L224` — banner DBG viola v1.3
+- **📄 NUOVO** `src/components/ui/MeshFlowChartOwnedLib/MeshFlowChartOwnedLib.tsx:L1-L635` — 6 bug fixati
+
+#### Files PULITI temporanei rimossi:
+- 8 script one-off `tmp_edit_*.cjs` (root)
+- 1 backup: `.bak.FastCheckEX.preF4edit`
+
+#### Verifiche:
+- ✅ GetDiagnostics FastCheckEX + MeshTable + MeshFlowChartOwned: 0 errori!
+- ✅ `npm run build` 25s EXIT 0! (ultimo bundle: `FastCheckEX-BCWSiEOq.js` 393 kB / gzip 112 kB)
+- ✅ Sample RUT test 92604000-6 resultId 6aa934f2: 3 sezioni popolate + Mapa Cristobal perfetto!
+- ✅ Zoom / Pan / Drag Mapa: stabili, nessun ritorno originale, nessun blink!
+- ✅ Console F12: 0 errori, 0 loop, banner MAX 1 stampa!
+
+---
+
+### Verifiche (Append — Sample storico RUT 76540986-1 cobranzaLaboral):
+- Sample RUT 76540986-1 prima→dopo (append L1360 originale):
   - Dopo:  → `cantidad=9`, `casos=9` (solo `vigente=true`)

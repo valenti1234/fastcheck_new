@@ -4,6 +4,19 @@ import { filterOutNotaryRelationships } from "../../../utils/dequienes";
 
 const MAX_DEPTH = 5;
 
+// 🔧 NUCLEAR PRINT-ONCE GUARD (module-level, non resetta tra mount/re-render!)
+const __MESH_PRINTED_KEYS: Set<string> = new Set();
+const printOnce = (key: string, ...args: any[]) => {
+  if (__MESH_PRINTED_KEYS.has(key)) return;
+  __MESH_PRINTED_KEYS.add(key);
+  console.log(...args);
+};
+const tableOnce = (key: string, ...args: any[]) => {
+  if (__MESH_PRINTED_KEYS.has(key)) return;
+  __MESH_PRINTED_KEYS.add(key);
+  console.table(...args);
+};
+
 const normalizeRut = (rut: string | number): string => {
     if (rut == null) return '';
     // 🔧 Fix 15/09 v1.2: DV PRESERVAZIONE! Prima split('-')[0] → TOLGLIEVA DV ("92604000")
@@ -163,9 +176,9 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         const mainCount = ownRels.filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).length;
         const mtTrueCount = ownRels.filter(r=>r?.information_source?.match_type === true).filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).length;
         const mtFalseCount = ownRels.filter(r=>!r?.information_source?.match_type).filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).length;
-        console.log(`%c   ➕ [MESH v1.5 🔥 NO MATCHTYPE FILTER!] OWNED_BY TOT=${ownRels_raw_ALL.length} dedup=${ownRels.length} noMatchType=${ownRels_noMatchType.length} matchTRUE=${ownRels_matchType.length} | MAIN dentro ownRels: ${mainCount} (mtFALSE=${mtFalseCount}, mtTRUE=${mtTrueCount})`, 'color:#831843;background:#fce7f3;border:1px solid #f9a8d4;padding:2px 10px;border-radius:4px;font-weight:700');
+        printOnce('mesh_v1.5_summary', `%c   ➕ [MESH v1.5 🔥 NO MATCHTYPE FILTER!] OWNED_BY TOT=${ownRels_raw_ALL.length} dedup=${ownRels.length} noMatchType=${ownRels_noMatchType.length} matchTRUE=${ownRels_matchType.length} | MAIN dentro ownRels: ${mainCount} (mtFALSE=${mtFalseCount}, mtTRUE=${mtTrueCount})`, 'color:#831843;background:#fce7f3;border:1px solid #f9a8d4;padding:2px 10px;border-radius:4px;font-weight:700');
         if (mainCount > 0) {
-          console.table(ownRels.filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).slice(0,5).map(r=>({raw_s:r.source, raw_t:r.target, match_type: (r?.information_source?.match_type === true ? 'TRUE' : (r?.information_source?.match_type ? 'OBJ/STR' : 'FALSE')), robust_s: robustMatch(r.source, normM), robust_t: robustMatch(r.target, normM)})));
+          tableOnce('mesh_v1.5_top5', ownRels.filter(r=>robustMatch(r.source, normM) || robustMatch(r.target, normM)).slice(0,5).map(r=>({raw_s:r.source, raw_t:r.target, match_type: (r?.information_source?.match_type === true ? 'TRUE' : (r?.information_source?.match_type ? 'OBJ/STR' : 'FALSE')), robust_s: robustMatch(r.source, normM), robust_t: robustMatch(r.target, normM)})));
         }
       } catch(e){}
     }
@@ -210,17 +223,17 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
             // conteggio X campioni per vedere dove sta main (se c'è!)
             const mainHits = ownRels.filter((r:any)=>rutMatchRobust(r.source, cleanMain)||rutMatchRobust(r.target, cleanMain)).length;
             // eslint-disable-next-line no-console
-            console.log(
+            printOnce('mesh_dbg_v1.3',
                 `%c🔎 [MESH DBG v1.3 ROBUSTO • 15.09.2026] %cMAIN debug: cleanMain=${JSON.stringify(cleanMain)} mainNorm=${JSON.stringify(mainNorm)} mainRut_PROP=${JSON.stringify(mainRut)} detectMainRut(rels)=${JSON.stringify(detectMainRut(ownRels))}  ||  ownRels=${ownRels.length}  rutMatchRobust(source==main) (CasoA):${sEq}   rutMatchRobust(target==main) (CasoB flipped):${tEq}   ownRels with MAIN TOT = ${mainHits}  || PRIME 5 relazioni:`,
                 'background:#7c3aed;color:#fff;font-weight:700;padding:4px 8px;border-radius:4px',
                 'color:#4c1d95;font-weight:600'
             );
             if (mainHits > 0) {
               // eslint-disable-next-line no-console
-              console.table(ownRels.filter((r:any)=>rutMatchRobust(r.source, cleanMain)||rutMatchRobust(r.target, cleanMain)).slice(0,5).map((r:any)=>({raw_s:String(r.source||''), raw_t:String(r.target||''), matchRobust_s:rutMatchRobust(r.source, cleanMain), matchRobust_t:rutMatchRobust(r.target, cleanMain)})));
+              tableOnce('mesh_dbg_top5', ownRels.filter((r:any)=>rutMatchRobust(r.source, cleanMain)||rutMatchRobust(r.target, cleanMain)).slice(0,5).map((r:any)=>({raw_s:String(r.source||''), raw_t:String(r.target||''), matchRobust_s:rutMatchRobust(r.source, cleanMain), matchRobust_t:rutMatchRobust(r.target, cleanMain)})));
             } else {
               // eslint-disable-next-line no-console
-              console.table(ownRelsSrc);
+              tableOnce('mesh_dbg_relsSrc', ownRelsSrc);
             }
         } catch(e){}
     }
@@ -386,7 +399,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     if (typeof window !== 'undefined') {
         try {
             // eslint-disable-next-line no-console
-            console.log(
+            printOnce('mesh_bidi_v1.1',
                 `%c🟢 ${BANNER_VERSION} %cOWNED_BY bidirezionale ROBUSTO (direct=${originaliCountDir} + flipped=${flippedCount} = ${originaliCountDir+flippedCount} / ownRels tot=${ownRels.length})`,
                 'background:#1d4ed8;color:#fff;font-weight:700;padding:4px 8px;border-radius:4px',
                 'color:#1d4ed8;font-weight:600'
