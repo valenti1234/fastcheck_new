@@ -2,6 +2,46 @@
 
 ## Fecha: 22 de Septiembre de 2026
 
+### FastCheckEX — Bug critico: Loop infinito API check-socios-evaluations + soci duplicati per accenti
+- **Sintomi reportati**:
+  1. Loop INFINITO di chiamate POST a `/api/rut/check-socios-evaluations` (console: centinaia di `ERR_INSUFFICIENT_RESOURCES`).
+  2. Lista soci duplicata (es. *KENNETH EDUARDO WERNER MENDEZ* e *KENNETH EDUARDO WERNER MÉNDEZ* appaiono entrambi, come pure *JORGE SEBASTIAN VIO ZAHR* e *JORGE SEBASTIÁN VIO ZAHR*).
+
+#### Causa radice — 2 bug distinti
+
+**Bug 1 — Loop infinito: `normRut` NON wrappata in `useCallback` → riferimento nuovo ad ogni render**
+- File: [FastCheckEX.tsx:255](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L255-L256)
+- Problema: `const normRut = (s) => ...` veniva ricreata **ad ogni re-render** del componente. Era inclusa nelle dipendenze del `useMemo` di `dequienesForMesh` ([L480](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L479)) → `dequienesForMesh` produceva un oggetto NUOVO ad ogni render → `dequienesForMesh` era anche nelle dipendenze dell'`useEffect` che inizializza `sociosEvaluations` ([L2240](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L2237-L2237)) → l'useEffect veniva rieseguito → chiamata `checkSociosEvaluations()` → `setSociosEvaluations(...)` → re-render → e il ciclo ricominciava **INDEFINITAMENTE**.
+- Fix (L255-L256):
+  ```
+  const normRut = useCallback((s) => ..., []);
+  ```
+
+**Bug 2 — Duplicati: chiave di dedup NON normalizzava accenti / diacritici**
+- File: [FastCheckEX.tsx:1958](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1958), [L1995](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1995), [L2100](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L2100)
+- Problema: la chiave di deduplica era `rut || \`__noRut__${name.toLowerCase()}\``. Senza RUT, le stringhe `"mendez"` e `"méndez"` sono **diverse** → stesso socio aggiunto 2+ volte da fonti diverse (compliance, mallaSocietariaData, dequienes).
+- Fix:
+  - Introdotto helper `normalizeNameKey` (L256) che applica `.normalize('NFD')` + strip combining marks (regex `[\u0300-\u036f]`) + `toLowerCase()` + trim.
+  - Aggiornate TUTTE E 3 le chiavi di dedup:
+    - Fonte 1 (compliance coincidencias): L1958
+    - Fonte 2 (mallaSocietariaData): L1995
+    - Fonte 4 (dequienes REPRESENTED_BY): L2100
+
+#### Difese aggiuntive (hardening)
+
+**3 — Guard ref anti-double-fire `__lastSociosInitSig`**
+- File: [FastCheckEX.tsx:187](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L187), [L1934-L1947](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1934-L1947)
+- Problema: anche senza loop, le dipendenze ridondanti (`data`, `cleanedData`, `dequienesForMesh`, `companyData?.rut`) sono TUTTE derivate da `data` e cambiano in rapida successione → l'useEffect veniva triggerato 2-3 volte per la stessa navigazione → 2-3 chiamate API inutili.
+- Fix:
+  - Introdotta ref `__lastSociosInitSig` (L187).
+  - All'ingresso dell'useEffect (L1934-L1947) viene calcolata una firma compatta: `resetPerformed|mainRut|_globalNotaryCleanup JSON|relsCount__namesCount`. Se la firma è identica all'ultima salvata → `return` immediato.
+  - La ref viene svuotata (`''`) quando:
+    - L'utente conferma il reset delle valutazioni ([L2709](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L2709))
+    - Viene avviata una nuova ricerca manuale (`handleSearch` [L2738](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L2738))
+    - Viene eseguito un refresh della valutazione (`handleRefresh` [L2800](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L2800))
+
+---
+
 ### UI Cleanup — Nascondi sezioni vuote + rimozione "Mapa de Empresas Controladas" (Cristobal Graph)
 - **Richiesta utente**: Nascondere elementi `h3` (titoli di sezioni vuote) e `button` (bottone blu *Ver diagrama* della sezione Mapa de Empresas Controladas / Cristobal Graph).
 

@@ -142,6 +142,7 @@ const tableOnceFC = (key: string, ...args: any[]) => {
 const FastCheck: React.FC = () => {
   const [searchParams] = useSearchParams();
   const exportJsonEnabled = searchParams.get('xjson') === 'true';
+  const hideParticipa = searchParams.get('p') === 'true';
   const [data, setData] = useState<any>(null);
   const [resetRequested, setResetRequested] = useState(false);
   const [resetPerformed, setResetPerformed] = useState(false);
@@ -184,6 +185,7 @@ const FastCheck: React.FC = () => {
   // 🔧 v2.0 inject ROBUSTO: salva SEMPRE ultimo valore useMemo dequienesForMesh (no race!)
   const __debugMeshRef = useRef<any>(undefined);
   const __reinjectLastPrinted = useRef<string>('');  // evita stampe duplicate (stesso valore non ristampa!)
+  const __lastSociosInitSig = useRef<string>('');   // evita inizializzazioni socios ripetute (loop / double-fire)
   const [companyData, setCompanyData] = useState<CompanyData>({
     razonSocial: 'MAS RECICLABLE LIMITADA',
     rut: '77.777.777-7',
@@ -252,7 +254,8 @@ const FastCheck: React.FC = () => {
   //      getName(rut) dentro MeshTable non poteva risalire al nome senza entityNames → "N/A" invece di nome società.
   //      → iniettiamo entityNames come sourceName / targetName / _sourceEntityName / _targetEntityName PRIMA di filterOutNotaryRelationships.
   // Norm RUT (shared: usato dentro useMemo dequienes + debug globale)
-  const normRut = (s: any) => String(s ?? '').replace(/[^0-9Kk]/g, '').toLowerCase();
+  const normRut = useCallback((s: any) => String(s ?? '').replace(/[^0-9Kk]/g, '').toLowerCase(), []);
+  const normalizeNameKey = useCallback((s: any) => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim(), []);
 
   const dequienesForMesh = useMemo(() => {
     // Ricerca RICORSIVA dequinesRelationships (qualunque path, max depth 14)
@@ -1929,22 +1932,44 @@ const FastCheck: React.FC = () => {
 
   // Initialize socios evaluations when data changes
   useEffect(() => {
+    // ---------- GUARD: Skip se firma dati identica (evita loop / double-fire) ----------
+    try {
+      const rels = (dequienesForMesh as any)?.relationships?.length ?? 0;
+      const nms = Object.keys((dequienesForMesh as any)?.entityNames ?? {}).length;
+      const cl = JSON.stringify((cleanedData as any)?._globalNotaryCleanup ?? '');
+      const sig = `${String(resetPerformed ? '1' : '0')}|${companyData?.rut ?? ''}|${cl}|${rels}__${nms}`;
+      if (sig === __lastSociosInitSig.current) {
+        logger.log('[SociosInit GUARD v1.0] Skip: signature unchanged =', sig.slice(0, 90));
+        return;
+      }
+      __lastSociosInitSig.current = sig;
+    } catch (e) {
+      logger.warn('[SociosInit GUARD v1.0] warn (non bloccante):', e);
+    }
+    // -----------------------------------------------------------------------------------
+
     const initializeSociosEvaluations = async () => {
       // Obtener socios desde compliance.sociedades.coincidencias[].socios
       // NOTA BENE: usiamo cleanedData (dati GLOBALMENTE purgati da notari) e come
       // DOPPIA SICUREZZA ri-applichiamo isNotaryEntry sul singolo elemento.
       const coincidencias = cleanedData?.sheriffLogData?.filteredDetails?.compliance?.sociedades?.coincidencias || [];
 
-      const seenKeys = new Set<string>();
-      const socios: { name: string; rut: string }[] = [];
+      // 🔧 FIX 22.09 SOCIOS DUPLICATI + SIN RUT: strategia 2 passaggi
+      //   PASSO 1 = colleziona TUTTE le raw entries da ogni fonte (visto FONTE 1/2/4)
+      //   PASSO 2 = dedup + FUSIONE intelligente (2 criteri, con preferenze per chi ha RUT):
+      //       a) RUT-robust-match (norm / solo cifre / 8+ digits prefix match) = stesso socio
+      //       b) STESSO NOME normalizzato (accenti/punti/virgole = equivalenti):
+      //          • se uno ha RUT e l'altro NO → merge, tieni quello con RUT
+      //          • se ENTRAMBI hanno RUT diversi → NON si fondono (soci diversi!)
+      const rawSocios: { name: string; rut: string; _fonte?: string }[] = [];
 
       let notarySkippedInCoincidencias = 0;
       const skippedNotaryNames: string[] = [];
 
+      // ---------- FONTE 1: compliance.coincidencias[].socios ----------
       for (const coincidencia of coincidencias) {
         if (!Array.isArray(coincidencia?.socios)) continue;
         for (const s of coincidencia.socios) {
-          // ---------- SKIP IF NOTARY / CONSERVADOR / REGISTRO CIVIL ----------
           if (isNotaryEntry(s)) {
             notarySkippedInCoincidencias += 1;
             if (s?.nombre) skippedNotaryNames.push(String(s.nombre).trim());
@@ -1952,12 +1977,8 @@ const FastCheck: React.FC = () => {
           }
           const rut = (s?.rut || '').trim();
           const name = (s?.nombre || '').trim();
-          if (!name) continue; // descartar socios sin nombre
-          // Dedupe: por rut si lo hay; si no, por nombre
-          const key = rut || `__noRut__${name.toLowerCase()}`;
-          if (seenKeys.has(key)) continue;
-          seenKeys.add(key);
-          socios.push({ name, rut });
+          if (!name) continue;
+          rawSocios.push({ name, rut, _fonte: 'coincidencias' });
         }
       }
       if (notarySkippedInCoincidencias > 0) {
@@ -1982,7 +2003,6 @@ const FastCheck: React.FC = () => {
 
         const pushSocioFromMallaSource = (s: any, sourceLabel: string) => {
           if (!s) return;
-          // --- SKIP NOTARILE ---
           if (isNotaryEntry(s)) {
             skippedFromMalla += 1;
             if (s?.nombre) skippedFromMallaNames.push(`${sourceLabel}:${String(s.nombre).trim()}`);
@@ -1991,10 +2011,7 @@ const FastCheck: React.FC = () => {
           const rut = (s?.rut || '').trim();
           const name = (s?.nombre || '').trim();
           if (!name) return;
-          const key = rut || `__noRut__${name.toLowerCase()}`;
-          if (seenKeys.has(key)) return;
-          seenKeys.add(key);
-          socios.push({ name, rut });
+          rawSocios.push({ name, rut, _fonte: sourceLabel });
         };
 
         if (Array.isArray(malla.empresaEnUnDia)) {
@@ -2096,10 +2113,7 @@ const FastCheck: React.FC = () => {
             continue;
           }
           if (!socioName) { debugF4Counts.saltatiNoName += 1; continue; } // senza nome = inutile per valutazione PEP
-          const key = socioRutNorm || `__noRut__${socioName.toLowerCase()}`;
-          if (seenKeys.has(key)) { debugF4Counts.deduped += 1; continue; }
-          seenKeys.add(key);
-          socios.push({ name: socioName, rut: (socioRutOrig || '').trim() });
+          rawSocios.push({ name: socioName, rut: (socioRutOrig || '').trim(), _fonte: 'dequines_REPRESENTED_BY' });
           addedFromDequinesRep += 1;
         }
       }
@@ -2115,6 +2129,128 @@ const FastCheck: React.FC = () => {
             `⚠️ [PEP Socios Filter FONTE4 v1.3 🔧ROBUSTO] AGGIUNTI 0 (controlla counts). ${msgStats} · nomi_notary_scartati=${JSON.stringify(skippedDequinesNotary)}`
           );
         }
+      }
+
+      // 🔧 PASSO 2: DEDUP + FUSIONE INTELLIGENTE
+      // (fix duplicati "con accento vs senza accento" + "stesso nome ma una ha RUT e altra SIN RUT")
+      const socios: { name: string; rut: string }[] = [];
+      {
+        // Normalizzatori
+        const normOnlyDigits = (s: any) => String(s ?? '').replace(/[^0-9]/g, '');
+        const rutMatchRobustMerge = (a: any, b: any) => {
+          if (!a || !b) return false;
+          const a1 = normRut(a), b1 = normRut(b);
+          if (a1 && b1 && a1 === b1) return true;
+          const a2 = normOnlyDigits(a), b2 = normOnlyDigits(b);
+          if (a2 && b2 && a2 === b2) return true;
+          if (a2 && b2 && a2.length >= 7 && b2.length >= 7) {
+            if (a2.startsWith(b2.slice(0, 8)) || b2.startsWith(a2.slice(0, 8))) return true;
+            if (a2.includes(b2.slice(0, 8)) || b2.includes(a2.slice(0, 8))) return true;
+          }
+          return false;
+        };
+        const normalizeNameMerge = (s: string): string =>
+          String(s ?? '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .replace(/[,\.'"]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        // Buffer intermedio: entries da fondere
+        const merged: { name: string; rut: string; nameKey: string }[] = [];
+        const debugCountsP2 = {
+          rawTotali: rawSocios.length,
+          fusionatiRut: 0,
+          fusionatiNome: 0,
+          scartatiRutDiversiSuStessoNome: 0,
+          finali: 0,
+        };
+
+        for (const entry of rawSocios) {
+          const r = (entry.rut || '').trim();
+          const n = entry.name.trim();
+          const nk = normalizeNameMerge(n);
+          if (!nk) continue;
+
+          // Cerchiamo corrispondenza (in ordine preferenza)
+          let hitRutIdx = -1;
+          let hitNameIdx = -1;
+          if (r) hitRutIdx = merged.findIndex((m) => m.rut && rutMatchRobustMerge(m.rut, r));
+          if (hitRutIdx === -1) hitNameIdx = merged.findIndex((m) => m.nameKey === nk);
+
+          if (hitRutIdx !== -1) {
+            // 1) MATCH PER RUT → FONDILE (sempre, RUT è la chiave forte)
+            const cur = merged[hitRutIdx];
+            const hasCurRut = !!cur.rut;
+            const hasNewRut = !!r;
+            let newName = cur.name;
+            // Scegli nome più "ricco": preferisci quello che ha accenti / più lungo (è più completo)
+            if (!cur.name || n.length > cur.name.length) newName = n;
+            else if (cur.name && n !== cur.name && (normalizeNameMerge(cur.name) === normalizeNameMerge(n))) {
+              // preferisci versione con caratteri non-alfanumerici (accenti, apostrofi) → più ricca
+              const extraCur = cur.name.normalize('NFD').length - cur.name.length;
+              const extraNew = n.normalize('NFD').length - n.length;
+              if (extraNew > extraCur) newName = n;
+            }
+            merged[hitRutIdx] = {
+              name: newName,
+              rut: hasNewRut ? r : (hasCurRut ? cur.rut : ''),
+              nameKey: nk,
+            };
+            debugCountsP2.fusionatiRut += 1;
+            continue;
+          }
+
+          if (hitNameIdx !== -1) {
+            // 2) MATCH PER NOME NORMALIZZATO (stessa persona, ma magari RUT diverso o assente)
+            const cur = merged[hitNameIdx];
+            const curRut = cur.rut;
+            if (!curRut && !r) {
+              // Entrambi senza RUT → tieni il nome più ricco, sovrascrivi (SONO lo stesso socio)
+              let newName = cur.name;
+              if (n.length > cur.name.length) newName = n;
+              merged[hitNameIdx] = { name: newName, rut: '', nameKey: nk };
+              debugCountsP2.fusionatiNome += 1;
+              continue;
+            }
+            if (curRut && !r) {
+              // Cur ha RUT, nuovo non lo ha → stesso nome → SCARTA il nuovo (SIN RUT), tieni quello RUTtato
+              debugCountsP2.fusionatiNome += 1;
+              continue;
+            }
+            if (!curRut && r) {
+              // Cur senza RUT, nuovo CON RUT → aggiorna (MOLTO IMPORTANTE: riempie il Sin RUT con il RUT trovato dopo!)
+              merged[hitNameIdx] = { name: cur.name, rut: r, nameKey: nk };
+              debugCountsP2.fusionatiNome += 1;
+              continue;
+            }
+            // Entrambe HANNO RUT MA RUT DIVERSI (e non hanno matchato RUT-robust) → SOCI DIVERSI (stesso nome, 2 persone) → appendi
+            merged.push({ name: n, rut: r, nameKey: nk });
+            debugCountsP2.scartatiRutDiversiSuStessoNome += 1;
+            continue;
+          }
+
+          // 3) Nessun match = socio nuovo → push
+          merged.push({ name: n, rut: r, nameKey: nk });
+        }
+
+        for (const m of merged) socios.push({ name: m.name, rut: m.rut });
+        debugCountsP2.finali = socios.length;
+
+        // Banner debug PASSO 2
+        try {
+          const w: any = window;
+          const sigP2 = `sp2_${companyData?.rut ?? ''}_${debugCountsP2.rawTotali}_${debugCountsP2.finali}`;
+          w.__sp2Seen = w.__sp2Seen || new Set();
+          if (!w.__sp2Seen.has(sigP2)) {
+            w.__sp2Seen.add(sigP2);
+            logger.log(
+              `🔧 [PEP Socios PASSO 2 Dedup v22.09] rawTotali=${debugCountsP2.rawTotali} → finali=${debugCountsP2.finali} · fusionatiRut=${debugCountsP2.fusionatiRut} · fusionatiNome=${debugCountsP2.fusionatiNome} · stesseNomeRutDiversi=${debugCountsP2.scartatiRutDiversiSuStessoNome}`
+            );
+          }
+        } catch (e) { /* noop */ }
       }
 
       if (socios.length > 0) {
@@ -2688,6 +2824,7 @@ const FastCheck: React.FC = () => {
     if (!confirmed) {
       toast('Reset cancelado');
     } else {
+      __lastSociosInitSig.current = '';
       (async () => {
         try {
           const rutsToReset = sociosEvaluations.map(s => s.rut).filter(Boolean);
@@ -2716,6 +2853,7 @@ const FastCheck: React.FC = () => {
 
   const handleSearch = () => {
     fetchData(rut);
+    __lastSociosInitSig.current = '';
     setResetPerformed(false);
   };
 
@@ -2777,6 +2915,7 @@ const FastCheck: React.FC = () => {
       const qs = newParams.toString();
       navigate(`${window.location.pathname}${qs ? `?${qs}` : ''}`, { replace: true });
       await fetchData(rut);
+      __lastSociosInitSig.current = '';
       setResetPerformed(false);
 
       toast.success('Evaluación actualizada exitosamente');
@@ -5200,11 +5339,23 @@ const FastCheck: React.FC = () => {
               />
 
 
-              <MeshFlowTable
-                title="Mapa de Empresas en las que Participa"
-                dequienesRelationships={dequienesForMesh}
-                mainRut={companyData.rut}
-              />
+              {!hideParticipa && (
+                <MeshFlowTable
+                  title="Mapa de Empresas en las que Participa"
+                  dequienesRelationships={dequienesForMesh}
+                  mainRut={companyData.rut}
+                  mainName={
+                    String(
+                      companyData?.razonSocial ||
+                      companyGeneralInfo?.razonSocial ||
+                      (companyGeneralInfo as any)?.razón_social ||
+                      (companyGeneralInfo as any)?.nombreEmpresa ||
+                      (companyGeneralInfo as any)?.nombre ||
+                      ''
+                    ).trim() || undefined
+                  }
+                />
+              )}
 
 
             </div>

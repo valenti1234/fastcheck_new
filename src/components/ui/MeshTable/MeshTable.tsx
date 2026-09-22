@@ -888,21 +888,6 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                                                 Nivel máximo alcanzado: <strong>{maxLevel} de {MAX_DEPTH}</strong>
                                             </span>
                                         </div>
-                                        {/* 🔧 Fix 15/09 v1.1: info scenario bidirezionale ROBUSTO */}
-                                        <div>
-                                            <span className="text-gray-600 dark:text-gray-400">Dirección OWNED_BY: </span>
-                                            <span className="text-gray-900 dark:text-gray-100 font-medium">
-                                                {(originaliCountDir > 0 && flippedCount === 0) ? (
-                                                    <>✅ Dueños directos (main = sociedad poseída) · <span className="text-gray-600 dark:text-gray-400 text-xs">direct {originaliCountDir} rel.</span></>
-                                                ) : (originaliCountDir === 0 && flippedCount > 0) ? (
-                                                    <>⚠️ Main = propietario · mostrando <strong>{flippedCount}</strong> participaciones (dirección inversa){' '}
-                                                    <span className="text-gray-600 dark:text-gray-400 text-xs">(fixed flipped 15/09)</span></>
-                                                ) : (
-                                                    <>🔀 Mix · direct={originaliCountDir} + flipped={flippedCount} (={ownRelsNormalizzato.length}/ownRels {ownRels.length}){' '}
-                                                    <span className="text-gray-600 dark:text-gray-400 text-xs">(bidirezionale v1.1 15/09)</span></>
-                                                )}
-                                            </span>
-                                        </div>
                                     </div>
 
                                     <div className="overflow-x-auto">
