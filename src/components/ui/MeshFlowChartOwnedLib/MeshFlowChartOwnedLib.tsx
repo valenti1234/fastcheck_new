@@ -792,6 +792,12 @@ const MeshFlowChartOwned: React.FC<MeshFlowChartOwnedProps> = ({
     </>
   );
 
+  // 🔧 FIX 22.09: Nascondi INTERA sezione "Mapa de Empresas Controladas" (h3 + Ver diagrama) richiesto utente.
+  //    Si mostra SOLO in export PDF (forceExpanded=true).
+  if (!forceExpanded) {
+    return null;
+  }
+
   return (
     <div className="mt-4 mb-4" id="pdf-mesh-flow-owned">
       <h3 className="text-lg font-bold dark:text-white mb-3">{title}</h3>
@@ -801,12 +807,7 @@ const MeshFlowChartOwned: React.FC<MeshFlowChartOwnedProps> = ({
         mapContent(height)
       ) : (
         <>
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium rounded transition-colors"
-          >
-            Ver diagrama
-          </button>
+          {/* 🔧 FIX 22.09: Nascondi bottone "Ver diagrama" (richiesta utente) */}
 
           {isModalOpen && (
             <div

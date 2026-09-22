@@ -8,9 +8,26 @@
 //     mainRut={companyData.rut}
 //   />
 
+// 🔧 Fix 21.09: DV PRESERVAZIONE! (come MeshTable v1.2) — split('-')[0] toglieva DV causando mismatch
 const normalizeRut = (rut: string | number): string => {
     if (rut == null) return '';
-    return String(rut).replace(/\./g, '').split('-')[0].trim();
+    return String(rut).replace(/[^0-9Kk]/g, '').toLowerCase();
+};
+
+const normalizeRutOnlyDigits = (rut: string | number): string => String(rut ?? '').replace(/[^0-9]/g, '');
+
+// 🔧 Fix 21.09 v1.5: RUT MATCH ROBUST 3-FALLBACK (stesso algoritmo di MeshTable)
+const rutMatchRobust = (rutA: any, rutB: any): boolean => {
+  if (!rutA || !rutB) return false;
+  const a1 = normalizeRut(rutA), b1 = normalizeRut(rutB);
+  if (a1 && b1 && a1 === b1) return true;
+  const a2 = normalizeRutOnlyDigits(rutA), b2 = normalizeRutOnlyDigits(rutB);
+  if (a2 && b2 && a2 === b2) return true;
+  if (a2 && b2 && a2.length >= 7 && b2.length >= 7) {
+    if (a2.startsWith(b2.slice(0, 8)) || b2.startsWith(a2.slice(0, 8))) return true;
+    if (a2.includes(b2.slice(0, 8)) || b2.includes(a2.slice(0, 8))) return true;
+  }
+  return false;
 };
 
 const isSociedad = (rut: string): boolean => {
@@ -22,10 +39,14 @@ const mapSource = (src: string): string =>
     ({ SII_REP: 'SII', SII: 'SII', SII_REC_COM: 'SII', RES: 'DO', DO: 'DO', DOH: 'DOH', DIARIO_OFICIAL: 'DO' } as Record<string, string>)[src] ?? src ?? '--';
 
 const detectMainRut = (relationships: any[]): string => {
+    // 🔧 Fix 21.09 v1.4: BIDIREZIONALE! (non solo source ma anche target!)
+    //    Stesso bug di MeshTable: flipped OWNED_BY = main nel target
     const freq: Record<string, number> = {};
     for (const r of relationships) {
         const s = normalizeRut(String(r.source || ''));
+        const t = normalizeRut(String(r.target || ''));
         if (s) freq[s] = (freq[s] || 0) + 1;
+        if (t) freq[t] = (freq[t] || 0) + 1;
     }
     return Object.entries(freq).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '';
 };
@@ -39,21 +60,29 @@ const Legalrepresentatives = ({ dequienesRelationships, mainRut }: Representante
 
 //console.log(dequienesRelationships,"quieeeeeeeeeeeeeeeeeeeeeeeeee")
 
-    if (!dequienesRelationships) return null;
+    // 🔧 FIX 22.09: sezione VUOTA → nascondi TUTTO (return null invece di h3+msg)
+    if (!dequienesRelationships) {
+        return null;
+    }
 
     const { relationships = [], entityNames = {} } = dequienesRelationships;
-    if (!relationships.length) return null;
+    if (!relationships.length) {
+        return null;
+    }
 
     const cleanMain = normalizeRut(mainRut || '') || detectMainRut(relationships);
     const getName = (rut: string) => entityNames[rut] || entityNames[normalizeRut(rut)] || '';
     const rootIsPerson = !isSociedad(cleanMain);
 
     const repRels = relationships.filter((r: any) => r.label === 'REPRESENTED_BY');
-    if (!repRels.length) return null;
+    if (!repRels.length) {
+        return null;
+    }
 
     // Solo los representantes directos de la entidad consultada
+    // 🔧 Fix 21.09 v1.6: STESSO BUG! normalizeRut()=== stretto → mismatch DV. Usa rutMatchRobust.
     const reps = repRels
-        .filter((r: any) => normalizeRut(String(r.source)) === cleanMain)
+        .filter((r: any) => rutMatchRobust(r.source, cleanMain))
         .map((r: any) => ({
             rut: normalizeRut(String(r.target || '')),
             name: getName(normalizeRut(String(r.target || ''))),
@@ -61,7 +90,9 @@ const Legalrepresentatives = ({ dequienesRelationships, mainRut }: Representante
             fecha: r.information_source?.started_at || r.information_source?.published_at || '',
         }));
 
-    if (!reps.length) return null;
+    if (!reps.length) {
+        return null;
+    }
 
     const thStyle: React.CSSProperties = {
         border: '1px solid #e5e7eb', padding: '6px 8px', textAlign: 'left',
@@ -113,7 +144,7 @@ const Legalrepresentatives = ({ dequienesRelationships, mainRut }: Representante
                         </tr>
                     </thead>
                     <tbody>
-                        {reps.map((rep, idx) => (
+                        {reps.map((rep: { rut: string; name: string; fuente: string; fecha: string }, idx: number) => (
                             <tr
                                 key={`${rep.rut}-${idx}`}
                                 style={{ backgroundColor: idx % 2 === 0 ? '#ffffff' : '#f9fafb' }}

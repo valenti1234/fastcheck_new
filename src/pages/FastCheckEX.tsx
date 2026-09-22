@@ -441,14 +441,39 @@ const FastCheck: React.FC = () => {
       console.warn('[FALLBACK NOTARY MAIN FIX] Eccezione non bloccante:', eNotaryFb);
     }
 
+    // 🔧 FIX 21.09 — SUPER FALLBACK NUCLEARE (mai più "Sin datos" se i dati raw ci sono!):
+    //    Se DOPO tutti i fallback (v1.5 notary main restore) finalObj ha ancora 0 rels,
+    //    MA processedForFilter aveva relazioni → il filtro notarile ha fatto FALSI POSITIVI TOTALI.
+    //    Risultato: ignoriamo TEMPORANEAMENTE il filtro notarile e usiamo processedForFilter raw.
+    const rawLenForSuperFb = Array.isArray(processedForFilter) ? processedForFilter.length : (processedForFilter?.relationships?.length || 0);
+    const finalLenForSuperFb = finalObj?.relationships?.length || 0;
+    if (rawLenForSuperFb > 0 && finalLenForSuperFb === 0) {
+      const rawRelsForSf = Array.isArray(processedForFilter) ? processedForFilter : (processedForFilter?.relationships || []);
+      const rawNamesForSf = (!processedForFilter || Array.isArray(processedForFilter)) ? {} : (processedForFilter.entityNames || {});
+      try {
+        const cssBanner = 'background:#b91c1c;color:#fff;padding:3px 8px;border-radius:4px;font-weight:bold';
+        printOnceFC('superFallbackNucleare_v21',
+          `%c💥 [SUPER FALLBACK NUCLEARE 21.09]%c filterOutNotaryRelationships ha ZERATO TUTTE le ${rawLenForSuperFb} relazioni! → BLOCCO FILTRO NOTARILE e uso RAW. rels finali: ${rawRelsForSf.length} names: ${Object.keys(rawNamesForSf).length}`,
+          cssBanner, 'color:#991b1b;font-weight:700'
+        );
+      } catch(e) {}
+      finalObj = {
+        relationships: rawRelsForSf,
+        entityNames: rawNamesForSf,
+        _superFallback: true,
+        _rawOriginalLength: rawLenForSuperFb,
+      } as any;
+    }
+
     try {
       const countByLabel: Record<string, number> = {};
       if (finalObj?.relationships?.length) for (const r of finalObj.relationships) { if (r && r.label) countByLabel[r.label] = (countByLabel[r.label] || 0) + 1; }
       const len = finalObj?.relationships?.length || 0;
       const css = len ? 'color:#2ea44f;font-weight:bold' : 'color:#ff2d2d;font-weight:bold';
       const extraFb = (finalObj as any)?._fallbackNotaryMainRestored ? `  ⚠️FALLBACK_NOTARY=${JSON.stringify((finalObj as any)._fallbackNotaryMainRestored)}` : '';
+      const superFb = (finalObj as any)?._superFallback ? `  💥SUPER_FB=true` : '';
       printOnceFC('outputUseMemo', '%c  🔚 Output useMemo: Obj(relationships=' + len + ', entityNames=' + Object.keys(finalObj?.entityNames || {}).length + ')' +
-                  (len ? ('  labels=' + JSON.stringify(countByLabel)) : '  ⚠️ VUOTO!') + extraFb, css);
+                  (len ? ('  labels=' + JSON.stringify(countByLabel)) : '  ⚠️ VUOTO!') + extraFb + superFb, css);
     } catch (e) {}
     return finalObj;
   }, [cleanedData, data, companyData?.rut ? companyData.rut : '', normRut]);

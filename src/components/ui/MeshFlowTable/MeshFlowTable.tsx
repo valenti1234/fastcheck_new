@@ -4,9 +4,26 @@ import { filterOutNotaryRelationships } from '../../../utils/dequienes';
 
 const MAX_DEPTH = 5;
 
+// 🔧 Fix 21.09 v1.2: DV PRESERVAZIONE! split('-')[0] toglieva DV → mismatch con relazioni Dequines
 const normalizeRut = (rut: string | number): string => {
   if (rut == null) return '';
-  return String(rut).replace(/\./g, '').split('-')[0].trim();
+  return String(rut).replace(/[^0-9Kk]/g, '').toLowerCase();
+};
+
+const normalizeRutOnlyDigits = (rut: string | number): string => String(rut ?? '').replace(/[^0-9]/g, '');
+
+// 🔧 Fix 21.09 v1.5: RUT MATCH ROBUST 3-FALLBACK (stesso algoritmo di MeshTable)
+const rutMatchRobust = (rutA: any, rutB: any): boolean => {
+  if (!rutA || !rutB) return false;
+  const a1 = normalizeRut(rutA), b1 = normalizeRut(rutB);
+  if (a1 && b1 && a1 === b1) return true;
+  const a2 = normalizeRutOnlyDigits(rutA), b2 = normalizeRutOnlyDigits(rutB);
+  if (a2 && b2 && a2 === b2) return true;
+  if (a2 && b2 && a2.length >= 7 && b2.length >= 7) {
+    if (a2.startsWith(b2.slice(0, 8)) || b2.startsWith(a2.slice(0, 8))) return true;
+    if (a2.includes(b2.slice(0, 8)) || b2.includes(a2.slice(0, 8))) return true;
+  }
+  return false;
 };
 
 const isSociedad = (rut: string): boolean => {
@@ -67,9 +84,18 @@ const MeshFlowTable: React.FC<Props> = ({
     const getName = (rut: string) =>
       entityNames[rut] || entityNames[normalizeRut(rut)] || '';
 
-    const ownRels = relationships.filter((r: any) =>
-      r.label === 'OWNED_BY' && !r.information_source?.match_type
-    );
+    // 🔧 Fix 21.09 v1.5: RIMUOVIAMO filtro !match_type! Stesso bug di MeshTable —
+    //    match_type TRUE = relazioni trovate via provider Python (stimate ma CORRETTE per main).
+    //    Se filtriamo per !match_type perdiamo TUTTE le 33+ relazioni OWNED_BY del main.
+    const ownRels_raw_ALL = relationships.filter((r: any) => r && r.label === 'OWNED_BY');
+    // Dedup robusto (source_norm__target_norm) — senza badare a match_type!
+    const dedupFlow = new Set<string>();
+    const ownRels: any[] = [];
+    for (const r of ownRels_raw_ALL) {
+      if (!r || (!r.source && !r.target)) continue;
+      const k = normalizeRut(String(r.source ?? '')) + '__' + normalizeRut(String(r.target ?? ''));
+      if (!dedupFlow.has(k)) { dedupFlow.add(k); ownRels.push(r); }
+    }
 
     const visited = new Set<string>([cleanMain]);
     const result: FlowRow[] = [];
@@ -87,10 +113,10 @@ const MeshFlowTable: React.FC<Props> = ({
       if (level >= MAX_DEPTH) continue;
 
       // Empresas poseídas por `cur` -> target = cur (hijo = source)
-      const owned = ownRels.filter((r: any) => normalizeRut(String(r.target)) === cur);
+      const owned = ownRels.filter((r: any) => rutMatchRobust(r.target, cur));
       for (const r of owned) {
         const childRut = normalizeRut(String(r.source || ''));
-        if (!childRut || childRut === cur) continue;
+        if (!childRut || rutMatchRobust(childRut, cur)) continue;
         if (!isSociedad(childRut)) continue;
         if (visited.has(childRut)) continue;
         visited.add(childRut);
@@ -113,10 +139,10 @@ const MeshFlowTable: React.FC<Props> = ({
       }
 
       // Dueños-empresa de `cur` -> source = cur (dueño = target)
-      const owners = ownRels.filter((r: any) => normalizeRut(String(r.source)) === cur);
+      const owners = ownRels.filter((r: any) => rutMatchRobust(r.source, cur));
       for (const r of owners) {
         const upRut = normalizeRut(String(r.target || ''));
-        if (!upRut || upRut === cur) continue;
+        if (!upRut || rutMatchRobust(upRut, cur)) continue;
         if (!isSociedad(upRut)) continue;
         if (visited.has(upRut)) continue;
         visited.add(upRut);
@@ -143,14 +169,8 @@ const MeshFlowTable: React.FC<Props> = ({
   }, [dequienesRelationships, mainRut]);
 
   if (!rows.length) {
-    return (
-      <div className="mt-4 mb-4">
-        <h3 className="text-lg font-bold dark:text-white mb-4">{title}</h3>
-        <p className="text-gray-500 dark:text-gray-400 italic text-sm py-4">
-          No se detectaron empresas relacionadas con el RUT principal.
-        </p>
-      </div>
-    );
+    // 🔧 FIX 22.09: sezione VUOTA → nascondi TUTTO (return null invece di h3+msg)
+    return null;
   }
 
   const getChildren = (row: FlowRow): FlowRow[] =>

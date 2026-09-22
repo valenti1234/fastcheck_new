@@ -42,10 +42,15 @@ const extractPct = (info: any): number | null => {
 };
 
 const detectMainRut = (relationships: any[]): string => {
+    // 🔧 Fix 21.09 v1.4: BIDIREZIONALE! (non solo source ma anche target!)
+    //    Nel caso "tutte le OWNED_BY sono flipped" (source=SOC. MADRE, target=MAIN) → la frequenza SOLO su source
+    //    trova RUT casuali di società figlie invece del main! → ownRows = [] → "Sin datos".
     const freq: Record<string, number> = {};
     for (const r of relationships) {
         const s = normalizeRut(String(r.source || ''));
+        const t = normalizeRut(String(r.target || ''));
         if (s) freq[s] = (freq[s] || 0) + 1;
+        if (t) freq[t] = (freq[t] || 0) + 1;
     }
     return Object.entries(freq).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '';
 };
@@ -98,7 +103,10 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     const [expandedOwn, setExpandedOwn] = useState<Set<number>>(new Set());
     const [viewMode, setViewMode] = useState<'table' | 'map'>('table');
 
-    if (!dequienesRelationships) return null;
+    // 🔧 FIX 22.09: sezione VUOTA → nascondi TUTTO (h3 + messaggio) invece di mostrare "Sin datos"
+    if (!dequienesRelationships) {
+        return null;
+    }
 
     // Filtra via: scarta notari / conservador / registro civile (tipoDeParticipacion + nomi blacklist)
     const cleaned = filterOutNotaryRelationships(dequienesRelationships);
@@ -106,12 +114,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     const { relationships = [], entityNames = {} } = cleaned;
 
     if (!relationships.length) {
-        return (
-            <div className="mt-4 mb-4">
-                <h3 className="text-lg font-bold dark:text-white mb-4">{title}</h3>
-                <p className="text-gray-500 dark:text-gray-400 italic text-sm py-4">Sin datos de malla societaria</p>
-            </div>
-        );
+        return null;
     }
 
     const normalizeRutOnlyDigits = (rut: string | number): string => String(rut ?? '').replace(/[^0-9]/g, '');
@@ -140,12 +143,8 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     const rootIsPerson = !isSociedad(cleanMain);
 
     if (rootIsPerson) {
-        return (
-            <div className="mt-4 mb-4">
-                <h3 className="text-lg font-bold dark:text-white mb-4">{title}</h3>
-                <p className="text-gray-500 dark:text-gray-400 italic text-sm py-4">No aplica para persona natural</p>
-            </div>
-        );
+        // 🔧 FIX 22.09: sezione VUOTA → return null (nascondi)
+        return null;
     }
 
     // 🔧 Fix 15.09 v1.5 — **RIMUOVIAMO DEL TUTTO IL FILTRO !match_type**!
@@ -290,8 +289,13 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
             const branchAncestors = new Set(ancestors);
             branchAncestors.add(rut);
 
+            // 🔧 Fix 21.09 v1.6: NON usare normalizeRut(r.source) === rut (=== stretto!)
+            //    mainRut_PROP="92604000-6" → cleanMain = normalizeRut = 926040006 (include DV!)
+            //    flipped/direct sorgenti = 92604000 (SENZA dv nel JSON raw!)
+            //    Normalizzati NON UGUALI! → matched=[] → ownRows=0 despite direct=1 flipped=18
+            //    Soluzione: usa rutMatchRobust() (3-fallback, lo stesso usato per popolare direct/flipped!)
             const matched = ownRelsNormalizzato.filter(
-                (r: any) => normalizeRut(String(r.source)) === rut,
+                (r: any) => rutMatchRobust(r.source, rut),
             );
 
             for (const r of matched) {
@@ -326,8 +330,9 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         if (!rootIsPerson) {
             processUpward(cleanMain, 1, null, new Set());
         } else {
+            // 🔧 Fix 21.09 v1.6: Stesso bug! rootIsPerson branch usava === stretto
             const companiesOwned = ownRelsNormalizzato.filter(
-                (r: any) => normalizeRut(String(r.target)) === cleanMain,
+                (r: any) => rutMatchRobust(r.target, cleanMain),
             );
 
             for (const r of companiesOwned) {
@@ -357,6 +362,38 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
     };
 
     const ownRows = buildOwnRows();
+
+    // 🔧 FIX 21.09 — BANNER DIAGNOSTICO "PERCHÉ ownRows=0?"
+    //    Se ownRows è vuoto MA ownRels ha OWNED_BY → problema di matching RUT (main vs relazioni).
+    //    Stampiamo TUTTO il necessario per capire in console.
+    if (typeof window !== 'undefined' && ownRows.length === 0 && ownRels.length > 0) {
+      try {
+        const cssB = 'background:#b45309;color:#fff;padding:3px 10px;border-radius:4px;font-weight:700';
+        const dirC = directRels.length;
+        const flipC = flippedRels.length;
+        const normC = (s:any) => String(s??'').replace(/[^0-9]/g,'');
+        // Top 5 OWNED_BY più frequenti (per vedere se main c'è o no)
+        const fh: Record<string,number> = {};
+        for (const r of ownRels) {
+          const s=normC(r.source), t=normC(r.target);
+          if (s) fh[s]=(fh[s]||0)+1;
+          if (t) fh[t]=(fh[t]||0)+1;
+        }
+        const topFreq = Object.entries(fh).sort((a,b)=>b[1]-a[1]).slice(0,5);
+        printOnce(
+          'mesh_ownRows0_diag',
+          `%c⚠️ [MESH DIAG • ownRows=0 ma ownRels=${ownRels.length}]%c cleanMain=${JSON.stringify(cleanMain)} mainRutProp=${JSON.stringify(mainRut)} detectMainRut(ownRels)=${JSON.stringify(detectMainRut(ownRels))} direct=${dirC} flipped=${flipC}  |  Top5 freq RUT OWNED_BY: ${JSON.stringify(topFreq)}`,
+          cssB, 'color:#92400e;font-weight:600'
+        );
+        if (ownRels.length) {
+          tableOnce('mesh_ownRows0_sample', ownRels.slice(0,5).map((r:any)=>({
+            raw_s:String(r.source||''), raw_t:String(r.target||''),
+            match_s_MAIN:rutMatchRobust(r.source, cleanMain), match_t_MAIN:rutMatchRobust(r.target, cleanMain),
+            label:r.label
+          })));
+        }
+      } catch(e){}
+    }
 
     const getOwnChildren = (row: OwnRow): OwnRow[] =>
         ownRows.filter(r => r.parentId === row.id);

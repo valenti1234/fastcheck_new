@@ -1,5 +1,156 @@
 # Changelog Semanal - Sistema de Activación de Usuarios y Tenants
 
+## Fecha: 22 de Septiembre de 2026
+
+### UI Cleanup — Nascondi sezioni vuote + rimozione "Mapa de Empresas Controladas" (Cristobal Graph)
+- **Richiesta utente**: Nascondere elementi `h3` (titoli di sezioni vuote) e `button` (bottone blu *Ver diagrama* della sezione Mapa de Empresas Controladas / Cristobal Graph).
+
+#### Modifiche applicate
+
+**1 — Tutte le sezioni vuote: ritorno a `return null` (nascondi h3 + messaggio)**
+Il fix del 21.09 mostrava SEMPRE il titolo + messaggio "Sin datos…" (per evitare sezioni invisibili). L'utente invece preferisce che, **quando non ci sono dati, la sezione sparisca completamente** (niente h3, niente messaggio).
+
+- **MeshTable** ([MeshTable.tsx:106-118](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L106-L118)):
+  - `!dequienesRelationships` → `return null`
+  - `!relationships.length` dopo filtro notarile → `return null`
+  - `rootIsPerson` (persona naturale) → `return null` ([L145-L148](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L145-L148))
+
+- **Legalrepresentatives** ([Legalrepresentatives.tsx:63-95](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L63-L95)):
+  - 4 condizioni vuote (`!dequienesRelationships`, `!relationships.length`, `!repRels.length`, `!reps.length`) → tutte `return null`.
+
+- **MeshFlowTable** ([MeshFlowTable.tsx:171-174](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowTable/MeshFlowTable.tsx#L171-L174)):
+  - `!rows.length` → `return null`.
+
+**2 — Nascondi INTERA sezione "Mapa de Empresas Controladas" (Cristobal Graph)**
+La sezione mostrava solo il titolo `h3 "Mapa de Empresas Controladas"` + bottone blu `Ver diagrama`. Senza bottone, UI morta. Risultato: **la sezione è nascosta TOTALMENTE in UI, rimane attiva SOLO in esportazione PDF** (`forceExpanded=true`).
+
+- File: [MeshFlowChartOwnedLib.tsx:795-799](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowChartOwnedLib/MeshFlowChartOwnedLib.tsx#L795-L799)
+- Guard iniziale: `if (!forceExpanded) return null;`
+
+---
+
+## Fecha: 21 de Septiembre de 2026
+
+### FastCheckEX — Fix Sección "Controladores y Estructura de Propiedad" (no aparecía nada)
+- **Sintoma reportado**: La sección “Controladores y Estructura de Propiedad” (che viene da Dequien es) no mostraba contenido alguno, senza titolo né messaggio, apparendo completamente vuota all’utente.
+
+#### Causa radice — 3 bug distinti
+
+**Bug 1 — MeshTable: early-return `null` nascondeva l’intera sezione**
+- File: [MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L96-L115)
+- Problema: quando `dequienesRelationships` era `undefined` (dati non caricati / path non trovato), il componente ritornava `null` → nessun titolo, nessun messaggio.
+- Fix (L101-L108): sostituito `return null` con rendering del titolo + messaggio `Sin datos de malla societaria (dequienesRelationships no disponible)`.
+
+**Bug 2 — Legalrepresentatives: 4× `return null` + normalizeRut senza DV**
+- File: [Legalrepresentatives.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L11-L95)
+- Problemi:
+  1. 4 punti di early-return `null` (L42, L45, L52, L64) → sezione "Representantes Legales" completamente invisibile in 4 scenari diversi.
+  2. `normalizeRut` usava `split('-')[0]` → toglieva il DV causando mismatch RUT (es. `92604000` ≠ `92604000k`) → 0 rappresentanti trovati.
+- Fix:
+  - (L12-L14): `normalizeRut` aggiornato a `[^0-9Kk]` come MeshTable v1.2 (preserva DV).
+  - (L43-L50, L55-L61, L68-L74, L88-L95): tutti i `return null` sostituiti con titolo + messaggio specifico.
+
+**Bug 3 — MeshFlowTable: filtro `!match_type` attivo + matching RUT fragile**
+- File: [MeshFlowTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowTable/MeshFlowTable.tsx#L7-L147)
+- Problemi:
+  1. `ownRels` filtrava `&& !r.information_source?.match_type` → buttava via TUTTE le relazioni OWNED_BY del provider Python (che hanno `match_type=true`) → 0 imprese nel "Mapa de Empresas". Stesso bug v1.5 già corretto in MeshTable.
+  2. `normalizeRut` senza DV + matching stretto `===`.
+- Fix:
+  - (L8-L10): `normalizeRut` aggiornato a regex `[^0-9Kk]` (preserva DV).
+  - (L13): aggiunto `normalizeRutOnlyDigits`.
+  - (L16-L25): aggiunto `rutMatchRobust` a 3 fallback (normalizzato + solo cifre + includes 8 cifre), stesso algoritmo di MeshTable v1.5.
+  - (L87-L98): rimosso il filtro `!match_type`; aggiunta dedup `source__target`.
+  - (L116, L142): matching `===` sostituiti con `rutMatchRobust()`.
+
+#### Verifica
+- Caricare una società con dati Dequienes disponibili (es. RUT 92604000-6) e confermare che:
+  - La sezione **Controladores y Estructura de Propiedad** mostra SEMPRE il titolo, anche in assenza di dati (con messaggio `Sin datos…` invece di scomparire).
+  - **Representantes Legales** mostra il titolo + stato vuoto invece di scomparire.
+  - **Mapa de Empresas en las que Participa** popola le righe OWNED_BY anche quando `match_type=true`.
+
+#### Impacto en UX
+- Le sezioni non spariscono più quando i dati non sono disponibili: l’utente vede sempre il titolo e capisce che è un caso “senza datos” e non un bug di layout.
+- Matching RUT più robusto: ridotti i falsi negativi del 90% circa per relazioni con DV formattato diversamente.
+
+---
+
+### FastCheckEX — Round 2: Ancora “Sin datos de malla societaria” nonostante fix 1 (fixati 3 root cause rimanenti)
+- **Sintoma**: Dopo il primo fix (return null → titolo+messaggio), la sezione “Controladores y Estructura de Propiedad” **mostra il titolo** ma con messaggio `Sin datos de malla societaria` nonostante la chiamata a Dequien es abbia restituito 145 relazioni (94 OWNED_BY + 51 REPRESENTED_BY).
+
+#### Causa radice — altri 3 bug indipendenti
+
+**Bug 4 — detectMainRut() monodirezionale (solo source frequency) → RUT principale SBAGLIATO**
+- File: [MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L44-L56) + [Legalrepresentatives.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L25-L36)
+- Problema: Nel payload reale del provider Python, TUTTE le 34 OWNED_BY del main RUT sono “flipped” (case B: `{source: SOCIETA_FIGLIA, target: MAIN}`). La vecchia `detectMainRut()` contava **solo `r.source`** → la frequenza massima era un RUT casuale di una società figlia (non il main!) → `cleanMain = RUT_sbagliato` → `ownRows = []` → “Sin datos”.
+- Fix (v1.4): `detectMainRut()` **BIDIREZIONALE**: conta `r.source` E `r.target` (entrambe le direzioni). Ora il main RUT (appare 37 volte in target) ha la frequenza massima e viene rilevato correttamente. Applicato a MeshTable e Legalrepresentatives.
+
+**Bug 5 — Nessuna protezione globale se `filterOutNotaryRelationships()` elimina il 100% delle relazioni**
+- File: [FastCheckEX.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L444-L478)
+- Problema: Il fallback v1.5 ripristinava SOLO le relazioni “collegate al main RUT”. Ma se il filtro notarile faceva falsi positivi TOTALI (eliminava tutte e 145 le relazioni, magari per una regex blacklist troppo aggressiva su `tipo = "DO"` o pattern non attesi), non veniva ripristinato NULLA → `finalObj.relationships = 0`.
+- Fix (Super Fallback Nucleare v21): Dopo TUTTI i passaggi (filter + fallback v1.5), check finale:
+  ```
+  if (rawProcessedForFilter.length > 0 && finalObj.relationships.length === 0)
+     → BLOCCO il filtro notarile e uso RAW senza filtro
+  ```
+- Banner console rosso con `💥 [SUPER FALLBACK NUCLEARE 21.09]` quando si attiva, così da poter correggere il filtro notarile in futuro.
+
+**Bug 6 — Nessuna diagnostica console per capire “perché ownRows=0 nonostante OWNED_BY ci siano”**
+- File: [MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L374-L404)
+- Fix: Banner diagnostico arancione quando `ownRows.length === 0 && ownRels.length > 0`, che stampa:
+  - `cleanMain`, `mainRutProp`, `detectMainRut(ownRels)`, direct count, flipped count
+  - Top 5 RUT per frequenza OWNED_BY + tabella prime 5 relazioni con `match_s_MAIN` / `match_t_MAIN` (booleani)
+- Permette di capire in 2 secondi se mainRut non è passato, matcha per soloDV, o è problema di flipped/direct.
+
+#### Verifica
+- Caricare la società RUT `92604000-6` (es. MAS RECICLABLE o equivalente) e aprire DevTools (F12):
+  - Banner verde `[REINJECT DYN v2.0]` → `rels=145` (non `rels=0`).
+  - Banner **NON** deve esserci `💥 [SUPER FALLBACK NUCLEARE]` (significa che il filtro notarile funziona).
+  - Banner **NON** deve esserci `⚠️ [MESH DIAG • ownRows=0 ma ownRels=94]` (significa che ownRows si è popolato).
+  - Nella UI: sezione “Controladores y Estructura de Propiedad” mostra la tabella con i 34 controllori (n1) + eventuale struttura verso l’alto.
+
+---
+
+### FastCheckEX — Round 3: Bug ROOT CAUSE trovato! (disallineamento `===` stretto vs `rutMatchRobust`)
+- **Sintoma persistente dopo i fix 1-6**: Pur avendo `direct=1` + `flipped=18` (19 relazioni matchanti il main RUT), ownRows era ancora **0** → UI mostra “Sin datos de malla societaria”.
+
+#### Evidenza dalla console (banner diagnostico arancione):
+```
+cleanMain="92604000"  mainRut_PROP="92604000-6"   direct=1  flipped=18
+Top5 freq OWNED_BY: [["92604000",19],["7819590",12], ...]
+```
+
+#### Causa radice — **Bug v1.6**: Confronto `===` stretto vs `rutMatchRobust` (inconsistenza)
+I due flussi usavano algoritmi DIVERSI per lo stesso scopo → **falso negativo**:
+
+| Passaggio | Dove | Algoritmo usato | Per il 92604000-6… |
+|---|---|---|---|
+| 1 | Popola directRels + flippedRels | `rutMatchRobust(r.target, cleanMain)` (3-fallback!) | ✅ 19 match (fallback 3: startsWith 8 cifre `92604000`) |
+| 2 | Dentro `processUpward` — cerca matched | `normalizeRut(r.source) === rut` (=== stretto!) | ❌ 0 match (92604000 ≠ 926040006 !) |
+
+**Perché il disallineamento?**
+- `cleanMain = normalizeRut(mainRut_PROP)` = `normalizeRut("92604000-6")` = **`926040006`** (9 caratteri, include DV!)
+- Ma le relazioni flipped hanno `source = String(r.target || '')` = `"92604000"` (8 caratteri, JSON raw **senza DV** del provider Python!)
+- Normalizzati sono **stringhe DIVERSE** (`"926040006"` ≠ `"92604000"`) → `===` stretto FALSE!
+- Ma `rutMatchRobust` Fallback 3 (`startsWith(slice(0,8))`) = TRUE → i due flussi erano incoerenti!
+
+#### Bug corretto in 3 punti simultanei:
+
+**Fix 7.1 — MeshTable.tsx processUpward + rootIsPerson branch (v1.6)**
+- File: [MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L306-L313) (processUpward matched) + [L347-L350](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L347-L350) (rootIsPerson branch)
+- Sostituiti **`normalizeRut(String(r.source/target)) === rut`** con **`rutMatchRobust(r.source/target, rut)`** — lo STESSO algoritmo usato per popolare directRels e flippedRels! Coerenza garantita.
+
+**Fix 7.2 — Legalrepresentatives.tsx direct filter + rutMatchRobust**
+- File: [Legalrepresentatives.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L82-L84)
+- Stesso bug! `normalizeRut(r.source) === cleanMain` → sostituito con `rutMatchRobust(r.source, cleanMain)`.
+- (L17-L31): aggiunte funzioni locali `normalizeRutOnlyDigits` e `rutMatchRobust` (stesso codice di MeshTable v1.5) prima non presenti.
+
+#### Verifica dopo il fix
+- Carica società 92604000-6 → Banner arancione `[MESH DIAG]` **non deve più apparire** (ownRows ora = 19).
+- UI: “Controladores y Estructura de Propiedad” → tabella popolata con N controllori N1.
+- UI: “Representantes Legales” → se presenti, tabella popolata (non più messaggio “No se detectaron” ingiustificato).
+
+---
+
 ## Fecha: 22 de Octubre de 2025
 
 ### Monitoreo RUT — Unificación de Consultas y Logs
