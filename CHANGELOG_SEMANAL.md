@@ -1,5 +1,73 @@
 # Changelog Semanal - Sistema de Activación de Usuarios y Tenants
 
+## Fecha: 25 de Septiembre de 2026
+
+### Fix critico: RUTs truncados en tablas (DV perdido / DV recalculado desde cero)
+- **Sintomi reportati**:
+  1. **Representantes Legales**: RUT mostrato "tutto attaccato" senza `-` (es. `14243612` invece di `1424361-2`) → utente percepiva il DV come "truncato".
+  2. **MeshTable / MeshFlowTable / MeshFlowChart**: RUT formattato con DV ERRATO. Es. `14243612` → `14243612-X` invece di `1424361-2` (tutti i digit = corpo, DV ricalcolato).
+
+#### Causa radice — 2 bug distinti
+
+**Bug 1 — Legalrepresentatives: `normalizeRut` usato per display invece che solo per matching**
+- File: [Legalrepresentatives.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L12-L15), [L124-L128](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L124-L128), [L174](file:///home/duxiter/duxiter_intermediate/src/components/ui/Legalrepresentatives/Legalrepresentatives.tsx#L174-L174)
+- Problema: `normalizeRut` rimuove `[^0-9Kk]` incluso il `-`. Il RUT normalizzato veniva **renderizzato direttamente** in `EntityCell` invece di passare per un formatter che ricostruisce `cuerpo-DV`.
+- Fix:
+  - Aggiunto helper `formatRutForDisplay` (L19-L29): stesso algoritmo di `formatChileanRut` → ultimo char = DV, resto = cuerpo, separati da `-`.
+  - `EntityCell.rut` ora passa per `formatRutForDisplay(rut)` (L126) invece di `{rut}` grezzo.
+  - Mantenuto `normalizeRut` invariato per matching / chiavi / lookup (separazione tra valore logico e display).
+
+**Bug 2 — `rutFormat.ts` CALCOLA DV da zero (inverso rispetto a dati già normalizzati)**
+- File impattati:
+  - [MeshTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L1-L15) (rimosso import `formatRut`; sostituito con `formatRutForDisplay` a L8, L469, L757)
+  - [MeshFlowTable.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowTable/MeshFlowTable.tsx#L1-L15) (stesso pattern; EntityCell a L369)
+  - [MeshFlowChartOwnedLib.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowChartOwnedLib/MeshFlowChartOwnedLib.tsx#L21-L33) (stesso pattern; nodo React Flow a L204)
+- Problema: `formatRut()` in `src/utils/rutFormat.ts` tratta TUTTI i caratteri come "corpo" ed esegue l'algoritmo modulo-11 per derivare il DV. Quando gli passiamo un RUT già normalizzato (corpo+DV insieme, es. `14243612`), il risultato è sbagliato di un ordine di grandezza.
+- Fix: **in ogni componente** sostituito import + chiamate con funzione locale `formatRutForDisplay` identica a `formatChileanRut` (preserva ultimo char come DV originale).
+  - `formatChileanRut` in `src/services/api.ts:291` → pattern di riferimento, riprodotto identico localmente per evitare dipendenze circolari / import pesanti.
+
+#### Verifica
+- Caricando RUT 77.777.777-7 / KENNETH WERNER (esempio screenshot utente):
+  - `Representantes Legales`: `506570-3`, `1302064-0`, `1424361-2`, `701814-5` (uguale a colonna RUT in Socios Historicos).
+  - Nodi React Flow e tabelle Mesh: nessun DV palesemente sbagliato (no "ultima cifra usata come corpo intero").
+
+---
+
+### Separazione semantica: MeshTable (solo struttura di proprietà) vs MeshFlowTable (solo partecipazioni)
+- **Sintomi reportati** (screenshot ENERGY ASSET SPA, RUT 769960074-6):
+  1. **Controladores y Estructura de Propiedad** ✗ include anche società in cui main partecipa (DONGUIL ENERGIA 50%, MANQUEL SOLAR, VARAS SUNLIGHT). Dovrebbe mostrare SOLO i dueños/padri.
+  2. **Mapa de Empresas en las que Participa** ✗ include anche MIGUEL ALEJANDRO (dueño personale, main=posseduta) e INNOVACIONES TECNOLOGICAS Y SOLUCIONES SPA. Dovrebbe mostrare SOLO le società figlie possedute.
+
+#### Causa radice
+- Normalizzazione bidirezionale del 22.09 + BFS in ENTRAMBI i versi sia in MeshTable che MeshFlowTable. I due componenti condividevano lo stesso pool di relazioni "direct+flipped" e la stessa semantica. Risultato: sezioni speculari ma UI semanticamente separate mostrano gli stessi dati mischiati.
+
+#### Fix applicati
+
+**1 — MeshTable: OWNERS ONLY (solo struttura di proprietà / padri)**
+- File: [MeshTable.tsx — normalizzazione relazioni](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L251-L295), [buildOwnRows](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L299-L383)
+- Modifiche:
+  - **Rimosso Caso B (flipped)** dal pool di N1. A livello N1 `ownRelsNormalizzato = directRels` (solo relazioni in cui `main = source` → main è posseduta → `target = dueño N1`). `flippedCount = 0`.
+  - Introdotto `bfsRelPool`: normalizzazione **bidirezionale completa** ma solo per livelli N2+ (relazioni inter-società possono essere in direzione qualsiasi nel JSON).
+  - `processUpward`: pool selezionato in base al livello → `level===1 ? ownRelsNormalizzato : bfsRelPool` ([L314-L318](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L314-L318)).
+  - Rimossa guard `!flipped` di stop-expansion (non più necessaria: a N1 flipped non esistono).
+  - Banner versione aggiornato a `[MESH OWNERS-ONLY v1.2 • 25.09.2026]` ([L455-L466](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L455-L466)).
+
+**2 — MeshFlowTable: OWNED ONLY (solo partecipazioni / figlie)**
+- File: [MeshFlowTable.tsx — BFS owned-only](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowTable/MeshFlowTable.tsx#L155-L254)
+- Modifiche:
+  - **Rimosso COMPLETAMENTE il blocco `owners`** (dopo il loop `owned`). Non si traverso più verso i padri / la struttura di proprietà.
+  - A **N1 (level === 0 / cur === cleanMain)** aggiunto guard anti-inversione strutturale:
+    - Per ogni owned candidato ricostruisco la direzione ORIGINALE della relazione (prima del flip bidirezionale).
+    - Se originale `main = source` (main era posseduta) → SKIP (è struttura di proprietà, NON una partecipazione di main).
+    - Questo filtra le relazioni flipped-inverse create dalla normalizzazione bidirezionale totale. Vedere [L218-L230](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshFlowTable/MeshFlowTable.tsx#L218-L230).
+  - Da N2+ esplorazione owned ricorsiva senza restrizioni (solo società vengono messe in coda).
+
+#### Verifica attesa (esempio ENERGY ASSET SPA)
+- **Controladores y Estructura de Propiedad**: SOLO `MIGUEL ALEJANDRO IGLESIAS HURTUBIA 90%` e gli eventuali altri dueños/padri (NON più DONGUIL, ENERGY ASSET INMO, MANQUEL, VARAS, INNOVACIONES come "dueño").
+- **Mapa de Empresas en las que Participa**: SOLO figlie dirette/indirette dove main è proprietaria (DONGUIL ENERGIA 50%, ENERGY ASSET INMO 33.3333%, MANQUEL SOLAR, VARAS SUNLIGHT — OK). MIGUEL ALEJANDRO e INNOVACIONES TECNOLOGICAS NON più presenti.
+
+---
+
 ## Fecha: 22 de Septiembre de 2026
 
 ### FastCheckEX — Bug critico: Loop infinito API check-socios-evaluations + soci duplicati per accenti
