@@ -152,26 +152,19 @@ const MeshFlowTable: React.FC<Props> = ({
       if (!dedupFlow.has(k)) { dedupFlow.add(k); ownRels.push(r); }
     }
 
-    // 🔧 Fix 22.09 DEF: NORMALIZZAZIONE BIDIREZIONALE TOTALE (stessa strategia bidirezionale
-    //    su TUTTE le relazioni OWNED_BY, senza distinzione "Caso A / Caso B / Caso C".
+    // 🔧 Fix 25.09: SEPARAZIONE NETTA — MeshFlowTable = SOLO partecipazioni (OWNED / dove main è PROPRIETARIO).
+    //    RIMUOVIAMO il ramo "owners" (padri / struttura di proprietà) — esclusivamente in MeshTable.
+    //    Semantica OWNED_BY canonica: source = ENTITÀ POSSEDUTA, target = PROPRIETARIO.
+    //    → main in target = main è proprietario → source = società posseduta (FIGLIA ✔︎ partecipazione).
+    //    → main in source = main è posseduta → NON va qui (è STRUTTURA PROPRIETÀ ✘).
     //
-    //    Perché il fix precedente falliva su 78135280-2:
-    //      - Mantenere 3 rami (Caso A: main in source | Caso B: main in target | Caso C: non-main)
-    //        è errore-prone: se main matcha BOTH (es. relazioni flipped + direct contemporaneamente)
-    //        oppure se il RUT è formattato diversamente e un branch non matcha, le relazioni SCOMPAIONO.
-    //
-    //    Soluzione SEMPLICE, ROBUSTA e UGUALE PER TUTTE le relazioni:
-    //      Per OGNI relazione OWNED_BY del dedup:
-    //        1. aggiungi la DIREZIONE ORIGINALE (source, target)
-    //        2. aggiungi la DIREZIONE FLIPPED (target, source), se diversa
-    //        3. dedup per source_norm__target_norm
-    //    → così qualsiasi RUT in qualsiasi posizione del JSON originale (source OPPURE target)
-    //      troverà SEMPRE corrispondenza nel BFS sia per owned che per owners.
-    //
-    //    (MeshTable fa esattamente l'equivalente ma lo applica solo a relazioni MAIN;
-    //     qui lo generalizziamo a TUTTE le relazioni per il BFS bidirezionale N0-N5.)
+    //    Normalizzazione BIDIREZIONALE resta ma:
+    //      • A N1 (cur = cleanMain) usiamo solo owned (main è proprietario) per evitare
+    //        "inclusioni inverse" dovute al bidirezionale totale.
+    //      • Da N2+ usiamo pool completo (società intermedia potrebbe avere relazioni flipped
+    //        nel JSON rispetto alla direzione canonica).
     const unionKeyFlow = new Set<string>();
-    const ownRelsNormalizzatoFlow: any[] = [];
+    const bfsFlowPool: any[] = [];
     for (const r of ownRels) {
       const s = normalizeRut(String(r.source || ''));
       const t = normalizeRut(String(r.target || ''));
@@ -179,12 +172,12 @@ const MeshFlowTable: React.FC<Props> = ({
       const k1 = `${s}__${t}`;
       if (!unionKeyFlow.has(k1)) {
         unionKeyFlow.add(k1);
-        ownRelsNormalizzatoFlow.push({ ...r, _direction: 'direct' });
+        bfsFlowPool.push({ ...r, _direction: 'direct' });
       }
       const k2 = `${t}__${s}`;
       if (!unionKeyFlow.has(k2)) {
         unionKeyFlow.add(k2);
-        ownRelsNormalizzatoFlow.push({
+        bfsFlowPool.push({
           ...r,
           _flippedDirection: true,
           source: String(r.target || ''),
@@ -192,6 +185,7 @@ const MeshFlowTable: React.FC<Props> = ({
         });
       }
     }
+    const ownRelsNormalizzatoFlow = bfsFlowPool;
 
     const visited = new Set<string>([cleanMain]);
     const result: FlowRow[] = [];
@@ -208,21 +202,33 @@ const MeshFlowTable: React.FC<Props> = ({
       const { rut: cur, level, parentId } = queue.shift()!;
       if (level >= MAX_DEPTH) continue;
 
-      // Direzione CANONICA post-normalizzazione: {source: FIGLIA / posseduta, target: PADRE / proprietario}
-      //
       // "Empresas donde participa cur" (cur POSSEE / è proprietario):
-      //   Cerchiamo OWNED_BY dove cur = TARGET (proprietario) → SOURCE = società posseduta (figlia).
-      const owned = ownRelsNormalizzatoFlow.filter((r: any) => rutMatchRobust(r.target, cur));
+      //   cur = TARGET (proprietario) → SOURCE = società posseduta (figlia).
+      const owned = bfsFlowPool.filter((r: any) => rutMatchRobust(r.target, cur));
       for (const r of owned) {
         const childRut = normalizeRut(String(r.source || ''));
         if (!childRut || rutMatchRobust(childRut, cur)) continue;
-        // 🔧 Fix 22.09 B: TOLTO il filtro !isSociedad() per owned!
-        //    Nel caso "main è MADRE e tutte le partecipazioni sono in PERSONE NATURALI / RUT minori di 25M"
-        //    (es. holding con soci persone fisiche), il vecchio filtro scartava TUTTI i figli di owned
-        //    → result = [] → return null → BOX INVISIBILE. Al contrario: gli owners (padri) vanno bene
-        //    isSociedad (perché a N1-N2 non mostriamo persone di mezzo nella mappa), ma le società
-        //    "dove partecipa main" POSSONO ANCHE ESSERE RAGGRUPPAMENTI / PERSONE FISICHE RAPPRESENTATE.
-        //    Manteniamo isSociedad per owners ma NON per owned.
+        // 🔧 Fix 25.09: A N1 scartiamo le relazioni flipped-inverse dove main sarebbe
+        //    in source (main posseduta). Il bidirezionale totale infatti aggiunge
+        //    anche OWNED_BY(main, dueño) come flipped (source=dueño, target=main)
+        //    → ritorna in questo owned filter come "dueño è proprietario di main".
+        //    Per evitare che escano come "partecipazioni di main" i DUEÑOS di main,
+        //    a N1 imponiamo che child NON sia un match di cleanMain e che r._direction
+        //    originale non fosse quella flipped inversa.
+        if (level === 0) {
+          // Figlia NON può coincidere col dueño di main (inversione strutturale).
+          // Test: se child matcha r.source e cur matcha r.target nella relazione
+          // ORIGINALE (prima del flip) → OK.
+          // Se invece la relazione matchava nell'inverso originale (main=source,
+          // dueño=target) → SKIP (è struttura di proprietà, non partecipazione).
+          const origS = normalizeRut(String((r._flippedDirection ? r.target : r.source) || ''));
+          const origT = normalizeRut(String((r._flippedDirection ? r.source : r.target) || ''));
+          // Relazione ORIGINALE dove main fosse in source = STRUTTURA PROPRIETÀ → salta
+          if (rutMatchRobust(origS, cleanMain) && !rutMatchRobust(origT, cleanMain)) {
+            // origS=main e origT≠main → originalmente main era posseduta → skip
+            continue;
+          }
+        }
         if (visited.has(childRut)) continue;
         visited.add(childRut);
 
@@ -240,36 +246,11 @@ const MeshFlowTable: React.FC<Props> = ({
           fuente: mapSource(r.information_source?.source || ''),
           direction: 'owned',
         });
-        // Metto in coda solo se società (per BFS a N2+; persone non si espandono)
         if (isSociedad(childRut)) queue.push({ rut: childRut, level: level + 1, parentId: id });
       }
 
-      // "Dueños de cur" (cur È POSSeduta / ha padri):
-      //   Cerchiamo OWNED_BY dove cur = SOURCE (figlia) → TARGET = proprietario (padre).
-      const owners = ownRelsNormalizzatoFlow.filter((r: any) => rutMatchRobust(r.source, cur));
-      for (const r of owners) {
-        const upRut = normalizeRut(String(r.target || ''));
-        if (!upRut || rutMatchRobust(upRut, cur)) continue;
-        if (!isSociedad(upRut)) continue;
-        if (visited.has(upRut)) continue;
-        visited.add(upRut);
-
-        const id = nextId++;
-        result.push({
-          id,
-          parentId,
-          level: level + 1,
-          sourceRut: cur,
-          sourceName: getName(cur),
-          targetRut: upRut,
-          targetName: getName(upRut),
-          percentage: extractPct(r.information_source),
-          tipoTarget: inferTipo(upRut),
-          fuente: mapSource(r.information_source?.source || ''),
-          direction: 'owner',
-        });
-        queue.push({ rut: upRut, level: level + 1, parentId: id });
-      }
+      // 🔧 Fix 25.09: RIMOSSO il blocco owners (struttura di proprietà).
+      //   Da N2+ si esplora solo owned ricorsiva (solo partecipazioni).
     }
 
     // 🔧 DEBUG ESPLICITO 22.09: stampa SEMPRE (una tantum via console + PrintOnce) counts per vedere se è

@@ -249,44 +249,54 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         } catch(e){}
     }
     // ========== FINE DEBUG v1.3
+    // 🔧 Fix 25.09: SEPARAZIONE NETTA — MeshTable = SOLO struttura di proprietà (DUEÑOS / OWNERS).
+    //    NON includere flipped (partecipazioni / owned = società dove main è proprietario).
+    //    Semantica OWNED_BY canonica: source = ENTITÀ POSSEDUTA, target = PROPRIETARIO / DUEÑO.
+    //    → Direct match (main = source) → main è posseduta da target = dueño N1 (STRUTTURA PROPRIETÀ ✔︎).
+    //    → Flipped match (main = target) → main è il proprietario (NON va nella struttura di proprietà ✘).
     const directRels: any[] = [];
-    const flippedRels: any[] = [];
     const unionKey = new Set<string>();
     for (const r of ownRels) {
       const s = normalizeRut(String(r.source || ''));
       const t = normalizeRut(String(r.target || ''));
-      // Caso A — direct (main è posseduta da dueño a N1)
+      // SOLO direct: main è posseduta da dueño (main in source, target = dueño N1)
       if (rutMatchRobust(r.source, cleanMain) && s !== t) {
         const k = `${s}__${t}`;
         if (!unionKey.has(k)) { unionKey.add(k); directRels.push({ ...r, _direction: 'direct' }); }
       }
-      // Caso B — flipped (main è proprietario di società figlia)
-      if (rutMatchRobust(r.target, cleanMain) && s !== t) {
-        // Inverti source ↔ target per mantenere processUpward compat
-        // (direzione "source=società → target=dueño") — QUI main è PROPRIETARIO (target originale = main)
-        // => source = main (dell'originale r.target), target = figlia (originale r.source)
-        const k = `${s}__${t}`;
-        if (!unionKey.has(k)) {
-          unionKey.add(k);
-          flippedRels.push({
-            ...r,
-            _flippedDirection: true,
-            source: String(r.target || ''),
-            target: String(r.source || ''),
-            _direction: 'flipped',
-          });
-        }
+    }
+    // 🔧 Fix 25.09: Normalizzazione BIDIREZIONALE per BFS (non-MAIN livelli N2+)
+    //    N1 è solo direct (main=source), ma da N2 in su relazioni potrebbero essere in direzione opposta.
+    //    Costruiamo union completa (bidirezionale) MA escludiamo flipped a N1 di main.
+    const bfsUnionKey = new Set<string>();
+    const bfsRelPool: any[] = [];
+    for (const r of ownRels) {
+      const s = normalizeRut(String(r.source || ''));
+      const t = normalizeRut(String(r.target || ''));
+      if (!s || !t || s === t) continue;
+      const k1 = `${s}__${t}`;
+      if (!bfsUnionKey.has(k1)) {
+        bfsUnionKey.add(k1);
+        bfsRelPool.push({ ...r, _direction: 'direct' });
+      }
+      const k2 = `${t}__${s}`;
+      if (!bfsUnionKey.has(k2)) {
+        bfsUnionKey.add(k2);
+        bfsRelPool.push({
+          ...r,
+          _flippedDirection: true,
+          source: String(r.target || ''),
+          target: String(r.source || ''),
+        });
       }
     }
-    const ownRelsNormalizzato: any[] = [...directRels, ...flippedRels];
+    const ownRelsNormalizzato: any[] = directRels;
     const originaliCountDir = directRels.length;
-    const flippedCount = flippedRels.length;
+    const flippedCount = 0;
 
     // ── OWNED_BY ──────────────────────────────────────────────────────────────
 
     const buildOwnRows = (): OwnRow[] => {
-        if (!ownRelsNormalizzato.length) return [];
-
         const rows: OwnRow[] = [];
         let nextId = 0;
 
@@ -301,20 +311,17 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
             const branchAncestors = new Set(ancestors);
             branchAncestors.add(rut);
 
-            // 🔧 Fix 21.09 v1.6: NON usare normalizeRut(r.source) === rut (=== stretto!)
-            //    mainRut_PROP="92604000-6" → cleanMain = normalizeRut = 926040006 (include DV!)
-            //    flipped/direct sorgenti = 92604000 (SENZA dv nel JSON raw!)
-            //    Normalizzati NON UGUALI! → matched=[] → ownRows=0 despite direct=1 flipped=18
-            //    Soluzione: usa rutMatchRobust() (3-fallback, lo stesso usato per popolare direct/flipped!)
-            const matched = ownRelsNormalizzato.filter(
-                (r: any) => rutMatchRobust(r.source, rut),
-            );
+            // A N1 usiamo ownRelsNormalizzato (solo direct, senza flipped di main).
+            // Da N2+ usiamo bfsRelPool (bidirezionale) perché relazioni intermedie
+            // possono essere in direzione qualsiasi nel JSON originale.
+            const pool = level === 1 ? ownRelsNormalizzato : bfsRelPool;
+            const matched = pool.filter((r: any) => rutMatchRobust(r.source, rut));
 
             for (const r of matched) {
                 const ownerRut = normalizeRut(String(r.target || ''));
+                if (branchAncestors.has(ownerRut)) continue;
                 const pct = extractPct(r.information_source);
                 const src = r.information_source?.source || '';
-                const flipped = !!r?._flippedDirection;
                 const id = nextId++;
 
                 rows.push({
@@ -330,10 +337,8 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                     fuente: mapSource(src),
                 });
 
-                // Se la riga è "flipped" (main è proprietaria di una società figlia)
-                // → NON espandiamo verso l'alto: sarebbe una catena senza fine e semanticamente sbagliata.
-                // Solo le righe ORIGINALI (non flipped) = main è posseduta → continuano la catena dueños N1→N5.
-                if (!flipped && isSociedad(ownerRut)) {
+                // Continuiamo verso l'alto solo per società (padri società → N2+)
+                if (isSociedad(ownerRut)) {
                     processUpward(ownerRut, level + 1, id, branchAncestors);
                 }
             }
@@ -342,13 +347,17 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         if (!rootIsPerson) {
             processUpward(cleanMain, 1, null, new Set());
         } else {
-            // 🔧 Fix 21.09 v1.6: Stesso bug! rootIsPerson branch usava === stretto
-            const companiesOwned = ownRelsNormalizzato.filter(
+            // rootIsPerson: cleanMain è persona. La riga mostra companiesOwned
+            // (= società dove la persona è socio / dueña).
+            // Per MeshTable (struttura proprietà) cerchiamo relazioni in cui
+            // PERSONA è PROPRIETARIA (target = persona), società = source.
+            const companiesOwned = bfsRelPool.filter(
                 (r: any) => rutMatchRobust(r.target, cleanMain),
             );
 
             for (const r of companiesOwned) {
                 const companyRut = normalizeRut(String(r.source || ''));
+                if (!companyRut || rutMatchRobust(companyRut, cleanMain)) continue;
                 const pct = extractPct(r.information_source);
                 const src = r.information_source?.source || '';
                 const id = nextId++;
@@ -382,7 +391,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
       try {
         const cssB = 'background:#b45309;color:#fff;padding:3px 10px;border-radius:4px;font-weight:700';
         const dirC = directRels.length;
-        const flipC = flippedRels.length;
+        const flipC = flippedCount;
         const normC = (s:any) => String(s??'').replace(/[^0-9]/g,'');
         // Top 5 OWNED_BY più frequenti (per vedere se main c'è o no)
         const fh: Record<string,number> = {};
@@ -443,13 +452,13 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
         verticalAlign: 'middle', wordBreak: 'break-word',
     };
 
-    // 🔧 Banner deploy versione fix 15/09
-    const BANNER_VERSION = '[MESH BIDIRECTIONAL v1.1 • 15.09.2026]';
+    // 🔧 Banner deploy versione fix 25/09
+    const BANNER_VERSION = '[MESH OWNERS-ONLY v1.2 • 25.09.2026]';
     if (typeof window !== 'undefined') {
         try {
             // eslint-disable-next-line no-console
             printOnce('mesh_bidi_v1.1',
-                `%c🟢 ${BANNER_VERSION} %cOWNED_BY bidirezionale ROBUSTO (direct=${originaliCountDir} + flipped=${flippedCount} = ${originaliCountDir+flippedCount} / ownRels tot=${ownRels.length})`,
+                `%c🟢 ${BANNER_VERSION} %cSOLO struttura di proprietà (directN1=${originaliCountDir} / flipped a N1 esclusi / bidirezionale N2+ pool=${bfsRelPool.length} / ownRels tot=${ownRels.length})`,
                 'background:#1d4ed8;color:#fff;font-weight:700;padding:4px 8px;border-radius:4px',
                 'color:#1d4ed8;font-weight:600'
             );
