@@ -1,6 +1,18 @@
 import { useState } from "react";
-import formatRut from "../../../utils/rutFormat";
 import { filterOutNotaryRelationships } from "../../../utils/dequienes";
+
+// 🔧 Fix 25.09: RUT FORMAT SBAGLIATO!
+//   formatRut() da rutFormat.ts CALCOLA DV da zero (tutti i digit = corpo)
+//   → "14243612" (8digit: corpo+DV insieme) → "14243612-X" invece di "1424361-2"
+//   Soluzione: stesso algoritmo di formatChileanRut (preserva ultimo char come DV).
+const formatRutForDisplay = (rut: string | number): string => {
+    if (rut == null) return '';
+    const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
+    if (clean.length < 2) return clean;
+    const dv = clean.charAt(clean.length - 1);
+    const body = clean.substring(0, clean.length - 1).replace(/^0+/, '') || '0';
+    return `${body}-${dv}`;
+};
 
 const MAX_DEPTH = 5;
 
@@ -454,7 +466,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
 
     const EntityCell = ({ rut, name }: { rut: string; name: string; color: string }) => (
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '11px', color: '#9ca3af', flexShrink: 0 }}>{formatRut(rut)}</span>
+            <span style={{ fontSize: '11px', color: '#9ca3af', flexShrink: 0 }}>{formatRutForDisplay(rut)}</span>
             <span style={{ fontWeight: 500, color: '#111827' }}>{name}</span>
         </div>
     );
@@ -742,7 +754,7 @@ const MeshTable = ({ title, height, dequienesRelationships, mainRut, forceExpand
                     <text x={25} y={22} textAnchor="middle" fontSize={10} fontWeight={700} fill={badgeTx}>N{n.level}</text>
                     <text x={45} y={22} fontSize={10} fill={sub}>{n.isCompany ? 'Empresa' : 'Persona'}</text>
                     <text x={13} y={42} fontSize={11} fill={sub} fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace">
-                        {formatRut(n.rut)}
+                        {formatRutForDisplay(n.rut)}
                     </text>
                     {nameLines.map((ln: string, i: number) => (
                         <text key={i} x={13} y={58 + i * 14} fontSize={12} fontWeight={600} fill={nameCol}>{ln}</text>

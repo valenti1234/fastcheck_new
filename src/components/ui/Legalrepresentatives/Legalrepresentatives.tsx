@@ -16,6 +16,18 @@ const normalizeRut = (rut: string | number): string => {
 
 const normalizeRutOnlyDigits = (rut: string | number): string => String(rut ?? '').replace(/[^0-9]/g, '');
 
+// 🔧 Fix 25.09: RUT DISPLAY FORMATTING (stesso algoritmo di formatChileanRut)
+//   Normalizza per matching MA preserva DV originale e formatta con "-"
+//   Es. "14243612" → "1424361-2", "5065703" → "506570-3"
+const formatRutForDisplay = (rut: string | number): string => {
+    if (rut == null) return '';
+    const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
+    if (clean.length < 2) return clean;
+    const dv = clean.charAt(clean.length - 1);
+    const body = clean.substring(0, clean.length - 1).replace(/^0+/, '') || '0';
+    return `${body}-${dv}`;
+};
+
 // 🔧 Fix 21.09 v1.5: RUT MATCH ROBUST 3-FALLBACK (stesso algoritmo di MeshTable)
 const rutMatchRobust = (rutA: any, rutB: any): boolean => {
   if (!rutA || !rutB) return false;
@@ -83,12 +95,17 @@ const Legalrepresentatives = ({ dequienesRelationships, mainRut }: Representante
     // 🔧 Fix 21.09 v1.6: STESSO BUG! normalizeRut()=== stretto → mismatch DV. Usa rutMatchRobust.
     const reps = repRels
         .filter((r: any) => rutMatchRobust(r.source, cleanMain))
-        .map((r: any) => ({
-            rut: normalizeRut(String(r.target || '')),
-            name: getName(normalizeRut(String(r.target || ''))),
-            fuente: mapSource(r.information_source?.source || ''),
-            fecha: r.information_source?.started_at || r.information_source?.published_at || '',
-        }));
+        .map((r: any) => {
+            const targetRaw = String(r.target || '');
+            const targetNorm = normalizeRut(targetRaw);
+            return {
+                rut: targetNorm,                          // per matching / key
+                rutDisplay: formatRutForDisplay(targetRaw), // per visualizzazione
+                name: getName(targetNorm),
+                fuente: mapSource(r.information_source?.source || ''),
+                fecha: r.information_source?.started_at || r.information_source?.published_at || '',
+            };
+        });
 
     if (!reps.length) {
         return null;
@@ -106,9 +123,8 @@ const Legalrepresentatives = ({ dequienesRelationships, mainRut }: Representante
 
     const EntityCell = ({ rut, name, color }: { rut: string; name: string; color: string }) => (
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-       
-            <span style={{ color: '#9ca3af', flexShrink: 0 }}>{rut}</span>
-            <span >{name}</span>
+            <span style={{ color: '#9ca3af', flexShrink: 0 }}>{formatRutForDisplay(rut)}</span>
+            <span>{name}</span>
         </div>
     );
 

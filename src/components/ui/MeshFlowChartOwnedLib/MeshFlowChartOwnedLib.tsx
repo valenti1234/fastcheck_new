@@ -18,7 +18,19 @@ import {
   type NodeChange,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
-import formatRut from '../../../utils/rutFormat';
+
+// 🔧 Fix 25.09: RUT FORMAT SBAGLIATO!
+//   formatRut() da rutFormat.ts CALCOLA DV da zero (tutti i digit = corpo)
+//   → "14243612" (8digit: corpo+DV insieme) → "14243612-X" invece di "1424361-2"
+//   Soluzione: stesso algoritmo di formatChileanRut (preserva ultimo char come DV).
+const formatRutForDisplay = (rut: string | number): string => {
+  if (rut == null) return '';
+  const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
+  if (clean.length < 2) return clean;
+  const dv = clean.charAt(clean.length - 1);
+  const body = clean.substring(0, clean.length - 1).replace(/^0+/, '') || '0';
+  return `${body}-${dv}`;
+};
 
 /**
  * MeshFlowChartOwned — mapa de participaciones (red bidireccional) + socios directos.
@@ -189,7 +201,7 @@ const MeshNode: React.FC<NodeProps> = ({ data }) => {
           marginBottom: 2,
         }}
       >
-        {formatRut(rut)}
+        {formatRutForDisplay(rut)}
       </div>
       <div style={{ fontSize: 12, fontWeight: 600, color: nameColor, whiteSpace: 'normal', wordBreak: 'break-word' }}>
         {name || 'Sin nombre'}
