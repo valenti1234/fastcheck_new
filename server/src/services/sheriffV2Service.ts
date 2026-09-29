@@ -6,6 +6,7 @@ import { OpenAIService } from './OpenAIService';
 import { CompanyAnalysisService } from './companyAnalysisService'; // Import company analysis service
 import { log } from 'console';
 import ELKService from './elkService'; // Import ELK service for logging
+import { canonicalizeChileanRut } from '../helpers/rutCanonical';
 
 import dotenv from 'dotenv';
 
@@ -67,17 +68,19 @@ export class sheriffV2Service {
   async queryRut(data: RutLookupRequest, tenantId: string, refresh: boolean): Promise<Partial<ISheriffDataLog>> {
     console.log(60, "calling sheriffV2Service.queryRut", tenantId, refresh);
     const { rut, isMonitoring } = data;
-    // Remove dots, then strip leading zeros from the numeric part while preserving possible dash and verifier
-    const rutNoDots = rut.replace(/\./g, '');
-    // Match numeric part and optional verifier with dash (e.g., 12345678-9 or 12345678-K)
-    const match = rutNoDots.match(/^(\d+)(-[A-Za-z0-9])?$/);
-    let sanitizedRut = rutNoDots;
-    if (match) {
-      const numericPart = match[1].replace(/^0+/, '') || '0';
-      const suffix = match[2] || '';
-      sanitizedRut = suffix ? `${numericPart}${suffix}` : numericPart;
-    }
-    console.log(`[DEBUG] Original RUT: ${rut}, Sanitized RUT: ${sanitizedRut}`);
+    /**
+     * 🩹 FIX 29.09.2026: La antigua version trataba el RUT sin guion con un regex
+     *    /^(\d+)(-[A-Za-z0-9])?$/ y luego removía ceros al principio, pero
+     *    cuando el input era de 8 cifras TODO numérico (ej. 20779347) y NO tenía
+     *    guion, el regex aceptaba todo el match[2] = '', dejando el cuerpo 20779347
+     *    que se interpretaba implícitamente como sin-DV. Sin embargo el
+     *    RutController.normalizeRut VIEJO hacía slice(0,-1) resultando en un
+     *    cuerpo de 7 cifras (2077934) y DV=7, RUT erróneo. Usamos helper
+     *    canonicalizeChileanRut para desambiguar con validación módulo-11.
+     */
+    const canonical = canonicalizeChileanRut(rut);
+    const sanitizedRut = canonical.canonical; // Cuerpo-DV
+    console.log(`[DEBUG] Original RUT: ${rut}, Canonical: ${sanitizedRut} (body=${canonical.body}, DV=${canonical.dv}, disambiguated=${canonical.disambiguatedNoDash})`);
 
     if (!tenantId) {
       throw new Error('Tenant ID is required to create a log entry');
@@ -225,21 +228,45 @@ export class sheriffV2Service {
     const summaryData = await makeApiCall('loadRutData', 'post', '/queryRut', sanitizedData);
     //console.log(209, loadRutData); 
     //console.log(`[DEBUG] loadRutData response RUT: ${loadRutData?.data?.rut || 'No RUT in response'}`);
+
+    // 🔧 FIX 29.09.2026: NULL-SAFETY COMPLETO
+    // Si sheriff_v2 retorna 400/500 → makeApiCall retorna null → evitar TypeError al acceder a .data / .resumen
     if (summaryData == null) {
-      console.error('loadRutData failed is null');
+      console.error('[sheriffV2Service.queryRut] loadRutData FAILED (null response from sheriff_v2) — returning fallback stub with valid empty structure');
+      const fallback: any = {
+        success: false,
+        rut: sanitizedRut,
+        sheriffFetchFailed: true,
+        resumen: { data: { rut: sanitizedRut, identificacion: {}, esPersonaJuridica: false, boletinLaboral: {}, bienes: { vehiculos: {}, propiedades: {} } } },
+        data: { compliance: { personType: 'natural', summary: [] } },
+        compliance: { data: {} },
+        creditScore: { data: {} },
+        summaryData: null,
+        _fallbackReason: 'sheriff_v2_queryrut_failed',
+        apiCallErrors: [{ step: 'loadRutData', message: 'Null response from sheriff_v2 (/queryRut)' }],
+      };
+      // Marcar log como fallido
+      logEntry.allCallsSucceeded = false;
+      inMemoryLog.allCallsSucceeded = false;
+      logEntry.apiCallErrors.push({ step: 'loadRutData', message: 'Null response from sheriff_v2 (/queryRut)' });
+      try { await logEntry.save(); } catch {} // fire-and-forget
+      return fallback;
     }
-    if(!summaryData.data) {
-      summaryData.data = {};
-    }
-    if(! summaryData.data.compliance) {
-       summaryData.data.compliance = {};
-    }
-    if (summaryData.resumen.data.esPersonaJuridica) {
-      
-      summaryData.data.compliance.personType = "juridical";
-    } else {
-      summaryData.data.compliance.personType = "natural";
-    }
+
+    // Inicializar estructura con null-safety (evitar "Cannot set property of undefined")
+    if (!summaryData.data) summaryData.data = {};
+    if (!summaryData.data.compliance) summaryData.data.compliance = {};
+    if (!summaryData.resumen) summaryData.resumen = {};
+    if (!summaryData.resumen.data) summaryData.resumen.data = {};
+
+    const isJuridica = Boolean(summaryData.resumen.data?.esPersonaJuridica);
+    summaryData.data.compliance.personType = isJuridica ? "juridical" : "natural";
+
+    // Asegurar flags que el controller espera en la raíz
+    if (typeof summaryData.success === 'undefined') summaryData.success = true;
+    if (!summaryData.compliance) summaryData.compliance = { data: summaryData.data.compliance };
+    if (!summaryData.creditScore) summaryData.creditScore = { data: {} };
+
   //  console.warn(230, "sheriffV2Seervice summaryData", summaryData);
 
     return summaryData;

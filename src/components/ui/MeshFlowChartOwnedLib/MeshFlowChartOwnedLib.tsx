@@ -18,19 +18,14 @@ import {
   type NodeChange,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
+import { formatChileanRutCanonical } from '../../../utils/rutCanonical';
 
-// 🔧 Fix 25.09: RUT FORMAT SBAGLIATO!
-//   formatRut() da rutFormat.ts CALCOLA DV da zero (tutti i digit = corpo)
-//   → "14243612" (8digit: corpo+DV insieme) → "14243612-X" invece di "1424361-2"
-//   Soluzione: stesso algoritmo di formatChileanRut (preserva ultimo char come DV).
-const formatRutForDisplay = (rut: string | number): string => {
-  if (rut == null) return '';
-  const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
-  if (clean.length < 2) return clean;
-  const dv = clean.charAt(clean.length - 1);
-  const body = clean.substring(0, clean.length - 1).replace(/^0+/, '') || '0';
-  return `${body}-${dv}`;
-};
+/**
+ * 🩹 FIX 29.09.2026: Sostituita micro-implementazione duplicata con helper
+ *    canonico. Il vecchio codice slice(0,-1) sbagliava in presenza di 8+ cifre
+ *    senza trattino (RUT corpo 8 cifre).
+ */
+const formatRutForDisplay = formatChileanRutCanonical;
 
 /**
  * MeshFlowChartOwned — mapa de participaciones (red bidireccional) + socios directos.

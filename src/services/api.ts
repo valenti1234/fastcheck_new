@@ -6,6 +6,7 @@ import { EvaluationService } from './evaluationService'; // This seems to be a b
 import { SupplierData } from '../types/evaluation';
 import { SheriffDataLogResponse } from '../types/sheriff';
 import { logger } from '../utils/logger';
+import { canonicalizeChileanRut, calculateDvMod11 } from '../utils/rutCanonical';
 
 const API_BASE_URL = globalThis.__APP_ENV__?.VITE_API_BASE_URL || 'https://duxiter.azurianlab.com/api';
 
@@ -250,61 +251,33 @@ export const adminResultsApi = {
 // Helper function to validate Chilean RUT
 export function validateChileanRut(rut: string): boolean {
   if (!rut) return false;
-  
-  // Remove dots, dashes and spaces, and convert to uppercase
-  const cleanRut = rut.replace(/[.\-\s]/g, '').toUpperCase();
-  
-  // Basic format check: 7-8 digits followed by verification digit
-  if (!/^[0-9]{7,8}[0-9K]$/.test(cleanRut)) {
+  const result = canonicalizeChileanRut(rut);
+  if (result.bodyLength < 7 || result.bodyLength > 8) return false;
+  if (!result.originalDvValid) {
+    const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
+    if (clean.length >= 8) {
+      return calculateDvMod11(result.body) === result.dv;
+    }
     return false;
   }
-  
-  // Extract parts
-  const dv = cleanRut.charAt(cleanRut.length - 1);
-  const rutBody = cleanRut.substring(0, cleanRut.length - 1);
-  
-  // Calculate verification digit using modulus 11 method
-  let sum = 0;
-  let multiplier = 2;
-  
-  // Iterate from right to left
-  for (let i = rutBody.length - 1; i >= 0; i--) {
-    const digit = parseInt(rutBody.charAt(i));
-    const product = digit * multiplier;
-    sum += product;
-    multiplier = multiplier === 7 ? 2 : multiplier + 1;
-  }
-  
-  // Calculate verification digit
-  const remainder = sum % 11;
-  
-  // Convert expected verification digit to character
-  const calculatedDv = remainder === 0 ? '0' : 
-                      remainder === 1 ? 'K' : 
-                      (11 - remainder).toString();
-  
-  // Compare calculated vs provided verification digit
-  return calculatedDv === dv;
+  return true;
 }
 
-// Helper function to format Chilean RUT
+/**
+ * 🩹 FIX 29.09.2026: La antigua implementación usaba slice(0,-1) sobre el RUT
+ *    limpio, trocando 1 dígito del cuerpo cuando el input ERA DE 8+ CIFRAS y
+ *    NO tenía guion (ej. 20779347 => 2077934-7 erróneo en vez de 20779347-7).
+ *    Ahora desambigüa automáticamente con validación módulo 11 en ambas hipótesis.
+ */
 export function formatChileanRut(rut: string): string {
   if (!rut) return '';
-  
-  // Clean the RUT first (remove dots, dashes, spaces and any non-alphanumeric chars)
-  const cleanRut = rut.replace(/[^0-9Kk]/g, '').toUpperCase();
-  
-  if (cleanRut.length < 2) return cleanRut;
-  
-  // Extract parts
-  const dv = cleanRut.charAt(cleanRut.length - 1);
-  let rutBody = cleanRut.substring(0, cleanRut.length - 1);
-  
-  // Remove leading zero if present
-  rutBody = rutBody.replace(/^0+/, '') || '0';
-  
-  // Return format without dots, only dash before last digit
-  return `${rutBody}-${dv}`;
+  const result = canonicalizeChileanRut(rut);
+  const digitsOnly = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
+  if (result.body === '0' && digitsOnly.length < 7) {
+    if (digitsOnly.length < 2) return digitsOnly;
+    if (digitsOnly.length >= 8) return result.canonical;
+  }
+  return result.canonical;
 }
 
 // Sheriff Data Log API

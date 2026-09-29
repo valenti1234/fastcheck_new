@@ -7,6 +7,7 @@
 //     dequienesRelationships={data?.sheriffLogData?.filteredDetails?.dequienesRelationships}
 //     mainRut={companyData.rut}
 //   />
+import { formatChileanRutCanonical } from '../../../utils/rutCanonical';
 
 // 🔧 Fix 21.09: DV PRESERVAZIONE! (come MeshTable v1.2) — split('-')[0] toglieva DV causando mismatch
 const normalizeRut = (rut: string | number): string => {
@@ -16,17 +17,12 @@ const normalizeRut = (rut: string | number): string => {
 
 const normalizeRutOnlyDigits = (rut: string | number): string => String(rut ?? '').replace(/[^0-9]/g, '');
 
-// 🔧 Fix 25.09: RUT DISPLAY FORMATTING (stesso algoritmo di formatChileanRut)
-//   Normalizza per matching MA preserva DV originale e formatta con "-"
-//   Es. "14243612" → "1424361-2", "5065703" → "506570-3"
-const formatRutForDisplay = (rut: string | number): string => {
-    if (rut == null) return '';
-    const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
-    if (clean.length < 2) return clean;
-    const dv = clean.charAt(clean.length - 1);
-    const body = clean.substring(0, clean.length - 1).replace(/^0+/, '') || '0';
-    return `${body}-${dv}`;
-};
+/**
+ * 🩹 FIX 29.09.2026: Helper centralizzato; la micro-funzione locale slice(0,-1)
+ *    sbagliava quando l'input era 8+ cifre SENZA trattino (il codice perdevasi
+ *    una cifra del corpo numerico: 20779347 -> 2077934 invece di 20779347).
+ */
+const formatRutForDisplay = formatChileanRutCanonical;
 
 // 🔧 Fix 21.09 v1.5: RUT MATCH ROBUST 3-FALLBACK (stesso algoritmo di MeshTable)
 const rutMatchRobust = (rutA: any, rutB: any): boolean => {

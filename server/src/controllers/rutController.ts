@@ -29,6 +29,7 @@ import { DequienesService } from '../services/dequienesService';
 import { UserNote } from '../models/UserNote';
 import elkService from '../services/elkService';
 import { performance } from 'perf_hooks';
+import { canonicalizeChileanRut } from '../helpers/rutCanonical';
 
 
 const rutLookupSchema = z.object({
@@ -59,26 +60,23 @@ export class RutController {
 
   // Normalize RUT to a canonical format: remove dots, ensure single dash before check digit,
   // and uppercase the check digit. Example: 12.345.678-k -> 12345678-K
+  /**
+   * 🩹 FIX 29.09.2026: Vecchia implementazione usava slice(0,-1) assumendo
+   *    sempre l'ultimo carattere come DV. Quando il RUT arrivava a 8 CIFRE
+   *    SENZA trattino e con ultima cifra NUMERICA (es. 20779347), il corpo
+   *    veniva troncato a 7 cifre ottenendo 2077934-7 ERRATO invece di
+   *    20779347-7 corretto.
+   *    Ora usa `canonicalizeChileanRut` che desambigua con validazione mod11
+   *    in entrambe le ipotesi (hyp-A ultimo=DV vs hyp-B tutto=corpo+DV calcolato).
+   */
   static normalizeRut(rut: string): string {
     if (!rut || typeof rut !== 'string') return rut as any;
-    const cleaned = rut.replace(/\./g, '').replace(/\s+/g, '');
-    // If it already has a dash, split and rebuild; otherwise add dash before last char
-    const hasDash = cleaned.includes('-');
-    if (hasDash) {
-      const [num, dv] = cleaned.split('-');
-      const numericRaw = num.replace(/[^0-9]/g, '');
-      const check = (dv || '').replace(/[^0-9kK]/g, '').toUpperCase();
-      if (!numericRaw) return cleaned.toUpperCase();
-      const numeric = (numericRaw.replace(/^0+/, '') || '0');
-      return `${numeric}-${check}`;
-    } else {
-      const base = cleaned.replace(/[^0-9kK]/g, '').toUpperCase();
-      if (base.length < 2) return base;
-      const numericRaw = base.slice(0, -1).replace(/[^0-9]/g, '');
-      const check = base.slice(-1);
-      const numeric = (numericRaw.replace(/^0+/, '') || '0');
-      return `${numeric}-${check}`;
+    const res = canonicalizeChileanRut(rut);
+    const onlyDigits = rut.replace(/\D/g, '');
+    if (res.body === '0' && onlyDigits.length < 7) {
+      if (onlyDigits.length < 2) return onlyDigits;
     }
+    return res.canonical;
   }
 
   private static async syncTenantSpecificListaPropiaData(target: any, tenantId: string, rut: string) {
@@ -827,20 +825,37 @@ export class RutController {
       const sheriffV2 = sheriffV2Service.getInstance();
       RutController.logDebug('SHERIFF_CALL_START', { rut: validatedData.rut });
       const newSheriff = await sheriffV2.queryRut({ rut: validatedData.rut, isMonitoring: false }, tenantId, false);
-      RutController.logDebug('SHERIFF_CALL_END', { success: (newSheriff as any)?.success });
+      RutController.logDebug('SHERIFF_CALL_END', { success: (newSheriff as any)?.success, sheriffFetchFailed: !!(newSheriff as any)?.sheriffFetchFailed });
+      // 🔧 FIX 29.09.2026: Se sheriff_v2 ha fallito, logghiamo ma non blocchiamo
+      // (il service ha già restituito un fallback con struttura vuota valida)
+      if ((newSheriff as any)?.sheriffFetchFailed === true) {
+        console.error('[rutController.lookupRut] ⚠️  sheriff_v2 query FAILED for RUT:', validatedData.rut, '- returning empty payload (no datos de sheriff)');
+      }
 
       //console.warn(586, "-------------------- newSheriff", newSheriff);
 
       const resumen = (newSheriff as any)?.resumen?.data ?? {};
+
+      // 🩹 FIX 29.09.2026: Normalizza il RUT restituito da sheriff (potrebbe mancare
+      //        del DV — es. torna 20779347 invece di 20779347-7). Fallback sul
+      //        validatedData.rut già normalizzato se il sheriff torna null/undefined.
+      const sheriffRawRut = (newSheriff as any)?.resumen?.data?.rut ?? validatedData.rut;
+      const normalizedSheriffRut = sheriffRawRut
+        ? (() => {
+            try { return RutController.normalizeRut(String(sheriffRawRut)); }
+            catch { return validatedData.rut; }
+          })()
+        : validatedData.rut;
+
       // const summarySheriff = logEntry.summaryData;
       if (logEntry) {
-        (logEntry as any).rut = (newSheriff as any)?.resumen?.data?.rut;
+        (logEntry as any).rut = normalizedSheriffRut;
       }
       const dataSii = resumen.identificacion ?? {};
 
       const creditScoring = (newSheriff as any)?.creditScore?.data ?? {};
       const filteredDetails = {
-        rut: (newSheriff as any)?.resumen?.data?.rut,
+        rut: normalizedSheriffRut,
         razonSocial: dataSii?.razonSocial,
         presentaActividades: dataSii?.presentaActividades,
         inicioActividades: dataSii?.inicioActividades,
@@ -855,17 +870,18 @@ export class RutController {
         boletinComercialSummary: (newSheriff as any)?.resumen?.boletinComercial ?? {},
         boletinLaboralSummary: (newSheriff as any)?.resumen?.data?.boletinLaboral ?? {},
         boletinLaboralLastUpdate: (newSheriff as any)?.resumen?.data?.boletinLaboral?.ultimaActualizacion,
-        vehiclesSummary: (newSheriff as any)?.resumen?.data.bienes.vehiculos ?? {},
-        propertiesSummary: (newSheriff as any)?.resumen?.data.bienes.propiedades ?? {},
-        deudaBancariaSummary: (newSheriff as any)?.resumen.deudaBancaria ?? {},
-        mallaSocietariaData: (newSheriff as any)?.legal?.mallaSocietaria.data ?? {},
-        officialDiaryData: (newSheriff as any)?.legal?.mallaSocietaria.data.diarioOficial ?? {},
-        civilCasesData: (newSheriff as any)?.judicial?.civil.data ?? {},
-        laboralCasesData: (newSheriff as any)?.judicial?.laboral.data ?? {},
+        // 🔧 FIX 29.09.2026: Optional chaining completo per tutte le chiavi annidate (bienes può essere undefined)
+        vehiclesSummary: (newSheriff as any)?.resumen?.data?.bienes?.vehiculos ?? {},
+        propertiesSummary: (newSheriff as any)?.resumen?.data?.bienes?.propiedades ?? {},
+        deudaBancariaSummary: (newSheriff as any)?.resumen?.deudaBancaria ?? {},
+        mallaSocietariaData: (newSheriff as any)?.legal?.mallaSocietaria?.data ?? {},
+        officialDiaryData: (newSheriff as any)?.legal?.mallaSocietaria?.data?.diarioOficial ?? {},
+        civilCasesData: (newSheriff as any)?.judicial?.civil?.data ?? {},
+        laboralCasesData: (newSheriff as any)?.judicial?.laboral?.data ?? {},
 
-        cobranzaCasesData: (newSheriff as any)?.judicial?.cobranza.data ?? {},
-        moraPrevisionalCasesData: filterVigenteCasesOnly((newSheriff as any)?.cobranzaLaboral?.moraPrevisional.data) ?? {},
-        multaLaboralCasesData: filterVigenteCasesOnly((newSheriff as any)?.cobranzaLaboral?.multaLaboral.data) ?? {},
+        cobranzaCasesData: (newSheriff as any)?.judicial?.cobranza?.data ?? {},
+        moraPrevisionalCasesData: filterVigenteCasesOnly((newSheriff as any)?.cobranzaLaboral?.moraPrevisional?.data) ?? {},
+        multaLaboralCasesData: filterVigenteCasesOnly((newSheriff as any)?.cobranzaLaboral?.multaLaboral?.data) ?? {},
 
         commercialBulletinCasesData: {},
 
@@ -916,7 +932,8 @@ export class RutController {
         })(),
         allCallsSucceeded: (newSheriff as any)?.success ?? false,
       };
-      if ((newSheriff as any)?.resumen.data.esPersonaJuridica) {
+      // 🔧 FIX 29.09.2026: Optional chaining completo per esPersonaJuridica
+      if ((newSheriff as any)?.resumen?.data?.esPersonaJuridica) {
         (filteredDetails as any).compliancePersonType = "juridical";
       }
       else {
@@ -1696,9 +1713,11 @@ export class RutController {
       const startDate = (req.query.startDate as string) || undefined;
       const endDate = (req.query.endDate as string) || undefined;
 
-      // Normalize optional RUT: remove dots and uppercase, keep dash
+      // 🩹 FIX: Normalizza (calcola DV se mancante) invece della micro-regex replace punti
+      //        altrimenti un input tipo "20779347" (solo corpo, 8 cifre senza DV)
+      //        non troverà mai match nel DB che ha "20779347-7".
       const rut = rutFilterRaw
-        ? rutFilterRaw.replace(/[.\s]/g, '').toUpperCase()
+        ? RutController.normalizeRut(rutFilterRaw)
         : undefined;
 
       // Get tenant ID from authenticated user
@@ -2030,7 +2049,10 @@ export class RutController {
   }
 
   static async getResultByRut(req: AuthenticatedRequest, res: Response): Promise<Response> {
-    const { rut } = req.params;
+    const rutRaw = req.params.rut;
+    // 🩹 FIX: Il RUT URL-param può arrivare SENZA DV (es. /api/result/rut/20779347) —
+    //        calcolalo ora altrimenti il lookup $or fallisce.
+    const rut = RutController.normalizeRut(rutRaw);
     try {
       // Get tenant ID from authenticated user
       const tenantId = req.user?.tenant;
@@ -2049,8 +2071,9 @@ export class RutController {
             }
       */
       //we are reciclyng result for any tenants
+      const rutNoDash = rut.replace(/-/g, '');
       const result = await Result.findOne({
-        $or: [{ rut: rut }, { rut: rut.replace('-', '') }],
+        $or: [{ rut: rut }, { rut: rutNoDash }],
         archived: { $ne: true }
       }).sort({ createdAt: -1 });
       if (!result) {
@@ -3085,14 +3108,24 @@ export class RutController {
         return res.status(400).json({ error: 'RUTs array is required' });
       }
 
-      // Clean RUTs (remove dots) and filter out null/undefined values
-      const cleanRuts = ruts
-        .filter(rut => rut != null && typeof rut === 'string')
-        .map(rut => rut.replace(/\./g, ''));
+      // 🩹 FIX: Normalizza OGNI RUT con canonicalize (calcola DV se mancante, desambigua len 8+).
+      //        Prima faceva solo `.replace(/\./g, '')` → se arrivava "20779347" (SOLO CORPO,
+      //        8 cifre senza DV) non matchava i Result salvati come "20779347-7".
+      const cleanRuts: string[] = [];
+      const normalizeRutSafe = (r: any): string | null => {
+        if (r == null || typeof r !== 'string') return null;
+        try { return RutController.normalizeRut(r); } catch { return null; }
+      };
+      for (const r of (ruts ?? [])) {
+        const n = normalizeRutSafe(r);
+        if (n) cleanRuts.push(n);
+      }
+      // Include anche varianti senza trattino (per retrocompatibilità con risultati vecchi)
+      const lookupRuts = Array.from(new Set(cleanRuts.flatMap(nr => [nr, nr.replace(/-/g, '')])));
 
       // Find existing results for these RUTs
       const existingResults = await Result.find({
-        rut: { $in: cleanRuts },
+        rut: { $in: lookupRuts },
         tenantId: tenantId,
         archived: { $ne: true }
       }).sort({ createdAt: -1 });

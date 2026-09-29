@@ -1,18 +1,13 @@
 import { useState } from "react";
 import { filterOutNotaryRelationships } from "../../../utils/dequienes";
+import { formatChileanRutCanonical } from "../../../utils/rutCanonical";
 
-// 🔧 Fix 25.09: RUT FORMAT SBAGLIATO!
-//   formatRut() da rutFormat.ts CALCOLA DV da zero (tutti i digit = corpo)
-//   → "14243612" (8digit: corpo+DV insieme) → "14243612-X" invece di "1424361-2"
-//   Soluzione: stesso algoritmo di formatChileanRut (preserva ultimo char come DV).
-const formatRutForDisplay = (rut: string | number): string => {
-    if (rut == null) return '';
-    const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
-    if (clean.length < 2) return clean;
-    const dv = clean.charAt(clean.length - 1);
-    const body = clean.substring(0, clean.length - 1).replace(/^0+/, '') || '0';
-    return `${body}-${dv}`;
-};
+/**
+ * 🩹 FIX 29.09.2026: Ora usa helper centralizzato `formatChileanRutCanonical`.
+ *    Il vecchio algoritmo slice(0,-1) tronca 1 cifra DEL CORPO quando l'input
+ *    ha 8+ cifre SENZA trattino (es. 20779347 → corretto 20779347-7, prima 2077934-7).
+ */
+const formatRutForDisplay = formatChileanRutCanonical;
 
 const MAX_DEPTH = 5;
 
