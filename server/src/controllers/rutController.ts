@@ -79,6 +79,16 @@ export class RutController {
     return res.canonical;
   }
 
+  /**
+   * Restituisce i record LP Alto/Medio Impacto del tenant corrente,
+   * e anche un NUOVO oggetto (NON muta il target originale) con i campi
+   * LP injectati dentro sheriffLogData.summaryData.data.
+   *
+   * Chiamanti SOLO READ-ONLY (es. apertura storico): ignorare mergedTarget
+   * e usare records[] a piacere. Doc originale NON viene toccato.
+   * Chiamanti NUOVA valutazione (lookupRut / riciclo per tenant diverso):
+   * usare mergedTarget per salvare nel DB le LP con snapshot temporale.
+   */
   private static async syncTenantSpecificListaPropiaData(target: any, tenantId: string, rut: string) {
     const normalizedRut = RutController.normalizeRut(rut);
 
@@ -130,16 +140,6 @@ export class RutController {
       }).toArray()
     ]);
 
-    if (!target.sheriffLogData) {
-      target.sheriffLogData = {};
-    }
-    if (!target.sheriffLogData.summaryData) {
-      target.sheriffLogData.summaryData = {};
-    }
-    if (!target.sheriffLogData.summaryData.data) {
-      target.sheriffLogData.summaryData.data = {};
-    }
-
     const uniqById = (rows: any[]) => {
       const seen = new Set<string>();
       const out: any[] = [];
@@ -159,16 +159,30 @@ export class RutController {
     const uniqueLpaltos = uniqById(lpaltosRecords);
     const uniqueLpmedios = uniqById(lpmediosRecords);
 
-    target.sheriffLogData.summaryData.data.lpaltosDetected = uniqueLpaltos.length > 0;
-    target.sheriffLogData.summaryData.data.lpmediosDetected = uniqueLpmedios.length > 0;
-    target.sheriffLogData.summaryData.data.lpaltosRecords = uniqueLpaltos;
-    target.sheriffLogData.summaryData.data.lpmediosRecords = uniqueLpmedios;
+    // ⚖️ Clonazione DEEP per NON mutare mai l'oggetto target ORIGINALE.
+    // Se qualcuno usa mergedTarget (es. nuova eval), scrive su una copia
+    // pulita; il target sorgente (doc Result storico in-mem) resta immutato.
+    let mergedTarget: any;
+    try {
+      mergedTarget = JSON.parse(JSON.stringify(target || {}));
+    } catch (_) {
+      mergedTarget = Object.assign({}, target || {});
+    }
+    if (!mergedTarget.sheriffLogData) mergedTarget.sheriffLogData = {};
+    if (!mergedTarget.sheriffLogData.summaryData) mergedTarget.sheriffLogData.summaryData = {};
+    if (!mergedTarget.sheriffLogData.summaryData.data) mergedTarget.sheriffLogData.summaryData.data = {};
+
+    mergedTarget.sheriffLogData.summaryData.data.lpaltosDetected = uniqueLpaltos.length > 0;
+    mergedTarget.sheriffLogData.summaryData.data.lpmediosDetected = uniqueLpmedios.length > 0;
+    mergedTarget.sheriffLogData.summaryData.data.lpaltosRecords = uniqueLpaltos;
+    mergedTarget.sheriffLogData.summaryData.data.lpmediosRecords = uniqueLpmedios;
 
     return {
       normalizedRut,
       lpaltosRecords: uniqueLpaltos,
       lpmediosRecords: uniqueLpmedios,
-      rutsChecked: rutCandidates
+      rutsChecked: rutCandidates,
+      mergedTarget
     };
   }
 
@@ -1928,112 +1942,20 @@ export class RutController {
         return res.status(404).json({ error: 'Result not found' });
       }
 
-      const riskRecalc = (req.query as any)?.risk === 'true';
-      const shouldAutoSyncListaPropia = (result as any)?.queryType !== 'derived_socio_pep';
-      if (shouldAutoSyncListaPropia) {
-        try {
-          const before = {
-            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
-            lpaltosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpaltosRecords)
-              ? (result as any).sheriffLogData.summaryData.data.lpaltosRecords.length
-              : 0,
-            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
-            lpmediosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpmediosRecords)
-              ? (result as any).sheriffLogData.summaryData.data.lpmediosRecords.length
-              : 0,
-          };
+      // ⚖️ PRINCIPIO DI IMMUTABILITÀ — Il documento Result storico
+      // non viene MAI modificato in questa lettura. Nessun updateOne,
+      // nessuna mutazione in-place, nessun ri-calcolo rischio persistito.
+      // Le uniche aggiunte (opzionali Liste Propie "live" per la visualizzazione)
+      // vengono fatte SOLAMENTE sulla copia response runtime, mai su `result`.
+      const resultObj: any = result.toObject();
 
-          const { lpaltosRecords, lpmediosRecords } = await RutController.syncTenantSpecificListaPropiaData(
-            result as any,
-            tenantId,
-            (result as any)?.rut || ''
-          );
-
-          const normalizeLabel = (v: any) =>
-            String(v ?? '')
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, ' ')
-              .trim();
-
-          const labelMatches = (label: any, tokens: string[]) => {
-            const nl = normalizeLabel(label);
-            return tokens.every((t) => nl.includes(t));
-          };
-
-          const after = {
-            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
-            lpaltosRecordsLen: lpaltosRecords.length,
-            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
-            lpmediosRecordsLen: lpmediosRecords.length,
-          };
-
-          const hasLpRulesMismatch = (() => {
-            const complianceRules = (result as any)?.riskAssessment?.allRules?.complianceRules;
-            if (!Array.isArray(complianceRules)) return false;
-
-            const lpAlto = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'alto', 'impacto']));
-            const lpMedio = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'mediano', 'impacto']));
-
-            const altoDetected = lpAlto?.detected === true;
-            const medioDetected = lpMedio?.detected === true;
-            const altoShould = after.lpaltosRecordsLen > 0;
-            const medioShould = after.lpmediosRecordsLen > 0;
-
-            if (altoDetected !== altoShould) return true;
-            if (medioDetected !== medioShould) return true;
-
-            const altoDetailsLen = Array.isArray(lpAlto?.details) ? lpAlto.details.length : 0;
-            const medioDetailsLen = Array.isArray(lpMedio?.details) ? lpMedio.details.length : 0;
-
-            if (altoShould && altoDetailsLen === 0) return true;
-            if (medioShould && medioDetailsLen === 0) return true;
-
-            return false;
-          })();
-
-          const listaPropiaChanged =
-            before.lpaltosDetected !== after.lpaltosDetected ||
-            before.lpmediosDetected !== after.lpmediosDetected ||
-            before.lpaltosRecordsLen !== after.lpaltosRecordsLen ||
-            before.lpmediosRecordsLen !== after.lpmediosRecordsLen;
-
-          if (listaPropiaChanged || hasLpRulesMismatch || riskRecalc) {
-            const newRiskAssessment = await RiskCalculationService.calculateRisk(
-              result.sheriffLogData as any,
-              riskRecalc ? 'getResultById:onDemand' : 'getResultById:autosync'
-            );
-            if (newRiskAssessment) {
-              await Result.updateOne(
-                { _id: result._id },
-                {
-                  riskAssessment: newRiskAssessment,
-                  sheriffLogData: (result as any).sheriffLogData
-                }
-              );
-              (result as any).riskAssessment = newRiskAssessment;
-            }
-          } else {
-            await Result.updateOne(
-              { _id: result._id },
-              {
-                sheriffLogData: (result as any).sheriffLogData
-              }
-            );
-          }
-        } catch (riskError) {
-          console.error('[RISK_RECALC] Error syncing/recalculating riskAssessment by resultId:', riskError);
-        }
-      }
-
-      // Fetch associated company details and risks
+      // Fetch associated company details and risks (read-only joins)
       const companyDetails = await CompanyDetails.findOne({ resultId: id, tenantId });
       const companyRisks = await CompanyRisks.findOne({ resultId: id, tenantId });
 
-      // Combine result with company details and risks
+      // Combine read-only result with the joins
       const responseData = {
-        ...result.toObject(),
+        ...resultObj,
         companyDetails: companyDetails ? companyDetails.toObject() : null,
         companyRisks: companyRisks ? companyRisks.toObject() : null
       };
@@ -2100,87 +2022,43 @@ export class RutController {
         console.log(`[LISTA_PROPIA_RECALC] 🎯 Target tenant: ${tenantId}`);
         console.log(`[LISTA_PROPIA_RECALC] 📊 Original flags - lpaltosDetected: ${originalLpaltosDetected}, lpmediosDetected: ${originalLpmediosDetected}`);
 
+        // ⚠️ Nuova eval per tenant diverso: è concesso applicare le LP e ricalcolare il rischio
+        // perché stiamo creando un NUOVO documento Result (snapshot per questo tenant).
+        let enriched: any = resultObject;
         try {
-          const { lpaltosRecords, lpmediosRecords } = await RutController.syncTenantSpecificListaPropiaData(resultObject, tenantId, rut);
+          const { mergedTarget, lpaltosRecords, lpmediosRecords } = await RutController.syncTenantSpecificListaPropiaData(
+            resultObject,
+            tenantId,
+            rut
+          );
           const newLpaltosDetected = lpaltosRecords.length > 0;
           const newLpmediosDetected = lpmediosRecords.length > 0;
+          console.log(`[LISTA_PROPIA_RECALC] ✅ Nuova eval tenant ${tenantId}: lpaltosDetected=${newLpaltosDetected}, lpmediosDetected=${newLpmediosDetected}`);
 
-          console.log(`[LISTA_PROPIA_RECALC] ✅ Flags and records updated successfully:`);
-          console.log(`[LISTA_PROPIA_RECALC] 📈 lpaltosDetected: ${originalLpaltosDetected} → ${newLpaltosDetected} ${originalLpaltosDetected !== newLpaltosDetected ? '(CHANGED)' : '(UNCHANGED)'}`);
-          console.log(`[LISTA_PROPIA_RECALC] 📊 lpmediosDetected: ${originalLpmediosDetected} → ${newLpmediosDetected} ${originalLpmediosDetected !== newLpmediosDetected ? '(CHANGED)' : '(UNCHANGED)'}`);
-          console.log(`[LISTA_PROPIA_RECALC] 🧾 lpaltosRecords: ${lpaltosRecords.length}, lpmediosRecords: ${lpmediosRecords.length}`);
-          console.log(`[LISTA_PROPIA_RECALC] 🎯 Final result for tenant ${tenantId}: lpaltosDetected=${newLpaltosDetected}, lpmediosDetected=${newLpmediosDetected}`);
-
-          // Recalculate riskAssessment with updated lista propia flags and records
-          console.log(`[RISK_RECALC] 🧮 Starting riskAssessment recalculation with updated lista propia data...`);
-          const originalRiskAssessment = resultObject.riskAssessment;
-          console.log(`[RISK_RECALC] 📊 Original riskAssessment exists: ${!!originalRiskAssessment}`);
-
-          try {
-            const newRiskAssessment = await RiskCalculationService.calculateRisk(resultObject.sheriffLogData, 'getResultByRut:lpflags');
-
-            if (newRiskAssessment) {
-              resultObject.riskAssessment = newRiskAssessment;
-              console.log(`[RISK_RECALC] ✅ RiskAssessment recalculated successfully`);
-              console.log(`[RISK_RECALC] 🎯 New risk level: ${newRiskAssessment.riskSummary?.riskLevelDescription || 'N/A'}`);
-              console.log(`[RISK_RECALC] 🚦 New semaphore: ${newRiskAssessment.riskSummary?.semaphore || 'N/A'}`);
-
-              // Compare risk levels if both exist
-              if (originalRiskAssessment && originalRiskAssessment.riskSummary && newRiskAssessment.riskSummary) {
-                const originalLevel = originalRiskAssessment.riskSummary.riskLevelDescription;
-                const newLevel = newRiskAssessment.riskSummary.riskLevelDescription;
-                const originalSemaphore = originalRiskAssessment.riskSummary.semaphore;
-                const newSemaphore = newRiskAssessment.riskSummary.semaphore;
-
-                console.log(`[RISK_RECALC] 📈 Risk level: ${originalLevel} → ${newLevel} ${originalLevel !== newLevel ? '(CHANGED)' : '(UNCHANGED)'}`);
-                console.log(`[RISK_RECALC] 🚦 Semaphore: ${originalSemaphore} → ${newSemaphore} ${originalSemaphore !== newSemaphore ? '(CHANGED)' : '(UNCHANGED)'}`);
+          if (mergedTarget) {
+            enriched = mergedTarget;
+            try {
+              const newRiskAssessment = await RiskCalculationService.calculateRisk(
+                enriched.sheriffLogData,
+                'getResultByRut:recycled-new-tenant'
+              );
+              if (newRiskAssessment) {
+                enriched.riskAssessment = newRiskAssessment;
+                console.log(
+                  `[RISK_RECALC] ✅ Ricalcolo rischio per nuovo tenant: semaforo = ${newRiskAssessment?.riskSummary?.semaphore}`
+                );
               }
-            } else {
-              console.warn(`[RISK_RECALC] ⚠️ RiskAssessment recalculation returned null/undefined - keeping original`);
+            } catch (riskError) {
+              console.error(`[RISK_RECALC] ❌ Error (nuovo tenant):`, riskError);
             }
-          } catch (riskError) {
-            console.error(`[RISK_RECALC] ❌ Error recalculating riskAssessment:`, riskError);
-            console.log(`[RISK_RECALC] 🛡️ Keeping original riskAssessment due to calculation error`);
           }
-
         } catch (error) {
-          console.error(`[LISTA_PROPIA_RECALC] ❌ Error recalculating lista propia flags for tenant ${tenantId}:`, error);
-          console.error(`[LISTA_PROPIA_RECALC] 🔧 Setting flags and records to empty as safety fallback`);
-          if (!resultObject.sheriffLogData) {
-            resultObject.sheriffLogData = {};
-          }
-          if (!resultObject.sheriffLogData.summaryData) {
-            resultObject.sheriffLogData.summaryData = {};
-          }
-          if (!resultObject.sheriffLogData.summaryData.data) {
-            resultObject.sheriffLogData.summaryData.data = {};
-          }
-
-          resultObject.sheriffLogData.summaryData.data.lpaltosDetected = false;
-          resultObject.sheriffLogData.summaryData.data.lpmediosDetected = false;
-          resultObject.sheriffLogData.summaryData.data.lpaltosRecords = [];
-          resultObject.sheriffLogData.summaryData.data.lpmediosRecords = [];
-          console.log(`[LISTA_PROPIA_RECALC] 🛡️ Safety fallback applied - flags false and records emptied`);
-
-          // Try to recalculate riskAssessment with fallback flags
-          console.log(`[RISK_RECALC] 🔧 Attempting riskAssessment recalculation with fallback flags...`);
-          try {
-            const fallbackRiskAssessment = await RiskCalculationService.calculateRisk(resultObject.sheriffLogData, 'getResultByRut:fallback');
-            if (fallbackRiskAssessment) {
-              resultObject.riskAssessment = fallbackRiskAssessment;
-              console.log(`[RISK_RECALC] ✅ RiskAssessment recalculated successfully with fallback flags`);
-            } else {
-              console.warn(`[RISK_RECALC] ⚠️ Fallback riskAssessment calculation failed - keeping original`);
-            }
-          } catch (fallbackRiskError) {
-            console.error(`[RISK_RECALC] ❌ Error in fallback riskAssessment calculation:`, fallbackRiskError);
-            console.log(`[RISK_RECALC] 🛡️ Keeping original riskAssessment due to fallback calculation error`);
-          }
+          console.error(`[LISTA_PROPIA_RECALC] ❌ Error recyclo per tenant ${tenantId}:`, error);
         }
 
         //we need to recycle the result of another tenant for the current one by creating a new result record
         const newResult = new Result({
-          ...resultObject,
+          ...enriched,
           tenantId
         });
 
@@ -2203,141 +2081,12 @@ export class RutController {
 
       }
 
+      // ⚖️ IMMUTABILITÀ — nessuna scrittura, nessuna mutazione, nessun ri-calcolo.
+      // Il documento Result storico viene restituito esattamente come salvato nel DB.
+      // Le LP Alto/Medio Impacto e il riskAssessment NON vengono ri-applicati in apertura;
+      // l'utente vede il SEMAFORO e le LISTE come erano al momento della VALUTAZIONE.
 
-
-      const riskRecalc = (req.query as any)?.risk === 'true';
-      const shouldAutoSyncListaPropia = (result as any)?.queryType !== 'derived_socio_pep';
-      if (shouldAutoSyncListaPropia) {
-        try {
-          console.log('[LISTA_PROPIA_AUTOSYNC] start', {
-            rut,
-            tenantId,
-            resultId: String((result as any)?._id ?? ''),
-            riskRecalc
-          });
-          const before = {
-            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
-            lpaltosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpaltosRecords)
-              ? (result as any).sheriffLogData.summaryData.data.lpaltosRecords.length
-              : 0,
-            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
-            lpmediosRecordsLen: Array.isArray((result as any)?.sheriffLogData?.summaryData?.data?.lpmediosRecords)
-              ? (result as any).sheriffLogData.summaryData.data.lpmediosRecords.length
-              : 0,
-          };
-
-          const { lpaltosRecords, lpmediosRecords, rutsChecked } = await RutController.syncTenantSpecificListaPropiaData(result as any, tenantId, rut);
-
-          const after = {
-            lpaltosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpaltosDetected,
-            lpaltosRecordsLen: lpaltosRecords.length,
-            lpmediosDetected: (result as any)?.sheriffLogData?.summaryData?.data?.lpmediosDetected,
-            lpmediosRecordsLen: lpmediosRecords.length,
-          };
-
-          console.log('[LISTA_PROPIA_AUTOSYNC] synced', {
-            rut,
-            tenantId,
-            rutsCheckedCount: Array.isArray(rutsChecked) ? rutsChecked.length : 0,
-            before,
-            after
-          });
-
-          const normalizeLabel = (v: any) =>
-            String(v ?? '')
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, ' ')
-              .trim();
-
-          const labelMatches = (label: any, tokens: string[]) => {
-            const nl = normalizeLabel(label);
-            return tokens.every((t) => nl.includes(t));
-          };
-
-          const hasLpRulesMismatch = (() => {
-            const complianceRules = (result as any)?.riskAssessment?.allRules?.complianceRules;
-            if (!Array.isArray(complianceRules)) return false;
-
-            const lpAlto = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'alto', 'impacto']));
-            const lpMedio = complianceRules.find((r: any) => labelMatches(r?.label, ['listas', 'propias', 'mediano', 'impacto']));
-
-            const altoDetected = lpAlto?.detected === true;
-            const medioDetected = lpMedio?.detected === true;
-
-            const altoShould = after.lpaltosRecordsLen > 0;
-            const medioShould = after.lpmediosRecordsLen > 0;
-
-            if (altoDetected !== altoShould) return true;
-            if (medioDetected !== medioShould) return true;
-
-            const altoDetailsLen = Array.isArray(lpAlto?.details) ? lpAlto.details.length : 0;
-            const medioDetailsLen = Array.isArray(lpMedio?.details) ? lpMedio.details.length : 0;
-
-            if (altoShould && altoDetailsLen === 0) return true;
-            if (medioShould && medioDetailsLen === 0) return true;
-
-            return false;
-          })();
-
-          const listaPropiaChanged =
-            before.lpaltosDetected !== after.lpaltosDetected ||
-            before.lpmediosDetected !== after.lpmediosDetected ||
-            before.lpaltosRecordsLen !== after.lpaltosRecordsLen ||
-            before.lpmediosRecordsLen !== after.lpmediosRecordsLen;
-
-          const shouldRecalcForListaPropia = listaPropiaChanged || hasLpRulesMismatch;
-          if (shouldRecalcForListaPropia) {
-            console.log('[LISTA_PROPIA_AUTOSYNC] recalc riskAssessment', {
-              rut,
-              tenantId,
-              listaPropiaChanged,
-              hasLpRulesMismatch
-            });
-            const newRiskAssessment = await RiskCalculationService.calculateRisk(result.sheriffLogData as any, 'getResultByRut:autosync');
-            if (newRiskAssessment) {
-              await Result.updateOne(
-                { _id: result._id },
-                {
-                  riskAssessment: newRiskAssessment,
-                  sheriffLogData: (result as any).sheriffLogData
-                }
-              );
-              (result as any).riskAssessment = newRiskAssessment;
-            }
-          } else if (!riskRecalc) {
-            await Result.updateOne(
-              { _id: result._id },
-              {
-                sheriffLogData: (result as any).sheriffLogData
-              }
-            );
-          }
-        } catch (e) {
-          console.error('[LISTA_PROPIA_AUTOSYNC] Error syncing lista propia data:', e);
-        }
-      }
-      if (riskRecalc) {
-        try {
-          await RutController.syncTenantSpecificListaPropiaData(result as any, tenantId, rut);
-          const newRiskAssessment = await RiskCalculationService.calculateRisk(result.sheriffLogData as any, 'getResultByRut:onDemand');
-          if (newRiskAssessment) {
-            await Result.updateOne(
-              { _id: result._id },
-              {
-                riskAssessment: newRiskAssessment,
-                sheriffLogData: (result as any).sheriffLogData
-              }
-            );
-            (result as any).riskAssessment = newRiskAssessment;
-          }
-        } catch (riskError) {
-          console.error('[RISK_RECALC] Error recalculating riskAssessment on demand:', riskError);
-        }
-      }
-
-      // Fetch associated company details and risks
+      // Fetch associated company details and risks (read-only joins)
       const companyDetails = await CompanyDetails.findOne({
         $or: [{ rut: rut }, { rut: rut.replace('-', '') }],
         resultId: result._id
@@ -2348,7 +2097,7 @@ export class RutController {
         resultId: result._id
       });
 
-      // Combine result with company details and risks
+      // Combine read-only result with the joins
       const responseData = {
         ...result.toObject(),
         companyDetails: companyDetails ? companyDetails.toObject() : null,

@@ -1,5 +1,55 @@
 # Changelog Semanal - Sistema de Activación de Usuarios y Tenants
 
+## Fecha: 30 de Septiembre de 2026
+
+### Fix critico: Fast Check se bloquea al 80% (RUTs con riesgo = No disponible)
+- **Sintomi reportati**:
+  1. Al consultar RUTs con `Nivel de riesgo = No disponible`, la barra de progreso se congela permanentemente al 80% (etapa "Verificación de Listas Propias") y la evaluación nunca termina.
+  2. La barra se pinta de ROJO, el step "Cargando resultados" aparece como error aun cuando la carga principal de datos termino OK.
+  3. Resultado: el usuario NO ve los datos parciales (razón social, RUT, nombre, etc.) a pesar de que se cargaron correctamente.
+
+#### Causa radice — 3 bug concatenati
+
+**Bug 1 (ROOT CAUSE) — TypeError: acceso a `.allRules` con `riskAssessment` null/undefined**
+- File impattati:
+  - [FastCheckEX.tsx - fetchData](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1566-L1571)
+  - [FastCheckEX.tsx - fetchData_PRE](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1678-L1683)
+- Problema: Il blocco `if (response.data.riskAssessment.allRules)` (senza optional chaining `?.`) eseguiva **unconditional property access** su `riskAssessment`. Quando il backend restituiva `riskAssessment = null` o `undefined` (caso tipico dei RUT "No disponible" dove la valutazione del rischio non è stata generata), JavaScript lanciava:
+  ```
+  TypeError: Cannot read properties of null (reading 'allRules')
+  ```
+  Questa eccezione veniva catturata dal catch esterno che impostava `setStep('fetch', 'error')`, ma intanto `setStep('listas', 'done')` era già stato eseguito → l'`computeTargetPercent()` calcolava `(idx+1)/total * 100 = 4/5 * 100 = 80%` e `hasErrorStep = true` → barra rossa all'80%.
+- Fix:
+  - Sostituito `response.data.riskAssessment.allRules` con `response.data.riskAssessment?.allRules` (optional chaining) in ENTRAMBE le funzioni `fetchData` e `fetchData_PRE`.
+  - All'interno dell'if, utilizzato `!` (non-null assertion) dato che la guardia lo garantisce: `response.data.riskAssessment!.allRules`.
+  - Stesso trattamento per l'accesso a `financialRisk`: `response.data.riskAssessment && response.data.riskAssessment.financialRisk` → `response.data.riskAssessment?.financialRisk` (stessa null-safety).
+
+**Bug 2 — Hardening: sezione post-listas non aveva try/catch isolato**
+- File: [FastCheckEX.tsx - fetchData](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1559-L1618), [fetchData_PRE](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1671-L1730)
+- Problema: L'intero flusso da "Set risk summary" fino a `setStep('ready', 'done')` non era protetto. Un **qualsiasi** errore in processing di `riskAssessment`, `financialRisk` o `aiAnalysis` (es. JSON parse, campo inatteso, schema evoluto) faceva abortire tutto il resto e **non veniva mai chiamato `setStep('ready', 'done')`**.
+- Fix:
+  - Avvolto il blocco "post-listas" in un `try { ... } catch (postError) { ... }` interno.
+  - Il catch logga specificamente: `"Error en procesamiento posterior a listas (riesgo/IA)"` invece di generico "Error fetching data" + imposta `setFinancialRisk(null)` come fallback.
+  - **SOPRATTUTTO**: il `setStep('ready', 'done')` è stato spostato **FUORI** da questo try/catch interno → adesso viene sempre eseguito anche se falliscono i processing secondari. Così l'utente vede SEMPRE i dati principali (anche senza summary/AI) e la progress bar arriva a 100%.
+
+**Bug 3 — axios apiClient senza timeout: Promise appese per sempre**
+- File: [api.ts - apiClient](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L13-L16)
+- Problema: `axios.create({...})` NON specificava `timeout`. Qualsiasi chiamata backend lenta o appesa (es. antiunion-cases, sheriff_v2, DB lento) generava una Promise mai risolta e il frontend si bloccava sulla progress bar per sempre (fino a timeout browser ~5min).
+- Fix: Aggiunto `timeout: 30000` (30 secondi, oltre il quale axios lancia `ECONNABORTED` e il callstack dei catch può gestirlo).
+
+#### Backend verifications (no fix richiesti)
+- Controllati [antiunionCaseController.getAntiunionCaseByRut](file:///home/duxiter/duxiter_intermediate/server/src/controllers/antiunionCaseController.ts#L462-L483): è presente try/catch, restituisce sempre 200/500 JSON (mai pending infinito). La apparente "mancata risposta" nel log è semplicemente perché il controller non stampa un `[INFO]` all'ingresso (diversamente da Lpalto/Lpmedio che lo fanno). Non aggiungo log per non toccare file non pertinenti al fix.
+- Middleware `authorize()` in [role.middleware.ts](file:///home/duxiter/duxiter_intermediate/server/src/middleware/role.middleware.ts#L3-L14): tutti i path di controllo ritornano `res.status(401/403).json(...)` oppure `next()` → nessuna Promise appesa.
+- Chiamate anomale `GET /package.json?ts=...` e `POST /?rest_route=/batch/v1`: non hanno `/api/` prefix → sono richieste Vite dev server (HMR / package.json check) ed estensioni browser (batch API WordPress-style). Non correlate al bug.
+
+#### Verifica attesa
+- RUT di esempio `17752947-8` (CHRISTOPHER IAN LISCOMBE SEPULVEDA, nivel = No disponible):
+  - La progress bar passa da "Listas Propias" 68% → 80% → attende processing → 100% (VERDE), anche senza dati di rischio.
+  - Nessun TypeError nella console.
+  - Dati principali (razón social, RUT, fecha evaluación) SI vengono visualizzati anche in assenza di riskAssessment popolato.
+
+---
+
 ## Fecha: 25 de Septiembre de 2026
 
 ### Fix critico: RUTs truncados en tablas (DV perdido / DV recalculado desde cero)

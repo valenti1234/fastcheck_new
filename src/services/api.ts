@@ -12,6 +12,7 @@ const API_BASE_URL = globalThis.__APP_ENV__?.VITE_API_BASE_URL || 'https://duxit
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
+  timeout: 30000,
 });
 
 apiClient.interceptors.request.use(

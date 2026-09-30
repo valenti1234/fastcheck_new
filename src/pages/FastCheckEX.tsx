@@ -1556,64 +1556,70 @@ const FastCheck: React.FC = () => {
         setStep('listas', 'done');
       }
 
-      // Set risk summary
-      if (response.data.riskAssessment) {
-        logger.log(528, 'response.data.riskAssessment', response.data.riskAssessment);
-        setRiskSummary(response.data.riskAssessment);
-      }
+      try {
+        // Set risk summary
+        if (response.data.riskAssessment) {
+          logger.log(528, 'response.data.riskAssessment', response.data.riskAssessment);
+          setRiskSummary(response.data.riskAssessment);
+        }
 
-      // Set risk data
-      if (response.data.riskAssessment.allRules) {
-        setRiskSummary(prev => ({
-          ...prev,
-          allRules: response.data.riskAssessment.allRules
-        }));
-      }
+        // Set risk data
+        if (response.data.riskAssessment?.allRules) {
+          setRiskSummary(prev => ({
+            ...prev,
+            allRules: response.data.riskAssessment!.allRules
+          }));
+        }
 
-      // Set financial risk (AI) — normalize backend payload (string or object) and unwrap fenced code blocks
-      if (response.data.riskAssessment && response.data.riskAssessment.financialRisk) {
-        const frRaw = response.data.riskAssessment.financialRisk;
+        // Set financial risk (AI) — normalize backend payload (string or object) and unwrap fenced code blocks
+        if (response.data.riskAssessment?.financialRisk) {
+          const frRaw = response.data.riskAssessment.financialRisk;
 
 
-        const unwrapFenced = (md: string) => {
-          const trimmed = (md || '').trim();
-          const fenceRegex = /^```(?:[a-zA-Z0-9_-]+)?\n?([\s\S]*?)\n?```$/;
-          const match = trimmed.match(fenceRegex);
-          return match ? match[1].trim() : trimmed;
-        };
+          const unwrapFenced = (md: string) => {
+            const trimmed = (md || '').trim();
+            const fenceRegex = /^```(?:[a-zA-Z0-9_-]+)?\n?([\s\S]*?)\n?```$/;
+            const match = trimmed.match(fenceRegex);
+            return match ? match[1].trim() : trimmed;
+          };
 
-        if (typeof frRaw === 'string') {
-          // Backend returns markdown string — normalize to expected object shape
-          const normalizedSummary = unwrapFenced(frRaw);
-          setFinancialRisk({ summary: normalizedSummary, riskLevel: 'Low' });
-        } else if (typeof frRaw === 'object' && frRaw !== null) {
-          // Ensure required fields exist and unwrap any fenced blocks in summary
-          const rawSummary = frRaw.summary ?? '';
-          const normalizedSummary = typeof rawSummary === 'string' ? unwrapFenced(rawSummary) : '';
-          setFinancialRisk({
-            summary: normalizedSummary,
-            riskLevel: frRaw.riskLevel ?? 'Low',
-            riskScore: frRaw.riskScore,
-            keyIndicators: frRaw.keyIndicators,
-          } as FinancialRisk);
+          if (typeof frRaw === 'string') {
+            // Backend returns markdown string — normalize to expected object shape
+            const normalizedSummary = unwrapFenced(frRaw);
+            setFinancialRisk({ summary: normalizedSummary, riskLevel: 'Low' });
+          } else if (typeof frRaw === 'object' && frRaw !== null) {
+            // Ensure required fields exist and unwrap any fenced blocks in summary
+            const rawSummary = frRaw.summary ?? '';
+            const normalizedSummary = typeof rawSummary === 'string' ? unwrapFenced(rawSummary) : '';
+            setFinancialRisk({
+              summary: normalizedSummary,
+              riskLevel: frRaw.riskLevel ?? 'Low',
+              riskScore: frRaw.riskScore,
+              keyIndicators: frRaw.keyIndicators,
+            } as FinancialRisk);
+          } else {
+            setFinancialRisk(null);
+          }
         } else {
+
           setFinancialRisk(null);
         }
-      } else {
 
+        // Load AI analysis if available
+        if (response.data.aiAnalysis && response.data.aiAnalysisDate) {
+          setAiAnalysis(response.data.aiAnalysis);
+          setAiAnalysisFromCache(true);
+          setAiAnalysisDate(new Date(response.data.aiAnalysisDate));
+        } else {
+          // Reset AI analysis state if not available
+          setAiAnalysis(null);
+          setAiAnalysisFromCache(false);
+          setAiAnalysisDate(null);
+        }
+      } catch (postError) {
+        logger.error('Error en procesamiento posterior a listas (riesgo/IA):', postError);
+        // No seteamos ningún step en error, continuamos hacia ready para mostrar datos parciales
         setFinancialRisk(null);
-      }
-
-      // Load AI analysis if available
-      if (response.data.aiAnalysis && response.data.aiAnalysisDate) {
-        setAiAnalysis(response.data.aiAnalysis);
-        setAiAnalysisFromCache(true);
-        setAiAnalysisDate(new Date(response.data.aiAnalysisDate));
-      } else {
-        // Reset AI analysis state if not available
-        setAiAnalysis(null);
-        setAiAnalysisFromCache(false);
-        setAiAnalysisDate(null);
       }
       setStep('ready', 'done');
     } catch (error) {
@@ -1669,64 +1675,70 @@ const FastCheck: React.FC = () => {
         setStep('listas', 'done');
       }
 
-      // Set risk summary
-      if (response.data.riskAssessment) {
-        logger.log(528, 'response.data.riskAssessment', response.data.riskAssessment);
-        setRiskSummary(response.data.riskAssessment);
-      }
+      try {
+        // Set risk summary
+        if (response.data.riskAssessment) {
+          logger.log(528, 'response.data.riskAssessment', response.data.riskAssessment);
+          setRiskSummary(response.data.riskAssessment);
+        }
 
-      // Set risk data
-      if (response.data.riskAssessment.allRules) {
-        setRiskSummary(prev => ({
-          ...prev,
-          allRules: response.data.riskAssessment.allRules
-        }));
-      }
+        // Set risk data
+        if (response.data.riskAssessment?.allRules) {
+          setRiskSummary(prev => ({
+            ...prev,
+            allRules: response.data.riskAssessment!.allRules
+          }));
+        }
 
-      // Set financial risk (AI) — normalize backend payload (string or object) and unwrap fenced code blocks
-      if (response.data.riskAssessment && response.data.riskAssessment.financialRisk) {
-        const frRaw = response.data.riskAssessment.financialRisk;
+        // Set financial risk (AI) — normalize backend payload (string or object) and unwrap fenced code blocks
+        if (response.data.riskAssessment?.financialRisk) {
+          const frRaw = response.data.riskAssessment.financialRisk;
 
 
-        const unwrapFenced = (md: string) => {
-          const trimmed = (md || '').trim();
-          const fenceRegex = /^```(?:[a-zA-Z0-9_-]+)?\n?([\s\S]*?)\n?```$/;
-          const match = trimmed.match(fenceRegex);
-          return match ? match[1].trim() : trimmed;
-        };
+          const unwrapFenced = (md: string) => {
+            const trimmed = (md || '').trim();
+            const fenceRegex = /^```(?:[a-zA-Z0-9_-]+)?\n?([\s\S]*?)\n?```$/;
+            const match = trimmed.match(fenceRegex);
+            return match ? match[1].trim() : trimmed;
+          };
 
-        if (typeof frRaw === 'string') {
-          // Backend returns markdown string — normalize to expected object shape
-          const normalizedSummary = unwrapFenced(frRaw);
-          setFinancialRisk({ summary: normalizedSummary, riskLevel: 'Low' });
-        } else if (typeof frRaw === 'object' && frRaw !== null) {
-          // Ensure required fields exist and unwrap any fenced blocks in summary
-          const rawSummary = frRaw.summary ?? '';
-          const normalizedSummary = typeof rawSummary === 'string' ? unwrapFenced(rawSummary) : '';
-          setFinancialRisk({
-            summary: normalizedSummary,
-            riskLevel: frRaw.riskLevel ?? 'Low',
-            riskScore: frRaw.riskScore,
-            keyIndicators: frRaw.keyIndicators,
-          } as FinancialRisk);
+          if (typeof frRaw === 'string') {
+            // Backend returns markdown string — normalize to expected object shape
+            const normalizedSummary = unwrapFenced(frRaw);
+            setFinancialRisk({ summary: normalizedSummary, riskLevel: 'Low' });
+          } else if (typeof frRaw === 'object' && frRaw !== null) {
+            // Ensure required fields exist and unwrap any fenced blocks in summary
+            const rawSummary = frRaw.summary ?? '';
+            const normalizedSummary = typeof rawSummary === 'string' ? unwrapFenced(rawSummary) : '';
+            setFinancialRisk({
+              summary: normalizedSummary,
+              riskLevel: frRaw.riskLevel ?? 'Low',
+              riskScore: frRaw.riskScore,
+              keyIndicators: frRaw.keyIndicators,
+            } as FinancialRisk);
+          } else {
+            setFinancialRisk(null);
+          }
         } else {
+
           setFinancialRisk(null);
         }
-      } else {
 
+        // Load AI analysis if available
+        if (response.data.aiAnalysis && response.data.aiAnalysisDate) {
+          setAiAnalysis(response.data.aiAnalysis);
+          setAiAnalysisFromCache(true);
+          setAiAnalysisDate(new Date(response.data.aiAnalysisDate));
+        } else {
+          // Reset AI analysis state if not available
+          setAiAnalysis(null);
+          setAiAnalysisFromCache(false);
+          setAiAnalysisDate(null);
+        }
+      } catch (postError) {
+        logger.error('Error en procesamiento posterior a listas (riesgo/IA):', postError);
+        // No seteamos ningún step en error, continuamos hacia ready para mostrar datos parciales
         setFinancialRisk(null);
-      }
-
-      // Load AI analysis if available
-      if (response.data.aiAnalysis && response.data.aiAnalysisDate) {
-        setAiAnalysis(response.data.aiAnalysis);
-        setAiAnalysisFromCache(true);
-        setAiAnalysisDate(new Date(response.data.aiAnalysisDate));
-      } else {
-        // Reset AI analysis state if not available
-        setAiAnalysis(null);
-        setAiAnalysisFromCache(false);
-        setAiAnalysisDate(null);
       }
       setStep('ready', 'done');
     } catch (error) {
@@ -2133,7 +2145,7 @@ const FastCheck: React.FC = () => {
 
       // 🔧 PASSO 2: DEDUP + FUSIONE INTELLIGENTE
       // (fix duplicati "con accento vs senza accento" + "stesso nome ma una ha RUT e altra SIN RUT")
-      const socios: { name: string; rut: string }[] = [];
+      let socios: { name: string; rut: string }[] = [];
       {
         // Normalizzatori
         const normOnlyDigits = (s: any) => String(s ?? '').replace(/[^0-9]/g, '');
@@ -2251,6 +2263,33 @@ const FastCheck: React.FC = () => {
             );
           }
         } catch (e) { /* noop */ }
+      }
+
+      // 🔧 FIX: Filtra el RUT principal de la evaluación para que no aparezca en Socios Históricos
+      if (companyData?.rut) {
+        const mainRutRaw = companyData.rut;
+        const mainNorm = normRut(mainRutRaw);
+        const mainDigitsOnly = String(mainRutRaw ?? '').replace(/[^0-9]/g, '');
+        const filtroMatchRut = (socioRut: any): boolean => {
+          if (!socioRut) return false;
+          const s1 = normRut(socioRut);
+          if (s1 && mainNorm && s1 === mainNorm) return true;
+          const s2 = String(socioRut ?? '').replace(/[^0-9]/g, '');
+          if (s2 && mainDigitsOnly && s2 === mainDigitsOnly) return true;
+          if (s2 && mainDigitsOnly && s2.length >= 7 && mainDigitsOnly.length >= 7) {
+            if (s2.startsWith(mainDigitsOnly.slice(0, 8)) || mainDigitsOnly.startsWith(s2.slice(0, 8))) return true;
+            if (s2.includes(mainDigitsOnly.slice(0, 8)) || mainDigitsOnly.includes(s2.slice(0, 8))) return true;
+          }
+          return false;
+        };
+        const beforeCount = socios.length;
+        socios = socios.filter((s) => !filtroMatchRut(s.rut));
+        const afterCount = socios.length;
+        if (beforeCount !== afterCount) {
+          logger.log(
+            `🔧 [FILTRO RUT EVALUACION] Eliminados ${beforeCount - afterCount} socio/s con RUT igual al de la evaluación (${companyData.rut})`
+          );
+        }
       }
 
       if (socios.length > 0) {
