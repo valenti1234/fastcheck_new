@@ -412,51 +412,126 @@ export class RutController {
     }
   }
 
+  // Normaliza un RUT de entrada al formato canónico (sin puntos ni guion, mayúsculas).
+  // Fix 30.09.2026: prima rimuoveva solo i punti, lasciava il trattino → mismatch DB.
+  // Idempotente: safe da chiamare più volte.
+  private static _normalizeRutForQuery(rut: string): string {
+    return String(rut || '')
+      .replace(/[\.\-]/g, '')
+      .toUpperCase();
+  }
+
+  // Query robusta 3-fallback per lpaltos / lpmedios:
+  //   1. exact = cleanRut (senza punti/guion)
+  //   2. exact con guion (caso "10415404-2")
+  //   3. startsWith 8+ cifre (fallback 8 cifre senza DV)
+  // Restituisce i records filtrati per TENANT e poi deduplicati.
+  // FIX 30.09: se viene usato startsWith 8cifre (regex) e restituisce > 1 record,
+  // scarta tutti per evitare falsi positivi (socio senza DV matcherebbe anche il s-brother DV).
+  private static async _queryListapropiaRobusta(
+    collectionName: 'lpaltos' | 'lpmedios',
+    inputRut: string,
+    tenantId: string
+  ): Promise<any[]> {
+    const clean = RutController._normalizeRutForQuery(inputRut);
+    if (!clean) return [];
+    const col = mongoose.connection.db.collection(collectionName);
+    // 8 cifre (slice primo blocco senza DV)
+    const first8 = clean.slice(0, 8);
+    const orConds: any[] = [{ rut: clean }];
+    // Solo se c'è un DV (len >= 9) aggiungi anche la versione con trattino (format canonico CL):
+    if (clean.length >= 9) {
+      orConds.push({ rut: `${clean.slice(0, clean.length - 1)}-${clean.slice(-1)}` });
+    }
+    let regexRecords: any[] = [];
+    let useRegex = false;
+    if (first8 && first8.length >= 8) {
+      useRegex = true;
+      regexRecords = await col.find({ tenant: tenantId, rut: new RegExp(`^${first8}`) }).toArray();
+    }
+    const exactRaw = await col.find({ tenant: tenantId, $or: orConds }).toArray();
+
+    // Deduplica per _id (match multipli possono produrre stesso record)
+    const seen = new Set<string>();
+    const out: any[] = [];
+    for (const r of exactRaw) {
+      const id = String(r._id);
+      if (seen.has(id)) continue;
+      seen.add(id);
+      out.push(r);
+    }
+    // Aggiungi regex records solo se:
+    //  - clean è a 8 cifre (NIENTE DV)
+    //  - AND regex ha prodotto ESATTAMENTE 1 risultato (per evitare falsi positivi tra 2 RUT simili senza DV)
+    if (useRegex && clean.length === 8 && exactRaw.length === 0 && regexRecords.length === 1) {
+      const r = regexRecords[0];
+      const id = String(r._id);
+      if (!seen.has(id)) out.push(r);
+    } else if (useRegex && clean.length === 8 && exactRaw.length === 0 && regexRecords.length > 1) {
+      console.warn(
+        `[LP Robusta 30.09] Input RUT='${inputRut}' senza DV: regex ^${first8} ha restituito ${regexRecords.length} risultati → SCARTATI per evitare falso positivo. Aggiungi il DV alla Lista Propria per univocità.`
+      );
+    }
+    return out;
+  }
+
+  // Garantisce che summaryData.data.{lpaltosDetected,lpaltosRecords,...} esistano e siano BOOLEAN.
+  private static _ensureLpDefaults(logEntry: any): void {
+    if (!logEntry) return;
+    if (!logEntry.summaryData) logEntry.summaryData = { data: {} };
+    if (!logEntry.summaryData.data) logEntry.summaryData.data = {};
+    const d = logEntry.summaryData.data;
+    if (typeof d.lpaltosDetected !== 'boolean') d.lpaltosDetected = !!d.lpaltosDetected;
+    if (!Array.isArray(d.lpaltosRecords)) d.lpaltosRecords = d.lpaltosRecords || [];
+    if (typeof d.lpmediosDetected !== 'boolean') d.lpmediosDetected = !!d.lpmediosDetected;
+    if (!Array.isArray(d.lpmediosRecords)) d.lpmediosRecords = d.lpmediosRecords || [];
+  }
+
+  // Inverso di _normalizeRutForQuery: prende "104154042" e lo formatta come "1.041.540-4"
+  // o come "10415404-2" (se vuoi senza punti; scegliamo il formato "10415404-2" per essere
+  // consistenti con il resto del progetto). Safe su input già formattati.
+  private static _formatRutForDisplay(normalizedRut: string): string {
+    const clean = RutController._normalizeRutForQuery(normalizedRut);
+    if (!clean || clean.length < 2) return String(normalizedRut || '');
+    const body = clean.slice(0, clean.length - 1);
+    const dv = clean.slice(-1);
+    return `${body}-${dv}`;
+  }
+
   // Check lpaltos presence for a normalized RUT and tenant, update log entry flags
   static async checkLpaltosAndFlag(rut: string, tenantId: string, logEntry: any): Promise<void> {
     try {
-      const cleanRut = rut.replace(/\./g, '').toUpperCase();
-      const lpaltosCollection = mongoose.connection.db.collection('lpaltos');
-      if (logEntry.summaryData.data.lpaltosDetected > 0) {
+      RutController._ensureLpDefaults(logEntry);
+      const cleanRut = RutController._normalizeRutForQuery(rut);
+      if (logEntry.summaryData.data.lpaltosDetected === true) {
         //find in db  and add if detected another rut to lpaltosRecords
-        const lpaltosRecords = await lpaltosCollection.find({
-          rut: cleanRut,
-          tenant: tenantId
-        }).toArray();
+        const lpaltosRecords = await RutController._queryListapropiaRobusta('lpaltos', rut, tenantId);
         //add to lpaltosRecords
-        if(lpaltosRecords.length > 0){
-          //add to the previous records if any
-          logEntry.summaryData.data.lpaltosRecords = [...(logEntry.summaryData.data.lpaltosRecords || []), ...lpaltosRecords];
+        if (lpaltosRecords.length > 0) {
+          //add to the previous records if any, dedup per _id
+          const prev = Array.isArray(logEntry.summaryData.data.lpaltosRecords)
+            ? logEntry.summaryData.data.lpaltosRecords
+            : [];
+          const ids = new Set(prev.map((x: any) => String(x._id)));
+          for (const x of lpaltosRecords) if (!ids.has(String(x._id))) prev.push(x);
+          logEntry.summaryData.data.lpaltosRecords = prev;
+          logEntry.summaryData.data.lpaltosDetected = true;
         }
-        //logEntry.summaryData.data.lpaltosRecords = lpaltosRecords || [];
-        console.warn (323,`already detected lpaltos records for RUT ${rut} - Tenant ${tenantId}`,logEntry.summaryData.data.lpaltosRecords);
+        console.warn(323, `already detected lpaltos records for RUT ${rut} - Tenant ${tenantId}`, logEntry.summaryData.data.lpaltosRecords?.length ?? 0);
         return;
       }
-      
-      
-      console.warn(302,`[RutController.lookupRut] - Lpaltos check for RUT ${rut} - Tenant ${tenantId}`);
-      const lpaltosRecords = await lpaltosCollection.find({
-        rut: cleanRut,
-        tenant: tenantId
-      }).toArray();
 
-      console.warn(`[RutController.lookupRut] - Lpaltos records for RUT ${cleanRut} - Tenant ${tenantId}`, lpaltosRecords);
-      if (!logEntry.summaryData) {
-        logEntry.summaryData = { data: {} };
-      } else if (!logEntry.summaryData.data) {
-        logEntry.summaryData.data = {};
-      }
+      console.warn(302, `[RutController.lookupRut] - Lpaltos check for RUT ${rut} (clean=${cleanRut}) - Tenant ${tenantId}`);
+      const lpaltosRecords = await RutController._queryListapropiaRobusta('lpaltos', rut, tenantId);
+
+      console.warn(`[RutController.lookupRut] - Lpaltos records for RUT ${cleanRut} - Tenant ${tenantId}: ${lpaltosRecords.length}`);
+      RutController._ensureLpDefaults(logEntry);
       logEntry.summaryData.data.lpaltosDetected = lpaltosRecords.length > 0;
-      logEntry.summaryData.data.lpaltosRecords = lpaltosRecords || [];
-      console.warn(333,`[RutController.lookupRut] - Lpaltos records for RUT ${cleanRut} - Tenant ${tenantId}`, logEntry.summaryData.data.lpaltosRecords);
-//      console.log(`[RutController.lookupRut] - Lpaltos check for tenant ${tenantId}: ${lpaltosRecords.length} records found`);
+      logEntry.summaryData.data.lpaltosRecords = Array.isArray(lpaltosRecords) ? lpaltosRecords : [];
+      console.warn(333, `[RutController.lookupRut] - Lpaltos records for RUT ${cleanRut} - Tenant ${tenantId}`, logEntry.summaryData.data.lpaltosRecords?.length ?? 0);
     } catch (error) {
       console.error(`[RutController.lookupRut] - Error checking lpaltos collection:`, error);
-      if (!logEntry.summaryData) {
-        logEntry.summaryData = { data: {} };
-      } else if (!logEntry.summaryData.data) {
-        logEntry.summaryData.data = {};
-      }
+      RutController._ensureLpDefaults(logEntry);
       logEntry.summaryData.data.lpaltosDetected = false;
     }
   }
@@ -464,39 +539,33 @@ export class RutController {
   // Check lpmedios presence for a normalized RUT and tenant, update log entry flags
   static async checkLpmediosAndFlag(rut: string, tenantId: string, logEntry: any): Promise<void> {
     try {
-      const cleanRut = rut.replace(/\./g, '').toUpperCase();
-      const lpmediosCollection = mongoose.connection.db.collection('lpmedios');
-      console.warn(`[RutController.lookupRut] - Lpmedios check for RUT ${rut} - Tenant ${tenantId}`);
+      RutController._ensureLpDefaults(logEntry);
+      const cleanRut = RutController._normalizeRutForQuery(rut);
+      console.warn(`[RutController.lookupRut] - Lpmedios check for RUT ${rut} (clean=${cleanRut}) - Tenant ${tenantId}`);
 
-      const lpmediosRecords = await lpmediosCollection.find({
-        rut: cleanRut,
-        tenant: tenantId
-      }).toArray();
+      const lpmediosRecords = await RutController._queryListapropiaRobusta('lpmedios', rut, tenantId);
 
-      if (!logEntry.summaryData) {
-        logEntry.summaryData = { data: {} };
-      } else if (!logEntry.summaryData.data) {
-        logEntry.summaryData.data = {};
-      }
+      RutController._ensureLpDefaults(logEntry);
 
-      if (logEntry.summaryData.data.lpmediosDetected > 0) {
+      if (logEntry.summaryData.data.lpmediosDetected === true) {
         if (lpmediosRecords.length > 0) {
-          logEntry.summaryData.data.lpmediosRecords = [...(logEntry.summaryData.data.lpmediosRecords || []), ...lpmediosRecords];
+          const prev = Array.isArray(logEntry.summaryData.data.lpmediosRecords)
+            ? logEntry.summaryData.data.lpmediosRecords
+            : [];
+          const ids = new Set(prev.map((x: any) => String(x._id)));
+          for (const x of lpmediosRecords) if (!ids.has(String(x._id))) prev.push(x);
+          logEntry.summaryData.data.lpmediosRecords = prev;
         }
         logEntry.summaryData.data.lpmediosDetected = (logEntry.summaryData.data.lpmediosRecords || []).length > 0;
         return;
       }
 
       logEntry.summaryData.data.lpmediosDetected = lpmediosRecords.length > 0;
-      logEntry.summaryData.data.lpmediosRecords = lpmediosRecords || [];
+      logEntry.summaryData.data.lpmediosRecords = Array.isArray(lpmediosRecords) ? lpmediosRecords : [];
       console.log(`[RutController.lookupRut] - Lpmedios check for tenant ${tenantId}: ${lpmediosRecords.length} records found`);
     } catch (error) {
       console.error(`[RutController.lookupRut] - Error checking lpmedios collection:`, error);
-      if (!logEntry.summaryData) {
-        logEntry.summaryData = { data: {} };
-      } else if (!logEntry.summaryData.data) {
-        logEntry.summaryData.data = {};
-      }
+      RutController._ensureLpDefaults(logEntry);
       logEntry.summaryData.data.lpmediosDetected = false;
     }
   }
@@ -1089,6 +1158,112 @@ export class RutController {
           if (deqRes.success && deqRes.data) {
             //  console.warn(730, ">>>> dequens", deqRes.data);
             (filteredDetails as any).dequienesRelationships = deqRes.data;
+
+            // ================================================================
+            // FIX 30.09.2026 — 3° FALLBACK FONTE SOCI (H2 root cause):
+            // Se Equifax + Sheriff empresaEnUnDiaSocios non hanno restituito
+            // nessun socio (companyGeneralInfo.socios.length === 0), estraiamo
+            // i proprietari da Dequiénes relationships.
+            //
+            // FORMATO REALE Dequiénes confermato via DB debug:
+            //   - rel.source / rel.target = STRINGA SEMPLICE 8 cifre (senza DV)
+            //        es: "92604000" = company 92604000-6
+            //            "10415404" = socio 10415404-2
+            //   - rel.label = "REPRESENTED_BY" / "OWNED_BY" / "HAS_CONTROL" / ...
+            //   - NOME del RUT 8 cifre si trova nella mappa esterna
+            //     deqRes.data.entityNames["92604000"] = {name / rut / identifier}
+            // ================================================================
+            if (!Array.isArray(companyGeneralInfo.socios) || companyGeneralInfo.socios.length === 0) {
+              try {
+                const mainFull = RutController._normalizeRutForQuery(validatedData.rut);
+                const main8 = mainFull ? mainFull.slice(0, 8) : '';
+                const relsArr: any[] = Array.isArray(deqRes.data.relationships) ? deqRes.data.relationships : (Array.isArray(deqRes.data) ? deqRes.data : []);
+                const nameMap: Record<string, any> = deqRes.data.entityNames || {};
+                const legalMap: any = deqRes.data.legalentity || {};
+                const found: any[] = [];
+                const seenRuts = new Set<string>();
+
+                const getFullRut = (rut8: string): string => {
+                  if (!rut8) return '';
+                  // Se RUT8 è solo digits, è un RUT valido: lo restituiamo (poi eventualmente formato display).
+                  if (/^\d+$/.test(rut8)) return rut8;
+                  const meta = nameMap[rut8] || legalMap[rut8];
+                  if (!meta) return rut8;
+                  // CASO A: meta è OGGETTO {rut, identifier, document}
+                  if (typeof meta === 'object') {
+                    const fromObj: string = meta.rut || meta.identifier || meta.document || '';
+                    if (typeof fromObj === 'string' && fromObj.trim()) return RutController._normalizeRutForQuery(fromObj) || rut8;
+                  }
+                  // CASO B: meta è STRINGA — è il NOME (es. "JOSE PABLO GOMEZ MEZA")! NON è un RUT.
+                  // In questo caso torniamo il rut8 originale (le 8 cifre pure).
+                  if (/^\d+$/.test(rut8)) return rut8;
+                  return rut8;
+                };
+                const getName = (rut8: string): string => {
+                  if (!rut8) return '';
+                  const v = nameMap[rut8];
+                  if (!v) return '';
+                  if (typeof v === 'string') return v;
+                  return String(v.name || v.label || v.nombre || v.displayName || '').trim();
+                };
+
+                for (const rel of relsArr) {
+                  if (!rel || typeof rel !== 'object') continue;
+                  const src8 = String(rel.source || '').replace(/[\.\-]/g, '').slice(0, 8);
+                  const dst8 = String(rel.target || '').replace(/[\.\-]/g, '').slice(0, 8);
+                  const label = String(rel.label || rel.relationship_type || rel.type || '').toUpperCase();
+                  if (!src8 || !dst8) continue;
+
+                  const mainIsSrc = main8 && src8 === main8;
+                  const mainIsDst = main8 && dst8 === main8;
+                  if (!mainIsSrc && !mainIsDst) continue;
+
+                  // Filtra solo relazioni "persona/entità possiede/amministra la company"
+                  const isOwnerType = label.includes('OWNED') ||
+                    label.includes('REPRESENT') ||
+                    label.includes('HAS_CONTROL') ||
+                    label.includes('CONTROL') ||
+                    label.includes('ADMINISTER') ||
+                    label.includes('ADMINISTR') ||
+                    label.includes('BENEFICIAL') ||
+                    label.includes('RELATED_TO');
+                  if (!isOwnerType) continue;
+
+                  // socio = L'ALTRO nodo nella relazione
+                  const socio8 = mainIsSrc ? dst8 : src8;
+                  if (!socio8 || socio8 === main8 || seenRuts.has(socio8)) continue;
+                  seenRuts.add(socio8);
+
+                  const fullRut = getFullRut(socio8);
+                  // Solo se fullRut è tutto DIGITS (RUT valido): formatta con trattino se c'è il DV.
+                  // Se è 8 cifre senza DV: lasciamo 8 cifre. Evitiamo trattini sporchi sul NOME.
+                  let displayRut: string = fullRut;
+                  if (/^\d{9,}$/.test(fullRut)) {
+                    displayRut = RutController._formatRutForDisplay(fullRut);
+                  }
+                  found.push({
+                    rut: displayRut,
+                    raw_rut: socio8,
+                    normalized: fullRut || socio8,
+                    nombre: getName(socio8),
+                    name: getName(socio8),
+                    relationship_type: rel.label || rel.relationship_type || label,
+                    ownership: rel.information_source?.ownership_percentage ?? rel.ownership_percentage ?? null,
+                    information_source: rel.information_source || null,
+                    _origine: 'DEQUIENES_FALLBACK_3',
+                  });
+                }
+                if (found.length > 0) {
+                  companyGeneralInfo.socios = found;
+                  console.warn(
+                    `[FIX LP FALLBACK 30.09 FINAL] companyGeneralInfo.socios EMPTY per RUT=${validatedData.rut}. Estratti da Dequiénes relazioni: ${found.length} socios.`,
+                    found.slice(0, 12).map(s => ({ rut: s.rut, normalized: s.normalized, nombre: s.nombre, tipo: s.relationship_type }))
+                  );
+                }
+              } catch (e) {
+                console.error('[FIX LP FALLBACK 30.09 FINAL] errore estrazione socios da Dequiénes:', e);
+              }
+            }
           } else {
             console.warn(732, ">>>> dequens fail", deqRes);
           }

@@ -126,14 +126,37 @@ Pipeline de seguridad por request (en orden):
 
 **La intención funcional (del file `nota.txt` línea 2) es: "ipalto ipmedio deve essere applicato solo nel momento della consulta".**
 
-### Estado actual vs intención
+### Estado actual vs intención (Actualizado 30/09/2026 POST-fix Inmutabilidad + Fix LP Fallback 3ª Fuente)
 
 | Modelo | ¿Cuándo se aplica? | Dónde |
 |--------|--------------------|-------|
-| ⚠️ **Actual (comportamiento HOY)** | **Cada vez que se ABRE/REVISA la consulta almacenada** (click en RUT). <br>El handler `getResultById` re-sincroniza siempre LP en vivo desde `lpaltos/lpmedios` y, si detecta cambios, **sobre-escribe `riskAssessment`** del documento histórico. | [rutController.ts L1932-L2024](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts#L1932-L2024) |
-| 🎯 **Intención dichiarata en nota** | **Solo en el momento de EJECUTAR la consulta (lookupRut)**. <br>Al abrir una consulta pasada el riesgo debería ser INMUTABLE; las listas del momento de la consulta debieron haber sido snapshot. | Lugar de implementación ideal: [RutController.lookupRut](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts) + desactivar el sync en getResultById |
+| 🟢 **COMPORTAMIENTO HOY 30.09.2026 (CORREGIDO)** | **Solo durante el momento de ejecutar una nueva evaluación o refresh (Rehacer Evaluación = POST `/rut/lookup` `isRefreshing=true`).** Lectura histórica de Result ya creado es 100% read-only; no hay sync LP, no hay re-calc riesgo, no hay `updateOne` sobre doc histórico. | [RutController.lookupRut](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts) ejecuta LP in vivo; [getResultById](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts#L1913-L1957) es solo lectura con `toObject()` |
+| 🚫 **Obsoleto (pre-fix)** | Cada vez que se ABRE/REVISA la consulta (sync LP + write). El 30/09 fue fixeado para siempre. | Ramo "sync LP" del getResultById — ELIMINADO (commit 30.09 fix immutabilidad). |
 
-> 🔴 **Impacto funcional actual**: Un RUT que el día 01 dio "Sin Listas Propias → riesgo Bajo", al agregar el RUT a LP Alto en Tenant Admin el día 15, **al re-abrir la consulta del día 01 el semáforo cambia** (el documento histórico original se modifica en DB con un `updateOne`). No hay snapshot temporal de LP en el Result.
+### Extra: 3ª Fuente de Socios (Fallback Dequiénes Relationships) · Fix 30/09/2026 RC#1/2/3
+
+> Contexto bug: RUT empresa `92604000-6` con socio `10415404-2` (Marco Antonio Guzmán Navarro) agregado en lpaltos/lpmedios. Equifax devolvía `companyGeneralInfo.socios = []` (0 rows). Sheriff `empresaEnUnDiaSocios = undefined`. El loop `for (socio of companyGeneralInfo.socios) { checkLpaltosAndFlag() }` **no iteraba nunca** → semáforos Listas Propias nunca se encendían.
+
+**Fix aplicado en `lookupRut` ([rutController.ts L1144-L1264](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts#L1144-L1264))**:
+
+Después de ejecutar `DequiénesService.queryRelationships()` y antes del loop LP:
+1.  Si `socios.length === 0` (Equifax + Sheriff sin datos), escaneamos `deqRes.data.relationships[]`.
+2.  Formato real payload confirmado: `relationships[] = { source: "92604000", target: "10415404", label: "REPRESENTED_BY/OWNED_BY", information_source }` → source/target = **8 cifres string sin DV**, NO son objetos nested.
+3.  Mapa nombres `entityNames["10415404"] = "MARCO ANTONIO GUZMAN NAVARRO"` (puede ser string semplice NOMBRE u oggetto `{rut,name}`). Distinzione con `typeof === 'string'` (solo nome! non RUT!).
+4.  Match empresa principal por 8cifre `mainNorm.slice(0,8)`. Relaciones aceptadas: `OWNED_BY / REPRESENTED_BY / HAS_CONTROL / ADMINISTERED_BY / BENEFICIAL / RELATED_TO`.
+5.  Display RUT: formateado como canónico `XXXXXXX-X` SOLO si `fullRut.length >= 9` (≥9 cifres). Se è 8cifre senza DV → lasciato `10415404` (niente trattino! evita bug "MARCO ANTONIO GUZMAN NAVARR-O").
+
+```
+Resultado verificado user: "si funziona"
+✅ [FIX LP FALLBACK 30.09 FINAL] Estratti da Dequiénes relazioni: 21 socios.
+✅ [RutController] Lpaltos records for 10415404: 1; Lpmedios: 1;
+✅ Semaforo=red, totalSevero=2 (Causas Penales + Listas Propias Alto).
+```
+
+**Query robusta LP ([rutController.ts L424-L476](file:///home/duxiter/duxiter_intermediate/server/src/controllers/rutController.ts#L424-L476))**:
+- `$or[0]` exact normalizado (sin puntos/guion).
+- `$or[1]` exact formato canónico con guion.
+- Fallback regex `^8cifre` **SÓLO aceptado si devuelve 1 único resultado** (anti-falso positivo RUTs hermanos mismo cuerpo / DVs diferentes).
 
 ---
 

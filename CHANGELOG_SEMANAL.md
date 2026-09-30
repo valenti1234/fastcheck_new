@@ -165,6 +165,54 @@ npx tsx src/scripts/simulate-migration.ts --apply --apply-yes-i-confirm --pretty
 
 ---
 
+### 🧯 FIX FINAL (tarde 30/09): Listas Propias Alto/Medio Impacto NO DETECTADAS sobre socios cuando Equifax no entregaba socios
+*(Bug confirmado y resuelto sobre RUTs `92604000-6` (empresa) + socio `10415404-2` (Marco Antonio Guzmán Navarro) — usuario reportaba: *"non funziona i semafori non si illuminano"* a pesar de haber agregado el socio a `lpaltos` y `lpmedios` y pulsado **Rehacer Evaluación**)*.
+
+#### 🚨 Síntomas (evidencia runtime post-mortem)
+1.  A pesar de existir el socio `10415404-2` en `lpaltos` y `lpmedios` del tenant correcto, **las reglas** `Listas Propias Alto Impacto` y `Listas Propias Mediano Impacto` **quedaban `detected = null` / `details = []`** en la evaluación NUEVA.
+2.  El semáforo quedaba **ROJO 1 causa sola por "Causas Penales"** (severo) pero sin sumar Listas Propias → `totalSevero = 1` (esperado: `totalSevero ≥ 2`).
+3.  **SOSPECHA INICIAL FALSA**: se pensó que las listas estaban en tenant equivocado; análisis demostró que el problema era totalmente interno al pipeline de `lookupRut` → NO hubo tenant mismatch.
+
+#### 🔍 Causas raíz CONCATENADAS (3 bugs, descubiertos via `_dbg_step*.cjs`):
+| # | Causa raíz | Ubicación anterior / defecto | Cómo impedía que se encendieran los semáforos |
+|---|---|---|---|
+| **RC#1** | 🏁 `companyGeneralInfo.socios = []` (vacío) | Equifax no devolvía socios para `92604000-6` y el fallback Sheriff `empresaEnUnDiaSocios` era `undefined`. → El loop `for (socio of companyGeneralInfo.socios)` (L1306-L1317) **no iteraba NUNCA**. NUNCA se llamó a `checkLpaltosAndFlag(10415404-2, tenant, logEntry)`. |
+| **RC#2** | Formato payload Dequiénes asumido ERRÓNEO en el 1er. intento de fix | Primer fallback escribió `socio.rut = "MARCO ANTONIO GUZMAN NAVARR-O"` (nombre con guion tratado como DV) ❌ en vez de `"10415404"` (8 cifras sin DV). Log con `clean=MARCO ANTONIO GUZMAN NAVARRO` confirmó el bug: el LP find usaba el **NOMBRE como si fuera RUT** → 0 coincidencias. |
+| **RC#3** | Match RUT incompleto (prerregex) + sin control de unicidad | `cleanRut` = `rut.replace(/\./g,'')` (antes) quitaba SOLO los puntos, NUNCA el guion. Resultado: registro guardado como `"10415404-2"` no coincidía con `"104154042"` (normalizado) → query find exact = 0 rows. |
+
+#### ✅ Fix aplicados (SOLO `server/src/controllers/rutController.ts`)
+1.  **Normalización robusta RUT → `_normalizeRutForQuery()` [L416-L422]**:
+    ```ts
+    String(rut || '').replace(/[\.\-]/g, '').toUpperCase();
+    ```
+    Quita **ambos** puntos y guiones. Idempotente.
+2.  **Query 3-fallbacks segura → `_queryListapropiaRobusta('lpaltos'|'lpmedios', rut, tenantId)` [L424-L476]**:
+    - `$or[0]`: match exact normalizado (sin puntos/guion).
+    - `$or[1]`: match exact formato canónico (con guion, `10415404-2`).
+    - Fallback `regex ^8cifre` **SÓLO se acepta si devuelve 1 único resultado** (anti-falso-positivo entre RUTs hermanos con mismo 8cifre/DV diferente).
+3.  **Valores BOOLEAN garantizados → `_ensureLpDefaults(logEntry)` [L478-L490]**:
+    Siempre inicializa `lpaltosDetected`, `lpmediosDetected` a `false` (boolean) y `lpXRecords = []` (nunca `null`/`undefined`).
+4.  **3ª FUENTE SOCIOS DEFINITIVA (Fallback Dequiénes) [L1144-L1264]**:
+    Si Equifax + Sheriff dejan `socios=[]`:
+    - Recorre `dequiénesRelationships.relationships[].source / target` (strings 8 cifres, NO objetos anidados!).
+    - Match empresa principal con el 8cifre slice(`mainNorm`,0,8).
+    - Tipos relacióm aceptados: `OWNED_BY / REPRESENTED_BY / HAS_CONTROL / ADMINISTERED_BY / BENEFICIAL / RELATED_TO`.
+    - Mapa `entityNames[rut8]` recupera nombre. Distinción de casos: `typeof nameMap === 'string'` es NOMBRE (no RUT!); `typeof === 'object'` usa `.rut || .identifier`.
+    - Sólo formatea display con guion si `fullRut.length >= 9` (evita `"JOSE PABLO GOMEZ MEZ-A"` bug DV-letras).
+5.  **Formato display guardia → `_formatRutForDisplay()` [L492-L502]**: Inverso de `_normalizeRutForQuery`. Solo genera formato canónico (`10415404-2`) si entrada es ≥ 9 dígitos.
+
+#### 🏁 Verificación final (usuario confirmó verbatim: *"si funziona"*)
+```
+[FIX LP FALLBACK 30.09 FINAL] companyGeneralInfo.socios EMPTY per RUT=92604000-6.
+   Estratti da Dequiénes relazioni: 21 socios.
+   [ {rut:'10415404', normalized:'10415404', nombre:'MARCO ANTONIO GUZMAN NAVARRO', tipo:'REPRESENTED_BY'} ]
+[RutController.lookupRut] Lpaltos check for RUT 10415404 (clean=10415404): 1
+[RutController.lookupRut] Lpmedios check for RUT 10415404: 1
+✅ Reglas Listas Propias Alto/Medio Impacto = detected=true, semaforo: RED, totalSevero=2
+```
+
+---
+
 ### 📑 Nuevos Documentos de referencia (QA + flujo + guía migración)
 
 | Documento | Ámbito | Enlace |
