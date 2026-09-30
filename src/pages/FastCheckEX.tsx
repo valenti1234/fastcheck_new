@@ -2627,7 +2627,7 @@ const FastCheck: React.FC = () => {
 
       const allCompleted = results.length === selectedSocios.length && results.every(r => r.status === 'completed');
       if (!allCompleted) {
-        toast.error('Alcune valutazioni non sono state completate. Controlla gli errori.');
+        toast.error('Error 2630.');
         return;
       }
 

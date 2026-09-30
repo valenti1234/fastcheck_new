@@ -1,0 +1,155 @@
+{
+  "pathCount": 13,
+  "relationships": [
+    {
+      "source": "77427173",
+      "target": "16732449",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-12-18",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77427173",
+      "target": "13769150",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2021-08-23",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "77427173",
+      "target": "16732449",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACByUVFA8UHr",
+        "shares_percent": 100,
+        "source": "RES",
+        "published_at": "2025-12-18"
+      }
+    },
+    {
+      "source": "78266959",
+      "target": "16732449",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2025-10-07",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76417764",
+      "target": "16732449",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2014-08-21",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "78266959",
+      "target": "16732449",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "AChqJOx1HqY2",
+        "shares_percent": 100,
+        "source": "RES",
+        "published_at": "2025-10-07"
+      }
+    },
+    {
+      "source": "76417764",
+      "target": "16732449",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACeSBaeo4zOg",
+        "shares_percent": 100,
+        "source": "RES",
+        "published_at": "2015-05-12"
+      }
+    },
+    {
+      "source": "77138571",
+      "target": "13769150",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2020-03-13",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76207079",
+      "target": "13769150",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-04-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76207079",
+      "target": "13769150",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_467792",
+        "cve": "467792",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2012-03-16",
+        "doc_extraction_id": "1957040",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/03/16/467792_C_LTDA_20120316_firmado.pdf"
+      }
+    },
+    {
+      "source": "77138571",
+      "target": "13769150",
+      "label": "OWNED_BY",
+      "information_source": {
+        "cve": "ACFuMHGrTvKA",
+        "shares_percent": 100,
+        "source": "RES",
+        "published_at": "2020-03-13"
+      }
+    },
+    {
+      "source": "76207079",
+      "target": "14578872",
+      "label": "REPRESENTED_BY",
+      "information_source": {
+        "started_at": "2012-04-19",
+        "source": "SII_REP"
+      }
+    },
+    {
+      "source": "76207079",
+      "target": "14578872",
+      "label": "OWNED_BY",
+      "information_source": {
+        "pub_id": "cve_467792",
+        "cve": "467792",
+        "shares_percent": 50,
+        "source": "DO",
+        "published_at": "2012-03-16",
+        "doc_extraction_id": "1957040",
+        "url": "https://www.diariooficial.interior.gob.cl/media/2012/03/16/467792_C_LTDA_20120316_firmado.pdf"
+      }
+    }
+  ],
+  "entityNames": {
+    "13769150": "JOSE EDUARDO GALARCE PEREDA",
+    "14578872": "EDUARDO JAVIER NOVOA VIVANCO",
+    "16732449": "NATALIA FRANCISCA ALVAREZ MURILLO",
+    "76207079": "SOCIEDAD GASTRONOMICA NOVOA GALARCE Y COMPANIA LIMITADA",
+    "76417764": "SERVICIOS DE BANQUETERIA NATALIA  ALVAREZ MURILLO E.I.R.L.",
+    "77138571": "BANQUETERA JOSE EDUARDO GALARCE PEREDA E.I.R.L.",
+    "77427173": "PROBARTE BANQUETERIA SPA",
+    "78266959": "GRUPO PROBARTE SPA"
+  },
+  "_cache_info": {
+    "cached": true,
+    "cache_key": "dequienes_cache:dequienes_relationships:d7cdfbd90928390d7dc5fe7f5829b540e1d6c527cf8465431ab127a0995345ef",
+    "retrieved_at": "2026-09-29T17:30:06.420162"
+  }
+}
