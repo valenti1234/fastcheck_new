@@ -6,6 +6,77 @@
 
 ---
 
+## Fecha: 01 de Octubre de 2026
+
+---
+
+### 🐛 Fix CRÍTICO UI: Input RUT — bloqueado a 2 dígitos + Backspace deshabilitado en RUT completo
+
+#### Problema #1 — No se puede escribir más de 2 dígitos en el campo RUT
+**Reproducción reportada (Captura `evaluations/single`)**:
+> Usuario escribe `1` → OK. Escribe `2` → el input inmediatamente muestra `1-9` (con guion y DV calculado).  Cualquier pulsación posterior (3, 4, 5…) se **pierde** porque el formatter vuelve a canónizar "12-93" → hasDash=true, left=12, right DV válido=9 → vuelve a `1-9`.
+
+**Causa raíz** ([formatChileanRut](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L286-L286) original):
+El formateador invocaba `canonicalizeChileanRut()` **incluso con 2 dígitos**, lo cual:
+1.  Toma `body = "12"` y calcula `_mod11("12") = 9`
+2.  Devuelve inmediatamente `"12-9"` (formato canónico CON GUION)
+3.  El input queda "completo" prematuramente y cualquier nuevo dígito que el usuario añada (ej: "12-93") es **re-cortado** por la rama `hasDash → left/right split + DV correcto = 9` → vuelve a `"12-9"`.
+
+#### Problema #2 — Backspace deshabilitado cuando el RUT es completo y válido
+**Reproducción reportada (RUT `12.345.678-5` marcado verde ✔)**:
+> Usuario posiciona el cursor después del `5` (DV) y pulsa SUPR/backspace.  El input muestra instantáneamente `"12.345.678-"` → `formatChileanRut` interpreta `rightRaw.length === 0` (guion colgado) y la antigua función caía en canonicalize que **VOLVÍA a calcular el DV para el cuerpo 12345678 → 5** y reinsertaba `"12345678-5"`.  Efecto visual: **el carácter no se borra nunca**.  El mismo loop infinito ocurría al borrar el guion mismo o cualquier dígito interior.
+
+---
+
+#### Fix aplicado (3 fixes en una reescritura) en [api.ts](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L278-L423)
+
+**Nuevas funciones helpers (no mutantes):**
+
+| Función | Ubicación | Propósito |
+|---|---|---|
+| `parseUserRutRespectfully(raw)` | [api.ts#L294-L319](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L294-L319) | **NUNCA** recalcula ni sobreescribe el DV que el usuario escribió.  Solo parsea con reglas len 7+1 / 8+1 / hasDash.  Usado SOLO para pretty-print, NO para validación. |
+| `prettyPrintRut(body, dv)` | [api.ts#L326-L341](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L326-L341) | Aplica separadores de miles chileno estándar.  `dv=""` → solo cuerpo con puntos. |
+
+**Reglas nuevas de `formatChileanRut()` ([api.ts#L367-L423](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L367-L423)):**
+
+1.  **CASO 1 — Escritura parcial (<8 dígitos y SIN separadores `[.\-\s]`):** devuelve `digitsOnly` tal cual, **sin guion, sin DV, sin puntos**.  El usuario puede escribir hasta 7 dígitos (o 8 sin DV aún) SIN que el formatter "coma" pulsaciones.  ✅ Soluciona **Problema #1** (2 dígitos).
+2.  **CASO 2 — Edición transitoria CON guion (backspace en curso):**
+    - 2a) `rightRaw.length === 0` (acaba de borrar el DV) → **devuelve solo el cuerpo, SIN guion**.  Ya no re-calcula/re-inserta el DV.  ✅ Soluciona **Problema #2**.
+    - 2b) DV trunco (>1 carácter después del guion) → preservar lo escrito.
+    - 2c) Cuerpo <7 dígitos y ya hay guion → respetar (no validar mod11 aún).
+3.  **CASO 3 — RUT compuesto / cerrado:** usa `parseUserRutRespectfully()` → `prettyPrintRut()` para entregar formato estándar `XX.XXX.XXX-DV`.  El DV del usuario **SE MANTIENE aunque sea incorrecto**; luego `validateChileanRut()` se encargará de marcar el borde rojo.
+
+---
+
+#### Fix complementario en validateChileanRut — ya no acepta DV inválido
+
+La antigua `validateChileanRut()` aceptaba RUTs CON guion y DV matemáticamente INCORRECTO (ej: `12.345.678-9`) porque caía en la rama:
+```typescript
+return calculateDvMod11(result.body) === result.dv;
+```
+…y `result.dv` YA había sido **sobreescrito por `canonicalizeChileanRut` con el DV correcto**, así que siempre daba `true` (tautología).  Ahora la validación es ESTRICTA:
+- Si hay guion (usuario especificó DV explícito) y `originalDvValid === false` → **return false** directamente.
+- Si no hay guion y len ≥ 8 (DV iba dentro) también se exige `originalDvValid=true`.
+
+Ver en [api.ts#L252-L276](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L252-L276).
+
+---
+
+#### Corrección de tests (RUTs de prueba inconsistentes)
+
+El archivo [rut.test.ts](file:///home/duxiter/duxiter_intermediate/src/utils/rut.test.ts) tenía 4 RUTs de ejemplo cuyo DV NO COINCIDÍA con mod11 del algoritmo del proyecto.  Al endurecer validateChileanRut estos tests pasaban a fallar.  Se sustituyeron por cuerpos matemáticamente coherentes:
+
+| Antes (DV erróneo) | Después (DV correcto mod11 proyecto) |
+|---|---|
+| `77.879.240-2` | `77.879.240-0` (dv calculado = 0) |
+| `11.111.111-K` | `1.000.005-K` (body 7díg `1000005`, dv=K es correcto) |
+| `11.111.111-k` | `1.000.005-k` |
+| Comentario inline con cálculos de referencia | Añadido bloque `// Cuerpos usados y su DV correcto …` ([rut.test.ts#L8-L11](file:///home/duxiter/duxiter_intermediate/src/utils/rut.test.ts#L8-L11)) |
+
+✅ Estado final test suite: **39 / 39 PASSED**.
+
+---
+
 ## Fecha: 30 de Septiembre de 2026
 
 ---
@@ -1183,8 +1254,9 @@ Monto total                           → $3.036.602.310 ✅ (10x RESUELTO, ya n
 | 🗓️ Julio (Set 2025 → 7 Sep config) | 2025 | 1 | 8 | 8 |
 | 🗓️ Septiembre (Equifax BOLCOM/ICOM/BED + parser CLP) | 2025 | 5 | 10 | 10 |
 | 🗓️ Octubre (Monitoreo RUT + Progreso UI) | 2025 | 3 | 10 | 10 |
-| 🗓️ Septiembre (bugs MeshTable + Socios Loop + Fix 80% FC + Immutabilità LP) | 2026 | **19** | **28** | **28** |
-| **TOTAL** | | **42** | **72 h** | **72 h** |
+| 🗓️ Septiembre (bugs MeshTable + Socios Loop + Fix 80% FC + Immutabilità LP) | 2026 | 19 | 28 | 28 |
+| 🗓️ **Octubre (Fix RUT formatter 2digits/backspace)** | 2026 | **3** | **5** | **5** |
+| **TOTAL** | | **45** | **77 h** | **77 h** |
 
 ---
 
@@ -1234,16 +1306,19 @@ Monto total                           → $3.036.602.310 ✅ (10x RESUELTO, ya n
 | 40 | *(Bugfix 3ª iteración desalineacion conteos Tarjeta Protestos Total 156 vs 164)* | 10 Set 2026 | 0,5 h | CHANGELOG final (truncato en originale) | Estimación mínima |
 | 41 | *(Añadir totalizador mensual tabla tiempos + verificación consistencia 72 h)* | 30 Sep 2026 | 0,5 h | Tabla tiempos | QA |
 | 42 | *(Ripasso generale riferimenti file:/// assoluti e range Lx-Ly ogni fix)* | 30 Sep 2026 | 0,5 h | Tutto documento | Enlaces |
+| 43 | 🐛 Fix **RUT bloqueado a 2 dígitos** (formatChileanRut disparaba canonicalize prematuramente) | 01 Oct 2026 | 2 h | [api.ts:formatChileanRut#L367-L423](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L367-L423) | Caso 1 (<8 díg sin separadores = passthrough) |
+| 44 | 🐛 Fix **Backspace deshabilitado en RUT completo/verificado** (guion colgado / dv borrado / guion borrado → loop inf recalc DV) | 01 Oct 2026 | 2 h | [api.ts:CASO 2#L394-L415](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L394-L415) + helpers [parseUserRutRespectfully](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L294-L319) | 3 sub-casos (2a/2b/2c) |
+| 45 | ✅ Fix **validateChileanRut DV inválido aceptado** (antes tautología mod11(body) === dv_calculado always true) + actualización tests suite 39/39 PASS | 01 Oct 2026 | 1 h | [validateChileanRut#L252-L276](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L252-L276), [rut.test.ts](file:///home/duxiter/duxiter_intermediate/src/utils/rut.test.ts) | Corregidos RUTs ejemplo matemáticamente inconsistentes (77.879.240-2, 11.111.111-K) |
 
 ---
 
 ## 🧮 Cuadre Final Horas
 ```
-Total desglose detallado (42 tareas) → 72,0 h
-Total resumen mensual                 → 72,0 h
+Total desglose detallado (45 tareas) → 77,0 h
+Total resumen mensual                 → 77,0 h
                                    ✅ CUADRE OK
 ```
 
 ---
 
-*Fin del documento. Última actualización: 30.09.2026.*
+*Fin del documento. Última actualización: 01.10.2026.*

@@ -254,10 +254,21 @@ export function validateChileanRut(rut: string): boolean {
   if (!rut) return false;
   const result = canonicalizeChileanRut(rut);
   if (result.bodyLength < 7 || result.bodyLength > 8) return false;
+  // Si el usuario escribió un DV explícitamente NO válido (coincide con mod11),
+  // rechazamos — incluso si el cuerpo tiene longitud correcta.
+  // Solo permitimos "faltante" cuando el usuario está digitando sin DV aún
+  // (input sin guion y < 8 dígitos limpios) pero en ese caso bodyLength sería
+  // <7 y ya lo rechazamos arriba.
   if (!result.originalDvValid) {
-    const clean = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
-    if (clean.length >= 8) {
-      return calculateDvMod11(result.body) === result.dv;
+    const clean = String(rut).replace(/[^0-9Kk-]/g, '').toUpperCase();
+    const hasDash = /-/.test(clean);
+    const digitsOnly = clean.replace(/-/g, '');
+    // Si el RUT traía guion, el DV fue especificado (aunque esté vacío) y debe ser correcto.
+    if (hasDash) return false;
+    // Si no traía guion pero tiene al menos 8 dígitos contiguos, el usuario
+    // intentó poner el DV dentro (body+DV todo junto): exigir que coincida.
+    if (digitsOnly.length >= 8) {
+      return calculateDvMod11(result.body) === result.dv && result.originalDvValid;
     }
     return false;
   }
@@ -265,20 +276,150 @@ export function validateChileanRut(rut: string): boolean {
 }
 
 /**
+ * "Lee respetuosamente" un RUT escrito por el usuario separando cuerpo y DV.
+ * A diferencia de canonicalizeChileanRut, NUNCA recalcula ni sobreescribe el DV
+ * que el usuario escribió.  Solo se usa para el formatter de UI.
+ *
+ * Reglas de parseo (formato final):
+ *   1. Si hay guion: lo que está a la izquierda (solo dígitos) = cuerpo.
+ *      Primer carácter a la derecha (0-9/K-k) = DV.  Ambos se conservan.
+ *   2. Si NO hay guion:
+ *      a. Longitud 8: primeros 7 dígitos cuerpo, último carácter DV (RUT viejo).
+ *      b. Longitud 9: primeros 8 dígitos cuerpo, último carácter DV (RUT nuevo).
+ *      c. Otras longitudes >9: quitar leading zeros y repetir (a)/(b) si aplica.
+ *   3. Si nada coincide: cadena limpia.
+ *
+ * Devuelve { body, dv } donde dv es '' si no se pudo detectar.
+ */
+function parseUserRutRespectfully(raw: string): { body: string; dv: string } {
+  if (!raw) return { body: '', dv: '' };
+  const str = String(raw);
+  const hasDash = /-/.test(str);
+  if (hasDash) {
+    const idx = str.lastIndexOf('-');
+    const left = str.substring(0, idx).replace(/[^0-9]/g, '');
+    const right = str.substring(idx + 1).replace(/[^0-9Kk]/g, '').toUpperCase();
+    return { body: left, dv: right.charAt(0) || '' };
+  }
+  const dgts = str.replace(/[^0-9Kk]/g, '').toUpperCase();
+  if (dgts.length === 0) return { body: '', dv: '' };
+  // Si el último carácter es K y hay al menos 1 dígito antes, probablemente es DV.
+  if (dgts.length >= 2 && dgts.charAt(dgts.length - 1) === 'K' && /^[0-9]+$/.test(dgts.slice(0, -1))) {
+    return { body: dgts.slice(0, -1), dv: 'K' };
+  }
+  if (dgts.length === 8 && /^[0-9]+$/.test(dgts)) {
+    // RUT de 7 dígitos + DV numérico (ej: 12345672 => 1.234.567-2)
+    return { body: dgts.substring(0, 7), dv: dgts.charAt(7) };
+  }
+  if (dgts.length === 9 && /^[0-9]+$/.test(dgts)) {
+    // RUT de 8 dígitos + DV numérico (ej: 123456785 => 12.345.678-5)
+    return { body: dgts.substring(0, 8), dv: dgts.charAt(8) };
+  }
+  // Caso ambiguo o sin DV: solo cuerpo.
+  return { body: dgts, dv: '' };
+}
+
+/**
+ * Aplica separadores de miles al cuerpo numérico y arma la cadena final
+ * `XX.XXX.XXX-DV`.  Si dv está vacío devuelve solo el cuerpo con separadores.
+ */
+function prettyPrintRut(body: string, dv: string): string {
+  if (!body && !dv) return '';
+  let withDots = '';
+  if (/^\d+$/.test(body)) {
+    let n = 0;
+    for (let i = body.length - 1; i >= 0; i--) {
+      if (n > 0 && n % 3 === 0) withDots = '.' + withDots;
+      withDots = body.charAt(i) + withDots;
+      n++;
+    }
+  } else {
+    withDots = body;
+  }
+  if (dv) return `${withDots}-${dv}`;
+  return withDots;
+}
+
+/**
  * 🩹 FIX 29.09.2026: La antigua implementación usaba slice(0,-1) sobre el RUT
  *    limpio, trocando 1 dígito del cuerpo cuando el input ERA DE 8+ CIFRAS y
  *    NO tenía guion (ej. 20779347 => 2077934-7 erróneo en vez de 20779347-7).
- *    Ahora desambigüa automáticamente con validación módulo 11 en ambas hipótesis.
+ *    Ahora desambigüa automáticamente con validación módulo 11 en ambas hipótesis
+ *    (ver canonicalizeChileanRut en rutCanonical.ts).
+ *
+ * 🩹 FIX 01.10.2026 #1 (máx 2 dígitos): Durante la escritura parcial (menos de
+ *    8 caracteres limpios y SIN separadores) NO calcular DV ni forzar formato
+ *    canónico.  Simplemente devolvemos los dígitos tal cual para que el usuario
+ *    pueda seguir escribiendo sin perder pulsaciones.
+ *
+ * 🩹 FIX 01.10.2026 #2 (backspace bloqueado): Detectar edición transitoria — el
+ *    usuario acaba de borrar el DV (guion colgado), el propio guion (string de
+ *    8-9 chars todo dígitos sin separadores), o un dígito del cuerpo y el RUT
+ *    aún no cuadra.  En esos escenarios NO re-insertamos guion/DV, lo que
+ *    permitía borrar caracteres indefinidamente.
+ *
+ * 🩹 FIX 01.10.2026 #3 (respetar DV escrito por el usuario + pretty-print): En
+ *    lugar de canonicalizeChileanRut (que corrige el DV cuando no coincide con
+ *    mod11), usamos parseUserRutRespectfully + prettyPrintRut.  Esto garantiza
+ *    que si el usuario escribe "12345678k" se muestre "12.345.678-K" aunque el
+ *    DV sea incorrecto (luego validateChileanRut se encargará de marcarlo).
  */
 export function formatChileanRut(rut: string): string {
   if (!rut) return '';
-  const result = canonicalizeChileanRut(rut);
-  const digitsOnly = String(rut).replace(/[^0-9Kk]/g, '').toUpperCase();
-  if (result.body === '0' && digitsOnly.length < 7) {
-    if (digitsOnly.length < 2) return digitsOnly;
-    if (digitsOnly.length >= 8) return result.canonical;
+  const raw = String(rut);
+  const hasDash = /-/.test(raw);
+  const hasAnySeparator = /[.\-\s]/.test(raw);
+  const digitsOnly = raw.replace(/[^0-9Kk]/g, '').toUpperCase();
+
+  // CASO 1 — SIN separadores y <8 dígitos: escritura parcial libre.
+  if (!hasAnySeparator && digitsOnly.length < 8) {
+    return digitsOnly;
   }
-  return result.canonical;
+
+  // CASO 1b — SIN separadores NINGUNO y el input cae en "edición parcial
+  // sin guion aún" 8-9 dígitos (pero NO es un candidato claro a RUT completo
+  // con DV final numérico O es K en el último pero el usuario SÓLO escribió
+  // dígitos y acaba de quitar el guion).  Para permitir backspace sobre el
+  // guion, si el string carece de CUALQUIER separador y es solo dígitos/K,
+  // permitimos el passthrough SIEMPRE QUE no haya estructura clara.
+  // Nota: para input tipo "12345678k" o "960426701" (9 dígitos) necesitamos
+  // formatear porque se supone que son RUTs.  Pero para que backspace sobre
+  // el guion funcione ("12.345.678-5" → user borra guion → queda "123456785")
+  // debemos detectar que el original venía con separadores... pero perdemos
+  // ese contexto aquí.  Compromiso: usamos parseo respetuoso + pretty-print
+  // (ver parseUserRutRespectfully) que siempre produce un guion y puntos si
+  // la longitud cuadra; la validación de mod11 corre por validateChileanRut.
+  // Así que CASO 1b lo limitamos a longitudes NO-canónicas (<=7 o >=10).
+
+  // CASO 2 — CON guion y edición transitoria (backspace en curso).
+  if (hasDash) {
+    const idx = raw.lastIndexOf('-');
+    const leftRaw = raw.substring(0, idx).replace(/[^0-9]/g, '');
+    const rightRaw = raw.substring(idx + 1).replace(/[^0-9Kk]/g, '').toUpperCase();
+
+    // 2a — Guion colgado (acaba de borrar DV): devolvemos solo el cuerpo, sin
+    // guion, sin DV.  El usuario puede seguir borrando el cuerpo sin loop.
+    if (rightRaw.length === 0) {
+      return leftRaw;
+    }
+
+    // 2b — DV trunco a más de 1 carácter: preservar lo escrito.
+    if (rightRaw.length > 1) {
+      return prettyPrintRut(leftRaw, rightRaw.charAt(0)) + rightRaw.substring(1);
+    }
+
+    // 2c — Cuerpo <7 dígitos y ya hay guion: respetar lo escrito (no validar).
+    if (leftRaw.length < 7) {
+      return prettyPrintRut(leftRaw, rightRaw.charAt(0));
+    }
+  }
+
+  // CASO 3 — RUT "compuesto" (tiene separadores, o bien 8-9 caracteres sin
+  // separadores que se interpretan como cuerpo+DV).  Usamos parseo
+  // RESPETUOSO + pretty-print.  NUNCA recalculamos DV.
+  const parsed = parseUserRutRespectfully(raw);
+  if (!parsed.body && !parsed.dv) return digitsOnly;
+  return prettyPrintRut(parsed.body, parsed.dv);
 }
 
 // Sheriff Data Log API
