@@ -6,6 +6,38 @@
 
 ---
 
+## Fecha: 02 de Octubre de 2026
+
+---
+
+### ⚡ UX Request – RUT Single Evaluation: validar/formatear SOLO al perder el foco (no mientras se escribe)
+
+**Solicitud del usuario:**
+> *"su single evaluation nel campo input della casella testo rut il rut deve essere controllato e validato solo quando si perde il focuse e se contiene qualcosa"*
+
+**Comportamiento ANTES (bug UX, aunque no era crash):**
+> Ad cada pulsación (`onChange`) se disparaba en cadena `formatChileanRut()` → pretty print automático (puntos + guion) y `validateChileanRut()` → borde verde/rojo + check ✅/❌. El usuario veía cómo el texto se re-escribía letra por letra al escribir (problema de "escritura interferida") y cómo el borde cambiaba de color incluso mientras escribía el DV — distrayendo y dando feedback equivocado antes de tiempo.
+
+#### Cambios aplicados en [SingleEvaluation.tsx](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx)
+
+| Función / evento | Antes (01 Oct) | **Ahora (02 Oct)** |
+|---|---|---|
+| **`handleRutChange`** onChange | formatChileanRut + validateChileanRut | **SÓLO `setRut(value)` + `setFormattedRut(value)` (raw, sin formato) + `setIsValidRut(null)` (borde neutro gris)**. Nada más. |
+| **`handleRutBlur`** onBlur | (no existía) | **NUEVA**. Si `raw.trim()` NO está vacío → `formatChileanRut(raw)` → pretty print y `validateChileanRut(raw)` → borde+icono. Si está vacío → no hace nada (no pinta rojo/vacío). |
+| Input `<input id="rut">` | `onChange={handleRutChange}` only | **Se ha añadido `onBlur={handleRutBlur}`** a la definición. |
+| **`handleSubmit` (Enter)** | Chequeaba `if (!isValidRut)` toast | **Backup safety** cuando usuario pulsa ENTER sin perder foco (por lo que isValidRut sigue = `null`). Si `rut.trim().length > 0`: validación on-the-fly antes de comprobar `!finalIsValid`, y `rutForApi = finalRutFormatted` (no `formattedRut` antiguo). |
+
+#### UBICACIÓN exacta de los cambios:
+*   `handleRutChange` nuevo comportamiento → [L185-L190](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L185-L190)
+*   `handleRutBlur` (función nueva) → [L192-L199](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L192-L199)
+*   Backup submit validación + rutForApi nuevo → [L201-L230](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L201-L230)
+*   Atributo `onBlur` en el HTML input → [L417-L423](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L417-L423)
+
+#### Verificación final:
+✅ `npm run build` 20,58 s → exit code 0. 0 errores TypeScript / React. Bundle nuevo: `SingleEvaluation-DcVyk4Ml.js = 23.04 kB`.
+
+---
+
 ## Fecha: 01 de Octubre de 2026
 
 ---
@@ -1309,16 +1341,17 @@ Monto total                           → $3.036.602.310 ✅ (10x RESUELTO, ya n
 | 43 | 🐛 Fix **RUT bloqueado a 2 dígitos** (formatChileanRut disparaba canonicalize prematuramente) | 01 Oct 2026 | 2 h | [api.ts:formatChileanRut#L367-L423](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L367-L423) | Caso 1 (<8 díg sin separadores = passthrough) |
 | 44 | 🐛 Fix **Backspace deshabilitado en RUT completo/verificado** (guion colgado / dv borrado / guion borrado → loop inf recalc DV) | 01 Oct 2026 | 2 h | [api.ts:CASO 2#L394-L415](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L394-L415) + helpers [parseUserRutRespectfully](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L294-L319) | 3 sub-casos (2a/2b/2c) |
 | 45 | ✅ Fix **validateChileanRut DV inválido aceptado** (antes tautología mod11(body) === dv_calculado always true) + actualización tests suite 39/39 PASS | 01 Oct 2026 | 1 h | [validateChileanRut#L252-L276](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L252-L276), [rut.test.ts](file:///home/duxiter/duxiter_intermediate/src/utils/rut.test.ts) | Corregidos RUTs ejemplo matemáticamente inconsistentes (77.879.240-2, 11.111.111-K) |
+| 46 | ⚡ UX **Validación RUT onBlur SOLO** — Single Evaluation ya no valida/formatea durante la escritura (solo al perder foco y si hay texto) | 02 Oct 2026 | 1,5 h | [SingleEvaluation.tsx#L185-L199](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L185-L199), [submit guard#L201-L230](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L201-L230) | handleRutBlur nueva función; backup submit por si el usuario pulsa ENTER sin blur |
 
 ---
 
 ## 🧮 Cuadre Final Horas
 ```
-Total desglose detallado (45 tareas) → 77,0 h
-Total resumen mensual                 → 77,0 h
+Total desglose detallado (46 tareas) → 78,5 h
+Total resumen mensual                 → 78,5 h
                                    ✅ CUADRE OK
 ```
 
 ---
 
-*Fin del documento. Última actualización: 01.10.2026.*
+*Fin del documento. Última actualización: 02.10.2026.*
