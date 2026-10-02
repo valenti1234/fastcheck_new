@@ -1,6 +1,6 @@
-# Lista de Pruebas QA y Criterios de Aceptación
-
-> Versión: 1.0 · Fecha: 30.09.2026 · Ámbito: Módulo Consultas + FastCheckEX + Export Scripts
+# Lista de Pruebas QA — Solo Frontend Web
+> **Destinatario**: Persona encargada de validar las funcionalidades web desde el navegador (no requiere conocimientos de código, backend ni consola del servidor).  
+> Versión: 2.0 · Fecha: 01.10.2026 · Ámbito: Toda la aplicación Web (Dashboard, Evaluaciones, Consultas, Fast Check EX, Listas Propias, Usuarios, Configuración, Deep Check)  
 > Idioma: Español · Responsable: QA / Product Owner
 
 ---
@@ -12,188 +12,261 @@
 | 🟢 PENDIENTE | Caso de prueba por ejecutar |
 | 🟡 EN CURSO | Ejecución en progreso |
 | ✅ APROBADO | Cumple los criterios de aceptación |
-| ❌ RECHAZADO | No cumple; abrir bug ticket con pasos de reproducción |
+| ❌ RECHAZADO | No cumple; informar con pasos y captura de pantalla |
 | ⚠️ OBSERVADO | Desviación menor, no bloqueante |
 
 ---
 
-## 🔧 Configuración Previa Requerida
+## 🔧 Pre-requisitos (Antes de Empezar)
 
-| # | Requisito | Verificación |
-|---|-----------|---------------|
-| P1 | Usuario tenant_admin logueado en el ambiente de staging | Login exitoso en `/login` |
-| P2 | Usuario superusuario (para FastCheckEX ruta protegida) | Acceso a `/fast-check-ex` sin bloqueo |
-| P3 | Base de datos con: al menos 1 Result con RUT conocido + 10 socios históricos + registros en `lpaltos` y `lpmedios` | Confirmar vía el script `export-rut-consultations.ts` |
-| P4 | Servidor backend corriendo en el puerto configurado + variables `MONGODB_URI` presentes | Ejecutar `cd server && npm run dev` |
-| P5 | Frontend corriendo y accesible en navegador | Cargar `/consultas` sin errores consola |
+| # | Requisito | Cómo comprobarlo |
+|---|-----------|-------------------|
+| P1 | Tener un usuario de tipo **Administrador** o **Usuario Regular** válido | Poder iniciar sesión correctamente con tu correo y contraseña |
+| P2 | Los créditos disponibles son > 0 al iniciar la prueba (se ven en la página *Evaluación Individual*) | Al entrar verás un número mayor que 0 en *Creditos disponibles: N* |
+| P3 | El navegador sea Chrome / Edge / Firefox en su versión actual | (No se requieren extensiones especiales) |
+| P4 | Abrir **Herramientas de Desarrollador → Consola** (tecla F12) para detectar mensajes de error en rojo durante la prueba | Si no sabes usarlo, basta con comprobar que no aparezcan pantallas blancas ni bloqueos inesperados |
 
 ---
 
-## MÓDULO 1 — Consultas (Listado)
+## MÓDULO 1 — Página de Consultas (Listado histórico)
 
-### 1.1 Carga y Paginación
+> Página a la que accedes desde el menú izquierdo **“Consultas”**.
 
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| C-001 | Carga inicial de lista | Ir a `/consultas` | Muestra tabla con 20 resultados (o menos si hay menos) + spinner inicial | La tabla se muestra completa en < 5s; sin errores en consola | 🟢 |
-| C-002 | Paginación siguiente | Clic botón Siguiente (⏭) | Carga la página 2; `currentPage` URL state actualiza | No hay recarga de página completa; datos son nuevos | 🟢 |
-| C-003 | Paginación anterior | Desde la página 2, clic en Anterior (⏮) | Vuelve a la página 1; resultados idénticos a la primera carga | El orden y los IDs coinciden con la primera visualización | 🟢 |
-| C-004 | Exportar Excel estándar | Clic "Exportar Excel" en filtros | Descarga `Consultas_Duxiter_YYYY-MM-DD.xlsx` | El archivo abre; columnas = RUT, Razón Social, Fecha Consulta, Nivel Riesgo, Tag | 🟢 |
+### 1.1 Carga inicial y paginación
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| C-001 | Abrir la lista | Ir a **Consultas** en el menú izquierdo | Se muestra la tabla con los resultados históricos; al principio puede verse un “cargando” breve | La página se ve completa en menos de 5 segundos; NO hay pantalla blanca ni error visible | 🟢 | | | | |
+| C-002 | Ir a la página siguiente | Hacer clic en el botón Siguiente (⏭) al pie de la tabla | Se recargan los datos con los registros de la página 2 | La página no se recarga entera, solo cambian los datos de la tabla | 🟢 | | | | |
+| C-003 | Volver a la página anterior | Estando en la página 2, clic en Anterior (⏮) | Vuelve a mostrar los mismos resultados de la primera carga | El orden y las filas coinciden con lo que viste al principio | 🟢 | | | | |
+| C-004 | Exportar Excel | Clic en **Exportar Excel** (arriba a la derecha, junto a los filtros) | Se descarga un archivo `.xlsx` con el nombre `Consultas_Duxiter_YYYY-MM-DD.xlsx` | Abrir el archivo y comprobar que tiene columnas: RUT, Razón Social, Fecha Consulta, Nivel Riesgo, Etiquetas | 🟢 | | | | |
+
+---
 
 ### 1.2 Filtros y Búsqueda
 
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| C-010 | Búsqueda por RUT (con guion) | Escribir `17752947-8` en input búsqueda → Aplicar Filtros | Filas restantes solo contienen RUT que incluye `17752947` | La búsqueda NO diferencia mayúsculas ni formato puntos/guion | 🟢 |
-| C-011 | Búsqueda por RUT (solo cuerpo, sin DV) | Escribir `17752947` → Aplicar | Encuentra el mismo resultado de C-010 | Debe hacer match usando solo el cuerpo (remove trailing DV) | 🟢 |
-| C-012 | Búsqueda por Razón Social | Escribir parte del nombre ("MERCOCARGO") → Aplicar | Filtra por Razón Social correspondiente | Match case-insensitive | 🟢 |
-| C-013 | Filtro por rango de fechas | Seleccionar rango Inicio + Fin conocidos → Aplicar | Resultados solo con `createdAt` dentro del rango (inclusivo) | Fechas límite inclusive; resultados en rango | 🟢 |
-| C-014 | Filtro por Nivel de Riesgo | Seleccionar "Rojo" / "Crítico" → Aplicar | Solo resultados con `semaphore = red` | 1 checkbox = 1 categoría; multiselección funcional | 🟢 |
-| C-015 | Filtro por Tag cliente | Seleccionar un Tag existente → Aplicar | Solo resultados que contienen ese tag en `noteTags[]` | Tags faltantes devuelven array vacío | 🟢 |
-| C-016 | Limpiar filtros | Aplicar varios filtros → clic "Limpiar Filtros" | Todos los filtros se resetean; tabla retorna a estado inicial | `allPagesLoaded=false`, búsqueda vacía, riesgos desmarcados | 🟢 |
-| C-017 | Botón "Aplicar Todas las Páginas" | Búsqueda conocida → clic botón morado | Muestra `Modo: Todas las páginas cargadas (N resultados totales)`; no hay cortes por paginación | Después del spinner, `fullDataset.length == pagination.total` | 🟢 |
-| C-018 | Exportar Excel Info RUTs | Mismo escenario C-017 → clic botón azul "Exportar Excel Info RUTs" | Por cada RUT único: descarga Excel con Sub-Headers tipo (Impacto, Detectado, Riesgo, Cant. Detalles) x cada regla + Totales al final | Archivo abre correctamente en LibreOffice/Excel; no hay columnas desalineadas | 🟢 |
-
-### 1.3 Click en RUT (Navegación → Puente → FastCheckEX)
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| C-030 | **Click celda RUT subrayada** | Clic en el texto del RUT `17752947-8` | Navega a URL intermedia `/consultas/{_id}` y REDIRIGE INMEDIATAMENTE a `/fast-check-ex?rut=...&resultId=...&fecha=...` | Tiempo de transición < 2s; no se ve contenido de ConsultaDetailPage (spinner máximo 1-2s) | 🟢 |
-| C-031 | **Click icono ojo 👁 en Acciones** | Clic en el ojo de la misma fila | Misma redirección que C-030 | Resultado idéntico a C-030 | 🟢 |
-| C-032 | **Navegación Atrás después del click** | Ejecutar C-030 → clic botón Atrás del navegador | VUELVE a `/consultas` NO a `/consultas/{_id}` | `navigate(replace=true)` destruye la página puente — NO debe quedar en la historia | 🟢 |
-| C-033 | **Validación Params URL** | Después de C-030, observar URL en barra de direcciones | Contiene al menos 3 params: `rut=`, `resultId=`, `fecha=` (ISO timestamp) | `resultId` es el ObjectId mongo original de la fila; `rut` coincide con el valor mostrado | 🟢 |
-| C-034 | **Isolamento Tenant (seguridad)** | Copiar `resultId` de un Result conocido; cambiar manualmente `?id=` en la URL por un `_id` de OTRO tenant | Backend devuelve 404 Not Found; ConsultaDetailPage muestra error | NO debe permitir acceso cruzado; datos de otro tenant son invisibles | 🟢 |
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| C-010 | Buscar por RUT con guion | Escribir en el buscador: `17752947-8` → Aplicar filtros | La tabla muestra solo los resultados cuyo RUT contiene `17752947` | Funciona tanto si escribes puntos (`17.752.947-8`) como si no | 🟢 | | | | |
+| C-011 | Buscar por RUT sin DV | Escribir solo el cuerpo: `17752947` (sin el `-8`) | Se muestra el MISMO resultado que en C-010 | Se encuentra aunque omitas el dígito verificador | 🟢 | | | | |
+| C-012 | Buscar por nombre / razón social | Escribir parte del nombre de una empresa conocida | Aparecen solo los resultados que incluyen ese texto | No distingue mayúsculas/minúsculas | 🟢 | | | | |
+| C-013 | Filtrar por rango de fechas | Seleccionar fecha “Desde” y “Hasta” en las fechas de los filtros → Aplicar | Solo aparecen consultas hechas ENTRE esas dos fechas (ambos días incluidos) | Las dos fechas límite se incluyen en el filtro | 🟢 | | | | |
 
 ---
 
-## MÓDULO 2 — FastCheckEX (Resultado de Consulta)
+### 1.3 Abrir una consulta histórica (navegación → detalles)
 
-### 2.1 Carga desde `resultId` (precedencia URL)
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| F-001 | Carga con URL `?resultId=X` | Navegar vía flujo C-030 | `fetchData()` recibe `resultId=X` y hace GET a `/rut/results/X` | El registro cargado coincide exactamente con la fila clickeada | 🟢 |
-| F-002 | **Precedencia: resultId gana sobre rut** | Modificar URL manualmente: `?rut=OTRO_RUT_DIFERENTE&resultId=X_ORIGINAL` | La página carga el Result del `resultId` — ignora el param `rut` diferente | El RUT mostrado en la UI debe ser el de `resultId`, NO el param `rut` de la URL | 🟢 |
-| F-003 | Parámetro `fecha` preservado | Observar `companyData.fechaEvaluacion` en UI (tarjeta principal) | Fecha = `createdAt` del documento mongo (no fecha de HOY) | No debe sobreescribirse con `new Date()` — tiene que ser la fecha real de la consulta | 🟢 |
-
-### 2.2 Sección Socios Históricos — Bug Fix del RUT principal
-
-> **Contexto fix del 30.09.2026**: El RUT de la empresa evaluada NO debe aparecer nunca dentro de la lista de "Socios Históricos". Anteriormente aparecía como socio de sí misma (OWNED_BY autorreferencial).
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| S-000 | **RUT empresa no aparece en Socios Históricos** | Abrir `/fast-check-ex?resultId=X` de una empresa con OWNED_BY a sí misma | En la tabla "Socios Históricos (N evaluados/seleccionados)" el RUT `17752947-8` NO está listado | Checkeo visual directo + console.log banner `🔧 [FILTRO RUT EVALUACION] Eliminados N socio/s…` | 🟢 |
-| S-001 | Matching robusto RUT normalizado | Forzar en el dataset un socio con RUT `17.752.947-8` (con puntos) y otro `177529478` (sin guion ni separadores) | Ambos se excluyen también (matching 3-fallback) | La exclusión no es por string exacto; usa norm + digitsOnly + prefijo 8cifras | 🟢 |
-| S-002 | Conteo coherente después del filtro | `Socios Históricos (17/3 evaluados)` → `3 evaluados` son los que tienen `Ya evaluado` | Ninguno de los "Ya evaluados" es el propio RUT de la evaluación | Check visual + tabla de estado "Estado Evaluación" | 🟢 |
-| S-003 | Evaluación PEP — checkbox máximo 3 | Intentar marcar 4 socios incluyendo al RUT principal en un caso testigo | El propio RUT principal ni siquiera está visible; el bloqueo máximo-3 solo aplica a los socios listados | `Nota: Puedes evaluar un máximo de 3 socios en total (incluyendo los ya evaluados)` visible | 🟢 |
-| S-004 | MeshFlowTable visible por default | URL sin `?p=true` | Panel de la tabla MeshFlowTable (Participaciones Societarias) RENDERIZADO; no colapsado ni oculto | Solo si `p=true` se oculta (feature flag legacy) | 🟢 |
-
-### 2.3 Listas Propias Alto/Medio Impacto (LP)
-
-> 📌 Nota crítica (de `nota.txt` riga 2): `ipalto ipmedio deve essere applicato solo nel momento della consulta`. Confirmar comportamiento actual HOY (después de fixes 30.09.2026): **100% inmutable en lecturas históricas; LP y riesgo se recalculan SOLAMENTE durante POST `/rut/lookup` isRefreshing=true y NUNCA al reabrir.**
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| LP-001 | **Inmutabilidad histórica al re-abrir consulta (fix immutabilità)** | 1) Ejecutar C-030 y abrir una consulta vieja (antigua). <br>2) En otra pestaña, entrar a `/tenant/lpalto` y AGREGAR un socio de esa empresa a Lista Propia Alto Impacto. <br>3) Volver a FastCheckEX y **REFRESCO (F5)** de la pestaña. | ✅ El semáforo y los valores de Listas Propias **NO CAMBIAN**. Las LP nuevas NO se re-aplican sobre la evaluación histórica. No hay `Result.updateOne` — 0 escrituras en el doc histórico (comprobar con `audit-rut-mutations.ts`). | `getResultById` es read-only: `findOne().toObject()` + sin LP sync ni riskCalc. Flags históricos son INALTERADOS. | 🟢 |
-| LP-002 | **Rehacer Evaluación = Aplica LP nuevas = Semaforo cambia** | 1) Agregar socio a Lista Propia Alto Impacto. <br>2) Click botón naranja 🔄 **"Rehacer Evaluación"** en FastCheckEX (POST `/rut/lookup` con `isRefreshing=true`). | ✅ Regla **Listas Propias Alto Impacto = Detectado=true**; detalles contienen el socio recién agregado; Semaforo = ROJO si impact=severo (totalSevero aumentado). | `Result.updateMany({archived:true})` sobre cadena vieja; NUEVO doc Result creado con `createdAt=HOY` y LP sincronizadas desde colecciones ACTUALES. | 🟢 |
-| LP-003 | Reglas LP alineadas con data + BOOLEAN no null | Despues de LP-002, revisar panel Listas Propias / riskAssessment | Checkbox Detectado + `details.length` coinciden; `lpaltosDetected/lpmediosDetected` = `true/false` (NUNCA `null` ni `undefined`). | `_ensureLpDefaults()` inicializa campos; NO queda ningún rastro de `null` post-fix 30.09 en los Result nuevos. | 🟢 |
-| LP-004 | Scope tenant nelle LP | Usuario Tenant A agrega RUT X en lpalto. Cerrar sesión → Login como Tenant B → Buscar RUT X y ejecutar evaluación nueva. | No se ve reflejada la LP del Tenant A. Semaforo = color original sin Listas Propias Alto. | Query LP siempre filtrata per `tenant = tenantId` (no `$or` solo sin tenant!) | 🟢 |
-
-### 2.3.B Casos Especiales: FALLO Equifax sin socios (3ª Fuente Dequiénes · fix final 30/09)
-
-> 📌 **Contexto Bug RC#1/2/3 del 30.09.2026**:
-> RUT empresa `92604000-6` con socio `10415404-2` ("MARCO ANTONIO GUZMAN NAVARRO") en LP Alto/Medio. Equifax devuelve `companyGeneralInfo.socios.length = 0`; Sheriff `empresaEnUnDiaSocios = undefined`. **Si no hubiera fallback Dequiénes, los semáforos de LP NUNCA se encienden (loop no itera).**
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| LPE-001 | **Banner fallback Dequiénes aparece en log** | Ejecutar nueva evaluación o Rehacer sobre RUT `92604000-6` y mirar consola backend. | Aparece warning: `[FIX LP FALLBACK 30.09 FINAL] ... Estratti da Dequiénes relazioni: 21 socios.` | Se confirma que Equifax dejó `socios=[]` y fallback 3ª fuente tomó el relevo sin interrupción del pipeline. | 🟢 |
-| LPE-002 | **21 socios presentes en Mesh / Socios Históricos (UI)** | Revisar panel Socios Históricos + MeshTable / MeshFlowTable después de LPE-001. | Tabla muestra ~21 socios (no 0 rows). "MARCO ANTONIO GUZMAN NAVARRO" con RUT "10415404" debe aparecer. | La UI NO conoce la fuente, solo ve companyGeneralInfo.socios populada. | 🟢 |
-| LPE-003 | **LP Alto detectado = YES + socio 10415404 = details** | Revisar card "Listas Propias Alto Impacto" | Detectado=true, details contiene socio 10415404-2 Marco A. Guzmán; records != []. | `_queryListapropiaRobusta('lpaltos','10415404', tenant)` = 1 resultado (exact or exact-9cifra or regex-unique). | 🟢 |
-| LPE-004 | **LP Medio detectado = YES** | Mismo escenario, pero card "Listas Propias Mediano Impacto". | Detectado=true, details incluye socio 10415404-2. | Misma 3ª fuente; idéntica query robusta sobre lpmedios. | 🟢 |
-| LPE-005 | **Semaforo RED totalSevero ≥ 2** | Causas Penales (severo 1) + Listas Propias Alto (severo 2). | `riskAssessment.riskSummary.semaphore = 'red'`, `totalSevero = 2` (mínimo). | La suma de severidades debe aumentar EXACTAMENTE por 1 (severo + 1), NO pasa desapercibido. | 🟢 |
-| LPE-006 | **Formato RUT no genera "Nombre con DV-falso" (bug RC#2)** | Console log `checkLpaltosAndFlag for RUT` en backend. | `clean=MARCO ANTONIO GUZMAN NAVARRO` NUNCA aparece. Todas las entradas tienen `clean=SOLO DIGITS` (10415404, 9044132, etc.). | `nameMap[rut8]` stringa-nome NON viene más scambiato per RUT. `_formatRutForDisplay()` solo se usa si fullRut.length≥9 e tutto digits. | 🟢 |
-| LPE-007 | **Regex 8cifre anti-falso positivo** | En `lpaltos` guardar 2 records RUTs "10415404-1" y "10415404-2" (hermanos mismo 8cifre). Luego evaluar una empresa con socio 10415404 (sin DV). | Consola: `[LP Robusta 30.09] Input RUT='10415404' senza DV: regex ^10415404 ha restituito 2 risultati → SCARTATI per evitare falso positivo.` Nessuna Listas Propias detectada. | El usuario se ve forzato a insertar el DV en la Lista Propia (univocità). | 🟢 |
-
-### 2.4 Relaciones OWNED_BY bidirezionali
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| O-001 | Arco inverso detectado | Fuente de datos `dequienesRelationships` solo contiene arco `EMPRESA A → OWNED_BY → SOCIO X` (un solo sentido) | En React Flow MeshFlowChart aparece también el arco inverso: `SOCIO X → controla → EMPRESA A` en la vista | La deduplicación del PASSO 2 no crea duplicados de nombre con/sin acentos | 🟢 |
-| O-002 | Normalización diacríticos nombre | Dos registros iguales: `José Pérez` vs `Jose Perez` (sin acento) → mismo RUT | De-dup: queda una única fila con el nombre más completo y el RUT unido | `NFD + strip marks` en la key de deduplicación | 🟢 |
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| C-020 | Clic en una fila cualquiera | Dentro de la tabla de Consultas, haz clic en cualquier fila (en el RUT o nombre) | Te lleva a la página de detalle (Fast Check EX) con el informe de esa evaluación | El RUT y nombre que aparecen en el encabezado del detalle COINCIDEN con la fila donde clicaste | 🟢 | | | | |
+| C-021 | Botón Volver | Una vez dentro del detalle, clic en “Volver” o en el botón atrás del navegador | Regresas al listado y se mantienen los filtros y la página donde estabas | No te devuelve a la página 1 ni borra tu búsqueda | 🟢 | | | | |
 
 ---
 
-## MÓDULO 3 — RUT Canonicalización (Modulo 11)
+## MÓDULO 2 — Página “Evaluación Individual” (Bug Fix RUT — 01.10.2026)
 
-> Fix del 29.09.2026: String numeriche 8 cifre senza trattino: `20779347` → prima diventava `2077934-7` ERRATO, adesso `20779347-7` corretto grazie alla validazione Mod-11.
-
-| ID | Caso di Prueba | Pasos | Resultado Esperado | Criterio di Accettazione | Stato |
-|----|----------------|-------|---------------------|---------------------------|--------|
-| R-001 | 8 cifre SENZA trattino | Input `20779347` (noto: corpo=20779347, DV corretto=7) | Il sistema formatta e salva come `20779347-7` | NON deve troncare a 7+1 — l'interpretazione corretta è 8 cifre corpo + DV calcolato | 🟢 |
-| R-002 | 7 cifre SENZA trattino | Input `1234567` | DV calcolato via Mod-11; formato corretto `1234567-{DV}` | Per 7 cifre SEMPRE assume corpo=7 e DV viene aggiunto | 🟢 |
-| R-003 | Input con punti e K maiuscolo/minuscolo | Input `12.345.678-k` → stringa con trattino esplicito | Canonicalizza in `12345678-K` | Punti rimossi, DV-K uppercased | 🟢 |
-| R-004 | Input sbagliato DV noto | Input `12345678-1` (ma il DV corretto Mod-11 = diverso da '1') | Sistema ricalcola e sovrascrive con DV valido secondo algoritmo | Matching "ultima cifra=DV" solo se Mod-11 valida la combinazione | 🟢 |
-| R-005 | Stringa 9+ cifre senza trattino | Input `123456789` | Tenta 2 ipotesi: corpo-8 + ultima-cifra-DV vs tutto-corpo e DV calcolato. Vince quella che passa Mod-11 | Disambiguazione tramite algoritmo | 🟢 |
+> Página accesible desde el menú izquierdo **“Evaluación Individual”**.  
+> **Objetivo principal del fix del 01/10**: comprobar que ahora PUEDES ESCRIBIR UN RUT ENTERO (7-8-9 dígitos) sin que el input se quede atascado, y que PUEDES BORRAR caracteres (backspace/delete) cuando el RUT está completo.
 
 ---
 
-## MÓDULO 4 — Script Export Consultas por RUT
+### 2.1 Configuración Previa — Solo para este módulo
 
-> Script creato il 30.09.2026 in [export-rut-consultations.ts](file:///home/duxiter/duxiter_intermediate/server/src/scripts/export-rut-consultations.ts)
-
-| ID | Caso de Prueba | Pasos (en shell dentro `server/`) | Resultado Esperado | Criterio de Aceptación | Estado |
-|----|----------------|-----------------------------------|---------------------|-------------------------|--------|
-| E-001 | Ejecución básica sin PATH relativo | `npx tsx src/scripts/export-rut-consultations.ts --rut 17752947-8` | 1) Banner verde v1.0 <br> 2) Connessione MongoDB OK (family=4, timeout 5s) <br> 3) Messaggio `✅ EXPORT COMPLETATO` <br> 4) File JSON generato in `server/exports/` | File non-vuoto; non ci sono errori uncaught | 🟢 |
-| E-002 | Parametro RUT formati misti | Esegui 3 volte lo stesso RUT: `--rut 17752947-8`, `--rut "17.752.947-8"`, `--rut 177529478` | I 3 file JSON prodotti contengono lo stesso `totalDocuments` e lo stesso set di `_id` | Matching robusto a 3 livelli; canonicalizzazione uguale su tutti gli input | 🟢 |
-| E-003 | Cross-Tenant nessun filtro | Eseguire E-001 con un RUT presente in 2 tenant diversi | Nel JSON `meta.summary.distinctTenants = 2` (o più); i `doc.tenantId` sono quelli multipli | **Non applica nessun filtro `tenantId`** a differenza delle API REST | 🟢 |
-| E-004 | 3 collezioni interrogate | Verificare il JSON dopo E-001 | 3 chiavi: `results`, `consultaHistory`, `evaluationResults`. Ognuna con `summary`, `ids[]`, `docs[]` | Anche se una collezione non ha dati = count 0 + array vuoto — NO crash | 🟢 |
-| E-005 | Modalità `--light` | Eseguire `--rut 17752947-8 --light` | I campi pesanti `sheriffLogData`, `details`, `riskAssessment`, `responseData`, ecc. NON serializzati: contengono stringa placeholder `[OMESSO – campi pesanti disabilitati con --light]` | Dimensione file almeno 10x più piccolo rispetto alla versione completa | 🟢 |
-| E-006 | Parametro `--include-archived` | `--rut X --include-archived` | Includono anche documenti con `archived=true` | Di default (senza flag) results.archived=true sono ESCLUSI | 🟢 |
-| E-007 | Output path custom `-o` | `-o /tmp/mytest.json --pretty` | File salvato in `/tmp/mytest.json`; formattato con 2 spazi indent (human-readable) | jsonlint valida il file senza errori | 🟢 |
-| E-008 | Help `--help` | `--help` | Schermata con Usage, opzioni, esempi e lista delle collezioni | Exit code 0; non crasha | 🟢 |
-| E-009 | Parametro `--rut` mancante | Esegui senza flag | Messaggio ERRORE `parametro --rut obbligatorio mancante` + help, exit con code 1 | NO uncaught exception — handled graceful | 🟢 |
-| E-010 | MONGODB_URI mancante nel `.env` | Rinominare temporaneamente `.env` → `.env.bak` e rieseguire | Messaggio chiaro `MONGODB_URI non trovato nel file .env`, exit code 1 | NO stacktrace criptico Mongoose default | 🟢 |
+| # | Requisito | Cómo comprobarlo |
+|---|-----------|-------------------|
+| P6 | El recuadro de términos (“Acepto los términos y condiciones…”) empieza SIN marcar | Es normal; no bloquea que escribas el RUT — solo bloquea el botón de evaluación |
+| P7 | Los créditos disponibles se ven > 0 | (Mismo que P2 global) |
 
 ---
 
-## MÓDULO 5 — Gestione Errori e Resilienza Backend
+### 2.2 ✍ Pruebas de ESCRITURA del RUT (antes se trababa a 2 dígitos)
 
-> Fix del 29.09.2026: Errori HTTP 400 da `sheriff_v2` (lookup di alcuni RUT) producevano `TypeError: Cannot read properties of null (reading 'data')`. Risolto con stub fallback + optional chaining.
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio di Aceptación | Estado |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| ERR-001 | RUT causa 400 Bad Request su sheriff_v2 | Forzare un mock di axios che devuelve 400 para un RUT específico (o usar un RUT que se sabe causa dicho error en entorno real) | Lookup NO crashea con TypeError; devuelve stub de fallback coherente (sheriffData parcial / default) | El resto del riskAssessment se calcula con los datos disponibles, no undefined | 🟢 |
-| ERR-002 | RUT non-existent | Buscar un RUT inventado y malformado tipo `99999999-Z` | Pantalla con mensaje error controlado, pantalla no-blanca | React ErrorBoundary / catch en useEffect; usuario puede volver atrás y reintentar | 🟢 |
-| ERR-003 | MongoDB lento/caído | Parar temporalmente `mongod` y ejecutar script export | `serverSelectionTimeoutMS = 5s` (no 30s default). Mensaje de timeout claro con conexión fallida. | Mensaje `⏱️ Tempo totale connessione MongoDB` fallisce in < 6s | 🟢 |
-
----
-
-## MÓDULO 6 — UI React Flow Constraints (Hard Constraints del Project Memory)
-
-| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio di Aceptación | Stato |
-|----|----------------|-------|---------------------|-------------------------|--------|
-| RF-001 | `fitView` prop disabled | Revisar código `<ReactFlow ...>` + ejecutar en UI: zoom in manuale luego drag nodo | No hay reseteo indeseado de la vista cuando cambian props o estado de nodos | SOLO `fitView()` vía imperative ref. NUNCA prop `fitView={true}` | 🟢 |
-| RF-002 | Container dimensions non-zero | Abrir consulta con grafo en viewport | El grafo è visibile; nessun errore in console tipo `width=0 / height=0` | Container React Flow has fixed / absolute dimensions (altezza non collassa) | 🟢 |
-| RF-003 | safeOnNodesChange preserves `data.*` | Muovere un nodo nel grafo e ispezionare state nodi in DevTools / logger | Campi custom nel `data` (es. `data.rut`, `data.tenant`, `data.queryType`) NON si perdono dopo l'update | Middleware `safeOnNodesChange` in uso; non sovrascrive intero obj `data` | 🟢 |
-| RF-004 | Nodo radice BFS N0 — nome injectato | Grafo mesh con ente radice (la empresa della consulta) | L'Node 0 del BFS ha il `mainName` corretto (Razón Social) non "Sin nombre" fallback | Fallback getName() a multi- livello; l'init passa esplicitamente `mainName` dal prop | 🟢 |
+| ID | Caso de Prueba | Pasos a mano en el input “RUT del Proveedor” | Resultado Esperado | Criterio de Aceptación (BLOQUEANTE en W-002) | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|----------------------------------------------|---------------------|------------------------------------------------|--------|--------|-------------|----------|--------------------------------------|
+| W-001 | 1 dígito | Borra lo que haya y escribe solo: `7` | Muestra `7` (1 carácter) | No aparece ningún guion ni dígito extra | 🟢 | | | | |
+| W-002 | 2 dígitos | Escribe `12` después de W-001 | Muestra **`12`** (solo 2 dígitos) | **¡IMPORTANTE! No debe mostrar `12-9` con guion.** Con menos de 8 dígitos el guion no debe aparecer hasta que tú lo escribas o llegues a dígito 9 | 🟢 | | | | |
+| W-003 | 7 dígitos | Escribe `1234567` (7 dígitos seguidos) | Muestra `1234567` (7 dígitos, solo números) | Sin guion, sin puntos ni signos | 🟢 | | | | |
+| W-004 | 8 dígitos | Escribe `76086428` (8 dígitos) | Quedan los 8 dígitos juntos, sin formato aún | El formato con puntos y guion se aplica cuando escribas el 9º dígito (el DV) o pegues un RUT completo | 🟢 | | | | |
+| W-005 | 9 dígitos seguidos (RUT nuevo completo) | Después de `76086428`, escribe un `5` (el total es `760864285`) | El input se transforma automáticamente en **`76.086.428-5`** (con puntos y guion) | Borde del input se pone verde ✔; aparece un check verde al final | 🟢 | | | | |
+| W-006 | Termina en “k” minúscula | Borra todo y escribe: `12345678k` (termina en k) | El input muestra **`12.345.678-K`** | La “k” se pasa a mayúscula y aparece como DV; el borde PUEDE quedar rojo si el DV no coincide matemáticamente — eso es normal | 🟢 | | | | |
+| W-007 | Pegar RUT numérico sin formato | Copia `760864285` (solo números, 9 dígitos) → Ctrl+V en el input | Muestra **`76.086.428-5`** (aplicado el formato) | No se pierde ningún dígito del texto pegado | 🟢 | | | | |
+| W-008 | Pegar RUT con formato extraño | Copia `12-345-678-5` (muchos guiones) → pégalo | Lo normaliza a **`12.345.678-5`** | Los separadores de sobra se limpian y quedan puntos + un solo guion | 🟢 | | | | |
 
 ---
 
-## Check Globali di Accettazione Fine Progetto (Definizione di Fatto)
+### 2.3 ⌫ Pruebas de BORRADO (Backspace / Delete — antes no dejaba borrar RUTs válidos)
 
-- [ ] Tutti i casi precedenti hanno stato ✅ APROBADO (o documentata giustificazione per los RECHAZADOS)
-- [ ] Nessun error `TypeError`, `Uncaught`, `Unhandled Promise Rejection` visibili in console di Chrome / DevTools nei flussi felici
-- [ ] Build Frontend: `cd ~/duxiter_intermediate && npm run build` — exit 0 senza TS errors
-- [ ] Build Backend (tsc --noEmit): `cd server && npx tsc --noEmit` — exit 0
-- [ ] Lint / Diagnostics: 0 file rosso in GetDiagnostics / ESLint
-- [ ] CHANGELOG_SEMANAL.md aggionato con i riferimenti di linea esatti `#Lstart-Lend` alle modifiche
-- [ ] Script export-rut-consultations eseguito correttamente in staging con almeno 10 file json prodotti senza errori
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación (BLOQUEANTE en B-001/B-002) | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|------------------------------------------------|--------|--------|-------------|----------|--------------------------------------|
+| B-001 | Borrar el DV (último número) de un RUT VERDE | Escribe `12.345.678-5` (borde ✔ verde). Pon el cursor al final. Pulsa **⌫ BACKSPACE** 1 vez. | El valor pasa a ser **`12345678`** (solo el cuerpo; desaparecen el `-5` y los puntos). El borde deja de ser verde. | **NO debe reaparecer el `-5` automáticamente.** Tiene que quedarse como lo dejaste. | 🟢 | | | | |
+| B-002 | Borrar el guion de un RUT VERDE | Cursor ENTRE el `8` y el `-` → pulsa ⌫ 1 vez | El input muestra **`123456785`** (9 dígitos seguidos, sin puntos ni guion) | **NO debe reinsertarse el guion** al instante; deja la forma “números juntos” | 🟢 | | | | |
+| B-003 | Borrar 3 caracteres seguidos | Haz B-001. Luego pulsa ⌫ 2 veces más | Muestra `123456` | Cada pulsación borra un carácter del cuerpo sin que aparezcan signos de vuelta | 🟢 | | | | |
+| B-004 | Borrar un dígito del CENTRO del cuerpo | En `12.345.678-5`, pon el cursor ENTRE `5` y `6` (de “345678”) → ⌫ 1 vez (borra el `5`) | Queda con 7 dígitos + DV; el carácter se borra correctamente | No se rellena el hueco con un número “recalculado” por error | 🟢 | | | | |
+| B-005 | Borrar TODO | Selecciona todo (Ctrl+A) → pulsa **SUPR / DELETE** | El input queda TOTALMENTE vacío (se ve el texto del placeholder “RUT del Proveedor”) | No debe quedar “1 dígito suelto” ni un guion olvidado | 🟢 | | | | |
+| B-006 | Sobrescribir selección | En `12.345.678-5`, selecciona con el ratón la parte final `678-5` y escribe: `00` | Queda solo `12.345.00` o `1234500` y el DV anterior no se conserva | Se borra la selección y se escriben los nuevos caracteres | 🟢 | | | | |
+| B-007 | Borrar con DEL (tecla Delete, flecha derecha) | Repite B-001 pero usando la tecla DEL en lugar de ⌫ | El carácter se borra igual que con Backspace | Ambos botones funcionan | 🟢 | | | | |
 
 ---
 
-### 📎 Referenze AI / Documenti di supporto
+### 2.4 🟢🔴 Formato y validación visual (colores del borde + icono check)
 
-- Descrizione flusso completo (spagnolo): [consultaflow.md](file:///home/duxiter/duxiter_intermediate/consultaflow.md)
-- Descrizione flusso completo (italiano): [consultaflow.IT.md](file:///home/duxiter/duxiter_intermediate/consultaflow.IT.md)
-- Nota issue LP da `nota.txt`: `problema ipalto ipmedio deve essere applicato solo nel momento della consulta`
-- Project memory / hard constraints: `/home/duxiter/.trae/memory/projects/-home-duxiter-.../project_memory.md`
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| F-001 | RUT correcto de 8 dígitos | Escribe `76.086.428-5` | Borde **VERDE** + ✔ check verde al final | El RUT se considera VÁLIDO | 🟢 | | | | |
+| F-002 | RUT correcto de 7 dígitos + letra K | Escribe `1000005K` o `1.000.005-K` | Borde **VERDE** + ✔; formato correcto | DV “K” mayúscula y válido matemáticamente | 🟢 | | | | |
+| F-003 | RUT con DV ERRÓNEO (sabiendo que es incorrecto) | Escribe `12.345.678-9` (el DV correcto para ese cuerpo sería `-5`, no `-9`) | Borde **ROJO** o mensaje “RUT inválido”; icono ✕ o sin check | El DV incorrecto que TÚ escribiste se MANTIENE visible (no debe silenciosamente cambiar el `-9` por `-5`) | 🟢 | | | | |
+| F-004 | Formato automático | Escribe `12345678-5` (solo un guion, sin puntos) | Automáticamente lo muestra como **`12.345.678-5`** | Se añaden los puntos de separación de miles | 🟢 | | | | |
+| F-005 | Caso “8 dígitos sin guion” (fix regresión 29.09.2026) | Escribe SOLO `20779347` (8 dígitos, sin nada más) y añade luego el DV `7` → total `207793477` | El resultado formateado es **`20.779.347-7`** (8 dígitos de cuerpo) | **NO debe formatear como `2.077.934-7`** (7 dígitos de cuerpo — este sería el bug antiguo) | 🟢 | | | | |
+| F-006 | RUT irrisorio de 1 dígito + guion | Escribe `1-9` | Borde ROJO / mensaje “inválido” | No lo marca como verde (no existe un RUT chileno de cuerpo = 1 dígito) | 🟢 | | | | |
+| F-007 | Ceros iniciales de más | Escribe `000123456785` (rellenado con ceros a la izquierda) | Se limpia y muestra **`12.345.678-5`** | Los ceros sobrantes del principio no se conservan | 🟢 | | | | |
+| F-008 | Input vacío o solo espacios | Borra todo y deja vacío | Muestra el texto placeholder; si intentas evaluar te avisa que el campo es obligatorio | No hay bloqueos ni pantallas blancas | 🟢 | | | | |
+
+---
+
+### 2.5 🖱 Botón “Evaluar Proveedor” — habilitaciones
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| I-001 | RUT válido + términos SIN marcar | RUT VERDE ✔ (ej. `76.086.428-5`); checkbox “Acepto términos” DESMARCADO | El botón **Evaluar Proveedor** está GRIS y NO se puede pulsar | Se requieren AMBAS cosas (RUT OK + términos OK) | 🟢 | | | | |
+| I-002 | RUT inválido + términos MARCADOS | RUT ROJO (ej. `12.345.678-9`); checkbox ON | Botón sigue deshabilitado | Solo se activa cuando el RUT es VÁLIDO | 🟢 | | | | |
+| I-003 | Ambos OK | Corrige el RUT a `12.345.678-5` + marca términos | El botón se ilumina de COLOR PRIMARIO (azul o verde) y puedes pulsarlo | Cursor mano al pasar el ratón | 🟢 | | | | |
+| I-004 | Pulsar y esperar 2 segundos | Clic en Evaluar Proveedor | El botón se deshabilita momentáneamente y/o muestra un “cargando” | Solo se envía una única petición; no hace doble evaluación aunque hagas doble clic rápido | 🟢 | | | | |
+| I-005 | Nombre autocompletado | Después de una evaluación exitosa | El campo “Nombre del Proveedor” se rellena con la Razón Social de la empresa | Puedes modificarlo manualmente después | 🟢 | | | | |
+| I-006 | Copiar desde Excel / texto con espacios | En otro sitio copia `76 086 428 - 5` (con espacios) y pégalo | Lo interpreta y muestra como **`76.086.428-5`** (borde VERDE) | Los espacios alrededor del guion no molestan | 🟢 | | | | |
+
+---
+
+### 2.6 ⌨ Teclado y navegación (casos raros)
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| E-001 | Pasar al siguiente campo con TAB | Estando en el input RUT, pulsa TAB | El foco salta al siguiente campo (Nombre) y el RUT conserva el valor correcto | No “salta de vuelta” al input RUT | 🟢 | | | | |
+| E-002 | Pulsar ENTER dentro del input RUT | Si el RUT es VÁLIDO y términos OK | Inicia la evaluación (igual que si clicaras el botón) | Si el RUT es inválido, NO inicia nada y muestra error | 🟢 | | | | |
+| E-003 | Pulsar ESCAPE | Pulsa ESC dentro del input RUT | Saca el foco; NO cambia ningún valor ni envía nada | — | 🟢 | | | | |
+| E-004 | Mover cursor con flechas izquierda/derecha | Flechas ← / → dentro del input | No se borran ni añaden caracteres; solo se mueve el cursor | — | 🟢 | | | | |
+| E-005 | HOME / END | Pulsa HOME y luego END dentro del input | Cursor va al principio, luego al final; valor intacto | — | 🟢 | | | | |
+| E-006 | Copiar / Cortar / Pegar | Ctrl+C, Ctrl+X, Ctrl+V | Funcionan como un campo de texto normal; no se duplican signos | — | 🟢 | | | | |
+| E-007 | Selección + arrastrar texto (Drag & Drop) | Selecciona parte del RUT y arrástralo a otra posición | No aparecen caracteres duplicados ni DV fantasma | Es aceptable que el formateo solo se aplique al terminar el arrastre | 🟢 | | | | |
+| E-008 | En móvil / teclado táctil | Escribir RUT usando el teclado en pantalla | Los valores se escriben bien al seleccionar la palabra candidata del autocorrector | No se disparan envíos extra ni se cortan caracteres | 🟢 | | | | |
+
+---
+
+## MÓDULO 3 — Página “Fast Check EX” (Detalle de evaluación)
+
+> Accedes haciendo clic en cualquier fila de “Consultas” o inmediatamente después de “Evaluar Proveedor”.
+> **Bug Fix del 30/09**: la empresa PRINCIPAL de la evaluación no debe volver a aparecer entre los “Socios Históricos”.
+
+### 3.1 Carga correcta desde el listado
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| FC-001 | Abrir un detalle conocido | Ir a Consultas → clic en una fila | Se abre la página Fast Check EX; el RUT/encabezado coinciden | NO hay pantalla blanca; no tarda más de 10 s | 🟢 | | | | |
+| FC-002 | Scroll completo por toda la página | Desplázate hasta abajo usando rueda ratón / barra | Todas las secciones se renderizan; no hay huecos en blanco raros | No se vean tarjetas vacías duplicadas | 🟢 | | | | |
+
+---
+
+### 3.2 Socios Históricos — Verificación Bug Fix
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| FC-010 | Revisar Socios Históricos tras el fix | En la página Fast Check EX, localiza la tarjeta/sección **Socios Históricos**; copia el RUT de la empresa PRINCIPAL que aparece en el GRAN ENCABEZADO (arriba, grande) y busca ese mismo RUT dentro de la lista de Socios Históricos | **NO DEBE APARECER** el RUT principal dentro de los Socios Históricos | El buscador del navegador (Ctrl+F) por el RUT principal debe encontrarlo 1 sola vez en todo el bloque (el encabezado), 0 veces dentro del listado de socios | 🟢 | | | | |
+| FC-011 | Más de 10 socios | Si la empresa tiene muchos socios, revisa la paginación o scroll dentro del bloque de socios | Carga los socios que falten; la ausencia del principal se mantiene | — | 🟢 | | | | |
+
+---
+
+### 3.3 Listas Propias (Alto/Medio Impacto)
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| FC-020 | Bandera Listas Propias en evaluación NUEVA | Haz una evaluación nueva (Evaluación Individual) de una empresa que SABES que está en Lista Propia Alto/Medio Impacto | En Fast Check EX aparece la etiqueta/bandera correspondiente; el nivel de riesgo refleja ese impacto | — | 🟢 | | | | |
+| FC-021 | Lectura de histórico inmutable (no debe cambiar flags) | Abre una consulta HISTÓRICA vieja (meses atrás) de una empresa que hoy NO está en Lista Propia pero SÍ lo estaba en aquel momento, o viceversa | Las banderas / estado de Listas Propias que se muestran SON LAS QUE HABÍAN EN FECHA DE LA CONSULTA, NO las actuales | No hay “sincronización automática” al consultar históricos (era el bug viejo — fix 30/09) | 🟢 | | | | |
+
+---
+
+### 3.4 Malla societaria — Grafo de nodos
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| FC-030 | Visualizar grafo | En la sección malla societaria / “Mapa Empresas Controladas” | Se ve un diagrama con nodos y flechas; se distingue la empresa principal | Las dimensiones del grafo son > 0 (no aparece un recuadro en blanco 0×0) | 🟢 | | | | |
+| FC-031 | Zoom manual + arrastre | Haz zoom con la rueda; arrastra un nodo a otra posición | Se actualiza la vista; NO hay reseteo indeseado a la vista inicial | SOLO debe ajustar la vista cuando tú clicas explícitamente un botón “ajustar vista” (si existe) | 🟢 | | | | |
+| FC-032 | Flecha inversa detectada (relación bidireccional) | La fuente de datos reporta solo `EMPRESA A → SOCIO X` (un solo sentido) | En el grafo deberías poder “ver” también la relación inversa (leyenda adecuada) o por lo menos NO hay duplicados extraños por nombre con/sin acento | Los nombres con acento y sin acento se fusionan en un único nodo (no aparecen 2 nodos iguales por variante de acento) | 🟢 | | | | |
+
+---
+
+## MÓDULO 4 — Menú “Listas Propias Alto/Medio Impacto”
+
+> Gestión manual de empresas marcadas.
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| LP-001 | Añadir empresa a Lista Propia Alto Impacto | Abrir Listas Propias Alto Impacto → Añadir → RUT + nombre + motivo → Guardar | Aparece una fila nueva en la tabla; el conteo total en la cabecera se incrementa en +1 | Si vuelves a Consultas/FastCheck para ese RUT, la bandera aparece | 🟢 | | | | |
+| LP-002 | Eliminar la misma empresa | Clic en Eliminar / Papelera en la fila nueva | Se elimina; la tabla se actualiza y el número total vuelve a bajar | Después de un rato / refresh, el registro sigue estando eliminado | 🟢 | | | | |
+| LP-003 | Lista Mediano Impacto (comprobación idéntica) | Repetir LP-001 en la sección Mediano Impacto | Mismos resultados | — | 🟢 | | | | |
+| LP-004 | Búsqueda interna dentro de la lista | Busca por RUT dentro de Lista Propia | Encuentra la fila aunque escribas sin puntos | — | 🟢 | | | | |
+
+---
+
+## MÓDULO 5 — Menús laterales generales
+
+### 5.1 Dashboard
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| D-001 | Carga inicial | Clic en Dashboard en menú | Se muestran tarjetas: Consultas del mes, Nivel Riesgo promedio, Créditos, etc. | Las tarjetas no muestran NaN, undefined, null, valores en blanco | 🟢 | | | | |
+| D-002 | Filtros temporales | Cambiar periodo (mensual / semanal) en Dashboard | Los totales se recalculan acorde al periodo | Sin errores de consola | 🟢 | | | | |
+
+### 5.2 Evaluación Masiva
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| EM-001 | Subir CSV / TXT con varios RUTs | En **Evaluación Masiva**, sube un archivo con varios RUTs (uno por línea) | Se muestra el progreso; no crashea si uno de los RUTs es inválido | Al final aparece el botón de descarga del informe consolidado | 🟢 | | | | |
+| EM-002 | Columna N no se bloquea | Esperar que termine masiva de ~5+ registros | Cada fila termina en éxito/error; el listado no se congela | — | 🟢 | | | | |
+
+### 5.3 Usuarios (solo si eres Administrador)
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| U-001 | Crear usuario nuevo (si permiso) | Ir a Usuarios → Nuevo → Rellenar datos | Usuario creado; puede iniciar sesión | Contraseña temporal visible o correo enviado | 🟢 | | | | |
+| U-002 | Desactivar usuario | Clic en Desactivar en un usuario no administrador | El usuario ya NO puede iniciar sesión; no se borra el histórico | — | 🟢 | | | | |
+
+### 5.4 Configuración
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| CF-001 | Modificar umbrales de nivel de riesgo | Ir a Configuración; cambiar umbrales (verde/amarillo/rojo) → Guardar | Al volver a entrar, los valores se han guardado; los colores se reflejan en evaluaciones nuevas | NO afecta el color de los históricos (se conserva el color del día) | 🟢 | | | | |
+| CF-002 | Modo oscuro (si existe) | Toggle modo oscuro (abajo) | El tema cambia inmediatamente | Si haces refresh, persiste tu preferencia | 🟢 | | | | |
+
+### 5.5 Historial de Consultas (aparte del listado principal)
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| H-001 | Coincide con el módulo Consultas | Abrir Historial de Consultas en menú | Los mismos filtros y datos que en módulo Consultas | Si no existen diferencias entre ambos menús, marcar ✅ (solo duplican vista) | 🟢 | | | | |
+
+---
+
+## MÓDULO 6 — Evaluación Masiva + Deep Check
+
+| ID | Caso de Prueba | Pasos | Resultado Esperado | Criterio de Aceptación | Estado | Tester | Data / Ora | Ambiente | Note (Bug / Screenshot: link o path) |
+|----|----------------|-------|---------------------|-------------------------|--------|--------|-------------|----------|--------------------------------------|
+| DC-001 | Entrar a Deep Check | En menú → Deep Check | Muestra explicación del servicio y si está disponible (coste de créditos distinto) | — | 🟢 | | | | |
+| DC-002 | Consulta Deep Check sobre un proveedor ya analizado | Rellenar formulario | Inicia análisis; no crashea aunque la fuente externa no esté disponible | Si hay un error controlado por la API, se muestra mensaje; pantalla NO en blanco | 🟢 | | | | |
+| DC-003 | Botones Descargar MD / PDF al finalizar | Clic en **Descargar MD** y **Descargar PDF** (arriba, esquina derecha del reporte) | Se descargan ambos archivos; el PDF contiene portada y secciones | El informe en MD se puede abrir en Visor Markdown sin caracteres rotos | 🟢 | | | | |
+
+---
+
+## ✔ Checklist Global de Aceptación
+
+> Marca todo cuando termines la sesión de QA.
+
+- [ ] **No hay pantallas blancas** ni bloqueos permanentes en NINGUNA de las páginas visitadas.
+- [ ] **Consola del navegador (F12) sin errores en ROJO** durante los flujos felices (escribir, evaluar, abrir detalle). Pueden aparecer warnings amarillos; son aceptables.
+- [ ] **Ninguna evaluación se envía dos veces** (no hay “doble click fantasma” que consuma créditos doble).
+- [ ] **Botones de descarga (Excel / MD / PDF)** producen archivos abribles y con contenido coherente.
+- [ ] **Fixes prioritarios OK**:
+    - [ ] Escribir RUT de 2 dígitos → SIN guion (no “12-9”) → ✅
+    - [ ] Borrar último dígito en RUT VERDE → no lo reinserta → ✅
+    - [ ] Empresa PRINCIPAL no aparece en Socios Históricos → ✅
+    - [ ] Históricos: banderas LP y colores de semáforo NO se actualizan/recalculan al abrir → ✅
+- [ ] **Navegación general**: Todo el menú izquierdo (Dashboard, Evaluación Individual/Masiva, Consultas, Historial, Usuarios, Configuración, Listas Propias, Ayuda, Deep Check) se puede abrir sin errores 404.
+
+---

@@ -185,25 +185,33 @@ useEffect(() => {
   const handleRutChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setRut(value);
+    setFormattedRut(value);
+    setIsValidRut(null);
+  };
 
-    // Format RUT as user types
-    if (value) {
-      const formatted = formatChileanRut(value);
+  const handleRutBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    const raw = e.target.value;
+    if (raw && raw.trim().length > 0) {
+      const formatted = formatChileanRut(raw);
       setFormattedRut(formatted);
-
-      // Validate RUT
-      const isValid = validateChileanRut(value);
-      setIsValidRut(isValid);
-    } else {
-      setFormattedRut('');
-      setIsValidRut(null);
+      setIsValidRut(validateChileanRut(raw));
     }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!isValidRut) {
+    // Se l'utente ha premuto INVIO senza aver perdere il focus: validazione on the fly
+    let finalRutFormatted = formattedRut || rut;
+    let finalIsValid = isValidRut;
+    if (isValidRut === null && rut.trim().length > 0) {
+      const trimmed = rut.trim();
+      finalRutFormatted = formatChileanRut(trimmed);
+      finalIsValid = validateChileanRut(trimmed);
+      setFormattedRut(finalRutFormatted);
+      setIsValidRut(finalIsValid);
+    }
+    if (!finalIsValid) {
       toast.error(t('singleEvaluation.toast.invalidRut'));
       return;
     }
@@ -219,7 +227,7 @@ useEffect(() => {
     setIsLoadingLookup(true);
 
     // Sanitize RUT for API: remove dots, keep hyphen
-    const rutForApi = formattedRut.replace(/\./g, '');
+    const rutForApi = finalRutFormatted.replace(/\./g, '');
 
     try {
       // First check if we already have an evaluation in the database
@@ -411,6 +419,7 @@ useEffect(() => {
                     id="rut"
                     value={formattedRut}
                     onChange={handleRutChange}
+                    onBlur={handleRutBlur}
                     placeholder={t('singleEvaluation.rutPlaceholder')}
                     className={`w-full pl-3 pr-10 py-2 border rounded-md shadow-sm text-sm bg-white dark:bg-gray-700 ${isValidRut === false
                         ? 'border-red-500 text-red-900 dark:text-red-200 focus:ring-red-500 focus:border-red-500'
