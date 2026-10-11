@@ -884,6 +884,41 @@ async def rut_results_paginated(
 
 
 @router.get(
+    "/rut/results/latest",
+    summary="Último resultado de evaluación",
+    description="Compatibilidad FastCheckEX: devuelve el resultado más reciente (scope tenant).",
+    operation_id="admin_compat_rut_result_latest",
+)
+async def get_rut_result_latest(
+    db: AsyncIOMotorDatabase = Depends(get_db),
+    _user: CurrentUser = Depends(get_current_user),
+):
+    is_super = await _user_is_super(_user)
+    user_org = await _resolve_user_org(_user)
+    if not is_super and user_org is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    if not await _eval_collections(db):
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    q: dict[str, Any] = {}
+    if not is_super:
+        # I risultati nuovi (results) hanno solo 'tenantId'; i vecchi (evaluationresults) hanno 'organizacion_id'.
+        q["$or"] = [
+            {"organizacion_id": user_org},
+            {"organizacion_id": str(user_org)},
+            {"tenantId": user_org},
+            {"tenantId": str(user_org)},
+        ]
+
+    doc = await _find_latest_eval(db, q)
+    if not doc:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    return jsonable(_flatten_eval_doc(doc))
+
+
+@router.get(
     "/rut/results/{result_id}",
     summary="Detalle individual de resultado de evaluación",
     description="Compatibilidad Workspace → ConsultaDetailPage (view 👁). Scope: superuser ve todos; usuario estandar ve solo doc.tenantId == user.tenant (404 hide privacy).",
@@ -928,10 +963,14 @@ async def get_rut_result_detail(
             pass
 
     coll_names = await db.list_collection_names()
-    ev_colname = "evaluationresults" if "evaluationresults" in coll_names else ("results" if "results" in coll_names else None)
-    if ev_colname is None:
+    ev_cols = [c for c in ("evaluationresults", "results") if c in coll_names]
+    if not ev_cols:
         raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
-    doc = await db[ev_colname].find_one({"_id": oid})
+    doc = None
+    for col in ev_cols:
+        doc = await db[col].find_one({"_id": oid})
+        if doc:
+            break
     if not doc:
         raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
 
@@ -945,7 +984,138 @@ async def get_rut_result_detail(
         doc_ok = (doc_t_oid is not None and user_org is not None and str(doc_t_oid) == str(user_org))
         if not doc_ok:
             raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
-    return jsonable(doc)
+    # Flatten: el frontend espera riskAssessment/details/companyGeneralInfo directamente en el body,
+    # no anidados en doc["data"]. Mergeamos data en el nivel raíz conservando metadatos (_id, name, status, createdAt...).
+    return jsonable(_flatten_eval_doc(doc))
+
+
+def _flatten_eval_doc(doc: dict) -> dict:
+    """Spiana el campo 'data' de un documento evaluationresults al nivel raíz.
+    El frontend FastCheckEX espera riskAssessment/details/companyGeneralInfo directamente en el body."""
+    inner = doc.get("data") or {}
+    if isinstance(inner, dict):
+        merged = {**doc, **inner}
+        merged.pop("data", None)
+        return merged
+    return doc
+
+
+async def _resolve_user_org(_user: CurrentUser) -> Optional[ObjectId]:
+    """Extrae el ObjectId de la organización del usuario actual desde CurrentUser (dataclass)."""
+    for attr in ["tenant", "organizacion_id", "tenantId", "organizacionId", "organizacion"]:
+        try:
+            val = getattr(_user, attr, None)
+            if val:
+                try:
+                    return ObjectId(str(val))
+                except Exception:
+                    continue
+        except Exception:
+            continue
+    try:
+        ud = _user.__dict__
+        val = ud.get("tenant") or ud.get("organizacion_id") or ud.get("tenantId")
+        if val:
+            return ObjectId(str(val))
+    except Exception:
+        pass
+    return None
+
+
+async def _user_is_super(_user: CurrentUser) -> bool:
+    try:
+        raw_roles = list(getattr(_user, "roles", []) or [])
+        user_role = str(getattr(_user, "role", "") or "")
+    except Exception:
+        raw_roles, user_role = [], ""
+    return "SUPER_WILDCARD" in raw_roles or user_role == "superuser"
+
+
+async def _eval_collections(db) -> list[str]:
+    """Restituisce le collezioni che contengono risultati di valutazione (evaluationresults e/o results)."""
+    coll_names = await db.list_collection_names()
+    cols = []
+    if "evaluationresults" in coll_names:
+        cols.append("evaluationresults")
+    if "results" in coll_names:
+        cols.append("results")
+    return cols
+
+
+async def _find_latest_eval(db, q: dict) -> Optional[dict]:
+    """Cerca il documento più recente tra evaluationresults e results, ordinato per createdAt desc."""
+    cols = await _eval_collections(db)
+    best: Optional[dict] = None
+    best_ts = None
+    for col in cols:
+        doc = await db[col].find_one(q, sort=[("createdAt", -1)])
+        if doc is None:
+            continue
+        ts = doc.get("createdAt") or doc.get("created_at")
+        if best is None or (ts is not None and (best_ts is None or ts > best_ts)):
+            best = doc
+            best_ts = ts
+    return best
+
+
+@router.get(
+    "/rut/results/rut/{rut}",
+    summary="Último resultado de evaluación por RUT",
+    description="Compatibilidad FastCheckEX: devuelve el resultado más reciente para un RUT dado. "
+                "Scope: superuser ve todos; usuario estándar ve solo doc.tenantId == user.tenant (404).",
+    operation_id="admin_compat_rut_result_by_rut",
+)
+async def get_rut_result_by_rut(
+    rut: str,
+    db: AsyncIOMotorDatabase = Depends(get_db),
+    _user: CurrentUser = Depends(get_current_user),
+):
+    is_super = await _user_is_super(_user)
+    user_org = await _resolve_user_org(_user)
+    if not is_super and user_org is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    if not await _eval_collections(db):
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    rut_clean = (rut or "").strip()
+    q: dict[str, Any] = {
+        "$or": [
+            {"rut": rut_clean},
+            {"rut_normalizado": rut_clean},
+            {"rut_canonical": rut_clean},
+            {"identifier": rut_clean},
+        ]
+    }
+    if not is_super:
+        # I risultati nuovi (results) hanno solo 'tenantId'; i vecchi (evaluationresults) hanno 'organizacion_id'.
+        # Matchiamo entrambi, sia come ObjectId che come stringa.
+        q["$and"] = [
+            {
+                "$or": [
+                    {"organizacion_id": user_org},
+                    {"organizacion_id": str(user_org)},
+                    {"tenantId": user_org},
+                    {"tenantId": str(user_org)},
+                ]
+            }
+        ]
+
+    doc = await _find_latest_eval(db, q)
+    if not doc:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    # Privacy gate tenant (per chi non è super): garantisce che tenantId/org matchi
+    if not is_super:
+        doc_t = doc.get("tenantId") or doc.get("organizacion_id") or None
+        try:
+            doc_t_oid = ObjectId(str(doc_t)) if doc_t else None
+        except Exception:
+            doc_t_oid = None
+        if doc_t_oid is None or user_org is None or str(doc_t_oid) != str(user_org):
+            raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Resultado no encontrado")
+
+    return jsonable(_flatten_eval_doc(doc))
 
 
 # =============================================================================
