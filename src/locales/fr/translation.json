@@ -280,22 +280,11 @@
     "next": "Suivant",
     "delete": "Supprimer",
     "search": "Rechercher",
-    "noResults": "Aucun résultat trouvé",
-    "page": "Page",
-    "of": "de",
-    "filteredBy": "Filtré par",
-    "logout": "Se déconnecter",
-    "view": "Voir",
-    "notAvailable": "Non disponible",
     "cancel": "Annuler",
-    "close": "Fermer",
-    "loading": "Chargement...",
-    "showingRange": "Affichage de {{from}} à {{to}} sur {{total}} résultats",
-    "clear": "Effacer",
-    "refresh": "Actualiser",
-    "optional": "Optionnel",
     "create": "Créer",
-    "save": "Enregistrer"
+    "save": "Enregistrer",
+    "notAvailable": "Non disponible",
+    "unknown": "Inconnu"
   },
   "consultas": {
     "title": "Consultations",
@@ -320,8 +309,7 @@
     "confirmDeleteTitle": "Confirmer la suppression",
     "confirmDeleteMessage": "Êtes-vous sûr de vouloir supprimer cette consultation ? Cette action est irréversible.",
     "deleting": "Suppression..."
-  }
-  ,
+  },
   "antiunionCases": {
     "title": "Gestion des Cas Antisyndicaux",
     "uploadButton": "Téléverser PDF",
@@ -1187,48 +1175,29 @@
     "title": "Fast Check Consolidé"
   },
   "fastCheck": {
-    "title": "Fast Check",
-    "rutPlaceholder": "Saisissez le RUT",
-    "noData": "Aucune donnée trouvée.",
-    "progress": {
-      "start": "Évaluation démarrée",
-      "lookup": "Demande de recherche du RUT",
-      "fetch": "Récupération des résultats",
-      "listas": "Vérification des listes personnalisées",
-      "ready": "Prêt",
-      "inProgress": "Évaluation en cours…"
-    },
-    "actions": {
-      "refresh": "Relancer l’évaluation",
-      "exportPdf": "Exporter PDF",
-      "exportJson": "Exporter JSON"
-    },
-    "exportPdf": {
-      "generating": "Génération..."
-    },
-    "export": {
-      "noData": "Aucune donnée à exporter",
-      "success": "Données exportées avec succès",
-      "error": "Erreur lors de l’exportation des données"
+    "listasPropias": {
+      "alertTitle": "Alerte : RUT présent dans les Listes Propriétaires",
+      "altoImpactoTitle": "🔴 Liste Propriétaire - Impact Élevé",
+      "medioImpactoTitle": "🟡 Liste Propriétaire - Impact Moyen",
+      "labels": {
+        "nombre": "Nom",
+        "rut": "RUT",
+        "tipo": "Type",
+        "lista": "Liste",
+        "subLista": "Sous-liste",
+        "fechaIncorporacion": "Date d'incorporation",
+        "fechaRegistro": "Date d'enregistrement",
+        "ultimaActualizacion": "Dernière mise à jour"
+      },
+      "viewDetails": "Voir les détails",
+      "noteTitle": "Note :",
+      "noteMessage": "Ce RUT a été identifié dans les listes propriétaires de l'organisation. Veuillez vérifier les détails et prendre les mesures appropriées conformément aux politiques internes."
     },
     "findings": {
-      "title": "Principales conclusions",
-      "noSummary": "Aucun résumé disponible"
-    },
-    "notes": {
-      "title": "Notes de l’utilisateur",
-      "none": "Aucune note pour cette entreprise",
-      "addNote": "Ajouter une note",
-      "lastUpdated": "Dernière mise à jour :"
-    },
-    "pdf": {
-      "success": "PDF généré avec succès",
-      "error": "Erreur lors de la génération du PDF. Veuillez réessayer.",
-      "pageXofY": "Page {{i}} sur {{total}}",
-      "generatedOn": "Généré le {{date}}"
-    },
-    "qr": {
-      "scan": "Scannez pour accéder au rapport"
+      "pepChileDetectedInPartners": "PEP Chili détecté parmi les associés",
+      "familiaresPepDetectedInPartners": "Familiers PEP détectés parmi les associés",
+      "rutInAltoImpacto": "RUT dans la Liste Propriétaire à Impact Élevé ({{count}})",
+      "rutInMedianoImpacto": "RUT dans la Liste Propriétaire à Impact Moyen ({{count}})"
     }
   },
   "auditOverview": {
@@ -1244,7 +1213,111 @@
   },
   "envConfiguration": {
     "noteTitle": "Note importante",
-    "noteMessage": "Les modifications des paramètres de configuration nécessiteront un redémarrage du serveur pour être appliquées. Les paramètres marqués d'un * sont obligatoires pour le bon fonctionnement du système."
+    "noteMessage": "Les modifications des paramètres de configuration nécessiteront un redémarrage du serveur pour être appliquées. Les paramètres marqués d'un * sont obligatoires pour le bon fonctionnement du système.",
+    "header": {
+      "title": "Configuration des Paramètres du Serveur",
+      "subtitle": "Gérez les paramètres de configuration du fichier .env du serveur"
+    },
+    "loading": "Chargement de la configuration...",
+    "buttons": {
+      "reset": "Réinitialiser",
+      "save": "Enregistrer les Modifications",
+      "saving": "Enregistrement..."
+    },
+    "changes": {
+      "unsaved": "Des changements non enregistrés existent"
+    },
+    "toast": {
+      "saveSuccess": "Configuration enregistrée avec succès",
+      "resetSuccess": "Configuration réinitialisée",
+      "saveError": "Erreur lors de l'enregistrement de la configuration"
+    },
+    "errors": {
+      "loadConfig": "Erreur lors du chargement de la configuration",
+      "saveConfig": "Erreur lors de l'enregistrement de la configuration"
+    },
+    "categories": {
+      "apiKeys": "Clés API",
+      "database": "Base de Données",
+      "server": "Serveur",
+      "apiUrls": "URLs d'API",
+      "openaiConfig": "Configuration OpenAI",
+      "riskCalculation": "Calcul du Risque",
+      "sendgridConfig": "Configuration SendGrid",
+      "rabbitmqConfig": "Configuration RabbitMQ",
+      "contactInfo": "Informations de Contact"
+    },
+    "params": {
+      "openaiApiKey": {
+        "description": "Clé API pour OpenAI GPT"
+      },
+      "sheriffApiToken": {
+        "description": "Jeton d'authentification pour l'API Sheriff"
+      },
+      "sendgridApiKey": {
+        "description": "Clé API pour SendGrid (envoi d'emails)"
+      },
+      "mongodbUri": {
+        "description": "URI de connexion MongoDB"
+      },
+      "port": {
+        "description": "Port du serveur"
+      },
+      "rateLimitWindowMs": {
+        "description": "Fenêtre temporelle pour la limitation de débit (ms)"
+      },
+      "rateLimitMaxRequests": {
+        "description": "Nombre maximum de requêtes par fenêtre"
+      },
+      "apiUrl": {
+        "description": "URL de base de l'API"
+      },
+      "sheriffApiUrl": {
+        "description": "URL de l'API Sheriff"
+      },
+      "siiUrl": {
+        "description": "URL du service SII"
+      },
+      "openaiModelSummary": {
+        "description": "Modèle OpenAI pour les résumés"
+      },
+      "openaiModelAnalysis": {
+        "description": "Modèle OpenAI pour l'analyse"
+      },
+      "openaiTemperature": {
+        "description": "Température pour OpenAI (0.0-1.0)"
+      },
+      "openaiMaxTokens": {
+        "description": "Nombre maximum de tokens pour OpenAI"
+      },
+      "riskTotalParams": {
+        "description": "Nombre total de paramètres de risque"
+      },
+      "riskCriticalPercentage": {
+        "description": "Seuil en pourcentage pour risque critique"
+      },
+      "riskHighPercentage": {
+        "description": "Seuil en pourcentage pour risque élevé"
+      },
+      "riskMediumPercentage": {
+        "description": "Seuil en pourcentage pour risque moyen"
+      },
+      "sendgridFromEmail": {
+        "description": "Email expéditeur pour SendGrid"
+      },
+      "sendgridFromName": {
+        "description": "Nom de l'expéditeur pour SendGrid"
+      },
+      "rabbitmqUrl": {
+        "description": "URL de connexion RabbitMQ"
+      },
+      "rabbitmqQueue": {
+        "description": "Nom de la file RabbitMQ"
+      },
+      "supportEmail": {
+        "description": "Email de support"
+      }
+    }
   },
   "singleEvaluation": {
     "title": "Évaluation Individuelle",
@@ -1289,69 +1362,6 @@
       "confidentiality": "Les données du fournisseur sont maintenues confidentielles et sécurisées.",
       "bulkPrefix": "Pour évaluer plusieurs fournisseurs, utilisez l'option",
       "bulkLinkText": "Évaluation de masse"
-    }
-  }
-  ,
-  "envConfiguration": {
-    "noteTitle": "Note importante",
-    "noteMessage": "Les modifications des paramètres de configuration nécessiteront un redémarrage du serveur pour être appliquées. Les paramètres marqués d'un * sont obligatoires pour le bon fonctionnement du système.",
-    "header": {
-      "title": "Configuration des Paramètres du Serveur",
-      "subtitle": "Gérez les paramètres de configuration du fichier .env du serveur"
-    },
-    "loading": "Chargement de la configuration...",
-    "buttons": {
-      "reset": "Réinitialiser",
-      "save": "Enregistrer les Modifications",
-      "saving": "Enregistrement..."
-    },
-    "changes": {
-      "unsaved": "Des changements non enregistrés existent"
-    },
-    "toast": {
-      "saveSuccess": "Configuration enregistrée avec succès",
-      "resetSuccess": "Configuration réinitialisée",
-      "saveError": "Erreur lors de l'enregistrement de la configuration"
-    },
-    "errors": {
-      "loadConfig": "Erreur lors du chargement de la configuration",
-      "saveConfig": "Erreur lors de l'enregistrement de la configuration"
-    },
-    "categories": {
-      "apiKeys": "Clés API",
-      "database": "Base de Données",
-      "server": "Serveur",
-      "apiUrls": "URLs d'API",
-      "openaiConfig": "Configuration OpenAI",
-      "riskCalculation": "Calcul du Risque",
-      "sendgridConfig": "Configuration SendGrid",
-      "rabbitmqConfig": "Configuration RabbitMQ",
-      "contactInfo": "Informations de Contact"
-    },
-    "params": {
-      "openaiApiKey": { "description": "Clé API pour OpenAI GPT" },
-      "sheriffApiToken": { "description": "Jeton d'authentification pour l'API Sheriff" },
-      "sendgridApiKey": { "description": "Clé API pour SendGrid (envoi d'emails)" },
-      "mongodbUri": { "description": "URI de connexion MongoDB" },
-      "port": { "description": "Port du serveur" },
-      "rateLimitWindowMs": { "description": "Fenêtre temporelle pour la limitation de débit (ms)" },
-      "rateLimitMaxRequests": { "description": "Nombre maximum de requêtes par fenêtre" },
-      "apiUrl": { "description": "URL de base de l'API" },
-      "sheriffApiUrl": { "description": "URL de l'API Sheriff" },
-      "siiUrl": { "description": "URL du service SII" },
-      "openaiModelSummary": { "description": "Modèle OpenAI pour les résumés" },
-      "openaiModelAnalysis": { "description": "Modèle OpenAI pour l'analyse" },
-      "openaiTemperature": { "description": "Température pour OpenAI (0.0-1.0)" },
-      "openaiMaxTokens": { "description": "Nombre maximum de tokens pour OpenAI" },
-      "riskTotalParams": { "description": "Nombre total de paramètres de risque" },
-      "riskCriticalPercentage": { "description": "Seuil en pourcentage pour risque critique" },
-      "riskHighPercentage": { "description": "Seuil en pourcentage pour risque élevé" },
-      "riskMediumPercentage": { "description": "Seuil en pourcentage pour risque moyen" },
-      "sendgridFromEmail": { "description": "Email expéditeur pour SendGrid" },
-      "sendgridFromName": { "description": "Nom de l'expéditeur pour SendGrid" },
-      "rabbitmqUrl": { "description": "URL de connexion RabbitMQ" },
-      "rabbitmqQueue": { "description": "Nom de la file RabbitMQ" },
-      "supportEmail": { "description": "Email de support" }
     }
   },
   "bulkEvaluation": {
@@ -1520,18 +1530,6 @@
       "fileNamePrefix": "evaluations_de_masse_"
     }
   },
-  "common": {
-    "previous": "Précédent",
-    "next": "Suivant",
-    "delete": "Supprimer",
-    "search": "Rechercher",
-    "cancel": "Annuler",
-    "create": "Créer",
-    "save": "Enregistrer",
-    "notAvailable": "Non disponible",
-    "unknown": "Inconnu"
-  }
-  ,
   "lpaltoPage": {
     "title": "Listes Propriétaires - Impact Élevé",
     "subtitle": "Gérer les entrées de la Liste Propriétaire à Impact Élevé.",
@@ -1650,33 +1648,6 @@
       "update": "Mettre à jour"
     }
   },
-  "fastCheck": {
-    "listasPropias": {
-      "alertTitle": "Alerte : RUT présent dans les Listes Propriétaires",
-      "altoImpactoTitle": "🔴 Liste Propriétaire - Impact Élevé",
-      "medioImpactoTitle": "🟡 Liste Propriétaire - Impact Moyen",
-      "labels": {
-        "nombre": "Nom",
-        "rut": "RUT",
-        "tipo": "Type",
-        "lista": "Liste",
-        "subLista": "Sous-liste",
-        "fechaIncorporacion": "Date d'incorporation",
-        "fechaRegistro": "Date d'enregistrement",
-        "ultimaActualizacion": "Dernière mise à jour"
-      },
-      "viewDetails": "Voir les détails",
-      "noteTitle": "Note :",
-      "noteMessage": "Ce RUT a été identifié dans les listes propriétaires de l'organisation. Veuillez vérifier les détails et prendre les mesures appropriées conformément aux politiques internes."
-    },
-    "findings": {
-      "pepChileDetectedInPartners": "PEP Chili détecté parmi les associés",
-      "familiaresPepDetectedInPartners": "Familiers PEP détectés parmi les associés",
-      "rutInAltoImpacto": "RUT dans la Liste Propriétaire à Impact Élevé ({{count}})",
-      "rutInMedianoImpacto": "RUT dans la Liste Propriétaire à Impact Moyen ({{count}})"
-    }
-  }
-  ,
   "adminDashboard": {
     "noData": "Aucune donnée disponible",
     "usage": {
@@ -1776,8 +1747,7 @@
         "distribution": "Répartition"
       }
     }
-  }
-  ,
+  },
   "evaluationSettings": {
     "title": "Configuration des Paramètres d'Évaluation",
     "tabs": {
@@ -1822,8 +1792,7 @@
         "condition": "Condition"
       }
     }
-  }
-  ,
+  },
   "promptConfiguration": {
     "title": "Configuration des Prompts",
     "subtitle": "Gérez les prompts IA utilisés pour différents types d'analyse",
@@ -1945,165 +1914,353 @@
     "date": {
       "never": "Jamais"
     }
-  }
-,
-"databaseManagement": {
-  "header": {
-    "title": "Gestion de base de données",
-    "refresh": "Actualiser",
-    "backup": "Sauvegarde"
   },
-  "connection": {
-    "title": "État de la connexion",
-    "status": {
-      "connected": "Connecté",
-      "disconnected": "Déconnecté",
-      "error": "Erreur",
-      "running": "En cours",
-      "completed": "Terminé",
-      "failed": "Échec"
+  "databaseManagement": {
+    "header": {
+      "title": "Gestion de base de données",
+      "refresh": "Actualiser",
+      "backup": "Sauvegarde"
+    },
+    "connection": {
+      "title": "État de la connexion",
+      "status": {
+        "connected": "Connecté",
+        "disconnected": "Déconnecté",
+        "error": "Erreur",
+        "running": "En cours",
+        "completed": "Terminé",
+        "failed": "Échec"
+      }
+    },
+    "stats": {
+      "totalCollections": "Total des collections",
+      "totalDocuments": "Total des documents",
+      "dbSize": "Taille de la base",
+      "totalIndexes": "Total des index"
+    },
+    "operations": {
+      "title": "Opérations de base de données",
+      "subtitle": "Effectuer des opérations de maintenance sur la base de données",
+      "buttons": {
+        "backup": "Créer une sauvegarde",
+        "cleanup": "Nettoyer la base de données",
+        "reindex": "Réindexer les collections"
+      }
+    },
+    "collections": {
+      "title": "Collections de la base de données",
+      "columns": {
+        "name": "Nom de la collection",
+        "documents": "Documents",
+        "avgSize": "Taille moyenne",
+        "totalSize": "Taille totale",
+        "indexes": "Index",
+        "actions": "Actions"
+      },
+      "tooltips": {
+        "reindex": "Réindexer",
+        "clean": "Nettoyer"
+      }
+    },
+    "recent": {
+      "title": "Opérations récentes",
+      "columns": {
+        "type": "Type",
+        "status": "Statut",
+        "start": "Début",
+        "end": "Fin",
+        "message": "Message"
+      },
+      "type": {
+        "backup": "Sauvegarde",
+        "restore": "Restauration",
+        "cleanup": "Nettoyage",
+        "reindex": "Réindexation"
+      },
+      "status": {
+        "running": "En cours",
+        "completed": "Terminé",
+        "failed": "Échec"
+      }
+    },
+    "dialogs": {
+      "backup": {
+        "title": "Confirmer la sauvegarde",
+        "message": "Êtes-vous sûr de vouloir créer une sauvegarde complète de la base de données ? Cette opération peut prendre quelques minutes.",
+        "confirm": "Confirmer la sauvegarde",
+        "cancel": "Annuler"
+      },
+      "cleanup": {
+        "title": "Confirmer le nettoyage",
+        "message": "Êtes-vous sûr de vouloir nettoyer {{target}} ? Cette opération supprimera les données obsolètes et ne peut pas être annulée.",
+        "confirm": "Confirmer le nettoyage",
+        "cancel": "Annuler",
+        "allDatabase": "toute la base de données",
+        "collection": "la collection \"{{name}}\""
+      }
+    },
+    "errors": {
+      "loadStats": "Erreur lors du chargement des statistiques de la base de données",
+      "loadOperations": "Erreur lors du chargement des opérations",
+      "backup": "Erreur lors de la sauvegarde",
+      "cleanup": "Erreur lors du nettoyage",
+      "reindex": "Erreur lors de la réindexation"
+    },
+    "equifaxMonitor": {
+      "header": {
+        "title": "Moniteur Equifax"
+      },
+      "form": {
+        "rut": "RUT",
+        "limit": "Limite",
+        "page": "Page",
+        "from": "De",
+        "to": "À",
+        "rutPlaceholder": "12.345.678-9",
+        "invalidRut": "RUT invalide"
+      },
+      "buttons": {
+        "consult": "Consulter",
+        "prev": "Précédent",
+        "next": "Suivant"
+      },
+      "pagination": {
+        "summary": "Total : {{total}} · Page {{page}} sur {{pages}}"
+      },
+      "table": {
+        "columns": {
+          "date": "Date",
+          "rut": "RUT",
+          "status": "Statut",
+          "code": "Code",
+          "timeMs": "Temps (ms)",
+          "endpoint": "Endpoint",
+          "cache": "Cache",
+          "download": "Télécharger",
+          "details": "Détails"
+        }
+      },
+      "status": {
+        "ok": "OK",
+        "error": "ERROR"
+      },
+      "cache": {
+        "cached": "cached",
+        "miss": "miss",
+        "info": "Informations de Cache"
+      },
+      "details": {
+        "payload": "Payload",
+        "data": "Données",
+        "normalized": "Données Normalisées",
+        "error": "Erreur"
+      },
+      "errors": {
+        "downloadJson": "Erreur lors du téléchargement du JSON",
+        "invalidRut": "Veuillez saisir un RUT valide",
+        "loadResponses": "Erreur lors du chargement des réponses Equifax"
+      },
+      "notifications": {
+        "noRecentRecords": "Aucun enregistrement récent"
+      },
+      "actions": {
+        "downloadJson": "Télécharger le JSON"
+      }
+    },
+    "sheriffMonitor": {
+      "header": {
+        "title": "Moniteur Sheriff"
+      },
+      "form": {
+        "rut": "RUT",
+        "limit": "Limite",
+        "page": "Page",
+        "from": "De",
+        "to": "À",
+        "rutPlaceholder": "12.345.678-9",
+        "invalidRut": "RUT invalide"
+      },
+      "buttons": {
+        "consult": "Consulter",
+        "prev": "Précédent",
+        "next": "Suivant"
+      },
+      "pagination": {
+        "summary": "Total : {{total}} · Page {{page}} sur {{pages}}"
+      },
+      "table": {
+        "columns": {
+          "rut": "RUT",
+          "status": "Statut",
+          "errorCalls": "Erreurs d'appels",
+          "download": "Télécharger",
+          "detail": "Détail",
+          "date": "Date"
+        },
+        "link": {
+          "viewJson": "Voir JSON"
+        }
+      },
+      "status": {
+        "ok": "OK",
+        "withErrors": "Avec erreurs"
+      },
+      "errors": {
+        "loadLogs": "Erreur lors du chargement des logs Sheriff"
+      },
+      "actions": {
+        "downloadJson": "Télécharger le JSON"
+      }
     }
   },
-  "stats": {
-    "totalCollections": "Total des collections",
-    "totalDocuments": "Total des documents",
-    "dbSize": "Taille de la base",
-    "totalIndexes": "Total des index"
-  },
-  "operations": {
-    "title": "Opérations de base de données",
-    "subtitle": "Effectuer des opérations de maintenance sur la base de données",
-    "buttons": {
-      "backup": "Créer une sauvegarde",
-      "cleanup": "Nettoyer la base de données",
-      "reindex": "Réindexer les collections"
-    }
-  },
-  "collections": {
-    "title": "Collections de la base de données",
-    "columns": {
-      "name": "Nom de la collection",
-      "documents": "Documents",
-      "avgSize": "Taille moyenne",
-      "totalSize": "Taille totale",
-      "indexes": "Index",
-      "actions": "Actions"
+  "tenantUsers": {
+    "title": "Utilisateurs",
+    "subtitle": "Gérer les utilisateurs de votre organisation",
+    "subtitleWithCount": "Gérer les utilisateurs de votre organisation ({{count}})",
+    "addUserButton": "Ajouter un utilisateur",
+    "search": {
+      "placeholder": "Rechercher des utilisateurs..."
     },
-    "tooltips": {
-      "reindex": "Réindexer",
-      "clean": "Nettoyer"
-    }
-  },
-  "recent": {
-    "title": "Opérations récentes",
-    "columns": {
-      "type": "Type",
-      "status": "Statut",
-      "start": "Début",
-      "end": "Fin",
-      "message": "Message"
+    "filters": {
+      "allRoles": "Tous les rôles",
+      "allStatus": "Tous les états",
+      "roleOptions": {
+        "superuser": "Superadmin",
+        "tenantAdmin": "Admin",
+        "auditor": "Auditeur",
+        "evaluator": "Évaluateur",
+        "writeOnly": "Intégration API",
+        "user": "Utilisateur"
+      },
+      "statusOptions": {
+        "active": "Actif",
+        "inactive": "Inactif"
+      }
     },
-    "type": {
-      "backup": "Sauvegarde",
-      "restore": "Restauration",
-      "cleanup": "Nettoyage",
-      "reindex": "Réindexation"
+    "table": {
+      "headers": {
+        "name": "Nom",
+        "email": "E-mail",
+        "role": "Rôle",
+        "status": "État",
+        "actions": "Actions"
+      },
+      "loading": "Chargement des utilisateurs…",
+      "empty": "Aucun utilisateur trouvé pour cette organisation."
     },
-    "status": {
-      "running": "En cours",
-      "completed": "Terminé",
-      "failed": "Échec"
-    }
-  },
-  "dialogs": {
-    "backup": {
-      "title": "Confirmer la sauvegarde",
-      "message": "Êtes-vous sûr de vouloir créer une sauvegarde complète de la base de données ? Cette opération peut prendre quelques minutes.",
-      "confirm": "Confirmer la sauvegarde",
-      "cancel": "Annuler"
+    "actions": {
+      "edit": "Modifier",
+      "activate": "Activer",
+      "deactivate": "Désactiver",
+      "resetPassword": "Réinitialiser le mot de passe"
     },
-    "cleanup": {
-      "title": "Confirmer le nettoyage",
-      "message": "Êtes-vous sûr de vouloir nettoyer {{target}} ? Cette opération supprimera les données obsolètes et ne peut pas être annulée.",
-      "confirm": "Confirmer le nettoyage",
+    "errors": {
+      "loadUsers": "Erreur lors du chargement des utilisateurs",
+      "toggleStatus": "Erreur lors de la mise à jour de l'état de l'utilisateur",
+      "superuserRequired": "Cette action est réservée aux Superadministrateurs de la plateforme. Contactez votre administrateur.",
+      "passwordMin6": "Le mot de passe doit contenir au moins 6 caractères",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+      "resetPasswordFailed": "Échec de la réinitialisation du mot de passe"
+    },
+    "toasts": {
+      "statusUpdated": "État de l'utilisateur mis à jour avec succès",
+      "passwordResetSuccess": "Mot de passe réinitialisé avec succès"
+    },
+    "resetModal": {
+      "title": "Réinitialiser le mot de passe de {{name}}",
+      "newPassword": "Nouveau mot de passe",
+      "passwordPlaceholder": "Entrez le nouveau mot de passe",
+      "passwordHelp": "Minimum 6 caractères",
+      "confirmPassword": "Confirmer le mot de passe",
+      "confirmPlaceholder": "Confirmez le nouveau mot de passe",
       "cancel": "Annuler",
-      "allDatabase": "toute la base de données",
-      "collection": "la collection \"{{name}}\""
+      "saving": "Enregistrement...",
+      "confirm": "Réinitialiser"
     }
   },
-  "errors": {
-    "loadStats": "Erreur lors du chargement des statistiques de la base de données",
-    "loadOperations": "Erreur lors du chargement des opérations",
-    "backup": "Erreur lors de la sauvegarde",
-    "cleanup": "Erreur lors du nettoyage",
-    "reindex": "Erreur lors de la réindexation"
-  }
-,
-"equifaxMonitor": {
-  "header": { "title": "Moniteur Equifax" },
-  "form": {
-    "rut": "RUT",
-    "limit": "Limite",
-    "page": "Page",
-    "from": "De",
-    "to": "À",
-    "rutPlaceholder": "12.345.678-9",
-    "invalidRut": "RUT invalide"
-  },
-  "buttons": { "consult": "Consulter", "prev": "Précédent", "next": "Suivant" },
-  "pagination": { "summary": "Total : {{total}} · Page {{page}} sur {{pages}}" },
-  "table": {
-    "columns": {
-      "date": "Date",
-      "rut": "RUT",
-      "status": "Statut",
-      "code": "Code",
-      "timeMs": "Temps (ms)",
-      "endpoint": "Endpoint",
-      "cache": "Cache",
-      "download": "Télécharger",
-      "details": "Détails"
-    }
-  },
-  "status": { "ok": "OK", "error": "ERROR" },
-  "cache": { "cached": "cached", "miss": "miss", "info": "Informations de Cache" },
-  "details": { "payload": "Payload", "data": "Données", "normalized": "Données Normalisées", "error": "Erreur" },
-  "errors": {
-    "downloadJson": "Erreur lors du téléchargement du JSON",
-    "invalidRut": "Veuillez saisir un RUT valide",
-    "loadResponses": "Erreur lors du chargement des réponses Equifax"
-  },
-  "notifications": { "noRecentRecords": "Aucun enregistrement récent" },
-  "actions": { "downloadJson": "Télécharger le JSON" }
-},
-
-"sheriffMonitor": {
-  "header": { "title": "Moniteur Sheriff" },
-  "form": {
-    "rut": "RUT",
-    "limit": "Limite",
-    "page": "Page",
-    "from": "De",
-    "to": "À",
-    "rutPlaceholder": "12.345.678-9",
-    "invalidRut": "RUT invalide"
-  },
-  "buttons": { "consult": "Consulter", "prev": "Précédent", "next": "Suivant" },
-  "pagination": { "summary": "Total : {{total}} · Page {{page}} sur {{pages}}" },
-  "table": {
-    "columns": {
-      "rut": "RUT",
-      "status": "Statut",
-      "errorCalls": "Erreurs d'appels",
-      "download": "Télécharger",
-      "detail": "Détail",
-      "date": "Date"
+  "userModal": {
+    "titles": {
+      "add": "Ajouter un nouvel utilisateur",
+      "edit": "Modifier un utilisateur"
     },
-    "link": { "viewJson": "Voir JSON" }
-  },
-  "status": { "ok": "OK", "withErrors": "Avec erreurs" },
-  "errors": { "loadLogs": "Erreur lors du chargement des logs Sheriff" },
-  "actions": { "downloadJson": "Télécharger le JSON" }
-}
-}
+    "subtitles": {
+      "superuserHiddenNote": "Le rôle Superadmin n'est visible que par les administrateurs de la plateforme"
+    },
+    "forms": {
+      "name": {
+        "label": "Nom",
+        "placeholder": "Nom complet"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "nom@entreprise.cl"
+      },
+      "role": {
+        "label": "Rôle",
+        "rolesCountLabel": "{{count}} disponibles",
+        "options": {
+          "superuser": {
+            "label": "Superadmin",
+            "description": "Administrateur global de la plateforme Duxiter"
+          },
+          "tenantAdmin": {
+            "label": "Admin",
+            "description": "Gère les utilisateurs, les crédits et les paramètres de l'organisation"
+          },
+          "evaluator": {
+            "label": "Évaluateur",
+            "description": "Analyste · crée/modifie/supprime des évaluations et exécute la surveillance"
+          },
+          "auditor": {
+            "label": "Auditeur (Lecture seule)",
+            "description": "Vue en lecture seule · évaluations, entreprises, journaux, surveillance"
+          },
+          "writeOnly": {
+            "label": "Intégration API (Écriture seule)",
+            "description": "Robot / Bot · crée des évaluations et exécute la surveillance avec un accès en lecture limité"
+          },
+          "user": {
+            "label": "Utilisateur (Standard)",
+            "description": "Utilisateur standard · accès de base sans gestion"
+          }
+        }
+      },
+      "status": {
+        "label": "État",
+        "active": "Actif",
+        "inactive": "Inactif"
+      },
+      "password": {
+        "label": "Mot de passe",
+        "labelEditHelp": "(laisser vide pour conserver le mot de passe actuel)",
+        "placeholderCreate": "Au moins 6 caractères",
+        "placeholderEdit": "Laisser vide pour conserver le mot de passe actuel"
+      }
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "create": "Créer",
+      "update": "Enregistrer"
+    },
+    "toasts": {
+      "successCreate": "Utilisateur créé avec succès",
+      "successUpdate": "Utilisateur mis à jour avec succès",
+      "errorCreateGeneric": "Échec de la création de l'utilisateur",
+      "errorUpdateGeneric": "Échec de la mise à jour de l'utilisateur"
+    },
+    "errors": {
+      "passwordTooShort": "Le mot de passe doit comporter au moins 6 caractères",
+      "passwordTooShortEdit": "Le mot de passe doit comporter au moins 6 caractères (laisser vide pour conserver l'actuel)",
+      "emailAlreadyExists": "Un utilisateur avec cet e-mail existe déjà",
+      "invalidEmailFormat": "Le format de l'e-mail n'est pas valide",
+      "nameMin2Chars": "Le nom doit comporter au moins 2 caractères",
+      "passwordMin6Required": "Un mot de passe d'au moins 6 caractères est requis",
+      "noPermissionManage": "Vous n'avez pas les autorisations nécessaires pour gérer les utilisateurs",
+      "superuserAssignForbidden": "Seul un Superadmin peut attribuer le rôle Superadmin",
+      "superuserDemoteForbidden": "Seul un Superadmin peut modifier le rôle d'un autre Superadmin",
+      "crossOrgForbidden": "Vous ne pouvez pas modifier les utilisateurs d'organisations autres que la vôtre",
+      "userNotFound": "Utilisateur introuvable",
+      "permissionGeneric": "Autorisation refusée"
+    }
+  }
 }

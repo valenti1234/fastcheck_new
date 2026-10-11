@@ -17,7 +17,10 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 4030,
       proxy: {
-        '/api': 'http://localhost:4040',
+        '/api': {
+          target: 'http://localhost:8181',
+          changeOrigin: true,
+        },
       },
       watch: {
         ignored: ['**/node_modules/**', '**/.git/**', '**/dist/**', '**/build/**'],

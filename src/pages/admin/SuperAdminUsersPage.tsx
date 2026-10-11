@@ -189,9 +189,9 @@ const SuperAdminUsersPage: React.FC = () => {
   };
 
   const filteredUsers = users.filter(user =>
-    user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    user.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    user.tenant?.name.toLowerCase().includes(searchTerm.toLowerCase())
+    String(user.name || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+    String(user.email || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+    String(user.tenant?.name || '').toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   // Controllo autenticazione e permessi
@@ -306,7 +306,7 @@ const SuperAdminUsersPage: React.FC = () => {
                     />
                   </TableCell>
                   <TableCell>
-                    {new Date(user.createdAt).toLocaleDateString('it-IT')}
+                    {new Date(user.createdAt || Date.now()).toLocaleDateString('it-IT')}
                   </TableCell>
                   <TableCell>
                     <Box display="flex" gap={1}>

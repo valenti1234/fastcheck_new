@@ -281,22 +281,11 @@
     "next": "Siguiente",
     "delete": "Eliminar",
     "search": "Buscar",
-    "noResults": "No se encontraron resultados",
-    "page": "Página",
-    "of": "de",
-    "filteredBy": "Filtrado por",
-    "logout": "Cerrar Sesión",
-    "view": "Ver",
-    "notAvailable": "No disponible",
     "cancel": "Cancelar",
-    "close": "Cerrar",
-    "loading": "Cargando...",
-    "showingRange": "Mostrando {{from}} a {{to}} de {{total}} resultados",
-    "clear": "Limpiar",
-    "refresh": "Actualizar",
-    "optional": "Opcional",
     "create": "Crear",
-    "save": "Guardar"
+    "save": "Guardar",
+    "notAvailable": "No disponible",
+    "unknown": "Desconocido"
   },
   "consultas": {
     "title": "Consultas",
@@ -320,8 +309,7 @@
     "confirmDeleteTitle": "Confirmar eliminación",
     "confirmDeleteMessage": "¿Está seguro que desea eliminar esta consulta? Esta acción no se puede deshacer.",
     "deleting": "Eliminando..."
-  }
-  ,
+  },
   "antiunionCases": {
     "title": "Gestión de Casos Antisindicales",
     "uploadButton": "Cargar PDF",
@@ -524,9 +512,9 @@
       "ultimaEjecucion": "Última Ejecución",
       "proximaEjecucion": "Próxima Ejecución",
       "ejecuciones": "Ejecuciones",
-    "acciones": "Acciones",
-    "userNotes": "Nota"
-  },
+      "acciones": "Acciones",
+      "userNotes": "Nota"
+    },
     "empty": {
       "title": "No hay monitoreos configurados",
       "superuserDescription": "No se encontraron monitoreos en ningún tenant.",
@@ -695,17 +683,6 @@
       "rutUnavailable": "No se puede agregar a monitoreo: RUT no disponible",
       "addSuccess": "RUT agregado al monitoreo exitosamente"
     }
-  },
-  "common": {
-    "previous": "Anterior",
-    "next": "Siguiente",
-    "delete": "Eliminar",
-    "search": "Buscar",
-    "cancel": "Cancelar",
-    "create": "Crear",
-    "save": "Guardar",
-    "notAvailable": "No disponible",
-    "unknown": "Desconocido"
   },
   "environmentalSanctions": {
     "title": "Sanciones Medioambientales",
@@ -905,24 +882,24 @@
     "qr": {
       "scan": "Escanea para acceder al reporte"
     },
-      "listasPropias": {
-        "alertTitle": "Alerta: RUT presente en Listas Propias",
-        "altoImpactoTitle": "🔴 Lista Propia Alto Impacto",
-        "medioImpactoTitle": "🟡 Lista Propia Mediano Impacto",
-        "labels": {
-          "nombre": "Nombre",
-          "rut": "RUT",
-          "tipo": "Tipo",
-          "lista": "Lista",
-          "subLista": "Sub-Lista",
-          "fechaIncorporacion": "Fecha Incorporación",
-          "fechaRegistro": "Fecha Registro",
-          "ultimaActualizacion": "Última Actualización"
-        },
-        "viewDetails": "Ver detalles",
-        "noteTitle": "Nota:",
-        "noteMessage": "Este RUT ha sido identificado en las listas propias de la organización. Se recomienda revisar los detalles y tomar las medidas correspondientes según las políticas internas."
-      }
+    "listasPropias": {
+      "alertTitle": "Alerta: RUT presente en Listas Propias",
+      "altoImpactoTitle": "🔴 Lista Propia Alto Impacto",
+      "medioImpactoTitle": "🟡 Lista Propia Mediano Impacto",
+      "labels": {
+        "nombre": "Nombre",
+        "rut": "RUT",
+        "tipo": "Tipo",
+        "lista": "Lista",
+        "subLista": "Sub-Lista",
+        "fechaIncorporacion": "Fecha Incorporación",
+        "fechaRegistro": "Fecha Registro",
+        "ultimaActualizacion": "Última Actualización"
+      },
+      "viewDetails": "Ver detalles",
+      "noteTitle": "Nota:",
+      "noteMessage": "Este RUT ha sido identificado en las listas propias de la organización. Se recomienda revisar los detalles y tomar las medidas correspondientes según las políticas internas."
+    }
   },
   "auditOverview": {
     "title": "Auditoría al día de hoy",
@@ -972,29 +949,75 @@
       "contactInfo": "Información de Contacto"
     },
     "params": {
-      "openaiApiKey": { "description": "Clave API para OpenAI GPT" },
-      "sheriffApiToken": { "description": "Token de autenticación para Sheriff API" },
-      "sendgridApiKey": { "description": "Clave API para SendGrid (envío de emails)" },
-      "mongodbUri": { "description": "URI de conexión a MongoDB" },
-      "port": { "description": "Puerto del servidor" },
-      "rateLimitWindowMs": { "description": "Ventana temporal para limitación de velocidad (ms)" },
-      "rateLimitMaxRequests": { "description": "Número máximo de solicitudes por ventana" },
-      "apiUrl": { "description": "URL base de la API" },
-      "sheriffApiUrl": { "description": "URL de la API Sheriff" },
-      "siiUrl": { "description": "URL del servicio SII" },
-      "openaiModelSummary": { "description": "Modelo OpenAI para resúmenes" },
-      "openaiModelAnalysis": { "description": "Modelo OpenAI para análisis" },
-      "openaiTemperature": { "description": "Temperatura para OpenAI (0.0-1.0)" },
-      "openaiMaxTokens": { "description": "Número máximo de tokens para OpenAI" },
-      "riskTotalParams": { "description": "Número total de parámetros de riesgo" },
-      "riskCriticalPercentage": { "description": "Umbral porcentual para riesgo crítico" },
-      "riskHighPercentage": { "description": "Umbral porcentual para riesgo alto" },
-      "riskMediumPercentage": { "description": "Umbral porcentual para riesgo medio" },
-      "sendgridFromEmail": { "description": "Email remitente para SendGrid" },
-      "sendgridFromName": { "description": "Nombre remitente para SendGrid" },
-      "rabbitmqUrl": { "description": "URL de conexión a RabbitMQ" },
-      "rabbitmqQueue": { "description": "Nombre de la cola RabbitMQ" },
-      "supportEmail": { "description": "Email de soporte" }
+      "openaiApiKey": {
+        "description": "Clave API para OpenAI GPT"
+      },
+      "sheriffApiToken": {
+        "description": "Token de autenticación para Sheriff API"
+      },
+      "sendgridApiKey": {
+        "description": "Clave API para SendGrid (envío de emails)"
+      },
+      "mongodbUri": {
+        "description": "URI de conexión a MongoDB"
+      },
+      "port": {
+        "description": "Puerto del servidor"
+      },
+      "rateLimitWindowMs": {
+        "description": "Ventana temporal para limitación de velocidad (ms)"
+      },
+      "rateLimitMaxRequests": {
+        "description": "Número máximo de solicitudes por ventana"
+      },
+      "apiUrl": {
+        "description": "URL base de la API"
+      },
+      "sheriffApiUrl": {
+        "description": "URL de la API Sheriff"
+      },
+      "siiUrl": {
+        "description": "URL del servicio SII"
+      },
+      "openaiModelSummary": {
+        "description": "Modelo OpenAI para resúmenes"
+      },
+      "openaiModelAnalysis": {
+        "description": "Modelo OpenAI para análisis"
+      },
+      "openaiTemperature": {
+        "description": "Temperatura para OpenAI (0.0-1.0)"
+      },
+      "openaiMaxTokens": {
+        "description": "Número máximo de tokens para OpenAI"
+      },
+      "riskTotalParams": {
+        "description": "Número total de parámetros de riesgo"
+      },
+      "riskCriticalPercentage": {
+        "description": "Umbral porcentual para riesgo crítico"
+      },
+      "riskHighPercentage": {
+        "description": "Umbral porcentual para riesgo alto"
+      },
+      "riskMediumPercentage": {
+        "description": "Umbral porcentual para riesgo medio"
+      },
+      "sendgridFromEmail": {
+        "description": "Email remitente para SendGrid"
+      },
+      "sendgridFromName": {
+        "description": "Nombre remitente para SendGrid"
+      },
+      "rabbitmqUrl": {
+        "description": "URL de conexión a RabbitMQ"
+      },
+      "rabbitmqQueue": {
+        "description": "Nombre de la cola RabbitMQ"
+      },
+      "supportEmail": {
+        "description": "Email de soporte"
+      }
     }
   },
   "singleEvaluation": {
@@ -1656,7 +1679,6 @@
       "errorSendReport": "Error al enviar reporte"
     }
   },
-  
   "adminDashboard": {
     "noData": "No hay datos disponibles",
     "usage": {
@@ -1756,8 +1778,7 @@
         "distribution": "Distribución"
       }
     }
-  }
-  ,
+  },
   "evaluationSettings": {
     "title": "Configuración de Parámetros de Evaluación",
     "tabs": {
@@ -1802,8 +1823,7 @@
         "condition": "Condición"
       }
     }
-  }
-  ,
+  },
   "promptConfiguration": {
     "title": "Configuración de Prompts",
     "subtitle": "Gestiona los prompts utilizados por el sistema de IA para diferentes tipos de análisis",
@@ -1926,7 +1946,6 @@
       "never": "Nunca"
     }
   },
-  
   "databaseManagement": {
     "header": {
       "title": "Gestión de Base de Datos",
@@ -2019,9 +2038,10 @@
       "reindex": "Error durante la reindexación"
     }
   },
-  
   "equifaxMonitor": {
-    "header": { "title": "Monitor de Equifax" },
+    "header": {
+      "title": "Monitor de Equifax"
+    },
     "form": {
       "rut": "RUT",
       "limit": "Límite",
@@ -2031,8 +2051,14 @@
       "rutPlaceholder": "12.345.678-9",
       "invalidRut": "RUT inválido"
     },
-    "buttons": { "consult": "Consultar", "prev": "Anterior", "next": "Siguiente" },
-    "pagination": { "summary": "Total: {{total}} · Página {{page}} de {{pages}}" },
+    "buttons": {
+      "consult": "Consultar",
+      "prev": "Anterior",
+      "next": "Siguiente"
+    },
+    "pagination": {
+      "summary": "Total: {{total}} · Página {{page}} de {{pages}}"
+    },
     "table": {
       "columns": {
         "date": "Fecha",
@@ -2046,20 +2072,37 @@
         "details": "Detalles"
       }
     },
-    "status": { "ok": "OK", "error": "ERROR" },
-    "cache": { "cached": "cached", "miss": "miss", "info": "Información de Cache" },
-    "details": { "payload": "Payload", "data": "Datos", "normalized": "Datos Normalizados", "error": "Error" },
+    "status": {
+      "ok": "OK",
+      "error": "ERROR"
+    },
+    "cache": {
+      "cached": "cached",
+      "miss": "miss",
+      "info": "Información de Cache"
+    },
+    "details": {
+      "payload": "Payload",
+      "data": "Datos",
+      "normalized": "Datos Normalizados",
+      "error": "Error"
+    },
     "errors": {
       "downloadJson": "Error al descargar JSON",
       "invalidRut": "Ingrese un RUT válido",
       "loadResponses": "Error al cargar respuestas de Equifax"
     },
-    "notifications": { "noRecentRecords": "Sin registros recientes" },
-    "actions": { "downloadJson": "Descargar JSON" }
+    "notifications": {
+      "noRecentRecords": "Sin registros recientes"
+    },
+    "actions": {
+      "downloadJson": "Descargar JSON"
+    }
   },
-  
   "sheriffMonitor": {
-    "header": { "title": "Monitor de Sheriff" },
+    "header": {
+      "title": "Monitor de Sheriff"
+    },
     "form": {
       "rut": "RUT",
       "limit": "Límite",
@@ -2069,8 +2112,14 @@
       "rutPlaceholder": "12.345.678-9",
       "invalidRut": "RUT inválido"
     },
-    "buttons": { "consult": "Consultar", "prev": "Anterior", "next": "Siguiente" },
-    "pagination": { "summary": "Total: {{total}} · Página {{page}} de {{pages}}" },
+    "buttons": {
+      "consult": "Consultar",
+      "prev": "Anterior",
+      "next": "Siguiente"
+    },
+    "pagination": {
+      "summary": "Total: {{total}} · Página {{page}} de {{pages}}"
+    },
     "table": {
       "columns": {
         "rut": "RUT",
@@ -2080,10 +2129,169 @@
         "detail": "Detalle",
         "date": "Fecha"
       },
-      "link": { "viewJson": "Ver JSON" }
+      "link": {
+        "viewJson": "Ver JSON"
+      }
     },
-    "status": { "ok": "OK", "withErrors": "Con errores" },
-    "errors": { "loadLogs": "Error al cargar logs de Sheriff" },
-    "actions": { "downloadJson": "Descargar JSON" }
+    "status": {
+      "ok": "OK",
+      "withErrors": "Con errores"
+    },
+    "errors": {
+      "loadLogs": "Error al cargar logs de Sheriff"
+    },
+    "actions": {
+      "downloadJson": "Descargar JSON"
+    }
+  },
+  "tenantUsers": {
+    "title": "Usuarios",
+    "subtitle": "Gestiona los usuarios de tu organización",
+    "subtitleWithCount": "Gestiona los usuarios de tu organización ({{count}})",
+    "addUserButton": "Añadir usuario",
+    "search": {
+      "placeholder": "Buscar usuarios..."
+    },
+    "filters": {
+      "allRoles": "Todos los roles",
+      "allStatus": "Todos los estados",
+      "roleOptions": {
+        "superuser": "Superadmin",
+        "tenantAdmin": "Admin",
+        "auditor": "Auditor",
+        "evaluator": "Evaluador",
+        "writeOnly": "Integración API",
+        "user": "Usuario"
+      },
+      "statusOptions": {
+        "active": "Activo",
+        "inactive": "Inactivo"
+      }
+    },
+    "table": {
+      "headers": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "role": "Rol",
+        "status": "Estado",
+        "actions": "Acciones"
+      },
+      "loading": "Cargando usuarios…",
+      "empty": "No se han encontrado usuarios para esta organización."
+    },
+    "actions": {
+      "edit": "Editar",
+      "activate": "Activar",
+      "deactivate": "Desactivar",
+      "resetPassword": "Restablecer contraseña"
+    },
+    "errors": {
+      "loadUsers": "Error al cargar los usuarios",
+      "toggleStatus": "Error al actualizar el estado del usuario",
+      "superuserRequired": "Esta acción está disponible solo para los Superadministradores de la plataforma. Contacta con tu administrador.",
+      "passwordMin6": "La contraseña debe tener al menos 6 caracteres",
+      "passwordsDoNotMatch": "Las contraseñas no coinciden",
+      "resetPasswordFailed": "Error al restablecer la contraseña"
+    },
+    "toasts": {
+      "statusUpdated": "Estado del usuario actualizado correctamente",
+      "passwordResetSuccess": "Contraseña restablecida correctamente"
+    },
+    "resetModal": {
+      "title": "Restablecer contraseña de {{name}}",
+      "newPassword": "Nueva contraseña",
+      "passwordPlaceholder": "Introduce la nueva contraseña",
+      "passwordHelp": "Mínimo 6 caracteres",
+      "confirmPassword": "Confirmar contraseña",
+      "confirmPlaceholder": "Confirma la nueva contraseña",
+      "cancel": "Cancelar",
+      "saving": "Guardando...",
+      "confirm": "Restablecer"
+    }
+  },
+  "userModal": {
+    "titles": {
+      "add": "Añadir nuevo usuario",
+      "edit": "Editar usuario"
+    },
+    "subtitles": {
+      "superuserHiddenNote": "El rol Superadmin solo es visible para los administradores de la plataforma"
+    },
+    "forms": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Nombre completo"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "nombre@empresa.cl"
+      },
+      "role": {
+        "label": "Rol",
+        "rolesCountLabel": "{{count}} disponibles",
+        "options": {
+          "superuser": {
+            "label": "Superadmin",
+            "description": "Administrador global de la plataforma Duxiter"
+          },
+          "tenantAdmin": {
+            "label": "Admin",
+            "description": "Gestiona usuarios, créditos y ajustes de la organización"
+          },
+          "evaluator": {
+            "label": "Evaluador",
+            "description": "Analista · crea/edita/elimina evaluaciones y ejecuta monitorizaciones"
+          },
+          "auditor": {
+            "label": "Auditor (Solo lectura)",
+            "description": "Vista de solo lectura · evaluaciones, empresas, logs, monitorizaciones"
+          },
+          "writeOnly": {
+            "label": "Integración API (Solo escritura)",
+            "description": "Robot / Bot · crea evaluaciones y ejecuta monitorizaciones con lectura limitada"
+          },
+          "user": {
+            "label": "Usuario (Básico)",
+            "description": "Usuario estándar · acceso básico sin gestión"
+          }
+        }
+      },
+      "status": {
+        "label": "Estado",
+        "active": "Activo",
+        "inactive": "Inactivo"
+      },
+      "password": {
+        "label": "Contraseña",
+        "labelEditHelp": "(dejar vacío para mantener la actual)",
+        "placeholderCreate": "Mínimo 6 caracteres",
+        "placeholderEdit": "Dejar vacío para mantener la contraseña actual"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "create": "Crear",
+      "update": "Guardar"
+    },
+    "toasts": {
+      "successCreate": "Usuario creado correctamente",
+      "successUpdate": "Usuario actualizado correctamente",
+      "errorCreateGeneric": "Error al crear el usuario",
+      "errorUpdateGeneric": "Error al actualizar el usuario"
+    },
+    "errors": {
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres",
+      "passwordTooShortEdit": "La contraseña debe tener al menos 6 caracteres (dejar vacía para conservar la actual)",
+      "emailAlreadyExists": "Ya existe un usuario con este correo electrónico",
+      "invalidEmailFormat": "El formato del correo electrónico no es válido",
+      "nameMin2Chars": "El nombre debe tener al menos 2 caracteres",
+      "passwordMin6Required": "Se requiere una contraseña de al menos 6 caracteres",
+      "noPermissionManage": "No dispones de permisos para gestionar los usuarios",
+      "superuserAssignForbidden": "Solo un Superadmin puede asignar el rol Superadmin",
+      "superuserDemoteForbidden": "Solo un Superadmin puede modificar el rol de otro Superadmin",
+      "crossOrgForbidden": "No puedes modificar usuarios de organizaciones distintas a la tuya",
+      "userNotFound": "Usuario no encontrado",
+      "permissionGeneric": "Permiso denegado"
+    }
   }
 }

@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTenant } from '../../contexts/TenantContext';
 import ThemeToggle from '../common/ThemeToggle';
+import DatabaseBadge from '../common/DatabaseBadge';
+import ProfilePopover from '../ui/ProfilePopover';
 import {
   BarChart,
   FileText,
@@ -26,7 +28,10 @@ import {
   CreditCard,
   Server,
   AlertTriangle,
-  Database
+  Database,
+  Shield,
+  ListChecks,
+  Clock
 } from 'lucide-react';
 import duxiterLogo from '../../assets/duxiter_logo.png';
 import packageJson from '../../../package.json';
@@ -53,9 +58,13 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   const { tenant } = useTenant();
   const { t, i18n } = useTranslation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const [vmIpSuffix, setVmIpSuffix] = useState<string | null>(null);
+
+  const closeSidebar = () => setSidebarOpen(false);
+  const toggleProfile = () => setProfileOpen((v) => !v);
 
   // Force language from localStorage on mount to ensure immediate consistency
   useEffect(() => {
@@ -104,17 +113,14 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     }
   };
 
-  const closeSidebar = () => {
-    setSidebarOpen(false);
-  };
-
   // Define navigation links based on user role
   const navigationLinks = [
-    { name: t('nav.dashboard'), href: '/dashboard', icon: LayoutDashboard, roles: ['tenant_admin', 'evaluator'] },
-    { name: t('nav.singleEvaluation'), href: '/evaluations/single', icon: CheckSquare, roles: ['tenant_admin', 'evaluator'] },
-    { name: t('nav.bulkEvaluation'), href: '/evaluations/bulk', icon: Upload, roles: ['tenant_admin', 'evaluator'] },
-    { name: t('nav.consultas'), href: '/consultas', icon: FileText, roles: ['tenant_admin', 'evaluator'] },
-    { name: t('nav.historicalConsultas'), href: '/consultas/historical', icon: FileText, roles: ['tenant_admin', 'evaluator'] },
+    { name: t('nav.dashboard'), href: '/dashboard', icon: LayoutDashboard, roles: ['superuser', 'tenant_admin', 'evaluator'] },
+    { name: t('nav.singleEvaluation'), href: '/evaluations/single', icon: CheckSquare, roles: ['superuser', 'tenant_admin', 'evaluator'] },
+    { name: t('nav.bulkEvaluation'), href: '/evaluations/bulk', icon: Upload, roles: ['superuser', 'tenant_admin', 'evaluator'] },
+    { name: t('nav.consultas'), href: '/consultas', icon: FileText, roles: ['superuser', 'tenant_admin', 'evaluator'] },
+    { name: t('nav.historicalConsultas'), href: '/consultas/historical', icon: FileText, roles: ['superuser', 'tenant_admin', 'evaluator'] },
+    { name: '📜 Timeline Tercero', href: '/timeline', icon: Clock, roles: ['superuser', 'tenant_admin', 'evaluator', 'read_only'] },
     /* { name: t('nav.alerts'), href: '/alerting', icon: AlertTriangle, roles: ['tenant_admin', 'evaluator'] },
      { name: t('nav.monitoring'), href: '/monitoring', icon: Monitor, roles: ['tenant_admin', 'evaluator'] },*/
     { name: t('nav.users'), href: '/tenant/users', icon: Users, roles: ['tenant_admin'] },
@@ -130,6 +136,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     { name: t('nav.ley20393'), href: '/admin/ley20393', icon: FileText, roles: ['superuser'] },
     { name: t('nav.tenants'), href: '/admin/tenants', icon: Building, roles: ['superuser'] },
     { name: t('nav.adminUsers'), href: '/admin/users', icon: Users, roles: ['superuser'] },
+    { name: t('nav.authzProfiles', { defaultValue: 'Perfiles Autorización' }), href: '/admin/authz/profiles', icon: Shield, roles: ['superuser'] },
     { name: t('nav.billing'), href: '/admin/billing', icon: CreditCard, roles: ['superuser'] },
     { name: t('nav.monitoringStatus'), href: '/admin/monitoring', icon: Activity, roles: ['superuser'] },
     { name: t('nav.envConfiguration'), href: '/admin/env-configuration', icon: Server, roles: ['superuser'] },
@@ -142,11 +149,65 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     { name: "Deep Check", href: 'https://www.pro2win.cl/', icon: ExternalLink, roles: ['superuser', 'tenant_admin', 'evaluator'] },
   ];
 
-  
-  // Filter navigation links based on user role
-  const filteredLinks = navigationLinks.filter(link =>
-    user && link.roles.includes(user.role)
-  );
+  // Filter navigation links based on user role + fallback ruoli v2 + legacy
+  const userAny = user as any;
+  const userRoleNorm: string = (user?.role || '').toString();
+  const userRolesArray: string[] = Array.isArray(userAny?.roles) ? (userAny.roles as string[]).map(String) : [];
+  const userLegacyRole: string = (userAny?.legacy_role || '').toString();
+
+  const _matchRole = (link: { roles: string[] }) => {
+    // Safety: se siamo autenticati ma user temporaneamente null (loading) → match solo ruoli 'any' o 'superuser' se flag
+    if (!user) return link.roles.includes('any');
+    for (const r of link.roles) {
+      if (r === 'any') return true;
+      if (userRoleNorm === r) return true;
+      if (userLegacyRole === r) return true;
+      if (userRolesArray.includes(r)) return true;
+      if (r === 'superuser' && (userRolesArray.includes('SUPER_WILDCARD') || userRoleNorm === 'SUPER_WILDCARD')) return true;
+      if (r === 'tenant_admin' && (
+        userRolesArray.includes('tenant.admin') || userRolesArray.includes('tenant.read_only') ||
+        userRoleNorm === 'tenant.admin' || userRoleNorm === 'read_only' || userRoleNorm === 'tenant.read_only'
+      )) return true;
+      if (r === 'evaluator' && (
+        userRolesArray.includes('tenant.evaluator') || userRoleNorm === 'tenant.evaluator' ||
+        userRolesArray.includes('tenant.read_only') || userRoleNorm === 'read_only' || userRoleNorm === 'tenant.read_only'
+      )) return true;
+    }
+    return false;
+  };
+
+  let filteredLinks = navigationLinks.filter(link => _matchRole(link));
+
+  // 🔴 SAFETY NET DRAMMATICAMENTE PIÙ ROBUSTO — MAI SIDEBAR VUOTA, QUALSIASI CONDIZIONE
+  // Triggera se: (a) 0 links filtrati AND (token ESISTE OPPURE user ESISTE OPPURE isAuthenticated loading)
+  const _abbiamoSessione = (() => {
+    if (user) return true;
+    try { return !!localStorage.getItem('token'); } catch { return false; }
+  })();
+  if (filteredLinks.length === 0 && _abbiamoSessione) {
+    const isSuper =
+      userRoleNorm === 'superuser' ||
+      (Array.isArray(userAny?.roles) && (userAny.roles as string[]).includes('SUPER_WILDCARD'));
+
+    filteredLinks = [
+      { name: t('nav.dashboard'), href: '/dashboard', icon: LayoutDashboard, roles: ['any'] },
+      { name: t('nav.singleEvaluation'), href: '/evaluations/single', icon: CheckSquare, roles: ['any'] },
+      { name: t('nav.bulkEvaluation'), href: '/evaluations/bulk', icon: ListChecks, roles: ['any'] },
+      { name: t('nav.consultas'), href: '/consultas', icon: FileText, roles: ['any'] },
+      { name: t('nav.historicalConsultas'), href: '/consultas/historical', icon: FileText, roles: ['any'] },
+      { name: '📜 Timeline Tercero', href: '/timeline', icon: Clock, roles: ['any'] },
+      ...(isSuper ? [
+        { name: t('nav.adminPanel'), href: '/admin', icon: BarChart2, roles: ['any'] },
+        { name: t('nav.tenants'), href: '/admin/tenants', icon: Building, roles: ['any'] },
+        { name: t('nav.adminUsers'), href: '/admin/users', icon: Users, roles: ['any'] },
+        { name: t('nav.adminResults'), href: '/admin/results', icon: Database, roles: ['any'] },
+      ] : [
+        { name: t('nav.tenantUsers'), href: '/tenant/users', icon: Users, roles: ['any'] },
+      ]),
+      { name: t('nav.settings'), href: '/tenant/settings', icon: Settings, roles: ['any'] },
+      { name: t('app.help'), href: '/help', icon: HelpCircle, roles: ['any'] },
+    ];
+  }
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -198,18 +259,27 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
 
           <div className="flex-shrink-0 flex border-t border-gray-200 dark:border-gray-700 p-4">
             <div className="flex-shrink-0 w-full group block">
-              <div className="flex items-center">
+              <button
+                type="button"
+                onClick={toggleProfile}
+                className="w-full flex items-center text-left rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/60 -mx-1 px-1 py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-300 dark:focus:ring-primary-600"
+                aria-label="Abrir perfil de usuario"
+              >
                 <div>
                   <div className="h-9 w-9 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center text-primary-700 dark:text-white text-sm font-medium">
                     {user?.name?.charAt(0) || 'U'}
                   </div>
                 </div>
-                <div className="ml-3">
-                  <p className="text-base font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-white">{user?.name}</p>
-                  <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">{tenant?.name}</p>
+                <div className="ml-3 min-w-0 flex-1">
+                  <p className="text-base font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-white truncate">{user?.name}</p>
+                  <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300 truncate">{tenant?.name}</p>
                 </div>
-              </div>
+              </button>
             </div>
+          </div>
+
+          <div className="px-4 pb-3 pt-0 flex-shrink-0">
+            <DatabaseBadge />
           </div>
 
           <div className="flex-shrink-0 flex flex-col border-t border-gray-200 dark:border-gray-700 p-4 space-y-3">
@@ -234,7 +304,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       </div>
 
       {/* Static sidebar for desktop */}
-      <div className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 min-h-0">
+      <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 min-h-0">
         <div className="flex flex-col flex-grow h-full min-h-0 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 shadow-sm">
           <div className="flex items-center h-16 flex-shrink-0 px-4 border-b border-gray-200 dark:border-gray-700">
             <img src={duxiterLogo} alt="Duxiter Logo" className="h-8 w-auto" />
@@ -269,18 +339,27 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
 
           <div className="flex-shrink-0 flex border-t border-gray-200 dark:border-gray-700 p-4">
             <div className="flex-shrink-0 w-full group block">
-              <div className="flex items-center">
+              <button
+                type="button"
+                onClick={toggleProfile}
+                className="w-full flex items-center text-left rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/60 -mx-1 px-1 py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-300 dark:focus:ring-primary-600"
+                aria-label="Abrir perfil de usuario"
+              >
                 <div>
                   <div className="h-9 w-9 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center text-primary-700 dark:text-white text-sm font-medium">
                     {user?.name?.charAt(0) || 'U'}
                   </div>
                 </div>
-                <div className="ml-3">
-                  <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-white">{user?.name}</p>
-                  <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">{tenant?.name}</p>
+                <div className="ml-3 min-w-0 flex-1">
+                  <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-white truncate">{user?.name}</p>
+                  <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300 truncate">{tenant?.name}</p>
                 </div>
-              </div>
+              </button>
             </div>
+          </div>
+
+          <div className="px-4 pb-3 pt-0 flex-shrink-0">
+            <DatabaseBadge />
           </div>
 
           <div className="flex-shrink-0 flex flex-col border-t border-gray-200 dark:border-gray-700 p-4 space-y-3 sticky bottom-0 bg-white dark:bg-gray-800">
@@ -305,8 +384,8 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       </div>
 
       {/* Mobile header */}
-      <div className="lg:pl-64 flex flex-col flex-1">
-        <div className="sticky top-0 z-10 lg:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-gray-50 dark:bg-gray-900 shadow-sm">
+      <div className="md:pl-64 flex flex-col flex-1">
+        <div className="sticky top-0 z-10 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-gray-50 dark:bg-gray-900 shadow-sm">
           <button
             type="button"
             className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 dark:text-gray-400 dark:hover:text-white"
@@ -323,6 +402,8 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
           </div>
         </main>
       </div>
+
+      <ProfilePopover open={profileOpen} onClose={() => setProfileOpen(false)} />
     </div>
   );
 };

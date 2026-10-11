@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getResults, deleteResult, apiClient } from '../services/api';
 import { IResult as IResultBackend } from '../../server/src/models/Result';
 import { toast } from 'react-hot-toast';
@@ -17,6 +17,7 @@ interface IResult extends IResultBackend {
 }
 
 const Consultas: React.FC = () => {
+  const navigate = useNavigate();
   const [loadingExportInfo, setLoadingExportInfo] = useState(false);
   const [allResults, setAllResults] = useState<IResult[]>([]);
   const [displayedResults, setDisplayedResults] = useState<IResult[]>([]);
@@ -1094,15 +1095,25 @@ const Consultas: React.FC = () => {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex space-x-4">
-                          <Link to={`/consultas/${result._id}`} className="flex items-center gap-1 text-primary-500 hover:text-primary-300 dark:text-primary-400 dark:hover:text-primary-300">
-                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <div className="flex items-center gap-3">
+                          <Link to={`/consultas/${result._id}`} className="flex items-center gap-1 text-primary-500 hover:text-primary-300 dark:text-primary-400 dark:hover:text-primary-300" title="Ver detalle">
+                            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
                           </Link>
-                          <button onClick={() => handleDeleteClick(result._id)} className="text-red-500 hover:text-red-300">
-                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <button
+                            onClick={() => navigate(`/timeline/${result._id}`)}
+                            className="flex items-center gap-1 text-purple-600 hover:text-purple-400 dark:text-purple-400 dark:hover:text-purple-300"
+                            title="📜 Historial del Tercero (Timeline 4 fuentes merged · Bloq2.6 HU17)"
+                          >
+                            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span className="text-xs font-semibold hidden sm:inline">Historial</span>
+                          </button>
+                          <button onClick={() => handleDeleteClick(result._id)} className="text-red-500 hover:text-red-300" title="Eliminar">
+                            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                             </svg>
                           </button>

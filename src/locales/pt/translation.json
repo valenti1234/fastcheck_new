@@ -280,23 +280,12 @@
     "previous": "Anterior",
     "next": "Próximo",
     "delete": "Excluir",
-    "search": "Pesquisar",
-    "noResults": "Nenhum resultado encontrado",
-    "page": "Página",
-    "of": "de",
-    "filteredBy": "Filtrado por",
-    "logout": "Sair",
-    "view": "Ver",
-    "notAvailable": "Não disponível",
+    "search": "Buscar",
     "cancel": "Cancelar",
-    "close": "Fechar",
-    "loading": "Carregando...",
-    "showingRange": "Mostrando {{from}} a {{to}} de {{total}} resultados",
-    "clear": "Limpar",
-    "refresh": "Atualizar",
-    "optional": "Opcional",
     "create": "Criar",
-    "save": "Salvar"
+    "save": "Salvar",
+    "notAvailable": "Não disponível",
+    "unknown": "Desconhecido"
   },
   "consultas": {
     "title": "Consultas",
@@ -320,8 +309,7 @@
     "confirmDeleteTitle": "Confirmar exclusão",
     "confirmDeleteMessage": "Tem certeza que deseja excluir esta consulta? Esta ação não pode ser desfeita.",
     "deleting": "Excluindo..."
-  }
-  ,
+  },
   "antiunionCases": {
     "title": "Gestão de Casos Antissindicais",
     "uploadButton": "Carregar PDF",
@@ -524,9 +512,9 @@
       "ultimaEjecucion": "Última Execução",
       "proximaEjecucion": "Próxima Execução",
       "ejecuciones": "Execuções",
-    "acciones": "Ações",
-    "userNotes": "Nota"
-  },
+      "acciones": "Ações",
+      "userNotes": "Nota"
+    },
     "empty": {
       "title": "Nenhum monitoramento configurado",
       "superuserDescription": "Nenhum monitoramento encontrado em nenhum tenant.",
@@ -669,17 +657,6 @@
       "rutUnavailable": "Não é possível adicionar ao monitoramento: RUT indisponível",
       "addSuccess": "RUT adicionado ao monitoramento com sucesso"
     }
-  },
-  "common": {
-    "previous": "Anterior",
-    "next": "Próximo",
-    "delete": "Excluir",
-    "search": "Buscar",
-    "cancel": "Cancelar",
-    "create": "Criar",
-    "save": "Salvar",
-    "notAvailable": "Não disponível",
-    "unknown": "Desconhecido"
   },
   "environmentalSanctions": {
     "title": "Sanções Ambientais",
@@ -832,66 +809,25 @@
     "title": "Fast Check Consolidado"
   },
   "fastCheck": {
-    "title": "Fast Check",
-    "rutPlaceholder": "Insira RUT",
-    "noData": "Nenhum dado encontrado.",
-    "progress": {
-      "start": "Avaliação iniciada",
-      "lookup": "Solicitando busca de RUT",
-      "fetch": "Carregando resultados",
-      "listas": "Verificando listas personalizadas",
-      "ready": "Pronto",
-      "inProgress": "Avaliação em andamento…"
-    },
     "listasPropias": {
       "alertTitle": "Alerta: RUT presente em Listas Próprias",
       "altoImpactoTitle": "🔴 Lista Própria - Alto Impacto",
       "medioImpactoTitle": "🟡 Lista Própria - Médio Impacto",
       "labels": {
         "nombre": "Nome",
-        "rut": "RUT",
         "tipo": "Tipo",
         "lista": "Lista",
-        "subLista": "Sub-lista",
-        "fechaIncorporacion": "Data de Incorporação",
-        "fechaRegistro": "Data de Registro",
-        "ultimaActualizacion": "Última Atualização"
+        "subLista": "Sub-Lista",
+        "fechaIncorporacion": "Data de Incorporação"
       },
-      "viewDetails": "Ver detalhes",
       "noteTitle": "Nota:",
-      "noteMessage": "Este RUT foi identificado nas listas próprias da organização. Revise os detalhes e tome as medidas apropriadas conforme as políticas internas."
-    },
-    "actions": {
-      "refresh": "Refazer avaliação",
-      "exportPdf": "Exportar PDF",
-      "exportJson": "Exportar JSON"
-    },
-    "exportPdf": {
-      "generating": "Gerando..."
-    },
-    "export": {
-      "noData": "Não há dados para exportar",
-      "success": "Dados exportados com sucesso",
-      "error": "Erro ao exportar os dados"
+      "noteMessage": "Este RUT foi identificado nas listas próprias da organização. Recomenda-se revisar os detalhes e tomar as medidas apropriadas conforme as políticas internas."
     },
     "findings": {
-      "title": "Principais Achados",
-      "noSummary": "Nenhum resumo disponível"
-    },
-    "notes": {
-      "title": "Notas do Usuário",
-      "none": "Não há notas para esta empresa",
-      "addNote": "Adicionar Nota",
-      "lastUpdated": "Última atualização:"
-    },
-    "pdf": {
-      "success": "PDF gerado com sucesso",
-      "error": "Erro ao gerar o PDF. Por favor, tente novamente.",
-      "pageXofY": "Página {{i}} de {{total}}",
-      "generatedOn": "Gerado em {{date}}"
-    },
-    "qr": {
-      "scan": "Escaneie para acessar o relatório"
+      "pepChileDetectedInPartners": "PEP Chile detectado entre os sócios",
+      "familiaresPepDetectedInPartners": "Familiares PEP detectados entre os sócios",
+      "rutInAltoImpacto": "RUT na Lista Própria de Alto Impacto ({{count}})",
+      "rutInMedianoImpacto": "RUT na Lista Própria de Médio Impacto ({{count}})"
     }
   },
   "auditOverview": {
@@ -907,7 +843,111 @@
   },
   "envConfiguration": {
     "noteTitle": "Nota Importante",
-    "noteMessage": "As alterações nos parâmetros de configuração exigirão reiniciar o servidor para serem aplicadas. Os parâmetros marcados com * são obrigatórios para o correto funcionamento do sistema."
+    "noteMessage": "Alterações nos parâmetros de configuração exigirão reiniciar o servidor para terem efeito. Parâmetros marcados com * são obrigatórios para o funcionamento correto do sistema.",
+    "header": {
+      "title": "Configuração de Parâmetros do Servidor",
+      "subtitle": "Gerencie os parâmetros de configuração do arquivo .env do servidor"
+    },
+    "loading": "Carregando configuração...",
+    "buttons": {
+      "reset": "Restabelecer",
+      "save": "Salvar Alterações",
+      "saving": "Salvando..."
+    },
+    "changes": {
+      "unsaved": "Há alterações não salvas"
+    },
+    "toast": {
+      "saveSuccess": "Configuração salva com sucesso",
+      "resetSuccess": "Configuração restabelecida",
+      "saveError": "Erro ao salvar a configuração"
+    },
+    "errors": {
+      "loadConfig": "Erro ao carregar a configuração",
+      "saveConfig": "Erro ao salvar a configuração"
+    },
+    "categories": {
+      "apiKeys": "Chaves API",
+      "database": "Banco de Dados",
+      "server": "Servidor",
+      "apiUrls": "URLs de API",
+      "openaiConfig": "Configuração OpenAI",
+      "riskCalculation": "Cálculo de Risco",
+      "sendgridConfig": "Configuração SendGrid",
+      "rabbitmqConfig": "Configuração RabbitMQ",
+      "contactInfo": "Informações de Contato"
+    },
+    "params": {
+      "openaiApiKey": {
+        "description": "Chave API para OpenAI GPT"
+      },
+      "sheriffApiToken": {
+        "description": "Token de autenticação para Sheriff API"
+      },
+      "sendgridApiKey": {
+        "description": "Chave API para SendGrid (envio de emails)"
+      },
+      "mongodbUri": {
+        "description": "URI de conexão com MongoDB"
+      },
+      "port": {
+        "description": "Porta do servidor"
+      },
+      "rateLimitWindowMs": {
+        "description": "Janela de tempo para limitação de taxa (ms)"
+      },
+      "rateLimitMaxRequests": {
+        "description": "Número máximo de solicitações por janela"
+      },
+      "apiUrl": {
+        "description": "URL base da API"
+      },
+      "sheriffApiUrl": {
+        "description": "URL da API Sheriff"
+      },
+      "siiUrl": {
+        "description": "URL do serviço SII"
+      },
+      "openaiModelSummary": {
+        "description": "Modelo OpenAI para resumos"
+      },
+      "openaiModelAnalysis": {
+        "description": "Modelo OpenAI para análises"
+      },
+      "openaiTemperature": {
+        "description": "Temperatura para OpenAI (0.0-1.0)"
+      },
+      "openaiMaxTokens": {
+        "description": "Número máximo de tokens para OpenAI"
+      },
+      "riskTotalParams": {
+        "description": "Número total de parâmetros de risco"
+      },
+      "riskCriticalPercentage": {
+        "description": "Percentual limite para risco crítico"
+      },
+      "riskHighPercentage": {
+        "description": "Percentual limite para risco alto"
+      },
+      "riskMediumPercentage": {
+        "description": "Percentual limite para risco médio"
+      },
+      "sendgridFromEmail": {
+        "description": "Email remetente para SendGrid"
+      },
+      "sendgridFromName": {
+        "description": "Nome remetente para SendGrid"
+      },
+      "rabbitmqUrl": {
+        "description": "URL de conexão com RabbitMQ"
+      },
+      "rabbitmqQueue": {
+        "description": "Nome da fila RabbitMQ"
+      },
+      "supportEmail": {
+        "description": "Email de suporte"
+      }
+    }
   },
   "singleEvaluation": {
     "title": "Avaliação Individual",
@@ -953,8 +993,7 @@
       "bulkPrefix": "Para avaliar múltiplos fornecedores, utilize a opção de",
       "bulkLinkText": "Avaliação em Massa"
     }
-  }
-  ,
+  },
   "helpPage": {
     "title": "Como Usar o DuXiter",
     "subtitle": {
@@ -1066,8 +1105,7 @@
         }
       }
     }
-  }
-  ,
+  },
   "bulkEvaluation": {
     "header": {
       "label": "Relatório",
@@ -1570,29 +1608,6 @@
       "update": "Atualizar"
     }
   },
-  "fastCheck": {
-    "listasPropias": {
-      "alertTitle": "Alerta: RUT presente em Listas Próprias",
-      "altoImpactoTitle": "🔴 Lista Própria - Alto Impacto",
-      "medioImpactoTitle": "🟡 Lista Própria - Médio Impacto",
-      "labels": {
-        "nombre": "Nome",
-        "tipo": "Tipo",
-        "lista": "Lista",
-        "subLista": "Sub-Lista",
-        "fechaIncorporacion": "Data de Incorporação"
-      },
-      "noteTitle": "Nota:",
-      "noteMessage": "Este RUT foi identificado nas listas próprias da organização. Recomenda-se revisar os detalhes e tomar as medidas apropriadas conforme as políticas internas."
-    },
-    "findings": {
-      "pepChileDetectedInPartners": "PEP Chile detectado entre os sócios",
-      "familiaresPepDetectedInPartners": "Familiares PEP detectados entre os sócios",
-      "rutInAltoImpacto": "RUT na Lista Própria de Alto Impacto ({{count}})",
-      "rutInMedianoImpacto": "RUT na Lista Própria de Médio Impacto ({{count}})"
-    }
-  }
-  ,
   "adminDashboard": {
     "noData": "Não há dados disponíveis",
     "usage": {
@@ -1692,8 +1707,7 @@
         "distribution": "Distribuição"
       }
     }
-  }
-  ,
+  },
   "evaluationSettings": {
     "title": "Configuração de Parâmetros de Avaliação",
     "tabs": {
@@ -1737,69 +1751,6 @@
         "parameterValue": "Valor do Parâmetro",
         "condition": "Condição"
       }
-    }
-  }
-  ,
-  "envConfiguration": {
-    "noteTitle": "Nota Importante",
-    "noteMessage": "Alterações nos parâmetros de configuração exigirão reiniciar o servidor para terem efeito. Parâmetros marcados com * são obrigatórios para o funcionamento correto do sistema.",
-    "header": {
-      "title": "Configuração de Parâmetros do Servidor",
-      "subtitle": "Gerencie os parâmetros de configuração do arquivo .env do servidor"
-    },
-    "loading": "Carregando configuração...",
-    "buttons": {
-      "reset": "Restabelecer",
-      "save": "Salvar Alterações",
-      "saving": "Salvando..."
-    },
-    "changes": {
-      "unsaved": "Há alterações não salvas"
-    },
-    "toast": {
-      "saveSuccess": "Configuração salva com sucesso",
-      "resetSuccess": "Configuração restabelecida",
-      "saveError": "Erro ao salvar a configuração"
-    },
-    "errors": {
-      "loadConfig": "Erro ao carregar a configuração",
-      "saveConfig": "Erro ao salvar a configuração"
-    },
-    "categories": {
-      "apiKeys": "Chaves API",
-      "database": "Banco de Dados",
-      "server": "Servidor",
-      "apiUrls": "URLs de API",
-      "openaiConfig": "Configuração OpenAI",
-      "riskCalculation": "Cálculo de Risco",
-      "sendgridConfig": "Configuração SendGrid",
-      "rabbitmqConfig": "Configuração RabbitMQ",
-      "contactInfo": "Informações de Contato"
-    },
-    "params": {
-      "openaiApiKey": { "description": "Chave API para OpenAI GPT" },
-      "sheriffApiToken": { "description": "Token de autenticação para Sheriff API" },
-      "sendgridApiKey": { "description": "Chave API para SendGrid (envio de emails)" },
-      "mongodbUri": { "description": "URI de conexão com MongoDB" },
-      "port": { "description": "Porta do servidor" },
-      "rateLimitWindowMs": { "description": "Janela de tempo para limitação de taxa (ms)" },
-      "rateLimitMaxRequests": { "description": "Número máximo de solicitações por janela" },
-      "apiUrl": { "description": "URL base da API" },
-      "sheriffApiUrl": { "description": "URL da API Sheriff" },
-      "siiUrl": { "description": "URL do serviço SII" },
-      "openaiModelSummary": { "description": "Modelo OpenAI para resumos" },
-      "openaiModelAnalysis": { "description": "Modelo OpenAI para análises" },
-      "openaiTemperature": { "description": "Temperatura para OpenAI (0.0-1.0)" },
-      "openaiMaxTokens": { "description": "Número máximo de tokens para OpenAI" },
-      "riskTotalParams": { "description": "Número total de parâmetros de risco" },
-      "riskCriticalPercentage": { "description": "Percentual limite para risco crítico" },
-      "riskHighPercentage": { "description": "Percentual limite para risco alto" },
-      "riskMediumPercentage": { "description": "Percentual limite para risco médio" },
-      "sendgridFromEmail": { "description": "Email remetente para SendGrid" },
-      "sendgridFromName": { "description": "Nome remetente para SendGrid" },
-      "rabbitmqUrl": { "description": "URL de conexão com RabbitMQ" },
-      "rabbitmqQueue": { "description": "Nome da fila RabbitMQ" },
-      "supportEmail": { "description": "Email de suporte" }
     }
   },
   "promptConfiguration": {
@@ -1923,165 +1874,353 @@
     "date": {
       "never": "Nunca"
     }
-  }
-,
-"databaseManagement": {
-  "header": {
-    "title": "Gestão de Banco de Dados",
-    "refresh": "Atualizar",
-    "backup": "Backup"
   },
-  "connection": {
-    "title": "Status de Conexão",
-    "status": {
-      "connected": "Conectado",
-      "disconnected": "Desconectado",
-      "error": "Erro",
-      "running": "Em execução",
-      "completed": "Concluído",
-      "failed": "Falhou"
+  "databaseManagement": {
+    "header": {
+      "title": "Gestão de Banco de Dados",
+      "refresh": "Atualizar",
+      "backup": "Backup"
+    },
+    "connection": {
+      "title": "Status de Conexão",
+      "status": {
+        "connected": "Conectado",
+        "disconnected": "Desconectado",
+        "error": "Erro",
+        "running": "Em execução",
+        "completed": "Concluído",
+        "failed": "Falhou"
+      }
+    },
+    "stats": {
+      "totalCollections": "Total de Coleções",
+      "totalDocuments": "Total de Documentos",
+      "dbSize": "Tamanho do Banco",
+      "totalIndexes": "Total de Índices"
+    },
+    "operations": {
+      "title": "Operações do Banco de Dados",
+      "subtitle": "Executar operações de manutenção no banco de dados",
+      "buttons": {
+        "backup": "Criar Backup",
+        "cleanup": "Limpar Banco de Dados",
+        "reindex": "Reindexar Coleções"
+      }
+    },
+    "collections": {
+      "title": "Coleções do Banco de Dados",
+      "columns": {
+        "name": "Nome da Coleção",
+        "documents": "Documentos",
+        "avgSize": "Tamanho Médio",
+        "totalSize": "Tamanho Total",
+        "indexes": "Índices",
+        "actions": "Ações"
+      },
+      "tooltips": {
+        "reindex": "Reindexar",
+        "clean": "Limpar"
+      }
+    },
+    "recent": {
+      "title": "Operações Recentes",
+      "columns": {
+        "type": "Tipo",
+        "status": "Status",
+        "start": "Início",
+        "end": "Fim",
+        "message": "Mensagem"
+      },
+      "type": {
+        "backup": "Backup",
+        "restore": "Restauração",
+        "cleanup": "Limpeza",
+        "reindex": "Reindexação"
+      },
+      "status": {
+        "running": "Em execução",
+        "completed": "Concluído",
+        "failed": "Falhou"
+      }
+    },
+    "dialogs": {
+      "backup": {
+        "title": "Confirmar Backup",
+        "message": "Tem certeza de que deseja criar um backup completo do banco de dados? Esta operação pode levar alguns minutos.",
+        "confirm": "Confirmar Backup",
+        "cancel": "Cancelar"
+      },
+      "cleanup": {
+        "title": "Confirmar Limpeza",
+        "message": "Tem certeza de que deseja limpar {{target}}? Esta operação removerá dados obsoletos e não pode ser desfeita.",
+        "confirm": "Confirmar Limpeza",
+        "cancel": "Cancelar",
+        "allDatabase": "todo o banco de dados",
+        "collection": "a coleção \"{{name}}\""
+      }
+    },
+    "errors": {
+      "loadStats": "Erro ao carregar as estatísticas do banco de dados",
+      "loadOperations": "Erro ao carregar as operações",
+      "backup": "Erro durante o backup",
+      "cleanup": "Erro durante a limpeza",
+      "reindex": "Erro durante a reindexação"
+    },
+    "equifaxMonitor": {
+      "header": {
+        "title": "Monitor de Equifax"
+      },
+      "form": {
+        "rut": "RUT",
+        "limit": "Limite",
+        "page": "Página",
+        "from": "De",
+        "to": "Até",
+        "rutPlaceholder": "12.345.678-9",
+        "invalidRut": "RUT inválido"
+      },
+      "buttons": {
+        "consult": "Consultar",
+        "prev": "Anterior",
+        "next": "Próximo"
+      },
+      "pagination": {
+        "summary": "Total: {{total}} · Página {{page}} de {{pages}}"
+      },
+      "table": {
+        "columns": {
+          "date": "Data",
+          "rut": "RUT",
+          "status": "Status",
+          "code": "Código",
+          "timeMs": "Tempo (ms)",
+          "endpoint": "Endpoint",
+          "cache": "Cache",
+          "download": "Download",
+          "details": "Detalhes"
+        }
+      },
+      "status": {
+        "ok": "OK",
+        "error": "ERROR"
+      },
+      "cache": {
+        "cached": "cached",
+        "miss": "miss",
+        "info": "Informações de Cache"
+      },
+      "details": {
+        "payload": "Payload",
+        "data": "Dados",
+        "normalized": "Dados Normalizados",
+        "error": "Erro"
+      },
+      "errors": {
+        "downloadJson": "Erro ao baixar JSON",
+        "invalidRut": "Insira um RUT válido",
+        "loadResponses": "Erro ao carregar respostas do Equifax"
+      },
+      "notifications": {
+        "noRecentRecords": "Sem registros recentes"
+      },
+      "actions": {
+        "downloadJson": "Baixar JSON"
+      }
+    },
+    "sheriffMonitor": {
+      "header": {
+        "title": "Monitor de Sheriff"
+      },
+      "form": {
+        "rut": "RUT",
+        "limit": "Limite",
+        "page": "Página",
+        "from": "De",
+        "to": "Até",
+        "rutPlaceholder": "12.345.678-9",
+        "invalidRut": "RUT inválido"
+      },
+      "buttons": {
+        "consult": "Consultar",
+        "prev": "Anterior",
+        "next": "Próximo"
+      },
+      "pagination": {
+        "summary": "Total: {{total}} · Página {{page}} de {{pages}}"
+      },
+      "table": {
+        "columns": {
+          "rut": "RUT",
+          "status": "Status",
+          "errorCalls": "Erros de chamadas",
+          "download": "Baixar",
+          "detail": "Detalhe",
+          "date": "Data"
+        },
+        "link": {
+          "viewJson": "Ver JSON"
+        }
+      },
+      "status": {
+        "ok": "OK",
+        "withErrors": "Com erros"
+      },
+      "errors": {
+        "loadLogs": "Erro ao carregar logs do Sheriff"
+      },
+      "actions": {
+        "downloadJson": "Baixar JSON"
+      }
     }
   },
-  "stats": {
-    "totalCollections": "Total de Coleções",
-    "totalDocuments": "Total de Documentos",
-    "dbSize": "Tamanho do Banco",
-    "totalIndexes": "Total de Índices"
-  },
-  "operations": {
-    "title": "Operações do Banco de Dados",
-    "subtitle": "Executar operações de manutenção no banco de dados",
-    "buttons": {
-      "backup": "Criar Backup",
-      "cleanup": "Limpar Banco de Dados",
-      "reindex": "Reindexar Coleções"
-    }
-  },
-  "collections": {
-    "title": "Coleções do Banco de Dados",
-    "columns": {
-      "name": "Nome da Coleção",
-      "documents": "Documentos",
-      "avgSize": "Tamanho Médio",
-      "totalSize": "Tamanho Total",
-      "indexes": "Índices",
-      "actions": "Ações"
+  "tenantUsers": {
+    "title": "Usuários",
+    "subtitle": "Gerencie os usuários da sua organização",
+    "subtitleWithCount": "Gerencie os usuários da sua organização ({{count}})",
+    "addUserButton": "Adicionar Usuário",
+    "search": {
+      "placeholder": "Pesquisar usuários..."
     },
-    "tooltips": {
-      "reindex": "Reindexar",
-      "clean": "Limpar"
-    }
-  },
-  "recent": {
-    "title": "Operações Recentes",
-    "columns": {
-      "type": "Tipo",
-      "status": "Status",
-      "start": "Início",
-      "end": "Fim",
-      "message": "Mensagem"
+    "filters": {
+      "allRoles": "Todos os perfis",
+      "allStatus": "Todos os estados",
+      "roleOptions": {
+        "superuser": "Superadmin",
+        "tenantAdmin": "Admin",
+        "auditor": "Auditor",
+        "evaluator": "Avaliador",
+        "writeOnly": "Integração API",
+        "user": "Usuário"
+      },
+      "statusOptions": {
+        "active": "Ativo",
+        "inactive": "Inativo"
+      }
     },
-    "type": {
-      "backup": "Backup",
-      "restore": "Restauração",
-      "cleanup": "Limpeza",
-      "reindex": "Reindexação"
+    "table": {
+      "headers": {
+        "name": "Nome",
+        "email": "E-mail",
+        "role": "Perfil",
+        "status": "Estado",
+        "actions": "Ações"
+      },
+      "loading": "Carregando usuários…",
+      "empty": "Nenhum usuário encontrado para esta organização."
     },
-    "status": {
-      "running": "Em execução",
-      "completed": "Concluído",
-      "failed": "Falhou"
-    }
-  },
-  "dialogs": {
-    "backup": {
-      "title": "Confirmar Backup",
-      "message": "Tem certeza de que deseja criar um backup completo do banco de dados? Esta operação pode levar alguns minutos.",
-      "confirm": "Confirmar Backup",
-      "cancel": "Cancelar"
+    "actions": {
+      "edit": "Editar",
+      "activate": "Ativar",
+      "deactivate": "Desativar",
+      "resetPassword": "Redefinir senha"
     },
-    "cleanup": {
-      "title": "Confirmar Limpeza",
-      "message": "Tem certeza de que deseja limpar {{target}}? Esta operação removerá dados obsoletos e não pode ser desfeita.",
-      "confirm": "Confirmar Limpeza",
+    "errors": {
+      "loadUsers": "Erro ao carregar os usuários",
+      "toggleStatus": "Erro ao atualizar o status do usuário",
+      "superuserRequired": "Esta ação está disponível apenas para Superadministradores da plataforma. Contate o seu administrador.",
+      "passwordMin6": "A senha deve ter pelo menos 6 caracteres",
+      "passwordsDoNotMatch": "As senhas não coincidem",
+      "resetPasswordFailed": "Erro ao redefinir a senha"
+    },
+    "toasts": {
+      "statusUpdated": "Status do usuário atualizado com sucesso",
+      "passwordResetSuccess": "Senha redefinida com sucesso"
+    },
+    "resetModal": {
+      "title": "Redefinir senha de {{name}}",
+      "newPassword": "Nova senha",
+      "passwordPlaceholder": "Digite a nova senha",
+      "passwordHelp": "Mínimo 6 caracteres",
+      "confirmPassword": "Confirmar senha",
+      "confirmPlaceholder": "Confirme a nova senha",
       "cancel": "Cancelar",
-      "allDatabase": "todo o banco de dados",
-      "collection": "a coleção \"{{name}}\""
+      "saving": "Salvando...",
+      "confirm": "Redefinir"
     }
   },
-  "errors": {
-    "loadStats": "Erro ao carregar as estatísticas do banco de dados",
-    "loadOperations": "Erro ao carregar as operações",
-    "backup": "Erro durante o backup",
-    "cleanup": "Erro durante a limpeza",
-    "reindex": "Erro durante a reindexação"
-  }
-,
-"equifaxMonitor": {
-  "header": { "title": "Monitor de Equifax" },
-  "form": {
-    "rut": "RUT",
-    "limit": "Limite",
-    "page": "Página",
-    "from": "De",
-    "to": "Até",
-    "rutPlaceholder": "12.345.678-9",
-    "invalidRut": "RUT inválido"
-  },
-  "buttons": { "consult": "Consultar", "prev": "Anterior", "next": "Próximo" },
-  "pagination": { "summary": "Total: {{total}} · Página {{page}} de {{pages}}" },
-  "table": {
-    "columns": {
-      "date": "Data",
-      "rut": "RUT",
-      "status": "Status",
-      "code": "Código",
-      "timeMs": "Tempo (ms)",
-      "endpoint": "Endpoint",
-      "cache": "Cache",
-      "download": "Download",
-      "details": "Detalhes"
-    }
-  },
-  "status": { "ok": "OK", "error": "ERROR" },
-  "cache": { "cached": "cached", "miss": "miss", "info": "Informações de Cache" },
-  "details": { "payload": "Payload", "data": "Dados", "normalized": "Dados Normalizados", "error": "Erro" },
-  "errors": {
-    "downloadJson": "Erro ao baixar JSON",
-    "invalidRut": "Insira um RUT válido",
-    "loadResponses": "Erro ao carregar respostas do Equifax"
-  },
-  "notifications": { "noRecentRecords": "Sem registros recentes" },
-  "actions": { "downloadJson": "Baixar JSON" }
-},
-
-"sheriffMonitor": {
-  "header": { "title": "Monitor de Sheriff" },
-  "form": {
-    "rut": "RUT",
-    "limit": "Limite",
-    "page": "Página",
-    "from": "De",
-    "to": "Até",
-    "rutPlaceholder": "12.345.678-9",
-    "invalidRut": "RUT inválido"
-  },
-  "buttons": { "consult": "Consultar", "prev": "Anterior", "next": "Próximo" },
-  "pagination": { "summary": "Total: {{total}} · Página {{page}} de {{pages}}" },
-  "table": {
-    "columns": {
-      "rut": "RUT",
-      "status": "Status",
-      "errorCalls": "Erros de chamadas",
-      "download": "Baixar",
-      "detail": "Detalhe",
-      "date": "Data"
+  "userModal": {
+    "titles": {
+      "add": "Adicionar Novo Usuário",
+      "edit": "Editar Usuário"
     },
-    "link": { "viewJson": "Ver JSON" }
-  },
-  "status": { "ok": "OK", "withErrors": "Com erros" },
-  "errors": { "loadLogs": "Erro ao carregar logs do Sheriff" },
-  "actions": { "downloadJson": "Baixar JSON" }
-}
-}
+    "subtitles": {
+      "superuserHiddenNote": "O perfil Superadmin só é visível para administradores da plataforma"
+    },
+    "forms": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Nome completo"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "nome@empresa.cl"
+      },
+      "role": {
+        "label": "Perfil",
+        "rolesCountLabel": "{{count}} disponíveis",
+        "options": {
+          "superuser": {
+            "label": "Superadmin",
+            "description": "Administrador global da plataforma Duxiter"
+          },
+          "tenantAdmin": {
+            "label": "Admin",
+            "description": "Gere usuários, créditos e configurações da organização"
+          },
+          "evaluator": {
+            "label": "Avaliador",
+            "description": "Analista · cria/edita/exclui avaliações e executa monitoramentos"
+          },
+          "auditor": {
+            "label": "Auditor (Apenas Leitura)",
+            "description": "Visualização apenas de leitura · avaliações, empresas, logs, monitoramentos"
+          },
+          "writeOnly": {
+            "label": "Integração API (Apenas Escrita)",
+            "description": "Robô / Bot · cria avaliações e executa monitoramentos com leitura limitada"
+          },
+          "user": {
+            "label": "Usuário (Básico)",
+            "description": "Usuário padrão · acesso básico sem gestão"
+          }
+        }
+      },
+      "status": {
+        "label": "Estado",
+        "active": "Ativo",
+        "inactive": "Inativo"
+      },
+      "password": {
+        "label": "Senha",
+        "labelEditHelp": "(deixe em branco para manter a atual)",
+        "placeholderCreate": "No mínimo 6 caracteres",
+        "placeholderEdit": "Deixe em branco para manter a senha atual"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "create": "Criar",
+      "update": "Salvar"
+    },
+    "toasts": {
+      "successCreate": "Usuário criado com sucesso",
+      "successUpdate": "Usuário atualizado com sucesso",
+      "errorCreateGeneric": "Erro ao criar o usuário",
+      "errorUpdateGeneric": "Erro ao atualizar o usuário"
+    },
+    "errors": {
+      "passwordTooShort": "A senha deve ter pelo menos 6 caracteres",
+      "passwordTooShortEdit": "A senha deve ter pelo menos 6 caracteres (deixe em branco para manter a atual)",
+      "emailAlreadyExists": "Já existe um usuário com este e-mail",
+      "invalidEmailFormat": "O formato do e-mail não é válido",
+      "nameMin2Chars": "O nome deve ter pelo menos 2 caracteres",
+      "passwordMin6Required": "É necessária uma senha de pelo menos 6 caracteres",
+      "noPermissionManage": "Você não tem permissões para gerir os usuários",
+      "superuserAssignForbidden": "Apenas um Superadmin pode atribuir o perfil Superadmin",
+      "superuserDemoteForbidden": "Apenas um Superadmin pode modificar o perfil de outro Superadmin",
+      "crossOrgForbidden": "Você não pode modificar usuários de organizações diferentes da sua",
+      "userNotFound": "Usuário não encontrado",
+      "permissionGeneric": "Permissão negada"
+    }
+  }
 }

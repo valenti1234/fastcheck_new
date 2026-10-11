@@ -7,7 +7,7 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from fastcheck_api.app.api.dependencies import CurrentUser, require_permission
+from fastcheck_api.app.api.dependencies import CurrentUser, require_permission_audit
 from fastcheck_api.app.core.mongodb import get_db
 from fastcheck_api.app.schemas.checks import (
     CreateCheckRequest,
@@ -57,7 +57,7 @@ def _mask_json(value):  # type: ignore[no-untyped-def]
     description="List evaluation jobs (checks) for the current tenant.",
 )
 async def list_checks(
-    user: Annotated[CurrentUser, Depends(require_permission("evaluation:read"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("evaluation:read"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
     page: int = Query(default=1, ge=1),
     limit: int = Query(default=10, ge=1, le=100),
@@ -75,7 +75,7 @@ async def list_checks(
 async def create_check(
     request: Request,
     payload: CreateCheckRequest,
-    user: Annotated[CurrentUser, Depends(require_permission("evaluation:create"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("evaluation:create"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
 ):
     start = time.perf_counter()
@@ -134,7 +134,7 @@ async def create_check(
 )
 async def get_check(
     job_id: str,
-    user: Annotated[CurrentUser, Depends(require_permission("evaluation:read"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("evaluation:read"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
 ):
     job = await CheckService.get_job(db=db, tenant_id=user.tenant, job_id=job_id)
@@ -151,7 +151,7 @@ async def get_check(
 )
 async def get_check_results(
     job_id: str,
-    user: Annotated[CurrentUser, Depends(require_permission("evaluation:read"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("evaluation:read"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
     page: int = Query(default=1, ge=1),
     limit: int = Query(default=10, ge=1, le=100),

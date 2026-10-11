@@ -1557,17 +1557,46 @@ const FastCheck: React.FC = () => {
       }
 
       try {
-        // Set risk summary
+        // Set risk summary — MERGE instead of overwrite (doc test potrebbe avere riskAssessment SENZA chiave riskSummary)
         if (response.data.riskAssessment) {
           logger.log(528, 'response.data.riskAssessment', response.data.riskAssessment);
-          setRiskSummary(response.data.riskAssessment);
+          setRiskSummary(prev => ({
+            riskSummary: {
+              totalSevero: 0,
+              totalSignificativo: 0,
+              totalDetected: 0,
+              totalParameters: 0,
+              semaphore: '',
+              riskLevelDescription: '',
+              ...(prev?.riskSummary || {}),
+              ...((response.data.riskAssessment as any)?.riskSummary || {}),
+            },
+            allRules: {
+              complianceRules: [],
+              legalRules: [],
+              capitalHumanoRules: [],
+              financieroTributarioRules: [],
+              ...(prev?.allRules || {}),
+              ...((response.data.riskAssessment as any)?.allRules || {}),
+            },
+            ...((response.data.riskAssessment as any) || {}),
+          }));
         }
 
-        // Set risk data
+        // Set risk data rules (allRules)
         if (response.data.riskAssessment?.allRules) {
           setRiskSummary(prev => ({
-            ...prev,
-            allRules: response.data.riskAssessment!.allRules
+            ...(prev || {}),
+            riskSummary: {
+              totalSevero: 0,
+              totalSignificativo: 0,
+              totalDetected: 0,
+              totalParameters: 0,
+              semaphore: '',
+              riskLevelDescription: '',
+              ...(prev?.riskSummary || {}),
+            },
+            allRules: response.data.riskAssessment!.allRules,
           }));
         }
 
@@ -1676,17 +1705,46 @@ const FastCheck: React.FC = () => {
       }
 
       try {
-        // Set risk summary
+        // Set risk summary — MERGE instead of overwrite (doc test potrebbe avere riskAssessment SENZA chiave riskSummary)
         if (response.data.riskAssessment) {
           logger.log(528, 'response.data.riskAssessment', response.data.riskAssessment);
-          setRiskSummary(response.data.riskAssessment);
+          setRiskSummary(prev => ({
+            riskSummary: {
+              totalSevero: 0,
+              totalSignificativo: 0,
+              totalDetected: 0,
+              totalParameters: 0,
+              semaphore: '',
+              riskLevelDescription: '',
+              ...(prev?.riskSummary || {}),
+              ...((response.data.riskAssessment as any)?.riskSummary || {}),
+            },
+            allRules: {
+              complianceRules: [],
+              legalRules: [],
+              capitalHumanoRules: [],
+              financieroTributarioRules: [],
+              ...(prev?.allRules || {}),
+              ...((response.data.riskAssessment as any)?.allRules || {}),
+            },
+            ...((response.data.riskAssessment as any) || {}),
+          }));
         }
 
-        // Set risk data
+        // Set risk data rules (allRules)
         if (response.data.riskAssessment?.allRules) {
           setRiskSummary(prev => ({
-            ...prev,
-            allRules: response.data.riskAssessment!.allRules
+            ...(prev || {}),
+            riskSummary: {
+              totalSevero: 0,
+              totalSignificativo: 0,
+              totalDetected: 0,
+              totalParameters: 0,
+              semaphore: '',
+              riskLevelDescription: '',
+              ...(prev?.riskSummary || {}),
+            },
+            allRules: response.data.riskAssessment!.allRules,
           }));
         }
 
@@ -2752,9 +2810,11 @@ const FastCheck: React.FC = () => {
         complianceRules: updatedComplianceRules
       };
 
-      // Calculate new totals for risk summary
-      let newTotalSevero = riskSummary.riskSummary.totalSevero;
-      let newTotalDetected = riskSummary.riskSummary.totalDetected;
+      // Calculate new totals for risk summary (null-safe)
+      const _rs_a: any = riskSummary || {};
+      const _rs_in_a: any = _rs_a?.riskSummary || { totalSevero: 0, totalDetected: 0, totalSignificativo: 0 };
+      let newTotalSevero = typeof _rs_in_a.totalSevero === 'number' ? _rs_in_a.totalSevero : 0;
+      let newTotalDetected = typeof _rs_in_a.totalDetected === 'number' ? _rs_in_a.totalDetected : 0;
 
       // Add new severe risks if they weren't detected before
       if (pepChileDetected && (!pepChileRule || !pepChileRule.detected)) {
@@ -2773,7 +2833,7 @@ const FastCheck: React.FC = () => {
       if (newTotalSevero > 0) {
         newSemaphore = 'red';
         newRiskLevelDescription = 'Alto Riesgo';
-      } else if (riskSummary.riskSummary.totalSignificativo > 0) {
+      } else if ((typeof _rs_in_a.totalSignificativo === 'number' ? _rs_in_a.totalSignificativo : 0) > 0) {
         newSemaphore = 'yellow';
         newRiskLevelDescription = 'Riesgo Medio';
       }
@@ -3407,9 +3467,11 @@ const FastCheck: React.FC = () => {
         sectionData: any;
       }> = [];
 
-      // Compliance
-      if (riskSummary.allRules?.complianceRules) {
-        riskSummary.allRules.complianceRules
+      // Compliance (null-safe)
+      const _rs_b: any = riskSummary || {};
+      const _ar_b: any = _rs_b?.allRules || {};
+      if (Array.isArray(_ar_b?.complianceRules)) {
+        _ar_b.complianceRules
           .filter(rule => {
             if (!rule.details) return false;
             if (Array.isArray(rule.details)) return rule.details.length > 0;
@@ -3460,8 +3522,8 @@ const FastCheck: React.FC = () => {
         });
       }
 
-      if (riskSummary.allRules?.legalRules) {
-        riskSummary.allRules.legalRules.forEach(rule => {
+      if (Array.isArray(_ar_b?.legalRules)) {
+        _ar_b.legalRules.forEach(rule => {
           tableSections.push({
             h3Title: 'Legal',
             h4Title: rule.label,
@@ -3471,9 +3533,9 @@ const FastCheck: React.FC = () => {
         });
       }
 
-      // Capital Humano
-      if (riskSummary.allRules?.capitalHumanoRules) {
-        riskSummary.allRules.capitalHumanoRules.forEach(rule => {
+      // Capital Humano (null-safe)
+      if (Array.isArray(_ar_b?.capitalHumanoRules)) {
+        _ar_b.capitalHumanoRules.forEach(rule => {
           let details = rule.details;
           if (rule.label === 'Deuda Previsional Presunta' && (rule.details as any)?.casos) {
             details = (rule.details as any).casos;
@@ -3487,9 +3549,9 @@ const FastCheck: React.FC = () => {
         });
       }
 
-      // Financiero - Tributario
-      if (riskSummary.allRules?.financieroTributarioRules) {
-        riskSummary.allRules.financieroTributarioRules.forEach(rule => {
+      // Financiero - Tributario (null-safe)
+      if (Array.isArray(_ar_b?.financieroTributarioRules)) {
+        _ar_b.financieroTributarioRules.forEach(rule => {
           tableSections.push({
             h3Title: 'Financiero - Tributario',
             h4Title: rule.label,
@@ -3499,7 +3561,7 @@ const FastCheck: React.FC = () => {
         });
       }
 
-      const listasPropiasReputacion = (riskSummary.allRules?.complianceRules || [])
+      const listasPropiasReputacion = (_ar_b?.complianceRules || [])
         .filter(rule => ['Listas Propias Alto Impacto', 'Listas Propias Mediano Impacto'].includes(rule.label));
 
       listasPropiasReputacion.forEach(rule => {
@@ -4207,31 +4269,31 @@ const FastCheck: React.FC = () => {
   }
 
   logger.log(158, "riskSummary", riskSummary);
-  // Count parameters by risk level
-
-  const criticalParams = riskSummary.riskSummary.totalSevero;
-
-
-
-
-
-  const highParams = riskSummary.riskSummary.totalSignificativo;
-
-
-
-
-
-  // Fix: lowParams should be total parameters minus all detected risks
-  const lowParams = riskSummary.riskSummary.totalParameters - riskSummary.riskSummary.totalDetected;
-  const companyGeneralInfo = data.companyGeneralInfo;
+  // Count parameters by risk level (NULL-SAFE for docs without complete riskAssessment)
+  const _rs: any = riskSummary || {};
+  const _rs_inner: any = _rs?.riskSummary || {
+    totalSevero: 0,
+    totalSignificativo: 0,
+    totalDetected: 0,
+    totalParameters: 0,
+    semaphore: '',
+    riskLevelDescription: ''
+  };
+  const criticalParams: number = typeof _rs_inner.totalSevero === 'number' ? _rs_inner.totalSevero : 0;
+  const highParams: number = typeof _rs_inner.totalSignificativo === 'number' ? _rs_inner.totalSignificativo : 0;
+  // Fix: lowParams should be total parameters minus all detected risks (null-safe, never negative)
+  const _tot: number = typeof _rs_inner.totalParameters === 'number' ? _rs_inner.totalParameters : 0;
+  const _det: number = typeof _rs_inner.totalDetected === 'number' ? _rs_inner.totalDetected : 0;
+  const lowParams: number = Math.max(0, _tot - _det);
+  const companyGeneralInfo: any = (data as any)?.companyGeneralInfo || {};
   //logger.log(240, "companyGeneralInfo", companyGeneralInfo);
 
   // Compute principales hallazgos
   const allRules = [
-    ...(riskSummary.allRules?.complianceRules || []),
-    ...(riskSummary.allRules?.legalRules || []),
-    ...(riskSummary.allRules?.capitalHumanoRules || []),
-    ...(riskSummary.allRules?.financieroTributarioRules || []),
+    ...(_rs?.allRules?.complianceRules || []),
+    ...(_rs?.allRules?.legalRules || []),
+    ...(_rs?.allRules?.capitalHumanoRules || []),
+    ...(_rs?.allRules?.financieroTributarioRules || []),
   ];
   const ruleFindings = allRules
     .filter(r => r.detected && (r.risk === 'critico' || r.risk === 'alto'))
@@ -6182,7 +6244,7 @@ const FastCheck: React.FC = () => {
           {/* ================= LEGAL ================= */}
           <h3 className="text-lg font-bold mb-4 w-full bg-blue-100 p-1 text-blue-500">Legal</h3>
 
-          {riskSummary.allRules?.legalRules.length == 0 &&
+          {(riskSummary.allRules?.legalRules || []).length === 0 &&
             <h3 className="text-lg font-bold mb-4 w-full p-1 text-blue-500">Sin datos</h3>}
           {(riskSummary.allRules?.legalRules || []).map((rule, index) => {
             const details = rule.details;

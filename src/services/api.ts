@@ -8,7 +8,11 @@ import { SheriffDataLogResponse } from '../types/sheriff';
 import { logger } from '../utils/logger';
 import { canonicalizeChileanRut, calculateDvMod11 } from '../utils/rutCanonical';
 
-const API_BASE_URL = globalThis.__APP_ENV__?.VITE_API_BASE_URL || 'https://duxiter.azurianlab.com/api';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  import.meta.env.VITE_API_URL ||
+  (globalThis as any).__APP_ENV__?.VITE_API_BASE_URL ||
+  'http://localhost:8181/api';
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -696,6 +700,90 @@ export const historicalConsultasApi = {
     const response = await apiClient.get('/rut/historical-consultas/stats', {
       params: { startDate, endDate }
     });
+    return response.data;
+  }
+};
+
+// ===== User Profile Enriched (Avatar Click) =====
+export interface ProfilePermisoItem {
+  codigo: string;
+  categoria: string;
+  es_sensible: boolean;
+  descripcion?: string;
+  origen?: 'ROLE' | 'GRANT' | 'DENY' | 'WILDCARD';
+}
+
+export interface ProfilePlanPool {
+  plan_codigo: string;
+  nombre_plan: string;
+  nivel_pool_plan: number;
+  creditos_mensuales_org: number;
+  saldo_actual: number;
+  creditos_usados: number;
+  overshoot_actual: number;
+  overshoot_pct_max: number;
+  fecha_actualizacion?: string;
+}
+
+export interface ProfileOrganizacion {
+  _id: string;
+  name: string;
+  isActive: boolean;
+  usuariosCount: number;
+  evaluacionesUsadas: number;
+  planCodigo?: string | null;
+}
+
+export interface ProfileUser {
+  _id: string;
+  name: string;
+  email: string;
+  role: string;
+  isActive: boolean;
+  isSuperuser: boolean;
+  cacheVersion: number;
+  createdAt?: string;
+  avatarInicial?: string;
+}
+
+export interface ProfilePermisosBlock {
+  totalPermisos: number;
+  totalSensibles: number;
+  lista: ProfilePermisoItem[];
+  vienePorRoles: string[];
+  overridesGranted: string[];
+  overridesDenied: string[];
+}
+
+export interface ProfileHistorialConsultas {
+  totalConsultasUsuario: number;
+  totalCreditsUsedHistorial: number;
+  totalConsultasOrganizacion: number;
+}
+
+export interface ProfileAuditoriaItem {
+  _id?: string;
+  accion?: string;
+  entidad?: string;
+  entidad_id?: string;
+  fecha?: string;
+  createdAt?: string;
+  detalles?: Record<string, any>;
+  [k: string]: any;
+}
+
+export interface UserProfileEnriched {
+  user: ProfileUser;
+  organizacion: ProfileOrganizacion | null;
+  planPool: ProfilePlanPool | null;
+  permisos: ProfilePermisosBlock;
+  historialConsultas: ProfileHistorialConsultas;
+  auditoriasUltimas10: ProfileAuditoriaItem[];
+}
+
+export const userProfileApi = {
+  getMyProfileEnriched: async (): Promise<UserProfileEnriched> => {
+    const response = await apiClient.get<UserProfileEnriched>('/users/me/enriched');
     return response.data;
   }
 };

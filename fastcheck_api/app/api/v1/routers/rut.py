@@ -11,7 +11,7 @@ from motor.motor_asyncio import AsyncIOMotorDatabase
 from pymongo import ReturnDocument
 from pydantic import BaseModel, Field
 
-from fastcheck_api.app.api.dependencies import CurrentUser, require_permission
+from fastcheck_api.app.api.dependencies import CurrentUser, require_permission_audit
 from fastcheck_api.app.core.mongodb import get_db
 from fastcheck_api.app.services.dequienes_native_service import dequienes_native_service
 from fastcheck_api.app.services.audit_service import AuditService
@@ -231,7 +231,7 @@ def _sanitize_result_payload(payload: Any) -> Any:
 async def lookup_rut(
     request: Request,
     payload: RutLookupRequest,
-    user: Annotated[CurrentUser, Depends(require_permission("rut:lookup"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("rut:lookup"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
 ):
     start = time.perf_counter()
