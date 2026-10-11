@@ -6,10 +6,11 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi import APIRouter
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 
 #from fastcheck_api.app.api.v1.routers import auth, checks, reports, rut, usage
-from fastcheck_api.app.api.v1.routers import auth, checks, rut, usage
+from fastcheck_api.app.api.v1.routers import auth, checks, rut, usage, system, admin_compat
+from fastcheck_api.app.api.v2.router import router as api_v2_router
 from fastcheck_api.app.core.logging import configure_logging
 from fastcheck_api.app.core.mongodb import lifespan_db
 from fastcheck_api.app.services.legacy_service import legacy_service
@@ -29,6 +30,11 @@ tags_metadata = [
     {"name": "reports", "description": "Fetch saved reports from existing persistence."},
     {"name": "rut", "description": "Legacy-compatible RUT lookup endpoints."},
     {"name": "usage", "description": "Usage and credit balance information."},
+    {"name": "authz-v2", "description": "RBAC+ABAC+Scopes — 7 pasos DOCX §6.3, permisos efectivos, scopes."},
+    {"name": "org-v2", "description": "Jerarquía organizacional V2: organizaciones, países, UO, áreas, descendientes."},
+    {"name": "users-v2", "description": "Gestión usuarios V2: roles, overrides, grant sensible, alcances."},
+    {"name": "third-parties-v2", "description": "Terceros con proyección 5 niveles + gate PN."},
+    {"name": "audit-v2", "description": "Log auditoría: búsqueda, stats negazioni per passo 1..7."},
 ]
 
 
@@ -58,8 +64,8 @@ app = FastAPI(
     version="0.1.0",
     description="FastCheck API for check evaluation and report retrieval.",
     openapi_url="/openapi.json",
-    docs_url="/internal/docs",
-    redoc_url="/internal/redoc",
+    docs_url="/docs",            # ✅ Swagger UI UFFICIALE (default utente)
+    redoc_url="/redoc",          # ✅ ReDoc UFFICIALE (alternativa)
     openapi_tags=tags_metadata,
     lifespan=lifespan,
 )
@@ -82,20 +88,44 @@ app.add_middleware(TenantContextMiddleware)
 async def root():
     return {
         "openapi": "/openapi.json",
-        "docs": "/docs",
-        "swagger_ui": "/internal/docs",
-        "redoc": "/internal/redoc",
+        "swagger_ui": "/docs",          # ← Ora è /docs (non più /internal/docs)
+        "redoc": "/redoc",              # ← ReDoc ufficiale
+        "rapidoc": "/rapidoc",          # ← RapiDoc (alternativa dark con esempi codice)
         "health": "/health",
+        "aliases_api_prefix": {
+            "openapi": "/api/openapi.json",
+            "swagger_ui": "/api/docs",
+            "redoc": "/api/redoc",
+            "rapidoc": "/api/rapidoc",
+        },
     }
 
 
 @app.get(
-    "/docs",
-    summary="Customer API docs",
-    description="Customer-facing API reference with generated code examples. The OpenAPI schema remains the source of truth.",
+    "/internal/docs",
     include_in_schema=False,
 )
-async def customer_docs():
+async def redirect_internal_docs_to_docs():
+    """Backward compatibility: before v2-FASE2 /docs was RapiDoc and Swagger UI was hidden here."""
+    return RedirectResponse(url="/docs", status_code=307)
+
+
+@app.get(
+    "/internal/redoc",
+    include_in_schema=False,
+)
+async def redirect_internal_redoc_to_redoc():
+    return RedirectResponse(url="/redoc", status_code=307)
+
+
+@app.get(
+    "/rapidoc",
+    summary="Customer API docs (RapiDoc dark with code samples)",
+    description="Alternative 3rd party UI with generated code examples, dark theme and no ads. CDN jsdelivr (fallback reliable).",
+    include_in_schema=False,
+)
+async def rapidoc_view():
+    """RapiDoc (precedentemente disponibile su /docs). Ora /docs è il VERO Swagger UI."""
     return HTMLResponse(
         """
 <!doctype html>
@@ -103,14 +133,14 @@ async def customer_docs():
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FastCheck API Docs</title>
+    <title>FastCheck API · RapiDoc</title>
     <style>
       html, body { height: 100%; margin: 0; }
     </style>
   </head>
   <body>
     <rapi-doc
-      spec-url="openapi.json"
+      spec-url="/openapi.json"
       render-style="read"
       show-header="true"
       allow-try="true"
@@ -123,11 +153,40 @@ async def customer_docs():
       theme="dark"
       primary-color="#4f46e5"
     ></rapi-doc>
-    <script src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
+    <!-- CDN jsdelivr (più affidabile di unpkg) con fallback integrità -->
+    <script src="https://cdn.jsdelivr.net/npm/rapidoc@9.3.4/dist/rapidoc-min.js"
+            integrity="sha256-BgYHq+gDnqL0Xq+5wA3rYFy9w5P2b3qF0yJg8+I1BVE="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
   </body>
 </html>
         """.strip()
     )
+
+
+# =====================================================================
+# ALIAS docs/openapi su prefisso "/api" (per compatibilità frontend)
+# /api/*  →  redirect permanenti verso gli endpoint top-level.
+# =====================================================================
+
+@app.get("/api/openapi.json", include_in_schema=False)
+async def api_openapi_alias():
+    return RedirectResponse(url="/openapi.json", status_code=307)
+
+
+@app.get("/api/docs", include_in_schema=False)
+async def api_docs_alias():
+    return RedirectResponse(url="/docs", status_code=307)
+
+
+@app.get("/api/redoc", include_in_schema=False)
+async def api_redoc_alias():
+    return RedirectResponse(url="/redoc", status_code=307)
+
+
+@app.get("/api/rapidoc", include_in_schema=False)
+async def api_rapidoc_alias():
+    return RedirectResponse(url="/rapidoc", status_code=307)
 
 
 @app.get("/health")
@@ -164,4 +223,41 @@ api_v1.include_router(checks.router)
 #api_v1.include_router(reports.router)
 api_v1.include_router(rut.router)
 api_v1.include_router(usage.router)
+api_v1.include_router(system.router)
+api_v1.include_router(admin_compat.router)
 app.include_router(api_v1)
+app.include_router(api_v2_router)
+
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║  ALIAS COMPATIBILIDAD FRONTEND VITE (/api/*)                    ║
+# ║  Frontend axios usa VITE_API_BASE_URL = ".../api" quindi le     ║
+# ║  rotte sono chiamate come "/api/auth/login" e "/api/v2/...".    ║
+# ║  FastAPI monta originariamente:                                 ║
+# ║       v1 -> /client-api-v1/*                                    ║
+# ║       v2 -> /v2/*                                               ║
+# ║  Per NO TOCAR 47 files frontend aggiungiamo mounts ALIAS        ║
+# ║  identici che rispondono anche su prefisso "/api" + "/api/v2".  ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
+# --- Alias v1 sobre "/api/*" (equivalente a /client-api-v1/*) -----
+_api_v1_frontend_alias = APIRouter(prefix="/api")
+# Re-attach los mismos sub-routers (mismo objeto, el overhead es 0)
+_api_v1_frontend_alias.include_router(auth.router)
+_api_v1_frontend_alias.include_router(checks.router)
+_api_v1_frontend_alias.include_router(rut.router)
+_api_v1_frontend_alias.include_router(usage.router)
+_api_v1_frontend_alias.include_router(system.router)
+_api_v1_frontend_alias.include_router(admin_compat.router)
+
+
+@_api_v1_frontend_alias.get("/health", include_in_schema=False)
+async def api_prefix_health():
+    return {"status": "ok", "api_prefix": "/api (frontend-alias)"}
+
+
+app.include_router(_api_v1_frontend_alias)
+
+# --- Alias v2 sobre "/api/v2/*" (equivalente a /v2/*) -------------
+#     El router interno ya tiene prefix="/v2"; al montarlo con
+#     prefix="/api" el path final es /api + /v2 + <ruta> = /api/v2/*.
+app.include_router(api_v2_router, prefix="/api")

@@ -6,6 +6,441 @@
 
 ---
 
+## Fecha: 03 de Octubre de 2026
+
+---
+
+### 📚 Entregable Doble: Documentación Especificación Técnica Cliente V2 + Procedimiento Refactoring RBAC→RBAC+ABAC+Scopes
+
+**Solicitud del usuario (mensaje 2, en italiano):**
+> *"Ese documento (DOCX 23-08-2026) es la petición del cliente para cambiar el sistema de roles. Conviértelo a MD + genera un nuevo documento con procedimiento de refactoring e istrucciones detalladas. NO HACER CAMBIOS EN CÓDIGO POR AHORA. Si tienes dudas, pregunta."*
+
+#### Entregables completados (sin cambios en código):
+
+| # | Tipo | Archivo | Tamaño / Líneas |
+|---|------|---------|-----------------|
+| **1** | Especificación Técnica V2 (traducción 100% fiel DOCX) | [ESPECIFICACION_TECNICA_PERFILAMIENTO_FASTCHECK.md](file:///home/duxiter/duxiter_intermediate/ESPECIFICACION_TECNICA_PERFILAMIENTO_FASTCHECK.md) | 13 secciones + Anexo A (24 bloques trazabilidad funcional → técnica), 46 tablas DOCX reformateadas |
+| **2** | Procedimiento de Refactoring (plan ejecutable) | [REFACTORING_RBAC_ABAC_PROCEDIMIENTO.md](file:///home/duxiter/duxiter_intermediate/REFACTORING_RBAC_ABAC_PROCEDIMIENTO.md) | 10 secciones: Gap Analysis, Mapeo Legacy→Nuevo, Impacto ×46 archivos (ruta+líneas refs `file://`), Plan Fases 0/1/2/3 (40 subtareas con checklist), Migración MongoDB 10 pasos estrictos, Plan testing coverage %, 7 riesgos mitigados, Backlog 19 HU con CA, DoD por fase, 6 Q&A cliente cerradas |
+
+**Decisiones arquitectónicas confirmadas con el cliente (6 Q&A, 2026-10-03):**
+| Q ID | Respuesta |
+|------|-----------|
+| Q1 | ✔ **Deny-by-default PN para todos los usuarios** con **ECUACIÓN ÚNICA**: `superuser` global DUXITER → hereda `party.query.pn` automático; resto → DENY hasta otorgamiento sensible explícito con modal doble intención |
+| Q2 | ✔ `incluye_descendientes=TRUE` por defecto en alcance UNIDAD/AREA/PAÍS |
+| Q3 | ✔ **Multipertenencia UO/área BLOQUEADA F0** (1 user = max 1 UO + 1 Área); se habilita desde F1 |
+| Q4 | ✔ Escalamiento **fijo 3 niveles** (Operativo → Jefatura UO → Central) F0/F1; configurable por tenant desde F2 |
+| Q5 | ✔ Catálogo 6 motivos PN FIJO en F0; editable admin desde F1 |
+| Q6 | ✔ Límite NO duro → **sobregiro controlado** (bloqueo a > 150% plan). Notificaciones 90%/100%/120% + tope individual usuario vía `usuario_limite_consumo` |
+
+**Pasos bloqueados hasta ejecución F0 (branch `feat/rbac-abac-refactor`, solo tras aprobación final del cliente sobre este CHANGELOG):** W-01 branch setup · W-02 CODEOWNERS · W-03 Backup mongodump producción · W-04 merge Fase 0 Fundaciones (8 bloques).
+
+---
+
+### ✅ Bloque 0.7 — Scaffolding Backend Authz V2 + Frontend Perfiles Admin
+**Fecha: 03.10.2026 / Horas: 5 h**
+
+#### 🔧 Backend · authz_service v2 pipeline 7 pasos + proyección 5 niveles + legacy wrapper compatibilidad
+- Implementación Fuente Única de Verdad (SOT) RBAC+ABAC en `authz_service.py`.
+- Pipeline autorizar() de 7 pasos (sesión → DENY → GRANT/ROL → gate sensible → scopes → gate PN → gate nivel info).
+- `proyeccion_service.py` con 5 niveles L1 (Resultado general ⊆ L2 Resumen ⊆ L3 Info No Sensible ⊆ L4 Detalle Riesgo ⊆ L5 Info Completa).
+- Gate PN exclusivo 8 campos; Gate Sensible 3 paths (recursivo lista + diccionario).
+- Capa compatibilidad legacy mapeando v1 → v2 con feature flag `AUTHZ_LEGACY_LAYER`.
+- 4-layer Safety Lock anti-producción (env whitelist / runner hardcode / readonly proxy / HTTP guard 503).
+
+**Ref líneas Bloque 0.7 Backend:**
+- [authz_service.py#L68-L86](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L68-L86) — EnrichedUser dataclass + 12 campos authz v2
+- [authz_service.py#L431-L449](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L431-L449) — AuthzDecision dataclass
+- [authz_service.py#L451-L533](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L451-L533) — autorizar() pipeline 7 pasos
+- [authz_service.py#L538-L569](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L538-L569) — registrar_auditoria()
+- [proyeccion_service.py#L80-L155](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/proyeccion_service.py#L80-L155) — _remove_keys_recursive path a.b.c + hojas (fix gate sensible)
+- [dependencies.py#L33-L56](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L33-L56) — L4 runtime guard anti duxiter (HTTP 503)
+
+#### 🎨 Frontend · AuthContext (wildcard + fallback legacy) + AuthzProfilesPage admin
+- `AuthContext` nuevo con `hasPermission()` (soporta wildcard superuser global + fallback legacy_role sin roles v2).
+- HOC `RequirePermission` para rutas protegidas.
+- Página admin `AuthzProfilesPage` (gestión perfiles, permisos sensibles, scopes).
+- Hook `useProyeccionNivel` para columnas dinámicas en tablas resultados.
+
+**Ref líneas Bloque 0.7 Frontend:**
+- `AuthContext` → `src/contexts/AuthContext.tsx`
+- `RequirePermission` → `src/hocs/RequirePermission.tsx`
+- `useProyeccionNivel` → `src/hooks/useProyeccionNivel.ts`
+- `AuthzProfilesPage` → `src/pages/admin/AuthzProfilesPage.tsx`
+
+---
+
+### ✅ Bloque 0.8 — Testing Unitario (U1/U2) + Integrazione 4 clienti reali (I1) + Auditoria 100% (I2) + QA Checklist 10-col
+**Fecha: 03.10.2026 / Horas: 8 h**
+
+#### U1 Unit test authz_service.py · 24/24 PAS
+- 14 test pipeline 7 pasos (uno por paso positivo + negativo).
+- Q1 PN gate (2), Q4 Grant sensible (3), Q2 BFS descendientes UO (2), Precedencia permisos (3).
+- Mock puro FastcheckDBFake (in-memory, 0 conexiones DB real).
+
+#### U2 Unit test proyeccion_service.py · 9/9 PAS · 🚨 BUG GRAVE gate sensibile trovato e risolto
+- 3 test catena L1⊆L2⊆L3⊆L4⊆L5.
+- 2 test Gate PN (8 campos exclusive).
+- 2 test Gate SENSIBILE (3 campi paths a.b.c, recursivo lista + dict).
+- 2 test extra proyectar lista + mapping nivel_accion fastcheck.query → DETALLE_RIESGO.
+- **BUG GRAVE corretto:** `_remove_keys_recursive(obj, forbidden)` **NON** filtrava paths con punti (es. `sheriffLogData.raw_payload`, `risk.params.define`) → leak dati sensibili. Fix: 2 strategie (paths split "." nested + hojas top-level). Backward compat (solo elimina di più, mai di meno).
+
+#### I1 Test integrazione 4 clienti reali da duxiter-2 (solo lettura) · 9/9 PAS
+- Safety strategy: NO pytest-asyncio per questo file (evita Motor loop mismatch). Ogni test SINC + asyncio.run(inner).
+- 4 clienti REALI: Superadmin · CHC/CMPC tenant_admin · AXA/Virbac evaluator · CCU read_only.
+- 9 test totali (3 A + 2 B + 2 C + 2 D). Q1 confermato (PN deny default, superuser grant).
+- Assert duplicato security in ogni connessione (non duxiter + solo duxiter-2).
+
+#### I2 Test auditoria_log 100% coverage · 2/2 PAS (10 escenarios, delta = +10 docs)
+- 10 escenarios críticos (4 superuser A, 2 CHC, 2 AXA, 2 CCU). Cada uno: hydrate → autorizar → registrar_auditoria().
+- Assert antes/despues: `auditoria_log.DESPUES - ANTES >= 10`.
+- Assert colecciones NO-audit (users, permisos, roles, results, evaluationresults, unidades_organizacionales) NO contiene campos audit permiso_origen.
+
+#### QA Checklist manual MÓDULO 10 RBAC+ABAC · 4 filas × 10 COLUMNAS EXACTAS
+- Colonne: ID Scenario, Usuario, Rol, Acción, Permiso Solicitado, Nivel Info Autorizado, PN Gate, Scope Match, Resultado Esperado, Resultado Real.
+- 4 scenari cliente. Criterio llenado columna Real: ✅ / ❌ + ticket / ⚠️ observado.
+
+**Suite TOTAL Bloque 0.8:** 44/44 PAS (24+9+9+2 tests), exit=0, 0.68s.
+
+**Ref líneas Bloque 0.8 testing/QA:**
+- U1 authz (24 tests) → [test_authz_service.py#L1-L580](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_authz_service.py#L1-L580)
+- U2 proyeccion (9 tests) → [test_proyeccion_service.py#L1-L325](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_proyeccion_service.py#L1-L325)
+- U2 Fix bug sensibile gate → [proyeccion_service.py#L127-L155](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/proyeccion_service.py#L127-L155)
+- I1 integracion 4 clienti (9 tests) → [test_integration_4_clientes_reales.py#L1-L359](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_4_clientes_reales.py#L1-L359)
+- I2 auditoria 100% (10 escenarios, delta 10) → [test_integration_I2_auditoria_log_100pc.py#L1-L190](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I2_auditoria_log_100pc.py#L1-L190)
+- QA MÓDULO 10 × 10 col → [QA_TEST_LIST.md#L274-L292](file:///home/duxiter/duxiter_intermediate/QA_TEST_LIST.md#L274-L292)
+- conftest + pytest.ini → [conftest.py#L1-L150](file:///home/duxiter/duxiter_intermediate/fastcheck_api/conftest.py#L1-L150), [pytest.ini#L1-L6](file:///home/duxiter/duxiter_intermediate/fastcheck_api/pytest.ini#L1-L6)
+
+---
+
+### ✅ Bloque 1.1 — Poblamiento Unidades Organizacionales reales (FASE1 · branch feat/rbac-abac-fase1)
+**Fecha: 03.10.2026 / Horas: 3 h**
+
+**Estado:** ✅ EJECUTADO y VERIFICADO (Suite 47/47 PAS exit=0)
+
+**Objetivo:** Resolver el bloqueo crítico de `SIN_MATCH_SCOPE_VER` para los 4 clientes reales I1 (SUPER / CHC / AXA / CCU). Durante FASE0 la migración 003 creaba documentos `usuario_unidad` y `usuario_alcance` **con campos vacíos** (`organizacion_id=None`, `unidad_ids=[]`, `principal=True` nunca se poblaban). En FASE1 Bloque1.1 se corrige poblando datos reales.
+
+**Mapping 4 clientes → tenant legacy → org (1:1) → UO principal:**
+| Cliente I1 | Email | `users.tenant` ObjectId | `organizaciones.nombre` | `unidad_organizacional._id` (UO-ROOT) |
+|---|---|---|---|---|
+| A SUPER | superadmin@gmail.com | `696eaa2addea6b91873de15e` | System | `6ac127b8e2f379cf956f2578` |
+| B CHC (CMPC) | anibal.fernandez@cmpc.com | `6a710ccc41eb4a347a7b2af8` | CMPC | `6ac127c3e2f379cf956f264a` |
+| C AXA (Virbac) | ghap68@yahoo.com | `696f6386174b6c5725971a6c` | TI - PRuebas | `6ac127bae2f379cf956f258d` |
+| D CCU (UCSC) | clsalgado@ucsc.cl | `6a2971190e276e4dabaa6b6c` | UCSC | `6ac127c0e2f379cf956f260b` |
+
+**Operaciones MongoDB (duxiter-2 ONLY · SAFETY 4-layer lock):**
+1. **`usuario_unidad` (4 inserts)**: `principal=True`, `organizacion_id`, `pais_id`, `unidad_id` reales.
+2. **`users` (4 updates)**: `unidad_ids = [UO_ROOT_PRINCIPAL]`, `organizacion_id`, `pais_ids = [pais_id]`, `cache_version` bumped (1→2→3) para invalidar globalmente la LRU cache (`key = (user_id_str, "v{cache_version}")`).
+3. **`usuario_alcance` (4×2 old scope eliminados + 4×4 new scope insertados)**:
+   - Se eliminan 2×4 scope vacíos (migration 003 placeholder) creados con `organizacion_id=None`.
+   - Se crean **SCOPE PROPIO (VER+ACTUAR)** wildcard `permiso="*"` → matcha `creador_id == user_id`.
+   - Se crean **SCOPE ORGANIZACION (VER+ACTUAR)** para SUPER/CHC/CCU → `organizacion_id + pais_id` populados.
+   - Se crea **SCOPE UNIDAD (VER+ACTUAR)** para AXA (como en migration 003 placeholder) → `unidad_ids = [ax_uo_id]` populado + `incluye_descendientes=True` (Q2).
+
+**3 Bug menores encontrados y corregidos durante 1.1 RUN:**
+| Bug | Tipo | Fix |
+|---|---|---|
+| `es_principal=True` vs campo esperado por hydrate `principal=True` | Nombre campo erróneo en usuario_unidad INSERT | `$rename es_principal → principal` en los 4 docs (update_many) |
+| `usuario_alcance.tipo_alcance=ORGANIZACION` pero `organizacion_id=None` (placeholder) | Scope empty → siempre SIN_MATCH | DELETE + INSERT scope populado con org/pais/UO |
+| Replica lag read (secondaryPreferred maxStaleness 120s) → hydrate retornaba `unidad_ids=0` | Lectura de stale secondary | URI `primaryPreferred` para tests I1 ampliados + `force_refresh=True` en hydrate en tests Bloque1.1 |
+
+**Resultados Pipeline 7 pasos POST 1.1 (todos 4/4 PERMIT):**
+| Label | Autorizar permiso + nivel | Resultado | Origen permiso | Scope match |
+|---|---|---|---|---|
+| A SUPER | admin.users INFO_COMPLETA | ✅ PERMIT | SUPERUSER_WILDCARD | SUPERUSER_WILDCARD |
+| B CHC | admin.structure INFO_COMPLETA | ✅ PERMIT | ROL:ADMIN_GENERAL | MATCH_ORGANIZACION |
+| C AXA | fastcheck.query DETALLE_RIESGO | ✅ PERMIT | ROL:EVALUADOR_ANALISTA | MATCH_PROPIO |
+| D CCU | admin.structure RESULTADO_GENERAL | ✅ PERMIT | ROL:ADMIN_GENERAL | MATCH_ORGANIZACION |
+
+**I1 Ampliado (9 → 12 tests) · Suite total 44 → 47:**
+- Nuevos tests → `TestBloque11_Fase1_ScopeMatchPostPopulate`
+- **test_B2_CHC_scope_ORGANIZACION_match** → PASS
+- **test_C3_AXA_scope_UNIDAD_PROPIO_match** → PASS
+- **test_D2_CCU_scope_ORGANIZACION_match** → PASS
+
+**Ref líneas Bloque 1.1:**
+- Usuario alcance / unidad populación (one-shot, idempotente si rerun) → (scripteados vía ad-hoc `run_mongo_*`, no persistentes en repo)
+- 3 Nuevos tests I1 Bloque 1.1 → [test_integration_4_clientes_reales.py#L356-L491](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_4_clientes_reales.py#L356-L491)
+- Mapping definitivo org/pais/UO → salida script discovery (ver `FASE1_TRACKING_RBAC_ABAC.md`)
+- Suite pytest total Bloque1.1 post: `47 passed in 0.65s exit=0`
+
+**Safety:** 0 escrituras en DB `duxiter` producción. El `ReadonlyCollectionProxy` + runtime guard L4 no han disparado ningún `BeforeAnyWriteAbort`.
+
+---
+
+### ✅ Bloque 1.2 — `SuperuserBlockedRoute` workspace tenant-specific (Q7 FASE1 · hard constraint)
+**Fecha: 03.10.2026 / Horas: 3 h**
+
+**Estado:** ✅ EJECUTADO y VERIFICADO (Suite **51/51 PAS exit=0, 1.55s**; 4/4 tests E2E Superuser PASS).
+
+**Objetivo:** Implementar Q7 FASE1: il `superuser` GLOBALE non può accedere ad alcuna rotta workspace *tenant-specific*. Le rotte sotto `/api/v2/workspace/*` montano una route class custom `SuperuserBlockedRoute(APIRoute)` che, *prima dell'handler originale*, decodifica il JWT, idrata EnrichedUser e — se `is_superuser_wildcard=True` OPPURE `legacy_role=='superuser'` (fallback legacy) — solleva `HTTPException 403` con `code=SUPERUSER_WORKSPACE_BLOCKED` e `http_code_num=40301`.
+
+**Architettura componente (5 file modificati/creati):**
+| File | Ruolo | Referencia líneas |
+|------|-------|-------------------|
+| `app/api/dependencies.py` | Definizione `SuperuserBlockedRoute(APIRoute)` + costante `SUPERUSER_WORKSPACE_BLOCKED_CODE`. Safety lock `_assert_safe_target_db()` eseguito prima di *qualunque* hydrate/read. Fallback doppio: is_superuser_wildcard v2 O role==superuser legacy. | [L411-L501](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L411-L501) |
+| `app/api/v2/routers/workspace.py` | **Nuovo file** · Router `/v2/workspace/*` montato con `route_class=SuperuserBlockedRoute`. Contiene endpoints: `GET /workspace/health` (public gateway, no user req) · `GET /workspace/me` (contexto workspace dell'utente autenticato + `get_current_user` DI per popolare CurrentUser dual-face). | [workspace.py#L1-L58](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/workspace.py#L1-L58) |
+| `app/api/v2/routers/__init__.py` | Export nuovo `workspace_router`. | [#L6-L14](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/__init__.py#L6-L14) |
+| `app/api/v2/__init__.py` | Import + re-export `workspace_router` package-level (richiesto da `v2/router.py` `from fastcheck_api.app.api.v2 import …`). | [v2/__init__.py#L7-L16](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/__init__.py#L7-L16) |
+| `app/api/v2/router.py` | `router.include_router(workspace_router)` dopo audit_router (ordine: authz→org→users→third→audit→workspace). Path finale: `/v2/workspace/*`. | [router.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L23) |
+
+**Fix dato staging minore:** Tenant AXA (`TI - PRuebas` ObjectId `696f6386174b6c5725971a6c`) in `duxiter-2` aveva `tenants.isActive=False` che causava `TENANT_NOT_ACTIVATED` HTTP 403 in `get_current_user` (Dipendenza DI `/workspace/me`). Aggiornato `update_one → isActive=True` **solo su `duxiter-2`** (0 scritture produzione).
+
+**Risultati 4 scenari E2E Bloque1.2:**
+| Scenario | Utente / Ruolo legacy | Chiamata | Status HTTP atteso | `detail.code` atteso | Resultado |
+|---|---|---|---|---|---|
+| A) BLOCCATO | SUPER superuser (wildcard=True) | `GET /v2/workspace/me` Bearer+JWT firmato | **403** | `SUPERUSER_WORKSPACE_BLOCKED` | ✅ PASS |
+| B) AUTORIZZATO | CHC tenant_admin (CMPC) | `GET /v2/workspace/me` Bearer+JWT firmato | **200** | — | ✅ PASS |
+| C) AUTORIZZATO | AXA evaluator (Virbac/TI-PRuebas) | `GET /v2/workspace/me` Bearer+JWT firmato (post-attivazione tenant) | **200** | — | ✅ PASS |
+| D) AUTORIZZATO | CCU read_only (UCSC) | `GET /v2/workspace/me` Bearer+JWT firmato | **200** | — | ✅ PASS |
+
+**Sintesi suite pytest TOTALE post-Bloque1.2:**
+| Componente | Conteggio tests |
+|---|---|
+| U1 authz_service unitari (F0) | 24 |
+| U2 proyeccion_service unitari (F0) | 9 |
+| I1 4 clienti integrazione (F0 legacy + F1 Bloq1.1 ampliado) | 12 |
+| I2 auditoria_log 10 escenarios (F0) | 2 |
+| **Blq1.2 E2E SuperuserBlockedRoute (NUOVO)** | **4** |
+| **TOTAL GLOBALE** | **51/51 PASS** · exit=0 · **1.55 s** |
+
+**Ref líneas Bloque 1.2:**
+- SuperuserBlockedRoute class + safety lock L4 → [dependencies.py#L411-L501](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L411-L501)
+- Router workspace `/v2/workspace/*` → [workspace.py#L1-L58](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/workspace.py#L1-L58)
+- Export package workspace_router → [v2/__init__.py#L1-L16](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/__init__.py#L1-L16) / [v2/routers/__init__.py#L1-L14](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/__init__.py#L1-L14)
+- Mount aggregatore v2 → [router.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L23)
+- 4 Tests E2E Q7 (A 403 / B C D 200) → [test_superuser_blocked_route_e2e.py#L1-L139](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_superuser_blocked_route_e2e.py#L1-L139)
+
+**Safety:** 1 scrittura staging `duxiter-2` (tenants AXA isActive=True). **0 scritture in `duxiter` produzione** (verificato safety lock L1 runtime assert `db.name != duxiter` in EVERY connessione Mongo).
+
+---
+
+### 🎉 ✅ BLOQUE 1.3 — Migración gradual `AUTHZ_LEGACY_LAYER` 66 usuarios (CIERRE FASE 1 · 100% COMPLETADO)
+**Fecha: 03.10.2026 / Horas: 3 h**
+
+**Estado:** ✅ EJECUTADO y VERIFICADO (Suite **51/51 PAS exit=0 1.55 s**; AUTHZ_LEGACY_LAYER=`False` GLOBAL DEFAULT).
+
+**Objetivo:** Migrazione graduale di TUTTI gli utenti di staging `duxiter-2` al **nuovo motore RBAC+ABAC+Scopes V2 a 7 passi DOCX §6.3**, disabilitando DEFINITIVAMENTE il fallback legacy `ROLE_PERMISSIONS` hardcoded. Gruppi progressivi (canarino 20% → medio 50% → pubblico 100%) con incremento cache_version per invalidare globalmente LRU cache `hydrate_user_from_db(key = (str(user_id), "v{cv}"))`.
+
+**DISCOVERY pre-migrazione (EXP Bloq1.3, duxiter-2 ONLY):**
+| Statistica | Valore |
+|---|---|
+| `N users` (isActive qualsiasi + isActive=False) | **66** |
+| 20% Gruppo 1 canarino | 13 utenti |
+| 50% Gruppo 2 (cum) | 33 utenti |
+| 100% Gruppo 3 (cum) | 66 utenti |
+| Distribuzione migrated pre-1.3 | 66/66 migrated=True (1 superuser · 4 evaluator · 61 tenant_admin) |
+| Distribuzione cache_version pre-1.3 | `{'1': 62, '3': 4}` (4 utenti Blq1.1 già bumpati a cv=3) |
+
+**RUN operazioni MongoDB (duxiter-2 ONLY · safety lock 4-layer OK):**
+| # Grupo | N utenti | `users.update_many({_id: {$in: g_ids}}, ...)` | `cache_version` bump | Campo `authz_v2` |
+|---|---|---|---|---|
+| G1 (20%) | 13 | matched=13, modified=13 | 1/3 → **4** | `{"force_v2_only": True}` |
+| G2 (50%) | 20 extra (cum: 33) | matched=20, modified=20 | 1 → **5** | `{"force_v2_only": True}` |
+| G3 (100%) | 33 extra (cum: 66) | matched=33, modified=33 | 1 → **6** | `{"force_v2_only": True}` |
+
+Distribuzione POST-1.3 cache_version: `{'4': 13, '5': 20, '6': 33}` (66 totali, tutti bumped correttamente).
+
+**Codice modificato (2 file, G3):**
+1. **[config.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/core/config.py#L23)** · `authz_legacy_layer: bool = Field(default=False, …)` → **GLOBAL DEFAULT = False** (chiude la migrazione).
+2. **[dependencies.py#L248-L252](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L248-L252)** · Nuovo campo `authz_v2.force_v2_only` estratto da `users.authz_v2` (dict) e salvato in `request.state.force_v2_only`.
+3. **[dependencies.py#L314-L322](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L314-L322)** · Guardia `require_permission()`: se `force_v2_only=True` **oppure** `settings.authz_legacy_layer=False` → MAI esegue il fallback legacy (salta direttamente a pipeline 7 pasos V2).
+4. **Bug fixato durante G3** (regressione minore): `bool(... dict ...).get("force_v2_only")` → `AttributeError: 'bool' object has no attribute 'get'` · Corretto con variabile intermedia `_authz_v2_doc` + `.get()` + `bool()` separato.
+
+**Verificación post-G3 Bloq1.3:**
+- ✅ `pytest fastcheck_api/tests/ -q --tb=short` → **51/51 PASS · exit=0 · 1.55 s**
+- ✅ U1 unitari authz → 24 PASS
+- ✅ U2 unitari proyección (L1..L5 + gate sensible path match) → 9 PASS
+- ✅ I1 4 clienti integrazione (9 legacy F0 + 3 Bloq1.1 scope match) → 12 PASS
+- ✅ I2 auditoria_log 10 escenarios Bloq0.8 → 2 PASS
+- ✅ Bloq1.2 E2E Q7 SuperuserBlockedRoute (A:403 · B/C/D:200) → 4 PASS
+- ✅ **Safety lock**: 0 scritture `duxiter` produzione · tutte le operazioni solo su `duxiter-2`
+- ✅ Feature flag `AUTHZ_LEGACY_LAYER` default globale = `False` (fase chiusa; nessun utente ritorna a legacy)
+
+**Rif líneas Bloque 1.3:**
+- config.py global default G3 → [config.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/core/config.py#L23)
+- get_current_user + force_v2_only extract → [dependencies.py#L248-L262](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L248-L262)
+- require_permission guardia anti-fallback-legacy → [dependencies.py#L314-L325](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L314-L325)
+- Suite pytest completa 51/51 PASS (1.55 s) · test runner herdoc
+
+---
+
+### 💬 ✅ BLOQUE 2.1 (FASE2) — Comentarios Visibilidad VISIBLE / RESTRINGIDO / PERSONAL (HU-12) + Migración 005 Catálogo 6 permisos nuevos + 2 colecciones nuevas (`comentarios_v2` + `catalogo_etiquetas`)
+**Fecha: 03.10.2026 / Horas: 3 h**
+
+**Estado:** ✅ EJECUTADO y VERIFICADO (Suite **59/59 PAS exit=0 2.11 s** · 8 tests NUEVOS HU-12 · 51 FASE1 sin regresiones · 0 escrituras producción `duxiter`).
+
+---
+
+#### 🧭 EXP Bloque 2.1 (Discovery duxiter-2 SOLO-LECTURA)
+| Hallazgo | Valor |
+|---|---|
+| Colecciones legacy de comentarios | ❌ No existe `comentarios` / `observaciones`; solo `usernotes` con 109 docs sin campo `visibilidad`, sin `ambito_restringido`, sin `borrado_logico` (antiguo sistema sin granularidad). |
+| Catálogo `permisos` pre-005 en duxiter-2 | 23 permisos. Faltaban: `comment.read`, `comment.delete`, `comment.create` (permisos comentarios) + `tag.read`, `tag.write`, `tag.manage_restricted`, `tag.grant` (4 permisos etiquetas Bloq2.2). |
+| `rol_permiso` pre-005 | 8 roles plantilla (SOLICITANTE → GESTOR_MODELO_RIESGO) no tenían ninguna asignación comment/tag. |
+
+---
+
+#### ⚙️ RUN Bloque 2.1 — (1/3) Migración 005 idempotente (duxiter-2 ONLY)
+**Archivo:** [005_comentarios_y_etiquetas_catalogo_expand.up.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/005_comentarios_y_etiquetas_catalogo_expand.up.py#L1-L150)
+
+1. **6 permisos nuevos** insertados con `update_one upsert=True`:
+   - Comentarios (HU-12): `comment.read`, `comment.create`, `comment.delete`.
+   - Etiquetas (Bloq2.2 next): `tag.read`, `tag.write`, `tag.manage_restricted`, `tag.grant`.
+2. **31 asignaciones rol_permiso** (8 roles plantilla): SOLICITANTE → read-only comment/tag; EVALUADOR_ANALISTA → write create; ADMIN_GENERAL/AUDITOR → delete + manage_restricted; GESTOR_RIESGO superconjunto.
+3. **2 colecciones nuevas creadas** (solo `duxiter-2`, no producción):
+   - `comentarios_v2` (HU-12 core): 16 campos (tercero_id, rut_clean, texto, visibilidad ∈ {VISIBLE,RESTRINGIDO,PERSONAL}, ambito_restringido_tipo/ambito_restringido_id, autor_id, tags, borrado_logico, borrado_en/por, etc.).
+   - `catalogo_etiquetas` (Bloq2.2 core): tenantId, organizacion_id, codigo (único), nombre, tipo, restricciones, creado_por.
+4. **9 índices compuestos background** (todos con `idx_005_*` prefix): tenantId + tercero_id + rut_clean + organizacion_id + unidad_id + area_id + autor_id + visibilidad + borrado_logico + `creado_en DESC`; índice único `(organizacion_id, codigo)` en etiquetas.
+5. **Migration state**: `__rbac_migrations_version.update_one state → applied $addToSet '005'`. Post-apply: `applied = ['001','002','003','004','005']`.
+
+**Rollback:** [005_comentarios_y_etiquetas_catalogo_expand.down.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/005_comentarios_y_etiquetas_catalogo_expand.down.py#L1-L25)
+
+---
+
+#### ⚙️ RUN Bloque 2.1 — (2/3) Router CRUD `/v2/comments` (3 niveles visibilidad + proyección pura)
+**Archivo:** [comments.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/comments.py#L1-L291) **NUOVO 291 líneas**
+
+**Endpoints expuestos (tutti con `@require_permission` correspondiente):**
+| Método | Path | Permiso | Lógica clave |
+|---|---|---|---|
+| `GET /v2/comments` | Listar filtrados por `tercero_id` o `rut_clean` | `comment.read` | **Helper projection pura `_filtro_visibilidad_lectura(user, filt_base)`**: construye `$or` MongoDB a 3 branch: (A) `PERSONAL` (solo autor o `_es_admin_o_auditor`); (B) `VISIBLE` (todos miembros organización); (C) `RESTRINGIDO` branch UNIDAD + AREA + ORG match `ambito_restringido_id ∈ user.unidad_ids / area_id / organizacion_id`. **Superuser wildcard bypass**: `if user.role=="superuser" → return filt_base + borrado_logico!={$ne:True}`. Isolamento tenant hard sempre attivo. |
+| `POST /v2/comments` | Crear comentario | `comment.create` | Valida visibilidad; si RESTRINGIDO → exige `ambito_restringido_tipo` + `ambito_restringido_id`; inserta `creado_en = now`, `borrado_logico = False`. Auditoría `accion=comment.create`. |
+| `PUT /v2/comments/{id}` | Editar (solo autor o admin) | `comment.create` + ownership check | Guard: solo `autor_id == user_id` O `_es_admin_o_auditor` puede modificar; no se permite cambiar `visibilidad` de PERSONAL → VISIBLE sin admin. Auditoría. |
+| `DELETE /v2/comments/{id}` | Borrado LÓGICO (NO físico) | `comment.delete` | Guard: solo AUTOR O admin/auditor. Update: `borrado_logico=True`, `borrado_en=now`, `borrado_por_id=user_id`. Auditoría `accion=comment.delete`. |
+| `GET /v2/comments/{id}` | Obtener uno por ID | `comment.read` | Stesso filtro visibilidad lista + `_id=OID(id)`; 404 si fuori scope. |
+
+**Helpers addizionali:**
+- `_es_admin_o_auditor(user)` (L82-L87): `{superuser, tenant_admin, auditor, GESTOR_RIESGO}` = admin compliance (vedono tutti i PERSONALI).
+- `_oid(s)` → `to_object_id(s)` con fallback safe.
+- Tutte le scritture POST/PUT/DELETE registrano riga in `auditoria_log` con `obj_id`, `accion`, `antes`, `despues`.
+
+---
+
+#### ⚙️ RUN Bloque 2.1 — (3/3) Mount router + exports package
+3 file aggiornati per registrare `comments_router` su path `/v2/comments`:
+1. Routers export → [v2/routers/__init__.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/__init__.py#L1-L17) (added `comments_router`).
+2. Package v2 export → [v2/__init__.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/__init__.py#L1-L19) (re-export).
+3. Mount aggregatore → [v2/router.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L1-L25) · `router.include_router(comments_router, prefix="/comments", tags=["Comments V2"])`
+
+**Smoke import:** routes v2 totali = 27 endpoints registrati; routes list OK; py_compile 6 file (005.up/down + comments.py + 3 exports) = 0 errori.
+
+---
+
+#### ✅ VERIF Bloque 2.1 — 8/8 tests NUEVOS I3 HU-12 PASS · Suite TOTAL 59/59
+**Archivo test:** [test_integration_I3_comentarios_hu12.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I3_comentarios_hu12.py#L1-L320) **NUOVO 320 líneas**
+
+**Estrategia testing sicuro su `duxiter-2`:** tutti i commenti creati portano un **tag di test UNIVOCO = `test_I3_HU12_{tsUTC}`**; `fixture autouse _init_and_cleanup` esegue `delete_many({"tags":test_tag})` PRIMA e DOPO ogni test → nessun inquinamento dati permane.
+
+**4 test unitari (U3-U6):**
+- **U3 VISIBLE**: commento VISIBLE su org_CHC → lo vede CHC ✅; NON lo vede AXA (altro tenant) ✅; SUPER lo vede ✅.  PASS.
+- **U4 PERSONAL non-admin**: CHC crea PERSONAL → utente non-admin non-autore NON lo vede.  PASS.
+- **U5 PERSONAL admin**: CHC crea PERSONAL → superuser/auditor LO VEDONO (compliance).  PASS.
+- **U6 RESTRINGIDO(UNIDAD)**: CHC crea RESTRINGIDO UNIDAD sobre CHC_UO → membro CHC_UO lo vede ✅; altra UO stessa org NON lo vede ✅.  PASS.
+
+**3 test integrazione (I3-1 / I3-2 / I3-3):**
+- **I3-1**: Flusso end-to-end CREATE → GET list → EDIT → DELETE (lógico) su VISIBLE con 4 utenti diversi. All pass.
+- **I3-2**: Gate PN non si applica ai commenti (risultato: PN gate = N/A; commenti PN-naive). PASS.
+- **I3-3**: Ambito RESTRINGIDO AREA match user.area_id + Ambito RESTRINGIDO ORG match user.organizacion_id. PASS.
+
+**1 test precondizioni:** `permiso comment.read / comment.delete EXISTEN en catálogo permisos` (005 applied). PASS.
+
+**Regresión 51 FASE1:** 51/51 PASS.
+**SUMMARY TOTAL:** pytest `fastcheck_api/tests/ -q --tb=short` → **59 passed, 37 warnings in 2.11s, exit=0**.
+
+---
+
+#### 🔐 Safety lock 4-capas Bloque 2.1
+| Capa | Verificación |
+|---|---|
+| L1 env whitelist | `MIGRATION_TGT_DB_NAME=duxiter-2` sempre |
+| L2 runner hardcode | runner.py `assert target == 'duxiter-2'` passed |
+| L3 ReadonlyProxy 22 metodi bloqueados | Nessun `BeforeAnyWriteAbort` su collezioni duxiter |
+| L4 HTTP guard | `_assert_safe_target_db(db)` ogni conexión → `db.name != 'duxiter'` sempre OK |
+
+**✅ Resultado:** 0 scritture su `duxiter` produzione. Tutte le modifiche = solo `duxiter-2`.
+
+---
+
+### 🏷️ ✅ BLOQUE 2.2 (FASE2) — Etiquetas Scope GENERAL / RESTRINGIDA + 4 permisos `tag.*` (tag.read · tag.write · tag.manage_restricted · tag.grant)
+**Fecha: 03.10.2026 / Horas: 3 h**
+
+**Estado:** ✅ EJECUTADO y VERIFICADO (Suite **65/65 PASS exit=0 2.09 s** · 6 tests NUEVOS U7-U10+I4 · 59 FASE1/Bloq2.1 0 regresiones · 0 escritures produccion `duxiter`).
+
+---
+
+#### 🧭 EXP Bloque 2.2 (Discovery duxiter-2 SOLO-LECTURA)
+| Hallazgo | Valor |
+|---|---|
+| Collección `catalogo_etiquetas` (005) | EXISTE, **count = 0 docs vacía** (sin seed). |
+| Índice único `idx_005_etiquetas_org_codigo_unico` | ✅ PRESENTE · campos `(organizacion_id, codigo)` · `unique=True` · background=True (005 L84). |
+| Catálogo permisos | `tag.*` count = **5 docs** en `duxiter-2.permisos`: `tag.use` (legacy F0 FASE0) + **4 PERMISOS NUEVOS 005**: `tag.read`, `tag.write`, `tag.manage_restricted`, `tag.grant`. |
+| `rol_permiso` seed 005 | **14 asignaciones** 8 roles: `SOLICITANTE`/`USUARIO_OPERATIVO`/`EVALUADOR_ANALISTA`/`APROBADOR`/`AUDITOR`/`ADMIN_GENERAL`/`GESTOR_LISTAS`/`GESTOR_MODELO_RIESGO` con modos INCLUIDO / CONFIGURABLE_OPCIONAL. |
+| `__rbac_migrations_version state.applied` | `['001','002','003','004','005']` (005 applied ✅). |
+
+---
+
+#### ⚙️ RUN Bloque 2.2 — (1/3) Router CRUD V2 Etiquetas `/v2/tags` (6 endpoints nuevos)
+**Archivo:** [tags.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/tags.py#L1-L330) **NUEVO 330 líneas · Scope projection pure helper**
+
+**Endpoints expuestos:**
+| Método | Path | Permiso | Lógica clave 🔑 |
+|---|---|---|---|
+| `GET /v2/tags` | Listar etiquetas scope usuario | `tag.read` | **Helper projection pura `_filtro_etiquetas_lectura(user, filt_base)`** · GENERAL = org match · **RESTRINGIDA**: `creado_por_id == user.id` OR `user in usuarios_autorizados_ids[]` OR admin/auditor. **Superuser wildcard bypass** (vedi tutte). |
+| `GET /v2/tags/{tag_id}` | Obtener 1 etiqueta por ID | `tag.read` | Stesso filtro scope + `_id=OID(tag_id)`; 404 se fuera scope. |
+| `POST /v2/tags` | Crear GENERAL o RESTRINGIDA | `tag.write` (GENERAL) / `tag.manage_restricted` (RESTRINGIDA) | Doble guardia: si GENERAL → autorizar `tag.write`; si RESTRINGIDA → autorizar `tag.manage_restricted`. Campo `usuarios_autorizados_ids = [creador]` auto-seed si tipo RESTRINGIDA. |
+| `PUT /v2/tags/{tag_id}` | Editar nombre/descripcion/color | (creador O admin) + permiso según tipo | Permiso owner: solo creador, admin, o permiso equivalente. |
+| `DELETE /v2/tags/{tag_id}` | Borrado lógico 🔒 (NO físico) | `tag.write` (G) o `tag.manage_restricted` (R) | Borrado lógico `borrado_logico=True` + `borrado_en` + `borrado_por_id`. |
+| `POST /v2/tags/{tag_id}/grant` | **Otorgar/quitar acceso RESTRINGIDA a usuario** | Require `tag.grant` · dependencia decorator | Acciones `AGREGAR` (addToSet usuarios_autorizados_ids) / `QUITAR` (pull). Valida que usuario-objetivo exista y pertenezca misma organización. |
+
+**Extras siempre activos:**
+- Isolamento tenant hard: `organizacion_id = user.organizacion_id or user.tenant` su tutti i find/update (salvo superuser wildcard).
+- HTTP 409 CONFLICT si duplicado `idx_005_etiquetas_org_codigo_unico` → [create_tag#L188-L194](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/tags.py#L188-L194).
+- Registro auditoría **para cada write** (POST/PUT/DELETE/grant): `registrar_auditoria()` con `accion=tag.create|tag.update|tag.delete|tag.grant`; `entidad_tipo=catalogo_etiquetas`.
+
+---
+
+#### ⚙️ RUN Bloque 2.2 — (2/3) Mount router en API V2 + exports
+3 file aggiornati per registrare `tags_router`:
+1. Routers package export → [v2/routers/__init__.py#L8](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/__init__.py#L8) · `tags_router` added.
+2. Package v2 root export → [v2/__init__.py#L9](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/__init__.py#L9) · `tags_router` re-export.
+3. Mount aggregatore `/v2` → [v2/router.py#L22](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L22) · `router.include_router(tags_router)`.
+
+**Smoke tests py_compile:** 4 file (tags.py · 2 __init__ · router.py) → OK.
+**Routes v2 totali dopo mount:** **33 endpoints** (prima Bloq2.2 = 27; +6 nuevos tags routes).
+
+---
+
+#### ✅ VERIF Bloque 2.2 — Tests I4 NUEVOS (6/6 PASS) · Suite TOTAL 65/65
+**Archivo test:** [test_integration_I4_etiquetas_hu13.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I4_etiquetas_hu13.py#L1-L300) **NUOVO 300 líneas · Safety lock MongoClient sync + cleanup unique test tag prefix.**
+
+**RC2.2-A resuelto:** ObjectId non 24-hex fallaba en version inicial → fix con constantes `OID_FAKE_TAG_U7..U10_3/I41_REST` validas 24 char hex.
+
+**4 Unitari (U7-U10):**
+- **U7 GENERAL scope org · SUPER wildcard ✅**: tag GENERAL CHC → CHC vede; AXA altro org NON vede; SUPER vede.
+- **U8 RESTRINGIDA scope autorizados ✅**: creador/admin vede; utente NO-admin NON autorizzato NO vede; SUPER vede.
+- **U9 Grant AGREGAR/QUITAR toggle scope RESTRINGIDA ✅**: prima non vede → aggiunto in `usuarios_autorizados_ids` → vede; QUITAR → torna a NO vedere.
+- **U10 Indice único (org+cod) 409 conflict ✅**: mismo cod misma org → DuplicateKeyError; stesso cod org diversa → OK.
+
+**2 Integrazione:**
+- **I4-1 Flusso end-to-end 4 utenti**: crear General + Restringida + Grant toggle + count org. ✅ PASS.
+- **I4 Precondiciones**: 005 applied + 4 permisos tag.read/write/manage_restricted/grant existen en catálogo. ✅ PASS.
+
+**Regresión suite 59 (FASE1 + Bloq2.1)**: ✅ **59/59 PASS** 0 regressions.
+**TOTAL FINAL Bloq2.2 FASE2**: ✅ **65/65 PASS in 2.09 s, exit=0**.
+
+---
+
+#### 🔐 Safety lock 4-capas Bloque 2.2
+| Capa | Verificación |
+|---|---|
+| L1 env whitelist `MONGODB_URI=/duxiter-2` | ✅ Settings env `mongodb_uri` path=duxiter-2. |
+| L2 Runner hardcode | ✅ Applied=005 contiene `assert db.name == 'duxiter-2'`. |
+| L3 ReadonlyCollectionProxy (22 métodos escritura bloqueados) | ✅ Nessun BeforeAnyWriteAbort su duxiter. |
+| L4 HTTP 503 guard | ✅ Conexiones test `db.name != duxiter` sempre. |
+| **Resultado Safety** | **0 escritures en `duxiter` producción.** Todas las escrituras solo `duxiter-2`. |
+
+---
+
 ## Fecha: 02 de Octubre de 2026
 
 ---
@@ -1287,8 +1722,8 @@ Monto total                           → $3.036.602.310 ✅ (10x RESUELTO, ya n
 | 🗓️ Septiembre (Equifax BOLCOM/ICOM/BED + parser CLP) | 2025 | 5 | 10 | 10 |
 | 🗓️ Octubre (Monitoreo RUT + Progreso UI) | 2025 | 3 | 10 | 10 |
 | 🗓️ Septiembre (bugs MeshTable + Socios Loop + Fix 80% FC + Immutabilità LP) | 2026 | 19 | 28 | 28 |
-| 🗓️ **Octubre (Fix RUT formatter 2digits/backspace)** | 2026 | **3** | **5** | **5** |
-| **TOTAL** | | **45** | **77 h** | **77 h** |
+| 🗓️ **Octubre (Fix RUT formatter + Doc Spec V2 + Doc Refactoring RBAC + Bloque 0.7 Backend/Front + Bloque 0.8 Testing/QA + Bloque1.1 FASE1 Poblamiento UO + Bloque1.2 SuperuserBlockedRoute + Bloque1.3 Migracion AUTHZ_LEGACY_LAYER CIERRE F1 + Bloque2.1 FASE2 Comentarios V/R/P HU-12 + Bloque2.2 FASE2 Etiquetas Scope G/R 4 permisos + Bloque2.3 FASE2 Export Multinivel CERT≤N2 INF≤N4 + Bloque2.4 FASE2 Gobierno Riesgo 4 Permisos SENSIBLES HU-13/14)** | 2026 | **15** | **51** | **51** |
+| **TOTAL** | | **56** | **123 h** | **123 h** |
 
 ---
 
@@ -1335,6 +1770,13 @@ Monto total                           → $3.036.602.310 ✅ (10x RESUELTO, ya n
 | 37 | 🟪 Round 2: `detectMainRut` BIDIREZIONALE + **Super Fallback Nucleare** v21 (100% relazioni) + banner diagnostico arancio ownRows 0 | 21 Sep 2026 | 3 h | [MeshTable:44-56, 374-404](file:///home/duxiter/duxiter_intermediate/src/components/ui/MeshTable/MeshTable.tsx#L44-L56), [FastCheckEX.tsx#L444-L478](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L444-L478) | 3 bug |
 | 38 | 🟥 Round 3: disallineamento `===` stretto vs `rutMatchRobust` (7.1 MeshTable, 7.2 LegalReps) | 21 Sep 2026 | 2 h | MeshTable L306-L313, Legal L82-L84, v1.6 | Causa raiz |
 | 39 | ✅ Traduzione Changelog Semanal a Español + actualitzación hoja tiempos | 30 Sep 2026 | 1 h | CHANGELOG_SEMANAL.ES.md | Traduzione |
+| 49 | 🛡️ Bloque 0.7 — authz_service v2 (7 pasos RBAC+ABAC) + proyección 5 niveles (L1..L5) + legacy wrapper (AUTHZ_LEGACY_LAYER) + Frontend AuthContext/wildcard/AdminUI Profiles | 03 Oct 2026 | 5 h | [authz_service.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py), [proyeccion_service.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/proyeccion_service.py), [dependencies.py#L33-L56](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L33-L56), AuthContext/RequirePermission/AuthzProfilesPage (Frontend src/) | Scaffolding 18 colecciones authz v2 en duxiter-2 |
+| 50 | 🧪 Bloque 0.8 — Testing U1/U2/I1/I2 + QA Checklist 10-col + Bug GRAVE gate sensible (path match a.b.c fix) + Safety 4-layer lock OK (0 scritture duxiter) | 03 Oct 2026 | 8 h | [test_authz_service.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_authz_service.py) (24) / [test_proyeccion_service.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_proyeccion_service.py) (9) / [test_integration_4_clientes_reales.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_4_clientes_reales.py) (9) / [test_integration_I2_auditoria_log_100pc.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I2_auditoria_log_100pc.py) (2) / QA_TEST_LIST.md#L274-L292 | Suite 44/44 PASS exit=0 · Bug GRAVE leak sensibili risolto
+| 51 | 🏢 Bloque 1.1 (FASE1) — Poblamiento Unidades Organizacionales reales (4 tenants I1) + `usuario_alcance` populados (PROPIO/ORG/UNIDAD scope reales) + 3 bug menores corregidos (es_principal, scope vacíos, replica lag) + I1 ampliado 9→12 tests | 03 Oct 2026 | 3 h | [test_integration_4_clientes_reales.py#L356-L491](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_4_clientes_reales.py#L356-L491) · operación MongoDB staging `duxiter-2` `usuario_unidad` + `users` + `usuario_alcance` | Suite 47/47 PASS exit=0 (0.65s) · 4/4 pipeline 7 pasos PERMIT OK · 0 escrituras producción duxiter
+| 52 | 🚧 Bloque 1.2 (FASE1) — Q7 SuperuserBlockedRoute(APIRoute) custom class su `/v2/workspace/*` + gate HTTP 403 `SUPERUSER_WORKSPACE_BLOCKED` (40301) · router workspace `/me` + `/health` · 4 tests E2E A 403 · B/C/D 200 · fix minore attivazione tenant TI-PRuebas `duxiter-2` | 03 Oct 2026 | 3 h | [dependencies.py#L411-L501](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L411-L501) / [workspace.py#L1-L58](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/workspace.py#L1-L58) / [v2/router.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L23) / [test_superuser_blocked_route_e2e.py#L1-L139](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_superuser_blocked_route_e2e.py#L1-L139) | Suite **51/51 PASS 1.55s** exit=0 · Fallback legacy role=superuser + v2 is_superuser_wildcard · Safety lock L1 OK 0 scritture produzione duxiter
+| 53 | 🎉 Bloque 1.3 (FASE1 · CIERRE 100%) — Migración graduale AUTHZ_LEGACY_LAYER 66 usuarios (G1 20% 13 · G2 50% +20 · G3 100% +33) · force_v2_only=True duxiter-2 · cache_version bump 4/5/6 · config.py global default `authz_legacy_layer=False` · guardia require_permission anti-fallback-legacy | 03 Oct 2026 | 3 h | [config.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/core/config.py#L23) / [dependencies.py#L248-L262](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L248-L262) + [L314-L325](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L314-L325) / 66× update_many `users.authz_v2.force_v2_only=True` staging | Suite **51/51 PASS 1.55 s** exit=0 con `AUTHZ_LEGACY_LAYER=false` · 0 regressioni · 0 scritture produzione duxiter · banner FASE1 100%
+| 54 | 💬 Bloque 2.1 (FASE2) · Comentarios Visibilidad VISIBLE / RESTRINGIDO / PERSONAL (HU-12) · Migración 005 (6 permisos nuevos comment+tag + 31 rol_permiso + 2 colecciones nuevas comentarios_v2 / catalogo_etiquetas + 9 índices) + Router Comments V2 CRUD `/v2/comments` + Helper projection `_filtro_visibilidad_lectura` 3 niveles (PERSONAL/VISIBLE/RESTRINGIDO) + Mount 27 routes v2 totali | 03 Oct 2026 | 3 h | [005_comentarios_y_etiquetas_catalogo_expand.up.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/005_comentarios_y_etiquetas_catalogo_expand.up.py#L1-L150) · [comments.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/comments.py#L1-L291) · [test_integration_I3_comentarios_hu12.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I3_comentarios_hu12.py#L1-L320) · [v2/router.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L1-L25) · [QA_TEST_LIST.md MÓDULO 11](file:///home/duxiter/duxiter_intermediate/QA_TEST_LIST.md#L296-L314) | Suite **59/59 PASS exit=0 2.11s** · 8 tests I3 nuevos HU-12 (U3-U6 unitari + I3-1/I3-2/I3-3 integrazione + 1 precondizioni) · 51 FASE1 0 regressioni · applied=005 verificato · Safety lock 4-capas OK 0 scritture duxiter
+| 55 | 🏷️ Bloque 2.2 (FASE2) · Etiquetas Scope GENERAL / RESTRINGIDA · 4 permisos `tag.read/write/manage_restricted/grant` · Router V2 `/v2/tags` CRUD + `POST /tags/{id}/grant` (toggle usuarios_autorizados_ids) · Helper projection scope pura `_filtro_etiquetas_lectura` GENERAL=org / RESTRINGIDA=autorizados / SUPER=wildcard · Índice único (org,codigo) HTTP 409 · Routes totali v2 = 33 | 03 Oct 2026 | 3 h | [tags.py#L1-L330](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/tags.py#L1-L330) · [test_integration_I4_etiquetas_hu13.py#L1-L300](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I4_etiquetas_hu13.py#L1-L300) · [v2/router.py#L22](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L22) · [QA_TEST_LIST.md MÓDULO 12](file:///home/duxiter/duxiter_intermediate/QA_TEST_LIST.md#L318-L336) | Suite **65/65 PASS exit=0 2.09s** · 6 tests I4 nuevos (U7-U10 unitari + I4-1 E2E + I4 precondiciones) · 59 suite F1+F2.1 0 regresiones · applied=005 + 4 permisos tag.* OK · Safety lock 4-capas OK 0 scrittures duxiter
 | 40 | *(Bugfix 3ª iteración desalineacion conteos Tarjeta Protestos Total 156 vs 164)* | 10 Set 2026 | 0,5 h | CHANGELOG final (truncato en originale) | Estimación mínima |
 | 41 | *(Añadir totalizador mensual tabla tiempos + verificación consistencia 72 h)* | 30 Sep 2026 | 0,5 h | Tabla tiempos | QA |
 | 42 | *(Ripasso generale riferimenti file:/// assoluti e range Lx-Ly ogni fix)* | 30 Sep 2026 | 0,5 h | Tutto documento | Enlaces |
@@ -1342,16 +1784,77 @@ Monto total                           → $3.036.602.310 ✅ (10x RESUELTO, ya n
 | 44 | 🐛 Fix **Backspace deshabilitado en RUT completo/verificado** (guion colgado / dv borrado / guion borrado → loop inf recalc DV) | 01 Oct 2026 | 2 h | [api.ts:CASO 2#L394-L415](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L394-L415) + helpers [parseUserRutRespectfully](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L294-L319) | 3 sub-casos (2a/2b/2c) |
 | 45 | ✅ Fix **validateChileanRut DV inválido aceptado** (antes tautología mod11(body) === dv_calculado always true) + actualización tests suite 39/39 PASS | 01 Oct 2026 | 1 h | [validateChileanRut#L252-L276](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L252-L276), [rut.test.ts](file:///home/duxiter/duxiter_intermediate/src/utils/rut.test.ts) | Corregidos RUTs ejemplo matemáticamente inconsistentes (77.879.240-2, 11.111.111-K) |
 | 46 | ⚡ UX **Validación RUT onBlur SOLO** — Single Evaluation ya no valida/formatea durante la escritura (solo al perder foco y si hay texto) | 02 Oct 2026 | 1,5 h | [SingleEvaluation.tsx#L185-L199](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L185-L199), [submit guard#L201-L230](file:///home/duxiter/duxiter_intermediate/src/pages/evaluations/SingleEvaluation.tsx#L201-L230) | handleRutBlur nueva función; backup submit por si el usuario pulsa ENTER sin blur |
+| 47 | 📜 **Especificación Técnica V2 (traducción DOCX cliente 23-08-2026 → MD)** — 13 secciones + Anexo A (24 bloques trazabilidad funcional→técnica) + 46 tablas DOCX reformateadas | 03 Oct 2026 | 6 h | [ESPECIFICACION_TECNICA_PERFILAMIENTO_FASTCHECK.md](file:///home/duxiter/duxiter_intermediate/ESPECIFICACION_TECNICA_PERFILAMIENTO_FASTCHECK.md) | Extracción DOCX con unzip + xml.etree stdlib Python (pandoc/mammoth no disponibles); Matriz 8 roles plantilla × 23 permisos atómicos; Pseudocódigo motor 7 pasos; 4 casos cliente Rheem/Clinica Dávila/Easy/UDLA |
+| 48 | 🛠️ **Procedimiento Refactoring RBAC Legacy → RBAC+ABAC+Scopes (Plan ejecutable F0/F1/F2/F3)** — Gap Analysis, Impacto ×46 archivos con refs `file://`, 6 Q&A cerradas | 03 Oct 2026 | 6 h | [REFACTORING_RBAC_ABAC_PROCEDIMIENTO.md](file:///home/duxiter/duxiter_intermediate/REFACTORING_RBAC_ABAC_PROCEDIMIENTO.md) | Mapeo 5 roles legacy → 8 roles plantilla; Scripts migración MongoDB one-shot; DoD por fase; Backlog 19 HU con CA; Regla Q1: PN deny-by-default SALVO superuser global |
+| 49 | 🧭 **Analisi codebase RBAC attuale (stato dell'arte)** — Matrice 27 permessi legacy × 5 ruoli; route guards; 4 pagine admin; billing/crediti; JWT + 2 check attivi utente/tenant | 03 Ott 2026 | 0 h | [DOCUMENTACION_ROLES_TENANTS_RBAC.md](file:///home/duxiter/duxiter_intermediate/DOCUMENTACION_ROLES_TENANTS_RBAC.md) | Base documentale per confronto legacy↔nuovo; costo incluso nella task #48 |
+| 50 | ✅ **Bloque 0.7** — Scaffolding Backend Authz V2 `authz_service.py` pipeline 7 pasos + `proyeccion_service.py` 5 niveles + Frontend AuthContext + RequirePermission + AuthzProfilesPage admin | 03 Oct 2026 | 5 h | [authz_service.py#L68-L86](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L68-L86), [proyeccion_service.py#L80-L155](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/proyeccion_service.py#L80-L155), [dependencies.py#L33-L56](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L33-L56), `src/contexts/AuthContext.tsx`, `src/pages/admin/AuthzProfilesPage.tsx` | Legacy wrapper compatibilidad `AUTHZ_LEGACY_LAYER`; Safety lock 4 capas anti-producción |
+| 51 | ✅ **Bloque 0.8** — Testing Unitario (U1 24 authz / U2 9 proyeccion) + Integrazione I1 4 clienti reali duxiter-2 + I2 auditoría_log 100% coverage + QA MÓDULO 10 checklist 10-col. Suite: 44/44 PASS | 03 Oct 2026 | 8 h | [test_authz_service.py#L1-L580](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_authz_service.py#L1-L580), [test_proyeccion_service.py#L1-L325](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_proyeccion_service.py#L1-L325), [test_integration_4_clientes_reales.py#L1-L359](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_4_clientes_reales.py#L1-L359), [test_integration_I2_auditoria_log_100pc.py#L1-L190](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I2_auditoria_log_100pc.py#L1-L190) | **BUG GRAVE GATE SENSIBILE** risolto in proyeccion_service: paths `a.b.c` non filtravano — 2 strategie split + hojas. 0 scritture produzione. |
+| 52 | ✅ **Bloque 1.1 (FASE1)** — Poblamiento Unidades Organizacionales reales 4 clienti I1. `usuario_unidad`(4 inserts) + `users` root (`unidad_ids`/`organizacion_id`/`pais_ids` bump cache_version 1→2→3) + `usuario_alcance` scope PROPIO/ORG/UNIDAD populados. Pipeline 7 pasos 4/4 PERMIT post | 03 Oct 2026 | 3 h | [test_integration_4_clientes_reales.py#L356-L491](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_4_clientes_reales.py#L356-L491), [FASE1_TRACKING_RBAC_ABAC.md](file:///home/duxiter/duxiter_intermediate/FASE1_TRACKING_RBAC_ABAC.md) | 3 bug minori: `es_principal→principal` rename, scope vuoti eliminati + reinsert, secondaryPreferred stale → URI `primaryPreferred`. Suite post: 47/47 PASS |
+| 53 | ✅ **Bloque 1.2 (FASE1 · Q7)** — `SuperuserBlockedRoute` custom class per rotte `/v2/workspace/*`; superuser globale → HTTP 403 `SUPERUSER_WORKSPACE_BLOCKED` (http_code_num 40301); fallback duale v2 + legacy role. Router workspace + exports + mount; fix AXA tenant `isActive=True` staging | 03 Oct 2026 | 3 h | [dependencies.py#L411-L501](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L411-L501), [workspace.py#L1-L58](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/workspace.py#L1-L58), [test_superuser_blocked_route_e2e.py#L1-L139](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_superuser_blocked_route_e2e.py#L1-L139) | Scenari E2E 4/4 PASS (A: 403 SUPER blocked, B/C/D: 200 workspace OK). Suite totale **51/51 PASS 1.55s** |
+| 54 | ✅ **Bloque 1.3 (CIERRE FASE1 · G3 100%)** — Migrazione graduale 66 utenti su `force_v2_only=True` (G1 20% cv=4, G2 50% cv=5, G3 100% cv=6). Feature flag `AUTHZ_LEGACY_LAYER=False` GLOBAL DEFAULT in `config.py`. Guardia `require_permission` salta legacy se `force_v2_only=True` or flag=False. Bug fix `AttributeError bool.get` | 03 Oct 2026 | 3 h | [config.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/core/config.py#L23), [dependencies.py#L248-L325](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L248-L325), [FASE1_TRACKING_RBAC_ABAC.md](file:///home/duxiter/duxiter_intermediate/FASE1_TRACKING_RBAC_ABAC.md) | 0 scritture produzione `duxiter`. 0 regressioni 51/51. FASE1 chiusa 100% ✅ |
+| 55 | ✅ **Bloque 2.1 (FASE2 · HU-12)** — Comentarios Visibilidad 3 livelli VISIBLE / RESTRINGIDO / PERSONAL. Router `/v2/comments` 5 endpoints; helper scope filtro 3 branch (personal autor/admin / VISIBLE org / RESTRINGIDO ambito match UO/AREA/ORG). Migrazione 005 seed 6 permisos nuevos (2 comment + 4 tag) + colecciones nuevas `comentarios_v2` y `catalogo_etiquetas` + 9 índices background. Suite post 59/59 PASS 2.11s | 03 Oct 2026 | 3 h | [005_comentarios_y_etiquetas_catalogo_expand.up.py#L1-L150](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/005_comentarios_y_etiquetas_catalogo_expand.up.py#L1-L150), [comments.py#L1-L291](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/comments.py#L1-L291), [test_integration_I3_comentarios_hu12.py#L1-L320](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I3_comentarios_hu12.py#L1-L320) | 8 nuevos tests I3 U3-U6 + I3-1/I3-2/I3-3 + precond. 005 applied. Índice único `(org,codigo)` en catalogo_etiquetas. QA MÓDULO 11 ×10col |
+| 56 | ✅ **Bloque 2.2 (FASE2 · HU-13)** — Etiquetas Scope GENERAL / RESTRINGIDA granular 4 permisos `tag.read / tag.write / tag.manage_restricted / tag.grant`. Router `/v2/tags` 6 endpoints CRUD + grant toggle AGREGAR/QUITAR `usuarios_autorizados_ids`. Helper scope projection GENERAL (org) / RESTRINGIDA (creador / usuarios_autorizados_ids / admin / superwild). DuplicateKeyError → HTTP 409 Conflict índice único. Suite post **65/65 PASS 2.09s** | 03 Oct 2026 | 3 h | [tags.py#L1-L330](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/tags.py#L1-L330), [test_integration_I4_etiquetas_hu13.py#L1-L300](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I4_etiquetas_hu13.py#L1-L300), [v2/router.py#L22](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L22) | 6 tests I4 PASS U7-U10 / I4-1 / precondiciones. 0 regresiones F1. QA MÓDULO 12 ×10col. Changelog tarea #55 |
+| 57 | 🏭 **Bloque 2.3 (FASE2 · HU-15)** — Export Multinivel `tipo=CERTIFICADO|INFORME` clamp N2/N4 + auditoría immutable `export.tercero`. 1 endpoint `GET /v2/third-parties/{id}/export`. Map `EXPORT_PERMISOS` (CERT=export.certificate→N2, INF=export.detail→N4); helper puro `_nivel_export_final(decision_nivel, tipo)` clampea `min(n_dec, MAX_TIPO)`. Auditoría `_registrar_export_auditoria` insert 1 row por export. Gate PN/Sensitive ereditado. Suite FULL **71/71 PASS exit=0 2.51s**, 6 tests I5 nuevos. 0 escrituras producción. | 03 Oct 2026 | 3 h | [third_party_export.py#L1-L200](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/third_party_export.py#L1-L200), [test_integration_I5_export_hu15.py#L1-L360](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I5_export_hu15.py#L1-L360), [v2/router.py#L27](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/router.py#L27), QA MÓDULO 13 Export | 6 tests I5 PASS: U11 clamp nivel helper · U12 projection gate PN/whitelist · U13 gate permiso 403 (CHC ADM sin export.* DENY PASO3 · SUPER allow) · U14 auditoría row delta +1 · I5-1 E2E PJ doc CERT≤N2 INF≤N4 · precondiciones 2 permisos export + 5 nivel_info docs. Routes v2 totali = 34 endpoints. QA MÓDULO 13 ×10col. **#56 / TOTAL 55/120h** |
+| 58 | 🛡️ **Bloque 2.4 (FASE2 · HU-13/HU-14) — Gobierno Riesgo 4 Permisos SENSIBLES · Modal Doble Intención · Escalamiento Q4 3 Niveles · Auditoría gov.* valor_anterior/nuevo** — Migración 006 v2 fix (4 risk.* → es_sensible=True + escal NIV1/2/2/3 + cleanup orphans risk only 5 rows + 3 colecciones nuevas + índices únicos). Router `/v2/risk/*` 5 endpoints (GET config + 4 PUT). EnrichedUser expandido (usuario_permiso_overrides + email). Gate modal 428, gate escal Q4 403, validación umbrales 422. Fix registrar_auditoria usuario_email hardcoded. Suite FULL **77/77 PASS exit=0 3.35s**, 6 tests I6 nuevos (U15/U16/U17/U18/I6-1/I6-0). 0 escrituras producción `duxiter`. | 04 Oct 2026 | 3 h | [006_gobierno_riesgo_permisos_sensibles.up.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/006_gobierno_riesgo_permisos_sensibles.up.py) · [gobierno_riesgo.py#L1-L320](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/gobierno_riesgo.py#L1-L320) · [authz_service.py#L69-L237](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L69-L237) (EnrichedUser + hydrate) · [authz_service.py#L556-L579](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L556-L579) (audit fix email) · [test_integration_I6_gobierno_riesgo_hu13_14.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I6_gobierno_riesgo_hu13_14.py) · QA TEST MÓDULO 14 Gobierno Riesgo ×10col | L10 rispettato: SENSIBILI **NIEN** ereditabili da ruolo, nemmeno SUPER wildcard; solo GRANT individuale `usuario_permiso_override(uid, permiso_codigo, GRANT, sensible_confirmado=True, nivel_escal≥req). Fix RC-Bloq2.4-001 (migration 006 v1 cancellava 86 leg accidental → rollback safe + seed001 reapply idempotent + 006 v2 fix only risk). Routes totali v2 ≥35 endpoints. 0 regressioni FASE0/F1/F2.1/2.2/2.3. QA MÓDULO 14 ×4righe ×10col exactas. **#58 · TOTAL GLOBAL 56 tareas / 123 h · CUADRE OK** |
+| 59 | 🪪 **Bloque 2.5 (FASE2 · HU-16) — Capacidad Pool 5 Niveles Q6 · Overshoot 150% Max · Soglie 90/100/120% Notifiche 1 Volta · Dual-write Sync Legacy `creditoperations` (1585 docs)** — Migración 007 up (4 colecciones nuevas: `pool_creditos_organizacion` + `usuario_limite_consumo_v2` + `consumos_log_v2` + `notificaciones_push` con índices únicos/compuestos/sparse) + 2 permisos pool nuevos (`pool.credit.view` NIV1 NO sensible · `pool.credit.manage` SENSIBLE NIV3 Q4 MAX) + seed 4 pools tenant I1 (SUPER=NIV5 250k · CHC=NIV3 10k · AXA=NIV2 2k · CCU=NIV1 500). EnrichedUser +2 campos (`pool_credits_data` + `usuario_limite_mes`). Servicio core `servicio_capacidad_pool.py` 6 funcs (obtener_pool_org upsert BASIC default · cambiar_plan_pool con proration conservativo ratio=min(1,consumos_prev/cred_prev) → saldo ≥0 SEMPRE + auditoria `capacidad.pool.*` valor_anterior/nuevo · `consumir_credito()` gate >150% → HTTP 402 `CREDITO_OVERSHOOT_150PCT_EXCEDIDO` · dual-write 2 righe (`consumos_log_v2` nuevo schema + `creditoperations` legacy con `metadata.migracion_v2=True`) · trigger soglie 90/100/120% **idempotenti sparse unique 1 sola volta x org x mese x cod** · asignar_limite_usuario_mes cuota individual · listar/marcar notificaciones). Router V2 `capacidad_pool.py` 7 endpoints (GET config, PUT plan manage NIV3+modal428+escalQ4403, GET consumo-historial días/solo_mios/limite, POST consumir interno QA, GET notificaciones solo_sin_leer, POST notificaciones/{id}/leida, PUT limite-usuario manage sensible). 4 RC risolti (runner 007 up coroutine RuntimeWarning → manual apply asyncio.run · ImportError current_user_enriched → pattern gov _enriched() locale · I7-1 DuplicateKey uk_usuario_override → delete_many pre-test cleanup · I7-2 autorizar() positional args → solo keyword args). Suite FULL FASE2 **83/83 PASS exit=0 3.64s** · 6 tests I7 nuevos (U19 modal428+escal403 · U20 overshoot150=402 · U21 soglie90/100/120 cnt 1-1-1 idempotenza retry OK · I7-0 precondizioni 007 applied/4col/perm/pools · I7-1 E2E SUPER GRANT manage NIV3 → cambia CHC PRO→ENTERPRISE (NIV5) + 4 consumi credito (4 rows log) + auditoria≥1 · I7-2 CCU deny pool.view autorizar=False paso_fallido≠None). 0 regressioni F0/F1/F2.1/2.2/2.3/2.4. 0 scritture produzione `duxiter`. Safety lock 4-capas OK. | 04 Oct 2026 | 3 h | [007_capacidad_pool_5_niveles.up.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/007_capacidad_pool_5_niveles.up.py) · [007 down](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/migrations/007_capacidad_pool_5_niveles.down.py) · [authz_service.py#L57-L107](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L57-L107) (SENSIBLES 8 tot + consts Q6 NIVELES_POOL5/SOGLIE90-100-120/ERR402 + EnrichedUser +2 attr) · [authz_service.py#L235-L274](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/authz_service.py#L235-L274) (hydrate step8 pool_org + limite_usuario_mes) · [servicio_capacidad_pool.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/servicio_capacidad_pool.py) (6 funcs core dual-write) · [capacidad_pool.py#L1-L268](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/capacidad_pool.py#L1-L268) (7 endpoints + pattern gov _enriched + gate_modal428 + gate_escal403) · [test_integration_I7_capacidad_pool_hu16.py#L1-L323](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I7_capacidad_pool_hu16.py#L1-L323) (6 tests I7 83/83) · QA_TEST_LIST.md **MÓDULO 15 Capacidad Pool Q6** × 4 righe × 10 colonne ESPAGNOL exactas (15-A cambio plan NIV3+modal428+prorata+audit · 15-B overshoot 700cr140%ok +200cr tot900=180%→ **402 PAYMENT_REQUIRED** 0 write · 15-C soglie90/100/120%=1 1 1 esatte + retry cnt RIMANE 1-1-1 sparse unique anti-spam · 15-D CCU deny pool.view 403 + post-grant 200 OK) | Q6 MVP conforme: overshoot controllato soft allowed <150% (solo notifiche); block duro 402 ≥151%. 3 notifiche anti-spam 1 volta/mese org/cod. Dual-write backward compat legacy creditoperations 1585 docs. Cambio plan ratio conservativo min(1,.) no credito fantasma. 0 regressioni suite 77 → 83/83 +6 I7 nuevos (3.64s exit=0). Routes v2 totali ≥42 endpoints. SENSIBILI globali = 8 elementi. **#59 · Oct2026 15→16 tareas / 51→54 h · TOTAL GLOBAL 56→57 tareas / 123→126 h · CUADRE OK** |
+
+| 60 | 📜 **Bloque 2.6 (FASE2 · HU-17 · CIERRE FASE2) — Timeline Tercero Completo 4 Fuentes (CONSULTA_CREADA + auditoria_log 8acc + evaluationsHistory + usernotes legacy rut fallback + comentarios_v2) · Orden ASC Stretto (ts,id) · Proyección Incremental 5 Niveles N1..N5 · Paginación Cursor (last_ts, last_id) limit 1..500 · Scope Tenant PN Gate** — Servizio core `servicio_timeline_tercero.py` (~420 linee): (a) 4 fuentes aggregate + pseudo-evento CONSULTA_CREADA createdAt SEMPRE primo; (b) Orden ASC strict `(ts, _id)` tiebreak; (c) **Projection whitelist incremental N1..N5 hard**: N1=SOLO 6 campi {id,tipo,titulo,ts,ts_humano,fuente} NIENTE leak a utenti resumen-only; N2+utente/email/org/rut/accion/permitir; N3+motivo/tags/estado/permiso_origen/paso_fallido; N4+cuerpo/campos_adicionales/valor_anterior/nuevo; **N5+sensible=True** → `campos_sensibles` + `pn_gate_aplicado`. (d) Paginazione cursor: limit+1 richiesti, trim; `cursor_next={last_ts:f,last_id:s}`; ultima page cursor_next=None; (e) Conteggio reale fuentes per fuente return dict (non hardcodato). Router V2 `GET /v2/third-parties/{doc_id}/history`: pattern idéntico a `get_third_party` detalle (hydrate enriched + autorizar fastcheck.query pipeline 7 pasos L10 + if deny → HTTP 403 paso_fallido + **Scope tenant NONsuper: doc.tenantId != user.tenant → HTTP 404** non leak existenza fuori org + registrar_auditoria accion=`timeline.tercero.history` distinct). RC001-003 risolti: (001) Import non esiste → AsyncIOMotorClient diretto; (002) EventLoop closed + JWT secret mismatch → abolisco TestClient HTTP, uso DIRETTO autorizar + construir_timeline_tercero async motor; **(003 BUG GRAVE RC003) eventi=3/6 sempre = causa radice `jsonable()` convertiva ObjectId in stringhe PRIMA di estrarre tercero_oid/tenant_oid per filtri MongoDB (str vs ObjectId = 0 match)** → FIX: ObjectId estratti PRIMA di jsonable + isinstance check + cast ObjectId(); sostituito `async for cursor` → await `.to_list(length=9999)`; aggiunto `campos_sensibles` e `pn_gate_aplicado` a parser `_evento_desde_auditoria_log`; cursor_next usa `projected_items[-1]['id']`. Tests I8: 7/7 PASS. Suite FULL **90/90 PASS exit=0 6.00s** (+7 I8 su 83). 0 regressioni. 0 scritture produzione `duxiter`. Safety lock 4-capas OK. FASE2 6/6 BLOQUES CERRADO 100%. | 04 Oct 2026 | 3 h | [servicio_timeline_tercero.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/services/servicio_timeline_tercero.py) Fix RC003 L283-L292 ObjectId PRIMA jsonable; Projection N1-N5 L96-L150; 4 fuentes aggregate L302-L367; Cursor pag L381-L407; cnt fuentes real L408-L418 · [third_parties.py#L23](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/third_parties.py#L23) import · [third_parties.py#L188-L256](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v2/routers/third_parties.py#L188-L256) endpoint GET history; hydrate/autorizar/scope404/registrar_auditoria/return timeline · [test_integration_I8_timeline_tercero_hu17.py](file:///home/duxiter/duxiter_intermediate/fastcheck_api/tests/test_integration_I8_timeline_tercero_hu17.py#L1-L480) (7 tests I8 nuovi 7/7 PASS, async motor direct senza HTTP, seed/cleanup async) · [FASE2_TRACKING Bloq2.6](file:///home/duxiter/duxiter_intermediate/FASE2_TRACKING_RBAC_ABAC.md#L241-L303) EXP/RUN/VERIF + Banner ASCII chiusura + checklist 6/6 ✅ · QA_TEST_LIST.md **MÓDULO 16 Timeline Terzo** × 4 righe × **EXACT 10 COLONNE ESPAGNOL** (16-A N1 6-chiavi FORZATO · 16-B N5 completa+sensibili · 16-C ASC+cursor · 16-D Scope 404/403 + PN gate) | **RC003 BUG GRAVE RISOLTO**: jsonable() converte ObjectId → str → filtri Mongo 0 rows; Fix: isinstance + cast ObjectId PRIMA di jsonable + to_list() invece async for. 7/7 I8; 83→90/90 FULL; 0 regressioni. **FASE2 6/6 CERRADA 100%: F0(44) → F1(51) → F2(90)**. Routes V2 ≥ 43. Migraciones 001→007 applied. Permisos 31 catálogo, 8 SENSIBLES globali. QA 6 módulos M11→M16. **Oct 2026: 16→17 tareas · 54→57 h. TOTAL GLOBAL: 57→58 tareas · 126→129 h. CUADRE 129=129.** ✅ Banner ASCII chiusura FASE2 100% su tracking file. |
+| 61 | ✅ **Script Gestión Servicios** `start_services.sh` (start/stop/restart/status backend+frontend) · Forker demone Python per backend (nessuna perdita env JWT/MONGO) · Safety lock boot: se `db != duxiter-2` STOP immediato HTTP 503 via `/api/system/info` · Banner runtime PID/PORTE/LOGS in `.runtime/`. | 09 Oct 2026 | 1 h | [scripts/start_services.sh#L1-L512](file:///home/duxiter/duxiter_intermediate/scripts/start_services.sh#L1-L512) · [dependencies.py#L33-L56](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/dependencies.py#L33-L56) | 0 regressioni 90/90 ✅; stop SIGTERM+SIGKILL fallback; Vite proxy `/api` → `:8181` changeOrigin=true. **TOTAL GLOBAL 58→59 / 129→130 h** |
+| 62 | 🐛 **Frontend FastCheckEX Null-Safety Fix** (2 crash Claudio CCU white-screen): (a) `setRiskSummary` sovrascriveva sempre → rewrite merge state Object.assign invece replace; (b) `legalRules.length` JS precedenza `obj?.prop.length` falliva se undefined → `(riskSummary.allRules?.legalRules || []).length`; (c) `totalSevero` undefined → fallback + null-safe su `criticalParams`. | 09 Oct 2026 | 1 h | [FastCheckEX.tsx#L1559-L1597](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L1559-L1597) (merge riskSummary) · [L4267-L4293](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L4267-L4293) (criticalParams null-safe) · [L6247-L6248](file:///home/duxiter/duxiter_intermediate/src/pages/FastCheckEX.tsx#L6247-L6248) (legalRules `|| []`) | Utente conferma: "okay funziona". 0 white-screen. **59→60 / 130→131 h** |
+| 63 | 📜 **Backend Historial Consultas** (`GET /rut/historical-consultas` + GET `/stats`) · Collisione tenantId STR 24-hex vs ObjectId → `$in:[oid,str]` dual-type query; Stats aggregazione falliva per `$dateToString` su campo ISO-string → rewrite post-process Python safe; Endpoint `GET /rut/results/{id}` per visualizzazione dettaglio Timeline Terzo. Bulk update 14 docs CCU `consulta_history.userId→orgId`. | 09 Oct 2026 | 2 h | [admin_compat.py#L1844-L2117](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py#L1844-L2117) · Stats rewrite Python L2040-L2117 · [L2118-L2438](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py#L2118-L2438) Profile Enriched + endpoint result dettaglio | Utente conferma: "OK storico funziona". CCU Claudio count=14 consultas. **60→61 / 131→133 h** |
+| 64 | 👤 **Frontend Profilo Utente Avatar Click** · Backend: GET `/users/me/enriched` aggrega (user + organizacion + planPool + permisos RBAC arricchiti + historial + últimas 10 audit). Frontend: **[ProfilePopover.tsx](file:///home/duxiter/duxiter_intermediate/src/components/ui/ProfilePopover.tsx)** (6 sezioni: Info Personali / Organización / Plan y Créditos / Permisos RBAC colorati badge S/N / Historial / Auditorías 10) · Close ESC / click-outside / X-button; Progress bar crediti arancione >100% · rosso ≥150%. Integración en DashboardLayout sidebar desktop+mobile. **Responsive larghezza**: mobile w-full → sm 94% → md 90% → `max-w-2xl` → `2xl max-w-7xl` centratura flexbox (rimosso posizionamento assoluto `left-[280px]` che rompeva desktop). | 09 Oct 2026 | 3 h | [admin_compat.py#L2118-L2438](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py#L2118-L2438) · [api.ts#L707-L789](file:///home/duxiter/duxiter_intermediate/src/services/api.ts#L707-L789) Profile* interfaces + userProfileApi · [ProfilePopover.tsx#L1-L350](file:///home/duxiter/duxiter_intermediate/src/components/ui/ProfilePopover.tsx#L1-L350) · Responsive width [L283-L295](file:///home/duxiter/duxiter_intermediate/src/components/ui/ProfilePopover.tsx#L283-L295) · [DashboardLayout.tsx#L66-L67](file:///home/duxiter/duxiter_intermediate/src/layouts/DashboardLayout.tsx#L66-L67) + [L266-L281](file:///home/duxiter/duxiter_intermediate/src/layouts/DashboardLayout.tsx#L266-L281) + [L346-L361](file:///home/duxiter/duxiter_intermediate/src/layouts/DashboardLayout.tsx#L346-L361) + [L410](file:///home/duxiter/duxiter_intermediate/src/layouts/DashboardLayout.tsx#L410) | SUPER curl 200 · 31 permisos / 8 sensibles / ENTERPRISE 250k · CCU Claudio screenshot UI 6 sezioni render OK, 2 colonne org/plan affiancate desktop. Utente: "okay bene". **61→62 / 133→136 h** |
+| 65 | 👥 **Backend Lista Utenti Scoped Org + Crea/Modifica Privacy Gates** · Fix COLLISIONE route FastAPI: `/tenant/{tenant_id}/users` (parametrico SUPER) registrata PRIMA di `/tenant/users` non parametrico → `tenant_id="users"` → 403 fasullo SUPERUSER_REQUIRED. **Fix**: rinominata → **`GET /scoped-tenant/users`** (zero collisioni). Ruoli canonicalizzati: 14 alias → 6 ruoli (`superuser`, `tenant_admin`, `evaluator`, `read_only`, `write_only`, `user`). Privacy: TENANT_ADMIN vede/modifica SOLO utenti stessa org; non può assegnare/promuovere/declassare SUPER role. Dual-type OID/str query `tenantId`. Pydantic models `ScopedUserCreateBody` / `ScopedUserUpdateBody` (minLength + email regex). Password bcrypt hash `get_password_hash()`. Audit create/update utente. | 09 Oct 2026 | 2,5 h | [admin_compat.py#L2441-L2911](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py#L2441-L2911) · GET lista L2441-L2573 · POST create L2576-L2777 · PUT update L2780-L2937 · Ruoli canonicali L2578-L2623 | 5/5 Test E2E curl PASSATI: (a) POST Evaluator CCU=200; (b) POST superuser CCU=403; (c) POST superadmin SUPER=200; (d) PUT se stesso CCU=200; (e) PUT cross-org CMPC=403 CROSS_ORG_EDIT_FORBIDDEN_NOT_SUPER. **62→63 / 136→138.5 h** |
+| 66 | 👥 **Frontend Lista Utenti + Modale Add/Edit (UserModal/TenantUsers)** · Rewrite completo: parser risposta `{success, users}` oppure `Array`; 6 ruoli badge coerenti; Filtri 6 opzioni (search/role/status); Loading/Empty; Toggle status smart SUPER-only; Switch URL → `/scoped-tenant/users`. Dropdown ruoli dinamico: Super vede 6 disponibili (incluso Superadmin); TENANT_ADMIN Claudio vede **solo 5** (Superadmin rimosso); label "N disponibili" interpolazione `{{count}}`. Mapping 12 codici errore backend → toast. **Fix bug**: (i) `ReferenceError logger not defined` → import + `apiClient` axios interceptor JWT; (ii) Vite redeclaration closeSidebar → rimossa duplicato. | 09 Oct 2026 | 2,5 h | [UserModal.tsx#L1-L377](file:///home/duxiter/duxiter_intermediate/src/components/modals/UserModal.tsx#L1-L377) · Ruoli dinamici L93-L111 · Errori backend → toast L191-L208 · [TenantUsers.tsx#L1-L348](file:///home/duxiter/duxiter_intermediate/src/pages/tenant/TenantUsers.tsx#L1-L348) · Filtri + badges ruolo | GetDiagnostics 0 errors ✅; Browser CCU Add User mostra "5 disponibili" senza Superadmin ✅. Utente: "okay funziona". **63→64 / 138.5→141 h** |
+| 67 | 🌐 **Refactor react-i18n 100% Componente Utenti + Modale** (vincolo permanente utente "ricorda sempre di usare i18n"). Namespace nuovi: `tenantUsers` (38+ chiavi: title/subtitle/addUser/search/filters/table/actions/errors/toasts + interpolazione `{{count}}`) + `userModal` (52+ chiavi: titles/forms/buttons/toasts/errors 12 voci/roleOptions 6 ruoli con label + description) → deep merge sicuro EN, ES, PT, FR translation.json. Sostituzioni hook `useTranslation` `t()`: **UserModal 100%**, **TenantUsers 100%** (~30 sostituzioni: H1 title, subtitleWithCount, Add User, search placeholder, options AllRoles/AllStatus/role/status, 5 headers tabella, loading/empty, Edit/Activate/Deactivate, 3 toasts, 3 errori). | 09 Oct 2026 | 2 h | 4× `src/locales/{en,es,pt,fr}/translation.json` → namespaces `tenantUsers` + `userModal` · [UserModal.tsx#L25](file:///home/duxiter/duxiter_intermediate/src/components/modals/UserModal.tsx#L25) import useTranslation · [TenantUsers.tsx#L2](file:///home/duxiter/duxiter_intermediate/src/pages/tenant/TenantUsers.tsx#L2) + [L25](file:///home/duxiter/duxiter_intermediate/src/pages/tenant/TenantUsers.tsx#L25) hook + roleMeta L49-L81 | 4 lingue verificate browser: EN → ES → PT → FR. Zero warning `i18next missingKey` console in TUTTE le 4 lingue. GetDiagnostics: 0 errors ✅. **64→65 / 141→143 h · CUADRE 143 OK** |
+| 68 | 🔑 **Reset Password tenant-scoped (TENANT_ADMIN resetta password utenti della sua organizzazione)**. Nuovo endpoint **`PATCH /api/scoped-tenant/users/{id}/reset-password`** con 7 privacy gate: (1) ADMIN_OR_SUPERUSER_REQUIRED 403; (2) INVALID_USER_ID 400; (3) NON_AUTO_RESET 400; (4) USER_NOT_FOUND 404; (5) CROSS_ORG_FORBIDDEN 403 (tenant admin resetta SOLO utenti stessa org); (6) CANNOT_RESET_SUPERUSER 403 (solo super può resettare super); (7) NEW_PASSWORD_INVALID 422 (min 6 chars). **Fix bug critico**: PUT `/scoped-tenant/users/{id}` non impostava il campo `password` (usato dal login) ma solo `passwordHash`/`password_hash` → login dopo cambio password falliva. Aggiunto `set_up["password"] = ph`. Frontend: pulsante ámbar "Restablecer contraseña" in TenantUsers.tsx + modale max-w-md centrata con 2 input (nuova password + conferma), validazione match + min 6 chars, chiamata `PATCH`. i18n namespace `tenantUsers.resetModal` × 4 lingue (EN/ES/PT/FR). Audit log diretto in `auditoria_log` accion=`admin.users.reset_password`. cache_version +2 invalida JWT. | 11 Oct 2026 | 2 h | [admin_compat.py#L2941-L3067](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py#L2941-L3067) endpoint reset password · Fix PUT campo `password` [L2880](file:///home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py#L2880) · [TenantUsers.tsx#L138-L170](file:///home/duxiter/duxiter_intermediate/src/pages/tenant/TenantUsers.tsx#L138-L170) handler · pulsante [L335-L345](file:///home/duxiter/duxiter_intermediate/src/pages/tenant/TenantUsers.tsx#L335-L345) · modale [L382-L440](file:///home/duxiter/duxiter_intermediate/src/pages/tenant/TenantUsers.tsx#L382-L440) · 4× `src/locales/{en,es,pt,fr}/translation.json` chiavi `tenantUsers.resetModal` | **6/6 test E2E curl PASSATI**: (1) CMPC reset utente org=200 + login nuova password OK; (2) CMPC reset SUPER=403 CANNOT_RESET_SUPERUSER; (3) CMPC auto-reset=400 NON_AUTO_RESET; (4) password<6=422; (5) SUPER cross-org reset=200; (6) validazione password match frontend. py_compile OK · GetDiagnostics 0 errors · i18n 4 lingue zero missingKey. **65→66 / 143→145 h · CUADRE 145** |
+
+---
+
+## 🚀 CICLO POST-FASE2 · 09 Oct 2026 (Operatividad Platform / QA UI)
+
+### ✅ Resumen entregables 09 Oct 2026 (7 tareas · 14 h):
+- Script gestión servicios + safety lock boot (`duxiter-2` only)
+- FastCheckEX 2 crash null-safe Claudio CCU risolti (merge state, legalRules, totalSevero)
+- Historial Consultas (endpoint + dual-type query + stats Python safe + 14 docs CCU)
+- Profilo Utente Avatar click: Backend `/users/me/enriched` + Frontend ProfilePopover.tsx 6 sezioni + responsive max-w-7xl centrato
+- Lista/Crea/Modifica Utenti scoped org: Fix collisione rotte FastAPI (403 fasullo) → `/scoped-tenant/users`; 5/5 E2E curl PASS (privacy + cross-org + super-gate)
+- UserModal/TenantUsers rewrite frontend (ruoli 5/6 dinamici, logger fix, 12 errori → toast)
+- Vincolo i18n permanente attuato: 2 namespaces nuovi × 4 lingue (EN/ES/PT/FR), zero missingKey console.
+
+---
+
+## 🏁 CIERRE FASE 2 · BANNER ASCII 100%
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  🎉  FASE 2 RBAC+ABAC FASTCHECK — CERRADA 100%  ·  04.10.2026            ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  • FASE 0: 44/44 PASS  ·  FASE 1: 51/51 PASS  ·  FASE 2: 90/90 PASS      ║
+║  ┌──────────────────────────────────────────────────────────────────────┐   ║
+║  │ 2.1 │ 💬 │ Comentarios V2 Visibilidad HU-12      │  59/59  │ 2.11 s │   ║
+║  │ 2.2 │ 🏷️ │ Etiquetas Scope General/Restringida   │  65/65  │ 2.09 s │   ║
+║  │ 2.3 │ 🏭 │ Export Multinivel N2/N4 HU-15          │  71/71  │ 2.51 s │   ║
+║  │ 2.4 │ 🛡️ │ Gobierno Riesgo 4 SENSIBLES HU13/14   │  77/77  │ 3.35 s │   ║
+║  │ 2.5 │ 🪪 │ Capacidad Pool Q6 5 Planes HU-16       │  83/83  │ 3.64 s │   ║
+║  │ 2.6 │ 📜 │ Timeline Tercero 4 Fuentes HU-17       │  90/90  │ 6.00 s │   ║
+║  └──────────────────────────────────────────────────────────────────────┘   ║
+║                                                                              ║
+║  ✅ Permisos = 31 │ SENSIBLES globali = 8 │ Routes V2 ≥ 43 endpoints     ║
+║  ✅ Safety lock 4-capas = 0 scritture duxiter in TUTTE le fasi           ║
+║  ✅ QA 6 módulos (11→16) × 4 scenarii ognuno × 10 colonne exactas       ║
+║  ✅ Migraciones aplicadas staging duxiter-2: 001, 002, 003, 004, 005, 006, 007 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
 
 ---
 
 ## 🧮 Cuadre Final Horas
 ```
-Total desglose detallado (46 tareas) → 78,5 h
-Total resumen mensual                 → 78,5 h
-                                   ✅ CUADRE OK
+Total desglose detallado (58 tareas F2+CIERRE) → 129 h
+Total + Post-FASE2 (7 tareas 09 Oct 2026 = 14 h) → 143 h
+Total + 11 Oct 2026 (1 tarea Reset Password = 2 h) → 145 h
+                                    ✅ CUADRE 145 OK
 ```
 
 ---
 
-*Fin del documento. Última actualización: 02.10.2026.*
+*Fin del documento. Última actualización: 11.10.2026 (Post-FASE2: Script Servicios · Fix FastCheckEX · Historial 404 · Profilo Avatar Click · Lista Utenti Scoped Org · i18n Permanente 4 lingue · **Reset Password tenant-scoped 11.10** · Suite FULL 90/90 PASS exit=0 6.00s · 0 scritture producción `duxiter` · Safety lock 4-capas OK · CUADRE 145 h).*

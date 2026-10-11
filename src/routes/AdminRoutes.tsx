@@ -20,6 +20,7 @@ const EquifaxMonitorPage = lazy(() => import('../pages/admin/EquifaxMonitorPage'
 const SheriffMonitorPage = lazy(() => import('../pages/admin/SheriffMonitorPage'));
 const AdminEvaluationsPage = lazy(() => import('../pages/admin/AdminEvaluationsPage'));
 const AdminResultsPage = lazy(() => import('../pages/admin/AdminResultsPage'));
+const AuthzProfilesPage = lazy(() => import('../pages/admin/AuthzProfilesPage'));
 import RoleProtectedRoute from '../components/auth/RoleProtectedRoute';
 
 const AdminRoutes = () => {
@@ -34,6 +35,7 @@ const AdminRoutes = () => {
         <Route path="tenants" element={<TenantManagementPage />} />
         <Route path="tenants/:tenantId/users" element={<TenantUsersPage />} />
         <Route path="users" element={<SuperAdminUsersPage />} />
+        <Route path="authz/profiles" element={<AuthzProfilesPage />} />
         <Route path="billing" element={<TenantBillingPage />} />
         <Route path="monitoring" element={<TenantMonitoringStatusPage />} />
         <Route path="prompt-configuration" element={<PromptConfigurationPage />} />

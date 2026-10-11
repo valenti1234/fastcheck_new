@@ -1,0 +1,1718 @@
+INFO:     Started server process [1817517]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1817517]
+INFO:     Started server process [2336483]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2336483]
+INFO:     Started server process [2534547]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+ERROR:    Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 81, in collapse_excgroups
+  |     yield
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 192, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.scope, self.receive, self.send
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    |     return await self.app(scope, receive, send)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    |     response: Response = await call_next(request)
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2110, in get_rut_historical_consultas_stats
+    |     total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+    |                                                                ^^^^^^^^^^^^^^^^^^^^^
+    |     ...<6 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2073, in _group_date
+    |     rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    |     result = get_more_result.result()
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    |     pymongo_cursor = future.result()
+    |   File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    |     result = self.fn(*self.args, **self.kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    |     return self._aggregate(
+    |            ~~~~~~~~~~~~~~~^
+    |         _CollectionAggregationCommand,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<5 lines>...
+    |         **kwargs,
+    |         ^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    |     return self._database.client._retryable_read(
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         cmd.get_cursor,
+    |         ^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |         operation=_Op.AGGREGATE,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    |     return self._retry_internal(
+    |            ~~~~~~~~~~~~~~~~~~~~^
+    |         func,
+    |         ^^^^^
+    |     ...<7 lines>...
+    |         operation_id=operation_id,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    |     ).run()
+    |       ~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    |     return self._read() if self._is_read else self._write()
+    |            ~~~~~~~~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    |     return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+    |            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    |     result = conn.command(
+    |         self._database.name,
+    |     ...<9 lines>...
+    |         user_fields=self._user_fields,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    |     return func(*args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    |     return command(
+    |         self,
+    |     ...<20 lines>...
+    |         write_concern=write_concern,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    |     helpers_shared._check_command_response(
+    |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         response_doc,
+    |         ^^^^^^^^^^^^^
+    |     ...<2 lines>...
+    |         parse_write_concern_error=parse_write_concern_error,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    |     raise OperationFailure(errmsg, code, response, max_wire_version)
+    | pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542019, 16), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542019, 16)}
+    +------------------------------------
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2110, in get_rut_historical_consultas_stats
+    total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+                                                               ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2073, in _group_date
+    rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542019, 16), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542019, 16)}
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2534547]
+INFO:     Started server process [2541503]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+ERROR:    Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 81, in collapse_excgroups
+  |     yield
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 192, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.scope, self.receive, self.send
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    |     return await self.app(scope, receive, send)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    |     response: Response = await call_next(request)
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2116, in get_rut_historical_consultas_stats
+    |     total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+    |                                                                ^^^^^^^^^^^^^^^^^^^^^
+    |     ...<6 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2079, in _group_date
+    |     rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    |     result = get_more_result.result()
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    |     pymongo_cursor = future.result()
+    |   File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    |     result = self.fn(*self.args, **self.kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    |     return self._aggregate(
+    |            ~~~~~~~~~~~~~~~^
+    |         _CollectionAggregationCommand,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<5 lines>...
+    |         **kwargs,
+    |         ^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    |     return self._database.client._retryable_read(
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         cmd.get_cursor,
+    |         ^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |         operation=_Op.AGGREGATE,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    |     return self._retry_internal(
+    |            ~~~~~~~~~~~~~~~~~~~~^
+    |         func,
+    |         ^^^^^
+    |     ...<7 lines>...
+    |         operation_id=operation_id,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    |     ).run()
+    |       ~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    |     return self._read() if self._is_read else self._write()
+    |            ~~~~~~~~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    |     return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+    |            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    |     result = conn.command(
+    |         self._database.name,
+    |     ...<9 lines>...
+    |         user_fields=self._user_fields,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    |     return func(*args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    |     return command(
+    |         self,
+    |     ...<20 lines>...
+    |         write_concern=write_concern,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    |     helpers_shared._check_command_response(
+    |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         response_doc,
+    |         ^^^^^^^^^^^^^
+    |     ...<2 lines>...
+    |         parse_write_concern_error=parse_write_concern_error,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    |     raise OperationFailure(errmsg, code, response, max_wire_version)
+    | pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542156, 1), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542156, 1)}
+    +------------------------------------
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2116, in get_rut_historical_consultas_stats
+    total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+                                                               ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2079, in _group_date
+    rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542156, 1), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542156, 1)}
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/aio_pika/connection.py:232: RuntimeWarning: coroutine 'RobustConnection.close' was never awaited
+  with contextlib.suppress(AttributeError, RuntimeError):
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+ERROR:    Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 81, in collapse_excgroups
+  |     yield
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 192, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.scope, self.receive, self.send
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    |     return await self.app(scope, receive, send)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    |     response: Response = await call_next(request)
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2116, in get_rut_historical_consultas_stats
+    |     total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+    |                                                                ^^^^^^^^^^^^^^^^^^^^^
+    |     ...<6 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2079, in _group_date
+    |     rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    |     result = get_more_result.result()
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    |     pymongo_cursor = future.result()
+    |   File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    |     result = self.fn(*self.args, **self.kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    |     return self._aggregate(
+    |            ~~~~~~~~~~~~~~~^
+    |         _CollectionAggregationCommand,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<5 lines>...
+    |         **kwargs,
+    |         ^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    |     return self._database.client._retryable_read(
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         cmd.get_cursor,
+    |         ^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |         operation=_Op.AGGREGATE,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    |     return self._retry_internal(
+    |            ~~~~~~~~~~~~~~~~~~~~^
+    |         func,
+    |         ^^^^^
+    |     ...<7 lines>...
+    |         operation_id=operation_id,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    |     ).run()
+    |       ~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    |     return self._read() if self._is_read else self._write()
+    |            ~~~~~~~~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    |     return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+    |            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    |     result = conn.command(
+    |         self._database.name,
+    |     ...<9 lines>...
+    |         user_fields=self._user_fields,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    |     return func(*args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    |     return command(
+    |         self,
+    |     ...<20 lines>...
+    |         write_concern=write_concern,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    |     helpers_shared._check_command_response(
+    |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         response_doc,
+    |         ^^^^^^^^^^^^^
+    |     ...<2 lines>...
+    |         parse_write_concern_error=parse_write_concern_error,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    |     raise OperationFailure(errmsg, code, response, max_wire_version)
+    | pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542226, 1), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542226, 1)}
+    +------------------------------------
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2116, in get_rut_historical_consultas_stats
+    total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+                                                               ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2079, in _group_date
+    rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542226, 1), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542226, 1)}
+ERROR:    Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 81, in collapse_excgroups
+  |     yield
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 192, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.scope, self.receive, self.send
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    |     return await self.app(scope, receive, send)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    |     response: Response = await call_next(request)
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    |     raise app_exc from app_exc.__cause__ or app_exc.__context__
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2116, in get_rut_historical_consultas_stats
+    |     total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+    |                                                                ^^^^^^^^^^^^^^^^^^^^^
+    |     ...<6 lines>...
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2079, in _group_date
+    |     rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    |     result = get_more_result.result()
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    |     pymongo_cursor = future.result()
+    |   File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    |     result = self.fn(*self.args, **self.kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    |     return self._aggregate(
+    |            ~~~~~~~~~~~~~~~^
+    |         _CollectionAggregationCommand,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<5 lines>...
+    |         **kwargs,
+    |         ^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    |     return self._database.client._retryable_read(
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         cmd.get_cursor,
+    |         ^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |         operation=_Op.AGGREGATE,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    |     return self._retry_internal(
+    |            ~~~~~~~~~~~~~~~~~~~~^
+    |         func,
+    |         ^^^^^
+    |     ...<7 lines>...
+    |         operation_id=operation_id,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    |     return func(self, *args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    |     ).run()
+    |       ~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    |     return self._read() if self._is_read else self._write()
+    |            ~~~~~~~~~~^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    |     return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+    |            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    |     result = conn.command(
+    |         self._database.name,
+    |     ...<9 lines>...
+    |         user_fields=self._user_fields,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    |     return func(*args, **kwargs)
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    |     return command(
+    |         self,
+    |     ...<20 lines>...
+    |         write_concern=write_concern,
+    |     )
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    |     helpers_shared._check_command_response(
+    |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+    |         response_doc,
+    |         ^^^^^^^^^^^^^
+    |     ...<2 lines>...
+    |         parse_write_concern_error=parse_write_concern_error,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    |     raise OperationFailure(errmsg, code, response, max_wire_version)
+    | pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542226, 1), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542226, 1)}
+    +------------------------------------
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2116, in get_rut_historical_consultas_stats
+    total_cnt, by_type, by_endpoint, by_status, by_date, met = await asyncio.gather(
+                                                               ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2079, in _group_date
+    rows = await db[ch_colname].aggregate(pipeline).to_list(length=2000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/motor/core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 3010, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/collection.py", line 2908, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2048, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2763, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 2924, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/aggregation.py", line 162, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/pool.py", line 398, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/synchronous/network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date, full error: {'ok': 0.0, 'errmsg': "PlanExecutor error during aggregation :: caused by :: can't convert from BSON type string to Date", 'code': 16006, 'codeName': 'Location16006', '$clusterTime': {'clusterTime': Timestamp(1791542226, 1), 'signature': {'hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 'keyId': 0}}, 'operationTime': Timestamp(1791542226, 1)}
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2541503]
+INFO:     Started server process [2550897]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2550897]
+INFO:     Started server process [2675486]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2675486]
+INFO:     Started server process [3054874]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3054874]
+INFO:     Started server process [3062030]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3062030]
+INFO:     Started server process [3137157]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2739, in scoped_tenant_create_user
+    await registrar_auditoria(
+          ~~~~~~~~~~~~~~~~~~~^
+        db=db,
+        ^^^^^^
+    ...<5 lines>...
+        metadata={"new_role": canon_role, "email": email_clean, "scoped_creator_role": user_role_raw},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: registrar_auditoria() got an unexpected keyword argument 'user_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 420, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/tenant_context.py", line 11, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/middleware/request_logging.py", line 22, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duxiter/duxiter_intermediate/fastcheck_api/app/api/v1/routers/admin_compat.py", line 2749, in scoped_tenant_create_user
+    logger.warning("audit scoped create user failed", extra={"err": str(_ex)})
+    ^^^^^^
+NameError: name 'logger' is not defined
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3137157]
+INFO:     Started server process [3243116]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3243116]
+INFO:     Started server process [3252426]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3252426]
+INFO:     Started server process [2376072]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+/home/duxiter/duxiter_intermediate/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 15 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2376072]
+INFO:     Started server process [2399966]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8181 (Press CTRL+C to quit)

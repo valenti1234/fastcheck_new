@@ -893,10 +893,10 @@
     "qr": {
       "scan": "Scan to access the report"
     },
-      "listasPropias": {
-        "alertTitle": "Alert: RUT present in Own Lists",
-        "altoImpactoTitle": "🔴 Own List - High Impact",
-        "medioImpactoTitle": "🟡 Own List - Medium Impact",
+    "listasPropias": {
+      "alertTitle": "Alert: RUT present in Own Lists",
+      "altoImpactoTitle": "🔴 Own List - High Impact",
+      "medioImpactoTitle": "🟡 Own List - Medium Impact",
       "labels": {
         "nombre": "Name",
         "rut": "RUT",
@@ -908,9 +908,9 @@
         "ultimaActualizacion": "Last Update"
       },
       "viewDetails": "View details",
-        "noteTitle": "Note:",
-        "noteMessage": "This RUT has been identified in the organization's own lists. Please review details and take appropriate actions according to internal policies."
-      }
+      "noteTitle": "Note:",
+      "noteMessage": "This RUT has been identified in the organization's own lists. Please review details and take appropriate actions according to internal policies."
+    }
   },
   "auditOverview": {
     "title": "Audit as of today",
@@ -925,7 +925,111 @@
   },
   "envConfiguration": {
     "noteTitle": "Important Note",
-    "noteMessage": "Changes to configuration parameters require restarting the server to apply. Parameters marked with * are mandatory for correct system operation."
+    "noteMessage": "Changes to configuration parameters will require restarting the server to take effect. Parameters marked with * are required for proper system operation.",
+    "header": {
+      "title": "Server Parameter Configuration",
+      "subtitle": "Manage server .env configuration parameters"
+    },
+    "loading": "Loading configuration...",
+    "buttons": {
+      "reset": "Reset",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "changes": {
+      "unsaved": "There are unsaved changes"
+    },
+    "toast": {
+      "saveSuccess": "Configuration saved successfully",
+      "resetSuccess": "Configuration reset",
+      "saveError": "Error saving configuration"
+    },
+    "errors": {
+      "loadConfig": "Error loading configuration",
+      "saveConfig": "Error saving configuration"
+    },
+    "categories": {
+      "apiKeys": "API Keys",
+      "database": "Database",
+      "server": "Server",
+      "apiUrls": "API URLs",
+      "openaiConfig": "OpenAI Configuration",
+      "riskCalculation": "Risk Calculation",
+      "sendgridConfig": "SendGrid Configuration",
+      "rabbitmqConfig": "RabbitMQ Configuration",
+      "contactInfo": "Contact Information"
+    },
+    "params": {
+      "openaiApiKey": {
+        "description": "API key for OpenAI GPT"
+      },
+      "sheriffApiToken": {
+        "description": "Authentication token for Sheriff API"
+      },
+      "sendgridApiKey": {
+        "description": "API key for SendGrid (email sending)"
+      },
+      "mongodbUri": {
+        "description": "MongoDB connection URI"
+      },
+      "port": {
+        "description": "Server port"
+      },
+      "rateLimitWindowMs": {
+        "description": "Time window for rate limiting (ms)"
+      },
+      "rateLimitMaxRequests": {
+        "description": "Maximum requests per window"
+      },
+      "apiUrl": {
+        "description": "Base API URL"
+      },
+      "sheriffApiUrl": {
+        "description": "Sheriff API URL"
+      },
+      "siiUrl": {
+        "description": "SII service URL"
+      },
+      "openaiModelSummary": {
+        "description": "OpenAI model for summaries"
+      },
+      "openaiModelAnalysis": {
+        "description": "OpenAI model for analysis"
+      },
+      "openaiTemperature": {
+        "description": "Temperature for OpenAI (0.0-1.0)"
+      },
+      "openaiMaxTokens": {
+        "description": "Maximum tokens for OpenAI"
+      },
+      "riskTotalParams": {
+        "description": "Total number of risk parameters"
+      },
+      "riskCriticalPercentage": {
+        "description": "Threshold percentage for critical risk"
+      },
+      "riskHighPercentage": {
+        "description": "Threshold percentage for high risk"
+      },
+      "riskMediumPercentage": {
+        "description": "Threshold percentage for medium risk"
+      },
+      "sendgridFromEmail": {
+        "description": "Sender email for SendGrid"
+      },
+      "sendgridFromName": {
+        "description": "Sender name for SendGrid"
+      },
+      "rabbitmqUrl": {
+        "description": "RabbitMQ connection URL"
+      },
+      "rabbitmqQueue": {
+        "description": "RabbitMQ queue name"
+      },
+      "supportEmail": {
+        "description": "Support email"
+      }
+    }
   },
   "singleEvaluation": {
     "title": "Single Evaluation",
@@ -1586,7 +1690,6 @@
       "errorSendReport": "Error sending report"
     }
   },
-  
   "adminDashboard": {
     "noData": "No data available",
     "usage": {
@@ -1686,8 +1789,7 @@
         "distribution": "Distribution"
       }
     }
-  }
-  ,
+  },
   "evaluationSettings": {
     "title": "Evaluation Parameter Configuration",
     "tabs": {
@@ -1731,69 +1833,6 @@
         "parameterValue": "Parameter Value",
         "condition": "Condition"
       }
-    }
-  }
-  ,
-  "envConfiguration": {
-    "noteTitle": "Important Note",
-    "noteMessage": "Changes to configuration parameters will require restarting the server to take effect. Parameters marked with * are required for proper system operation.",
-    "header": {
-      "title": "Server Parameter Configuration",
-      "subtitle": "Manage server .env configuration parameters"
-    },
-    "loading": "Loading configuration...",
-    "buttons": {
-      "reset": "Reset",
-      "save": "Save Changes",
-      "saving": "Saving..."
-    },
-    "changes": {
-      "unsaved": "There are unsaved changes"
-    },
-    "toast": {
-      "saveSuccess": "Configuration saved successfully",
-      "resetSuccess": "Configuration reset",
-      "saveError": "Error saving configuration"
-    },
-    "errors": {
-      "loadConfig": "Error loading configuration",
-      "saveConfig": "Error saving configuration"
-    },
-    "categories": {
-      "apiKeys": "API Keys",
-      "database": "Database",
-      "server": "Server",
-      "apiUrls": "API URLs",
-      "openaiConfig": "OpenAI Configuration",
-      "riskCalculation": "Risk Calculation",
-      "sendgridConfig": "SendGrid Configuration",
-      "rabbitmqConfig": "RabbitMQ Configuration",
-      "contactInfo": "Contact Information"
-    },
-    "params": {
-      "openaiApiKey": { "description": "API key for OpenAI GPT" },
-      "sheriffApiToken": { "description": "Authentication token for Sheriff API" },
-      "sendgridApiKey": { "description": "API key for SendGrid (email sending)" },
-      "mongodbUri": { "description": "MongoDB connection URI" },
-      "port": { "description": "Server port" },
-      "rateLimitWindowMs": { "description": "Time window for rate limiting (ms)" },
-      "rateLimitMaxRequests": { "description": "Maximum requests per window" },
-      "apiUrl": { "description": "Base API URL" },
-      "sheriffApiUrl": { "description": "Sheriff API URL" },
-      "siiUrl": { "description": "SII service URL" },
-      "openaiModelSummary": { "description": "OpenAI model for summaries" },
-      "openaiModelAnalysis": { "description": "OpenAI model for analysis" },
-      "openaiTemperature": { "description": "Temperature for OpenAI (0.0-1.0)" },
-      "openaiMaxTokens": { "description": "Maximum tokens for OpenAI" },
-      "riskTotalParams": { "description": "Total number of risk parameters" },
-      "riskCriticalPercentage": { "description": "Threshold percentage for critical risk" },
-      "riskHighPercentage": { "description": "Threshold percentage for high risk" },
-      "riskMediumPercentage": { "description": "Threshold percentage for medium risk" },
-      "sendgridFromEmail": { "description": "Sender email for SendGrid" },
-      "sendgridFromName": { "description": "Sender name for SendGrid" },
-      "rabbitmqUrl": { "description": "RabbitMQ connection URL" },
-      "rabbitmqQueue": { "description": "RabbitMQ queue name" },
-      "supportEmail": { "description": "Support email" }
     }
   },
   "promptConfiguration": {
@@ -1917,165 +1956,353 @@
     "date": {
       "never": "Never"
     }
-  }
-,
-"databaseManagement": {
-  "header": {
-    "title": "Database Management",
-    "refresh": "Refresh",
-    "backup": "Backup"
   },
-  "connection": {
-    "title": "Connection Status",
-    "status": {
-      "connected": "Connected",
-      "disconnected": "Disconnected",
-      "error": "Error",
-      "running": "Running",
-      "completed": "Completed",
-      "failed": "Failed"
+  "databaseManagement": {
+    "header": {
+      "title": "Database Management",
+      "refresh": "Refresh",
+      "backup": "Backup"
+    },
+    "connection": {
+      "title": "Connection Status",
+      "status": {
+        "connected": "Connected",
+        "disconnected": "Disconnected",
+        "error": "Error",
+        "running": "Running",
+        "completed": "Completed",
+        "failed": "Failed"
+      }
+    },
+    "stats": {
+      "totalCollections": "Total Collections",
+      "totalDocuments": "Total Documents",
+      "dbSize": "Database Size",
+      "totalIndexes": "Total Indexes"
+    },
+    "operations": {
+      "title": "Database Operations",
+      "subtitle": "Perform maintenance operations on the database",
+      "buttons": {
+        "backup": "Create Backup",
+        "cleanup": "Clean Database",
+        "reindex": "Reindex Collections"
+      }
+    },
+    "collections": {
+      "title": "Database Collections",
+      "columns": {
+        "name": "Collection Name",
+        "documents": "Documents",
+        "avgSize": "Average Size",
+        "totalSize": "Total Size",
+        "indexes": "Indexes",
+        "actions": "Actions"
+      },
+      "tooltips": {
+        "reindex": "Reindex",
+        "clean": "Clean"
+      }
+    },
+    "recent": {
+      "title": "Recent Operations",
+      "columns": {
+        "type": "Type",
+        "status": "Status",
+        "start": "Start",
+        "end": "End",
+        "message": "Message"
+      },
+      "type": {
+        "backup": "Backup",
+        "restore": "Restore",
+        "cleanup": "Cleanup",
+        "reindex": "Reindex"
+      },
+      "status": {
+        "running": "Running",
+        "completed": "Completed",
+        "failed": "Failed"
+      }
+    },
+    "dialogs": {
+      "backup": {
+        "title": "Confirm Backup",
+        "message": "Are you sure you want to create a full database backup? This operation may take a few minutes.",
+        "confirm": "Confirm Backup",
+        "cancel": "Cancel"
+      },
+      "cleanup": {
+        "title": "Confirm Cleanup",
+        "message": "Are you sure you want to clean {{target}}? This operation will remove obsolete data and cannot be undone.",
+        "confirm": "Confirm Cleanup",
+        "cancel": "Cancel",
+        "allDatabase": "the entire database",
+        "collection": "the collection \"{{name}}\""
+      }
+    },
+    "errors": {
+      "loadStats": "Error loading database statistics",
+      "loadOperations": "Error loading operations",
+      "backup": "Error during backup",
+      "cleanup": "Error during cleanup",
+      "reindex": "Error during reindexing"
+    },
+    "equifaxMonitor": {
+      "header": {
+        "title": "Equifax Monitor"
+      },
+      "form": {
+        "rut": "RUT",
+        "limit": "Limit",
+        "page": "Page",
+        "from": "From",
+        "to": "To",
+        "rutPlaceholder": "12.345.678-9",
+        "invalidRut": "Invalid RUT"
+      },
+      "buttons": {
+        "consult": "Query",
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "pagination": {
+        "summary": "Total: {{total}} · Page {{page}} of {{pages}}"
+      },
+      "table": {
+        "columns": {
+          "date": "Date",
+          "rut": "RUT",
+          "status": "Status",
+          "code": "Code",
+          "timeMs": "Time (ms)",
+          "endpoint": "Endpoint",
+          "cache": "Cache",
+          "download": "Download",
+          "details": "Details"
+        }
+      },
+      "status": {
+        "ok": "OK",
+        "error": "ERROR"
+      },
+      "cache": {
+        "cached": "cached",
+        "miss": "miss",
+        "info": "Cache Info"
+      },
+      "details": {
+        "payload": "Payload",
+        "data": "Data",
+        "normalized": "Normalized Data",
+        "error": "Error"
+      },
+      "errors": {
+        "downloadJson": "Error downloading JSON",
+        "invalidRut": "Please enter a valid RUT",
+        "loadResponses": "Error loading Equifax responses"
+      },
+      "notifications": {
+        "noRecentRecords": "No recent records"
+      },
+      "actions": {
+        "downloadJson": "Download JSON"
+      }
+    },
+    "sheriffMonitor": {
+      "header": {
+        "title": "Sheriff Monitor"
+      },
+      "form": {
+        "rut": "RUT",
+        "limit": "Limit",
+        "page": "Page",
+        "from": "From",
+        "to": "To",
+        "rutPlaceholder": "12.345.678-9",
+        "invalidRut": "Invalid RUT"
+      },
+      "buttons": {
+        "consult": "Query",
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "pagination": {
+        "summary": "Total: {{total}} · Page {{page}} of {{pages}}"
+      },
+      "table": {
+        "columns": {
+          "rut": "RUT",
+          "status": "Status",
+          "errorCalls": "Call Errors",
+          "download": "Download",
+          "detail": "Detail",
+          "date": "Date"
+        },
+        "link": {
+          "viewJson": "View JSON"
+        }
+      },
+      "status": {
+        "ok": "OK",
+        "withErrors": "With errors"
+      },
+      "errors": {
+        "loadLogs": "Error loading Sheriff logs"
+      },
+      "actions": {
+        "downloadJson": "Download JSON"
+      }
     }
   },
-  "stats": {
-    "totalCollections": "Total Collections",
-    "totalDocuments": "Total Documents",
-    "dbSize": "Database Size",
-    "totalIndexes": "Total Indexes"
-  },
-  "operations": {
-    "title": "Database Operations",
-    "subtitle": "Perform maintenance operations on the database",
-    "buttons": {
-      "backup": "Create Backup",
-      "cleanup": "Clean Database",
-      "reindex": "Reindex Collections"
-    }
-  },
-  "collections": {
-    "title": "Database Collections",
-    "columns": {
-      "name": "Collection Name",
-      "documents": "Documents",
-      "avgSize": "Average Size",
-      "totalSize": "Total Size",
-      "indexes": "Indexes",
-      "actions": "Actions"
+  "tenantUsers": {
+    "title": "Users",
+    "subtitle": "Manage users in your organization",
+    "subtitleWithCount": "Manage users in your organization ({{count}})",
+    "addUserButton": "Add User",
+    "search": {
+      "placeholder": "Search users..."
     },
-    "tooltips": {
-      "reindex": "Reindex",
-      "clean": "Clean"
-    }
-  },
-  "recent": {
-    "title": "Recent Operations",
-    "columns": {
-      "type": "Type",
-      "status": "Status",
-      "start": "Start",
-      "end": "End",
-      "message": "Message"
+    "filters": {
+      "allRoles": "All Roles",
+      "allStatus": "All Status",
+      "roleOptions": {
+        "superuser": "Superadmin",
+        "tenantAdmin": "Admin",
+        "auditor": "Auditor",
+        "evaluator": "Evaluator",
+        "writeOnly": "Integrazione API",
+        "user": "User"
+      },
+      "statusOptions": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
     },
-    "type": {
-      "backup": "Backup",
-      "restore": "Restore",
-      "cleanup": "Cleanup",
-      "reindex": "Reindex"
+    "table": {
+      "headers": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "loading": "Loading users…",
+      "empty": "No users found for this organization."
     },
-    "status": {
-      "running": "Running",
-      "completed": "Completed",
-      "failed": "Failed"
-    }
-  },
-  "dialogs": {
-    "backup": {
-      "title": "Confirm Backup",
-      "message": "Are you sure you want to create a full database backup? This operation may take a few minutes.",
-      "confirm": "Confirm Backup",
-      "cancel": "Cancel"
+    "actions": {
+      "edit": "Edit",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "resetPassword": "Reset Password"
     },
-    "cleanup": {
-      "title": "Confirm Cleanup",
-      "message": "Are you sure you want to clean {{target}}? This operation will remove obsolete data and cannot be undone.",
-      "confirm": "Confirm Cleanup",
+    "errors": {
+      "loadUsers": "Failed to load users",
+      "toggleStatus": "Failed to update user status",
+      "superuserRequired": "This action is available to platform Superadmins only. Contact your platform administrator.",
+      "passwordMin6": "Password must be at least 6 characters",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "resetPasswordFailed": "Failed to reset password"
+    },
+    "toasts": {
+      "statusUpdated": "User status updated successfully",
+      "passwordResetSuccess": "Password reset successfully"
+    },
+    "resetModal": {
+      "title": "Reset password for {{name}}",
+      "newPassword": "New Password",
+      "passwordPlaceholder": "Enter new password",
+      "passwordHelp": "Minimum 6 characters",
+      "confirmPassword": "Confirm Password",
+      "confirmPlaceholder": "Confirm new password",
       "cancel": "Cancel",
-      "allDatabase": "the entire database",
-      "collection": "the collection \"{{name}}\""
+      "saving": "Saving...",
+      "confirm": "Reset Password"
     }
   },
-  "errors": {
-    "loadStats": "Error loading database statistics",
-    "loadOperations": "Error loading operations",
-    "backup": "Error during backup",
-    "cleanup": "Error during cleanup",
-    "reindex": "Error during reindexing"
-  }
-,
-"equifaxMonitor": {
-  "header": { "title": "Equifax Monitor" },
-  "form": {
-    "rut": "RUT",
-    "limit": "Limit",
-    "page": "Page",
-    "from": "From",
-    "to": "To",
-    "rutPlaceholder": "12.345.678-9",
-    "invalidRut": "Invalid RUT"
-  },
-  "buttons": { "consult": "Query", "prev": "Previous", "next": "Next" },
-  "pagination": { "summary": "Total: {{total}} · Page {{page}} of {{pages}}" },
-  "table": {
-    "columns": {
-      "date": "Date",
-      "rut": "RUT",
-      "status": "Status",
-      "code": "Code",
-      "timeMs": "Time (ms)",
-      "endpoint": "Endpoint",
-      "cache": "Cache",
-      "download": "Download",
-      "details": "Details"
-    }
-  },
-  "status": { "ok": "OK", "error": "ERROR" },
-  "cache": { "cached": "cached", "miss": "miss", "info": "Cache Info" },
-  "details": { "payload": "Payload", "data": "Data", "normalized": "Normalized Data", "error": "Error" },
-  "errors": {
-    "downloadJson": "Error downloading JSON",
-    "invalidRut": "Please enter a valid RUT",
-    "loadResponses": "Error loading Equifax responses"
-  },
-  "notifications": { "noRecentRecords": "No recent records" },
-  "actions": { "downloadJson": "Download JSON" }
-},
-
-"sheriffMonitor": {
-  "header": { "title": "Sheriff Monitor" },
-  "form": {
-    "rut": "RUT",
-    "limit": "Limit",
-    "page": "Page",
-    "from": "From",
-    "to": "To",
-    "rutPlaceholder": "12.345.678-9",
-    "invalidRut": "Invalid RUT"
-  },
-  "buttons": { "consult": "Query", "prev": "Previous", "next": "Next" },
-  "pagination": { "summary": "Total: {{total}} · Page {{page}} of {{pages}}" },
-  "table": {
-    "columns": {
-      "rut": "RUT",
-      "status": "Status",
-      "errorCalls": "Call Errors",
-      "download": "Download",
-      "detail": "Detail",
-      "date": "Date"
+  "userModal": {
+    "titles": {
+      "add": "Add New User",
+      "edit": "Edit User"
     },
-    "link": { "viewJson": "View JSON" }
-  },
-  "status": { "ok": "OK", "withErrors": "With errors" },
-  "errors": { "loadLogs": "Error loading Sheriff logs" },
-  "actions": { "downloadJson": "Download JSON" }
-}
-}
+    "subtitles": {
+      "superuserHiddenNote": "Superadmin role is visible to platform administrators only"
+    },
+    "forms": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Full name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "name@company.com"
+      },
+      "role": {
+        "label": "Role",
+        "rolesCountLabel": "{{count}} available",
+        "options": {
+          "superuser": {
+            "label": "Superadmin",
+            "description": "Global Duxiter platform administrator"
+          },
+          "tenantAdmin": {
+            "label": "Admin",
+            "description": "Manages users, credits and settings for the organization"
+          },
+          "evaluator": {
+            "label": "Evaluator",
+            "description": "Analyst · creates/edits/deletes evaluations and runs monitoring"
+          },
+          "auditor": {
+            "label": "Auditor (Read Only)",
+            "description": "Read-only view · evaluations, companies, logs, monitoring"
+          },
+          "writeOnly": {
+            "label": "API Integration (Write Only)",
+            "description": "Robot / Bot · creates evaluations and runs monitoring with limited read"
+          },
+          "user": {
+            "label": "User (Base)",
+            "description": "Standard user · basic access without management"
+          }
+        }
+      },
+      "status": {
+        "label": "Status",
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "password": {
+        "label": "Password",
+        "labelEditHelp": "(leave empty to keep the current one)",
+        "placeholderCreate": "At least 6 characters",
+        "placeholderEdit": "Leave empty to keep the current password"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "create": "Create",
+      "update": "Update"
+    },
+    "toasts": {
+      "successCreate": "User created successfully",
+      "successUpdate": "User updated successfully",
+      "errorCreateGeneric": "Failed to create user",
+      "errorUpdateGeneric": "Failed to update user"
+    },
+    "errors": {
+      "passwordTooShort": "Password must be at least 6 characters long",
+      "passwordTooShortEdit": "Password must be at least 6 characters (leave empty to keep current)",
+      "emailAlreadyExists": "A user with this email already exists",
+      "invalidEmailFormat": "The email format is not valid",
+      "nameMin2Chars": "The name must be at least 2 characters long",
+      "passwordMin6Required": "Password of at least 6 characters is required",
+      "noPermissionManage": "You do not have permission to manage users",
+      "superuserAssignForbidden": "Only a Superadmin can assign the Superadmin role",
+      "superuserDemoteForbidden": "Only a Superadmin can modify the role of another Superadmin",
+      "crossOrgForbidden": "You cannot modify users from organizations other than yours",
+      "userNotFound": "User not found",
+      "permissionGeneric": "Permission denied"
+    }
+  }
 }

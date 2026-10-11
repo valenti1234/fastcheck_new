@@ -47,6 +47,7 @@ const MonitoringPage = lazy(() => import('./pages/MonitoringPage'));
 const HistoricalConsultas = lazy(() => import('./pages/HistoricalConsultas'));
 const AdminRoutes = lazy(() => import('./routes/AdminRoutes'));
 const AuditOverviewDebug = lazy(() => import('./pages/debug/AuditOverviewDebug'));
+const TimelineTerceroPage = lazy(() => import('./pages/TimelineTerceroPage'));
 
 function App() {
   const { isAuthenticated, loading } = useAuth();
@@ -92,6 +93,8 @@ function App() {
             <Route path="/fast-check-ex" element={<SuperuserBlockedRoute><FastCheckEX /></SuperuserBlockedRoute>} />
             <Route path="/monitoring" element={<MonitoringPage />} />
             <Route path="/help" element={<HowToUse />} />
+            <Route path="/timeline" element={<TimelineTerceroPage />} />
+            <Route path="/timeline/:docId" element={<TimelineTerceroPage />} />
             
             {/* Tenant admin routes */}
             <Route element={<RoleProtectedRoute role="tenant_admin" />}>

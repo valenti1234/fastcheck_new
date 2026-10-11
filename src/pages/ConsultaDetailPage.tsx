@@ -19,11 +19,23 @@ const ConsultaDetailPage: React.FC = () => {
         const response = await apiClient.get(`/rut/results/${id}`);
         const result = response.data;
         
-        // Navigate to FastCheck page with the RUT parameter
-        if (result && result.details && result.details.rut) {
-          const rutParam = encodeURIComponent(result.details.rut);
+        // RUT robusto con 5 fallbacks: (1) details.rut → (2) root .rut → (3) rut_normalized → (4) rut_canonical → (5) identifier
+        const rutRaw: string | undefined =
+          (result?.details?.rut as string | undefined) ||
+          (result?.rut as string | undefined) ||
+          (result?.rut_normalized as string | undefined) ||
+          (result?.rut_canonical as string | undefined) ||
+          (result?.identifier as string | undefined);
+        const fechaRaw: string | undefined =
+          (result?.createdAt as string | undefined) ||
+          (result?.created_at as string | undefined) ||
+          (result?.date as string | undefined);
+
+        // Navigate to FastCheck EX page with RUT + resultId
+        if (result && rutRaw && rutRaw.trim().length > 0) {
+          const rutParam = encodeURIComponent(rutRaw.trim());
           const idParam = encodeURIComponent(id);
-          const fechaParam = result?.createdAt ? `&fecha=${encodeURIComponent(result.createdAt)}` : '';
+          const fechaParam = fechaRaw ? `&fecha=${encodeURIComponent(fechaRaw)}` : '';
           navigate(`/fast-check-ex?rut=${rutParam}&resultId=${idParam}${fechaParam}`, { replace: true });
         } else {
           setError('No se encontró el RUT en los datos del resultado');

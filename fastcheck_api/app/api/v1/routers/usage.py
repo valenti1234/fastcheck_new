@@ -6,7 +6,7 @@ from bson import ObjectId
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from fastcheck_api.app.api.dependencies import CurrentUser, require_permission
+from fastcheck_api.app.api.dependencies import CurrentUser, require_permission_audit
 from fastcheck_api.app.core.mongodb import get_db
 from fastcheck_api.app.schemas.usage import ListCreditOperationsResponse, TenantUsageOut
 from fastcheck_api.app.utils.mongo import jsonable
@@ -22,7 +22,7 @@ router = APIRouter(prefix="/usage", tags=["usage"])
     description="Return tenant credit balance from the existing `tenants.creditBalance` structure.",
 )
 async def get_usage(
-    user: Annotated[CurrentUser, Depends(require_permission("tenant:read"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("tenant:read"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
 ):
     tenant = await db["tenants"].find_one({"_id": ObjectId(user.tenant)}, projection={"creditBalance": 1})
@@ -39,7 +39,7 @@ async def get_usage(
     description="List credit operations for the current tenant from the existing `creditoperations` ledger.",
 )
 async def list_operations(
-    user: Annotated[CurrentUser, Depends(require_permission("tenant:read"))],
+    user: Annotated[CurrentUser, Depends(require_permission_audit("tenant:read"))],
     db: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
     page: int = Query(default=1, ge=1),
     limit: int = Query(default=20, ge=1, le=100),

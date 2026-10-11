@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { MagnifyingGlassIcon, ArrowUpIcon, ArrowDownIcon, EyeIcon, CalendarIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
 import { logger } from '../../utils/logger';
 import { useTranslation } from 'react-i18next';
+import { useAuth } from '../../contexts/AuthContext';
 
 interface IResult extends Omit<IResultBackend, 'rut'> {
   _id: string;
@@ -27,6 +28,13 @@ interface ResultsTableProps {
   onSelectionChange?: (ruts: string[]) => void;
 }
 
+interface ColumnDef {
+  accessor: string;
+  label?: string;
+  sortable?: boolean;
+  sortKey?: string;
+}
+
 const ResultsTable: React.FC<ResultsTableProps> = ({
   results,
   currentPage,
@@ -46,9 +54,26 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
   const [localSortDirection, setLocalSortDirection] = useState<'asc' | 'desc'>('desc');
 
   const { t, i18n } = useTranslation();
+  const { useProyeccionNivel } = useAuth();
+  const { filterColumns } = useProyeccionNivel({ accion: 'fastcheck.query' });
+
   const localeMap: Record<string, string> = { es: 'es-ES', en: 'en-US', pt: 'pt-PT', fr: 'fr-FR' };
   const resolvedLangKey = (i18n.resolvedLanguage ?? i18n.language ?? 'es');
   const dateLocale = localeMap[resolvedLangKey] ?? 'es-ES';
+
+  // Definición de columnas (accessor debe coincidir con COLS_WL_NIVEL en AuthContext)
+  const colDefs: ColumnDef[] = useMemo(() => [
+    { accessor: 'select' },
+    { accessor: 'rut', label: 'RUT', sortable: true, sortKey: 'rut' },
+    { accessor: 'razonSocial', sortable: true, sortKey: 'razonSocial' },
+    { accessor: 'noteTags', label: 'TAG', sortable: true, sortKey: 'tags' },
+    { accessor: 'nivelRiesgo', sortable: true, sortKey: 'riskLevel' },
+    { accessor: 'createdAt', sortable: true, sortKey: 'createdAt' },
+    { accessor: 'actions' },
+  ], []);
+
+  const filteredCols = useMemo(() => filterColumns<ColumnDef>(colDefs), [colDefs, filterColumns]);
+  const visibleColCount = filteredCols.length;
 
   // Ordenar localmente los resultados de la página actual
   const sortedResults = useMemo(() => {
@@ -174,6 +199,162 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
     }
   };
 
+  const renderHeaderCell = (col: ColumnDef) => {
+    switch (col.accessor) {
+      case 'select':
+        return (
+          <input
+            type="checkbox"
+            checked={allVisibleSelected}
+            onChange={toggleAllVisible}
+            className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+          />
+        );
+      case 'rut':
+        return (
+          <button
+            onClick={() => handleLocalSort(col.sortKey!)}
+            className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
+          >
+            <span>{col.label}</span>
+            {localSortField === col.sortKey && (
+              localSortDirection === 'asc'
+                ? <ArrowUpIcon className="h-4 w-4" />
+                : <ArrowDownIcon className="h-4 w-4" />
+            )}
+          </button>
+        );
+      case 'razonSocial':
+        return (
+          <button
+            onClick={() => handleLocalSort(col.sortKey!)}
+            className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
+          >
+            <BuildingOfficeIcon className="h-4 w-4" />
+            <span>{t('consultas.razonSocial')}</span>
+            {localSortField === col.sortKey && (
+              localSortDirection === 'asc'
+                ? <ArrowUpIcon className="h-4 w-4" />
+                : <ArrowDownIcon className="h-4 w-4" />
+            )}
+          </button>
+        );
+      case 'noteTags':
+        return (
+          <button
+            onClick={() => handleLocalSort(col.sortKey!)}
+            className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
+          >
+            <BuildingOfficeIcon className="h-4 w-4" />
+            <span>{col.label}</span>
+            {localSortField === col.sortKey && (
+              localSortDirection === 'asc'
+                ? <ArrowUpIcon className="h-4 w-4" />
+                : <ArrowDownIcon className="h-4 w-4" />
+            )}
+          </button>
+        );
+      case 'nivelRiesgo':
+        return (
+          <button
+            onClick={() => handleLocalSort(col.sortKey!)}
+            className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
+          >
+            <span>{t('consultas.nivelRiesgo')}</span>
+            {localSortField === col.sortKey && (
+              localSortDirection === 'asc'
+                ? <ArrowUpIcon className="h-4 w-4" />
+                : <ArrowDownIcon className="h-4 w-4" />
+            )}
+          </button>
+        );
+      case 'createdAt':
+        return (
+          <button
+            onClick={() => handleLocalSort(col.sortKey!)}
+            className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
+          >
+            <CalendarIcon className="h-4 w-4" />
+            <span>{t('consultas.fechaConsulta')}</span>
+            {localSortField === col.sortKey && (
+              localSortDirection === 'asc'
+                ? <ArrowUpIcon className="h-4 w-4" />
+                : <ArrowDownIcon className="h-4 w-4" />
+            )}
+          </button>
+        );
+      case 'actions':
+        return t('consultas.acciones');
+      default:
+        return null;
+    }
+  };
+
+  const renderBodyCell = (col: ColumnDef, result: typeof resultsWithVisibility[number]) => {
+    const rutValue = result.rut || result.details?.rut || '';
+    switch (col.accessor) {
+      case 'select':
+        return (
+          <input
+            type="checkbox"
+            checked={selectedRuts.includes(rutValue)}
+            onChange={() => toggleOneRut(rutValue)}
+            className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+          />
+        );
+      case 'rut':
+        return (
+          <span className="whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">
+            {result.rut || result.details?.rut}
+          </span>
+        );
+      case 'razonSocial':
+        return (
+          <div className="flex items-center text-sm text-gray-900 dark:text-white">
+            <BuildingOfficeIcon className="h-4 w-4 text-gray-400 mr-2 flex-shrink-0" />
+            <span className="truncate">{result.details?.razonSocial}</span>
+          </div>
+        );
+      case 'noteTags':
+        return (
+          <div className="flex items-center gap-1 flex-wrap text-sm text-gray-900 dark:text-white">
+            {result?.noteTags?.map((noteTag: any, index: number) =>
+              <span key={index} className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">
+                {noteTag}
+              </span>
+            )}
+          </div>
+        );
+      case 'nivelRiesgo':
+        return (
+          <span className={`inline-flex whitespace-nowrap items-center px-3 py-1 rounded-full text-xs font-semibold ${getRiskLevelClass(result.riskAssessment?.riskSummary?.semaphore || 'unknown')}`}>
+            {getRiskLevelDisplayName(result.riskAssessment?.riskSummary?.semaphore || t('common.notAvailable'))}
+          </span>
+        );
+      case 'createdAt':
+        return (
+          <div className="flex items-center whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+            <CalendarIcon className="h-4 w-4 text-gray-400 mr-2" />
+            {new Date(result.createdAt).toLocaleDateString(dateLocale)}
+          </div>
+        );
+      case 'actions':
+        return (
+          <Link
+            to={`/consultas/${result._id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 dark:text-primary-400 dark:bg-primary-900/50 dark:hover:bg-primary-900/70 transition-colors"
+          >
+            <EyeIcon className="h-4 w-4 mr-1" />
+            {t('consultas.viewDetail', { defaultValue: 'Ver Detalle' })}
+          </Link>
+        );
+      default:
+        return null;
+    }
+  };
+
   const renderPagination = () => (
     <div className="flex items-center justify-between border-t border-gray-200 bg-gray-50 dark:bg-gray-700/50 px-6 py-4">
       <div className="flex flex-1 justify-between sm:hidden">
@@ -279,151 +460,40 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
                 <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
                   <thead className="bg-gray-50 dark:bg-gray-700/50">
                     <tr>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        <input
-                          type="checkbox"
-                          checked={allVisibleSelected}
-                          onChange={toggleAllVisible}
-                          className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
-                        />
-                      </th>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        <button
-                          onClick={() => handleLocalSort('rut')}
-                          className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
+                      {filteredCols.map((col) => (
+                        <th
+                          key={col.accessor}
+                          scope="col"
+                          className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider"
                         >
-                          <span>RUT</span>
-                          {localSortField === 'rut' && (
-                            localSortDirection === 'asc' ?
-                              <ArrowUpIcon className="h-4 w-4" /> :
-                              <ArrowDownIcon className="h-4 w-4" />
-                          )}
-                        </button>
-                      </th>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        <button
-                          onClick={() => handleLocalSort('razonSocial')}
-                          className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
-                        >
-                          <BuildingOfficeIcon className="h-4 w-4" />
-                          <span>{t('consultas.razonSocial')}</span>
-                          {localSortField === 'razonSocial' && (
-                            localSortDirection === 'asc' ?
-                              <ArrowUpIcon className="h-4 w-4" /> :
-                              <ArrowDownIcon className="h-4 w-4" />
-                          )}
-                        </button>
-                      </th>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        <button
-                          onClick={() => handleLocalSort('tags')}
-                          className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
-                        >
-                          <BuildingOfficeIcon className="h-4 w-4" />
-                          <span>TAG</span>
-                          {localSortField === 'tags' && (
-                            localSortDirection === 'asc' ?
-                              <ArrowUpIcon className="h-4 w-4" /> :
-                              <ArrowDownIcon className="h-4 w-4" />
-                          )}
-                        </button>
-                      </th>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        <button
-                          onClick={() => handleLocalSort('riskLevel')}
-                          className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
-                        >
-                          <span>{t('consultas.nivelRiesgo')}</span>
-                          {localSortField === 'riskLevel' && (
-                            localSortDirection === 'asc' ?
-                              <ArrowUpIcon className="h-4 w-4" /> :
-                              <ArrowDownIcon className="h-4 w-4" />
-                          )}
-                        </button>
-                      </th>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        <button
-                          onClick={() => handleLocalSort('createdAt')}
-                          className="flex items-center space-x-1 hover:text-gray-900 dark:hover:text-white transition-colors"
-                        >
-                          <CalendarIcon className="h-4 w-4" />
-                          <span>{t('consultas.fechaConsulta')}</span>
-                          {localSortField === 'createdAt' && (
-                            localSortDirection === 'asc' ?
-                              <ArrowUpIcon className="h-4 w-4" /> :
-                              <ArrowDownIcon className="h-4 w-4" />
-                          )}
-                        </button>
-                      </th>
-                      <th scope="col" className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-                        {t('consultas.acciones')}
-                      </th>
+                          {renderHeaderCell(col)}
+                        </th>
+                      ))}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                     {resultsWithVisibility.length > 0 ? (
                       <>
                         {resultsWithVisibility.map((result) => {
-                          const rutValue = result.rut || result.details?.rut || '';
                           return (
                             <tr
                               key={result._id}
                               className={`hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors ${!result.isVisible ? 'hidden' : ''}`}
                             >
-                              <td className="whitespace-nowrap px-6 py-4">
-                                <input
-                                  type="checkbox"
-                                  checked={selectedRuts.includes(rutValue)}
-                                  onChange={() => toggleOneRut(rutValue)}
-                                  className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
-                                />
-                              </td>
-                              <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
-                                {result.rut || result.details?.rut}
-                              </td>
-                              <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                                <div className="flex items-center">
-                                  <BuildingOfficeIcon className="h-4 w-4 text-gray-400 mr-2 flex-shrink-0" />
-                                  <span className="truncate">{result.details?.razonSocial}</span>
-                                </div>
-                              </td>
-                              <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                                <div className="flex items-center gap-1 flex-wrap">
-                                  {result?.noteTags?.map((noteTag: any, index: number) =>
-                                    <span key={index} className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">
-                                      {noteTag}
-                                    </span>
-                                  )}
-                                </div>
-                              </td>
-                              <td className="whitespace-nowrap px-6 py-4 text-sm">
-                                <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${getRiskLevelClass(result.riskAssessment?.riskSummary?.semaphore || 'unknown')}`}>
-                                  {getRiskLevelDisplayName(result.riskAssessment?.riskSummary?.semaphore || t('common.notAvailable'))}
-                                </span>
-                              </td>
-                              <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500 dark:text-gray-400">
-                                <div className="flex items-center">
-                                  <CalendarIcon className="h-4 w-4 text-gray-400 mr-2" />
-                                  {new Date(result.createdAt).toLocaleDateString(dateLocale)}
-                                </div>
-                              </td>
-                              <td className="whitespace-nowrap px-6 py-4 text-sm font-medium">
-                                <Link
-                                  to={`/consultas/${result._id}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 dark:text-primary-400 dark:bg-primary-900/50 dark:hover:bg-primary-900/70 transition-colors"
+                              {filteredCols.map((col) => (
+                                <td
+                                  key={col.accessor}
+                                  className="whitespace-nowrap px-6 py-4"
                                 >
-                                  <EyeIcon className="h-4 w-4 mr-1" />
-                                  {t('consultas.viewDetail', { defaultValue: 'Ver Detalle' })}
-                                </Link>
-                              </td>
+                                  {renderBodyCell(col, result)}
+                                </td>
+                              ))}
                             </tr>
                           );
                         })}
                         {visibleCount === 0 && (
                           <tr>
-                            <td colSpan={7} className="px-6 py-12 text-center">
+                            <td colSpan={visibleColCount} className="px-6 py-12 text-center">
                               <div className="mx-auto max-w-md">
                                 <MagnifyingGlassIcon className="mx-auto h-12 w-12 text-gray-400" />
                                 <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -447,14 +517,14 @@ const ResultsTable: React.FC<ResultsTableProps> = ({
                       </>
                     ) : (
                       <tr>
-                        <td colSpan={7} className="px-6 py-12 text-center">
+                        <td colSpan={visibleColCount} className="px-6 py-12 text-center">
                           <div className="mx-auto max-w-md">
                             <MagnifyingGlassIcon className="mx-auto h-12 w-12 text-gray-400" />
                             <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
-                              No hay resultados en esta página
+                              {t('resultsTable.noQueries')}
                             </h3>
                             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                              Esta página no contiene resultados que coincidan con los filtros aplicados. Intenta navegar a otra página.
+                              {t('resultsTable.noQueriesMessage')}
                             </p>
                           </div>
                         </td>

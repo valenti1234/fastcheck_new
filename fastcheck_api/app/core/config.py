@@ -5,13 +5,27 @@ from pathlib import Path
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-ENV_FILE = Path(__file__).resolve().parents[2] / ".env"
+ENV_FILE = Path(__file__).resolve().parents[3] / ".env"  # = project ROOT /home/duxiter/duxiter_intermediate/.env (non fastcheck_api/)
+_ENV_FALLBACK_LEGACY = Path(__file__).resolve().parents[2] / ".env"  # backward compat: fastcheck_api/.env (se esiste)
+if not ENV_FILE.exists() and _ENV_FALLBACK_LEGACY.exists():
+    ENV_FILE = _ENV_FALLBACK_LEGACY
+del _ENV_FALLBACK_LEGACY
 
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=ENV_FILE, env_file_encoding="utf-8", extra="ignore")
 
     mongodb_uri: str = Field(default="mongodb://localhost:27017/duxiter", validation_alias="MONGODB_URI")
+
+    # ╔═══════════════════════════════════════════════════════════════════╗
+    # ║  SAFETY LOCK AUTHZ_V2: L'APP NON DEVE MAI SCRIVERE SU 'duxiter'  ║
+    # ║  Se MONGODB_URI punta esattamente a 'duxiter' e il flag          ║
+    # ║  AUTHZ_FORBID_PROD_DB è true (default) → solleva warning in      ║
+    # ║  console e la funzione dependencies._assert_safe_target_db()     ║
+    # ║  può bloccare le rotte authz v2 se invocate.                     ║
+    # ╚═══════════════════════════════════════════════════════════════════╝
+    authz_legacy_layer: bool = Field(default=False, validation_alias="AUTHZ_LEGACY_LAYER")
+    authz_forbid_prod_db: bool = Field(default=True, validation_alias="AUTHZ_FORBID_PROD_DB")
 
     jwt_secret: str = Field(default="your-secret-key", validation_alias="VITE_JWT_SECRET")
     jwt_expires_in: str = Field(default="7d", validation_alias="VITE_JWT_EXPIRES_IN")
