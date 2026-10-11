@@ -300,9 +300,9 @@
 - Permisos catálogo **TOTAL = 31** · **SENSIBLES GLOBALES = 8**
 - Routes V2 montadas ≥ 42 endpoints · Migraciones aplicadas: 001 → 007
 - Safety lock 4-capas `duxiter` (prod): **0 scritture in TUTTE le fasi**
-- Tiempo **TOTAL FASE 2 = 145 h · 66 tareas** (58 core F2 Bloq2.1→2.6 · 04.10 cierre base + 7 tareas Post-FASE2 Operatividad · 09.10 + 1 tarea Reset Password · 11.10 · CUADRE OK)
+- Tiempo **TOTAL FASE 2 = 148 h · 67 tareas** (58 core F2 Bloq2.1→2.6 · 04.10 cierre base + 7 tareas Post-FASE2 Operatividad · 09.10 + 1 tarea Reset Password + 1 Hotfix FastCheckEX flatten/endpoints · 11.10 · CUADRE OK)
 - QA 6 MÓDULOS 11→16 × 4 scenarios ognuno × **10 colonne EXACT**
-- Post-FASE2 entregables: Script Servicios · Fix FastCheckEX · Historial 404 · Profilo Avatar · Lista Utenti Scoped · Vincolo i18n 100% × 4 lingue · **Reset Password tenant-scoped 11.10**
+- Post-FASE2 entregables: Script Servicios · Fix FastCheckEX · Historial 404 · Profilo Avatar · Lista Utenti Scoped · Vincolo i18n 100% × 4 lingue · **Reset Password tenant-scoped 11.10** · **Hotfix FastCheckEX flatten doc.data + endpoints rut/results/rut|latest 11.10**
 
 ---
 
@@ -349,4 +349,4 @@
 
 ---
 
-*Última actualización: **11.10.2026** (Post-FASE2: Operatividad 8 tareas · 16 h · Suite FULL 90/90 PASS · CUADRE 145 h)*
+*Última actualización: **11.10.2026** (Post-FASE2: Operatividad 9 tareas · 19 h · Suite FULL 90/90 PASS · CUADRE 148 h)*
